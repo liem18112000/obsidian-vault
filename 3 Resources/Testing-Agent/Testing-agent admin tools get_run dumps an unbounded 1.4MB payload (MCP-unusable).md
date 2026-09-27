@@ -1,10 +1,20 @@
 ---
-title: "Testing-agent admin tools: get_run dumps an unbounded 1.4MB payload (MCP-unusable)"
+ai_hash: 22a27be2ee3b6f46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: lesson
+entities: []
+source: session 2026-09-14 admin test
 status: seedling
-source: "session 2026-09-14 admin test"
-tags: [testing-agent, admin-tools, mcp, bug, memory, test-agent-v2]
+tags:
+- testing-agent
+- admin-tools
+- mcp
+- bug
+- memory
+- test-agent-v2
+title: 'Testing-agent admin tools: get_run dumps an unbounded 1.4MB payload (MCP-unusable)'
+type: lesson
 ---
 
 # Testing-agent admin tools: get_run dumps an unbounded 1.4MB payload (MCP-unusable)
@@ -25,3 +35,14 @@ Related: [[test-agent-v2 hardened deploy.sh flow and the unique image-tag bump t
 ## Related
 
 - [[test-agent-v2 hardened deploy.sh flow and the unique image-tag bump that forces a new revision]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 deploy + get_deliverables E2E verification]]
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+- [[Deploying the test-agent-v2 Cloud Run stack (names, tags, plan)]]
+- [[Wipe test-agent-v2 memory and taskstore via test-agent-v2tools]]
+- [[test-agent-v2 hardened deploy.sh flow and the unique image-tag bump that forces a new revision]]
+
+%% ai-graph-end %%

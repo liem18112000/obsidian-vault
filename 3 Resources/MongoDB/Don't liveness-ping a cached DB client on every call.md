@@ -1,10 +1,19 @@
 ---
-title: "Don't liveness-ping a cached DB client on every call"
+ai_hash: 936505a6caa06ee1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: lesson
+entities: []
+source: session 2026-08-26 luz_jsonstore MongoClientFactory
 status: seedling
-source: "session 2026-08-26 luz_jsonstore MongoClientFactory"
-tags: [mongodb, performance, cache, connection-pool, luz-jsonstore]
+tags:
+- mongodb
+- performance
+- cache
+- connection-pool
+- luz-jsonstore
+title: Don't liveness-ping a cached DB client on every call
+type: lesson
 ---
 
 # Don't liveness-ping a cached DB client on every call
@@ -21,3 +30,14 @@ Tradeoff to accept knowingly: without the probe, a client whose backend *relocat
 ## Related
 
 - [[Cache one MongoClient per tenant and close it on eviction]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cache one MongoClient per tenant and close it on eviction]]
+- [[Track pooled MongoClients in a shutdown registry instead of closing on cache eviction]]
+- [[LRU cache in Java via LinkedHashMap accessOrder + removeEldestEntry]]
+- [[Truncating DB collections between benchmark runs resets data but not service warmth]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+
+%% ai-graph-end %%

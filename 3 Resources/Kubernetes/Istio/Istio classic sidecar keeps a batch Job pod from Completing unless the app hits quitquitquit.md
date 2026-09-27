@@ -1,10 +1,19 @@
 ---
-title: "Istio classic sidecar keeps a batch Job pod from Completing unless the app hits /quitquitquit"
+ai_hash: 3117e96b163a6b7a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: code review LUZ-158230 k6 load-test, 2026-08-18
 status: seedling
-source: "code review LUZ-158230 k6 load-test, 2026-08-18"
-tags: [kubernetes, istio, jobs, gotcha]
+tags:
+- kubernetes
+- istio
+- jobs
+- gotcha
+title: Istio classic sidecar keeps a batch Job pod from Completing unless the app
+  hits /quitquitquit
+type: lesson
 ---
 
 # Istio classic sidecar keeps a batch Job pod from Completing unless the app hits /quitquitquit
@@ -22,3 +31,12 @@ So: whether this bites depends on whether the mesh uses classic or native sideca
 
 - [[Istio sidecar injection]]
 - [[Kubernetes Job]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Off-mesh services (istio inject=false) have no Istio access logs]]
+- [[Decouple long agent work from the harness task lifecycle]]
+- [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
+
+%% ai-graph-end %%

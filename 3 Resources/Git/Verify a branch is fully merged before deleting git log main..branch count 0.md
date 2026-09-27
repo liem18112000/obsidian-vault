@@ -1,10 +1,19 @@
 ---
-title: "Verify a branch is fully merged before deleting: git log main..branch count 0"
+ai_hash: 2f13ebce8de74cb0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: session 2026-08-22 leo-customer360
 status: seedling
-source: "session 2026-08-22 leo-customer360"
-tags: [git, branches, cleanup, gotcha]
+tags:
+- git
+- branches
+- cleanup
+- gotcha
+title: 'Verify a branch is fully merged before deleting: git log main..branch count
+  0'
+type: lesson
 ---
 
 # Verify a branch is fully merged before deleting: git log main..branch count 0
@@ -22,3 +31,14 @@ Applied in leo-customer360 to safely delete `infras/cicd/v4` (count==0, ancestor
 ## Related
 
 - [[GitHub squash merge]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[git merge-base --is-ancestor returns false after a SQUASH merge even though the branch's changes are merged]]
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[Create an empty git branch with commit-tree + the empty-tree hash (never git rm -rf)]]
+- [[ReviewPR scope diff the branch's real base, not main, when base is ahead of main]]
+
+%% ai-graph-end %%

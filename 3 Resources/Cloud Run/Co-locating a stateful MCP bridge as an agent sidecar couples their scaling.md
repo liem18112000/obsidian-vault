@@ -1,10 +1,21 @@
 ---
-title: "Co-locating a stateful MCP bridge as an agent sidecar couples their scaling"
+ai_hash: daab7b9c3edcc1a3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: argument
+entities: []
+source: session 2026-08-31 test-agent
 status: seedling
-source: "session 2026-08-31 test-agent"
-tags: [cloud-run, sidecar, mcp, a2a, deployment, scaling, architecture]
+tags:
+- cloud-run
+- sidecar
+- mcp
+- a2a
+- deployment
+- scaling
+- architecture
+title: Co-locating a stateful MCP bridge as an agent sidecar couples their scaling
+type: argument
 ---
 
 # Co-locating a stateful MCP bridge as an agent sidecar couples their scaling
@@ -20,3 +31,14 @@ Cloud Run v2 supports multi-container **sidecars**, so an A2A→MCP bridge can b
 ## Related
 
 - [[test-agent two A2A agents share a skeleton but diverge in domain engines]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run v2 multi-container sidecar in Terraform]]
+- [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
+- [[Multi-turn agent sessions need min-instances=1 and session affinity on Cloud Run]]
+- [[A remote A2A agent needs its own connectors because MCP is client-side]]
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+
+%% ai-graph-end %%

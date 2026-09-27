@@ -1,10 +1,19 @@
 ---
-title: "TPD test_kinds must be additive over the base four, not replace them"
+ai_hash: fc57e2cc55f49503
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: test-agent-v2, LUZ-158230, 2026-09-16
 status: seedling
-source: "test-agent-v2, LUZ-158230, 2026-09-16"
-tags: [testing-agent, implement-plan, test-kinds, root-cause, bugfix]
+tags:
+- testing-agent
+- implement-plan
+- test-kinds
+- root-cause
+- bugfix
+title: TPD test_kinds must be additive over the base four, not replace them
+type: lesson
 ---
 
 # TPD test_kinds must be additive over the base four, not replace them
@@ -27,3 +36,14 @@ Related: [[implement_plan heuristic-fallback emits one performance stub per node
 
 - [[implement_plan heuristic-fallback emits one performance stub per node]]
 - [[LUZ-158230 ePost ZIP import - test scope decisions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+- [[implement_plan heuristic-fallback emits one performance stub per node]]
+- [[TPD assured-loop judge penalizes cross-run scenario duplication]]
+- [[Parallel TPD generation sped up but amplified duplication — dedup is a code fix, not guidance]]
+
+%% ai-graph-end %%

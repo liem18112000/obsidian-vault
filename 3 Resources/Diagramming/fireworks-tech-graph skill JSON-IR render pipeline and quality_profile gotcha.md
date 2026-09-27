@@ -1,10 +1,18 @@
 ---
-title: "fireworks-tech-graph skill: JSON-IR render pipeline and quality_profile gotcha"
+ai_hash: 14299080c8fa08e6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: howto
+entities: []
+source: session 2026-09-09 SCRUM-92
 status: seedling
-source: "session 2026-09-09 SCRUM-92"
-tags: [diagrams, svg, skill, claude-code]
+tags:
+- diagrams
+- svg
+- skill
+- claude-code
+title: 'fireworks-tech-graph skill: JSON-IR render pipeline and quality_profile gotcha'
+type: howto
 ---
 
 # fireworks-tech-graph skill: JSON-IR render pipeline and quality_profile gotcha
@@ -21,3 +29,14 @@ PNG/GIF export needs CairoSVG/rsvg-convert (+ Node for GIF); SVG render needs on
 ## Related
 
 - [[Embed generated SVG in an artifact via <img> data-URI to isolate its styles]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[fireworks-tech-graph make the orthogonal router succeed and embed the SVG]]
+- [[Animate fireworks SVGs via injected CSS keyframes; Style-12 Ops Pulse constraints]]
+- [[Embed a fireworks-tech-graph SVG in an HTML artifact and animate it with CSS via its data-flowid hooks]]
+- [[Embed generated SVG in an artifact via img data-URI to isolate its styles]]
+- [[Render .excalidraw to PNGSVG offline with render_excalidraw.py]]
+
+%% ai-graph-end %%

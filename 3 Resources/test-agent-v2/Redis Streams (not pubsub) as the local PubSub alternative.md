@@ -1,10 +1,20 @@
 ---
-title: "Redis Streams (not pub/sub) as the local Pub/Sub alternative"
+ai_hash: 21775ae040463d83
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [redis, redis-streams, pubsub, queue, test-agent, local-dev]
+tags:
+- redis
+- redis-streams
+- pubsub
+- queue
+- test-agent
+- local-dev
+title: Redis Streams (not pub/sub) as the local Pub/Sub alternative
+type: lesson
 ---
 
 # Redis Streams (not pub/sub) as the local Pub/Sub alternative
@@ -16,3 +26,14 @@ In test-agent-v2 (commit pending): new `common/queue.py` (`redis_publish` / `red
 ## Related
 
 - [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Route google-cloud clients to local emulators via _EMULATOR_HOST]]
+- [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+- [[Redis Streams consumer-group at-least-once Loader pattern]]
+- [[Run an event-broker Redis as a dedicated co-located instance, not the cache Redis]]
+- [[Broker Redis needs opposite config from cache Redis, run it separately]]
+
+%% ai-graph-end %%

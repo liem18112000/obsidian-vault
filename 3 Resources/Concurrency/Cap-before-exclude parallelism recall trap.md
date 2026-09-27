@@ -1,10 +1,19 @@
 ---
-title: "Cap-before-exclude parallelism recall trap"
+ai_hash: 1d7d9b426e13bc47
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: test-agent-v2 parallel-gather, 2026-09-22
 status: seedling
-source: "test-agent-v2 parallel-gather, 2026-09-22"
-tags: [concurrency, parallelism, recall, gotcha, test-agent]
+tags:
+- concurrency
+- parallelism
+- recall
+- gotcha
+- test-agent
+title: Cap-before-exclude parallelism recall trap
+type: lesson
 ---
 
 # Cap-before-exclude parallelism recall trap
@@ -25,3 +34,14 @@ Related: [[Shared model quota makes LLM fan-out worthless]]
 ## Related
 
 - [[Shared model quota makes LLM fan-out worthless]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shared model quota makes LLM fan-out worthless]]
+- [[LLM query enrichment for a substring-OR matcher must contract, not expand, the token set]]
+- [[Converge an exploration loop on marginal yield (zero new items), not a fixed iteration count]]
+- [[exclude= does not lift PQS precision because cloud-discover re-promotes 8 services]]
+- [[Cross-source semantic scenario dedup embed+cosine-cluster, keep canonical, union citations]]
+
+%% ai-graph-end %%

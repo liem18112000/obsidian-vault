@@ -1,10 +1,18 @@
 ---
-title: "Service symmetry belongs at the contract layer not the domain layer"
+ai_hash: 4d7a03ce5c90187c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: argument
+entities: []
+source: session 2026-08-31 test-agent refactor
 status: seedling
-source: "session 2026-08-31 test-agent refactor"
-tags: [architecture, design-principle, solid, package-structure]
+tags:
+- architecture
+- design-principle
+- solid
+- package-structure
+title: Service symmetry belongs at the contract layer not the domain layer
+type: argument
 ---
 
 # Service symmetry belongs at the contract layer not the domain layer
@@ -20,3 +28,11 @@ See [[test-agent two A2A agents share a skeleton but diverge in domain engines]]
 ## Related
 
 - [[test-agent two A2A agents share a skeleton but diverge in domain engines]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent two A2A agents share a skeleton but diverge in domain engines]]
+- [[Extract shared use-case code into a sibling shared package, not a peer use case]]
+
+%% ai-graph-end %%

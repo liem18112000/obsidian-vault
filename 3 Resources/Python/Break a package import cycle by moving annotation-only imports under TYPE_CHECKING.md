@@ -1,10 +1,19 @@
 ---
-title: "Break a package import cycle by moving annotation-only imports under TYPE_CHECKING"
+ai_hash: 89e271adf3a9d134
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-28 (KGA llm/ refactor)
 status: seedling
-source: "session 2026-08-28 (KGA llm/ refactor)"
-tags: [python, imports, circular-import, type-checking, gotcha]
+tags:
+- python
+- imports
+- circular-import
+- type-checking
+- gotcha
+title: Break a package import cycle by moving annotation-only imports under TYPE_CHECKING
+type: lesson
 ---
 
 # Break a package import cycle by moving annotation-only imports under TYPE_CHECKING
@@ -21,3 +30,12 @@ if TYPE_CHECKING:
 This severs the runtime edge (llm -> refine) while keeping full type hints. Only works when X is used purely as an annotation — if it is referenced at runtime (constructed, isinstance-checked, subclassed), keep the real import and break the cycle another way (lazy import inside the function, or restructure the package __init__ to not eagerly import the leaf module).
 
 Surfaced centralizing an `llm/` package out of `refine/`: `llm.prompts` needed `refine.pack.Pack` only for annotations, but importing it pulled in `refine/__init__` -> `refine.loop` -> `refine.questions` -> back into the half-built `llm.questions`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Turning a module into a package without breaking from-pkg-import-X (avoid the __init__ cycle)]]
+- [[Eager annotation evaluation NameErrors at import; a newer local Python (PEP 649) hides it from the older deploy runtime]]
+- [[Convert a Python module to a package without breaking importers via re-exporting __init__]]
+
+%% ai-graph-end %%

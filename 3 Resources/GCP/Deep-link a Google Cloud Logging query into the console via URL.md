@@ -1,10 +1,19 @@
 ---
-title: "Deep-link a Google Cloud Logging query into the console via URL"
+ai_hash: 4f675585a82b7643
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: howto
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [gcp, cloud-logging, url, observability, howto]
+tags:
+- gcp
+- cloud-logging
+- url
+- observability
+- howto
+title: Deep-link a Google Cloud Logging query into the console via URL
+type: howto
 ---
 
 # Deep-link a Google Cloud Logging query into the console via URL
@@ -29,3 +38,14 @@ Generate reliably with Python `urllib.parse.quote(q, safe="")`. Reader needs no 
 ## Related
 
 - [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resolve Cloud Logging share links via redirect Location header]]
+- [[Cloud Logging share link endTime can truncate a job's logs mid-run]]
+- [[gcloud logging read --freshness is unreliable with broad OR filters; use explicit timestamp bound]]
+- [[PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud]]
+- [[gcloud logging read --order=asc silently ignores --freshness]]
+
+%% ai-graph-end %%

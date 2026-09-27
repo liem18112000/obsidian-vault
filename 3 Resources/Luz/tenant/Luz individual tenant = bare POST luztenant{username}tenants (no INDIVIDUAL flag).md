@@ -1,10 +1,21 @@
 ---
-title: "Luz individual tenant = bare POST /luztenant/{username}/tenants (no INDIVIDUAL flag)"
+ai_hash: 9b4c5b331d084372
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: howto
+entities: []
+source: session 2026-08-17 · luz_docs_integration_test investigation
 status: seedling
-source: "session 2026-08-17 · luz_docs_integration_test investigation"
-tags: [luz, tenant, luztenant, luzsec, k6, gotcha]
+tags:
+- luz
+- tenant
+- luztenant
+- luzsec
+- k6
+- gotcha
+title: Luz individual tenant = bare POST /luztenant/{username}/tenants (no INDIVIDUAL
+  flag)
+type: howto
 ---
 
 # Luz individual tenant = bare POST /luztenant/{username}/tenants (no INDIVIDUAL flag)
@@ -29,3 +40,14 @@ Source files in the IT repo: `core/service/tenant_creation_service.py`, `core/se
 ## Related
 
 - [[luz-docs-import zip import flow]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz 403 Not allowed means the token has no tenant claim, not a missing permission]]
+- [[Local access to GKE-hosted Luz services port-forward api-forwarder + luz-vault (+ mongo pod)]]
+- [[Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards]]
+- [[luz_docs_integration_test Gherkin and step-definition conventions]]
+- [[senderTenantId is out of scope in luz_docs_import health ZIP import]]
+
+%% ai-graph-end %%

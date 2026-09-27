@@ -1,10 +1,20 @@
 ---
-title: "Jira MCP markdown-to-ADF: bold immediately before inline code renders off"
+ai_hash: 59c49e0ad87dbec9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: gotcha
+entities: []
+source: session 2026-09-08
 status: seedling
-source: "session 2026-09-08"
-tags: [atlassian, jira, mcp, markdown, adf, gotcha]
+tags:
+- atlassian
+- jira
+- mcp
+- markdown
+- adf
+- gotcha
+title: 'Jira MCP markdown-to-ADF: bold immediately before inline code renders off'
+type: gotcha
 ---
 
 # Jira MCP markdown-to-ADF: bold immediately before inline code renders off
@@ -20,3 +30,10 @@ Related: [[Atlassian MCP has no delete-comment tool; edit via commentId on addCo
 ## Related
 
 - [[Atlassian MCP has no delete-comment tool; edit via commentId on addCommentToJiraIssue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian MCP has no delete-comment tool; edit via commentId on addCommentToJiraIssue]]
+
+%% ai-graph-end %%

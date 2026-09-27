@@ -1,10 +1,18 @@
 ---
-title: "mcp Python SDK 2.x renamed FastMCP to MCPServer"
+ai_hash: ff5b2f4abe957139
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [mcp, python, gotcha, sdk]
+tags:
+- mcp
+- python
+- gotcha
+- sdk
+title: mcp Python SDK 2.x renamed FastMCP to MCPServer
+type: lesson
 ---
 
 # mcp Python SDK 2.x renamed FastMCP to MCPServer
@@ -20,3 +28,14 @@ See [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]].
 ## Related
 
 - [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Expose an app as an MCP server by wrapping the same services container the webCLI use]]
+- [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
+- [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]]
+- [[ADK has no native MCP server; expose an agent to Claude Code via an A2A-to-MCP bridge]]
+- [[MCP tools load at client startup registering mid-session doesn't expose them until restart]]
+
+%% ai-graph-end %%

@@ -1,10 +1,53 @@
 ---
-title: "Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards"
+ai_hash: 35c02bc83b274939
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: howto
+entities:
+- luz-jsonstore
+- GKE Mongo
+- port-forwards
+- tenant
+- luz-mongodb0N
+- dev-mongodb-clusters
+- app
+- PRIMARY member
+- db.hello().primary
+- mongosh
+- mongod container
+- kubectl
+- api-forwarder
+- security
+- luz-vault
+- dev
+- docker-compose
+- CH_KLARA_JSONSTORE_RS00
+- CH_KLARA_JSONSTORE_RS01
+- CREATE_DB_RS
+- OPS_RS
+- host.docker.internal
+- LUZ_SEC_HOST_PORT
+- LUZ_VAULT_HOST_PORT
+- Docker Desktop
+- vault
+- bearer token
+- luz-skill-get-token
+- replica set
+- JAX-RS
+- MessageBodyReader
+- MessageBodyWriter
+- applicationbson media type
+- luz-mongodb0N-cluster-rs-0 pod
+source: session 2026-08-25
 status: seedling
-source: "session 2026-08-25"
-tags: [luz-jsonstore, mongodb, kubectl, port-forward, docker]
+tags:
+- luz-jsonstore
+- mongodb
+- kubectl
+- port-forward
+- docker
+title: Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards
+type: howto
 ---
 
 # Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards
@@ -21,3 +64,49 @@ The container reaches host-bound port-forwards via host.docker.internal on Docke
 ## Related
 
 - [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Local access to GKE-hosted Luz services port-forward api-forwarder + luz-vault (+ mongo pod)]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+- [[Build and roll out luz-jsonstore to dev (Cloud Build trigger + Deployment rollout)]]
+- [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080]]
+- [[Reuse an existing kubectl port-forward for ad-hoc mongo scripts]]
+
+**Relations:**
+- luz-jsonstore — *runs against* — GKE Mongo
+- luz-jsonstore — *uses* — port-forwards
+- GKE Mongo — *stores data for* — tenant
+- luz-mongodb0N — *is a* — tenant
+- luz-mongodb0N — *is in namespace* — dev-mongodb-clusters
+- app — *connects to* — PRIMARY member
+- PRIMARY member — *identified by* — db.hello().primary
+- db.hello().primary — *executed in* — mongosh
+- mongosh — *runs in* — mongod container
+- kubectl — *performs* — port-forwards
+- port-forwards — *targets* — luz-mongodb0N-cluster-rs-0 pod
+- api-forwarder — *is forwarded* — 8080
+- api-forwarder — *provides* — security
+- luz-vault — *is forwarded* — 8200
+- api-forwarder — *is in namespace* — dev
+- luz-vault — *is in namespace* — dev
+- docker-compose — *sets environment variable* — CH_KLARA_JSONSTORE_RS00
+- docker-compose — *sets environment variable* — CH_KLARA_JSONSTORE_RS01
+- docker-compose — *sets environment variable* — CREATE_DB_RS
+- docker-compose — *sets environment variable* — OPS_RS
+- CH_KLARA_JSONSTORE_RS00 — *points to* — host.docker.internal
+- docker-compose — *sets environment variable* — LUZ_SEC_HOST_PORT
+- docker-compose — *sets environment variable* — LUZ_VAULT_HOST_PORT
+- LUZ_SEC_HOST_PORT — *points to* — host.docker.internal
+- LUZ_VAULT_HOST_PORT — *points to* — host.docker.internal
+- luz-jsonstore — *container reaches* — host.docker.internal
+- host.docker.internal — *is on* — Docker Desktop
+- getPassword — *needs* — vault
+- requests — *need* — bearer token
+- luz-skill-get-token — *issues* — bearer token
+- bearer token — *issued via* — api-forwarder
+- replica set — *can* — fail over
+- luz-jsonstore — *related to* — Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer
+
+%% ai-graph-end %%

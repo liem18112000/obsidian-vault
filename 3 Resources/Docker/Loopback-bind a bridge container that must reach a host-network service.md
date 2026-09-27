@@ -1,10 +1,19 @@
 ---
-title: "Loopback-bind a bridge container that must reach a host-network service"
+ai_hash: 48afdf5ca7a2fa78
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: howto
+entities: []
+source: session 2026-08-25 (leo-customer360 redis viewer)
 status: seedling
-source: "session 2026-08-25 (leo-customer360 redis viewer)"
-tags: [docker, networking, host-gateway, security, gotcha]
+tags:
+- docker
+- networking
+- host-gateway
+- security
+- gotcha
+title: Loopback-bind a bridge container that must reach a host-network service
+type: howto
 ---
 
 # Loopback-bind a bridge container that must reach a host-network service
@@ -21,3 +30,14 @@ Add HTTP basic auth as defense-in-depth regardless. Surfaced deploying redis-com
 ## Related
 
 - [[Co-located --network host box hides cross-box firewall hops]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Docker hostname for reaching a service depends on where the caller runs]]
+- [[Co-located --network host box hides cross-box firewall hops]]
+- [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
+- [[Rancher Desktop don't pin host.docker.internal to host-gateway]]
+- [[Scale one uvicorn service into N replicas on one VM with a docker bridge + local nginx LB]]
+
+%% ai-graph-end %%

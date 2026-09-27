@@ -1,10 +1,21 @@
 ---
-title: "CoreDNS liveness/readiness 404 means probe path-port mismatch, not a CoreDNS crash"
+ai_hash: f873ca31765815ff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [coredns, dns, kubernetes, liveness-probe, gotcha, luz]
+tags:
+- coredns
+- dns
+- kubernetes
+- liveness-probe
+- gotcha
+- luz
+title: CoreDNS liveness/readiness 404 means probe path-port mismatch, not a CoreDNS
+  crash
+type: lesson
 ---
 
 # CoreDNS liveness/readiness 404 means probe path-port mismatch, not a CoreDNS crash
@@ -34,3 +45,14 @@ Seen in Luz PROD: a self-managed `coredns-custom` (CoreDNS 1.12.4) crash-looped 
 
 - [[MongoTimeoutException from UnknownHostException is a DNS fault]]
 - [[not DB overload]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
+- [[Luz DNS storm gate is both CoreDNS replicas down together plus morning load, not enrichment volume]]
+- [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+- [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
+- [[KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too]]
+
+%% ai-graph-end %%

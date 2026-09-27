@@ -1,10 +1,21 @@
 ---
-title: "Track releases + roll back via GitHub Deployments API and workflow_dispatch (not Postgres — private DB)"
+ai_hash: 0277c4fa046215d2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-21
-type: howto
+entities: []
+source: session 2026-08-21, leo-customer360 release tracking
 status: seedling
-source: "session 2026-08-21, leo-customer360 release tracking"
-tags: [github-actions, deployments-api, rollback, workflow-dispatch, cd, release-management]
+tags:
+- github-actions
+- deployments-api
+- rollback
+- workflow-dispatch
+- cd
+- release-management
+title: Track releases + roll back via GitHub Deployments API and workflow_dispatch
+  (not Postgres — private DB)
+type: howto
 ---
 
 # Track releases + roll back via GitHub Deployments API and workflow_dispatch (not Postgres — private DB)
@@ -23,3 +34,14 @@ Gotchas: `POST /deployments` needs `required_contexts: []` + `auto_merge:false` 
 
 - [[Chain a CD workflow after CI with workflow_run]]
 - [[gating on conclusion and ref]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+- [[leo-customer360 CD UAT deploys only from main + --deploy-uat marker]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh]]
+
+%% ai-graph-end %%

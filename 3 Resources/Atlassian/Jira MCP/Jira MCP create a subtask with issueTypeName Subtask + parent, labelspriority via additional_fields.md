@@ -1,10 +1,20 @@
 ---
-title: "Jira MCP: create a subtask with issueTypeName Subtask + parent, labels/priority via additional_fields"
+ai_hash: f9c3e32f66ed6e38
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: howto
+entities: []
+source: session 2026-09-08
 status: seedling
-source: "session 2026-09-08"
-tags: [atlassian, jira, mcp, subtask, howto]
+tags:
+- atlassian
+- jira
+- mcp
+- subtask
+- howto
+title: 'Jira MCP: create a subtask with issueTypeName Subtask + parent, labels/priority
+  via additional_fields'
+type: howto
 ---
 
 # Jira MCP: create a subtask with issueTypeName Subtask + parent, labels/priority via additional_fields
@@ -21,3 +31,12 @@ Related: [[Atlassian MCP has no delete-comment tool; edit via commentId on addCo
 ## Related
 
 - [[Atlassian MCP has no delete-comment tool; edit via commentId on addCommentToJiraIssue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian MCP has no delete-comment tool; edit via commentId on addCommentToJiraIssue]]
+- [[Jira CSV import builds Story to Sub-task hierarchy via Issue Id and Parent Id columns]]
+- [[Atlassian MCP createIssueLink Blocks inwardIssue is the blocker]]
+
+%% ai-graph-end %%

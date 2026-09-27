@@ -1,10 +1,20 @@
 ---
-title: "Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud"
+ai_hash: 835cadc5d5e0e840
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [terraform, vngcloud, vstorage, s3, object-storage, gotcha]
+tags:
+- terraform
+- vngcloud
+- vstorage
+- s3
+- object-storage
+- gotcha
+title: Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud
+type: lesson
 ---
 
 # Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud
@@ -25,3 +35,14 @@ See [[vStorage S3 keys differ from vIAM client credentials used by vDB]].
 ## Related
 
 - [[vStorage S3 keys differ from vIAM client credentials used by vDB]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
+- [[VNG Cloud vStorage is S3-compatible object storage]]
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+- [[vStorage S3 keys differ from vIAM client credentials used by vDB]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+
+%% ai-graph-end %%

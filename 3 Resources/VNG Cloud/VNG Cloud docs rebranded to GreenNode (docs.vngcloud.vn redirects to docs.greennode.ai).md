@@ -1,10 +1,18 @@
 ---
-title: "VNG Cloud docs rebranded to GreenNode (docs.vngcloud.vn redirects to docs.greennode.ai)"
+ai_hash: cfcd948fe001d2a2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: reference
+entities: []
+source: session 2026-08-26
 status: seedling
-source: "session 2026-08-26"
-tags: [vng-cloud, greennode, docs, gotcha]
+tags:
+- vng-cloud
+- greennode
+- docs
+- gotcha
+title: VNG Cloud docs rebranded to GreenNode (docs.vngcloud.vn redirects to docs.greennode.ai)
+type: reference
 ---
 
 # VNG Cloud docs rebranded to GreenNode (docs.vngcloud.vn redirects to docs.greennode.ai)
@@ -18,3 +26,14 @@ Related: [[VNG Cloud publishes no static price tables — calculator or quote on
 ## Related
 
 - [[VNG Cloud publishes no static price tables — calculator or quote only]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]]
+- [[VNG Cloud publishes no static price tables — calculator or quote only]]
+- [[GreenNode is VNG Cloud's AI cloud exposing vDB and vStorage managed services]]
+- [[GreenNode cloud runs on VNG Cloud infrastructure]]
+- [[VNG Cloud VKS control plane is free; worker nodes billed as vServer VMs]]
+
+%% ai-graph-end %%

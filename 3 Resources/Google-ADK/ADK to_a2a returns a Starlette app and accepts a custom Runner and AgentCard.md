@@ -1,10 +1,18 @@
 ---
-title: "ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard"
+ai_hash: 9282b457f06e4992
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: lesson
+entities: []
+source: A.0 build 2026-09-07, google-adk 2.8.0
 status: seedling
-source: "A.0 build 2026-09-07, google-adk 2.8.0"
-tags: [google-adk, a2a, serving, starlette]
+tags:
+- google-adk
+- a2a
+- serving
+- starlette
+title: ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard
+type: lesson
 ---
 
 # ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard
@@ -20,3 +28,14 @@ Because it returns a **Starlette** instance, you can still `app.add_middleware(.
 
 - [[ADK DatabaseSessionService needs the db extra and an async SQLAlchemy driver]]
 - [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction]]
+- [[ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard]]
+- [[How ADK agents are deployed adk deploy cloud_run agent_engine gke + get_fast_api_app]]
+- [[a2a-sdk serves the agent card at agent-card.json (new) or agent.json (old)]]
+- [[A2A to_a2a task_store and runner are separate persistence params]]
+
+%% ai-graph-end %%

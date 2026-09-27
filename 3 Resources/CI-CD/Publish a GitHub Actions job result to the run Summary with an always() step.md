@@ -1,10 +1,18 @@
 ---
-title: "Publish a GitHub Actions job result to the run Summary with an always() step"
+ai_hash: 8dd9a4fbc77cd83a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: howto
+entities: []
+source: session 2026-08-24 dbmate CI
 status: seedling
-source: "session 2026-08-24 dbmate CI"
-tags: [github-actions, ci, step-summary, bash]
+tags:
+- github-actions
+- ci
+- step-summary
+- bash
+title: Publish a GitHub Actions job result to the run Summary with an always() step
+type: howto
 ---
 
 # Publish a GitHub Actions job result to the run Summary with an always() step
@@ -35,3 +43,14 @@ Related: [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]].
 
 - [[leo-customer360 uses dbmate for Postgres migrations]]
 - [[not Alembic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Track releases + roll back via GitHub Deployments API and workflow_dispatch (not Postgres — private DB)]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+
+%% ai-graph-end %%

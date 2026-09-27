@@ -1,3 +1,10 @@
+---
+ai_hash: f70eee3ca90bedb6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
+---
+
 > [!warning] CORRECTED 2026-09-09 (cross-check vs reference artifact + PROD re-verification)
 > The root cause is **DNS**, not MongoDB saturation. The `MongoTimeoutException` storm is caused by **`java.net.UnknownHostException`** resolving the mongod hostnames (`*.prod-mongodb-clusters.svc.cluster.local`) — 2,000+ in the crash window, ~all in luz-jsonstore — while **`coredns-custom` fails its liveness probe (HTTP 404) and is killed/restarted every few minutes**. The MongoDBs were UP; slowest real query ~2.4s. The 90-109s "latencies" were requests blocked on DNS/server-selection retries, NOT heavy queries. The enrichment/dose-response correlation is REAL but is an **amplifier hypothesis** (luz-jsonstore creates MongoClients per tenant → floods DNS), not DB overload. Do not assert OOM/saturation. See [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]].
 
@@ -36,3 +43,14 @@ Fix levers: throttle the campaign concurrency + find why re-runs spiked; index `
 - [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
 - [[luz-jsonstore backup double-scans every collection every 5 minutes]]
 - [[Luz tenant mongod logs are not in klara-prod Cloud Logging]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore into Mongo]]
+- [[Luz DNS storm gate is both CoreDNS replicas down together plus morning load, not enrichment volume]]
+- [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
+- [[Luz tenant mongod logs are not in klara-prod Cloud Logging]]
+- [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+
+%% ai-graph-end %%

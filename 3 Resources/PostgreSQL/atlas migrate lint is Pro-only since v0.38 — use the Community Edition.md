@@ -1,10 +1,19 @@
 ---
-title: "atlas migrate lint is Pro-only since v0.38 — use the Community Edition"
+ai_hash: ee3bca21173e5f16
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: gotcha
+entities: []
+source: session 2026-08-24 CI failure investigation
 status: seedling
-source: "session 2026-08-24 CI failure investigation"
-tags: [atlas, migrations, ci, gotcha, licensing]
+tags:
+- atlas
+- migrations
+- ci
+- gotcha
+- licensing
+title: atlas migrate lint is Pro-only since v0.38 — use the Community Edition
+type: gotcha
 ---
 
 # atlas migrate lint is Pro-only since v0.38 — use the Community Edition
@@ -31,3 +40,13 @@ Ref: https://atlasgo.io/blog-v038#change-in-v038-atlas-migrate-lint . Related: [
 ## Outcome (leo-customer360)
 
 We **removed Atlas lint from CI entirely**, not just switched to the Community Edition. The community binary installs fine but still FAILS `migrate lint` on our migrations: lint replays them against a dev DB, and our seed migration is heavy **DML** (`INSERT INTO customer360.cdp_event_catalog ...`) which Atlas errors on — Atlas is a *schema* analyzer, not built to replay data + RLS/DO-block migrations. Same misfit that made us pick dbmate over Atlas as the runner. Replaced it with a tool-agnostic gate: `dbmate up` from zero, then TRUNCATE `schema_migrations` and replay on the populated DB asserting `Pending: 0` (idempotency). No third-party licensing in the hot path.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+- [[A self-contained migration parity test is only useful during the cutover]]
+
+%% ai-graph-end %%

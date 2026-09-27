@@ -1,10 +1,19 @@
 ---
-title: "vngcloud_vdb_kafka_topic exposes only retention, not cleanup.policy"
+ai_hash: 7caa6857e62b13be
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [terraform, vngcloud, kafka, compaction, gotcha]
+tags:
+- terraform
+- vngcloud
+- kafka
+- compaction
+- gotcha
+title: vngcloud_vdb_kafka_topic exposes only retention, not cleanup.policy
+type: lesson
 ---
 
 # vngcloud_vdb_kafka_topic exposes only retention, not cleanup.policy
@@ -16,3 +25,14 @@ To get a compacted topic (e.g. a `profile-resolved` change-log keyed by `master_
 ## Related
 - [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
 - [[LEO Customer360 GreenNode Terraform infrastructure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Customer360 CDP Kafka ingestion topic layout]]
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+- [[LEO Customer360 GreenNode Terraform infrastructure]]
+- [[vngcloud_vdb_postgresql_cluster ignores backup_auto (cluster backups go via VNG Backup Center)]]
+- [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+
+%% ai-graph-end %%

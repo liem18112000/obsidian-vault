@@ -1,10 +1,20 @@
 ---
-title: "test-agent-v2 Redis VPC connector stuck in ERROR (CIDR/network misconfig)"
+ai_hash: 57c0656821d33e5d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: Testing-Agent deploy 3a39108-report
 status: seedling
-source: "Testing-Agent deploy 3a39108-report"
-tags: [testing-agent, deploy, terraform, redis, vpc-connector, gotcha]
+tags:
+- testing-agent
+- deploy
+- terraform
+- redis
+- vpc-connector
+- gotcha
+title: test-agent-v2 Redis VPC connector stuck in ERROR (CIDR/network misconfig)
+type: lesson
 ---
 
 # test-agent-v2 Redis VPC connector stuck in ERROR (CIDR/network misconfig)
@@ -35,3 +45,14 @@ The CIDR/network theory above was disproven. `10.8.0.0/28` does NOT overlap any 
 **Fix:** add to the resource — `min_instances = 2` and `max_instances = 3` (the minimums for the default e2-micro machine type; max_instances must be > min_instances). Then DELETE the ERROR connector (`gcloud compute networks vpc-access connectors delete kga-v2-cache-conn --region=europe-west6 --quiet`) so terraform recreates it cleanly.
 
 **Debugging lesson:** don't trust the surface `409 already exists` from the retry — DELETE the ERROR resource and let the FIRST create run to see the true `Error code 3` message. And an ERROR-state connector must be deleted+recreated, never imported.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 Redis deploy blocked by vpcaccess.connectors.create IAM denial]]
+- [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+- [[redis_proxy.sh needs compute firewall + VM + IAP permissions]]
+- [[Cloud Run v2 service design gotchas]]
+- [[Stale terraform state != live cloud — verify with gcloud before deleting a retired deployment]]
+
+%% ai-graph-end %%

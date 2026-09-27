@@ -1,10 +1,18 @@
 ---
-title: "Windows Python stdout is cp1252 and crashes on emoji; reconfigure to UTF-8"
+ai_hash: 0f95aa1fcd9cb74f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: lesson
+entities: []
+source: session 2026-08-11 luz-docs-import Gap-3 testing
 status: seedling
-source: "session 2026-08-11 luz-docs-import Gap-3 testing"
-tags: [python, windows, unicode, gotcha]
+tags:
+- python
+- windows
+- unicode
+- gotcha
+title: Windows Python stdout is cp1252 and crashes on emoji; reconfigure to UTF-8
+type: lesson
 ---
 
 # Windows Python stdout is cp1252 and crashes on emoji; reconfigure to UTF-8
@@ -29,3 +37,14 @@ Bit me twice while testing luz-docs-import: the verifier `verify_gap3.py` crashe
 ## Related
 
 - [[ZIP entry names decode as CP437 mojibake when the UTF-8 EFS flag is unset]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Windows cp1252 console crashes on non-ASCII Python prints; force UTF-8]]
+- [[A charmap UnicodeEncodeError can kill a script before it writes its output file]]
+- [[ZIP entry names decode as CP437 mojibake when the UTF-8 EFS flag is unset]]
+- [[Windows Git Bash mangles non-ASCII to cp1252 breaking UTF-8]]
+- [[Excalidraw file stores clean UTF-8 glyphs; console mojibake is a false alarm]]
+
+%% ai-graph-end %%

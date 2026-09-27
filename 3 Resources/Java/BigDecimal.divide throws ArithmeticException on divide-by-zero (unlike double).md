@@ -1,10 +1,18 @@
 ---
-title: "BigDecimal.divide throws ArithmeticException on divide-by-zero (unlike double)"
+ai_hash: af3e47a17f87e9bf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: lesson
+entities: []
+source: session 2026-08-24 ecomart-java analysis
 status: seedling
-source: "session 2026-08-24 ecomart-java analysis"
-tags: [java, bigdecimal, gotcha, arithmetic]
+tags:
+- java
+- bigdecimal
+- gotcha
+- arithmetic
+title: BigDecimal.divide throws ArithmeticException on divide-by-zero (unlike double)
+type: lesson
 ---
 
 # BigDecimal.divide throws ArithmeticException on divide-by-zero (unlike double)
@@ -22,3 +30,10 @@ return numerator.divide(divisor, RoundingMode.HALF_UP);
 ```
 
 Use `compareTo(BigDecimal.ZERO) == 0` (not `equals(BigDecimal.ZERO)`, which is false for `0.00` due to differing scale).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

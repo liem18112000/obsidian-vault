@@ -1,10 +1,20 @@
 ---
-title: "leo-customer360: Redis is a fail-open cache/auth-cache/rate-limiter used only by customer360-api"
+ai_hash: 1e7ed466843819da
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: reference
+entities: []
+source: session 2026-08-18 customer360-api/core/cache.py
 status: seedling
-source: "session 2026-08-18 customer360-api/core/cache.py"
-tags: [customer360, redis, cache, fastapi, architecture]
+tags:
+- customer360
+- redis
+- cache
+- fastapi
+- architecture
+title: 'leo-customer360: Redis is a fail-open cache/auth-cache/rate-limiter used only
+  by customer360-api'
+type: reference
 ---
 
 # leo-customer360: Redis is a fail-open cache/auth-cache/rate-limiter used only by customer360-api
@@ -18,3 +28,14 @@ In the leo-customer360 stack, **Redis is used ONLY by `customer360-api`** (the F
 Config (pydantic settings / env): `REDIS_HOST` (default localhost), `REDIS_PORT` (default **6580**, non-standard), `REDIS_DB` (0), `REDIS_PASSWORD`, `CACHE_ENABLED` (default true), `CACHE_TTL_SECONDS` (60). In docker-compose it is a custom image (`./redis`), password-protected (`--requirepass`), 256MB cap, persistent `customer360-redisdata` volume.
 
 DEPLOYMENT NOTE: when customer360-api is deployed WITHOUT setting REDIS_* and without a Redis instance (e.g. the single-VM docker run), it defaults to localhost:6580, finds nothing, and fails open -> caching + rate-limiting are effectively OFF and every request hits Postgres directly. The API still works; it just loses the cache/throttle. VNG offers managed Redis via vDB MemStore (`vngcloud_vdb_memstore_*`) if you want a real instance.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+- [[leo-customer360 service dependency + health-probe map]]
+- [[LEO CDP environment version drift local PG16Redis8 vs managed PG15Redis7]]
+- [[Customer360 redis.conf omits port so redis listens on 6379 not 6580]]
+- [[Customer360 UAT api box is a shared 1vCPU-2GB vServer running 5 containers]]
+
+%% ai-graph-end %%

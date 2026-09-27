@@ -1,10 +1,19 @@
 ---
-title: "VNG Cloud VKS control plane is free; worker nodes billed as vServer VMs"
+ai_hash: 0710c64d3827b8aa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: concept
+entities: []
+source: session 2026-08-26 leo-customer360 VKS research
 status: seedling
-source: "session 2026-08-26 leo-customer360 VKS research"
-tags: [vng-cloud, vks, kubernetes, pricing, greennode]
+tags:
+- vng-cloud
+- vks
+- kubernetes
+- pricing
+- greennode
+title: VNG Cloud VKS control plane is free; worker nodes billed as vServer VMs
+type: concept
 ---
 
 # VNG Cloud VKS control plane is free; worker nodes billed as vServer VMs
@@ -23,3 +32,14 @@ Related: [[VNG Cloud publishes no static price tables — calculator or quote on
 
 - [[VNG Cloud publishes no static price tables — calculator or quote only]]
 - [[VNG Cloud docs rebranded to GreenNode (docs.vngcloud.vn redirects to docs.greennode.ai)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud publishes no static price tables — calculator or quote only]]
+- [[VNG Cloud docs rebranded to GreenNode (docs.vngcloud.vn redirects to docs.greennode.ai)]]
+- [[GreenNode cloud runs on VNG Cloud infrastructure]]
+- [[VNG Cloud has KMS (keys only) but no managed secrets manager or parameter store]]
+- [[VNG Cloud vStorage is S3-compatible object storage]]
+
+%% ai-graph-end %%

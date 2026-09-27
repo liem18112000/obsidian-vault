@@ -1,10 +1,21 @@
 ---
-title: "Fail-open service config: render the instance config at container start from backend probes"
+ai_hash: b1cc7ed3793be7b4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: leo-customer360 Phase 0 fail-open, 2026-09-03
 status: seedling
-source: "leo-customer360 Phase 0 fail-open, 2026-09-03"
-tags: [deployment, resilience, docker, kubernetes, dagster, pattern]
+tags:
+- deployment
+- resilience
+- docker
+- kubernetes
+- dagster
+- pattern
+title: 'Fail-open service config: render the instance config at container start from
+  backend probes'
+type: lesson
 ---
 
 # Fail-open service config: render the instance config at container start from backend probes
@@ -27,3 +38,14 @@ Consequences to call out:
 ## Related
 
 - [[Dagster auto-creates its tables but not the database]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+- [[Dagster auto-creates its tables but not the database]]
+- [[Dagster { env VAR } config is resolved in the run-worker subprocess, so the var must be in the container env]]
+- [[Health checks should probe dependencies and split critical vs fail-open]]
+- [[Dagster S3ComputeLogManager credentials via boto3 env, path-style via AWS config file]]
+
+%% ai-graph-end %%

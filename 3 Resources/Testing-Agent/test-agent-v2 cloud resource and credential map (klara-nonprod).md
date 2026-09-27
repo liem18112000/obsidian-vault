@@ -1,10 +1,19 @@
 ---
-title: "test-agent-v2 cloud resource and credential map (klara-nonprod)"
+ai_hash: 890d408f86fc6c91
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-13
-type: reference
+entities: []
+source: session 2026-09-13
 status: seedling
-source: "session 2026-09-13"
-tags: [testing-agent, gcp, cloud-run, cloudsql, v2]
+tags:
+- testing-agent
+- gcp
+- cloud-run
+- cloudsql
+- v2
+title: test-agent-v2 cloud resource and credential map (klara-nonprod)
+type: reference
 ---
 
 # test-agent-v2 cloud resource and credential map (klara-nonprod)
@@ -24,3 +33,14 @@ Source of truth for the non-secret config is `deployments/test-agent-v2/terrafor
 ## Related
 
 - [[Wipe test-agent-v2 memory and taskstore via test-agent-v2/tools]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Wipe test-agent-v2 memory and taskstore via test-agent-v2tools]]
+- [[Deploying the test-agent-v2 Cloud Run stack (names, tags, plan)]]
+- [[test-agent-v2 Cloud Run services use a -v2 name suffix]]
+- [[Testing-Agent GCS memory bank one bucket, memory root, five subfolders]]
+- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+
+%% ai-graph-end %%

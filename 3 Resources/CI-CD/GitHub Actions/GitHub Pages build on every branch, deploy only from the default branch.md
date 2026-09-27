@@ -1,10 +1,20 @@
 ---
-title: "GitHub Pages: build on every branch, deploy only from the default branch"
+ai_hash: 6a4465c8398d2a9c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: lesson
+entities: []
+source: session 2026-09-05 (leo-customer360 Quartz deploy workflow)
 status: seedling
-source: "session 2026-09-05 (leo-customer360 Quartz deploy workflow)"
-tags: [github-actions, github-pages, ci-cd, quartz, deploy, gotcha]
+tags:
+- github-actions
+- github-pages
+- ci-cd
+- quartz
+- deploy
+- gotcha
+title: 'GitHub Pages: build on every branch, deploy only from the default branch'
+type: lesson
 ---
 
 # GitHub Pages: build on every branch, deploy only from the default branch
@@ -25,3 +35,14 @@ To "run on every commit but only rebuild when relevant files changed", drop the 
 - Why prefer this over `on.push.paths`: the run always registers as a check (useful for branch-protection required checks), and skip logic lives in one place you can extend.
 
 Related: [[Enumerate a whole-repo docs site with git ls-files, filter with a separate ignore file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Docs Site deploy-docs.yml detect job skips build unless docs paths change]]
+- [[GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags]]
+- [[git push sends current branch to its upstream not same-name branch]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+- [[Publish every CI build via a rolling latest pre-release on GitHub]]
+
+%% ai-graph-end %%

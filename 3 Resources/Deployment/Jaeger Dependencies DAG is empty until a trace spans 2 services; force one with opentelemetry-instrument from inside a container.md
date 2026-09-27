@@ -1,10 +1,20 @@
 ---
-title: "Jaeger Dependencies DAG is empty until a trace spans 2 services; force one with opentelemetry-instrument from inside a container"
+ai_hash: c0de2cb08d2ce998
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: leo-customer360 uat, session 2026-08-23
 status: seedling
-source: "leo-customer360 uat, session 2026-08-23"
-tags: [jaeger, opentelemetry, tracing, dag, leo-customer360]
+tags:
+- jaeger
+- opentelemetry
+- tracing
+- dag
+- leo-customer360
+title: Jaeger Dependencies DAG is empty until a trace spans 2 services; force one
+  with opentelemetry-instrument from inside a container
+type: lesson
 ---
 
 # Jaeger Dependencies DAG is empty until a trace spans 2 services; force one with opentelemetry-instrument from inside a container
@@ -26,3 +36,14 @@ Key point: a plain `docker exec python ...` is NOT traced — the auto-instrumen
 **Finding:** Jaeger all-in-one with **badger** storage DOES compute the DAG from stored spans (edges appeared within seconds of the cross-service traces, no spark-dependencies job). The spark-dependencies batch job is only needed for Elasticsearch/Cassandra backends.
 
 Source: leo-customer360 uat (customer360-api -> ads-server / frontend-admin), 2026-08-23.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP]]
+- [[leo-customer360 tracing OTel off-by-default on UAT, on at 10% on PROD]]
+- [[Jaeger all-in-one on the shared vServer image-tag, Netdata 4317, and badger-perms gotchas]]
+- [[docker restart does not re-read --env-file; recreate the container to apply env changes]]
+- [[leo-customer360 service dependency + health-probe map]]
+
+%% ai-graph-end %%

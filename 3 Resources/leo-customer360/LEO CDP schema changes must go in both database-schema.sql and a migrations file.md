@@ -1,10 +1,19 @@
 ---
-title: "LEO CDP schema changes must go in both database-schema.sql and a migrations file"
+ai_hash: 70350303ed3257b6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: SCRUM-93 session 2026-09-09
 status: seedling
-source: "SCRUM-93 session 2026-09-09"
-tags: [leo-customer360, postgres, migrations, gotcha]
+tags:
+- leo-customer360
+- postgres
+- migrations
+- gotcha
+title: LEO CDP schema changes must go in both database-schema.sql and a migrations
+  file
+type: lesson
 ---
 
 # LEO CDP schema changes must go in both database-schema.sql and a migrations file
@@ -23,3 +32,14 @@ First hit: SCRUM-93 / SUBTASK-01 (agentic email-marketing schema foundation).
 ## Related
 
 - [[Run a throwaway PostgreSQL on Windows via the pgserver pip package]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 applies DB schema via two paths that must stay in sync]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[Postgres docker-entrypoint-initdb.d runs only once on an empty volume]]
+- [[CREATE TABLE IF NOT EXISTS cannot express a rename]]
+
+%% ai-graph-end %%

@@ -1,10 +1,22 @@
 ---
-title: "Track pooled MongoClients in a shutdown registry instead of closing on cache eviction"
+ai_hash: e718b962ea5f1fb4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: lesson
+entities: []
+source: session 2026-08-26
 status: seedling
-source: "session 2026-08-26"
-tags: [mongodb, mongoclient, lifecycle, luz-jsonstore, cdi, concurrency, gotcha]
+tags:
+- mongodb
+- mongoclient
+- lifecycle
+- luz-jsonstore
+- cdi
+- concurrency
+- gotcha
+title: Track pooled MongoClients in a shutdown registry instead of closing on cache
+  eviction
+type: lesson
 ---
 
 # Track pooled MongoClients in a shutdown registry instead of closing on cache eviction
@@ -22,3 +34,14 @@ Wiring (in an `@ApplicationScoped` factory): `openClients.add(client)` on succes
 ## Related
 
 - [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cache one MongoClient per tenant and close it on eviction]]
+- [[Don't liveness-ping a cached DB client on every call]]
+- [[putIfAbsent(Supplier) runs the loader under a global write lock]]
+- [[Semaphore acquire before try leaks permits on static semaphores]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+
+%% ai-graph-end %%

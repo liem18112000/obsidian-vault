@@ -1,10 +1,21 @@
 ---
-title: "luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000"
+ai_hash: f5e79c562d1b8247
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: howto
+entities: []
+source: session 2026-08-11 luz_docs_import apply-file-store
 status: seedling
-source: "session 2026-08-11 luz_docs_import apply-file-store"
-tags: [kubernetes, filestore, luz, nfs, securitycontext, reference]
+tags:
+- kubernetes
+- filestore
+- luz
+- nfs
+- securitycontext
+- reference
+title: 'luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser
+  1000'
+type: howto
 ---
 
 # luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000
@@ -41,3 +52,14 @@ The PVC `luz-filestore-share-pvc` is provisioned per-env in `kubernetes-overlays
 
 - [[FilestoreUtils temp-path scheme and mount config resolution]]
 - [[Luz shared Filestore has an automated cleanup cronjob with per-env subPath prefixes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz shared Filestore has an automated cleanup cronjob with per-env subPath prefixes]]
+- [[FilestoreUtils temp-path scheme and mount config resolution]]
+- [[luz-docs-import k8s is a StatefulSet with a 300Gi block-disk temp VCT for upload and tmp]]
+- [[FilestoreUtils mount must pre-exist; SimpleTemporaryStorage defers the fail-fast check to first use]]
+- [[Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned JSON"
+ai_hash: 9c3cae2e93ccb06b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: howto
+entities: []
+source: test-agent-v2 D15/D16 LlmAgent work, session 2026-09-08
 status: seedling
-source: "test-agent-v2 D15/D16 LlmAgent work, session 2026-09-08"
-tags: [google-adk, llmagent, output-schema, testing, offline, pydantic]
+tags:
+- google-adk
+- llmagent
+- output-schema
+- testing
+- offline
+- pydantic
+title: Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned
+  JSON
+type: howto
 ---
 
 # Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned JSON
@@ -35,3 +46,14 @@ Used across KGA/TPD LlmAgent conversions (test-agent-v2). See [[ADK to_a2a auto-
 
 - [[ADK to_a2a builds A2A routes on ASGI lifespan startup]]
 - [[not at construction]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK LlmAgent with output_schema cannot use tools or transfer to other agents]]
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+- [[Concurrent in-process ADK Runners return simultaneously-empty output]]
+- [[Pluggable LLM via the litellm ModelProvider backend]]
+
+%% ai-graph-end %%

@@ -1,10 +1,51 @@
 ---
-title: "loads_obj largest-span rule returns the tool-call envelope so JudgeVerdict silently scored 0.0"
+ai_hash: 6783340a8aeb79c5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities:
+- loads_obj largest-span rule
+- JudgeVerdict
+- test-agent-v2
+- common/llm/parse.loads_obj
+- LLM reply
+- JSON object
+- Claude-on-Vertex
+- tool-call envelope
+- pydantic
+- overall score
+- assured-loop LLM judge
+- JEV calibration oracle
+- golden suite
+- INFO log
+- wrapper hit generation
+- experiment/jev-decision-provider
+- single-key envelope
+- tool-call wrapper keys
+- dict
+- single-key list payload
+- largest-valid-JSON heuristic
+- defaulted schema
+- JEV assured-gate errors
+- confidence gate
+- parameters
+- arguments
+- input
+- output
+- json
+- result
+- response
+source: session 2026-09-22, common/llm/parse.py
 status: seedling
-source: "session 2026-09-22, common/llm/parse.py"
-tags: [test-agent-v2, bug, json-parsing, llm-judge, pydantic-defaults]
+tags:
+- test-agent-v2
+- bug
+- json-parsing
+- llm-judge
+- pydantic-defaults
+title: loads_obj largest-span rule returns the tool-call envelope so JudgeVerdict
+  silently scored 0.0
+type: lesson
 ---
 
 # loads_obj largest-span rule returns the tool-call envelope so JudgeVerdict silently scored 0.0
@@ -18,3 +59,57 @@ Fix (commit on `experiment/jev-decision-provider`): unwrap a single-key envelope
 ## Related
 
 - [[JEV assured-gate errors are low-confidence false-accepts so the confidence gate is the safety net]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[JEV assured-gate errors are low-confidence false-accepts so the confidence gate is the safety net]]
+- [[JEV accept-side confidence is low and unreliable; the cascade win is reject-side]]
+- [[TypeSafe SDK response shape gotcha - cached-property accessors and Noul has no confidence]]
+- [[Test an LLM-vs-heuristic seam offline by monkeypatching complete() per module]]
+- [[Calibrate a cheap-model to LLM cascade threshold using the LLM judge as oracle]]
+
+**Relations:**
+- loads_obj largest-span rule — *returns* — tool-call envelope
+- tool-call envelope — *causes* — JudgeVerdict
+- JudgeVerdict — *scored* — 0.0
+- common/llm/parse.loads_obj — *is part of* — test-agent-v2
+- common/llm/parse.loads_obj — *recovers* — JSON object
+- JSON object — *from* — LLM reply
+- common/llm/parse.loads_obj — *uses* — loads_obj largest-span rule
+- Claude-on-Vertex — *wraps structured answer in* — tool-call envelope
+- tool-call envelope — *contains* — parameters
+- pydantic — *ignores* — unknown parameters key
+- pydantic — *defaults* — real fields
+- defaulted real fields — *lead to* — overall score
+- overall score — *equals* — 0.0
+- assured-loop LLM judge — *returned* — 0.0
+- 0.0 — *for* — well-formed suites
+- 0.0 — *is a* — silent false rejection
+- silent false rejection — *corrupted* — JEV calibration oracle
+- JEV calibration oracle — *rejected* — golden suite
+- INFO log — *indicated* — shape={"parameters": 11}
+- JudgeVerdict — *has* — 11 fields
+- wrapper hit generation — *showed* — shape={"$PARAMETER_VALUE": 1}
+- Fix — *is on* — experiment/jev-decision-provider
+- Fix — *involves* — unwrap single-key envelope
+- single-key envelope — *has* — tool-call wrapper keys
+- tool-call wrapper keys — *include* — parameters
+- tool-call wrapper keys — *include* — arguments
+- tool-call wrapper keys — *include* — input
+- tool-call wrapper keys — *include* — output
+- tool-call wrapper keys — *include* — json
+- tool-call wrapper keys — *include* — result
+- tool-call wrapper keys — *include* — response
+- single-key envelope — *value is* — dict
+- unwrap — *done in* — common/llm/parse.loads_obj
+- unwrap — *is* — looped for nested wrappers
+- single-key list payload — *is* — deliberately untouched
+- wrong-shape parse — *is* — invisible
+- largest-valid-JSON heuristic — *feeds* — defaulted schema
+- defaulted schema — *silently defaults instead of* — raising
+- JEV assured-gate errors — *are* — Related
+- JEV assured-gate errors — *are* — low-confidence false-accepts
+- confidence gate — *is* — safety net
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Deploying Keycloak 26 as a container: health port 9000, bootstrap admin, start vs start-dev"
+ai_hash: 6b102899621d12de
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: howto
+entities: []
+source: leo-customer360 deploy-sso session 2026-08-19
 status: seedling
-source: "leo-customer360 deploy-sso session 2026-08-19"
-tags: [keycloak, sso, oidc, docker, ops, gotcha]
+tags:
+- keycloak
+- sso
+- oidc
+- docker
+- ops
+- gotcha
+title: 'Deploying Keycloak 26 as a container: health port 9000, bootstrap admin, start
+  vs start-dev'
+type: howto
 ---
 
 # Deploying Keycloak 26 as a container: health port 9000, bootstrap admin, start vs start-dev
@@ -35,3 +46,14 @@ vServer). Related: [[customer360-api has two auth modes dev local-JWT vs Keycloa
 ## Related
 
 - [[customer360-api has two auth modes dev local-JWT vs Keycloak SSO]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Customer360 UAT api box is a shared 1vCPU-2GB vServer running 5 containers]]
+- [[Verify uat customer360-api health publicly at beta.leocdp.comc360apihealth]]
+- [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+- [[customer360-api has two auth modes dev local-JWT vs Keycloak SSO]]
+- [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+
+%% ai-graph-end %%

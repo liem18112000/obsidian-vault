@@ -1,10 +1,20 @@
 ---
-title: "TPD IMPLEMENT makes one LLM call by default (scenarios only)"
+ai_hash: ed34686326f3920d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: lesson
+entities: []
+source: session 2026-09-07 code trace
 status: seedling
-source: "session 2026-09-07 code trace"
-tags: [testing-agent, tpd, vertex, llm, cloud-run, gotcha]
+tags:
+- testing-agent
+- tpd
+- vertex
+- llm
+- cloud-run
+- gotcha
+title: TPD IMPLEMENT makes one LLM call by default (scenarios only)
+type: lesson
 ---
 
 # TPD IMPLEMENT makes one LLM call by default (scenarios only)
@@ -23,3 +33,14 @@ Related: [[TPD agentic loop single-pass DEFINE to APPROVE to IMPLEMENT]]
 ## Related
 
 - [[TPD agentic loop single-pass DEFINE to APPROVE to IMPLEMENT]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+- [[TPD agentic loop single-pass DEFINE to APPROVE to IMPLEMENT]]
+- [[test-agent-v2 TPD has five raw-Vertex generators — the ADK LlmAgent conversion targets]]
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+- [[Deployed TPD implement_plan trips Cloud Run liveness (event-loop blocked by Vertex gen)]]
+
+%% ai-graph-end %%

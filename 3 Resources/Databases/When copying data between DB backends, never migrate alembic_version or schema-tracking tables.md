@@ -1,10 +1,20 @@
 ---
-title: "When copying data between DB backends, never migrate alembic_version or schema-tracking tables"
+ai_hash: 4c6dbe1a480bd3a7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: leo-customer360 UAT import dry-run, 2026-09-03
 status: seedling
-source: "leo-customer360 UAT import dry-run, 2026-09-03"
-tags: [database, migration, alembic, dagster, gotcha]
+tags:
+- database
+- migration
+- alembic
+- dagster
+- gotcha
+title: When copying data between DB backends, never migrate alembic_version or schema-tracking
+  tables
+type: lesson
 ---
 
 # When copying data between DB backends, never migrate alembic_version or schema-tracking tables
@@ -24,3 +34,14 @@ Method note: a dry-run that only COUNTS source rows (short-circuiting before the
 ## Related
 
 - [[Dagster has no supported storage-backend migration; run history is operational metadata]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster has no supported storage-backend migration; run history is operational metadata]]
+- [[Dagster auto-creates its tables but not the database]]
+- [[Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas]]
+- [[A self-contained migration parity test is only useful during the cutover]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+
+%% ai-graph-end %%

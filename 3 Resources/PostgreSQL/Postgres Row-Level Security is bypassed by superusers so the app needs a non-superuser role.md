@@ -1,10 +1,21 @@
 ---
-title: "Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role"
+ai_hash: edd9cab53dda9315
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [postgresql, rls, security, multitenancy, terraform, gotcha]
+tags:
+- postgresql
+- rls
+- security
+- multitenancy
+- terraform
+- gotcha
+title: Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser
+  role
+type: lesson
 ---
 
 # Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role
@@ -18,3 +29,14 @@ Note: `psql` variable substitution (`:'var'`) does **not** expand inside dollar-
 ## Related
 - [[vDB PostgreSQL supports PostGIS and pgvector plus the fuzzy-match extensions]]
 - [[LEO Customer360 GreenNode Terraform infrastructure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Postgres RLS is silently bypassed by superuser connections]]
+- [[FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set]]
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
+- [[Managed DB provisioners create the server but not in-database objects]]
+- [[Inject a Postgres session GUC into an unmodifiable script via PGOPTIONS]]
+
+%% ai-graph-end %%

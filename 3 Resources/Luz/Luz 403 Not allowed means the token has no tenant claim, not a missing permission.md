@@ -1,10 +1,19 @@
 ---
-title: "Luz 403 Not allowed means the token has no tenant claim, not a missing permission"
+ai_hash: 079f441121a842a0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 (luz_docs_import k6 403 investigation)
 status: seedling
-source: "session 2026-08-18 (luz_docs_import k6 403 investigation)"
-tags: [luz, auth, jwt, gotcha, 403]
+tags:
+- luz
+- auth
+- jwt
+- gotcha
+- 403
+title: Luz 403 Not allowed means the token has no tenant claim, not a missing permission
+type: lesson
 ---
 
 # Luz 403 Not allowed means the token has no tenant claim, not a missing permission
@@ -26,3 +35,14 @@ Verified live on dev 2026-08-18: the bare-`/tokens` token 403'd on `upload-zip`;
 ## Related
 
 - [[luz-skill-get-token]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[masking-token-in-fetch-command-breaks-downstream]]
+- [[Truncating a JWT breaks signature verification and surfaces as 500 not 401]]
+- [[Luz individual tenant = bare POST luztenant{username}tenants (no INDIVIDUAL flag)]]
+- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+
+%% ai-graph-end %%

@@ -1,4 +1,11 @@
 ---
+ai_hash: a193b709b6184ccb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
+---
+
+---
 title: "Ubuntu CI default awk is mawk — avoid gawk-only escapes like \xHH"
 created: 2026-08-24
 type: gotcha
@@ -21,3 +28,10 @@ Hit while building the rich CI migration summary for leo-customer360. Related: [
 ## Related
 
 - [[Publish a GitHub Actions job result to the run Summary with an always() step]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish a GitHub Actions job result to the run Summary with an always() step]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "pgAdmin shows 0 rows on customer360 tenant tables until you SET app.tenant_id (FORCE RLS)"
+ai_hash: 03a6ea882b57041d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: gotcha
+entities: []
+source: leo-customer360 uat DB, session 2026-08-23
 status: seedling
-source: "leo-customer360 uat DB, session 2026-08-23"
-tags: [postgres, rls, pgadmin, multitenant, customer360, gotcha]
+tags:
+- postgres
+- rls
+- pgadmin
+- multitenant
+- customer360
+- gotcha
+title: pgAdmin shows 0 rows on customer360 tenant tables until you SET app.tenant_id
+  (FORCE RLS)
+type: gotcha
 ---
 
 # pgAdmin shows 0 rows on customer360 tenant tables until you SET app.tenant_id (FORCE RLS)
@@ -25,3 +36,14 @@ Run BOTH together. Caveats: pgAdmin's tree "View/Edit Data" opens a DIFFERENT co
 **Discovering tenant ids:** you can't `SELECT DISTINCT tenant_id` from an RLS table without already setting a tenant (RLS filters that too). On uat the seeded tenant is `11111111-1111-1111-1111-111111111111` (matches frontend_tenant_id / bootstrap-realm TENANT_ID). For a cross-tenant DBA view you'd need a superuser or a dedicated BYPASSRLS role (none exists by design — tenant isolation).
 
 **Catalog stats ignore RLS:** pg_class.reltuples / pg_stat_user_tables.n_live_tup show real row counts regardless of RLS, so use those to confirm data EXISTS even when SELECT returns 0.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set]]
+- [[Postgres RLS is silently bypassed by superuser connections]]
+- [[Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role]]
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
+- [[Inject a Postgres session GUC into an unmodifiable script via PGOPTIONS]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "VNG Cloud resource ID prefixes and the HCM zone_id label gotcha"
+ai_hash: 220c45619bc7efff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [vngcloud, greennode, zone, region, ids, gotcha]
+tags:
+- vngcloud
+- greennode
+- zone
+- region
+- ids
+- gotcha
+title: VNG Cloud resource ID prefixes and the HCM zone_id label gotcha
+type: lesson
 ---
 
 # VNG Cloud resource ID prefixes and the HCM zone_id label gotcha
@@ -16,3 +26,14 @@ Zone label gotcha: the console shows a friendly zone label like "HCM-1A", but th
 ## Related
 - [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
 - [[LEO Customer360 GreenNode Terraform infrastructure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Customer360 GreenNode region split compute HCM03, vStorage HCM04]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[VNG Cloud list-projects endpoint is GET vserver-gatewayv1projects (not accounts-api)]]
+- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+
+%% ai-graph-end %%

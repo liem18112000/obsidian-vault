@@ -1,10 +1,19 @@
 ---
-title: "A disabled Cloud Run service 503s at the edge and never reaches your app"
+ai_hash: 2a390f70046df61b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: lesson
+entities: []
+source: session 2026-09-25 — test-agent-v2 bearer rotation
 status: seedling
-source: "session 2026-09-25 — test-agent-v2 bearer rotation"
-tags: [gcp, cloud-run, debugging, gotcha, health-check]
+tags:
+- gcp
+- cloud-run
+- debugging
+- gotcha
+- health-check
+title: A disabled Cloud Run service 503s at the edge and never reaches your app
+type: lesson
 ---
 
 # A disabled Cloud Run service 503s at the edge and never reaches your app
@@ -40,3 +49,14 @@ An autoscaling (live) service returns empty for both; a disabled one returns `ma
 
 - [[Cloud Run resolves a latest secret reference at instance start, not per request]]
 - [[test-agent-v2 Cloud Run services use a -v2 name suffix]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+- [[Cloud Run GFE reserves healthz — use livez for your health endpoint]]
+- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
+- [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
+- [[Cloud Run resolves a latest secret reference at instance start, not per request]]
+
+%% ai-graph-end %%

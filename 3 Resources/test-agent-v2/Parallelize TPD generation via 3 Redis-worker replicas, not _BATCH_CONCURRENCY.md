@@ -1,10 +1,21 @@
 ---
-title: "Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY"
+ai_hash: 019e954479b90e6f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: howto
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [testing-agent, parallelism, redis, workers, tpd, performance, docker-compose]
+tags:
+- testing-agent
+- parallelism
+- redis
+- workers
+- tpd
+- performance
+- docker-compose
+title: Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY
+type: howto
 ---
 
 # Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY
@@ -15,3 +26,14 @@ HOW to parallelize the TPD scenario generator (and what NOT to do): the safe par
 
 - [[Why local test-agent is slow: claude -p ships a 17.5K agent prompt on Opus]]
 - [[x many serial calls]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Why local test-agent is slow claude -p ships a 17.5K agent prompt on Opus, x many serial calls]]
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+- [[Parallel TPD generation sped up but amplified duplication — dedup is a code fix, not guidance]]
+- [[implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server timeout]]
+- [[test-agent-v2 TPD has five raw-Vertex generators — the ADK LlmAgent conversion targets]]
+
+%% ai-graph-end %%

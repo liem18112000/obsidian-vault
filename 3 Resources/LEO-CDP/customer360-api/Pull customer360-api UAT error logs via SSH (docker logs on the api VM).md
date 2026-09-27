@@ -1,10 +1,20 @@
 ---
-title: "Pull customer360-api UAT error logs via SSH (docker logs on the api VM)"
+ai_hash: 4f11354ad489b4b5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: howto
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-cdp, customer360-api, logging, ssh, observability, gotcha]
+tags:
+- leo-cdp
+- customer360-api
+- logging
+- ssh
+- observability
+- gotcha
+title: Pull customer360-api UAT error logs via SSH (docker logs on the api VM)
+type: howto
 ---
 
 # Pull customer360-api UAT error logs via SSH (docker logs on the api VM)
@@ -27,3 +37,14 @@ Related: [[customer360-api]]
 ## Related
 
 - [[customer360-api]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
+- [[Verify uat customer360-api health publicly at beta.leocdp.comc360apihealth]]
+- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB]]
+- [[leo-customer360 tracing OTel off-by-default on UAT, on at 10% on PROD]]
+- [[customer360-api events reader per-source vs single-bucket mode]]
+
+%% ai-graph-end %%

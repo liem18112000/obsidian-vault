@@ -1,10 +1,20 @@
 ---
-title: "LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)"
+ai_hash: 925d30547b8a976e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: howto
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-customer360, email, smtp, deployment, secrets, uat]
+tags:
+- leo-customer360
+- email
+- smtp
+- deployment
+- secrets
+- uat
+title: LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)
+type: howto
 ---
 
 # LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)
@@ -29,3 +39,14 @@ Chosen for the c360 UAT Brevo SMTP rollout (feat/uat-smtp-brevo-healthcheck).
 
 - [[LEO email_engine dispatch resolves DB config then SMTP env then mock]]
 - [[Sourced shell env file must quote values with spaces]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO email_engine dispatch resolves DB config then SMTP env then mock]]
+- [[LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)]]
+- [[Sourced shell env file must quote values with spaces]]
+- [[SMTP health check stays out of auth-exempt GET metadata login-path]]
+- [[Configure vStorage S3 backend creds in each component .env so deploy scripts self-auth]]
+
+%% ai-graph-end %%

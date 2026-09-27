@@ -1,10 +1,20 @@
 ---
-title: "Declare + enforce bearer auth on an a2a-sdk 1.x server"
+ai_hash: 896da1e684f84a86
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: howto
+entities: []
+source: session 2026-08-27 — kga
 status: seedling
-source: "session 2026-08-27 — kga"
-tags: [a2a, a2a-sdk, auth, bearer, starlette, security]
+tags:
+- a2a
+- a2a-sdk
+- auth
+- bearer
+- starlette
+- security
+title: Declare + enforce bearer auth on an a2a-sdk 1.x server
+type: howto
 ---
 
 # Declare + enforce bearer auth on an a2a-sdk 1.x server
@@ -22,3 +32,14 @@ Context: kga server.py + constants.py (LUZ-159671 test-agent).
 ## Related
 
 - [[a2a-sdk serves the agent card at agent-card.json (new) or agent.json (old)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[a2a-sdk serves the agent card at agent-card.json (new) or agent.json (old)]]
+- [[ALLOW_INSECURE=1 + blank token opens the fail-closed bearer gate]]
+- [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
+- [[Fail-open bearer auth middleware antipattern]]
+- [[ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction]]
+
+%% ai-graph-end %%

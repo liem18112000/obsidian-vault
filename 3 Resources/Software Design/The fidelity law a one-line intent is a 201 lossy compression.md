@@ -1,10 +1,18 @@
 ---
-title: "The fidelity law: a one-line intent is a 20:1 lossy compression"
+ai_hash: feab274303e0f94f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: concept
+entities: []
+source: openrig docs/reference/product-management-pass.md, 2026-09-25
 status: seedling
-source: "openrig docs/reference/product-management-pass.md, 2026-09-25"
-tags: [openrig, delegation, specs, context-engineering]
+tags:
+- openrig
+- delegation
+- specs
+- context-engineering
+title: 'The fidelity law: a one-line intent is a 20:1 lossy compression'
+type: concept
 ---
 
 # The fidelity law: a one-line intent is a 20:1 lossy compression
@@ -29,3 +37,12 @@ Related: [[Price one layer lower before accepting a fix]] · [[CONTEXT-GAP vs JU
 
 - [[Price one layer lower before accepting a fix]]
 - [[CONTEXT-GAP vs JUDGMENT-GAP: dispose every miss by cause]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Price one layer lower before accepting a fix]]
+- [[CONTEXT-GAP vs JUDGMENT-GAP dispose every miss by cause]]
+- [[Implementation is the best reviewer a design doc gets]]
+
+%% ai-graph-end %%

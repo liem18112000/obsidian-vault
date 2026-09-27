@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg"
+ai_hash: 718ae0bdd03ba994
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-29
-type: howto
+entities: []
+source: session 2026-08-29 task-store migration
 status: seedling
-source: "session 2026-08-29 task-store migration"
-tags: [gcp, cloud-run, cloud-sql, asyncpg, sqlalchemy, terraform]
+tags:
+- gcp
+- cloud-run
+- cloud-sql
+- asyncpg
+- sqlalchemy
+- terraform
+title: Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg
+type: howto
 ---
 
 # Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg
@@ -29,3 +39,14 @@ See [[a2a-sdk DatabaseTaskStore makes A2A tasks survive Cloud Run restarts]] and
 
 - [[a2a-sdk DatabaseTaskStore makes A2A tasks survive Cloud Run restarts]]
 - [[SQLAlchemy URL.create encodes passwords correctly; hand-encoding with quote_plus can corrupt them]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud SQL Python Connector async use create_async_connector inside the loop]]
+- [[Cloud Run mounts the Cloud SQL cloudsql socket only into the ingress container, not sidecars]]
+- [[SQLAlchemy URL.create encodes passwords correctly; hand-encoding with quote_plus can corrupt them]]
+- [[Cloud Run's managed cloudsql socket does not reach sidecar containers]]
+- [[a2a-sdk DatabaseTaskStore makes A2A tasks survive Cloud Run restarts]]
+
+%% ai-graph-end %%

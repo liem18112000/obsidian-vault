@@ -1,10 +1,19 @@
 ---
-title: "Deployed Testing-Agent refine loop freezes after completion and drops corrections"
+ai_hash: 1f983bfc003f7267
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: lesson
+entities: []
+source: session 2026-09-14 run-cd156028
 status: seedling
-source: "session 2026-09-14 run-cd156028"
-tags: [testing-agent, refine, gotcha, persistence, luz-158230]
+tags:
+- testing-agent
+- refine
+- gotcha
+- persistence
+- luz-158230
+title: Deployed Testing-Agent refine loop freezes after completion and drops corrections
+type: lesson
 ---
 
 # Deployed Testing-Agent refine loop freezes after completion and drops corrections
@@ -23,3 +32,14 @@ Related: [[define_plan free-text answer not persisted to structured brief]], [[T
 
 - [[define_plan free-text answer not persisted to structured brief]]
 - [[Testing-Agent interrogation must run on rich input or it asks nothing]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deployed Testing-Agent refine recommendations are speculative until validated]]
+- [[Refine interrogation caps open questions at 7 per round (max_questions), overflow deferred]]
+- [[Testing-agent refine flags low confidence when spec PDFs are recorded-only]]
+- [[Testing-Agent refine confidence is capped by un-ingested spec PDFs]]
+- [[Testing-Agent implement_plan silent heuristic fallback = per-node x kind empty-step scenarios]]
+
+%% ai-graph-end %%

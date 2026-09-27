@@ -1,10 +1,19 @@
 ---
-title: "ADK sample canonical layout: root_agent in agent.py, sub_agents subpackages, workflow agents"
+ai_hash: 12c38bdc0adbf844
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: reference
+entities: []
+source: adk-samples contrib/python/llm-auditor, read 2026-09-08
 status: seedling
-source: "adk-samples contrib/python/llm-auditor, read 2026-09-08"
-tags: [google-adk, samples, structure, agents]
+tags:
+- google-adk
+- samples
+- structure
+- agents
+title: 'ADK sample canonical layout: root_agent in agent.py, sub_agents subpackages,
+  workflow agents'
+type: reference
 ---
 
 # ADK sample canonical layout: root_agent in agent.py, sub_agents subpackages, workflow agents
@@ -35,3 +44,14 @@ Takeaways: (1) deterministic order = a workflow agent (SequentialAgent/LoopAgent
 ## Related
 
 - [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
+- [[adk webrun discovers agents by importing package.agent.root_agent via AgentLoader]]
+- [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+- [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+
+%% ai-graph-end %%

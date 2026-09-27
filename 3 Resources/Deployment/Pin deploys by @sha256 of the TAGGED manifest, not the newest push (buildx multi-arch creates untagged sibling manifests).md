@@ -1,10 +1,21 @@
 ---
-title: "Pin deploys by @sha256 of the TAGGED manifest, not the newest push (buildx multi-arch creates untagged sibling manifests)"
+ai_hash: 576fd6a79386ae89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: leo-customer360 deployments/lib/ghcr.sh, session 2026-08-23
 status: seedling
-source: "leo-customer360 deployments/lib/ghcr.sh, session 2026-08-23"
-tags: [docker, ghcr, digest-pinning, buildx, cd, leo-customer360]
+tags:
+- docker
+- ghcr
+- digest-pinning
+- buildx
+- cd
+- leo-customer360
+title: Pin deploys by @sha256 of the TAGGED manifest, not the newest push (buildx
+  multi-arch creates untagged sibling manifests)
+type: lesson
 ---
 
 # Pin deploys by @sha256 of the TAGGED manifest, not the newest push (buildx multi-arch creates untagged sibling manifests)
@@ -29,3 +40,14 @@ Source: leo-customer360 deployments/lib/ghcr.sh — enabling RESOLVE_DIGEST, 202
 ## Related
 
 - [[Verify a deployed service isn't stale: match box RepoDigest to GHCR :latest and read its sha-<commit> tag]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Get the newest GHCR image tag or digest via gh api packages container versions]]
+- [[Verify a deployed service isn't stale match box RepoDigest to GHCR latest and read its sha-commit tag]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+- [[CD deploy can transiently 404 on a just-built GHCR digest - re-run the failed job]]
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+
+%% ai-graph-end %%

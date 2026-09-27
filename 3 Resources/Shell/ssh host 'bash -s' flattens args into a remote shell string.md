@@ -1,10 +1,19 @@
 ---
-title: "ssh host 'bash -s' flattens args into a remote shell string"
+ai_hash: 87fc3422bd4fae03
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 deployments/cache session 2026-08-19
 status: seedling
-source: "leo-customer360 deployments/cache session 2026-08-19"
-tags: [ssh, bash, gotcha, heredoc, terraform]
+tags:
+- ssh
+- bash
+- gotcha
+- heredoc
+- terraform
+title: ssh host 'bash -s' flattens args into a remote shell string
+type: lesson
 ---
 
 # ssh host 'bash -s' flattens args into a remote shell string
@@ -23,3 +32,14 @@ Related: [[VNG Cloud vServer Terraform id resolution chain]]
 ## Related
 
 - [[VNG Cloud vServer Terraform id resolution chain]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ssh 'bash -s' flattens args, so empty middle args shift positionals]]
+- [[SSH flattens remote command args, so empty-string arguments collapse and shift positionals]]
+- [[ssh drops empty positional args; pass a base64 newline-joined argv + mapfile]]
+- [[Escape shell ${VAR} as $${VAR} in a Terraform Cloud Run command list]]
+- [[Apostrophe inside bash ${varmessage} breaks the parser]]
+
+%% ai-graph-end %%

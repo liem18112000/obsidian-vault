@@ -1,10 +1,19 @@
 ---
-title: "postgis-postgis 16-3.5 image does not bundle pgvector"
+ai_hash: 7895eb8eb4a3477d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-16
-type: gotcha
+entities: []
+source: session 2026-08-16 postgres/docs research
 status: seedling
-source: "session 2026-08-16 postgres/docs research"
-tags: [pgvector, postgis, docker, postgres, gotcha]
+tags:
+- pgvector
+- postgis
+- docker
+- postgres
+- gotcha
+title: postgis-postgis 16-3.5 image does not bundle pgvector
+type: gotcha
 ---
 
 # postgis-postgis 16-3.5 image does not bundle pgvector
@@ -18,3 +27,14 @@ Related: [[pgvector logical restore rebuilds HNSW-IVFFlat indexes; physical back
 ## Related
 
 - [[pgvector logical restore rebuilds HNSW-IVFFlat indexes; physical backup copies them as-is]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[pgvector logical restore rebuilds HNSW-IVFFlat indexes; physical backup copies them as-is]]
+- [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+- [[vDB PostgreSQL supports PostGIS and pgvector plus the fuzzy-match extensions]]
+- [[pgBackRest runs on the DB host, so it cannot back up a managed DB like VNG vDB]]
+- [[pgBackRest archive_command needs the binary IN the postgres image; the scheduler is a separate sidecar]]
+
+%% ai-graph-end %%

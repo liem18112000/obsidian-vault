@@ -1,10 +1,19 @@
 ---
-title: "Two-phase RAG chatbot UX: fast retrieval first, slow generation second"
+ai_hash: 066b655b8ab7b303
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-06
-type: lesson
+entities: []
+source: session 2026-09-06 docs-chatbot frontend-admin
 status: seedling
-source: "session 2026-09-06 docs-chatbot frontend-admin"
-tags: [rag, llm, ux, frontend, chatbot]
+tags:
+- rag
+- llm
+- ux
+- frontend
+- chatbot
+title: 'Two-phase RAG chatbot UX: fast retrieval first, slow generation second'
+type: lesson
 ---
 
 # Two-phase RAG chatbot UX: fast retrieval first, slow generation second
@@ -21,3 +30,14 @@ This is a general pattern for any two-tier backend where a cheap query and an ex
 ## Related
 
 - [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]
+- [[docs-vector-search OOMs on ask on a 1vCPU2GB box (Qwen KV cache over RAM+swap)]]
+- [[Honest progress UI for un-streamable long LLM runs - elapsed time plus stage hints]]
+- [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+- [[Client-side generation queue lets independent items run without blocking each other]]
+
+%% ai-graph-end %%

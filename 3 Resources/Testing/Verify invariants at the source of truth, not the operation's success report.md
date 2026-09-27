@@ -1,10 +1,18 @@
 ---
-title: "Verify invariants at the source of truth, not the operation's success report"
+ai_hash: aa72367f9ea28871
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: luz-docs-import v2+v3 matrix run 2026-08-19
 status: seedling
-source: "luz-docs-import v2+v3 matrix run 2026-08-19"
-tags: [testing, verification, gotcha, data-integrity]
+tags:
+- testing
+- verification
+- gotcha
+- data-integrity
+title: Verify invariants at the source of truth, not the operation's success report
+type: lesson
 ---
 
 # Verify invariants at the source of truth, not the operation's success report
@@ -20,3 +28,14 @@ An operation that reports success can still have produced a partially-wrong resu
 ## Related
 
 - [[Confirm the deployed artifact contains the fix before judging an env test]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Confirm the deployed artifact contains the fix before judging an env test]]
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
+- [[Run the full affected test package locally, not a hand-picked subset]]
+- [[Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
+- [[Implementation is the best reviewer a design doc gets]]
+
+%% ai-graph-end %%

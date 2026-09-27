@@ -1,10 +1,19 @@
 ---
-title: "Registering a bearer-gated HTTP MCP server needs claude mcp add --header"
+ai_hash: 1286a5b1bd38be1d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: lesson
+entities: []
+source: session 2026-08-31 mcp re-register
 status: seedling
-source: "session 2026-08-31 mcp re-register"
-tags: [claude-code, mcp, auth, gotcha, http]
+tags:
+- claude-code
+- mcp
+- auth
+- gotcha
+- http
+title: Registering a bearer-gated HTTP MCP server needs claude mcp add --header
+type: lesson
 ---
 
 # Registering a bearer-gated HTTP MCP server needs claude mcp add --header
@@ -18,3 +27,14 @@ Symptom vs cause: 'Failed to connect' on an HTTP MCP server that you know is up 
 ## Related
 
 - [[Co-locating a stateful MCP bridge as an agent sidecar couples their scaling]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rolling a bearer-gated MCP server revision can stick Claude Code in OAuth DCR — re-register to reset]]
+- [[claude mcp list health status can be stale; verify MCP reachability with curl]]
+- [[Reach a private Cloud Run service as a user via gcloud run services proxy, not a minted ID token]]
+- [[ADK has no native MCP server; expose an agent to Claude Code via an A2A-to-MCP bridge]]
+- [[Bridgegateway use separate secrets for the inbound caller token and the outbound backend token]]
+
+%% ai-graph-end %%

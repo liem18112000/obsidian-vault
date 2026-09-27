@@ -1,10 +1,18 @@
 ---
-title: "gcloud --substitutions needs ^DELIM^ escape when a value contains commas"
+ai_hash: 668e6a11c9e79138
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: code review LUZ-158230 k6 load-test, 2026-08-18
 status: seedling
-source: "code review LUZ-158230 k6 load-test, 2026-08-18"
-tags: [gcloud, cloud-build, gotcha, cli]
+tags:
+- gcloud
+- cloud-build
+- gotcha
+- cli
+title: gcloud --substitutions needs ^DELIM^ escape when a value contains commas
+type: lesson
 ---
 
 # gcloud --substitutions needs ^DELIM^ escape when a value contains commas
@@ -25,3 +33,11 @@ Seen in the LUZ-158230 k6 load-test harness (`k6/run_trigger.cmd`), where a mult
 ## Related
 
 - [[Cloud Build substitutions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Build treats $VAR in step args as its own substitution; escape shell $ as $$]]
+- [[trigger_build.sh takes the trigger name as a bare positional, not TRIGGER_NAME=]]
+
+%% ai-graph-end %%

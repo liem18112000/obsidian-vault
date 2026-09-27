@@ -1,10 +1,21 @@
 ---
-title: "RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it"
+ai_hash: db300c015265060d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-12
-type: gotcha
+entities: []
+source: luz_docs_import large-ZIP latency investigation 2026-08-12
 status: seedling
-source: "luz_docs_import large-ZIP latency investigation 2026-08-12"
-tags: [resteasy, multipart, jaxrs, upload, gotcha, performance]
+tags:
+- resteasy
+- multipart
+- jaxrs
+- upload
+- gotcha
+- performance
+title: RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the
+  app reads it
+type: gotcha
 ---
 
 # RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it
@@ -21,3 +32,14 @@ Related: [[luz_docs_import upload-zip is slow for large files due to a synchrono
 
 - [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
 - [[GKE pd-standard disk throughput is low and scales with provisioned volume size]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
+- [[GKE pd-standard disk throughput is low and scales with provisioned volume size]]
+- [[Decouple upload API latency from file size with pre-signed direct-to-object-storage uploads]]
+- [[RESTEasy multipart repeated field name yields a List, get(0) silently drops extras]]
+- [[nginx-ingress proxy-request-buffering stages the whole request body before forwarding to the pod]]
+
+%% ai-graph-end %%

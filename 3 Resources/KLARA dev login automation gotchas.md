@@ -1,6 +1,15 @@
 ---
-tags: [klara, playwright, automation, dev, testing]
+ai_hash: 438d6d0be7d98edf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
+entities: []
+tags:
+- klara
+- playwright
+- automation
+- dev
+- testing
 ---
 
 # KLARA dev.klara.tech login automation gotchas
@@ -14,3 +23,10 @@ Hard-won facts for scripting a login to **https://dev.klara.tech** (Keycloak + J
 - The upload success screen prints **`Participant ID: <tenant>`** — for this profile it is `9388f0ab-8f8c-4401-a097-c1164c7e16e7`, confirming which Mongo tenant to clean.
 
 See [[Recording a browser demo video with Playwright]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

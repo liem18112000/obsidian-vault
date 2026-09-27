@@ -1,10 +1,51 @@
 ---
-title: "BridgeSession turn drops the answer when the A2A task completes each turn"
+ai_hash: 558c83edc688ec72
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: lesson
+entities:
+- BridgeSession
+- A2A task
+- ADK agent
+- to_a2a
+- A2A layer
+- task state completed
+- input-required
+- long-running-tool semantics
+- test-agent-v2
+- common/bridge/session.py
+- BridgeSession.turn
+- task_id
+- refine
+- define_plan
+- start text
+- human's answer
+- interrogation
+- answer
+- A2A context_id
+- durable thread
+- interrogation agent
+- bank
+- adk_a2a_app
+- A2ABridgeClient
+- A2A to_a2a task_store
+- runner
+- persistence params
+- Bug
+- Fix
+- nothing
+source: test-agent-v2, session 2026-09-14
 status: seedling
-source: "test-agent-v2, session 2026-09-14"
-tags: [adk, a2a, bridge, interrogation, hitl, gotcha, test-agent]
+tags:
+- adk
+- a2a
+- bridge
+- interrogation
+- hitl
+- gotcha
+- test-agent
+title: BridgeSession turn drops the answer when the A2A task completes each turn
+type: lesson
 ---
 
 # BridgeSession turn drops the answer when the A2A task completes each turn
@@ -19,3 +60,51 @@ Diagnostic that pinned it: drive the real agent through the real bridge (`adk_a2
 
 ## Related
 [[A2A to_a2a task_store and runner are separate persistence params]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A2A to_a2a task_store and runner are separate persistence params]]
+- [[a2a-sdk enqueue initial Task before any TaskStatusUpdateEvent]]
+- [[A2A input-required tasks must be answered on the same taskId and contextId]]
+- [[ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs]]
+- [[A2A multi-turn human-in-the-loop via input-required Task state]]
+
+**Relations:**
+- BridgeSession.turn — *drops_answer_when* — A2A task completes each turn
+- A2A task — *completes_each_turn* — 
+- ADK agent — *served_over* — to_a2a
+- ADK agent — *finishes_invocation* — every turn
+- A2A layer — *reports_task_state* — task state completed
+- A2A layer — *reports_task_state_for* — A2A task
+- A2A layer — *signals* — input-required
+- A2A layer — *signals_conditionally_on* — long-running-tool semantics
+- Bug — *occurred_in* — test-agent-v2
+- Bug — *occurred_in* — common/bridge/session.py
+- BridgeSession.turn — *decided_start_vs_answer_by* — task_id
+- BridgeSession.turn — *popped* — task_id
+- BridgeSession.turn — *popped_on_state* — task state completed
+- task_id — *was_dropped_by* — BridgeSession.turn
+- refine — *expected* — task_id
+- define_plan — *expected* — task_id
+- BridgeSession.turn — *re-sent* — start text
+- BridgeSession.turn — *discarded* — human's answer
+- interrogation — *advanced_rounds_but_persisted* — nothing
+- Fix — *routes_by* — answer
+- Fix — *replaces_routing_by* — task_id
+- A2A context_id — *is_a* — durable thread
+- interrogation agent — *rehydrates_state_from* — bank
+- bank — *keyed_on* — A2A context_id
+- answer — *needs_to_reach* — interrogation agent
+- Fix — *applies_to* — refine
+- Fix — *applies_to* — define_plan
+- refine — *goes_through* — BridgeSession.turn
+- define_plan — *goes_through* — BridgeSession.turn
+- Diagnostic — *involved* — adk_a2a_app
+- Diagnostic — *involved* — A2ABridgeClient
+- Diagnostic — *involved* — BridgeSession
+- A2A to_a2a task_store — *is_related_to* — runner
+- A2A to_a2a task_store — *has_property* — persistence params
+- runner — *has_property* — persistence params
+
+%% ai-graph-end %%

@@ -1,10 +1,17 @@
 ---
-title: "ADK workflow agents orchestrate deterministically without an LLM-driven loop"
+ai_hash: 443d1bea5e070d23
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: concept
+entities: []
+source: adk-transform export 2026-09-07
 status: seedling
-source: "adk-transform export 2026-09-07"
-tags: [google-adk, agents, architecture]
+tags:
+- google-adk
+- agents
+- architecture
+title: ADK workflow agents orchestrate deterministically without an LLM-driven loop
+type: concept
 ---
 
 # ADK workflow agents orchestrate deterministically without an LLM-driven loop
@@ -21,3 +28,14 @@ Related: [[ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume
 
 - [[ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs]]
 - [[ADK DatabaseSessionService can subsume a separate A2A task store and state-file rehydration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
+- [[ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs]]
+- [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+- [[ADK DatabaseSessionService can subsume a separate A2A task store and state-file rehydration]]
+- [[ADK sample canonical layout root_agent in agent.py, sub_agents subpackages, workflow agents]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "TypeSafe SDK response shape gotcha - cached-property accessors and Noul has no confidence"
+ai_hash: 30b4b03da721528b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22, live SDK introspection
 status: seedling
-source: "session 2026-09-22, live SDK introspection"
-tags: [typesafe, sdk, python, gotcha, jev]
+tags:
+- typesafe
+- sdk
+- python
+- gotcha
+- jev
+title: TypeSafe SDK response shape gotcha - cached-property accessors and Noul has
+  no confidence
+type: lesson
 ---
 
 # TypeSafe SDK response shape gotcha - cached-property accessors and Noul has no confidence
@@ -20,3 +30,14 @@ Consequence in `test-agent-v2` (`common/adk/providers/jev.py`, the `JevProvider`
 ## Related
 
 - [[TypeSafe SDK Python system_one usage (v0.7.1)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TypeSafe SDK Python system_one usage (v0.7.1)]]
+- [[loads_obj largest-span rule returns the tool-call envelope so JudgeVerdict silently scored 0.0]]
+- [[JEV assured-gate errors are low-confidence false-accepts so the confidence gate is the safety net]]
+- [[System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs]]
+- [[Calibrate a cheap-model to LLM cascade threshold using the LLM judge as oracle]]
+
+%% ai-graph-end %%

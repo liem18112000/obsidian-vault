@@ -1,10 +1,21 @@
 ---
-title: "GKE API TCP timeout with working internet = IP dropped from master authorized networks"
+ai_hash: e8a049fb2c57b56b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-04
-type: lesson
+entities: []
+source: session 2026-09-04 (perf-cluster seed stall)
 status: seedling
-source: "session 2026-09-04 (perf-cluster seed stall)"
-tags: [gke, kubectl, networking, authorized-networks, gotcha, diagnostics]
+tags:
+- gke
+- kubectl
+- networking
+- authorized-networks
+- gotcha
+- diagnostics
+title: GKE API TCP timeout with working internet = IP dropped from master authorized
+  networks
+type: lesson
 ---
 
 # GKE API TCP timeout with working internet = IP dropped from master authorized networks
@@ -19,3 +30,14 @@ When `kubectl` fails with `Unable to connect to the server: dial tcp <API-IP>:44
 
 - [[Decouple long agent work from the harness task lifecycle]]
 - [[Resume a large append seed by recounting to a target]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[kubectl port-forward drops after ~1 hour on GKE]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[GKE managed-cert HTTPS global IP, DNS before cert, NEG service, FrontendConfig redirect]]
+- [[Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED]]
+- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+
+%% ai-graph-end %%

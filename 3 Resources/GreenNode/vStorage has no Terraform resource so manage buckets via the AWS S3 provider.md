@@ -1,10 +1,19 @@
 ---
-title: "vStorage has no Terraform resource so manage buckets via the AWS S3 provider"
+ai_hash: d61c5517aa77e095
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [terraform, vngcloud, vstorage, s3, gotcha]
+tags:
+- terraform
+- vngcloud
+- vstorage
+- s3
+- gotcha
+title: vStorage has no Terraform resource so manage buckets via the AWS S3 provider
+type: lesson
 ---
 
 # vStorage has no Terraform resource so manage buckets via the AWS S3 provider
@@ -35,3 +44,14 @@ Then `aws_s3_bucket` / `aws_s3_bucket_versioning` work normally and idempotently
 - [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
 - [[GreenNode is VNG Cloud's AI cloud exposing vDB and vStorage managed services]]
 - [[LEO Customer360 GreenNode Terraform infrastructure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
+- [[VNG Cloud vStorage is S3-compatible object storage]]
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+- [[vStorage S3 keys differ from vIAM client credentials used by vDB]]
+
+%% ai-graph-end %%

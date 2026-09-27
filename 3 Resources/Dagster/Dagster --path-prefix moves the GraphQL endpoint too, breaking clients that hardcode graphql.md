@@ -1,10 +1,20 @@
 ---
-title: "Dagster --path-prefix moves the GraphQL endpoint too, breaking clients that hardcode /graphql"
+ai_hash: 60d7602c94c877e8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: gotcha
+entities: []
+source: leo-customer360 dagster expose decision, 2026-08
 status: seedling
-source: "leo-customer360 dagster expose decision, 2026-08"
-tags: [dagster, graphql, reverse-proxy, path-prefix, gotcha]
+tags:
+- dagster
+- graphql
+- reverse-proxy
+- path-prefix
+- gotcha
+title: Dagster --path-prefix moves the GraphQL endpoint too, breaking clients that
+  hardcode /graphql
+type: gotcha
 ---
 
 # Dagster --path-prefix moves the GraphQL endpoint too, breaking clients that hardcode /graphql
@@ -16,3 +26,14 @@ Gotcha: the official `dagster_graphql.DagsterGraphQLClient(hostname, port_number
 Design consequence: if a service already talks to Dagster GraphQL, prefer exposing the UI on a **subdomain** (Dagster stays at root, no --path-prefix, client untouched) rather than a path. Or just leave Dagster on its raw port (IP / SSH tunnel) and dont front it at all.
 
 Related: [[HSTS on a parent domain makes all plain-HTTP and self-signed ports on a subdomain unreachable in-browser]], [[Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Register one FastAPI handler under multiple path prefixes with add_api_route]]
+- [[Serve a SPA under a sub-path via the app base-path option, not proxy strip]]
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
+- [[Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "GCS compare-and-set with if_generation_match (optimistic concurrency)"
+ai_hash: 262655d37dcac378
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27 — kga memory.py
 status: seedling
-source: "session 2026-08-27 — kga memory.py"
-tags: [gcs, concurrency, cas, gcp, python, testing]
+tags:
+- gcs
+- concurrency
+- cas
+- gcp
+- python
+- testing
+title: GCS compare-and-set with if_generation_match (optimistic concurrency)
+type: lesson
 ---
 
 # GCS compare-and-set with if_generation_match (optimistic concurrency)
@@ -24,3 +34,14 @@ Context: kga `memory.py` index writer (LUZ-159671 test-agent). Note pattern near
 
 - [[Cloud Run v2 has startup_probe + liveness_probe]]
 - [[no readiness probe]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[S3 generation-CAS via botocore If-Match conditional writes]]
+- [[luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[Write-stub bank proxy test a persistence-writing pipeline against live reads without mutating state]]
+- [[Shared aggregate write targets need CAS, not plain $set]]
+
+%% ai-graph-end %%

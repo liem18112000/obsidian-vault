@@ -1,10 +1,19 @@
 ---
-title: "GET import-jobs id showWarning=false returns LegacyImportJob to keep luz_mylife_web working"
+ai_hash: fa3529d2df5a95e8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: lesson
+entities: []
+source: session 2026-08-10 import-jobs usage investigation
 status: seedling
-source: "session 2026-08-10 import-jobs usage investigation"
-tags: [luz-docs-import, api-versioning, backward-compat, gotcha]
+tags:
+- luz-docs-import
+- api-versioning
+- backward-compat
+- gotcha
+title: GET import-jobs id showWarning=false returns LegacyImportJob to keep luz_mylife_web
+  working
+type: lesson
 ---
 
 # GET import-jobs id showWarning=false returns LegacyImportJob to keep luz_mylife_web working
@@ -21,3 +30,14 @@ The `GET {tenant}/import-jobs/{id}` endpoint in `luz_docs_import` (`ImportJobRes
 ## Related
 
 - [[luz_mylife_web is the only consumer of luz_docs_import import-jobs endpoints]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_mylife_web is the only consumer of luz_docs_import import-jobs endpoints]]
+- [[DELETE import-jobs id has no live consumer]]
+- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
+- [[Gate enriched REST response behind a boolean query param with a legacy-shaped DTO]]
+- [[luz-jsonstore GET-by-id masks read exceptions as empty-body 400; 10MB max-post-size caps whole-doc $set writes]]
+
+%% ai-graph-end %%

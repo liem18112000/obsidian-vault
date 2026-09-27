@@ -1,10 +1,19 @@
 ---
-title: "Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider"
+ai_hash: 607667d062afd2b7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: howto
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, terraform, postgresql, vdb]
+tags:
+- greennode
+- vngcloud
+- terraform
+- postgresql
+- vdb
+title: Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider
+type: howto
 ---
 
 # Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider
@@ -28,3 +37,14 @@ Backdrop: [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform
 ## Related
 
 - [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]]
+- [[GreenNode cloud runs on VNG Cloud infrastructure]]
+- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+
+%% ai-graph-end %%

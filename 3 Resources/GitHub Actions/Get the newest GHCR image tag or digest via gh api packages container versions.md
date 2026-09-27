@@ -1,10 +1,19 @@
 ---
-title: "Get the newest GHCR image tag or digest via gh api packages container versions"
+ai_hash: 59a128c72a728e95
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: howto
+entities: []
+source: session 2026-08-20, leo-customer360
 status: seedling
-source: "session 2026-08-20, leo-customer360"
-tags: [ghcr, gh-cli, containers, cd, howto]
+tags:
+- ghcr
+- gh-cli
+- containers
+- cd
+- howto
+title: Get the newest GHCR image tag or digest via gh api packages container versions
+type: howto
 ---
 
 # Get the newest GHCR image tag or digest via gh api packages container versions
@@ -26,3 +35,14 @@ Use `/orgs/<ORG>/packages/...` for org-owned packages, `/users/<USER>/packages/.
 ## Related
 
 - [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pin deploys by @sha256 of the TAGGED manifest, not the newest push (buildx multi-arch creates untagged sibling manifests)]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+- [[Verify a deployed service isn't stale match box RepoDigest to GHCR latest and read its sha-commit tag]]
+- [[Local deploy pull from GHCR needs a token with readpackages — gh default token lacks it (403)]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+
+%% ai-graph-end %%

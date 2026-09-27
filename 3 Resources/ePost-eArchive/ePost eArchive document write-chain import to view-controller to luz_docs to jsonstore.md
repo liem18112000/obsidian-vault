@@ -1,10 +1,22 @@
 ---
-title: "ePost eArchive document write-chain: import to view-controller to luz_docs to jsonstore"
+ai_hash: 056cccf08603e5a4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: model
+entities: []
+source: LUZ-158230 interrogation, session 2026-09-14
 status: seedling
-source: "LUZ-158230 interrogation, session 2026-09-14"
-tags: [luz, ePost, eArchive, architecture, write-chain, luz-docs, LUZ-158230]
+tags:
+- luz
+- ePost
+- eArchive
+- architecture
+- write-chain
+- luz-docs
+- LUZ-158230
+title: 'ePost eArchive document write-chain: import to view-controller to luz_docs
+  to jsonstore'
+type: model
 ---
 
 # ePost eArchive document write-chain: import to view-controller to luz_docs to jsonstore
@@ -22,3 +34,14 @@ All backend repos live in the **axonivy-prod** Bitbucket workspace: `luz_docs_im
 ## Related
 [[ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
 [[ePost ZIP import dedup: documents by job-success path, folders via view-controller]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost eArchive ZIP import transfer.zip shape and luz_docs_import]]
+- [[ePost ZIP import dedup documents by job-success path, folders via view-controller]]
+- [[luz-docs-import ZIP import call chain]]
+- [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
+- [[LUZ-158230 test approach full-chain real-deps integration with fully-materialized done]]
+
+%% ai-graph-end %%

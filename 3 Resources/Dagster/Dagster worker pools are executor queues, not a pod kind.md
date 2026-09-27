@@ -1,10 +1,19 @@
 ---
-title: "Dagster worker pools are executor queues, not a pod kind"
+ai_hash: 1639d2fe401f8550
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: concept
+entities: []
+source: leo-customer360 dagster-scaling-analysis, 2026-09-03
 status: seedling
-source: "leo-customer360 dagster-scaling-analysis, 2026-09-03"
-tags: [dagster, kubernetes, celery, executor, scaling]
+tags:
+- dagster
+- kubernetes
+- celery
+- executor
+- scaling
+title: Dagster worker pools are executor queues, not a pod kind
+type: concept
 ---
 
 # Dagster worker pools are executor queues, not a pod kind
@@ -24,3 +33,14 @@ Either way you need a **`QueuedRunCoordinator`** with `tag_concurrency_limits` t
 ## Related
 
 - [[Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas]]
+- [[Dagster auto-creates its tables but not the database]]
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+- [[Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+
+%% ai-graph-end %%

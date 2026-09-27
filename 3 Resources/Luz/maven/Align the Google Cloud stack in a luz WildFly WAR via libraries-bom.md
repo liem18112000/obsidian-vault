@@ -1,10 +1,20 @@
 ---
-title: "Align the Google Cloud stack in a luz WildFly WAR via libraries-bom"
+ai_hash: b90c378315e8bd51
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: lesson
+entities: []
+source: LUZ-158230 session 2026-08-10
 status: seedling
-source: "LUZ-158230 session 2026-08-10"
-tags: [luz, maven, google-cloud, libraries-bom, grpc, wildfly]
+tags:
+- luz
+- maven
+- google-cloud
+- libraries-bom
+- grpc
+- wildfly
+title: Align the Google Cloud stack in a luz WildFly WAR via libraries-bom
+type: lesson
 ---
 
 # Align the Google Cloud stack in a luz WildFly WAR via libraries-bom
@@ -22,3 +32,14 @@ Surfaced on LUZ-158230 (import-job Tier 4) in `luz_docs_import`.
 - [[Hosting a Pub/Sub consumer in a luz service with luz_message_receiver]]
 - [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec]]
 - [[not SmallRye @ExponentialBackoff]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hosting a PubSub consumer in a luz service with luz_message_receiver]]
+- [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff]]
+- [[luz_docs_import targets Java 17 (javax stack, modern idioms allowed)]]
+- [[Kepler PubSub topology HTTP-to-luz_message_broker publisher, luz_message_receiver pull-consumers, jsonstore version-number CAS]]
+- [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+
+%% ai-graph-end %%

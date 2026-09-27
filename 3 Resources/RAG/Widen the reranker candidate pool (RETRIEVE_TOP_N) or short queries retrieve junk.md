@@ -1,10 +1,20 @@
 ---
-title: "Widen the reranker candidate pool (RETRIEVE_TOP_N) or short queries retrieve junk"
+ai_hash: 9cc53429baa346e2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: session 2026-09-10 — docs-vector-search persona bug
 status: seedling
-source: "session 2026-09-10 — docs-vector-search persona bug"
-tags: [rag, retrieval, reranking, pgvector, gotcha]
+tags:
+- rag
+- retrieval
+- reranking
+- pgvector
+- gotcha
+title: Widen the reranker candidate pool (RETRIEVE_TOP_N) or short queries retrieve
+  junk
+type: lesson
 ---
 
 # Widen the reranker candidate pool (RETRIEVE_TOP_N) or short queries retrieve junk
@@ -23,3 +33,14 @@ Related: [[Over-refusal in a small RAG generator usually means bad retrieval, no
 
 - [[Over-refusal in a small RAG generator usually means bad retrieval]]
 - [[not a bad prompt]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Over-refusal in a small RAG generator usually means bad retrieval, not a bad prompt]]
+- [[docs-vector-search OOMs on ask on a 1vCPU2GB box (Qwen KV cache over RAM+swap)]]
+- [[Local RAG stack for a 1 vCPU 2 GB box e5 + bge-reranker + Qwen 0.5B]]
+- [[LLM-as-reranker JSON truncation budget max_tokens for pretty-printed output, not just element count]]
+- [[LLM query enrichment for a substring-OR matcher must contract, not expand, the token set]]
+
+%% ai-graph-end %%

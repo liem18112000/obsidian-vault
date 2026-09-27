@@ -1,10 +1,18 @@
 ---
-title: "Mutation score beats coverage for measuring test-suite quality"
+ai_hash: 34511598d479f243
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: concept
+entities: []
+source: deep research 2026-09-03
 status: seedling
-source: "deep research 2026-09-03"
-tags: [testing, mutation-testing, coverage, quality]
+tags:
+- testing
+- mutation-testing
+- coverage
+- quality
+title: Mutation score beats coverage for measuring test-suite quality
+type: concept
 ---
 
 # Mutation score beats coverage for measuring test-suite quality
@@ -18,3 +26,14 @@ Line/branch **coverage measures what a test *executes*, not what it *checks*** â
 - [[Assured test generation: keep an LLM test only if it builds]]
 - [[passes]]
 - [[and raises coverage]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Assured test generation keep an LLM test only if it builds, passes, and raises coverage]]
+- [[Prove a new branch is load-bearing by reverting it]]
+- [[Metamorphic and differential testing solve the oracle problem]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[AI as an accelerator with a human review gate]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Performance Mongo is a mongos-routed sharded cluster — truncate via the tenant's shard primary, not mongos"
+ai_hash: a0ad49ba8ddb4496
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: gotcha
+entities: []
+source: luz-docs-import perf benchmark 2026-08-13
 status: seedling
-source: "luz-docs-import perf benchmark 2026-08-13"
-tags: [luz, mongodb, sharding, mongos, performance-env, gotcha]
+tags:
+- luz
+- mongodb
+- sharding
+- mongos
+- performance-env
+- gotcha
+title: Performance Mongo is a mongos-routed sharded cluster — truncate via the tenant's
+  shard primary, not mongos
+type: gotcha
 ---
 
 # Performance Mongo is a mongos-routed sharded cluster — truncate via the tenant's shard primary, not mongos
@@ -23,3 +34,14 @@ Related: [[luz-docs-import performance-env import benchmark findings]].
 ## Related
 
 - [[luz-docs-import performance-env import benchmark findings]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[deleteMany over kubectl port-forward runs about 5k docs per second]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+- [[Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char]]
+- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
+- [[dev-staging tenants live on a separate mongo cluster from dev]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "FastAPI request-size guards inside the handler run after the body is in RAM"
+ai_hash: a6f1f9617ae42809
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: lesson
+entities: []
+source: c360 python code review 2026-09-05
 status: seedling
-source: "c360 python code review 2026-09-05"
-tags: [fastapi, pydantic, dos, ingestion, gotcha]
+tags:
+- fastapi
+- pydantic
+- dos
+- ingestion
+- gotcha
+title: FastAPI request-size guards inside the handler run after the body is in RAM
+type: lesson
 ---
 
 # FastAPI request-size guards inside the handler run after the body is in RAM
@@ -16,3 +25,11 @@ Enforce a request-body-size cap at the server/ingress layer (uvicorn/Starlette l
 ## Related
 
 - [[Pydantic min_length on a nullable str rejects empty strings]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pydantic min_length on a nullable str rejects empty strings]]
+- [[pydantic-settings JSON-parses complex fields at the source, before validators]]
+
+%% ai-graph-end %%

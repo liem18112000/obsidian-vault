@@ -1,10 +1,20 @@
 ---
-title: "Multi-turn agent sessions need min-instances=1 and session affinity on Cloud Run"
+ai_hash: c5d0c17a45993e16
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [cloud-run, state, scaling, agents, gotcha]
+tags:
+- cloud-run
+- state
+- scaling
+- agents
+- gotcha
+title: Multi-turn agent sessions need min-instances=1 and session affinity on Cloud
+  Run
+type: lesson
 ---
 
 # Multi-turn agent sessions need min-instances=1 and session affinity on Cloud Run
@@ -19,3 +29,14 @@ See [[Cloud Run one-port limit forces co-located HTTP servers into separate serv
 
 - [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
 - [[A2A input-required tasks must be answered on the same taskId and contextId]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
+- [[Co-locating a stateful MCP bridge as an agent sidecar couples their scaling]]
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+- [[A2A to_a2a task_store and runner are separate persistence params]]
+- [[A2A input-required tasks must be answered on the same taskId and contextId]]
+
+%% ai-graph-end %%

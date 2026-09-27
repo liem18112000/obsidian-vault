@@ -1,10 +1,22 @@
 ---
-title: "Local access to GKE-hosted Luz services: port-forward api-forwarder + luz-vault (+ mongo pod)"
+ai_hash: e25875cd24684c2b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: howto
+entities: []
+source: session 2026-08-10 (luz-docs-import-api-test skill)
 status: seedling
-source: "session 2026-08-10 (luz-docs-import-api-test skill)"
-tags: [luz, kubectl, port-forward, gke, mongodb, vault, ops]
+tags:
+- luz
+- kubectl
+- port-forward
+- gke
+- mongodb
+- vault
+- ops
+title: 'Local access to GKE-hosted Luz services: port-forward api-forwarder + luz-vault
+  (+ mongo pod)'
+type: howto
 ---
 
 # Local access to GKE-hosted Luz services: port-forward api-forwarder + luz-vault (+ mongo pod)
@@ -25,3 +37,14 @@ Both `-n <ENV>` where ENV is the app namespace (`dev`, `dev-staging`, `performan
 - [[Trace Luz per-service latency via the time-consuming= log marker]]
 - [[Luz docs-import zip flow: upload-zip returns job-id]]
 - [[poll GET until DONE]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards]]
+- [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[Luz performance env cluster topology]]
+- [[Build and roll out luz-jsonstore to dev (Cloud Build trigger + Deployment rollout)]]
+
+%% ai-graph-end %%

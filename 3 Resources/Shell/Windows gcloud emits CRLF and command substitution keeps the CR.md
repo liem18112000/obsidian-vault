@@ -1,10 +1,20 @@
 ---
-title: "Windows gcloud emits CRLF and command substitution keeps the CR"
+ai_hash: a8f21c7ebb04236a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: lesson
+entities: []
+source: session 2026-09-25 — test-agent-v2 rotation script
 status: seedling
-source: "session 2026-09-25 — test-agent-v2 rotation script"
-tags: [shell, bash, windows, git-bash, gcloud, gotcha]
+tags:
+- shell
+- bash
+- windows
+- git-bash
+- gcloud
+- gotcha
+title: Windows gcloud emits CRLF and command substitution keeps the CR
+type: lesson
 ---
 
 # Windows gcloud emits CRLF and command substitution keeps the CR
@@ -44,3 +54,14 @@ Then capture through `gc`, never bare `gcloud`. With `set -o pipefail` on, the w
 
 - [[Secret Manager versions accumulate silently — one per deploy, all left enabled]]
 - [[Cloud Run resolves a latest secret reference at instance start, not per request]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud]]
+- [[Cloud Build treats $VAR in step args as its own substitution; escape shell $ as $$]]
+- [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
+- [[Secret Manager versions accumulate silently - one per deploy, all left enabled]]
+- [[CRLF line endings on a shell script shebang cause Docker exit 127 (env bash^M not found)]]
+
+%% ai-graph-end %%

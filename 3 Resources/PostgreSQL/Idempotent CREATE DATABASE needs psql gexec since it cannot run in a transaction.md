@@ -1,10 +1,19 @@
 ---
-title: "Idempotent CREATE DATABASE needs psql gexec since it cannot run in a transaction"
+ai_hash: 2ccee3aeadf50cd6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-09
-type: howto
+entities: []
+source: session 2026-08-09 leo-customer360 terraform adapt
 status: seedling
-source: "session 2026-08-09 leo-customer360 terraform adapt"
-tags: [postgres, psql, idempotency, gexec, gotcha]
+tags:
+- postgres
+- psql
+- idempotency
+- gexec
+- gotcha
+title: Idempotent CREATE DATABASE needs psql gexec since it cannot run in a transaction
+type: howto
 ---
 
 # Idempotent CREATE DATABASE needs psql gexec since it cannot run in a transaction
@@ -27,3 +36,14 @@ Related: [[Managed DB provisioners create the server but not in-database objects
 ## Related
 
 - [[Managed DB provisioners create the server but not in-database objects]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Managed DB provisioners create the server but not in-database objects]]
+- [[Postgres docker-entrypoint-initdb.d runs only once on an empty volume]]
+- [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
+- [[Make a Terraform wrapper script idempotent with plan -detailed-exitcode and a saved plan]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+
+%% ai-graph-end %%

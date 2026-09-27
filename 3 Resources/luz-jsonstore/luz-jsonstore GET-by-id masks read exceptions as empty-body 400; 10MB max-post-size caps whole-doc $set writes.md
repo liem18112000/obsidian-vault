@@ -1,10 +1,20 @@
 ---
-title: "luz-jsonstore GET-by-id masks read exceptions as empty-body 400; 10MB max-post-size caps whole-doc $set writes"
+ai_hash: 32a439a606d56a46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: lesson
+entities: []
+source: luz_jsonstore trace 2026-08-07
 status: seedling
-source: "luz_jsonstore trace 2026-08-07"
-tags: [jsonstore, luz-docs-import, error-handling, mongodb, gotcha]
+tags:
+- jsonstore
+- luz-docs-import
+- error-handling
+- mongodb
+- gotcha
+title: luz-jsonstore GET-by-id masks read exceptions as empty-body 400; 10MB max-post-size
+  caps whole-doc $set writes
+type: lesson
 ---
 
 # luz-jsonstore GET-by-id masks read exceptions as empty-body 400; 10MB max-post-size caps whole-doc $set writes
@@ -22,3 +32,14 @@ Related: [[luz_docs_import]], [[Merging guard-with-return into && drops the unco
 ## Related
 
 - [[luz_docs_import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_jsonstore find projectsortcollation params must omit outer braces (server wraps them)]]
+- [[luz-jsonstore intermittently returns 200 with empty body on folder finds]]
+- [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
+- [[luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug]]
+- [[JsonParsingException EOF offset -1 means an empty response body was parsed]]
+
+%% ai-graph-end %%

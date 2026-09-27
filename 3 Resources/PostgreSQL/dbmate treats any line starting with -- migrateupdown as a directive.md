@@ -1,10 +1,18 @@
 ---
-title: "dbmate treats any line starting with -- migrate:up/down as a directive"
+ai_hash: fac718dba9d2dc25
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: lesson
+entities: []
+source: session 2026-08-24 dbmate implementation
 status: seedling
-source: "session 2026-08-24 dbmate implementation"
-tags: [dbmate, migrations, gotcha, postgres]
+tags:
+- dbmate
+- migrations
+- gotcha
+- postgres
+title: dbmate treats any line starting with -- migrate:up/down as a directive
+type: lesson
 ---
 
 # dbmate treats any line starting with -- migrate:up/down as a directive
@@ -21,3 +29,14 @@ Related: [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]].
 
 - [[leo-customer360 uses dbmate for Postgres migrations]]
 - [[not Alembic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[Guard a destructive down-migration with a session-GUC opt-in]]
+- [[A self-contained migration parity test is only useful during the cutover]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+
+%% ai-graph-end %%

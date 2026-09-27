@@ -1,10 +1,20 @@
 ---
-title: "Bitnami 2025 catalog reorg removed pinned bitnami/* version tags"
+ai_hash: df5aa589c530480a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [bitnami, dockerhub, kafka, imagepull, gotcha, manifest-unknown]
+tags:
+- bitnami
+- dockerhub
+- kafka
+- imagepull
+- gotcha
+- manifest-unknown
+title: Bitnami 2025 catalog reorg removed pinned bitnami/* version tags
+type: lesson
 ---
 
 # Bitnami 2025 catalog reorg removed pinned bitnami/* version tags
@@ -22,3 +32,12 @@ Check existence cheaply with `docker manifest inspect <img>` (a HEAD-style check
 ## Related
 - [[kind image pulls stall on Docker Hub rate limits; pre-pull and kind load]]
 - [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[kind image pulls stall on Docker Hub rate limits; pre-pull and kind load]]
+- [[MinIO Docker images live on quay.io not Docker Hub]]
+- [[Pin deploys by @sha256 of the TAGGED manifest, not the newest push (buildx multi-arch creates untagged sibling manifests)]]
+
+%% ai-graph-end %%

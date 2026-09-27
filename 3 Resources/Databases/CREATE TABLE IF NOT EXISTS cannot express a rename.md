@@ -1,10 +1,19 @@
 ---
-title: "CREATE TABLE IF NOT EXISTS cannot express a rename"
+ai_hash: e847a923a6a34159
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: lesson
+entities: []
+source: leo-customer360 SCRUM-102 code review 2026-09-19
 status: seedling
-source: "leo-customer360 SCRUM-102 code review 2026-09-19"
-tags: [sql, postgres, migrations, schema, gotcha]
+tags:
+- sql
+- postgres
+- migrations
+- schema
+- gotcha
+title: CREATE TABLE IF NOT EXISTS cannot express a rename
+type: lesson
 ---
 
 # CREATE TABLE IF NOT EXISTS cannot express a rename
@@ -27,3 +36,14 @@ Keep an explicit idempotent migration for the transform: `ALTER TABLE ... RENAME
 ## Related
 
 - [[Never sign a security token with a secret documented as unused]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CREATE TABLE IF NOT EXISTS never upgrades existing tables - pair new columns with ALTER IF NOT EXISTS]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[Per-feature migration scripts leave new tables silently missing until run]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+
+%% ai-graph-end %%

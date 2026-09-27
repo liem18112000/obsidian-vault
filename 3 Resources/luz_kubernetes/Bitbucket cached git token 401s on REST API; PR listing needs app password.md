@@ -1,10 +1,19 @@
 ---
-title: "Bitbucket cached git token 401s on REST API; PR listing needs app password"
+ai_hash: 0c1e4fcee4f8ebd8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18
 status: seedling
-source: "session 2026-08-18"
-tags: [bitbucket, git, api, auth, gotcha]
+tags:
+- bitbucket
+- git
+- api
+- auth
+- gotcha
+title: Bitbucket cached git token 401s on REST API; PR listing needs app password
+type: lesson
 ---
 
 # Bitbucket cached git token 401s on REST API; PR listing needs app password
@@ -20,3 +29,14 @@ See [[Finding intentional k8s config PRs in luz_kubernetes: filter out image-has
 ## Related
 
 - [[Finding intentional k8s config PRs in luz_kubernetes: filter out image-hash + merge drift]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bitbucket Cloud pull-request REST API shape]]
+- [[Bitbucket app-password discovery endpoints deprecated (CHANGE-2770)]]
+- [[gh CLI is GitHub-only, not Bitbucket-aware]]
+- [[Finding intentional k8s config PRs in luz_kubernetes filter out image-hash + merge drift]]
+- [[Clone a Bitbucket repo with an app password without leaking it (inline credential helper)]]
+
+%% ai-graph-end %%

@@ -1,11 +1,22 @@
 ---
-title: "GitHub Markdown heading-anchor slug rules"
+ai_hash: edd28a5c15abf2ab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+aliases:
+- GFM heading anchors
+- Markdown TOC anchor links
 created: 2026-08-29
-aliases: ["GFM heading anchors", "Markdown TOC anchor links"]
-type: reference
+entities: []
+source: session 2026-08-29 deployments README diagrams index
 status: seedling
-source: "session 2026-08-29 deployments README diagrams index"
-tags: [markdown, github, gfm, documentation, gotcha]
+tags:
+- markdown
+- github
+- gfm
+- documentation
+- gotcha
+title: GitHub Markdown heading-anchor slug rules
+type: reference
 ---
 
 # GitHub Markdown heading-anchor slug rules
@@ -29,3 +40,10 @@ Worked examples (from `deployments/README.md`):
 Note in the first example the `.` in `deploy-all.sh` vanishes (`allsh`), and both `—` and the backtick produce the `--`.
 
 Verify anchors by grepping the target headings actually exist before shipping a table-of-contents / index that deep-links to them. Duplicate heading text gets a `-1`, `-2`, … suffix (github-slugger dedup).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+
+%% ai-graph-end %%

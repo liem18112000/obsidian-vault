@@ -1,10 +1,21 @@
 ---
-title: "Deleting a prepaid cloud resource does not auto-refund; failed-provision charges need a manual support refund"
+ai_hash: 9c22d366af15ad66
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [cloud, billing, refund, vngcloud, vstorage, gotcha]
+tags:
+- cloud
+- billing
+- refund
+- vngcloud
+- vstorage
+- gotcha
+title: Deleting a prepaid cloud resource does not auto-refund; failed-provision charges
+  need a manual support refund
+type: lesson
 ---
 
 # Deleting a prepaid cloud resource does not auto-refund; failed-provision charges need a manual support refund
@@ -23,3 +34,14 @@ Context: leo-customer360 vStorage — 6 failed creates charged ~3,162,000 VND wi
 
 - [[vStorage create-project code 114 is account-side]]
 - [[not a payload bug]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vStorage create-project code 114 is account-side, not a payload bug]]
+- [[Creating a vStorage bucket is free (data-plane); only the project quota + usage cost money]]
+- [[vStorage API project creation needs a billing order (payment method or POC wallet)]]
+- [[GreenNode vDB billing is usage-based credit-hold; deleting refunds only unused held credit, not consumed runtime (UNVERIFIED)]]
+- [[vStorage project is a paid prerequisite Terraform cannot create]]
+
+%% ai-graph-end %%

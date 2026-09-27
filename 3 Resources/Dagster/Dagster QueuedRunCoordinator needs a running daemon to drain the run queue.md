@@ -1,10 +1,18 @@
 ---
-title: "Dagster QueuedRunCoordinator needs a running daemon to drain the run queue"
+ai_hash: 592bdd7cebd08edf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT incident 2026-09-10
 status: seedling
-source: "customer360 UAT incident 2026-09-10"
-tags: [dagster, orchestration, gotcha, queue]
+tags:
+- dagster
+- orchestration
+- gotcha
+- queue
+title: Dagster QueuedRunCoordinator needs a running daemon to drain the run queue
+type: lesson
 ---
 
 # Dagster QueuedRunCoordinator needs a running daemon to drain the run queue
@@ -28,3 +36,14 @@ Seen on customer360 backend-system UAT (2026-09): the single-container deploy ra
 
 - [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
 - [[Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+- [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+
+%% ai-graph-end %%

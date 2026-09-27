@@ -1,10 +1,18 @@
 ---
-title: "A greedy partition marker swallows parameters emitted after it"
+ai_hash: a054ca9dc1f8bbc3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: lesson
+entities: []
+source: session 2026-09-25
 status: seedling
-source: "session 2026-09-25"
-tags: [protocols, parsing, gotcha, api-design]
+tags:
+- protocols
+- parsing
+- gotcha
+- api-design
+title: A greedy partition marker swallows parameters emitted after it
+type: lesson
 ---
 
 # A greedy partition marker swallows parameters emitted after it
@@ -39,3 +47,10 @@ Related: [[Check every stage that writes a field, not just the one that defines 
 
 - [[Check every stage that writes a field]]
 - [[not just the one that defines it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

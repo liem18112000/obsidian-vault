@@ -1,10 +1,21 @@
 ---
-title: "test-agent-v2 hardened deploy.sh flow and the unique image-tag bump that forces a new revision"
+ai_hash: a5e93f7ee71e32e5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: howto
+entities: []
+source: session 2026-09-14 deploy db7b619
 status: seedling
-source: "session 2026-09-14 deploy db7b619"
-tags: [testing-agent, deploy, terraform, cloud-run, cloud-build, test-agent-v2]
+tags:
+- testing-agent
+- deploy
+- terraform
+- cloud-run
+- cloud-build
+- test-agent-v2
+title: test-agent-v2 hardened deploy.sh flow and the unique image-tag bump that forces
+  a new revision
+type: howto
 ---
 
 # test-agent-v2 hardened deploy.sh flow and the unique image-tag bump that forces a new revision
@@ -25,3 +36,14 @@ Related: [[v2 deploy collides with v1 names]], [[MCP instructions load at init -
 ## Related
 
 - [[MCP instructions load at init - reconnect to refresh]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Adding a Cloud Run service that shares one image var build first, targeted apply]]
+- [[Deploying the test-agent-v2 Cloud Run stack (names, tags, plan)]]
+- [[test-agent-v2 Cloud Run services use a -v2 name suffix]]
+- [[test-agent-v2 deploy + get_deliverables E2E verification]]
+- [[Deploy a unique image tag to force a Cloud Run rollout via terraform]]
+
+%% ai-graph-end %%

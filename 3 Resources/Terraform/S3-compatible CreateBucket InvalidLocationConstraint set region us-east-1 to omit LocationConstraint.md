@@ -1,10 +1,21 @@
 ---
-title: "S3-compatible CreateBucket InvalidLocationConstraint: set region us-east-1 to omit LocationConstraint"
+ai_hash: c9535cb3ac0eaa9a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 (live test)
 status: seedling
-source: "session 2026-08-18 (live test)"
-tags: [s3, aws-provider, terraform, vngcloud, minio, gotcha]
+tags:
+- s3
+- aws-provider
+- terraform
+- vngcloud
+- minio
+- gotcha
+title: 'S3-compatible CreateBucket InvalidLocationConstraint: set region us-east-1
+  to omit LocationConstraint'
+type: lesson
 ---
 
 # S3-compatible CreateBucket InvalidLocationConstraint: set region us-east-1 to omit LocationConstraint
@@ -27,3 +38,14 @@ Related: [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, no
 
 - [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider]]
 - [[not vngcloud]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
+- [[Terraform S3 remote backend for VNG vStorage (S3-compatible) config recipe]]
+- [[Confirm an S3-compatible object store region with a signed curl ListBuckets]]
+- [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
+
+%% ai-graph-end %%

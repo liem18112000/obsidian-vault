@@ -1,8 +1,18 @@
 ---
-title: "VNG vServer flavor resize (s-general-1x2 -> 2x4) is an in-place terraform change (0 destroy) but reboots the box"
+ai_hash: edb45d6c147bc228
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
+entities: []
+tags:
+- vngcloud
+- terraform
+- resize
+- flavor
+- leo-customer360
+title: VNG vServer flavor resize (s-general-1x2 -> 2x4) is an in-place terraform change
+  (0 destroy) but reboots the box
 type: lesson
-tags: [vngcloud, terraform, resize, flavor, leo-customer360]
 ---
 
 # VNG vServer flavor resize (s-general-1x2 -> 2x4) is an in-place terraform change (0 destroy) but reboots the box
@@ -18,3 +28,14 @@ Resizing a VNG vServer to a bigger flavor (e.g. s-general-1x2 [1vCPU/2GB] -> s-g
 **Gotchas hit while probing:** running `terraform plan` DIRECTLY (not via deploy.sh) fails with "No valid credential sources found / EC2 IMDS" because the S3-compatible state BACKEND needs AWS_* (VSTORAGE) creds that deploy.sh loads by sourcing .env — `set -a; . ./.env; set +a` before terraform. To test replace-vs-in-place safely without touching the real overlay, sed a temp copy and `terraform plan -var-file=temp` (plan is read-only), then delete it.
 
 Source: leo-customer360 uat api box resize check, 2026-08-23.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vngcloud Terraform accepts root_disk_size change but does not resize the boot volume in-place]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[VNG vServer name is in-place updatable; decouple server name from the for_each map key to rename without recreate]]
+- [[VNG vServer OS images are not associated with the s2-general flavor zone (image data-source trap)]]
+- [[vDB volume_type cannot be changed on a live instance (no change-type API; not ForceNew so TF won't recreate)]]
+
+%% ai-graph-end %%

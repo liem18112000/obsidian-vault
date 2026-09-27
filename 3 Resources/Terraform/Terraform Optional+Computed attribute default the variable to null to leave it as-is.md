@@ -1,10 +1,19 @@
 ---
-title: "Terraform Optional+Computed attribute: default the variable to null to leave it as-is"
+ai_hash: 5ceee707825495f4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-16
-type: lesson
+entities: []
+source: session 2026-08-16 prod backup wiring
 status: seedling
-source: "session 2026-08-16 prod backup wiring"
-tags: [terraform, iac, gotcha, vngcloud]
+tags:
+- terraform
+- iac
+- gotcha
+- vngcloud
+title: 'Terraform Optional+Computed attribute: default the variable to null to leave
+  it as-is'
+type: lesson
 ---
 
 # Terraform Optional+Computed attribute: default the variable to null to leave it as-is
@@ -20,3 +29,14 @@ Used to thread VNG Backup Center IDs into the LEO CDP prod PG cluster — see [[
 ## Related
 
 - [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+- [[vngcloud_vdb_postgresql_cluster ignores backup_auto (cluster backups go via VNG Backup Center)]]
+- [[vngcloud vDB packagevolume data source returns empty id on no-match (guard with a precondition)]]
+- [[Terraform optional-resource toggle create-or-reuse via count + a local that picks the id]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Customer360 redis.conf omits port so redis listens on 6379 not 6580"
+ai_hash: f0ab3df2612c2c3d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [redis, kubernetes, config, port, gotcha, customer360]
+tags:
+- redis
+- kubernetes
+- config
+- port
+- gotcha
+- customer360
+title: Customer360 redis.conf omits port so redis listens on 6379 not 6580
+type: lesson
 ---
 
 # Customer360 redis.conf omits port so redis listens on 6379 not 6580
@@ -17,3 +27,14 @@ Fix: make redis listen on 6580 — either add `port 6580` to `redis.conf` (fixes
 
 ## Related
 - [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP environment version drift local PG16Redis8 vs managed PG15Redis7]]
+- [[leo-customer360 Redis is a fail-open cacheauth-cacherate-limiter used only by customer360-api]]
+- [[kind port remap only hostPort binds the host; NodePorttargetPort stay internal]]
+- [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+- [[Portainer agent self-shuts its API after 72h if no server associates]]
+
+%% ai-graph-end %%

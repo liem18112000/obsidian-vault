@@ -1,10 +1,20 @@
 ---
-title: "Pandoc gfm-raw_html silently replaces complex tables with [TABLE]"
+ai_hash: 510cd2b4b75181da
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: session 2026-09-27 Confluence export
 status: seedling
-source: "session 2026-09-27 Confluence export"
-tags: [pandoc, markdown, html, conversion, gotcha, data-loss]
+tags:
+- pandoc
+- markdown
+- html
+- conversion
+- gotcha
+- data-loss
+title: Pandoc gfm-raw_html silently replaces complex tables with [TABLE]
+type: gotcha
 ---
 
 # Pandoc gfm-raw_html silently replaces complex tables with [TABLE]
@@ -38,3 +48,11 @@ The lesson generalises past tables: choosing a *lossy subtractive* format string
 
 - [[Export Confluence to markdown via body.view HTML]]
 - [[not body.storage]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Export Confluence to markdown via body.view HTML, not body.storage]]
+- [[Pandoc Markdown to DOCX full-width tables, justified body, per-section page breaks]]
+
+%% ai-graph-end %%

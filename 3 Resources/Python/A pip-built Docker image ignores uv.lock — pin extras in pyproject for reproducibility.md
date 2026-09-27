@@ -1,10 +1,20 @@
 ---
-title: "A pip-built Docker image ignores uv.lock — pin extras in pyproject for reproducibility"
+ai_hash: 75e12c4587623463
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22 JEV J6
 status: seedling
-source: "session 2026-09-22 JEV J6"
-tags: [python, uv, pip, docker, reproducibility, gotcha]
+tags:
+- python
+- uv
+- pip
+- docker
+- reproducibility
+- gotcha
+title: A pip-built Docker image ignores uv.lock — pin extras in pyproject for reproducibility
+type: lesson
 ---
 
 # A pip-built Docker image ignores uv.lock — pin extras in pyproject for reproducibility
@@ -21,3 +31,10 @@ Related: [[Calibrate a cascade threshold against the exact gate condition, not a
 
 - [[Piping a Python CLI through tail block-buffers stdout]]
 - [[looking like a hang]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 image built only from pyproject + src + main.py]]
+
+%% ai-graph-end %%

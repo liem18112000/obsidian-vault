@@ -1,10 +1,20 @@
 ---
-title: "'Supplier is not a functional interface' usually means a missing java.util.function import"
+ai_hash: 9761a17d3f6e6d1b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-04
-type: lesson
+entities: []
+source: session 2026-09-04 — luz_jsonstore refactor
 status: seedling
-source: "session 2026-09-04 — luz_jsonstore refactor"
-tags: [java, gotcha, functional-interface, lambda, imports]
+tags:
+- java
+- gotcha
+- functional-interface
+- lambda
+- imports
+title: '''Supplier is not a functional interface'' usually means a missing java.util.function
+  import'
+type: lesson
 ---
 
 # 'Supplier is not a functional interface' usually means a missing java.util.function import
@@ -27,3 +37,10 @@ import java.util.function.Consumer;
 
 - [[Java]]
 - [[Java functional interfaces]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

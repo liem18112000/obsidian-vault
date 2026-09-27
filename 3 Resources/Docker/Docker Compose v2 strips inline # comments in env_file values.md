@@ -1,10 +1,18 @@
 ---
-title: "Docker Compose v2 strips inline # comments in env_file values"
+ai_hash: 85892154ae58deb3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [docker, docker-compose, env-file, gotcha]
+tags:
+- docker
+- docker-compose
+- env-file
+- gotcha
+title: 'Docker Compose v2 strips inline # comments in env_file values'
+type: lesson
 ---
 
 # Docker Compose v2 strips inline # comments in env_file values
@@ -14,3 +22,14 @@ Docker Compose v2 (verified v2.39) **strips inline `# comments`** from `env_file
 ## Related
 
 - [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Compose command ${VAR} reads .env not env_file — use env_file + $$VAR]]
+- [[Compose an inline comment on a BLANK env value becomes the value]]
+- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
+- [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+- [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+
+%% ai-graph-end %%

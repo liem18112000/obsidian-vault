@@ -1,10 +1,20 @@
 ---
-title: "Concurrent test-agent-v2 deploys collide on terraform local-state lock (fails safe)"
+ai_hash: ce8f9358c9c2bde9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: Testing-Agent run-188f96b8 deploy
 status: seedling
-source: "Testing-Agent run-188f96b8 deploy"
-tags: [testing-agent, terraform, deploy, concurrency, gotcha]
+tags:
+- testing-agent
+- terraform
+- deploy
+- concurrency
+- gotcha
+title: Concurrent test-agent-v2 deploys collide on terraform local-state lock (fails
+  safe)
+type: lesson
 ---
 
 # Concurrent test-agent-v2 deploys collide on terraform local-state lock (fails safe)
@@ -27,3 +37,14 @@ The **test-agent-v2** terraform uses a **LOCAL backend** (`terraform.tfstate` on
 - [[Deploying the test-agent-v2 Cloud Run stack (names]]
 - [[tags]]
 - [[plan)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 hardened deploy.sh flow and the unique image-tag bump that forces a new revision]]
+- [[Adding a Cloud Run service that shares one image var build first, targeted apply]]
+- [[Deploy a unique image tag to force a Cloud Run rollout via terraform]]
+- [[Stale terraform state != live cloud — verify with gcloud before deleting a retired deployment]]
+- [[Deploying the test-agent-v2 Cloud Run stack (names, tags, plan)]]
+
+%% ai-graph-end %%

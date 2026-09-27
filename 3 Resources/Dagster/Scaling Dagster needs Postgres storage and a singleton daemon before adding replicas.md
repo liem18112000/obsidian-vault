@@ -1,10 +1,19 @@
 ---
-title: "Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas"
+ai_hash: e611034819987e03
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: leo-customer360 dagster-scaling-analysis, 2026-09-03
 status: seedling
-source: "leo-customer360 dagster-scaling-analysis, 2026-09-03"
-tags: [dagster, kubernetes, scaling, gotcha]
+tags:
+- dagster
+- kubernetes
+- scaling
+- gotcha
+title: Scaling Dagster needs Postgres storage and a singleton daemon before adding
+  replicas
+type: lesson
 ---
 
 # Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas
@@ -26,3 +35,14 @@ Only the webserver is stateless and horizontally scalable. Run `dagster instance
 
 - [[Dagster worker pools are executor queues]]
 - [[not a pod kind]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster auto-creates its tables but not the database]]
+- [[Dagster worker pools are executor queues, not a pod kind]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+- [[Dagster has no supported storage-backend migration; run history is operational metadata]]
+- [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+
+%% ai-graph-end %%

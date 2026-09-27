@@ -1,10 +1,21 @@
 ---
-title: "Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism"
+ai_hash: 10973b612b58f820
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: lesson
+entities: []
+source: luz_docs_import timeout proposal 2026-08-07
 status: seedling
-source: "luz_docs_import timeout proposal 2026-08-07"
-tags: [messaging, pubsub, jms, idempotency, fault-tolerance, design-decision]
+tags:
+- messaging
+- pubsub
+- jms
+- idempotency
+- fault-tolerance
+- design-decision
+title: Durable-queue visibility timeout folds task-timeout and crash-resume into one
+  mechanism
+type: lesson
 ---
 
 # Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism
@@ -22,3 +33,14 @@ Related: [[luz_docs_import]], [[Truncating a JWT breaks signature verification a
 ## Related
 
 - [[luz_docs_import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
+- [[Read-side fire-and-forget mutation pass the id and re-read in the async, don't mutate the object being serialized]]
+- [[Read-time non-persisted state repair is an anti-pattern; use a scheduled reconciler]]
+- [[luz_docs_import detects dead async-worker pods via kubectl during status polling]]
+- [[A per-checkpoint lastModified timestamp doubles as a liveness heartbeat for timeout detection]]
+
+%% ai-graph-end %%

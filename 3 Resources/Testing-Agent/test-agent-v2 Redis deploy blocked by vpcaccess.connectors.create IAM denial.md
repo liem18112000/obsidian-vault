@@ -1,10 +1,20 @@
 ---
-title: "test-agent-v2 Redis deploy blocked by vpcaccess.connectors.create IAM denial"
+ai_hash: 55bb3ac0df471a46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: Testing-Agent deploy 3a39108-report
 status: seedling
-source: "Testing-Agent deploy 3a39108-report"
-tags: [testing-agent, deploy, terraform, iam, redis, gotcha]
+tags:
+- testing-agent
+- deploy
+- terraform
+- iam
+- redis
+- gotcha
+title: test-agent-v2 Redis deploy blocked by vpcaccess.connectors.create IAM denial
+type: lesson
 ---
 
 # test-agent-v2 Redis deploy blocked by vpcaccess.connectors.create IAM denial
@@ -22,3 +32,14 @@ Deploying **test-agent-v2 with `deploy_redis=true`** fails for an account withou
 ## Related
 
 - [[Concurrent test-agent-v2 deploys collide on terraform local-state lock (fails safe)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 Redis VPC connector stuck in ERROR (CIDRnetwork misconfig)]]
+- [[redis_proxy.sh needs compute firewall + VM + IAP permissions]]
+- [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+- [[test-agent-v2 hardened deploy.sh flow and the unique image-tag bump that forces a new revision]]
+- [[Concurrent test-agent-v2 deploys collide on terraform local-state lock (fails safe)]]
+
+%% ai-graph-end %%

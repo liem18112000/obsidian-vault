@@ -1,10 +1,19 @@
 ---
-title: "TRUNCATE CASCADE defeats a table allowlist"
+ai_hash: 72aa7fe0b60022aa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: lesson
+entities: []
+source: test-agent-v2 code review 2026-09-19
 status: seedling
-source: "test-agent-v2 code review 2026-09-19"
-tags: [postgres, sql, truncate, gotcha, data-loss]
+tags:
+- postgres
+- sql
+- truncate
+- gotcha
+- data-loss
+title: TRUNCATE CASCADE defeats a table allowlist
+type: lesson
 ---
 
 # TRUNCATE CASCADE defeats a table allowlist
@@ -25,3 +34,12 @@ Seen in test-agent-v2 `common/admin/wipe.py::_truncate`, where a `_RUNTIME_TABLE
 ## Related
 
 - [[Fail-open bearer auth middleware antipattern]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fail-open bearer auth middleware antipattern]]
+- [[Delete-and-reinsert aggregate saves silently cascade-wipe new child tables]]
+- [[Empty array in Postgres WHERE NOT (id = ANY(...)) deletes every row]]
+
+%% ai-graph-end %%

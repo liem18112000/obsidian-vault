@@ -1,10 +1,18 @@
 ---
-title: "Broker Redis needs opposite config from cache Redis, run it separately"
+ai_hash: 06f8f8d065b72668
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: lesson
+entities: []
+source: session 2026-08-25 (leo-customer360 data-tracking-api)
 status: seedling
-source: "session 2026-08-25 (leo-customer360 data-tracking-api)"
-tags: [redis, streams, architecture, gotcha]
+tags:
+- redis
+- streams
+- architecture
+- gotcha
+title: Broker Redis needs opposite config from cache Redis, run it separately
+type: lesson
 ---
 
 # Broker Redis needs opposite config from cache Redis, run it separately
@@ -21,3 +29,14 @@ Surfaced wiring the CDP data-tracking-api broker on its own vServer.
 ## Related
 
 - [[Redis Streams consumer-group at-least-once Loader pattern]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Run an event-broker Redis as a dedicated co-located instance, not the cache Redis]]
+- [[Redis Streams consumer-group at-least-once Loader pattern]]
+- [[A dedupidempotency cache belongs co-located with the worker, not in a shared cross-service cache]]
+- [[Redis Streams (not pubsub) as the local PubSub alternative]]
+- [[leo-customer360 Redis is a fail-open cacheauth-cacherate-limiter used only by customer360-api]]
+
+%% ai-graph-end %%

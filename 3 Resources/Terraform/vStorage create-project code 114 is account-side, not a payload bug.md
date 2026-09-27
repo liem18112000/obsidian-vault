@@ -1,10 +1,19 @@
 ---
-title: "vStorage create-project code 114 is account-side, not a payload bug"
+ai_hash: 818352280a09cd9a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: observation
+entities: []
+source: session 2026-08-17 (live API probe)
 status: seedling
-source: "session 2026-08-17 (live API probe)"
-tags: [vngcloud, vstorage, billing, gotcha, object-storage]
+tags:
+- vngcloud
+- vstorage
+- billing
+- gotcha
+- object-storage
+title: vStorage create-project code 114 is account-side, not a payload bug
+type: observation
 ---
 
 # vStorage create-project code 114 is account-side, not a payload bug
@@ -29,3 +38,14 @@ Related: [[vStorage API project creation needs a billing order (payment method o
 
 - [[vStorage API project creation needs a billing order (payment method or POC wallet)]]
 - [[VNG vStorage API returns HTTP 200 with success-false on errors]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vStorage API project creation needs a billing order (payment method or POC wallet)]]
+- [[Deleting a prepaid cloud resource does not auto-refund; failed-provision charges need a manual support refund]]
+- [[Creating a vStorage bucket is free (data-plane); only the project quota + usage cost money]]
+- [[vStorage REST control-plane API endpoints and vIAM bearer auth]]
+- [[vStorage project is a paid prerequisite Terraform cannot create]]
+
+%% ai-graph-end %%

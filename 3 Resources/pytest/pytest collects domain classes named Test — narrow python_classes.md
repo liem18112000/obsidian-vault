@@ -1,10 +1,18 @@
 ---
-title: "pytest collects domain classes named Test* — narrow python_classes"
+ai_hash: 427f65d6d9cf03e9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-28, test_plan_definition M0 scaffold
 status: seedling
-source: "session 2026-08-28, test_plan_definition M0 scaffold"
-tags: [pytest, python, gotcha, testing]
+tags:
+- pytest
+- python
+- gotcha
+- testing
+title: pytest collects domain classes named Test* — narrow python_classes
+type: lesson
 ---
 
 # pytest collects domain classes named Test* — narrow python_classes
@@ -19,3 +27,10 @@ python_classes = ["*Tests"]
 Verify first that no existing test relies on a `Test`-prefixed class being collected (`grep -rnE "^class Test" tests/`). Alternatives: set `__test__ = False` on each model (pollutes domain code), or just accept the warning.
 
 Applies whenever a testing domain legitimately owns `Test*` type names — common in QA/test-tooling code.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[pytest imports all test modules before applying -m deselection]]
+
+%% ai-graph-end %%

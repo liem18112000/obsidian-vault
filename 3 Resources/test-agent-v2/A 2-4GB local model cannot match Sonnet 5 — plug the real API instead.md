@@ -1,10 +1,19 @@
 ---
-title: "A 2-4GB local model cannot match Sonnet 5 — plug the real API instead"
+ai_hash: b9db057667f735d9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [local-llm, quantization, sonnet, litellm, expectation-setting]
+tags:
+- local-llm
+- quantization
+- sonnet
+- litellm
+- expectation-setting
+title: A 2-4GB local model cannot match Sonnet 5 — plug the real API instead
+type: lesson
 ---
 
 # A 2-4GB local model cannot match Sonnet 5 — plug the real API instead
@@ -17,3 +26,14 @@ The RIGHT move when someone wants "Sonnet quality on a tiny box": the test-agent
 
 - [[Local LLM choice for the test-agent workload (Ollama)]]
 - [[Pluggable LLM via the litellm ModelProvider backend]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+- [[Local LLM choice for the test-agent workload (Ollama)]]
+- [[Pluggable LLM via the litellm ModelProvider backend]]
+- [[Best Ollama models for CPU-only coding and research on a thin laptop]]
+- [[Local RAG stack for a 1 vCPU 2 GB box e5 + bge-reranker + Qwen 0.5B]]
+
+%% ai-graph-end %%

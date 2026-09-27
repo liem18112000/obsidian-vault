@@ -1,10 +1,19 @@
 ---
-title: "Compose: an inline comment on a BLANK env value becomes the value"
+ai_hash: 06528dc3b7d34913
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: lesson
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [docker-compose, env-file, gotcha, mcp, bearer]
+tags:
+- docker-compose
+- env-file
+- gotcha
+- mcp
+- bearer
+title: 'Compose: an inline comment on a BLANK env value becomes the value'
+type: lesson
 ---
 
 # Compose: an inline comment on a BLANK env value becomes the value
@@ -14,3 +23,14 @@ GOTCHA (bit us with a live 500): docker-compose v2 strips an inline `# comment` 
 ## Related
 
 - [[Docker Compose v2 strips inline # comments in env_file values]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Docker Compose v2 strips inline # comments in env_file values]]
+- [[Registering a bearer-gated HTTP MCP server needs claude mcp add --header]]
+- [[Compose command ${VAR} reads .env not env_file — use env_file + $$VAR]]
+- [[Rolling a bearer-gated MCP server revision can stick Claude Code in OAuth DCR — re-register to reset]]
+- [[Slow local implement_plan needs TWO timeouts raised client MCP idle + gateway A2A_CLIENT_TIMEOUT]]
+
+%% ai-graph-end %%

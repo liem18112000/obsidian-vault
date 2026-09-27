@@ -1,10 +1,18 @@
 ---
-title: "GHCR image names must be lowercase; docker/metadata-action lowercases automatically"
+ai_hash: e8bd3e70598427d6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20 leo-customer360 CI
 status: seedling
-source: "session 2026-08-20 leo-customer360 CI"
-tags: [github-actions, ghcr, docker, gotcha]
+tags:
+- github-actions
+- ghcr
+- docker
+- gotcha
+title: GHCR image names must be lowercase; docker/metadata-action lowercases automatically
+type: lesson
 ---
 
 # GHCR image names must be lowercase; docker/metadata-action lowercases automatically
@@ -26,3 +34,14 @@ Related: [[Feed dorny/paths-filter changes output into a build matrix for select
 ## Related
 
 - [[Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[Feed dornypaths-filter changes output into a build matrix for selective monorepo builds]]
+- [[Local deploy pull from GHCR needs a token with readpackages — gh default token lacks it (403)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "ADK DatabaseSessionService can subsume a separate A2A task store and state-file rehydration"
+ai_hash: 7afe663097f81b24
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: lesson
+entities: []
+source: adk-transform export 2026-09-07
 status: seedling
-source: "adk-transform export 2026-09-07"
-tags: [google-adk, sessions, persistence, a2a]
+tags:
+- google-adk
+- sessions
+- persistence
+- a2a
+title: ADK DatabaseSessionService can subsume a separate A2A task store and state-file
+  rehydration
+type: lesson
 ---
 
 # ADK DatabaseSessionService can subsume a separate A2A task store and state-file rehydration
@@ -20,3 +29,14 @@ Related: [[ADK workflow agents orchestrate deterministically without an LLM-driv
 ## Related
 
 - [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A2A to_a2a task_store and runner are separate persistence params]]
+- [[Persist ADK session state from a custom agent via Event state_delta]]
+- [[ADK DatabaseSessionService needs the db extra and an async SQLAlchemy driver]]
+- [[a2a-sdk DatabaseTaskStore makes A2A tasks survive Cloud Run restarts]]
+- [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "CodeQL py/clear-text-logging-sensitive-data: don't log phone/PII, log a correlation id"
+ai_hash: c1a66c4ff06c9eca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: lesson
+entities: []
+source: leo-customer360 PR 77 CI fix 2026-09-19
 status: seedling
-source: "leo-customer360 PR 77 CI fix 2026-09-19"
-tags: [codeql, security, logging, pii, ci, gotcha]
+tags:
+- codeql
+- security
+- logging
+- pii
+- ci
+- gotcha
+title: 'CodeQL py/clear-text-logging-sensitive-data: don''t log phone/PII, log a correlation
+  id'
+type: lesson
 ---
 
 # CodeQL py/clear-text-logging-sensitive-data: don't log phone/PII, log a correlation id
@@ -22,3 +33,10 @@ The bot's PR review comments auto-mark "outdated" once the flagged lines change;
 ## Related
 
 - [[Never sign a security token with a secret documented as unused]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

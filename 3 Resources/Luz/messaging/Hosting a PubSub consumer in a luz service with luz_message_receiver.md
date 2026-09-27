@@ -1,11 +1,22 @@
 ---
-title: "Hosting a Pub/Sub consumer in a luz service with luz_message_receiver"
+ai_hash: 438a4e4ee926b15f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+aliases:
+- luz_message_receiver BaseReceiver RegisterSupscription
 created: 2026-08-10
-aliases: ["luz_message_receiver BaseReceiver RegisterSupscription"]
-type: howto
+entities: []
+source: LUZ-158230 session 2026-08-10
 status: seedling
-source: "LUZ-158230 session 2026-08-10"
-tags: [luz, pubsub, messaging, wildfly, luz-message-receiver, howto]
+tags:
+- luz
+- pubsub
+- messaging
+- wildfly
+- luz-message-receiver
+- howto
+title: Hosting a Pub/Sub consumer in a luz service with luz_message_receiver
+type: howto
 ---
 
 # Hosting a Pub/Sub consumer in a luz service with luz_message_receiver
@@ -27,3 +38,14 @@ Surfaced on LUZ-158230 (import-job Tier 4 durable status queue) in `luz_docs_imp
 - [[luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS]]
 - [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec]]
 - [[not SmallRye @ExponentialBackoff]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Kepler PubSub topology HTTP-to-luz_message_broker publisher, luz_message_receiver pull-consumers, jsonstore version-number CAS]]
+- [[Align the Google Cloud stack in a luz WildFly WAR via libraries-bom]]
+- [[Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism]]
+- [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff]]
+- [[luz_online_payment local Docker run pattern (WildFly WAR + GAR base + local Postgres)]]
+
+%% ai-graph-end %%

@@ -1,6 +1,15 @@
 ---
-tags: [klara, luz-docs-import, luz-docs, architecture, integration]
+ai_hash: ef77e4b41a1d50e5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
+entities: []
+tags:
+- klara
+- luz-docs-import
+- luz-docs
+- architecture
+- integration
 ---
 
 # luz-docs-import ZIP import call chain
@@ -19,3 +28,14 @@ Source-verified high-level flow for a ZIP import (repos: `luz_docs_import`, `luz
 Support services (not in the create-doc hot path): **jwt_service/luzsec** (`LuzSecRestClient`, auth); **luz_message_broker / Google Pub/Sub** (import-job status + notifications only — the import loop itself is the EJB async job, not Pub/Sub).
 
 Gotcha: don't conflate the two stores — **binary → GCS**, **records → jsonstore/Mongo**. And step-2 AV target is the metadata file, not the archive. See [[KLARA dev login automation gotchas]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost eArchive document write-chain import to view-controller to luz_docs to jsonstore]]
+- [[luz-docs-import antivirus whole-zip scan dominates first-import latency and scales with zip size]]
+- [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
+- [[Metadata sidecars must be scanned in luz-docs-import because they are never uploaded]]
+- [[luz_docs_import ZIP uploads are not virus-scanned (AntiviusScanningService is never wired in)]]
+
+%% ai-graph-end %%

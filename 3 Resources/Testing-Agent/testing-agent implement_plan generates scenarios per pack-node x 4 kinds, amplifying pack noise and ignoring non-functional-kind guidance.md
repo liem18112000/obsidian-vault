@@ -1,10 +1,22 @@
 ---
-title: "testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance"
+ai_hash: 1b4e9e89e7f9a3cc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-15
-type: lesson
+entities: []
+source: testing-agent run run-87933300, 2026-09-15
 status: seedling
-source: "testing-agent run run-87933300, 2026-09-15"
-tags: [testing-agent, implement_plan, scenarios, noise, precision, gotcha, mcp-timeout]
+tags:
+- testing-agent
+- implement_plan
+- scenarios
+- noise
+- precision
+- gotcha
+- mcp-timeout
+title: testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying
+  pack noise and ignoring non-functional-kind guidance
+type: lesson
 ---
 
 # testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance
@@ -29,3 +41,14 @@ Fix for cleaner output: use a tighter, higher-precision pack (fresh context, foc
 
 - [[Testing-agent refine loses confidence when source-of-truth PDF attachments are undistilled gaps]]
 - [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing-agent refine loses confidence when source-of-truth PDF attachments are undistilled gaps]]
+- [[Testing-Agent implement_plan silent heuristic fallback = per-node x kind empty-step scenarios]]
+- [[Testing-Agent refine confidence is capped by un-ingested spec PDFs]]
+- [[Deployed implement_plan P4 assured loop times out at 900s for broad features]]
+- [[Testing-Agent implement_plan assured loop times out at 900s MCP ceiling]]
+
+%% ai-graph-end %%

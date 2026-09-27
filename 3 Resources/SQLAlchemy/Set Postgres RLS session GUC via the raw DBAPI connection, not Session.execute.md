@@ -1,10 +1,20 @@
 ---
-title: "Set Postgres RLS session GUC via the raw DBAPI connection, not Session.execute"
+ai_hash: 344461d313428918
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20, leo-customer360 commit 4da1868
 status: seedling
-source: "session 2026-08-20, leo-customer360 commit 4da1868"
-tags: [sqlalchemy, postgres, rls, multi-tenant, customer360-api, gotcha]
+tags:
+- sqlalchemy
+- postgres
+- rls
+- multi-tenant
+- customer360-api
+- gotcha
+title: Set Postgres RLS session GUC via the raw DBAPI connection, not Session.execute
+type: lesson
 ---
 
 # Set Postgres RLS session GUC via the raw DBAPI connection, not Session.execute
@@ -27,3 +37,14 @@ Fixed in commit `4da1868` on `leo-customer360` (branch `infras/continue-integrat
 ## Related
 
 - [[A scripted-sequence test double breaks when production code adds a Session.execute call]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A scripted-sequence test double breaks when production code adds a Session.execute call]]
+- [[Inject a Postgres session GUC into an unmodifiable script via PGOPTIONS]]
+- [[Postgres session SET vs transaction-local set_config for RLS context]]
+- [[FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set]]
+- [[Postgres RLS is silently bypassed by superuser connections]]
+
+%% ai-graph-end %%

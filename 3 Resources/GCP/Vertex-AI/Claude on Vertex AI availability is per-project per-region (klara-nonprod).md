@@ -1,10 +1,19 @@
 ---
-title: "Claude on Vertex AI availability is per-project per-region (klara-nonprod)"
+ai_hash: cebe88267a3fa68e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: observation
+entities: []
+source: session 2026-08-27 models/test_vertex_claude.py
 status: seedling
-source: "session 2026-08-27 models/test_vertex_claude.py"
-tags: [vertex-ai, anthropic, claude, model-access, klara-nonprod]
+tags:
+- vertex-ai
+- anthropic
+- claude
+- model-access
+- klara-nonprod
+title: Claude on Vertex AI availability is per-project per-region (klara-nonprod)
+type: observation
 ---
 
 # Claude on Vertex AI availability is per-project per-region (klara-nonprod)
@@ -35,3 +44,14 @@ A 404/403 is fixed by **enabling the model in Model Garden for that project** (a
 - Evidence it is per-model: in `klara-nonprod`, `claude-sonnet-5` was enabled (worked) while `claude-opus-*` returned 404 in the same project+region - someone enabled sonnet-5 specifically.
 
 **Do it in the Console:** Vertex AI -> Model Garden -> the Anthropic model -> **Enable** (per model). Needs `roles/aiplatform.user` plus permission to accept Model Garden terms (typically `roles/aiplatform.admin` / console access). After enabling, call it exactly like sonnet-5 with `region="global"`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+- [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+- [[Vertex AI global endpoint host has no region prefix]]
+- [[Claude models are available on GCP Vertex AI Model Garden]]
+
+%% ai-graph-end %%

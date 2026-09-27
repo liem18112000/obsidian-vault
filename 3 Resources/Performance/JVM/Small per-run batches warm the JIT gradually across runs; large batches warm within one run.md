@@ -1,10 +1,20 @@
 ---
-title: "Small per-run batches warm the JIT gradually across runs; large batches warm within one run"
+ai_hash: 7d126c1fcb644fbf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: technique
+entities: []
+source: luz-docs-import run-1 cold-start investigation 2026-08-13
 status: seedling
-source: "luz-docs-import run-1 cold-start investigation 2026-08-13"
-tags: [jvm, jit, hotspot, performance, benchmarking]
+tags:
+- jvm
+- jit
+- hotspot
+- performance
+- benchmarking
+title: Small per-run batches warm the JIT gradually across runs; large batches warm
+  within one run
+type: technique
 ---
 
 # Small per-run batches warm the JIT gradually across runs; large batches warm within one run
@@ -22,3 +32,14 @@ Related: [[A latency penalty in the tail not the median points to JIT/GC warm-up
 
 - [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
 - [[Truncating DB collections between benchmark runs resets data but not service warmth]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention]]
+- [[Truncating DB collections between benchmark runs resets data but not service warmth]]
+- [[Trust median and p90 over many runs, not the mean of a few, for latency on a noisy shared env]]
+- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
+- [[Small import batches are overhead-bound so their per-item throughput is lower than large batches]]
+
+%% ai-graph-end %%

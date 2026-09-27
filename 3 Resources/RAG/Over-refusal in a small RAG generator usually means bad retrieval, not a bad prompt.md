@@ -1,10 +1,20 @@
 ---
-title: "Over-refusal in a small RAG generator usually means bad retrieval, not a bad prompt"
+ai_hash: 9fc274e223e34c7c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: session 2026-09-10 — docs-vector-search persona bug
 status: seedling
-source: "session 2026-09-10 — docs-vector-search persona bug"
-tags: [rag, retrieval, prompting, gotcha, llm]
+tags:
+- rag
+- retrieval
+- prompting
+- gotcha
+- llm
+title: Over-refusal in a small RAG generator usually means bad retrieval, not a bad
+  prompt
+type: lesson
 ---
 
 # Over-refusal in a small RAG generator usually means bad retrieval, not a bad prompt
@@ -20,3 +30,14 @@ Related: [[Widen the reranker candidate pool (RETRIEVE_TOP_N) or short queries r
 ## Related
 
 - [[Widen the reranker candidate pool (RETRIEVE_TOP_N) or short queries retrieve junk]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Widen the reranker candidate pool (RETRIEVE_TOP_N) or short queries retrieve junk]]
+- [[LLM query enrichment for a substring-OR matcher must contract, not expand, the token set]]
+- [[docs-vector-search OOMs on ask on a 1vCPU2GB box (Qwen KV cache over RAM+swap)]]
+- [[Two-phase RAG chatbot UX fast retrieval first, slow generation second]]
+- [[Local RAG stack for a 1 vCPU 2 GB box e5 + bge-reranker + Qwen 0.5B]]
+
+%% ai-graph-end %%

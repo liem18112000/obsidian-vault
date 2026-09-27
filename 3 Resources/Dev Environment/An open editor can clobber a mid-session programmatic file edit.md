@@ -1,10 +1,19 @@
 ---
-title: "An open editor can clobber a mid-session programmatic file edit"
+ai_hash: 1310c709ed37623c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22 JEV J4
 status: seedling
-source: "session 2026-09-22 JEV J4"
-tags: [editor, autosave, gotcha, file-io, agents]
+tags:
+- editor
+- autosave
+- gotcha
+- file-io
+- agents
+title: An open editor can clobber a mid-session programmatic file edit
+type: lesson
 ---
 
 # An open editor can clobber a mid-session programmatic file edit
@@ -25,3 +34,14 @@ Related: [[Piping a Python CLI through tail block-buffers stdout, looking like a
 
 - [[Piping a Python CLI through tail block-buffers stdout]]
 - [[looking like a hang]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Piping a Python CLI through tail block-buffers stdout, looking like a hang]]
+- [[A clobbered 0-element .excalidraw stub can get committed — recover the rich version from git history]]
+- [[Never edit a shell script while it is executing]]
+- [[A concurrent session's git stash can silently revert your in-progress edits]]
+- [[JetBrains Excalidraw plugin rewrites the .excalidraw source field on save]]
+
+%% ai-graph-end %%

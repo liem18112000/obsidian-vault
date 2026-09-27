@@ -1,10 +1,19 @@
 ---
-title: "Intermittent DB saturation = stacked loads crossing a fixed ceiling"
+ai_hash: ae7821249bc26835
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: model
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [debugging, capacity, mongodb, reliability, mental-model]
+tags:
+- debugging
+- capacity
+- mongodb
+- reliability
+- mental-model
+title: Intermittent DB saturation = stacked loads crossing a fixed ceiling
+type: model
 ---
 
 # Intermittent DB saturation = stacked loads crossing a fixed ceiling
@@ -24,3 +33,14 @@ Practical consequences:
 
 - [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
 - [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+- [[Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore into Mongo]]
+- [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+- [[Luz DNS storm gate is both CoreDNS replicas down together plus morning load, not enrichment volume]]
+- [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
+
+%% ai-graph-end %%

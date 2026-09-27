@@ -1,10 +1,20 @@
 ---
-title: "GreenNode vDB list-instances API needs pageNumber/pageSize and nests results at data.data"
+ai_hash: 18bb80b6425c30fd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: reference
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, vdb, api, pagination]
+tags:
+- greennode
+- vngcloud
+- vdb
+- api
+- pagination
+title: GreenNode vDB list-instances API needs pageNumber/pageSize and nests results
+  at data.data
+type: reference
 ---
 
 # GreenNode vDB list-instances API needs pageNumber/pageSize and nests results at data.data
@@ -20,3 +30,14 @@ Used to resolve a DB instance id by name in the vMonitor alarm setup script (leo
 ## Related
 
 - [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-apiapiv1alarmsmetrics]]
+- [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]]
+- [[VNG Cloud list-projects endpoint is GET vserver-gatewayv1projects (not accounts-api)]]
+
+%% ai-graph-end %%

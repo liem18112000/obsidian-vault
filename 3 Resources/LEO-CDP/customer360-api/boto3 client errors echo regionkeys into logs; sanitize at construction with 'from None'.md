@@ -1,10 +1,22 @@
 ---
-title: "boto3 client errors echo region/keys into logs; sanitize at construction with 'from None'"
+ai_hash: 383789fa3d2035a3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-cdp, customer360-api, security, boto3, logging, fastapi, exception-handling]
+tags:
+- leo-cdp
+- customer360-api
+- security
+- boto3
+- logging
+- fastapi
+- exception-handling
+title: boto3 client errors echo region/keys into logs; sanitize at construction with
+  'from None'
+type: lesson
 ---
 
 # boto3 client errors echo region/keys into logs; sanitize at construction with 'from None'
@@ -32,3 +44,13 @@ Related: [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
 
 - [[Validate S3_REGION at the deploy boundary]]
 - [[not after boto3 fails]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
+- [[Pull customer360-api UAT error logs via SSH (docker logs on the api VM)]]
+- [[Module-level load_dotenv lets unit tests hit real cloud credentials]]
+- [[ssh drops empty positional args; pass a base64 newline-joined argv + mapfile]]
+
+%% ai-graph-end %%

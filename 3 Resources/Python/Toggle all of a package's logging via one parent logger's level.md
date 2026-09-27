@@ -1,10 +1,19 @@
 ---
-title: "Toggle all of a package's logging via one parent logger's level"
+ai_hash: d35737f8a296f59b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: howto
+entities: []
+source: session 2026-08-27 — kga monitoring.py
 status: seedling
-source: "session 2026-08-27 — kga monitoring.py"
-tags: [logging, python, monitoring, gotcha, testing]
+tags:
+- logging
+- python
+- monitoring
+- gotcha
+- testing
+title: Toggle all of a package's logging via one parent logger's level
+type: howto
 ---
 
 # Toggle all of a package's logging via one parent logger's level
@@ -25,3 +34,11 @@ Context: kga `monitoring.py` (LUZ-159671 test-agent).
 
 - [[Retry only transient HTTP failures]]
 - [[and test backoff by mocking asyncio.sleep]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK built-in logging does not cover env-gated per-agent app logging]]
+- [[Capture a CLI run's full log by attaching a per-run timestamped FileHandler to the root logger]]
+
+%% ai-graph-end %%

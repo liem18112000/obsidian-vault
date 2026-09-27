@@ -1,10 +1,19 @@
 ---
-title: "Ship a workflow trigger from an MCP server (no client setup) via server instructions + prompts"
+ai_hash: 972e4cc5b5a44ea2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-28, test-agent MCP-only trigger
 status: seedling
-source: "session 2026-08-28, test-agent MCP-only trigger"
-tags: [mcp, claude-code, agents, design-decision]
+tags:
+- mcp
+- claude-code
+- agents
+- design-decision
+title: Ship a workflow trigger from an MCP server (no client setup) via server instructions
+  + prompts
+type: lesson
 ---
 
 # Ship a workflow trigger from an MCP server (no client setup) via server instructions + prompts
@@ -27,3 +36,14 @@ See also [[Natural-language triggers in Claude Code are CLAUDE.md rules, not hoo
 
 - [[Natural-language triggers in Claude Code are CLAUDE.md rules]]
 - [[not hooks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Natural-language triggers in Claude Code are CLAUDE.md rules, not hooks]]
+- [[Client-side Claude config doesn't travel over MCP — bake cross-client behavior into the server]]
+- [[Server-driven YesNo in MCP ctx.elicit + an injected Context param]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
+
+%% ai-graph-end %%

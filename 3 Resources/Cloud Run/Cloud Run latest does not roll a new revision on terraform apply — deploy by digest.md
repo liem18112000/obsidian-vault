@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run :latest does not roll a new revision on terraform apply — deploy by digest"
+ai_hash: d19ceb4c8a17f010
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [cloud-run, terraform, deployment, gotcha, docker]
+tags:
+- cloud-run
+- terraform
+- deployment
+- gotcha
+- docker
+title: Cloud Run :latest does not roll a new revision on terraform apply — deploy
+  by digest
+type: lesson
 ---
 
 # Cloud Run :latest does not roll a new revision on terraform apply — deploy by digest
@@ -24,3 +34,14 @@ See [[Cloud Run one-port limit forces co-located HTTP servers into separate serv
 ## Related
 
 - [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+- [[Deploy a unique image tag to force a Cloud Run rollout via terraform]]
+- [[Single-to-multi container Cloud Run update fails in-place; use terraform -replace]]
+- [[Adding a Cloud Run service that shares one image var build first, targeted apply]]
+- [[Cloud Build $COMMIT_SHA is the full 40-char git SHA, not the short one]]
+
+%% ai-graph-end %%

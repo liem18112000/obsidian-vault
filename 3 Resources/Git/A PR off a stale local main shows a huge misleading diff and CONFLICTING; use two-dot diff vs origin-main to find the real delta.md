@@ -1,10 +1,21 @@
 ---
-title: "A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta"
+ai_hash: 47d6bb1fffe0a1d1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20
 status: seedling
-source: "session 2026-08-20"
-tags: [git, github, pull-request, merge-base, gotcha, leo-customer360]
+tags:
+- git
+- github
+- pull-request
+- merge-base
+- gotcha
+- leo-customer360
+title: A PR off a stale local main shows a huge misleading diff and CONFLICTING; use
+  two-dot diff vs origin-main to find the real delta
+type: lesson
 ---
 
 # A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta
@@ -37,3 +48,14 @@ The open PR updates in place; `CONFLICTING` becomes `MERGEABLE`.
 ## Related
 
 - [[New .sh CI runners must be git-staged with --chmod=+x on Windows or the [ -x ] gate skips them]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ReviewPR scope diff the branch's real base, not main, when base is ahead of main]]
+- [[git checkout -B branch originmain rehomes upstream to originmain, so a bare push targets main]]
+- [[A git merge can silently revert a merged PR when two branches edit the same region]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[Finding intentional k8s config PRs in luz_kubernetes filter out image-hash + merge drift]]
+
+%% ai-graph-end %%

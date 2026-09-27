@@ -1,10 +1,21 @@
 ---
-title: "PyPI invalid-publisher means no trusted publisher matches the workflow OIDC claims"
+ai_hash: c19aeaabb38ab0e1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: lesson
+entities: []
+source: session 2026-09-19
 status: seedling
-source: "session 2026-09-19"
-tags: [pypi, github-actions, oidc, trusted-publishing, ci-cd, gotcha]
+tags:
+- pypi
+- github-actions
+- oidc
+- trusted-publishing
+- ci-cd
+- gotcha
+title: PyPI invalid-publisher means no trusted publisher matches the workflow OIDC
+  claims
+type: lesson
 ---
 
 # PyPI invalid-publisher means no trusted publisher matches the workflow OIDC claims
@@ -29,3 +40,14 @@ The error is often buried below a red herring — see [["Unable to find image lo
 
 - [["Unable to find image locally" is normal Docker pre-pull output]]
 - [[not the failure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unable to find image locally is normal Docker pre-pull output, not the failure]]
+- [[GitHub Packages does not support Pythonpip packages]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[Local deploy pull from GHCR needs a token with readpackages — gh default token lacks it (403)]]
+
+%% ai-graph-end %%

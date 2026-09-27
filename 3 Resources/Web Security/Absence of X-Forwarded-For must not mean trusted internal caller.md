@@ -1,10 +1,19 @@
 ---
-title: "Absence of X-Forwarded-For must not mean trusted internal caller"
+ai_hash: 2a10e193ec17a171
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: session 2026-09-08 — docs-vector-search hardening
 status: seedling
-source: "session 2026-09-08 — docs-vector-search hardening"
-tags: [security, rate-limiting, reverse-proxy, x-forwarded-for, fail-closed]
+tags:
+- security
+- rate-limiting
+- reverse-proxy
+- x-forwarded-for
+- fail-closed
+title: Absence of X-Forwarded-For must not mean trusted internal caller
+type: lesson
 ---
 
 # Absence of X-Forwarded-For must not mean trusted internal caller
@@ -23,3 +32,14 @@ When a service sits behind a reverse proxy (Caddy/nginx/LB), it is tempting to t
 ## Related
 
 - [[Empty array in Postgres WHERE NOT (id = ANY(...)) deletes every row]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[IP rate limiting must honor X-Forwarded-For behind a proxy]]
+- [[data-tracking rate limiter caps global throughput because it reads request.client.host behind a proxy]]
+- [[Fail-open bearer auth middleware antipattern]]
+- [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]
+- [[A fixed-window rate limiter set to exactly the target rate rejects part of a paced stream at that rate]]
+
+%% ai-graph-end %%

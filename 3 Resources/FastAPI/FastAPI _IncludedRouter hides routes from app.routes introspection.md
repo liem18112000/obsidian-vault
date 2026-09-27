@@ -1,10 +1,20 @@
 ---
-title: "FastAPI _IncludedRouter hides routes from app.routes introspection"
+ai_hash: ab0af752d0eb5f9a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: leo-customer360 UAT deploy session 2026-09-10
 status: seedling
-source: "leo-customer360 UAT deploy session 2026-09-10"
-tags: [fastapi, starlette, gotcha, leo-customer360, customer360-api, introspection]
+tags:
+- fastapi
+- starlette
+- gotcha
+- leo-customer360
+- customer360-api
+- introspection
+title: FastAPI _IncludedRouter hides routes from app.routes introspection
+type: lesson
 ---
 
 # FastAPI _IncludedRouter hides routes from app.routes introspection
@@ -35,3 +45,14 @@ See also [[Deploy an unmerged feature branch to leo-customer360 UAT with BUILD_L
 ## Related
 
 - [[Deploy an unmerged feature branch to leo-customer360 UAT with BUILD_LOCAL=1]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Tell FastAPI from bare Starlette by the 404 body — {detailNot Found} vs plain Not Found]]
+- [[Register one FastAPI handler under multiple path prefixes with add_api_route]]
+- [[customer360-api tenant-admin router tests must inject an admin request.state.user]]
+- [[Deploy an unmerged feature branch to leo-customer360 UAT with BUILD_LOCAL=1]]
+- [[Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path]]
+
+%% ai-graph-end %%

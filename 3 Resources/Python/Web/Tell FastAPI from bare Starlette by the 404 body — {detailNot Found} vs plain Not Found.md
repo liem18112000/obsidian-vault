@@ -1,10 +1,20 @@
 ---
-title: "Tell FastAPI from bare Starlette by the 404 body — {\"detail\":\"Not Found\"} vs plain Not Found"
+ai_hash: 3cc0a96a5de21e16
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: howto
+entities: []
+source: session 2026-08-28
 status: seedling
-source: "session 2026-08-28"
-tags: [fastapi, starlette, asgi, verification, howto]
+tags:
+- fastapi
+- starlette
+- asgi
+- verification
+- howto
+title: Tell FastAPI from bare Starlette by the 404 body — {"detail":"Not Found"} vs
+  plain Not Found
+type: howto
 ---
 
 # Tell FastAPI from bare Starlette by the 404 body — {"detail":"Not Found"} vs plain Not Found
@@ -23,3 +33,13 @@ See [[Cloud Run latest does not roll a new revision on terraform apply — deplo
 ## Related
 
 - [[Cloud Run latest does not roll a new revision on terraform apply — deploy by digest]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[FastAPI _IncludedRouter hides routes from app.routes introspection]]
+- [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+- [[FastAPI StaticFiles mount ordering and check_dir for optional local-only directories]]
+- [[Register one FastAPI handler under multiple path prefixes with add_api_route]]
+
+%% ai-graph-end %%

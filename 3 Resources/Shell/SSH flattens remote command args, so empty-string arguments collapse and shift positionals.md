@@ -1,10 +1,20 @@
 ---
-title: "SSH flattens remote command args, so empty-string arguments collapse and shift positionals"
+ai_hash: b04aeac135ba297e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: leo-customer360 UAT deploy, 2026-09-03
 status: seedling
-source: "leo-customer360 UAT deploy, 2026-09-03"
-tags: [ssh, bash, shell, deployment, gotcha]
+tags:
+- ssh
+- bash
+- shell
+- deployment
+- gotcha
+title: SSH flattens remote command args, so empty-string arguments collapse and shift
+  positionals
+type: lesson
 ---
 
 # SSH flattens remote command args, so empty-string arguments collapse and shift positionals
@@ -26,3 +36,14 @@ Also: positional params past 9 in bash need braces — `${10}`, not `$10` (`$10`
 ## Related
 
 - [[Fail-open service config: render the instance config at container start from backend probes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ssh 'bash -s' flattens args, so empty middle args shift positionals]]
+- [[ssh drops empty positional args; pass a base64 newline-joined argv + mapfile]]
+- [[ssh host 'bash -s' flattens args into a remote shell string]]
+- [[Apostrophe inside bash ${varmessage} breaks the parser]]
+- [[Docker Compose command blocks need $$ to defer variable expansion to the container shell]]
+
+%% ai-graph-end %%

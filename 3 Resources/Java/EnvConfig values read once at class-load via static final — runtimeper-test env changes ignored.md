@@ -1,10 +1,20 @@
 ---
-title: "EnvConfig values read once at class-load via static final — runtime/per-test env changes ignored"
+ai_hash: dff2ee113ea15a38
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: gotcha
+entities: []
+source: session 2026-08-13
 status: seedling
-source: "session 2026-08-13"
-tags: [java, configuration, testing, classloading, gotcha]
+tags:
+- java
+- configuration
+- testing
+- classloading
+- gotcha
+title: EnvConfig values read once at class-load via static final — runtime/per-test
+  env changes ignored
+type: gotcha
 ---
 
 # EnvConfig values read once at class-load via static final — runtime/per-test env changes ignored
@@ -23,3 +33,14 @@ In `luz_docs_import`, `EnvConfig.getInt/getLong` reads `System.getenv(name)` and
 ## Related
 
 - [[Declare a variable before the try so the catch block can log it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[mockStatic ConfigProvider without getConfig stub latches null into static Config fields]]
+- [[Run volume import fixtures last; retry-exhaustion is transient saturation not a defect]]
+- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
+- [[luz_docs_import ZIP import behavior — limits, allow-list, idempotency, AV scope]]
+- [[luz-docs-import performance-env import benchmark findings]]
+
+%% ai-graph-end %%

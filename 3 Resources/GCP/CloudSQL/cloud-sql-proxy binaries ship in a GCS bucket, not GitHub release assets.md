@@ -1,10 +1,19 @@
 ---
-title: "cloud-sql-proxy binaries ship in a GCS bucket, not GitHub release assets"
+ai_hash: daa52a5726751256
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-30
-type: gotcha
+entities: []
+source: session 2026-08-30 proxy script
 status: seedling
-source: "session 2026-08-30 proxy script"
-tags: [gcp, cloud-sql, cloud-sql-proxy, pgadmin, gotcha]
+tags:
+- gcp
+- cloud-sql
+- cloud-sql-proxy
+- pgadmin
+- gotcha
+title: cloud-sql-proxy binaries ship in a GCS bucket, not GitHub release assets
+type: gotcha
 ---
 
 # cloud-sql-proxy binaries ship in a GCS bucket, not GitHub release assets
@@ -23,3 +32,14 @@ To always get the newest: resolve the latest tag from the GitHub API (`.../relea
 ## Related
 
 - [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud SQL Python Connector async use create_async_connector inside the loop]]
+- [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+- [[gcloud components install fetches the host's own platform binary, not a chosen target]]
+- [[Local Cloud SQL admin without psql use the Python connector + asyncpg]]
+- [[Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED]]
+
+%% ai-graph-end %%

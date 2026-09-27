@@ -1,10 +1,19 @@
 ---
-title: "Excalidraw file stores clean UTF-8 glyphs; console mojibake is a false alarm"
+ai_hash: a2c2e887cdb25e21
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-18
-type: lesson
+entities: []
+source: session 2026-09-18 full-flow.excalidraw edit
 status: seedling
-source: "session 2026-09-18 full-flow.excalidraw edit"
-tags: [excalidraw, encoding, utf-8, gotcha, diagrams]
+tags:
+- excalidraw
+- encoding
+- utf-8
+- gotcha
+- diagrams
+title: Excalidraw file stores clean UTF-8 glyphs; console mojibake is a false alarm
+type: lesson
 ---
 
 # Excalidraw file stores clean UTF-8 glyphs; console mojibake is a false alarm
@@ -29,3 +38,14 @@ Second gotcha from the same edit: this file mixes **custom short ids** (`tev_cal
 
 - [[Excalidraw diagram editing technique]]
 - [[Excalidraw builder for new diagrams]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Python emoji in Excalidraw JSON use single code point, not surrogate pair]]
+- [[render_excalidraw.py output path needs -o flag, not positional arg]]
+- [[JetBrains Excalidraw plugin rewrites the .excalidraw source field on save]]
+- [[Windows Python stdout is cp1252 and crashes on emoji; reconfigure to UTF-8]]
+- [[Excalidraw fontFamily codes + .excalidraw.png can drift out of sync]]
+
+%% ai-graph-end %%

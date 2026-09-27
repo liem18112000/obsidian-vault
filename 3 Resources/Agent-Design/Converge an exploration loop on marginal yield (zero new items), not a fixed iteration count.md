@@ -1,10 +1,66 @@
 ---
-title: "Converge an exploration loop on marginal yield (zero new items), not a fixed iteration count"
+ai_hash: 054cd0b256212937
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities:
+- Exploration Loop
+- Marginal Yield
+- Fixed Iteration Count
+- Agent
+- Unknown-Size Space
+- Round
+- New Items
+- Next Query/Focus
+- Previous Round
+- Discovered Content
+- Result
+- Accumulated Visited Set
+- New-Item Count
+- Hard Bound
+- Max Rounds
+- Total Wall-Clock/Token Budget
+- Convergence
+- Self-Exploration
+- Salient Token
+- Title of Node
+- Related Item
+- Seed
+- Derived Focus
+- Broad Token Set
+- LLM Query Enrichment
+- Substring-OR Matcher
+- Loop State
+- Stable ID
+- Context/Session ID
+- Durable Storage
+- Core Loop
+- LLM
+- Model Call
+- Event Loop
+- Test-Agent KGA Self-Exploration Controller (G5)
+- Fan-out
+- Crawl
+- Reflect
+- Derive-Focus
+- Retrieval Tiering
+- Knowledge Source
+- Token Set
+- Under-Exploration
+- Wasted Rounds
+- Rich Cases
+- Exhausted Ones
+source: session 2026-09-03 — KGA G5 controller
 status: seedling
-source: "session 2026-09-03 — KGA G5 controller"
-tags: [agent-design, agentic-loop, convergence, retrieval, resumable]
+tags:
+- agent-design
+- agentic-loop
+- convergence
+- retrieval
+- resumable
+title: Converge an exploration loop on marginal yield (zero new items), not a fixed
+  iteration count
+type: lesson
 ---
 
 # Converge an exploration loop on marginal yield (zero new items), not a fixed iteration count
@@ -25,3 +81,57 @@ Surfaced building the test-agent KGA self-exploration controller (G5): fan-out �
 - [[LLM query enrichment for a substring-OR matcher must contract]]
 - [[not expand]]
 - [[the token set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Knowledge-Gathering loop is a bounded frontier crawl with a verify edge]]
+- [[LLM query enrichment for a substring-OR matcher must contract, not expand, the token set]]
+- [[KGA self-exploration G2-G5 map to four KGA_ env flags]]
+- [[Retrieval tiering query knowledge sources cheapest and most-trusted first]]
+- [[A link-following crawl pulls in graph-adjacent but topically-tangential nodes]]
+
+**Relations:**
+- Exploration Loop — *converges_on* — Marginal Yield
+- Exploration Loop — *avoids* — Fixed Iteration Count
+- Agent — *explores* — Unknown-Size Space
+- Agent — *explores_in* — Round
+- Marginal Yield — *means* — Zero New Items
+- Fixed Iteration Count — *causes* — Under-Exploration
+- Fixed Iteration Count — *causes* — Wasted Rounds
+- Fixed Iteration Count — *under_explores* — Rich Cases
+- Fixed Iteration Count — *wastes_rounds_on* — Exhausted Ones
+- Next Query/Focus — *derived_from* — Discovered Content
+- Discovered Content — *from* — Previous Round
+- Result — *deduplicated_against* — Accumulated Visited Set
+- New-Item Count — *signals* — Convergence
+- Convergence — *guarded_by* — Hard Bound
+- Hard Bound — *includes* — Max Rounds
+- Hard Bound — *includes* — Total Wall-Clock/Token Budget
+- Discovered Content — *enables* — Self-Exploration
+- Derived Focus — *uses* — Salient Token
+- Salient Token — *from* — Title of Node
+- Derived Focus — *identifies* — Related Item
+- Derived Focus — *has_property* — Tight
+- Broad Token Set — *leads_to* — Over-Matching
+- LLM Query Enrichment — *contracts* — Token Set
+- Exploration Loop — *is_resumable* — true
+- Exploration Loop — *persists* — Loop State
+- Loop State — *keyed_by* — Stable ID
+- Stable ID — *is_a* — Context/Session ID
+- Loop State — *stored_in* — Durable Storage
+- Core Loop — *has_property* — Cheap
+- Model Call — *includes* — LLM
+- Model Call — *should_not_block* — Event Loop
+- Test-Agent KGA Self-Exploration Controller (G5) — *is_a* — Self-Exploration
+- Test-Agent KGA Self-Exploration Controller (G5) — *has_step* — Fan-out
+- Test-Agent KGA Self-Exploration Controller (G5) — *has_step* — Crawl
+- Test-Agent KGA Self-Exploration Controller (G5) — *has_step* — Reflect
+- Test-Agent KGA Self-Exploration Controller (G5) — *has_step* — Derive-Focus
+- Test-Agent KGA Self-Exploration Controller (G5) — *has_step* — Convergence
+- Test-Agent KGA Self-Exploration Controller (G5) — *is* — Bounded
+- Test-Agent KGA Self-Exploration Controller (G5) — *is* — Resumable
+- Retrieval Tiering — *related_to* — Exploration Loop
+- LLM Query Enrichment — *related_to* — Exploration Loop
+
+%% ai-graph-end %%

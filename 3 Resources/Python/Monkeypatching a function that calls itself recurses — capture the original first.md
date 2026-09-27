@@ -1,10 +1,21 @@
 ---
-title: "Monkeypatching a function that calls itself recurses — capture the original first"
+ai_hash: f38e34f519835450
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: gotcha
+entities: []
+source: session 2026-09-21 (agent live-eval)
 status: seedling
-source: "session 2026-09-21 (agent live-eval)"
-tags: [python, mocking, unittest, monkeypatch, recursion, gotcha]
+tags:
+- python
+- mocking
+- unittest
+- monkeypatch
+- recursion
+- gotcha
+title: Monkeypatching a function that calls itself recurses — capture the original
+  first
+type: gotcha
 ---
 
 # Monkeypatching a function that calls itself recurses — capture the original first
@@ -19,3 +30,11 @@ General rule: wrapper holds its own handle to the real callable, grabbed at cons
 
 - [[Hermetic E2E test of an LLM agent: mock only the SDK boundary]]
 - [[inject the prompt snapshot]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
+- [[Test an LLM-vs-heuristic seam offline by monkeypatching complete() per module]]
+
+%% ai-graph-end %%

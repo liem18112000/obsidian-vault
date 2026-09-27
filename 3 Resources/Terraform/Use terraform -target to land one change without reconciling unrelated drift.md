@@ -1,10 +1,19 @@
 ---
-title: "Use terraform -target to land one change without reconciling unrelated drift"
+ai_hash: e33ad009734468fc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-06
-type: howto
+entities: []
+source: session 2026-09-06 docs-chatbot UAT deploy
 status: seedling
-source: "session 2026-09-06 docs-chatbot UAT deploy"
-tags: [terraform, infra, ops, drift, gotcha]
+tags:
+- terraform
+- infra
+- ops
+- drift
+- gotcha
+title: Use terraform -target to land one change without reconciling unrelated drift
+type: howto
 ---
 
 # Use terraform -target to land one change without reconciling unrelated drift
@@ -24,3 +33,14 @@ Caveat: -target is meant for surgical fixes, not routine workflow — the drift 
 
 - [[LEO Customer360 VNG topology: co-located services use localhost]]
 - [[cross-box hops need explicit extra_ingress]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO Customer360 VNG topology co-located services use localhost, cross-box hops need explicit extra_ingress]]
+- [[Remote Terraform state needs no manual sync — bake creds + init into the deploy orchestrator to guarantee alignment]]
+- [[leo-customer360 CD deploys app containers to vServers only, never the vDBvLBvStorage Terraform]]
+- [[VNG vLB pool in-place update fails ('Stickiness cannot be specified for non-HTTP pools') — use terraform -replace]]
+- [[CRLF in a tfvars user_data heredoc makes Terraform force-replace VNG vServers]]
+
+%% ai-graph-end %%

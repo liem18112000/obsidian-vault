@@ -1,10 +1,18 @@
 ---
-title: "luz_mylife_web is the only consumer of luz_docs_import import-jobs endpoints"
+ai_hash: 4b0272036e973a6c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: observation
+entities: []
+source: session 2026-08-10 import-jobs usage investigation
 status: seedling
-source: "session 2026-08-10 import-jobs usage investigation"
-tags: [luz-docs, luz-docs-import, luz-mylife-web, rest-consumer]
+tags:
+- luz-docs
+- luz-docs-import
+- luz-mylife-web
+- rest-consumer
+title: luz_mylife_web is the only consumer of luz_docs_import import-jobs endpoints
+type: observation
 ---
 
 # luz_mylife_web is the only consumer of luz_docs_import import-jobs endpoints
@@ -28,3 +36,14 @@ Verified 2026-08-10 via a workspace-wide sweep of C:\Users\dvtliem\Kepler.
 
 - [[GET import-jobs id showWarning=false returns LegacyImportJob to keep luz_mylife_web working]]
 - [[DELETE import-jobs id has no live consumer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[DELETE import-jobs id has no live consumer]]
+- [[GET import-jobs id showWarning=false returns LegacyImportJob to keep luz_mylife_web working]]
+- [[luz_epost_business_web to luz_docs_view_controller integration goes through one REST client package]]
+- [[luz-docs-import ZIP import call chain]]
+- [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
+
+%% ai-graph-end %%

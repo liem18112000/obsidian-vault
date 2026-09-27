@@ -1,10 +1,20 @@
 ---
-title: "Testing-Agent implement_plan silent heuristic fallback = per-node x kind empty-step scenarios"
+ai_hash: 24076e7b8670ae76
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: Testing-Agent run-188f96b8
 status: seedling
-source: "Testing-Agent run-188f96b8"
-tags: [testing-agent, implement-plan, assured-loop, gotcha, scenario-generator]
+tags:
+- testing-agent
+- implement-plan
+- assured-loop
+- gotcha
+- scenario-generator
+title: Testing-Agent implement_plan silent heuristic fallback = per-node x kind empty-step
+  scenarios
+type: lesson
 ---
 
 # Testing-Agent implement_plan silent heuristic fallback = per-node x kind empty-step scenarios
@@ -22,3 +32,14 @@ On Testing-Agent run **run-188f96b8** (LUZ-158230), the deployed `implement_plan
 ## Related
 
 - [[Deployed Testing-Agent refine recommendations are speculative until validated]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[implement_plan heuristic-fallback emits one performance stub per node]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+- [[Deployed implement_plan P4 assured loop times out at 900s for broad features]]
+- [[Testing-Agent implement_plan assured loop times out at 900s MCP ceiling]]
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+
+%% ai-graph-end %%

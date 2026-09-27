@@ -1,10 +1,21 @@
 ---
-title: "Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list"
+ai_hash: fc0228ca290e6549
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: leo-customer360 deployments/sso + cd.yml, session 2026-08-23
 status: seedling
-source: "leo-customer360 deployments/sso + cd.yml, session 2026-08-23"
-tags: [keycloak, rbac, cd, idempotency, leo-customer360, gotcha]
+tags:
+- keycloak
+- rbac
+- cd
+- idempotency
+- leo-customer360
+- gotcha
+title: Keep Keycloak realm roles in sync with app authz constants, and ensure the
+  bootstrap step is in the CD services list
+type: lesson
 ---
 
 # Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list
@@ -22,3 +33,14 @@ Source: leo-customer360 deployments/sso/bootstrap-realm.py + .github/workflows/c
 ## Related
 
 - [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Creating a Keycloak realm role does not grant it — you must assign it and match the name the app authorizes on]]
+- [[leo-customer360 deploy-sso.sh only restarts Keycloak; the realmrole bootstrap is the separate sso-realm step]]
+- [[Adding a step to always-on CD provision ALL its required env, and make it skip (not die) on missing secrets]]
+- [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
+- [[LEO CDP tenant isolation fails closed and needs a Keycloak tenant_id claim mapper]]
+
+%% ai-graph-end %%

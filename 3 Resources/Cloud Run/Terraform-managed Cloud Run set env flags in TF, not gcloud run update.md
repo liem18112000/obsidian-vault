@@ -1,10 +1,19 @@
 ---
-title: "Terraform-managed Cloud Run: set env flags in TF, not gcloud run update"
+ai_hash: 77b68c5bc349abd9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: session 2026-09-03 (enable KGA G2-G5)
 status: seedling
-source: "session 2026-09-03 (enable KGA G2-G5)"
-tags: [cloud-run, terraform, gcp, iac, gotcha]
+tags:
+- cloud-run
+- terraform
+- gcp
+- iac
+- gotcha
+title: 'Terraform-managed Cloud Run: set env flags in TF, not gcloud run update'
+type: lesson
 ---
 
 # Terraform-managed Cloud Run: set env flags in TF, not gcloud run update
@@ -26,3 +35,14 @@ then set the bool in `terraform.tfvars`. `terraform plan` should show `1 to chan
 ## Related
 
 - [[Cloud Run 401 response body distinguishes GFE/IAM rejection from app-level auth]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Adding a Cloud Run service that shares one image var build first, targeted apply]]
+- [[KGA self-exploration G2-G5 map to four KGA_ env flags]]
+- [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+- [[Cloud Run v2 service design gotchas]]
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+
+%% ai-graph-end %%

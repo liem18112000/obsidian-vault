@@ -1,10 +1,19 @@
 ---
-title: "Atlassian MCP grants Jira access per-site; ungranted cloudId is rejected"
+ai_hash: 5be84cddc7f4964a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: lesson
+entities: []
+source: session 2026-09-07
 status: seedling
-source: "session 2026-09-07"
-tags: [atlassian, mcp, oauth, jira, gotcha]
+tags:
+- atlassian
+- mcp
+- oauth
+- jira
+- gotcha
+title: Atlassian MCP grants Jira access per-site; ungranted cloudId is rejected
+type: lesson
 ---
 
 # Atlassian MCP grants Jira access per-site; ungranted cloudId is rejected
@@ -20,3 +29,14 @@ Account had `axonivy.atlassian.net` granted but not `leocdp.atlassian.net` (clou
 ## Related
 
 - [[Jira CSV import builds Story to Sub-task hierarchy via Issue Id and Parent Id columns]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
+- [[Jira issue HTML export view bypasses missing MCP grant]]
+- [[claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed]]
+- [[Jira CSV import builds Story to Sub-task hierarchy via Issue Id and Parent Id columns]]
+- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
+
+%% ai-graph-end %%

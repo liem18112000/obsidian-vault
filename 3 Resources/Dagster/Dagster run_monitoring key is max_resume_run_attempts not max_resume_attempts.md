@@ -1,10 +1,18 @@
 ---
-title: "Dagster run_monitoring key is max_resume_run_attempts not max_resume_attempts"
+ai_hash: ce6eab84b41a7163
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: gotcha
+entities: []
+source: LEO CDP UAT incident 2026-09-09
 status: seedling
-source: "LEO CDP UAT incident 2026-09-09"
-tags: [dagster, config, gotcha, run-monitoring]
+tags:
+- dagster
+- config
+- gotcha
+- run-monitoring
+title: Dagster run_monitoring key is max_resume_run_attempts not max_resume_attempts
+type: gotcha
 ---
 
 # Dagster run_monitoring key is max_resume_run_attempts not max_resume_attempts
@@ -20,3 +28,14 @@ Surfaced while enabling `run_monitoring` to fix [[Dagster runs stuck in QUEUED f
 ## Related
 
 - [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster run_monitoring + DefaultRunLauncher does not reap STARTED zombies that predate a daemon restart]]
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+- [[Dagster run_monitoring start_timeout does not reap already-STARTED hung runs]]
+- [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+
+%% ai-graph-end %%

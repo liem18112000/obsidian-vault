@@ -1,10 +1,20 @@
 ---
-title: "luz-docs-import: antivirus whole-zip scan dominates first-import latency and scales with zip size"
+ai_hash: a3c786089093ba07
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: observation
+entities: []
+source: session 2026-08-10 (lam_transfer.zip test)
 status: seedling
-source: "session 2026-08-10 (lam_transfer.zip test)"
-tags: [luz, luz-docs-import, antivirus, performance, latency]
+tags:
+- luz
+- luz-docs-import
+- antivirus
+- performance
+- latency
+title: 'luz-docs-import: antivirus whole-zip scan dominates first-import latency and
+  scales with zip size'
+type: observation
 ---
 
 # luz-docs-import: antivirus whole-zip scan dominates first-import latency and scales with zip size
@@ -23,3 +33,14 @@ Measured as luz-docs-import`s outbound `time-consuming=` on `…/luz_antivirus/a
 - [[Trace Luz per-service latency via the time-consuming= log marker]]
 - [[Luz docs-import zip flow: upload-zip returns job-id]]
 - [[poll GET until DONE]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second]]
+- [[luz_docs_import ZIP uploads are not virus-scanned (AntiviusScanningService is never wired in)]]
+- [[luz-docs-import ZIP import call chain]]
+- [[luz-docs-import scans metadata sidecars per-file, not the whole ZIP]]
+- [[Per-file AV scan rejects one file; whole-job scan fails the whole import]]
+
+%% ai-graph-end %%

@@ -1,10 +1,54 @@
 ---
-title: "UAT vServer Dagster topology: split webserver+daemon on one s-general box"
+ai_hash: f9f9f4ff34ad86f3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: observation
+entities:
+- UAT Dagster orchestrator
+- vServer
+- VKS
+- VM
+- Docker
+- SSH
+- s-general-2x4 VM
+- s-general-1x2 VM
+- customer360-dagster image
+- backend-system
+- dagster-webserver
+- backend-system-daemon
+- dagster-daemon
+- customer360 vDB
+- PostgreSQL
+- run/event/schedule state
+- S3/vStorage
+- compute logs
+- SQLite
+- local-log
+- QueuedRunCoordinator
+- max_concurrent_runs
+- DAGSTER_MAX_CONCURRENT_RUNS
+- run_monitoring reaper
+- DefaultRunLauncher
+- daemon box
+- Phase 0
+- Phase 1
+- dagster-scaling-uat-vserver.md
+- dagster-scaling-analysis.md
+- backend-system/deployment.md Mode 1
+- s-general-4x8 VM
+- s-general flavor family
+- VNG Cloud HCM03-1C
+- uat.tfvars
+source: session 2026-09-09
 status: seedling
-source: "session 2026-09-09"
-tags: [dagster, leo-customer360, uat, vserver, backend-system]
+tags:
+- dagster
+- leo-customer360
+- uat
+- vserver
+- backend-system
+title: 'UAT vServer Dagster topology: split webserver+daemon on one s-general box'
+type: observation
 ---
 
 # UAT vServer Dagster topology: split webserver+daemon on one s-general box
@@ -26,3 +70,54 @@ Flavor context: [[VNG Cloud HCM03-1C offers only the s-general flavor family]].
 ## Related
 
 - [[VNG Cloud HCM03-1C offers only the s-general flavor family]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+- [[Customer360 UAT api box is a shared 1vCPU-2GB vServer running 5 containers]]
+- [[VNG Cloud HCM03-1C offers only the s-general flavor family]]
+- [[Deploy an unmerged feature branch to leo-customer360 UAT with BUILD_LOCAL=1]]
+- [[VNG vServer flavor resize (s-general-1x2 - 2x4) is an in-place terraform change (0 destroy) but reboots the box]]
+
+**Relations:**
+- UAT Dagster orchestrator — *runs on* — vServer
+- UAT Dagster orchestrator — *not* — VKS
+- vServer — *uses* — VM
+- vServer — *uses* — Docker
+- vServer — *uses* — SSH
+- backend-system — *is* — dagster-webserver
+- backend-system-daemon — *is* — dagster-daemon
+- customer360-dagster image — *provides* — backend-system
+- customer360-dagster image — *provides* — backend-system-daemon
+- backend-system — *runs on* — s-general-2x4 VM
+- backend-system-daemon — *runs on* — s-general-2x4 VM
+- s-general-2x4 VM — *resized from* — s-general-1x2 VM
+- backend-system — *accesses* — customer360 vDB
+- backend-system-daemon — *accesses* — customer360 vDB
+- PostgreSQL — *stores* — run/event/schedule state
+- S3/vStorage — *stores* — compute logs
+- SQLite — *is fallback for* — PostgreSQL
+- local-log — *is fallback for* — S3/vStorage
+- QueuedRunCoordinator — *manages* — max_concurrent_runs
+- max_concurrent_runs — *default value* — 2
+- DAGSTER_MAX_CONCURRENT_RUNS — *controls* — max_concurrent_runs
+- run_monitoring reaper — *releases slots for* — orphaned runs
+- DefaultRunLauncher — *executes runs on* — daemon box
+- daemon box — *is* — s-general-2x4 VM
+- UAT Dagster orchestrator — *implements* — Phase 0
+- UAT Dagster orchestrator — *implements* — Phase 1
+- dagster-scaling-uat-vserver.md — *derived from* — dagster-scaling-analysis.md
+- dagster-scaling-uat-vserver.md — *documents* — UAT Dagster orchestrator
+- backend-system/deployment.md Mode 1 — *recommends* — s-general-4x8 VM
+- s-general-4x8 VM — *recommended for* — UAT Dagster orchestrator
+- s-general-4x8 VM — *has* — 4 vCPU
+- s-general-4x8 VM — *has* — 8 GB
+- s-general-4x8 VM — *has* — 50 GB root disk
+- s-general-2x4 VM — *has* — 2 vCPU
+- s-general-2x4 VM — *has* — 4 GB
+- s-general-2x4 VM — *has* — 20 GB disk
+- VNG Cloud HCM03-1C — *offers* — s-general flavor family
+- uat.tfvars — *configures flavor for* — UAT Dagster orchestrator
+
+%% ai-graph-end %%

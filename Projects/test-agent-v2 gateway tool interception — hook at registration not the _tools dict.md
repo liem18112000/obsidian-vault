@@ -1,6 +1,14 @@
 ---
-tags: [test-agent-v2, mcp, gateway, gotcha]
+ai_hash: 89f258e657824532
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
+entities: []
+tags:
+- test-agent-v2
+- mcp
+- gateway
+- gotcha
 ---
 
 # You can't intercept a gateway MCP tool by wrapping the returned dict
@@ -27,3 +35,14 @@ Flag `BENCHMARK_ON_FINISH` (default-off in code via `common.learn.config._on`, s
 gateway service in `services.tf` — the project's standard flag pattern).
 
 Related: [[test-agent-v2 run benchmark — TEV ownership forced by layering]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 run benchmark — TEV ownership forced by layering]]
+- [[test-agent-v2 deploy + get_deliverables E2E verification]]
+- [[Deployed TPD implement_plan trips Cloud Run liveness (event-loop blocked by Vertex gen)]]
+- [[approve_plan is an agent-side write, unlike knowledge_gathering's read-only approve]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
+
+%% ai-graph-end %%

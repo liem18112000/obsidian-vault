@@ -1,10 +1,19 @@
 ---
-title: "L4 LB: expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy"
+ai_hash: 10850ebbddbcfe27
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: lesson
+entities: []
+source: session 2026-08-25 (leo-customer360)
 status: seedling
-source: "session 2026-08-25 (leo-customer360)"
-tags: [load-balancer, oauth2-proxy, security, health-check, architecture]
+tags:
+- load-balancer
+- oauth2-proxy
+- security
+- health-check
+- architecture
+title: 'L4 LB: expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy'
+type: lesson
 ---
 
 # L4 LB: expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy
@@ -23,3 +32,14 @@ Also: to let the LB reach a container UI, bind it to `0.0.0.0` (or the box's pri
 ## Related
 
 - [[Loopback-bind a bridge container that must reach a host-network service]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[Loopback-bind a bridge container that must reach a host-network service]]
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+
+%% ai-graph-end %%

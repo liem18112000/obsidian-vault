@@ -1,10 +1,19 @@
 ---
-title: "ADK InvocationContext.user_content gives the current turn's input"
+ai_hash: b1f6ee539b4e2865
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: session 2026-09-08 test-agent-v2 reuse pass
 status: seedling
-source: "session 2026-09-08 test-agent-v2 reuse pass"
-tags: [google-adk, adk, gotcha, test-agent-v2, reuse]
+tags:
+- google-adk
+- adk
+- gotcha
+- test-agent-v2
+- reuse
+title: ADK InvocationContext.user_content gives the current turn's input
+type: lesson
 ---
 
 # ADK InvocationContext.user_content gives the current turn's input
@@ -26,3 +35,14 @@ Verified on google-adk 2.8.0 while refactoring test-agent-v2 to maximize framewo
 ## Related
 
 - [[test-agent-v2 ADK migration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[BridgeSession turn drops the answer when the A2A task completes each turn]]
+- [[ADK LlmAgent with output_schema cannot use tools or transfer to other agents]]
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
+- [[Persist ADK session state from a custom agent via Event state_delta]]
+- [[ADK modeltool callbacks only fire for LlmAgent-mediated calls; use a Runner Plugin for cross-cutting]]
+
+%% ai-graph-end %%

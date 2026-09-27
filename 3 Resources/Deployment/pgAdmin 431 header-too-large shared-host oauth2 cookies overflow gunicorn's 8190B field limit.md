@@ -1,10 +1,22 @@
 ---
-title: "pgAdmin 431 header-too-large: shared-host oauth2 cookies overflow gunicorn's 8190B field limit"
+ai_hash: 44b08d7f58caf2a0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: leo-customer360 deployments/monitoring, session 2026-08-23
 status: seedling
-source: "leo-customer360 deployments/monitoring, session 2026-08-23"
-tags: [pgadmin, gunicorn, oauth2-proxy, cookies, http-431, gotcha, leo-customer360]
+tags:
+- pgadmin
+- gunicorn
+- oauth2-proxy
+- cookies
+- http-431
+- gotcha
+- leo-customer360
+title: 'pgAdmin 431 header-too-large: shared-host oauth2 cookies overflow gunicorn''s
+  8190B field limit'
+type: lesson
 ---
 
 # pgAdmin 431 header-too-large: shared-host oauth2 cookies overflow gunicorn's 8190B field limit
@@ -30,3 +42,11 @@ Source: leo-customer360 deployments/monitoring, pgAdmin direct-on-LB (2026-08).
 ## Related
 
 - [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[oauth2-proxy cookie_secret must be 162432 bytes; openssl rand -base64 32 (44 chars) crash-loops it]]
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+
+%% ai-graph-end %%

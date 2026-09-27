@@ -1,10 +1,20 @@
 ---
-title: "implement_plan heuristic-fallback emits one performance stub per node"
+ai_hash: bbb61a0ecd8a9c2b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: testing-agent run-e778a050, LUZ-158230, 2026-09-16
 status: seedling
-source: "testing-agent run-e778a050, LUZ-158230, 2026-09-16"
-tags: [testing-agent, implement-plan, assured-loop, vertex, gotcha, fallback]
+tags:
+- testing-agent
+- implement-plan
+- assured-loop
+- vertex
+- gotcha
+- fallback
+title: implement_plan heuristic-fallback emits one performance stub per node
+type: lesson
 ---
 
 # implement_plan heuristic-fallback emits one performance stub per node
@@ -25,3 +35,14 @@ Related: [[LUZ-158230 ePost ZIP import - test scope decisions]] · [[Testing-age
 
 - [[LUZ-158230 ePost ZIP import - test scope decisions]]
 - [[Testing-agent refine flags low confidence when spec PDFs are recorded-only]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing-Agent implement_plan silent heuristic fallback = per-node x kind empty-step scenarios]]
+- [[Testing-Agent implement_plan assured loop times out at 900s MCP ceiling]]
+- [[Deployed implement_plan P4 assured loop times out at 900s for broad features]]
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+
+%% ai-graph-end %%

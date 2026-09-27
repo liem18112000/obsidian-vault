@@ -1,10 +1,19 @@
 ---
-title: "Editing Excalidraw diagrams with committed SVG exports needs both files updated"
+ai_hash: 7c9014b58fa51755
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-06
-type: howto
+entities: []
+source: session 2026-08-06
 status: seedling
-source: "session 2026-08-06"
-tags: [excalidraw, svg, diagrams, docs, gotcha]
+tags:
+- excalidraw
+- svg
+- diagrams
+- docs
+- gotcha
+title: Editing Excalidraw diagrams with committed SVG exports needs both files updated
+type: howto
 ---
 
 # Editing Excalidraw diagrams with committed SVG exports needs both files updated
@@ -23,3 +32,14 @@ Context: `leo-customer360` `k8s/docs/{kustomize-flow,pod-view}.{excalidraw,svg}`
 ## Related
 
 - [[kind port remap only hostPort binds the host; NodePorttargetPort stay internal]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Editing an Excalidraw .excalidraw JSON programmatically]]
+- [[Re-exporting the deployment-view PNG from its SVG with resvg-js]]
+- [[Excalidraw fontFamily codes + .excalidraw.png can drift out of sync]]
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
+
+%% ai-graph-end %%

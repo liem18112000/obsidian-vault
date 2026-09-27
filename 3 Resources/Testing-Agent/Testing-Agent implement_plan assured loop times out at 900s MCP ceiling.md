@@ -1,10 +1,20 @@
 ---
-title: "Testing-Agent implement_plan assured loop times out at 900s MCP ceiling"
+ai_hash: ee3e9c55080d1c5a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-15
-type: lesson
+entities: []
+source: LUZ-158230 run 2026-09-15
 status: seedling
-source: "LUZ-158230 run 2026-09-15"
-tags: [testing-agent, tpd, implement_plan, assured-loop, timeout, gotcha]
+tags:
+- testing-agent
+- tpd
+- implement_plan
+- assured-loop
+- timeout
+- gotcha
+title: Testing-Agent implement_plan assured loop times out at 900s MCP ceiling
+type: lesson
 ---
 
 # Testing-Agent implement_plan assured loop times out at 900s MCP ceiling
@@ -21,3 +31,14 @@ Mitigations: the loop is **GCS-checkpointed**, so a plain retry (`implement_plan
 ## Addendum — checkpoint-resume does NOT reliably rescue it
 
 A second `implement_plan(context_id)` retry ALSO timed out at 900s (back-to-back on LUZ-158230). So the "GCS-checkpointed, just retry" mitigation is unreliable — a resume can still exceed 900s. Practical rule: after ONE timeout, do NOT keep retrying the tool; author the scenario suite CLIENT-SIDE from the spec and publish it. Consequence: `evaluate_plan` (Test-Plan Score) cannot run for such a ticket because it requires generated scenarios (implement first), so that server metric is simply unavailable when implement times out.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deployed implement_plan P4 assured loop times out at 900s for broad features]]
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+- [[test-agent-v2 fixes implement_plan predictive budget guard + gather explore opt-in gate]]
+- [[implement_plan heuristic-fallback emits one performance stub per node]]
+- [[Testing-Agent implement_plan silent heuristic fallback = per-node x kind empty-step scenarios]]
+
+%% ai-graph-end %%

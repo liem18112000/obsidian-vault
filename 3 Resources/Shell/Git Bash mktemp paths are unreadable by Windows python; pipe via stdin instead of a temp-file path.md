@@ -1,10 +1,21 @@
 ---
-title: "Git Bash mktemp paths are unreadable by Windows python; pipe via stdin instead of a temp-file path"
+ai_hash: 8070eb2833b0d4ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 leo-customer360 deploy scripts
 status: seedling
-source: "session 2026-08-18 leo-customer360 deploy scripts"
-tags: [git-bash, msys, windows, python, shell, gotcha]
+tags:
+- git-bash
+- msys
+- windows
+- python
+- shell
+- gotcha
+title: Git Bash mktemp paths are unreadable by Windows python; pipe via stdin instead
+  of a temp-file path
+type: lesson
 ---
 
 # Git Bash mktemp paths are unreadable by Windows python; pipe via stdin instead of a temp-file path
@@ -14,3 +25,14 @@ In Git Bash / MSYS on Windows, `mktemp` returns an MSYS-style path like `/tmp/tm
 Fix: dont pass an MSYS temp-file PATH to a native tool. Instead pipe the data over **stdin** and pass parameters via **argv**, e.g.
   DATA="$(some-cmd)"; printf %s "$DATA" | python3 -c "import json,sys; d=json.load(sys.stdin); ..." "$key" "$field"
 stdin + argv cross the bash->native boundary fine; only filesystem paths get mistranslated. (Alternatively use `cygpath -w` to convert the path, or write to `./` a relative file, but stdin is simplest.)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
+- [[Git Bash tmp maps to C-tmp for Node fs on Windows]]
+- [[Git Bash mangles absolute POSIX paths meant for a remote kubectl exec target]]
+- [[Git Bash mangles gh api leading-slash paths to C... — set MSYS_NO_PATHCONV=1]]
+
+%% ai-graph-end %%

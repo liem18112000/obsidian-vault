@@ -1,11 +1,24 @@
 ---
-title: "Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents are peers"
+ai_hash: af69ac49c5dc038b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+aliases:
+- Buzz
+- block/buzz
 created: 2026-08-01
-aliases: ["Buzz", "block/buzz"]
-type: concept
+entities: []
+source: github.com/block/buzz research 2026-08-01
 status: seedling
-source: "github.com/block/buzz research 2026-08-01"
-tags: [nostr, buzz, block, ai-agents, collaboration, self-hosting]
+tags:
+- nostr
+- buzz
+- block
+- ai-agents
+- collaboration
+- self-hosting
+title: Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents are
+  peers
+type: concept
 ---
 
 # Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents are peers
@@ -25,3 +38,11 @@ Full deep-dive research (overview, architecture, crate map, getting-started, vis
 ## Related
 
 - [[Nostr custom kinds as a feature-extension mechanism]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[blockbuzz architecture a Nostr-relay hive mind for humans and AI agents]]
+- [[Nostr custom kinds as a feature-extension mechanism]]
+
+%% ai-graph-end %%

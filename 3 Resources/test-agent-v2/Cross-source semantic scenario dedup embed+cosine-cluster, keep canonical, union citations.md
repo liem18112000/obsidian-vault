@@ -1,10 +1,21 @@
 ---
-title: "Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations"
+ai_hash: 6463c8122667bbfc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: howto
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [testing-agent, tpd, dedup, embeddings, cosine, quality]
+tags:
+- testing-agent
+- tpd
+- dedup
+- embeddings
+- cosine
+- quality
+title: 'Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical,
+  union citations'
+type: howto
 ---
 
 # Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations
@@ -15,3 +26,14 @@ FIX (cross-source scenario dedup, test-agent-v2): added `dedup_by_behaviour()` t
 
 - [[Parallel TPD generation sped up but amplified duplication — dedup is a code fix]]
 - [[not guidance]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Parallel TPD generation sped up but amplified duplication — dedup is a code fix, not guidance]]
+- [[Dedup fix result 117 to 54 scenarios, 0.58 to 0.62, triplication gone; 0.70 now gated on coverage]]
+- [[Dedup fix result 117→54 scenarios, 0.58→0.62, triplication gone; 0.70 now gated on coverage not dup]]
+- [[0.70 is an architecture ceiling not a tuning miss guidance cannot inject cross-cutting kinds]]
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "a2a-sdk serves the agent card at agent-card.json (new) or agent.json (old)"
+ai_hash: 57893fceedc7744c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: test-agent server.py — session 2026-08-27
 status: seedling
-source: "test-agent server.py — session 2026-08-27"
-tags: [a2a, a2a-sdk, agent-card, gotcha, python]
+tags:
+- a2a
+- a2a-sdk
+- agent-card
+- gotcha
+- python
+title: a2a-sdk serves the agent card at agent-card.json (new) or agent.json (old)
+type: lesson
 ---
 
 # a2a-sdk serves the agent card at agent-card.json (new) or agent.json (old)
@@ -27,3 +36,14 @@ The 1.x API is very different from 0.2.x quickstarts — the old `A2AStarletteAp
 ## Related
 
 - [[A remote A2A agent needs its own connectors because MCP is client-side]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A2A AgentSkill is advertisement metadata, not executor routing]]
+- [[ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard]]
+- [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
+- [[Declare + enforce bearer auth on an a2a-sdk 1.x server]]
+- [[ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "VNG Cloud list-projects endpoint is GET vserver-gateway/v1/projects (not accounts-api)"
+ai_hash: 9c10459f3c31a842
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: reference
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, api, project, iam]
+tags:
+- greennode
+- vngcloud
+- api
+- project
+- iam
+title: VNG Cloud list-projects endpoint is GET vserver-gateway/v1/projects (not accounts-api)
+type: reference
 ---
 
 # VNG Cloud list-projects endpoint is GET vserver-gateway/v1/projects (not accounts-api)
@@ -22,3 +31,14 @@ Why it matters: `vngcloud_vserver_network`/`_subnet` Terraform resources REQUIRE
 ## Related
 
 - [[Terraform optional-resource toggle: create-or-reuse via count + a local that picks the id]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vStorage REST control-plane API endpoints and vIAM bearer auth]]
+- [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]]
+- [[VNG Cloud resource ID prefixes and the HCM zone_id label gotcha]]
+- [[VNG Cloud vServer discovering account catalog names via the vserver-gateway API]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+
+%% ai-graph-end %%

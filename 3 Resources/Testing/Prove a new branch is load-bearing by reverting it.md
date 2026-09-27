@@ -1,10 +1,17 @@
 ---
-title: "Prove a new branch is load-bearing by reverting it"
+ai_hash: adadd9ddcee75017
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: howto
+entities: []
+source: session 2026-09-25
 status: seedling
-source: "session 2026-09-25"
-tags: [testing, mutation-testing, verification]
+tags:
+- testing
+- mutation-testing
+- verification
+title: Prove a new branch is load-bearing by reverting it
+type: howto
 ---
 
 # Prove a new branch is load-bearing by reverting it
@@ -33,3 +40,14 @@ Related: [[A read filtered on a value no writer produces fails by returning empt
 
 - [[A read filtered on a value no writer produces fails by returning empty]]
 - [[Implementation is the best reviewer a design doc gets]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Implementation is the best reviewer a design doc gets]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Confirm the deployed artifact contains the fix before judging an env test]]
+- [[When a merge turns CI red decide test-vs-source fix by reading code intent]]
+- [[Isolate the same scenarios on both branches to separate regression from flakiness]]
+
+%% ai-graph-end %%

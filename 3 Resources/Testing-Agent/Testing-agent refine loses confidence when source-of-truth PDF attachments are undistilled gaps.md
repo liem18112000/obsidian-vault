@@ -1,10 +1,21 @@
 ---
-title: "Testing-agent refine loses confidence when source-of-truth PDF attachments are undistilled gaps"
+ai_hash: 3f46a2b65abbab59
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-15
-type: lesson
+entities: []
+source: testing-agent run run-87933300, 2026-09-15
 status: seedling
-source: "testing-agent run run-87933300, 2026-09-15"
-tags: [testing-agent, refine, jira, attachments, gotcha, grounding]
+tags:
+- testing-agent
+- refine
+- jira
+- attachments
+- gotcha
+- grounding
+title: Testing-agent refine loses confidence when source-of-truth PDF attachments
+  are undistilled gaps
+type: lesson
 ---
 
 # Testing-agent refine loses confidence when source-of-truth PDF attachments are undistilled gaps
@@ -23,3 +34,14 @@ What to do: read the attachment PDFs and/or inspect the merged Bitbucket PRs bef
 ## Related
 
 - [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing-agent refine flags low confidence when spec PDFs are recorded-only]]
+- [[Testing-Agent refine confidence is capped by un-ingested spec PDFs]]
+- [[Deployed Testing-Agent refine recommendations are speculative until validated]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+- [[test-agent-v2 gather fixes read attachments (PDFOfficeimage) + cloud-discover relevance gate]]
+
+%% ai-graph-end %%

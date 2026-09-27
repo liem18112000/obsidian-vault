@@ -1,10 +1,20 @@
 ---
-title: "vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-api/api/v1/alarms/metrics"
+ai_hash: 3133f36c49d7b164
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: reference
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, vmonitor, monitoring, api, terraform]
+tags:
+- greennode
+- vngcloud
+- vmonitor
+- monitoring
+- api
+- terraform
+title: vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-api/api/v1/alarms/metrics
+type: reference
 ---
 
 # vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-api/api/v1/alarms/metrics
@@ -18,3 +28,14 @@ GreenNode/VNG Cloud **vMonitor** (monitoring + alerting) is **NOT part of the vn
 ## Related
 
 - [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vMonitor create-alarm field values reverse-engineered (avg, gte, CRITICAL, resendPeriod minutes)]]
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[GreenNode vDB list-instances API needs pageNumberpageSize and nests results at data.data]]
+
+%% ai-graph-end %%

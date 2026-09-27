@@ -1,10 +1,19 @@
 ---
-title: "Sourced shell env file must quote values with spaces"
+ai_hash: ae1715b661e50d39
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: gotcha
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [shell, bash, env-file, gotcha, docker]
+tags:
+- shell
+- bash
+- env-file
+- gotcha
+- docker
+title: Sourced shell env file must quote values with spaces
+type: gotcha
 ---
 
 # Sourced shell env file must quote values with spaces
@@ -21,3 +30,14 @@ Note the asymmetry: a Docker \`--env-file\` does NOT need quoting (everything af
 ## Related
 
 - [[LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)]]
+- [[LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)]]
+- [[POSIX sh source. of a slashless filename searches PATH, not cwd]]
+- [[Apostrophe inside bash ${varmessage} breaks the parser]]
+- [[LEO CDP SYSTEM_ENV_VARS still requires database-configs.json to exist first]]
+
+%% ai-graph-end %%

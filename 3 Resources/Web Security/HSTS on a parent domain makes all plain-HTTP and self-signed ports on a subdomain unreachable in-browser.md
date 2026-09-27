@@ -1,10 +1,21 @@
 ---
-title: "HSTS on a parent domain makes all plain-HTTP and self-signed ports on a subdomain unreachable in-browser"
+ai_hash: 6d169df2c3c705c7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: gotcha
+entities: []
+source: leo-customer360 beta.leocdp.com ops ports, 2026-08
 status: seedling
-source: "leo-customer360 beta.leocdp.com ops ports, 2026-08"
-tags: [hsts, tls, browser, reverse-proxy, ops, gotcha]
+tags:
+- hsts
+- tls
+- browser
+- reverse-proxy
+- ops
+- gotcha
+title: HSTS on a parent domain makes all plain-HTTP and self-signed ports on a subdomain
+  unreachable in-browser
+type: gotcha
 ---
 
 # HSTS on a parent domain makes all plain-HTTP and self-signed ports on a subdomain unreachable in-browser
@@ -22,3 +33,14 @@ The valid-LE-cert :443 front door is unaffected.
 Diagnosis tips: `curl -sI https://sub/` shows no `strict-transport-security` yet the browser still enforces it -> suspect parent-domain preload/includeSubDomains, not the subdomains own headers. curl does NOT honor HSTS, so curl to `http://sub:port` will "work" even when Chrome refuses — dont use curl to disprove an HSTS report.
 
 Related: [[Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[Portainer CSRF origin-invalid behind a reverse proxy - expose it directly]]
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+- [[Serve a SPA under a sub-path via the app base-path option, not proxy strip]]
+- [[Dagster --path-prefix moves the GraphQL endpoint too, breaking clients that hardcode graphql]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Extracting every link from Jira ADF and Confluence storage"
+ai_hash: d6547d86d3a2822d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: howto
+entities: []
+source: session 2026-08-27 — kga extract.py
 status: seedling
-source: "session 2026-08-27 — kga extract.py"
-tags: [atlassian, adf, confluence, jira, link-extraction]
+tags:
+- atlassian
+- adf
+- confluence
+- jira
+- link-extraction
+title: Extracting every link from Jira ADF and Confluence storage
+type: howto
 ---
 
 # Extracting every link from Jira ADF and Confluence storage
@@ -25,3 +34,14 @@ Context: kga `extract.py` (LUZ-159671 test-agent).
 ## Related
 
 - [[Knowledge-Gathering loop is a bounded frontier crawl with a verify edge]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Knowledge-Gathering loop is a bounded frontier crawl with a verify edge]]
+- [[A link-following crawl pulls in graph-adjacent but topically-tangential nodes]]
+- [[Export Confluence to markdown via body.view HTML, not body.storage]]
+- [[Bitbucket Cloud API differs from JiraConfluence host, auth, raw src]]
+- [[KGA crawler fetches repo source files via client mixin plus NodeFetcher registered by kind]]
+
+%% ai-graph-end %%

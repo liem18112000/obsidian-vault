@@ -1,10 +1,18 @@
 ---
-title: "ADK built-in logging does not cover env-gated per-agent app logging"
+ai_hash: b76d30ff773ca9b5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: session 2026-09-08
 status: seedling
-source: "session 2026-09-08"
-tags: [google-adk, logging, test-agent-v2, gotcha]
+tags:
+- google-adk
+- logging
+- test-agent-v2
+- gotcha
+title: ADK built-in logging does not cover env-gated per-agent app logging
+type: lesson
 ---
 
 # ADK built-in logging does not cover env-gated per-agent app logging
@@ -26,3 +34,14 @@ See [[ADK LoggingPlugin gives free invocation-lifecycle tracing via a Runner Bas
 
 - [[ADK LoggingPlugin gives free invocation-lifecycle tracing via a Runner BasePlugin]]
 - [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK LoggingPlugin gives free invocation-lifecycle tracing via a Runner BasePlugin]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+- [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+- [[ADK modeltool callbacks only fire for LlmAgent-mediated calls; use a Runner Plugin for cross-cutting]]
+- [[A deterministic scorer is a negative case for LLM-agent-ification — reuse ADK via custom EvalMetric, not LlmAgent]]
+
+%% ai-graph-end %%

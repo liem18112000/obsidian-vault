@@ -1,10 +1,20 @@
 ---
-title: "Self-restarting kubectl port-forward keeps long-running scripts alive through drops"
+ai_hash: 4337e90b819d6f56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: howto
+entities: []
+source: luz-docs-import perf benchmark 2026-08-13
 status: seedling
-source: "luz-docs-import perf benchmark 2026-08-13"
-tags: [kubectl, port-forward, kubernetes, gotcha, scripting]
+tags:
+- kubectl
+- port-forward
+- kubernetes
+- gotcha
+- scripting
+title: Self-restarting kubectl port-forward keeps long-running scripts alive through
+  drops
+type: howto
 ---
 
 # Self-restarting kubectl port-forward keeps long-running scripts alive through drops
@@ -29,3 +39,14 @@ Related: [[Trust median and p90 over many runs, not the mean of a few, for laten
 - [[Trust median and p90 over many runs]]
 - [[not the mean of a few]]
 - [[for latency on a noisy shared env]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[kubectl port-forward drops after ~1 hour on GKE]]
+- [[Long real-API seed aborts on socket hang up unless port-forward reconnects]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[Decouple long agent work from the harness task lifecycle]]
+- [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
+
+%% ai-graph-end %%

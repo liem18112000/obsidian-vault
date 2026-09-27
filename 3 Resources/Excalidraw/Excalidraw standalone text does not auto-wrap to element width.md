@@ -1,10 +1,18 @@
 ---
-title: "Excalidraw standalone text does not auto-wrap to element width"
+ai_hash: e353d19afd403f56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: lesson
+entities: []
+source: session 2026-09-05
 status: seedling
-source: "session 2026-09-05"
-tags: [excalidraw, diagrams, gotcha, text-layout]
+tags:
+- excalidraw
+- diagrams
+- gotcha
+- text-layout
+title: Excalidraw standalone text does not auto-wrap to element width
+type: lesson
 ---
 
 # Excalidraw standalone text does not auto-wrap to element width
@@ -26,3 +34,14 @@ Excalidraw **free-floating / standalone** text elements do **not** auto-wrap to 
 ## Related
 
 - [[Excalidraw diagram creation workflow]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw container-bound text does not auto-wrap in the render script]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Excalidraw offline renderer does not auto-wrap bound container text]]
+- [[Excalidraw vertically-centers bound text — use unbound top-left text for container headers]]
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+
+%% ai-graph-end %%

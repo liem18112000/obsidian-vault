@@ -1,10 +1,19 @@
 ---
-title: "leo-customer360 applies DB schema via two paths that must stay in sync"
+ai_hash: 1f47b487e420f4be
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-30
-type: howto
+entities: []
+source: session 2026-08-30 leo-customer360
 status: seedling
-source: "session 2026-08-30 leo-customer360"
-tags: [leo-customer360, postgres, schema, docker, deployment]
+tags:
+- leo-customer360
+- postgres
+- schema
+- docker
+- deployment
+title: leo-customer360 applies DB schema via two paths that must stay in sync
+type: howto
 ---
 
 # leo-customer360 applies DB schema via two paths that must stay in sync
@@ -28,3 +37,14 @@ Both paths can re-apply the same SQL, so the schema files are written **idempote
 
 - [[CI path-filter must mirror the Docker build context]]
 - [[not the service folder]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+- [[CI path-filter must mirror the Docker build context, not the service folder]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[Postgres docker-entrypoint-initdb.d runs only once on an empty volume]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Truncating a JWT breaks signature verification and surfaces as 500 not 401"
+ai_hash: da2dcf549b852c58
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: lesson
+entities: []
+source: luz_docs_import RCA 2026-08-07
 status: seedling
-source: "luz_docs_import RCA 2026-08-07"
-tags: [jwt, auth, debugging, gotcha, luz-docs-import]
+tags:
+- jwt
+- auth
+- debugging
+- gotcha
+- luz-docs-import
+title: Truncating a JWT breaks signature verification and surfaces as 500 not 401
+type: lesson
 ---
 
 # Truncating a JWT breaks signature verification and surfaces as 500 not 401
@@ -26,3 +35,14 @@ Related: [[luz_docs_import]].
 ## Related
 
 - [[luz_docs_import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[masking-token-in-fetch-command-breaks-downstream]]
+- [[Luz 403 Not allowed means the token has no tenant claim, not a missing permission]]
+- [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080]]
+- [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates luzsecapi)]]
+- [[Klara app API-key to token exchange flow (jwt-service to luztenant-service)]]
+
+%% ai-graph-end %%

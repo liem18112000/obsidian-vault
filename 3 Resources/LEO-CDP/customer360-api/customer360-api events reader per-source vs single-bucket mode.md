@@ -1,10 +1,19 @@
 ---
-title: "customer360-api events reader: per-source vs single-bucket mode"
+ai_hash: b867b4972ac938f1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: reference
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-cdp, customer360-api, s3, events, data-model]
+tags:
+- leo-cdp
+- customer360-api
+- s3
+- events
+- data-model
+title: 'customer360-api events reader: per-source vs single-bucket mode'
+type: reference
 ---
 
 # customer360-api events reader: per-source vs single-bucket mode
@@ -31,3 +40,14 @@ For the reader to work today, leave `EVENT_S3_BUCKET` empty. But an empty value 
 ## Related
 
 - [[ssh drops empty positional args; pass a base64 newline-joined argv + mapfile]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pull customer360-api UAT error logs via SSH (docker logs on the api VM)]]
+- [[AppsFlyer connector S3 config is vStorage-only - VSTORAGE_ env vars]]
+- [[Configure vStorage S3 backend creds in each component .env so deploy scripts self-auth]]
+- [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
+- [[ssh drops empty positional args; pass a base64 newline-joined argv + mapfile]]
+
+%% ai-graph-end %%

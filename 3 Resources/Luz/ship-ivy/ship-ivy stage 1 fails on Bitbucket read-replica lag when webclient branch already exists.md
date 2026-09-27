@@ -1,10 +1,21 @@
 ---
-title: "ship-ivy stage 1 fails on Bitbucket read-replica lag when webclient branch already exists"
+ai_hash: 71bad79827f27b92
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-04
-type: lesson
+entities: []
+source: session 2026-08-04 — ship luz_finance ivy to dev
 status: seedling
-source: "session 2026-08-04 — ship luz_finance ivy to dev"
-tags: [luz, ship-ivy, bitbucket, git, gotcha, ci]
+tags:
+- luz
+- ship-ivy
+- bitbucket
+- git
+- gotcha
+- ci
+title: ship-ivy stage 1 fails on Bitbucket read-replica lag when webclient branch
+  already exists
+type: lesson
 ---
 
 # ship-ivy stage 1 fails on Bitbucket read-replica lag when webclient branch already exists
@@ -32,3 +43,14 @@ Same replica-vs-primary lag pattern can bite any "check-then-create branch" flow
 
 - [[luz-skill-ship-ivy]]
 - [[Bitbucket]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dev luz-webclient can drift off a freshly-shipped ivy image; verify deployed tag vs latest before assuming the ship stuck]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[luz_docs_integration_test AI pipeline branch and PR mechanics]]
+- [[How luz_docs_integration_test repo location is resolved on disk]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+
+%% ai-graph-end %%

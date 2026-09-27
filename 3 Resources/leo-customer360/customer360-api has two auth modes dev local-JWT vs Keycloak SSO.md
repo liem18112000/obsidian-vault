@@ -1,10 +1,20 @@
 ---
-title: "customer360-api has two auth modes: dev local-JWT vs Keycloak SSO"
+ai_hash: 126ac80be492d8aa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: concept
+entities: []
+source: leo-customer360 docker-compose review 2026-08-19
 status: seedling
-source: "leo-customer360 docker-compose review 2026-08-19"
-tags: [customer360, auth, keycloak, sso, jwt, fastapi]
+tags:
+- customer360
+- auth
+- keycloak
+- sso
+- jwt
+- fastapi
+title: 'customer360-api has two auth modes: dev local-JWT vs Keycloak SSO'
+type: concept
 ---
 
 # customer360-api has two auth modes: dev local-JWT vs Keycloak SSO
@@ -21,3 +31,14 @@ Stack context (docker-compose.yml, 6 services): postgres, redis, keycloak-db-ini
 ## Related
 
 - [[FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP tenant isolation fails closed and needs a Keycloak tenant_id claim mapper]]
+- [[Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list]]
+- [[Creating a Keycloak realm role does not grant it — you must assign it and match the name the app authorizes on]]
+- [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
+- [[Deploying Keycloak 26 as a container health port 9000, bootstrap admin, start vs start-dev]]
+
+%% ai-graph-end %%

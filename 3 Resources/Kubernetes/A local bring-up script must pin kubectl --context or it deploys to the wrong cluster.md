@@ -1,10 +1,22 @@
 ---
-title: "A local bring-up script must pin kubectl --context or it deploys to the wrong cluster"
+ai_hash: f9bd14de820866b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: lesson
+entities: []
+source: session 2026-08-07 leo-customer360 up.sh
 status: seedling
-source: "session 2026-08-07 leo-customer360 up.sh"
-tags: [kubectl, kubernetes, kind, gke, local-dev, gotcha, context]
+tags:
+- kubectl
+- kubernetes
+- kind
+- gke
+- local-dev
+- gotcha
+- context
+title: A local bring-up script must pin kubectl --context or it deploys to the wrong
+  cluster
+type: lesson
 ---
 
 # A local bring-up script must pin kubectl --context or it deploys to the wrong cluster
@@ -33,3 +45,14 @@ kubectl --context "$KCTX" -n customer360 get pods
 
 - [[kind lists a cluster even when its node container is stopped]]
 - [[Never edit a shell script while it is executing]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[kind lists a cluster even when its node container is stopped]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[Never edit a shell script while it is executing]]
+- [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+- [[Split Terraform cluster-provisioning state separate from in-cluster workload state]]
+
+%% ai-graph-end %%

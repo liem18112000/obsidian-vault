@@ -1,10 +1,20 @@
 ---
-title: "exclude= does not lift PQS precision because cloud-discover re-promotes 8 services"
+ai_hash: f2049f4d149b58be
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: lesson
+entities: []
+source: session 2026-09-14 run-cd156028
 status: seedling
-source: "session 2026-09-14 run-cd156028"
-tags: [testing-agent, pqs, exclude, precision, gotcha, luz-158230]
+tags:
+- testing-agent
+- pqs
+- exclude
+- precision
+- gotcha
+- luz-158230
+title: exclude= does not lift PQS precision because cloud-discover re-promotes 8 services
+type: lesson
 ---
 
 # exclude= does not lift PQS precision because cloud-discover re-promotes 8 services
@@ -21,3 +31,14 @@ Related: [[exclude is a no-op on a converged KGA exploration]], [[PQS precision 
 
 - [[exclude is a no-op on a converged KGA exploration]]
 - [[PQS precision can be 0 with no hard-negative leak]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KGA gather exclude= takes node ids, not keywords]]
+- [[Cap-before-exclude parallelism recall trap]]
+- [[Testing-Agent refine confidence is capped by un-ingested spec PDFs]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+- [[test-agent-v2 fixes implement_plan predictive budget guard + gather explore opt-in gate]]
+
+%% ai-graph-end %%

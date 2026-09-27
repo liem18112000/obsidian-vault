@@ -1,10 +1,19 @@
 ---
-title: "Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun"
+ai_hash: 3d05fd15ab730160
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-06
-type: lesson
+entities: []
+source: session 2026-09-06 docs-chatbot plan
 status: seedling
-source: "session 2026-09-06 docs-chatbot plan"
-tags: [security, llm, dos, rate-limiting, rag]
+tags:
+- security
+- llm
+- dos
+- rate-limiting
+- rag
+title: Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun
+type: lesson
 ---
 
 # Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun
@@ -22,3 +31,14 @@ The generic principle: any unauthenticated endpoint whose per-request cost is hi
 ## Related
 
 - [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Two-phase RAG chatbot UX fast retrieval first, slow generation second]]
+- [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+- [[docs-vector-search OOMs on ask on a 1vCPU2GB box (Qwen KV cache over RAM+swap)]]
+- [[IP rate limiting must honor X-Forwarded-For behind a proxy]]
+- [[Bound ThreadPoolExecutor + budget keeps per-item LLM scoring inside a web request window]]
+
+%% ai-graph-end %%

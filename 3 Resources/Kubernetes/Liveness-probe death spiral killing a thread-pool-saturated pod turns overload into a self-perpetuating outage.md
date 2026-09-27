@@ -1,10 +1,21 @@
 ---
-title: "Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage"
+ai_hash: f3db7602c7635d9f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: concept
+entities: []
+source: session 2026-08-24
 status: seedling
-source: "session 2026-08-24"
-tags: [kubernetes, liveness-probe, thread-pool, resilience, gotcha, exit-137]
+tags:
+- kubernetes
+- liveness-probe
+- thread-pool
+- resilience
+- gotcha
+- exit-137
+title: 'Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload
+  into a self-perpetuating outage'
+type: concept
 ---
 
 # Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage
@@ -28,3 +39,14 @@ Observed concretely in [[luz-docs-import upload-zip endpoint is the ingestion sa
 ## Related
 
 - [[luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load]]
+- [[Perf import failures root-cause luz-vault sealedunready cascades jsonstore 503 to upload-zip 500]]
+- [[CoreDNS livenessreadiness 404 means probe path-port mismatch, not a CoreDNS crash]]
+- [[Right-sizing k8s resource limits on the Customer360 stack]]
+- [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "pgBackRest archive_command needs the binary IN the postgres image; the scheduler is a separate sidecar"
+ai_hash: 04d29aafa91f9493
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-16
-type: lesson
+entities: []
+source: session 2026-08-16 physical track
 status: seedling
-source: "session 2026-08-16 physical track"
-tags: [pgbackrest, postgres, docker, kubernetes, backup]
+tags:
+- pgbackrest
+- postgres
+- docker
+- kubernetes
+- backup
+title: pgBackRest archive_command needs the binary IN the postgres image; the scheduler
+  is a separate sidecar
+type: lesson
 ---
 
 # pgBackRest archive_command needs the binary IN the postgres image; the scheduler is a separate sidecar
@@ -19,3 +29,14 @@ So the split is: **archive-push = in the DB container**; **backup/expire = sidec
 
 - [[pgBackRest runs on the DB host]]
 - [[so it cannot back up a managed DB like VNG vDB]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[pgBackRest runs on the DB host, so it cannot back up a managed DB like VNG vDB]]
+- [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+- [[vngcloud_vdb_postgresql_cluster ignores backup_auto (cluster backups go via VNG Backup Center)]]
+- [[docker compose run --rm SERVICE CMD overrides the service command for a one-shot]]
+- [[pgvector logical restore rebuilds HNSW-IVFFlat indexes; physical backup copies them as-is]]
+
+%% ai-graph-end %%

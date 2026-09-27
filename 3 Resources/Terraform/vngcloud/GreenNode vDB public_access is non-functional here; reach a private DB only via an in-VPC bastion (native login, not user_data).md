@@ -1,10 +1,21 @@
 ---
-title: "GreenNode vDB public_access is non-functional here; reach a private DB only via an in-VPC bastion (native login, not user_data)"
+ai_hash: 0fabd54b5a6e73fe
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 leo-customer360
 status: seedling
-source: "session 2026-08-18 leo-customer360"
-tags: [vngcloud, vdb, vserver, networking, bastion, gotcha]
+tags:
+- vngcloud
+- vdb
+- vserver
+- networking
+- bastion
+- gotcha
+title: GreenNode vDB public_access is non-functional here; reach a private DB only
+  via an in-VPC bastion (native login, not user_data)
+type: lesson
 ---
 
 # GreenNode vDB public_access is non-functional here; reach a private DB only via an in-VPC bastion (native login, not user_data)
@@ -23,3 +34,14 @@ Booting the bastion with a `user_data` `#cloud-config` (to create the login user
 ## Related
 
 - [[VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp/22 secgrouprule]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GreenNode VNG Ubuntu 24.04 image SSH is broken out-of-the-box; the cloud-init recipe to fix it]]
+- [[VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp22 secgrouprule]]
+- [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
+- [[VNG vServer user_data is mutually exclusive with usernamepasswordssh_key]]
+- [[10000-IOPS standalone vDB PostgreSQL needs a vServer-enabled zone that offers Gen2-NVMe2-IOPS10000 (HCM03-1A)]]
+
+%% ai-graph-end %%

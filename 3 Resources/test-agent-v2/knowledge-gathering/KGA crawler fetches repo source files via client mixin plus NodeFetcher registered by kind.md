@@ -1,10 +1,21 @@
 ---
-title: "KGA crawler fetches repo source files via client mixin plus NodeFetcher registered by kind"
+ai_hash: aa483354c15ef32f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: howto
+entities: []
+source: session 2026-09-23 add-github-support
 status: seedling
-source: "session 2026-09-23 add-github-support"
-tags: [test-agent-v2, kga, crawler, architecture, bitbucket, github]
+tags:
+- test-agent-v2
+- kga
+- crawler
+- architecture
+- bitbucket
+- github
+title: KGA crawler fetches repo source files via client mixin plus NodeFetcher registered
+  by kind
+type: howto
 ---
 
 # KGA crawler fetches repo source files via client mixin plus NodeFetcher registered by kind
@@ -28,3 +39,14 @@ See [[GitHub fetch credentials PAT Bearer anonymous public Enterprise api-v3 raw
 ## Related
 
 - [[GitHub fetch credentials PAT Bearer anonymous public Enterprise api-v3 raw Contents API]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bitbucket Cloud API differs from JiraConfluence host, auth, raw src]]
+- [[GitHub fetch credentials PAT Bearer anonymous public Enterprise api-v3 raw Contents API]]
+- [[Drive the KGA A2A agent offline via Starlette TestClient for evaluation]]
+- [[gather_codebase needs axonivy-prodrepo workspace slug]]
+- [[Knowledge-Gathering loop is a bounded frontier crawl with a verify edge]]
+
+%% ai-graph-end %%

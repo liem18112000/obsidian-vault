@@ -1,10 +1,22 @@
 ---
-title: "Headless Chrome on Windows needs a file:///C:/ URL via cygpath to screenshot a local SVG"
+ai_hash: 6f2e05ab80c1d116
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 deployments diagram, 2026-08
 status: seedling
-source: "leo-customer360 deployments diagram, 2026-08"
-tags: [chrome, headless, windows, svg, png, cygpath, gotcha]
+tags:
+- chrome
+- headless
+- windows
+- svg
+- png
+- cygpath
+- gotcha
+title: Headless Chrome on Windows needs a file:///C:/ URL via cygpath to screenshot
+  a local SVG
+type: lesson
 ---
 
 # Headless Chrome on Windows needs a file:///C:/ URL via cygpath to screenshot a local SVG
@@ -21,3 +33,14 @@ Related: [[Generate a git patch under autocrlf so git apply matches a CRLF workt
 ## Related
 
 - [[Generate a git patch under autocrlf so git apply matches a CRLF worktree]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization]]
+- [[Generate Excalidraw triplet from one layout model, rasterize with @resvgresvg-js]]
+- [[Git Bash tmp maps to C-tmp for Node fs on Windows]]
+- [[Headless Chrome print-to-pdf preserves HTML anchor tags as clickable PDF links]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+
+%% ai-graph-end %%

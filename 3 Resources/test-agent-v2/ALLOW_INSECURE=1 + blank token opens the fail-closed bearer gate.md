@@ -1,10 +1,19 @@
 ---
-title: "ALLOW_INSECURE=1 + blank token opens the fail-closed bearer gate"
+ai_hash: f6968e1bfe6be0e5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: lesson
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [auth, bearer, security, local-dev, test-agent]
+tags:
+- auth
+- bearer
+- security
+- local-dev
+- test-agent
+title: ALLOW_INSECURE=1 + blank token opens the fail-closed bearer gate
+type: lesson
 ---
 
 # ALLOW_INSECURE=1 + blank token opens the fail-closed bearer gate
@@ -14,3 +23,14 @@ test-agent-v2 auth (common/adk/auth.py `bearer_ok`, and common/bridge/asgi.py) i
 ## Related
 
 - [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fail-open bearer auth middleware antipattern]]
+- [[Declare + enforce bearer auth on an a2a-sdk 1.x server]]
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+- [[Bridgegateway use separate secrets for the inbound caller token and the outbound backend token]]
+- [[Registering a bearer-gated HTTP MCP server needs claude mcp add --header]]
+
+%% ai-graph-end %%

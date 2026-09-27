@@ -1,10 +1,19 @@
 ---
-title: "laya is JEV's local in-process decision-engine twin"
+ai_hash: d6ad4c84dbedd489
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: term
+entities: []
+source: session 2026-09-22; github.com/NandhaKishorM/laya; pypi laya 0.3.5
 status: seedling
-source: "session 2026-09-22; github.com/NandhaKishorM/laya; pypi laya 0.3.5"
-tags: [laya, jev, decision-engine, test-agent, system-1]
+tags:
+- laya
+- jev
+- decision-engine
+- test-agent
+- system-1
+title: laya is JEV's local in-process decision-engine twin
+type: term
 ---
 
 # laya is JEV's local in-process decision-engine twin
@@ -16,3 +25,14 @@ Because it drags torch + multi-GB checkpoints, in test-agent-v2 it is wrapped in
 ## Related
 
 - [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Low-disk CPU box drop laya, use JEV cloud API for decisions]]
+- [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+- [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+- [[System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs]]
+- [[Pluggable LLM via the litellm ModelProvider backend]]
+
+%% ai-graph-end %%

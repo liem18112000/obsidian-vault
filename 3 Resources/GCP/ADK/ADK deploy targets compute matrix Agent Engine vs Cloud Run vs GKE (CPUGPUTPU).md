@@ -1,10 +1,21 @@
 ---
-title: "ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)"
+ai_hash: 59c1433caf4fe68a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: concept
+entities: []
+source: research session 2026-09-03
 status: seedling
-source: "research session 2026-09-03"
-tags: [adk, gcp, agent-engine, cloud-run, gke, gpu, tpu]
+tags:
+- adk
+- gcp
+- agent-engine
+- cloud-run
+- gke
+- gpu
+- tpu
+title: 'ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)'
+type: concept
 ---
 
 # ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)
@@ -25,3 +36,14 @@ ADK does not define its own runtime — it packages an agent that you deploy to 
 
 - [[ADK serverless agent tier is CPU-only; LLM compute is offloaded to a managed model API]]
 - [[Cloud Run static outbound IP needs VPC egress + Cloud NAT; Agent Engine private egress via PSC interface]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK serverless agent tier is CPU-only; LLM compute is offloaded to a managed model API]]
+- [[How ADK agents are deployed adk deploy cloud_run agent_engine gke + get_fast_api_app]]
+- [[Cloud Run static outbound IP needs VPC egress + Cloud NAT; Agent Engine private egress via PSC interface]]
+- [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+
+%% ai-graph-end %%

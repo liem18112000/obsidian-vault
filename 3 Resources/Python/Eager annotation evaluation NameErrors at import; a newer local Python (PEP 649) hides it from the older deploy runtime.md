@@ -1,10 +1,21 @@
 ---
-title: "Eager annotation evaluation NameErrors at import; a newer local Python (PEP 649) hides it from the older deploy runtime"
+ai_hash: a333572920c71e89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: gotcha
+entities: []
+source: leo-customer360 identity.py main-sync, 2026-08
 status: seedling
-source: "leo-customer360 identity.py main-sync, 2026-08"
-tags: [python, annotations, pep649, import, version-skew, gotcha]
+tags:
+- python
+- annotations
+- pep649
+- import
+- version-skew
+- gotcha
+title: Eager annotation evaluation NameErrors at import; a newer local Python (PEP
+  649) hides it from the older deploy runtime
+type: gotcha
 ---
 
 # Eager annotation evaluation NameErrors at import; a newer local Python (PEP 649) hides it from the older deploy runtime
@@ -16,3 +27,14 @@ Python evaluates function annotations EAGERLY at def-time (module import) unless
 Lessons: (1) when a merge removes an import, grep the file for every use of the removed name — including inside annotations and dead/orphaned functions. (2) Validate imports on the TARGET Python version, not just locally. (3) Dead code with a bad annotation is still fatal at import.
 
 Related: [[A client CORS/unreachable-API error can mask a backend 500 — read the server log]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Break a package import cycle by moving annotation-only imports under TYPE_CHECKING]]
+- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
+- [[Monkeypatched module attributes are a hidden breakage risk when a module becomes a package]]
+- [[Per-feature migration scripts leave new tables silently missing until run]]
+- [[Guard tests that need an optional dependency with pytest.importorskip]]
+
+%% ai-graph-end %%

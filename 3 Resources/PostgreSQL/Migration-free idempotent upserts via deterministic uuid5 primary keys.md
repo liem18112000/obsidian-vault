@@ -1,10 +1,19 @@
 ---
-title: "Migration-free idempotent upserts via deterministic uuid5 primary keys"
+ai_hash: 6fe153da5c8e138b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: session 2026-09-09 SCRUM-94
 status: seedling
-source: "session 2026-09-09 SCRUM-94"
-tags: [postgresql, idempotency, upsert, uuid5, leo-cdp]
+tags:
+- postgresql
+- idempotency
+- upsert
+- uuid5
+- leo-cdp
+title: Migration-free idempotent upserts via deterministic uuid5 primary keys
+type: lesson
 ---
 
 # Migration-free idempotent upserts via deterministic uuid5 primary keys
@@ -52,3 +61,14 @@ LEO CDP `customer360-api` SCRUM-94 segment->CRM sync engine (`core/crud/crm_sync
 ## Related
 
 - [[PostgreSQL]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A UNIQUE index on a partitioned Postgres table must include the partition key, defeating cross-time dedup]]
+- [[Postgres ON CONFLICT DO UPDATE references the target row by unqualified table name]]
+- [[Postgres partitioned-table UNIQUE index must include the partition key]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
+
+%% ai-graph-end %%

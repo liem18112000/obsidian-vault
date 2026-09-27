@@ -1,10 +1,21 @@
 ---
-title: "Kepler Pub/Sub topology: HTTP-to-luz_message_broker publisher, luz_message_receiver pull-consumers, jsonstore version-number CAS"
+ai_hash: 1041cd3d58490760
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: reference
+entities: []
+source: session 2026-08-10 (Tier 4 infra investigation)
 status: seedling
-source: "session 2026-08-10 (Tier 4 infra investigation)"
-tags: [luz, pubsub, messaging, luz-message-broker, jsonstore, infrastructure]
+tags:
+- luz
+- pubsub
+- messaging
+- luz-message-broker
+- jsonstore
+- infrastructure
+title: 'Kepler Pub/Sub topology: HTTP-to-luz_message_broker publisher, luz_message_receiver
+  pull-consumers, jsonstore version-number CAS'
+type: reference
 ---
 
 # Kepler Pub/Sub topology: HTTP-to-luz_message_broker publisher, luz_message_receiver pull-consumers, jsonstore version-number CAS
@@ -21,3 +32,14 @@ luz-jsonstore ALREADY supports optimistic-concurrency: `PATCH /{collection}/{doc
 
 - [[A durable queue fixes report-write durability]]
 - [[not data-duplication — make the side effect idempotent]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hosting a PubSub consumer in a luz service with luz_message_receiver]]
+- [[luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS]]
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+- [[Luz performance env cluster topology]]
+
+%% ai-graph-end %%

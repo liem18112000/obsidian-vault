@@ -1,10 +1,20 @@
 ---
-title: "Deploy an unmerged feature branch to leo-customer360 UAT with BUILD_LOCAL=1"
+ai_hash: b71740e91e239233
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: howto
+entities: []
+source: leo-customer360 UAT deploy session 2026-09-10
 status: seedling
-source: "leo-customer360 UAT deploy session 2026-09-10"
-tags: [leo-customer360, uat, deploy, build-local, ghcr, dagster]
+tags:
+- leo-customer360
+- uat
+- deploy
+- build-local
+- ghcr
+- dagster
+title: Deploy an unmerged feature branch to leo-customer360 UAT with BUILD_LOCAL=1
+type: howto
 ---
 
 # Deploy an unmerged feature branch to leo-customer360 UAT with BUILD_LOCAL=1
@@ -34,3 +44,14 @@ Verifying the deployed routes afterward needs care — see [[FastAPI _IncludedRo
 ## Related
 
 - [[FastAPI _IncludedRouter hides routes from app.routes introspection]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 CD UAT deploys only from main + --deploy-uat marker]]
+- [[CI-driven CD cannot resolve local gitignored Terraform state — needs remote backend or IPs via secrets]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB]]
+
+%% ai-graph-end %%

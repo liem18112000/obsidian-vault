@@ -1,10 +1,49 @@
 ---
-title: "deploy-tracking.sh uat needs GHCR auth: gh auth token or BUILD_LOCAL=1"
+ai_hash: 89c2ed09972470ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: lesson
+entities:
+- deploy-tracking.sh
+- uat
+- GHCR auth
+- gh auth token
+- BUILD_LOCAL=1
+- leo-customer360
+- CI image
+- ghcr.io/leo-cdp/leo-customer360/data-tracking-api
+- PRIVATE GHCR package
+- registry auth
+- 'Error response from daemon: error from registry: denied'
+- GitHub CLI
+- PAT
+- read:packages
+- GHCR_USER
+- GHCR_TOKEN
+- docker login
+- docker manifest inspect
+- Build on the VM
+- Terraform S3 backend
+- vStorage
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- environment variables
+- Terraform state
+- deployments/server/.env
+- manual terraform call
+- No valid credential sources found
+- Scale one uvicorn service into N replicas on one VM with a docker bridge + local
+  nginx LB
+source: session 2026-08-31 uat deploy
 status: seedling
-source: "session 2026-08-31 uat deploy"
-tags: [leo-customer360, ghcr, deployment, terraform, gotcha]
+tags:
+- leo-customer360
+- ghcr
+- deployment
+- terraform
+- gotcha
+title: 'deploy-tracking.sh uat needs GHCR auth: gh auth token or BUILD_LOCAL=1'
+type: lesson
 ---
 
 # deploy-tracking.sh uat needs GHCR auth: gh auth token or BUILD_LOCAL=1
@@ -31,3 +70,46 @@ Related: [[Scale one uvicorn service into N replicas on one VM with a docker bri
 ## Related
 
 - [[Scale one uvicorn service into N replicas on one VM with a docker bridge + local nginx LB]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB]]
+- [[leo-customer360 VNG deploy builds app images on the VM from a tarred local checkout, not from a registry]]
+- [[Local deploy pull from GHCR needs a token with readpackages — gh default token lacks it (403)]]
+- [[Configure vStorage S3 backend creds in each component .env so deploy scripts self-auth]]
+- [[CI-driven CD cannot resolve local gitignored Terraform state — needs remote backend or IPs via secrets]]
+
+**Relations:**
+- deploy-tracking.sh — *deploys to* — uat
+- deploy-tracking.sh — *requires* — GHCR auth
+- GHCR auth — *can be obtained via* — gh auth token
+- GHCR auth — *can be bypassed by* — BUILD_LOCAL=1
+- deploy-tracking.sh — *pulls* — CI image
+- CI image — *is* — ghcr.io/leo-cdp/leo-customer360/data-tracking-api
+- ghcr.io/leo-cdp/leo-customer360/data-tracking-api — *is a* — PRIVATE GHCR package
+- lack of — *registry auth results in* — Error response from daemon: error from registry: denied
+- gh auth token — *is part of* — GitHub CLI
+- GitHub CLI — *needs* — read:packages permission
+- GHCR_TOKEN — *is set by* — gh auth token
+- deploy-tracking.sh — *uses* — GHCR_USER
+- deploy-tracking.sh — *uses* — GHCR_TOKEN
+- deploy-tracking.sh — *performs* — docker login
+- docker login — *uses* — GHCR_USER
+- docker login — *uses* — GHCR_TOKEN
+- docker manifest inspect — *verifies* — access
+- Build on the VM — *is an alternative to* — GHCR auth
+- Build on the VM — *is enabled by* — BUILD_LOCAL=1
+- Terraform S3 backend — *is hosted on* — vStorage
+- Terraform S3 backend — *requires* — AWS_ACCESS_KEY_ID
+- Terraform S3 backend — *requires* — AWS_SECRET_ACCESS_KEY
+- AWS_ACCESS_KEY_ID — *are* — environment variables
+- AWS_SECRET_ACCESS_KEY — *are* — environment variables
+- Terraform — *reads* — Terraform state
+- deployments/server/.env — *contains* — AWS_ACCESS_KEY_ID
+- deployments/server/.env — *contains* — AWS_SECRET_ACCESS_KEY
+- deploy-tracking.sh — *sources* — deployments/server/.env
+- manual terraform call — *fails with* — No valid credential sources found
+- deploy-tracking.sh — *is related to* — Scale one uvicorn service into N replicas on one VM with a docker bridge + local nginx LB
+
+%% ai-graph-end %%

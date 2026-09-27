@@ -1,10 +1,19 @@
 ---
-title: "Headless Chrome print-to-pdf preserves HTML anchor tags as clickable PDF links"
+ai_hash: caf7d7cc6bd09c18
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: howto
+entities: []
+source: session 2026-09-08 (CV tailoring task)
 status: seedling
-source: "session 2026-09-08 (CV tailoring task)"
-tags: [chrome, headless, html-to-pdf, pdf, windows]
+tags:
+- chrome
+- headless
+- html-to-pdf
+- pdf
+- windows
+title: Headless Chrome print-to-pdf preserves HTML anchor tags as clickable PDF links
+type: howto
 ---
 
 # Headless Chrome print-to-pdf preserves HTML anchor tags as clickable PDF links
@@ -29,3 +38,12 @@ Companion to the extraction step: [[Extract PDF hyperlinks and images with PyMuP
 ## Related
 
 - [[Extract PDF hyperlinks and images with PyMuPDF by mapping link rects to anchor text]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Update a designed PDF without its source by rebuilding as HTML and printing with headless Edge]]
+- [[Extract PDF hyperlinks and images with PyMuPDF by mapping link rects to anchor text]]
+- [[Headless Chrome on Windows needs a fileC URL via cygpath to screenshot a local SVG]]
+
+%% ai-graph-end %%

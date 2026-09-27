@@ -1,10 +1,21 @@
 ---
-title: "Zalo ZNS send-time render binds only typed template params, never authors message text"
+ai_hash: 784c35ba4761b32e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: concept
+entities: []
+source: session 2026-09-21 (ZNS render)
 status: seedling
-source: "session 2026-09-21 (ZNS render)"
-tags: [zalo, zns, rendering, customer360, notification-engine, templating]
+tags:
+- zalo
+- zns
+- rendering
+- customer360
+- notification-engine
+- templating
+title: Zalo ZNS send-time render binds only typed template params, never authors message
+  text
+type: concept
 ---
 
 # Zalo ZNS send-time render binds only typed template params, never authors message text
@@ -22,3 +33,11 @@ Contrast with the email path: email authors full subject/html/text and renders v
 - [[customer360 AI campaign lifecycle: agent plans]]
 - [[api persists draft]]
 - [[email_engine renders at send]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[email_engine renders with plain regex substitution, not Jinja, so AI-authored templates can't execute code]]
+- [[customer360 AI campaign lifecycle agent plans, api persists draft, email_engine renders at send]]
+
+%% ai-graph-end %%

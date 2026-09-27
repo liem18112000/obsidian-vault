@@ -1,10 +1,20 @@
 ---
-title: "Trust median and p90 over many runs, not the mean of a few, for latency on a noisy shared env"
+ai_hash: d8dfd5ef016c7909
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: technique
+entities: []
+source: luz-docs-import perf benchmark 2026-08-13
 status: seedling
-source: "luz-docs-import perf benchmark 2026-08-13"
-tags: [benchmarking, latency, percentiles, statistics, performance]
+tags:
+- benchmarking
+- latency
+- percentiles
+- statistics
+- performance
+title: Trust median and p90 over many runs, not the mean of a few, for latency on
+  a noisy shared env
+type: technique
 ---
 
 # Trust median and p90 over many runs, not the mean of a few, for latency on a noisy shared env
@@ -21,3 +31,14 @@ Related: [[Small import batches are overhead-bound so their per-item throughput 
 
 - [[Small import batches are overhead-bound so their per-item throughput is lower than large batches]]
 - [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention]]
+- [[Small import batches are overhead-bound so their per-item throughput is lower than large batches]]
+- [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]]
+- [[Concurrency-bound single-primary Mongo reads indexes stop helping; recognize by bimodal latency]]
+- [[luz-docs-import performance-env import benchmark findings]]
+
+%% ai-graph-end %%

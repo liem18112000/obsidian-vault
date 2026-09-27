@@ -1,10 +1,21 @@
 ---
-title: "Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore into Mongo"
+ai_hash: 48709b030f8d6b76
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: observation
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [luz, architecture, luz-jsonstore, luz-docs, luz-eletter, request-flow]
+tags:
+- luz
+- architecture
+- luz-jsonstore
+- luz-docs
+- luz-eletter
+- request-flow
+title: Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore
+  into Mongo
+type: observation
 ---
 
 # Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore into Mongo
@@ -27,3 +38,14 @@ Edge map (who calls whom): view-controller -> luz-docs(938)+luztenant(421); luz-
 
 - [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
 - [[Intermittent DB saturation = stacked loads crossing a fixed ceiling]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+- [[Luz DNS storm gate is both CoreDNS replicas down together plus morning load, not enrichment volume]]
+- [[luz-jsonstore backup double-scans every collection every 5 minutes]]
+- [[eArchive request flow and log correlation (perf)]]
+- [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+
+%% ai-graph-end %%

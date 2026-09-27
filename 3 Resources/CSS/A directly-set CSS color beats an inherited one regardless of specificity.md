@@ -1,10 +1,20 @@
 ---
-title: "A directly-set CSS color beats an inherited one regardless of specificity"
+ai_hash: 23575f17e5b53125
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-06
-type: lesson
+entities: []
+source: session 2026-09-06 docs-site chatbot
 status: seedling
-source: "session 2026-09-06 docs-site chatbot"
-tags: [css, cascade, inheritance, specificity, theming, gotcha]
+tags:
+- css
+- cascade
+- inheritance
+- specificity
+- theming
+- gotcha
+title: A directly-set CSS color beats an inherited one regardless of specificity
+type: lesson
 ---
 
 # A directly-set CSS color beats an inherited one regardless of specificity
@@ -20,3 +30,11 @@ General lesson when embedding a widget into a host page/theme you don't fully co
 ## Related
 
 - [[Injecting a custom Quartz component when the engine is cloned fresh in CI]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Theme shared overlays with CSS-variable-backed Tailwind classes, not hardcoded colors]]
+- [[Inline SVG ignores theme unless shapes use CSS-variable classes, not hardcoded hex]]
+
+%% ai-graph-end %%

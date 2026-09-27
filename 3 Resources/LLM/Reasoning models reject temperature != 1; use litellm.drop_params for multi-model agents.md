@@ -1,10 +1,22 @@
 ---
-title: "Reasoning models reject temperature != 1; use litellm.drop_params for multi-model agents"
+ai_hash: cb001c71a48a450f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: gotcha
+entities: []
+source: session 2026-09-21 (agent live-eval, gpt-5.6-luna)
 status: seedling
-source: "session 2026-09-21 (agent live-eval, gpt-5.6-luna)"
-tags: [llm, litellm, openai, reasoning-models, temperature, gotcha, customer360-agent]
+tags:
+- llm
+- litellm
+- openai
+- reasoning-models
+- temperature
+- gotcha
+- customer360-agent
+title: Reasoning models reject temperature != 1; use litellm.drop_params for multi-model
+  agents
+type: gotcha
 ---
 
 # Reasoning models reject temperature != 1; use litellm.drop_params for multi-model agents
@@ -23,3 +35,14 @@ Also observed (same run): the reasoning model cost ~4x and ran ~2x slower than g
 
 - [[Hermetic E2E test of an LLM agent: mock only the SDK boundary]]
 - [[inject the prompt snapshot]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
+- [[Pluggable LLM via the litellm ModelProvider backend]]
+- [[LLM-as-reranker JSON truncation budget max_tokens for pretty-printed output, not just element count]]
+- [[Customer 360 uses two model layers LLM for Generate, System One for StructureDecide]]
+- [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "S3 generation-CAS via botocore If-Match conditional writes"
+ai_hash: 1e9c47dd0d1902b1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [s3, minio, boto3, cas, object-store, test-agent]
+tags:
+- s3
+- minio
+- boto3
+- cas
+- object-store
+- test-agent
+title: S3 generation-CAS via botocore If-Match conditional writes
+type: lesson
 ---
 
 # S3 generation-CAS via botocore If-Match conditional writes
@@ -16,3 +26,12 @@ KEY ENABLER: `botocore` PutObject supports `IfMatch` AND `IfNoneMatch` (verified
 ## Related
 
 - [[ObjectStore is test-agent cross-service shared state]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GCS compare-and-set with if_generation_match (optimistic concurrency)]]
+- [[ObjectStore is test-agent cross-service shared state]]
+- [[Terraform S3 remote backend for VNG vStorage (S3-compatible) config recipe]]
+
+%% ai-graph-end %%

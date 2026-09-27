@@ -1,10 +1,19 @@
 ---
-title: "Fence and strip delimiters around untrusted RAG context to limit prompt injection"
+ai_hash: 965c9babb7a3e62f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: session 2026-09-08 — docs-vector-search hardening
 status: seedling
-source: "session 2026-09-08 — docs-vector-search hardening"
-tags: [llm, rag, prompt-injection, security, ai-safety]
+tags:
+- llm
+- rag
+- prompt-injection
+- security
+- ai-safety
+title: Fence and strip delimiters around untrusted RAG context to limit prompt injection
+type: lesson
 ---
 
 # Fence and strip delimiters around untrusted RAG context to limit prompt injection
@@ -21,3 +30,14 @@ Prompt injection is not fully solvable at the prompt layer; fencing + sanitizing
 ## Related
 
 - [[Absence of X-Forwarded-For must not mean trusted internal caller]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+- [[Two-phase RAG chatbot UX fast retrieval first, slow generation second]]
+- [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+- [[Absence of X-Forwarded-For must not mean trusted internal caller]]
+
+%% ai-graph-end %%

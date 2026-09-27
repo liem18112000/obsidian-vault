@@ -1,10 +1,17 @@
 ---
-title: "Excalidraw opaque enclosing box hides inner elements drawn earlier"
+ai_hash: 95d83fc9950eeb19
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: lesson
+entities: []
+source: session 2026-09-23 exec-overview diagram
 status: seedling
-source: "session 2026-09-23 exec-overview diagram"
-tags: [excalidraw, diagrams, gotcha]
+tags:
+- excalidraw
+- diagrams
+- gotcha
+title: Excalidraw opaque enclosing box hides inner elements drawn earlier
+type: lesson
 ---
 
 # Excalidraw opaque enclosing box hides inner elements drawn earlier
@@ -18,3 +25,14 @@ Applies whenever you programmatically build .excalidraw JSON and append a contai
 ## Related
 
 - [[Excalidraw diagram editing technique]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+- [[Excalidraw container-bound text does not auto-wrap in the render script]]
+- [[Editing an Excalidraw .excalidraw JSON programmatically]]
+- [[Excalidraw vertically-centers bound text — use unbound top-left text for container headers]]
+- [[Excalidraw arrow x is the first point, not the bounding-box corner]]
+
+%% ai-graph-end %%

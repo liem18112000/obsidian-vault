@@ -1,10 +1,20 @@
 ---
-title: "Generate Excalidraw triplet from one layout model, rasterize with @resvg/resvg-js"
+ai_hash: f2e638cb4bfe662a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: howto
+entities: []
+source: session 2026-08-26 leo-customer360
 status: seedling
-source: "session 2026-08-26 leo-customer360"
-tags: [excalidraw, svg, png, resvg, diagrams, nodejs]
+tags:
+- excalidraw
+- svg
+- png
+- resvg
+- diagrams
+- nodejs
+title: Generate Excalidraw triplet from one layout model, rasterize with @resvg/resvg-js
+type: howto
 ---
 
 # Generate Excalidraw triplet from one layout model, rasterize with @resvg/resvg-js
@@ -21,3 +31,14 @@ Related: [[Git Bash /tmp maps to C-tmp for Node fs on Windows]] · [[Excalidraw 
 
 - [[Git Bash /tmp maps to C-tmp for Node fs on Windows]]
 - [[Excalidraw vertically-centers bound text — use unbound top-left text for container headers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Re-exporting the deployment-view PNG from its SVG with resvg-js]]
+- [[Excalidraw vertically-centers bound text — use unbound top-left text for container headers]]
+- [[Render .excalidraw to PNGSVG offline with render_excalidraw.py]]
+- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+
+%% ai-graph-end %%

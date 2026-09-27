@@ -1,10 +1,19 @@
 ---
-title: "One Postgres backs tasks, sessions, prompts AND pgvector in test-agent-v2"
+ai_hash: 3b4dbb6fe9333384
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [test-agent, postgres, pgvector, prompt-store, task-store]
+tags:
+- test-agent
+- postgres
+- pgvector
+- prompt-store
+- task-store
+title: One Postgres backs tasks, sessions, prompts AND pgvector in test-agent-v2
+type: lesson
 ---
 
 # One Postgres backs tasks, sessions, prompts AND pgvector in test-agent-v2
@@ -21,3 +30,14 @@ All tables self-create lazily (`CREATE TABLE IF NOT EXISTS ...`; pgvector also `
 ## Related
 
 - [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 Cloud SQL Postgres holds app + ADK-session + A2A-task tables on one engine]]
+- [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+- [[A2A to_a2a task_store and runner are separate persistence params]]
+- [[ObjectStore is test-agent cross-service shared state]]
+- [[a2a-sdk DatabaseTaskStore makes A2A tasks survive Cloud Run restarts]]
+
+%% ai-graph-end %%

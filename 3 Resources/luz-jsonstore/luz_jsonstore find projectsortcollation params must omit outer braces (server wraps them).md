@@ -1,10 +1,20 @@
 ---
-title: "luz_jsonstore find: project/sort/collation params must omit outer braces (server wraps them)"
+ai_hash: c66d9bd427bed8aa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: gotcha
+entities: []
+source: luz_docs_import dedup 500 debug 2026-08-07
 status: seedling
-source: "luz_docs_import dedup 500 debug 2026-08-07"
-tags: [luz-jsonstore, mongodb, rest-client, gotcha, idempotency]
+tags:
+- luz-jsonstore
+- mongodb
+- rest-client
+- gotcha
+- idempotency
+title: 'luz_jsonstore find: project/sort/collation params must omit outer braces (server
+  wraps them)'
+type: gotcha
 ---
 
 # luz_jsonstore find: project/sort/collation params must omit outer braces (server wraps them)
@@ -30,3 +40,14 @@ Related: [[luz_docs_import]], [[Read-side fire-and-forget mutation: pass the id 
 ## Related
 
 - [[luz_docs_import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-jsonstore GET-by-id masks read exceptions as empty-body 400; 10MB max-post-size caps whole-doc $set writes]]
+- [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
+- [[luz-jsonstore intermittently returns 200 with empty body on folder finds]]
+- [[jsonstore projections need quoted JSON keys and Mongo 16MB doc limit caps single-doc snapshots]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Docs Site deploy-docs.yml detect job skips build unless docs paths change"
+ai_hash: fae3d6ee7dc15a9c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: lesson
+entities: []
+source: session 2026-09-07 chatbot-gone investigation
 status: seedling
-source: "session 2026-09-07 chatbot-gone investigation"
-tags: [leo-cdp, docs-site, github-actions, quartz, gotcha]
+tags:
+- leo-cdp
+- docs-site
+- github-actions
+- quartz
+- gotcha
+title: Docs Site deploy-docs.yml detect job skips build unless docs paths change
+type: lesson
 ---
 
 # Docs Site deploy-docs.yml detect job skips build unless docs paths change
@@ -20,3 +29,14 @@ Related: [[Verify a Quartz afterBody widget renders live before blaming CSS]]
 ## Related
 
 - [[Verify a Quartz afterBody widget renders live before blaming CSS]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Pages build on every branch, deploy only from the default branch]]
+- [[GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags]]
+- [[Workflow-level paths-ignore can stop a workflow triggering on the dir you want to build]]
+- [[workflow_run subscribes by workflow name not filename]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+
+%% ai-graph-end %%

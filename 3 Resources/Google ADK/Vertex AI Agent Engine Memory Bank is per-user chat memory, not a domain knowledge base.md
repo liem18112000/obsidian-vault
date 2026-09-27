@@ -1,10 +1,20 @@
 ---
-title: "Vertex AI Agent Engine Memory Bank is per-user chat memory, not a domain knowledge base"
+ai_hash: ae5cfaccfdfbff08
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: concept
+entities: []
+source: test-agent-v2 Agent Engine research, session 2026-09-08
 status: seedling
-source: "test-agent-v2 Agent Engine research, session 2026-09-08"
-tags: [google-adk, agent-engine, memory-bank, vertex-ai, memory]
+tags:
+- google-adk
+- agent-engine
+- memory-bank
+- vertex-ai
+- memory
+title: Vertex AI Agent Engine Memory Bank is per-user chat memory, not a domain knowledge
+  base
+type: concept
 ---
 
 # Vertex AI Agent Engine Memory Bank is per-user chat memory, not a domain knowledge base
@@ -22,3 +32,14 @@ See [[Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding 
 ## Related
 
 - [[Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned JSON]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK serverless agent tier is CPU-only; LLM compute is offloaded to a managed model API]]
+- [[test-agent-v2 Cloud SQL Postgres holds app + ADK-session + A2A-task tables on one engine]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+- [[ADK DatabaseSessionService can subsume a separate A2A task store and state-file rehydration]]
+- [[Testing-Agent GCS memory bank one bucket, memory root, five subfolders]]
+
+%% ai-graph-end %%

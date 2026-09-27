@@ -1,10 +1,20 @@
 ---
-title: "Thin overlay image to refresh app code when full rebuilds keep failing"
+ai_hash: 63806cd32e1b36ee
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: howto
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [docker, build, overlay, pip, technique, low-disk]
+tags:
+- docker
+- build
+- overlay
+- pip
+- technique
+- low-disk
+title: Thin overlay image to refresh app code when full rebuilds keep failing
+type: howto
 ---
 
 # Thin overlay image to refresh app code when full rebuilds keep failing
@@ -23,3 +33,14 @@ Then `docker build -f Dockerfile.patch -t <project>-kga:latest .` and `docker ta
 ## Related
 
 - [[A failed docker compose --build leaves :latest on the OLD image (silent stale run)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
+- [[Repeated compose up -d can corrupt the bridge network — down+up to rebuild it]]
+- [[test-agent-v2 image built only from pyproject + src + main.py]]
+- [[Two Dockerfiles differing only in entrypoint should be one image plus compose override]]
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+
+%% ai-graph-end %%

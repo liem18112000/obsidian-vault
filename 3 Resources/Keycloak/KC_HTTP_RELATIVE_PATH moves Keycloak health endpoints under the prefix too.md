@@ -1,10 +1,19 @@
 ---
-title: "KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too"
+ai_hash: 20dead07a34dd450
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: gotcha
+entities: []
+source: leo-customer360 deploy-sso.sh, 2026-08
 status: seedling
-source: "leo-customer360 deploy-sso.sh, 2026-08"
-tags: [keycloak, health-check, relative-path, deployment, gotcha]
+tags:
+- keycloak
+- health-check
+- relative-path
+- deployment
+- gotcha
+title: KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too
+type: gotcha
 ---
 
 # KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too
@@ -20,3 +29,14 @@ Related: [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostn
 ## Related
 
 - [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keycloak 26 OIDC issuer path comes from KC_HOSTNAME, not KC_HTTP_RELATIVE_PATH]]
+- [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+- [[KLARA web availability probe must follow redirects and inspect the final URL]]
+- [[Deploying Keycloak 26 as a container health port 9000, bootstrap admin, start vs start-dev]]
+- [[Redeploy OIDC consumers only after the issuer URL is reachable]]
+
+%% ai-graph-end %%

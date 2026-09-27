@@ -1,10 +1,19 @@
 ---
-title: "Piping a command into tail masks its exit code without pipefail"
+ai_hash: a9cfd76eea646437
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: lesson
+entities: []
+source: session 2026-08-24 ecomart-java analysis
 status: seedling
-source: "session 2026-08-24 ecomart-java analysis"
-tags: [bash, shell, pipefail, gotcha, ci]
+tags:
+- bash
+- shell
+- pipefail
+- gotcha
+- ci
+title: Piping a command into tail masks its exit code without pipefail
+type: lesson
 ---
 
 # Piping a command into tail masks its exit code without pipefail
@@ -23,3 +32,14 @@ General rule: never infer an upstream command's success from a piped exit code.
 ## Related
 
 - [[Gradle toolchain languageVersion requires an exact JDK major version]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Backgrounded shell exit code reflects the last command, not the build]]
+- [[Gradle toolchain languageVersion requires an exact JDK major version]]
+- [[Verify gradle-wrapper.jar integrity before running gradlew]]
+- [[Verify test files still exist on disk before trusting prior green test runs]]
+- [[Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform]]
+
+%% ai-graph-end %%

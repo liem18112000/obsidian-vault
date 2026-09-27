@@ -1,10 +1,19 @@
 ---
-title: "Portainer Agent endpoint API needs URL=tcp://host:9001 (bare host:port -> HTTP 500 'unable to parse docker host')"
+ai_hash: 91e2e5ae030315bc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: gotcha
+entities: []
+source: leo-customer360 deployments/monitoring, session 2026-08-23
 status: seedling
-source: "leo-customer360 deployments/monitoring, session 2026-08-23"
-tags: [portainer, api, gotcha, leo-customer360]
+tags:
+- portainer
+- api
+- gotcha
+- leo-customer360
+title: Portainer Agent endpoint API needs URL=tcp://host:9001 (bare host:port -> HTTP
+  500 'unable to parse docker host')
+type: gotcha
 ---
 
 # Portainer Agent endpoint API needs URL=tcp://host:9001 (bare host:port -> HTTP 500 'unable to parse docker host')
@@ -15,3 +24,14 @@ When registering a Portainer **Agent** environment via the API (`POST /api/endpo
 
 - [[One Portainer manages many Docker hosts via portainer/agent]]
 - [[not a second Portainer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Portainer agent self-shuts its API after 72h if no server associates]]
+- [[One Portainer manages many Docker hosts via portaineragent, not a second Portainer]]
+- [[Portainer admin-password bootstrap skips local Docker env - pass -H socket]]
+- [[leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually]]
+- [[Portainer CSRF origin-invalid behind a reverse proxy - expose it directly]]
+
+%% ai-graph-end %%

@@ -1,10 +1,17 @@
 ---
-title: "BSON has no top-level array so a document list must be wrapped in a document"
+ai_hash: d37e1558af81b404
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: lesson
+entities: []
+source: session 2026-08-24
 status: seedling
-source: "session 2026-08-24"
-tags: [bson, mongodb, gotcha]
+tags:
+- bson
+- mongodb
+- gotcha
+title: BSON has no top-level array so a document list must be wrapped in a document
+type: lesson
 ---
 
 # BSON has no top-level array so a document list must be wrapped in a document
@@ -16,3 +23,14 @@ A mongo-java-driver DocumentCodec round-trips this cleanly: nested BSON arrays d
 ## Related
 
 - [[Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
+- [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[End-to-end BSON API testing with the Node bson package]]
+- [[OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation]]
+
+%% ai-graph-end %%

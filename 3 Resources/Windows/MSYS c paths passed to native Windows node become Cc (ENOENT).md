@@ -1,4 +1,11 @@
 ---
+ai_hash: eccafac465a5dc13
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
+---
+
+---
 title: "MSYS /c/ paths passed to native Windows node become C:\c\ (ENOENT)"
 created: 2026-08-25
 type: lesson
@@ -18,3 +25,14 @@ Bash builtins (`cd`, `cat`, `ls`) accept `/c/...` because MSYS translates them, 
 ## Related
 
 - [[Excalidraw JSON generator ghost-text: filtering a node's rectangle by id leaves its text elements behind]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Git Bash tmp maps to C-tmp for Node fs on Windows]]
+- [[Git Bash mangles gh api leading-slash paths to C... — set MSYS_NO_PATHCONV=1]]
+- [[Node.js process.env is case-insensitive on Windows]]
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+- [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
+
+%% ai-graph-end %%

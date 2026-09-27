@@ -1,10 +1,18 @@
 ---
-title: "SSH keepalive prevents broken-pipe exit 255 on long remote docker pulls"
+ai_hash: 2a8b3ef3d6d969d9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-18
-type: lesson
+entities: []
+source: session 2026-09-18, leo-customer360 CD run 35340347947
 status: seedling
-source: "session 2026-09-18, leo-customer360 CD run 35340347947"
-tags: [ssh, ci-cd, gotcha, docker]
+tags:
+- ssh
+- ci-cd
+- gotcha
+- docker
+title: SSH keepalive prevents broken-pipe exit 255 on long remote docker pulls
+type: lesson
 ---
 
 # SSH keepalive prevents broken-pipe exit 255 on long remote docker pulls
@@ -26,3 +34,14 @@ Real case: leo-customer360 CD deploy broke here — a ~5m17s `docker pull` on th
 ## Related
 
 - [[leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh]]
+- [[A locally-sourced shell function is not defined inside an ssh bash -s remote heredoc]]
+- [[Prune disk before any write in an SSH heredoc so it works on a full disk]]
+- [[Self-restarting kubectl port-forward keeps long-running scripts alive through drops]]
+- [[Decouple long agent work from the harness task lifecycle]]
+
+%% ai-graph-end %%

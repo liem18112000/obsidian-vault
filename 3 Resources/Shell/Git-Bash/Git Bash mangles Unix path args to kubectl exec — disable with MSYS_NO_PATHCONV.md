@@ -1,10 +1,20 @@
 ---
-title: "Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV"
+ai_hash: 1e75aa82437d9cf0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: lesson
+entities: []
+source: session 2026-08-13
 status: seedling
-source: "session 2026-08-13"
-tags: [git-bash, msys2, windows, kubectl, docker, gotcha]
+tags:
+- git-bash
+- msys2
+- windows
+- kubectl
+- docker
+- gotcha
+title: Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV
+type: lesson
 ---
 
 # Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV
@@ -27,3 +37,14 @@ Applies to any CLI that forwards a literal Unix path to a remote/container conte
 
 - [[Kubernetes]]
 - [[kubectl]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Git Bash mangles absolute POSIX paths meant for a remote kubectl exec target]]
+- [[Git Bash mangles gh api leading-slash paths to C... — set MSYS_NO_PATHCONV=1]]
+- [[Git Bash mktemp paths are unreadable by Windows python; pipe via stdin instead of a temp-file path]]
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[Git Bash tmp maps to C-tmp for Node fs on Windows]]
+
+%% ai-graph-end %%

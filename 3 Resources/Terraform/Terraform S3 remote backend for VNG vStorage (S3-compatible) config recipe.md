@@ -1,10 +1,20 @@
 ---
-title: "Terraform S3 remote backend for VNG vStorage (S3-compatible) config recipe"
+ai_hash: a268fde1aabe86f3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: howto
+entities: []
+source: session 2026-08-20, deployments backend.tf
 status: seedling
-source: "session 2026-08-20, deployments backend.tf"
-tags: [terraform, s3-backend, vngcloud, vstorage, remote-state, howto]
+tags:
+- terraform
+- s3-backend
+- vngcloud
+- vstorage
+- remote-state
+- howto
+title: Terraform S3 remote backend for VNG vStorage (S3-compatible) config recipe
+type: howto
 ---
 
 # Terraform S3 remote backend for VNG vStorage (S3-compatible) config recipe
@@ -40,3 +50,14 @@ Key gotchas: (1) backend blocks cant use variables, so bucket/endpoint/region ar
 The "no DynamoDB on vStorage → no state locking" gap has a fix: on **Terraform ≥ 1.10** add `use_lockfile = true` to the `backend "s3"` block for **S3-native locking** (a lock object written via conditional PUT / `If-None-Match`) — no DynamoDB needed. Verify the S3-compatible store honours conditional PUT (vStorage should; test it). Without a lock, the `-lock-timeout` flag deploy scripts pass is a **no-op** and concurrent applies (local + CI) can corrupt state. Surfaced in the 2026-08-21 `deployments/` code review (finding M4).
 
 **Correction (verified 2026-08-21):** vStorage does **NOT** enforce `If-None-Match` — a probe's second `PutObject` with `IfNoneMatch:*` **succeeded** instead of returning `412 PreconditionFailed`. So `use_lockfile` would give **false safety** on vStorage; native S3 state locking is **not achievable** there. Mitigate operationally instead: serialise via CI `concurrency` (single writer) and never run concurrent applies. Only enable `use_lockfile` against a store that genuinely enforces conditional PUT (real AWS S3, MinIO, etc.). Test with a two-PUT `IfNoneMatch:*` probe before trusting it.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+- [[Remote Terraform state needs no manual sync — bake creds + init into the deploy orchestrator to guarantee alignment]]
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
+- [[Configure vStorage S3 backend creds in each component .env so deploy scripts self-auth]]
+- [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
+
+%% ai-graph-end %%

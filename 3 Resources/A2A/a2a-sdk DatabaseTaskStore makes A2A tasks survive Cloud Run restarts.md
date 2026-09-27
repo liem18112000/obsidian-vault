@@ -1,10 +1,40 @@
 ---
-title: "a2a-sdk DatabaseTaskStore makes A2A tasks survive Cloud Run restarts"
+ai_hash: 4b7a988067d47600
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-29
-type: lesson
+entities:
+- a2a-sdk
+- DatabaseTaskStore
+- A2A Task objects
+- Cloud Run
+- DefaultRequestHandler
+- TaskStore
+- InMemoryTaskStore
+- process dict
+- AsyncEngine
+- a2a-sdk[postgresql]
+- sqlalchemy[asyncio,postgresql-asyncpg]
+- owner
+- owner_resolver
+- resolve_user_scope
+- task id (UUID)
+- build_task_store()
+- GCS memory bank
+- A2A protocol task bookkeeping
+- Cloud SQL
+- Auth-proxy unix socket
+- asyncpg
+source: session 2026-08-29 task-store migration
 status: seedling
-source: "session 2026-08-29 task-store migration"
-tags: [a2a, a2a-sdk, task-store, cloud-run, postgres]
+tags:
+- a2a
+- a2a-sdk
+- task-store
+- cloud-run
+- postgres
+title: a2a-sdk DatabaseTaskStore makes A2A tasks survive Cloud Run restarts
+type: lesson
 ---
 
 # a2a-sdk DatabaseTaskStore makes A2A tasks survive Cloud Run restarts
@@ -24,3 +54,39 @@ Connect on Cloud Run via [[Cloud Run to Cloud SQL via Auth-proxy unix socket wit
 ## Related
 
 - [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A2A to_a2a task_store and runner are separate persistence params]]
+- [[ADK DatabaseSessionService can subsume a separate A2A task store and state-file rehydration]]
+- [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+- [[test-agent-v2 Cloud SQL Postgres holds app + ADK-session + A2A-task tables on one engine]]
+- [[One Postgres backs tasks, sessions, prompts AND pgvector in test-agent-v2]]
+
+**Relations:**
+- a2a-sdk — *includes* — DefaultRequestHandler
+- DefaultRequestHandler — *uses* — TaskStore
+- DefaultRequestHandler — *persists* — A2A Task objects
+- TaskStore — *stores* — A2A Task objects
+- InMemoryTaskStore — *implements* — TaskStore
+- InMemoryTaskStore — *stores in* — process dict
+- DatabaseTaskStore — *implements* — TaskStore
+- DatabaseTaskStore — *enables survival of* — A2A Task objects
+- DatabaseTaskStore — *enables sharing across* — Cloud Run instances
+- DatabaseTaskStore — *requires* — AsyncEngine
+- DatabaseTaskStore — *keys tasks by* — owner
+- DatabaseTaskStore — *keys tasks by* — task id (UUID)
+- a2a-sdk[postgresql] — *provides* — DatabaseTaskStore
+- a2a-sdk[postgresql] — *depends on* — sqlalchemy[asyncio,postgresql-asyncpg]
+- owner — *is resolved by* — owner_resolver
+- owner_resolver — *defaults to* — resolve_user_scope
+- build_task_store() — *returns* — DatabaseTaskStore
+- build_task_store() — *returns* — InMemoryTaskStore
+- DatabaseTaskStore — *is for* — A2A protocol task bookkeeping
+- A2A protocol task bookkeeping — *is distinct from* — GCS memory bank
+- Cloud Run — *connects to* — Cloud SQL
+- Cloud Run — *connects via* — Auth-proxy unix socket
+- Cloud Run — *uses* — asyncpg
+
+%% ai-graph-end %%

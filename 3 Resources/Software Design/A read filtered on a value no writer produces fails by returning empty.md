@@ -1,10 +1,18 @@
 ---
-title: "A read filtered on a value no writer produces fails by returning empty"
+ai_hash: b001dd4bf9d1ccc1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: lesson
+entities: []
+source: session 2026-09-25
 status: seedling
-source: "session 2026-09-25"
-tags: [debugging, sql, gotcha, silent-failure]
+tags:
+- debugging
+- sql
+- gotcha
+- silent-failure
+title: A read filtered on a value no writer produces fails by returning empty
+type: lesson
 ---
 
 # A read filtered on a value no writer produces fails by returning empty
@@ -25,3 +33,14 @@ Related: [[A field written everywhere and read nowhere is dead code]] · [[Prove
 
 - [[A field written everywhere and read nowhere is dead code]]
 - [[Prove a new branch is load-bearing by reverting it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A field written everywhere and read nowhere is dead code]]
+- [[Check every stage that writes a field, not just the one that defines it]]
+- [[Dead-code refcount scans flag intentional seams as unused; vet before deleting]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Prove a new branch is load-bearing by reverting it]]
+
+%% ai-graph-end %%

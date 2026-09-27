@@ -1,10 +1,19 @@
 ---
-title: "Excalidraw fontFamily codes + .excalidraw/.png can drift out of sync"
+ai_hash: 0a14b97d5a6cad9d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-22
-type: lesson
+entities: []
+source: session 2026-08-22
 status: seedling
-source: "session 2026-08-22"
-tags: [excalidraw, diagram, fonts, gotcha, rendering]
+tags:
+- excalidraw
+- diagram
+- fonts
+- gotcha
+- rendering
+title: Excalidraw fontFamily codes + .excalidraw/.png can drift out of sync
+type: lesson
 ---
 
 # Excalidraw fontFamily codes + .excalidraw/.png can drift out of sync
@@ -25,3 +34,14 @@ The excalidraw-diagram skill's rule: walk every arrow segment vs every non-endpo
 
 ## Related
 [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Editing an Excalidraw .excalidraw JSON programmatically]]
+- [[Excalidraw vertically-centers bound text — use unbound top-left text for container headers]]
+- [[Editing Excalidraw diagrams with committed SVG exports needs both files updated]]
+- [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
+- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
+
+%% ai-graph-end %%

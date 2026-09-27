@@ -1,10 +1,19 @@
 ---
-title: "Keep billed bootstrap resources out of Terraform state"
+ai_hash: ca521a92f0c3db09
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [terraform, iac, state, idempotency, design-decision]
+tags:
+- terraform
+- iac
+- state
+- idempotency
+- design-decision
+title: Keep billed bootstrap resources out of Terraform state
+type: lesson
 ---
 
 # Keep billed bootstrap resources out of Terraform state
@@ -21,3 +30,14 @@ Related: [[vStorage project is a paid prerequisite Terraform cannot create]], [[
 
 - [[vStorage project is a paid prerequisite Terraform cannot create]]
 - [[vStorage REST control-plane API: endpoints and vIAM bearer auth]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vStorage project is a paid prerequisite Terraform cannot create]]
+- [[vStorage API project creation needs a billing order (payment method or POC wallet)]]
+- [[Creating a vStorage bucket is free (data-plane); only the project quota + usage cost money]]
+- [[Remote Terraform state needs no manual sync — bake creds + init into the deploy orchestrator to guarantee alignment]]
+- [[Split Terraform cluster-provisioning state separate from in-cluster workload state]]
+
+%% ai-graph-end %%

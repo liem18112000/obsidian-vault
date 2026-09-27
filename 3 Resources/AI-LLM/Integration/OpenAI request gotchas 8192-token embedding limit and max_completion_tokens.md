@@ -1,10 +1,41 @@
 ---
-title: "OpenAI request gotchas: 8192-token embedding limit and max_completion_tokens"
+ai_hash: 7de10f747b2a28bb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: gotcha
+entities:
+- OpenAI request gotchas
+- 8192-token embedding limit
+- max_completion_tokens
+- text-embedding-3-small
+- text-embedding-3-large
+- '400 Invalid input[N]: maximum input length is 8192 tokens'
+- tiktoken
+- cl100k_base
+- truncate function
+- max_tokens
+- Chat Completions
+- newer models
+- o-series
+- gpt-5.x
+- gpt-4.x
+- OpenAI server
+- CI
+- Anthropic
+- first-party embeddings endpoint
+- SDKs
+- custom CI secret name
+- fixed env var
+source: session 2026-09-05 (docs-vector-search CI enrich 400s)
 status: seedling
-source: "session 2026-09-05 (docs-vector-search CI enrich 400s)"
-tags: [openai, embeddings, tiktoken, rag, gotcha]
+tags:
+- openai
+- embeddings
+- tiktoken
+- rag
+- gotcha
+title: 'OpenAI request gotchas: 8192-token embedding limit and max_completion_tokens'
+type: gotcha
 ---
 
 # OpenAI request gotchas: 8192-token embedding limit and max_completion_tokens
@@ -33,3 +64,36 @@ Related: [[Anthropic has no first-party embeddings endpoint]], [[A custom CI sec
 ## Related
 
 - [[Anthropic has no first-party embeddings endpoint]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OpenAIEmbeddings needs check_embedding_ctx_length=False against Ollama]]
+- [[LLM-as-reranker JSON truncation budget max_tokens for pretty-printed output, not just element count]]
+- [[Enabled thinking shares the max_tokens budget and can truncate output]]
+- [[A custom CI secret name must be passed to an SDK explicitly — SDKs only auto-read their fixed env var]]
+- [[Pass LLM prompts to spawned CLIs via stdin - Windows argv caps at 32K (ENAMETOOLONG)]]
+
+**Relations:**
+- OpenAI request gotchas — *include* — 8192-token embedding limit
+- OpenAI request gotchas — *include* — max_completion_tokens
+- 8192-token embedding limit — *applies to* — text-embedding-3-small
+- 8192-token embedding limit — *applies to* — text-embedding-3-large
+- 8192-token embedding limit — *causes* — 400 Invalid input[N]: maximum input length is 8192 tokens
+- tiktoken — *is* — tokenizer for OpenAI
+- tiktoken — *provides* — cl100k_base
+- truncate function — *uses* — tiktoken
+- truncate function — *mitigates* — 8192-token embedding limit
+- max_tokens — *is deprecated in* — Chat Completions
+- max_tokens — *is rejected by* — newer models
+- newer models — *include* — o-series
+- newer models — *include* — gpt-5.x
+- max_completion_tokens — *works with* — gpt-4.x
+- max_completion_tokens — *works with* — newer models
+- OpenAI server — *returns* — 400s
+- CI — *catches* — 400s
+- Anthropic — *lacks* — first-party embeddings endpoint
+- SDKs — *auto-read* — fixed env var
+- custom CI secret name — *requires explicit passing to* — SDKs
+
+%% ai-graph-end %%

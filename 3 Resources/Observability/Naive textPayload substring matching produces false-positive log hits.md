@@ -1,10 +1,18 @@
 ---
-title: "Naive textPayload substring matching produces false-positive log hits"
+ai_hash: 46ace4d1c68bbaf0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: PROD investigation 2026-08-03
 status: seedling
-source: "PROD investigation 2026-08-03"
-tags: [logs, observability, gotcha, triage]
+tags:
+- logs
+- observability
+- gotcha
+- triage
+title: Naive textPayload substring matching produces false-positive log hits
+type: lesson
 ---
 
 # Naive textPayload substring matching produces false-positive log hits
@@ -24,3 +32,14 @@ Match on the **specific, structured** form, not the bare number:
 
 - [[gcloud logging read: --order=asc silently ignores --freshness]]
 - [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
+- [[gcloud logging read --order=asc silently ignores --freshness]]
+- [[gcloud logging read --freshness is unreliable with broad OR filters; use explicit timestamp bound]]
+- [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+- [[Log red herrings enclosing class name and baseline-noise lines]]
+
+%% ai-graph-end %%

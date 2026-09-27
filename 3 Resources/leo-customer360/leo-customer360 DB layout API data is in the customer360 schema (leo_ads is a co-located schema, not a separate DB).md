@@ -1,10 +1,21 @@
 ---
-title: "leo-customer360 DB layout: API data is in the customer360 schema (leo_ads is a co-located schema, not a separate DB)"
+ai_hash: a628b2299ca6a3c5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: reference
+entities: []
+source: leo-customer360 uat vDB (10.100.1.3), session 2026-08-23
 status: seedling
-source: "leo-customer360 uat vDB (10.100.1.3), session 2026-08-23"
-tags: [postgres, schema, customer360, leo-ads, keycloak, reference]
+tags:
+- postgres
+- schema
+- customer360
+- leo-ads
+- keycloak
+- reference
+title: 'leo-customer360 DB layout: API data is in the customer360 schema (leo_ads
+  is a co-located schema, not a separate DB)'
+type: reference
 ---
 
 # leo-customer360 DB layout: API data is in the customer360 schema (leo_ads is a co-located schema, not a separate DB)
@@ -21,3 +32,14 @@ The customer360 API connects to the **`customer360` database** (DB_NAME from dep
 **Bottom line:** effectively all customer360-API application data is in the `customer360` schema of the `customer360` database. Keycloak data is in the separate db_keycloak database.
 
 **How to check (DB is private — run psql from a VPC box):** connect app_admin@10.100.1.3/customer360 and query pg_class grouped by pg_namespace for table counts + reltuples, and pg_stat_user_tables for n_live_tup. Catalog stats are NOT filtered by RLS, so you can see schema/table layout + row estimates even as the RLS-bound owner without setting app.tenant_id.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+- [[leo-customer360 applies DB schema via two paths that must stay in sync]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+- [[LEO Customer360 GreenNode Terraform infrastructure]]
+- [[leo-customer360 service dependency + health-probe map]]
+
+%% ai-graph-end %%

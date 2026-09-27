@@ -1,10 +1,20 @@
 ---
-title: "VNG vLB: replace the listener when its pool is ForceNew-replaced"
+ai_hash: efdad42f96af50cf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 load_balancer 2026-08-19
 status: seedling
-source: "leo-customer360 load_balancer 2026-08-19"
-tags: [terraform, vngcloud, load-balancer, replace_triggered_by, forcenew, gotcha]
+tags:
+- terraform
+- vngcloud
+- load-balancer
+- replace_triggered_by
+- forcenew
+- gotcha
+title: 'VNG vLB: replace the listener when its pool is ForceNew-replaced'
+type: lesson
 ---
 
 # VNG vLB: replace the listener when its pool is ForceNew-replaced
@@ -30,3 +40,14 @@ here because pool names must be unique per LB, so a same-named second pool would
 
 Discovered in leo-customer360 deployments/load_balancer when a backend switched health
 checks HTTP->TCP. Related: [[Per-AZ catalog trap on VNG Cloud Terraform provider]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vLB pool in-place update fails ('Stickiness cannot be specified for non-HTTP pools') — use terraform -replace]]
+- [[Recovering an orphaned VNG vLB resource after a Terraform state-save failure]]
+- [[VNG vServer name is in-place updatable; decouple server name from the for_each map key to rename without recreate]]
+- [[Terraform for_each rename reusing a unique port can transiently clash on apply]]
+- [[vngcloud_vlb_load_balancer package_id needs a UUID resolved via vngcloud_vlb_lb_packages]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Dagster { env: VAR } config is resolved in the run-worker subprocess, so the var must be in the container env"
+ai_hash: 23483f2f201628e2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: gotcha
+entities: []
+source: session 2026-09-09
 status: seedling
-source: "session 2026-09-09"
-tags: [dagster, env, config, s3, gotcha]
+tags:
+- dagster
+- env
+- config
+- s3
+- gotcha
+title: 'Dagster { env: VAR } config is resolved in the run-worker subprocess, so the
+  var must be in the container env'
+type: gotcha
 ---
 
 # Dagster { env: VAR } config is resolved in the run-worker subprocess, so the var must be in the container env
@@ -18,3 +28,14 @@ In a Dagster `dagster.yaml`, an `{ env: VAR }` value (e.g. in the `compute_logs`
 ## Related
 
 - [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster run-worker subprocesses don't inherit all webserver env vars]]
+- [[Dagster run_monitoring key is max_resume_run_attempts not max_resume_attempts]]
+- [[Dagster S3ComputeLogManager credentials via boto3 env, path-style via AWS config file]]
+- [[Fail-open service config render the instance config at container start from backend probes]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+
+%% ai-graph-end %%

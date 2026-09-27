@@ -1,10 +1,48 @@
 ---
-title: "Add cross-stage provenance to a shared graph via update_index without new model methods"
+ai_hash: b8b1678c44ff2870
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities:
+- Cross-stage provenance
+- Shared graph
+- update_index
+- Model methods
+- Implement stage
+- Test-plan nodes
+- Test-scenario nodes
+- Scenario -> insight/note edges
+- Knowledge-index graph
+- Gather stage
+- Refine stage
+- MemoryBank
+- Callback
+- Graph nodes dicts
+- Graph edges dicts
+- Graph.add_insight
+- _add_provenance function
+- Graph model
+- Stage-specific vocabulary
+- Queryable graph
+- Compare-and-set retry
+- Index-markdown re-render
+- Mutate callback
+- Node/edge dict shape
+- Two packages
+- Testing Agent
+- Pipeline stage
+- knowledge_gathering skeleton
+source: session 2026-08-28, test_plan_definition M3
 status: seedling
-source: "session 2026-08-28, test_plan_definition M3"
-tags: [test-agent, memory-bank, provenance, graph, design-decision]
+tags:
+- test-agent
+- memory-bank
+- provenance
+- graph
+- design-decision
+title: Add cross-stage provenance to a shared graph via update_index without new model
+  methods
+type: lesson
 ---
 
 # Add cross-stage provenance to a shared graph via update_index without new model methods
@@ -29,3 +67,43 @@ def _add_provenance(graph, plan, scenarios):
 ## Related
 
 - [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
+- [[Pipeline stages sharing a context_id need separate memory-bank path prefixes]]
+- [[Write-stub bank proxy test a persistence-writing pipeline against live reads without mutating state]]
+- [[approve_plan is an agent-side write, unlike knowledge_gathering's read-only approve]]
+- [[test-agent-v2 executor step handlers take the executor as first arg]]
+
+**Relations:**
+- Cross-stage provenance — *added to* — Shared graph
+- Cross-stage provenance — *added via* — update_index
+- Cross-stage provenance — *added without* — Model methods
+- Implement stage — *records* — Cross-stage provenance
+- Cross-stage provenance — *includes* — Test-plan nodes
+- Cross-stage provenance — *includes* — Test-scenario nodes
+- Cross-stage provenance — *includes* — Scenario -> insight/note edges
+- Implement stage — *records into* — Knowledge-index graph
+- Gather stage — *populates* — Knowledge-index graph
+- Refine stage — *populates* — Knowledge-index graph
+- MemoryBank — *uses* — update_index
+- update_index — *runs* — Callback
+- Callback — *writes into* — Graph nodes dicts
+- Callback — *writes into* — Graph edges dicts
+- Graph nodes dicts — *has shape of* — Graph.add_insight
+- Graph edges dicts — *has shape of* — Graph.add_insight
+- update_index — *calls* — _add_provenance function
+- _add_provenance function — *adds* — Test-plan nodes
+- _add_provenance function — *adds* — Test-scenario nodes
+- Graph model — *avoids* — Stage-specific vocabulary
+- Cross-stage provenance — *stored in* — Queryable graph
+- update_index — *performs* — Compare-and-set retry
+- update_index — *performs* — Index-markdown re-render
+- Mutate callback — *is a* — right seam
+- Node/edge dict shape — *is contract for* — Two packages
+- Testing Agent — *builds* — Pipeline stage
+- Pipeline stage — *mirrors* — knowledge_gathering skeleton
+
+%% ai-graph-end %%

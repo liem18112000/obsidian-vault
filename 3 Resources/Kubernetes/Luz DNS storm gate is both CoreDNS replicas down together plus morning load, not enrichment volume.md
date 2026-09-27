@@ -1,10 +1,21 @@
 ---
-title: "Luz DNS storm gate is both CoreDNS replicas down together plus morning load, not enrichment volume"
+ai_hash: e728840a1a136be9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: observation
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [coredns, dns, root-cause, availability, luz, replica]
+tags:
+- coredns
+- dns
+- root-cause
+- availability
+- luz
+- replica
+title: Luz DNS storm gate is both CoreDNS replicas down together plus morning load,
+  not enrichment volume
+type: observation
 ---
 
 # Luz DNS storm gate is both CoreDNS replicas down together plus morning load, not enrichment volume
@@ -34,3 +45,14 @@ Lesson: a clean-looking dose-response from 3-4 cherry-picked days can be a coinc
 - [[not a CoreDNS crash]]
 - [[MongoTimeoutException from UnknownHostException is a DNS fault]]
 - [[not DB overload]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+- [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
+- [[Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore into Mongo]]
+- [[CoreDNS livenessreadiness 404 means probe path-port mismatch, not a CoreDNS crash]]
+- [[Intermittent DB saturation = stacked loads crossing a fixed ceiling]]
+
+%% ai-graph-end %%

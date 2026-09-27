@@ -1,10 +1,19 @@
 ---
-title: "claude.ai share links can be org-restricted and require login"
+ai_hash: 9104e36aba1df1df
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: lesson
+entities: []
+source: session 2026-08-25
 status: seedling
-source: "session 2026-08-25"
-tags: [claude, claude-ai, sharing, gotcha, playwright]
+tags:
+- claude
+- claude-ai
+- sharing
+- gotcha
+- playwright
+title: claude.ai share links can be org-restricted and require login
+type: lesson
 ---
 
 # claude.ai share links can be org-restricted and require login
@@ -26,3 +35,14 @@ Drive a browser that carries a logged-in claude.ai session:
 ## Related
 
 - [[Excalidraw JSON generator ghost-text: filtering a node's rectangle by id leaves its text elements behind]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[claude.ai Artifact iframe sandbox blocks data-URI downloads]]
+- [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
+- [[claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed]]
+- [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
+- [[claude-proxy login expires mid-session - implement silently degrades to heuristic stubs (score 0.00)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "POSIX sh: source/. of a slashless filename searches PATH, not cwd"
+ai_hash: b691734eb3411d6d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [bash, posix, shell, sourcing, gotcha]
+tags:
+- bash
+- posix
+- shell
+- sourcing
+- gotcha
+title: 'POSIX sh: source/. of a slashless filename searches PATH, not cwd'
+type: lesson
 ---
 
 # POSIX sh: source/. of a slashless filename searches PATH, not cwd
@@ -20,3 +29,14 @@ In **POSIX sh** (and bash running in POSIX mode, e.g. when invoked as `sh script
 ## Related
 
 - [[Make a Terraform wrapper script idempotent with plan -detailed-exitcode and a saved plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Sourced shell env file must quote values with spaces]]
+- [[In CI invoke repo shell scripts via bash script.sh, not .script.sh (Windows drops the +x bit)]]
+- [[CRLF line endings on a shell script shebang cause Docker exit 127 (env bash^M not found)]]
+- [[Docker Compose path resolution env_file vs build context vs dockerfile]]
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+
+%% ai-graph-end %%

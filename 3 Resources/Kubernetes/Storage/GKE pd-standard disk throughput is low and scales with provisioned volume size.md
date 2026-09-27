@@ -1,10 +1,20 @@
 ---
-title: "GKE pd-standard disk throughput is low and scales with provisioned volume size"
+ai_hash: d8c06814eca65c07
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-12
-type: concept
+entities: []
+source: luz_docs_import large-ZIP latency investigation 2026-08-12
 status: seedling
-source: "luz_docs_import large-ZIP latency investigation 2026-08-12"
-tags: [gke, gcp, pd-standard, storage, performance, gotcha]
+tags:
+- gke
+- gcp
+- pd-standard
+- storage
+- performance
+- gotcha
+title: GKE pd-standard disk throughput is low and scales with provisioned volume size
+type: concept
 ---
 
 # GKE pd-standard disk throughput is low and scales with provisioned volume size
@@ -21,3 +31,14 @@ Related: [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp befor
 
 - [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it]]
 - [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
+- [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it]]
+- [[luz-docs-import prod scratch peaks under 1GB — 100Gi tmp-scratch (LUZ-158230) is over-provisioned]]
+- [[Decouple upload API latency from file size with pre-signed direct-to-object-storage uploads]]
+- [[luz-docs-import k8s is a StatefulSet with a 300Gi block-disk temp VCT for upload and tmp]]
+
+%% ai-graph-end %%

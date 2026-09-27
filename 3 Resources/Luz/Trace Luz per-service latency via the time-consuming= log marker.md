@@ -1,10 +1,20 @@
 ---
-title: "Trace Luz per-service latency via the time-consuming= log marker"
+ai_hash: 507b076e7b5c131f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: howto
+entities: []
+source: session 2026-08-10 (luz-docs-import-api-test skill)
 status: seedling
-source: "session 2026-08-10 (luz-docs-import-api-test skill)"
-tags: [luz, latency, logging, gcloud, tracing, gotcha]
+tags:
+- luz
+- latency
+- logging
+- gcloud
+- tracing
+- gotcha
+title: Trace Luz per-service latency via the time-consuming= log marker
+type: howto
 ---
 
 # Trace Luz per-service latency via the time-consuming= log marker
@@ -24,3 +34,14 @@ Every Luz JVM service logs `<METHOD> Rest client response uri: <uri> time-consum
 
 - [[Luz docs-import zip flow: upload-zip returns job-id]]
 - [[poll GET until DONE]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import antivirus whole-zip scan dominates first-import latency and scales with zip size]]
+- [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
+- [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second]]
+- [[luz-docs-import performance-env import benchmark findings]]
+- [[luz-docs-import ZIP import call chain]]
+
+%% ai-graph-end %%

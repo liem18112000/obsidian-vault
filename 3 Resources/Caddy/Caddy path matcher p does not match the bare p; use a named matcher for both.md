@@ -1,10 +1,20 @@
 ---
-title: "Caddy path matcher /p/* does not match the bare /p; use a named matcher for both"
+ai_hash: aa9460b78e43a114
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: gotcha
+entities: []
+source: leo-customer360 proxy Caddyfile, 2026-08
 status: seedling
-source: "leo-customer360 proxy Caddyfile, 2026-08"
-tags: [caddy, path-matcher, routing, trailing-slash, gotcha]
+tags:
+- caddy
+- path-matcher
+- routing
+- trailing-slash
+- gotcha
+title: Caddy path matcher /p/* does not match the bare /p; use a named matcher for
+  both
+type: gotcha
 ---
 
 # Caddy path matcher /p/* does not match the bare /p; use a named matcher for both
@@ -21,3 +31,14 @@ Related: [[Caddy handle_path strips the path prefix, handle keeps it]]
 
 - [[Caddy handle_path strips the path prefix]]
 - [[handle keeps it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
+- [[Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path]]
+- [[Serve a SPA under a sub-path via the app base-path option, not proxy strip]]
+- [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer"
+ai_hash: 071762e8bc797b16
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-22
-type: lesson
+entities: []
+source: leo-customer360 deployments/monitoring, session 2026-08-22
 status: seedling
-source: "leo-customer360 deployments/monitoring, session 2026-08-22"
-tags: [deployment, load-balancer, oauth2-proxy, pgadmin, security, leo-customer360]
+tags:
+- deployment
+- load-balancer
+- oauth2-proxy
+- pgadmin
+- security
+- leo-customer360
+title: Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer
+type: lesson
 ---
 
 # Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer
@@ -30,3 +40,14 @@ See also [[oauth2-proxy gates a dashboard that has no native auth]] and category
 ## Related
 
 - [[Deployment]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
+- [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[Portainer CSRF origin-invalid behind a reverse proxy - expose it directly]]
+
+%% ai-graph-end %%

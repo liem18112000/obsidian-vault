@@ -1,10 +1,21 @@
 ---
-title: "A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent"
+ai_hash: 8689d9b723a4f89b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: lesson
+entities: []
+source: session 2026-08-10 (luz-docs-import fault-tolerance analysis)
 status: seedling
-source: "session 2026-08-10 (luz-docs-import fault-tolerance analysis)"
-tags: [fault-tolerance, idempotency, pubsub, outbox, distributed-systems, design-decision]
+tags:
+- fault-tolerance
+- idempotency
+- pubsub
+- outbox
+- distributed-systems
+- design-decision
+title: A durable queue fixes report-write durability, not data-duplication — make
+  the side effect idempotent
+type: lesson
 ---
 
 # A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent
@@ -23,3 +34,14 @@ When a worker does remote work (create documents) AND writes a progress/report r
 - [[not UI progress]]
 - [[Luz docs-import zip flow: upload-zip returns job-id]]
 - [[poll GET until DONE]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import createDocument is not idempotent — server-generated id, @Retry can duplicate on lost response]]
+- [[Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism]]
+- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
+- [[Read-time non-persisted state repair is an anti-pattern; use a scheduled reconciler]]
+- [[Read-side fire-and-forget mutation pass the id and re-read in the async, don't mutate the object being serialized]]
+
+%% ai-graph-end %%

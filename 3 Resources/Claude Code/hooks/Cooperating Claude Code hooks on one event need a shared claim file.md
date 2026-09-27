@@ -1,10 +1,18 @@
 ---
-title: "Cooperating Claude Code hooks on one event need a shared claim file"
+ai_hash: 9c070fd2d6df3c78
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: luz-hooks-plugin simplify-gate PR, 2026-09-27
 status: seedling
-source: "luz-hooks-plugin simplify-gate PR, 2026-09-27"
-tags: [claude-code, hooks, concurrency, gotcha]
+tags:
+- claude-code
+- hooks
+- concurrency
+- gotcha
+title: Cooperating Claude Code hooks on one event need a shared claim file
+type: lesson
 ---
 
 # Cooperating Claude Code hooks on one event need a shared claim file
@@ -33,3 +41,14 @@ Related: [[Installer skill templates drift from the live scripts they install]]
 ## Related
 
 - [[Installer skill templates drift from the live scripts they install]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
+- [[PSScriptRoot-relative state breaks when a hook moves to a subfolder]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Installer skill templates drift from the live scripts they install]]
+- [[PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
+
+%% ai-graph-end %%

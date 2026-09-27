@@ -1,10 +1,19 @@
 ---
-title: "Postgres GREATEST ignores NULLs — use it to advance a timestamp column forward only"
+ai_hash: d137de57fc2011c6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: term
+entities: []
+source: LEO CDP resolver fix 2026-08-23
 status: seedling
-source: "LEO CDP resolver fix 2026-08-23"
-tags: [postgresql, sql, idiom, timestamps]
+tags:
+- postgresql
+- sql
+- idiom
+- timestamps
+title: Postgres GREATEST ignores NULLs — use it to advance a timestamp column forward
+  only
+type: term
 ---
 
 # Postgres GREATEST ignores NULLs — use it to advance a timestamp column forward only
@@ -29,3 +38,11 @@ See [[LEO CDP segment member_count is 0 because default rules filter on never-po
 ## Related
 
 - [[LEO CDP segment member_count is 0 because default rules filter on never-populated ML columns]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Migration-free idempotent upserts via deterministic uuid5 primary keys]]
+- [[Postgres ON CONFLICT DO UPDATE references the target row by unqualified table name]]
+
+%% ai-graph-end %%

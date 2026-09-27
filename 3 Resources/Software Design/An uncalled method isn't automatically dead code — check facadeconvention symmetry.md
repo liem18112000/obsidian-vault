@@ -1,10 +1,20 @@
 ---
-title: "An uncalled method isn't automatically dead code — check facade/convention symmetry"
+ai_hash: 0fcad57ba9f141f8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: lesson
+entities: []
+source: leo-customer360 PR 77 review 2026-09-19
 status: seedling
-source: "leo-customer360 PR 77 review 2026-09-19"
-tags: [refactoring, dead-code, code-review, gotcha, ponytail]
+tags:
+- refactoring
+- dead-code
+- code-review
+- gotcha
+- ponytail
+title: An uncalled method isn't automatically dead code — check facade/convention
+  symmetry
+type: lesson
 ---
 
 # An uncalled method isn't automatically dead code — check facade/convention symmetry
@@ -23,3 +33,11 @@ When a deletion candidate has same-shaped siblings, either delete the WHOLE fami
 ## Related
 
 - [[A field written everywhere and read nowhere is dead code]] — the opposite case: data fields have no symmetry argument, so a never-read field really is dead.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A field written everywhere and read nowhere is dead code]]
+- [[Dead-code refcount scans flag intentional seams as unused; vet before deleting]]
+
+%% ai-graph-end %%

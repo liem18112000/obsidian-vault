@@ -1,10 +1,21 @@
 ---
-title: "A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention"
+ai_hash: 38be3958140c50f6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: technique
+entities: []
+source: luz-docs-import run-1 cold-start investigation 2026-08-13
 status: seedling
-source: "luz-docs-import run-1 cold-start investigation 2026-08-13"
-tags: [performance, jit, gc, latency, benchmarking, diagnostics]
+tags:
+- performance
+- jit
+- gc
+- latency
+- benchmarking
+- diagnostics
+title: A latency penalty in the tail not the median points to JIT/GC warm-up under
+  CPU contention
+type: technique
 ---
 
 # A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention
@@ -21,3 +32,14 @@ Related: [[Truncating DB collections between benchmark runs resets data but not 
 
 - [[Truncating DB collections between benchmark runs resets data but not service warmth]]
 - [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]]
+- [[Truncating DB collections between benchmark runs resets data but not service warmth]]
+- [[Trust median and p90 over many runs, not the mean of a few, for latency on a noisy shared env]]
+- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
+- [[Concurrency-bound single-primary Mongo reads indexes stop helping; recognize by bimodal latency]]
+
+%% ai-graph-end %%

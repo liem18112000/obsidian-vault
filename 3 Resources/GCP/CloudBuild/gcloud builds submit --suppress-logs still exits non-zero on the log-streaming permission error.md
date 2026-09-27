@@ -1,10 +1,20 @@
 ---
-title: "gcloud builds submit --suppress-logs still exits non-zero on the log-streaming permission error"
+ai_hash: a8ece7219ebc616f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: session 2026-09-03
 status: seedling
-source: "session 2026-09-03"
-tags: [gcp, cloud-build, gcloud, ci-cd, gotcha]
+tags:
+- gcp
+- cloud-build
+- gcloud
+- ci-cd
+- gotcha
+title: gcloud builds submit --suppress-logs still exits non-zero on the log-streaming
+  permission error
+type: lesson
 ---
 
 # gcloud builds submit --suppress-logs still exits non-zero on the log-streaming permission error
@@ -20,3 +30,14 @@ Real fixes: grant the identity a role that can read build logs (Cloud Build View
 ## Related
 
 - [[Cloud Run's managed /cloudsql socket does not reach sidecar containers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[gcloud builds submit log-streaming error is not a build failure (use --suppress-logs)]]
+- [[Cloud Run's managed cloudsql socket does not reach sidecar containers]]
+- [[Diagnose Cloud Build failures with gcloud builds describe and log]]
+- [[IAM roles a CI service account needs to build and deploy to Cloud Run]]
+- [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+
+%% ai-graph-end %%

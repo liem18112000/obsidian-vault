@@ -1,10 +1,21 @@
 ---
-title: "CD only redeploys a leo-customer360 service when its own path changes (dorny paths-filter)"
+ai_hash: 0d3ce1f4f12b3b80
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: gotcha
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-cdp, cicd, github-actions, paths-filter, deploy, gotcha]
+tags:
+- leo-cdp
+- cicd
+- github-actions
+- paths-filter
+- deploy
+- gotcha
+title: CD only redeploys a leo-customer360 service when its own path changes (dorny
+  paths-filter)
+type: gotcha
 ---
 
 # CD only redeploys a leo-customer360 service when its own path changes (dorny paths-filter)
@@ -32,3 +43,14 @@ Related: [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
 
 - [[Validate S3_REGION at the deploy boundary]]
 - [[not after boto3 fails]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CI path-filter must mirror the Docker build context, not the service folder]]
+- [[leo-customer360 CD UAT deploys only from main + --deploy-uat marker]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[CD didn't fire on an infra-only merge (CI paths-ignore); re-run a workflow_run deploy via workflow_dispatch, not run rerun]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+
+%% ai-graph-end %%

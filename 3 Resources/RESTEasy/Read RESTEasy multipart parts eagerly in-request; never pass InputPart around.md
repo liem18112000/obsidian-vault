@@ -1,10 +1,21 @@
 ---
-title: "Read RESTEasy multipart parts eagerly in-request; never pass InputPart around"
+ai_hash: 994bacf577c02076
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: luz-docs-batch incident 2026-09; LUZ-132205
 status: seedling
-source: "luz-docs-batch incident 2026-09; LUZ-132205"
-tags: [resteasy, jax-rs, multipart, async, cdi, kepler-luz, pattern]
+tags:
+- resteasy
+- jax-rs
+- multipart
+- async
+- cdi
+- kepler-luz
+- pattern
+title: Read RESTEasy multipart parts eagerly in-request; never pass InputPart around
+type: lesson
 ---
 
 # Read RESTEasy multipart parts eagerly in-request; never pass InputPart around
@@ -25,3 +36,14 @@ The same anti-pattern lives in **luz-docs** (`DocumentUtil.getMetadataFromInputP
 ## Related
 
 - [[RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread]]
+- [[luz-docs RESTEASY003880 UriInfo 500 regression traced to MaterializeRequestFilter firing async CDI events]]
+- [[RESTEasy multipart repeated field name yields a List, get(0) silently drops extras]]
+- [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
+- [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it]]
+
+%% ai-graph-end %%

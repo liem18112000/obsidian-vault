@@ -1,10 +1,18 @@
 ---
-title: "LEO email_engine dispatch resolves DB config then SMTP env then mock"
+ai_hash: f681a2374d243b62
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: design
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-customer360, email, smtp, design-decision]
+tags:
+- leo-customer360
+- email
+- smtp
+- design-decision
+title: LEO email_engine dispatch resolves DB config then SMTP env then mock
+type: design
 ---
 
 # LEO email_engine dispatch resolves DB config then SMTP env then mock
@@ -25,3 +33,14 @@ So SMTP is needed only when a specific tenant wants real delivery — not for th
 ## Related
 
 - [[LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)]]
+- [[LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)]]
+- [[SMTP health check stays out of auth-exempt GET metadata login-path]]
+- [[Verify an authed health endpoint in-container, not by curl, in CI]]
+- [[customer360 AI campaign lifecycle agent plans, api persists draft, email_engine renders at send]]
+
+%% ai-graph-end %%

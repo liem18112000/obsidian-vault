@@ -1,7 +1,15 @@
 ---
-tags: [test-agent-v2, architecture, decision, evaluation]
+ai_hash: c464aae0384a9da2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
+entities: []
 status: planned
+tags:
+- test-agent-v2
+- architecture
+- decision
+- evaluation
 ---
 
 # Run benchmark must live in TEV (layering constraint)
@@ -38,3 +46,14 @@ Cache-aside via one choke point `load_or_compute(bank, ctx, recompute=False)`; s
 `session.ask("<verb> <args>")` forwarders merged by the gateway.
 
 Related: [[test-agent common shared engine]] · [[implement serial Vertex calls Cloud Run timeout]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 gateway tool interception — hook at registration not the _tools dict]]
+- [[test-agent-v2 test_evaluation restructure engine + config packages + merged golden set]]
+- [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+- [[test-agent-v2 executor tests share memory-bank state and fail by test order]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Compose command ${VAR} reads .env not env_file — use env_file + $$VAR"
+ai_hash: 78638971856b23bb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [docker-compose, env-file, interpolation, gotcha]
+tags:
+- docker-compose
+- env-file
+- interpolation
+- gotcha
+title: Compose command ${VAR} reads .env not env_file — use env_file + $$VAR
+type: lesson
 ---
 
 # Compose command ${VAR} reads .env not env_file — use env_file + $$VAR
@@ -14,3 +22,14 @@ GOTCHA: a `${VAR}` inside a docker-compose service `command`/`entrypoint` is int
 ## Related
 
 - [[Docker Compose v2 strips inline # comments in env_file values]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Docker Compose v2 strips inline # comments in env_file values]]
+- [[Docker Compose command blocks need $$ to defer variable expansion to the container shell]]
+- [[Docker Compose path resolution env_file vs build context vs dockerfile]]
+- [[Compose an inline comment on a BLANK env value becomes the value]]
+- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
+
+%% ai-graph-end %%

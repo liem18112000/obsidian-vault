@@ -1,10 +1,20 @@
 ---
-title: "data-tracking rate limiter caps global throughput because it reads request.client.host behind a proxy"
+ai_hash: 665bca34b812c606
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: lesson
+entities: []
+source: session 2026-08-31 perf test
 status: seedling
-source: "session 2026-08-31 perf test"
-tags: [leo-customer360, fastapi, rate-limiting, reverse-proxy, gotcha]
+tags:
+- leo-customer360
+- fastapi
+- rate-limiting
+- reverse-proxy
+- gotcha
+title: data-tracking rate limiter caps global throughput because it reads request.client.host
+  behind a proxy
+type: lesson
 ---
 
 # data-tracking rate limiter caps global throughput because it reads request.client.host behind a proxy
@@ -24,3 +34,14 @@ Found while building `data-tracking-api/tests/perf_uat_tracking.py`. Related: [[
 ## Related
 
 - [[Scale one uvicorn service into N replicas on one VM with a docker bridge + local nginx LB]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A fixed-window rate limiter set to exactly the target rate rejects part of a paced stream at that rate]]
+- [[IP rate limiting must honor X-Forwarded-For behind a proxy]]
+- [[Scale one uvicorn service into N replicas on one VM with a docker bridge + local nginx LB]]
+- [[Absence of X-Forwarded-For must not mean trusted internal caller]]
+- [[leo-customer360 Redis is a fail-open cacheauth-cacherate-limiter used only by customer360-api]]
+
+%% ai-graph-end %%

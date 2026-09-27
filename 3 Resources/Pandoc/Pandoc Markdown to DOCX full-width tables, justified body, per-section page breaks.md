@@ -1,10 +1,21 @@
 ---
-title: "Pandoc Markdown to DOCX: full-width tables, justified body, per-section page breaks"
+ai_hash: 7eaa23bd447c050b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: howto
+entities: []
+source: leo-customer360 release-doc DOCX work, session 2026-08-26
 status: seedling
-source: "leo-customer360 release-doc DOCX work, session 2026-08-26"
-tags: [pandoc, docx, markdown, documentation, ooxml, lua-filter]
+tags:
+- pandoc
+- docx
+- markdown
+- documentation
+- ooxml
+- lua-filter
+title: 'Pandoc Markdown to DOCX: full-width tables, justified body, per-section page
+  breaks'
+type: howto
 ---
 
 # Pandoc Markdown to DOCX: full-width tables, justified body, per-section page breaks
@@ -27,3 +38,10 @@ end
 **Build the reference-doc:** `pandoc -o ref.docx --print-default-data-file reference.docx`, patch its `word/styles.xml` (a docx is a zip; use Python `zipfile` + regex to insert the elements, then rewrite the zip). Convert with `pandoc in.md -o out.docx -f gfm --reference-doc=custom-reference.docx --lua-filter=fullwidth-tables.lua --toc --toc-depth=3`.
 
 **Gotchas:** run pandoc from the folder containing the `.md` (or set `--resource-path`) so relative `./resources/*.png` images embed into the docx (`word/media/`). A `Pandoc(doc)` Lua function can strip a manual "Table of contents" heading + its block so it does not duplicate the native `--toc`. Verify results by inspecting the generated OOXML (`word/document.xml` for `tblW`, `word/styles.xml` for `jc`/`pageBreakBefore`) — no Word/LibreOffice needed. Legacy binary `.doc` still requires Word/LibreOffice; pandoc only writes `.docx`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
+
+%% ai-graph-end %%

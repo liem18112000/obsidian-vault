@@ -1,10 +1,18 @@
 ---
-title: "ObjectStore is test-agent cross-service shared state"
+ai_hash: b8af7cb50c0161a9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [test-agent, object-store, gotcha, architecture]
+tags:
+- test-agent
+- object-store
+- gotcha
+- architecture
+title: ObjectStore is test-agent cross-service shared state
+type: lesson
 ---
 
 # ObjectStore is test-agent cross-service shared state
@@ -16,3 +24,14 @@ Consequence: an *in-memory-per-container* store (`STORE_BACKEND=memory`) silentl
 ## Related
 
 - [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+- [[One Postgres backs tasks, sessions, prompts AND pgvector in test-agent-v2]]
+- [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+- [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+- [[test-agent-v2 cloud resource and credential map (klara-nonprod)]]
+
+%% ai-graph-end %%

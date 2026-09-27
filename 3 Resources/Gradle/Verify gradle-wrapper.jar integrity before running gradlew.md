@@ -1,10 +1,18 @@
 ---
-title: "Verify gradle-wrapper.jar integrity before running gradlew"
+ai_hash: 176ab05f2183d888
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: lesson
+entities: []
+source: session 2026-08-24 ecomart-java analysis
 status: seedling
-source: "session 2026-08-24 ecomart-java analysis"
-tags: [gradle, security, supply-chain, wrapper]
+tags:
+- gradle
+- security
+- supply-chain
+- wrapper
+title: Verify gradle-wrapper.jar integrity before running gradlew
+type: lesson
 ---
 
 # Verify gradle-wrapper.jar integrity before running gradlew
@@ -22,3 +30,14 @@ Note: a `gradlew`/`gradlew.bat` showing as "modified" in git is often just CRLFâ
 ## Related
 
 - [[Gradle toolchain languageVersion requires an exact JDK major version]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gradle toolchain languageVersion requires an exact JDK major version]]
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+- [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+- [[Give the gradlew distribution download its own retried Docker layer]]
+- [[Baseline-diff gates must compare post-build to post-build when artifacts are committed]]
+
+%% ai-graph-end %%

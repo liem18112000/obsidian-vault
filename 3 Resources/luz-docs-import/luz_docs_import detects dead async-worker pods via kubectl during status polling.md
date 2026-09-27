@@ -1,10 +1,20 @@
 ---
-title: "luz_docs_import detects dead async-worker pods via kubectl during status polling"
+ai_hash: fe56b5e318144c76
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-07-31
-type: lesson
+entities: []
+source: graphify investigation 2026-07-31, commit df874966
 status: seedling
-source: "graphify investigation 2026-07-31, commit df874966"
-tags: [luz-docs-import, kubernetes, async, ejb, resilience, pattern]
+tags:
+- luz-docs-import
+- kubernetes
+- async
+- ejb
+- resilience
+- pattern
+title: luz_docs_import detects dead async-worker pods via kubectl during status polling
+type: lesson
 ---
 
 # luz_docs_import detects dead async-worker pods via kubectl during status polling
@@ -27,3 +37,14 @@ Reusable pattern: **detect dead async workers from the reader, not the worker** 
 ## Related
 
 - [[luz_docs_import ZIP uploads are not virus-scanned (AntiviusScanningService is never wired in)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_import ZIP uploads are not virus-scanned (AntiviusScanningService is never wired in)]]
+- [[A per-checkpoint lastModified timestamp doubles as a liveness heartbeat for timeout detection]]
+- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
+- [[Read-time non-persisted state repair is an anti-pattern; use a scheduled reconciler]]
+- [[Read-side fire-and-forget mutation pass the id and re-read in the async, don't mutate the object being serialized]]
+
+%% ai-graph-end %%

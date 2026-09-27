@@ -1,9 +1,39 @@
 ---
-ai_hash: 220abb1aeda2c875
+ai_hash: 2b34bbe412ce5acf
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-31
-entities: []
+entities:
+- obsidian-quartz
+- Quartz static-site generator
+- content/ directory
+- git submodule
+- obsidian-vault repo
+- C:\obsidian-vault
+- PARA/Zettelkasten
+- publish.sh
+- GitHub Actions
+- Deploy Quartz site to GitHub Pages workflow
+- GitHub Pages
+- vault remote
+- automated vault-backup process
+- git add content
+- git submodule update --remote
+- git merge-base
+- liem18112000-axon/obsidian-quartz/actions
+- Quartz superproject
+- submodule pointer
+- vault HEAD
+- public Quartz site
+- notes
+- Publish flow
+- vault edit
+- local vs upstream
+- commit edits
+- reconcile with vault remote
+- push to obsidian-vault repo
+- commit (vault bump)
+- push to obsidian-quartz
 source: session 2026-07-31 quartz vault sync
 status: seedling
 tags:
@@ -44,9 +74,57 @@ The published site at `obsidian-quartz` (Quartz static-site generator) does **no
 
 **Related notes:**
 - [[Publish]]
-- [[git submodule update --remote can clobber unpushed submodule HEAD]]
 - [[Classify local vs upstream with git merge-base to pick ff or rebase]]
-- [[Auto-versioning generated files into a local git repo add -A + serialized queue + fire-and-forget]]
+- [[git submodule update --remote can clobber unpushed submodule HEAD]]
 - [[My knowledge ecosystem Claude hooksskills - Obsidian vault - Quartz wiki + vault-graph (Vertex Graph RAG)]]
+- [[Stage 6 — Advanced Automation]]
+
+**Relations:**
+- obsidian-quartz — *IS_A* — Quartz static-site generator
+- obsidian-quartz — *PUBLISHES_VIA* — submodule pointer bump
+- content/ directory — *IS_A* — git submodule
+- git submodule — *POINTS_AT* — obsidian-vault repo
+- content/ directory — *IS_SYMLINK_TO* — C:\obsidian-vault
+- C:\obsidian-vault — *USED_FOR* — PARA/Zettelkasten
+- publish.sh — *IMPLEMENTS* — Publish flow
+- Publish flow — *HAS_STEP* — commit edits
+- Publish flow — *HAS_STEP* — reconcile with vault remote
+- Publish flow — *HAS_STEP* — push to obsidian-vault repo
+- Publish flow — *HAS_STEP* — git add content
+- Publish flow — *HAS_STEP* — commit (vault bump)
+- Publish flow — *HAS_STEP* — push to obsidian-quartz
+- push to obsidian-quartz — *TRIGGERS* — GitHub Actions
+- GitHub Actions — *EXECUTES* — Deploy Quartz site to GitHub Pages workflow
+- Deploy Quartz site to GitHub Pages workflow — *PUBLISHES_TO* — GitHub Pages
+- vault edit — *REQUIRES* — push to obsidian-quartz
+- vault edit — *REQUIRES* — submodule pointer bump
+- automated vault-backup process — *COMMITS_AND_PUSHES* — C:\obsidian-vault
+- automated vault-backup process — *PUSHES_TO* — vault remote
+- git add content — *BUMPS* — submodule pointer
+- git submodule update --remote — *CAN* — clobber unpushed submodule HEAD
+- git merge-base — *HELPS* — Classify local vs upstream
+- liem18112000-axon/obsidian-quartz/actions — *SHOWS* — deploys
+- content/ directory — *IS_PART_OF* — Quartz superproject
+- submodule pointer — *POINTS_TO* — vault HEAD
+- C:\obsidian-vault — *IS_SOURCE_FOR* — public Quartz site
+- public Quartz site — *IS* — obsidian-quartz
+- obsidian-vault repo — *IS_REMOTE_FOR* — vault remote
+- notes — *ARE_IN* — C:\obsidian-vault
+- obsidian-quartz — *USES* — content/ directory
+- obsidian-quartz — *USES* — obsidian-vault repo
+- content/ directory — *DOES_NOT_CONTAIN* — notes directly
+- obsidian-vault repo — *ADVANCES_WITH* — push to obsidian-vault repo
+- obsidian-quartz — *ADVANCES_WITH* — push to obsidian-quartz
+- C:\obsidian-vault — *IS_A* — vault
+- obsidian-vault repo — *IS_A* — vault
+- vault remote — *IS_A* — remote
+- git add content — *IS_A* — command
+- git submodule update --remote — *IS_A* — command
+- git merge-base — *IS_A* — command
+- commit edits — *OCCURS_IN* — content/ directory
+- git add content — *OCCURS_IN* — Quartz superproject
+- commit (vault bump) — *OCCURS_IN* — Quartz superproject
+- push to obsidian-vault repo — *TARGETS* — obsidian-vault repo
+- push to obsidian-quartz — *TARGETS* — obsidian-quartz
 
 %% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "vMonitor create-alarm field values reverse-engineered (avg, gte, CRITICAL, resendPeriod minutes)"
+ai_hash: bd920bc2a7ebb922
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: reference
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, vmonitor, alarm, api]
+tags:
+- greennode
+- vngcloud
+- vmonitor
+- alarm
+- api
+title: vMonitor create-alarm field values reverse-engineered (avg, gte, CRITICAL,
+  resendPeriod minutes)
+type: reference
 ---
 
 # vMonitor create-alarm field values reverse-engineered (avg, gte, CRITICAL, resendPeriod minutes)
@@ -23,3 +33,10 @@ vMonitor `POST /vmonitor-api/api/v1/alarms/metrics` validates one field at a tim
 ## Related
 
 - [[vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-api/api/v1/alarms/metrics]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-apiapiv1alarmsmetrics]]
+
+%% ai-graph-end %%

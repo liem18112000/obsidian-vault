@@ -1,10 +1,19 @@
 ---
-title: "test-agent-v2 executor step handlers take the executor as first arg"
+ai_hash: 349799d8ade959f3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: session 2026-09-08 executor NO_BANK refactor
 status: seedling
-source: "session 2026-09-08 executor NO_BANK refactor"
-tags: [test-agent-v2, a2a, executor, refactor, SOLID]
+tags:
+- test-agent-v2
+- a2a
+- executor
+- refactor
+- SOLID
+title: test-agent-v2 executor step handlers take the executor as first arg
+type: lesson
 ---
 
 # test-agent-v2 executor step handlers take the executor as first arg
@@ -27,3 +36,14 @@ Related: [[test-agent common shared engine]]
 ## Related
 
 - [[test-agent common shared engine]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 executor tests share memory-bank state and fail by test order]]
+- [[test-agent-v2 test_evaluation restructure engine + config packages + merged golden set]]
+- [[Pipeline stages sharing a context_id need separate memory-bank path prefixes]]
+- [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+
+%% ai-graph-end %%

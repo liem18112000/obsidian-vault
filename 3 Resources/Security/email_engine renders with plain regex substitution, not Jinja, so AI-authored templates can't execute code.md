@@ -1,10 +1,22 @@
 ---
-title: "email_engine renders with plain regex substitution, not Jinja, so AI-authored templates can't execute code"
+ai_hash: bc56cf6520f8b149
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: argument
+entities: []
+source: session 2026-09-21 (send-time render)
 status: seedling
-source: "session 2026-09-21 (send-time render)"
-tags: [email, templating, security, jinja, ssti, customer360, rendering]
+tags:
+- email
+- templating
+- security
+- jinja
+- ssti
+- customer360
+- rendering
+title: email_engine renders with plain regex substitution, not Jinja, so AI-authored
+  templates can't execute code
+type: argument
 ---
 
 # email_engine renders with plain regex substitution, not Jinja, so AI-authored templates can't execute code
@@ -20,3 +32,12 @@ General principle: when templates are authored by an LLM or by untrusted-ish use
 ## Related
 
 - [[email-channel-is-outbound-template]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Zalo ZNS send-time render binds only typed template params, never authors message text]]
+- [[customer360 AI campaign lifecycle agent plans, api persists draft, email_engine renders at send]]
+- [[LEO email_engine dispatch resolves DB config then SMTP env then mock]]
+
+%% ai-graph-end %%

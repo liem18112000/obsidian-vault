@@ -1,10 +1,19 @@
 ---
-title: "Wipe test-agent-v2 memory and taskstore via test-agent-v2/tools"
+ai_hash: 32e597530cf88699
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-13
-type: howto
+entities: []
+source: session 2026-09-13
 status: seedling
-source: "session 2026-09-13"
-tags: [testing-agent, gcs, cloudsql, gotcha, v2]
+tags:
+- testing-agent
+- gcs
+- cloudsql
+- gotcha
+- v2
+title: Wipe test-agent-v2 memory and taskstore via test-agent-v2/tools
+type: howto
 ---
 
 # Wipe test-agent-v2 memory and taskstore via test-agent-v2/tools
@@ -25,3 +34,14 @@ To wipe the v2 stack state, use **`test-agent-v2/tools/`** (mirrors `test-agent-
 ## Related
 
 - [[test-agent-v2 cloud resource and credential map (klara-nonprod)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 cloud resource and credential map (klara-nonprod)]]
+- [[clear_memory.sh wipes the Testing-Agent GCS memory bank (preview-first)]]
+- [[Testing-Agent GCS memory bank one bucket, memory root, five subfolders]]
+- [[Stale terraform state != live cloud — verify with gcloud before deleting a retired deployment]]
+- [[Testing-agent admin tools get_run dumps an unbounded 1.4MB payload (MCP-unusable)]]
+
+%% ai-graph-end %%

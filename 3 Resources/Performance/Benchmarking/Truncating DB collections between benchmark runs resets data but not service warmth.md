@@ -1,10 +1,20 @@
 ---
-title: "Truncating DB collections between benchmark runs resets data but not service warmth"
+ai_hash: 7dc0d9b6bf89259b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: lesson
+entities: []
+source: luz-docs-import run-1 cold-start investigation 2026-08-13
 status: seedling
-source: "luz-docs-import run-1 cold-start investigation 2026-08-13"
-tags: [benchmarking, performance, warm-up, jvm, gotcha]
+tags:
+- benchmarking
+- performance
+- warm-up
+- jvm
+- gotcha
+title: Truncating DB collections between benchmark runs resets data but not service
+  warmth
+type: lesson
 ---
 
 # Truncating DB collections between benchmark runs resets data but not service warmth
@@ -19,3 +29,14 @@ Related: [[A latency penalty in the tail not the median points to JIT/GC warm-up
 
 - [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
 - [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention]]
+- [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]]
+- [[Don't benchmark a scan-bound query right after a mass delete (WiredTiger cache blowout)]]
+- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
+- [[Performance Mongo is a mongos-routed sharded cluster — truncate via the tenant's shard primary, not mongos]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "PG16 NOT NULL check-constraint names are OID-based — exclude when diffing schemas"
+ai_hash: 2f50d1bc8c62898a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: gotcha
+entities: []
+source: session 2026-08-24 migration parity test
 status: seedling
-source: "session 2026-08-24 migration parity test"
-tags: [postgres, schema-diff, gotcha, testing]
+tags:
+- postgres
+- schema-diff
+- gotcha
+- testing
+title: PG16 NOT NULL check-constraint names are OID-based — exclude when diffing schemas
+type: gotcha
 ---
 
 # PG16 NOT NULL check-constraint names are OID-based — exclude when diffing schemas
@@ -19,3 +27,14 @@ Hit while building the leo-customer360 migration parity test (dbmate build vs le
 
 - [[leo-customer360 uses dbmate for Postgres migrations]]
 - [[not Alembic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A self-contained migration parity test is only useful during the cutover]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[CREATE TABLE IF NOT EXISTS cannot express a rename]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+
+%% ai-graph-end %%

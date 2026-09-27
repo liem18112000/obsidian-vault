@@ -1,8 +1,18 @@
 ---
-title: "Netdata v2 'No charts to display / try different dates' = time-window (often timezone), not missing data"
+ai_hash: 0b4accb4d4ede22c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
+entities: []
+tags:
+- netdata
+- monitoring
+- timezone
+- gotcha
+- leo-customer360
+title: Netdata v2 'No charts to display / try different dates' = time-window (often
+  timezone), not missing data
 type: gotcha
-tags: [netdata, monitoring, timezone, gotcha, leo-customer360]
 ---
 
 # Netdata v2 'No charts to display / try different dates' = time-window (often timezone), not missing data
@@ -21,3 +31,10 @@ Netdata v2.x shows **"No charts to display. Double-check your search or filters 
 Lesson: when a monitoring UI says "no data", check the time window + timezone + the exact metric id BEFORE assuming the pipeline is broken; confirm with the server-side API.
 
 Source: leo-customer360 uat Netdata Redis collector, 2026-08-23.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

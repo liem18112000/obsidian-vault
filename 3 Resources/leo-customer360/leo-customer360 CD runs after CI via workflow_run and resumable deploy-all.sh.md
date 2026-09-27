@@ -1,10 +1,18 @@
 ---
-title: "leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh"
+ai_hash: f4ae688ceabf4b6d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-18
-type: howto
+entities: []
+source: session 2026-09-18
 status: seedling
-source: "session 2026-09-18"
-tags: [leo-customer360, ci-cd, github-actions, deployment]
+tags:
+- leo-customer360
+- ci-cd
+- github-actions
+- deployment
+title: leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh
+type: howto
 ---
 
 # leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh
@@ -26,3 +34,14 @@ Each service has its own `deploy-<svc>.sh` (e.g. `deploy-backend.sh` ships `back
 ## Related
 
 - [[SSH keepalive prevents broken-pipe exit 255 on long remote docker pulls]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[CD deploy can transiently 404 on a just-built GHCR digest - re-run the failed job]]
+- [[leo-customer360 CD deploys app containers to vServers only, never the vDBvLBvStorage Terraform]]
+- [[leo-customer360 CD UAT deploys only from main + --deploy-uat marker]]
+
+%% ai-graph-end %%

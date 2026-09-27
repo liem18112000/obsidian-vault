@@ -1,10 +1,64 @@
 ---
-title: "Gate enriched REST response behind a boolean query param with a legacy-shaped DTO"
+ai_hash: 6d0fac9f900b9475
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-05
-type: lesson
+entities:
+- REST response
+- boolean query param
+- legacy-shaped DTO
+- existing clients
+- enrichment
+- field type
+- successfulFiles
+- List<String>
+- List<FileFailedInformation>
+- dedicated view class
+- from(enriched) mapper
+- old contract
+- JAX-RS
+- resource method
+- Object
+- showWarning
+- enriched model
+- LegacyView.from(enriched)
+- service
+- full model
+- view shaping
+- resource
+- presentation concern
+- JSON-B
+- Yasson
+- runtime type
+- nulls
+- absent fields
+- luz_docs_import
+- master shape
+- ImportJob
+- per-file warning detail
+- successful file
+- non-error warning detail
+- OpenAPI
+- '@APIResponse'
+- '@Schema'
+- Enriched.class
+- rich shape
+- lean shape
+- second schema
+- Backward-compatible API evolution
+- luz-docs document import
+source: session 2026-08-05 luz_docs_import showWarning
 status: seedling
-source: "session 2026-08-05 luz_docs_import showWarning"
-tags: [rest, backward-compat, jax-rs, dto, json-b, luz-docs]
+tags:
+- rest
+- backward-compat
+- jax-rs
+- dto
+- json-b
+- luz-docs
+title: Gate enriched REST response behind a boolean query param with a legacy-shaped
+  DTO
+type: lesson
 ---
 
 # Gate enriched REST response behind a boolean query param with a legacy-shaped DTO
@@ -23,3 +77,50 @@ Gotcha: OpenAPI `@APIResponse(schema=@Schema(implementation=Enriched.class))` do
 
 - [[Backward-compatible API evolution]]
 - [[luz-docs document import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GET import-jobs id showWarning=false returns LegacyImportJob to keep luz_mylife_web working]]
+- [[Verify a response-shape regression by tracing the downstream consumer, not the shape diff]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+- [[Add response fields tolerant-reader-first when producer and consumer deploy separately]]
+
+**Relations:**
+- REST response — *evolved for* — existing clients
+- boolean query param — *gates* — enrichment
+- legacy-shaped DTO — *used for* — default case
+- legacy-shaped DTO — *avoids* — mutating the enriched model
+- enrichment — *can change* — field type
+- successfulFiles — *changes type from* — List<String>
+- successfulFiles — *changes type to* — List<FileFailedInformation>
+- dedicated view class — *reproduces* — old contract
+- dedicated view class — *uses* — from(enriched) mapper
+- JAX-RS — *defines* — resource method
+- resource method — *returns* — Object
+- resource method — *selects* — enriched model
+- resource method — *selects* — LegacyView.from(enriched)
+- resource method — *based on* — showWarning
+- service — *returns* — full model
+- view shaping — *occurs at* — resource
+- view shaping — *is a* — presentation concern
+- JSON-B — *serializes by* — runtime type
+- Yasson — *serializes by* — runtime type
+- JSON-B — *omits* — nulls
+- Yasson — *omits* — nulls
+- absent fields — *not present on* — legacy-shaped DTO
+- luz_docs_import — *uses* — master shape
+- luz_docs_import — *uses* — enriched ImportJob
+- enriched ImportJob — *includes* — per-file warning detail
+- successful file — *can have* — non-error warning detail
+- OpenAPI — *documents* — rich shape
+- @APIResponse — *used in* — OpenAPI
+- @Schema — *used in* — OpenAPI
+- Enriched.class — *represents* — rich shape
+- lean shape — *requires* — second schema
+- second schema — *for* — documentation
+- Backward-compatible API evolution — *related to* — REST response
+- luz-docs document import — *related to* — luz_docs_import
+
+%% ai-graph-end %%

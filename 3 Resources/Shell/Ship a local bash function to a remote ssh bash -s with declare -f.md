@@ -1,10 +1,21 @@
 ---
-title: "Ship a local bash function to a remote ssh bash -s with declare -f"
+ai_hash: 2e4217cdf3c3fe7d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: howto
+entities: []
+source: 'session 2026-09-14, leo-customer360 PR #67'
 status: seedling
-source: "session 2026-09-14, leo-customer360 PR #67"
-tags: [shell, bash, ssh, declare-f, process-substitution, heredoc, technique]
+tags:
+- shell
+- bash
+- ssh
+- declare-f
+- process-substitution
+- heredoc
+- technique
+title: Ship a local bash function to a remote ssh bash -s with declare -f
+type: howto
 ---
 
 # Ship a local bash function to a remote ssh bash -s with declare -f
@@ -27,3 +38,14 @@ Keeps a single source of truth (no pasting the function into every heredoc). Use
 ## Related
 
 - [[A locally-sourced shell function is not defined inside an ssh bash -s remote heredoc]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A locally-sourced shell function is not defined inside an ssh bash -s remote heredoc]]
+- [[ssh 'bash -s' flattens args, so empty middle args shift positionals]]
+- [[ssh drops empty positional args; pass a base64 newline-joined argv + mapfile]]
+- [[SSH flattens remote command args, so empty-string arguments collapse and shift positionals]]
+- [[ssh host 'bash -s' flattens args into a remote shell string]]
+
+%% ai-graph-end %%

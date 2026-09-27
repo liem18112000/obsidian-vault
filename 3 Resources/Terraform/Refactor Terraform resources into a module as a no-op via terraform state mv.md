@@ -1,10 +1,19 @@
 ---
-title: "Refactor Terraform resources into a module as a no-op via terraform state mv"
+ai_hash: 6f9d02d49d312242
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: howto
+entities: []
+source: session 2026-08-31 test-agent tf unify
 status: seedling
-source: "session 2026-08-31 test-agent tf unify"
-tags: [terraform, refactoring, iac, state-mv, module]
+tags:
+- terraform
+- refactoring
+- iac
+- state-mv
+- module
+title: Refactor Terraform resources into a module as a no-op via terraform state mv
+type: howto
 ---
 
 # Refactor Terraform resources into a module as a no-op via terraform state mv
@@ -21,3 +30,14 @@ No `apply` is needed for the refactor — moving blocks between files or into a 
 ## Related
 
 - [[Cloud Run v2 env blocks are order-sensitive in Terraform]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run v2 env blocks are order-sensitive in Terraform]]
+- [[Cloud Run v2 multi-container sidecar in Terraform]]
+- [[Single-to-multi container Cloud Run update fails in-place; use terraform -replace]]
+- [[Renaming a Terraform for_eachmap key needs terraform state mv or it destroys+recreates]]
+- [[Deploy a unique image tag to force a Cloud Run rollout via terraform]]
+
+%% ai-graph-end %%

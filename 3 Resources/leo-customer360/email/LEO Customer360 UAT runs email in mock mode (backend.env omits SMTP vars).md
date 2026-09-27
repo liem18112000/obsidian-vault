@@ -1,10 +1,20 @@
 ---
-title: "LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)"
+ai_hash: bed1d27f9781cb60
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-customer360, email, smtp, uat, deployment, gotcha]
+tags:
+- leo-customer360
+- email
+- smtp
+- uat
+- deployment
+- gotcha
+title: LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)
+type: lesson
 ---
 
 # LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)
@@ -25,3 +35,14 @@ Apply a change with the *Admin (UAT)* workflow -> \`deployments/admin-uat.sh res
 ## Related
 
 - [[LEO email_engine dispatch resolves DB config then SMTP env then mock]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO email_engine dispatch resolves DB config then SMTP env then mock]]
+- [[LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)]]
+- [[SMTP health check stays out of auth-exempt GET metadata login-path]]
+- [[Deploy an unmerged feature branch to leo-customer360 UAT with BUILD_LOCAL=1]]
+- [[CI-driven CD cannot resolve local gitignored Terraform state — needs remote backend or IPs via secrets]]
+
+%% ai-graph-end %%

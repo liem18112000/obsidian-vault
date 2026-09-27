@@ -1,10 +1,19 @@
 ---
-title: "Renaming a Terraform for_each/map key needs terraform state mv or it destroys+recreates"
+ai_hash: 3e39b35aa94fe218
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT 2026-09-10
 status: seedling
-source: "customer360 UAT 2026-09-10"
-tags: [terraform, state, for-each, gotcha, infra]
+tags:
+- terraform
+- state
+- for-each
+- gotcha
+- infra
+title: Renaming a Terraform for_each/map key needs terraform state mv or it destroys+recreates
+type: lesson
 ---
 
 # Renaming a Terraform for_each/map key needs terraform state mv or it destroys+recreates
@@ -26,3 +35,14 @@ terraform state mv vngcloud_vserver_server.this["1x2"] vngcloud_vserver_server.t
 ## Related
 
 - [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vServer name is in-place updatable; decouple server name from the for_each map key to rename without recreate]]
+- [[vngcloud Terraform accepts root_disk_size change but does not resize the boot volume in-place]]
+- [[VNG vServer flavor resize (s-general-1x2 - 2x4) is an in-place terraform change (0 destroy) but reboots the box]]
+- [[Refactor Terraform resources into a module as a no-op via terraform state mv]]
+- [[Terraform for_each rename reusing a unique port can transiently clash on apply]]
+
+%% ai-graph-end %%

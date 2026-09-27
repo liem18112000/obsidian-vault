@@ -1,10 +1,21 @@
 ---
-title: "In CI invoke repo shell scripts via bash script.sh, not ./script.sh (Windows drops the +x bit)"
+ai_hash: 29369c78983f73f0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20, cd.yml run 32366406386
 status: seedling
-source: "session 2026-08-20, cd.yml run 32366406386"
-tags: [ci, shell, windows, git, gotcha, exit-126]
+tags:
+- ci
+- shell
+- windows
+- git
+- gotcha
+- exit-126
+title: In CI invoke repo shell scripts via bash script.sh, not ./script.sh (Windows
+  drops the +x bit)
+type: lesson
 ---
 
 # In CI invoke repo shell scripts via bash script.sh, not ./script.sh (Windows drops the +x bit)
@@ -21,3 +32,14 @@ Real case: `cd.yml` ran `./deploy-all.sh …` and hit exit 126 on the GitHub run
 
 - [[Chain a CD workflow after CI with workflow_run]]
 - [[gating on conclusion and ref]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[New .sh CI runners must be git-staged with --chmod=+x on Windows or the [ -x ] gate skips them]]
+- [[gradlew committed from Windows loses the exec bit - fix with git update-index chmod]]
+- [[CRLF line endings on a shell script shebang cause Docker exit 127 (env bash^M not found)]]
+- [[A locally-sourced shell function is not defined inside an ssh bash -s remote heredoc]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+
+%% ai-graph-end %%

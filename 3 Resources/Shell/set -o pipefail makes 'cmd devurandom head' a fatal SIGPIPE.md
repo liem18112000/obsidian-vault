@@ -1,10 +1,20 @@
 ---
-title: "set -o pipefail makes 'cmd </dev/urandom | head' a fatal SIGPIPE"
+ai_hash: a02b57d942b6eb22
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-22
-type: lesson
+entities: []
+source: leo-customer360 deployments/monitoring, session 2026-08-22
 status: seedling
-source: "leo-customer360 deployments/monitoring, session 2026-08-22"
-tags: [bash, pipefail, sigpipe, set-e, gotcha, shell]
+tags:
+- bash
+- pipefail
+- sigpipe
+- set-e
+- gotcha
+- shell
+title: set -o pipefail makes 'cmd </dev/urandom | head' a fatal SIGPIPE
+type: lesson
 ---
 
 # set -o pipefail makes 'cmd </dev/urandom | head' a fatal SIGPIPE
@@ -29,3 +39,10 @@ PW="$(openssl rand -base64 24 | LC_ALL=C tr -dc 'A-Za-z0-9')"   # both commands 
 **General rule:** under pipefail, never pipe an unbounded producer into a consumer that closes early (`head`, `grep -m`, `sed q`). Either bound the producer or use a self-contained generator (openssl, $RANDOM).
 
 Source: leo-customer360 deployments/monitoring/deploy-monitoring.sh — pgAdmin password auto-gen killed the deploy with a silent exit 141 (2026-08). Found via `bash -x`, which prints each command before running so the last traced line is the culprit even when set -e is silent.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[set -u trips on a bash array only populated on the failure path, making success exit non-zero]]
+
+%% ai-graph-end %%

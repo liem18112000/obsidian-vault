@@ -1,10 +1,19 @@
 ---
-title: "MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set TransportSecuritySettings"
+ai_hash: c2211cde4410e230
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [mcp, http, cloud-run, gotcha, security]
+tags:
+- mcp
+- http
+- cloud-run
+- gotcha
+- security
+title: MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set TransportSecuritySettings
+type: lesson
 ---
 
 # MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set TransportSecuritySettings
@@ -26,3 +35,14 @@ See [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]].
 ## Related
 
 - [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rolling a bearer-gated MCP server revision can stick Claude Code in OAuth DCR — re-register to reset]]
+- [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]]
+- [[Reach a private Cloud Run service as a user via gcloud run services proxy, not a minted ID token]]
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+- [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
+
+%% ai-graph-end %%

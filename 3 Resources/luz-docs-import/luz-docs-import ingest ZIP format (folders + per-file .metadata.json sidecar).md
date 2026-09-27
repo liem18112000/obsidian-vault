@@ -1,10 +1,19 @@
 ---
-title: "luz-docs-import ingest ZIP format (folders + per-file .metadata.json sidecar)"
+ai_hash: 1be559f4ea0677ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: reference
+entities: []
+source: session 2026-08-11, data/Lam/new-import-08.zip
 status: seedling
-source: "session 2026-08-11, data/Lam/new-import-08.zip"
-tags: [luz-docs-import, import, zip, metadata, snomed]
+tags:
+- luz-docs-import
+- import
+- zip
+- metadata
+- snomed
+title: luz-docs-import ingest ZIP format (folders + per-file .metadata.json sidecar)
+type: reference
 ---
 
 # luz-docs-import ingest ZIP format (folders + per-file .metadata.json sidecar)
@@ -37,3 +46,14 @@ The `code` values under `documentCategory` / `facility` / `practiceSetting` are 
 **Gotcha:** the sidecar is matched to its file by the *full* filename including extension, so the importer keys on `<name>.<ext>.metadata.json`, not `<name>.metadata.json`.
 
 A reusable stdlib-only Python replicator lives at `luz_docs_import/data/Lam/new-import-generator/generate_import_zip.py` (verified byte-exact for the reference content).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
+- [[ePost eArchive ZIP import transfer.zip shape and luz_docs_import]]
+- [[ePost Health documents ZIP import business context]]
+- [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
+- [[luz_docs_import adds document metadata only in DocsImportAsyncService.createDocument()]]
+
+%% ai-graph-end %%

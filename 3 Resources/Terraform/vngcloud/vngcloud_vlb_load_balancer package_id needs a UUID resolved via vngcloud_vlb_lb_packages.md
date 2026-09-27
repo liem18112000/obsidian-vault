@@ -1,10 +1,19 @@
 ---
-title: "vngcloud_vlb_load_balancer package_id needs a UUID resolved via vngcloud_vlb_lb_packages"
+ai_hash: 0fc2aff01cb4fe0c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17 leo-customer360 load_balancer deploy
 status: seedling
-source: "session 2026-08-17 leo-customer360 load_balancer deploy"
-tags: [terraform, vngcloud, greennode, load-balancer, gotcha]
+tags:
+- terraform
+- vngcloud
+- greennode
+- load-balancer
+- gotcha
+title: vngcloud_vlb_load_balancer package_id needs a UUID resolved via vngcloud_vlb_lb_packages
+type: lesson
 ---
 
 # vngcloud_vlb_load_balancer package_id needs a UUID resolved via vngcloud_vlb_lb_packages
@@ -28,3 +37,14 @@ Exported LB attributes worth wiring to outputs: `id`, `status`, `address` (its I
 
 - [[VNG Cloud vLB: Layer 4 = NLB]]
 - [[Layer 7 = ALB]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vLB packages are per-AZ too pin the zoneId= package uuid (full lbp- prefix) or the create rejects it]]
+- [[VNG Cloud vLB Layer 4 = NLB, Layer 7 = ALB]]
+- [[vngcloud vDB packagevolume data source returns empty id on no-match (guard with a precondition)]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[VNG vLB replace the listener when its pool is ForceNew-replaced]]
+
+%% ai-graph-end %%

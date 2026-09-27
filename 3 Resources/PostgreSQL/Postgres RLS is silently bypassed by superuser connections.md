@@ -1,10 +1,19 @@
 ---
-title: "Postgres RLS is silently bypassed by superuser connections"
+ai_hash: 1905a66af328b6f1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-09
-type: lesson
+entities: []
+source: session 2026-08-09 leo-customer360 terraform adapt
 status: seedling
-source: "session 2026-08-09 leo-customer360 terraform adapt"
-tags: [postgres, rls, security, multi-tenant, gotcha]
+tags:
+- postgres
+- rls
+- security
+- multi-tenant
+- gotcha
+title: Postgres RLS is silently bypassed by superuser connections
+type: lesson
 ---
 
 # Postgres RLS is silently bypassed by superuser connections
@@ -20,3 +29,14 @@ Related: [[Managed DB provisioners create the server but not in-database objects
 ## Related
 
 - [[Managed DB provisioners create the server but not in-database objects]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role]]
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
+- [[FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set]]
+- [[pgAdmin shows 0 rows on customer360 tenant tables until you SET app.tenant_id (FORCE RLS)]]
+- [[Managed DB provisioners create the server but not in-database objects]]
+
+%% ai-graph-end %%

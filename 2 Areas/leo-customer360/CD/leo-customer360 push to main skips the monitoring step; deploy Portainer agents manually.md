@@ -1,10 +1,53 @@
 ---
-title: "leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually"
+ai_hash: d418820e90b9f6b7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-12
-type: lesson
+entities:
+- leo-customer360
+- main branch
+- UAT environment
+- DEFAULT_SVC
+- sso-realm
+- api service
+- backend service
+- ads service
+- frontend service
+- tracking service
+- docs-search service
+- monitoring step
+- Portainer
+- Netdata
+- oauth2-proxy
+- Portainer agents
+- Continuous Deployment (CD)
+- cd.yml workflow
+- Actions UI
+- deploy-all.sh script
+- portainer_agent_server_keys
+- deployments/monitoring/overlays/<env>.tfvars
+- docs server key
+- portainer/agent:lts image
+- PORTAINER_ADMIN_PASSWORD
+- Portainer environment
+- 9001 ingress
+- Default secgroup
+- api/Portainer box
+- infra Terraform apply
+- CD secrets
+- cd.yml deploy step env
+- GitHub
+source: session 2026-09-12
 status: seedling
-source: "session 2026-09-12"
-tags: [leo-customer360, ci-cd, portainer, monitoring, deployment]
+tags:
+- leo-customer360
+- ci-cd
+- portainer
+- monitoring
+- deployment
+title: leo-customer360 push to main skips the monitoring step; deploy Portainer agents
+  manually
+type: lesson
 ---
 
 # leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually
@@ -22,3 +65,48 @@ A push/merge to `main` in leo-customer360 auto-deploys UAT with only `DEFAULT_SV
 
 - [[CD secrets must be wired into cd.yml deploy step env]]
 - [[not just added to GitHub]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CD secrets must be wired into cd.yml deploy step env, not just added to GitHub]]
+- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB]]
+- [[leo-customer360 CD UAT deploys only from main + --deploy-uat marker]]
+- [[CI-driven CD cannot resolve local gitignored Terraform state — needs remote backend or IPs via secrets]]
+- [[leo-customer360 CD deploys app containers to vServers only, never the vDBvLBvStorage Terraform]]
+
+**Relations:**
+- leo-customer360 — *uses* — main branch
+- main branch — *push triggers* — UAT environment auto-deployment
+- UAT environment auto-deployment — *includes* — DEFAULT_SVC
+- DEFAULT_SVC — *comprises* — sso-realm
+- DEFAULT_SVC — *comprises* — api service
+- DEFAULT_SVC — *comprises* — backend service
+- DEFAULT_SVC — *comprises* — ads service
+- DEFAULT_SVC — *comprises* — frontend service
+- DEFAULT_SVC — *comprises* — tracking service
+- DEFAULT_SVC — *comprises* — docs-search service
+- main branch — *push skips* — monitoring step
+- monitoring step — *includes* — Portainer
+- monitoring step — *includes* — Netdata
+- monitoring step — *includes* — oauth2-proxy
+- Portainer agents — *not deployed by* — main branch push
+- Portainer agents — *deployed by* — Continuous Deployment (CD) manual trigger
+- Continuous Deployment (CD) manual trigger — *via* — cd.yml workflow
+- Continuous Deployment (CD) manual trigger — *via* — Actions UI
+- Continuous Deployment (CD) manual trigger — *via* — deploy-all.sh script
+- Portainer agents — *deployment configured by* — portainer_agent_server_keys
+- portainer_agent_server_keys — *defined in* — deployments/monitoring/overlays/<env>.tfvars
+- portainer_agent_server_keys — *is a list of* — server keys
+- docs server key — *is an example of* — server keys
+- adding a server key — *installs* — portainer/agent:lts image
+- portainer/agent:lts image — *installs on* — box
+- box — *listens on port* — 9001
+- PORTAINER_ADMIN_PASSWORD — *enables registration of* — Portainer environment
+- 9001 ingress — *is open on* — Default secgroup
+- Default secgroup — *originates from* — api/Portainer box
+- new agent — *does not require* — infra Terraform apply
+- CD secrets — *must be wired into* — cd.yml deploy step env
+- CD secrets — *should not just be added to* — GitHub
+
+%% ai-graph-end %%

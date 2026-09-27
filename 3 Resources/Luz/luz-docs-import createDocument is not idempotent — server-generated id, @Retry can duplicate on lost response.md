@@ -1,10 +1,21 @@
 ---
-title: "luz-docs-import createDocument is not idempotent — server-generated id, @Retry can duplicate on lost response"
+ai_hash: 72b2ae5996776ebd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: observation
+entities: []
+source: session 2026-08-10 (createDocument idempotency check)
 status: seedling
-source: "session 2026-08-10 (createDocument idempotency check)"
-tags: [luz, luz-docs-import, idempotency, duplication, retry, gotcha]
+tags:
+- luz
+- luz-docs-import
+- idempotency
+- duplication
+- retry
+- gotcha
+title: luz-docs-import createDocument is not idempotent — server-generated id, @Retry
+  can duplicate on lost response
+type: observation
 ---
 
 # luz-docs-import createDocument is not idempotent — server-generated id, @Retry can duplicate on lost response
@@ -23,3 +34,14 @@ luz-docs-import `LuzDocsViewControllerService.createDocument` sends `POST /docum
 - [[not data-duplication — make the side effect idempotent]]
 - [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat]]
 - [[not UI progress]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
+- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
+- [[luz_docs_import idempotent re-import replaces view-controller search-based file dedup]]
+- [[luz-docs-import importZipName comes from the uploaded multipart filename, not the on-disk zip]]
+- [[ePost ZIP import dedup documents by job-success path, folders via view-controller]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "vDB PostgreSQL supports PostGIS and pgvector plus the fuzzy-match extensions"
+ai_hash: 1afc8e12d6b3c377
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: observation
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [vngcloud, postgresql, postgis, pgvector, extensions]
+tags:
+- vngcloud
+- postgresql
+- postgis
+- pgvector
+- extensions
+title: vDB PostgreSQL supports PostGIS and pgvector plus the fuzzy-match extensions
+type: observation
 ---
 
 # vDB PostgreSQL supports PostGIS and pgvector plus the fuzzy-match extensions
@@ -23,3 +32,14 @@ VNG Cloud **vDB PostgreSQL supports the full extension set** a PostGIS+pgvector 
 - [[Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role]]
 - [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
 - [[LEO Customer360 GreenNode Terraform infrastructure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO Customer360 GreenNode Terraform infrastructure]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+- [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+
+%% ai-graph-end %%

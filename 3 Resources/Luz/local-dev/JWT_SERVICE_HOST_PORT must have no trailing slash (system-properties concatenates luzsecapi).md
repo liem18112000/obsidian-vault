@@ -1,10 +1,20 @@
 ---
-title: "JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates /luzsec/api/)"
+ai_hash: 36ad073ac7be823b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-05
-type: gotcha
+entities: []
+source: session 2026-08-05 luz_docs_import public-keys 500
 status: seedling
-source: "session 2026-08-05 luz_docs_import public-keys 500"
-tags: [luz-docs-import, config, jwt, luzsec, gotcha]
+tags:
+- luz-docs-import
+- config
+- jwt
+- luzsec
+- gotcha
+title: JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates
+  /luzsec/api/)
+type: gotcha
 ---
 
 # JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates /luzsec/api/)
@@ -29,3 +39,14 @@ Related: [[Luz local run: host.docker.internal:8080 must be the dev api-forwarde
 
 - [[Luz local run: host.docker.internal:8080 must be the dev api-forwarder]]
 - [[not another cluster on 8080]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080]]
+- [[Truncating a JWT breaks signature verification and surfaces as 500 not 401]]
+- [[Run luz_docs_statistic locally with docker-compose]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+- [[jwt-service token endpoints and replicas (Luz prod)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "A field written everywhere and read nowhere is dead code"
+ai_hash: 2e4aa1bb926c71e6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: lesson
+entities: []
+source: session 2026-09-25
 status: seedling
-source: "session 2026-09-25"
-tags: [code-review, dead-code, refactoring, gotcha]
+tags:
+- code-review
+- dead-code
+- refactoring
+- gotcha
+title: A field written everywhere and read nowhere is dead code
+type: lesson
 ---
 
 # A field written everywhere and read nowhere is dead code
@@ -47,3 +55,14 @@ Related: [[A read filtered on a value no writer produces fails by returning empt
 
 - [[A read filtered on a value no writer produces fails by returning empty]]
 - [[An uncalled method isn't automatically dead code — check facade/convention symmetry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dead-code refcount scans flag intentional seams as unused; vet before deleting]]
+- [[A read filtered on a value no writer produces fails by returning empty]]
+- [[An uncalled method isn't automatically dead code — check facadeconvention symmetry]]
+- [[Check every stage that writes a field, not just the one that defines it]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+
+%% ai-graph-end %%

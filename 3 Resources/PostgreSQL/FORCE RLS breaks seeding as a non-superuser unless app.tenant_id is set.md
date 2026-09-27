@@ -1,10 +1,20 @@
 ---
-title: "FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set"
+ai_hash: b5b941d38277932a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 run-sql session 2026-08-19
 status: seedling
-source: "leo-customer360 run-sql session 2026-08-19"
-tags: [postgresql, rls, row-level-security, multi-tenant, seeding, gotcha]
+tags:
+- postgresql
+- rls
+- row-level-security
+- multi-tenant
+- seeding
+- gotcha
+title: FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set
+type: lesson
 ---
 
 # FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set
@@ -37,3 +47,14 @@ under FORCE RLS; failed on the managed VNG vDB (app_admin) but passed on local d
 ## Related
 
 - [[ssh host 'bash -s' flattens args into a remote shell string]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Inject a Postgres session GUC into an unmodifiable script via PGOPTIONS]]
+- [[Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role]]
+- [[pgAdmin shows 0 rows on customer360 tenant tables until you SET app.tenant_id (FORCE RLS)]]
+- [[Postgres RLS is silently bypassed by superuser connections]]
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
+
+%% ai-graph-end %%

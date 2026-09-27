@@ -1,10 +1,21 @@
 ---
-title: "customer360 AI campaign lifecycle: agent plans, api persists draft, email_engine renders at send"
+ai_hash: 7576e63a40fc9e83
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: model
+entities: []
+source: session 2026-09-21
 status: seedling
-source: "session 2026-09-21"
-tags: [customer360, campaign, architecture, email, crm_campaign, lifecycle]
+tags:
+- customer360
+- campaign
+- architecture
+- email
+- crm_campaign
+- lifecycle
+title: 'customer360 AI campaign lifecycle: agent plans, api persists draft, email_engine
+  renders at send'
+type: model
 ---
 
 # customer360 AI campaign lifecycle: agent plans, api persists draft, email_engine renders at send
@@ -22,3 +33,14 @@ Key mental model: the agent chooses WHAT (content + schedule); the Approved temp
 ## Related
 
 - [[email-channel-is-outbound-template]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[email_engine renders with plain regex substitution, not Jinja, so AI-authored templates can't execute code]]
+- [[Zalo ZNS send-time render binds only typed template params, never authors message text]]
+- [[LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)]]
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
+- [[LEO email_engine dispatch resolves DB config then SMTP env then mock]]
+
+%% ai-graph-end %%

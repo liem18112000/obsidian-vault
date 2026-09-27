@@ -1,10 +1,18 @@
 ---
-title: "ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs"
+ai_hash: 65a4f0349eeb214c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: lesson
+entities: []
+source: 'adk-transform export 2026-09-07; adk-python issues #3348/#5349/#3184/#5064'
 status: seedling
-source: "adk-transform export 2026-09-07; adk-python issues #3348/#5349/#3184/#5064"
-tags: [google-adk, hitl, gotcha, sequential-agent]
+tags:
+- google-adk
+- hitl
+- gotcha
+- sequential-agent
+title: ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs
+type: lesson
 ---
 
 # ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs
@@ -30,3 +38,14 @@ that checkpoints loop state via `Event(state_delta=…)` and ends the invocation
 `DatabaseSessionService` restart, and re-executed nothing. So this stays the default; the
 LongRunningFunctionTool-in-SequentialAgent probe was left model-gated (needs an LLM) and is only worth
 adopting if it comes back clean on 2.x. See [[Persist ADK session state from a custom agent via Event state_delta]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Persist ADK session state from a custom agent via Event state_delta]]
+- [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
+- [[BridgeSession turn drops the answer when the A2A task completes each turn]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "LLM-as-reranker JSON truncation: budget max_tokens for pretty-printed output, not just element count"
+ai_hash: ee6b57e66ea8d10f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-13
-type: lesson
+entities: []
+source: session 2026-09-13
 status: seedling
-source: "session 2026-09-13"
-tags: [llm, rag, reranker, openai, json, gotcha]
+tags:
+- llm
+- rag
+- reranker
+- openai
+- json
+- gotcha
+title: 'LLM-as-reranker JSON truncation: budget max_tokens for pretty-printed output,
+  not just element count'
+type: lesson
 ---
 
 # LLM-as-reranker JSON truncation: budget max_tokens for pretty-printed output, not just element count
@@ -26,3 +37,14 @@ When you use an LLM as a reranker (or any "return a JSON array of N numbers" cal
 ## Related
 
 - [[docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[docs-vector-search OOMs on ask on a 1vCPU2GB box (Qwen KV cache over RAM+swap)]]
+- [[OpenAI request gotchas 8192-token embedding limit and max_completion_tokens]]
+- [[Widen the reranker candidate pool (RETRIEVE_TOP_N) or short queries retrieve junk]]
+- [[LLM query enrichment for a substring-OR matcher must contract, not expand, the token set]]
+- [[Set HTTPserverless maxDuration above the internal LLM-run timeout, not below]]
+
+%% ai-graph-end %%

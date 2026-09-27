@@ -1,10 +1,20 @@
 ---
-title: "Jaeger on a small box: use in-memory bounded storage, not badger, to avoid OOM 502"
+ai_hash: 63b3025859fc02d2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: session 2026-09-16 leo-customer360 jaeger 502
 status: seedling
-source: "session 2026-09-16 leo-customer360 jaeger 502"
-tags: [jaeger, tracing, oom, docker, leo-customer360]
+tags:
+- jaeger
+- tracing
+- oom
+- docker
+- leo-customer360
+title: 'Jaeger on a small box: use in-memory bounded storage, not badger, to avoid
+  OOM 502'
+type: lesson
 ---
 
 # Jaeger on a small box: use in-memory bounded storage, not badger, to avoid OOM 502
@@ -29,3 +39,14 @@ Diagnosed via [[Docker can report OOMKilled=false on a cgroup memcg OOM — chec
 ## Related
 
 - [[Docker can report OOMKilled=false on a cgroup memcg OOM — check dmesg]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Docker can report OOMKilled=false on a cgroup memcg OOM — check dmesg]]
+- [[Jaeger all-in-one on the shared vServer image-tag, Netdata 4317, and badger-perms gotchas]]
+- [[Uncapped Dagster on a swapless 2GB box OOMs the whole host (SSH banner-timeout); cap container memory + add swap]]
+- [[oauth2-proxy cookie_secret must be 162432 bytes; openssl rand -base64 32 (44 chars) crash-loops it]]
+- [[Docker json-file logs are unbounded; cap them with --log-opt on high-volume containers]]
+
+%% ai-graph-end %%

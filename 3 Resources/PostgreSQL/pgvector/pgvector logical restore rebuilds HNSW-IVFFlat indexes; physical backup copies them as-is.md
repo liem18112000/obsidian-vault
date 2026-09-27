@@ -1,10 +1,20 @@
 ---
-title: "pgvector logical restore rebuilds HNSW-IVFFlat indexes; physical backup copies them as-is"
+ai_hash: e990777a013ec42f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-16
-type: lesson
+entities: []
+source: session 2026-08-16 postgres/docs research
 status: seedling
-source: "session 2026-08-16 postgres/docs research"
-tags: [pgvector, postgres, backup, restore, gotcha]
+tags:
+- pgvector
+- postgres
+- backup
+- restore
+- gotcha
+title: pgvector logical restore rebuilds HNSW-IVFFlat indexes; physical backup copies
+  them as-is
+type: lesson
 ---
 
 # pgvector logical restore rebuilds HNSW-IVFFlat indexes; physical backup copies them as-is
@@ -20,3 +30,14 @@ Related: [[postgis-postgis 16-3.5 image does not bundle pgvector]], [[VNG vDB Po
 ## Related
 
 - [[postgis-postgis 16-3.5 image does not bundle pgvector]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[postgis-postgis 16-3.5 image does not bundle pgvector]]
+- [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+- [[pgBackRest runs on the DB host, so it cannot back up a managed DB like VNG vDB]]
+- [[vngcloud_vdb_postgresql_cluster ignores backup_auto (cluster backups go via VNG Backup Center)]]
+- [[pgBackRest archive_command needs the binary IN the postgres image; the scheduler is a separate sidecar]]
+
+%% ai-graph-end %%

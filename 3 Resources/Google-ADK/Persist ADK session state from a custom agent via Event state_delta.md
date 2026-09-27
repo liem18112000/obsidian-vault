@@ -1,10 +1,18 @@
 ---
-title: "Persist ADK session state from a custom agent via Event state_delta"
+ai_hash: 495ed7870cbd469b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: howto
+entities: []
+source: A0 spike 2026-09-07, google-adk 2.8.0
 status: seedling
-source: "A0 spike 2026-09-07, google-adk 2.8.0"
-tags: [google-adk, sessions, hitl, state]
+tags:
+- google-adk
+- sessions
+- hitl
+- state
+title: Persist ADK session state from a custom agent via Event state_delta
+type: howto
 ---
 
 # Persist ADK session state from a custom agent via Event state_delta
@@ -26,3 +34,14 @@ Empirically validated on google-adk 2.8.0 (3-round interrogation paused/resumed 
 
 - [[ADK DatabaseSessionService needs the db extra and an async SQLAlchemy driver]]
 - [[ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs]]
+- [[ADK DatabaseSessionService can subsume a separate A2A task store and state-file rehydration]]
+- [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+- [[A2A to_a2a task_store and runner are separate persistence params]]
+- [[BridgeSession turn drops the answer when the A2A task completes each turn]]
+
+%% ai-graph-end %%

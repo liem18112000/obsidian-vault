@@ -1,10 +1,20 @@
 ---
-title: "A git merge can silently revert a merged PR when two branches edit the same region"
+ai_hash: 6ab8f32f3b93b4b0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: lesson
+entities: []
+source: session 2026-09-05, leo-customer360 deploy-api.sh
 status: seedling
-source: "session 2026-09-05, leo-customer360 deploy-api.sh"
-tags: [git, merge, conflict, gotcha, code-review]
+tags:
+- git
+- merge
+- conflict
+- gotcha
+- code-review
+title: A git merge can silently revert a merged PR when two branches edit the same
+  region
+type: lesson
 ---
 
 # A git merge can silently revert a merged PR when two branches edit the same region
@@ -23,3 +33,14 @@ Related: [[SHA-pinned docker pulls accumulate and fill small deploy VM disks]].
 ## Related
 
 - [[SHA-pinned docker pulls accumulate and fill small deploy VM disks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+- [[SHA-pinned docker pulls accumulate and fill small deploy VM disks]]
+- [[ReviewPR scope diff the branch's real base, not main, when base is ahead of main]]
+- [[Finding intentional k8s config PRs in luz_kubernetes filter out image-hash + merge drift]]
+- [[Prune disk before any write in an SSH heredoc so it works on a full disk]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "oauth2-proxy cookie_secret must be 16/24/32 bytes; openssl rand -base64 32 (44 chars) crash-loops it"
+ai_hash: b288b6b778727d77
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-13
-type: lesson
+entities: []
+source: session 2026-09-13
 status: seedling
-source: "session 2026-09-13"
-tags: [oauth2-proxy, sso, caddy, 502, gotcha, leo-customer360]
+tags:
+- oauth2-proxy
+- sso
+- caddy
+- 502
+- gotcha
+- leo-customer360
+title: oauth2-proxy cookie_secret must be 16/24/32 bytes; openssl rand -base64 32
+  (44 chars) crash-loops it
+type: lesson
 ---
 
 # oauth2-proxy cookie_secret must be 16/24/32 bytes; openssl rand -base64 32 (44 chars) crash-loops it
@@ -23,3 +34,14 @@ oauth2-proxy requires `--cookie-secret` (env `OAUTH2_PROXY_COOKIE_SECRET`) to de
 ## Related
 
 - [[docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[Jaeger on a small box use in-memory bounded storage, not badger, to avoid OOM 502]]
+- [[docs-search UAT latency root cause unapplied 8001 secgroup ingress (api to docs box)]]
+- [[Shared OIDC client skip-if-secret-exists guard drops new redirect URIs (Invalid redirect_uri)]]
+
+%% ai-graph-end %%

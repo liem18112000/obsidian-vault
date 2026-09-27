@@ -1,10 +1,19 @@
 ---
-title: "Anthropic SDK message content[0].text breaks on Claude 5 thinking blocks"
+ai_hash: 6084abf224978073
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-28 (KGA refine fix)
 status: seedling
-source: "session 2026-08-28 (KGA refine fix)"
-tags: [anthropic, claude, vertex-ai, llm, gotcha]
+tags:
+- anthropic
+- claude
+- vertex-ai
+- llm
+- gotcha
+title: Anthropic SDK message content[0].text breaks on Claude 5 thinking blocks
+type: lesson
 ---
 
 # Anthropic SDK message content[0].text breaks on Claude 5 thinking blocks
@@ -26,3 +35,14 @@ Optionally also pass `thinking={"type": "disabled"}` to restore the old no-think
 ## Related
 
 - [[Enabled thinking shares the max_tokens budget and can truncate output]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Enabled thinking shares the max_tokens budget and can truncate output]]
+- [[Claude on Vertex AI uses anthropic[vertex], not google-genai]]
+- [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+- [[Claude on Vertex AI availability is per-project per-region (klara-nonprod)]]
+- [[Anthropic has no first-party embeddings endpoint]]
+
+%% ai-graph-end %%

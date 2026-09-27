@@ -1,10 +1,19 @@
 ---
-title: "Redeploy OIDC consumers only after the issuer URL is reachable"
+ai_hash: 4bdaf69836948dc1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 beta.leocdp.com cutover, 2026-08
 status: seedling
-source: "leo-customer360 beta.leocdp.com cutover, 2026-08"
-tags: [oidc, keycloak, oauth2-proxy, deployment, cutover]
+tags:
+- oidc
+- keycloak
+- oauth2-proxy
+- deployment
+- cutover
+title: Redeploy OIDC consumers only after the issuer URL is reachable
+type: lesson
 ---
 
 # Redeploy OIDC consumers only after the issuer URL is reachable
@@ -18,3 +27,14 @@ Related: [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostn
 ## Related
 
 - [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+- [[Keycloak 26 OIDC issuer path comes from KC_HOSTNAME, not KC_HTTP_RELATIVE_PATH]]
+- [[Shared OIDC client skip-if-secret-exists guard drops new redirect URIs (Invalid redirect_uri)]]
+- [[KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too]]
+- [[Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list]]
+
+%% ai-graph-end %%

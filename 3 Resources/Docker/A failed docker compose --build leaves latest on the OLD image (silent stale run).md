@@ -1,10 +1,20 @@
 ---
-title: "A failed docker compose --build leaves :latest on the OLD image (silent stale run)"
+ai_hash: 5a625d7a810d0c88
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [docker, docker-compose, build, stale-image, gotcha]
+tags:
+- docker
+- docker-compose
+- build
+- stale-image
+- gotcha
+title: A failed docker compose --build leaves :latest on the OLD image (silent stale
+  run)
+type: lesson
 ---
 
 # A failed docker compose --build leaves :latest on the OLD image (silent stale run)
@@ -14,3 +24,14 @@ GOTCHA that cost real time: after editing source, several `docker compose up --b
 ## Related
 
 - [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Thin overlay image to refresh app code when full rebuilds keep failing]]
+- [[Verify a deployed service isn't stale match box RepoDigest to GHCR latest and read its sha-commit tag]]
+- [[Repeated compose up -d can corrupt the bridge network — down+up to rebuild it]]
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+- [[test-agent-v2 image built only from pyproject + src + main.py]]
+
+%% ai-graph-end %%

@@ -1,6 +1,16 @@
 ---
-tags: [gcp, vertex-ai, monitoring, cost, klara-nonprod, testing-agent]
+ai_hash: 7dfef7af33db7387
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
+entities: []
+tags:
+- gcp
+- vertex-ai
+- monitoring
+- cost
+- klara-nonprod
+- testing-agent
 ---
 
 # Querying Vertex AI Claude token usage (klara-nonprod)
@@ -37,3 +47,14 @@ curl -s -G -H "Authorization: Bearer $TOKEN" \
 **Test agent tie-in:** `claude-sonnet-5` = testing-agent default tier (v1+v2 share klara-nonprod); `claude-haiku-4-5` = fast tier. Gemini + embedding usage is other workloads (Leo CDP / KGA memory), not the test agent.
 
 Result 2026-09-23: sonnet-5 = 32.1M tokens/30d (~$204 est).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+- [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+- [[Claude models are available on GCP Vertex AI Model Garden]]
+- [[Claude on Vertex AI availability is per-project per-region (klara-nonprod)]]
+
+%% ai-graph-end %%

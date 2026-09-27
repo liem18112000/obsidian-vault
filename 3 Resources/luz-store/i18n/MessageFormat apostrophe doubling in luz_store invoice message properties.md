@@ -1,10 +1,19 @@
 ---
-title: "MessageFormat apostrophe doubling in luz_store invoice message properties"
+ai_hash: 0ddca5400a9c1c01
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: lesson
+entities: []
+source: session 2026-08-31
 status: seedling
-source: "session 2026-08-31"
-tags: [luz-store, i18n, messageformat, gotcha, LUZ-157476]
+tags:
+- luz-store
+- i18n
+- messageformat
+- gotcha
+- LUZ-157476
+title: MessageFormat apostrophe doubling in luz_store invoice message properties
+type: lesson
 ---
 
 # MessageFormat apostrophe doubling in luz_store invoice message properties
@@ -29,3 +38,14 @@ Context: LUZ-157476 failure-reason taxonomy.
 ## Related
 
 - [[Java properties files are ISO-8859-1 with unicode escapes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_store invoice bundles are Latin-1 - write unicode escapes and doubled apostrophes]]
+- [[FailureCategoryTest hard-codes rendered i18n strings so properties edits break it]]
+- [[Invoice run v2 shows charge failures via verbatim message copy at controller line 628]]
+- [[Write-time localization into the existing message column avoids schema change]]
+- [[Observed Payrexx prose vocabulary in dev is only three messages]]
+
+%% ai-graph-end %%

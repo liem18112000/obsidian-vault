@@ -1,10 +1,19 @@
 ---
-title: "Confluence CQL search paginates by opaque cursor, not start offset"
+ai_hash: 70bcde143210545f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: session 2026-09-27 Confluence export
 status: seedling
-source: "session 2026-09-27 Confluence export"
-tags: [confluence, atlassian, rest-api, pagination, gotcha]
+tags:
+- confluence
+- atlassian
+- rest-api
+- pagination
+- gotcha
+title: Confluence CQL search paginates by opaque cursor, not start offset
+type: gotcha
 ---
 
 # Confluence CQL search paginates by opaque cursor, not start offset
@@ -47,3 +56,14 @@ Also note the response has no `totalSize`; you cannot know the result count up f
 
 - [[Export Confluence to markdown via body.view HTML]]
 - [[not body.storage]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Export Confluence to markdown via body.view HTML, not body.storage]]
+- [[Offset-paging loop with while(offset % pageSize == 0) infinite-loops on exact-multiple counts]]
+- [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
+- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
+- [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+
+%% ai-graph-end %%

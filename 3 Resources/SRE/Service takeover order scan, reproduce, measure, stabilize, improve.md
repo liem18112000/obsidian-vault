@@ -1,10 +1,19 @@
 ---
-title: "Service takeover order: scan, reproduce, measure, stabilize, improve"
+ai_hash: dfed4d67519635a2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: lesson
+entities: []
+source: session 2026-08-24 ecomart-java takeover playbook
 status: seedling
-source: "session 2026-08-24 ecomart-java takeover playbook"
-tags: [support-engineering, onboarding, sre, operations, methodology]
+tags:
+- support-engineering
+- onboarding
+- sre
+- operations
+- methodology
+title: 'Service takeover order: scan, reproduce, measure, stabilize, improve'
+type: lesson
 ---
 
 # Service takeover order: scan, reproduce, measure, stabilize, improve
@@ -18,3 +27,10 @@ When taking over an unfamiliar service + codebase, follow a fixed order — doin
 5. **Improve + operationalize.** Then harden latent bugs, add observability (logs w/ correlation IDs, health endpoint, SLO alerts), CI gates, runbook, and kill the bus factor.
 
 Key heuristics: green tests can pass for the wrong reason (ask "would this fail if the behaviour were wrong?"); MTTR is dominated by detect+understand, not fix; mitigate to stop the bleeding but always finish the root-cause fix; communicate trade-offs, don't just make them.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Prove a new branch is load-bearing by reverting it]]
+
+%% ai-graph-end %%

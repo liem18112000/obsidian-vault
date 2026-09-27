@@ -1,10 +1,20 @@
 ---
-title: "Keycloak 26 OIDC issuer path comes from KC_HOSTNAME, not KC_HTTP_RELATIVE_PATH"
+ai_hash: cc90b30f8596f538
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: gotcha
+entities: []
+source: leo-customer360 beta.leocdp.com cutover, 2026-08
 status: seedling
-source: "leo-customer360 beta.leocdp.com cutover, 2026-08"
-tags: [keycloak, oidc, issuer, hostname, relative-path, gotcha]
+tags:
+- keycloak
+- oidc
+- issuer
+- hostname
+- relative-path
+- gotcha
+title: Keycloak 26 OIDC issuer path comes from KC_HOSTNAME, not KC_HTTP_RELATIVE_PATH
+type: gotcha
 ---
 
 # Keycloak 26 OIDC issuer path comes from KC_HOSTNAME, not KC_HTTP_RELATIVE_PATH
@@ -20,3 +30,14 @@ Related: [[KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefi
 ## Related
 
 - [[KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+- [[KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too]]
+- [[Redeploy OIDC consumers only after the issuer URL is reachable]]
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+
+%% ai-graph-end %%

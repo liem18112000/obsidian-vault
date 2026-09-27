@@ -1,10 +1,18 @@
 ---
-title: "Price one layer lower before accepting a fix"
+ai_hash: e3f7bf21d6380633
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: model
+entities: []
+source: openrig docs/reference/product-management-pass.md, 2026-09-25
 status: seedling
-source: "openrig docs/reference/product-management-pass.md, 2026-09-25"
-tags: [decision-making, refactoring, openrig, root-cause]
+tags:
+- decision-making
+- refactoring
+- openrig
+- root-cause
+title: Price one layer lower before accepting a fix
+type: model
 ---
 
 # Price one layer lower before accepting a fix
@@ -29,3 +37,12 @@ Related: [[Implementation is the best reviewer a design doc gets]] · [[The fide
 
 - [[Implementation is the best reviewer a design doc gets]]
 - [[The fidelity law: a one-line intent is a 20:1 lossy compression]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[The fidelity law a one-line intent is a 201 lossy compression]]
+- [[Implementation is the best reviewer a design doc gets]]
+- [[CONTEXT-GAP vs JUDGMENT-GAP dispose every miss by cause]]
+
+%% ai-graph-end %%

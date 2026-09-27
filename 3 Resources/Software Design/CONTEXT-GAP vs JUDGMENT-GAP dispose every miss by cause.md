@@ -1,10 +1,18 @@
 ---
-title: "CONTEXT-GAP vs JUDGMENT-GAP: dispose every miss by cause"
+ai_hash: 9443c4293ef5d55b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: model
+entities: []
+source: openrig docs/reference/wave-sdlc.md, 2026-09-25
 status: seedling
-source: "openrig docs/reference/wave-sdlc.md, 2026-09-25"
-tags: [openrig, code-review, metrics, calibration]
+tags:
+- openrig
+- code-review
+- metrics
+- calibration
+title: 'CONTEXT-GAP vs JUDGMENT-GAP: dispose every miss by cause'
+type: model
 ---
 
 # CONTEXT-GAP vs JUDGMENT-GAP: dispose every miss by cause
@@ -30,3 +38,12 @@ Related: [[The fidelity law: a one-line intent is a 20:1 lossy compression]] · 
 
 - [[The fidelity law: a one-line intent is a 20:1 lossy compression]]
 - [[Price one layer lower before accepting a fix]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[The fidelity law a one-line intent is a 201 lossy compression]]
+- [[Price one layer lower before accepting a fix]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+
+%% ai-graph-end %%

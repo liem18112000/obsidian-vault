@@ -1,10 +1,21 @@
 ---
-title: "Uncapped Dagster on a swapless 2GB box OOMs the whole host (SSH banner-timeout); cap container memory + add swap"
+ai_hash: 33db5822eda9baee
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: leo-customer360 UAT backend box, session 2026-08-23
 status: seedling
-source: "leo-customer360 UAT backend box, session 2026-08-23"
-tags: [oom, memory, dagster, docker, incident, leo-customer360]
+tags:
+- oom
+- memory
+- dagster
+- docker
+- incident
+- leo-customer360
+title: Uncapped Dagster on a swapless 2GB box OOMs the whole host (SSH banner-timeout);
+  cap container memory + add swap
+type: lesson
 ---
 
 # Uncapped Dagster on a swapless 2GB box OOMs the whole host (SSH banner-timeout); cap container memory + add swap
@@ -26,3 +37,14 @@ Source: leo-customer360 UAT backend box outage, 2026-08-23.
 ## Related
 
 - [[docker restart does not re-read --env-file; recreate the container to apply env changes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Docker can report OOMKilled=false on a cgroup memcg OOM — check dmesg]]
+- [[Jaeger on a small box use in-memory bounded storage, not badger, to avoid OOM 502]]
+- [[Right-sizing k8s resource limits on the Customer360 stack]]
+- [[Idempotent swapfile setup must check size not just existence]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+
+%% ai-graph-end %%

@@ -1,10 +1,47 @@
 ---
-title: "KGA gather exclude= takes node ids, not keywords"
+ai_hash: 64eefbc18496d3c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-13
-type: lesson
+entities:
+- KGA
+- gather_knowledge
+- exclude= parameter
+- node ids
+- keywords
+- test-agent-v2
+- canonical node ids
+- free-text topics
+- exclude_ids()
+- normalize_seed
+- Jira issue keys
+- Confluence numeric page ids
+- URLs
+- ZIP import
+- memory-bleed
+- prior gather output
+- fresh context
+- new gather
+- Post-hoc exclude
+- already-converged context
+- cached rounds
+- expansion
+- crawl
+- memory/atlassian/lead seeders
+- semantic recall
+- gather_codebase
+- axonivy-prod/<repo> workspace slug
+source: session 2026-09-13 LUZ-156281 demo
 status: seedling
-source: "session 2026-09-13 LUZ-156281 demo"
-tags: [kga, gather, exclude, test-agent-v2, gotcha, memory-bleed]
+tags:
+- kga
+- gather
+- exclude
+- test-agent-v2
+- gotcha
+- memory-bleed
+title: KGA gather exclude= takes node ids, not keywords
+type: lesson
 ---
 
 # KGA gather exclude= takes node ids, not keywords
@@ -22,3 +59,42 @@ Also: `exclude=` only bites on a **fresh context** (a new gather). Post-hoc excl
 ## Related
 
 - [[gather_codebase needs axonivy-prod/<repo> workspace slug]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[exclude= does not lift PQS precision because cloud-discover re-promotes 8 services]]
+- [[gather_codebase on a mid-refine context routes into the refine loop]]
+- [[gather_codebase needs axonivy-prodrepo workspace slug]]
+- [[A link-following crawl pulls in graph-adjacent but topically-tangential nodes]]
+- [[Drive the KGA A2A agent offline via Starlette TestClient for evaluation]]
+
+**Relations:**
+- KGA — *uses* — gather_knowledge
+- gather_knowledge — *has parameter* — exclude= parameter
+- exclude= parameter — *takes* — node ids
+- exclude= parameter — *does not take* — keywords
+- gather_knowledge — *is part of* — test-agent-v2
+- node ids — *are also known as* — canonical node ids
+- keywords — *are also known as* — free-text topics
+- exclude_ids() — *uses* — normalize_seed
+- normalize_seed — *converts* — Jira issue keys
+- normalize_seed — *converts* — Confluence numeric page ids
+- normalize_seed — *processes* — URLs
+- ZIP import — *is an example of* — free-text topics
+- ZIP import — *matches no* — node
+- exclude= parameter — *prunes* — memory-bleed
+- exclude= parameter — *requires* — specific bled node ids
+- specific bled node ids — *from* — prior gather output
+- exclude= parameter — *is effective on* — fresh context
+- fresh context — *is a* — new gather
+- Post-hoc exclude — *on* — already-converged context
+- Post-hoc exclude — *replays* — cached rounds
+- exclude= parameter — *applies to* — expansion
+- exclude= parameter — *applies to* — crawl
+- exclude= parameter — *applies to* — memory/atlassian/lead seeders
+- exclude= parameter — *prevents* — semantic recall
+- gather_knowledge — *is related to* — gather_codebase
+- gather_codebase — *needs* — axonivy-prod/<repo> workspace slug
+
+%% ai-graph-end %%

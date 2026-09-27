@@ -1,10 +1,19 @@
 ---
-title: "Postgres RLS should be defense-in-depth, not the sole tenant boundary"
+ai_hash: 690f64fa5644a7b0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: lesson
+entities: []
+source: c360 python code review 2026-09-05
 status: seedling
-source: "c360 python code review 2026-09-05"
-tags: [postgres, rls, multi-tenancy, security, gotcha]
+tags:
+- postgres
+- rls
+- multi-tenancy
+- security
+- gotcha
+title: Postgres RLS should be defense-in-depth, not the sole tenant boundary
+type: lesson
 ---
 
 # Postgres RLS should be defense-in-depth, not the sole tenant boundary
@@ -24,3 +33,14 @@ Lesson: treat RLS as defense-in-depth. Also enforce tenant scoping explicitly at
 - [[Response caches must include the authenticated tenant in the key]]
 - [[Derive tenant identity from the verified token]]
 - [[never from request input]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Response caches must include the authenticated tenant in the key]]
+- [[Postgres session SET vs transaction-local set_config for RLS context]]
+- [[Derive tenant identity from the verified token, never from request input]]
+- [[Postgres RLS is silently bypassed by superuser connections]]
+- [[Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role]]
+
+%% ai-graph-end %%

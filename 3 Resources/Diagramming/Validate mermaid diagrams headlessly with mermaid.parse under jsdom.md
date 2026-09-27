@@ -1,10 +1,20 @@
 ---
-title: "Validate mermaid diagrams headlessly with mermaid.parse under jsdom"
+ai_hash: c5c003d2d23dc249
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: howto
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [mermaid, jsdom, nodejs, diagramming, validation, gotcha]
+tags:
+- mermaid
+- jsdom
+- nodejs
+- diagramming
+- validation
+- gotcha
+title: Validate mermaid diagrams headlessly with mermaid.parse under jsdom
+type: howto
 ---
 
 # Validate mermaid diagrams headlessly with mermaid.parse under jsdom
@@ -37,3 +47,14 @@ Related: [[Embed Excalidraw in repo markdown render to SVG; the renderer does no
 ## Related
 
 - [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw; fix with suppressErrorRendering]]
+- [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
+- [[Cached-rejected lazy import silently breaks a feature for the whole session]]
+- [[Artifacts render mermaid natively — never add a mermaid CDN script (CSP blocks it)]]
+- [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+
+%% ai-graph-end %%

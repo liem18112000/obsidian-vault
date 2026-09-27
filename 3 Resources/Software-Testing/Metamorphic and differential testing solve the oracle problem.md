@@ -1,10 +1,19 @@
 ---
-title: "Metamorphic and differential testing solve the oracle problem"
+ai_hash: f5272e73fc58fe98
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: concept
+entities: []
+source: deep research 2026-09-03
 status: seedling
-source: "deep research 2026-09-03"
-tags: [testing, oracle-problem, metamorphic, differential, api]
+tags:
+- testing
+- oracle-problem
+- metamorphic
+- differential
+- api
+title: Metamorphic and differential testing solve the oracle problem
+type: concept
 ---
 
 # Metamorphic and differential testing solve the oracle problem
@@ -21,3 +30,14 @@ The **oracle problem**: for many inputs there is no cheap mechanism to decide wh
 - [[Assured test generation: keep an LLM test only if it builds]]
 - [[passes]]
 - [[and raises coverage]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Agentic browser testing discover once, compile deterministic, heal only on failure]]
+- [[Assured test generation keep an LLM test only if it builds, passes, and raises coverage]]
+- [[AI as an accelerator with a human review gate]]
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+
+%% ai-graph-end %%

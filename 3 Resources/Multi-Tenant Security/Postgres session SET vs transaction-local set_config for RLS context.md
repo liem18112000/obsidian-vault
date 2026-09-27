@@ -1,10 +1,18 @@
 ---
-title: "Postgres session SET vs transaction-local set_config for RLS context"
+ai_hash: ed5699ac2fe6ef38
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: lesson
+entities: []
+source: c360 python code review 2026-09-05
 status: seedling
-source: "c360 python code review 2026-09-05"
-tags: [postgres, rls, connection-pool, gotcha]
+tags:
+- postgres
+- rls
+- connection-pool
+- gotcha
+title: Postgres session SET vs transaction-local set_config for RLS context
+type: lesson
 ---
 
 # Postgres session SET vs transaction-local set_config for RLS context
@@ -17,3 +25,14 @@ Use transaction-local scope instead: `SET LOCAL app.tenant_id = x` or `select se
 
 - [[Postgres RLS should be defense-in-depth]]
 - [[not the sole tenant boundary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
+- [[Response caches must include the authenticated tenant in the key]]
+- [[Set Postgres RLS session GUC via the raw DBAPI connection, not Session.execute]]
+- [[Derive tenant identity from the verified token, never from request input]]
+- [[Postgres RLS is silently bypassed by superuser connections]]
+
+%% ai-graph-end %%

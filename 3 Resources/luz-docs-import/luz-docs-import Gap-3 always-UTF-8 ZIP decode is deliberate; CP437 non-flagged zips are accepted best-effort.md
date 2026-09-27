@@ -1,10 +1,21 @@
 ---
-title: "luz-docs-import Gap-3: always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort"
+ai_hash: 53d59b76aaaa5e96
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: lesson
+entities: []
+source: docs/zip-import-design-review.md + PR-B 2026-08-13
 status: seedling
-source: "docs/zip-import-design-review.md + PR-B 2026-08-13"
-tags: [luz-docs-import, zip, encoding, gap3, design-decision, LUZ-158230]
+tags:
+- luz-docs-import
+- zip
+- encoding
+- gap3
+- design-decision
+- LUZ-158230
+title: 'luz-docs-import Gap-3: always-UTF-8 ZIP decode is deliberate; CP437 non-flagged
+  zips are accepted best-effort'
+type: lesson
 ---
 
 # luz-docs-import Gap-3: always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort
@@ -20,3 +31,14 @@ In **luz-docs-import** ZIP ingestion the charset handling is a DELIBERATE, docum
 ## Related
 
 - [[ePost ZIP-import metadata sidecar field types (senderCompanyId is numeric)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ZIP entry names decode as CP437 mojibake when the UTF-8 EFS flag is unset]]
+- [[luz-docs-import dedup identity is the uploaded zip filename (importZipName)]]
+- [[Building a ZIP fixture to test NFCNFD + UTF-8-flag entry-name handling]]
+- [[zip4j 2.8.0 ZipException is-a IOException, and extractFile keeps Zip-Slip protection (per-entry extraction)]]
+- [[luz-docs-import 'Permission denied' failures trace to zip4j applying archive file permissions]]
+
+%% ai-graph-end %%

@@ -1,10 +1,23 @@
 ---
-title: "Cloud Run static outbound IP needs VPC egress + Cloud NAT; Agent Engine private egress via PSC interface"
+ai_hash: 97c1504b934cd07c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: howto
+entities: []
+source: research session 2026-09-03
 status: seedling
-source: "research session 2026-09-03"
-tags: [gcp, cloud-run, agent-engine, networking, vpc, cloud-nat, psc, static-ip]
+tags:
+- gcp
+- cloud-run
+- agent-engine
+- networking
+- vpc
+- cloud-nat
+- psc
+- static-ip
+title: Cloud Run static outbound IP needs VPC egress + Cloud NAT; Agent Engine private
+  egress via PSC interface
+type: howto
 ---
 
 # Cloud Run static outbound IP needs VPC egress + Cloud NAT; Agent Engine private egress via PSC interface
@@ -26,3 +39,14 @@ Relevant to `test-agent` on Cloud Run: if Atlassian/Bitbucket ever require IP al
 ## Related
 
 - [[ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK deploy targets compute matrix Agent Engine vs Cloud Run vs GKE (CPUGPUTPU)]]
+- [[Cloud Run v2 service design gotchas]]
+- [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+- [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
+- [[Co-locating a stateful MCP bridge as an agent sidecar couples their scaling]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "ssh drops empty positional args; pass a base64 newline-joined argv + mapfile"
+ai_hash: 4c83ffe19deb9db0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [ssh, bash, deploy, gotcha, leo-cdp, argv]
+tags:
+- ssh
+- bash
+- deploy
+- gotcha
+- leo-cdp
+- argv
+title: ssh drops empty positional args; pass a base64 newline-joined argv + mapfile
+type: lesson
 ---
 
 # ssh drops empty positional args; pass a base64 newline-joined argv + mapfile
@@ -33,3 +43,14 @@ Related: [[Validate S3_REGION at the deploy boundary, not after boto3 fails]] [[
 
 - [[Validate S3_REGION at the deploy boundary]]
 - [[not after boto3 fails]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSH flattens remote command args, so empty-string arguments collapse and shift positionals]]
+- [[ssh 'bash -s' flattens args, so empty middle args shift positionals]]
+- [[ssh host 'bash -s' flattens args into a remote shell string]]
+- [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
+- [[Ship a local bash function to a remote ssh bash -s with declare -f]]
+
+%% ai-graph-end %%

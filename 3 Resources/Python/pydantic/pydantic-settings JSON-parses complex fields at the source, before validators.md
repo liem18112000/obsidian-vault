@@ -1,10 +1,19 @@
 ---
-title: "pydantic-settings JSON-parses complex fields at the source, before validators"
+ai_hash: 42ab205428a8a6fa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: gotcha
+entities: []
+source: session 2026-09-21 (customer360-agent deploy)
 status: seedling
-source: "session 2026-09-21 (customer360-agent deploy)"
-tags: [pydantic, pydantic-settings, fastapi, gotcha, env-config]
+tags:
+- pydantic
+- pydantic-settings
+- fastapi
+- gotcha
+- env-config
+title: pydantic-settings JSON-parses complex fields at the source, before validators
+type: gotcha
 ---
 
 # pydantic-settings JSON-parses complex fields at the source, before validators
@@ -22,3 +31,13 @@ Discovered deploying customer360-agent (FastAPI + LiteLLM) onto its UAT vServer 
 ## Related
 
 - [[Python/pydantic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
+- [[Pydantic min_length on a nullable str rejects empty strings]]
+- [[Dataclass field defaults reading env vars are evaluated at import time, not instantiation]]
+- [[FastAPI request-size guards inside the handler run after the body is in RAM]]
+
+%% ai-graph-end %%

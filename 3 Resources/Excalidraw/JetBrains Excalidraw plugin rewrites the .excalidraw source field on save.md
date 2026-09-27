@@ -1,10 +1,19 @@
 ---
-title: "JetBrains Excalidraw plugin rewrites the .excalidraw source field on save"
+ai_hash: 4e468258b6fd4667
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-28
 status: seedling
-source: "session 2026-08-28"
-tags: [excalidraw, tooling, gotcha, diagrams, jetbrains]
+tags:
+- excalidraw
+- tooling
+- gotcha
+- diagrams
+- jetbrains
+title: JetBrains Excalidraw plugin rewrites the .excalidraw source field on save
+type: lesson
 ---
 
 # JetBrains Excalidraw plugin rewrites the .excalidraw source field on save
@@ -24,3 +33,14 @@ Then Read the produced PNG to visually validate. The script keeps a persistent C
 ## Related
 
 - [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Render .excalidraw to PNGSVG offline with render_excalidraw.py]]
+- [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+- [[excalidraw-diagram renderer must run under uv run, not plain python]]
+- [[Excalidraw offline renderer does not auto-wrap bound container text]]
+
+%% ai-graph-end %%

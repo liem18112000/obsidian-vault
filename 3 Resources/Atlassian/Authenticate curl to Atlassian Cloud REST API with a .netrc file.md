@@ -1,10 +1,19 @@
 ---
-title: "Authenticate curl to Atlassian Cloud REST API with a .netrc file"
+ai_hash: 4ffac107fe0fb68a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-04
-type: howto
+entities: []
+source: LUZ-158230 investigation 2026-08-04
 status: seedling
-source: "LUZ-158230 investigation 2026-08-04"
-tags: [atlassian, jira, curl, claude-code, kepler]
+tags:
+- atlassian
+- jira
+- curl
+- claude-code
+- kepler
+title: Authenticate curl to Atlassian Cloud REST API with a .netrc file
+type: howto
 ---
 
 # Authenticate curl to Atlassian Cloud REST API with a .netrc file
@@ -25,3 +34,14 @@ curl -s --netrc-file /path/.netrc "https://axonivy.atlassian.net/rest/api/3/issu
 Attachments: `.../rest/api/3/attachment/content/<id>` (follow redirects with -L). Delete the .netrc afterwards — it holds a secret. Never store the token value in a note.
 
 PDF text extraction on this machine: `pdftoppm` is absent (Read cant render PDF pages) but Python `fitz` (PyMuPDF) is installed — use `fitz.open(path).get_text()`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
+- [[Bitbucket Cloud API differs from JiraConfluence host, auth, raw src]]
+- [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
+- [[Jira issue HTML export view bypasses missing MCP grant]]
+- [[Atlassian Cloud OAuth 3LO specifics JSON token body, rotating refresh, cloudId via accessible-resources]]
+
+%% ai-graph-end %%

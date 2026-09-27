@@ -1,10 +1,19 @@
 ---
-title: "Cloud Run's managed /cloudsql socket does not reach sidecar containers"
+ai_hash: 8c69a7b7553ee32f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: session 2026-09-03
 status: seedling
-source: "session 2026-09-03"
-tags: [gcp, cloud-run, cloud-sql, sidecar, gotcha]
+tags:
+- gcp
+- cloud-run
+- cloud-sql
+- sidecar
+- gotcha
+title: Cloud Run's managed /cloudsql socket does not reach sidecar containers
+type: lesson
 ---
 
 # Cloud Run's managed /cloudsql socket does not reach sidecar containers
@@ -18,3 +27,14 @@ Fix: if your DB-using process runs in the sidecar (not the ingress container), s
 ## Related
 
 - [[gcloud builds submit --suppress-logs still exits non-zero on the log-streaming permission error]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run mounts the Cloud SQL cloudsql socket only into the ingress container, not sidecars]]
+- [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+- [[gcloud builds submit --suppress-logs still exits non-zero on the log-streaming permission error]]
+- [[Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED]]
+- [[Cloud Run v2 multi-container sidecar in Terraform]]
+
+%% ai-graph-end %%

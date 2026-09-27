@@ -1,10 +1,19 @@
 ---
-title: "Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE"
+ai_hash: 68de992de77dcd79
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: howto
+entities: []
+source: session 2026-08-10 (luz-docs-import-api-test skill)
 status: seedling
-source: "session 2026-08-10 (luz-docs-import-api-test skill)"
-tags: [luz, luz-docs-import, api, mongodb, import]
+tags:
+- luz
+- luz-docs-import
+- api
+- mongodb
+- import
+title: 'Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE'
+type: howto
 ---
 
 # Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE
@@ -26,3 +35,14 @@ See the `luz-docs-import-api-test` skill for an end-to-end driver. Related: [[Tr
 - [[Trace Luz per-service latency via the time-consuming= log marker]]
 
 **Deploy mapping (dev):** Cloud Build trigger = `docs-import-service`, k8s StatefulSet = `luz-docs-import`, GAR image = `luz-docs-import` (differs from the `luz-skill-ship` `luz-docs` defaults — pass `TRIGGER_NAME=docs-import-service STATEFULSET=luz-docs-import`).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import ZIP import call chain]]
+- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
+- [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second]]
+- [[luz_docs_import detects dead async-worker pods via kubectl during status polling]]
+- [[luz-docs-import bug rejected files not removed from unprocessedFiles]]
+
+%% ai-graph-end %%

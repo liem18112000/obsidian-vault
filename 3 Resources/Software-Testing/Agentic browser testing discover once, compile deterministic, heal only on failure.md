@@ -1,10 +1,20 @@
 ---
-title: "Agentic browser testing: discover once, compile deterministic, heal only on failure"
+ai_hash: 19cc47ca09576e42
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: concept
+entities: []
+source: deep research 2026-09-03
 status: seedling
-source: "deep research 2026-09-03"
-tags: [testing, browser-automation, playwright, self-healing, agentic]
+tags:
+- testing
+- browser-automation
+- playwright
+- self-healing
+- agentic
+title: 'Agentic browser testing: discover once, compile deterministic, heal only on
+  failure'
+type: concept
 ---
 
 # Agentic browser testing: discover once, compile deterministic, heal only on failure
@@ -21,3 +31,14 @@ The winning production pattern for agentic UI/browser testing separates two phas
 ## Related
 
 - [[Metamorphic and differential testing solve the oracle problem]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Assured test generation keep an LLM test only if it builds, passes, and raises coverage]]
+- [[Metamorphic and differential testing solve the oracle problem]]
+- [[AI as an accelerator with a human review gate]]
+- [[LLM-picked UI actions can be verified mechanically but not semantically]]
+- [[Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
+
+%% ai-graph-end %%

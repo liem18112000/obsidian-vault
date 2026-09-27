@@ -1,10 +1,19 @@
 ---
-title: "claude-code npm install breaks in slim Docker — use the official install.sh"
+ai_hash: 6bdf590759fce31c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: lesson
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [claude-code, docker, npm, gotcha, install]
+tags:
+- claude-code
+- docker
+- npm
+- gotcha
+- install
+title: claude-code npm install breaks in slim Docker — use the official install.sh
+type: lesson
 ---
 
 # claude-code npm install breaks in slim Docker — use the official install.sh
@@ -16,3 +25,14 @@ FIX: use the OFFICIAL installer — `curl -fsSL https://claude.ai/install.sh | b
 ## Related
 
 - [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+- [[claude-proxy login expires mid-session - implement silently degrades to heuristic stubs (score 0.00)]]
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+- [[Why local test-agent is slow claude -p ships a 17.5K agent prompt on Opus, x many serial calls]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+
+%% ai-graph-end %%

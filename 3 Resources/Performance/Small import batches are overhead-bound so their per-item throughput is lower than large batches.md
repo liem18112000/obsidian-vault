@@ -1,10 +1,19 @@
 ---
-title: "Small import batches are overhead-bound so their per-item throughput is lower than large batches"
+ai_hash: 4518ebd63642624e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: concept
+entities: []
+source: luz-docs-import perf benchmark 2026-08-13
 status: seedling
-source: "luz-docs-import perf benchmark 2026-08-13"
-tags: [performance, throughput, batch, overhead]
+tags:
+- performance
+- throughput
+- batch
+- overhead
+title: Small import batches are overhead-bound so their per-item throughput is lower
+  than large batches
+type: concept
 ---
 
 # Small import batches are overhead-bound so their per-item throughput is lower than large batches
@@ -23,3 +32,14 @@ Related: [[Trust median and p90 over many runs, not the mean of a few, for laten
 - [[not the mean of a few]]
 - [[for latency on a noisy shared env]]
 - [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import performance-env import benchmark findings]]
+- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
+- [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second]]
+- [[Trust median and p90 over many runs, not the mean of a few, for latency on a noisy shared env]]
+- [[luz-docs-import antivirus whole-zip scan dominates first-import latency and scales with zip size]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Diagnose stale vs genuinely-zero segment counts by comparing stored count to live matched query"
+ai_hash: 7a45547448d031fa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: howto
+entities: []
+source: beta.leocdp.com investigation 2026-08-23
 status: seedling
-source: "beta.leocdp.com investigation 2026-08-23"
-tags: [leo-cdp, segmentation, debugging, rls]
+tags:
+- leo-cdp
+- segmentation
+- debugging
+- rls
+title: Diagnose stale vs genuinely-zero segment counts by comparing stored count to
+  live matched query
+type: howto
 ---
 
 # Diagnose stale vs genuinely-zero segment counts by comparing stored count to live matched query
@@ -24,3 +33,12 @@ See [[LEO CDP segment member_count is 0 because default rules filter on never-po
 ## Related
 
 - [[LEO CDP segment member_count is 0 because default rules filter on never-populated ML columns]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP segment member_count is 0 because default rules filter on never-populated ML columns]]
+- [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
+- [[pgAdmin shows 0 rows on customer360 tenant tables until you SET app.tenant_id (FORCE RLS)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Single-to-multi container Cloud Run update fails in-place; use terraform -replace"
+ai_hash: 1f792d94c48a3097
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: lesson
+entities: []
+source: session 2026-08-31 sidecar apply
 status: seedling
-source: "session 2026-08-31 sidecar apply"
-tags: [terraform, cloud-run, sidecar, gotcha, gcp, replace]
+tags:
+- terraform
+- cloud-run
+- sidecar
+- gotcha
+- gcp
+- replace
+title: Single-to-multi container Cloud Run update fails in-place; use terraform -replace
+type: lesson
 ---
 
 # Single-to-multi container Cloud Run update fails in-place; use terraform -replace
@@ -24,3 +34,14 @@ The replacement builds the multi-container revision from config with no position
 ## Related
 
 - [[Cloud Run v2 multi-container sidecar in Terraform]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run v2 multi-container sidecar in Terraform]]
+- [[Cloud Run latest does not roll a new revision on terraform apply — deploy by digest]]
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+- [[Cloud Run's managed cloudsql socket does not reach sidecar containers]]
+- [[Refactor Terraform resources into a module as a no-op via terraform state mv]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Export Confluence to markdown via body.view HTML, not body.storage"
+ai_hash: bf3a9d10d27e1b89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: howto
+entities: []
+source: session 2026-09-27 Confluence export
 status: seedling
-source: "session 2026-09-27 Confluence export"
-tags: [confluence, atlassian, pandoc, markdown, export]
+tags:
+- confluence
+- atlassian
+- pandoc
+- markdown
+- export
+title: Export Confluence to markdown via body.view HTML, not body.storage
+type: howto
 ---
 
 # Export Confluence to markdown via body.view HTML, not body.storage
@@ -35,3 +44,14 @@ Trade-off to accept knowingly: `body.view` is a rendering, so it loses macro *id
 
 - [[Confluence CQL search paginates by opaque cursor]]
 - [[not start offset]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
+- [[Rewrite Confluence page prose by element local-id to keep diagrams and structure intact]]
+- [[Confluence CQL search paginates by opaque cursor, not start offset]]
+- [[Extracting every link from Jira ADF and Confluence storage]]
+- [[Embedding an image in Confluence requires uploading it as an attachment first]]
+
+%% ai-graph-end %%

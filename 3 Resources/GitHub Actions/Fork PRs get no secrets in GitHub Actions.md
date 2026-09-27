@@ -1,10 +1,19 @@
 ---
-title: "Fork PRs get no secrets in GitHub Actions"
+ai_hash: 89edf7a2189729ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: gotcha
+entities: []
+source: 'leo-customer360 ci.yml, PR #68, session 2026-09-14'
 status: seedling
-source: "leo-customer360 ci.yml, PR #68, session 2026-09-14"
-tags: [github-actions, ci, secrets, gotcha, fork-pr]
+tags:
+- github-actions
+- ci
+- secrets
+- gotcha
+- fork-pr
+title: Fork PRs get no secrets in GitHub Actions
+type: gotcha
 ---
 
 # Fork PRs get no secrets in GitHub Actions
@@ -42,3 +51,14 @@ Real case: leo-customer360 \`.github/workflows/ci.yml\` notify job, PR #68 (2026
 ## Related
 
 - [[GitHub Actions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]]
+- [[Gate Terraformdeploy CI to push-on-main, not pull_request (secrets fail PRs)]]
+- [[CD secrets must be wired into cd.yml deploy step env, not just added to GitHub]]
+- [[GitHub secrets are write-only; run in Actions to use a CD key, push-trigger a feature branch to avoid main]]
+
+%% ai-graph-end %%

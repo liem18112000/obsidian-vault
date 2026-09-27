@@ -1,10 +1,19 @@
 ---
-title: "Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds"
+ai_hash: 13724583faf03606
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: howto
+entities: []
+source: session 2026-08-20 leo-customer360 CI
 status: seedling
-source: "session 2026-08-20 leo-customer360 CI"
-tags: [github-actions, monorepo, ci, docker]
+tags:
+- github-actions
+- monorepo
+- ci
+- docker
+title: Feed dorny/paths-filter changes output into a build matrix for selective monorepo
+  builds
+type: howto
 ---
 
 # Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds
@@ -39,3 +48,14 @@ Related: [[GHCR image names must be lowercase; docker-metadata-action lowercases
 
 - [[GHCR image names must be lowercase; docker/metadata-action lowercases automatically]]
 - [[Workflow-level paths-ignore can stop a workflow triggering on the dir you want to build]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Workflow-level paths-ignore can stop a workflow triggering on the dir you want to build]]
+- [[CI path-filter must mirror the Docker build context, not the service folder]]
+- [[CD only redeploys a leo-customer360 service when its own path changes (dorny paths-filter)]]
+- [[GitHub Actions in a monorepo workflows live at repo root, scope per project with paths filters]]
+- [[GHCR image names must be lowercase; dockermetadata-action lowercases automatically]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Dagster run_monitoring start_timeout does not reap already-STARTED hung runs"
+ai_hash: 0786a8991e71d2ce
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT live check 2026-09-10
 status: seedling
-source: "customer360 UAT live check 2026-09-10"
-tags: [dagster, run-monitoring, timeout, gotcha]
+tags:
+- dagster
+- run-monitoring
+- timeout
+- gotcha
+title: Dagster run_monitoring start_timeout does not reap already-STARTED hung runs
+type: lesson
 ---
 
 # Dagster run_monitoring start_timeout does not reap already-STARTED hung runs
@@ -21,3 +29,14 @@ Config seen on customer360 UAT: `run_monitoring{ enabled:true, start_timeout_sec
 ## Related
 
 - [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster run_monitoring + DefaultRunLauncher does not reap STARTED zombies that predate a daemon restart]]
+- [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+- [[Dagster run_monitoring key is max_resume_run_attempts not max_resume_attempts]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+
+%% ai-graph-end %%

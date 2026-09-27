@@ -1,10 +1,20 @@
 ---
-title: "vStorage REST control-plane API: endpoints and vIAM bearer auth"
+ai_hash: 87d13ee43d03507a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: reference
+entities: []
+source: session 2026-08-17 (vStorage API reference)
 status: seedling
-source: "session 2026-08-17 (vStorage API reference)"
-tags: [vngcloud, vstorage, rest-api, object-storage, viam, reference]
+tags:
+- vngcloud
+- vstorage
+- rest-api
+- object-storage
+- viam
+- reference
+title: 'vStorage REST control-plane API: endpoints and vIAM bearer auth'
+type: reference
 ---
 
 # vStorage REST control-plane API: endpoints and vIAM bearer auth
@@ -56,3 +66,14 @@ Related: [[vStorage project is a paid prerequisite Terraform cannot create]], [[
 
 - [[vStorage project is a paid prerequisite Terraform cannot create]]
 - [[vStorage S3 keys differ from vIAM client credentials used by vDB]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vStorage project is a paid prerequisite Terraform cannot create]]
+- [[VNG Cloud list-projects endpoint is GET vserver-gatewayv1projects (not accounts-api)]]
+- [[vStorage API project creation needs a billing order (payment method or POC wallet)]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+- [[vStorage S3 keys differ from vIAM client credentials used by vDB]]
+
+%% ai-graph-end %%

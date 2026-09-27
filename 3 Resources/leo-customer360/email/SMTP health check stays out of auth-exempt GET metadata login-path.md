@@ -1,10 +1,20 @@
 ---
-title: "SMTP health check stays out of auth-exempt GET /metadata login-path"
+ai_hash: f2e5b5092987475d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-customer360, email, smtp, healthcheck, fastapi, auth]
+tags:
+- leo-customer360
+- email
+- smtp
+- healthcheck
+- fastapi
+- auth
+title: SMTP health check stays out of auth-exempt GET /metadata login-path
+type: lesson
 ---
 
 # SMTP health check stays out of auth-exempt GET /metadata login-path
@@ -22,3 +32,14 @@ So: keep expensive/credential-exercising health checks off any auth-exempt, freq
 ## Related
 
 - [[LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify an authed health endpoint in-container, not by curl, in CI]]
+- [[LEO email_engine dispatch resolves DB config then SMTP env then mock]]
+- [[LEO Customer360 UAT runs email in mock mode (backend.env omits SMTP vars)]]
+- [[LEO deploy per-env git-ignored smtp.env gates SMTP (absent = mock)]]
+- [[leo-customer360 service dependency + health-probe map]]
+
+%% ai-graph-end %%

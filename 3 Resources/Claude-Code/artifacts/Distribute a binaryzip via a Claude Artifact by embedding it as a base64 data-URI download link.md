@@ -1,10 +1,21 @@
 ---
-title: "Distribute a binary/zip via a Claude Artifact by embedding it as a base64 data-URI download link"
+ai_hash: a5dd1a1444935ac8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: howto
+entities: []
+source: session 2026-08-18
 status: seedling
-source: "session 2026-08-18"
-tags: [claude-code, artifacts, html, base64, data-uri, technique]
+tags:
+- claude-code
+- artifacts
+- html
+- base64
+- data-uri
+- technique
+title: Distribute a binary/zip via a Claude Artifact by embedding it as a base64 data-URI
+  download link
+type: howto
 ---
 
 # Distribute a binary/zip via a Claude Artifact by embedding it as a base64 data-URI download link
@@ -24,3 +35,11 @@ Related: [[Luz skills read shared env-selector ~.claudeskills_context (not bundl
 ## Related
 
 - [[Luz skills read shared env-selector ~.claudeskills_context (not bundled when porting a skill)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[claude.ai Artifact iframe sandbox blocks data-URI downloads]]
+- [[Embed generated SVG in an artifact via img data-URI to isolate its styles]]
+
+%% ai-graph-end %%

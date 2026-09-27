@@ -1,10 +1,20 @@
 ---
-title: "Prune disk before any write in an SSH heredoc so it works on a full disk"
+ai_hash: eae490c05e17b226
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-04
-type: howto
+entities: []
+source: session 2026-09-04
 status: seedling
-source: "session 2026-09-04"
-tags: [shell, ssh, heredoc, docker, disk-space, technique]
+tags:
+- shell
+- ssh
+- heredoc
+- docker
+- disk-space
+- technique
+title: Prune disk before any write in an SSH heredoc so it works on a full disk
+type: howto
 ---
 
 # Prune disk before any write in an SSH heredoc so it works on a full disk
@@ -18,3 +28,14 @@ Applies to the leo-customer360 `deploy-*.sh` remote blocks. Related root cause: 
 ## Related
 
 - [[SHA-pinned docker pulls accumulate and fill small deploy VM disks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SHA-pinned docker pulls accumulate and fill small deploy VM disks]]
+- [[SSH keepalive prevents broken-pipe exit 255 on long remote docker pulls]]
+- [[A git merge can silently revert a merged PR when two branches edit the same region]]
+- [[Docker json-file logs are unbounded; cap them with --log-opt on high-volume containers]]
+- [[leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh]]
+
+%% ai-graph-end %%

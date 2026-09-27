@@ -1,10 +1,22 @@
 ---
-title: "Dev luz-webclient can drift off a freshly-shipped ivy image; verify deployed tag vs latest before assuming the ship stuck"
+ai_hash: e579932dc955619f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-04
-type: lesson
+entities: []
+source: session 2026-08-04 — rollout-only of luz-webclient to dev
 status: seedling
-source: "session 2026-08-04 — rollout-only of luz-webclient to dev"
-tags: [luz, ship-ivy, gke, rollout, kubernetes, gotcha, drift]
+tags:
+- luz
+- ship-ivy
+- gke
+- rollout
+- kubernetes
+- gotcha
+- drift
+title: Dev luz-webclient can drift off a freshly-shipped ivy image; verify deployed
+  tag vs latest before assuming the ship stuck
+type: lesson
 ---
 
 # Dev luz-webclient can drift off a freshly-shipped ivy image; verify deployed tag vs latest before assuming the ship stuck
@@ -31,3 +43,14 @@ If deployed != the post-bump tag, re-roll: `NAMESPACE=dev bash ~/.claude/skills/
 
 - [[ship-ivy stage 1 fails on Bitbucket read-replica lag when webclient branch already exists]]
 - [[luz-skill-ship-ivy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ship-ivy stage 1 fails on Bitbucket read-replica lag when webclient branch already exists]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[luz-store on dev is a Deployment, not a StatefulSet — roll out with kubectl set image]]
+- [[luz-docs Cloud Build pushes an image for every branch but only master updates luz_kubernetes]]
+- [[Luz skills read shared env-selector ~.claudeskills_context (not bundled when porting a skill)]]
+
+%% ai-graph-end %%

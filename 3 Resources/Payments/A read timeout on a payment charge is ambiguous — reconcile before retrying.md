@@ -1,10 +1,19 @@
 ---
-title: "A read timeout on a payment charge is ambiguous — reconcile before retrying"
+ai_hash: 066c5a4942900cb0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: PROD investigation 2026-08-03 (item 256195)
 status: seedling
-source: "PROD investigation 2026-08-03 (item 256195)"
-tags: [payments, idempotency, timeout, double-charge, gotcha]
+tags:
+- payments
+- idempotency
+- timeout
+- double-charge
+- gotcha
+title: A read timeout on a payment charge is ambiguous — reconcile before retrying
+type: lesson
 ---
 
 # A read timeout on a payment charge is ambiguous — reconcile before retrying
@@ -23,3 +32,14 @@ Invoice item 256195 (individual, 9.90 CHF): `luz-online-payment` → Payrexx cha
 ## Related
 
 - [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TECHNICAL_ERROR is not retried in-flight but is retry-eligible on invoice-item rerun]]
+- [[Payrexx declines travel in-band on HTTP 2xx in the luz charge flow]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[Fault-tolerance annotations imported but never applied in CreditCardTransactionService]]
+- [[KlaraPay V2 Java classes still call Payrexx API v1.0 on the consumer flow]]
+
+%% ai-graph-end %%

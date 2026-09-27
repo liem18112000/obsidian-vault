@@ -1,10 +1,18 @@
 ---
-title: "Empty array in Postgres WHERE NOT (id = ANY(...)) deletes every row"
+ai_hash: 6f6b14fea292362c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: session 2026-09-08 — docs-vector-search hardening
 status: seedling
-source: "session 2026-09-08 — docs-vector-search hardening"
-tags: [postgresql, sql, gotcha, data-loss]
+tags:
+- postgresql
+- sql
+- gotcha
+- data-loss
+title: Empty array in Postgres WHERE NOT (id = ANY(...)) deletes every row
+type: lesson
 ---
 
 # Empty array in Postgres WHERE NOT (id = ANY(...)) deletes every row
@@ -22,3 +30,11 @@ Generalizes to any `NOT IN (...)` / `NOT = ANY(...)` delete or update: always sp
 ## Related
 
 - [[PostgreSQL]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TRUNCATE CASCADE defeats a table allowlist]]
+- [[jsonstore $in vs $nin ObjectId conversion gap]]
+
+%% ai-graph-end %%

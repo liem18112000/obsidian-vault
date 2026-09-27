@@ -1,11 +1,23 @@
 ---
-title: "RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread"
+ai_hash: 46fd64c7a0efd07b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+aliases:
+- RESTEASY003880
+- Unable to find contextual data of type javax.ws.rs.ext.Providers
 created: 2026-09-09
-aliases: ["RESTEASY003880", "Unable to find contextual data of type javax.ws.rs.ext.Providers"]
-type: concept
+entities: []
+source: luz-docs-batch incident 2026-09; LUZ-132205
 status: seedling
-source: "luz-docs-batch incident 2026-09; LUZ-132205"
-tags: [resteasy, jax-rs, wildfly, multipart, gotcha, kepler-luz]
+tags:
+- resteasy
+- jax-rs
+- wildfly
+- multipart
+- gotcha
+- kepler-luz
+title: RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread
+type: concept
 ---
 
 # RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread
@@ -29,3 +41,14 @@ The fix is a code-structure change, not a config toggle — see [[Read RESTEasy 
 ## Related
 
 - [[Read RESTEasy multipart parts eagerly in-request; never pass InputPart around]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Read RESTEasy multipart parts eagerly in-request; never pass InputPart around]]
+- [[luz-docs RESTEASY003880 UriInfo 500 regression traced to MaterializeRequestFilter firing async CDI events]]
+- [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
+- [[ManagedExecutorService.execute loses CDI request context]]
+- [[RESTEasy multipart repeated field name yields a List, get(0) silently drops extras]]
+
+%% ai-graph-end %%

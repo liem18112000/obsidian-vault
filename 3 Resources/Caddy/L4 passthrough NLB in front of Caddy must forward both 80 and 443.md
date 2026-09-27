@@ -1,10 +1,19 @@
 ---
-title: "L4 passthrough NLB in front of Caddy must forward both :80 and :443"
+ai_hash: 9ddd51396678f482
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 deployments/proxy, 2026-08
 status: seedling
-source: "leo-customer360 deployments/proxy, 2026-08"
-tags: [caddy, load-balancer, tls, lets-encrypt, vngcloud]
+tags:
+- caddy
+- load-balancer
+- tls
+- lets-encrypt
+- vngcloud
+title: L4 passthrough NLB in front of Caddy must forward both :80 and :443
+type: lesson
 ---
 
 # L4 passthrough NLB in front of Caddy must forward both :80 and :443
@@ -27,3 +36,14 @@ Related: [[Caddy handle_path strips the path prefix, handle keeps it]]
 
 - [[Caddy handle_path strips the path prefix]]
 - [[handle keeps it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
+- [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+- [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
+
+%% ai-graph-end %%

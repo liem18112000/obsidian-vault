@@ -1,10 +1,19 @@
 ---
-title: "luz-docs-import bug: rejected files not removed from unprocessedFiles"
+ai_hash: a8873e500ec0c68d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: lesson
+entities: []
+source: session 2026-08-10 (transfer.zip test run)
 status: seedling
-source: "session 2026-08-10 (transfer.zip test run)"
-tags: [luz, luz-docs-import, bug, import, gotcha]
+tags:
+- luz
+- luz-docs-import
+- bug
+- import
+- gotcha
+title: 'luz-docs-import bug: rejected files not removed from unprocessedFiles'
+type: lesson
 ---
 
 # luz-docs-import bug: rejected files not removed from unprocessedFiles
@@ -21,3 +30,14 @@ In luz-docs-import, `ImportJob.unprocessedFiles` must contain only files that re
 
 - [[Luz docs-import zip flow: upload-zip returns job-id]]
 - [[poll GET until DONE]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_import ZIP uploads are not virus-scanned (AntiviusScanningService is never wired in)]]
+- [[Run volume import fixtures last; retry-exhaustion is transient saturation not a defect]]
+- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
+- [[luz-docs-import AV scan covers only the metadata sidecar, never the document binary]]
+- [[DELETE import-jobs id has no live consumer]]
+
+%% ai-graph-end %%

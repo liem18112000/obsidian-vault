@@ -1,10 +1,21 @@
 ---
-title: "Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path"
+ai_hash: 12f0ccafbfb85675
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: gotcha
+entities: []
+source: leo-customer360 proxy Caddyfile, 2026-08
 status: seedling
-source: "leo-customer360 proxy Caddyfile, 2026-08"
-tags: [reverse-proxy, caddy, fastapi, root_path, redirect, gotcha]
+tags:
+- reverse-proxy
+- caddy
+- fastapi
+- root_path
+- redirect
+- gotcha
+title: Stripping a path prefix at the proxy breaks framework auto-redirects; forward
+  it un-stripped when the app has root_path
+type: gotcha
 ---
 
 # Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path
@@ -21,3 +32,14 @@ Related: [[Caddy handle_path strips the path prefix, handle keeps it]]
 
 - [[Caddy handle_path strips the path prefix]]
 - [[handle keeps it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
+- [[Register one FastAPI handler under multiple path prefixes with add_api_route]]
+- [[Serve a SPA under a sub-path via the app base-path option, not proxy strip]]
+- [[Caddy path matcher p does not match the bare p; use a named matcher for both]]
+- [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "CodeQL PR alert won't clear if the PR base isn't in pull_request.branches"
+ai_hash: e77b5a9ee4d8981c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: gotcha
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [cicd, github-actions, codeql, code-scanning, pull-request, gotcha]
+tags:
+- cicd
+- github-actions
+- codeql
+- code-scanning
+- pull-request
+- gotcha
+title: CodeQL PR alert won't clear if the PR base isn't in pull_request.branches
+type: gotcha
 ---
 
 # CodeQL PR alert won't clear if the PR base isn't in pull_request.branches
@@ -24,3 +34,14 @@ Fixes: add the base branch to `on.pull_request.branches` (also closes a real gap
 ## Related
 
 - [[LEO CI pushes images only on main/tags; feature branches build-only]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ReviewPR scope diff the branch's real base, not main, when base is ahead of main]]
+- [[Same-repo branch push fires both push and pull_request events (duplicate CI runs)]]
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+
+%% ai-graph-end %%

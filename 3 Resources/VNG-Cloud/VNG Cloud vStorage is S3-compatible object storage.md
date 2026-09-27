@@ -1,10 +1,20 @@
 ---
-title: "VNG Cloud vStorage is S3-compatible object storage"
+ai_hash: 5be9379961a5874f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: howto
+entities: []
+source: LEOCDP web-tracking plan, session 2026-08-25
 status: seedling
-source: "LEOCDP web-tracking plan, session 2026-08-25"
-tags: [vng-cloud, vstorage, s3, terraform, object-storage, gotcha]
+tags:
+- vng-cloud
+- vstorage
+- s3
+- terraform
+- object-storage
+- gotcha
+title: VNG Cloud vStorage is S3-compatible object storage
+type: howto
 ---
 
 # VNG Cloud vStorage is S3-compatible object storage
@@ -26,3 +36,14 @@ Related: [[Lightweight-but-scalable web event collector pattern]] uses vStorage 
 ## Related
 
 - [[Lightweight-but-scalable web event collector pattern]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
+- [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
+- [[VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinIO swap)]]
+- [[vStorage project is a paid prerequisite Terraform cannot create]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Finding intentional k8s config PRs in luz_kubernetes: filter out image-hash + merge drift"
+ai_hash: cc8f32c9706935f2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18
 status: seedling
-source: "session 2026-08-18"
-tags: [luz-kubernetes, bitbucket, git, kubernetes, gotcha, monorepo]
+tags:
+- luz-kubernetes
+- bitbucket
+- git
+- kubernetes
+- gotcha
+- monorepo
+title: 'Finding intentional k8s config PRs in luz_kubernetes: filter out image-hash
+  + merge drift'
+type: lesson
 ---
 
 # Finding intentional k8s config PRs in luz_kubernetes: filter out image-hash + merge drift
@@ -21,3 +32,14 @@ Caveat: this only recovers **merged** PRs (via the `Merged in <branch> (pull req
 ## Related
 
 - [[Bitbucket cached git token 401s on REST API; PR listing needs app password]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+- [[Bitbucket cached git token 401s on REST API; PR listing needs app password]]
+- [[ReviewPR scope diff the branch's real base, not main, when base is ahead of main]]
+- [[A git merge can silently revert a merged PR when two branches edit the same region]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Verify a Quartz afterBody widget renders live before blaming CSS"
+ai_hash: e77d32acbc4674d4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: howto
+entities: []
+source: session 2026-09-07 chatbot-gone investigation
 status: seedling
-source: "session 2026-09-07 chatbot-gone investigation"
-tags: [leo-cdp, docs-site, quartz, playwright, debugging, css]
+tags:
+- leo-cdp
+- docs-site
+- quartz
+- playwright
+- debugging
+- css
+title: Verify a Quartz afterBody widget renders live before blaming CSS
+type: howto
 ---
 
 # Verify a Quartz afterBody widget renders live before blaming CSS
@@ -24,3 +34,11 @@ Related: [[Docs Site deploy-docs.yml detect job skips build unless docs paths ch
 ## Related
 
 - [[Docs Site deploy-docs.yml detect job skips build unless docs paths change]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Injecting a custom Quartz component when the engine is cloned fresh in CI]]
+- [[Docs Site deploy-docs.yml detect job skips build unless docs paths change]]
+
+%% ai-graph-end %%

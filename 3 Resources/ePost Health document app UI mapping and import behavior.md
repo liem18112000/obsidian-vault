@@ -1,6 +1,16 @@
 ---
-tags: [klara, epost, health, ui, luz-docs-import, spec]
+ai_hash: 36e4c1f5c01afdb5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
+entities: []
+tags:
+- klara
+- epost
+- health
+- ui
+- luz-docs-import
+- spec
 ---
 
 # ePost Health document — app UI mapping & import behavior
@@ -17,3 +27,14 @@ Per-file **import behavior** (import spec §6 — one faulty doc never fails the
 - Limits: ZIP < 2 GB · metadata ≤ 100 KB/file · password-protected ZIPs rejected · UTF-8 names.
 
 Related: [[ePost Health documents ZIP import business context]] · [[luz-docs-import ZIP import call chain]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
+- [[HEALTH document type carries verbatim SNOMED healthData]]
+- [[ePost Health documents ZIP import business context]]
+- [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
+- [[LUZ-158230 import stores healthData as-is no validation, no SNOMED label resolution, schemaless Mongo]]
+
+%% ai-graph-end %%

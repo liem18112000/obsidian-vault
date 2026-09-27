@@ -1,10 +1,21 @@
 ---
-title: "ADK has no native MCP server; expose an agent to Claude Code via an A2A-to-MCP bridge"
+ai_hash: 938aa8bbc7765963
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: session 2026-09-08 test-agent-v2 deploy pass
 status: seedling
-source: "session 2026-09-08 test-agent-v2 deploy pass"
-tags: [google-adk, adk, mcp, claude-code, bridge, test-agent-v2]
+tags:
+- google-adk
+- adk
+- mcp
+- claude-code
+- bridge
+- test-agent-v2
+title: ADK has no native MCP server; expose an agent to Claude Code via an A2A-to-MCP
+  bridge
+type: lesson
 ---
 
 # ADK has no native MCP server; expose an agent to Claude Code via an A2A-to-MCP bridge
@@ -18,3 +29,14 @@ Registering the deployed bridge with Claude Code: `claude mcp add --transport ht
 ## Related
 
 - [[ADK InvocationContext.user_content gives the current turn's input]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
+- [[Claude Code speaks MCP, not A2A — an A2A agent must be bridged to be used]]
+- [[A remote A2A agent needs its own connectors because MCP is client-side]]
+- [[Registering a bearer-gated HTTP MCP server needs claude mcp add --header]]
+- [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]]
+
+%% ai-graph-end %%

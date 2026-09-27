@@ -1,10 +1,18 @@
 ---
-title: "Postgres docker-entrypoint-initdb.d runs only once on an empty volume"
+ai_hash: fac3ccf87efdbceb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: lesson
+entities: []
+source: session 2026-08-24 migration tooling research
 status: seedling
-source: "session 2026-08-24 migration tooling research"
-tags: [postgres, docker, gotcha, migrations]
+tags:
+- postgres
+- docker
+- gotcha
+- migrations
+title: Postgres docker-entrypoint-initdb.d runs only once on an empty volume
+type: lesson
 ---
 
 # Postgres docker-entrypoint-initdb.d runs only once on an empty volume
@@ -21,3 +29,14 @@ Ref: Docker Hub `postgres` → 'Initialization scripts'.
 
 - [[leo-customer360 uses dbmate for Postgres migrations]]
 - [[not Alembic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[leo-customer360 applies DB schema via two paths that must stay in sync]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Read-only materialize-index readiness check via hello + listIndexes"
+ai_hash: a00b81ea0afd1ac9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: howto
+entities: []
+source: session 2026-09-09
 status: seedling
-source: "session 2026-09-09"
-tags: [earchive, materialize, mongodb, kubectl, gotcha, index]
+tags:
+- earchive
+- materialize
+- mongodb
+- kubectl
+- gotcha
+- index
+title: Read-only materialize-index readiness check via hello + listIndexes
+type: howto
 ---
 
 # Read-only materialize-index readiness check via hello + listIndexes
@@ -23,3 +33,14 @@ Reusable across [[performance-tenant-clusters]] and [[dev-tenant-clusters]] tena
 
 - [[performance-tenant-clusters]]
 - [[dev-tenant-clusters]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Perf tenant 45b05710 materialize-index status (2026-09-09) data materialised, read indexes missing]]
+- [[earchive-seed-stale-27017-portforward-gotcha]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+- [[NotWritablePrimary via port-forward means forward targets a secondary]]
+- [[Dev mongod pods have legacy mongo shell only, no mongosh]]
+
+%% ai-graph-end %%

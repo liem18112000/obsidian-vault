@@ -1,6 +1,16 @@
 ---
-tags: [klara, epost, luz-docs-import, health, business, spec]
+ai_hash: 2007d37bcb967229
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
+entities: []
+tags:
+- klara
+- epost
+- luz-docs-import
+- health
+- business
+- spec
 ---
 
 # ePost Health documents — ZIP import business context
@@ -21,3 +31,14 @@ Ties to other work:
 - Explains why the **first antivirus scan is on the metadata file** (not the ZIP) — see [[luz-docs-import ZIP import call chain]].
 
 Sources: `…/luz-docs-import/business_resource/` — "ePost — ZIP document import specification" + "ePost — Health documents development handoff". Jira LUZ-158243 / LUZ-158230 (axonivy site) cover the feature but weren't accessible via the connected Atlassian MCP (only *leocdp* granted).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
+- [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
+- [[ePost eArchive ZIP import transfer.zip shape and luz_docs_import]]
+- [[HEALTH document type carries verbatim SNOMED healthData]]
+- [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "load_dotenv() in package __init__ leaks .env into pytest, breaking offline tests"
+ai_hash: 8a1f36a287e804dc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: test-agent-v2 eval suite hang, session 2026-09-08
 status: seedling
-source: "test-agent-v2 eval suite hang, session 2026-09-08"
-tags: [pytest, dotenv, fixtures, offline-tests, gotcha, faulthandler]
+tags:
+- pytest
+- dotenv
+- fixtures
+- offline-tests
+- gotcha
+- faulthandler
+title: load_dotenv() in package __init__ leaks .env into pytest, breaking offline
+  tests
+type: lesson
 ---
 
 # load_dotenv() in package __init__ leaks .env into pytest, breaking offline tests
@@ -20,3 +31,14 @@ Rule of thumb: `load_dotenv()` belongs behind a runtime entrypoint, not at impor
 ## Related
 
 - [[Dead-code refcount scans flag intentional seams as unused; vet before deleting]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Module-level load_dotenv lets unit tests hit real cloud credentials]]
+- [[Dataclass field defaults reading env vars are evaluated at import time, not instantiation]]
+- [[Path(__file__).parent breaks when a module is moved to a deeper directory]]
+- [[pytest imports all test modules before applying -m deselection]]
+- [[Test module-load env decisions with vi.resetModules plus dynamic import per case]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets"
+ai_hash: b0ec589fa6d4b3cb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-06
-type: lesson
+entities: []
+source: session 2026-09-06 docs-chatbot plan
 status: seedling
-source: "session 2026-09-06 docs-chatbot plan"
-tags: [web, cors, reverse-proxy, architecture, security]
+tags:
+- web
+- cors
+- reverse-proxy
+- architecture
+- security
+title: Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets
+type: lesson
 ---
 
 # Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets
@@ -21,3 +30,14 @@ Surfaced while planning a docs RAG chatbot embedded in both a static Quartz docs
 ## Related
 
 - [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]
+- [[Register one FastAPI handler under multiple path prefixes with add_api_route]]
+- [[Injecting a custom Quartz component when the engine is cloned fresh in CI]]
+- [[Two-phase RAG chatbot UX fast retrieval first, slow generation second]]
+- [[Serve a SPA under a sub-path via the app base-path option, not proxy strip]]
+
+%% ai-graph-end %%

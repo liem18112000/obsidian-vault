@@ -1,10 +1,22 @@
 ---
-title: "Slow local implement_plan needs TWO timeouts raised: client MCP idle + gateway A2A_CLIENT_TIMEOUT"
+ai_hash: 6efb0f72d0c1fd65
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: lesson
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [mcp, timeout, a2a, gateway, httpx, testing-agent, gotcha]
+tags:
+- mcp
+- timeout
+- a2a
+- gateway
+- httpx
+- testing-agent
+- gotcha
+title: 'Slow local implement_plan needs TWO timeouts raised: client MCP idle + gateway
+  A2A_CLIENT_TIMEOUT'
+type: lesson
 ---
 
 # Slow local implement_plan needs TWO timeouts raised: client MCP idle + gateway A2A_CLIENT_TIMEOUT
@@ -14,3 +26,14 @@ GOTCHA — a slow local implement_plan must clear TWO independent timeout layers
 ## Related
 
 - [[implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server timeout]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server timeout]]
+- [[Why local test-agent is slow claude -p ships a 17.5K agent prompt on Opus, x many serial calls]]
+- [[claude-proxy login expires mid-session - implement silently degrades to heuristic stubs (score 0.00)]]
+- [[Long agentic API routes need the inner run timeout below the route maxDuration]]
+- [[Deployed TPD implement_plan trips Cloud Run liveness (event-loop blocked by Vertex gen)]]
+
+%% ai-graph-end %%

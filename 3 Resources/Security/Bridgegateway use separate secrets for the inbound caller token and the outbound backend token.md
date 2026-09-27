@@ -1,10 +1,20 @@
 ---
-title: "Bridge/gateway: use separate secrets for the inbound caller token and the outbound backend token"
+ai_hash: 5c2d6f0d6562f282
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [security, auth, bridge, secrets, design]
+tags:
+- security
+- auth
+- bridge
+- secrets
+- design
+title: 'Bridge/gateway: use separate secrets for the inbound caller token and the
+  outbound backend token'
+type: lesson
 ---
 
 # Bridge/gateway: use separate secrets for the inbound caller token and the outbound backend token
@@ -21,3 +31,14 @@ See [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]], [[C
 
 - [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
 - [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+- [[Registering a bearer-gated HTTP MCP server needs claude mcp add --header]]
+- [[A remote A2A agent needs its own connectors because MCP is client-side]]
+- [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
+- [[ALLOW_INSECURE=1 + blank token opens the fail-closed bearer gate]]
+
+%% ai-graph-end %%

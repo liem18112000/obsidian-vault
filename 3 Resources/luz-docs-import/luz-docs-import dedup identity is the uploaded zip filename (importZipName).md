@@ -1,10 +1,19 @@
 ---
-title: "luz-docs-import dedup identity is the uploaded zip filename (importZipName)"
+ai_hash: ad5f2a4aab8f510f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: lesson
+entities: []
+source: session 2026-08-11, gap3_test.sh
 status: seedling
-source: "session 2026-08-11, gap3_test.sh"
-tags: [luz-docs-import, dedup, api, testing, gotcha]
+tags:
+- luz-docs-import
+- dedup
+- api
+- testing
+- gotcha
+title: luz-docs-import dedup identity is the uploaded zip filename (importZipName)
+type: lesson
 ---
 
 # luz-docs-import dedup identity is the uploaded zip filename (importZipName)
@@ -21,3 +30,14 @@ On `POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip`, the server sets 
 
 - [[luz-docs-import ingest ZIP format (folders + per-file .metadata.json sidecar)]]
 - [[Building a ZIP fixture to test NFC/NFD + UTF-8-flag entry-name handling]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import importZipName comes from the uploaded multipart filename, not the on-disk zip]]
+- [[Building a ZIP fixture to test NFCNFD + UTF-8-flag entry-name handling]]
+- [[luz_docs_import ZIP import is path-based idempotent per importZipName]]
+- [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second]]
+- [[luz-docs-import Gap-3 always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort]]
+
+%% ai-graph-end %%

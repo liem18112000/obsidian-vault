@@ -1,10 +1,20 @@
 ---
-title: "Build a RAG index as an explicit deploy step, run a serve-only container"
+ai_hash: 5d2c0e1a16d3ee2a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: technique
+entities: []
+source: session 2026-09-05 (AI Chat API vServer deploy)
 status: seedling
-source: "session 2026-09-05 (AI Chat API vServer deploy)"
-tags: [rag, docker-compose, deployment, vserver, healthcheck, ops]
+tags:
+- rag
+- docker-compose
+- deployment
+- vserver
+- healthcheck
+- ops
+title: Build a RAG index as an explicit deploy step, run a serve-only container
+type: technique
 ---
 
 # Build a RAG index as an explicit deploy step, run a serve-only container
@@ -29,3 +39,14 @@ Compute (LLM + embeddings) runs on the provider (OpenAI/etc.), so the container 
 `deploy.resources.limits.{cpus,memory}` IS honored by `docker compose up` (v2) — it maps to `--cpus`/`--memory`. `reservations.cpus` is swarm-only (drop it to avoid warnings). Validate with `docker compose config`.
 
 Related: [[Anthropic has no first-party embeddings endpoint]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Local RAG stack for a 1 vCPU 2 GB box e5 + bge-reranker + Qwen 0.5B]]
+- [[Make a RAG pipeline testable offline with a deterministic hash embedder]]
+- [[docs-vector-search OOMs on ask on a 1vCPU2GB box (Qwen KV cache over RAM+swap)]]
+- [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]
+- [[Two-phase RAG chatbot UX fast retrieval first, slow generation second]]
+
+%% ai-graph-end %%

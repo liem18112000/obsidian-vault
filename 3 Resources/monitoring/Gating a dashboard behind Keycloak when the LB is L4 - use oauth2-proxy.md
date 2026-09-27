@@ -1,10 +1,22 @@
 ---
-title: "Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy"
+ai_hash: 3c7259d18756be2a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: howto
+entities: []
+source: session 2026-08-19
 status: seedling
-source: "session 2026-08-19"
-tags: [oauth2-proxy, keycloak, oidc, load-balancer, portainer, netdata, security, sso]
+tags:
+- oauth2-proxy
+- keycloak
+- oidc
+- load-balancer
+- portainer
+- netdata
+- security
+- sso
+title: Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy
+type: howto
 ---
 
 # Gating a dashboard behind Keycloak when the LB is L4: use oauth2-proxy
@@ -40,3 +52,14 @@ Key wiring details learned:
 
 Related: [[Portainer vs Netdata - both are web UIs, ops vs metrics]] ·
 [[Customer360 UAT api box is a shared 1vCPU-2GB vServer running 5 containers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[Portainer CSRF origin-invalid behind a reverse proxy - expose it directly]]
+
+%% ai-graph-end %%

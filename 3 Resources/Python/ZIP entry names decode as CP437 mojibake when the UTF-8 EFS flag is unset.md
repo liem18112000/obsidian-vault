@@ -1,10 +1,19 @@
 ---
-title: "ZIP entry names decode as CP437 mojibake when the UTF-8 EFS flag is unset"
+ai_hash: 83a9d2a46aa81b50
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: lesson
+entities: []
+source: session 2026-08-11 luz-docs-import Gap-3 testing
 status: seedling
-source: "session 2026-08-11 luz-docs-import Gap-3 testing"
-tags: [python, zipfile, unicode, gotcha, luz-docs-import]
+tags:
+- python
+- zipfile
+- unicode
+- gotcha
+- luz-docs-import
+title: ZIP entry names decode as CP437 mojibake when the UTF-8 EFS flag is unset
+type: lesson
 ---
 
 # ZIP entry names decode as CP437 mojibake when the UTF-8 EFS flag is unset
@@ -27,3 +36,14 @@ Found while writing `verify_gap3.py` for the luz-docs-import Gap-3 test — the 
 
 - [[Windows Python stdout is cp1252 and crashes on emoji; reconfigure to UTF-8]]
 - [[luz-docs-import ZIP import timing: fresh 100-doc ~40s vs deduped sub-second]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Building a ZIP fixture to test NFCNFD + UTF-8-flag entry-name handling]]
+- [[luz-docs-import Gap-3 always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort]]
+- [[Windows Python stdout is cp1252 and crashes on emoji; reconfigure to UTF-8]]
+- [[luz-docs-import dedup identity is the uploaded zip filename (importZipName)]]
+- [[zip4j 2.8.0 ZipException is-a IOException, and extractFile keeps Zip-Slip protection (per-entry extraction)]]
+
+%% ai-graph-end %%

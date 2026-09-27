@@ -1,8 +1,19 @@
 ---
-title: "Adding a step to always-on CD: provision ALL its required env, and make it skip (not die) on missing secrets"
+ai_hash: d817c45d6d5e9783
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
+entities: []
+tags:
+- cd
+- github-actions
+- secrets
+- resilience
+- keycloak
+- leo-customer360
+title: 'Adding a step to always-on CD: provision ALL its required env, and make it
+  skip (not die) on missing secrets'
 type: lesson
-tags: [cd, github-actions, secrets, resilience, keycloak, leo-customer360]
 ---
 
 # Adding a step to always-on CD: provision ALL its required env, and make it skip (not die) on missing secrets
@@ -18,3 +29,14 @@ Two coupled failures when I added the Keycloak `sso-realm` step (bootstrap-realm
 **General rule:** changing a pipeline's trigger frequency (opt-in -> every-merge) retroactively raises the blast radius of every fragile step. Audit steps for hard-fail-on-missing-config before making the trigger fire more often.
 
 Source: leo-customer360 cd.yml + deploy-all.sh sso-realm (failing run 32645483621), 2026-08-23.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list]]
+- [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
+- [[CD secrets must be wired into cd.yml deploy step env, not just added to GitHub]]
+- [[leo-customer360 deploy-sso.sh only restarts Keycloak; the realmrole bootstrap is the separate sso-realm step]]
+- [[A git-ignored secret file that a deploy script silently degrades on is a CI foot-gun]]
+
+%% ai-graph-end %%

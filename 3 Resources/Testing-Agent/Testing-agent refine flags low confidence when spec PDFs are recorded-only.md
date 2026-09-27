@@ -1,10 +1,18 @@
 ---
-title: "Testing-agent refine flags low confidence when spec PDFs are recorded-only"
+ai_hash: 92b2665e59e3aacd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: testing-agent run-e778a050, 2026-09-16
 status: seedling
-source: "testing-agent run-e778a050, 2026-09-16"
-tags: [testing-agent, refine, gotcha, knowledge-gathering]
+tags:
+- testing-agent
+- refine
+- gotcha
+- knowledge-gathering
+title: Testing-agent refine flags low confidence when spec PDFs are recorded-only
+type: lesson
 ---
 
 # Testing-agent refine flags low confidence when spec PDFs are recorded-only
@@ -16,3 +24,14 @@ Signal to watch: the assessment says the field table is "truncated mid-row" and 
 Implication for the client: do not trust modeling/validation/atomicity recommendations at face value in that state — bring them to the human, and/or ingest the real PDF bodies (and linked sub-tickets / sample PRs) before finalizing. Concrete case: LUZ-158230, spec PDFs attachment 316500/316499/316992/317020 stayed recorded-only, so both the business (0.32) and technical (0.30) rounds self-flagged low confidence.
 
 Related: [[LUZ-158230 ePost ZIP import - test scope decisions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing-agent refine loses confidence when source-of-truth PDF attachments are undistilled gaps]]
+- [[Deployed Testing-Agent refine recommendations are speculative until validated]]
+- [[Testing-Agent refine confidence is capped by un-ingested spec PDFs]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+- [[Deployed Testing-Agent refine loop freezes after completion and drops corrections]]
+
+%% ai-graph-end %%

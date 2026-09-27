@@ -1,10 +1,19 @@
 ---
-title: "luz_docs_import health ZIP import uses a two-layer failure model"
+ai_hash: 9a35523a41f2ba6a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-18
-type: lesson
+entities: []
+source: Testing-Agent run-8eafe7ea refine, 2026-09-18
 status: seedling
-source: "Testing-Agent run-8eafe7ea refine, 2026-09-18"
-tags: [luz-docs-import, LUZ-158230, ehealth, import, gotcha]
+tags:
+- luz-docs-import
+- LUZ-158230
+- ehealth
+- import
+- gotcha
+title: luz_docs_import health ZIP import uses a two-layer failure model
+type: lesson
 ---
 
 # luz_docs_import health ZIP import uses a two-layer failure model
@@ -19,3 +28,14 @@ Net: best-effort per-document, **never** atomic whole-ZIP. Absence of metadata â
 ## Related
 [[senderTenantId is out of scope in luz_docs_import health ZIP import]]
 [[HEALTH documentType is generic passthrough; SNOMED metadata persisted verbatim]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HEALTH documentType is generic passthrough; SNOMED metadata persisted verbatim]]
+- [[luz_docs_import scope no sender auth, individual tenants, partial-import policy]]
+- [[luz_docs_import adds document metadata only in DocsImportAsyncService.createDocument()]]
+- [[senderTenantId is out of scope in luz_docs_import health ZIP import]]
+- [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
+
+%% ai-graph-end %%

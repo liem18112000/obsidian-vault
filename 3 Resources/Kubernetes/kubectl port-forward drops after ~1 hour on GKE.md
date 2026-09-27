@@ -1,10 +1,20 @@
 ---
-title: "kubectl port-forward drops after ~1 hour on GKE"
+ai_hash: 1ba4a77e66ae8cfb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: session 2026-09-03 (perf-cluster 2.2M seed)
 status: seedling
-source: "session 2026-09-03 (perf-cluster 2.2M seed)"
-tags: [kubernetes, kubectl, port-forward, gke, gotcha, ops]
+tags:
+- kubernetes
+- kubectl
+- port-forward
+- gke
+- gotcha
+- ops
+title: kubectl port-forward drops after ~1 hour on GKE
+type: lesson
 ---
 
 # kubectl port-forward drops after ~1 hour on GKE
@@ -20,3 +30,14 @@ A bare `kubectl port-forward` used by a long-running job (data seed, migration, 
 ## Related
 
 - [[Resume a large append seed by recounting to a target]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Long real-API seed aborts on socket hang up unless port-forward reconnects]]
+- [[Self-restarting kubectl port-forward keeps long-running scripts alive through drops]]
+- [[Resume a large append seed by recounting to a target]]
+- [[GKE API TCP timeout with working internet = IP dropped from master authorized networks]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+
+%% ai-graph-end %%

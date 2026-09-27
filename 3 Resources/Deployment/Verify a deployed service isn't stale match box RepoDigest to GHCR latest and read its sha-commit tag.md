@@ -1,10 +1,21 @@
 ---
-title: "Verify a deployed service isn't stale: match box RepoDigest to GHCR :latest and read its sha-<commit> tag"
+ai_hash: be3a32178e8c2c27
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: leo-customer360 deployments, session 2026-08-23
 status: seedling
-source: "leo-customer360 deployments, session 2026-08-23"
-tags: [cd, docker, ghcr, image-tags, verification, leo-customer360]
+tags:
+- cd
+- docker
+- ghcr
+- image-tags
+- verification
+- leo-customer360
+title: 'Verify a deployed service isn''t stale: match box RepoDigest to GHCR :latest
+  and read its sha-<commit> tag'
+type: lesson
 ---
 
 # Verify a deployed service isn't stale: match box RepoDigest to GHCR :latest and read its sha-<commit> tag
@@ -33,3 +44,14 @@ Source: leo-customer360 deployments (backend-system image audit), 2026-08.
 ## Related
 
 - [[docker restart does not re-read --env-file; recreate the container to apply env changes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pin deploys by @sha256 of the TAGGED manifest, not the newest push (buildx multi-arch creates untagged sibling manifests)]]
+- [[Get the newest GHCR image tag or digest via gh api packages container versions]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+- [[CD deploy can transiently 404 on a just-built GHCR digest - re-run the failed job]]
+- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
+
+%% ai-graph-end %%

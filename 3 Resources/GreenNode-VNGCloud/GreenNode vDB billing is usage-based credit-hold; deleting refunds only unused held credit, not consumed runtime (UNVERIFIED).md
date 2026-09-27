@@ -1,10 +1,20 @@
 ---
-title: "GreenNode vDB billing is usage-based credit-hold; deleting refunds only unused held credit, not consumed runtime (UNVERIFIED)"
+ai_hash: ef656712633bffb8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: observation
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, vdb, billing, unverified]
+tags:
+- greennode
+- vngcloud
+- vdb
+- billing
+- unverified
+title: GreenNode vDB billing is usage-based credit-hold; deleting refunds only unused
+  held credit, not consumed runtime (UNVERIFIED)
+type: observation
 ---
 
 # GreenNode vDB billing is usage-based credit-hold; deleting refunds only unused held credit, not consumed runtime (UNVERIFIED)
@@ -28,3 +38,14 @@ Context: asked while running customer360-pg-uat (8vCPU/16GB, 250GB) in leo-custo
 ## Related
 
 - [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deleting a prepaid cloud resource does not auto-refund; failed-provision charges need a manual support refund]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[VNG Cloud publishes no static price tables — calculator or quote only]]
+- [[GreenNode cloud runs on VNG Cloud infrastructure]]
+- [[GreenNode is VNG Cloud's AI cloud exposing vDB and vStorage managed services]]
+
+%% ai-graph-end %%

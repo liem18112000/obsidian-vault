@@ -1,10 +1,21 @@
 ---
-title: "implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server timeout"
+ai_hash: 75ac41e00ed44a19
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: lesson
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [mcp, timeout, claude-proxy, implement, testing-agent, gotcha]
+tags:
+- mcp
+- timeout
+- claude-proxy
+- implement
+- testing-agent
+- gotcha
+title: implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server
+  timeout
+type: lesson
 ---
 
 # implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server timeout
@@ -14,3 +25,14 @@ GOTCHA (local testing-agent pipeline): implement_plan (the P4 assured scenario-g
 ## Related
 
 - [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slow local implement_plan needs TWO timeouts raised client MCP idle + gateway A2A_CLIENT_TIMEOUT]]
+- [[Why local test-agent is slow claude -p ships a 17.5K agent prompt on Opus, x many serial calls]]
+- [[claude-proxy login expires mid-session - implement silently degrades to heuristic stubs (score 0.00)]]
+- [[Testing-Agent implement_plan assured loop times out at 900s MCP ceiling]]
+- [[Deployed implement_plan P4 assured loop times out at 900s for broad features]]
+
+%% ai-graph-end %%

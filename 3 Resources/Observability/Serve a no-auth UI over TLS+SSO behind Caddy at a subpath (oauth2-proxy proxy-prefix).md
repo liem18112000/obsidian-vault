@@ -1,10 +1,22 @@
 ---
-title: "Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)"
+ai_hash: 13365568918e204c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-21
-type: howto
+entities: []
+source: session 2026-08-21
 status: seedling
-source: "session 2026-08-21"
-tags: [caddy, oauth2-proxy, keycloak, sso, tls, hsts, jaeger, reverse-proxy]
+tags:
+- caddy
+- oauth2-proxy
+- keycloak
+- sso
+- tls
+- hsts
+- jaeger
+- reverse-proxy
+title: Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)
+type: howto
 ---
 
 # Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)
@@ -32,3 +44,14 @@ Then register the https callback on the Keycloak client and drop the dedicated L
 ## Related
 
 - [[Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
+- [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
+- [[Serve a SPA under a sub-path via the app base-path option, not proxy strip]]
+
+%% ai-graph-end %%

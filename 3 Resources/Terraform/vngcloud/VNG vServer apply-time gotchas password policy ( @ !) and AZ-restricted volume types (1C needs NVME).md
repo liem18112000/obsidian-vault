@@ -1,10 +1,21 @@
 ---
-title: "VNG vServer apply-time gotchas: password policy (* @ !) and AZ-restricted volume types (1C needs NVME)"
+ai_hash: 5bbc6d9375621202
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 leo-customer360 deployments/server
 status: seedling
-source: "session 2026-08-18 leo-customer360 deployments/server"
-tags: [vngcloud, vserver, password, volume-type, availability-zone, gotcha]
+tags:
+- vngcloud
+- vserver
+- password
+- volume-type
+- availability-zone
+- gotcha
+title: 'VNG vServer apply-time gotchas: password policy (* @ !) and AZ-restricted
+  volume types (1C needs NVME)'
+type: lesson
 ---
 
 # VNG vServer apply-time gotchas: password policy (* @ !) and AZ-restricted volume types (1C needs NVME)
@@ -27,3 +38,14 @@ VNG forbids user_data together with user_name/user_password/ssh_key. To get BOTH
 ## Related
 
 - [[VNG vServer user_data is mutually exclusive with username/password/ssh_key]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs]]
+- [[VNG vServer user_data is mutually exclusive with usernamepasswordssh_key]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[VNG vServer OS images are not associated with the s2-general flavor zone (image data-source trap)]]
+- [[GreenNode vDB create constraints instance name 6-20 chars, password start-with-letter, package family s2-general]]
+
+%% ai-graph-end %%

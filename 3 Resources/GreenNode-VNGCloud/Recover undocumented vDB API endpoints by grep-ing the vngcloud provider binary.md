@@ -1,10 +1,20 @@
 ---
-title: "Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary"
+ai_hash: 3d851024323498ae
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: howto
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, vdb, api, debugging, terraform]
+tags:
+- greennode
+- vngcloud
+- vdb
+- api
+- debugging
+- terraform
+title: Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary
+type: howto
 ---
 
 # Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary
@@ -31,3 +41,14 @@ grep -aoE '/(vdb-[a-z]+)/v[0-9][A-Za-z0-9/_{}.-]*' "$EXE" | sort -u
 - [[GreenNode vDB create constraints: instance name 6-20 chars]]
 - [[password start-with-letter]]
 - [[package family s2-general]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+- [[10000-IOPS standalone vDB PostgreSQL needs a vServer-enabled zone that offers Gen2-NVMe2-IOPS10000 (HCM03-1A)]]
+- [[VNG Cloud vServer discovering account catalog names via the vserver-gateway API]]
+- [[GreenNode vDB package family + IOPS tier are per-zone (HCM03-1A vs 1C)]]
+
+%% ai-graph-end %%

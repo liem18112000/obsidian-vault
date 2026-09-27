@@ -1,10 +1,21 @@
 ---
-title: "nginx-ingress proxy-request-buffering stages the whole request body before forwarding to the pod"
+ai_hash: 9cf0bf1e19029724
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-12
-type: gotcha
+entities: []
+source: luz_docs_import large-ZIP latency investigation 2026-08-12
 status: seedling
-source: "luz_docs_import large-ZIP latency investigation 2026-08-12"
-tags: [nginx-ingress, kubernetes, upload, buffering, performance, gotcha]
+tags:
+- nginx-ingress
+- kubernetes
+- upload
+- buffering
+- performance
+- gotcha
+title: nginx-ingress proxy-request-buffering stages the whole request body before
+  forwarding to the pod
+type: gotcha
 ---
 
 # nginx-ingress proxy-request-buffering stages the whole request body before forwarding to the pod
@@ -21,3 +32,14 @@ Related: [[Decouple upload API latency from file size with pre-signed direct-to-
 
 - [[Decouple upload API latency from file size with pre-signed direct-to-object-storage uploads]]
 - [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
+- [[Decouple upload API latency from file size with pre-signed direct-to-object-storage uploads]]
+- [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it]]
+- [[GKE pd-standard disk throughput is low and scales with provisioned volume size]]
+- [[luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load]]
+
+%% ai-graph-end %%

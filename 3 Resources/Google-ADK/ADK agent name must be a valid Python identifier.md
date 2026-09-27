@@ -1,10 +1,18 @@
 ---
-title: "ADK agent name must be a valid Python identifier"
+ai_hash: 10f136b958c02c1f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: A1 build 2026-09-08, google-adk 2.8.0
 status: seedling
-source: "A1 build 2026-09-08, google-adk 2.8.0"
-tags: [google-adk, gotcha, pydantic, agents]
+tags:
+- google-adk
+- gotcha
+- pydantic
+- agents
+title: ADK agent name must be a valid Python identifier
+type: lesson
 ---
 
 # ADK agent name must be a valid Python identifier
@@ -21,3 +29,14 @@ Context: building a deterministic text-routing root as a custom `BaseAgent` that
 
 - [[Persist ADK session state from a custom agent via Event state_delta]]
 - [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard]]
+- [[ADK sample canonical layout root_agent in agent.py, sub_agents subpackages, workflow agents]]
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
+- [[ADK LlmAgent with output_schema cannot use tools or transfer to other agents]]
+- [[adk webrun discovers agents by importing package.agent.root_agent via AgentLoader]]
+
+%% ai-graph-end %%

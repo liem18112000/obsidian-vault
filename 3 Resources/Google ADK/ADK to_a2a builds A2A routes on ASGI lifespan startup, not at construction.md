@@ -1,10 +1,20 @@
 ---
-title: "ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction"
+ai_hash: c2d66ddc3bd044bf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: test-agent-v2 gateway sweep, session 2026-09-08
 status: seedling
-source: "test-agent-v2 gateway sweep, session 2026-09-08"
-tags: [google-adk, a2a, starlette, httpx, testing, gotcha]
+tags:
+- google-adk
+- a2a
+- starlette
+- httpx
+- testing
+- gotcha
+title: ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction
+type: lesson
 ---
 
 # ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction
@@ -27,3 +37,14 @@ Routes persist while the context is open; `__aexit__` tears down. In production 
 ## Related
 
 - [[ADK to_a2a for A2A serving]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
+- [[ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard]]
+- [[a2a-sdk serves the agent card at agent-card.json (new) or agent.json (old)]]
+- [[How ADK agents are deployed adk deploy cloud_run agent_engine gke + get_fast_api_app]]
+- [[Test an ASGI app with no network using httpx.ASGITransport]]
+
+%% ai-graph-end %%

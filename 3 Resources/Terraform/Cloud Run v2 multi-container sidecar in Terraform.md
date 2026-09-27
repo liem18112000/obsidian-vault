@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run v2 multi-container sidecar in Terraform"
+ai_hash: ee5b1ae0b98870ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: howto
+entities: []
+source: session 2026-08-31 test-agent sidecar
 status: seedling
-source: "session 2026-08-31 test-agent sidecar"
-tags: [terraform, cloud-run, sidecar, multi-container, gcp, iac]
+tags:
+- terraform
+- cloud-run
+- sidecar
+- multi-container
+- gcp
+- iac
+title: Cloud Run v2 multi-container sidecar in Terraform
+type: howto
 ---
 
 # Cloud Run v2 multi-container sidecar in Terraform
@@ -25,3 +35,14 @@ See [[Co-locating a stateful MCP bridge as an agent sidecar couples their scalin
 
 - [[Co-locating a stateful MCP bridge as an agent sidecar couples their scaling]]
 - [[Refactor Terraform resources into a module as a no-op via terraform state mv]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Co-locating a stateful MCP bridge as an agent sidecar couples their scaling]]
+- [[Single-to-multi container Cloud Run update fails in-place; use terraform -replace]]
+- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
+- [[Cloud Run v2 service design gotchas]]
+- [[Refactor Terraform resources into a module as a no-op via terraform state mv]]
+
+%% ai-graph-end %%

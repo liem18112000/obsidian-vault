@@ -1,10 +1,18 @@
 ---
-title: "NFC-normalize dedup keys so macOS NFD and Windows NFC file re-exports converge"
+ai_hash: 34a5297836c9b1c2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: lesson
+entities: []
+source: luz_docs_import LUZ-158230 · 2026-08-11
 status: seedling
-source: "luz_docs_import LUZ-158230 · 2026-08-11"
-tags: [unicode, normalization, dedup, i18n]
+tags:
+- unicode
+- normalization
+- dedup
+- i18n
+title: NFC-normalize dedup keys so macOS NFD and Windows NFC file re-exports converge
+type: lesson
 ---
 
 # NFC-normalize dedup keys so macOS NFD and Windows NFC file re-exports converge
@@ -24,3 +32,12 @@ Related: [[Content-addressed dedup with a unique index and insert-first is concu
 ## Related
 
 - [[Content-addressed dedup with a unique index and insert-first is concurrency-correct]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Content-addressed dedup with a unique index and insert-first is concurrency-correct]]
+- [[Building a ZIP fixture to test NFCNFD + UTF-8-flag entry-name handling]]
+- [[luz-docs-import dedup identity is the uploaded zip filename (importZipName)]]
+
+%% ai-graph-end %%

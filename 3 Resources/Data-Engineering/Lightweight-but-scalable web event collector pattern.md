@@ -1,10 +1,20 @@
 ---
-title: "Lightweight-but-scalable web event collector pattern"
+ai_hash: 8bdf412151c0d3b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: model
+entities: []
+source: LEOCDP web-tracking plan, session 2026-08-25
 status: seedling
-source: "LEOCDP web-tracking plan, session 2026-08-25"
-tags: [cdp, event-collection, streaming, architecture, web-tracking, pattern]
+tags:
+- cdp
+- event-collection
+- streaming
+- architecture
+- web-tracking
+- pattern
+title: Lightweight-but-scalable web event collector pattern
+type: model
 ---
 
 # Lightweight-but-scalable web event collector pattern
@@ -27,3 +37,14 @@ Uses [[VNG Cloud vStorage is S3-compatible object storage]] as the lake. Part of
 
 - [[VNG Cloud vStorage is S3-compatible object storage]]
 - [[LEO CDP has two complementary ingestion lanes converging at CIR]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP has two complementary ingestion lanes converging at CIR]]
+- [[Run an event-broker Redis as a dedicated co-located instance, not the cache Redis]]
+- [[Redis Streams consumer-group at-least-once Loader pattern]]
+- [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+- [[VNG Cloud vStorage is S3-compatible object storage]]
+
+%% ai-graph-end %%

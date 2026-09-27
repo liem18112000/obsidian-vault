@@ -1,10 +1,18 @@
 ---
-title: "Declare a variable before the try so the catch block can log it"
+ai_hash: 84d7df10875f9141
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: lesson
+entities: []
+source: session 2026-08-13
 status: seedling
-source: "session 2026-08-13"
-tags: [java, logging, error-handling, diagnostics]
+tags:
+- java
+- logging
+- error-handling
+- diagnostics
+title: Declare a variable before the try so the catch block can log it
+type: lesson
 ---
 
 # Declare a variable before the try so the catch block can log it
@@ -33,3 +41,14 @@ Trade-off: hoisting the header-parse out of the guarded region means an exceptio
 
 - [[RESTEasy multipart repeated field name yields a List]]
 - [[get(0) silently drops extras]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[RESTEasy multipart repeated field name yields a List, get(0) silently drops extras]]
+- [[Read RESTEasy multipart parts eagerly in-request; never pass InputPart around]]
+- [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it]]
+- [[RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread]]
+- [[luz-docs-import importZipName comes from the uploaded multipart filename, not the on-disk zip]]
+
+%% ai-graph-end %%

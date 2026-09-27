@@ -1,10 +1,20 @@
 ---
-title: "Claude Code Bash tool collapses backslashes even inside quoted heredocs"
+ai_hash: f16adecfead0243a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: session 2026-09-27 Confluence export
 status: seedling
-source: "session 2026-09-27 Confluence export"
-tags: [claude-code, bash, shell, escaping, gotcha, tooling]
+tags:
+- claude-code
+- bash
+- shell
+- escaping
+- gotcha
+- tooling
+title: Claude Code Bash tool collapses backslashes even inside quoted heredocs
+type: gotcha
 ---
 
 # Claude Code Bash tool collapses backslashes even inside quoted heredocs
@@ -46,3 +56,14 @@ Both this and the pandoc `[TABLE]` placeholder bug are silent-corruption failure
 ## Related
 
 - [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apostrophe inside bash ${varmessage} breaks the parser]]
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[ssh 'bash -s' flattens args, so empty middle args shift positionals]]
+- [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
+- [[Unquoted YAML frontmatter description breaks on colon-space in SKILL.md]]
+
+%% ai-graph-end %%

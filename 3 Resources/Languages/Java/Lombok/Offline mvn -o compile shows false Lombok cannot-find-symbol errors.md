@@ -1,10 +1,20 @@
 ---
-title: "Offline mvn -o compile shows false Lombok cannot-find-symbol errors"
+ai_hash: 6ce3a9d64fa5a565
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20 code review of luz_docs_import k6-load-test branch
 status: seedling
-source: "session 2026-08-20 code review of luz_docs_import k6-load-test branch"
-tags: [lombok, maven, java, build, gotcha, luz-docs-import]
+tags:
+- lombok
+- maven
+- java
+- build
+- gotcha
+- luz-docs-import
+title: Offline mvn -o compile shows false Lombok cannot-find-symbol errors
+type: lesson
 ---
 
 # Offline mvn -o compile shows false Lombok cannot-find-symbol errors
@@ -25,3 +35,14 @@ Related: the phantom errors also cascade the way a single bad symbol does — se
 - [[Lombok one bad symbol cascades into hundreds of phantom missing-method errors]]
 - [[luz_docs_import targets Java 17 (javax stack]]
 - [[modern idioms allowed)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Lombok one bad symbol cascades into hundreds of phantom missing-method errors]]
+- [[Verify wildcard-to-explicit import cleanup by compiling]]
+- [[Run mvn test-compile after changing a recordctor signature — Cloud Build compiles tests, local mvn compile does not]]
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable' compile error usually means a skew]]
+
+%% ai-graph-end %%

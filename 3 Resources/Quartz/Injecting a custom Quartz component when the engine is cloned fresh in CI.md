@@ -1,10 +1,20 @@
 ---
-title: "Injecting a custom Quartz component when the engine is cloned fresh in CI"
+ai_hash: a5328bd9265ad0a7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-06
-type: howto
+entities: []
+source: session 2026-09-06 docs-site chatbot
 status: seedling
-source: "session 2026-09-06 docs-site chatbot"
-tags: [quartz, static-site, ci, component, ssr, spa]
+tags:
+- quartz
+- static-site
+- ci
+- component
+- ssr
+- spa
+title: Injecting a custom Quartz component when the engine is cloned fresh in CI
+type: howto
 ---
 
 # Injecting a custom Quartz component when the engine is cloned fresh in CI
@@ -26,3 +36,11 @@ Validate locally exactly like CI: clone the engine at the pinned tag, inject con
 ## Related
 
 - [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+- [[Verify a Quartz afterBody widget renders live before blaming CSS]]
+
+%% ai-graph-end %%

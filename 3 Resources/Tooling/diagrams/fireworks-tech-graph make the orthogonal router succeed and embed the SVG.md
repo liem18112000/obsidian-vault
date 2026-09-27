@@ -1,10 +1,19 @@
 ---
-title: "fireworks-tech-graph: make the orthogonal router succeed and embed the SVG"
+ai_hash: edbc157b4b3a763e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: howto
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [fireworks-tech-graph, svg, diagrams, skill, gotcha]
+tags:
+- fireworks-tech-graph
+- svg
+- diagrams
+- skill
+- gotcha
+title: 'fireworks-tech-graph: make the orthogonal router succeed and embed the SVG'
+type: howto
 ---
 
 # fireworks-tech-graph: make the orthogonal router succeed and embed the SVG
@@ -40,3 +49,13 @@ Ops Pulse (`style:12`, `semantic_profile:"ops-pulse"`, `diagram_type:"observabil
 - `critical_path` is an ordered list of **business edge ids** (contiguous, no telemetry edges); telemetry edges use a different `flow` token (e.g. `async`) and `dashed:true`.
 - `legend_locked:true` can throw "locked legend intersects diagram content or a mandatory route" — unlock it or give it its own vertical band (raise canvas height, move legend/footer down).
 - It fits incident reports well because the four golden signals map to real evidence: latency=app request time, traffic=req/min, errors=timeout count, saturation=OOM.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[fireworks-tech-graph skill JSON-IR render pipeline and quality_profile gotcha]]
+- [[Animate fireworks SVGs via injected CSS keyframes; Style-12 Ops Pulse constraints]]
+- [[Embed a fireworks-tech-graph SVG in an HTML artifact and animate it with CSS via its data-flowid hooks]]
+- [[Embed generated SVG in an artifact via img data-URI to isolate its styles]]
+
+%% ai-graph-end %%

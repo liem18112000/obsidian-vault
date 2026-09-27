@@ -1,10 +1,19 @@
 ---
-title: "luz_docs_import ZIP import behavior — limits, allow-list, idempotency, AV scope"
+ai_hash: a5e773abfd292c8a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: LUZ-158230 fixture matrix, session 2026-09-22
 status: seedling
-source: "LUZ-158230 fixture matrix, session 2026-09-22"
-tags: [luz-docs-import, earchive, zip-import, testing, gotcha]
+tags:
+- luz-docs-import
+- earchive
+- zip-import
+- testing
+- gotcha
+title: luz_docs_import ZIP import behavior — limits, allow-list, idempotency, AV scope
+type: lesson
 ---
 
 # luz_docs_import ZIP import behavior — limits, allow-list, idempotency, AV scope
@@ -24,3 +33,14 @@ Workspace/repo for the codegraph: `axonivy-prod/luz_docs_import`.
 ## Related
 
 - [[LUZ-158230 eArchive Health ZIP import — golden test fixture matrix location]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-158230 ePost ZIP Import Test Fixture Matrix (Confluence)]]
+- [[LUZ-158230 QA edge-case decisions (ZIP import)]]
+- [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
+- [[LUZ-158230 ePost ZIP import - test scope decisions]]
+- [[Metadata sidecars must be scanned in luz-docs-import because they are never uploaded]]
+
+%% ai-graph-end %%

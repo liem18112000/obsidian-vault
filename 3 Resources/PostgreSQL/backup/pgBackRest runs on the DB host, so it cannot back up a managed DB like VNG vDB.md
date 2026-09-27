@@ -1,10 +1,20 @@
 ---
-title: "pgBackRest runs on the DB host, so it cannot back up a managed DB like VNG vDB"
+ai_hash: 66f0a341100e8bf2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-16
-type: lesson
+entities: []
+source: session 2026-08-16 physical track
 status: seedling
-source: "session 2026-08-16 physical track"
-tags: [pgbackrest, postgres, backup, pitr, gotcha]
+tags:
+- pgbackrest
+- postgres
+- backup
+- pitr
+- gotcha
+title: pgBackRest runs on the DB host, so it cannot back up a managed DB like VNG
+  vDB
+type: lesson
 ---
 
 # pgBackRest runs on the DB host, so it cannot back up a managed DB like VNG vDB
@@ -18,3 +28,14 @@ In LEO CDP Customer360 this splits the backup story: Docker + self-managed K8s u
 ## Related
 
 - [[pgBackRest archive_command needs the binary IN the postgres image; the scheduler is a separate sidecar]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[pgBackRest archive_command needs the binary IN the postgres image; the scheduler is a separate sidecar]]
+- [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+- [[vngcloud_vdb_postgresql_cluster ignores backup_auto (cluster backups go via VNG Backup Center)]]
+- [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
+- [[Managed DB provisioners create the server but not in-database objects]]
+
+%% ai-graph-end %%

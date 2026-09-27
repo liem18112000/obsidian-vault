@@ -1,10 +1,20 @@
 ---
-title: "VNG vLB packages are per-AZ too: pin the ?zoneId= package uuid (full lbp- prefix) or the create rejects it"
+ai_hash: 737b3a3cb5e2a59d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 leo-customer360 deployments/load_balancer
 status: seedling
-source: "session 2026-08-18 leo-customer360 deployments/load_balancer"
-tags: [vngcloud, vlb, load-balancer, availability-zone, gotcha]
+tags:
+- vngcloud
+- vlb
+- load-balancer
+- availability-zone
+- gotcha
+title: 'VNG vLB packages are per-AZ too: pin the ?zoneId= package uuid (full lbp-
+  prefix) or the create rejects it'
+type: lesson
 ---
 
 # VNG vLB packages are per-AZ too: pin the ?zoneId= package uuid (full lbp- prefix) or the create rejects it
@@ -24,3 +34,14 @@ So for this account, the per-AZ catalog rule is universal across vServer (flavor
 ## Related
 
 - [[VNG vServer default catalog endpoints return the DISABLED default AZ; use ?zoneId=<AZ> and pin UUIDs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vngcloud_vlb_load_balancer package_id needs a UUID resolved via vngcloud_vlb_lb_packages]]
+- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs]]
+- [[VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[VNG Cloud vLB Layer 4 = NLB, Layer 7 = ALB]]
+
+%% ai-graph-end %%

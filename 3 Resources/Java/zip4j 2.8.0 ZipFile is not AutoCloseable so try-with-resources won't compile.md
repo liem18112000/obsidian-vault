@@ -1,10 +1,18 @@
 ---
-title: "zip4j 2.8.0 ZipFile is not AutoCloseable so try-with-resources won't compile"
+ai_hash: aac1118af969887e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: lesson
+entities: []
+source: luz_docs_import LUZ-158230 · 2026-08-11
 status: seedling
-source: "luz_docs_import LUZ-158230 · 2026-08-11"
-tags: [java, zip4j, gotcha, maven]
+tags:
+- java
+- zip4j
+- gotcha
+- maven
+title: zip4j 2.8.0 ZipFile is not AutoCloseable so try-with-resources won't compile
+type: lesson
 ---
 
 # zip4j 2.8.0 ZipFile is not AutoCloseable so try-with-resources won't compile
@@ -20,3 +28,14 @@ Related: [[Fail an import on a corrupt ZIP by translating the extraction excepti
 ## Related
 
 - [[Fail an import on a corrupt ZIP by translating the extraction exception to a domain FailureCode]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fail an import on a corrupt ZIP by translating the extraction exception to a domain FailureCode]]
+- [[zip4j 2.8.0 ZipException is-a IOException, and extractFile keeps Zip-Slip protection (per-entry extraction)]]
+- [[zip4j extractAll applies a ZIP entry's stored Unix mode, so Windows-made zips can extract unreadable files]]
+- [[luz-docs-import 'Permission denied' failures trace to zip4j applying archive file permissions]]
+- [[try-with-resources surfaces the checked exception of close() even when the block body throws nothing]]
+
+%% ai-graph-end %%

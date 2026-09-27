@@ -1,10 +1,19 @@
 ---
-title: "Cloud Run resolves a :latest secret reference at instance start, not per request"
+ai_hash: faf3215384043894
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: lesson
+entities: []
+source: session 2026-09-25 — test-agent-v2 bearer rotation
 status: seedling
-source: "session 2026-09-25 — test-agent-v2 bearer rotation"
-tags: [gcp, cloud-run, secret-manager, rotation, gotcha]
+tags:
+- gcp
+- cloud-run
+- secret-manager
+- rotation
+- gotcha
+title: Cloud Run resolves a :latest secret reference at instance start, not per request
+type: lesson
 ---
 
 # Cloud Run resolves a :latest secret reference at instance start, not per request
@@ -33,3 +42,14 @@ Worked example: `deployments/test-agent-v2/rotate_a2a_bearer_key.sh`, which rota
 
 - [[Rotating only the gateway bearer on test-agent-v2 locks nobody out]]
 - [[test-agent-v2 Cloud Run services use a -v2 name suffix]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Secret Manager versions accumulate silently - one per deploy, all left enabled]]
+- [[Cloud Run latest does not roll a new revision on terraform apply — deploy by digest]]
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+- [[Cloud Run v2 service design gotchas]]
+- [[Adding a Cloud Run service that shares one image var build first, targeted apply]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Serve a SPA under a sub-path via the app base-path option, not proxy strip"
+ai_hash: 8f779b5ba3811d17
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: lesson
+entities: []
+source: session 2026-08-25 (leo-customer360 /redis)
 status: seedling
-source: "session 2026-08-25 (leo-customer360 /redis)"
-tags: [reverse-proxy, caddy, spa, redis-commander, auth, gotcha]
+tags:
+- reverse-proxy
+- caddy
+- spa
+- redis-commander
+- auth
+- gotcha
+title: Serve a SPA under a sub-path via the app base-path option, not proxy strip
+type: lesson
 ---
 
 # Serve a SPA under a sub-path via the app base-path option, not proxy strip
@@ -21,3 +31,14 @@ A SPA'\''s HTML references assets by relative or root-absolute paths and its JS 
 
 - [[L4 LB: expose own-login UIs directly]]
 - [[gate no-auth UIs behind oauth2-proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path]]
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
+- [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
+- [[Caddy path matcher p does not match the bare p; use a named matcher for both]]
+
+%% ai-graph-end %%

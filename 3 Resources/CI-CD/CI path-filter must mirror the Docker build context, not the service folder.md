@@ -1,10 +1,19 @@
 ---
-title: "CI path-filter must mirror the Docker build context, not the service folder"
+ai_hash: 1e72e6c6899c5c56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-30
-type: lesson
+entities: []
+source: session 2026-08-30 leo-customer360
 status: seedling
-source: "session 2026-08-30 leo-customer360"
-tags: [ci-cd, github-actions, docker, paths-filter, gotcha]
+tags:
+- ci-cd
+- github-actions
+- docker
+- paths-filter
+- gotcha
+title: CI path-filter must mirror the Docker build context, not the service folder
+type: lesson
 ---
 
 # CI path-filter must mirror the Docker build context, not the service folder
@@ -31,3 +40,14 @@ CI rebuild triggers should mirror the build-context inputs (the Dockerfile's `CO
 ## Related
 
 - [[leo-customer360 applies DB schema via two paths that must stay in sync]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CD only redeploys a leo-customer360 service when its own path changes (dorny paths-filter)]]
+- [[leo-customer360 applies DB schema via two paths that must stay in sync]]
+- [[Feed dornypaths-filter changes output into a build matrix for selective monorepo builds]]
+- [[Workflow-level paths-ignore can stop a workflow triggering on the dir you want to build]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+
+%% ai-graph-end %%

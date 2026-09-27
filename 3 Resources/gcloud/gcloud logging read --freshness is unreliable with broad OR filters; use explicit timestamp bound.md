@@ -1,10 +1,19 @@
 ---
-title: "gcloud logging read --freshness is unreliable with broad OR filters; use explicit timestamp bound"
+ai_hash: 348ffc9a1b23f5fc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: lesson
+entities: []
+source: dev zip-import test suite 2026-08-13
 status: seedling
-source: "dev zip-import test suite 2026-08-13"
-tags: [gcloud, logging, gotcha, gke]
+tags:
+- gcloud
+- logging
+- gotcha
+- gke
+title: gcloud logging read --freshness is unreliable with broad OR filters; use explicit
+  timestamp bound
+type: lesson
 ---
 
 # gcloud logging read --freshness is unreliable with broad OR filters; use explicit timestamp bound
@@ -26,3 +35,14 @@ Scope the text filter by tenant id to cut noise. Use `--order=asc` only alongsid
 ## Related
 
 - [[google-skill-gke-logs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[gcloud logging read --order=asc silently ignores --freshness]]
+- [[GKE log FRESHNESS window gets swamped by noise on high-traffic clusters]]
+- [[Naive textPayload substring matching produces false-positive log hits]]
+- [[Resolve Cloud Logging share links via redirect Location header]]
+- [[gcloud-logging-shard-field-vs-sharding-keyword]]
+
+%% ai-graph-end %%

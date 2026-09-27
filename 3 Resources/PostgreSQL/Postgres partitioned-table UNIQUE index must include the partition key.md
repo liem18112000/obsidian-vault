@@ -1,10 +1,19 @@
 ---
-title: "Postgres partitioned-table UNIQUE index must include the partition key"
+ai_hash: ec86d2a2de6b01f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: lesson
+entities: []
+source: session 2026-08-25 (leo-customer360)
 status: seedling
-source: "session 2026-08-25 (leo-customer360)"
-tags: [postgres, partitioning, unique-constraint, idempotency, gotcha]
+tags:
+- postgres
+- partitioning
+- unique-constraint
+- idempotency
+- gotcha
+title: Postgres partitioned-table UNIQUE index must include the partition key
+type: lesson
 ---
 
 # Postgres partitioned-table UNIQUE index must include the partition key
@@ -20,3 +29,14 @@ Surfaced designing the CDP cdp_raw_events Loader.
 ## Related
 
 - [[Redis Streams consumer-group at-least-once Loader pattern]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A UNIQUE index on a partitioned Postgres table must include the partition key, defeating cross-time dedup]]
+- [[Migration-free idempotent upserts via deterministic uuid5 primary keys]]
+- [[Postgres ON CONFLICT DO UPDATE references the target row by unqualified table name]]
+- [[Redis Streams consumer-group at-least-once Loader pattern]]
+- [[Customer360 CDP Kafka ingestion topic layout]]
+
+%% ai-graph-end %%

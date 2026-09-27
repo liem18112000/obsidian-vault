@@ -1,10 +1,19 @@
 ---
-title: "One Portainer manages many Docker hosts via portainer/agent, not a second Portainer"
+ai_hash: 90c2ea418ca613f4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: leo-customer360 deployments, session 2026-08-23
 status: seedling
-source: "leo-customer360 deployments, session 2026-08-23"
-tags: [portainer, docker, multi-node, security-group, leo-customer360]
+tags:
+- portainer
+- docker
+- multi-node
+- security-group
+- leo-customer360
+title: One Portainer manages many Docker hosts via portainer/agent, not a second Portainer
+type: lesson
 ---
 
 # One Portainer manages many Docker hosts via portainer/agent, not a second Portainer
@@ -24,3 +33,14 @@ Source: leo-customer360 deployments/monitoring (portainer_agent_server_keys) + d
 ## Related
 
 - [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Portainer Agent endpoint API needs URL=tcphost9001 (bare hostport - HTTP 500 'unable to parse docker host')]]
+- [[Portainer agent self-shuts its API after 72h if no server associates]]
+- [[leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually]]
+- [[Co-located --network host box hides cross-box firewall hops]]
+- [[Portainer admin-password bootstrap skips local Docker env - pass -H socket]]
+
+%% ai-graph-end %%

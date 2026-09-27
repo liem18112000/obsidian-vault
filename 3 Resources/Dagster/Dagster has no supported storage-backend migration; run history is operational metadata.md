@@ -1,10 +1,20 @@
 ---
-title: "Dagster has no supported storage-backend migration; run history is operational metadata"
+ai_hash: 72f33dfb2da30859
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: leo-customer360 Phase 0 cutover, 2026-09-03
 status: seedling
-source: "leo-customer360 Phase 0 cutover, 2026-09-03"
-tags: [dagster, postgres, sqlite, migration, gotcha]
+tags:
+- dagster
+- postgres
+- sqlite
+- migration
+- gotcha
+title: Dagster has no supported storage-backend migration; run history is operational
+  metadata
+type: lesson
 ---
 
 # Dagster has no supported storage-backend migration; run history is operational metadata
@@ -26,3 +36,14 @@ Consequence of a fresh (un-imported) schedule storage: **poll-sensor cursors res
 ## Related
 
 - [[Dagster auto-creates its tables but not the database]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[When copying data between DB backends, never migrate alembic_version or schema-tracking tables]]
+- [[Dagster auto-creates its tables but not the database]]
+- [[Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+
+%% ai-graph-end %%

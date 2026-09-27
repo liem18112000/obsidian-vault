@@ -1,10 +1,68 @@
 ---
-title: "test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target"
+ai_hash: 6fef870c3b9b6a5e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: observation
+entities:
+- test-agent-v2 KGA
+- LlmAgent
+- ADK
+- explore steps
+- knowledge_gathering agent
+- BaseAgent
+- Vertex
+- ADK agent-reasoning primitives
+- output_schema
+- tools
+- AgentTool
+- agent_model()
+- claude_llm()
+- LlmAgent-model façade
+- common/adk/model.py
+- src
+- explore/hypothesize.py
+- explore/ask_llm.py
+- common.llm.vertex.complete()
+- JSON prompt
+- _coerce_* parser
+- asyncio.to_thread
+- explore/expand.py
+- ModelProvider
+- ADK ctx
+- run_async(ctx)
+- HITL resume-state
+- ADK session.state
+- DatabaseSessionService
+- services.py
+- GCS
+- bank.read_refine_state
+- memory tools
+- common/adk/tools.py
+- FunctionTool
+- KgaRouter._read_tool
+- GatherAgent
+- explore loop
+- gather_agent.py
+- test_explore_loop_flag_is_inert_in_adk_gather
+- loop/crawl.py
+- loop/fetch/*
+- max_nodes
+- max_seconds
+- ADK built-in logging
+- env-gated per-agent app logging
+- Google ADK
+- a2a-sdk-direct
+source: session 2026-09-08
 status: seedling
-source: "session 2026-09-08"
-tags: [google-adk, test-agent-v2, knowledge-gathering, llmagent, refactor]
+tags:
+- google-adk
+- test-agent-v2
+- knowledge-gathering
+- llmagent
+- refactor
+title: test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent
+  target
+type: observation
 ---
 
 # test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target
@@ -27,3 +85,69 @@ Related: [[ADK built-in logging does not cover env-gated per-agent app logging]]
 
 - [[ADK built-in logging does not cover env-gated per-agent app logging]]
 - [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+- [[test-agent-v2 TPD has five raw-Vertex generators — the ADK LlmAgent conversion targets]]
+- [[A deterministic scorer is a negative case for LLM-agent-ification — reuse ADK via custom EvalMetric, not LlmAgent]]
+- [[ADK LlmAgent with output_schema cannot use tools or transfer to other agents]]
+- [[Drive the KGA A2A agent offline via Starlette TestClient for evaluation]]
+
+**Relations:**
+- test-agent-v2 KGA — *has no live* — LlmAgent
+- explore steps — *are* — first ADK LlmAgent target
+- knowledge_gathering agent — *is* — custom ADK BaseAgent
+- knowledge_gathering agent — *uses* — raw Vertex
+- knowledge_gathering agent — *reuses none of* — ADK agent-reasoning primitives
+- ADK agent-reasoning primitives — *include* — LlmAgent
+- ADK agent-reasoning primitives — *include* — output_schema
+- ADK agent-reasoning primitives — *include* — tools
+- ADK agent-reasoning primitives — *include* — AgentTool
+- LlmAgent-model façade — *is* — agent_model()
+- LlmAgent-model façade — *is* — claude_llm()
+- LlmAgent-model façade — *is defined in* — common/adk/model.py
+- LlmAgent-model façade — *has zero callers in* — src
+- explore/hypothesize.py — *is a* — LLM work in KGA
+- explore/ask_llm.py — *is a* — LLM work in KGA
+- explore/hypothesize.py — *calls* — common.llm.vertex.complete()
+- explore/ask_llm.py — *calls* — common.llm.vertex.complete()
+- common.llm.vertex.complete() — *uses* — JSON prompt
+- common.llm.vertex.complete() — *uses* — _coerce_* parser
+- JSON prompt — *is offloaded via* — asyncio.to_thread
+- _coerce_* parser — *is offloaded via* — asyncio.to_thread
+- asyncio.to_thread — *is from* — explore/expand.py
+- explore/hypothesize.py — *can be converted to* — LlmAgent
+- explore/ask_llm.py — *can be converted to* — LlmAgent
+- LlmAgent — *uses* — agent_model()
+- LlmAgent — *uses* — output_schema
+- Conversion to LlmAgent — *deletes* — bespoke JSON coercion
+- Conversion to LlmAgent — *gives* — ModelProvider
+- Conversion to LlmAgent — *drops* — thread offload
+- LlmAgent — *is* — async
+- LlmAgent — *must be invoked through* — ADK ctx
+- ADK ctx — *can use* — run_async(ctx)
+- ADK ctx — *can use* — AgentTool
+- HITL resume-state — *can be folded onto* — ADK session.state
+- DatabaseSessionService — *is wired in* — services.py
+- GCS — *is a parallel channel for* — bank.read_refine_state
+- memory tools — *are* — ADK-shaped functions
+- memory tools — *are in* — common/adk/tools.py
+- memory tools — *can be exposed as* — FunctionTool
+- FunctionTool — *on* — LlmAgent
+- KgaRouter._read_tool — *is* — string dispatch
+- explore loop — *can be ported into* — GatherAgent
+- GatherAgent — *is described in* — gather_agent.py
+- explore loop — *is inert under* — ADK
+- test_explore_loop_flag_is_inert_in_adk_gather — *is a* — canary test
+- loop/crawl.py — *is* — deterministic bounded I/O
+- loop/fetch/* — *is* — deterministic bounded I/O
+- agent-ifying loop/crawl.py — *forfeits* — max_nodes
+- agent-ifying loop/fetch/* — *forfeits* — max_seconds
+- test-agent-v2 KGA — *is related to* — ADK built-in logging
+- test-agent-v2 KGA — *is related to* — env-gated per-agent app logging
+- ADK built-in logging — *does not cover* — env-gated per-agent app logging
+- test-agent-v2 KGA — *is related to* — Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct
+
+%% ai-graph-end %%

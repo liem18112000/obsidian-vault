@@ -1,10 +1,21 @@
 ---
-title: "New .sh CI runners must be git-staged with --chmod=+x on Windows or the [ -x ] gate skips them"
+ai_hash: dd2b012a9f2e8336
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20
 status: seedling
-source: "session 2026-08-20"
-tags: [git, windows, ci, leo-customer360, gotcha, shell]
+tags:
+- git
+- windows
+- ci
+- leo-customer360
+- gotcha
+- shell
+title: New .sh CI runners must be git-staged with --chmod=+x on Windows or the [ -x
+  ] gate skips them
+type: lesson
 ---
 
 # New .sh CI runners must be git-staged with --chmod=+x on Windows or the [ -x ] gate skips them
@@ -27,3 +38,14 @@ git ls-files -s path/to/run_tests.sh               # verify: expect 100755
 
 - [[leo-customer360 CI]]
 - [[core.autocrlf]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[In CI invoke repo shell scripts via bash script.sh, not .script.sh (Windows drops the +x bit)]]
+- [[leo-customer360 CD UAT deploys only from main + --deploy-uat marker]]
+- [[CRLF line endings on a shell script shebang cause Docker exit 127 (env bash^M not found)]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+
+%% ai-graph-end %%

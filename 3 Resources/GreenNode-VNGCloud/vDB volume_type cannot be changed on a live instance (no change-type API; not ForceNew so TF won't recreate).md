@@ -1,10 +1,21 @@
 ---
-title: "vDB volume_type cannot be changed on a live instance (no change-type API; not ForceNew so TF won't recreate)"
+ai_hash: 92f6959c168b2b97
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18
 status: seedling
-source: "session 2026-08-18"
-tags: [greennode, vngcloud, vdb, terraform, volume, gotcha]
+tags:
+- greennode
+- vngcloud
+- vdb
+- terraform
+- volume
+- gotcha
+title: vDB volume_type cannot be changed on a live instance (no change-type API; not
+  ForceNew so TF won't recreate)
+type: lesson
 ---
 
 # vDB volume_type cannot be changed on a live instance (no change-type API; not ForceNew so TF won't recreate)
@@ -24,3 +35,14 @@ Zone reality: HCM03-1C standalone volume types are `ssd-iops200..3200` (max 3200
 - [[GreenNode vDB create constraints: instance name 6-20 chars]]
 - [[password start-with-letter]]
 - [[package family s2-general]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GreenNode vDB package family + IOPS tier are per-zone (HCM03-1A vs 1C)]]
+- [[10000-IOPS standalone vDB PostgreSQL needs a vServer-enabled zone that offers Gen2-NVMe2-IOPS10000 (HCM03-1A)]]
+- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs]]
+- [[VNG vServer flavor resize (s-general-1x2 - 2x4) is an in-place terraform change (0 destroy) but reboots the box]]
+
+%% ai-graph-end %%

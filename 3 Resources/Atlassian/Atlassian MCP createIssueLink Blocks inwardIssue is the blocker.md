@@ -1,10 +1,20 @@
 ---
-title: "Atlassian MCP createIssueLink Blocks: inwardIssue is the blocker"
+ai_hash: ac0b01983e0267da
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: lesson
+entities: []
+source: session 2026-09-07
 status: seedling
-source: "session 2026-09-07"
-tags: [atlassian, mcp, jira, issue-links, story-points, gotcha]
+tags:
+- atlassian
+- mcp
+- jira
+- issue-links
+- story-points
+- gotcha
+title: 'Atlassian MCP createIssueLink Blocks: inwardIssue is the blocker'
+type: lesson
 ---
 
 # Atlassian MCP createIssueLink Blocks: inwardIssue is the blocker
@@ -24,3 +34,12 @@ Related: [[Jira CSV import builds Story to Sub-task hierarchy via Issue Id and P
 
 - [[Jira CSV import builds Story to Sub-task hierarchy via Issue Id and Parent Id columns]]
 - [[Atlassian MCP grants Jira access per-site; ungranted cloudId is rejected]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Jira MCP create a subtask with issueTypeName Subtask + parent, labelspriority via additional_fields]]
+- [[Atlassian MCP grants Jira access per-site; ungranted cloudId is rejected]]
+- [[Jira CSV import builds Story to Sub-task hierarchy via Issue Id and Parent Id columns]]
+
+%% ai-graph-end %%

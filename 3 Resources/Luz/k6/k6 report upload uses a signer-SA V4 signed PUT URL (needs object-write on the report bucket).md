@@ -1,10 +1,22 @@
 ---
-title: "k6 report upload uses a signer-SA V4 signed PUT URL (needs object-write on the report bucket)"
+ai_hash: 8a35b25c818ae83b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: howto
+entities: []
+source: session 2026-08-18 · k6/cloudbuild.yaml
 status: seedling
-source: "session 2026-08-18 · k6/cloudbuild.yaml"
-tags: [k6, gcs, signed-url, iam, cloudbuild, luz-docs-import, gotcha]
+tags:
+- k6
+- gcs
+- signed-url
+- iam
+- cloudbuild
+- luz-docs-import
+- gotcha
+title: k6 report upload uses a signer-SA V4 signed PUT URL (needs object-write on
+  the report bucket)
+type: howto
 ---
 
 # k6 report upload uses a signer-SA V4 signed PUT URL (needs object-write on the report bucket)
@@ -20,3 +32,14 @@ Two separate IAM concerns, do not conflate: (1) BUCKET object-write on the signe
 ## Related
 
 - [[Luz individual tenant = bare POST luztenant{username}tenants (no INDIVIDUAL flag)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Klara Cloud Build pushes images to klara-repo Artifact Registry with the SA on the trigger]]
+- [[luz-docs Cloud Build deploys only on master; feature-branch builds just build+push]]
+- [[Build and roll out luz-jsonstore to dev (Cloud Build trigger + Deployment rollout)]]
+- [[luz-docs-import k8s is a StatefulSet with a 300Gi block-disk temp VCT for upload and tmp]]
+- [[luz-docs Cloud Build pushes an image for every branch but only master updates luz_kubernetes]]
+
+%% ai-graph-end %%

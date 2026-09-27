@@ -1,10 +1,18 @@
 ---
-title: "Excalidraw connector on a shape's center axis bisects a centered caption"
+ai_hash: 7652cef450bc5948
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: lesson
+entities: []
+source: session 2026-09-07 — CQRS split diagram
 status: seedling
-source: "session 2026-09-07 — CQRS split diagram"
-tags: [excalidraw, diagramming, gotcha, arrow-routing]
+tags:
+- excalidraw
+- diagramming
+- gotcha
+- arrow-routing
+title: Excalidraw connector on a shape's center axis bisects a centered caption
+type: lesson
 ---
 
 # Excalidraw connector on a shape's center axis bisects a centered caption
@@ -25,3 +33,14 @@ This is a concrete instance of the excalidraw-diagram skill's **Arrow Routing Di
 ## Related
 
 - [[Arrow Routing Discipline]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw container-bound text does not auto-wrap in the render script]]
+- [[Excalidraw standalone text does not auto-wrap to element width]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Excalidraw arrow x is the first point, not the bounding-box corner]]
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+
+%% ai-graph-end %%

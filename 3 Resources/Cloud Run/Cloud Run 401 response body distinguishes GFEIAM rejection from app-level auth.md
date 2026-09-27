@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run 401: response body distinguishes GFE/IAM rejection from app-level auth"
+ai_hash: 6261100fde938e9d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: session 2026-09-03 (test-agent deploy f7e8af5)
 status: seedling
-source: "session 2026-09-03 (test-agent deploy f7e8af5)"
-tags: [cloud-run, gcp, iam, debugging, gotcha]
+tags:
+- cloud-run
+- gcp
+- iam
+- debugging
+- gotcha
+title: 'Cloud Run 401: response body distinguishes GFE/IAM rejection from app-level
+  auth'
+type: lesson
 ---
 
 # Cloud Run 401: response body distinguishes GFE/IAM rejection from app-level auth
@@ -25,3 +35,14 @@ The classic cause of the HTML/GFE case is a `terraform -replace` of a `google_cl
 ## Related
 
 - [[terraform -replace of a cloud_run_v2_service wipes its allUsers invoker binding]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
+- [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+- [[Cloud Run GFE reserves healthz — use livez for your health endpoint]]
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+- [[Tell FastAPI from bare Starlette by the 404 body — {detailNot Found} vs plain Not Found]]
+
+%% ai-graph-end %%

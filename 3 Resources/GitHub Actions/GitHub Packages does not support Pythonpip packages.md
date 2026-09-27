@@ -1,10 +1,20 @@
 ---
-title: "GitHub Packages does not support Python/pip packages"
+ai_hash: 3dd9a48e0ac89ce0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: term
+entities: []
+source: session 2026-09-19
 status: seedling
-source: "session 2026-09-19"
-tags: [github-packages, pypi, python, packaging, ci-cd, reference]
+tags:
+- github-packages
+- pypi
+- python
+- packaging
+- ci-cd
+- reference
+title: GitHub Packages does not support Python/pip packages
+type: term
 ---
 
 # GitHub Packages does not support Python/pip packages
@@ -20,3 +30,12 @@ Related: [[PyPI invalid-publisher means no trusted publisher matches the workflo
 ## Related
 
 - [[PyPI invalid-publisher means no trusted publisher matches the workflow OIDC claims]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PyPI invalid-publisher means no trusted publisher matches the workflow OIDC claims]]
+- [[Unable to find image locally is normal Docker pre-pull output, not the failure]]
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+
+%% ai-graph-end %%

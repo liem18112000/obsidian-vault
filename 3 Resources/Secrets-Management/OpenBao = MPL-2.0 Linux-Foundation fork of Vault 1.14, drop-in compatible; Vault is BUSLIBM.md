@@ -1,10 +1,21 @@
 ---
-title: "OpenBao = MPL-2.0 Linux-Foundation fork of Vault 1.14, drop-in compatible; Vault is BUSL/IBM"
+ai_hash: 5d9c2626dbd4fa6e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: term
+entities: []
+source: web research 2026-09-23
 status: seedling
-source: "web research 2026-09-23"
-tags: [openbao, vault, secrets, licensing, busl, mpl]
+tags:
+- openbao
+- vault
+- secrets
+- licensing
+- busl
+- mpl
+title: OpenBao = MPL-2.0 Linux-Foundation fork of Vault 1.14, drop-in compatible;
+  Vault is BUSL/IBM
+type: term
 ---
 
 # OpenBao = MPL-2.0 Linux-Foundation fork of Vault 1.14, drop-in compatible; Vault is BUSL/IBM
@@ -16,3 +27,10 @@ Licensing nuance: BUSL-1.1 permits internal production use — it only restricts
 Community/OpenBao core covers kv-v2, database (dynamic + static-role rotation), transit, pki, ssh, AppRole/OIDC/Kubernetes auth, Raft HA, audit. Enterprise-only (paid) features you forgo: namespaces, HSM seal, DR/perf replication, control groups.
 
 Verified Sep 2026 across openlogic / digitalis / bespinian / openbao.org.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VaultOpenBao cannot auto-unseal with VNG KMS (unsupported seal) — use Shamir or Transit]]
+
+%% ai-graph-end %%

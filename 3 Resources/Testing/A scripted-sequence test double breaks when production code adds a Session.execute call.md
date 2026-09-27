@@ -1,10 +1,20 @@
 ---
-title: "A scripted-sequence test double breaks when production code adds a Session.execute call"
+ai_hash: 30b63f0396662fd0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20, leo-customer360 commit 4da1868
 status: seedling
-source: "session 2026-08-20, leo-customer360 commit 4da1868"
-tags: [testing, test-doubles, sqlalchemy, mocking, gotcha]
+tags:
+- testing
+- test-doubles
+- sqlalchemy
+- mocking
+- gotcha
+title: A scripted-sequence test double breaks when production code adds a Session.execute
+  call
+type: lesson
 ---
 
 # A scripted-sequence test double breaks when production code adds a Session.execute call
@@ -23,3 +33,14 @@ Root cause was found via `git log`/blame on the SQL sequence: the assertions had
 
 - [[Set Postgres RLS session GUC via the raw DBAPI connection]]
 - [[not Session.execute]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Set Postgres RLS session GUC via the raw DBAPI connection, not Session.execute]]
+- [[Measure non-idempotent integration tests on clean state - 409 on re-run is an isolation defect]]
+- [[test-agent-v2 executor tests share memory-bank state and fail by test order]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+
+%% ai-graph-end %%

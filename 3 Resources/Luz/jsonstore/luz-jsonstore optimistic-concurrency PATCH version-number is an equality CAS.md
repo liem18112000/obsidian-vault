@@ -1,11 +1,21 @@
 ---
-title: "luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS"
+ai_hash: ec368f0f57f307fb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+aliases:
+- jsonstore version-number CAS
 created: 2026-08-10
-aliases: ["jsonstore version-number CAS"]
-type: concept
+entities: []
+source: LUZ-158230 session 2026-08-10
 status: seedling
-source: "LUZ-158230 session 2026-08-10"
-tags: [luz, jsonstore, mongodb, optimistic-concurrency, cas]
+tags:
+- luz
+- jsonstore
+- mongodb
+- optimistic-concurrency
+- cas
+title: luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS
+type: concept
 ---
 
 # luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS
@@ -25,3 +35,14 @@ Surfaced on LUZ-158230 (import-job Tier 4) in `luz_docs_import`; the client meth
 ## Related
 
 - [[Hosting a Pub/Sub consumer in a luz service with luz_message_receiver]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shared aggregate write targets need CAS, not plain $set]]
+- [[Kepler PubSub topology HTTP-to-luz_message_broker publisher, luz_message_receiver pull-consumers, jsonstore version-number CAS]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id]]
+- [[luz-docs updateManyByFilter requires every targeted document to actually change]]
+
+%% ai-graph-end %%

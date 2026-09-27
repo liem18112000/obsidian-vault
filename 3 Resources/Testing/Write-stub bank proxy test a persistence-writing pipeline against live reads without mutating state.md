@@ -1,10 +1,20 @@
 ---
-title: "Write-stub bank proxy: test a persistence-writing pipeline against live reads without mutating state"
+ai_hash: 3a7022501e149f0c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: howto
+entities: []
+source: session 2026-09-03 — KGA G4 e2e test
 status: seedling
-source: "session 2026-09-03 — KGA G4 e2e test"
-tags: [testing, integration-test, proxy, python, live-test]
+tags:
+- testing
+- integration-test
+- proxy
+- python
+- live-test
+title: 'Write-stub bank proxy: test a persistence-writing pipeline against live reads
+  without mutating state'
+type: howto
 ---
 
 # Write-stub bank proxy: test a persistence-writing pipeline against live reads without mutating state
@@ -30,3 +40,14 @@ class WriteStubBank:
 **Watch-outs:** enumerate ALL writers (including low-level ones like a private `_put`) or a write leaks through; `__getattr__` only fires for names not found normally, so dont also define the writers as real methods on the proxy; if reads depend on prior writes within the same run (read-your-writes), a pure write-stub diverges from real behavior — then you need an in-memory shadow instead.
 
 Surfaced testing the test-agent KGA G4 grounding gate end-to-end (live Vertex + Atlassian + GCS index reads, zero index writes).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Drive the KGA A2A agent offline via Starlette TestClient for evaluation]]
+- [[Add cross-stage provenance to a shared graph via update_index without new model methods]]
+- [[GCS compare-and-set with if_generation_match (optimistic concurrency)]]
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
+- [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
+
+%% ai-graph-end %%

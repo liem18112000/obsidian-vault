@@ -1,10 +1,20 @@
 ---
-title: "Turning a module into a package without breaking from-pkg-import-X (avoid the __init__ cycle)"
+ai_hash: c83407280ce0f11b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: howto
+entities: []
+source: test-agent-v2 KGA agent-based restructure, session 2026-09-09
 status: seedling
-source: "test-agent-v2 KGA agent-based restructure, session 2026-09-09"
-tags: [python, packaging, refactoring, imports, circular-import]
+tags:
+- python
+- packaging
+- refactoring
+- imports
+- circular-import
+title: Turning a module into a package without breaking from-pkg-import-X (avoid the
+  __init__ cycle)
+type: howto
 ---
 
 # Turning a module into a package without breaking from-pkg-import-X (avoid the __init__ cycle)
@@ -22,3 +32,14 @@ Mechanics that made a ~25-file agent-based restructure safe:
 See [[Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned JSON]].
 
 **Related sed gotcha (moving a module into a subpackage):** a dotted-path rewrite `s#pkg\.X#pkg.sub.X#` catches `import pkg.X` and `from pkg.X import y`, but MISSES the name-form `from pkg import X` (there the token is `pkg import X`, not `pkg.X`). Grep BOTH forms after the move: `from <pkg> import <moved_name>\b` as well as `<pkg>\.<moved_name>`. Collection-time ImportError ("cannot import name X from pkg") is the tell.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Convert a Python module to a package without breaking importers via re-exporting __init__]]
+- [[Break a package import cycle by moving annotation-only imports under TYPE_CHECKING]]
+- [[Monkeypatched module attributes are a hidden breakage risk when a module becomes a package]]
+- [[Flat-import Python modules can be relocated together without rewriting imports]]
+- [[Extracting a shared utils package - classify by whether code knows source semantics]]
+
+%% ai-graph-end %%

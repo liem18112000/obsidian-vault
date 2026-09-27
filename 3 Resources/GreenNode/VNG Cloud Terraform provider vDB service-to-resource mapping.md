@@ -1,10 +1,20 @@
 ---
-title: "VNG Cloud Terraform provider vDB service-to-resource mapping"
+ai_hash: a62664850a4098f9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: howto
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [terraform, vngcloud, vdb, postgresql, redis, kafka]
+tags:
+- terraform
+- vngcloud
+- vdb
+- postgresql
+- redis
+- kafka
+title: VNG Cloud Terraform provider vDB service-to-resource mapping
+type: howto
 ---
 
 # VNG Cloud Terraform provider vDB service-to-resource mapping
@@ -24,3 +34,14 @@ The official Terraform provider is **`vngcloud/vngcloud`** (Terraform Registry; 
 - [[GreenNode is VNG Cloud's AI cloud exposing vDB and vStorage managed services]]
 - [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
 - [[LEO Customer360 GreenNode Terraform infrastructure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[GreenNode cloud runs on VNG Cloud infrastructure]]
+- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+- [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]]
+
+%% ai-graph-end %%

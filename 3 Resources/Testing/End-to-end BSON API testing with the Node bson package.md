@@ -1,10 +1,19 @@
 ---
-title: "End-to-end BSON API testing with the Node bson package"
+ai_hash: 130d2746dfea45d8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: howto
+entities: []
+source: session 2026-08-25
 status: seedling
-source: "session 2026-08-25"
-tags: [bson, testing, e2e, node, api]
+tags:
+- bson
+- testing
+- e2e
+- node
+- api
+title: End-to-end BSON API testing with the Node bson package
+type: howto
 ---
 
 # End-to-end BSON API testing with the Node bson package
@@ -19,3 +28,14 @@ Match the server wire shapes: lists are wrapped { items: [...] } (BSON has no to
 
 - [[BSON has no top-level array so a document list must be wrapped in a document]]
 - [[Use a BSON endpoint instead of JSON to store MongoDB dates as native Date]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[BSON has no top-level array so a document list must be wrapped in a document]]
+- [[Use a BSON endpoint instead of JSON to store MongoDB dates as native Date]]
+- [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+
+%% ai-graph-end %%

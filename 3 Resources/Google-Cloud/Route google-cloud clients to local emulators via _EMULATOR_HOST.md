@@ -1,10 +1,19 @@
 ---
-title: "Route google-cloud clients to local emulators via *_EMULATOR_HOST"
+ai_hash: 04b36be58d9ab9ab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: howto
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [gcp, emulator, pubsub, gcs, local-dev]
+tags:
+- gcp
+- emulator
+- pubsub
+- gcs
+- local-dev
+title: Route google-cloud clients to local emulators via *_EMULATOR_HOST
+type: howto
 ---
 
 # Route google-cloud clients to local emulators via *_EMULATOR_HOST
@@ -14,3 +23,14 @@ The `google-cloud-storage` and `google-cloud-pubsub` clients transparently route
 ## Related
 
 - [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Redis Streams (not pubsub) as the local PubSub alternative]]
+- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+- [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+- [[Reach a private Cloud Run service as a user via gcloud run services proxy, not a minted ID token]]
+- [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+
+%% ai-graph-end %%

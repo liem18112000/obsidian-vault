@@ -1,10 +1,19 @@
 ---
-title: "kind port remap: only hostPort binds the host; NodePort/targetPort stay internal"
+ai_hash: 56070a0e4e43d3f8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-06
-type: lesson
+entities: []
+source: session 2026-08-06
 status: seedling
-source: "session 2026-08-06"
-tags: [kubernetes, kind, ports, gotcha, leo-customer360]
+tags:
+- kubernetes
+- kind
+- ports
+- gotcha
+- leo-customer360
+title: 'kind port remap: only hostPort binds the host; NodePort/targetPort stay internal'
+type: lesson
 ---
 
 # kind port remap: only hostPort binds the host; NodePort/targetPort stay internal
@@ -26,3 +35,14 @@ Context: `leo-customer360` `k8s/overlays/local` (kind). The base ConfigMap is sh
 
 - [[Kubernetes NodePort Service]]
 - [[Browser-facing vs in-cluster URLs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+- [[Customer360 redis.conf omits port so redis listens on 6379 not 6580]]
+- [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
+- [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080]]
+- [[LEO Customer360 VNG topology co-located services use localhost, cross-box hops need explicit extra_ingress]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "customer360-api tenant-admin router tests must inject an admin request.state.user"
+ai_hash: 9150cba355dec2cf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: lesson
+entities: []
+source: 'leo-customer360 test_campaign_draft_api.py, PR #69, session 2026-09-14'
 status: seedling
-source: "leo-customer360 test_campaign_draft_api.py, PR #69, session 2026-09-14"
-tags: [customer360-api, pytest, auth, sso, ci, gotcha]
+tags:
+- customer360-api
+- pytest
+- auth
+- sso
+- ci
+- gotcha
+title: customer360-api tenant-admin router tests must inject an admin request.state.user
+type: lesson
 ---
 
 # customer360-api tenant-admin router tests must inject an admin request.state.user
@@ -34,3 +44,14 @@ TENANT_ADMIN_ROLES = {platform_admin, super_admin, system_admin, tenant_admin, a
 ## Related
 
 - [[Fork PRs get no secrets in GitHub Actions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list]]
+- [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
+- [[customer360-api has two auth modes dev local-JWT vs Keycloak SSO]]
+- [[Creating a Keycloak realm role does not grant it — you must assign it and match the name the app authorizes on]]
+- [[Verify an authed health endpoint in-container, not by curl, in CI]]
+
+%% ai-graph-end %%

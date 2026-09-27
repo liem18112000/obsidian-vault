@@ -1,10 +1,20 @@
 ---
-title: "Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days"
+ai_hash: 66f0fd3a4f9843a3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: howto
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [debugging, observability, cloud-logging, mongodb, root-cause]
+tags:
+- debugging
+- observability
+- cloud-logging
+- mongodb
+- root-cause
+title: Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet
+  days
+type: howto
 ---
 
 # Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days
@@ -26,3 +36,14 @@ gcloud pattern used: `gcloud logging read resource.type="k8s_container" AND reso
 ## Related
 
 - [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+- [[Intermittent DB saturation = stacked loads crossing a fixed ceiling]]
+- [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
+- [[Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore into Mongo]]
+- [[Luz tenant mongod logs are not in klara-prod Cloud Logging]]
+
+%% ai-graph-end %%

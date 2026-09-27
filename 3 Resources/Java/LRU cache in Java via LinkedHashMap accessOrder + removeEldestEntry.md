@@ -1,10 +1,19 @@
 ---
-title: "LRU cache in Java via LinkedHashMap accessOrder + removeEldestEntry"
+ai_hash: e4b2ead4d197a58b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: howto
+entities: []
+source: session 2026-08-26 luz_jsonstore MongoClientFactory
 status: seedling
-source: "session 2026-08-26 luz_jsonstore MongoClientFactory"
-tags: [java, cache, lru, linkedhashmap, pattern]
+tags:
+- java
+- cache
+- lru
+- linkedhashmap
+- pattern
+title: LRU cache in Java via LinkedHashMap accessOrder + removeEldestEntry
+type: howto
 ---
 
 # LRU cache in Java via LinkedHashMap accessOrder + removeEldestEntry
@@ -31,3 +40,14 @@ Ref: baeldung.com/java-linked-hashmap.
 ## Related
 
 - [[Cache one MongoClient per tenant and close it on eviction]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cache one MongoClient per tenant and close it on eviction]]
+- [[Track pooled MongoClients in a shutdown registry instead of closing on cache eviction]]
+- [[putIfAbsent(Supplier) runs the loader under a global write lock]]
+- [[Don't liveness-ping a cached DB client on every call]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+
+%% ai-graph-end %%

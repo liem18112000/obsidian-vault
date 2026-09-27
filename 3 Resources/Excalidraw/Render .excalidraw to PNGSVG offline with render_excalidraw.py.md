@@ -1,10 +1,18 @@
 ---
-title: "Render .excalidraw to PNG/SVG offline with render_excalidraw.py"
+ai_hash: e67b98e08f3e67d2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: howto
+entities: []
+source: session 2026-08-19
 status: seedling
-source: "session 2026-08-19"
-tags: [excalidraw, diagrams, rendering, tooling]
+tags:
+- excalidraw
+- diagrams
+- rendering
+- tooling
+title: Render .excalidraw to PNG/SVG offline with render_excalidraw.py
+type: howto
 ---
 
 # Render .excalidraw to PNG/SVG offline with render_excalidraw.py
@@ -28,3 +36,14 @@ Related: [[excalidraw-diagram skill]]
 ## Related
 
 - [[excalidraw-diagram skill]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+- [[excalidraw-diagram renderer must run under uv run, not plain python]]
+- [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
+- [[JetBrains Excalidraw plugin rewrites the .excalidraw source field on save]]
+- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
+
+%% ai-graph-end %%

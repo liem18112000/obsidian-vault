@@ -1,10 +1,19 @@
 ---
-title: "Safely strip Python comments + collapse docstrings with tokenize + ast"
+ai_hash: fe84f6548b279146
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: howto
+entities: []
+source: session 2026-09-08 test-agent-v2 cleanup
 status: seedling
-source: "session 2026-09-08 test-agent-v2 cleanup"
-tags: [python, tokenize, ast, refactoring, codemod]
+tags:
+- python
+- tokenize
+- ast
+- refactoring
+- codemod
+title: Safely strip Python comments + collapse docstrings with tokenize + ast
+type: howto
 ---
 
 # Safely strip Python comments + collapse docstrings with tokenize + ast
@@ -17,3 +26,10 @@ To bulk-strip `#` comments and collapse docstrings across a Python codebase WITH
 Guardrails: run `ast.parse(result)` per file before writing (never persist a file that stopped parsing); do a comment-strip pass and a docstring pass separately, re-reading between them (line numbers shift); squeeze 3+ blank lines; then `ruff check --fix` for import-order/blank-line normalization; then run the test suite (the transform is comment/docstring-only so behaviour must be identical). Everything committed first = git revert is the safety net.
 
 Gotcha: `@mcp.tool()` / some frameworks use a functions docstring as the tool DESCRIPTION — collapsing shortens those descriptions (cosmetic, not breaking). Agent `description=`/`instructions=` passed as string ARGS are not docstrings, so they are untouched. Verified on test-agent-v2 (254 files, zero logic change).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Strip all comments and docstrings from Python safely with tokenize plus AST]]
+
+%% ai-graph-end %%

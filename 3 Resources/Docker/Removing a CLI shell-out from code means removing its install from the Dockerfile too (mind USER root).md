@@ -1,10 +1,21 @@
 ---
-title: "Removing a CLI shell-out from code means removing its install from the Dockerfile too (mind USER root)"
+ai_hash: da257825e1fe1840
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: lesson
+entities: []
+source: session 2026-08-07 luz_docs_import
 status: seedling
-source: "session 2026-08-07 luz_docs_import"
-tags: [docker, dockerfile, dead-code, kubectl, gotcha, luz-docs]
+tags:
+- docker
+- dockerfile
+- dead-code
+- kubectl
+- gotcha
+- luz-docs
+title: Removing a CLI shell-out from code means removing its install from the Dockerfile
+  too (mind USER root)
+type: lesson
 ---
 
 # Removing a CLI shell-out from code means removing its install from the Dockerfile too (mind USER root)
@@ -22,3 +33,14 @@ Related: [[luz_docs_import: idempotent re-import replaces view-controller search
 ## Related
 
 - [[luz_docs_import: idempotent re-import replaces view-controller search-based file dedup]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_import detects dead async-worker pods via kubectl during status polling]]
+- [[luz_docs_import idempotent re-import replaces view-controller search-based file dedup]]
+- [[Run luz_docs_statistic locally with docker-compose]]
+- [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
+- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
+
+%% ai-graph-end %%

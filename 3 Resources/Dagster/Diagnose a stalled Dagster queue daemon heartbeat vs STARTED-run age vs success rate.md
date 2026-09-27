@@ -1,10 +1,20 @@
 ---
-title: "Diagnose a stalled Dagster queue: daemon heartbeat vs STARTED-run age vs success rate"
+ai_hash: 402902a2ea68cc9f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: howto
+entities: []
+source: customer360 UAT live check 2026-09-10
 status: seedling
-source: "customer360 UAT live check 2026-09-10"
-tags: [dagster, diagnostics, postgres, queue, sql]
+tags:
+- dagster
+- diagnostics
+- postgres
+- queue
+- sql
+title: 'Diagnose a stalled Dagster queue: daemon heartbeat vs STARTED-run age vs success
+  rate'
+type: howto
 ---
 
 # Diagnose a stalled Dagster queue: daemon heartbeat vs STARTED-run age vs success rate
@@ -38,3 +48,14 @@ Decision: current QUEUED_RUN_COORDINATOR heartbeat + old STARTED runs + zero rec
 - [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
 - [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
 - [[A Dagster poll sensor without run_key mints a duplicate run every tick]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+- [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+- [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+- [[Dagster run_monitoring + DefaultRunLauncher does not reap STARTED zombies that predate a daemon restart]]
+- [[Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first]]
+
+%% ai-graph-end %%

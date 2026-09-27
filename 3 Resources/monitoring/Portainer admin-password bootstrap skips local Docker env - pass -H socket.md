@@ -1,10 +1,19 @@
 ---
-title: "Portainer admin-password bootstrap skips local Docker env - pass -H socket"
+ai_hash: 6fdacc7a2d264193
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: howto
+entities: []
+source: session 2026-08-19
 status: seedling
-source: "session 2026-08-19"
-tags: [portainer, docker, gotcha, bootstrap, socket]
+tags:
+- portainer
+- docker
+- gotcha
+- bootstrap
+- socket
+title: Portainer admin-password bootstrap skips local Docker env - pass -H socket
+type: howto
 ---
 
 # Portainer non-interactive admin skips the local env — pass -H socket to fix
@@ -34,3 +43,14 @@ Standalone → Socket → `/var/run/docker.sock` → Connect.
 
 Applied in `leo-customer360` `deployments/monitoring/deploy-monitoring.sh`. Related:
 [[Portainer non-interactive admin bootstrap via --admin-password-file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Portainer non-interactive admin bootstrap via --admin-password-file]]
+- [[Portainer agent self-shuts its API after 72h if no server associates]]
+- [[Portainer Agent endpoint API needs URL=tcphost9001 (bare hostport - HTTP 500 'unable to parse docker host')]]
+- [[CD secrets must be wired into cd.yml deploy step env, not just added to GitHub]]
+- [[leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually]]
+
+%% ai-graph-end %%

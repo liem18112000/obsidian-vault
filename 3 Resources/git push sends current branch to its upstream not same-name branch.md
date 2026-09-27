@@ -1,7 +1,14 @@
 ---
-title: git push (no args) targets the branch's UPSTREAM, not a same-name remote branch
-tags: [git, gotcha, ci-cd]
+ai_hash: 4b51bec663949b63
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
+entities: []
+tags:
+- git
+- gotcha
+- ci-cd
+title: git push (no args) targets the branch's UPSTREAM, not a same-name remote branch
 ---
 
 # `git push` (no args) targets the branch's UPSTREAM, not a same-name remote branch
@@ -28,3 +35,14 @@ Recovery if it lands on main: prefer a new branch at the pushed commit + a PR;
 avoid force-pushing the shared default branch.
 
 Related: [[workflow_run subscribes by workflow name not filename]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[git checkout -B branch originmain rehomes upstream to originmain, so a bare push targets main]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[GitHub Pages build on every branch, deploy only from the default branch]]
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+- [[git submodule update --remote can clobber unpushed submodule HEAD]]
+
+%% ai-graph-end %%

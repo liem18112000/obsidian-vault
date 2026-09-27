@@ -1,10 +1,18 @@
 ---
-title: "Adapt IaC to code by treating runtime config as the infra source of truth"
+ai_hash: 3a43ccdea0658b8a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-09
-type: howto
+entities: []
+source: session 2026-08-09 leo-customer360 terraform adapt
 status: seedling
-source: "session 2026-08-09 leo-customer360 terraform adapt"
-tags: [terraform, iac, method, config-drift]
+tags:
+- terraform
+- iac
+- method
+- config-drift
+title: Adapt IaC to code by treating runtime config as the infra source of truth
+type: howto
 ---
 
 # Adapt IaC to code by treating runtime config as the infra source of truth
@@ -24,3 +32,14 @@ Related: [[Managed DB provisioners create the server but not in-database objects
 ## Related
 
 - [[Managed DB provisioners create the server but not in-database objects]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 CD deploys app containers to vServers only, never the vDBvLBvStorage Terraform]]
+- [[Managed DB provisioners create the server but not in-database objects]]
+- [[CI-driven CD cannot resolve local gitignored Terraform state — needs remote backend or IPs via secrets]]
+- [[Split Terraform cluster-provisioning state separate from in-cluster workload state]]
+- [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+
+%% ai-graph-end %%

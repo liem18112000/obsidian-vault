@@ -1,10 +1,22 @@
 ---
-title: "VNG Cloud vServer: discovering account catalog names via the vserver-gateway API"
+ai_hash: 600593f5c8bce155
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: howto
+entities: []
+source: session 2026-08-18 leo-customer360 deployments/server
 status: seedling
-source: "session 2026-08-18 leo-customer360 deployments/server"
-tags: [terraform, vngcloud, greennode, vserver, api, oauth2, gotcha]
+tags:
+- terraform
+- vngcloud
+- greennode
+- vserver
+- api
+- oauth2
+- gotcha
+title: 'VNG Cloud vServer: discovering account catalog names via the vserver-gateway
+  API'
+type: howto
 ---
 
 # VNG Cloud vServer: discovering account catalog names via the vserver-gateway API
@@ -40,3 +52,14 @@ These data sources ERROR on a name miss (not empty id), so `try(...id,"")` preco
 ## Related
 
 - [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vServer OS images are not associated with the s2-general flavor zone (image data-source trap)]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+- [[VNG Cloud list-projects endpoint is GET vserver-gatewayv1projects (not accounts-api)]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+
+%% ai-graph-end %%

@@ -1,10 +1,42 @@
 ---
-title: "luz-store on dev is a Deployment, not a StatefulSet — roll out with kubectl set image"
+ai_hash: 06a45baa663a2a2d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-04
-type: howto
+entities:
+- luz-store
+- dev
+- Deployment
+- StatefulSet
+- kubectl set image
+- google-skill-rollout-latest
+- ReplicaSet-hashed pod names
+- ordinal pod names
+- kubectl get statefulset
+- Container name
+- europe-west6-docker.pkg.dev/klara-repo/artifact-registry-container-images/luz-store
+- git commit SHA
+- Cloud Build
+- gcloud artifacts docker images list
+- git rev-parse HEAD
+- kubectl context
+- gke_klara-nonprod_europe-west6-a_klara-nonprod
+- postgres skill dev port-forward needs the klara-nonprod GKE context
+- kind-customer360
+- kubectl rollout status
+- Image tags
+source: session 2026-08-04
 status: seedling
-source: "session 2026-08-04"
-tags: [luz_store, kubernetes, deployment, rollout, gke, dev]
+tags:
+- luz_store
+- kubernetes
+- deployment
+- rollout
+- gke
+- dev
+title: luz-store on dev is a Deployment, not a StatefulSet — roll out with kubectl
+  set image
+type: howto
 ---
 
 # luz-store on dev is a Deployment, not a StatefulSet — roll out with kubectl set image
@@ -32,3 +64,35 @@ kubectl rollout status deployment/luz-store -n dev --timeout=180s
 
 - [[postgres skill dev port-forward needs the klara-nonprod GKE context]]
 - [[not kind-customer360]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-person is a Deployment not a StatefulSet in klara dev]]
+- [[Build and roll out luz-jsonstore to dev (Cloud Build trigger + Deployment rollout)]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[rollout-latest skill auto-detects StatefulSet vs Deployment]]
+- [[postgres skill dev port-forward needs the klara-nonprod GKE context, not kind-customer360]]
+
+**Relations:**
+- luz-store — *is_on_environment* — dev
+- luz-store — *is_a* — Deployment
+- luz-store — *is_not_a* — StatefulSet
+- Deployment — *uses_pod_naming_convention* — ReplicaSet-hashed pod names
+- StatefulSet — *uses_pod_naming_convention* — ordinal pod names
+- kubectl get statefulset — *returns_NotFound_for* — luz-store
+- google-skill-rollout-latest — *targets* — StatefulSet
+- google-skill-rollout-latest — *does_not_apply_to* — luz-store
+- luz-store — *should_be_rolled_out_with* — kubectl set image
+- luz-store — *has_container_name* — luz-store
+- luz-store — *uses_image_repo* — europe-west6-docker.pkg.dev/klara-repo/artifact-registry-container-images/luz-store
+- Image tags — *are_defined_as* — git commit SHA
+- Cloud Build — *pushes* — Image tags
+- gcloud artifacts docker images list — *confirms_existence_of* — Image tags
+- git rev-parse HEAD — *provides_value_for* — Image tags
+- kubectl set image — *requires_context* — gke_klara-nonprod_europe-west6-a_klara-nonprod
+- kubectl rollout status — *requires_context* — gke_klara-nonprod_europe-west6-a_klara-nonprod
+- postgres skill dev port-forward needs the klara-nonprod GKE context — *is_related_to* — gke_klara-nonprod_europe-west6-a_klara-nonprod
+- postgres skill dev port-forward needs the klara-nonprod GKE context — *contrasts_with* — kind-customer360
+
+%% ai-graph-end %%

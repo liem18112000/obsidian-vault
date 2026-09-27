@@ -1,10 +1,19 @@
 ---
-title: "GcsArtifactService dials storage.Client eagerly in its constructor"
+ai_hash: 00ab655006047125
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [test-agent, adk, gcs, gotcha, credentials]
+tags:
+- test-agent
+- adk
+- gcs
+- gotcha
+- credentials
+title: GcsArtifactService dials storage.Client eagerly in its constructor
+type: lesson
 ---
 
 # GcsArtifactService dials storage.Client eagerly in its constructor
@@ -16,3 +25,14 @@ Fix in `common/adk/services.py` `build_runner`: only use `GcsArtifactService` wh
 ## Related
 
 - [[ObjectStore is test-agent cross-service shared state]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ObjectStore is test-agent cross-service shared state]]
+- [[Module-level load_dotenv lets unit tests hit real cloud credentials]]
+- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "\"Unable to find image locally\" is normal Docker pre-pull output, not the failure"
+ai_hash: e582a9f281c88d93
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: lesson
+entities: []
+source: session 2026-09-19
 status: seedling
-source: "session 2026-09-19"
-tags: [github-actions, docker, ci-cd, gotcha, debugging]
+tags:
+- github-actions
+- docker
+- ci-cd
+- gotcha
+- debugging
+title: '"Unable to find image locally" is normal Docker pre-pull output, not the failure'
+type: lesson
 ---
 
 # "Unable to find image locally" is normal Docker pre-pull output, not the failure
@@ -20,3 +29,14 @@ One concrete case of the real error hiding below it: [[PyPI invalid-publisher me
 ## Related
 
 - [[PyPI invalid-publisher means no trusted publisher matches the workflow OIDC claims]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PyPI invalid-publisher means no trusted publisher matches the workflow OIDC claims]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+- [[Local deploy pull from GHCR needs a token with readpackages — gh default token lacks it (403)]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+
+%% ai-graph-end %%

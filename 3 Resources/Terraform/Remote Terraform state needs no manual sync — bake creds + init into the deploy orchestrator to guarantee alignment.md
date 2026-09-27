@@ -1,10 +1,20 @@
 ---
-title: "Remote Terraform state needs no manual sync — bake creds + init into the deploy orchestrator to guarantee alignment"
+ai_hash: 0978275389ddb008
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-21
-type: lesson
+entities: []
+source: session 2026-08-21, deployments/lib/tfstate.sh
 status: seedling
-source: "session 2026-08-21, deployments/lib/tfstate.sh"
-tags: [terraform, remote-state, ci-cd, operations, leo-customer360]
+tags:
+- terraform
+- remote-state
+- ci-cd
+- operations
+- leo-customer360
+title: Remote Terraform state needs no manual sync — bake creds + init into the deploy
+  orchestrator to guarantee alignment
+type: lesson
 ---
 
 # Remote Terraform state needs no manual sync — bake creds + init into the deploy orchestrator to guarantee alignment
@@ -18,3 +28,14 @@ Fix to make it foolproof: have the deploy orchestrators preflight (a) load the b
 ## Related
 
 - [[Terraform S3 remote backend for VNG vStorage (S3-compatible) config recipe]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Terraform S3 remote backend for VNG vStorage (S3-compatible) config recipe]]
+- [[Configure vStorage S3 backend creds in each component .env so deploy scripts self-auth]]
+- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB]]
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+- [[CI-driven CD cannot resolve local gitignored Terraform state — needs remote backend or IPs via secrets]]
+
+%% ai-graph-end %%

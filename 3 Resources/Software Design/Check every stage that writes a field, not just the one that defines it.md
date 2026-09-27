@@ -1,10 +1,17 @@
 ---
-title: "Check every stage that writes a field, not just the one that defines it"
+ai_hash: 69fe8225ac0e6856
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: lesson
+entities: []
+source: session 2026-09-25
 status: seedling
-source: "session 2026-09-25"
-tags: [pipelines, data-modelling, gotcha]
+tags:
+- pipelines
+- data-modelling
+- gotcha
+title: Check every stage that writes a field, not just the one that defines it
+type: lesson
 ---
 
 # Check every stage that writes a field, not just the one that defines it
@@ -25,3 +32,14 @@ Related: [[A read filtered on a value no writer produces fails by returning empt
 
 - [[A read filtered on a value no writer produces fails by returning empty]]
 - [[Prove a new branch is load-bearing by reverting it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A read filtered on a value no writer produces fails by returning empty]]
+- [[A field written everywhere and read nowhere is dead code]]
+- [[Verify a response-shape regression by tracing the downstream consumer, not the shape diff]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[Fan-out gate and backfill filter must cover the same field set]]
+
+%% ai-graph-end %%

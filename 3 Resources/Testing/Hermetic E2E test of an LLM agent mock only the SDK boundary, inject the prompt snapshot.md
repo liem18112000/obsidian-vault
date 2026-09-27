@@ -1,10 +1,22 @@
 ---
-title: "Hermetic E2E test of an LLM agent: mock only the SDK boundary, inject the prompt snapshot"
+ai_hash: bff209a7e76281a0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: howto
+entities: []
+source: session 2026-09-21 (customer360-agent E2E)
 status: seedling
-source: "session 2026-09-21 (customer360-agent E2E)"
-tags: [testing, e2e, llm, litellm, fastapi, pytest, mocking]
+tags:
+- testing
+- e2e
+- llm
+- litellm
+- fastapi
+- pytest
+- mocking
+title: 'Hermetic E2E test of an LLM agent: mock only the SDK boundary, inject the
+  prompt snapshot'
+type: howto
 ---
 
 # Hermetic E2E test of an LLM agent: mock only the SDK boundary, inject the prompt snapshot
@@ -24,3 +36,14 @@ Discovered writing `customer360-agent/tests/test_e2e.py` for the customer360 AI 
 
 - [[pydantic-settings JSON-parses complex fields at the source]]
 - [[before validators]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned JSON]]
+- [[Reasoning models reject temperature != 1; use litellm.drop_params for multi-model agents]]
+- [[Test an LLM-vs-heuristic seam offline by monkeypatching complete() per module]]
+- [[Pluggable LLM via the litellm ModelProvider backend]]
+- [[Monkeypatching a function that calls itself recurses — capture the original first]]
+
+%% ai-graph-end %%

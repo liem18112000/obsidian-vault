@@ -1,10 +1,19 @@
 ---
-title: "Dead-code refcount scans flag intentional seams as unused; vet before deleting"
+ai_hash: 95fbdfe7778c6661
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: test-agent-v2 common/ cleanup, session 2026-09-08
 status: seedling
-source: "test-agent-v2 common/ cleanup, session 2026-09-08"
-tags: [dead-code, refactoring, cleanup, testing, technique]
+tags:
+- dead-code
+- refactoring
+- cleanup
+- testing
+- technique
+title: Dead-code refcount scans flag intentional seams as unused; vet before deleting
+type: lesson
 ---
 
 # Dead-code refcount scans flag intentional seams as unused; vet before deleting
@@ -18,3 +27,14 @@ A pure reference-count scan (grep every symbol, flag zero-external-refs / test-o
 Genuine cruft (safe to delete): symbols with zero refs *including tests* (dead wrappers, orphaned enum constants, dead CLI entrypoints), and duplicate module-level aliases that every consumer re-derives locally.
 
 Rule: after the refcount pass, read each flagged symbol's call sites and ask "is this an unwired/incomplete feature or a query/symmetry counterpart?" — if yes, keep (or ask), do not auto-delete. Also: a partially-wired feature whose *plugin/callback is a stub* (recall path) is unfinished, not obsolete.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A field written everywhere and read nowhere is dead code]]
+- [[An uncalled method isn't automatically dead code — check facadeconvention symmetry]]
+- [[A read filtered on a value no writer produces fails by returning empty]]
+- [[Verify wildcard-to-explicit import cleanup by compiling]]
+- [[Grep-audit env vars against code before pruning .env files]]
+
+%% ai-graph-end %%

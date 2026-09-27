@@ -1,10 +1,19 @@
 ---
-title: "Cloud Run GFE reserves /healthz — use /livez for your health endpoint"
+ai_hash: c484a9e1cd4a69d4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27 — kga deploy
 status: seedling
-source: "session 2026-08-27 — kga deploy"
-tags: [cloud-run, gfe, health-check, gcp, gotcha]
+tags:
+- cloud-run
+- gfe
+- health-check
+- gcp
+- gotcha
+title: Cloud Run GFE reserves /healthz — use /livez for your health endpoint
+type: lesson
 ---
 
 # Cloud Run GFE reserves /healthz — use /livez for your health endpoint
@@ -23,3 +32,14 @@ Context: kga Cloud Run service (LUZ-159671 test-agent).
 
 - [[Cloud Run v2 has startup_probe + liveness_probe]]
 - [[no readiness probe]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
+- [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+- [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+- [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
+- [[CoreDNS livenessreadiness 404 means probe path-port mismatch, not a CoreDNS crash]]
+
+%% ai-graph-end %%

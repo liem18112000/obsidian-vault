@@ -1,10 +1,20 @@
 ---
-title: "git checkout -B branch origin/main rehomes upstream to origin/main, so a bare push targets main"
+ai_hash: 73644de25f72c7c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20
 status: seedling
-source: "session 2026-08-20"
-tags: [git, upstream, push, gotcha, force-with-lease]
+tags:
+- git
+- upstream
+- push
+- gotcha
+- force-with-lease
+title: git checkout -B branch origin/main rehomes upstream to origin/main, so a bare
+  push targets main
+type: lesson
 ---
 
 # git checkout -B branch origin/main rehomes upstream to origin/main, so a bare push targets main
@@ -24,3 +34,14 @@ Prefer `--force-with-lease` over `--force`: it refuses the push if the remote br
 ## Related
 
 - [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[git push sends current branch to its upstream not same-name branch]]
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[ReviewPR scope diff the branch's real base, not main, when base is ahead of main]]
+- [[Classify local vs upstream with git merge-base to pick ff or rebase]]
+
+%% ai-graph-end %%

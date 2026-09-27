@@ -1,10 +1,19 @@
 ---
-title: "Shared model quota makes LLM fan-out worthless"
+ai_hash: 522be4bc51ecbd18
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: test-agent-v2 parallel-gather, 2026-09-22
 status: seedling
-source: "test-agent-v2 parallel-gather, 2026-09-22"
-tags: [concurrency, parallelism, llm, throughput, test-agent]
+tags:
+- concurrency
+- parallelism
+- llm
+- throughput
+- test-agent
+title: Shared model quota makes LLM fan-out worthless
+type: lesson
 ---
 
 # Shared model quota makes LLM fan-out worthless
@@ -23,3 +32,14 @@ Related: [[Cap-before-exclude parallelism recall trap]], [[Concurrent in-process
 
 - [[Cap-before-exclude parallelism recall trap]]
 - [[Concurrent in-process ADK Runners return simultaneously-empty output]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cap-before-exclude parallelism recall trap]]
+- [[Concurrent in-process ADK Runners return simultaneously-empty output]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
+- [[Bound ThreadPoolExecutor + budget keeps per-item LLM scoring inside a web request window]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+
+%% ai-graph-end %%

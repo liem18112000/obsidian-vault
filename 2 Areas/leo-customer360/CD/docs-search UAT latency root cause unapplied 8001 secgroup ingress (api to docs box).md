@@ -1,10 +1,56 @@
 ---
-title: "docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)"
+ai_hash: 8a3da9b619df5e8b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-13
-type: lesson
+entities:
+- docs-search UAT latency
+- docs-vector-search chatbot
+- UAT environment
+- VNG cloud
+- security-group ingress rule
+- docs service port 8001
+- API box
+- IP address 10.100.1.5
+- deployments/server/overlays/uat.tfvars
+- Continuous Deployment (CD)
+- Terraform
+- deploy.sh script
+- docs box
+- 127.0.0.1:8001/health endpoint
+- uvicorn
+- frontend-admin
+- GET /ai/health endpoint
+- frontend-admin proxy
+- IP address 10.100.1.7
+- SYN dropped
+- firewall
+- connection refused
+- DOCS_PROXY_TIMEOUT_SECONDS
+- Caddy
+- /docs-ai route
+- TARGET environment variable
+- vngcloud_vserver_secgrouprule.extra["8001-10.100.1.5/32"]
+- instances
+- backend root disk
+- leo-customer360
+- Portainer agents
+- CD secrets
+- cd.yml deploy step env
+- GitHub
+- monitoring step
+source: session 2026-09-13
 status: seedling
-source: "session 2026-09-13"
-tags: [leo-customer360, networking, terraform, vngcloud, troubleshooting, docs-search]
+tags:
+- leo-customer360
+- networking
+- terraform
+- vngcloud
+- troubleshooting
+- docs-search
+title: 'docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to
+  docs box)'
+type: lesson
 ---
 
 # docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)
@@ -31,3 +77,46 @@ On UAT, the docs-vector-search chatbot hung ~120s per request even though the se
 - [[leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually]]
 - [[CD secrets must be wired into cd.yml deploy step env]]
 - [[not just added to GitHub]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO Customer360 VNG topology co-located services use localhost, cross-box hops need explicit extra_ingress]]
+- [[oauth2-proxy cookie_secret must be 162432 bytes; openssl rand -base64 32 (44 chars) crash-loops it]]
+- [[Verify uat customer360-api health publicly at beta.leocdp.comc360apihealth]]
+- [[docs-vector-search OOMs on ask on a 1vCPU2GB box (Qwen KV cache over RAM+swap)]]
+- [[Customer360 UAT api box is a shared 1vCPU-2GB vServer running 5 containers]]
+
+**Relations:**
+- docs-search UAT latency — *affects* — docs-vector-search chatbot
+- docs-vector-search chatbot — *runs on* — UAT environment
+- docs-search UAT latency — *caused by* — unapplied security-group ingress rule
+- security-group ingress rule — *is part of* — VNG cloud
+- security-group ingress rule — *opens* — docs service port 8001
+- security-group ingress rule — *allows access from* — API box
+- API box — *has IP* — IP address 10.100.1.5
+- security-group ingress rule — *defined in* — deployments/server/overlays/uat.tfvars
+- Continuous Deployment (CD) — *does not run* — Terraform
+- Terraform — *is applied by* — deploy.sh script
+- docs box — *hosts* — docs-vector-search chatbot
+- docs box — *serves* — 127.0.0.1:8001/health endpoint
+- uvicorn — *binds to* — docs service port 8001
+- frontend-admin — *makes request to* — GET /ai/health endpoint
+- GET /ai/health endpoint — *proxies through* — frontend-admin proxy
+- frontend-admin proxy — *proxies to* — docs box
+- API box — *attempts connection to* — IP address 10.100.1.7
+- IP address 10.100.1.7 — *on port* — docs service port 8001
+- SYN dropped — *indicates* — firewall
+- connection refused — *indicates* — nothing listening
+- docs-search UAT latency — *is related to timeout* — DOCS_PROXY_TIMEOUT_SECONDS
+- Caddy — *has* — /docs-ai route
+- deploy.sh script — *supports* — TARGET environment variable
+- TARGET environment variable — *targets* — vngcloud_vserver_secgrouprule.extra["8001-10.100.1.5/32"]
+- deploy.sh script — *can rename* — instances
+- deploy.sh script — *can shrink* — backend root disk
+- leo-customer360 — *skips* — monitoring step
+- leo-customer360 — *requires manual deployment of* — Portainer agents
+- CD secrets — *must be wired into* — cd.yml deploy step env
+- CD secrets — *should not be added to* — GitHub
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)"
+ai_hash: 59e7e9c54b223aff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [cloud-run, gcp, auth, iam, gotcha]
+tags:
+- cloud-run
+- gcp
+- auth
+- iam
+- gotcha
+title: Cloud Run service-to-service with an app bearer needs the callee public (Authorization
+  header collision)
+type: lesson
 ---
 
 # Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)
@@ -22,3 +32,14 @@ See [[Cloud Run one-port limit forces co-located HTTP servers into separate serv
 
 - [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
 - [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Reach a private Cloud Run service as a user via gcloud run services proxy, not a minted ID token]]
+- [[Bridgegateway use separate secrets for the inbound caller token and the outbound backend token]]
+- [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
+- [[Multi-turn agent sessions need min-instances=1 and session affinity on Cloud Run]]
+- [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+
+%% ai-graph-end %%

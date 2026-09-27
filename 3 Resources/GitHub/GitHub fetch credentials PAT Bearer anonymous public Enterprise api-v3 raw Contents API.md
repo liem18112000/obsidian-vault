@@ -1,10 +1,20 @@
 ---
-title: "GitHub fetch credentials PAT Bearer anonymous public Enterprise api-v3 raw Contents API"
+ai_hash: 891052910ae007a4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: term
+entities: []
+source: session 2026-09-23 add-github-support
 status: seedling
-source: "session 2026-09-23 add-github-support"
-tags: [github, credentials, pat, rest-api, enterprise]
+tags:
+- github
+- credentials
+- pat
+- rest-api
+- enterprise
+title: GitHub fetch credentials PAT Bearer anonymous public Enterprise api-v3 raw
+  Contents API
+type: term
 ---
 
 # GitHub fetch credentials PAT Bearer anonymous public Enterprise api-v3 raw Contents API
@@ -30,3 +40,14 @@ Contrast with Bitbucket Cloud, which uses `(username, app_password)` **Basic** a
 ## Related
 
 - [[KGA crawler fetches repo source files via client mixin plus NodeFetcher registered by kind]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KGA crawler fetches repo source files via client mixin plus NodeFetcher registered by kind]]
+- [[Bitbucket Cloud API differs from JiraConfluence host, auth, raw src]]
+- [[Automate GitHub read-only deploy key for a server via gh + dedicated SSH key]]
+- [[Local deploy pull from GHCR needs a token with readpackages — gh default token lacks it (403)]]
+- [[Clone a Bitbucket repo with an app password without leaking it (inline credential helper)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "An if-guarded GitHub Actions step emits no deprecation annotation until its condition is true"
+ai_hash: 6da6cd586aeaf71e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: 'session 2026-08-20, leo-customer360 issue #6'
 status: seedling
-source: "session 2026-08-20, leo-customer360 issue #6"
-tags: [github-actions, ci, deprecation, gotcha, leo-customer360]
+tags:
+- github-actions
+- ci
+- deprecation
+- gotcha
+- leo-customer360
+title: An if-guarded GitHub Actions step emits no deprecation annotation until its
+  condition is true
+type: lesson
 ---
 
 # An if-guarded GitHub Actions step emits no deprecation annotation until its condition is true
@@ -18,3 +28,14 @@ A GitHub Actions deprecation warning (e.g. "Node.js 20 is deprecated … forced 
 ## Related
 
 - [[Verify a GitHub Action's Node runtime and inputs via gh api on action.yml at a tag]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify a GitHub Action's Node runtime and inputs via gh api on action.yml at a tag]]
+- [[GitHub Actions Node 20 deprecation warning from v4 actions is harmless noise]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+
+%% ai-graph-end %%

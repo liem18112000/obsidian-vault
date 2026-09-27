@@ -1,10 +1,18 @@
 ---
-title: "Excalidraw offline renderer does not auto-wrap bound container text"
+ai_hash: 188bfb6d26b31a66
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-16
-type: lesson
+entities: []
+source: session 2026-08-16 claude-watermark docs
 status: seedling
-source: "session 2026-08-16 claude-watermark docs"
-tags: [excalidraw, diagrams, gotcha, rendering]
+tags:
+- excalidraw
+- diagrams
+- gotcha
+- rendering
+title: Excalidraw offline renderer does not auto-wrap bound container text
+type: lesson
 ---
 
 # Excalidraw offline renderer does not auto-wrap bound container text
@@ -25,3 +33,14 @@ Discovered building the Claude text-watermarking diagrams (export at `C:\Users\d
 ## Related
 
 - [[Excalidraw diagram skill]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw container-bound text does not auto-wrap in the render script]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Excalidraw standalone text does not auto-wrap to element width]]
+- [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+
+%% ai-graph-end %%

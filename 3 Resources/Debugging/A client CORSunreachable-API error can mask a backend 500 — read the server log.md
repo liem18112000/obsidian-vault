@@ -1,10 +1,20 @@
 ---
-title: "A client CORS/unreachable-API error can mask a backend 500 — read the server log"
+ai_hash: 4f760e5a245018a7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: leo-customer360 master-profiles 500, 2026-08
 status: seedling
-source: "leo-customer360 master-profiles 500, 2026-08"
-tags: [debugging, cors, http-500, frontend, gotcha]
+tags:
+- debugging
+- cors
+- http-500
+- frontend
+- gotcha
+title: A client CORS/unreachable-API error can mask a backend 500 — read the server
+  log
+type: lesson
 ---
 
 # A client CORS/unreachable-API error can mask a backend 500 — read the server log
@@ -16,3 +26,14 @@ Second tell from the same incident: the **UI still showed data** despite the fai
 Concrete case: `GET /api/v1/master-profiles/` returned 500 from a `NameError` (a helper called as a bare function but only defined as a class method); sibling endpoints returned 200, proving auth/SSO/CORS were all fine.
 
 Related: [[Redeploy OIDC consumers only after the issuer URL is reachable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Log red herrings enclosing class name and baseline-noise lines]]
+- [[Redeploy OIDC consumers only after the issuer URL is reachable]]
+- [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+- [[KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too]]
+- [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+
+%% ai-graph-end %%

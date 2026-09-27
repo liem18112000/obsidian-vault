@@ -1,10 +1,18 @@
 ---
-title: "How ADK agents are deployed: adk deploy cloud_run / agent_engine / gke + get_fast_api_app"
+ai_hash: e0bc3dcb574ab8da
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: howto
+entities: []
+source: adk CLI 2.8.0 + adk.dev/deploy, 2026-09-08
 status: seedling
-source: "adk CLI 2.8.0 + adk.dev/deploy, 2026-09-08"
-tags: [google-adk, deployment, cloud-run, agent-engine]
+tags:
+- google-adk
+- deployment
+- cloud-run
+- agent-engine
+title: 'How ADK agents are deployed: adk deploy cloud_run / agent_engine / gke + get_fast_api_app'
+type: howto
 ---
 
 # How ADK agents are deployed: adk deploy cloud_run / agent_engine / gke + get_fast_api_app
@@ -27,3 +35,14 @@ Gotcha / choice: `get_fast_api_app`/`adk deploy cloud_run` serve ADK's OWN REST 
 
 - [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
 - [[adk web/run discovers agents by importing package.agent.root_agent via AgentLoader]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[adk webrun discovers agents by importing package.agent.root_agent via AgentLoader]]
+- [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
+- [[ADK deploy targets compute matrix Agent Engine vs Cloud Run vs GKE (CPUGPUTPU)]]
+- [[ADK serverless agent tier is CPU-only; LLM compute is offloaded to a managed model API]]
+- [[ADK sample canonical layout root_agent in agent.py, sub_agents subpackages, workflow agents]]
+
+%% ai-graph-end %%

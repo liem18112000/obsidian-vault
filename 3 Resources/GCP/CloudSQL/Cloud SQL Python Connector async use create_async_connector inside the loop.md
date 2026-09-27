@@ -1,10 +1,19 @@
 ---
-title: "Cloud SQL Python Connector async: use create_async_connector inside the loop"
+ai_hash: e916db2e22778c4e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-30
-type: howto
+entities: []
+source: session 2026-08-30 task-store verify
 status: seedling
-source: "session 2026-08-30 task-store verify"
-tags: [gcp, cloud-sql, python, asyncpg, gotcha]
+tags:
+- gcp
+- cloud-sql
+- python
+- asyncpg
+- gotcha
+title: 'Cloud SQL Python Connector async: use create_async_connector inside the loop'
+type: howto
 ---
 
 # Cloud SQL Python Connector async: use create_async_connector inside the loop
@@ -28,3 +37,14 @@ Pull the password from Secret Manager inside the script so it is never printed/h
 ## Related
 
 - [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+- [[Local Cloud SQL admin without psql use the Python connector + asyncpg]]
+- [[Cloud Run mounts the Cloud SQL cloudsql socket only into the ingress container, not sidecars]]
+- [[cloud-sql-proxy binaries ship in a GCS bucket, not GitHub release assets]]
+- [[SQLAlchemy URL.create encodes passwords correctly; hand-encoding with quote_plus can corrupt them]]
+
+%% ai-graph-end %%

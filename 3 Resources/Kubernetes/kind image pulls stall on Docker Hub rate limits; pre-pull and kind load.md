@@ -1,10 +1,20 @@
 ---
-title: "kind image pulls stall on Docker Hub rate limits; pre-pull and kind load"
+ai_hash: 795ed5a36fefa9c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [kind, kubernetes, dockerhub, imagepull, ratelimit, gotcha]
+tags:
+- kind
+- kubernetes
+- dockerhub
+- imagepull
+- ratelimit
+- gotcha
+title: kind image pulls stall on Docker Hub rate limits; pre-pull and kind load
+type: lesson
 ---
 
 # kind image pulls stall on Docker Hub rate limits; pre-pull and kind load
@@ -21,3 +31,14 @@ Related k8s-vs-compose gotcha hit in the same run: compose `depends_on: service_
 ## Related
 - [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
 - [[Kustomize component makes a service tier optional per environment]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bitnami 2025 catalog reorg removed pinned bitnami version tags]]
+- [[kubectl rollout status timeout must cover cold image pull time]]
+- [[kind lists a cluster even when its node container is stopped]]
+- [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
+- [[Right-sizing k8s resource limits on the Customer360 stack]]
+
+%% ai-graph-end %%

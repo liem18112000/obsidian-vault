@@ -1,10 +1,20 @@
 ---
-title: "Never sign a security token with a secret documented as unused"
+ai_hash: 45f748d37008a23c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: lesson
+entities: []
+source: leo-customer360 SCRUM-102 code review 2026-09-19
 status: seedling
-source: "leo-customer360 SCRUM-102 code review 2026-09-19"
-tags: [security, auth, oauth, csrf, secrets, gotcha]
+tags:
+- security
+- auth
+- oauth
+- csrf
+- secrets
+- gotcha
+title: Never sign a security token with a secret documented as unused
+type: lesson
 ---
 
 # Never sign a security token with a secret documented as unused
@@ -28,3 +38,14 @@ Give each security-critical signer its *own* secret, fail startup if it is unset
 ## Related
 
 - [[CREATE TABLE IF NOT EXISTS cannot express a rename]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
+- [[LEO CDP tenant isolation fails closed and needs a Keycloak tenant_id claim mapper]]
+- [[Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list]]
+- [[Shared OIDC client skip-if-secret-exists guard drops new redirect URIs (Invalid redirect_uri)]]
+- [[A git-ignored secret file that a deploy script silently degrades on is a CI foot-gun]]
+
+%% ai-graph-end %%

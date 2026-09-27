@@ -1,10 +1,19 @@
 ---
-title: "luz-jsonstore backup double-scans every collection every 5 minutes"
+ai_hash: e7607261958a0a1b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [luz-jsonstore, mongodb, backup, performance, gotcha]
+tags:
+- luz-jsonstore
+- mongodb
+- backup
+- performance
+- gotcha
+title: luz-jsonstore backup double-scans every collection every 5 minutes
+type: lesson
 ---
 
 # luz-jsonstore backup double-scans every collection every 5 minutes
@@ -24,3 +33,14 @@ Cheap fixes: use `estimatedDocumentCount()` not `countDocuments()`; drop the red
 ## Related
 
 - [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+- [[Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore into Mongo]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[Luz tenant mongod logs are not in klara-prod Cloud Logging]]
+- [[luz_jsonstore silently drops _shard on $set updates (HTTP 200, no persist)]]
+
+%% ai-graph-end %%

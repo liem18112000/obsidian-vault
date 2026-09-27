@@ -1,10 +1,19 @@
 ---
-title: "Title a deliverable by its coverage, not position-0 of a merged refs list"
+ai_hash: 15b66ed172dbbef1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: lesson
+entities: []
+source: session 2026-09-21 (run-8eafe7ea QA/QC export test)
 status: seedling
-source: "session 2026-09-21 (run-8eafe7ea QA/QC export test)"
-tags: [test-agent, qa, gotcha, reporting, design-principle]
+tags:
+- test-agent
+- qa
+- gotcha
+- reporting
+- design-principle
+title: Title a deliverable by its coverage, not position-0 of a merged refs list
+type: lesson
 ---
 
 # Title a deliverable by its coverage, not position-0 of a merged refs list
@@ -41,3 +50,14 @@ This class of bug is **invisible to a single-ticket fixture** — with only one 
 ## Related
 
 - [[test-agent common shared engine]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TPD assured-loop judge penalizes cross-run scenario duplication]]
+- [[TPD test_kinds must be additive over the base four, not replace them]]
+- [[TPD methodology list had dupes + substring false-positives]]
+- [[test-agent-v2 always-enriched HTML report generator]]
+- [[Testing-Agent refine confidence is capped by un-ingested spec PDFs]]
+
+%% ai-graph-end %%

@@ -1,8 +1,18 @@
 ---
-title: "CD didn't fire on an infra-only merge (CI paths-ignore); re-run a workflow_run deploy via workflow_dispatch, not run rerun"
+ai_hash: 6184ba8b9cd0ebbd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
+entities: []
+tags:
+- github-actions
+- cd
+- workflow_run
+- paths-ignore
+- leo-customer360
+title: CD didn't fire on an infra-only merge (CI paths-ignore); re-run a workflow_run
+  deploy via workflow_dispatch, not run rerun
 type: gotcha
-tags: [github-actions, cd, workflow_run, paths-ignore, leo-customer360]
 ---
 
 # CD didn't fire on an infra-only merge (CI paths-ignore); re-run a workflow_run deploy via workflow_dispatch, not run rerun
@@ -16,3 +26,14 @@ Two GitHub Actions trigger gotchas hit while shipping a CD hotfix:
 Watch a dispatched run to completion with `gh run watch <id> --exit-status`.
 
 Source: leo-customer360 CD hotfix #21 (sso-realm), 2026-08-23.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[CD deploy can transiently 404 on a just-built GHCR digest - re-run the failed job]]
+- [[A workflow_run-triggered GitHub workflow always runs the version on the DEFAULT branch]]
+- [[leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh]]
+
+%% ai-graph-end %%

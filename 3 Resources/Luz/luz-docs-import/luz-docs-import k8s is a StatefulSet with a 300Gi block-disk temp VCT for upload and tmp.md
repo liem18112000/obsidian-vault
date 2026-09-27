@@ -1,10 +1,19 @@
 ---
-title: "luz-docs-import k8s is a StatefulSet with a 300Gi block-disk temp VCT for upload and /tmp"
+ai_hash: 1ef42eaefc9d0b3c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: observation
+entities: []
+source: session 2026-08-11 luz_docs_import apply-file-store
 status: seedling
-source: "session 2026-08-11 luz_docs_import apply-file-store"
-tags: [kubernetes, luz-docs-import, statefulset, storage]
+tags:
+- kubernetes
+- luz-docs-import
+- statefulset
+- storage
+title: luz-docs-import k8s is a StatefulSet with a 300Gi block-disk temp VCT for upload
+  and /tmp
+type: observation
 ---
 
 # luz-docs-import k8s is a StatefulSet with a 300Gi block-disk temp VCT for upload and /tmp
@@ -22,3 +31,14 @@ The base manifest is included via `kubernetes/kustomization.yaml`; overlays only
 ## Related
 
 - [[luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import prod scratch peaks under 1GB — 100Gi tmp-scratch (LUZ-158230) is over-provisioned]]
+- [[luz-store Filestore mount pattern shared RWX PVC + fsGroup 2000 runAsUser 1000]]
+- [[FilestoreUtils temp-path scheme and mount config resolution]]
+- [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
+- [[Luz shared Filestore has an automated cleanup cronjob with per-env subPath prefixes]]
+
+%% ai-graph-end %%

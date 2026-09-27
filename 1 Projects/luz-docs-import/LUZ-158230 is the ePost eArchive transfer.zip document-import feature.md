@@ -1,10 +1,45 @@
 ---
-title: "LUZ-158230 is the ePost eArchive transfer.zip document-import feature"
+ai_hash: db90b6b8576b46b5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-15
-type: concept
+entities:
+- LUZ-158230
+- ePost eArchive transfer.zip document-import feature
+- ePost eArchive
+- transfer.zip
+- external sender
+- Post Health
+- HEALTH document type
+- metadata.json
+- SNOMED-coded healthData
+- axonivy-prod/luz_docs_import
+- luz_docs_view_controller
+- luz_jsonstore
+- luz_docs
+- import parser/validator
+- internal component
+- sender→transfer.zip→eArchive pipeline
+- metadata.json contract
+- luz_docs_import import stores healthData as-is
+- folder tree
+- document files
+- category
+- facility
+- practice-setting
+- test-planning
+- debugging
+- eArchive ZIP-import path
+source: testing-agent run run-87933300, 2026-09-15
 status: seedling
-source: "testing-agent run run-87933300, 2026-09-15"
-tags: [luz, eArchive, zip-import, luz_docs_import, LUZ-158230]
+tags:
+- luz
+- eArchive
+- zip-import
+- luz_docs_import
+- LUZ-158230
+title: LUZ-158230 is the ePost eArchive transfer.zip document-import feature
+type: concept
 ---
 
 # LUZ-158230 is the ePost eArchive transfer.zip document-import feature
@@ -21,3 +56,44 @@ Why it matters: this is the anchor context for any test-planning or debugging on
 ## Related
 
 - [[luz_docs_import import stores healthData as-is]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost eArchive ZIP import transfer.zip shape and luz_docs_import]]
+- [[LUZ-158230 import stores healthData as-is no validation, no SNOMED label resolution, schemaless Mongo]]
+- [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
+- [[HEALTH document type carries verbatim SNOMED healthData]]
+- [[ePost Health documents ZIP import business context]]
+
+**Relations:**
+- LUZ-158230 — *is* — ePost eArchive transfer.zip document-import feature
+- ePost eArchive transfer.zip document-import feature — *enables* — external sender
+- external sender — *is* — Post Health
+- external sender — *delivers documents to* — ePost eArchive
+- external sender — *uploads* — transfer.zip
+- transfer.zip — *holds* — folder tree
+- transfer.zip — *holds* — document files
+- transfer.zip — *holds* — metadata.json
+- metadata.json — *is a* — sidecar
+- ePost eArchive transfer.zip document-import feature — *introduces* — HEALTH document type
+- HEALTH document type — *has sidecar* — metadata.json
+- metadata.json — *carries* — SNOMED-coded healthData
+- SNOMED-coded healthData — *includes* — category
+- SNOMED-coded healthData — *includes* — facility
+- SNOMED-coded healthData — *includes* — practice-setting
+- LUZ-158230 — *implemented in* — axonivy-prod/luz_docs_import
+- axonivy-prod/luz_docs_import — *supports* — luz_docs_view_controller
+- axonivy-prod/luz_docs_import — *supports* — luz_jsonstore
+- axonivy-prod/luz_docs_import — *supports* — luz_docs
+- import parser/validator — *lives inside* — axonivy-prod/luz_docs_import
+- import parser/validator — *is an* — internal component
+- LUZ-158230 — *is anchor context for* — test-planning
+- LUZ-158230 — *is anchor context for* — debugging
+- test-planning — *on* — eArchive ZIP-import path
+- debugging — *on* — eArchive ZIP-import path
+- eArchive ZIP-import path — *defined by* — sender→transfer.zip→eArchive pipeline
+- eArchive ZIP-import path — *defined by* — metadata.json contract
+- LUZ-158230 — *related to* — luz_docs_import import stores healthData as-is
+
+%% ai-graph-end %%

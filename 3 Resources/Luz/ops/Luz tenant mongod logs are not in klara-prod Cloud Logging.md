@@ -1,10 +1,19 @@
 ---
-title: "Luz tenant mongod logs are not in klara-prod Cloud Logging"
+ai_hash: fa267e267b2398f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: observation
+entities: []
+source: PROD investigation 2026-09-09
 status: seedling
-source: "PROD investigation 2026-09-09"
-tags: [luz, klara-prod, cloud-logging, mongodb, gcloud]
+tags:
+- luz
+- klara-prod
+- cloud-logging
+- mongodb
+- gcloud
+title: Luz tenant mongod logs are not in klara-prod Cloud Logging
+type: observation
 ---
 
 # Luz tenant mongod logs are not in klara-prod Cloud Logging
@@ -23,3 +32,14 @@ Also: PROD log payload timestamps are **CEST = UTC+2** (Cloud Logging `timestamp
 
 - [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
 - [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+- [[Luz performance env cluster topology]]
+- [[klara-prod is a separate GCP project, not a namespace]]
+- [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+- [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
+
+%% ai-graph-end %%

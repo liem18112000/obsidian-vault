@@ -1,10 +1,19 @@
 ---
-title: "LUZ-158230 test approach: full-chain real-deps integration with fully-materialized done"
+ai_hash: d3de9cdbeae383d0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-18
-type: lesson
+entities: []
+source: Testing-Agent run-8eafe7ea refine, 2026-09-18
 status: seedling
-source: "Testing-Agent run-8eafe7ea refine, 2026-09-18"
-tags: [luz-docs-import, LUZ-158230, testing, integration-test]
+tags:
+- luz-docs-import
+- LUZ-158230
+- testing
+- integration-test
+title: 'LUZ-158230 test approach: full-chain real-deps integration with fully-materialized
+  done'
+type: lesson
 ---
 
 # LUZ-158230 test approach: full-chain real-deps integration with fully-materialized done
@@ -20,3 +29,14 @@ Backdrop: eHealth SDK in the Post-App is shut down end of 2026; health docs must
 ## Related
 [[luz_docs_import health ZIP import uses a two-layer failure model]]
 [[senderTenantId is out of scope in luz_docs_import health ZIP import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
+- [[LUZ-158230 eArchive Health ZIP import - golden test fixture matrix location]]
+- [[LUZ-158230 import stores healthData as-is no validation, no SNOMED label resolution, schemaless Mongo]]
+- [[luz_docs_import scope no sender auth, individual tenants, partial-import policy]]
+- [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Testing-Agent refine confidence is capped by un-ingested spec PDFs"
+ai_hash: 924d68213e24c750
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-15
-type: lesson
+entities: []
+source: LUZ-158230 run 2026-09-15
 status: seedling
-source: "LUZ-158230 run 2026-09-15"
-tags: [testing-agent, kga, refine, groundedness, gotcha]
+tags:
+- testing-agent
+- kga
+- refine
+- groundedness
+- gotcha
+title: Testing-Agent refine confidence is capped by un-ingested spec PDFs
+type: lesson
 ---
 
 # Testing-Agent refine confidence is capped by un-ingested spec PDFs
@@ -24,3 +33,14 @@ In the Testing-Agent (KGA) `refine` loop, the reported **confidence** (and the p
 ## Addendum — the restatement drifts AGAINST fed corrections
 
 Beyond the pinned confidence: the `refine` **restated understanding** is itself unreliable. Facts fed via `refine(answer=...)` do NOT anchor it — the engine regenerates the brief from the thin crawled Jira node plus its own priors and can **invert** a spec fact. Observed on LUZ-158230 after feeding the confirmed v1.0 spec: the brief claimed `documentTitle` is *mandatory with no fallback* (spec: fallback = filename without extension, no field required) and invented an *in-service SNOMED validation table* (spec: no validation, accept as-is). Lesson: do NOT let `define_plan` consume the server brief for substance when the real spec is a binary attachment — author the plan/scenarios CLIENT-SIDE from the spec (see [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing-agent refine loses confidence when source-of-truth PDF attachments are undistilled gaps]]
+- [[Testing-agent refine flags low confidence when spec PDFs are recorded-only]]
+- [[Deployed Testing-Agent refine recommendations are speculative until validated]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+- [[test-agent-v2 gather fixes read attachments (PDFOfficeimage) + cloud-discover relevance gate]]
+
+%% ai-graph-end %%

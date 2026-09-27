@@ -1,10 +1,19 @@
 ---
-title: "TPD agentic loop: single-pass DEFINE to APPROVE to IMPLEMENT"
+ai_hash: 447de0bf166e871d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: model
+entities: []
+source: session 2026-09-07 code trace
 status: seedling
-source: "session 2026-09-07 code trace"
-tags: [testing-agent, tpd, a2a, agentic-loop, architecture]
+tags:
+- testing-agent
+- tpd
+- a2a
+- agentic-loop
+- architecture
+title: 'TPD agentic loop: single-pass DEFINE to APPROVE to IMPLEMENT'
+type: model
 ---
 
 # TPD agentic loop: single-pass DEFINE to APPROVE to IMPLEMENT
@@ -22,3 +31,14 @@ Related: [[TPD IMPLEMENT makes one LLM call by default (scenarios only)]]
 ## Related
 
 - [[TPD IMPLEMENT makes one LLM call by default (scenarios only)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TPD IMPLEMENT makes one LLM call by default (scenarios only)]]
+- [[test-agent-v2 TPD has five raw-Vertex generators — the ADK LlmAgent conversion targets]]
+- [[approve_plan is an agent-side write, unlike knowledge_gathering's read-only approve]]
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+- [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
+
+%% ai-graph-end %%

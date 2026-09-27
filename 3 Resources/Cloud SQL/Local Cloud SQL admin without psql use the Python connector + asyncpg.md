@@ -1,10 +1,20 @@
 ---
-title: "Local Cloud SQL admin without psql: use the Python connector + asyncpg"
+ai_hash: ccaaf03b964094e6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: howto
+entities: []
+source: session 2026-08-31 clear_taskstore
 status: seedling
-source: "session 2026-08-31 clear_taskstore"
-tags: [cloud-sql, asyncpg, python-connector, gcp, tooling, windows]
+tags:
+- cloud-sql
+- asyncpg
+- python-connector
+- gcp
+- tooling
+- windows
+title: 'Local Cloud SQL admin without psql: use the Python connector + asyncpg'
+type: howto
 ---
 
 # Local Cloud SQL admin without psql: use the Python connector + asyncpg
@@ -18,3 +28,14 @@ For a small local script that administers a Cloud SQL Postgres (e.g. TRUNCATE a 
 Why this beats psql+proxy for a repo tool: no external psql install, no proxy binary download/lifecycle, and it reuses deps the app already has (asyncpg + cloud-sql-python-connector ship with a2a-sdk[postgresql]). The connector authenticates to the instance over ADC (local identity needs roles/cloudsql.client); the Postgres-level auth is still user+password (fetch the password from Secret Manager, don't hardcode). Gotcha: `create_async_connector()` must be awaited INSIDE the running loop or you get ConnectorLoopError.
 
 Discovered when test-agent/tools/clear_taskstore.sh first ran: psql wasn't on the Windows box, so the psql-based script was rewritten to this connector approach. Also: emit ASCII (not · / —) in tool output — the Windows console (cp1252) mojibakes UTF-8 punctuation. Related: [[Task store on Cloud SQL]] if present.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud SQL Python Connector async use create_async_connector inside the loop]]
+- [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+- [[cloud-sql-proxy binaries ship in a GCS bucket, not GitHub release assets]]
+- [[Cloud Run mounts the Cloud SQL cloudsql socket only into the ingress container, not sidecars]]
+- [[Connecting to the Vinnstack Cloud SQL Postgres (vinnstackdb) via the Auth Proxy]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress"
+ai_hash: 687cf3eb90d59d2a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: lesson
+entities: []
+source: session 2026-08-10 (import-job GET/DELETE usage findings)
 status: seedling
-source: "session 2026-08-10 (import-job GET/DELETE usage findings)"
-tags: [luz, luz-docs-import, idempotency, design-decision, mongodb]
+tags:
+- luz
+- luz-docs-import
+- idempotency
+- design-decision
+- mongodb
+title: luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat,
+  not UI progress
+type: lesson
 ---
 
 # luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress
@@ -22,3 +32,14 @@ The checkpoints actually serve two server-side purposes:
 - [[Luz docs-import zip flow: upload-zip returns job-id]]
 - [[poll GET until DONE]]
 - [[luz-docs-import bug: rejected files not removed from unprocessedFiles]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import createDocument is not idempotent — server-generated id, @Retry can duplicate on lost response]]
+- [[A per-checkpoint lastModified timestamp doubles as a liveness heartbeat for timeout detection]]
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
+- [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
+- [[luz_docs_import detects dead async-worker pods via kubectl during status polling]]
+
+%% ai-graph-end %%

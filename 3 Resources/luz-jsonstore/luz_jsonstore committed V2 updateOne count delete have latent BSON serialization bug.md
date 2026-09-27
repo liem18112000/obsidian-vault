@@ -1,10 +1,19 @@
 ---
-title: "luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug"
+ai_hash: f1de83836f9daae4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: observation
+entities: []
+source: session 2026-08-26
 status: seedling
-source: "session 2026-08-26"
-tags: [luz-jsonstore, bson, bug, gotcha]
+tags:
+- luz-jsonstore
+- bson
+- bug
+- gotcha
+title: luz_jsonstore committed V2 updateOne count delete have latent BSON serialization
+  bug
+type: observation
 ---
 
 # luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug
@@ -20,3 +29,14 @@ Fix by having the service return a `Document` (or wrapping the driver result in 
 ## Related
 
 - [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[Use a BSON endpoint instead of JSON to store MongoDB dates as native Date]]
+- [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
+- [[luz_jsonstore silently drops _shard on $set updates (HTTP 200, no persist)]]
+- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
+
+%% ai-graph-end %%

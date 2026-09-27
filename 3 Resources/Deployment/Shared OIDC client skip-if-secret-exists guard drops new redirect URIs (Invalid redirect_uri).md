@@ -1,10 +1,20 @@
 ---
-title: "Shared OIDC client skip-if-secret-exists guard drops new redirect URIs (Invalid redirect_uri)"
+ai_hash: d49e69406587d8bf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-22
-type: gotcha
+entities: []
+source: leo-customer360 deployments/monitoring, session 2026-08-22
 status: seedling
-source: "leo-customer360 deployments/monitoring, session 2026-08-22"
-tags: [keycloak, oauth2-proxy, oidc, gotcha, leo-customer360]
+tags:
+- keycloak
+- oauth2-proxy
+- oidc
+- gotcha
+- leo-customer360
+title: Shared OIDC client skip-if-secret-exists guard drops new redirect URIs (Invalid
+  redirect_uri)
+type: gotcha
 ---
 
 # Shared OIDC client skip-if-secret-exists guard drops new redirect URIs (Invalid redirect_uri)
@@ -26,3 +36,14 @@ See also [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load 
 ## Related
 
 - [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[Monitoring-dashboard SSO login user is c360admin, not the Keycloak master admin]]
+- [[Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+
+%% ai-graph-end %%

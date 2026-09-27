@@ -1,10 +1,19 @@
 ---
-title: "Guard a destructive down-migration with a session-GUC opt-in"
+ai_hash: ab5a2878d366c244
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: howto
+entities: []
+source: session 2026-08-24 dbmate implementation
 status: seedling
-source: "session 2026-08-24 dbmate implementation"
-tags: [dbmate, migrations, postgres, rollback, safety]
+tags:
+- dbmate
+- migrations
+- postgres
+- rollback
+- safety
+title: Guard a destructive down-migration with a session-GUC opt-in
+type: howto
 ---
 
 # Guard a destructive down-migration with a session-GUC opt-in
@@ -34,3 +43,14 @@ Applies to any migration tool that runs the down in a transaction (dbmate, and b
 - [[leo-customer360 uses dbmate for Postgres migrations]]
 - [[not Alembic]]
 - [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[dbmate treats any line starting with -- migrateupdown as a directive]]
+- [[A self-contained migration parity test is only useful during the cutover]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+
+%% ai-graph-end %%

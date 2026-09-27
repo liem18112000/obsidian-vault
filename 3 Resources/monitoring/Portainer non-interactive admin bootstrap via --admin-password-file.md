@@ -1,10 +1,19 @@
 ---
-title: "Portainer non-interactive admin bootstrap via --admin-password-file"
+ai_hash: a7c802fb114056d5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: howto
+entities: []
+source: session 2026-08-19
 status: seedling
-source: "session 2026-08-19"
-tags: [portainer, docker, automation, bootstrap, monitoring]
+tags:
+- portainer
+- docker
+- automation
+- bootstrap
+- monitoring
+title: Portainer non-interactive admin bootstrap via --admin-password-file
+type: howto
 ---
 
 # Portainer non-interactive admin bootstrap via --admin-password-file
@@ -34,3 +43,14 @@ Gotchas:
 Used in `leo-customer360` `deployments/monitoring/deploy-monitoring.sh` (optional, gated on
 `PORTAINER_ADMIN_PASSWORD` in .env). Related:
 [[Portainer vs Netdata - both are web UIs, ops vs metrics]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Portainer admin-password bootstrap skips local Docker env - pass -H socket]]
+- [[leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually]]
+- [[Portainer vs Netdata - both are web UIs, ops vs metrics]]
+- [[CD secrets must be wired into cd.yml deploy step env, not just added to GitHub]]
+- [[Portainer agent self-shuts its API after 72h if no server associates]]
+
+%% ai-graph-end %%

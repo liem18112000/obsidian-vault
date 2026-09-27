@@ -1,10 +1,19 @@
 ---
-title: "Chain a CD workflow after CI with workflow_run, gating on conclusion and ref"
+ai_hash: b2039dc9f1b009ac
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: howto
+entities: []
+source: session 2026-08-20, leo-customer360 cd.yml
 status: seedling
-source: "session 2026-08-20, leo-customer360 cd.yml"
-tags: [github-actions, cd, workflow-run, ci-cd, howto]
+tags:
+- github-actions
+- cd
+- workflow-run
+- ci-cd
+- howto
+title: Chain a CD workflow after CI with workflow_run, gating on conclusion and ref
+type: howto
 ---
 
 # Chain a CD workflow after CI with workflow_run, gating on conclusion and ref
@@ -45,3 +54,14 @@ run: |
 ```
 
 `head_commit` is the push's head commit and carries `.message`. Used in leo-customer360 `cd.yml` so uat deploys only when the commit title contains `--deploy-uat` (prod stays tag-triggered).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 CD UAT deploys only from main + --deploy-uat marker]]
+- [[CD didn't fire on an infra-only merge (CI paths-ignore); re-run a workflow_run deploy via workflow_dispatch, not run rerun]]
+- [[A workflow_run-triggered GitHub workflow always runs the version on the DEFAULT branch]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[Track releases + roll back via GitHub Deployments API and workflow_dispatch (not Postgres — private DB)]]
+
+%% ai-graph-end %%

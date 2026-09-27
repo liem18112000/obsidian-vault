@@ -1,10 +1,19 @@
 ---
-title: "Python emoji in Excalidraw JSON: use single code point, not surrogate pair"
+ai_hash: d5f9465ecabf1ef9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: lesson
+entities: []
+source: session 2026-08-20
 status: seedling
-source: "session 2026-08-20"
-tags: [excalidraw, python, json, gotcha, diagrams]
+tags:
+- excalidraw
+- python
+- json
+- gotcha
+- diagrams
+title: 'Python emoji in Excalidraw JSON: use single code point, not surrogate pair'
+type: lesson
 ---
 
 # Python emoji in Excalidraw JSON: use single code point, not surrogate pair
@@ -18,3 +27,14 @@ Two related Excalidraw rendering rules (same session):
 ## Related
 
 - [[block/buzz architecture: a Nostr-relay hive mind for humans and AI agents]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw file stores clean UTF-8 glyphs; console mojibake is a false alarm]]
+- [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
+- [[Editing an Excalidraw .excalidraw JSON programmatically]]
+- [[Excalidraw offline renderer does not auto-wrap bound container text]]
+- [[render_excalidraw.py output path needs -o flag, not positional arg]]
+
+%% ai-graph-end %%

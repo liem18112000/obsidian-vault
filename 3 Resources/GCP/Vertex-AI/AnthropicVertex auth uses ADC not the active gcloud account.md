@@ -1,10 +1,20 @@
 ---
-title: "AnthropicVertex auth uses ADC not the active gcloud account"
+ai_hash: d633677b282f70f1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27 models/test_vertex_claude.py
 status: seedling
-source: "session 2026-08-27 models/test_vertex_claude.py"
-tags: [vertex-ai, anthropic, gcloud, adc, gotcha, windows]
+tags:
+- vertex-ai
+- anthropic
+- gcloud
+- adc
+- gotcha
+- windows
+title: AnthropicVertex auth uses ADC not the active gcloud account
+type: lesson
 ---
 
 # AnthropicVertex auth uses ADC not the active gcloud account
@@ -25,3 +35,14 @@ Related: [[Claude on Vertex AI availability is per-project per-region (klara-non
 ## Related
 
 - [[Claude on Vertex AI availability is per-project per-region (klara-nonprod)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+- [[Mounting host gcloud ADC into a container to authenticate Vertex AI]]
+- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+- [[Claude on Vertex AI uses anthropic[vertex], not google-genai]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "A fixed-window rate limiter set to exactly the target rate rejects part of a paced stream at that rate"
+ai_hash: 8d76a08629781704
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: lesson
+entities: []
+source: session 2026-08-31 10rps trial
 status: seedling
-source: "session 2026-08-31 10rps trial"
-tags: [rate-limiting, fixed-window, load-testing, gotcha, leo-customer360]
+tags:
+- rate-limiting
+- fixed-window
+- load-testing
+- gotcha
+- leo-customer360
+title: A fixed-window rate limiter set to exactly the target rate rejects part of
+  a paced stream at that rate
+type: lesson
 ---
 
 # A fixed-window rate limiter set to exactly the target rate rejects part of a paced stream at that rate
@@ -23,3 +33,14 @@ Found tuning `data-tracking-api/tests/perf_uat_tracking.py` on UAT. Related: [[d
 ## Related
 
 - [[data-tracking rate limiter caps global throughput because it reads request.client.host behind a proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[data-tracking rate limiter caps global throughput because it reads request.client.host behind a proxy]]
+- [[Acquire a client-side rate limiter once per call, outside the retry loop]]
+- [[IP rate limiting must honor X-Forwarded-For behind a proxy]]
+- [[Client-side min-interval rate limiting via slot reservation]]
+- [[Absence of X-Forwarded-For must not mean trusted internal caller]]
+
+%% ai-graph-end %%

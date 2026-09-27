@@ -1,10 +1,20 @@
 ---
-title: "zip4j extractAll applies a ZIP entry's stored Unix mode, so Windows-made zips can extract unreadable files"
+ai_hash: 7ad88a0efba49507
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-14
-type: gotcha
+entities: []
+source: session 2026-08-14 luz-docs-import case 21
 status: seedling
-source: "session 2026-08-14 luz-docs-import case 21"
-tags: [zip4j, java, posix-permissions, gotcha, unzip]
+tags:
+- zip4j
+- java
+- posix-permissions
+- gotcha
+- unzip
+title: zip4j extractAll applies a ZIP entry's stored Unix mode, so Windows-made zips
+  can extract unreadable files
+type: gotcha
 ---
 
 # zip4j extractAll applies a ZIP entry's stored Unix mode, so Windows-made zips can extract unreadable files
@@ -24,3 +34,14 @@ Related: [[luz-docs-import Permission denied failures trace to zip4j applying ar
 ## Related
 
 - [[luz-docs-import Permission denied failures trace to zip4j applying archive file permissions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import 'Permission denied' failures trace to zip4j applying archive file permissions]]
+- [[zip4j 2.8.0 ZipException is-a IOException, and extractFile keeps Zip-Slip protection (per-entry extraction)]]
+- [[zip4j 2.8.0 ZipFile is not AutoCloseable so try-with-resources won't compile]]
+- [[luz-docs-import Gap-3 always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort]]
+- [[ZIP entry names decode as CP437 mojibake when the UTF-8 EFS flag is unset]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Animate fireworks SVGs via injected CSS keyframes; Style-12 Ops Pulse constraints"
+ai_hash: d25777b57a1a003c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: session 2026-09-09 SCRUM-92
 status: seedling
-source: "session 2026-09-09 SCRUM-92"
-tags: [diagrams, svg, animation, fireworks, claude-code, gotcha]
+tags:
+- diagrams
+- svg
+- animation
+- fireworks
+- claude-code
+- gotcha
+title: Animate fireworks SVGs via injected CSS keyframes; Style-12 Ops Pulse constraints
+type: lesson
 ---
 
 # Animate fireworks SVGs via injected CSS keyframes; Style-12 Ops Pulse constraints
@@ -17,3 +27,14 @@ Style 12 (Ops Pulse) authoring constraints learned the hard way (semantic_profil
 
 - [[fireworks-tech-graph skill: JSON-IR render pipeline and quality_profile gotcha]]
 - [[Embed generated SVG in an artifact via <img> data-URI to isolate its styles]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Embed a fireworks-tech-graph SVG in an HTML artifact and animate it with CSS via its data-flowid hooks]]
+- [[fireworks-tech-graph skill JSON-IR render pipeline and quality_profile gotcha]]
+- [[fireworks-tech-graph make the orthogonal router succeed and embed the SVG]]
+- [[Embed generated SVG in an artifact via img data-URI to isolate its styles]]
+- [[Re-exporting the deployment-view PNG from its SVG with resvg-js]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Python __init_subclass__ auto-registering strategy registry"
+ai_hash: c47289a9857f5d5e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-30
-type: howto
+entities: []
+source: session 2026-08-30 fetch refactor
 status: seedling
-source: "session 2026-08-30 fetch refactor"
-tags: [python, design-patterns, strategy, solid, open-closed]
+tags:
+- python
+- design-patterns
+- strategy
+- solid
+- open-closed
+title: Python __init_subclass__ auto-registering strategy registry
+type: howto
 ---
 
 # Python __init_subclass__ auto-registering strategy registry
@@ -36,3 +45,10 @@ def fetch_node(nid, ...):
 ```
 
 Gotchas: (1) subclasses only register when their module is IMPORTED — so the package `__init__` must import each subclass module (mark `# noqa: F401`), otherwise the registry is empty. (2) Mutable class attrs (`registry = {}`) trip ruff RUF012 — annotate with `typing.ClassVar`. (3) This is really the Strategy pattern selected by a discriminator (often mislabelled "state pattern"); State is for behavior that changes with an objects own mutable state. Package layout that pairs well: one subclass per file + a base.py + an `__init__` that imports them and exposes the dispatcher. Related: [[test-agent-common-shared-engine]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

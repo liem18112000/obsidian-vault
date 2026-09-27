@@ -1,10 +1,20 @@
 ---
-title: "Postgres ON CONFLICT DO UPDATE references the target row by unqualified table name"
+ai_hash: 6c24157ad4b5ca56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: gotcha
+entities: []
+source: session 2026-09-10 LEO CDP email engine
 status: seedling
-source: "session 2026-09-10 LEO CDP email engine"
-tags: [postgres, sql, upsert, gotcha, leo-cdp]
+tags:
+- postgres
+- sql
+- upsert
+- gotcha
+- leo-cdp
+title: Postgres ON CONFLICT DO UPDATE references the target row by unqualified table
+  name
+type: gotcha
 ---
 
 # Postgres ON CONFLICT DO UPDATE references the target row by unqualified table name
@@ -27,3 +37,14 @@ The WHERE on the conflict-update is also useful on its own: it makes the upsert 
 ## Related
 
 - [[MongoDB ObjectId]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A UNIQUE index on a partitioned Postgres table must include the partition key, defeating cross-time dedup]]
+- [[Migration-free idempotent upserts via deterministic uuid5 primary keys]]
+- [[Postgres partitioned-table UNIQUE index must include the partition key]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[CREATE TABLE IF NOT EXISTS cannot express a rename]]
+
+%% ai-graph-end %%

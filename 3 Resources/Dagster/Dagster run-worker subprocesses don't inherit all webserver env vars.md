@@ -1,10 +1,19 @@
 ---
-title: "Dagster run-worker subprocesses don't inherit all webserver env vars"
+ai_hash: eca89165713cf0f8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT incident 2026-09-10
 status: seedling
-source: "customer360 UAT incident 2026-09-10"
-tags: [dagster, s3, compute-logs, gotcha, env]
+tags:
+- dagster
+- s3
+- compute-logs
+- gotcha
+- env
+title: Dagster run-worker subprocesses don't inherit all webserver env vars
+type: lesson
 ---
 
 # Dagster run-worker subprocesses don't inherit all webserver env vars
@@ -21,3 +30,14 @@ Concrete failure: an `S3ComputeLogManager` block referencing `DAGSTER_LOGS_BUCKE
 ## Related
 
 - [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster { env VAR } config is resolved in the run-worker subprocess, so the var must be in the container env]]
+- [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+- [[Dagster S3ComputeLogManager credentials via boto3 env, path-style via AWS config file]]
+- [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+
+%% ai-graph-end %%

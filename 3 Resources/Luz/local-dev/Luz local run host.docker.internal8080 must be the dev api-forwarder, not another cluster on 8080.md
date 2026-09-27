@@ -1,10 +1,21 @@
 ---
-title: "Luz local run: host.docker.internal:8080 must be the dev api-forwarder, not another cluster on 8080"
+ai_hash: 1b7c0123ade49f68
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-05
-type: lesson
+entities: []
+source: session 2026-08-05 luz_docs_import public-keys 500
 status: seedling
-source: "session 2026-08-05 luz_docs_import public-keys 500"
-tags: [luz-docs, docker-compose, kubectl, port-forward, keycloak, gotcha]
+tags:
+- luz-docs
+- docker-compose
+- kubectl
+- port-forward
+- keycloak
+- gotcha
+title: 'Luz local run: host.docker.internal:8080 must be the dev api-forwarder, not
+  another cluster on 8080'
+type: lesson
 ---
 
 # Luz local run: host.docker.internal:8080 must be the dev api-forwarder, not another cluster on 8080
@@ -32,3 +43,14 @@ Related: [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties 
 ## Related
 
 - [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates /luzsec/api/)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates luzsecapi)]]
+- [[Local access to GKE-hosted Luz services port-forward api-forwarder + luz-vault (+ mongo pod)]]
+- [[Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards]]
+- [[Run luz_docs_statistic locally with docker-compose]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+
+%% ai-graph-end %%

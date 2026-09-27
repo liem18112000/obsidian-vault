@@ -1,10 +1,20 @@
 ---
-title: "Read-side fire-and-forget mutation: pass the id and re-read in the async, don't mutate the object being serialized"
+ai_hash: b2e3c7fc6fc483a1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: lesson
+entities: []
+source: luz_docs_import getImportJob timeout 2026-08-07
 status: seedling
-source: "luz_docs_import getImportJob timeout 2026-08-07"
-tags: [concurrency, async, jakarta-ee, race-condition, design-decision]
+tags:
+- concurrency
+- async
+- jakarta-ee
+- race-condition
+- design-decision
+title: 'Read-side fire-and-forget mutation: pass the id and re-read in the async,
+  don''t mutate the object being serialized'
+type: lesson
 ---
 
 # Read-side fire-and-forget mutation: pass the id and re-read in the async, don't mutate the object being serialized
@@ -24,3 +34,14 @@ Related: [[luz_docs_import]], [[Durable-queue visibility timeout folds task-time
 ## Related
 
 - [[luz_docs_import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Read-time non-persisted state repair is an anti-pattern; use a scheduled reconciler]]
+- [[Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism]]
+- [[luz_docs_import detects dead async-worker pods via kubectl during status polling]]
+- [[A per-checkpoint lastModified timestamp doubles as a liveness heartbeat for timeout detection]]
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
+
+%% ai-graph-end %%

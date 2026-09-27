@@ -1,10 +1,18 @@
 ---
-title: "Register one FastAPI handler under multiple path prefixes with add_api_route"
+ai_hash: eefdb0dd2547beb1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-06
-type: howto
+entities: []
+source: session 2026-09-06 docs-chatbot frontend-admin
 status: seedling
-source: "session 2026-09-06 docs-chatbot frontend-admin"
-tags: [fastapi, python, reverse-proxy, routing]
+tags:
+- fastapi
+- python
+- reverse-proxy
+- routing
+title: Register one FastAPI handler under multiple path prefixes with add_api_route
+type: howto
 ---
 
 # Register one FastAPI handler under multiple path prefixes with add_api_route
@@ -24,3 +32,14 @@ Why this comes up: an app served at the reverse-proxy root as a catch-all still 
 ## Related
 
 - [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Stripping a path prefix at the proxy breaks framework auto-redirects; forward it un-stripped when the app has root_path]]
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
+- [[Static vs server-backed host decides proxy-vs-direct-CORS for browser widgets]]
+- [[Serve a SPA under a sub-path via the app base-path option, not proxy strip]]
+- [[Caddy path matcher p does not match the bare p; use a named matcher for both]]
+
+%% ai-graph-end %%

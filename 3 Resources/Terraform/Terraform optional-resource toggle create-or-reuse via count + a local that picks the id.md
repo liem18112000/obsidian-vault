@@ -1,10 +1,20 @@
 ---
-title: "Terraform optional-resource toggle: create-or-reuse via count + a local that picks the id"
+ai_hash: 64b84b55985625fc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: howto
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [terraform, pattern, count, vngcloud, iac]
+tags:
+- terraform
+- pattern
+- count
+- vngcloud
+- iac
+title: 'Terraform optional-resource toggle: create-or-reuse via count + a local that
+  picks the id'
+type: howto
 ---
 
 # Terraform optional-resource toggle: create-or-reuse via count + a local that picks the id
@@ -32,3 +42,14 @@ Applied to GreenNode vDB: creating a DB needs a real subnet, and `vngcloud_vserv
 - [[GreenNode vDB create constraints: instance name 6-20 chars]]
 - [[password start-with-letter]]
 - [[package family s2-general]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[GreenNode vDB create constraints instance name 6-20 chars, password start-with-letter, package family s2-general]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[vngcloud vDB packagevolume data source returns empty id on no-match (guard with a precondition)]]
+- [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
+
+%% ai-graph-end %%

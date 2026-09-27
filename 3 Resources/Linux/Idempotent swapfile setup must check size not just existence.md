@@ -1,10 +1,19 @@
 ---
-title: "Idempotent swapfile setup must check size not just existence"
+ai_hash: df2f0bfd857deb10
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT 2026-09-10
 status: seedling
-source: "customer360 UAT 2026-09-10"
-tags: [idempotency, swap, provisioning, gotcha, bash]
+tags:
+- idempotency
+- swap
+- provisioning
+- gotcha
+- bash
+title: Idempotent swapfile setup must check size not just existence
+type: lesson
 ---
 
 # Idempotent swapfile setup must check size not just existence
@@ -27,3 +36,14 @@ General principle: idempotency checks for a resource with a size/version/config 
 ## Related
 
 - [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+- [[Uncapped Dagster on a swapless 2GB box OOMs the whole host (SSH banner-timeout); cap container memory + add swap]]
+- [[Dagster run_monitoring key is max_resume_run_attempts not max_resume_attempts]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+
+%% ai-graph-end %%

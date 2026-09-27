@@ -1,10 +1,19 @@
 ---
-title: "Secret Manager versions accumulate silently — one per deploy, all left enabled"
+ai_hash: 45398e538d88aa88
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: observation
+entities: []
+source: session 2026-09-25 — test-agent-v2
 status: seedling
-source: "session 2026-09-25 — test-agent-v2"
-tags: [gcp, secret-manager, deploy, gotcha, hygiene]
+tags:
+- gcp
+- secret-manager
+- deploy
+- gotcha
+- hygiene
+title: Secret Manager versions accumulate silently — one per deploy, all left enabled
+type: observation
 ---
 
 # Secret Manager versions accumulate silently — one per deploy, all left enabled
@@ -24,3 +33,14 @@ Two consequences worth knowing:
 
 - [[Cloud Run resolves a latest secret reference at instance start, not per request]]
 - [[test-agent-v2 Cloud Run services use a -v2 name suffix]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run resolves a latest secret reference at instance start, not per request]]
+- [[Adding a Cloud Run service that shares one image var build first, targeted apply]]
+- [[Stale terraform state != live cloud — verify with gcloud before deleting a retired deployment]]
+- [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+- [[Cloud Run v2 service design gotchas]]
+
+%% ai-graph-end %%

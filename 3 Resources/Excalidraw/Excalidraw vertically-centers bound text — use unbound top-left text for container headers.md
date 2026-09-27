@@ -1,10 +1,19 @@
 ---
-title: "Excalidraw vertically-centers bound text — use unbound top-left text for container headers"
+ai_hash: c43f2eacce10b4f0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: lesson
+entities: []
+source: session 2026-08-26
 status: seedling
-source: "session 2026-08-26"
-tags: [excalidraw, diagrams, gotcha, json]
+tags:
+- excalidraw
+- diagrams
+- gotcha
+- json
+title: Excalidraw vertically-centers bound text — use unbound top-left text for container
+  headers
+type: lesson
 ---
 
 # Excalidraw vertically-centers bound text — use unbound top-left text for container headers
@@ -21,3 +30,14 @@ Related: [[Generate Excalidraw triplet from one layout model, rasterize with @re
 
 - [[Generate Excalidraw triplet from one layout model]]
 - [[rasterize with @resvgresvg-js]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+- [[Editing an Excalidraw .excalidraw JSON programmatically]]
+- [[Generate Excalidraw triplet from one layout model, rasterize with @resvgresvg-js]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Excalidraw container-bound text does not auto-wrap in the render script]]
+
+%% ai-graph-end %%

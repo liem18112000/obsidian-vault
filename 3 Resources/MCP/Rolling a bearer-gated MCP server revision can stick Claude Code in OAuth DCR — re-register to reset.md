@@ -1,10 +1,20 @@
 ---
-title: "Rolling a bearer-gated MCP server revision can stick Claude Code in OAuth DCR — re-register to reset"
+ai_hash: 3a1abd35eb954c41
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: lesson
+entities: []
+source: session 2026-08-28
 status: seedling
-source: "session 2026-08-28"
-tags: [mcp, claude-code, auth, cloud-run, gotcha]
+tags:
+- mcp
+- claude-code
+- auth
+- cloud-run
+- gotcha
+title: Rolling a bearer-gated MCP server revision can stick Claude Code in OAuth DCR
+  — re-register to reset
+type: lesson
 ---
 
 # Rolling a bearer-gated MCP server revision can stick Claude Code in OAuth DCR — re-register to reset
@@ -23,3 +33,14 @@ See [[MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set Transpo
 ## Related
 
 - [[MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set TransportSecuritySettings]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Registering a bearer-gated HTTP MCP server needs claude mcp add --header]]
+- [[claude mcp list health status can be stale; verify MCP reachability with curl]]
+- [[MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set TransportSecuritySettings]]
+- [[Reach a private Cloud Run service as a user via gcloud run services proxy, not a minted ID token]]
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "vStorage project is a paid prerequisite Terraform cannot create"
+ai_hash: 6531d795cd5fcfb7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [terraform, vngcloud, vstorage, object-storage, gotcha, prerequisite]
+tags:
+- terraform
+- vngcloud
+- vstorage
+- object-storage
+- gotcha
+- prerequisite
+title: vStorage project is a paid prerequisite Terraform cannot create
+type: lesson
 ---
 
 # vStorage project is a paid prerequisite Terraform cannot create
@@ -31,3 +41,14 @@ Related: [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, no
 - [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider]]
 - [[not vngcloud]]
 - [[vStorage S3 keys differ from vIAM client credentials used by vDB]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud vStorage is S3-compatible object storage]]
+- [[vStorage API project creation needs a billing order (payment method or POC wallet)]]
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
+- [[vStorage REST control-plane API endpoints and vIAM bearer auth]]
+- [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
+
+%% ai-graph-end %%

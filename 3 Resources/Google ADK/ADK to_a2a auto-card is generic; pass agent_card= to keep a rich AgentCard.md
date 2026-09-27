@@ -1,10 +1,18 @@
 ---
-title: "ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard"
+ai_hash: 58410fbeecbb174e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: test-agent-v2 gateway cutover, session 2026-09-08
 status: seedling
-source: "test-agent-v2 gateway cutover, session 2026-09-08"
-tags: [google-adk, a2a, agent-card, decision]
+tags:
+- google-adk
+- a2a
+- agent-card
+- decision
+title: ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard
+type: lesson
 ---
 
 # ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard
@@ -19,3 +27,14 @@ Applies when the A2A card is a real surface (e.g. an MCP gateway that fetches `/
 
 - [[ADK to_a2a builds A2A routes on ASGI lifespan startup]]
 - [[not at construction]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
+- [[A2A AgentSkill is advertisement metadata, not executor routing]]
+- [[a2a-sdk serves the agent card at agent-card.json (new) or agent.json (old)]]
+- [[ADK agent name must be a valid Python identifier]]
+- [[ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction]]
+
+%% ai-graph-end %%

@@ -1,11 +1,22 @@
 ---
-title: "Maven exclusion cannot fix a transitive javax bytecode dependency"
+ai_hash: dc07d5c548fdd29e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+aliases:
+- javax exclusion NoClassDefFoundError
 created: 2026-08-16
-aliases: ["javax exclusion NoClassDefFoundError"]
-type: lesson
+entities: []
+source: session 2026-08-16 luz_docs_import Java21 migration planning
 status: seedling
-source: "session 2026-08-16 luz_docs_import Java21 migration planning"
-tags: [jakarta-ee, maven, javax, wildfly, migration, gotcha]
+tags:
+- jakarta-ee
+- maven
+- javax
+- wildfly
+- migration
+- gotcha
+title: Maven exclusion cannot fix a transitive javax bytecode dependency
+type: lesson
 ---
 
 # Maven exclusion cannot fix a transitive javax bytecode dependency
@@ -26,3 +37,14 @@ Discovered while planning the `luz_docs_import` Java 17→21 / WildFly 26→33 (
 
 - [[Jakarta EE 8 to 10 namespace migration]]
 - [[Eclipse Transformer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Binary-only vendored jars pin the API level of everything they link]]
+- [[Verify wildcard-to-explicit import cleanup by compiling]]
+- [[ManagedExecutorService needs @Resource not @Inject in WildFlyWeld]]
+- [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+- [[Lombok one bad symbol cascades into hundreds of phantom missing-method errors]]
+
+%% ai-graph-end %%

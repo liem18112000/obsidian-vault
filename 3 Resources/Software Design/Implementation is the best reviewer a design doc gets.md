@@ -1,10 +1,17 @@
 ---
-title: "Implementation is the best reviewer a design doc gets"
+ai_hash: 12860149186a1fd8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-25
-type: argument
+entities: []
+source: session 2026-09-25
 status: seedling
-source: "session 2026-09-25"
-tags: [design-docs, documentation, practice]
+tags:
+- design-docs
+- documentation
+- practice
+title: Implementation is the best reviewer a design doc gets
+type: argument
 ---
 
 # Implementation is the best reviewer a design doc gets
@@ -29,3 +36,14 @@ Related: [[Prove a new branch is load-bearing by reverting it]] · [[Price one l
 
 - [[Prove a new branch is load-bearing by reverting it]]
 - [[Price one layer lower before accepting a fix]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Prove a new branch is load-bearing by reverting it]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[Re-verify file state before trusting findings on long-running reviews]]
+- [[LLM-implementable plan exports must bundle unresolved review state with precedence rules]]
+- [[Verify invariants at the source of truth, not the operation's success report]]
+
+%% ai-graph-end %%

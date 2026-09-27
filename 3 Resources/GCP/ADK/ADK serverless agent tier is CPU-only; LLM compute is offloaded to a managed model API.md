@@ -1,10 +1,21 @@
 ---
-title: "ADK serverless agent tier is CPU-only; LLM compute is offloaded to a managed model API"
+ai_hash: fda5f38b99185663
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: research session 2026-09-03
 status: seedling
-source: "research session 2026-09-03"
-tags: [adk, gcp, agent-engine, cloud-run, serverless, compute]
+tags:
+- adk
+- gcp
+- agent-engine
+- cloud-run
+- serverless
+- compute
+title: ADK serverless agent tier is CPU-only; LLM compute is offloaded to a managed
+  model API
+type: lesson
 ---
 
 # ADK serverless agent tier is CPU-only; LLM compute is offloaded to a managed model API
@@ -18,3 +29,14 @@ Applies to the `test-agent` project too: it calls Vertex/Gemini remotely, so Clo
 ## Related
 
 - [[ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK deploy targets compute matrix Agent Engine vs Cloud Run vs GKE (CPUGPUTPU)]]
+- [[How ADK agents are deployed adk deploy cloud_run agent_engine gke + get_fast_api_app]]
+- [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
+- [[Vertex AI Agent Engine Memory Bank is per-user chat memory, not a domain knowledge base]]
+
+%% ai-graph-end %%

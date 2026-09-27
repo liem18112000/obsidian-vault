@@ -1,10 +1,21 @@
 ---
-title: "Why local test-agent is slow: claude -p ships a 17.5K agent prompt on Opus, x many serial calls"
+ai_hash: 28a1e38f571fa335
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: lesson
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [performance, claude-proxy, latency, opus, implement, testing-agent]
+tags:
+- performance
+- claude-proxy
+- latency
+- opus
+- implement
+- testing-agent
+title: 'Why local test-agent is slow: claude -p ships a 17.5K agent prompt on Opus,
+  x many serial calls'
+type: lesson
 ---
 
 # Why local test-agent is slow: claude -p ships a 17.5K agent prompt on Opus, x many serial calls
@@ -14,3 +25,14 @@ ROOT CAUSE (measured) — why the local test-agent pipeline is slow, esp. implem
 ## Related
 
 - [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY]]
+- [[implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server timeout]]
+- [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+- [[Slow local implement_plan needs TWO timeouts raised client MCP idle + gateway A2A_CLIENT_TIMEOUT]]
+- [[claude-proxy login expires mid-session - implement silently degrades to heuristic stubs (score 0.00)]]
+
+%% ai-graph-end %%

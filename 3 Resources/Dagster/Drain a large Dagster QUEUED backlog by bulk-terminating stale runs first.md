@@ -1,10 +1,19 @@
 ---
-title: "Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first"
+ai_hash: 163d37e84ba976e9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: howto
+entities: []
+source: customer360 UAT incident 2026-09-10
 status: seedling
-source: "customer360 UAT incident 2026-09-10"
-tags: [dagster, operations, oom, queue, incident]
+tags:
+- dagster
+- operations
+- oom
+- queue
+- incident
+title: Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first
+type: howto
 ---
 
 # Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first
@@ -23,3 +32,14 @@ When a `dagster-daemon` comes back after a long outage and finds a huge `QUEUED`
 ## Related
 
 - [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+- [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+- [[Dagster run_monitoring + DefaultRunLauncher does not reap STARTED zombies that predate a daemon restart]]
+
+%% ai-graph-end %%

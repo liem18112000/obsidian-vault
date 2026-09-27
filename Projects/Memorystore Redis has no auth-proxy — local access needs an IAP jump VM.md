@@ -1,6 +1,17 @@
 ---
-tags: [gcp, redis, memorystore, cloud-sql, networking, iap, test-agent-v2]
+ai_hash: c310e49a9ceffe89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
+entities: []
+tags:
+- gcp
+- redis
+- memorystore
+- cloud-sql
+- networking
+- iap
+- test-agent-v2
 ---
 
 # Reaching Memorystore Redis from local ≠ reaching Cloud SQL from local
@@ -37,3 +48,14 @@ Cloud Run reaches Memorystore via a **Serverless VPC Access connector** (egress-
 usable from a laptop. Local access is a *separate* problem solved only by the in-VPC hop above.
 
 Related: [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[redis_proxy.sh needs compute firewall + VM + IAP permissions]]
+- [[Memorystore Redis is always VPC-internal — no public endpoint]]
+- [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+- [[Reach a private Cloud Run service as a user via gcloud run services proxy, not a minted ID token]]
+- [[test-agent-v2 Redis VPC connector stuck in ERROR (CIDRnetwork misconfig)]]
+
+%% ai-graph-end %%

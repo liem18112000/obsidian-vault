@@ -1,10 +1,21 @@
 ---
-title: "Deployed implement_plan P4 assured loop times out at 900s for broad features"
+ai_hash: c58ad53ad668a930
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: lesson
+entities: []
+source: session 2026-09-14 run-cd156028
 status: seedling
-source: "session 2026-09-14 run-cd156028"
-tags: [testing-agent, implement-plan, p4-assured-loop, timeout, vertex, gotcha, luz-158230]
+tags:
+- testing-agent
+- implement-plan
+- p4-assured-loop
+- timeout
+- vertex
+- gotcha
+- luz-158230
+title: Deployed implement_plan P4 assured loop times out at 900s for broad features
+type: lesson
 ---
 
 # Deployed implement_plan P4 assured loop times out at 900s for broad features
@@ -22,3 +33,14 @@ Related: [[Deployed Testing-Agent refine loop freezes after completion and drops
 ## Related
 
 - [[Deployed Testing-Agent refine loop freezes after completion and drops corrections]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing-Agent implement_plan assured loop times out at 900s MCP ceiling]]
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+- [[test-agent-v2 fixes implement_plan predictive budget guard + gather explore opt-in gate]]
+- [[implement_plan heuristic-fallback emits one performance stub per node]]
+- [[Testing-Agent implement_plan silent heuristic fallback = per-node x kind empty-step scenarios]]
+
+%% ai-graph-end %%

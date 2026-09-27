@@ -1,10 +1,20 @@
 ---
-title: "A git-ignored secret file that a deploy script silently degrades on is a CI foot-gun"
+ai_hash: 65005955b3371bdc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-22
-type: lesson
+entities: []
+source: session 2026-08-22
 status: seedling
-source: "session 2026-08-22"
-tags: [ci-cd, secrets, github-actions, deployment, gotcha]
+tags:
+- ci-cd
+- secrets
+- github-actions
+- deployment
+- gotcha
+title: A git-ignored secret file that a deploy script silently degrades on is a CI
+  foot-gun
+type: lesson
 ---
 
 # A git-ignored secret file that a deploy script silently degrades on is a CI foot-gun
@@ -23,3 +33,14 @@ Concrete instance: [[leo-customer360 frontend SSO=false because CD deploys the A
 ## Related
 
 - [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
+- [[Adding a step to always-on CD provision ALL its required env, and make it skip (not die) on missing secrets]]
+- [[CD secrets must be wired into cd.yml deploy step env, not just added to GitHub]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[CD didn't fire on an infra-only merge (CI paths-ignore); re-run a workflow_run deploy via workflow_dispatch, not run rerun]]
+
+%% ai-graph-end %%

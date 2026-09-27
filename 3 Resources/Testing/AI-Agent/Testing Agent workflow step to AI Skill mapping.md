@@ -1,10 +1,20 @@
 ---
-title: "Testing Agent workflow step to AI Skill mapping"
+ai_hash: 343875c409d61379
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: model
+entities: []
+source: session 2026-08-26, beforeafterai.excalidraw
 status: seedling
-source: "session 2026-08-26, beforeafterai.excalidraw"
-tags: [testing-agent, ai-skills, bdd, polaris, vinnstack, qa]
+tags:
+- testing-agent
+- ai-skills
+- bdd
+- polaris
+- vinnstack
+- qa
+title: Testing Agent workflow step to AI Skill mapping
+type: model
 ---
 
 # Testing Agent workflow step to AI Skill mapping
@@ -35,3 +45,14 @@ The deterministic runner (behave/Playwright) decides pass/fail; the LLM only gen
 - [[AI-First development pipeline]]
 - [[story-to-bdd-scenarios]]
 - [[write-test-completion-report]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[beforeafterai — the 10-step Polaris QA workflow map]]
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+- [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
+- [[vinnstack SKILL.md convention]]
+- [[Ground-then-refine gathering grounds, refinement interprets and confirms]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Portainer CSRF origin-invalid behind a reverse proxy - expose it directly"
+ai_hash: a885ce3f98d24c08
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: howto
+entities: []
+source: session 2026-08-19
 status: seedling
-source: "session 2026-08-19"
-tags: [portainer, oauth2-proxy, csrf, reverse-proxy, keycloak, gotcha]
+tags:
+- portainer
+- oauth2-proxy
+- csrf
+- reverse-proxy
+- keycloak
+- gotcha
+title: Portainer CSRF origin-invalid behind a reverse proxy - expose it directly
+type: howto
 ---
 
 # Portainer CSRF "origin invalid" behind a reverse proxy — expose it directly
@@ -27,3 +37,14 @@ carefully rewriting `Origin` to match — rarely worth it.
 Applied in `leo-customer360` `deployments/monitoring` as a per-dashboard flag
 `portainer_sso=false` / `netdata_sso=true`. Related:
 [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+
+%% ai-graph-end %%

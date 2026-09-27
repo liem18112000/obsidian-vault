@@ -1,10 +1,19 @@
 ---
-title: "Retry only transient HTTP failures, and test backoff by mocking asyncio.sleep"
+ai_hash: 8cdd27b2c2ad1e9d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27 — kga atlassian.py
 status: seedling
-source: "session 2026-08-27 — kga atlassian.py"
-tags: [retry, httpx, testing, backoff, python]
+tags:
+- retry
+- httpx
+- testing
+- backoff
+- python
+title: Retry only transient HTTP failures, and test backoff by mocking asyncio.sleep
+type: lesson
 ---
 
 # Retry only transient HTTP failures, and test backoff by mocking asyncio.sleep
@@ -23,3 +32,14 @@ Context: kga `atlassian.py` (LUZ-159671 test-agent), read-only client.
 
 - [[Claude on Vertex AI uses anthropic[vertex]]]
 - [[not google-genai]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Acquire a client-side rate limiter once per call, outside the retry loop]]
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+- [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
+- [[MicroProfile @Retry can't do exponential backoff or HTTP-status-aware retry — use a manual loop]]
+- [[test-agent-v2 suite is slow from per-test ADK cold-start and serial execution, not hangs]]
+
+%% ai-graph-end %%

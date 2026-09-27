@@ -1,10 +1,19 @@
 ---
-title: "Content-addressed dedup with a unique index and insert-first is concurrency-correct"
+ai_hash: 74c1bc0e8ad672c0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: concept
+entities: []
+source: luz_docs_import LUZ-158230 · 2026-08-11
 status: seedling
-source: "luz_docs_import LUZ-158230 · 2026-08-11"
-tags: [dedup, idempotency, mongodb, concurrency, hashing]
+tags:
+- dedup
+- idempotency
+- mongodb
+- concurrency
+- hashing
+title: Content-addressed dedup with a unique index and insert-first is concurrency-correct
+type: concept
 ---
 
 # Content-addressed dedup with a unique index and insert-first is concurrency-correct
@@ -24,3 +33,14 @@ Related: [[NFC-normalize dedup keys so macOS NFD and Windows NFC file re-exports
 ## Related
 
 - [[NFC-normalize dedup keys so macOS NFD and Windows NFC file re-exports converge]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[NFC-normalize dedup keys so macOS NFD and Windows NFC file re-exports converge]]
+- [[luz-docs-import dedup identity is the uploaded zip filename (importZipName)]]
+- [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second]]
+- [[luz-docs-import importZipName comes from the uploaded multipart filename, not the on-disk zip]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+
+%% ai-graph-end %%

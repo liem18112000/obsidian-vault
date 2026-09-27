@@ -1,10 +1,20 @@
 ---
-title: "block/buzz architecture: a Nostr-relay hive mind for humans and AI agents"
+ai_hash: a88a78140c58d8d7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: concept
+entities: []
+source: github.com/block/buzz README, 2026-08-20
 status: seedling
-source: "github.com/block/buzz README, 2026-08-20"
-tags: [buzz, block, nostr, architecture, rust, agents]
+tags:
+- buzz
+- block
+- nostr
+- architecture
+- rust
+- agents
+title: 'block/buzz architecture: a Nostr-relay hive mind for humans and AI agents'
+type: concept
 ---
 
 # block/buzz architecture: a Nostr-relay hive mind for humans and AI agents
@@ -29,3 +39,11 @@ Note: a few crate descriptions (sprig, buzz-persona, buzz-voice, buzz-datastore-
 
 - [[Nostr protocol]]
 - [[Model Context Protocol]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Buzz (blockbuzz) is a Nostr-based workspace where humans and AI agents are peers]]
+- [[Nostr custom kinds as a feature-extension mechanism]]
+
+%% ai-graph-end %%

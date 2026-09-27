@@ -1,10 +1,20 @@
 ---
-title: "Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy"
+ai_hash: 1ce218910e7e2c7a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: howto
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [claude, subscription, docker, litellm, proxy, claude-code]
+tags:
+- claude
+- subscription
+- docker
+- litellm
+- proxy
+- claude-code
+title: Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy
+type: howto
 ---
 
 # Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy
@@ -16,3 +26,14 @@ Shape (test-agent-v2 `claude_proxy/`): node:20-slim + global claude + a ~50-line
 ## Related
 
 - [[Pluggable LLM via the litellm ModelProvider backend]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pluggable LLM via the litellm ModelProvider backend]]
+- [[claude-code npm install breaks in slim Docker — use the official install.sh]]
+- [[Why local test-agent is slow claude -p ships a 17.5K agent prompt on Opus, x many serial calls]]
+- [[claude-proxy login expires mid-session - implement silently degrades to heuristic stubs (score 0.00)]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+
+%% ai-graph-end %%

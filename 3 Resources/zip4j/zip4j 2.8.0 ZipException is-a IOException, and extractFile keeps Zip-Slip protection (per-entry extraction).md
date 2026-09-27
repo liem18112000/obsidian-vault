@@ -1,10 +1,20 @@
 ---
-title: "zip4j 2.8.0: ZipException is-a IOException, and extractFile keeps Zip-Slip protection (per-entry extraction)"
+ai_hash: 7252bec90b8dd706
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: reference
+entities: []
+source: PR-B per-entry extraction 2026-08-13
 status: seedling
-source: "PR-B per-entry extraction 2026-08-13"
-tags: [zip4j, java, zip-slip, luz-docs-import, gotcha]
+tags:
+- zip4j
+- java
+- zip-slip
+- luz-docs-import
+- gotcha
+title: 'zip4j 2.8.0: ZipException is-a IOException, and extractFile keeps Zip-Slip
+  protection (per-entry extraction)'
+type: reference
 ---
 
 # zip4j 2.8.0: ZipException is-a IOException, and extractFile keeps Zip-Slip protection (per-entry extraction)
@@ -20,3 +30,14 @@ zip4j 2.8.0 facts that shaped the luz-docs-import per-entry extraction (PR-B, F2
 ## Related
 
 - [[luz-docs-import Gap-3: always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import 'Permission denied' failures trace to zip4j applying archive file permissions]]
+- [[Fail an import on a corrupt ZIP by translating the extraction exception to a domain FailureCode]]
+- [[zip4j 2.8.0 ZipFile is not AutoCloseable so try-with-resources won't compile]]
+- [[zip4j extractAll applies a ZIP entry's stored Unix mode, so Windows-made zips can extract unreadable files]]
+- [[luz-docs-import Gap-3 always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Redis Streams consumer-group at-least-once Loader pattern"
+ai_hash: f8b43dee2429f6b0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: howto
+entities: []
+source: session 2026-08-25 (leo-customer360 event_loader)
 status: seedling
-source: "session 2026-08-25 (leo-customer360 event_loader)"
-tags: [redis, streams, consumer-group, idempotency, dagster]
+tags:
+- redis
+- streams
+- consumer-group
+- idempotency
+- dagster
+title: Redis Streams consumer-group at-least-once Loader pattern
+type: howto
 ---
 
 # Redis Streams consumer-group at-least-once Loader pattern
@@ -25,3 +34,14 @@ Runs cleanly as a frequently-scheduled Dagster op/sensor tick rather than a bare
 
 - [[Broker Redis needs opposite config from cache Redis]]
 - [[run it separately]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Broker Redis needs opposite config from cache Redis, run it separately]]
+- [[Run an event-broker Redis as a dedicated co-located instance, not the cache Redis]]
+- [[Redis Streams (not pubsub) as the local PubSub alternative]]
+- [[A dedupidempotency cache belongs co-located with the worker, not in a shared cross-service cache]]
+- [[Kafka sink append-only log, idempotency via dedupe_key message key]]
+
+%% ai-graph-end %%

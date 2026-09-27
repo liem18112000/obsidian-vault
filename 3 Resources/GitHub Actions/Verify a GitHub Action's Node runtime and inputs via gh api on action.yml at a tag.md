@@ -1,10 +1,20 @@
 ---
-title: "Verify a GitHub Action's Node runtime and inputs via gh api on action.yml at a tag"
+ai_hash: 23bd4441618be674
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: howto
+entities: []
+source: 'session 2026-08-20, leo-customer360 issue #6'
 status: seedling
-source: "session 2026-08-20, leo-customer360 issue #6"
-tags: [github-actions, gh-cli, ci, howto, node24]
+tags:
+- github-actions
+- gh-cli
+- ci
+- howto
+- node24
+title: Verify a GitHub Action's Node runtime and inputs via gh api on action.yml at
+  a tag
+type: howto
 ---
 
 # Verify a GitHub Action's Node runtime and inputs via gh api on action.yml at a tag
@@ -29,3 +39,14 @@ Notes: the Contents API returns base64 that must be `base64 -d`-decoded; try `ac
 ## Related
 
 - [[An if-guarded GitHub Actions step emits no deprecation annotation until its condition is true]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[An if-guarded GitHub Actions step emits no deprecation annotation until its condition is true]]
+- [[GitHub Actions Node 20 deprecation warning from v4 actions is harmless noise]]
+- [[GitHub Actions on key parses as YAML boolean True; a workflow_dispatch appears in the UI only once on the default branch]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+
+%% ai-graph-end %%

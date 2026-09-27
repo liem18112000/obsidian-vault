@@ -1,11 +1,22 @@
 ---
-title: "TypeSafe SDK Python system_one usage (v0.7.1)"
+ai_hash: 62bb6cb89be0dd8d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+aliases:
+- typesafe-sdk usage
+- system_one
 created: 2026-09-22
-aliases: ["typesafe-sdk usage", "system_one"]
-type: howto
+entities: []
+source: session 2026-09-22, live SDK introspection
 status: seedling
-source: "session 2026-09-22, live SDK introspection"
-tags: [typesafe, sdk, python, decision-engine, jev]
+tags:
+- typesafe
+- sdk
+- python
+- decision-engine
+- jev
+title: TypeSafe SDK Python system_one usage (v0.7.1)
+type: howto
 ---
 
 # TypeSafe SDK Python system_one usage (v0.7.1)
@@ -32,3 +43,11 @@ Verified live end-to-end against v0.7.1 on 2026-09-22.
 ## Related
 
 - [[TypeSafe SDK response shape gotcha - cached-property accessors and Noul has no confidence]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TypeSafe SDK response shape gotcha - cached-property accessors and Noul has no confidence]]
+- [[System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs]]
+
+%% ai-graph-end %%

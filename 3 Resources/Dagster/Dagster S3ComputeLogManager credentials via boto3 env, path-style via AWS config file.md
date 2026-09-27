@@ -1,10 +1,21 @@
 ---
-title: "Dagster S3ComputeLogManager: credentials via boto3 env, path-style via AWS config file"
+ai_hash: 7ce8e222fa4462af
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: leo-customer360 Phase 0 S3 logs, 2026-09-03
 status: seedling
-source: "leo-customer360 Phase 0 S3 logs, 2026-09-03"
-tags: [dagster, s3, minio, boto3, kubernetes, gotcha]
+tags:
+- dagster
+- s3
+- minio
+- boto3
+- kubernetes
+- gotcha
+title: 'Dagster S3ComputeLogManager: credentials via boto3 env, path-style via AWS
+  config file'
+type: lesson
 ---
 
 # Dagster S3ComputeLogManager: credentials via boto3 env, path-style via AWS config file
@@ -29,3 +40,14 @@ Also: the target **bucket must already exist** (the manager does not create it),
 ## Related
 
 - [[Dagster auto-creates its tables but not the database]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster run-worker subprocesses don't inherit all webserver env vars]]
+- [[Dagster { env VAR } config is resolved in the run-worker subprocess, so the var must be in the container env]]
+- [[Dagster auto-creates its tables but not the database]]
+- [[Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas]]
+- [[Fail-open service config render the instance config at container start from backend probes]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Health checks should probe dependencies and split critical vs fail-open"
+ai_hash: 2a3eeba3f325d57d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: concept
+entities: []
+source: session 2026-09-05, leo-customer360 ads + tracking
 status: seedling
-source: "session 2026-09-05, leo-customer360 ads + tracking"
-tags: [health-check, readiness, liveness, fastapi, resilience, ops]
+tags:
+- health-check
+- readiness
+- liveness
+- fastapi
+- resilience
+- ops
+title: Health checks should probe dependencies and split critical vs fail-open
+type: concept
 ---
 
 # Health checks should probe dependencies and split critical vs fail-open
@@ -23,3 +33,14 @@ A health/readiness endpoint that only reports **liveness** ("the process is runn
 ## Related
 
 - [[leo-customer360 service dependency + health-probe map]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 service dependency + health-probe map]]
+- [[Verify an authed health endpoint in-container, not by curl, in CI]]
+- [[Fail-open service config render the instance config at container start from backend probes]]
+- [[CoreDNS livenessreadiness 404 means probe path-port mismatch, not a CoreDNS crash]]
+- [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Refine interrogation caps open questions at 7 per round (max_questions), overflow deferred"
+ai_hash: ac34fa9d62f0951e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-15
-type: reference
+entities: []
+source: session 2026-09-15
 status: seedling
-source: "session 2026-09-15"
-tags: [testing-agent, interrogation, refine, knowledge-gathering, test-agent-v2]
+tags:
+- testing-agent
+- interrogation
+- refine
+- knowledge-gathering
+- test-agent-v2
+title: Refine interrogation caps open questions at 7 per round (max_questions), overflow
+  deferred
+type: reference
 ---
 
 # Refine interrogation caps open questions at 7 per round (max_questions), overflow deferred
@@ -23,3 +33,14 @@ Related: [[Deployed Testing-Agent refine loop freezes after completion and drops
 ## Related
 
 - [[Deployed Testing-Agent refine loop freezes after completion and drops corrections]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deployed Testing-Agent refine loop freezes after completion and drops corrections]]
+- [[test-agent-v2 fixes implement_plan predictive budget guard + gather explore opt-in gate]]
+- [[Deployed Testing-Agent refine recommendations are speculative until validated]]
+- [[TPD agentic loop single-pass DEFINE to APPROVE to IMPLEMENT]]
+- [[Pipeline stages sharing a context_id need separate memory-bank path prefixes]]
+
+%% ai-graph-end %%

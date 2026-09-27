@@ -1,10 +1,19 @@
 ---
-title: "Server-driven Yes/No in MCP: ctx.elicit + an injected Context param"
+ai_hash: 5909b109ba1ade87
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-29
-type: howto
+entities: []
+source: session 2026-08-28, test-agent elicitation gates
 status: seedling
-source: "session 2026-08-28, test-agent elicitation gates"
-tags: [mcp, elicitation, claude-code, agents, python]
+tags:
+- mcp
+- elicitation
+- claude-code
+- agents
+- python
+title: 'Server-driven Yes/No in MCP: ctx.elicit + an injected Context param'
+type: howto
 ---
 
 # Server-driven Yes/No in MCP: ctx.elicit + an injected Context param
@@ -23,3 +32,14 @@ Note the split: server elicits the confirm GATES (start? approve? implement?); t
 ## Related
 
 - [[Ship a workflow trigger from an MCP server (no client setup) via server instructions + prompts]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Ship a workflow trigger from an MCP server (no client setup) via server instructions + prompts]]
+- [[Client-side Claude config doesn't travel over MCP — bake cross-client behavior into the server]]
+- [[Expose an app as an MCP server by wrapping the same services container the webCLI use]]
+- [[A2A input-required tasks must be answered on the same taskId and contextId]]
+- [[approve_plan is an agent-side write, unlike knowledge_gathering's read-only approve]]
+
+%% ai-graph-end %%

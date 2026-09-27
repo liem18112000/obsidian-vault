@@ -1,10 +1,20 @@
 ---
-title: "vngcloud vDB package/volume data source returns empty id on no-match (guard with a precondition)"
+ai_hash: 45e9620964389147
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, vdb, terraform, gotcha]
+tags:
+- greennode
+- vngcloud
+- vdb
+- terraform
+- gotcha
+title: vngcloud vDB package/volume data source returns empty id on no-match (guard
+  with a precondition)
+type: lesson
 ---
 
 # vngcloud vDB package/volume data source returns empty id on no-match (guard with a precondition)
@@ -26,3 +36,14 @@ See [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform p
 ## Related
 
 - [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[GreenNode vDB create constraints instance name 6-20 chars, password start-with-letter, package family s2-general]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+
+%% ai-graph-end %%

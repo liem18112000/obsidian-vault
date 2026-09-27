@@ -1,10 +1,21 @@
 ---
-title: "Reach a private Cloud Run service as a user via gcloud run services proxy, not a minted ID token"
+ai_hash: b06962e30240890e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [cloud-run, gcp, auth, mcp, proxy, gotcha]
+tags:
+- cloud-run
+- gcp
+- auth
+- mcp
+- proxy
+- gotcha
+title: Reach a private Cloud Run service as a user via gcloud run services proxy,
+  not a minted ID token
+type: lesson
 ---
 
 # Reach a private Cloud Run service as a user via gcloud run services proxy, not a minted ID token
@@ -23,3 +34,14 @@ See [[Cloud Run service-to-service with an app bearer needs the callee public (A
 
 - [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
 - [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+- [[Registering a bearer-gated HTTP MCP server needs claude mcp add --header]]
+- [[Rolling a bearer-gated MCP server revision can stick Claude Code in OAuth DCR — re-register to reset]]
+- [[Memorystore Redis has no auth-proxy — local access needs an IAP jump VM]]
+- [[MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set TransportSecuritySettings]]
+
+%% ai-graph-end %%

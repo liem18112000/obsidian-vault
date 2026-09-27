@@ -1,10 +1,19 @@
 ---
-title: "Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer"
+ai_hash: 0758b6d8aa088bff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: howto
+entities: []
+source: session 2026-08-24
 status: seedling
-source: "session 2026-08-24"
-tags: [jax-rs, bson, mongodb, microprofile]
+tags:
+- jax-rs
+- bson
+- mongodb
+- microprofile
+title: Serving a custom application/bson media type in JAX-RS via MessageBodyReader
+  and Writer
+type: howto
 ---
 
 # Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer
@@ -24,3 +33,14 @@ Seen in luz_jsonstore (Klara/AxonIvy) v2 endpoints; Java 8, mongo-java-driver 3.
 - [[BSON has no top-level array so a document list must be wrapped in a document]]
 - [[Use a BSON endpoint instead of JSON to store MongoDB dates as native Date]]
 - [[JAX-RS inherits routing annotations from interfaces but not custom security annotations]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
+- [[BSON has no top-level array so a document list must be wrapped in a document]]
+- [[OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[Use a BSON endpoint instead of JSON to store MongoDB dates as native Date]]
+
+%% ai-graph-end %%

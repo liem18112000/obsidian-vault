@@ -1,10 +1,20 @@
 ---
-title: "Bitbucket app-password discovery endpoints deprecated (CHANGE-2770)"
+ai_hash: 1f6f7c700c614625
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-13
-type: lesson
+entities: []
+source: session 2026-09-13 LUZ-156281 demo
 status: seedling
-source: "session 2026-09-13 LUZ-156281 demo"
-tags: [bitbucket, atlassian, api, auth, deprecation, gotcha]
+tags:
+- bitbucket
+- atlassian
+- api
+- auth
+- deprecation
+- gotcha
+title: Bitbucket app-password discovery endpoints deprecated (CHANGE-2770)
+type: lesson
 ---
 
 # Bitbucket app-password discovery endpoints deprecated (CHANGE-2770)
@@ -24,3 +34,14 @@ BUT the **direct, fully-qualified** endpoints still work with the same credentia
 ## Related
 
 - [[gather_codebase needs axonivy-prod/<repo> workspace slug]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verifying an API credential 401 means invalid, 403 means valid but scope-limited]]
+- [[Bitbucket cached git token 401s on REST API; PR listing needs app password]]
+- [[Bitbucket Cloud API differs from JiraConfluence host, auth, raw src]]
+- [[Clone a Bitbucket repo with an app password without leaking it (inline credential helper)]]
+- [[gather_codebase needs axonivy-prodrepo workspace slug]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ"
+ai_hash: 40e95e2adf491dba
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 leo-customer360 deployments/server
 status: seedling
-source: "session 2026-08-18 leo-customer360 deployments/server"
-tags: [terraform, vngcloud, vserver, flavor, availability-zone, gotcha]
+tags:
+- terraform
+- vngcloud
+- vserver
+- flavor
+- availability-zone
+- gotcha
+title: VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId
+  field IS the AZ
+type: lesson
 ---
 
 # VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ
@@ -30,3 +41,14 @@ Concrete for HCM03-1C: flavor_zone_id = `9818AAB0-8DC5-4FED-898B-9EFD804AB137`, 
 ## Related
 
 - [[VNG vServer OS images are not associated with the s2-general flavor zone (image data-source trap)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vServer OS images are not associated with the s2-general flavor zone (image data-source trap)]]
+- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs]]
+- [[VNG Cloud HCM03-1C offers only the s-general flavor family]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[VNG vLB packages are per-AZ too pin the zoneId= package uuid (full lbp- prefix) or the create rejects it]]
+
+%% ai-graph-end %%

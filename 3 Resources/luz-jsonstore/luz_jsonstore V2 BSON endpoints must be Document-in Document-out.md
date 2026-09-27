@@ -1,10 +1,19 @@
 ---
-title: "luz_jsonstore V2 BSON endpoints must be Document-in Document-out"
+ai_hash: 22a4941ea49e93fb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: lesson
+entities: []
+source: session 2026-08-26
 status: seedling
-source: "session 2026-08-26"
-tags: [luz-jsonstore, bson, resteasy, jax-rs, gotcha]
+tags:
+- luz-jsonstore
+- bson
+- resteasy
+- jax-rs
+- gotcha
+title: luz_jsonstore V2 BSON endpoints must be Document-in Document-out
+type: lesson
 ---
 
 # luz_jsonstore V2 BSON endpoints must be Document-in Document-out
@@ -31,3 +40,14 @@ See [[luz_jsonstore committed V2 updateOne count delete have latent BSON seriali
 
 - [[luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug]]
 - [[JAX-RS literal path segment outranks a template variable in request matching]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug]]
+- [[Use a BSON endpoint instead of JSON to store MongoDB dates as native Date]]
+- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
+- [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[JAX-RS literal path segment outranks a template variable in request matching]]
+
+%% ai-graph-end %%

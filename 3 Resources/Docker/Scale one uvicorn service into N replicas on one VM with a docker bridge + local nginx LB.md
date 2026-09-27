@@ -1,10 +1,22 @@
 ---
-title: "Scale one uvicorn service into N replicas on one VM with a docker bridge + local nginx LB"
+ai_hash: e26cc818f317abc3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: howto
+entities: []
+source: session 2026-08-31 deploy-tracking.sh
 status: seedling
-source: "session 2026-08-31 deploy-tracking.sh"
-tags: [docker, nginx, load-balancing, fastapi, uvicorn, deployment, leo-customer360]
+tags:
+- docker
+- nginx
+- load-balancing
+- fastapi
+- uvicorn
+- deployment
+- leo-customer360
+title: Scale one uvicorn service into N replicas on one VM with a docker bridge +
+  local nginx LB
+type: howto
 ---
 
 # Scale one uvicorn service into N replicas on one VM with a docker bridge + local nginx LB
@@ -30,3 +42,14 @@ An nginx static `upstream { server name:8010; }` block resolves the names **at c
 
 - [[Docker embedded DNS resolves container names on a user-defined bridge]]
 - [[nginx least_conn upstream]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[data-tracking rate limiter caps global throughput because it reads request.client.host behind a proxy]]
+- [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+- [[LEO Customer360 VNG topology co-located services use localhost, cross-box hops need explicit extra_ingress]]
+- [[Customer360 UAT api box is a shared 1vCPU-2GB vServer running 5 containers]]
+- [[Co-located --network host box hides cross-box firewall hops]]
+
+%% ai-graph-end %%

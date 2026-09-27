@@ -1,10 +1,18 @@
 ---
-title: "Apostrophe inside bash ${var:?message} breaks the parser"
+ai_hash: 7ae0611ced22faab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 deployments/proxy, 2026-08
 status: seedling
-source: "leo-customer360 deployments/proxy, 2026-08"
-tags: [bash, shell, gotcha, quoting]
+tags:
+- bash
+- shell
+- gotcha
+- quoting
+title: Apostrophe inside bash ${var:?message} breaks the parser
+type: lesson
 ---
 
 # Apostrophe inside bash ${var:?message} breaks the parser
@@ -20,3 +28,14 @@ Related: [[Ship shell env over SSH as one base64 blob to dodge arg-flattening]]
 ## Related
 
 - [[Bash]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
+- [[set -u trips on a bash array only populated on the failure path, making success exit non-zero]]
+- [[ssh 'bash -s' flattens args, so empty middle args shift positionals]]
+- [[Bash unquoted variable expansion re-splits on whitespace, breaking quoted args]]
+- [[SSH flattens remote command args, so empty-string arguments collapse and shift positionals]]
+
+%% ai-graph-end %%

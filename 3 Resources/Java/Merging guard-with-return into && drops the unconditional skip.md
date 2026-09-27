@@ -1,10 +1,19 @@
 ---
-title: "Merging guard-with-return into && drops the unconditional skip"
+ai_hash: 8670fbecf151b003
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-06
-type: lesson
+entities: []
+source: luz_docs_import incident 2026-08-06
 status: seedling
-source: "luz_docs_import incident 2026-08-06"
-tags: [java, control-flow, refactoring-hazard, linter, gotcha]
+tags:
+- java
+- control-flow
+- refactoring-hazard
+- linter
+- gotcha
+title: Merging guard-with-return into && drops the unconditional skip
+type: lesson
 ---
 
 # Merging guard-with-return into && drops the unconditional skip
@@ -36,3 +45,14 @@ Lesson: when a guard clause ends in an unconditional skip/return, do NOT let it 
 ## Related
 
 - [[luz_docs_import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+- [[luz-docs getDocumentById returns empty object not null for missing docs]]
+- [[Encode a benign-error decision in a dedicated exception type, not a swallowed catch on a magic status code]]
+
+%% ai-graph-end %%

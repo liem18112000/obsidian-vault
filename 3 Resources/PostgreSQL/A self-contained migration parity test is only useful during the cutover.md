@@ -1,10 +1,18 @@
 ---
-title: "A self-contained migration parity test is only useful during the cutover"
+ai_hash: 23461ed6b559253a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: lesson
+entities: []
+source: session 2026-08-25 sql cleanup
 status: seedling
-source: "session 2026-08-25 sql cleanup"
-tags: [migrations, testing, dbmate, decision]
+tags:
+- migrations
+- testing
+- dbmate
+- decision
+title: A self-contained migration parity test is only useful during the cutover
+type: lesson
 ---
 
 # A self-contained migration parity test is only useful during the cutover
@@ -19,3 +27,14 @@ A self-contained migration **parity test** (build the schema the old way + build
 
 - [[leo-customer360 uses dbmate for Postgres migrations]]
 - [[not Alembic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+- [[dbmate treats any line starting with -- migrateupdown as a directive]]
+- [[Postgres docker-entrypoint-initdb.d runs only once on an empty volume]]
+
+%% ai-graph-end %%

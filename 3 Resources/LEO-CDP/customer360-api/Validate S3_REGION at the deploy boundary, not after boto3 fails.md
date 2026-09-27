@@ -1,10 +1,21 @@
 ---
-title: "Validate S3_REGION at the deploy boundary, not after boto3 fails"
+ai_hash: a78f8dca1a2b5846
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [leo-cdp, customer360-api, deploy, boto3, security, gotcha, input-validation]
+tags:
+- leo-cdp
+- customer360-api
+- deploy
+- boto3
+- security
+- gotcha
+- input-validation
+title: Validate S3_REGION at the deploy boundary, not after boto3 fails
+type: lesson
 ---
 
 # Validate S3_REGION at the deploy boundary, not after boto3 fails
@@ -30,3 +41,14 @@ Related: [[Pull customer360-api UAT error logs via SSH (docker logs on the api V
 ## Related
 
 - [[Pull customer360-api UAT error logs via SSH (docker logs on the api VM)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[boto3 client errors echo regionkeys into logs; sanitize at construction with 'from None']]
+- [[Pull customer360-api UAT error logs via SSH (docker logs on the api VM)]]
+- [[ssh drops empty positional args; pass a base64 newline-joined argv + mapfile]]
+- [[Configure vStorage S3 backend creds in each component .env so deploy scripts self-auth]]
+- [[customer360-api events reader per-source vs single-bucket mode]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Cloud Run v2 has startup_probe + liveness_probe, no readiness probe"
+ai_hash: 057b06a322df1ecb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27 — kga deployments/main.tf
 status: seedling
-source: "session 2026-08-27 — kga deployments/main.tf"
-tags: [cloud-run, terraform, health-check, gcp, gotcha]
+tags:
+- cloud-run
+- terraform
+- health-check
+- gcp
+- gotcha
+title: Cloud Run v2 has startup_probe + liveness_probe, no readiness probe
+type: lesson
 ---
 
 # Cloud Run v2 has startup_probe + liveness_probe, no readiness probe
@@ -16,3 +25,14 @@ Details that matter:
 - **`startup_probe.failure_threshold * period_seconds`** is your cold-start budget — e.g. `failure_threshold=10`, `period_seconds=5` ≈ 50s before the revision is marked failed. Set this generously for slow imports.
 - Liveness restarts the container on repeated failure; keep its `period_seconds` longer (e.g. 30s) to avoid churn.
 - Both take `http_get { path = "/healthz" }`; the health handler must return 200 fast and cheap (no dependency calls) — put dependency checks behind a separate readiness endpoint.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run GFE reserves healthz — use livez for your health endpoint]]
+- [[Cloud Run v2 multi-container sidecar in Terraform]]
+- [[Cloud Run v2 deletion_protection defaults true — set false and apply before destroy]]
+- [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+- [[Cloud Run v2 service design gotchas]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Derive tenant identity from the verified token, never from request input"
+ai_hash: 399541308cacd93f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: lesson
+entities: []
+source: c360 python code review 2026-09-05
 status: seedling
-source: "c360 python code review 2026-09-05"
-tags: [authorization, idor, multi-tenancy, security]
+tags:
+- authorization
+- idor
+- multi-tenancy
+- security
+title: Derive tenant identity from the verified token, never from request input
+type: lesson
 ---
 
 # Derive tenant identity from the verified token, never from request input
@@ -17,3 +25,14 @@ Always derive the security principal (tenant_id, user_id, roles) from the verifi
 
 - [[Postgres RLS should be defense-in-depth]]
 - [[not the sole tenant boundary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
+- [[Response caches must include the authenticated tenant in the key]]
+- [[Postgres session SET vs transaction-local set_config for RLS context]]
+- [[Postgres RLS is silently bypassed by superuser connections]]
+- [[Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role]]
+
+%% ai-graph-end %%

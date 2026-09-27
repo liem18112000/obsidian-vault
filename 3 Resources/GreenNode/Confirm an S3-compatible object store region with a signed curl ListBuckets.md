@@ -1,10 +1,20 @@
 ---
-title: "Confirm an S3-compatible object store region with a signed curl ListBuckets"
+ai_hash: f71b77b242cf1838
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: howto
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [s3, curl, sigv4, vstorage, region, technique]
+tags:
+- s3
+- curl
+- sigv4
+- vstorage
+- region
+- technique
+title: Confirm an S3-compatible object store region with a signed curl ListBuckets
+type: howto
 ---
 
 # Confirm an S3-compatible object store region with a signed curl ListBuckets
@@ -26,3 +36,14 @@ Needs `curl >= 7.75` (`--aws-sigv4`); no AWS SDK/CLI required. Never echo the se
 ## Related
 - [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
 - [[VNG Cloud resource ID prefixes and the HCM zone_id label gotcha]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[S3-compatible CreateBucket InvalidLocationConstraint set region us-east-1 to omit LocationConstraint]]
+- [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
+- [[Customer360 GreenNode region split compute HCM03, vStorage HCM04]]
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Never edit a shell script while it is executing"
+ai_hash: 9784cd9a44af8552
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: lesson
+entities: []
+source: session 2026-08-07 leo-customer360 up.sh
 status: seedling
-source: "session 2026-08-07 leo-customer360 up.sh"
-tags: [bash, gotcha, shell, local-dev]
+tags:
+- bash
+- gotcha
+- shell
+- local-dev
+title: Never edit a shell script while it is executing
+type: lesson
 ---
 
 # Never edit a shell script while it is executing
@@ -23,3 +31,14 @@ Surfaced while fixing `leo-customer360` `k8s/scripts/up.sh`: images all built an
 ## Related
 
 - [[kind lists a cluster even when its node container is stopped]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
+- [[kind lists a cluster even when its node container is stopped]]
+- [[An open editor can clobber a mid-session programmatic file edit]]
+- [[Prune disk before any write in an SSH heredoc so it works on a full disk]]
+- [[A locally-sourced shell function is not defined inside an ssh bash -s remote heredoc]]
+
+%% ai-graph-end %%

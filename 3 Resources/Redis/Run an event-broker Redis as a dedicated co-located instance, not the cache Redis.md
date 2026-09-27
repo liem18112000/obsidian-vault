@@ -1,10 +1,21 @@
 ---
-title: "Run an event-broker Redis as a dedicated co-located instance, not the cache Redis"
+ai_hash: 7ab27ee1337007f5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: lesson
+entities: []
+source: LEOCDP web-tracking plan, session 2026-08-25
 status: seedling
-source: "LEOCDP web-tracking plan, session 2026-08-25"
-tags: [redis, redis-streams, event-broker, architecture, gotcha, ingestion]
+tags:
+- redis
+- redis-streams
+- event-broker
+- architecture
+- gotcha
+- ingestion
+title: Run an event-broker Redis as a dedicated co-located instance, not the cache
+  Redis
+type: lesson
 ---
 
 # Run an event-broker Redis as a dedicated co-located instance, not the cache Redis
@@ -28,3 +39,14 @@ This is the buffer tier of the [[Lightweight-but-scalable web event collector pa
 ## Related
 
 - [[Lightweight-but-scalable web event collector pattern]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Broker Redis needs opposite config from cache Redis, run it separately]]
+- [[Redis Streams consumer-group at-least-once Loader pattern]]
+- [[Lightweight-but-scalable web event collector pattern]]
+- [[A dedupidempotency cache belongs co-located with the worker, not in a shared cross-service cache]]
+- [[Redis Streams (not pubsub) as the local PubSub alternative]]
+
+%% ai-graph-end %%

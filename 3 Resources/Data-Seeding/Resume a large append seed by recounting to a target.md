@@ -1,10 +1,20 @@
 ---
-title: "Resume a large append seed by recounting to a target"
+ai_hash: dee9d7e1f39797f5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: howto
+entities: []
+source: session 2026-09-03 (perf-cluster 2.2M seed)
 status: seedling
-source: "session 2026-09-03 (perf-cluster 2.2M seed)"
-tags: [data-seeding, idempotency, mongodb, resume, ops, earchive]
+tags:
+- data-seeding
+- idempotency
+- mongodb
+- resume
+- ops
+- earchive
+title: Resume a large append seed by recounting to a target
+type: howto
 ---
 
 # Resume a large append seed by recounting to a target
@@ -22,3 +32,14 @@ This makes the seed **idempotent and self-healing**: a port-forward drop or OOM 
 ## Related
 
 - [[kubectl port-forward drops after ~1 hour on GKE]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resume a partial earchive seed with APPEND instead of re-truncating]]
+- [[Recount before every reach-a-target retry — crashed runs insert silently]]
+- [[Long real-API seed aborts on socket hang up unless port-forward reconnects]]
+- [[kubectl port-forward drops after ~1 hour on GKE]]
+- [[earchive-data-prepare wrapper exits 0 even when the generator dies mid-run (verify the log footer)]]
+
+%% ai-graph-end %%

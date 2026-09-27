@@ -1,10 +1,21 @@
 ---
-title: "claude-proxy login expires mid-session -> implement silently degrades to heuristic stubs (score 0.00)"
+ai_hash: ca873fb34f7b61db
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-23
-type: lesson
+entities: []
+source: session 2026-09-23
 status: seedling
-source: "session 2026-09-23"
-tags: [claude-proxy, login, subscription, heuristic, testing-agent, gotcha]
+tags:
+- claude-proxy
+- login
+- subscription
+- heuristic
+- testing-agent
+- gotcha
+title: claude-proxy login expires mid-session -> implement silently degrades to heuristic
+  stubs (score 0.00)
+type: lesson
 ---
 
 # claude-proxy login expires mid-session -> implement silently degrades to heuristic stubs (score 0.00)
@@ -14,3 +25,14 @@ GOTCHA (local claude-proxy): the Claude SUBSCRIPTION login inside claude-proxy c
 ## Related
 
 - [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server timeout]]
+- [[Why local test-agent is slow claude -p ships a 17.5K agent prompt on Opus, x many serial calls]]
+- [[Slow local implement_plan needs TWO timeouts raised client MCP idle + gateway A2A_CLIENT_TIMEOUT]]
+- [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+
+%% ai-graph-end %%

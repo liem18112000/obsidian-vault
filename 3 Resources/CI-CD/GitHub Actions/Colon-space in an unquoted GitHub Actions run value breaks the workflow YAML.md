@@ -1,10 +1,19 @@
 ---
-title: "Colon-space in an unquoted GitHub Actions run value breaks the workflow YAML"
+ai_hash: a3df9ae489de4ccb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: gotcha
+entities: []
+source: session 2026-09-05 (leo-customer360 deploy-docs.yml 0s failure)
 status: seedling
-source: "session 2026-09-05 (leo-customer360 deploy-docs.yml 0s failure)"
-tags: [github-actions, yaml, actionlint, ci-cd, gotcha]
+tags:
+- github-actions
+- yaml
+- actionlint
+- ci-cd
+- gotcha
+title: Colon-space in an unquoted GitHub Actions run value breaks the workflow YAML
+type: gotcha
 ---
 
 # Colon-space in an unquoted GitHub Actions run value breaks the workflow YAML
@@ -37,3 +46,14 @@ GitHub's canonical name for a workflow (shown in the Actions list and in `gh run
 - An invalid first version makes this worse/more confusing (the run also fails 0s), but the underlying rule is the default-branch source, not "sticky from the invalid registration."
 
 Check what GitHub actually stores: `gh api repos/{owner}/{repo}/actions/workflows --jq '.workflows[] | "\(.name)\t\(.path)"'` — workflows present on the default branch show real names; a feature-branch-only one shows its path.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Actions on key parses as YAML boolean True; a workflow_dispatch appears in the UI only once on the default branch]]
+- [[workflow_run subscribes by workflow name not filename]]
+- [[workflow_dispatch Run button only appears on the default branch - use gh workflow run --ref to dispatch from a feature branch]]
+- [[YAML parses a workflow's on key as boolean True (Norway problem)]]
+- [[A workflow_run-triggered GitHub workflow always runs the version on the DEFAULT branch]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "FilestoreUtils temp-path scheme and mount config resolution"
+ai_hash: 8ebbb5eb7f4b6580
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: concept
+entities: []
+source: session 2026-08-11 luz_docs_import apply-file-store
 status: seedling
-source: "session 2026-08-11 luz_docs_import apply-file-store"
-tags: [filestore, luz, java, gke, nfs, reference]
+tags:
+- filestore
+- luz
+- java
+- gke
+- nfs
+- reference
+title: FilestoreUtils temp-path scheme and mount config resolution
+type: concept
 ---
 
 # FilestoreUtils temp-path scheme and mount config resolution
@@ -27,3 +37,14 @@ Note: `unzip` uses `java.util.zip.ZipInputStream` — it has **no** encryption/z
 ## Related
 
 - [[FilestoreUtils mount must pre-exist; SimpleTemporaryStorage defers the fail-fast check to first use]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[FilestoreUtils mount must pre-exist; SimpleTemporaryStorage defers the fail-fast check to first use]]
+- [[luz-store Filestore mount pattern shared RWX PVC + fsGroup 2000 runAsUser 1000]]
+- [[luz-docs-import k8s is a StatefulSet with a 300Gi block-disk temp VCT for upload and tmp]]
+- [[Luz shared Filestore has an automated cleanup cronjob with per-env subPath prefixes]]
+- [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "GreenNode VNG Ubuntu 24.04 image: SSH is broken out-of-the-box; the cloud-init recipe to fix it"
+ai_hash: 3e6ddc841d6dd790
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: howto
+entities: []
+source: session 2026-08-18 leo-customer360 deployments/server
 status: seedling
-source: "session 2026-08-18 leo-customer360 deployments/server"
-tags: [vngcloud, vserver, ubuntu, ssh, cloud-init, gotcha]
+tags:
+- vngcloud
+- vserver
+- ubuntu
+- ssh
+- cloud-init
+- gotcha
+title: 'GreenNode VNG Ubuntu 24.04 image: SSH is broken out-of-the-box; the cloud-init
+  recipe to fix it'
+type: howto
 ---
 
 # GreenNode VNG Ubuntu 24.04 image: SSH is broken out-of-the-box; the cloud-init recipe to fix it
@@ -43,3 +54,14 @@ Then a secgroup rule opens tcp/22, and psql on this box reaches the private vDB.
 
 ## Related
 [[VNG vddb public_access is non-functional here; reach a private DB only via an in-VPC bastion (native login, not user_data)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GreenNode vDB public_access is non-functional here; reach a private DB only via an in-VPC bastion (native login, not user_data)]]
+- [[VNG vServer user_data is mutually exclusive with usernamepasswordssh_key]]
+- [[VNG Cloud vServer SSH keys must be RSA, not ed25519 (Invalid public key at apply)]]
+- [[VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp22 secgrouprule]]
+- [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
+
+%% ai-graph-end %%

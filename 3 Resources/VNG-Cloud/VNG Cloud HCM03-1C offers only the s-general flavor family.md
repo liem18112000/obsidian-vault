@@ -1,10 +1,19 @@
 ---
-title: "VNG Cloud HCM03-1C offers only the s-general flavor family"
+ai_hash: 39be875b593dc234
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: session 2026-09-09 (dagster-scaling-uat-vserver.md)
 status: seedling
-source: "session 2026-09-09 (dagster-scaling-uat-vserver.md)"
-tags: [vng-cloud, terraform, infra, gotcha, leo-customer360]
+tags:
+- vng-cloud
+- terraform
+- infra
+- gotcha
+- leo-customer360
+title: VNG Cloud HCM03-1C offers only the s-general flavor family
+type: lesson
 ---
 
 # VNG Cloud HCM03-1C offers only the s-general flavor family
@@ -20,3 +29,14 @@ See [[UAT vServer Dagster topology: split webserver+daemon on one s-general box]
 ## Related
 
 - [[UAT vServer Dagster topology: split webserver+daemon on one s-general box]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ]]
+- [[VNG vServer OS images are not associated with the s2-general flavor zone (image data-source trap)]]
+- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[GreenNode vDB package family + IOPS tier are per-zone (HCM03-1A vs 1C)]]
+
+%% ai-graph-end %%

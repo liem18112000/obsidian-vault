@@ -1,10 +1,21 @@
 ---
-title: "Python venv layout: Scripts on Windows vs bin on POSIX breaks Linux-authored test runners"
+ai_hash: f960d791081bd2e3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-21
-type: gotcha
+entities: []
+source: session 2026-09-21 (customer360-agent E2E)
 status: seedling
-source: "session 2026-09-21 (customer360-agent E2E)"
-tags: [python, venv, windows, pytest, cross-platform, gotcha]
+tags:
+- python
+- venv
+- windows
+- pytest
+- cross-platform
+- gotcha
+title: 'Python venv layout: Scripts on Windows vs bin on POSIX breaks Linux-authored
+  test runners'
+type: gotcha
 ---
 
 # Python venv layout: Scripts on Windows vs bin on POSIX breaks Linux-authored test runners
@@ -17,3 +28,14 @@ Consequences & fixes:
 - Pick the right base interpreter: a brand-new Python (e.g. 3.14) often lacks prebuilt wheels for `pydantic-core`/`litellm`, forcing a from-source (Rust) build that fails; use the version the project already targets (here 3.12).
 
 Discovered running the customer360-agent pytest suite on Windows.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Batch files must use call for activate.bat or the script stops there]]
+- [[New .sh CI runners must be git-staged with --chmod=+x on Windows or the [ -x ] gate skips them]]
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[spawn python ENOENT on Windows — resolve a real interpreter, not the Store alias]]
+- [[load_dotenv() in package __init__ leaks .env into pytest, breaking offline tests]]
+
+%% ai-graph-end %%

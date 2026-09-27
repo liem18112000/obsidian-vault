@@ -1,10 +1,18 @@
 ---
-title: "GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)"
+ai_hash: fc5c491012aac567
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: concept
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, cloud, iam]
+tags:
+- greennode
+- vngcloud
+- cloud
+- iam
+title: GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)
+type: concept
 ---
 
 # GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)
@@ -20,3 +28,14 @@ See [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform p
 ## Related
 
 - [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GreenNode is VNG Cloud's AI cloud exposing vDB and vStorage managed services]]
+- [[GreenNode cloud runs on VNG Cloud infrastructure]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+- [[VNG Cloud docs rebranded to GreenNode (docs.vngcloud.vn redirects to docs.greennode.ai)]]
+
+%% ai-graph-end %%

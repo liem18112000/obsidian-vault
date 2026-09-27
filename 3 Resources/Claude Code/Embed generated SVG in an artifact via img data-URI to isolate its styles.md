@@ -1,10 +1,19 @@
 ---
-title: "Embed generated SVG in an artifact via <img> data-URI to isolate its styles"
+ai_hash: c5188e0abeb81a38
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: session 2026-09-09 SCRUM-92
 status: seedling
-source: "session 2026-09-09 SCRUM-92"
-tags: [claude-code, artifacts, svg, css, gotcha]
+tags:
+- claude-code
+- artifacts
+- svg
+- css
+- gotcha
+title: Embed generated SVG in an artifact via <img> data-URI to isolate its styles
+type: lesson
 ---
 
 # Embed generated SVG in an artifact via <img> data-URI to isolate its styles
@@ -21,3 +30,14 @@ Surfaced building the SCRUM-92 sprint-dashboard artifact (2026-09-09), embedding
 
 - [[Live artifacts need a republish loop]]
 - [[not client-side fetch]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Animate fireworks SVGs via injected CSS keyframes; Style-12 Ops Pulse constraints]]
+- [[Embed a fireworks-tech-graph SVG in an HTML artifact and animate it with CSS via its data-flowid hooks]]
+- [[Artifacts render mermaid natively — never add a mermaid CDN script (CSP blocks it)]]
+- [[Embed brand SVG icons in an Excalidraw diagram (image element + files dataURL; Simple Icons CDN)]]
+- [[fireworks-tech-graph skill JSON-IR render pipeline and quality_profile gotcha]]
+
+%% ai-graph-end %%

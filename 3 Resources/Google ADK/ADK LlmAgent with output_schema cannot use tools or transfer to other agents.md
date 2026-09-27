@@ -1,10 +1,19 @@
 ---
-title: "ADK LlmAgent with output_schema cannot use tools or transfer to other agents"
+ai_hash: 58e20d49ba6b4e4d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: session 2026-09-08
 status: seedling
-source: "session 2026-09-08"
-tags: [google-adk, llmagent, output-schema, pydantic, gotcha]
+tags:
+- google-adk
+- llmagent
+- output-schema
+- pydantic
+- gotcha
+title: ADK LlmAgent with output_schema cannot use tools or transfer to other agents
+type: lesson
 ---
 
 # ADK LlmAgent with output_schema cannot use tools or transfer to other agents
@@ -23,3 +32,14 @@ Related: [[test-agent-v2 KGA has no live LlmAgent — explore steps are the firs
 ## Related
 
 - [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned JSON]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
+- [[Concurrent in-process ADK Runners return simultaneously-empty output]]
+- [[A deterministic scorer is a negative case for LLM-agent-ification — reuse ADK via custom EvalMetric, not LlmAgent]]
+
+%% ai-graph-end %%

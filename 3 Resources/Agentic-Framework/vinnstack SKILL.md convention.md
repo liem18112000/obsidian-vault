@@ -1,10 +1,19 @@
 ---
-title: "vinnstack SKILL.md convention"
+ai_hash: 5a75fe62a123ffc0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: howto
+entities: []
+source: C:/Users/dvtliem/Kepler/vinnstack/vinnstack-skills — session 2026-08-27
 status: seedling
-source: "C:/Users/dvtliem/Kepler/vinnstack/vinnstack-skills — session 2026-08-27"
-tags: [vinnstack, polaris, skill, convention, authoring]
+tags:
+- vinnstack
+- polaris
+- skill
+- convention
+- authoring
+title: vinnstack SKILL.md convention
+type: howto
 ---
 
 # vinnstack SKILL.md convention
@@ -22,3 +31,14 @@ A Polaris/vinnstack **skill** is a folder under `vinnstack-skills/` (or a projec
 ## Related
 
 - [[A remote A2A agent needs its own connectors because MCP is client-side]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing Agent workflow step to AI Skill mapping]]
+- [[Vinnstack vinnstack-data-model.html predates the BDD workspace]]
+- [[Action Points]]
+- [[Agent skeleton = Instruction + Skills-Resources + Tools + Context]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Dagster auto-creates its tables but not the database"
+ai_hash: 7ba5790827d26cfd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: leo-customer360 Phase 0, 2026-09-03
 status: seedling
-source: "leo-customer360 Phase 0, 2026-09-03"
-tags: [dagster, postgres, kubernetes, deployment, gotcha]
+tags:
+- dagster
+- postgres
+- kubernetes
+- deployment
+- gotcha
+title: Dagster auto-creates its tables but not the database
+type: lesson
 ---
 
 # Dagster auto-creates its tables but not the database
@@ -25,3 +34,14 @@ Related deployment gotcha: **a k8s PVC (or any volume) mounted at `DAGSTER_HOME`
 ## Related
 
 - [[Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas]]
+- [[Dagster has no supported storage-backend migration; run history is operational metadata]]
+- [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
+- [[Dagster worker pools are executor queues, not a pod kind]]
+- [[Fail-open service config render the instance config at container start from backend probes]]
+
+%% ai-graph-end %%

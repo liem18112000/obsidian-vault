@@ -1,10 +1,74 @@
 ---
-title: "Drive the KGA A2A agent offline via Starlette TestClient for evaluation"
+ai_hash: a22d4f84897c0bfb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-04
-type: howto
+entities:
+- KGA A2A agent
+- Starlette TestClient
+- evaluation
+- Knowledge-Gathering Agent (KGA)
+- network
+- Cloud Run
+- LLM
+- executor
+- A2A JSON-RPC stack
+- KnowledgeGatheringExecutor
+- MemoryBank
+- FakeBucket
+- recorded client
+- DefaultRequestHandler
+- create_jsonrpc_routes
+- Starlette app
+- message/send payload
+- crawl
+- G0–G5 fan-out
+- tests/test_executor_a2a.py
+- run_gather
+- EventQueue
+- A2A TaskUpdater messages
+- JSON-RPC response
+- FakeRequestContext
+- CapturingEventQueue
+- run_gather_offline
+- RunTrace
+- repo
+- TestClient pattern
+- RunLog
+- bank
+- CrawlResult.run
+- knowledge_gathering.loop.crawl
+- Tier trace
+- md_blocks
+- Refine
+- common.interrogate.loop.refine
+- RefineResult
+- understanding
+- Atlassian client
+- get_issue
+- get_issue_remote_links
+- get_issue_dev_status
+- search_jql
+- search_cql
+- get_page
+- _dev_status
+- dev links
+- harness
+- prod GCS_BUCKET
+- index
+- tmp bank
+- Testing Agent KGA evaluation harness (ADK + RAGAS)
+source: session 2026-09-04
 status: seedling
-source: "session 2026-09-04"
-tags: [testing-agent, kga, evaluation, a2a, pytest, gotcha]
+tags:
+- testing-agent
+- kga
+- evaluation
+- a2a
+- pytest
+- gotcha
+title: Drive the KGA A2A agent offline via Starlette TestClient for evaluation
+type: howto
 ---
 
 # Drive the KGA A2A agent offline via Starlette TestClient for evaluation
@@ -26,3 +90,67 @@ Related: [[Testing Agent KGA evaluation harness (ADK + RAGAS)]]
 ## Related
 
 - [[Testing Agent KGA evaluation harness (ADK + RAGAS)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+- [[Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned JSON]]
+- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+- [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
+- [[KGA crawler fetches repo source files via client mixin plus NodeFetcher registered by kind]]
+
+**Relations:**
+- KGA A2A agent — *driven via* — Starlette TestClient
+- Starlette TestClient — *used for* — evaluation
+- evaluation — *of* — Knowledge-Gathering Agent (KGA)
+- Knowledge-Gathering Agent (KGA) — *operates without* — network
+- Knowledge-Gathering Agent (KGA) — *operates without* — Cloud Run
+- Knowledge-Gathering Agent (KGA) — *operates without* — LLM
+- executor — *driven through* — A2A JSON-RPC stack
+- KnowledgeGatheringExecutor — *uses* — MemoryBank
+- MemoryBank — *uses* — FakeBucket
+- KnowledgeGatheringExecutor — *uses* — recorded client
+- KnowledgeGatheringExecutor — *wrapped in* — DefaultRequestHandler
+- DefaultRequestHandler — *part of* — Starlette app
+- create_jsonrpc_routes — *part of* — Starlette app
+- Starlette TestClient — *hits* — Starlette app
+- Starlette TestClient — *sends* — message/send payload
+- Starlette TestClient — *runs* — crawl
+- Starlette TestClient — *runs* — G0–G5 fan-out
+- TestClient pattern — *lifted from* — tests/test_executor_a2a.py
+- run_gather — *returns* — None
+- run_gather — *emits output to* — EventQueue
+- EventQueue — *receives* — A2A TaskUpdater messages
+- TestClient pattern — *returns* — JSON-RPC response
+- FakeRequestContext — *does not exist in* — repo
+- CapturingEventQueue — *does not exist in* — repo
+- run_gather_offline — *does not exist in* — repo
+- RunTrace — *does not exist in* — repo
+- TestClient pattern — *is alternative to* — FakeRequestContext
+- RunLog — *stored in* — bank
+- RunLog — *is* — write-only markdown
+- read_run_log — *does not exist* — repo
+- pack — *recovered from* — bank
+- CrawlResult.run — *obtained from* — knowledge_gathering.loop.crawl
+- run_gather — *discards* — CrawlResult.run
+- Tier trace — *not a field of* — RunLog
+- Tier trace — *extracted from* — md_blocks
+- Refine — *cannot be driven by* — executor
+- Refine — *driven by* — common.interrogate.loop.refine
+- RefineResult — *has* — understanding
+- Atlassian client — *requires* — get_issue
+- Atlassian client — *requires* — get_issue_remote_links
+- Atlassian client — *requires* — get_issue_dev_status
+- Atlassian client — *requires* — search_jql
+- Atlassian client — *requires* — search_cql
+- Atlassian client — *requires* — get_page
+- _dev_status — *uses* — Atlassian client
+- harness — *should not use* — prod GCS_BUCKET
+- crawl — *writes* — index
+- prod GCS_BUCKET — *stores* — index
+- harness — *uses* — MemoryBank
+- harness — *uses* — tmp bank
+- KGA A2A agent evaluation — *related to* — Testing Agent KGA evaluation harness (ADK + RAGAS)
+
+%% ai-graph-end %%

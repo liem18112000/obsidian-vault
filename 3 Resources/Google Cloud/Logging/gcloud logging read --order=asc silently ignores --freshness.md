@@ -1,10 +1,18 @@
 ---
-title: "gcloud logging read: --order=asc silently ignores --freshness"
+ai_hash: 4d93a8bd501144d4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: gotcha
+entities: []
+source: PROD investigation 2026-08-03
 status: seedling
-source: "PROD investigation 2026-08-03"
-tags: [gcloud, cloud-logging, gotcha, observability]
+tags:
+- gcloud
+- cloud-logging
+- gotcha
+- observability
+title: 'gcloud logging read: --order=asc silently ignores --freshness'
+type: gotcha
 ---
 
 # gcloud logging read: --order=asc silently ignores --freshness
@@ -23,3 +31,14 @@ For any time-bounded count/slice, pass an **explicit** `timestamp>="...Z"` (and 
 ## Related
 
 - [[Naive textPayload substring matching produces false-positive log hits]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[gcloud logging read --freshness is unreliable with broad OR filters; use explicit timestamp bound]]
+- [[GKE log FRESHNESS window gets swamped by noise on high-traffic clusters]]
+- [[Naive textPayload substring matching produces false-positive log hits]]
+- [[gcloud-logging-shard-field-vs-sharding-keyword]]
+- [[Resolve Cloud Logging share links via redirect Location header]]
+
+%% ai-graph-end %%

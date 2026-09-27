@@ -1,10 +1,19 @@
 ---
-title: "Live artifacts need a republish loop, not client-side fetch"
+ai_hash: d6202a6afa9ac278
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: session 2026-09-09 SCRUM-92
 status: seedling
-source: "session 2026-09-09 SCRUM-92"
-tags: [claude-code, artifacts, mcp, cron, gotcha]
+tags:
+- claude-code
+- artifacts
+- mcp
+- cron
+- gotcha
+title: Live artifacts need a republish loop, not client-side fetch
+type: lesson
 ---
 
 # Live artifacts need a republish loop, not client-side fetch
@@ -28,3 +37,12 @@ Surfaced building the SCRUM-92 sprint-dashboard artifact (2026-09-09).
 
 - [[Claude Artifacts]]
 - [[Claude Code cron and loop scheduling]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Embed generated SVG in an artifact via img data-URI to isolate its styles]]
+- [[claude.ai Artifact iframe sandbox blocks data-URI downloads]]
+- [[Artifacts render mermaid natively — never add a mermaid CDN script (CSP blocks it)]]
+
+%% ai-graph-end %%

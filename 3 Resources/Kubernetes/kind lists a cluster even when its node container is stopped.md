@@ -1,10 +1,20 @@
 ---
-title: "kind lists a cluster even when its node container is stopped"
+ai_hash: 8c679a9f380b1a79
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: lesson
+entities: []
+source: session 2026-08-07 leo-customer360 up.sh
 status: seedling
-source: "session 2026-08-07 leo-customer360 up.sh"
-tags: [kind, kubernetes, docker, bash, local-dev, gotcha]
+tags:
+- kind
+- kubernetes
+- docker
+- bash
+- local-dev
+- gotcha
+title: kind lists a cluster even when its node container is stopped
+type: lesson
 ---
 
 # kind lists a cluster even when its node container is stopped
@@ -35,3 +45,14 @@ kubectl --context "kind-${CLUSTER}" wait --for=condition=Ready \
 ## Related
 
 - [[Never edit a shell script while it is executing]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
+- [[Never edit a shell script while it is executing]]
+- [[kind image pulls stall on Docker Hub rate limits; pre-pull and kind load]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[Self-restarting kubectl port-forward keeps long-running scripts alive through drops]]
+
+%% ai-graph-end %%

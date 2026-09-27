@@ -1,10 +1,20 @@
 ---
-title: "graphify graph.json is NetworkX node-link JSON — edges are under \"links\", not \"edges\""
+ai_hash: f66da8fc49ab54ca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-01
-type: gotcha
+entities: []
+source: session 2026-09-01 — Testing Agent codegraph
 status: seedling
-source: "session 2026-09-01 — Testing Agent codegraph"
-tags: [graphify, code-graph, tree-sitter, networkx, gotcha]
+tags:
+- graphify
+- code-graph
+- tree-sitter
+- networkx
+- gotcha
+title: graphify graph.json is NetworkX node-link JSON — edges are under "links", not
+  "edges"
+type: gotcha
 ---
 
 # graphify graph.json is NetworkX node-link JSON — edges are under "links", not "edges"
@@ -21,3 +31,10 @@ Related: [[graphify code knowledge graph]] [[NetworkX]]
 
 - [[graphify code knowledge graph]]
 - [[NetworkX]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[graphify offline workflow extract --code-only then cluster-only]]
+
+%% ai-graph-end %%

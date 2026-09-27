@@ -1,10 +1,19 @@
 ---
-title: "Line-removal regex must use \r?\n when reading files with newline=''"
+ai_hash: bcf75939bca9abfc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-06
-type: lesson
+entities: []
+source: session 2026-08-06 luz_docs_import refactor
 status: seedling
-source: "session 2026-08-06 luz_docs_import refactor"
-tags: [python, regex, windows, crlf, gotcha]
+tags:
+- python
+- regex
+- windows
+- crlf
+- gotcha
+title: "Line-removal regex must use \r?\n when reading files with newline=''"
+type: lesson
 ---
 
 # Line-removal regex must use \r?\n when reading files with newline=''
@@ -25,3 +34,11 @@ Reading with the default (universal-newlines) mode would translate \r\n→\n and
 ## Related
 
 - [[luz_docs_import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Strip all comments and docstrings from Python safely with tokenize plus AST]]
+- [[Verify wildcard-to-explicit import cleanup by compiling]]
+
+%% ai-graph-end %%

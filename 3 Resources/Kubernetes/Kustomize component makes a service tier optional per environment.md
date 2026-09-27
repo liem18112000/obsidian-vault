@@ -1,10 +1,19 @@
 ---
-title: "Kustomize component makes a service tier optional per environment"
+ai_hash: 6f48212930042a14
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [kubernetes, kustomize, component, overlays, technique]
+tags:
+- kubernetes
+- kustomize
+- component
+- overlays
+- technique
+title: Kustomize component makes a service tier optional per environment
+type: lesson
 ---
 
 # Kustomize component makes a service tier optional per environment
@@ -20,3 +29,14 @@ Supporting tricks used together:
 
 ## Related
 - [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+- [[LEO Customer360 GreenNode Terraform infrastructure]]
+- [[Adapt IaC to code by treating runtime config as the infra source of truth]]
+- [[leo-customer360 CD deploys app containers to vServers only, never the vDBvLBvStorage Terraform]]
+- [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
+
+%% ai-graph-end %%

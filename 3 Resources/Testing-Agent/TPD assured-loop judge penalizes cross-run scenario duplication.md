@@ -1,10 +1,19 @@
 ---
-title: "TPD assured-loop judge penalizes cross-run scenario duplication"
+ai_hash: 572f5a4473398f7d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-18
-type: lesson
+entities: []
+source: Testing-Agent run-8eafe7ea implement, 2026-09-18
 status: seedling
-source: "Testing-Agent run-8eafe7ea implement, 2026-09-18"
-tags: [testing-agent, tpd, implement_plan, assured-loop, gotcha]
+tags:
+- testing-agent
+- tpd
+- implement_plan
+- assured-loop
+- gotcha
+title: TPD assured-loop judge penalizes cross-run scenario duplication
+type: lesson
 ---
 
 # TPD assured-loop judge penalizes cross-run scenario duplication
@@ -19,3 +28,14 @@ Fix by re-invoking `implement_plan(guidance=...)` with an explicit steer: "each 
 
 ## Related
 [[LUZ-158230 test approach full-chain real-deps integration with fully-materialized done]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing-Agent implement_plan assured loop times out at 900s MCP ceiling]]
+- [[Deployed implement_plan P4 assured loop times out at 900s for broad features]]
+- [[TPD test_kinds must be additive over the base four, not replace them]]
+- [[Parallel TPD generation sped up but amplified duplication — dedup is a code fix, not guidance]]
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Local deploy pull from GHCR needs a token with read:packages — gh default token lacks it (403)"
+ai_hash: c31f12a4845fd53d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-21
-type: lesson
+entities: []
+source: session 2026-08-21, deploy-all.sh uat
 status: seedling
-source: "session 2026-08-21, deploy-all.sh uat"
-tags: [ghcr, read-packages, gh-cli, docker, gotcha, 403]
+tags:
+- ghcr
+- read-packages
+- gh-cli
+- docker
+- gotcha
+- 403
+title: Local deploy pull from GHCR needs a token with read:packages — gh default token
+  lacks it (403)
+type: lesson
 ---
 
 # Local deploy pull from GHCR needs a token with read:packages — gh default token lacks it (403)
@@ -16,3 +27,14 @@ Fixes for local deploys: (1) `gh auth refresh -h github.com -s read:packages` th
 ## Related
 
 - [[Get the newest GHCR image tag or digest via gh api packages container versions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+- [[deploy-tracking.sh uat needs GHCR auth gh auth token or BUILD_LOCAL=1]]
+- [[Get the newest GHCR image tag or digest via gh api packages container versions]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+- [[CD deploy can transiently 404 on a just-built GHCR digest - re-run the failed job]]
+
+%% ai-graph-end %%

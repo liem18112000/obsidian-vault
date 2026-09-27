@@ -1,10 +1,19 @@
 ---
-title: "Pod CPU:RAM ratio must match the node flavor ratio or you pay a memory tax"
+ai_hash: f9569a96fdd43763
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: leo-customer360 dagster-scaling-analysis §13, 2026-09-03
 status: seedling
-source: "leo-customer360 dagster-scaling-analysis §13, 2026-09-03"
-tags: [kubernetes, capacity-planning, cost, vks, gotcha]
+tags:
+- kubernetes
+- capacity-planning
+- cost
+- vks
+- gotcha
+title: Pod CPU:RAM ratio must match the node flavor ratio or you pay a memory tax
+type: lesson
 ---
 
 # Pod CPU:RAM ratio must match the node flavor ratio or you pay a memory tax
@@ -29,3 +38,12 @@ Corollary: bin-packing only lowers cost by reducing **total provisioned** vCPU+R
 
 - [[Dagster worker pools are executor queues]]
 - [[not a pod kind]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster worker pools are executor queues, not a pod kind]]
+- [[VNG Cloud HCM03-1C offers only the s-general flavor family]]
+- [[Right-sizing k8s resource limits on the Customer360 stack]]
+
+%% ai-graph-end %%

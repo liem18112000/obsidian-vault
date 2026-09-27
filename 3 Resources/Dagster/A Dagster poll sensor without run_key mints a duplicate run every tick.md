@@ -1,10 +1,19 @@
 ---
-title: "A Dagster poll sensor without run_key mints a duplicate run every tick"
+ai_hash: e31f7f040a79cd09
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT live check 2026-09-10
 status: seedling
-source: "customer360 UAT live check 2026-09-10"
-tags: [dagster, sensor, run-key, idempotency, gotcha]
+tags:
+- dagster
+- sensor
+- run-key
+- idempotency
+- gotcha
+title: A Dagster poll sensor without run_key mints a duplicate run every tick
+type: lesson
 ---
 
 # A Dagster poll sensor without run_key mints a duplicate run every tick
@@ -27,3 +36,14 @@ A Dagster `@sensor` that calls `yield RunRequest()` (or `return RunRequest()`) w
 
 - [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
 - [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+- [[Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue]]
+- [[Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first]]
+- [[Dagster run_monitoring key is max_resume_run_attempts not max_resume_attempts]]
+
+%% ai-graph-end %%

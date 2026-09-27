@@ -1,10 +1,19 @@
 ---
-title: "Verify an authed health endpoint in-container, not by curl, in CI"
+ai_hash: 429fe7df6bb9fd2d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: session 2026-09-16
 status: seedling
-source: "session 2026-09-16"
-tags: [cicd, healthcheck, docker, github-actions, auth]
+tags:
+- cicd
+- healthcheck
+- docker
+- github-actions
+- auth
+title: Verify an authed health endpoint in-container, not by curl, in CI
+type: lesson
 ---
 
 # Verify an authed health endpoint in-container, not by curl, in CI
@@ -26,3 +35,14 @@ Trade-off: this bypasses the HTTP/auth layer, so it does not prove the route is 
 ## Related
 
 - [[SMTP health check stays out of auth-exempt GET /metadata login-path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SMTP health check stays out of auth-exempt GET metadata login-path]]
+- [[Health checks should probe dependencies and split critical vs fail-open]]
+- [[Verify uat customer360-api health publicly at beta.leocdp.comc360apihealth]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[customer360-api tenant-admin router tests must inject an admin request.state.user]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "VNG vLB pool in-place update fails ('Stickiness cannot be specified for non-HTTP pools') — use terraform -replace"
+ai_hash: 2870c059d37a8ca2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: leo-customer360 deployments/load_balancer, session 2026-08-23
 status: seedling
-source: "leo-customer360 deployments/load_balancer, session 2026-08-23"
-tags: [terraform, vngcloud, load-balancer, gotcha, leo-customer360]
+tags:
+- terraform
+- vngcloud
+- load-balancer
+- gotcha
+- leo-customer360
+title: VNG vLB pool in-place update fails ('Stickiness cannot be specified for non-HTTP
+  pools') — use terraform -replace
+type: lesson
 ---
 
 # VNG vLB pool in-place update fails ('Stickiness cannot be specified for non-HTTP pools') — use terraform -replace
@@ -34,3 +44,14 @@ Source: leo-customer360 deployments/load_balancer, switching pgAdmin LB backend 
 ## Related
 
 - [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vLB replace the listener when its pool is ForceNew-replaced]]
+- [[Recovering an orphaned VNG vLB resource after a Terraform state-save failure]]
+- [[VNG vServer flavor resize (s-general-1x2 - 2x4) is an in-place terraform change (0 destroy) but reboots the box]]
+- [[VNG vLB packages are per-AZ too pin the zoneId= package uuid (full lbp- prefix) or the create rejects it]]
+- [[Terraform S3 remote backend for VNG vStorage (S3-compatible) config recipe]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Identity resolution needs confidence gating and identifier normalization"
+ai_hash: 95f8ea6fed827b76
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: lesson
+entities: []
+source: c360 python code review 2026-09-05
 status: seedling
-source: "c360 python code review 2026-09-05"
-tags: [identity-resolution, cdp, data-quality, matching]
+tags:
+- identity-resolution
+- cdp
+- data-quality
+- matching
+title: Identity resolution needs confidence gating and identifier normalization
+type: lesson
 ---
 
 # Identity resolution needs confidence gating and identifier normalization
@@ -16,3 +24,10 @@ Two compounding defects to avoid:
 - Comparing email/phone without normalization (lowercase, trim, E.164) fragments the same person into duplicate masters, which weak signals later re-bridge.
 
 Do instead: score by identifier *strength*, require a minimum confidence to auto-merge (route weak-only matches to review), normalize identifiers before compare, and add deterministic tie-breaks plus transitive (union-find) merge of masters.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

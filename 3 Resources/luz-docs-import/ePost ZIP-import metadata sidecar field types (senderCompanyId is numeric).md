@@ -1,10 +1,19 @@
 ---
-title: "ePost ZIP-import metadata sidecar field types (senderCompanyId is numeric)"
+ai_hash: 78a42c79d3970f6e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: reference
+entities: []
+source: spec-example sidecar + fix-plan PR-A 2026-08-13
 status: seedling
-source: "spec-example sidecar + fix-plan PR-A 2026-08-13"
-tags: [luz-docs-import, ePost, metadata, schema, LUZ-158230]
+tags:
+- luz-docs-import
+- ePost
+- metadata
+- schema
+- LUZ-158230
+title: ePost ZIP-import metadata sidecar field types (senderCompanyId is numeric)
+type: reference
 ---
 
 # ePost ZIP-import metadata sidecar field types (senderCompanyId is numeric)
@@ -28,3 +37,14 @@ The ePost ZIP-import `.metadata.json` sidecar has these top-level fields with FI
 ## Related
 
 - [[Run volume import fixtures last; retry-exhaustion is transient saturation not a defect]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Health ZIP import broken sidecar still imports; orphan sidecar is the only rejection]]
+- [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
+- [[luz_docs_import adds document metadata only in DocsImportAsyncService.createDocument()]]
+- [[ePost Health documents ZIP import business context]]
+- [[HEALTH document type carries verbatim SNOMED healthData]]
+
+%% ai-graph-end %%

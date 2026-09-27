@@ -1,10 +1,20 @@
 ---
-title: "VNG vServer name is in-place updatable; decouple server name from the for_each map key to rename without recreate"
+ai_hash: 33456ded1f9ae0e4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 leo-customer360 deployments/server
 status: seedling
-source: "session 2026-08-18 leo-customer360 deployments/server"
-tags: [terraform, vngcloud, vserver, for-each, gotcha]
+tags:
+- terraform
+- vngcloud
+- vserver
+- for-each
+- gotcha
+title: VNG vServer name is in-place updatable; decouple server name from the for_each
+  map key to rename without recreate
+type: lesson
 ---
 
 # VNG vServer name is in-place updatable; decouple server name from the for_each map key to rename without recreate
@@ -19,3 +29,14 @@ Example: keep key "1x2" but set name="backend" -> server renamed to c360-api-uat
 
 ## Related
 [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Renaming a Terraform for_eachmap key needs terraform state mv or it destroys+recreates]]
+- [[VNG vServer flavor resize (s-general-1x2 - 2x4) is an in-place terraform change (0 destroy) but reboots the box]]
+- [[vngcloud Terraform accepts root_disk_size change but does not resize the boot volume in-place]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[VNG vLB replace the listener when its pool is ForceNew-replaced]]
+
+%% ai-graph-end %%

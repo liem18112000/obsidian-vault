@@ -1,10 +1,20 @@
 ---
-title: "Optional.orElse eagerly evaluates its argument; use orElseGet for side-effecting or expensive fallbacks"
+ai_hash: a9b39d1cf54dda19
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-07
-type: gotcha
+entities: []
+source: luz_docs_import folder-dup debug 2026-08-07
 status: seedling
-source: "luz_docs_import folder-dup debug 2026-08-07"
-tags: [java, optional, gotcha, idempotency, luz-docs-import]
+tags:
+- java
+- optional
+- gotcha
+- idempotency
+- luz-docs-import
+title: Optional.orElse eagerly evaluates its argument; use orElseGet for side-effecting
+  or expensive fallbacks
+type: gotcha
 ---
 
 # Optional.orElse eagerly evaluates its argument; use orElseGet for side-effecting or expensive fallbacks
@@ -25,3 +35,14 @@ Related: [[luz_docs_import]], [[luz_jsonstore find: project/sort/collation param
 ## Related
 
 - [[luz_docs_import]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hand-rolled Optional.or fallback chain replaces CDI @Fallback]]
+- [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+- [[putIfAbsent(Supplier) runs the loader under a global write lock]]
+- [[luz_docs_import idempotent re-import replaces view-controller search-based file dedup]]
+- [[luz-docs getDocumentById returns empty object not null for missing docs]]
+
+%% ai-graph-end %%

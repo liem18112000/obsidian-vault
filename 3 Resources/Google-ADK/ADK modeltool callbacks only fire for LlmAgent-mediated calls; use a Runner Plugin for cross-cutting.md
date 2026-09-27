@@ -1,10 +1,19 @@
 ---
-title: "ADK model/tool callbacks only fire for LlmAgent-mediated calls; use a Runner Plugin for cross-cutting"
+ai_hash: dee1c04ed74431bf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: v2 E4, google-adk 2.8.0, 2026-09-08
 status: seedling
-source: "v2 E4, google-adk 2.8.0, 2026-09-08"
-tags: [google-adk, callbacks, plugins, gotcha]
+tags:
+- google-adk
+- callbacks
+- plugins
+- gotcha
+title: ADK model/tool callbacks only fire for LlmAgent-mediated calls; use a Runner
+  Plugin for cross-cutting
+type: lesson
 ---
 
 # ADK model/tool callbacks only fire for LlmAgent-mediated calls; use a Runner Plugin for cross-cutting
@@ -20,3 +29,14 @@ Where cross-cutting logic DOES fire regardless of agent type: a **Runner Plugin*
 - [[ADK canonical orchestration: SequentialAgent]]
 - [[LlmAgent+AgentTool]]
 - [[or callbacks — not custom BaseAgent]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
+- [[ADK LoggingPlugin gives free invocation-lifecycle tracing via a Runner BasePlugin]]
+- [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+- [[ADK LongRunningFunctionTool HITL nested in SequentialAgent has resume bugs]]
+- [[ADK built-in logging does not cover env-gated per-agent app logging]]
+
+%% ai-graph-end %%

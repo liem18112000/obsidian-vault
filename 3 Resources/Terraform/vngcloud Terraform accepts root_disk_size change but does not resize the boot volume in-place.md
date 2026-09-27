@@ -1,10 +1,21 @@
 ---
-title: "vngcloud Terraform accepts root_disk_size change but does not resize the boot volume in-place"
+ai_hash: f0325f3ffe098245
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT 2026-09-10
 status: seedling
-source: "customer360 UAT 2026-09-10"
-tags: [terraform, vngcloud, disk, drift, gotcha, infra]
+tags:
+- terraform
+- vngcloud
+- disk
+- drift
+- gotcha
+- infra
+title: vngcloud Terraform accepts root_disk_size change but does not resize the boot
+  volume in-place
+type: lesson
 ---
 
 # vngcloud Terraform accepts root_disk_size change but does not resize the boot volume in-place
@@ -25,3 +36,14 @@ Seen on customer360 UAT 2026-09-10 resizing the backend/Dagster box s-general-2x
 ## Related
 
 - [[Renaming a Terraform for_each/map key needs terraform state mv or it destroys+recreates]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vServer flavor resize (s-general-1x2 - 2x4) is an in-place terraform change (0 destroy) but reboots the box]]
+- [[Renaming a Terraform for_eachmap key needs terraform state mv or it destroys+recreates]]
+- [[VNG vServer name is in-place updatable; decouple server name from the for_each map key to rename without recreate]]
+- [[vDB volume_type cannot be changed on a live instance (no change-type API; not ForceNew so TF won't recreate)]]
+- [[CRLF in a tfvars user_data heredoc makes Terraform force-replace VNG vServers]]
+
+%% ai-graph-end %%

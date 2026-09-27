@@ -1,10 +1,21 @@
 ---
-title: "Ollama's 3.5GB CUDA image can corrupt a low-disk Rancher/WSL Docker store"
+ai_hash: dd976caebef7ba89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [docker, ollama, wsl, rancher-desktop, disk, gotcha, cpu]
+tags:
+- docker
+- ollama
+- wsl
+- rancher-desktop
+- disk
+- gotcha
+- cpu
+title: Ollama's 3.5GB CUDA image can corrupt a low-disk Rancher/WSL Docker store
+type: lesson
 ---
 
 # Ollama's 3.5GB CUDA image can corrupt a low-disk Rancher/WSL Docker store
@@ -16,3 +27,14 @@ RECOVERY (host-level; CLI cant repair it): quit Rancher Desktop -> `wsl --shutdo
 ## Related
 
 - [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Low-disk CPU box drop laya, use JEV cloud API for decisions]]
+- [[PyTorch CPU index gives pip hash mismatch behind a proxy — use PyPI torch]]
+- [[Rancher Desktop don't pin host.docker.internal to host-gateway]]
+- [[Local LLM choice for the test-agent workload (Ollama)]]
+- [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+
+%% ai-graph-end %%

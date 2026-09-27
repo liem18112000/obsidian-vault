@@ -1,10 +1,20 @@
 ---
-title: "Run volume import fixtures last; retry-exhaustion is transient saturation not a defect"
+ai_hash: acfc59ebeb3eb7ae
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: lesson
+entities: []
+source: dev zip-import test suite 2026-08-13
 status: seedling
-source: "dev zip-import test suite 2026-08-13"
-tags: [luz-docs-import, testing, gotcha, concurrency, LUZ-158230]
+tags:
+- luz-docs-import
+- testing
+- gotcha
+- concurrency
+- LUZ-158230
+title: Run volume import fixtures last; retry-exhaustion is transient saturation not
+  a defect
+type: lesson
 ---
 
 # Run volume import fixtures last; retry-exhaustion is transient saturation not a defect
@@ -26,3 +36,14 @@ This is direct evidence for the **LUZ-158230** concurrency/flush tuning: the AV-
 
 - [[luz-docs-import]]
 - [[LUZ-158230]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-158230 ePost ZIP Import Test Fixture Matrix (Confluence)]]
+- [[luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load]]
+- [[luz-docs-import antivirus whole-zip scan dominates first-import latency and scales with zip size]]
+- [[luz-docs-import bug rejected files not removed from unprocessedFiles]]
+- [[LUZ-158230 test approach full-chain real-deps integration with fully-materialized done]]
+
+%% ai-graph-end %%

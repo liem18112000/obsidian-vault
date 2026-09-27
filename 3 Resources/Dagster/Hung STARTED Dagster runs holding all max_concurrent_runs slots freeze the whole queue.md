@@ -1,10 +1,20 @@
 ---
-title: "Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue"
+ai_hash: 6a6cf79b0966c53d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT live check 2026-09-10
 status: seedling
-source: "customer360 UAT live check 2026-09-10"
-tags: [dagster, queue, concurrency, deadlock, incident]
+tags:
+- dagster
+- queue
+- concurrency
+- deadlock
+- incident
+title: Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the
+  whole queue
+type: lesson
 ---
 
 # Hung STARTED Dagster runs holding all max_concurrent_runs slots freeze the whole queue
@@ -27,3 +37,14 @@ Seen on customer360 UAT (2026-09): 2 `segmentation_job` runs hung ~19h/25h at `r
 - [[Dagster run_monitoring start_timeout does not reap already-STARTED hung runs]]
 - [[Diagnose a stalled Dagster queue: daemon heartbeat vs STARTED-run age vs success rate]]
 - [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
+- [[Dagster run_monitoring start_timeout does not reap already-STARTED hung runs]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+- [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+- [[Dagster run_monitoring + DefaultRunLauncher does not reap STARTED zombies that predate a daemon restart]]
+
+%% ai-graph-end %%

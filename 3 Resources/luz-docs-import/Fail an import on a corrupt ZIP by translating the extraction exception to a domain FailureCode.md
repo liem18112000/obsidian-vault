@@ -1,10 +1,19 @@
 ---
-title: "Fail an import on a corrupt ZIP by translating the extraction exception to a domain FailureCode"
+ai_hash: 789c4c195971bf31
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: lesson
+entities: []
+source: luz_docs_import LUZ-158230 · 2026-08-11
 status: seedling
-source: "luz_docs_import LUZ-158230 · 2026-08-11"
-tags: [luz-docs-import, error-handling, exceptions, java]
+tags:
+- luz-docs-import
+- error-handling
+- exceptions
+- java
+title: Fail an import on a corrupt ZIP by translating the extraction exception to
+  a domain FailureCode
+type: lesson
 ---
 
 # Fail an import on a corrupt ZIP by translating the extraction exception to a domain FailureCode
@@ -18,3 +27,14 @@ Related: [[zip4j 2.8.0 ZipFile is not AutoCloseable so try-with-resources won't 
 ## Related
 
 - [[zip4j 2.8.0 ZipFile is not AutoCloseable so try-with-resources won't compile]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[zip4j 2.8.0 ZipFile is not AutoCloseable so try-with-resources won't compile]]
+- [[zip4j 2.8.0 ZipException is-a IOException, and extractFile keeps Zip-Slip protection (per-entry extraction)]]
+- [[luz-docs-import 'Permission denied' failures trace to zip4j applying archive file permissions]]
+- [[luz-docs-import bug rejected files not removed from unprocessedFiles]]
+- [[luz_docs_import health ZIP import uses a two-layer failure model]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Test an ASGI app with no network using httpx.ASGITransport"
+ai_hash: 9eb9aa52bcbdbb77
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: howto
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [httpx, asgi, testing, python, starlette]
+tags:
+- httpx
+- asgi
+- testing
+- python
+- starlette
+title: Test an ASGI app with no network using httpx.ASGITransport
+type: howto
 ---
 
 # Test an ASGI app with no network using httpx.ASGITransport
@@ -22,3 +31,12 @@ Used to test the A2A-to-MCP bridge client against the real agent app. See [[A2A-
 ## Related
 
 - [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction]]
+- [[A2A-to-MCP bridge is an MCP stdio server that is also an A2A client]]
+- [[Drive the KGA A2A agent offline via Starlette TestClient for evaluation]]
+
+%% ai-graph-end %%

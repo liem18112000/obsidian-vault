@@ -1,10 +1,20 @@
 ---
-title: "Luz skills read shared env-selector ~/.claude/skills/_context (not bundled when porting a skill)"
+ai_hash: 04efa0297cb8b66a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: gotcha
+entities: []
+source: session 2026-08-18
 status: seedling
-source: "session 2026-08-18"
-tags: [claude-code, skills, luz, porting, gotcha]
+tags:
+- claude-code
+- skills
+- luz
+- porting
+- gotcha
+title: Luz skills read shared env-selector ~/.claude/skills/_context (not bundled
+  when porting a skill)
+type: gotcha
 ---
 
 # Luz skills read shared env-selector ~/.claude/skills/_context (not bundled when porting a skill)
@@ -21,3 +31,14 @@ Related: [[luz-skill-ship-ivy]] depends on [[google-skill-rollout-latest]], whic
 
 - [[google-skill-rollout-latest]]
 - [[luz-skill-ship-ivy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[luz-kubernetes-add-env skill propagates env properties across overlay environments]]
+- [[Luz plugin repos how skills and hooks are packaged for distribution]]
+- [[luz-skills-plugin packages skills by category directory listed in plugin.json]]
+- [[Dev luz-webclient can drift off a freshly-shipped ivy image; verify deployed tag vs latest before assuming the ship stuck]]
+
+%% ai-graph-end %%

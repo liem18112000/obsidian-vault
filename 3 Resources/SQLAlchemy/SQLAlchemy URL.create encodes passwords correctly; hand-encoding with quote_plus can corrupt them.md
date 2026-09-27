@@ -1,10 +1,19 @@
 ---
-title: "SQLAlchemy URL.create encodes passwords correctly; hand-encoding with quote_plus can corrupt them"
+ai_hash: f52733b6c4f146b4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-29
-type: gotcha
+entities: []
+source: session 2026-08-29 task-store migration
 status: seedling
-source: "session 2026-08-29 task-store migration"
-tags: [sqlalchemy, url-encoding, gotcha, python]
+tags:
+- sqlalchemy
+- url-encoding
+- gotcha
+- python
+title: SQLAlchemy URL.create encodes passwords correctly; hand-encoding with quote_plus
+  can corrupt them
+type: gotcha
 ---
 
 # SQLAlchemy URL.create encodes passwords correctly; hand-encoding with quote_plus can corrupt them
@@ -27,3 +36,14 @@ Related: [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]].
 ## Related
 
 - [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run to Cloud SQL via Auth-proxy unix socket with asyncpg]]
+- [[node-postgres percent-decodes the connection-string password]]
+- [[Cloud SQL Python Connector async use create_async_connector inside the loop]]
+- [[Local Cloud SQL admin without psql use the Python connector + asyncpg]]
+- [[Cloud Run mounts the Cloud SQL cloudsql socket only into the ingress container, not sidecars]]
+
+%% ai-graph-end %%

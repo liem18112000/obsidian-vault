@@ -1,10 +1,55 @@
 ---
-title: "Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)"
+ai_hash: 021be3e18aa4654b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: howto
+entities:
+- test-agent-v2
+- MinIO
+- Postgres
+- Redis
+- Pub/Sub emulator
+- Ollama
+- laya
+- docker-compose.yaml
+- GCP
+- Object store
+- S3
+- pgvector
+- litellm
+- Embeddings
+- Cache
+- Queue
+- LLM
+- Decisions (JEV)
+- torch
+- LLM judge
+- TPD assured decision gate
+- nomic-embed-text
+- llama3.2
+- Run test-agent-v2 locally with docker-compose (no GCP)
+- Pluggable LLM via the litellm ModelProvider backend
+- laya is JEVs local in-process decision-engine twin
+- S3 generation-CAS via botocore If-Match conditional writes
+- Route google-cloud clients to local emulators via _EMULATOR_HOST
+- full-parity stack
+- prod dependency
+- local container
+- GCS emulator
+- decision-backend outage
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [test-agent, docker-compose, local-dev, minio, pgvector, ollama, pubsub, laya]
+tags:
+- test-agent
+- docker-compose
+- local-dev
+- minio
+- pgvector
+- ollama
+- pubsub
+- laya
+title: Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)
+type: howto
 ---
 
 # Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)
@@ -28,3 +73,52 @@ Design decisions: user chose MinIO (S3 API) over a GCS emulator, and full-parity
 - [[laya is JEV's local in-process decision-engine twin]]
 - [[S3 generation-CAS via botocore If-Match conditional writes]]
 - [[Route google-cloud clients to local emulators via _EMULATOR_HOST]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Low-disk CPU box drop laya, use JEV cloud API for decisions]]
+- [[test-agent-v2 ran fully local end-to-end (LUZ-158390) — pipeline + quality gates proven]]
+- [[One Postgres backs tasks, sessions, prompts AND pgvector in test-agent-v2]]
+- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+- [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+
+**Relations:**
+- test-agent-v2 — *is a* — full-parity stack
+- test-agent-v2 — *is configured by* — docker-compose.yaml
+- test-agent-v2 — *does not use* — GCP
+- test-agent-v2 — *uses* — MinIO
+- test-agent-v2 — *uses* — Postgres
+- test-agent-v2 — *uses* — Redis
+- test-agent-v2 — *uses* — Pub/Sub emulator
+- test-agent-v2 — *uses* — Ollama
+- test-agent-v2 — *uses* — laya
+- test-agent-v2 — *extends* — Run test-agent-v2 locally with docker-compose (no GCP)
+- test-agent-v2 — *has related note* — Run test-agent-v2 locally with docker-compose (no GCP)
+- full-parity stack — *runs* — prod dependency
+- prod dependency — *as* — local container
+- MinIO — *provides* — Object store
+- MinIO — *implements* — S3
+- MinIO — *is chosen over* — GCS emulator
+- MinIO — *has related note* — S3 generation-CAS via botocore If-Match conditional writes
+- Postgres — *provides* — Task/session store
+- Postgres — *provides* — hybrid recall
+- Postgres — *uses* — pgvector
+- Redis — *provides* — Cache
+- Pub/Sub emulator — *provides* — Queue
+- Pub/Sub emulator — *has related note* — Route google-cloud clients to local emulators via _EMULATOR_HOST
+- Ollama — *provides* — Embeddings
+- Ollama — *provides* — LLM
+- Ollama — *hosts* — nomic-embed-text
+- Ollama — *hosts* — llama3.2
+- Ollama — *is accessed via* — litellm
+- litellm — *is a* — LLM provider
+- litellm — *has related note* — Pluggable LLM via the litellm ModelProvider backend
+- laya — *provides* — Decisions (JEV)
+- laya — *is a* — sidecar
+- laya — *uses* — torch
+- laya — *has related note* — laya is JEVs local in-process decision-engine twin
+- TPD assured decision gate — *catches* — decision-backend outage
+- TPD assured decision gate — *falls back to* — LLM judge
+
+%% ai-graph-end %%

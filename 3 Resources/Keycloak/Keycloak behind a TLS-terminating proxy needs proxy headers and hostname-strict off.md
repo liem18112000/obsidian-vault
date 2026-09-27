@@ -1,10 +1,19 @@
 ---
-title: "Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off"
+ai_hash: ffb8d7e894c59372
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 deployments, 2026-08
 status: seedling
-source: "leo-customer360 deployments, 2026-08"
-tags: [keycloak, oidc, reverse-proxy, tls]
+tags:
+- keycloak
+- oidc
+- reverse-proxy
+- tls
+title: Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict
+  off
+type: lesson
 ---
 
 # Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off
@@ -20,3 +29,14 @@ Related: [[Caddy handle_path strips the path prefix, handle keeps it]], [[Keyclo
 ## Related
 
 - [[Keycloak 24+ token introspection requires the client in the token audience]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
+- [[Redeploy OIDC consumers only after the issuer URL is reachable]]
+- [[Keycloak 26 OIDC issuer path comes from KC_HOSTNAME, not KC_HTTP_RELATIVE_PATH]]
+- [[Serve a no-auth UI over TLS+SSO behind Caddy at a subpath (oauth2-proxy proxy-prefix)]]
+- [[KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too]]
+
+%% ai-graph-end %%

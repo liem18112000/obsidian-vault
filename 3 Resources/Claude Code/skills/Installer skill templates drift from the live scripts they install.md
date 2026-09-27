@@ -1,10 +1,18 @@
 ---
-title: "Installer skill templates drift from the live scripts they install"
+ai_hash: 7e170d3d56ceaa27
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: luz-skills-plugin sync PR, 2026-09-27
 status: seedling
-source: "luz-skills-plugin sync PR, 2026-09-27"
-tags: [claude-code, skills, installers, gotcha]
+tags:
+- claude-code
+- skills
+- installers
+- gotcha
+title: Installer skill templates drift from the live scripts they install
+type: lesson
 ---
 
 # Installer skill templates drift from the live scripts they install
@@ -26,3 +34,14 @@ Related: [[Cooperating Claude Code hooks on one event need a shared claim file]]
 ## Related
 
 - [[Cooperating Claude Code hooks on one event need a shared claim file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Relocating a hardcoded-path hook integration self-locate or patch every reference site]]
+- [[A Claude Code hook is plugin-packageable only when its paths are relocation-safe]]
+- [[Cooperating Claude Code hooks on one event need a shared claim file]]
+- [[Claude Code Skill anatomy]]
+- [[Integrate a third-party skill's instruction, do not run its curl-bash installer]]
+
+%% ai-graph-end %%

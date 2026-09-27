@@ -1,10 +1,73 @@
 ---
-title: "leo-customer360 tracing: OTel off-by-default on UAT, on at 10% on PROD"
+ai_hash: db0382caf5197bdc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-21
-type: argument
+entities:
+- leo-customer360
+- tracing
+- OpenTelemetry
+- UAT environment
+- PROD environment
+- FastAPI services
+- API request tracing
+- box sizing
+- OTEL_SDK_DISABLED
+- UAT api vServer
+- 1 vCPU / 2 GB
+- ads service
+- frontend service
+- Keycloak
+- Redis
+- Portainer
+- Netdata
+- Jaeger
+- profiling
+- 10% head sampling
+- parentbased_traceidratio
+- 4x8 boxes
+- deployments/lib/otel.sh
+- otel_env_lines
+- OTEL_* env block
+- deploy-api.sh
+- deploy-ads.sh
+- deploy-frontend.sh
+- OTEL_ENABLED
+- OTEL_ENDPOINT
+- OTEL_SAMPLER_ARG
+- Jaeger all-in-one
+- badger on-disk storage
+- COLLECTOR_OTLP_ENABLED
+- deployments/monitoring module
+- SSO-gate pattern
+- jaeger_enabled
+- monitoring overlays
+- OTLP/HTTP
+- '4318'
+- grpc
+- '4317'
+- --network host
+- 127.0.0.1:4318
+- private VPC
+- mon_server_key
+- Jaeger UI
+- '16686'
+- SSH tunnel
+- deployments/monitoring/README.md
+- Docker containers
+- VNG vServer VMs
+- SSH
+- zero-code instrumentation
+source: session 2026-08-21
 status: seedling
-source: "session 2026-08-21"
-tags: [leo-customer360, tracing, opentelemetry, jaeger, design-decision]
+tags:
+- leo-customer360
+- tracing
+- opentelemetry
+- jaeger
+- design-decision
+title: 'leo-customer360 tracing: OTel off-by-default on UAT, on at 10% on PROD'
+type: argument
 ---
 
 # leo-customer360 tracing: OTel off-by-default on UAT, on at 10% on PROD
@@ -29,3 +92,67 @@ Design decision for API request tracing in **leo-customer360**: instrument all t
 
 - [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
 - [[Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP]]
+- [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+- [[Jaeger all-in-one on the shared vServer image-tag, Netdata 4317, and badger-perms gotchas]]
+- [[docker restart does not re-read --env-file; recreate the container to apply env changes]]
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+
+**Relations:**
+- leo-customer360 — *uses* — tracing
+- tracing — *is implemented with* — OpenTelemetry
+- leo-customer360 — *contains* — FastAPI services
+- FastAPI services — *are instrumented with* — OpenTelemetry
+- API request tracing — *is a type of* — tracing
+- tracing — *is off-by-default on* — UAT environment
+- tracing — *is on at 10% on* — PROD environment
+- UAT environment — *uses* — OTEL_SDK_DISABLED
+- PROD environment — *uses* — 10% head sampling
+- 10% head sampling — *is configured with* — parentbased_traceidratio
+- UAT environment — *has* — UAT api vServer
+- UAT api vServer — *has resources* — 1 vCPU / 2 GB
+- UAT api vServer — *is shared by* — ads service
+- UAT api vServer — *is shared by* — frontend service
+- UAT api vServer — *is shared by* — Keycloak
+- UAT api vServer — *is shared by* — Redis
+- UAT api vServer — *is shared by* — Portainer
+- UAT api vServer — *is shared by* — Netdata
+- Jaeger — *is used for* — profiling
+- PROD environment — *has* — 4x8 boxes
+- deployments/lib/otel.sh — *contains function* — otel_env_lines
+- otel_env_lines — *emits* — OTEL_* env block
+- OTEL_* env block — *is used by* — deploy-api.sh
+- OTEL_* env block — *is used by* — deploy-ads.sh
+- OTEL_* env block — *is used by* — deploy-frontend.sh
+- OTEL_ENABLED — *overrides* — OTEL_* env block
+- OTEL_ENDPOINT — *overrides* — OTEL_* env block
+- OTEL_SAMPLER_ARG — *overrides* — OTEL_* env block
+- Jaeger — *is deployed as* — Jaeger all-in-one
+- Jaeger all-in-one — *uses* — badger on-disk storage
+- Jaeger all-in-one — *has option* — COLLECTOR_OTLP_ENABLED
+- Jaeger — *is part of* — deployments/monitoring module
+- deployments/monitoring module — *uses* — SSO-gate pattern
+- Jaeger — *is toggled by* — jaeger_enabled
+- jaeger_enabled — *is found in* — monitoring overlays
+- tracing — *uses transport* — OTLP/HTTP
+- OTLP/HTTP — *uses port* — 4318
+- tracing — *uses transport* — grpc
+- grpc — *uses port* — 4317
+- UAT environment — *services use* — --network host
+- UAT environment — *services hit* — 127.0.0.1:4318
+- PROD environment — *services reach* — Jaeger
+- PROD environment — *services reach Jaeger over* — private VPC
+- Jaeger UI — *uses port* — 16686
+- Jaeger UI — *is accessed via* — SSH tunnel
+- deployments/monitoring/README.md — *documents* — Jaeger
+- leo-customer360 — *deploys as* — Docker containers
+- Docker containers — *run on* — VNG vServer VMs
+- VNG vServer VMs — *are accessed over* — SSH
+- FastAPI — *supports* — zero-code instrumentation
+- OpenTelemetry — *provides* — zero-code instrumentation
+
+%% ai-graph-end %%

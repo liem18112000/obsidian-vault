@@ -1,10 +1,23 @@
 ---
-title: "run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling"
+ai_hash: 48f649dffb8356dd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: lesson
+entities: []
+source: session 2026-09-14 run-cd156028
 status: seedling
-source: "session 2026-09-14 run-cd156028"
-tags: [testing-agent, timeout, asyncio, vertex, fallback, implement-plan, fix, test-agent-v2]
+tags:
+- testing-agent
+- timeout
+- asyncio
+- vertex
+- fallback
+- implement-plan
+- fix
+- test-agent-v2
+title: run_json_agent needed a per-call timeout or a slow Vertex call hangs implement
+  past the server ceiling
+type: lesson
 ---
 
 # run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling
@@ -22,3 +35,14 @@ Related: [[Deployed implement_plan P4 assured loop times out at 900s for broad f
 ## Related
 
 - [[Deployed implement_plan P4 assured loop times out at 900s for broad features]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 fixes implement_plan predictive budget guard + gather explore opt-in gate]]
+- [[Deployed implement_plan P4 assured loop times out at 900s for broad features]]
+- [[Testing-Agent implement_plan assured loop times out at 900s MCP ceiling]]
+- [[Deployed TPD implement_plan trips Cloud Run liveness (event-loop blocked by Vertex gen)]]
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+
+%% ai-graph-end %%

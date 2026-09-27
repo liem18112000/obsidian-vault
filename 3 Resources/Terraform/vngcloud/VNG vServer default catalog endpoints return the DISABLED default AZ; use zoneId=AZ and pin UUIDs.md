@@ -1,10 +1,20 @@
 ---
-title: "VNG vServer default catalog endpoints return the DISABLED default AZ; use ?zoneId=<AZ> and pin UUIDs"
+ai_hash: 169d39beec7bb395
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 leo-customer360 deployments/server
 status: seedling
-source: "session 2026-08-18 leo-customer360 deployments/server"
-tags: [vngcloud, vserver, availability-zone, volume-type, gotcha]
+tags:
+- vngcloud
+- vserver
+- availability-zone
+- volume-type
+- gotcha
+title: VNG vServer default catalog endpoints return the DISABLED default AZ; use ?zoneId=<AZ>
+  and pin UUIDs
+type: lesson
 ---
 
 # VNG vServer default catalog endpoints return the DISABLED default AZ; use ?zoneId=<AZ> and pin UUIDs
@@ -25,3 +35,14 @@ General rule for this provider: ALL the name→id data sources (flavor zone, vol
 ## Related
 
 - [[VNG vServer flavor zones are per-AZ under one shared name; the flavor s flavorZoneId field IS the AZ]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ]]
+- [[VNG vServer apply-time gotchas password policy ( @ !) and AZ-restricted volume types (1C needs NVME)]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[GreenNode vDB package family + IOPS tier are per-zone (HCM03-1A vs 1C)]]
+- [[VNG vServer OS images are not associated with the s2-general flavor zone (image data-source trap)]]
+
+%% ai-graph-end %%

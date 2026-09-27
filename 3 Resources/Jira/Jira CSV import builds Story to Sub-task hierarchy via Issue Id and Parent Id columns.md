@@ -1,10 +1,19 @@
 ---
-title: "Jira CSV import builds Story to Sub-task hierarchy via Issue Id and Parent Id columns"
+ai_hash: eaff383c46b5a449
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-07
-type: howto
+entities: []
+source: session 2026-09-07
 status: seedling
-source: "session 2026-09-07"
-tags: [jira, csv-import, subtasks, gotcha]
+tags:
+- jira
+- csv-import
+- subtasks
+- gotcha
+title: Jira CSV import builds Story to Sub-task hierarchy via Issue Id and Parent
+  Id columns
+type: howto
 ---
 
 # Jira CSV import builds Story to Sub-task hierarchy via Issue Id and Parent Id columns
@@ -26,3 +35,12 @@ Path: **⚙ → System → External System Import → CSV**.
 ## Related
 
 - [[Atlassian MCP grants Jira access per-site; ungranted cloudId is rejected]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Jira MCP create a subtask with issueTypeName Subtask + parent, labelspriority via additional_fields]]
+- [[Atlassian MCP grants Jira access per-site; ungranted cloudId is rejected]]
+- [[Atlassian MCP createIssueLink Blocks inwardIssue is the blocker]]
+
+%% ai-graph-end %%

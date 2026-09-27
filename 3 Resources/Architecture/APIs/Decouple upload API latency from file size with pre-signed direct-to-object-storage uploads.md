@@ -1,10 +1,22 @@
 ---
-title: "Decouple upload API latency from file size with pre-signed direct-to-object-storage uploads"
+ai_hash: 6b1ed62f9ecf71e8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-12
-type: technique
+entities: []
+source: luz_docs_import large-ZIP latency investigation 2026-08-12
 status: seedling
-source: "luz_docs_import large-ZIP latency investigation 2026-08-12"
-tags: [upload, api-design, gcs, s3, presigned-url, performance, architecture]
+tags:
+- upload
+- api-design
+- gcs
+- s3
+- presigned-url
+- performance
+- architecture
+title: Decouple upload API latency from file size with pre-signed direct-to-object-storage
+  uploads
+type: technique
 ---
 
 # Decouple upload API latency from file size with pre-signed direct-to-object-storage uploads
@@ -20,3 +32,14 @@ Related: [[luz_docs_import upload-zip is slow for large files due to a synchrono
 ## Related
 
 - [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
+- [[nginx-ingress proxy-request-buffering stages the whole request body before forwarding to the pod]]
+- [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it]]
+- [[luz-docs-import antivirus whole-zip scan dominates first-import latency and scales with zip size]]
+- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
+
+%% ai-graph-end %%

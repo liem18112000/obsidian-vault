@@ -1,10 +1,21 @@
 ---
-title: "vngcloud_vdb_postgresql_cluster ignores backup_auto (cluster backups go via VNG Backup Center)"
+ai_hash: 7693f849b6d1468b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, vdb, terraform, backup, gotcha]
+tags:
+- greennode
+- vngcloud
+- vdb
+- terraform
+- backup
+- gotcha
+title: vngcloud_vdb_postgresql_cluster ignores backup_auto (cluster backups go via
+  VNG Backup Center)
+type: lesson
 ---
 
 # vngcloud_vdb_postgresql_cluster ignores backup_auto (cluster backups go via VNG Backup Center)
@@ -23,3 +34,14 @@ Relates to [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terr
 ## Related
 
 - [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vDB PostgreSQL cluster has no Terraform backup args (standalone-only)]]
+- [[pgBackRest runs on the DB host, so it cannot back up a managed DB like VNG vDB]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+
+%% ai-graph-end %%

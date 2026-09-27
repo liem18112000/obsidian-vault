@@ -1,10 +1,21 @@
 ---
-title: "FilestoreUtils mount must pre-exist; SimpleTemporaryStorage defers the fail-fast check to first use"
+ai_hash: 02563ac9dcf9617a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: lesson
+entities: []
+source: session 2026-08-11 luz_docs_import apply-file-store
 status: seedling
-source: "session 2026-08-11 luz_docs_import apply-file-store"
-tags: [filestore, luz, java, gke, gotcha, testing]
+tags:
+- filestore
+- luz
+- java
+- gke
+- gotcha
+- testing
+title: FilestoreUtils mount must pre-exist; SimpleTemporaryStorage defers the fail-fast
+  check to first use
+type: lesson
 ---
 
 # FilestoreUtils mount must pre-exist; SimpleTemporaryStorage defers the fail-fast check to first use
@@ -22,3 +33,14 @@ Discovered while planning the `luz_docs_import` zip-temp migration onto Filestor
 ## Related
 
 - [[FilestoreUtils temp-path scheme and mount config resolution]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[FilestoreUtils temp-path scheme and mount config resolution]]
+- [[luz-store Filestore mount pattern shared RWX PVC + fsGroup 2000 runAsUser 1000]]
+- [[luz-docs-import k8s is a StatefulSet with a 300Gi block-disk temp VCT for upload and tmp]]
+- [[Luz shared Filestore has an automated cleanup cronjob with per-env subPath prefixes]]
+- [[luz-docs-import prod scratch peaks under 1GB — 100Gi tmp-scratch (LUZ-158230) is over-provisioned]]
+
+%% ai-graph-end %%

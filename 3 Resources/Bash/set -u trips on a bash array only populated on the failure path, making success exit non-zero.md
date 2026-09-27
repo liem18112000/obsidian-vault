@@ -1,10 +1,21 @@
 ---
-title: "set -u trips on a bash array only populated on the failure path, making success exit non-zero"
+ai_hash: 9e6e0d2cdcf2a952
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: gotcha
+entities: []
+source: leo-customer360 deploy-all.sh, 2026-08
 status: seedling
-source: "leo-customer360 deploy-all.sh, 2026-08"
-tags: [bash, set-u, arrays, exit-code, ci, gotcha]
+tags:
+- bash
+- set-u
+- arrays
+- exit-code
+- ci
+- gotcha
+title: set -u trips on a bash array only populated on the failure path, making success
+  exit non-zero
+type: gotcha
 ---
 
 # set -u trips on a bash array only populated on the failure path, making success exit non-zero
@@ -18,3 +29,14 @@ Related: [[Apostrophe inside bash ${var:?message} breaks the parser]]
 ## Related
 
 - [[Apostrophe inside bash ${var:?message} breaks the parser]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apostrophe inside bash ${varmessage} breaks the parser]]
+- [[Bash unquoted variable expansion re-splits on whitespace, breaking quoted args]]
+- [[Backgrounded shell exit code reflects the last command, not the build]]
+- [[Cloud Build treats $VAR in step args as its own substitution; escape shell $ as $$]]
+- [[ssh 'bash -s' flattens args, so empty middle args shift positionals]]
+
+%% ai-graph-end %%

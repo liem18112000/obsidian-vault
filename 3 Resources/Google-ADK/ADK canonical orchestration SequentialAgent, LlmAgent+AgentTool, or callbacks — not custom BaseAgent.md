@@ -1,10 +1,19 @@
 ---
-title: "ADK canonical orchestration: SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent"
+ai_hash: 4af955691d834763
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: concept
+entities: []
+source: adk-samples deep-read 2026-09-08
 status: seedling
-source: "adk-samples deep-read 2026-09-08"
-tags: [google-adk, agents, orchestration, architecture]
+tags:
+- google-adk
+- agents
+- orchestration
+- architecture
+title: 'ADK canonical orchestration: SequentialAgent, LlmAgent+AgentTool, or callbacks
+  — not custom BaseAgent'
+type: concept
 ---
 
 # ADK canonical orchestration: SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent
@@ -28,3 +37,14 @@ When to still use a **custom BaseAgent**: ADK reserves it for genuinely bespoke 
 - [[sub_agents subpackages]]
 - [[workflow agents]]
 - [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK sample canonical layout root_agent in agent.py, sub_agents subpackages, workflow agents]]
+- [[ADK workflow agents orchestrate deterministically without an LLM-driven loop]]
+- [[ADK modeltool callbacks only fire for LlmAgent-mediated calls; use a Runner Plugin for cross-cutting]]
+- [[ADK LlmAgent with output_schema cannot use tools or transfer to other agents]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+
+%% ai-graph-end %%

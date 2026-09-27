@@ -1,10 +1,19 @@
 ---
-title: "redis_proxy.sh needs compute firewall + VM + IAP permissions"
+ai_hash: 3c202ff408571eb0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: Testing-Agent deploy 3a39108-report
 status: seedling
-source: "Testing-Agent deploy 3a39108-report"
-tags: [testing-agent, redis, iam, gcp, gotcha]
+tags:
+- testing-agent
+- redis
+- iam
+- gcp
+- gotcha
+title: redis_proxy.sh needs compute firewall + VM + IAP permissions
+type: lesson
 ---
 
 # redis_proxy.sh needs compute firewall + VM + IAP permissions
@@ -22,3 +31,14 @@ IMPORTANT: the proxy is OPTIONAL debugging — the benchmark cache is EMPTY unti
 ## Related
 
 - [[test-agent-v2 Redis VPC connector stuck in ERROR (CIDR/network misconfig)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 Redis deploy blocked by vpcaccess.connectors.create IAM denial]]
+- [[Memorystore Redis has no auth-proxy — local access needs an IAP jump VM]]
+- [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
+- [[test-agent-v2 Redis VPC connector stuck in ERROR (CIDRnetwork misconfig)]]
+- [[test-agent-v2 cloud resource and credential map (klara-nonprod)]]
+
+%% ai-graph-end %%

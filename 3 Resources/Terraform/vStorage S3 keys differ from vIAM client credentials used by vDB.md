@@ -1,10 +1,19 @@
 ---
-title: "vStorage S3 keys differ from vIAM client credentials used by vDB"
+ai_hash: 843b516717b278d1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: term
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [vngcloud, vstorage, vdb, credentials, terraform]
+tags:
+- vngcloud
+- vstorage
+- vdb
+- credentials
+- terraform
+title: vStorage S3 keys differ from vIAM client credentials used by vDB
+type: term
 ---
 
 # vStorage S3 keys differ from vIAM client credentials used by vDB
@@ -22,3 +31,14 @@ Related: [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, no
 
 - [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider]]
 - [[not vngcloud]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
+- [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
+- [[vStorage project is a paid prerequisite Terraform cannot create]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "GCS object names cap at 1024 chars — hash URL-derived keys"
+ai_hash: 40853af2e474e85a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-13
-type: lesson
+entities: []
+source: session 2026-09-13 LUZ-156281 demo
 status: seedling
-source: "session 2026-09-13 LUZ-156281 demo"
-tags: [gcs, gcp, object-storage, gotcha, test-agent-v2]
+tags:
+- gcs
+- gcp
+- object-storage
+- gotcha
+- test-agent-v2
+title: GCS object names cap at 1024 chars — hash URL-derived keys
+type: lesson
 ---
 
 # GCS object names cap at 1024 chars — hash URL-derived keys
@@ -29,3 +38,10 @@ def _slug(s):
 ## Related
 
 - [[test-agent-v2 image built only from pyproject + src + main.py]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

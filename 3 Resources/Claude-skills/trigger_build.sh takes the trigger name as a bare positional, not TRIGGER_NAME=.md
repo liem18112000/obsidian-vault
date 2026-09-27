@@ -1,10 +1,18 @@
 ---
-title: "trigger_build.sh takes the trigger name as a bare positional, not TRIGGER_NAME="
+ai_hash: 8fdfcbc7e0db56df
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: gotcha
+entities: []
+source: session 2026-09-03 LUZ-157476
 status: seedling
-source: "session 2026-09-03 LUZ-157476"
-tags: [claude-skills, cloud-build, gcloud, gotcha]
+tags:
+- claude-skills
+- cloud-build
+- gcloud
+- gotcha
+title: trigger_build.sh takes the trigger name as a bare positional, not TRIGGER_NAME=
+type: gotcha
 ---
 
 # trigger_build.sh takes the trigger name as a bare positional, not TRIGGER_NAME=
@@ -20,3 +28,14 @@ BRANCH=<branch> bash ~/.claude/skills/google-skill-trigger-cloud-build/trigger_b
 Confirmed 2026-09-03 while triggering the `luz-store` build for branch `mt-receive/LUZ-157476-fix-failure-category-test` — the KEY=VALUE form printed `name = TRIGGER_NAME=luz-store` and did nothing useful; the bare-positional + `BRANCH=` env form ran build `c0454bf8` to SUCCESS.
 
 Related: [[FailureCategoryTest hard-codes rendered i18n strings so properties edits break it]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[luz-docs-it-staging-trigger-poller-mismatch]]
+- [[luz-docs-integration-test dev poller derives the GKE job name from the wrong id]]
+- [[luz-docs Cloud Build deploys only on master; feature-branch builds just build+push]]
+- [[luz-docs Cloud Build pushes an image for every branch but only master updates luz_kubernetes]]
+
+%% ai-graph-end %%

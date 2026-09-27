@@ -1,10 +1,19 @@
 ---
-title: "Managed DB provisioners create the server but not in-database objects"
+ai_hash: 2e6617e738e699b7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-09
-type: lesson
+entities: []
+source: session 2026-08-09 leo-customer360 terraform adapt
 status: seedling
-source: "session 2026-08-09 leo-customer360 terraform adapt"
-tags: [terraform, postgres, iac, gotcha, vngcloud]
+tags:
+- terraform
+- postgres
+- iac
+- gotcha
+- vngcloud
+title: Managed DB provisioners create the server but not in-database objects
+type: lesson
 ---
 
 # Managed DB provisioners create the server but not in-database objects
@@ -21,3 +30,14 @@ See [[Postgres RLS is silently bypassed by superuser connections]] and [[Idempot
 
 - [[Postgres RLS is silently bypassed by superuser connections]]
 - [[Idempotent CREATE DATABASE needs psql gexec since it cannot run in a transaction]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role]]
+- [[Postgres RLS is silently bypassed by superuser connections]]
+- [[LEO Customer360 GreenNode Terraform infrastructure]]
+- [[Idempotent CREATE DATABASE needs psql gexec since it cannot run in a transaction]]
+- [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
+
+%% ai-graph-end %%

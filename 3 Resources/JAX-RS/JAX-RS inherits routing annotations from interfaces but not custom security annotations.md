@@ -1,10 +1,19 @@
 ---
-title: "JAX-RS inherits routing annotations from interfaces but not custom security annotations"
+ai_hash: 06293f6568bd37f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-24
-type: lesson
+entities: []
+source: session 2026-08-24
 status: seedling
-source: "session 2026-08-24"
-tags: [jax-rs, security, gotcha, refactoring]
+tags:
+- jax-rs
+- security
+- gotcha
+- refactoring
+title: JAX-RS inherits routing annotations from interfaces but not custom security
+  annotations
+type: lesson
 ---
 
 # JAX-RS inherits routing annotations from interfaces but not custom security annotations
@@ -16,3 +25,14 @@ Safe pattern: keep the extracted interface signatures-only and leave every annot
 ## Related
 
 - [[Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
+- [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
+- [[OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+
+%% ai-graph-end %%

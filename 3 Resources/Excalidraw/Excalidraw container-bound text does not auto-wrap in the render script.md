@@ -1,10 +1,18 @@
 ---
-title: "Excalidraw container-bound text does not auto-wrap in the render script"
+ai_hash: bad8555bdd370eaa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17 agent-framework-skeleton diagram
 status: seedling
-source: "session 2026-08-17 agent-framework-skeleton diagram"
-tags: [excalidraw, diagrams, gotcha, claude-skills]
+tags:
+- excalidraw
+- diagrams
+- gotcha
+- claude-skills
+title: Excalidraw container-bound text does not auto-wrap in the render script
+type: lesson
 ---
 
 # Excalidraw container-bound text does not auto-wrap in the render script
@@ -23,3 +31,14 @@ Same failure mode the skill warns about for standalone text — it just also app
 ## Related
 
 - [[excalidraw-diagram skill]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw standalone text does not auto-wrap to element width]]
+- [[Excalidraw offline renderer does not auto-wrap bound container text]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+- [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
+
+%% ai-graph-end %%

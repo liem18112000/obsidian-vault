@@ -1,4 +1,11 @@
 ---
+ai_hash: c7267dc37e1530d0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
+---
+
+---
 title: "Running post-deploy SQL against a managed vDB (psql \gexec, dockerized client, private-IP caveat)"
 created: 2026-08-18
 type: howto
@@ -24,3 +31,14 @@ Key details learned:
 ## Related
 
 - [[GreenNode vDB package family + IOPS tier are per-zone (HCM03-1A vs 1C)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[GreenNode vDB public_access is non-functional here; reach a private DB only via an in-VPC bastion (native login, not user_data)]]
+- [[10000-IOPS standalone vDB PostgreSQL needs a vServer-enabled zone that offers Gen2-NVMe2-IOPS10000 (HCM03-1A)]]
+- [[LEO Customer360 GreenNode Terraform infrastructure]]
+
+%% ai-graph-end %%

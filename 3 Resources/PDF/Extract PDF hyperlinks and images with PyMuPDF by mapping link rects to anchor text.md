@@ -1,10 +1,20 @@
 ---
-title: "Extract PDF hyperlinks and images with PyMuPDF by mapping link rects to anchor text"
+ai_hash: 673c1b2da4881367
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: howto
+entities: []
+source: session 2026-09-08 (CV tailoring task)
 status: seedling
-source: "session 2026-09-08 (CV tailoring task)"
-tags: [pymupdf, fitz, pdf, python, hyperlinks]
+tags:
+- pymupdf
+- fitz
+- pdf
+- python
+- hyperlinks
+title: Extract PDF hyperlinks and images with PyMuPDF by mapping link rects to anchor
+  text
+type: howto
 ---
 
 # Extract PDF hyperlinks and images with PyMuPDF by mapping link rects to anchor text
@@ -32,3 +42,11 @@ Pairs with the HTML→PDF render step: [[Headless Chrome print-to-pdf preserves 
 ## Related
 
 - [[Headless Chrome print-to-pdf preserves HTML anchor tags as clickable PDF links]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Update a designed PDF without its source by rebuilding as HTML and printing with headless Edge]]
+- [[Headless Chrome print-to-pdf preserves HTML anchor tags as clickable PDF links]]
+
+%% ai-graph-end %%

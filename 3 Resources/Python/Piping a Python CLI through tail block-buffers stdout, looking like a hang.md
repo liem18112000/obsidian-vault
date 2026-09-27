@@ -1,10 +1,19 @@
 ---
-title: "Piping a Python CLI through tail block-buffers stdout, looking like a hang"
+ai_hash: 45bd33f5dcc3c68e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: lesson
+entities: []
+source: session 2026-09-22 JEV J4
 status: seedling
-source: "session 2026-09-22 JEV J4"
-tags: [python, stdout, buffering, gotcha, debugging]
+tags:
+- python
+- stdout
+- buffering
+- gotcha
+- debugging
+title: Piping a Python CLI through tail block-buffers stdout, looking like a hang
+type: lesson
 ---
 
 # Piping a Python CLI through tail block-buffers stdout, looking like a hang
@@ -20,3 +29,11 @@ Related: [[An open editor can clobber a mid-session programmatic file edit]] (su
 ## Related
 
 - [[An open editor can clobber a mid-session programmatic file edit]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[An open editor can clobber a mid-session programmatic file edit]]
+- [[Decouple long agent work from the harness task lifecycle]]
+
+%% ai-graph-end %%

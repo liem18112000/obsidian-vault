@@ -1,10 +1,20 @@
 ---
-title: "Assured test generation: keep an LLM test only if it builds, passes, and raises coverage"
+ai_hash: 8ecc7f8ddfc630c2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: concept
+entities: []
+source: deep research 2026-09-03
 status: seedling
-source: "deep research 2026-09-03"
-tags: [testing, llm, test-generation, coverage, agentic]
+tags:
+- testing
+- llm
+- test-generation
+- coverage
+- agentic
+title: 'Assured test generation: keep an LLM test only if it builds, passes, and raises
+  coverage'
+type: concept
 ---
 
 # Assured test generation: keep an LLM test only if it builds, passes, and raises coverage
@@ -21,3 +31,14 @@ The **assured** pattern (Meta TestGen-LLM) makes LLM-generated tests trustworthy
 - [[LLM-as-a-judge biases: position]]
 - [[verbosity]]
 - [[self-enhancement]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mutation score beats coverage for measuring test-suite quality]]
+- [[Agentic browser testing discover once, compile deterministic, heal only on failure]]
+- [[LLM-as-a-judge biases position, verbosity, self-enhancement]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[Metamorphic and differential testing solve the oracle problem]]
+
+%% ai-graph-end %%

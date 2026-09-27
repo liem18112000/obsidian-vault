@@ -1,10 +1,21 @@
 ---
-title: "MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload"
+ai_hash: 0fb1ba42f1138c13
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: lesson
+entities: []
+source: PROD cross-check 2026-09-09
 status: seedling
-source: "PROD cross-check 2026-09-09"
-tags: [mongodb, dns, coredns, root-cause, debugging, gotcha, luz]
+tags:
+- mongodb
+- dns
+- coredns
+- root-cause
+- debugging
+- gotcha
+- luz
+title: MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload
+type: lesson
 ---
 
 # MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload
@@ -31,3 +42,14 @@ Also: correlation (my enrichment dose-response) can be real yet causally mis-ass
 
 - [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
 - [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
+- [[Luz DNS storm gate is both CoreDNS replicas down together plus morning load, not enrichment volume]]
+- [[CoreDNS livenessreadiness 404 means probe path-port mismatch, not a CoreDNS crash]]
+- [[Diagnose all-DBs-die-at-time-T with a dose-response table across crash vs quiet days]]
+- [[Luz tenant mongod logs are not in klara-prod Cloud Logging]]
+
+%% ai-graph-end %%

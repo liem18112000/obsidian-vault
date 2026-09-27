@@ -1,10 +1,18 @@
 ---
-title: "ADK custom eval metric is a function returning EvaluationResult, loaded by dotted path"
+ai_hash: 8c926dd31a835b3a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: lesson
+entities: []
+source: Plan B build 2026-09-08, google-adk 2.8.0
 status: seedling
-source: "Plan B build 2026-09-08, google-adk 2.8.0"
-tags: [google-adk, evaluation, metrics]
+tags:
+- google-adk
+- evaluation
+- metrics
+title: ADK custom eval metric is a function returning EvaluationResult, loaded by
+  dotted path
+type: lesson
 ---
 
 # ADK custom eval metric is a function returning EvaluationResult, loaded by dotted path
@@ -20,3 +28,14 @@ Key uses: (1) this lets you wrap an EXISTING scoring engine as an ADK metric —
 ## Related
 
 - [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A deterministic scorer is a negative case for LLM-agent-ification — reuse ADK via custom EvalMetric, not LlmAgent]]
+- [[ADK built-in logging does not cover env-gated per-agent app logging]]
+- [[test-agent-v2 test_evaluation restructure engine + config packages + merged golden set]]
+- [[ADK sample canonical layout root_agent in agent.py, sub_agents subpackages, workflow agents]]
+- [[ADK modeltool callbacks only fire for LlmAgent-mediated calls; use a Runner Plugin for cross-cutting]]
+
+%% ai-graph-end %%

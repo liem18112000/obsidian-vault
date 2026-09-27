@@ -1,10 +1,19 @@
 ---
-title: "Re-wrapping a 5xx as 4xx defeats status-based retry"
+ai_hash: cf203d48e6c72f2a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: PROD investigation 2026-08-03 (invoice PDF 503)
 status: seedling
-source: "PROD investigation 2026-08-03 (invoice PDF 503)"
-tags: [retry, gotcha, http-status, fault-tolerance, luz-store]
+tags:
+- retry
+- gotcha
+- http-status
+- fault-tolerance
+- luz-store
+title: Re-wrapping a 5xx as 4xx defeats status-based retry
+type: lesson
 ---
 
 # Re-wrapping a 5xx as 4xx defeats status-based retry
@@ -34,3 +43,14 @@ So the Ivy engine's real 503 was reshaped into a 400 *before* the interceptor's 
 
 - [[Invoice Run v2 PDF creation flow]]
 - [[MicroProfile Fault Tolerance retry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MicroProfile @Retry can't do exponential backoff or HTTP-status-aware retry — use a manual loop]]
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[Snapshot for rollback must live outside retry boundary]]
+- [[Naive textPayload substring matching produces false-positive log hits]]
+- [[TECHNICAL_ERROR is not retried in-flight but is retry-eligible on invoice-item rerun]]
+
+%% ai-graph-end %%

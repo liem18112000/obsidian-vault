@@ -1,10 +1,19 @@
 ---
-title: "Create an empty git branch with commit-tree + the empty-tree hash (never git rm -rf)"
+ai_hash: a264d5d20b5ec0cc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-28
-type: howto
+entities: []
+source: session 2026-08-28
 status: seedling
-source: "session 2026-08-28"
-tags: [git, plumbing, git-flow, howto]
+tags:
+- git
+- plumbing
+- git-flow
+- howto
+title: Create an empty git branch with commit-tree + the empty-tree hash (never git
+  rm -rf)
+type: howto
 ---
 
 # Create an empty git branch with commit-tree + the empty-tree hash (never git rm -rf)
@@ -24,3 +33,14 @@ git rebase --onto "$E" --root feature/test-agent   # feature = E -> code
 Then `git push --force-with-lease origin main feature/test-agent`. `commit-tree` writes a commit object directly from a tree + parents without touching HEAD, index, or the working copy — the safe primitive for history surgery.
 
 See [[Bridge-gateway use separate secrets for the inbound caller token and the outbound backend token]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify a branch is fully merged before deleting git log main..branch count 0]]
+- [[git checkout -B branch originmain rehomes upstream to originmain, so a bare push targets main]]
+- [[git push sends current branch to its upstream not same-name branch]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+
+%% ai-graph-end %%

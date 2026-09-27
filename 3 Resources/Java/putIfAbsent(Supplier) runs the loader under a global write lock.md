@@ -1,10 +1,20 @@
 ---
-title: "putIfAbsent(Supplier) runs the loader under a global write lock"
+ai_hash: a8a7ecda8a7e27ca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: lesson
+entities: []
+source: session 2026-08-26 luz_jsonstore MongoClientFactory
 status: seedling
-source: "session 2026-08-26 luz_jsonstore MongoClientFactory"
-tags: [java, concurrency, cache, locking, gotcha, luz-jsonstore]
+tags:
+- java
+- concurrency
+- cache
+- locking
+- gotcha
+- luz-jsonstore
+title: putIfAbsent(Supplier) runs the loader under a global write lock
+type: lesson
 ---
 
 # putIfAbsent(Supplier) runs the loader under a global write lock
@@ -21,3 +31,14 @@ Concrete case: `luz_jsonstore`s `SimpleCache.putIfAbsent(key, Supplier)` calls `
 ## Related
 
 - [[LRU cache in Java via LinkedHashMap accessOrder + removeEldestEntry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[Cache one MongoClient per tenant and close it on eviction]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[Track pooled MongoClients in a shutdown registry instead of closing on cache eviction]]
+- [[Two-tier cache must propagate caller TTL to every tier]]
+
+%% ai-graph-end %%

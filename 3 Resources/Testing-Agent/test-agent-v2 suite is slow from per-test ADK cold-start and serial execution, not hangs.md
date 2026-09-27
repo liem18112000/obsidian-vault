@@ -1,10 +1,20 @@
 ---
-title: "test-agent-v2 suite is slow from per-test ADK cold-start and serial execution, not hangs"
+ai_hash: d1569099670a57b8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: lesson
+entities: []
+source: session 2026-09-14
 status: seedling
-source: "session 2026-09-14"
-tags: [testing-agent, pytest, performance, adk, test-agent-v2]
+tags:
+- testing-agent
+- pytest
+- performance
+- adk
+- test-agent-v2
+title: test-agent-v2 suite is slow from per-test ADK cold-start and serial execution,
+  not hangs
+type: lesson
 ---
 
 # test-agent-v2 suite is slow from per-test ADK cold-start and serial execution, not hangs
@@ -25,3 +35,14 @@ Related: [[run_json_agent needed a per-call timeout or a slow Vertex call hangs 
 ## Related
 
 - [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+- [[Why local test-agent is slow claude -p ships a 17.5K agent prompt on Opus, x many serial calls]]
+- [[test-agent-v2 executor tests share memory-bank state and fail by test order]]
+
+%% ai-graph-end %%

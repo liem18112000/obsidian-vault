@@ -1,10 +1,20 @@
 ---
-title: "Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP"
+ai_hash: 4ad7ba33a883b9e4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-21
-type: howto
+entities: []
+source: session 2026-08-21
 status: seedling
-source: "session 2026-08-21"
-tags: [opentelemetry, OTLP, jaeger, tracing, FastAPI, observability]
+tags:
+- opentelemetry
+- OTLP
+- jaeger
+- tracing
+- FastAPI
+- observability
+title: Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP
+type: howto
 ---
 
 # Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP
@@ -42,3 +52,14 @@ To decouple apps from the backend, fan out, or centralize sampling: apps -> **lo
 ## Related
 
 - [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 tracing OTel off-by-default on UAT, on at 10% on PROD]]
+- [[Jaeger Dependencies DAG is empty until a trace spans 2 services; force one with opentelemetry-instrument from inside a container]]
+- [[Jaeger all-in-one on the shared vServer image-tag, Netdata 4317, and badger-perms gotchas]]
+- [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+- [[docker restart does not re-read --env-file; recreate the container to apply env changes]]
+
+%% ai-graph-end %%

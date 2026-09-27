@@ -1,10 +1,20 @@
 ---
-title: "LEO CDP has two complementary ingestion lanes converging at CIR"
+ai_hash: 36ca00b2ba7f1096
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: concept
+entities: []
+source: LEOCDP web-tracking plan, session 2026-08-25
 status: seedling
-source: "LEOCDP web-tracking plan, session 2026-08-25"
-tags: [leo-cdp, cdp, airbyte, web-tracking, identity-resolution, architecture]
+tags:
+- leo-cdp
+- cdp
+- airbyte
+- web-tracking
+- identity-resolution
+- architecture
+title: LEO CDP has two complementary ingestion lanes converging at CIR
+type: concept
 ---
 
 # LEO CDP has two complementary ingestion lanes converging at CIR
@@ -26,3 +36,14 @@ Related: [[Lightweight-but-scalable web event collector pattern]], [[VNG Cloud v
 
 - [[Lightweight-but-scalable web event collector pattern]]
 - [[VNG Cloud vStorage is S3-compatible object storage]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Lightweight-but-scalable web event collector pattern]]
+- [[Customer360 CDP Kafka ingestion topic layout]]
+- [[Leo CDP public REST API contract]]
+- [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+- [[AppsFlyer connector reduced to a single JSONL file-S3 sink]]
+
+%% ai-graph-end %%

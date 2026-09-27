@@ -1,10 +1,19 @@
 ---
-title: "LEO CDP segment member_count is 0 because default rules filter on never-populated ML columns"
+ai_hash: af2b7a560d01e802
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-23
-type: lesson
+entities: []
+source: beta.leocdp.com investigation 2026-08-23
 status: seedling
-source: "beta.leocdp.com investigation 2026-08-23"
-tags: [leo-cdp, segmentation, gotcha, cdp]
+tags:
+- leo-cdp
+- segmentation
+- gotcha
+- cdp
+title: LEO CDP segment member_count is 0 because default rules filter on never-populated
+  ML columns
+type: lesson
 ---
 
 # LEO CDP segment member_count is 0 because default rules filter on never-populated ML columns
@@ -26,3 +35,14 @@ See [[Diagnose stale vs genuinely-zero segment counts by comparing stored count 
 ## Related
 
 - [[Diagnose stale vs genuinely-zero segment counts by comparing stored count to live matched query]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Diagnose stale vs genuinely-zero segment counts by comparing stored count to live matched query]]
+- [[pgAdmin shows 0 rows on customer360 tenant tables until you SET app.tenant_id (FORCE RLS)]]
+- [[Leo CDP profilelist ignores start and limit and embeds event data]]
+- [[LEO CDP tenant isolation fails closed and needs a Keycloak tenant_id claim mapper]]
+- [[Leo CDP save returns 200 but eventlist cannot read it back]]
+
+%% ai-graph-end %%

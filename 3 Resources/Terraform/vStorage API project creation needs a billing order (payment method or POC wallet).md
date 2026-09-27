@@ -1,10 +1,21 @@
 ---
-title: "vStorage API project creation needs a billing order (payment method or POC wallet)"
+ai_hash: 4840a49bb39fd6d3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: lesson
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [vngcloud, vstorage, billing, order, gotcha, object-storage]
+tags:
+- vngcloud
+- vstorage
+- billing
+- order
+- gotcha
+- object-storage
+title: vStorage API project creation needs a billing order (payment method or POC
+  wallet)
+type: lesson
 ---
 
 # vStorage API project creation needs a billing order (payment method or POC wallet)
@@ -21,3 +32,14 @@ Reinforces the design choice: keep the billed project OUT of Terraform; bootstra
 
 - [[vStorage project is a paid prerequisite Terraform cannot create]]
 - [[VNG vStorage API returns HTTP 200 with success-false on errors]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vStorage project is a paid prerequisite Terraform cannot create]]
+- [[vStorage create-project code 114 is account-side, not a payload bug]]
+- [[vStorage REST control-plane API endpoints and vIAM bearer auth]]
+- [[Keep billed bootstrap resources out of Terraform state]]
+- [[Creating a vStorage bucket is free (data-plane); only the project quota + usage cost money]]
+
+%% ai-graph-end %%

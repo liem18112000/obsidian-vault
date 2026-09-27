@@ -1,10 +1,20 @@
 ---
-title: "Inject a Postgres session GUC into an unmodifiable script via PGOPTIONS"
+ai_hash: 7f5aeaa5176585e0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: leo-customer360 seed_data.sh 2026-08-19
 status: seedling
-source: "leo-customer360 seed_data.sh 2026-08-19"
-tags: [postgresql, rls, pgoptions, libpq, seeding, gotcha]
+tags:
+- postgresql
+- rls
+- pgoptions
+- libpq
+- seeding
+- gotcha
+title: Inject a Postgres session GUC into an unmodifiable script via PGOPTIONS
+type: lesson
 ---
 
 # Inject a Postgres session GUC into an unmodifiable script via PGOPTIONS
@@ -32,3 +42,14 @@ against the managed non-superuser DB. Related: [[FORCE RLS breaks seeding as a n
 ## Related
 
 - [[FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[FORCE RLS breaks seeding as a non-superuser unless app.tenant_id is set]]
+- [[Set Postgres RLS session GUC via the raw DBAPI connection, not Session.execute]]
+- [[Postgres Row-Level Security is bypassed by superusers so the app needs a non-superuser role]]
+- [[Postgres RLS is silently bypassed by superuser connections]]
+- [[pgAdmin shows 0 rows on customer360 tenant tables until you SET app.tenant_id (FORCE RLS)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "ADK LoggingPlugin gives free invocation-lifecycle tracing via a Runner BasePlugin"
+ai_hash: dade5b6adc0546ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: howto
+entities: []
+source: session 2026-09-08
 status: seedling
-source: "session 2026-09-08"
-tags: [google-adk, logging, plugins, test-agent-v2]
+tags:
+- google-adk
+- logging
+- plugins
+- test-agent-v2
+title: ADK LoggingPlugin gives free invocation-lifecycle tracing via a Runner BasePlugin
+type: howto
 ---
 
 # ADK LoggingPlugin gives free invocation-lifecycle tracing via a Runner BasePlugin
@@ -23,3 +31,14 @@ runner = Runner(..., plugins=[LoggingPlugin(), LearnDrainPlugin(), LessonRecallP
 ## Related
 
 - [[ADK built-in logging does not cover env-gated per-agent app logging]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK built-in logging does not cover env-gated per-agent app logging]]
+- [[ADK modeltool callbacks only fire for LlmAgent-mediated calls; use a Runner Plugin for cross-cutting]]
+- [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
+- [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
+
+%% ai-graph-end %%

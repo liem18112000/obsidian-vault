@@ -1,10 +1,20 @@
 ---
-title: "ePost eArchive ZIP import: transfer.zip shape and luz_docs_import"
+ai_hash: bc40163b782b3a73
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-14
-type: concept
+entities: []
+source: LUZ-158230 interrogation, session 2026-09-14
 status: seedling
-source: "LUZ-158230 interrogation, session 2026-09-14"
-tags: [luz, ePost, eArchive, luz-docs-import, zip-import, LUZ-158230]
+tags:
+- luz
+- ePost
+- eArchive
+- luz-docs-import
+- zip-import
+- LUZ-158230
+title: 'ePost eArchive ZIP import: transfer.zip shape and luz_docs_import'
+type: concept
 ---
 
 # ePost eArchive ZIP import: transfer.zip shape and luz_docs_import
@@ -23,3 +33,14 @@ Required sidecar fields include `senderTenantId` (UUID), `senderCompanyId` (int)
 [[HEALTH document type carries verbatim SNOMED healthData]]
 [[ePost eArchive document write-chain: import to view-controller to luz_docs to jsonstore]]
 [[luz_docs_import scope: no sender auth, individual tenants, partial-import policy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
+- [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
+- [[ePost eArchive document write-chain import to view-controller to luz_docs to jsonstore]]
+- [[luz_docs_import scope no sender auth, individual tenants, partial-import policy]]
+- [[LUZ-158230 eArchive Health ZIP import - golden test fixture matrix location]]
+
+%% ai-graph-end %%

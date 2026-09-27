@@ -1,10 +1,21 @@
 ---
-title: "VNG vServer: OS images are not associated with the s2-general flavor zone (image data-source trap)"
+ai_hash: fd6faa1f216c62a8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-18
-type: lesson
+entities: []
+source: session 2026-08-18 leo-customer360 deployments/server
 status: seedling
-source: "session 2026-08-18 leo-customer360 deployments/server"
-tags: [terraform, vngcloud, vserver, image, flavor-zone, gotcha]
+tags:
+- terraform
+- vngcloud
+- vserver
+- image
+- flavor-zone
+- gotcha
+title: 'VNG vServer: OS images are not associated with the s2-general flavor zone
+  (image data-source trap)'
+type: lesson
 ---
 
 # VNG vServer: OS images are not associated with the s2-general flavor zone (image data-source trap)
@@ -29,3 +40,14 @@ Two traps hit when resolving VNG Cloud vServer catalog names for a plain Ubuntu 
 
 - [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
 - [[VNG Cloud vServer discovering account catalog names via the vserver-gateway API]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
+- [[VNG Cloud vServer discovering account catalog names via the vserver-gateway API]]
+- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs]]
+- [[VNG Cloud HCM03-1C offers only the s-general flavor family]]
+
+%% ai-graph-end %%

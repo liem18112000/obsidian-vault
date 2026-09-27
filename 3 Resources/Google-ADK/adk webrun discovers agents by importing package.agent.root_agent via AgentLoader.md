@@ -1,10 +1,18 @@
 ---
-title: "adk web/run discovers agents by importing package.agent.root_agent via AgentLoader"
+ai_hash: 217cb22bf14b5635
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-08
-type: howto
+entities: []
+source: v2 E1, google-adk 2.8.0, 2026-09-08
 status: seedling
-source: "v2 E1, google-adk 2.8.0, 2026-09-08"
-tags: [google-adk, adk-cli, discovery, structure]
+tags:
+- google-adk
+- adk-cli
+- discovery
+- structure
+title: adk web/run discovers agents by importing package.agent.root_agent via AgentLoader
+type: howto
 ---
 
 # adk web/run discovers agents by importing package.agent.root_agent via AgentLoader
@@ -23,3 +31,14 @@ AgentLoader(agents_dir='src').load_agent('knowledge_gathering')  # -> the root_a
 - [[ADK sample canonical layout: root_agent in agent.py]]
 - [[sub_agents subpackages]]
 - [[workflow agents]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ADK sample canonical layout root_agent in agent.py, sub_agents subpackages, workflow agents]]
+- [[How ADK agents are deployed adk deploy cloud_run agent_engine gke + get_fast_api_app]]
+- [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
+- [[ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard]]
+- [[ADK agent name must be a valid Python identifier]]
+
+%% ai-graph-end %%

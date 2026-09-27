@@ -1,10 +1,18 @@
 ---
-title: "Deployed Testing-Agent refine recommendations are speculative until validated"
+ai_hash: 6dc8f5065fa3c168
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: Testing-Agent run-188f96b8
 status: seedling
-source: "Testing-Agent run-188f96b8"
-tags: [testing-agent, refine, gotcha, knowledge-gathering]
+tags:
+- testing-agent
+- refine
+- gotcha
+- knowledge-gathering
+title: Deployed Testing-Agent refine recommendations are speculative until validated
+type: lesson
 ---
 
 # Deployed Testing-Agent refine recommendations are speculative until validated
@@ -22,3 +30,14 @@ Related project memory: "Interrogation loop asks nothing" and "define_plan answe
 ## Related
 
 - [[ePost ZIP import (LUZ-158230) behavior rules confirmed by domain expert]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing-agent refine flags low confidence when spec PDFs are recorded-only]]
+- [[Testing-agent refine loses confidence when source-of-truth PDF attachments are undistilled gaps]]
+- [[Deployed Testing-Agent refine loop freezes after completion and drops corrections]]
+- [[Testing-Agent refine confidence is capped by un-ingested spec PDFs]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+
+%% ai-graph-end %%

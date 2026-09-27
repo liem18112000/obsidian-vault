@@ -1,10 +1,19 @@
 ---
-title: "Docker can report OOMKilled=false on a cgroup memcg OOM — check dmesg"
+ai_hash: 87f386b34ca2fda3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: session 2026-09-16 leo-customer360 jaeger 502
 status: seedling
-source: "session 2026-09-16 leo-customer360 jaeger 502"
-tags: [docker, oom, cgroup, debugging, gotcha]
+tags:
+- docker
+- oom
+- cgroup
+- debugging
+- gotcha
+title: Docker can report OOMKilled=false on a cgroup memcg OOM — check dmesg
+type: lesson
 ---
 
 # Docker can report OOMKilled=false on a cgroup memcg OOM — check dmesg
@@ -28,3 +37,14 @@ Root fix is always: lower the memory footprint or raise the cap — see [[Jaeger
 - [[Jaeger on a small box: use in-memory bounded storage]]
 - [[not badger]]
 - [[to avoid OOM 502]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Jaeger on a small box use in-memory bounded storage, not badger, to avoid OOM 502]]
+- [[Uncapped Dagster on a swapless 2GB box OOMs the whole host (SSH banner-timeout); cap container memory + add swap]]
+- [[Right-sizing k8s resource limits on the Customer360 stack]]
+- [[Docker json-file logs are unbounded; cap them with --log-opt on high-volume containers]]
+- [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
+
+%% ai-graph-end %%

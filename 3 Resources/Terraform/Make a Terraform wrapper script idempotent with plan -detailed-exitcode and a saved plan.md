@@ -1,10 +1,20 @@
 ---
-title: "Make a Terraform wrapper script idempotent with plan -detailed-exitcode and a saved plan"
+ai_hash: 9d7736bf377590ff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: howto
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [terraform, idempotency, bash, iac, devops]
+tags:
+- terraform
+- idempotency
+- bash
+- iac
+- devops
+title: Make a Terraform wrapper script idempotent with plan -detailed-exitcode and
+  a saved plan
+type: howto
 ---
 
 # Make a Terraform wrapper script idempotent with plan -detailed-exitcode and a saved plan
@@ -24,3 +34,14 @@ See [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform p
 ## Related
 
 - [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
+- [[Idempotent CREATE DATABASE needs psql gexec since it cannot run in a transaction]]
+- [[Refactor Terraform resources into a module as a no-op via terraform state mv]]
+- [[Gate Terraform apply to create-if-absent except on the release branch]]
+- [[Concurrent test-agent-v2 deploys collide on terraform local-state lock (fails safe)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Building a ZIP fixture to test NFC/NFD + UTF-8-flag entry-name handling"
+ai_hash: ed01624f52093e10
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-11
-type: howto
+entities: []
+source: session 2026-08-11, LUZ-158230 Gap 3
 status: seedling
-source: "session 2026-08-11, LUZ-158230 Gap 3"
-tags: [zip, unicode, nfc, nfd, testing, python, gotcha]
+tags:
+- zip
+- unicode
+- nfc
+- nfd
+- testing
+- python
+- gotcha
+title: Building a ZIP fixture to test NFC/NFD + UTF-8-flag entry-name handling
+type: howto
 ---
 
 # Building a ZIP fixture to test NFC/NFD + UTF-8-flag entry-name handling
@@ -24,3 +35,14 @@ Tool that implements all three: `luz_docs_import/data/Lam/new-import-generator/g
 ## Related
 
 - [[luz-docs-import ingest ZIP format (folders + per-file .metadata.json sidecar)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ZIP entry names decode as CP437 mojibake when the UTF-8 EFS flag is unset]]
+- [[luz-docs-import dedup identity is the uploaded zip filename (importZipName)]]
+- [[NFC-normalize dedup keys so macOS NFD and Windows NFC file re-exports converge]]
+- [[luz-docs-import Gap-3 always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort]]
+- [[Windows Python stdout is cp1252 and crashes on emoji; reconfigure to UTF-8]]
+
+%% ai-graph-end %%

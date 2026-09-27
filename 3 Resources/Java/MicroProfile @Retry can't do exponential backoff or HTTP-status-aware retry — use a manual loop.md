@@ -1,10 +1,21 @@
 ---
-title: "MicroProfile @Retry can't do exponential backoff or HTTP-status-aware retry — use a manual loop"
+ai_hash: 0a9b0c7b40ae7c4b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: howto
+entities: []
+source: session 2026-08-10 (luz-docs-import Tier 1 terminal write)
 status: seedling
-source: "session 2026-08-10 (luz-docs-import Tier 1 terminal write)"
-tags: [java, microprofile, fault-tolerance, retry, backoff, jax-rs]
+tags:
+- java
+- microprofile
+- fault-tolerance
+- retry
+- backoff
+- jax-rs
+title: MicroProfile @Retry can't do exponential backoff or HTTP-status-aware retry
+  — use a manual loop
+type: howto
 ---
 
 # MicroProfile @Retry can't do exponential backoff or HTTP-status-aware retry — use a manual loop
@@ -34,3 +45,14 @@ The first correction was too broad. `@ExponentialBackoff` availability depends o
 - **Quarkus modules** (e.g. luz_storage_batch via `quarkus-smallrye-fault-tolerance`) bundle the SmallRye api on the COMPILE classpath -> `@ExponentialBackoff` compiles.
 - **WildFly WARs** (e.g. luz_docs_import) carry ONLY the MicroProfile FT SPEC api (`org.eclipse.microprofile.faulttolerance`) on the compile classpath. `import io.smallrye.faulttolerance.api.ExponentialBackoff` FAILS to compile: `package io.smallrye.faulttolerance.api does not exist`. The jar being in `.m2` does NOT put it on this module's classpath.
 To use `@ExponentialBackoff` in a WildFly WAR you must add `io.smallrye:smallrye-fault-tolerance-api` as a `provided` dep at the version the WildFly image bundles (runtime-honoring risk if mismatched). Otherwise use spec `@Retry` + `jitter` (jittered fixed delay, not exponential) — that is what luz-docs-import JsonStoreService.updateJobFinal ships. Lesson: verify a compile classpath with an actual `mvn compile`, not by finding the jar in `.m2`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff]]
+- [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[Fault-tolerance annotations imported but never applied in CreditCardTransactionService]]
+- [[MicroProfile Fallback is dead in plain Mockito unit tests]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "VNG Cloud publishes no static price tables — calculator or quote only"
+ai_hash: b0bede68193f3d0c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: lesson
+entities: []
+source: session 2026-08-26 VKS research
 status: seedling
-source: "session 2026-08-26 VKS research"
-tags: [vng-cloud, pricing, gotcha, greennode]
+tags:
+- vng-cloud
+- pricing
+- gotcha
+- greennode
+title: VNG Cloud publishes no static price tables — calculator or quote only
+type: lesson
 ---
 
 # VNG Cloud publishes no static price tables — calculator or quote only
@@ -25,3 +33,14 @@ Related: [[VNG Cloud VKS control plane is free; worker nodes billed as vServer V
 ## Related
 
 - [[VNG Cloud VKS control plane is free; worker nodes billed as vServer VMs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud VKS control plane is free; worker nodes billed as vServer VMs]]
+- [[VNG Cloud docs rebranded to GreenNode (docs.vngcloud.vn redirects to docs.greennode.ai)]]
+- [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
+
+%% ai-graph-end %%

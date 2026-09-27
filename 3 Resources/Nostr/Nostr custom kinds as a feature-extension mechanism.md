@@ -1,10 +1,18 @@
 ---
-title: "Nostr custom kinds as a feature-extension mechanism"
+ai_hash: 6d80fd35555c4f22
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-01
-type: concept
+entities: []
+source: github.com/block/buzz ARCHITECTURE.md 2026-08-01
 status: seedling
-source: "github.com/block/buzz ARCHITECTURE.md 2026-08-01"
-tags: [nostr, protocol-design, forward-compatibility, buzz]
+tags:
+- nostr
+- protocol-design
+- forward-compatibility
+- buzz
+title: Nostr custom kinds as a feature-extension mechanism
+type: concept
 ---
 
 # Nostr custom kinds as a feature-extension mechanism
@@ -20,3 +28,11 @@ See [[Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents ar
 ## Related
 
 - [[Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents are peers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Buzz (blockbuzz) is a Nostr-based workspace where humans and AI agents are peers]]
+- [[blockbuzz architecture a Nostr-relay hive mind for humans and AI agents]]
+
+%% ai-graph-end %%

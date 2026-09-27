@@ -1,10 +1,20 @@
 ---
-title: "Get GreenNode API credentials by creating an IAM Service Account (Client ID + Secret Key)"
+ai_hash: 5fd306071b50f113
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-17
-type: howto
+entities: []
+source: session 2026-08-17
 status: seedling
-source: "session 2026-08-17"
-tags: [greennode, vngcloud, iam, service-account, credentials]
+tags:
+- greennode
+- vngcloud
+- iam
+- service-account
+- credentials
+title: Get GreenNode API credentials by creating an IAM Service Account (Client ID
+  + Secret Key)
+type: howto
 ---
 
 # Get GreenNode API credentials by creating an IAM Service Account (Client ID + Secret Key)
@@ -28,3 +38,14 @@ Maps to `TF_VAR_client_id`/`TF_VAR_client_secret` (or the provider's native `CLI
 - [[GreenNode Cloud is VNG Cloud rebranded (same IAM]]
 - [[gateway]]
 - [[Terraform provider)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[vStorage S3 keys differ from vIAM client credentials used by vDB]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[VNG Cloud list-projects endpoint is GET vserver-gatewayv1projects (not accounts-api)]]
+
+%% ai-graph-end %%

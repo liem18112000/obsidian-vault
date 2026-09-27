@@ -1,10 +1,19 @@
 ---
-title: "Fail-open bearer auth middleware antipattern"
+ai_hash: e2a368870c961a24
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-19
-type: lesson
+entities: []
+source: test-agent-v2 code review 2026-09-19
 status: seedling
-source: "test-agent-v2 code review 2026-09-19"
-tags: [security, auth, antipattern, gotcha, fail-closed]
+tags:
+- security
+- auth
+- antipattern
+- gotcha
+- fail-closed
+title: Fail-open bearer auth middleware antipattern
+type: lesson
 ---
 
 # Fail-open bearer auth middleware antipattern
@@ -28,3 +37,14 @@ Seen in test-agent-v2 `common/adk/auth.py` and `common/bridge/asgi.py`, guarding
 ## Related
 
 - [[TRUNCATE CASCADE defeats a table allowlist]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ALLOW_INSECURE=1 + blank token opens the fail-closed bearer gate]]
+- [[TRUNCATE CASCADE defeats a table allowlist]]
+- [[Declare + enforce bearer auth on an a2a-sdk 1.x server]]
+- [[Arm a new login gate by env presence so shipping auth cannot lock the operator out]]
+- [[masking-token-in-fetch-command-breaks-downstream]]
+
+%% ai-graph-end %%

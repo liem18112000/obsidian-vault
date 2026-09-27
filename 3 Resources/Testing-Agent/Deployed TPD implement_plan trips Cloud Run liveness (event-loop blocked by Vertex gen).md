@@ -1,10 +1,21 @@
 ---
-title: "Deployed TPD implement_plan trips Cloud Run liveness (event-loop blocked by Vertex gen)"
+ai_hash: 05135af7b143a716
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-16
-type: lesson
+entities: []
+source: test-agent-v2 deploy f65c3cc, LUZ-158230, 2026-09-16
 status: seedling
-source: "test-agent-v2 deploy f65c3cc, LUZ-158230, 2026-09-16"
-tags: [testing-agent, cloud-run, liveness, vertex, event-loop, gotcha]
+tags:
+- testing-agent
+- cloud-run
+- liveness
+- vertex
+- event-loop
+- gotcha
+title: Deployed TPD implement_plan trips Cloud Run liveness (event-loop blocked by
+  Vertex gen)
+type: lesson
 ---
 
 # Deployed TPD implement_plan trips Cloud Run liveness (event-loop blocked by Vertex gen)
@@ -24,3 +35,14 @@ Related: [[implement_plan heuristic-fallback emits one performance stub per node
 ## Related
 
 - [[implement_plan heuristic-fallback emits one performance stub per node]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
+- [[Testing-Agent implement_plan assured loop times out at 900s MCP ceiling]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
+- [[implement_plan heuristic-fallback emits one performance stub per node]]
+
+%% ai-graph-end %%

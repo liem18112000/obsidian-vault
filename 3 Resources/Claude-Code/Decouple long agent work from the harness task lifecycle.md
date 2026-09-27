@@ -1,10 +1,19 @@
 ---
-title: "Decouple long agent work from the harness task lifecycle"
+ai_hash: bae33d240700a2f3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: session 2026-09-03 (perf-cluster 2.2M seed)
 status: seedling
-source: "session 2026-09-03 (perf-cluster 2.2M seed)"
-tags: [claude-code, background-tasks, orchestration, ops, resilience]
+tags:
+- claude-code
+- background-tasks
+- orchestration
+- ops
+- resilience
+title: Decouple long agent work from the harness task lifecycle
+type: lesson
 ---
 
 # Decouple long agent work from the harness task lifecycle
@@ -23,3 +32,14 @@ The monitor should measure the **authoritative end-state directly** (e.g. a row/
 - [[Resume a large append seed by recounting to a target]]
 - [[kubectl port-forward drops after ~1 hour on GKE]]
 - [[Git Bash on Windows has no setsid; detach with nohup and disown]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Git Bash on Windows has no setsid; detach with nohup and disown]]
+- [[kubectl port-forward drops after ~1 hour on GKE]]
+- [[Self-restarting kubectl port-forward keeps long-running scripts alive through drops]]
+- [[Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing]]
+- [[Long real-API seed aborts on socket hang up unless port-forward reconnects]]
+
+%% ai-graph-end %%

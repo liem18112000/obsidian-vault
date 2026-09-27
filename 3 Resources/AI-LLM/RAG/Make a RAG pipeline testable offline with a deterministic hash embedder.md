@@ -1,10 +1,72 @@
 ---
-title: "Make a RAG pipeline testable offline with a deterministic hash embedder"
+ai_hash: 6857656a9f113b68
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-05
-type: technique
+entities:
+- RAG pipeline
+- deterministic hash embedder
+- embeddings API key
+- local development
+- CI
+- verification
+- embed() seam
+- real providers
+- enrich stage
+- index stage
+- cosine retrieve stage
+- serve stage
+- external calls
+- embedder (concept)
+- text (input)
+- lowercased tokens
+- fixed-dimension vector
+- hash(token) % dim (method)
+- L2-normalization
+- Bag-of-hashed-tokens (model)
+- environment switch
+- EMBED_PROVIDER (variable)
+- _hash (function)
+- hashlib.md5 (module)
+- math.sqrt (function)
+- plumbing (architecture)
+- cache
+- retriever
+- /search (endpoint)
+- /health (endpoint)
+- FastAPI app
+- import errors
+- shape bugs
+- wiring bugs
+- semantic ranking
+- lexical bag-of-words (model)
+- Keyword-overlapping queries
+- paraphrases
+- dev/CI stand-in
+- FastAPI TestClient
+- no-port smoke test
+- lifespan (FastAPI)
+- startup index-load
+- network port
+- LLM-answer endpoint
+- chat key
+- Consistency (principle)
+- documents
+- queries
+- SAME embedder
+- Anthropic
+- first-party embeddings endpoint
+source: session 2026-09-05 (leo-customer360 docs-vector-search build)
 status: seedling
-source: "session 2026-09-05 (leo-customer360 docs-vector-search build)"
-tags: [rag, testing, ci, embeddings, fastapi, offline]
+tags:
+- rag
+- testing
+- ci
+- embeddings
+- fastapi
+- offline
+title: Make a RAG pipeline testable offline with a deterministic hash embedder
+type: technique
 ---
 
 # Make a RAG pipeline testable offline with a deterministic hash embedder
@@ -40,3 +102,65 @@ Related: [[Anthropic has no first-party embeddings endpoint]]
 ## Related
 
 - [[Anthropic has no first-party embeddings endpoint]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Build a RAG index as an explicit deploy step, run a serve-only container]]
+- [[Anthropic has no first-party embeddings endpoint]]
+- [[Local RAG stack for a 1 vCPU 2 GB box e5 + bge-reranker + Qwen 0.5B]]
+
+**Relations:**
+- RAG pipeline — *can be made testable offline with* — deterministic hash embedder
+- RAG pipeline — *cannot run without* — embeddings API key
+- embeddings API key — *blocks* — local development
+- embeddings API key — *blocks* — CI
+- embeddings API key — *blocks* — verification
+- deterministic hash embedder — *is behind* — embed() seam
+- embed() seam — *is used by* — real providers
+- RAG pipeline — *includes stage* — enrich stage
+- RAG pipeline — *includes stage* — index stage
+- RAG pipeline — *includes stage* — cosine retrieve stage
+- RAG pipeline — *includes stage* — serve stage
+- deterministic hash embedder — *enables* — RAG pipeline
+- RAG pipeline — *to run with* — zero external calls
+- embedder (concept) — *processes* — text (input)
+- embedder (concept) — *uses* — lowercased tokens
+- lowercased tokens — *are bucketed into* — fixed-dimension vector
+- fixed-dimension vector — *via* — hash(token) % dim (method)
+- fixed-dimension vector — *is processed by* — L2-normalization
+- deterministic hash embedder — *is a type of* — Bag-of-hashed-tokens (model)
+- deterministic hash embedder — *is selected with* — environment switch
+- environment switch — *is* — EMBED_PROVIDER (variable)
+- _hash (function) — *uses* — hashlib.md5 (module)
+- _hash (function) — *uses* — math.sqrt (function)
+- deterministic hash embedder — *proves* — plumbing (architecture)
+- enrich stage — *writes to* — cache
+- retriever — *ranks* — 
+- /search (endpoint) — *is functional* — 
+- /health (endpoint) — *is functional* — 
+- FastAPI app — *boots* — 
+- deterministic hash embedder — *catches* — import errors
+- deterministic hash embedder — *catches* — shape bugs
+- deterministic hash embedder — *catches* — wiring bugs
+- deterministic hash embedder — *does not provide* — semantic ranking
+- deterministic hash embedder — *is a type of* — lexical bag-of-words (model)
+- Keyword-overlapping queries — *rank sensibly with* — deterministic hash embedder
+- paraphrases — *do not rank sensibly with* — deterministic hash embedder
+- deterministic hash embedder — *is a* — dev/CI stand-in
+- FastAPI TestClient — *is used for* — no-port smoke test
+- FastAPI TestClient — *runs* — lifespan (FastAPI)
+- lifespan (FastAPI) — *executes* — startup index-load
+- FastAPI TestClient — *allows asserting* — /health (endpoint)
+- FastAPI TestClient — *allows asserting* — /search (endpoint)
+- FastAPI TestClient — *does not bind* — network port
+- FastAPI TestClient — *does not need* — embeddings API key
+- LLM-answer endpoint — *needs* — chat key
+- Consistency (principle) — *applies to* — documents
+- Consistency (principle) — *applies to* — queries
+- documents — *must use* — SAME embedder
+- queries — *must use* — SAME embedder
+- Anthropic — *has no* — first-party embeddings endpoint
+- deterministic hash embedder — *is related to* — Anthropic has no first-party embeddings endpoint
+
+%% ai-graph-end %%

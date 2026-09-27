@@ -1,10 +1,18 @@
 ---
-title: "Confirm the deployed artifact contains the fix before judging an env test"
+ai_hash: 66c39cb60c8b4460
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: lesson
+entities: []
+source: luz-docs-import v2+v3 matrix run 2026-08-19
 status: seedling
-source: "luz-docs-import v2+v3 matrix run 2026-08-19"
-tags: [deployment, verification, git, gotcha]
+tags:
+- deployment
+- verification
+- git
+- gotcha
+title: Confirm the deployed artifact contains the fix before judging an env test
+type: lesson
 ---
 
 # Confirm the deployed artifact contains the fix before judging an env test
@@ -21,3 +29,14 @@ Before concluding that a fix "passes" or "fails" in a deployed environment, firs
 
 - [[Verify invariants at the source of truth]]
 - [[not the operation's success report]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify invariants at the source of truth, not the operation's success report]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Isolate the same scenarios on both branches to separate regression from flakiness]]
+- [[Re-verify file state before trusting findings on long-running reviews]]
+- [[A refactor that removes a method must grep tests for its name before merging]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Read GKE PVC/volume peak usage from Cloud Monitoring when pod RBAC is denied"
+ai_hash: aac4b42cd1793618
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-13
-type: howto
+entities: []
+source: session 2026-08-13
 status: seedling
-source: "session 2026-08-13"
-tags: [gke, cloud-monitoring, kubernetes, pvc, rbac, gcloud]
+tags:
+- gke
+- cloud-monitoring
+- kubernetes
+- pvc
+- rbac
+- gcloud
+title: Read GKE PVC/volume peak usage from Cloud Monitoring when pod RBAC is denied
+type: howto
 ---
 
 # Read GKE PVC/volume peak usage from Cloud Monitoring when pod RBAC is denied
@@ -36,3 +46,14 @@ Observed 2026-08-13 finding luz-docs-import scratch peak on klara-prod without p
 
 - [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
 - [[Kubernetes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-import prod scratch peaks under 1GB — 100Gi tmp-scratch (LUZ-158230) is over-provisioned]]
+- [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
+- [[klara-prod is a separate GCP project, not a namespace]]
+- [[Vertex AI Claude usage query - klara-nonprod]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+
+%% ai-graph-end %%

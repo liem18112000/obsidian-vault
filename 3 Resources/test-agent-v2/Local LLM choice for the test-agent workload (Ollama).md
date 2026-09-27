@@ -1,10 +1,20 @@
 ---
-title: "Local LLM choice for the test-agent workload (Ollama)"
+ai_hash: de11fc3c95f68f57
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: reference
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [ollama, local-llm, qwen, nemotron, llm, test-agent]
+tags:
+- ollama
+- local-llm
+- qwen
+- nemotron
+- llm
+- test-agent
+title: Local LLM choice for the test-agent workload (Ollama)
+type: reference
 ---
 
 # Local LLM choice for the test-agent workload (Ollama)
@@ -22,3 +32,14 @@ GOTCHA: the compose default `llama3.2` (3B) is a WIRING placeholder — far too 
 
 - [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
 - [[Pluggable LLM via the litellm ModelProvider backend]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+- [[A 2-4GB local model cannot match Sonnet 5 — plug the real API instead]]
+- [[Best Ollama models for CPU-only coding and research on a thin laptop]]
+- [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+- [[Local RAG stack for a 1 vCPU 2 GB box e5 + bge-reranker + Qwen 0.5B]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Cloud Run one-port limit forces co-located HTTP servers into separate services"
+ai_hash: f2fda53fdf835ec1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27
 status: seedling
-source: "session 2026-08-27"
-tags: [cloud-run, gcp, architecture, deployment]
+tags:
+- cloud-run
+- gcp
+- architecture
+- deployment
+title: Cloud Run one-port limit forces co-located HTTP servers into separate services
+type: lesson
 ---
 
 # Cloud Run one-port limit forces co-located HTTP servers into separate services
@@ -22,3 +30,14 @@ See [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]], [[Mu
 
 - [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]]
 - [[Multi-turn agent sessions need min-instances=1 and session affinity on Cloud Run]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Co-locating a stateful MCP bridge as an agent sidecar couples their scaling]]
+- [[Multi-turn agent sessions need min-instances=1 and session affinity on Cloud Run]]
+- [[MCP stdio transport cannot be hosted remotely; use Streamable HTTP]]
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+- [[Cloud Run v2 multi-container sidecar in Terraform]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run v2 deletion_protection defaults true — set false and apply before destroy"
+ai_hash: 41cddf390b4b4ce5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-27
-type: lesson
+entities: []
+source: session 2026-08-27 — kga deployments
 status: seedling
-source: "session 2026-08-27 — kga deployments"
-tags: [cloud-run, terraform, gcp, gotcha, deletion-protection]
+tags:
+- cloud-run
+- terraform
+- gcp
+- gotcha
+- deletion-protection
+title: Cloud Run v2 deletion_protection defaults true — set false and apply before
+  destroy
+type: lesson
 ---
 
 # Cloud Run v2 deletion_protection defaults true — set false and apply before destroy
@@ -21,3 +31,14 @@ Same trap exists on other GCP resources with delete protection (e.g. `google_sql
 
 - [[Cloud Run v2 has startup_probe + liveness_probe]]
 - [[no readiness probe]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
+- [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
+- [[Cloud Run v2 service design gotchas]]
+- [[Stale terraform state != live cloud — verify with gcloud before deleting a retired deployment]]
+- [[terraform destroy fails to drop a Cloud SQL Postgres DB with active connections or owned objects]]
+
+%% ai-graph-end %%

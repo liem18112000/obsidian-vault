@@ -1,10 +1,19 @@
 ---
-title: "Run a throwaway PostgreSQL on Windows via the pgserver pip package"
+ai_hash: 0ee2f020fbdf56d6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-09
-type: howto
+entities: []
+source: SCRUM-93 session 2026-09-09
 status: seedling
-source: "SCRUM-93 session 2026-09-09"
-tags: [postgres, windows, testing, migrations, pgserver]
+tags:
+- postgres
+- windows
+- testing
+- migrations
+- pgserver
+title: Run a throwaway PostgreSQL on Windows via the pgserver pip package
+type: howto
 ---
 
 # Run a throwaway PostgreSQL on Windows via the pgserver pip package
@@ -27,3 +36,14 @@ Caveat: pgserver PG16 has **no pgvector/postgis**, so the full `database-schema.
 ## Related
 
 - [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[Local Cloud SQL admin without psql use the Python connector + asyncpg]]
+- [[Idempotent CREATE DATABASE needs psql gexec since it cannot run in a transaction]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
+
+%% ai-graph-end %%

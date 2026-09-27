@@ -1,10 +1,20 @@
 ---
-title: "Git Bash on Windows has no setsid; detach with nohup and disown"
+ai_hash: 0b83e4d73b5a7ac6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-03
-type: lesson
+entities: []
+source: session 2026-09-03
 status: seedling
-source: "session 2026-09-03"
-tags: [git-bash, windows, msys, shell, detach, gotcha]
+tags:
+- git-bash
+- windows
+- msys
+- shell
+- detach
+- gotcha
+title: Git Bash on Windows has no setsid; detach with nohup and disown
+type: lesson
 ---
 
 # Git Bash on Windows has no setsid; detach with nohup and disown
@@ -16,3 +26,13 @@ Also on Windows/MSYS, `pkill -f` and `kill` often fail to signal native `.exe` c
 ## Related
 
 - [[Decouple long agent work from the harness task lifecycle]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Decouple long agent work from the harness task lifecycle]]
+- [[Windows child processes survive when only the parent is killed]]
+- [[Node child_process.kill on Windows doesn't kill descendant processes]]
+- [[Git Bash mangles absolute POSIX paths meant for a remote kubectl exec target]]
+
+%% ai-graph-end %%

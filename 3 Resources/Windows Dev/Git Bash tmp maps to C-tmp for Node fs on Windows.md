@@ -1,10 +1,19 @@
 ---
-title: "Git Bash /tmp maps to C-tmp for Node fs on Windows"
+ai_hash: b8e389ed886e79d2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: lesson
+entities: []
+source: session 2026-08-26
 status: seedling
-source: "session 2026-08-26"
-tags: [windows, git-bash, nodejs, gotcha, paths]
+tags:
+- windows
+- git-bash
+- nodejs
+- gotcha
+- paths
+title: Git Bash /tmp maps to C-tmp for Node fs on Windows
+type: lesson
 ---
 
 # Git Bash /tmp maps to C-tmp for Node fs on Windows
@@ -21,3 +30,14 @@ Related: [[Generate Excalidraw triplet from one layout model, rasterize with @re
 
 - [[Generate Excalidraw triplet from one layout model]]
 - [[rasterize with @resvgresvg-js]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MSYS c paths passed to native Windows node become Cc (ENOENT)]]
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[Git Bash mktemp paths are unreadable by Windows python; pipe via stdin instead of a temp-file path]]
+- [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
+- [[Generate Excalidraw triplet from one layout model, rasterize with @resvgresvg-js]]
+
+%% ai-graph-end %%

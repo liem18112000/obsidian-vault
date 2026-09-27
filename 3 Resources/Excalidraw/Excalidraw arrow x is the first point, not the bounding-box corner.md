@@ -1,10 +1,19 @@
 ---
-title: "Excalidraw arrow x is the first point, not the bounding-box corner"
+ai_hash: 2a0e75c3f8fb088a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-26
-type: gotcha
+entities: []
+source: session 2026-08-26, beforeafterai swimlanes
 status: seedling
-source: "session 2026-08-26, beforeafterai swimlanes"
-tags: [excalidraw, diagram, bounding-box, gotcha, arrows]
+tags:
+- excalidraw
+- diagram
+- bounding-box
+- gotcha
+- arrows
+title: Excalidraw arrow x is the first point, not the bounding-box corner
+type: gotcha
 ---
 
 # Excalidraw arrow x is the first point, not the bounding-box corner
@@ -20,3 +29,14 @@ Symptom that flagged it: a dotted enclosing frame extended ~1500px into empty ca
 ## Related
 
 - [[Testing Agent workflow step to AI Skill mapping]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw container-bound text does not auto-wrap in the render script]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+- [[Excalidraw standalone text does not auto-wrap to element width]]
+- [[Excalidraw connector on a shape's center axis bisects a centered caption]]
+
+%% ai-graph-end %%

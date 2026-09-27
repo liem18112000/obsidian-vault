@@ -1,10 +1,19 @@
 ---
-title: "Split Dagster webserver and daemon must share fail-closed Postgres storage"
+ai_hash: f83dc1de25fbcb87
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-10
-type: lesson
+entities: []
+source: customer360 UAT incident 2026-09-10
 status: seedling
-source: "customer360 UAT incident 2026-09-10"
-tags: [dagster, postgres, storage, deployment, gotcha]
+tags:
+- dagster
+- postgres
+- storage
+- deployment
+- gotcha
+title: Split Dagster webserver and daemon must share fail-closed Postgres storage
+type: lesson
 ---
 
 # Split Dagster webserver and daemon must share fail-closed Postgres storage
@@ -21,3 +30,14 @@ Fail-closed keeps both processes provably on one store; a clean crash-loop is ea
 ## Related
 
 - [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
+- [[Scaling Dagster needs Postgres storage and a singleton daemon before adding replicas]]
+- [[Dagster run-worker subprocesses don't inherit all webserver env vars]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+- [[Drain a large Dagster QUEUED backlog by bulk-terminating stale runs first]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "ssh 'bash -s' flattens args, so empty middle args shift positionals"
+ai_hash: 793d80a41dad47c5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-25
-type: lesson
+entities: []
+source: session 2026-08-25 (leo-customer360 deploy)
 status: seedling
-source: "session 2026-08-25 (leo-customer360 deploy)"
-tags: [ssh, bash, deployment, gotcha, pipefail]
+tags:
+- ssh
+- bash
+- deployment
+- gotcha
+- pipefail
+title: ssh 'bash -s' flattens args, so empty middle args shift positionals
+type: lesson
 ---
 
 # ssh 'bash -s' flattens args, so empty middle args shift positionals
@@ -20,3 +29,14 @@ Corollary gotcha in the same code: `X="$(tr -dc A-Za-z0-9 </dev/urandom | head -
 ## Related
 
 - [[Loopback-bind a bridge container that must reach a host-network service]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSH flattens remote command args, so empty-string arguments collapse and shift positionals]]
+- [[ssh host 'bash -s' flattens args into a remote shell string]]
+- [[ssh drops empty positional args; pass a base64 newline-joined argv + mapfile]]
+- [[Ship a local bash function to a remote ssh bash -s with declare -f]]
+- [[Apostrophe inside bash ${varmessage} breaks the parser]]
+
+%% ai-graph-end %%

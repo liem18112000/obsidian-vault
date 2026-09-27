@@ -1,10 +1,19 @@
 ---
-title: "Calibrate a cheap-model to LLM cascade threshold using the LLM judge as oracle"
+ai_hash: 82ef5cc17a488111
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: howto
+entities: []
+source: session 2026-09-22, tools/jev_calibrate.py
 status: seedling
-source: "session 2026-09-22, tools/jev_calibrate.py"
-tags: [calibration, cascade, llm-judge, confidence-threshold, evaluation]
+tags:
+- calibration
+- cascade
+- llm-judge
+- confidence-threshold
+- evaluation
+title: Calibrate a cheap-model to LLM cascade threshold using the LLM judge as oracle
+type: howto
 ---
 
 # Calibrate a cheap-model to LLM cascade threshold using the LLM judge as oracle
@@ -18,3 +27,14 @@ Score both sides on **byte-identical input** (extract the state builder into one
 ## Related
 
 - [[JEV assured-gate errors are low-confidence false-accepts so the confidence gate is the safety net]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Calibrate a cascade threshold against the exact gate condition, not a looser proxy]]
+- [[JEV assured-gate errors are low-confidence false-accepts so the confidence gate is the safety net]]
+- [[JEV accept-side confidence is low and unreliable; the cascade win is reject-side]]
+- [[System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs]]
+- [[loads_obj largest-span rule returns the tool-call envelope so JudgeVerdict silently scored 0.0]]
+
+%% ai-graph-end %%

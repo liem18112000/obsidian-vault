@@ -1,10 +1,22 @@
 ---
-title: "Right-sizing k8s resource limits on the Customer360 stack"
+ai_hash: c355e86488627a75
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-03
-type: lesson
+entities: []
+source: session 2026-08-03
 status: seedling
-source: "session 2026-08-03"
-tags: [kubernetes, resources, limits, jvm, heap, oomkilled, startupprobe, dagster]
+tags:
+- kubernetes
+- resources
+- limits
+- jvm
+- heap
+- oomkilled
+- startupprobe
+- dagster
+title: Right-sizing k8s resource limits on the Customer360 stack
+type: lesson
 ---
 
 # Right-sizing k8s resource limits on the Customer360 stack
@@ -20,3 +32,14 @@ Lessons from putting minimal CPU/memory limits on a mixed JVM+Python k8s stack (
 ## Related
 - [[StatefulSet volumeClaimTemplates are immutable; PVCs cannot shrink]]
 - [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Uncapped Dagster on a swapless 2GB box OOMs the whole host (SSH banner-timeout); cap container memory + add swap]]
+- [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+- [[Docker can report OOMKilled=false on a cgroup memcg OOM — check dmesg]]
+- [[Deploying Keycloak 26 as a container health port 9000, bootstrap admin, start vs start-dev]]
+- [[kind image pulls stall on Docker Hub rate limits; pre-pull and kind load]]
+
+%% ai-graph-end %%

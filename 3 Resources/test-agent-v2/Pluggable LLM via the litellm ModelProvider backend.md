@@ -1,10 +1,19 @@
 ---
-title: "Pluggable LLM via the litellm ModelProvider backend"
+ai_hash: 0deaf7abc3395c76
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-22
-type: concept
+entities: []
+source: session 2026-09-22
 status: seedling
-source: "session 2026-09-22"
-tags: [test-agent, litellm, llm, adk, model-provider]
+tags:
+- test-agent
+- litellm
+- llm
+- adk
+- model-provider
+title: Pluggable LLM via the litellm ModelProvider backend
+type: concept
 ---
 
 # Pluggable LLM via the litellm ModelProvider backend
@@ -21,3 +30,14 @@ Key detail: it passes `drop_params=True`, so params a local OpenAI-compatible se
 ## Related
 
 - [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+- [[A 2-4GB local model cannot match Sonnet 5 — plug the real API instead]]
+- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+- [[Full local-parity stack for test-agent-v2 (MinIO PG Redis PubSub Ollama laya)]]
+- [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+
+%% ai-graph-end %%

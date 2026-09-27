@@ -1,10 +1,21 @@
 ---
-title: "luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff"
+ai_hash: 191adbb5c46d5429
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-10
-type: lesson
+entities: []
+source: LUZ-158230 session 2026-08-10
 status: seedling
-source: "LUZ-158230 session 2026-08-10"
-tags: [luz, microprofile, fault-tolerance, wildfly, gotcha, maven]
+tags:
+- luz
+- microprofile
+- fault-tolerance
+- wildfly
+- gotcha
+- maven
+title: luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye
+  @ExponentialBackoff
+type: lesson
 ---
 
 # luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff
@@ -23,3 +34,14 @@ Surfaced on LUZ-158230 (import-job Tier 1 terminal-write hardening) in `luz_docs
 
 - [[Hosting a Pub/Sub consumer in a luz service with luz_message_receiver]]
 - [[Align the Google Cloud stack in a luz WildFly WAR via libraries-bom]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MicroProfile @Retry can't do exponential backoff or HTTP-status-aware retry — use a manual loop]]
+- [[Align the Google Cloud stack in a luz WildFly WAR via libraries-bom]]
+- [[Hosting a PubSub consumer in a luz service with luz_message_receiver]]
+- [[Fault-tolerance annotations imported but never applied in CreditCardTransactionService]]
+- [[Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism]]
+
+%% ai-graph-end %%

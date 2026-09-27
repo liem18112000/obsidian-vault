@@ -1,10 +1,21 @@
 ---
-title: "leo-customer360 VNG deploy builds app images on the VM from a tarred local checkout, not from a registry"
+ai_hash: c82ddc772145fb16
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-20
-type: observation
+entities: []
+source: session 2026-08-20
 status: seedling
-source: "session 2026-08-20"
-tags: [leo-customer360, vng-cloud, deployment, docker, terraform, ci-cd]
+tags:
+- leo-customer360
+- vng-cloud
+- deployment
+- docker
+- terraform
+- ci-cd
+title: leo-customer360 VNG deploy builds app images on the VM from a tarred local
+  checkout, not from a registry
+type: observation
 ---
 
 # leo-customer360 VNG deploy builds app images on the VM from a tarred local checkout, not from a registry
@@ -27,3 +38,14 @@ Only **third-party base images** are pulled from public registries on the VM: po
 
 - [[leo-customer360 CI]]
 - [[New .sh CI runners must be git-staged with --chmod=+x on Windows or the [ -x ] gate skips them]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
+- [[leo-customer360 CD UAT deploys only from main + --deploy-uat marker]]
+- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB]]
+- [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
+- [[deploy-tracking.sh uat needs GHCR auth gh auth token or BUILD_LOCAL=1]]
+
+%% ai-graph-end %%

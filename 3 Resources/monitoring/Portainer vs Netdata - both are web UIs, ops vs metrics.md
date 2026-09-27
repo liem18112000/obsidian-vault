@@ -1,10 +1,20 @@
 ---
-title: "Portainer vs Netdata - both are web UIs, ops vs metrics"
+ai_hash: aa0bf185408eac3a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-19
-type: reference
+entities: []
+source: session 2026-08-19
 status: seedling
-source: "session 2026-08-19"
-tags: [monitoring, portainer, netdata, docker, ui, observability]
+tags:
+- monitoring
+- portainer
+- netdata
+- docker
+- ui
+- observability
+title: Portainer vs Netdata - both are web UIs, ops vs metrics
+type: reference
 ---
 
 # Portainer vs Netdata: both are web UIs, ops vs metrics
@@ -31,3 +41,14 @@ config. They complement each other:
   (`ssh -L 9443:localhost:9443 -L 19999:localhost:19999 user@host`).
 
 Related: [[Monitoring the Customer360 box - self-hosted Grafana is free, cost is resource pressure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monitoring the Customer360 box - self-hosted Grafana is free, cost is resource pressure]]
+- [[Portainer non-interactive admin bootstrap via --admin-password-file]]
+- [[One Portainer manages many Docker hosts via portaineragent, not a second Portainer]]
+- [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
+
+%% ai-graph-end %%

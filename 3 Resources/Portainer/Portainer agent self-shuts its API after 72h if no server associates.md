@@ -1,10 +1,19 @@
 ---
-title: "Portainer agent self-shuts its API after 72h if no server associates"
+ai_hash: 946382d2f7c0ca4e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-08-31
-type: lesson
+entities: []
+source: session 2026-08-31 tracking env missing in Portainer
 status: seedling
-source: "session 2026-08-31 tracking env missing in Portainer"
-tags: [portainer, docker, monitoring, gotcha, leo-customer360]
+tags:
+- portainer
+- docker
+- monitoring
+- gotcha
+- leo-customer360
+title: Portainer agent self-shuts its API after 72h if no server associates
+type: lesson
 ---
 
 # Portainer agent self-shuts its API after 72h if no server associates
@@ -28,3 +37,14 @@ shutting down API server as no client was associated after the timeout, keeping 
 ## Related
 
 - [[Scale one uvicorn service into N replicas on one VM with a docker bridge + local nginx LB]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Portainer Agent endpoint API needs URL=tcphost9001 (bare hostport - HTTP 500 'unable to parse docker host')]]
+- [[One Portainer manages many Docker hosts via portaineragent, not a second Portainer]]
+- [[leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually]]
+- [[Portainer admin-password bootstrap skips local Docker env - pass -H socket]]
+- [[docker restart does not re-read --env-file; recreate the container to apply env changes]]
+
+%% ai-graph-end %%
