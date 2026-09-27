@@ -1,5 +1,5 @@
 ---
-ai_hash: 97c1504b934cd07c
+ai_hash: 7c36153f03a48265
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-03
@@ -47,6 +47,6 @@ Relevant to `test-agent` on Cloud Run: if Atlassian/Bitbucket ever require IP al
 - [[Cloud Run v2 service design gotchas]]
 - [[test-agent-v2 Redis cache port + Memorystore needs a VPC connector]]
 - [[Cloud Run one-port limit forces co-located HTTP servers into separate services]]
-- [[Co-locating a stateful MCP bridge as an agent sidecar couples their scaling]]
+- [[ADK serverless agent tier is CPU-only; LLM compute is offloaded to a managed model API]]
 
 %% ai-graph-end %%

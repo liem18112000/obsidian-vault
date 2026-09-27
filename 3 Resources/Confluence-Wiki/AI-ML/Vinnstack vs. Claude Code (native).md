@@ -1,18 +1,22 @@
 ---
-title: "Vinnstack vs. Claude Code (native)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49497735170/Vinnstack+vs.+Claude+Code+native
-space: "TK"
-topic: ai_ml
-relevance: 0.731
-depth: 2.27
-updated: 2026-06-11
+ai_hash: 5e5c8763cdd158a3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.27
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49497735170/Vinnstack+vs.+Claude+Code+native
+space: TK
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/tk
+- confluence
+- ai-ml
+- space/tk
+title: Vinnstack vs. Claude Code (native)
+topic: ai_ml
+type: source
+updated: 2026-06-11
 ---
 
 # Vinnstack vs. Claude Code (native)
@@ -113,3 +117,14 @@ An honest boundary keeps the product credible:
 # The one-sentence pitch
 
 Claude Code is the engine; Vinnstack is the vehicle: persistent memory, automatic knowledge and skill capture, enforced guardrails, org-wide context, and a command deck — so agent work compounds instead of evaporating when the terminal closes.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack — Agentic OS]]
+- [[Wrap the agent CLI rather than reimplementing the agent loop]]
+- [[Vinnstack · Prompt Governance &amp; Code Grounding]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+
+%% ai-graph-end %%

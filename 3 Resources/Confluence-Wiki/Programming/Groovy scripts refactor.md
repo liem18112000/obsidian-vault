@@ -1,18 +1,22 @@
 ---
-title: "Groovy scripts refactor"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675764785/Groovy+scripts+refactor
-space: "LUZCOMP"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2016-07-12
+ai_hash: ef4e21449a99cbea
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675764785/Groovy+scripts+refactor
+space: LUZCOMP
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luzcomp
+- confluence
+- programming
+- space/luzcomp
+title: Groovy scripts refactor
+topic: programming
+type: source
+updated: 2016-07-12
 ---
 
 # Groovy scripts refactor
@@ -286,3 +290,14 @@ Below is a class that I think it is useful for us to initialize a REST resource 
     </div>
 
     </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Delete company - Old way]]
+- [[15. Update companies by tenant id]]
+- [[14. Create companies by tenant id]]
+- [[RESTful API, Postman,]]
+- [[Run Script Resync hidden wiget]]
+
+%% ai-graph-end %%

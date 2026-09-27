@@ -1,18 +1,22 @@
 ---
-title: "Security Classes updating measurement"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47285240040/Security+Classes+updating+measurement
-space: "LUZ"
-topic: security
-relevance: 0.721
-depth: 2.8
-updated: 2023-02-03
+ai_hash: eedd6eec4b90b7d5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.8
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47285240040/Security+Classes+updating+measurement
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Security Classes updating measurement
+topic: security
+type: source
+updated: 2023-02-03
 ---
 
 # Security Classes updating measurement
@@ -90,3 +94,14 @@ Note: n is the number of documents located in updated folder (could be in update
  |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Add Remove security class for folder]]
+- [[Research on bulk removal of access class]]
+- [[Measure the time-consuming of patch update document API in luz_docs]]
+- [[Research on Delete Access class]]
+- [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
+
+%% ai-graph-end %%

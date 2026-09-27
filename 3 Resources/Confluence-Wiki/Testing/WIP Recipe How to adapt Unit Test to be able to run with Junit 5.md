@@ -1,18 +1,22 @@
 ---
-title: "WIP: Recipe: How to adapt Unit Test to be able to run with Junit 5"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47142830245/WIP+Recipe+How+to+adapt+Unit+Test+to+be+able+to+run+with+Junit+5
-space: "LUZ"
-topic: testing
-relevance: 0.76
-depth: 2.74
-updated: 2022-07-20
+ai_hash: 45c18dd5b16701ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.74
+entities: []
+relevance: 0.76
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47142830245/WIP+Recipe+How+to+adapt+Unit+Test+to+be+able+to+run+with+Junit+5
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - testing
-  - space/luz
+- confluence
+- testing
+- space/luz
+title: 'WIP: Recipe: How to adapt Unit Test to be able to run with Junit 5'
+topic: testing
+type: source
+updated: 2022-07-20
 ---
 
 # WIP: Recipe: How to adapt Unit Test to be able to run with Junit 5
@@ -134,3 +138,14 @@ PowerMockito.when(CMSEscapeBean.co("/ch/klara/luz/fin/accounting/creditCard/over
 Instead, we can use CMS from CMS were defined in business code.
 
 Please be aware that CMS content which will be used in test is also available in the current project or its parent projects. Otherwise you have to prepare it.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Migrate to Quarkus (WIP)]]
+- [[Add Ivy jars Maven plugin]]
+- [[Avoid warning logs related to Java Problem on Ivy Designer]]
+- [[Testing]]
+- [[Upgrade Ivy - Known issues]]
+
+%% ai-graph-end %%

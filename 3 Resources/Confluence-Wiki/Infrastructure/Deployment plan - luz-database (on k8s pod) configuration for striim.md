@@ -1,18 +1,22 @@
 ---
-title: "Deployment plan - luz-database (on k8s pod) configuration for striim"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48665067609/Deployment+plan+-+luz-database+on+k8s+pod+configuration+for+striim
-space: "IO"
-topic: infra
-relevance: 0.76
-depth: 3
-updated: 2025-10-02
+ai_hash: c48420f27f683f11
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.76
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48665067609/Deployment+plan+-+luz-database+on+k8s+pod+configuration+for+striim
+space: IO
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/io
+- confluence
+- infra
+- space/io
+title: Deployment plan - luz-database (on k8s pod) configuration for striim
+topic: infra
+type: source
+updated: 2025-10-02
 ---
 
 # Deployment plan - luz-database (on k8s pod) configuration for striim
@@ -184,3 +188,14 @@ pls fill out and lets double check</p></td>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Part A - luz-jsonstore Analysis]]
+- [[Service Reliability Solution]]
+- [[Post-deployment Batch messageCount backfill (Test & Prod) — LUZ-155431 LUZ-155435]]
+- [[Infrastructure]]
+- [[One API end to end testing]]
+
+%% ai-graph-end %%

@@ -1,14 +1,22 @@
 ---
-title: "[Invoice Run V2] - Retry \"Uploaded customer document\" step - Should update correct status after retry"
+ai_hash: 5777acf980a701f8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49072144385'
+confluence_path: Team Kepler > Test Case Library > Invoice Run
 created: 2026-01-22
-updated: 2026-02-03
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+- testing
+title: '[Invoice Run V2] - Retry "Uploaded customer document" step - Should update
+  correct status after retry'
+type: source
+updated: 2026-02-03
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49072144385/Invoice+Run+V2+-+Retry+Uploaded+customer+document+step+-+Should+update+correct+status+after+retry
-confluence_id: "49072144385"
-confluence_path: "Team Kepler > Test Case Library > Invoice Run"
-tags: [confluence, invoice-run, testing]
 ---
 
 # [Invoice Run V2] - Retry "Uploaded customer document" step - Should update correct status after retry
@@ -137,3 +145,14 @@ After retry, the status should upload to “Uploaded customer document”</p></t
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice Run V2UAT - No error when luz-store is running with multiple pods]]
+- [[Invoice Run V2UAT - Update latest Stimulsoft template - Execution]]
+- [[Invoice Run V2UAT - Execute - Apply Distributed Cache for customer information during the process of Invoice Run V2ecute]]
+- [[Invoice Run V2UAT - Update latest Stimulsoft template]]
+- [[Invoice Run V2UAT - Apply Distributed Cache for customer information during the process of Invoice Run V2]]
+
+%% ai-graph-end %%

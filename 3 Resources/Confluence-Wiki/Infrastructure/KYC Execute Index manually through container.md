@@ -1,18 +1,22 @@
 ---
-title: "KYC | Execute Index manually through container"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48387817515/KYC+Execute+Index+manually+through+container
-space: "Arrow"
-topic: infra
-relevance: 0.779
-depth: 2.83
-updated: 2025-03-20
+ai_hash: bc094c9caf0a5353
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.83
+entities: []
+relevance: 0.779
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48387817515/KYC+Execute+Index+manually+through+container
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/arrow
+- confluence
+- infra
+- space/arrow
+title: KYC | Execute Index manually through container
+topic: infra
+type: source
+updated: 2025-03-20
 ---
 
 # KYC | Execute Index manually through container
@@ -53,3 +57,10 @@ Check the returned value is RELOADED or not
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

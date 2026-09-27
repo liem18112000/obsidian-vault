@@ -1,18 +1,22 @@
 ---
-title: "Analyze N+1 queries for REST API calculate payslip for 1 employee"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519727808/Analyze+N+1+queries+for+REST+API+calculate+payslip+for+1+employee
-space: "LUZ"
-topic: programming
-relevance: 0.89
-depth: 3
-updated: 2021-01-08
+ai_hash: 1f6bad84602f0ab9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 3
+entities: []
+relevance: 0.89
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519727808/Analyze+N+1+queries+for+REST+API+calculate+payslip+for+1+employee
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Analyze N+1 queries for REST API calculate payslip for 1 employee
+topic: programming
+type: source
+updated: 2021-01-08
 ---
 
 # Analyze N+1 queries for REST API calculate payslip for 1 employee
@@ -207,3 +211,14 @@ Performance get 40 URIs: 
 </div>
 
 <span class="legacy-color-text-red2">=\> Split the long query into small one(getting phones, emails, address... separately then join with person)</span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze N+1 queries for REST API calculate payslips for overview salary processing]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[REST API calculate 1 employee's pay-slip]]
+- [[Helios myKLARA app(luz-mobile) - API Response Performance Analysis]]
+- [[N+1 hides at the service-call layer too, not just in the ORM]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 55fa20b44a3c2abd
+ai_hash: 159642c2ce830606
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities: []
 source: fb-info-project session 2026-06-11
@@ -36,8 +36,8 @@ A test that asserted 'verification rejects a semantically wrong pick' failed and
 **Related notes:**
 - [[Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
 - [[Build test fakes from verbatim production data, decoys included]]
-- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+- [[Agentic browser testing discover once, compile deterministic, heal only on failure]]
 - [[Verify Facebook comment sort switch by re-reading the sort button label]]
-- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
 
 %% ai-graph-end %%

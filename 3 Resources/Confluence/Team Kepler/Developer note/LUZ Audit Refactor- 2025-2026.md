@@ -1,14 +1,20 @@
 ---
-title: "LUZ Audit Refactor- 2025-2026"
+ai_hash: 6cba20b6b0a34d4b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48882909190'
+confluence_path: Team Kepler > Developer note
 created: 2025-11-17
-updated: 2025-11-17
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-audit
+title: LUZ Audit Refactor- 2025-2026
+type: source
+updated: 2025-11-17
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48882909190/LUZ+Audit+Refactor-+2025-2026
-confluence_id: "48882909190"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, luz-audit]
 ---
 
 # LUZ Audit Refactor- 2025-2026
@@ -94,3 +100,14 @@ tags: [confluence, luz-audit]
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Audit System - Performance Optimization Proposal]]
+- [[LUZ Critical Concerns - Brief Summary]]
+- [[LUZ Audit - Basic Understanding Guide]]
+- [[Investigation Stories - Audit Logs Current Implementation]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+
+%% ai-graph-end %%

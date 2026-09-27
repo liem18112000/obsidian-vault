@@ -1,18 +1,23 @@
 ---
-title: "[CROSS-TEST] [LUZ-157371] Private Address book in Webclient V2 — audit luz-addressbook data, UI proposal (Phase 1), then implement (Phase 2)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49782325255/CROSS-TEST+LUZ-157371+Private+Address+book+in+Webclient+V2+audit+luz-addressbook+data+UI+proposal+Phase+1+then+implement+Phase+2
-space: "TS"
-topic: architecture
-relevance: 0.755
-depth: 2.49
-updated: 2026-09-25
+ai_hash: 4d11042d54b117e3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 2.49
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49782325255/CROSS-TEST+LUZ-157371+Private+Address+book+in+Webclient+V2+audit+luz-addressbook+data+UI+proposal+Phase+1+then+implement+Phase+2
+space: TS
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ts
+- confluence
+- architecture
+- space/ts
+title: '[CROSS-TEST] [LUZ-157371] Private Address book in Webclient V2 — audit luz-addressbook
+  data, UI proposal (Phase 1), then implement (Phase 2)'
+topic: architecture
+type: source
+updated: 2026-09-25
 ---
 
 # [CROSS-TEST] [LUZ-157371] Private Address book in Webclient V2 — audit luz-addressbook data, UI proposal (Phase 1), then implement (Phase 2)
@@ -480,3 +485,14 @@ Design: [Phase 1 proposal](https://axonivy.atlassian.net/wiki/spaces/TS/pages/49
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CROSS-TEST LUZ-158644 Investigate and remove Print&Send user role (UI, backend, Public API — no]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[LUZ-75886 Part 1 Implement real-time API updates]]
+- [[CROSS-TEST LUZ-159442 Implement real ZIP download for eArchive folders]]
+- [[Test Keycloak - Public API]]
+
+%% ai-graph-end %%

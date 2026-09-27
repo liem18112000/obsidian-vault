@@ -1,18 +1,22 @@
 ---
-title: "Monitoring with Managed Prometheus"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47148040363/Monitoring+with+Managed+Prometheus
-space: "LUZ"
-topic: infra
-relevance: 0.794
-depth: 3
-updated: 2022-07-25
+ai_hash: cc88931372f31e2b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.794
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47148040363/Monitoring+with+Managed+Prometheus
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Monitoring with Managed Prometheus
+topic: infra
+type: source
+updated: 2022-07-25
 ---
 
 # Monitoring with Managed Prometheus
@@ -209,3 +213,14 @@ Here we fetch the `base_memory_committedHeap_bytes` metric from prometheus. The 
 Here’s an example Dashboard showing the memory metrics available to prometheus:
 
 <a href="https://console.cloud.google.com/monitoring/dashboards/builder/8372a0fe-6255-46dd-9c0a-8191d3ee6944?project=klara-nonprod&amp;dashboardBuilderState=%257B%2522editModeEnabled%2522:false%257D&amp;timeDomain=6h" class="external-link" rel="nofollow">https://console.cloud.google.com/monitoring/dashboards/builder/8372a0fe-6255-46dd-9c0a-8191d3ee6944?project=klara-nonprod&amp;dashboardBuilderState=%7B%22editModeEnabled%22:false%7D&amp;timeDomain=6h</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[14. Deploy openshift cluster monitoring]]
+- [[luz-docs performance JVM thread metrics endpoint]]
+- [[Axonivycloud - Monitoring EKS cluster using Prometheus and Grafana]]
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+- [[GCP Alert Policy Creation Script - Manual Documentation]]
+
+%% ai-graph-end %%

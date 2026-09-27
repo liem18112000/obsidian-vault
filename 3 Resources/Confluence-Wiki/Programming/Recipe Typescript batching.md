@@ -1,18 +1,22 @@
 ---
-title: "Recipe: Typescript batching"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49033314460/Recipe+Typescript+batching
-space: "LUZ"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2026-01-13
+ai_hash: bb07e23d89f89c9d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49033314460/Recipe+Typescript+batching
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: 'Recipe: Typescript batching'
+topic: programming
+type: source
+updated: 2026-01-13
 ---
 
 # Recipe: Typescript batching
@@ -624,3 +628,14 @@ app.post('/webhooks/batch-results', async (req, res) => {
 | `onRequestCompleted(requestId)` | ❌ No | Handle notification when request completes |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Luz Batch TypeScript]]
+- [[Luz Batch TypeScript - Sequence Diagram]]
+- [[Batch Processor Library - NodeJS]]
+- [[Luz Batch TypeScript - Configuration]]
+- [[Batching Design]]
+
+%% ai-graph-end %%

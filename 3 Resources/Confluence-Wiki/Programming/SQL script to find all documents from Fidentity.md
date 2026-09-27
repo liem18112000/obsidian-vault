@@ -1,18 +1,22 @@
 ---
-title: "SQL script to find all documents from Fidentity"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48113188867/SQL+script+to+find+all+documents+from+Fidentity
-space: "GRAVITY"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2024-10-24
+ai_hash: 5c77f2aec5c8e9ae
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48113188867/SQL+script+to+find+all+documents+from+Fidentity
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: SQL script to find all documents from Fidentity
+topic: programming
+type: source
+updated: 2024-10-24
 ---
 
 # SQL script to find all documents from Fidentity
@@ -51,3 +55,14 @@ where
 
 
 ![[48113188867-image-20241024-074602.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL script to get SOB (APP & WEB) dossier progress]]
+- [[SQL script to investigate dossier COB003059 on INT1]]
+- [[SQL script to investigate dossier with orphaned protocol records in PROD]]
+- [[SQL script to search error comments of task or transaction]]
+- [[SQL script to filter IN_PROGRESS tasks more than 30 days]]
+
+%% ai-graph-end %%

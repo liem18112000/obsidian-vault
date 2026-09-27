@@ -1,10 +1,20 @@
 ---
-title: "RBAC is coarse-grained by role, ABAC is fine-grained by attribute"
+ai_hash: ada545943741774c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Authentication & Authorization Architecture (FUT)'
 status: seedling
-source: "Confluence: Authentication & Authorization Architecture (FUT)"
-tags: [authorization, rbac, abac, access-control, security, confluence-distilled]
+tags:
+- authorization
+- rbac
+- abac
+- access-control
+- security
+- confluence-distilled
+title: RBAC is coarse-grained by role, ABAC is fine-grained by attribute
+type: concept
 ---
 
 # RBAC is coarse-grained by role, ABAC is fine-grained by attribute
@@ -40,3 +50,13 @@ Source: [[Authentication & Authorization Architecture]] (FUT, Confluence).
 ## Related
 
 - [[Authorization has four named parts PAP, PDP, PEP, PIP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Authentication & Authorization Architecture]]
+- [[Authorization has four named parts PAP, PDP, PEP, PIP]]
+- [[Folder access rights stored on the folder or derived from its contents]]
+- [[Resource-level consent grants specific instances, not just scopes]]
+
+%% ai-graph-end %%

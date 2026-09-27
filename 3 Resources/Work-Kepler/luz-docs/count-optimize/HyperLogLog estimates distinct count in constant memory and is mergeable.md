@@ -1,7 +1,7 @@
 ---
-ai_hash: 44e5602d4601a55e
+ai_hash: 2fdbb915a8a1e9bd
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - HyperLogLog
 - HLL
@@ -47,7 +47,7 @@ Mechanism:
 - [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 - [[Visible-document count as cardinality of a bitmap union]]
 - [[HyperLogLog error in the small-range (linear-counting) regime]]
-- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
 - [[Sketch merge (register-wise max) only answers union queries, never AND]]
+- [[BitmapHLL counts supersede fan-out; they don't combine with it]]
 
 %% ai-graph-end %%

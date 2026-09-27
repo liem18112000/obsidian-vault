@@ -1,14 +1,19 @@
 ---
-title: "Meeting notes in space"
+ai_hash: 93d33ca3ffc24189
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49028136963'
+confluence_path: Team Kepler
 created: 2026-01-09
-updated: 2026-01-09
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: Meeting notes in space
+type: source
+updated: 2026-01-09
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49028136963/Meeting+notes+in+space
-confluence_id: "49028136963"
-confluence_path: "Team Kepler"
-tags: [confluence]
 ---
 
 # Meeting notes in space
@@ -67,3 +72,14 @@ Create meeting note
 | Title | Creator | Modified |  |
 |----|----|----|----|
 | [2026-01-09 Meeting notes](https://axonivy.atlassian.net/wiki/spaces/TK/pages/49028202497/2026-01-09+Meeting+notes) | [[Kepler] - Liem Doan](https://axonivy.atlassian.net/people/712020:87b0f7f1-aaab-4406-a25d-fa0fc075c4d4?ref=confluence) | 09\. January 2026 |  |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Overview]]
+- [[Sprint 147- Retrospective]]
+- [[Confluence Export — Index]]
+- [[Sprint 158 - Retrospective]]
+- [[Enhancements for API Delete and Restore]]
+
+%% ai-graph-end %%

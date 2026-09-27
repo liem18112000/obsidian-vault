@@ -1,18 +1,22 @@
 ---
-title: "Postgres Architecture Blueprint V2023"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47498232106/Postgres+Architecture+Blueprint+V2023
-space: "LUZ"
-topic: architecture
-relevance: 0.846
-depth: 2.86
-updated: 2023-10-15
+ai_hash: 6f8895b52cdba977
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.86
+entities: []
+relevance: 0.846
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47498232106/Postgres+Architecture+Blueprint+V2023
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Postgres Architecture Blueprint V2023
+topic: architecture
+type: source
+updated: 2023-10-15
 ---
 
 # Postgres Architecture Blueprint V2023
@@ -491,3 +495,14 @@ TBD: How are the existing databases migrated, so that they are ready for the new
 ## Tenant
 
 TBD: How is a tenant migrated, i.e. how is the tenant data migrated for a database from the old to the new approach?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Connection count, not tenant count, sizes a multi-tenant Postgres cluster]]
+- [[System Architecture & Overview - Training Guide]]
+- [[Benchmark of luz-database (performance env)]]
+- [[Luz performance env cluster topology]]
+- [[Data Migration Report Postgres → MongoDB]]
+
+%% ai-graph-end %%

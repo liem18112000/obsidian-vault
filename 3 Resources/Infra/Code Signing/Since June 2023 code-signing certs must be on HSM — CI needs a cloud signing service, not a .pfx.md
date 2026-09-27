@@ -1,7 +1,7 @@
 ---
-ai_hash: 655fd18e1e193f1c
+ai_hash: 7bbd7321c3287f39
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-15
 entities: []
 source: session 2026-07-15 vinnstack signing research
@@ -40,7 +40,7 @@ As of **June 2023** (CA/Browser Forum baseline requirements), every newly issued
 - [[electron-updater skips NSIS signature verification when the installed app is unsigned]]
 - [[Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
 - [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+- [[Offline signed-token licensing for distributed binaries]]
 - [[Unsigned NSIS install under Defender ~2min of zero files is pre-scan, not a hang]]
-- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
 
 %% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: c8cc42d6d37bb4a2
+ai_hash: 20bc98f69dbd7bdf
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-07
 entities: []
 source: LEO CDP Wave 1, 2026-06-07
@@ -44,7 +44,7 @@ Then: `./gradlew --init-script rewrite-init.gradle rewriteDryRun` -> reviewable 
 - [[Curate OpenRewrite UpgradeToJava25 - composite includes instance-main and wrapper bumps]]
 - [[Decouple runtime JDK from bytecode target when migrating Java versions]]
 - [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
-- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
-- [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+- [[Gradle toolchain languageVersion requires an exact JDK major version]]
+- [[Migrate to Quarkus (WIP)]]
 
 %% ai-graph-end %%

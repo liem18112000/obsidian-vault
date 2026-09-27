@@ -1,10 +1,20 @@
 ---
-title: "Share features as vertical slices with app-owned routes and an injected adapter"
+ai_hash: 00781f3e89127a72
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: LUZ-154249 Architecture for shared components between apps (Helios)'
 status: seedling
-source: "Confluence: LUZ-154249 Architecture for shared components between apps (Helios)"
-tags: [architecture, monorepo, nextjs, vertical-slice, dependency-inversion, confluence-distilled]
+tags:
+- architecture
+- monorepo
+- nextjs
+- vertical-slice
+- dependency-inversion
+- confluence-distilled
+title: Share features as vertical slices with app-owned routes and an injected adapter
+type: lesson
 ---
 
 # Share features as vertical slices with app-owned routes and an injected adapter
@@ -39,3 +49,14 @@ Source: [[Discuss LUZ-154249 Architecture for shared components features between
 ## Related
 
 - [[Strike what every option shares to find the real architecture decision]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Discuss LUZ-154249 Architecture for shared components features between apps]]
+- [[Proposal eArchived architecture direction for ePost web 2]]
+- [[Strike what every option shares to find the real architecture decision]]
+- [[Architecture]]
+- [[App module architecture]]
+
+%% ai-graph-end %%

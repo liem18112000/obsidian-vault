@@ -1,18 +1,22 @@
 ---
-title: "COSSA Token Exchange — Technical Analysis and Implementation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49354702852/COSSA+Token+Exchange+Technical+Analysis+and+Implementation
-space: "TS"
-topic: programming
-relevance: 0.857
-depth: 3
-updated: 2026-05-04
+ai_hash: 8c111c4ce013fb15
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.857
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49354702852/COSSA+Token+Exchange+Technical+Analysis+and+Implementation
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: COSSA Token Exchange — Technical Analysis and Implementation
+topic: programming
+type: source
+updated: 2026-05-04
 ---
 
 # COSSA Token Exchange — Technical Analysis and Implementation
@@ -245,3 +249,14 @@ curl --location 'http://localhost:8080/core/latest/token' \
 - Jira Story: <a href="https://axonivy.atlassian.net/browse/LUZ-147804" class="external-link" rel="nofollow">LUZ-147804 — Technical Analysis and Implementation Concept for COSSA Token Exchange — https://axonivy.atlassian.net/browse/LUZ-147804</a>
 
 - Swiss Post OIDC Discovery (INT): <a href="https://apiint.post.ch/.well-known/openid-configuration" class="external-link" rel="nofollow">https://apiint.post.ch/.well-known/openid-configuration</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Exchange a partner IdP token by introspecting it, never by trusting it]]
+- [[Onboarding API - Investigation Identity Provider SSO]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Implement Corporate API Access (LUZ-17959)]]
+- [[E-Post API - technical documentation]]
+
+%% ai-graph-end %%

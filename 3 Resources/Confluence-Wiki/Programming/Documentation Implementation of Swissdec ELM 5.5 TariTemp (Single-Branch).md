@@ -1,18 +1,22 @@
 ---
-title: "Documentation: Implementation of Swissdec ELM 5.5 TariTemp (Single-Branch)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49389076511/Documentation+Implementation+of+Swissdec+ELM+5.5+TariTemp+Single-Branch
-space: "LUZ"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2026-05-05
+ai_hash: ee4ff4c3b226dbe7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49389076511/Documentation+Implementation+of+Swissdec+ELM+5.5+TariTemp+Single-Branch
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: 'Documentation: Implementation of Swissdec ELM 5.5 TariTemp (Single-Branch)'
+topic: programming
+type: source
+updated: 2026-05-05
 ---
 
 # Documentation: Implementation of Swissdec ELM 5.5 TariTemp (Single-Branch)
@@ -120,3 +124,11 @@ To successfully complete the ELM 5.5 certification, the ERP system must demonstr
 2.  Issue error messages if profiles are missing or if invalid Occupation Codes are used.
 
 3.  Ensure the correct allocation of wage totals to the respective risk classes (Occupation Codes) in the year-end declaration.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Insurance concept model]]
+- [[Concept Intermediate data storage]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 09e3fd1831ef519e
+ai_hash: 04ce6b178c4a9a27
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - CPM vs CPS
 - Monetag vs Accesstrade

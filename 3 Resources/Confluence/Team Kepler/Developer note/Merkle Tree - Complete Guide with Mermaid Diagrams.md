@@ -1,14 +1,22 @@
 ---
-title: "Merkle Tree: Complete Guide with Mermaid Diagrams"
+ai_hash: 767af677f49f44bb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48884776996'
+confluence_path: Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026 > Luz
+  Audit System - Performance Optimization Proposal
 created: 2025-11-17
-updated: 2025-11-18
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-audit
+- performance
+title: 'Merkle Tree: Complete Guide with Mermaid Diagrams'
+type: source
+updated: 2025-11-18
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48884776996/Merkle+Tree+Complete+Guide+with+Mermaid+Diagrams
-confluence_id: "48884776996"
-confluence_path: "Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026 > Luz Audit System - Performance Optimization Proposal"
-tags: [confluence, luz-audit, performance]
 ---
 
 # Merkle Tree: Complete Guide with Mermaid Diagrams
@@ -822,3 +830,14 @@ For key-value stores with large address space (e.g., Ethereum state):
 - [IPFS Merkle DAG](https://docs.ipfs.tech/concepts/merkle-dag/) - Content addressing with Merkle trees
 
 - [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) - Patricia Merkle Trees
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A Merkle tree proves one item belongs to a set without revealing or transferring the set]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+- [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+- [[Luz Audit System - Performance Optimization Proposal]]
+- [[LUZ Audit - Basic Understanding Guide]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: f957e6504826dc46
+ai_hash: 5ea98f14df53a265
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-30
 entities: []
 source: session 2026-06-30; user-provided admin link
@@ -44,6 +44,6 @@ Example given for the journey-map view: `leoCdpRouter('Data_Journey_Map','')`. T
 - [[Leo CDP public REST API contract]]
 - [[Leo CDP profilelist ignores start and limit and embeds event data]]
 - [[Leo CDP event observerId is the pushing tokenkey and eventsave can split from profilesave identity]]
-- [[Identity-keyed CDP API breaks content-hash idempotency]]
+- [[Verify uat customer360-api health publicly at beta.leocdp.comc360apihealth]]
 
 %% ai-graph-end %%

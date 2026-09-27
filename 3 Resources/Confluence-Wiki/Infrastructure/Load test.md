@@ -1,18 +1,22 @@
 ---
-title: "Load test"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47726985300/Load+test
-space: "FUT"
-topic: infra
-relevance: 0.75
-depth: 3
-updated: 2024-03-25
+ai_hash: 882712ab9bb95e0a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 3
+entities: []
+relevance: 0.75
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47726985300/Load+test
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: Load test
+topic: infra
+type: source
+updated: 2024-03-25
 ---
 
 # Load test
@@ -646,3 +650,14 @@ b\) Use the branch <a href="https://bitbucket.org/axonivy-prod/luz_kubernetes/br
 - Identity matching scenarios
 
 - Channels switching
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API end to end testing]]
+- [[One API load test with locust]]
+- [[Port forward and Docker compose]]
+- [[Infrastructure]]
+- [[Port Forward to call GCP API in localhost]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "AI-1538 Prepare for more volume on Analyze API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/48682237968/AI-1538+Prepare+for+more+volume+on+Analyze+API
-space: "AI"
-topic: programming
-relevance: 0.79
-depth: 2.76
-updated: 2025-09-24
+ai_hash: b5a092b9e4be5c57
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.76
+entities: []
+relevance: 0.79
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/48682237968/AI-1538+Prepare+for+more+volume+on+Analyze+API
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: AI-1538 Prepare for more volume on Analyze API
+topic: programming
+type: source
+updated: 2025-09-24
 ---
 
 # AI-1538 Prepare for more volume on Analyze API
@@ -236,3 +240,14 @@ Existing ePost users = 270k</p>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[Public API client performance analysis]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+
+%% ai-graph-end %%

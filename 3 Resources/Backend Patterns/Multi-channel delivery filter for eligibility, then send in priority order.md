@@ -1,10 +1,20 @@
 ---
-title: "Multi-channel delivery: filter for eligibility, then send in priority order"
+ai_hash: 756f0b0c902d4110
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: OneAPI Architecture overview (LUZ)'
 status: seedling
-source: "Confluence: OneAPI Architecture overview (LUZ)"
-tags: [fallback, routing, notifications, retry, design-pattern, confluence-distilled]
+tags:
+- fallback
+- routing
+- notifications
+- retry
+- design-pattern
+- confluence-distilled
+title: 'Multi-channel delivery: filter for eligibility, then send in priority order'
+type: lesson
 ---
 
 # Multi-channel delivery: filter for eligibility, then send in priority order
@@ -34,3 +44,14 @@ Source: [[OneAPI Architecture overview]] (LUZ, Confluence).
 ## Related
 
 - [[Record origin and origin_href so a downstream row traces back to its cause]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API - Investigation]]
+- [[Express an ordering requirement as queue priority, not as a synchronous wait]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[Copy 5. How to extend modify ONE API delivery API Research]]
+
+%% ai-graph-end %%

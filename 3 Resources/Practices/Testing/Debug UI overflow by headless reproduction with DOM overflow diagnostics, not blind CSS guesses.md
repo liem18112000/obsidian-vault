@@ -1,7 +1,7 @@
 ---
-ai_hash: 110d437c520546bd
+ai_hash: dd846346122b7960
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-23
 entities: []
 source: session 2026-07-23
@@ -37,8 +37,8 @@ Caveat: rect-past-viewport alone is NOT proof of visible overflow — content in
 **Related notes:**
 - [[Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column]]
 - [[Toggle a layout mode with one Tailwind descendant override instead of threading state]]
-- [[Inline style width beats Tailwind breakpoint width classes]]
 - [[Gridflex items default to min-height auto, blocking inner overflow scroll; add min-h-0]]
+- [[Inline style width beats Tailwind breakpoint width classes]]
 - [[Async-rendered content (Mermaid) causes layout shift that misdirects form clicks]]
 
 %% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "OIDC federation with just-in-time provisioning hinges on the attribute join key"
+ai_hash: 6369683f3fde69b0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Onboarding API Investigation Identity Provider SSO (TS)'
 status: seedling
-source: "Confluence: Onboarding API Investigation Identity Provider SSO (TS)"
-tags: [oidc, sso, keycloak, federation, jit-provisioning, confluence-distilled]
+tags:
+- oidc
+- sso
+- keycloak
+- federation
+- jit-provisioning
+- confluence-distilled
+title: OIDC federation with just-in-time provisioning hinges on the attribute join
+  key
+type: concept
 ---
 
 # OIDC federation with just-in-time provisioning hinges on the attribute join key
@@ -37,3 +48,14 @@ Source: [[Onboarding API - Investigation Identity Provider SSO]] (TS, Confluence
 ## Related
 
 - [[Keycloak action tokens bridge an app session into a browser login]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Exchange a partner IdP token by introspecting it, never by trusting it]]
+- [[Onboarding API - Investigation Identity Provider SSO]]
+- [[Keycloak action tokens bridge an app session into a browser login]]
+- [[SAML documentation]]
+- [[Understanding Keycloak Authorization Code flow]]
+
+%% ai-graph-end %%

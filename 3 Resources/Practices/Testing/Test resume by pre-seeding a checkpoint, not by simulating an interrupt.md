@@ -1,7 +1,7 @@
 ---
-ai_hash: 201ad991162655d6
+ai_hash: b83ed7b3e0167854
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-15
 entities: []
 source: fb-info-project pause/resume, 2026-06-15

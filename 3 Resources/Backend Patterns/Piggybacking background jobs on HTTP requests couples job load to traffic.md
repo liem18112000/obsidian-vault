@@ -1,10 +1,20 @@
 ---
-title: "Piggybacking background jobs on HTTP requests couples job load to traffic"
+ai_hash: 092ac4d77a46c888
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Background Process Optimization for luz-docs API (LUZ)'
 status: seedling
-source: "Confluence: Background Process Optimization for luz-docs API (LUZ)"
-tags: [architecture, background-jobs, scheduling, anti-pattern, jax-rs, confluence-distilled]
+tags:
+- architecture
+- background-jobs
+- scheduling
+- anti-pattern
+- jax-rs
+- confluence-distilled
+title: Piggybacking background jobs on HTTP requests couples job load to traffic
+type: lesson
 ---
 
 # Piggybacking background jobs on HTTP requests couples job load to traffic
@@ -37,3 +47,14 @@ Source: [[Background Process Optimization for luz-docs API Architecture and Reco
 ## Related
 
 - [[In-memory job throttles silently break when you scale to multiple replicas]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[In-memory job throttles silently break when you scale to multiple replicas]]
+- [[Background Process Optimization for luz-docs API Architecture and Recommendations]]
+- [[Read-side fire-and-forget mutation pass the id and re-read in the async, don't mutate the object being serialized]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[New architecture for documentStatistic]]
+
+%% ai-graph-end %%

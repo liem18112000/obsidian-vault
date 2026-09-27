@@ -1,5 +1,5 @@
 ---
-ai_hash: da257825e1fe1840
+ai_hash: eff39eb7f620e7be
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-07
@@ -39,8 +39,8 @@ Related: [[luz_docs_import idempotent re-import replaces view-controller search-
 **Related notes:**
 - [[luz_docs_import detects dead async-worker pods via kubectl during status polling]]
 - [[luz_docs_import idempotent re-import replaces view-controller search-based file dedup]]
-- [[Run luz_docs_statistic locally with docker-compose]]
 - [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
-- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
+- [[Run luz_docs_statistic locally with docker-compose]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
 
 %% ai-graph-end %%

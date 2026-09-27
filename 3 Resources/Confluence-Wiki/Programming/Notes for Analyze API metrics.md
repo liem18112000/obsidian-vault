@@ -1,18 +1,22 @@
 ---
-title: "Notes for Analyze API metrics"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47121695531/Notes+for+Analyze+API+metrics
-space: "AI"
-topic: programming
-relevance: 0.703
-depth: 2.41
-updated: 2022-06-02
+ai_hash: 6ceb7e976c1bb8d9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.41
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47121695531/Notes+for+Analyze+API+metrics
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Notes for Analyze API metrics
+topic: programming
+type: source
+updated: 2022-06-02
 ---
 
 # Notes for Analyze API metrics
@@ -50,3 +54,11 @@ totalProcessingTime           --- Sum of processing time of all elements within 
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AI-842 Load test Analyze API]]
+- [[AI-0000 Low Analyze job throughput]]
+
+%% ai-graph-end %%

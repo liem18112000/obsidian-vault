@@ -1,10 +1,21 @@
 ---
-title: "A pagination token is an opaque cursor, and it must carry the filter it was issued under"
+ai_hash: e5fbfc4031765e7b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Pagination Token (Page Token) (2026-05-11)'
 status: seedling
-source: "Confluence: Pagination Token (Page Token) (2026-05-11)"
-tags: [pagination, api-design, cursor, backend, sap, consistency]
+tags:
+- pagination
+- api-design
+- cursor
+- backend
+- sap
+- consistency
+title: A pagination token is an opaque cursor, and it must carry the filter it was
+  issued under
+type: concept
 ---
 
 # A pagination token is an opaque cursor, and it must carry the filter it was issued under
@@ -36,3 +47,14 @@ The trade you accept: no random page jumps. For batch sync and infinite scroll t
 ## Related
 
 - [[CQRS splits read and write models architecturally, CQS only splits methods]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pagination Token (Page Token)]]
+- [[Confluence CQL search paginates by opaque cursor, not start offset]]
+- [[CQRS splits read and write models architecturally, CQS only splits methods]]
+- [[Offset-paging loop with while(offset % pageSize == 0) infinite-loops on exact-multiple counts]]
+- [[PATCH removes the read-modify-write round trips that PUT-replace forces]]
+
+%% ai-graph-end %%

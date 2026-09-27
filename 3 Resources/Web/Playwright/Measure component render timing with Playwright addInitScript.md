@@ -1,7 +1,7 @@
 ---
-ai_hash: 5df85ebb5512438e
+ai_hash: 8c7fef6043ce18b8
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-18
 entities: []
 source: session 2026-07-18, KLARA eArchive perf
@@ -51,6 +51,6 @@ Also pull `performance.getEntriesByType('navigation')` + `'paint'` for FCP / dom
 - [[Timed reveal overlay on a real full-page screenshot]]
 - [[eArchive page DOM selectors (performance automation)]]
 - [[Perf 800k tenant eArchive reload timing]]
-- [[Playwright full-nav detection needs a JS-heap marker not URL compare]]
+- [[Reload not automatically faster than first load]]
 
 %% ai-graph-end %%

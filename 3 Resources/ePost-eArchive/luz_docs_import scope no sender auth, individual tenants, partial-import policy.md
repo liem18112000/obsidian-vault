@@ -1,5 +1,5 @@
 ---
-ai_hash: e588e0d8b3694f19
+ai_hash: 408bf31249ac569a
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-14
@@ -38,8 +38,8 @@ Established for LUZ-158230.
 **Related notes:**
 - [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
 - [[senderTenantId is out of scope in luz_docs_import health ZIP import]]
-- [[ePost ZIP import (LUZ-158230) behavior rules confirmed by domain expert]]
-- [[luz_docs_import health ZIP import uses a two-layer failure model]]
 - [[ePost eArchive ZIP import transfer.zip shape and luz_docs_import]]
+- [[ePost ZIP import (LUZ-158230) behavior rules confirmed by domain expert]]
+- [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
 
 %% ai-graph-end %%

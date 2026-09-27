@@ -1,14 +1,19 @@
 ---
-title: "Follow Up Points After Client Meeting"
+ai_hash: a39259f09a7ccf2a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49331011637'
+confluence_path: Team Kepler > Risk & Issues > Issues > Kunde Quickschild GmbH_eArchiv
 created: 2026-04-16
-updated: 2026-04-16
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: Follow Up Points After Client Meeting
+type: source
+updated: 2026-04-16
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49331011637/Follow+Up+Points+After+Client+Meeting
-confluence_id: "49331011637"
-confluence_path: "Team Kepler > Risk & Issues > Issues > Kunde Quickschild GmbH_eArchiv"
-tags: [confluence]
 ---
 
 # Follow Up Points After Client Meeting
@@ -76,3 +81,14 @@ Note: [Alvin Villanueva](https://axonivy.atlassian.net/wiki/people/712020:a8f846
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Analysis and Proposed Solutions]]
+- [[eArchive Performance — Detail Overview]]
+- [[eArchive Performance — Executive Overview]]
+- [[eArchive request flow and log correlation (perf)]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+
+%% ai-graph-end %%

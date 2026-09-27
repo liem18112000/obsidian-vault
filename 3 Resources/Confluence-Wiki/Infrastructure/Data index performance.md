@@ -1,18 +1,22 @@
 ---
-title: "Data index performance"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48575152168/Data+index+performance
-space: "FUT"
-topic: infra
-relevance: 0.724
-depth: 2.56
-updated: 2025-07-23
+ai_hash: c7462b5f1ac0d4e8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 25
+depth: 2.56
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48575152168/Data+index+performance
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: Data index performance
+topic: infra
+type: source
+updated: 2025-07-23
 ---
 
 # Data index performance
@@ -214,3 +218,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Test - 100% Thumbnail Cloud Run]]
+- [[EPC API - Load Test]]
+- [[Count Fan-out (K) Benchmark on Performance Env]]
+- [[Using Google PubSub for events between Serverless workflow and Data Index]]
+- [[Create Document API – Performance Testing Report]]
+
+%% ai-graph-end %%

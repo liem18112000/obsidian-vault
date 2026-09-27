@@ -1,18 +1,22 @@
 ---
-title: "Token JWT Security"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436029691/Token+JWT+Security
-space: "LUZ"
-topic: security
-relevance: 0.773
-depth: 2.77
-updated: 2021-01-13
+ai_hash: d3350ea6761b9a76
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.77
+entities: []
+relevance: 0.773
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436029691/Token+JWT+Security
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Token JWT Security
+topic: security
+type: source
+updated: 2021-01-13
 ---
 
 # Token JWT Security
@@ -324,3 +328,14 @@ We have to make all our APIs to be protected by user roles also.
 Now we have to add this annotation for APIs which need to be protected by user roles.
 
 Because there are a lots of APIs until now, so it will take time to do and test. And we also need support from other teams too.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HowToUseNewTokenAPI]]
+- [[Two-grade JWTs solve the multi-tenant bootstrap basic token discovers tenants]]
+- [[Tenant token issue]]
+- [[Upload Document API]]
+- [[Getting tenant list]]
+
+%% ai-graph-end %%

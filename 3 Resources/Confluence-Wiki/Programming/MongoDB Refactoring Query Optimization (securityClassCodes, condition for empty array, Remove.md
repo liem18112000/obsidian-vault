@@ -1,18 +1,23 @@
 ---
-title: "[MongoDB Refactoring] Query Optimization (securityClassCodes, condition for empty array, Remove useless stage)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48671129835/MongoDB+Refactoring+Query+Optimization+securityClassCodes+condition+for+empty+array+Remove+useless+stage
-space: "TK"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2025-12-09
+ai_hash: 9a68f16de1eb1471
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 12
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48671129835/MongoDB+Refactoring+Query+Optimization+securityClassCodes+condition+for+empty+array+Remove+useless+stage
+space: TK
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tk
+- confluence
+- programming
+- space/tk
+title: '[MongoDB Refactoring] Query Optimization (securityClassCodes, condition for
+  empty array, Remove useless stage)'
+topic: programming
+type: source
+updated: 2025-12-09
 ---
 
 # [MongoDB Refactoring] Query Optimization (securityClassCodes, condition for empty array, Remove useless stage)
@@ -801,3 +806,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Omit query stages built from empty lists; empty and absent mean opposite things]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+- [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
+- [[04 Query Operators]]
+
+%% ai-graph-end %%

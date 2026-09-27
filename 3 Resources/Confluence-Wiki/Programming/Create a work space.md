@@ -1,18 +1,22 @@
 ---
-title: "Create a work space"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48207527957/Create+a+work+space
-space: "LUZ"
-topic: programming
-relevance: 0.741
-depth: 2.97
-updated: 2025-02-12
+ai_hash: feb0769ebf9df502
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 15
+depth: 2.97
+entities: []
+relevance: 0.741
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48207527957/Create+a+work+space
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Create a work space
+topic: programming
+type: source
+updated: 2025-02-12
 ---
 
 # Create a work space
@@ -116,3 +120,14 @@ Check commit
 
 
 ![[48207527957-Screenshot 2025-01-17 160833-20250117-090918.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Deploy with Terraform]]
+- [[Editor rule by Code Service (Visual Code in Browser)]]
+- [[Recipe Github copilot]]
+- [[CICD for Kogito]]
+- [[Kubernetes knowledge]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: f5a444a5bf021e99
+ai_hash: 1d8b4e7dbae4be23
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-14
 entities: []
 source: live run 2026-06-14
@@ -34,6 +34,6 @@ Confirmed by a live run on 2026-06-14: `/photo/?fbid=2218458972230714` -> `outpu
 - [[fb-info-project merges bare-id 'profile UUID' inputs into one combined workbook]]
 - [[fb-scraper writes output per link only at the end; killing mid-run loses the whole link]]
 - [[Facebook page userID is the viewer not the profile owner]]
-- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+- [[Facebook sharev links can resolve to reels — classify after the redirect]]
 
 %% ai-graph-end %%

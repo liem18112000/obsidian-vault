@@ -1,14 +1,20 @@
 ---
-title: "Use Case: Xray Feature Import - Local Tool"
+ai_hash: 6e7ed7c0dc72bc3e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49231036420'
+confluence_path: Team Kepler > Developer note > Integration Test with Xray and Cucumber
 created: 2026-03-13
-updated: 2026-03-13
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- xray
+title: 'Use Case: Xray Feature Import - Local Tool'
+type: source
+updated: 2026-03-13
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49231036420/Use+Case+Xray+Feature+Import+-+Local+Tool
-confluence_id: "49231036420"
-confluence_path: "Team Kepler > Developer note > Integration Test with Xray and Cucumber"
-tags: [confluence, xray]
 ---
 
 # Use Case: Xray Feature Import - Local Tool
@@ -113,3 +119,14 @@ mutation AddTestsToTestSet($issueId: String!, $testIssueIds: [String]!) {
 ```
 
 ![[image-20260313-081409.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Integration Test with Xray and Cucumber]]
+- [[Use Case - AI-driven Testing]]
+- [[Xray Test Management - Manual Test Guideline]]
+- [[Use Case - Run by Test Set - Complete Process Flow]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+
+%% ai-graph-end %%

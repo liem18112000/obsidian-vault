@@ -1,18 +1,22 @@
 ---
-title: "Adding filter - public api adapter"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/47111077956/Adding+filter+-+public+api+adapter
-space: "Arrow"
-topic: programming
-relevance: 0.837
-depth: 3
-updated: 2022-05-16
+ai_hash: c1338315676abf73
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.837
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/47111077956/Adding+filter+-+public+api+adapter
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: Adding filter - public api adapter
+topic: programming
+type: source
+updated: 2022-05-16
 ---
 
 # Adding filter - public api adapter
@@ -74,3 +78,14 @@ tags:
       
 
 ![[47111077956-image-20220516-042657.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Check subscription on Public API]]
+- [[Catalog for 3rd party system API]]
+- [[Swagger UI]]
+- [[APF swagger for project eapf_web]]
+- [[Analytics Analyze API call when accessing eArchive]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 3a52c0867d672147
+ai_hash: 4e48a377bcadd2b5
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - CPQL
 - Cost per Qualified Lead

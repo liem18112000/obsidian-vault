@@ -1,18 +1,22 @@
 ---
-title: "02_82_Plan refactor EGW Digital onboarding"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134410096/02_82_Plan+refactor+EGW+Digital+onboarding
-space: "GRAVITY"
-topic: programming
-relevance: 0.746
-depth: 2.57
-updated: 2022-06-24
+ai_hash: 64fd63aaf00d8870
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.57
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134410096/02_82_Plan+refactor+EGW+Digital+onboarding
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: 02_82_Plan refactor EGW Digital onboarding
+topic: programming
+type: source
+updated: 2022-06-24
 ---
 
 # 02_82_Plan refactor EGW Digital onboarding
@@ -27,3 +31,14 @@ tags:
 
 
 ![[47134410096-unknown-macro.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Page 2026-04-16 09 -00]]
+- [[How to implement a feature hint for eArchive (reuse new common component )]]
+- [[12. Architecture Exchange]]
+- [[Technical Review for WebClient Design Sprint 28 (6 4 2021)]]
+- [[SQL script to update retry tasks and check pending dossiers has an outdated credit card]]
+
+%% ai-graph-end %%

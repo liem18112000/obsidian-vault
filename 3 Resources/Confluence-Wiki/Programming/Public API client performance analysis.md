@@ -1,18 +1,22 @@
 ---
-title: "Public API client performance analysis"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47494824249/Public+API+client+performance+analysis
-space: "FUT"
-topic: programming
-relevance: 0.858
-depth: 3
-updated: 2023-10-20
+ai_hash: 5b844f27eb5ad33a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 16
+depth: 3
+entities: []
+relevance: 0.858
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47494824249/Public+API+client+performance+analysis
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Public API client performance analysis
+topic: programming
+type: source
+updated: 2023-10-20
 ---
 
 # Public API client performance analysis
@@ -205,3 +209,14 @@ These calls can be merge to one</p>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Helios myKLARA app(luz-mobile) - API Response Performance Analysis]]
+- [[Measure API luz-docs]]
+- [[Optimus ePost myLife app(luz_mylife_epost_adapter) - API Response Performance Analysis]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[Analytics Analyze API call when accessing eArchive]]
+
+%% ai-graph-end %%

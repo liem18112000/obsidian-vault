@@ -1,18 +1,22 @@
 ---
-title: "Refactor Enricher process - update PATCH"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48208544163/Refactor+Enricher+process+-+update+PATCH
-space: "LUZ"
-topic: programming
-relevance: 0.907
-depth: 3
-updated: 2024-12-16
+ai_hash: 37c67aeae47d8847
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.907
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48208544163/Refactor+Enricher+process+-+update+PATCH
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Refactor Enricher process - update PATCH
+topic: programming
+type: source
+updated: 2024-12-16
 ---
 
 # Refactor Enricher process - update PATCH
@@ -59,3 +63,14 @@ Comparation between two implementation:
 <!-- -->
 
 - 1 call to update (PATCH) metadata (2nd Phase: AI analyze, also include enricher status)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure the time-consuming of patch update document API in luz_docs]]
+- [[PATCH removes the read-modify-write round trips that PUT-replace forces]]
+- [[New architecture for documentStatistic]]
+- [[Security Classes updating measurement]]
+- [[LUZ-Enricher POC]]
+
+%% ai-graph-end %%

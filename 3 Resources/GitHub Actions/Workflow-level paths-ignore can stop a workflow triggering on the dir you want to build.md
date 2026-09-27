@@ -1,5 +1,5 @@
 ---
-ai_hash: 6563a66378dea12f
+ai_hash: b106570991689e2e
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-20
@@ -36,6 +36,6 @@ Related: [[Feed dornypaths-filter changes output into a build matrix for selecti
 - [[GitHub Actions in a monorepo workflows live at repo root, scope per project with paths filters]]
 - [[CI path-filter must mirror the Docker build context, not the service folder]]
 - [[BuildKit honors a per-Dockerfile .dockerignore]]
-- [[Docs Site deploy-docs.yml detect job skips build unless docs paths change]]
+- [[CD only redeploys a leo-customer360 service when its own path changes (dorny paths-filter)]]
 
 %% ai-graph-end %%

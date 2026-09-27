@@ -1,18 +1,22 @@
 ---
-title: "Public api - print partner status feedback"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47396782081/Public+api+-+print+partner+status+feedback
-space: "LUZ"
-topic: programming
-relevance: 0.837
-depth: 3
-updated: 2023-06-06
+ai_hash: abf9499de3c1bbef
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 3
+entities: []
+relevance: 0.837
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47396782081/Public+api+-+print+partner+status+feedback
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Public api - print partner status feedback
+topic: programming
+type: source
+updated: 2023-06-06
 ---
 
 # Public api - print partner status feedback
@@ -59,3 +63,14 @@ Then, authorize the request with these options on Klara public api:
   
 
 ![[47396782081-image-20230606-030633.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KLARA Integration (request access token & call API)]]
+- [[How to consume luz api]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[Public API Print Partner]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+
+%% ai-graph-end %%

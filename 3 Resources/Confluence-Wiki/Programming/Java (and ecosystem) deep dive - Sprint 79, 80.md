@@ -1,18 +1,22 @@
 ---
-title: "Java (and ecosystem) deep dive - Sprint [79, 80]"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47212725725/Java+and+ecosystem+deep+dive+-+Sprint+79+80
-space: "TS"
-topic: programming
-relevance: 0.947
-depth: 3
-updated: 2022-12-03
+ai_hash: a9883ea07f707857
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.947
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47212725725/Java+and+ecosystem+deep+dive+-+Sprint+79+80
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Java (and ecosystem) deep dive - Sprint [79, 80]
+topic: programming
+type: source
+updated: 2022-12-03
 ---
 
 # Java (and ecosystem) deep dive - Sprint [79, 80]
@@ -204,3 +208,14 @@ Clock
 # XV. Others
 
 Collections framework and beyond? Streams API? Java EE specs (CDI, Transactions, Security, Filter, Interceptor, Event, …), Java NIO, Async within Java (Future, Completable Future, Completion Stage,…)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Concurrency Design Patterns]]
+- [[3 Resources]]
+- [[Prompt Performance Code Review]]
+- [[Batching Design]]
+- [[Confluence-Distillation]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Choosing a DB migration library: SQL changesets, startup vs command, maintenance"
+ai_hash: 054691c9603ad2d0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Routing tool Database replacement NodeJS Investigation (Arrow)'
 status: seedling
-source: "Confluence: Routing tool Database replacement NodeJS Investigation (Arrow)"
-tags: [migrations, postgres, nodejs, tooling, library-selection, confluence-distilled]
+tags:
+- migrations
+- postgres
+- nodejs
+- tooling
+- library-selection
+- confluence-distilled
+title: 'Choosing a DB migration library: SQL changesets, startup vs command, maintenance'
+type: lesson
 ---
 
 # Choosing a DB migration library: SQL changesets, startup vs command, maintenance
@@ -32,3 +42,14 @@ The evaluation notes the friction honestly: the separate-command options could b
 > The same investigation lists Sequelize and Prisma as the Hibernate equivalents. Keep migration tooling and ORM as independent choices — coupling them means switching one forces switching the other.
 
 Source: [[Routing tool Database replacement NodeJS - Investigation]] (Arrow, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Routing tool Database replacement NodeJS - Investigation]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
+- [[A self-contained migration parity test is only useful during the cutover]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
+
+%% ai-graph-end %%

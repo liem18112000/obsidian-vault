@@ -1,14 +1,21 @@
 ---
-title: "eArchive Performance — Detail Overview"
+ai_hash: 42fd51cea0ca1b72
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49504649413'
+confluence_path: Team Kepler > Developer note > eArchive Performance — Executive Overview
 created: 2026-06-15
-updated: 2026-06-15
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- earchive
+- performance
+title: eArchive Performance — Detail Overview
+type: source
+updated: 2026-06-15
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49504649413/eArchive+Performance+Detail+Overview
-confluence_id: "49504649413"
-confluence_path: "Team Kepler > Developer note > eArchive Performance — Executive Overview"
-tags: [confluence, earchive, performance]
 ---
 
 # eArchive Performance — Detail Overview
@@ -96,3 +103,14 @@ A critical frontend issue in `luz_epost_business_web` (owned by Team Miracle) is
 ## Target Outcome
 
 The ultimate goal is **whole eArchive process under 10 seconds**, even for tenants with 128K+ documents. The backend work is largely landed; the remaining bottleneck is the frontend integration fix ( [LUZ-155437](https://axonivy.atlassian.net/browse/LUZ-155437) ) and the pending indexing/caching work.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive Performance — Executive Overview]]
+- [[Performance Analysis and Proposed Solutions]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[eArchive performance — luz-epost-business-web calls the count API on every search]]
+- [[Follow Up Points After Client Meeting]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: 84c950124aa300ff
+ai_hash: 40aa194dda965d55
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-20
@@ -20,29 +20,21 @@ entities:
 - docker run
 - SSH
 - deploy.sh
-- managed data services
 - storage
 - postgres
 - load_balancer
-- object storage
-- managed PostgreSQL
-- NLB
-- server
+- vServer provisioning
+- managed data services
 - deploy-all.sh
 - tf_step
-- deploy-*.sh
+- app deploy scripts
 - terraform init
 - terraform output
-- redis host
-- cache
+- Terraform apply
 - vServer IPs
 - DB host
-- Chain a CD workflow after CI with workflow_run
-- gating on conclusion and ref
-- api
-- backend
-- ads
-- frontend
+- redis host
+- Chain a CD workflow after CI with workflow_run, gating on conclusion and ref
 source: session 2026-08-20, cd.yml
 status: seedling
 tags:
@@ -85,67 +77,47 @@ Decision: the `cd.yml` continuous-delivery pipeline deploys **only the vServer a
 - leo-customer360 CD — *never_deploys* — vDB
 - leo-customer360 CD — *never_deploys* — vLB
 - leo-customer360 CD — *never_deploys* — vStorage
-- vDB — *managed_by* — Terraform
-- vLB — *managed_by* — Terraform
-- vStorage — *managed_by* — Terraform
+- leo-customer360 CD — *never_runs* — Terraform apply
 - cd.yml — *is_a* — continuous-delivery pipeline
 - cd.yml — *deploys* — customer360-api
 - cd.yml — *deploys* — backend-system
 - cd.yml — *deploys* — ads-server
 - cd.yml — *deploys* — frontend-admin
-- customer360-api — *pulls_image_from* — GHCR
-- backend-system — *pulls_image_from* — GHCR
-- ads-server — *pulls_image_from* — GHCR
-- frontend-admin — *pulls_image_from* — GHCR
-- customer360-api — *deployed_via* — docker run
-- backend-system — *deployed_via* — docker run
-- ads-server — *deployed_via* — docker run
-- frontend-admin — *deployed_via* — docker run
-- docker run — *executed_over* — SSH
-- cd.yml — *must_never_run* — deploy.sh
-- deploy.sh — *manages* — managed data services
-- managed data services — *includes* — storage
-- managed data services — *includes* — postgres
-- managed data services — *includes* — load_balancer
-- storage — *is_a* — vStorage
-- storage — *is_a* — object storage
-- postgres — *is_a* — vDB
-- postgres — *is_a* — managed PostgreSQL
-- load_balancer — *is_a* — vLB
-- load_balancer — *is_a* — NLB
-- server — *is_for* — vServer provisioning
-- deploy-all.sh — *enforces_policy* — leo-customer360 CD
-- deploy-all.sh — *restricts_execution_to* — api
-- deploy-all.sh — *restricts_execution_to* — backend
-- deploy-all.sh — *restricts_execution_to* — ads
-- deploy-all.sh — *restricts_execution_to* — frontend
-- storage — *maps_to* — tf_step
-- postgres — *maps_to* — tf_step
-- server — *maps_to* — tf_step
-- load_balancer — *maps_to* — tf_step
-- tf_step — *runs* — deploy.sh
-- api — *maps_to* — deploy-*.sh
-- backend — *maps_to* — deploy-*.sh
-- ads — *maps_to* — deploy-*.sh
-- frontend — *maps_to* — deploy-*.sh
+- cd.yml — *pulls_image_from* — GHCR
+- cd.yml — *uses* — docker run
+- cd.yml — *uses* — SSH
+- deploy.sh — *performs* — Terraform apply
+- storage — *is_a* — managed data services
+- postgres — *is_a* — managed data services
+- load_balancer — *is_a* — managed data services
+- vServer provisioning — *is_a* — managed data services
+- storage — *is_also_known_as* — vStorage
+- postgres — *is_also_known_as* — vDB
+- load_balancer — *is_also_known_as* — vLB
+- managed data services — *are* — long-lived
+- managed data services — *are* — expensive
+- managed data services — *are* — stateful
+- deploy-all.sh — *enforces_policy_for* — leo-customer360 CD
+- deploy-all.sh — *uses_flag* — --only
+- customer360-api — *mapped_to_script* — app deploy scripts
+- backend-system — *mapped_to_script* — app deploy scripts
+- ads-server — *mapped_to_script* — app deploy scripts
+- frontend-admin — *mapped_to_script* — app deploy scripts
+- storage — *mapped_to_step* — tf_step
+- postgres — *mapped_to_step* — tf_step
+- vServer provisioning — *mapped_to_step* — tf_step
+- load_balancer — *mapped_to_step* — tf_step
+- tf_step — *executes* — deploy.sh
 - leo-customer360 CD — *runs* — terraform init
 - leo-customer360 CD — *runs* — terraform output
-- terraform init — *is* — READ-ONLY
-- terraform output — *is* — READ-ONLY
-- terraform init — *on* — server
-- terraform init — *on* — postgres
-- terraform init — *on* — cache
-- terraform output — *on* — server
-- terraform output — *on* — postgres
-- terraform output — *on* — cache
+- terraform init — *has_property* — READ-ONLY
+- terraform output — *has_property* — READ-ONLY
 - terraform output — *resolves* — vServer IPs
 - terraform output — *resolves* — DB host
 - terraform output — *resolves* — redis host
-- deploy-*.sh — *needs* — vServer IPs
-- deploy-*.sh — *needs* — DB host
-- deploy-*.sh — *needs* — redis host
-- Chain a CD workflow after CI with workflow_run — *is_related_to* — leo-customer360 CD
-- gating on conclusion and ref — *is_related_to* — leo-customer360 CD
-- Chain a CD workflow after CI with workflow_run — *provides_context_for* — gating on conclusion and ref
+- app deploy scripts — *requires* — vServer IPs
+- app deploy scripts — *requires* — DB host
+- app deploy scripts — *requires* — redis host
+- document — *references* — Chain a CD workflow after CI with workflow_run, gating on conclusion and ref
 
 %% ai-graph-end %%

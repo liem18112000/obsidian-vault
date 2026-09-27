@@ -1,18 +1,22 @@
 ---
-title: "Measure create API - investigate performance"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47119893374/Measure+create+API+-+investigate+performance
-space: "LUZ"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2022-06-01
+ai_hash: 263d11e4bb9e910c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 26
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47119893374/Measure+create+API+-+investigate+performance
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Measure create API - investigate performance
+topic: programming
+type: source
+updated: 2022-06-01
 ---
 
 # Measure create API - investigate performance
@@ -495,3 +499,14 @@ Test created API with the file 100MB
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Create Document API – Performance Testing Report]]
+- [[Measure API luz-docs]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[Timing Benchmark Results Document ZIP Imports]]
+- [[EPC API - Load Test]]
+
+%% ai-graph-end %%

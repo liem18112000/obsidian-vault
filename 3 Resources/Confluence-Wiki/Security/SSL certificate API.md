@@ -1,18 +1,22 @@
 ---
-title: "SSL certificate API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519060767/SSL+certificate+API
-space: "LUZ"
-topic: security
-relevance: 0.794
-depth: 2.9
-updated: 2020-11-23
+ai_hash: 1d1b1cac4c89209c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 12
+depth: 2.9
+entities: []
+relevance: 0.794
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519060767/SSL+certificate+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: SSL certificate API
+topic: security
+type: source
+updated: 2020-11-23
 ---
 
 # SSL certificate API
@@ -124,3 +128,14 @@ tags:
 </div>
 
 If the status is ACTIVE then we can get the SSL certificate from this API.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hexonet API Document]]
+- [[SSL Certificate Providers]]
+- [[Update ePost certificate - .epost.ch - in PROD]]
+- [[Login]]
+- [[Rerun Own domain migration api for all tenant]]
+
+%% ai-graph-end %%

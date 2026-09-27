@@ -1,7 +1,7 @@
 ---
-ai_hash: 12f90d29f749d7de
+ai_hash: 5523ad27b27d0f22
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-18
 entities: []
 source: sessions 2026-06-18 / 2026-06-20 / 2026-07-13
@@ -53,10 +53,10 @@ Hit in the hook-present deck diagrams (`gen-05.js` / `gen-loops.js`), the AppsFl
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Full-bleed slide images need ~169 aspect or their text renders too small]]
-- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
-- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
-- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
-- [[Narration-synced highlight region-based dimemphasize excalidraw variants + timed xfade]]
+- [[Excalidraw container-bound text does not auto-wrap in the render script]]
+- [[Excalidraw standalone text does not auto-wrap to element width]]
+- [[Excalidraw offline renderer does not auto-wrap bound container text]]
+- [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
+- [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
 
 %% ai-graph-end %%

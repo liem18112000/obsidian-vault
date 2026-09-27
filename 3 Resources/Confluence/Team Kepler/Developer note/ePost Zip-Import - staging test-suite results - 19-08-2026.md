@@ -1,14 +1,20 @@
 ---
-title: "ePost Zip-Import - staging test-suite results - 19/08/2026"
+ai_hash: 45bf14ca89782bcc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49681301505'
+confluence_path: Team Kepler > Developer note > ePost ZIP Import Test Fixture Matrix
 created: 2026-08-20
-updated: 2026-08-20
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- epost
+title: ePost Zip-Import - staging test-suite results - 19/08/2026
+type: source
+updated: 2026-08-20
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49681301505/ePost+Zip-Import+-+staging+test-suite+results+-+19+08+2026
-confluence_id: "49681301505"
-confluence_path: "Team Kepler > Developer note > ePost ZIP Import Test Fixture Matrix"
-tags: [confluence, epost]
 ---
 
 # ePost Zip-Import - staging test-suite results - 19/08/2026
@@ -114,3 +120,14 @@ The job document is **silent** about the bug: it lists `.rejected folder/blocked
 | — | 15R-reupload-same-name | DONE | 0 | 0 | 4 | 0 | 200 | re-upload same name → all 4 SKIPPED (ALREADY_IMPORTED) | PASS |
 | — | 34R-as-15-changed-body | DONE | 0 | 0 | 4 | 0 | 200 | changed bytes, same name+paths → all 4 SKIPPED (content ignored) | PASS |
 | — | 36R-b-as-a-collision | DONE | 1 | 0 | 1 | 0 | 200 | setB as setA's name → overlap `january 001` skipped, `march 003` imported | PASS |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost Zip-Import - dev test-suite results - 18-08-2026]]
+- [[ePost ZIP-import — dev test-suite results - 13-08-2026]]
+- [[ePost ZIP Import Test Fixture Matrix]]
+- [[LUZ-158230 ePost ZIP Import Test Fixture Matrix (Confluence)]]
+- [[LUZ-158230 eArchive Health ZIP import - golden test fixture matrix location]]
+
+%% ai-graph-end %%

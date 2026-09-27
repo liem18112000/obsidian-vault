@@ -1,18 +1,22 @@
 ---
-title: "[Migrate GKE to CloudRun] - Gradually migrate the luz-antivirus to Cloud Run"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49224646657/Migrate+GKE+to+CloudRun+-+Gradually+migrate+the+luz-antivirus+to+Cloud+Run
-space: "LUZ"
-topic: infra
-relevance: 0.855
-depth: 3
-updated: 2026-03-11
+ai_hash: c047e000c3ea79a1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 3
+entities: []
+relevance: 0.855
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49224646657/Migrate+GKE+to+CloudRun+-+Gradually+migrate+the+luz-antivirus+to+Cloud+Run
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: '[Migrate GKE to CloudRun] - Gradually migrate the luz-antivirus to Cloud Run'
+topic: infra
+type: source
+updated: 2026-03-11
 ---
 
 # [Migrate GKE to CloudRun] - Gradually migrate the luz-antivirus to Cloud Run
@@ -142,3 +146,14 @@ For example, with this configuration → *when luz-docs sends requests to the lu
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Migrate GKE to CloudRun - Gradually migrate the luz-antivirus to Cloud Run]]
+- [[Shift GKE traffic to Cloud Run with Istio weighted routing, not a cutover]]
+- [[GKE - Cloud Run Migration Trackers]]
+- [[Apply changes on luz_kubernetes]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

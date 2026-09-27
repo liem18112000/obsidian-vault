@@ -1,18 +1,22 @@
 ---
-title: "Onboarding API - Investigation Identity Provider SSO"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47642247207/Onboarding+API+-+Investigation+Identity+Provider+SSO
-space: "TS"
-topic: programming
-relevance: 0.729
-depth: 2.49
-updated: 2024-04-19
+ai_hash: f0d1eef92fb07053
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.49
+entities: []
+relevance: 0.729
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47642247207/Onboarding+API+-+Investigation+Identity+Provider+SSO
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Onboarding API - Investigation Identity Provider SSO
+topic: programming
+type: source
+updated: 2024-04-19
 ---
 
 # Onboarding API - Investigation Identity Provider SSO
@@ -179,3 +183,14 @@ Create a new (public/confidential)? Client for Canton Bern, grant them the corre
 ![[47642247207-image-20240219-082608.png]]
 
 ![[47642247207-image-20240219-082637.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Copy Proof of Concept Passwordless account login with Keycloak]]
+- [[COSSA Token Exchange — Technical Analysis and Implementation]]
+- [[Proof of Concept Passwordless account login with Keycloak]]
+- [[E-Post API - technical documentation]]
+- [[Proof of Concept Auto login with Keycloak]]
+
+%% ai-graph-end %%

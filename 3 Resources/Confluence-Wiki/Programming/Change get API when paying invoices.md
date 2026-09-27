@@ -1,18 +1,22 @@
 ---
-title: "Change get API when paying invoices"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47212954432/Change+get+API+when+paying+invoices
-space: "LUZ"
-topic: programming
-relevance: 0.762
-depth: 2.73
-updated: 2022-11-18
+ai_hash: d6774c68759f6832
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.762
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47212954432/Change+get+API+when+paying+invoices
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Change get API when paying invoices
+topic: programming
+type: source
+updated: 2022-11-18
 ---
 
 # Change get API when paying invoices
@@ -36,3 +40,14 @@ We did introduce a new **DocumentBookingPaymentService**.java to get the Documen
 And a quick changes in **BankAccountConverter**.java of luz_finance to adapt the new implementation of retrieving data from DB (neither luz_docs or File Manager).
 
 <a href="https://bitbucket.org/axonivy-prod/luz_finance/pull-requests/6314/change-get-api-when-paying-invoices" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/axonivy-prod/luz_finance/pull-requests/6314/change-get-api-when-paying-invoices</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Impact of code changes on common components]]
+- [[Get article thumbnail API - related modules]]
+- [[Merging process]]
+- [[Invoice Run & luz-docs Archive Improvements]]
+- [[Programming]]
+
+%% ai-graph-end %%

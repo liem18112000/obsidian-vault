@@ -1,18 +1,22 @@
 ---
-title: "The create of company performance and proposal"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20490587347/The+create+of+company+performance+and+proposal
-space: "LUZ"
-topic: architecture
-relevance: 0.746
-depth: 2.44
-updated: 2019-06-11
+ai_hash: e0115a84d3c81a02
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.44
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20490587347/The+create+of+company+performance+and+proposal
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: The create of company performance and proposal
+topic: architecture
+type: source
+updated: 2019-06-11
 ---
 
 # The create of company performance and proposal
@@ -95,3 +99,14 @@ Create company vat :POST /luzfin_finance/api/779205f5-ce7e-4ac5-9767-142bead65af
   
 
 - **The proposal overview of whole process create company** **and the result around 7s, if we can reduce time to call API create company(luz_compensation,xent_rest) then the result around 3 to 5s**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[Analyze N+1 queries for REST API calculate payslips for overview salary processing]]
+- [[Measure create API - investigate performance]]
+- [[Measure API luz-docs]]
+
+%% ai-graph-end %%

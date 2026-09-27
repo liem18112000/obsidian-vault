@@ -1,18 +1,22 @@
 ---
-title: "Support OAuth 2 for 3rd party app ADDMIN"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/47032271178/Support+OAuth+2+for+3rd+party+app+ADDMIN
-space: "Arrow"
-topic: security
-relevance: 0.701
-depth: 2.5
-updated: 2025-03-18
+ai_hash: 0b80cfdda7802644
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 19
+depth: 2.5
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/47032271178/Support+OAuth+2+for+3rd+party+app+ADDMIN
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - security
-  - space/arrow
+- confluence
+- security
+- space/arrow
+title: Support OAuth 2 for 3rd party app ADDMIN
+topic: security
+type: source
+updated: 2025-03-18
 ---
 
 # Support OAuth 2 for 3rd party app ADDMIN
@@ -80,3 +84,14 @@ That the reason why the 3rd app (Addmin) wants Klara to support OAuth in order f
 <span class="confluence-jim-macro jira-issue conf-macro output-block" client-id="SINGLE_d3f195c5-8684-3b17-b4f6-e9ee3a0b0fe2_47032271178_712020:87b0f7f1-aaab-4406-a25d-fa0fc075c4d4" hasbody="false" jira-key="LUZ-69044" macro-id="0690b836-11aa-4732-8308-0482d82cf4fb" macro-name="jira"> <a href="https://axonivy.atlassian.net/browse/LUZ-69044" class="jira-issue-key"><span class="aui-icon aui-icon-wait issue-placeholder"> </span>LUZ-69044</a> - <span class="summary">Getting issue details...</span> <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-default issue-placeholder">STATUS</span> </span>
 
 # [\[myKLARA\] app flows and offline sessions](https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47009628801/myKLARA+app+flows+and+offline+sessions)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Proof of Concept Auto login with Keycloak]]
+- [[KLARA Integration (request access token & call API)]]
+- [[Implement Corporate API Access (LUZ-17959)]]
+- [[Joint review 0.03.24.00 (16.06.2026 - 29.06.2026)]]
+- [[Understanding Keycloak Authorization Code flow]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 9d62ceba94b7c004
+ai_hash: 43b8785c6b1a9c48
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-22
 entities: []
 source: session 2026-07-22; canary tenant unset 2026-07-22

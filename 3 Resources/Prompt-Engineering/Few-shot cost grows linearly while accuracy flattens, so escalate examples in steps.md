@@ -1,10 +1,20 @@
 ---
-title: "Few-shot cost grows linearly while accuracy flattens, so escalate examples in steps"
+ai_hash: 4176a94b81958eb9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Manual Prompt Compression Techniques - Deep Dive (2026-04-13)'
 status: seedling
-source: "Confluence: Manual Prompt Compression Techniques - Deep Dive (2026-04-13)"
-tags: [prompt-engineering, few-shot, llm, cost-optimization, token-budget]
+tags:
+- prompt-engineering
+- few-shot
+- llm
+- cost-optimization
+- token-budget
+title: Few-shot cost grows linearly while accuracy flattens, so escalate examples
+  in steps
+type: lesson
 ---
 
 # Few-shot cost grows linearly while accuracy flattens, so escalate examples in steps
@@ -38,3 +48,14 @@ The same principle applies to chain-of-thought: recent results show **zero-shot 
 ## Related
 
 - [[Thinking tokens are billed as output, so effort level is a cost lever]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Thinking tokens are billed as output, so effort level is a cost lever]]
+- [[Route tool-less LLM passes to a cheaper model tier]]
+- [[Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded]]
+- [[LLM query enrichment for a substring-OR matcher must contract, not expand, the token set]]
+- [[Calibrate a cheap-model to LLM cascade threshold using the LLM judge as oracle]]
+
+%% ai-graph-end %%

@@ -1,9 +1,13 @@
 ---
-title: "Architecture (Confluence)"
-type: moc
+ai_hash: e555801e04365c87
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
 tags:
-  - moc
-  - confluence
+- moc
+- confluence
+title: Architecture (Confluence)
+type: moc
 ---
 
 # Architecture — Confluence sources
@@ -73,3 +77,14 @@ tags:
 | 0.71 | [[Proof of concept Export and download storage]] | TP2020 | 2021-12-30 |
 | 0.71 | [[Proof of Concept Passwordless account login with Keycloak]] | HACKA | 2024-09-17 |
 | 0.70 | [[Task List Mass Processing technical notes]] | X4 | 2023-03-21 |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Programming]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[Security]]
+- [[Infrastructure]]
+- [[4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%

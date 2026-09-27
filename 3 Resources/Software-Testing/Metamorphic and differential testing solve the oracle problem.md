@@ -1,5 +1,5 @@
 ---
-ai_hash: f5272e73fc58fe98
+ai_hash: daf2cdf776bc3ac3
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-03
@@ -36,8 +36,8 @@ The **oracle problem**: for many inputs there is no cheap mechanism to decide wh
 **Related notes:**
 - [[Agentic browser testing discover once, compile deterministic, heal only on failure]]
 - [[Assured test generation keep an LLM test only if it builds, passes, and raises coverage]]
+- [[A test oracle is what decides pass or fail, and without one a test is just a script]]
+- [[Oracle strength, not coverage, decides whether a suite catches regressions]]
 - [[AI as an accelerator with a human review gate]]
-- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
-- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
 
 %% ai-graph-end %%

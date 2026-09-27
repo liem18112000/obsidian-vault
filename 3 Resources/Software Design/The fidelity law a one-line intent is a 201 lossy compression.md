@@ -1,5 +1,5 @@
 ---
-ai_hash: feab274303e0f94f
+ai_hash: 699be5a4bcfeef39
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-25
@@ -41,8 +41,10 @@ Related: [[Price one layer lower before accepting a fix]] · [[CONTEXT-GAP vs JU
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Intent composes up the chain, specification stays a leaf property]]
 - [[Price one layer lower before accepting a fix]]
 - [[CONTEXT-GAP vs JUDGMENT-GAP dispose every miss by cause]]
+- [[OpenRig's Intent Hierarchy and Refocus - Analysis and Implementation in Test-Agent-V2]]
 - [[Implementation is the best reviewer a design doc gets]]
 
 %% ai-graph-end %%

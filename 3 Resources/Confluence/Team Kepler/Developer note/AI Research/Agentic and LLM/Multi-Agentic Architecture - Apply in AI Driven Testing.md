@@ -1,14 +1,21 @@
 ---
-title: "Multi-Agentic Architecture: Apply in AI Driven Testing"
+ai_hash: 2abb7a526109ea32
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49259708519'
+confluence_path: Team Kepler > Developer note > AI Research > Agentic and LLM
 created: 2026-03-23
-updated: 2026-03-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- search
+title: 'Multi-Agentic Architecture: Apply in AI Driven Testing'
+type: source
+updated: 2026-03-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49259708519/Multi-Agentic+Architecture+Apply+in+AI+Driven+Testing
-confluence_id: "49259708519"
-confluence_path: "Team Kepler > Developer note > AI Research > Agentic and LLM"
-tags: [confluence, ai-agents, search]
 ---
 
 # Multi-Agentic Architecture: Apply in AI Driven Testing
@@ -440,3 +447,14 @@ python -m helpers.ai.agents.runner requirements LUZ-149716
 # Query stored knowledge
 python -m helpers.ai.agents.runner memory "What API endpoints does luz-docs have?"
 ```
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Multi-Agentic Architecture - Theory]]
+- [[Test-Plan Definition Agent]]
+- [[Code Knowledge Graph - Apply in AI Test Driven]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+- [[Test Executor Agent - Closing the Testing Pipeline Gap]]
+
+%% ai-graph-end %%

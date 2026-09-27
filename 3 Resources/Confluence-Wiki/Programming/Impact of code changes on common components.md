@@ -1,18 +1,22 @@
 ---
-title: "Impact of code changes on common components"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47303492220/Impact+of+code+changes+on+common+components
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2023-02-20
+ai_hash: 36115ab7054adc04
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47303492220/Impact+of+code+changes+on+common+components
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Impact of code changes on common components
+topic: programming
+type: source
+updated: 2023-02-20
 ---
 
 # Impact of code changes on common components
@@ -108,3 +112,14 @@ com/axonivy/luz/components/documents/DocumentViewer</p>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Merging process]]
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[Change get API when paying invoices]]
+- [[Investigate Analyze the API's which call to FileManager]]
+- [[Get article thumbnail API - related modules]]
+
+%% ai-graph-end %%

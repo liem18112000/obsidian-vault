@@ -1,7 +1,7 @@
 ---
-ai_hash: bbf814035b6b0f24
+ai_hash: ea887657d76c82b8
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-30
 entities: []
 source: PROD jwt-service investigation 2026-06-30
@@ -42,8 +42,8 @@ Companion: [[klara-prod is a separate GCP project, not a namespace]]. Applied to
 **Related notes:**
 - [[Cascading DC follow the timeout chain one layer down]]
 - [[Off-mesh services (istio inject=false) have no Istio access logs]]
-- [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
 - [[Luz caller read-timeout settings to jwt-service]]
+- [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
 - [[Log red herrings enclosing class name and baseline-noise lines]]
 
 %% ai-graph-end %%

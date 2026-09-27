@@ -1,7 +1,7 @@
 ---
-ai_hash: 5edb68364879504e
+ai_hash: 8eda6c85010e6f1b
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - AOV
 - Average Order Value

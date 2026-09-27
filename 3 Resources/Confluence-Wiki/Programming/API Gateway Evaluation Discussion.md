@@ -1,18 +1,22 @@
 ---
-title: "API Gateway Evaluation Discussion"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/6898247809/API+Gateway+Evaluation+Discussion
-space: "Arrow"
-topic: programming
-relevance: 0.736
-depth: 2.41
-updated: 2020-04-20
+ai_hash: 2a8306ba4f0b62fe
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.41
+entities: []
+relevance: 0.736
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/6898247809/API+Gateway+Evaluation+Discussion
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: API Gateway Evaluation Discussion
+topic: programming
+type: source
+updated: 2020-04-20
 ---
 
 # API Gateway Evaluation Discussion
@@ -608,3 +612,14 @@ And from what we research, our suggestion is either Kong or Ambassador, Ambassad
 
 References:  
 <a href="https://medium.com/@mahesh.mahadevan/my-experiences-with-api-gateways-8a93ad17c4c4" class="external-link" rel="nofollow">https://medium.com/@mahesh.mahadevan/my-experiences-with-api-gateways-8a93ad17c4c4</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[API Gateway Evaluation]]
+- [[System architecture]]
+- [[Fix evaluation criteria before looking at candidates, and say which one you weight]]
+- [[GKE Kubernetes Gateway API]]
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+
+%% ai-graph-end %%

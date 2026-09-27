@@ -1,7 +1,7 @@
 ---
-ai_hash: 1a23e6f21e39ac7b
+ai_hash: 5f8f8c768ddc6ab0
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-24
 entities:
 - Payrexx
@@ -11,16 +11,19 @@ entities:
 - INVOICE_CREDIT_CARD_TRANSACTION
 - Payrexx/KlaraPay merchant backoffice
 - ISO 8583 decline code
-- KlaraPay API v1.0
+- KlaraPay
+- KlaraPay API (v1.0)
 - ClientResponseFilter
 - PayrexxTransactionRestClient
 - Jackson
-- Webhook resource
-- Payrexx public documentation
-- API transaction object
+- webhook resource
+- Payrexx public docs
 - KlaraPay DTOs
-- Work-Kepler
-- Payrexx ISO 8583 decline code to meaning reference table
+- decline-code field
+- API transaction object
+- Payrexx decline codes
+- service responses
+- raw body
 source: LUZ-157476 session 2026-07-24
 status: seedling
 tags:
@@ -53,22 +56,24 @@ Expectation: Payrexx public docs show no decline-code field on the API transacti
 - [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
 
 **Relations:**
-- KlaraTransactionRequest — *originates from* — luz_online_payment
+- KlaraTransactionRequest — *from* — luz_online_payment
+- KlaraTransactionRequest — *lacks* — code field
 - KlaraTransactionRequest — *cannot reveal* — Payrexx decline codes
-- Payrexx response — *drops* — unknown fields
-- chargeTransactionId — *found in* — INVOICE_CREDIT_CARD_TRANSACTION
+- Payrexx response — *deserialized_by* — Jackson
+- Jackson — *drops* — unknown fields
+- chargeTransactionId — *from* — INVOICE_CREDIT_CARD_TRANSACTION
 - Payrexx/KlaraPay merchant backoffice — *displays* — ISO 8583 decline code
-- KlaraPay API v1.0 — *accessed via* — instance/apiKey credentials
-- KlaraPay API v1.0 — *may contain* — code field
-- ClientResponseFilter — *applied to* — PayrexxTransactionRestClient
+- KlaraPay API (v1.0) — *endpoint* — https://api.klarapay.ch/v1.0/Transaction/{id}
+- KlaraPay API (v1.0) — *may_contain* — decline-code field
+- ClientResponseFilter — *applied_to* — PayrexxTransactionRestClient
 - ClientResponseFilter — *logs* — raw body
-- Payrexx public documentation — *does not show* — decline-code field
-- ISO 8583 decline code — *visible in* — Payrexx/KlaraPay merchant backoffice
+- Payrexx public docs — *show_no* — decline-code field
+- decline-code field — *on* — API transaction object
 - KlaraPay DTOs — *are* — code-blind
 - Jackson — *drops* — Payrexx decline code
-- Payrexx — *has* — ISO 8583 decline code to meaning reference table
-- Work-Kepler — *contains* — Payrexx ISO 8583 decline code to meaning reference table
-- Payrexx — *is associated with* — KlaraPay
-- API transaction object — *is part of* — Payrexx API
+- ISO 8583 decline code — *has* — meaning reference table
+- Payrexx decline codes — *not_available_via* — service responses
+- Payrexx decline codes — *available_via* — chargeTransactionId lookup
+- webhook resource — *used_for* — logging
 
 %% ai-graph-end %%

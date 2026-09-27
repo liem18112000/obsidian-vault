@@ -1,10 +1,19 @@
 ---
-title: "A hash-chained audit log cannot be written in parallel"
+ai_hash: d48612b16214ebc8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: LUZ Critical Concerns - Brief Summary (2025-11-17)'
 status: seedling
-source: "Confluence: LUZ Critical Concerns - Brief Summary (2025-11-17)"
-tags: [audit-logging, cryptography, concurrency, luz-audit, architecture]
+tags:
+- audit-logging
+- cryptography
+- concurrency
+- luz-audit
+- architecture
+title: A hash-chained audit log cannot be written in parallel
+type: concept
 ---
 
 # A hash-chained audit log cannot be written in parallel
@@ -26,3 +35,14 @@ The escape hatch is to break the chain into independently-buildable segments and
 
 - [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
 - [[A hash chain proves integrity but not authorship, so a database admin can silently rebuild it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+- [[LUZ Audit spent 5 database operations per log entry, ~47ms, from chain maintenance]]
+- [[Per-record signatures prove authenticity but not completeness, so deletion and reordering go undetected]]
+- [[A hash chain proves integrity but not authorship, so a database admin can silently rebuild it]]
+- [[LUZ Critical Concerns - Brief Summary]]
+
+%% ai-graph-end %%

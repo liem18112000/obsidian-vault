@@ -1,18 +1,22 @@
 ---
-title: "REST API for deleting EXPENSES documents"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20474847507/REST+API+for+deleting+EXPENSES+documents
-space: "LUZ"
-topic: programming
-relevance: 0.886
-depth: 3
-updated: 2018-11-30
+ai_hash: 8ac3e4802bd6fbe6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.886
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20474847507/REST+API+for+deleting+EXPENSES+documents
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: REST API for deleting EXPENSES documents
+topic: programming
+type: source
+updated: 2018-11-30
 ---
 
 # REST API for deleting EXPENSES documents
@@ -208,3 +212,14 @@ Image 2
 
 
 Image 3
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Upload Document API]]
+- [[Temporary Restfull APIs in Ivy]]
+- [[Delete company - Old way]]
+- [[Empty Trash APIs]]
+- [[IVY API Calls Overview for luz Modules]]
+
+%% ai-graph-end %%

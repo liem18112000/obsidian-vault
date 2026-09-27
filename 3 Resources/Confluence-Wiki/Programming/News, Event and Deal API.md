@@ -1,18 +1,22 @@
 ---
-title: "News, Event and Deal API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20508017980/News+Event+and+Deal+API
-space: "LUZ"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2020-06-18
+ai_hash: cea73673ad880d8b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20508017980/News+Event+and+Deal+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: News, Event and Deal API
+topic: programming
+type: source
+updated: 2020-06-18
 ---
 
 # News, Event and Deal API
@@ -357,3 +361,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz_google Api Document]]
+- [[API Document]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[How to execute API to create sync event for post from tenant schemas to public table]]
+- [[How to run export API for specific tenant and date - Manual export]]
+
+%% ai-graph-end %%

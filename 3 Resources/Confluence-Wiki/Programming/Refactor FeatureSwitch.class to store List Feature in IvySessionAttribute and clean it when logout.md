@@ -1,18 +1,23 @@
 ---
-title: "Refactor FeatureSwitch.class to store List<Feature> in IvySessionAttribute and clean it when logout/switch profile"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47528968567/Refactor+FeatureSwitch.class+to+store+List+Feature+in+IvySessionAttribute+and+clean+it+when+logout+switch+profile
-space: "LUZ"
-topic: programming
-relevance: 0.852
-depth: 3
-updated: 2023-10-23
+ai_hash: 5a374de86f72077a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.852
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47528968567/Refactor+FeatureSwitch.class+to+store+List+Feature+in+IvySessionAttribute+and+clean+it+when+logout+switch+profile
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Refactor FeatureSwitch.class to store List<Feature> in IvySessionAttribute
+  and clean it when logout/switch profile
+topic: programming
+type: source
+updated: 2023-10-23
 ---
 
 # Refactor FeatureSwitch.class to store List<Feature> in IvySessionAttribute and clean it when logout/switch profile
@@ -43,3 +48,14 @@ tags:
 2.  Navigation to other pages → Check if `IvySessionAttribute` already has the `List<Feature>` information → Don't call the API.
 
 3.  Logout/Switch profile, delete the `List<Feature>` information from `IvySessionAttribute`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+- [[LUZ-81908 - Implement test mode without send to the Rhine server]]
+- [[Research on bulk removal of access class]]
+- [[Upgrade Ivy - Known issues]]
+- [[How to show the default sorting value into UI base on the response from API]]
+
+%% ai-graph-end %%

@@ -1,44 +1,43 @@
 ---
-ai_hash: 9622fa4e9951a21c
+ai_hash: 4bbf56054305c1cf
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-27
 entities:
 - KlaraLuz Axon Ivy projects
 - master branch
 - Ivy 10.0.15
 - Ivy 12
-- '2026-07-27'
+- Axon Ivy repos
 - axonivy-prod
 - Bitbucket
 - Ivy Designer 12.0.16
 - klara_prototype/pom.xml
-- ivyVersion
-- ivy.engine.version
-- iar packaging
-- ch.ivyteam.ivy:project-build-plugin
 - luz_components/pom.xml
-- ch.klara.ivy:luz_ivy_common:2.0.01.0
 - klara_theme/pom.xml
-- jar packaging
+- ch.ivyteam.ivy:project-build-plugin
+- ch.klara.ivy:luz_ivy_common:2.0.01.0
 - Maven
 - CLI Maven builds
-- Ivy 10.0.15 cache
-- ~/.m2/settings.xml
-- ch profile
+- Ivy engine 10.0.15
+- Ivy cache path
+- Maven settings.xml
+- ch Maven profile
+- Ivy-10 projects
 - migration prompt
 - Ivy Designer 10.0.16
-- guide
+- Dependency graph
 - luz_ivy_common
 - klara_faces
 - luz_templates
 - luz_common
-- xent_*
+- xent_* modules
 - incamail
 - ch.ivyteam.ivy.addons
 - corporate registry
 - Google Artifact Registry
-- europe-west6-maven.pkg.dev/klara-repo/...
+- Google Artifact Registry URL
+- dependency resolution repositories
 - repo.axongroupio.ch/artifactory
 - EclipseIvy Designer workspace
 - .prefs files
@@ -80,52 +79,52 @@ Implications:
 
 **Related notes:**
 - [[Building KlaraLuz Ivy projects off-VPN by routing Maven through Google Artifact Registry]]
+- [[Add Ivy jars Maven plugin]]
 - [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
 - [[Axon Ivy project anatomy logic split across processes, data classes, HTML dialogs, and Java]]
 - [[Axon Ivy installEngine fails when ivy.engine.directory is stale or unwritable]]
-- [[luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable' compile error usually means a skew]]
 
 **Relations:**
-- KlaraLuz Axon Ivy projects — *are on* — master branch
-- master branch — *targets* — Ivy 10.0.15
-- master branch — *does not target* — Ivy 12
-- KlaraLuz Axon Ivy projects — *are in repo* — axonivy-prod
-- axonivy-prod — *is hosted on* — Bitbucket
-- KlaraLuz Axon Ivy projects — *status as of* — 2026-07-27
-- Ivy Designer 12.0.16 — *is a version of* — Ivy Designer
-- klara_prototype/pom.xml — *sets property* — ivyVersion
-- ivyVersion — *value is* — 10.0.15
-- klara_prototype/pom.xml — *sets property* — ivy.engine.version
-- ivy.engine.version — *value is* — 10.0.15
-- klara_prototype/pom.xml — *uses packaging* — iar packaging
+- KlaraLuz Axon Ivy projects — *use* — master branch
+- KlaraLuz Axon Ivy projects — *target Ivy version* — Ivy 10.0.15
+- KlaraLuz Axon Ivy projects — *do not target Ivy version* — Ivy 12
+- master branch — *is in* — Axon Ivy repos
+- Axon Ivy repos — *are* — axonivy-prod
+- axonivy-prod — *hosted on* — Bitbucket
+- klara_prototype/pom.xml — *configures Ivy version* — Ivy 10.0.15
 - klara_prototype/pom.xml — *uses plugin* — ch.ivyteam.ivy:project-build-plugin
-- luz_components/pom.xml — *uses packaging* — iar packaging
+- klara_prototype/pom.xml — *has packaging type* — iar
+- luz_components/pom.xml — *has packaging type* — iar
 - luz_components/pom.xml — *has parent* — ch.klara.ivy:luz_ivy_common:2.0.01.0
-- ch.klara.ivy:luz_ivy_common:2.0.01.0 — *defines* — Ivy version
-- klara_theme/pom.xml — *uses packaging* — jar packaging
+- klara_theme/pom.xml — *has packaging type* — jar
 - klara_theme/pom.xml — *builds with* — Maven
 - CLI Maven builds — *are compatible with* — Ivy 10.0.15
-- CLI Maven builds — *pin plugin* — ch.ivyteam.ivy:project-build-plugin 10.0.15
-- CLI Maven builds — *pin engine* — Ivy 10.0.15
-- Ivy 10.0.15 — *is cached at* — Ivy 10.0.15 cache
-- ~/.m2/settings.xml — *contains profile* — ch profile
-- Ivy Designer 12.0.16 — *mismatches* — Ivy 10.0.15 projects
-- opening Ivy 10.0.15 projects — *in* — Ivy Designer 12.0.16
-- opening Ivy 10.0.15 projects — *triggers* — migration prompt
-- Ivy Designer 10.0.16 — *is recommended for* — in-IDE development
+- CLI Maven builds — *use plugin* — ch.ivyteam.ivy:project-build-plugin
+- CLI Maven builds — *use engine* — Ivy engine 10.0.15
+- Ivy engine 10.0.15 — *is cached at* — Ivy cache path
+- Maven settings.xml — *contains* — ch Maven profile
+- Ivy Designer 12.0.16 — *mismatches* — Ivy-10 projects
+- Ivy Designer 12.0.16 — *triggers* — migration prompt
+- Ivy Designer 10.0.16 — *is recommended for* — Ivy-10 projects
 - Ivy Designer 10.0.16 — *is* — guide's version
-- KlaraLuz Axon Ivy projects — *depend on* — luz_ivy_common
-- KlaraLuz Axon Ivy projects — *depend on* — klara_faces
-- KlaraLuz Axon Ivy projects — *depend on* — luz_templates
-- KlaraLuz Axon Ivy projects — *depend on* — luz_common
-- KlaraLuz Axon Ivy projects — *depend on* — xent_*
-- KlaraLuz Axon Ivy projects — *depend on* — incamail
-- KlaraLuz Axon Ivy projects — *depend on* — ch.ivyteam.ivy.addons
-- dependencies — *are resolved from* — corporate registry
-- KlaraLuz Axon Ivy projects — *deploy to* — Google Artifact Registry
-- Google Artifact Registry — *is located at* — europe-west6-maven.pkg.dev/klara-repo/...
-- dependency resolution repos — *are configured in* — ~/.m2/settings.xml
-- dependency resolution repos — *include* — repo.axongroupio.ch/artifactory
-- EclipseIvy Designer workspace — *can be pre-configured with* — .prefs files
+- Dependency graph — *includes module* — luz_ivy_common
+- Dependency graph — *includes module* — klara_faces
+- Dependency graph — *includes module* — luz_templates
+- Dependency graph — *includes module* — luz_common
+- Dependency graph — *includes module* — xent_* modules
+- Dependency graph — *includes module* — incamail
+- Dependency graph — *includes module* — ch.ivyteam.ivy.addons
+- luz_ivy_common — *resolved from* — corporate registry
+- klara_faces — *resolved from* — corporate registry
+- luz_templates — *resolved from* — corporate registry
+- luz_common — *resolved from* — corporate registry
+- xent_* modules — *resolved from* — corporate registry
+- incamail — *resolved from* — corporate registry
+- ch.ivyteam.ivy.addons — *resolved from* — corporate registry
+- Projects — *deploy to* — Google Artifact Registry
+- Google Artifact Registry — *has URL* — Google Artifact Registry URL
+- dependency resolution repositories — *configured in* — Maven settings.xml
+- dependency resolution repositories — *include* — repo.axongroupio.ch/artifactory
+- EclipseIvy Designer workspace — *configured by* — .prefs files
 
 %% ai-graph-end %%

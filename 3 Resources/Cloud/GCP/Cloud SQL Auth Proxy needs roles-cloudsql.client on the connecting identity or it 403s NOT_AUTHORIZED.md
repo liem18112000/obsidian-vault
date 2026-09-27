@@ -1,7 +1,7 @@
 ---
-ai_hash: 67791a52c09c4a84
+ai_hash: d28784022755d379
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-06
 entities: []
 source: vinnstack connect-cloud-db.ps1 2026-07-06; vinnstack GKE sign-in failure 2026-07-04
@@ -46,9 +46,9 @@ Gotchas: the check itself needs `resourcemanager.projects.getIamPolicy`, so a fa
 
 **Related notes:**
 - [[GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]
+- [[Cloud Run's managed cloudsql socket does not reach sidecar containers]]
 - [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
 - [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
-- [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
-- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+- [[Cloud Run mounts the Cloud SQL cloudsql socket only into the ingress container, not sidecars]]
 
 %% ai-graph-end %%

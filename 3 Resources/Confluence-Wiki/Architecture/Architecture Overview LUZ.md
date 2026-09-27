@@ -1,18 +1,22 @@
 ---
-title: "Architecture Overview LUZ"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2507907231/Architecture+Overview+LUZ
-space: "AI"
-topic: architecture
-relevance: 0.75
-depth: 2.39
-updated: 2020-02-11
+ai_hash: 61aa6e04eadfdf07
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.39
+entities: []
+relevance: 0.75
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2507907231/Architecture+Overview+LUZ
+space: AI
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ai
+- confluence
+- architecture
+- space/ai
+title: Architecture Overview LUZ
+topic: architecture
+type: source
+updated: 2020-02-11
 ---
 
 # Architecture Overview LUZ
@@ -351,3 +355,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice API Java Client]]
+- [[LUZ DevOps Next Gen (proposal and discussion)]]
+- [[Document key concepts and architecture of sealing modules]]
+- [[One API Module Responsibilities]]
+- [[Add Ivy jars Maven plugin]]
+
+%% ai-graph-end %%

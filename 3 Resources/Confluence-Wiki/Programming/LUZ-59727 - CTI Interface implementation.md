@@ -1,18 +1,22 @@
 ---
-title: "LUZ-59727 - CTI Interface | implementation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/31171779824/LUZ-59727+-+CTI+Interface+implementation
-space: "TS"
-topic: programming
-relevance: 0.746
-depth: 2.57
-updated: 2021-08-17
+ai_hash: c54b5aa4509f7abc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.57
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/31171779824/LUZ-59727+-+CTI+Interface+implementation
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: LUZ-59727 - CTI Interface | implementation
+topic: programming
+type: source
+updated: 2021-08-17
 ---
 
 # LUZ-59727 - CTI Interface | implementation
@@ -212,3 +216,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+- [[LUZ-75886 Part 1 Implement real-time API updates]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[LUZ-79226 PayPal in Online Shop - Adaption KLARA Pay - Gateway API]]
+
+%% ai-graph-end %%

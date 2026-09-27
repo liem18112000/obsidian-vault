@@ -1,18 +1,22 @@
 ---
-title: "Document key concepts and architecture of sealing modules"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49116020740/Document+key+concepts+and+architecture+of+sealing+modules
-space: "LUZ"
-topic: architecture
-relevance: 0.864
-depth: 3
-updated: 2026-02-04
+ai_hash: c5790993e96cd90d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 3
+entities: []
+relevance: 0.864
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49116020740/Document+key+concepts+and+architecture+of+sealing+modules
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Document key concepts and architecture of sealing modules
+topic: architecture
+type: source
+updated: 2026-02-04
 ---
 
 # Document key concepts and architecture of sealing modules
@@ -153,3 +157,14 @@ curl http://localhost:3000
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture]]
+- [[LUZ Audit - Basic Understanding Guide]]
+- [[Architecture Overview LUZ]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[Vault overview]]
+
+%% ai-graph-end %%

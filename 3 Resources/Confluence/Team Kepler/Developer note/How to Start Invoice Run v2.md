@@ -1,14 +1,20 @@
 ---
-title: "How to Start Invoice Run v2"
+ai_hash: de025d54d1611fd3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48979247109'
+confluence_path: Team Kepler > Developer note
 created: 2025-12-16
-updated: 2025-12-18
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+title: How to Start Invoice Run v2
+type: source
+updated: 2025-12-18
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48979247109/How+to+Start+Invoice+Run+v2
-confluence_id: "48979247109"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, invoice-run]
 ---
 
 # How to Start Invoice Run v2
@@ -253,3 +259,14 @@ volumes:
 ```
 
 - After setup to run the luz-store
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Port forward and Docker compose]]
+- [[Invoice Run V2UAT - No error when luz-store is running with multiple pods]]
+- [[Port Forward to call GCP API in localhost]]
+- [[Call API trigger Vacuum POS schema on PROD]]
+- [[How to call generic interface document API on dev]]
+
+%% ai-graph-end %%

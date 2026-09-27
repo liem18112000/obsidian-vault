@@ -1,18 +1,22 @@
 ---
-title: "Grafana K6 load test experience"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48883532608/Grafana+K6+load+test+experience
-space: "TS"
-topic: infra
-relevance: 0.716
-depth: 2.67
-updated: 2025-11-17
+ai_hash: 7db20aeae9afbb2a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.67
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48883532608/Grafana+K6+load+test+experience
+space: TS
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/ts
+- confluence
+- infra
+- space/ts
+title: Grafana K6 load test experience
+topic: infra
+type: source
+updated: 2025-11-17
 ---
 
 # Grafana K6 load test experience
@@ -124,3 +128,14 @@ const personWithId10 = data[10]
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[EPC API - Load Test]]
+- [[One API end to end testing]]
+- [[Count Fan-out (K) Benchmark on Performance Env]]
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+- [[Test parallelize executor]]
+
+%% ai-graph-end %%

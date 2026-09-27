@@ -1,18 +1,22 @@
 ---
-title: "Ionic/angular"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47235399737/Ionic+angular
-space: "Helios"
-topic: programming
-relevance: 0.906
-depth: 3
-updated: 2022-12-15
+ai_hash: 269eabf07c7b7fd2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.906
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47235399737/Ionic+angular
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Ionic/angular
+topic: programming
+type: source
+updated: 2022-12-15
 ---
 
 # Ionic/angular
@@ -250,3 +254,12 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Upgrade Ivy - Known issues]]
+- [[Non-Java modules work with cgroupv2]]
+- [[Kotlin migration plan]]
+
+%% ai-graph-end %%

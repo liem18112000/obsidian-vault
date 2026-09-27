@@ -1,46 +1,43 @@
 ---
-ai_hash: b1d0a5edb2ade1ef
+ai_hash: a7282059b86b891c
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities:
-- luz-docs field
+- luz-docs
 - fan-out count partition key
 - LUZ-154613
-- materialised docs
-- gateway
-- NATIVE indexed range
-- typed fields
-- coercion
-- $toObjectId
-- $dateFromString
-- $expr
-- full scan
-- K buckets
 - _id
 - ObjectId
-- $in
+- gateway
 - _createdDate
 - _updatedDate
 - BSON Date
 - JsonStoreSearchQueryUtil.buildDateFromStringQuery
 - _versionNumber
-- int
 - _isPublic
-- bool
 - _createdBy
 - _updatedBy
 - name
 - _sizeInBytes
+- dedicated stored field
 - _countShard
 - SHARD_SPACE
 - Partition the materialized count on a uniform _countShard int, not _id
 - MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index
   (full scan)
+- $expr
+- $toObjectId
+- $dateFromString
+- scan
 - undercount
-- requirements
-- dedicated stored field
-- balance
+- cardinality/spread
+- plain scalar
+- present on 100% of materialised docs
+- native indexed range
+- balance K buckets
+- correct+fast+balanced fan-out
+- range query
 source: LUZ-154613 session 2026-06-16
 status: seedling
 tags:
@@ -81,76 +78,57 @@ Therefore a dedicated stored field is required for a correct+fast+balanced fan-o
 - [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
 
 **Relations:**
-- luz-docs field — *is surveyed for* — fan-out count partition key
+- luz-docs — *needs* — fan-out count partition key
 - LUZ-154613 — *is a* — survey
-- fan-out count partition key — *has* — requirements
-- requirements — *include* — present on 100% of materialised docs
-- requirements — *include* — plain scalar
-- requirements — *include* — enough cardinality/spread
-- plain scalar — *enables* — NATIVE indexed range
-- NATIVE indexed range — *is performed by* — gateway
-- typed fields — *force* — coercion
-- coercion — *occurs inside* — $expr
-- coercion — *causes* — full scan
-- $toObjectId — *is a type of* — coercion
-- $dateFromString — *is a type of* — coercion
-- $expr — *causes* — full scan
-- enough cardinality/spread — *is needed for* — balance
-- balance — *of* — K buckets
-- _id — *is a* — luz-docs field
-- _id — *has type* — ObjectId
-- _id — *is* — always present
-- _id — *requires* — $toObjectId
-- $toObjectId — *for* — range queries
-- $toObjectId — *with* — $expr
-- $toObjectId — *on* — _id
-- $toObjectId — *causes* — full scan
-- _createdDate — *is a* — luz-docs field
-- _updatedDate — *is a* — luz-docs field
-- _createdDate — *has type* — BSON Date
-- _updatedDate — *has type* — BSON Date
-- _createdDate — *is* — always present
-- _updatedDate — *is* — always present
-- _createdDate — *has* — high cardinality
-- _updatedDate — *has* — high cardinality
-- BSON Date — *needs* — $dateFromString
-- $dateFromString — *for* — string bounds
-- $dateFromString — *is used in* — JsonStoreSearchQueryUtil.buildDateFromStringQuery
-- $dateFromString — *with* — $expr
-- $dateFromString — *causes* — full scan
-- _createdDate — *is* — time-skewed
-- _updatedDate — *is* — time-skewed
-- _versionNumber — *is a* — luz-docs field
-- _versionNumber — *has type* — int
-- _versionNumber — *is* — always present
-- _versionNumber — *is* — degenerate
-- _isPublic — *is a* — luz-docs field
-- _isPublic — *has type* — bool
-- _isPublic — *has* — no spread
-- _createdBy — *is a* — luz-docs field
-- _updatedBy — *is a* — luz-docs field
-- _createdBy — *has* — no spread
-- _updatedBy — *has* — no spread
-- name — *is a* — luz-docs field
-- _sizeInBytes — *is a* — luz-docs field
-- name — *is a* — plain scalar
-- _sizeInBytes — *is a* — plain scalar
-- name — *has* — good spread
-- _sizeInBytes — *has* — good spread
-- name — *is not* — guaranteed on every doc
-- _sizeInBytes — *is not* — guaranteed on every doc
-- not guaranteed on every doc — *causes* — undercount
-- existing luz-docs field — *does not satisfy* — requirements
-- dedicated stored field — *is* — required
-- dedicated stored field — *for* — fan-out count partition key
+- survey — *evaluates fields for* — fan-out count partition key
+- fan-out count partition key — *requires* — present on 100% of materialised docs
+- fan-out count partition key — *requires* — plain scalar
+- fan-out count partition key — *requires* — cardinality/spread
+- _id — *is a field of* — luz-docs
+- _id — *is type* — ObjectId
+- _id — *is* — present on 100% of materialised docs
+- ObjectId — *requires* — $expr
+- ObjectId — *requires* — $toObjectId
+- $expr — *causes* — scan
+- $toObjectId — *causes* — scan
+- _createdDate — *is a field of* — luz-docs
+- _createdDate — *is type* — BSON Date
+- _createdDate — *is* — present on 100% of materialised docs
+- _updatedDate — *is a field of* — luz-docs
+- _updatedDate — *is type* — BSON Date
+- _updatedDate — *is* — present on 100% of materialised docs
+- BSON Date — *requires* — $expr
+- BSON Date — *requires* — $dateFromString
+- $dateFromString — *causes* — scan
+- JsonStoreSearchQueryUtil.buildDateFromStringQuery — *uses* — $dateFromString
+- _versionNumber — *is a field of* — luz-docs
+- _versionNumber — *is type* — plain scalar
+- _versionNumber — *is* — present on 100% of materialised docs
+- _versionNumber — *lacks* — cardinality/spread
+- _isPublic — *is a field of* — luz-docs
+- _isPublic — *lacks* — cardinality/spread
+- _createdBy — *is a field of* — luz-docs
+- _createdBy — *lacks* — cardinality/spread
+- _updatedBy — *is a field of* — luz-docs
+- _updatedBy — *lacks* — cardinality/spread
+- name — *is a field of* — luz-docs
+- name — *lacks* — present on 100% of materialised docs
+- name — *causes* — undercount
+- _sizeInBytes — *is a field of* — luz-docs
+- _sizeInBytes — *lacks* — present on 100% of materialised docs
+- _sizeInBytes — *causes* — undercount
+- dedicated stored field — *is required for* — correct+fast+balanced fan-out
 - _countShard — *is a* — dedicated stored field
-- _countShard — *is a* — uniform int
-- _countShard — *is in range* — [0, SHARD_SPACE)
-- _countShard — *enables* — NATIVE indexed range
-- _countShard — *enables* — equal cuts balance
-- Partition the materialized count on a uniform _countShard int, not _id — *is related to* — _countShard
-- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan) — *is related to* — $expr
-- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan) — *is related to* — $toObjectId
-- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan) — *describes* — full scan
+- _countShard — *is type* — plain scalar
+- _countShard — *has range* — [0, SHARD_SPACE)
+- _countShard — *enables* — native indexed range
+- _countShard — *enables* — balance K buckets
+- Partition the materialized count on a uniform _countShard int, not _id — *justifies* — _countShard
+- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan) — *explains issue with* — _id
+- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan) — *explains issue with* — $expr
+- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan) — *explains issue with* — $toObjectId
+- range query — *uses* — $expr
+- range query — *uses* — $toObjectId
+- range query — *uses* — $dateFromString
 
 %% ai-graph-end %%

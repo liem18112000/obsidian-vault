@@ -1,5 +1,5 @@
 ---
-ai_hash: 46ace4d1c68bbaf0
+ai_hash: 7bed6c6923b4006e
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-03
@@ -39,7 +39,7 @@ Match on the **specific, structured** form, not the bare number:
 - [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
 - [[gcloud logging read --order=asc silently ignores --freshness]]
 - [[gcloud logging read --freshness is unreliable with broad OR filters; use explicit timestamp bound]]
+- [[Error volume and error severity are independent, so triage by impact not by count]]
 - [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
-- [[Log red herrings enclosing class name and baseline-noise lines]]
 
 %% ai-graph-end %%

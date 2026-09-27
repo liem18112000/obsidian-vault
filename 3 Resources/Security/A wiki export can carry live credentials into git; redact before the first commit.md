@@ -1,10 +1,22 @@
 ---
-title: "A wiki export can carry live credentials into git; redact before the first commit"
+ai_hash: 64dca4e976f047b5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: session 2026-09-27 (Confluence import push blocked by GitHub secret scanning)
 status: seedling
-source: "session 2026-09-27 (Confluence import push blocked by GitHub secret scanning)"
-tags: [security, secrets, git, migration, push-protection, gcp, gotcha]
+tags:
+- security
+- secrets
+- git
+- migration
+- push-protection
+- gcp
+- gotcha
+title: A wiki export can carry live credentials into git; redact before the first
+  commit
+type: lesson
 ---
 
 # A wiki export can carry live credentials into git; redact before the first commit
@@ -37,3 +49,14 @@ And the part a git fix does not solve: **the credentials are still live in the w
 
 - [[Verify a migration by reference parity with the source]]
 - [[not internal consistency]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+- [[Rotate credentials by verifying the new one before deleting the old]]
+- [[Finding intentional k8s config PRs in luz_kubernetes filter out image-hash + merge drift]]
+- [[GitHub Actions masks a secret's VALUE everywhere - a plaintext field logging as means it equals a secret]]
+- [[A hardcoded allowlist becomes a security boundary, not just data, once it gates credentialed access]]
+
+%% ai-graph-end %%

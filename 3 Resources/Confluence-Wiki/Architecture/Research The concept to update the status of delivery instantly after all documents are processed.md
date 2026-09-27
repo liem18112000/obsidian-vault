@@ -1,18 +1,23 @@
 ---
-title: "Research: The concept to update the status of delivery instantly after all documents are processed"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47889547477/Research+The+concept+to+update+the+status+of+delivery+instantly+after+all+documents+are+processed
-space: "HACKA"
-topic: architecture
-relevance: 0.81
-depth: 2.67
-updated: 2025-06-23
+ai_hash: c72436bbb4b6ccf2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 2.67
+entities: []
+relevance: 0.81
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47889547477/Research+The+concept+to+update+the+status+of+delivery+instantly+after+all+documents+are+processed
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/hacka
+- confluence
+- architecture
+- space/hacka
+title: 'Research: The concept to update the status of delivery instantly after all
+  documents are processed'
+topic: architecture
+type: source
+updated: 2025-06-23
 ---
 
 # Research: The concept to update the status of delivery instantly after all documents are processed
@@ -131,3 +136,14 @@ After discussing, we agreed to build the message when we know the status of the 
 
 
 ![[47889547477-Duplicate message delivery queue.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[5. How to extend modify ONE API delivery API Research]]
+- [[Copy 5. How to extend modify ONE API delivery API Research]]
+- [[Regular Load Test Performance Test of OneAPI]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+
+%% ai-graph-end %%

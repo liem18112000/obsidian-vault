@@ -1,10 +1,19 @@
 ---
-title: "Strike what every option shares to find the real architecture decision"
+ai_hash: 8a5c4427f5d12fb1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Proposal eArchived architecture direction for ePost web 2 (Helios)'
 status: seedling
-source: "Confluence: Proposal eArchived architecture direction for ePost web 2 (Helios)"
-tags: [architecture, decision-making, adr, proposals, confluence-distilled]
+tags:
+- architecture
+- decision-making
+- adr
+- proposals
+- confluence-distilled
+title: Strike what every option shares to find the real architecture decision
+type: lesson
 ---
 
 # Strike what every option shares to find the real architecture decision
@@ -36,3 +45,14 @@ Source: [[Proposal eArchived architecture direction for ePost web 2]] (Helios, C
 ## Related
 
 - [[Proposal eArchived architecture direction for ePost web 2]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Proposal eArchived architecture direction for ePost web 2]]
+- [[Share features as vertical slices with app-owned routes and an injected adapter]]
+- [[Discuss LUZ-154249 Architecture for shared components features between apps]]
+- [[Architecture]]
+- [[Test the decisions that override the story description, not the description]]
+
+%% ai-graph-end %%

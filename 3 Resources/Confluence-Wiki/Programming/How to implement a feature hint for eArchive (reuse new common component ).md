@@ -1,18 +1,22 @@
 ---
-title: "How to implement a feature hint for eArchive (reuse new common component )"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47237169363/How+to+implement+a+feature+hint+for+eArchive+reuse+new+common+component
-space: "TP2020"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2022-12-15
+ai_hash: 300f3ec18079e8dc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47237169363/How+to+implement+a+feature+hint+for+eArchive+reuse+new+common+component
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: How to implement a feature hint for eArchive (reuse new common component )
+topic: programming
+type: source
+updated: 2022-12-15
 ---
 
 # How to implement a feature hint for eArchive (reuse new common component )
@@ -579,3 +583,14 @@ Reference story: <a href="https://axonivy.atlassian.net/browse/LUZ-89751" class=
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[Business concept for frontend]]
+- [[Test and code review report template]]
+- [[Test and code review report template.2.93]]
+- [[00. Test and code review report template]]
+
+%% ai-graph-end %%

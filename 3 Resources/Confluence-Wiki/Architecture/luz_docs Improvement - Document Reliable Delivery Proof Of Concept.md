@@ -1,18 +1,22 @@
 ---
-title: "luz_docs Improvement - Document Reliable Delivery Proof Of Concept"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47566880791/luz_docs+Improvement+-+Document+Reliable+Delivery+Proof+Of+Concept
-space: "LUZ"
-topic: architecture
-relevance: 0.81
-depth: 2.67
-updated: 2023-11-23
+ai_hash: 5aa83493aefc3b33
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.67
+entities: []
+relevance: 0.81
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47566880791/luz_docs+Improvement+-+Document+Reliable+Delivery+Proof+Of+Concept
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: luz_docs Improvement - Document Reliable Delivery Proof Of Concept
+topic: architecture
+type: source
+updated: 2023-11-23
 ---
 
 # luz_docs Improvement - Document Reliable Delivery Proof Of Concept
@@ -129,3 +133,14 @@ tags:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research The concept to update the status of delivery instantly after all documents are processed]]
+- [[Retry for storing documents from One API to luz_docs_view_controller]]
+- [[High-Level Design - ONE API Enricher-First Integration]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[Bottleneck analysis large-recipient deliveries & cross-sender impact]]
+
+%% ai-graph-end %%

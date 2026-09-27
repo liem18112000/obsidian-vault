@@ -1,18 +1,22 @@
 ---
-title: "Deploy module GKE with a public url"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48923050045/Deploy+module+GKE+with+a+public+url
-space: "Helios"
-topic: infra
-relevance: 0.757
-depth: 2.84
-updated: 2025-12-01
+ai_hash: ced1997b77f81273
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 13
+depth: 2.84
+entities: []
+relevance: 0.757
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48923050045/Deploy+module+GKE+with+a+public+url
+space: Helios
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/helios
+- confluence
+- infra
+- space/helios
+title: Deploy module GKE with a public url
+topic: infra
+type: source
+updated: 2025-12-01
 ---
 
 # Deploy module GKE with a public url
@@ -122,3 +126,14 @@ For example,
 
 
 **When everything is done, we can paste your config into webclient-gateway.yaml and commit it.**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy Google Cloud Run for new module]]
+- [[Recipe Introduce a Global HTTP(S) Load Balancer on GCP at KLARA]]
+- [[GKE Kubernetes Gateway API]]
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+- [[Kubernetes knowledge]]
+
+%% ai-graph-end %%

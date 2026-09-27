@@ -1,18 +1,22 @@
 ---
-title: "Enhance performance - Research on Parallel"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47189918209/Enhance+performance+-+Research+on+Parallel
-space: "TP2020"
-topic: programming
-relevance: 0.703
-depth: 2.41
-updated: 2022-10-06
+ai_hash: 650819438a555090
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 19
+depth: 2.41
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47189918209/Enhance+performance+-+Research+on+Parallel
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: Enhance performance - Research on Parallel
+topic: programming
+type: source
+updated: 2022-10-06
 ---
 
 # Enhance performance - Research on Parallel
@@ -275,3 +279,14 @@ serviceTime = total - waitingTime = 12.8
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance pain points]]
+- [[Concurrency Design Patterns]]
+- [[Research on bulk removal of access class]]
+- [[eArchive performance — luz-epost-business-web calls the count API on every search]]
+- [[Prompt Performance Code Review]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 0aa01a791b6a7cab
+ai_hash: 174c1a5ad0d27846
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-14
 entities: []
 source: live run 2026-06-14
@@ -37,7 +37,7 @@ Symptom cluster that means the saved Facebook session in `session/fb_session.jso
 - [[Facebook shows a See more on Facebook login dialog when the session is logged out]]
 - [[FB photofbid= links scrape as post mode; filename id falls back to na]]
 - [[Facebook page userID is the viewer not the profile owner]]
-- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
 - [[SameSite=None cookies require Secure or Chromium drops them]]
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
 
 %% ai-graph-end %%

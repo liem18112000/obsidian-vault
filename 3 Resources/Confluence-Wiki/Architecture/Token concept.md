@@ -1,18 +1,22 @@
 ---
-title: "Token concept"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675776049/Token+concept
-space: "LUZCOMP"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2016-09-04
+ai_hash: 876c0dc64352ded8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675776049/Token+concept
+space: LUZCOMP
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luzcomp
+- confluence
+- architecture
+- space/luzcomp
+title: Token concept
+topic: architecture
+type: source
+updated: 2016-09-04
 ---
 
 # Token concept
@@ -103,3 +107,14 @@ public class JWTWriterTest {
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vault overview]]
+- [[Two-grade JWTs solve the multi-tenant bootstrap basic token discovers tenants]]
+- [[Token JWT Security]]
+- [[Truncating a JWT breaks signature verification and surfaces as 500 not 401]]
+- [[Authorization]]
+
+%% ai-graph-end %%

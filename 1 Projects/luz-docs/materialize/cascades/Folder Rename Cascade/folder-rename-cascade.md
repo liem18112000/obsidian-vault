@@ -1,17 +1,22 @@
 ---
-ai_hash: 2a7cbe09c4a3efe9
+ai_hash: 24e9d160c2642f90
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 entities:
-- Folder Rename Cascade
+- folder-rename-cascade
 - LUZ-154157
-- eArchive backend P1.4.3 cascade changes
-- kepler/sprint-157/LUZ-154157-...
+- eArchive backend P1.4.3
 - dev
 - 3661b7c
 - folder
 - document
-- system
+- _folderNames
+- PUT /folders/{id}
+- PATCH /folders/{id}
+- MongoDB
+- aggregation-pipeline
+- updateMany
+- materializeCascade
 - Overview
 - Trigger Flow
 - Cascade Attempt
@@ -21,17 +26,8 @@ entities:
 - Operational Notes
 - Decision Log
 - Glossary for Newbies
-- PUT /folders/{id}
-- PATCH /folders/{id}
-- _folderNames
-- MongoDB
-- aggregation-pipeline
-- updateMany
-- materializeCascade collection
-- tenant
 - folderIds
-- display name
-- server
+- system
 ---
 
 # Folder Rename Cascade
@@ -105,40 +101,33 @@ The folder ID stays stable. Only the stored display name changes.
 - [[luz_docs has two materialize cascade delivery mechanisms]]
 
 **Relations:**
-- Folder Rename Cascade — *is associated with ticket* — LUZ-154157
-- LUZ-154157 — *describes* — eArchive backend P1.4.3 cascade changes
-- Folder Rename Cascade — *uses branch* — kepler/sprint-157/LUZ-154157-...
-- Folder Rename Cascade — *rolled out to* — dev
+- folder-rename-cascade — *is ticket* — LUZ-154157
+- LUZ-154157 — *is part of* — eArchive backend P1.4.3
+- folder-rename-cascade — *rolled out to* — dev
 - dev — *has latest tag* — 3661b7c
-- Folder Rename Cascade — *explains* — folder rename
-- folder rename — *requires system to update* — document
-- Folder Rename Cascade — *has part* — Overview
-- Folder Rename Cascade — *has part* — Trigger Flow
-- Folder Rename Cascade — *has part* — Cascade Attempt
-- Folder Rename Cascade — *has part* — Marker State Machine
-- Folder Rename Cascade — *has part* — Retry Flow
-- Folder Rename Cascade — *has part* — Files of Record
-- Folder Rename Cascade — *has part* — Operational Notes
-- Folder Rename Cascade — *has part* — Decision Log
-- Folder Rename Cascade — *has part* — Glossary for Newbies
-- Overview — *is followed by* — Trigger Flow
-- Trigger Flow — *is followed by* — Cascade Attempt
-- Cascade Attempt — *is followed by* — Marker State Machine
-- Marker State Machine — *is followed by* — Retry Flow
-- folder — *is renamed via* — PUT /folders/{id}
-- folder — *is renamed via* — PATCH /folders/{id}
-- document — *references* — folder
-- document — *must update* — _folderNames
-- update — *runs on* — server
-- update — *uses* — MongoDB
-- update — *uses* — aggregation-pipeline
-- update — *uses* — updateMany
-- system — *stores unfinished work in* — materializeCascade collection
-- materializeCascade collection — *is for* — tenant
-- document — *stores* — folderIds
+- folder-rename-cascade — *explains* — folder
+- folder — *rename affects* — document
 - document — *stores* — _folderNames
-- folderIds — *is matched with* — _folderNames
-- _folderNames — *stores* — display name
-- folderIds — *stays stable during* — folder rename
+- folder — *rename triggered by* — PUT /folders/{id}
+- folder — *rename triggered by* — PATCH /folders/{id}
+- _folderNames — *updated by* — MongoDB
+- MongoDB — *uses* — aggregation-pipeline
+- aggregation-pipeline — *performs* — updateMany
+- updateMany — *modifies* — document
+- system — *uses collection* — materializeCascade
+- materializeCascade — *supports* — Retry Flow
+- folder-rename-cascade — *includes topic* — Overview
+- folder-rename-cascade — *includes topic* — Trigger Flow
+- folder-rename-cascade — *includes topic* — Cascade Attempt
+- folder-rename-cascade — *includes topic* — Marker State Machine
+- folder-rename-cascade — *includes topic* — Retry Flow
+- folder-rename-cascade — *includes topic* — Files of Record
+- folder-rename-cascade — *includes topic* — Operational Notes
+- folder-rename-cascade — *includes topic* — Decision Log
+- folder-rename-cascade — *includes topic* — Glossary for Newbies
+- document — *stores* — folderIds
+- folderIds — *is paired with* — _folderNames
+- folder — *ID is stable* — folderIds
+- folder — *display name changes* — _folderNames
 
 %% ai-graph-end %%

@@ -1,14 +1,22 @@
 ---
-title: "Performance Test: 100% Thumbnail Cloud Run"
+ai_hash: 0c113ebbd89b5524
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49314463780'
+confluence_path: Team Kepler > Developer note
 created: 2026-04-10
-updated: 2026-04-13
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+- cloud-run
+- thumbnail
+title: 'Performance Test: 100% Thumbnail Cloud Run'
+type: source
+updated: 2026-04-13
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49314463780/Performance+Test+100+Thumbnail+Cloud+Run
-confluence_id: "49314463780"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, performance, cloud-run, thumbnail]
 ---
 
 # Performance Test: 100% Thumbnail Cloud Run
@@ -140,3 +148,14 @@ Log Link: [https://cloudlogging.app.goo.gl/Gae9PJGwt1aqgUeS8](https://cloudloggi
 - **p95 stays near 500 ms** even during failure storm — Cloud Run sheds excess load (returns 5xx fast) rather than queuing, which is why latency doesn't blow up.
 
 - Cold start (~10.5 s) accounts for the 5.3 s spike on minute 1.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Test - 100% Thumbnail GKE]]
+- [[AI-0000 Low Analyze job throughput]]
+- [[Cloud Run concurrency capacity is an upper bound CPU rarely lets you reach]]
+- [[EPC API - Load Test]]
+- [[Performance Test - Thumbnail 50% GKE + 50% Cloud Run]]
+
+%% ai-graph-end %%

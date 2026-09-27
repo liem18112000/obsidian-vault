@@ -1,5 +1,5 @@
 ---
-ai_hash: 36ad073ac7be823b
+ai_hash: 99be0b9e380fc9e9
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-05
@@ -44,8 +44,8 @@ Related: [[Luz local run host.docker.internal8080 must be the dev api-forwarder,
 **Related notes:**
 - [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080]]
 - [[Truncating a JWT breaks signature verification and surfaces as 500 not 401]]
+- [[Port forward and Docker compose]]
 - [[Run luz_docs_statistic locally with docker-compose]]
 - [[jwt-service token path synchronously calls luztenant security-classes]]
-- [[jwt-service token endpoints and replicas (Luz prod)]]
 
 %% ai-graph-end %%

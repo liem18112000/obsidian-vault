@@ -1,18 +1,22 @@
 ---
-title: "Analyze API v2 for Invoice prediction"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47487714001/Analyze+API+v2+for+Invoice+prediction
-space: "LUZ"
-topic: programming
-relevance: 0.711
-depth: 2.33
-updated: 2023-09-18
+ai_hash: 248646c1c85158fb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.33
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47487714001/Analyze+API+v2+for+Invoice+prediction
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Analyze API v2 for Invoice prediction
+topic: programming
+type: source
+updated: 2023-09-18
 ---
 
 # Analyze API v2 for Invoice prediction
@@ -203,3 +207,14 @@ Call api to get OCR results:</p>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice API]]
+- [[Invoice API Reference]]
+- [[Analyze API]]
+- [[Analyze API Demo]]
+- [[Analyze API v2.0]]
+
+%% ai-graph-end %%

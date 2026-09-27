@@ -1,18 +1,22 @@
 ---
-title: "Employee Report Implementation (10.05.2023)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47365259851/Employee+Report+Implementation+10.05.2023
-space: "LUZ"
-topic: programming
-relevance: 0.755
-depth: 2.81
-updated: 2023-05-10
+ai_hash: 3e6fae1c0dcd0452
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 12
+depth: 2.81
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47365259851/Employee+Report+Implementation+10.05.2023
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Employee Report Implementation (10.05.2023)
+topic: programming
+type: source
+updated: 2023-05-10
 ---
 
 # Employee Report Implementation (10.05.2023)
@@ -164,3 +168,14 @@ We already made this logic in Export report feature.
 
 
 <a href="https://bitbucket.org/axonivy-prod/luz_report_service/src/1b25761f59c21a03a35e841e70f51120aea78c76/src/main/java/ch/klara/luz/report/service/ReportService.java#lines-68" class="external-link" rel="nofollow">axonivy-prod / luz_report_service / src / main / java / ch / klara / luz / report / service / ReportService.java — Bitbucket</a> ReportService.java - `createReport(long companyId, Report report)`
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Handle report configuration for new fields (12.06.2023)]]
+- [[Export CRM statistics by API]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[Generating document from viewgen]]
+- [[Collect all calls FileManager APIs by Klara Modules]]
+
+%% ai-graph-end %%

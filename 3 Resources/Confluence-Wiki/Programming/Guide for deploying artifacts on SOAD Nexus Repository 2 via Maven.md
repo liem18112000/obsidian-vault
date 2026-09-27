@@ -1,18 +1,22 @@
 ---
-title: "Guide for deploying artifacts on SOAD Nexus Repository 2 via Maven"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34412315274/Guide+for+deploying+artifacts+on+SOAD+Nexus+Repository+2+via+Maven
-space: "X4"
-topic: programming
-relevance: 0.753
-depth: 2.49
-updated: 2020-03-04
+ai_hash: 28e15022950a50ea
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.49
+entities: []
+relevance: 0.753
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34412315274/Guide+for+deploying+artifacts+on+SOAD+Nexus+Repository+2+via+Maven
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: Guide for deploying artifacts on SOAD Nexus Repository 2 via Maven
+topic: programming
+type: source
+updated: 2020-03-04
 ---
 
 # Guide for deploying artifacts on SOAD Nexus Repository 2 via Maven
@@ -183,3 +187,14 @@ mvn deploy -Pch_dev_soad -Drepo.login=admin -Drepo.pwd=admin123 -DskipTests=true
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[APF Patch lombok maven library]]
+- [[Add Ivy jars Maven plugin]]
+- [[Jenkins - deploy eportal to SE-Server by jenkins]]
+- [[Migrate to Quarkus (WIP)]]
+- [[Document flow setup build Jenkins job Maven]]
+
+%% ai-graph-end %%

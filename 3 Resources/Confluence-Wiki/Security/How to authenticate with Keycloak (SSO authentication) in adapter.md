@@ -1,18 +1,22 @@
 ---
-title: "How to authenticate with Keycloak (SSO authentication) in adapter"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/RT/pages/47449407538/How+to+authenticate+with+Keycloak+SSO+authentication+in+adapter
-space: "RT"
-topic: security
-relevance: 0.731
-depth: 2.95
-updated: 2023-09-15
+ai_hash: 0c2f353b1adbbd09
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.95
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/RT/pages/47449407538/How+to+authenticate+with+Keycloak+SSO+authentication+in+adapter
+space: RT
+status: reference
 tags:
-  - confluence
-  - security
-  - space/rt
+- confluence
+- security
+- space/rt
+title: How to authenticate with Keycloak (SSO authentication) in adapter
+topic: security
+type: source
+updated: 2023-09-15
 ---
 
 # How to authenticate with Keycloak (SSO authentication) in adapter
@@ -63,3 +67,14 @@ tags:
 
 
 ![[47449407538-image-20230801-103307.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[06 - How to test a Rest API with authorization]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Microprofile OpenAPI config]]
+- [[Proof of Concept Auto login with Keycloak]]
+- [[Copy Proof of Concept Passwordless account login with Keycloak]]
+
+%% ai-graph-end %%

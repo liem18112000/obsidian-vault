@@ -1,14 +1,19 @@
 ---
-title: "Joint review 0.03.30.00 (08.09.2026 - 21.09.2026)"
+ai_hash: e921bec621f5ef62
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49762697385'
+confluence_path: LUZ Home > 100_General > 02_Joint Review
 created: 2026-09-17
-updated: 2026-09-21
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+title: Joint review 0.03.30.00 (08.09.2026 - 21.09.2026)
+type: source
+updated: 2026-09-21
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49762697385/Joint+review+0.03.30.00+08.09.2026+-+21.09.2026
-confluence_id: "49762697385"
-confluence_path: "LUZ Home > 100_General > 02_Joint Review"
-tags: [confluence]
 ---
 
 # Joint review 0.03.30.00 (08.09.2026 - 21.09.2026)
@@ -128,3 +133,14 @@ tags: [confluence]
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[Joint review 0.03.24.00 (16.06.2026 - 29.06.2026)]]
+- [[Joint review 0.03.23.00 (02.06.2026 - 15.06.2026)]]
+- [[HealthCare And Invoice Run (11.08.2026 - 24.08.2026)]]
+- [[LUZ-75886 Part 1 Implement real-time API updates]]
+
+%% ai-graph-end %%

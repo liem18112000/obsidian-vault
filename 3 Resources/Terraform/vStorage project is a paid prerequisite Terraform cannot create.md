@@ -1,5 +1,5 @@
 ---
-ai_hash: 6531d795cd5fcfb7
+ai_hash: fe33489ac23cd5c4
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-17
@@ -48,6 +48,6 @@ Related: [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, no
 - [[vStorage API project creation needs a billing order (payment method or POC wallet)]]
 - [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
 - [[vStorage REST control-plane API endpoints and vIAM bearer auth]]
-- [[vStorage has no Terraform resource so manage buckets via the AWS S3 provider]]
+- [[Creating a vStorage bucket is free (data-plane); only the project quota + usage cost money]]
 
 %% ai-graph-end %%

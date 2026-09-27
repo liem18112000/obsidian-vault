@@ -1,14 +1,19 @@
 ---
-title: "Service Error Analysis Report: FAILED_TO_STORE on Production"
+ai_hash: eb207f55574905e1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48954966029'
+confluence_path: Team Kepler > Developer note
 created: 2025-12-10
-updated: 2025-12-18
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: 'Service Error Analysis Report: FAILED_TO_STORE on Production'
+type: source
+updated: 2025-12-18
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48954966029/Service+Error+Analysis+Report+FAILED_TO_STORE+on+Production
-confluence_id: "48954966029"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence]
 ---
 
 # Service Error Analysis Report: FAILED_TO_STORE on Production
@@ -240,3 +245,14 @@ gcloud logging read 'labels."k8s-pod/app"="luz-antivirus" AND "scanner" AND "sta
 gcloud logging read 'labels."k8s-pod/app"="luz-antivirus" AND ("FOUND" OR "infected" OR "Trojan")' \
   --project=klara-prod --freshness=31d
 ```
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Service Reliability Solution]]
+- [[Part B - luz-antivirus Analysis]]
+- [[Part A - luz-jsonstore Analysis]]
+- [[Case Report - DocumentId 386]]
+- [[Case Report - DocumentId 588]]
+
+%% ai-graph-end %%

@@ -1,18 +1,23 @@
 ---
-title: "[CROSS-TEST] [LUZ-142507] Implement Analyze API Integration (Phase 1) | Part 2"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48804429825/CROSS-TEST+LUZ-142507+Implement+Analyze+API+Integration+Phase+1+Part+2
-space: "TS"
-topic: programming
-relevance: 0.928
-depth: 3
-updated: 2025-10-29
+ai_hash: 46803485d92609a6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 125
+depth: 3
+entities: []
+relevance: 0.928
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48804429825/CROSS-TEST+LUZ-142507+Implement+Analyze+API+Integration+Phase+1+Part+2
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: '[CROSS-TEST] [LUZ-142507] Implement Analyze API Integration (Phase 1) | Part
+  2'
+topic: programming
+type: source
+updated: 2025-10-29
 ---
 
 # [CROSS-TEST] [LUZ-142507] Implement Analyze API Integration (Phase 1) | Part 2
@@ -322,3 +327,14 @@ Related US: <a href="https://axonivy.atlassian.net/browse/LUZ-140089" class="ext
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost Zip-Import - dev test-suite results - 18-08-2026]]
+- [[Invoice Run V2 - Retry Uploaded customer document step - Should update correct status after retry]]
+- [[Duplicate of Adapt to support ONE API - Enricher first delivery]]
+- [[Integrating The Analyze API Into luz_scanscenter New Flow Proposal]]
+- [[CROSS-TEST LUZ-159442 Implement real ZIP download for eArchive folders]]
+
+%% ai-graph-end %%

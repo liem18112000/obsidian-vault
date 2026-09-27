@@ -1,7 +1,7 @@
 ---
-ai_hash: 74cf39a0ff80bbe1
+ai_hash: 7fe6be17d016981e
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-07
 entities: []
 source: LEO CDP Wave 3, 2026-06-07
@@ -37,10 +37,10 @@ Also: on JDK 24+ (JEP 491) synchronized blocks no longer pin carriers, removing 
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[Blocking on CompletableFuture.get in a custom pool recreates the bottleneck]]
+- [[Concurrency Design Patterns]]
 - [[Records break Gson pre-2.10, ArangoDB driver 6 VPACK, and handlebars getter resolution]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
 - [[ManagedExecutorService.execute loses CDI request context]]
-- [[Per-pod single-flight kills cache stampede without semantic change]]
-- [[CompletableFuture parallel fan-out needs .toList() barrier before joining]]
 
 %% ai-graph-end %%

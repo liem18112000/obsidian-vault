@@ -1,18 +1,22 @@
 ---
-title: "Update Vault Role remove claim_mapping"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530454244/Update+Vault+Role+remove+claim_mapping
-space: "LUZ"
-topic: security
-relevance: 0.711
-depth: 2.65
-updated: 2021-07-02
+ai_hash: 4c01964fdfac8331
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.65
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530454244/Update+Vault+Role+remove+claim_mapping
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Update Vault Role remove claim_mapping
+topic: security
+type: source
+updated: 2021-07-02
 ---
 
 # Update Vault Role remove claim_mapping
@@ -95,3 +99,14 @@ Port-forward luz_vault and run this to update klara-tenant-role (please correct 
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Authorization]]
+- [[Tenant token issue]]
+- [[Get tenant token from public api]]
+- [[Vault overview]]
+- [[Update Vault Unseal self-signed certificate]]
+
+%% ai-graph-end %%

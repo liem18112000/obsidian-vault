@@ -1,14 +1,20 @@
 ---
-title: "Folder recovery with re-parenting leaves inheritedSecurityClassCode stale"
+ai_hash: 838cc0c2879e2483
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49476173837'
+confluence_path: Team Kepler > Developer note
 created: 2026-06-04
-updated: 2026-06-04
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- security
+title: Folder recovery with re-parenting leaves inheritedSecurityClassCode stale
+type: source
+updated: 2026-06-04
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49476173837/Folder+recovery+with+re-parenting+leaves+inheritedSecurityClassCode+stale
-confluence_id: "49476173837"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, security]
 ---
 
 # Folder recovery with re-parenting leaves inheritedSecurityClassCode stale
@@ -152,3 +158,14 @@ Two layers, both needed:
 2.  **Doc-side** — `MaterializeFolderRecoveryService` re-stamps `_folderNames`, `_folderSecurityClassCodes`, `_effectiveSecurityClassCodes`, `_isPublic` on every document in the recovered subtree (async event + `materializeRecoveryCascade` marker + PARTIAL retry), gated by `MaterializeFacade.shouldUseMaterialized(tenantId)`.
 
 Without (1), (2) faithfully materializes wrong data. Without (2), (1) is correct but materialized tenants still serve the stale snapshot.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
+- [[Materialize folder parentFolderIds change cascade (LUZ-154159)]]
+- [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
+- [[FolderService.recoverFolder is not materialize-aware]]
+- [[LUZ-155107 shipped as two commits so the inheritedSecurityClassCode fix can cherry-pick to earchive-master]]
+
+%% ai-graph-end %%

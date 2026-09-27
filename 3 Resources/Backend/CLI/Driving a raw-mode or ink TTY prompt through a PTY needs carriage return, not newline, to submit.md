@@ -1,7 +1,7 @@
 ---
-ai_hash: 8ad43da0807ad19b
+ai_hash: 399b5737ae0a5c58
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-06
 entities: []
 source: vinnstack dev relay 2026-07-06, claude setup-token
@@ -34,9 +34,9 @@ Symptom that fingerprints this: the automated flow reaches the prompt fine (e.g.
 
 **Related notes:**
 - [[Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing]]
+- [[Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code]]
 - [[Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
 - [[Prefer pasting a token minted once over scraping it from a PTY relay]]
-- [[Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code]]
 - [[Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF]]
 
 %% ai-graph-end %%

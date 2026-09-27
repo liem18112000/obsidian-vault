@@ -1,18 +1,22 @@
 ---
-title: "Roles and Permissions check for accessing public API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48584982860/Roles+and+Permissions+check+for+accessing+public+API
-space: "HACKA"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2025-07-18
+ai_hash: 3c6593ce1488ab2f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48584982860/Roles+and+Permissions+check+for+accessing+public+API
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: Roles and Permissions check for accessing public API
+topic: programming
+type: source
+updated: 2025-07-18
 ---
 
 # Roles and Permissions check for accessing public API
@@ -66,3 +70,14 @@ Access to public API group ePost Digital Letterbox are blocked for the above 4 r
 2.  Split big permission like LUZ_DOCS_VIEW_CONTROLLER into smaller permissions and assign only necessary permissions for roles.
 
 ##
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research Protect ePost inbox with new Digital_Letterbox permission]]
+- [[Role concept for ePost]]
+- [[Public API (30 August 2021)]]
+- [[One API Module Responsibilities]]
+- [[IVY API Calls Overview for luz Modules]]
+
+%% ai-graph-end %%

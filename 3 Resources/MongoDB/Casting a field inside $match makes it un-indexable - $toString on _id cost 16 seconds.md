@@ -1,10 +1,22 @@
 ---
-title: "Casting a field inside $match makes it un-indexable - $toString on _id cost 16 seconds"
+ai_hash: 28facd665078c797
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: eArchive Performance — Detail Overview (2026-06-15)'
 status: seedling
-source: "Confluence: eArchive Performance — Detail Overview (2026-06-15)"
-tags: [mongodb, indexing, performance, anti-pattern, sargability, earchive, gotcha]
+tags:
+- mongodb
+- indexing
+- performance
+- anti-pattern
+- sargability
+- earchive
+- gotcha
+title: Casting a field inside $match makes it un-indexable - $toString on _id cost
+  16 seconds
+type: lesson
 ---
 
 # Casting a field inside $match makes it un-indexable - $toString on _id cost 16 seconds
@@ -36,3 +48,14 @@ Why it is easy to miss in review: the query is **correct**, returns the right do
 - [[An index only helps an aggregation before the first group]]
 - [[unwind]]
 - [[or lookup]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
+- [[jsonstore $in vs $nin ObjectId conversion gap]]
+- [[An index only helps an aggregation before the first group, unwind, or lookup]]
+- [[Check who consumes a result before optimising it - eArchive counted 128k docs for a boolean]]
+- [[Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId]]
+
+%% ai-graph-end %%

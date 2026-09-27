@@ -1,10 +1,20 @@
 ---
-title: "Grade identity assurance by what was proven, not a verified boolean"
+ai_hash: f8d1bff7d119c8b8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: E-Post API technical documentation (LUZ)'
 status: seedling
-source: "Confluence: E-Post API technical documentation (LUZ)"
-tags: [identity, verification, kyc, levels-of-trust, onboarding, confluence-distilled]
+tags:
+- identity
+- verification
+- kyc
+- levels-of-trust
+- onboarding
+- confluence-distilled
+title: Grade identity assurance by what was proven, not a verified boolean
+type: concept
 ---
 
 # Grade identity assurance by what was proven, not a verified boolean
@@ -42,3 +52,10 @@ Source: [[E-Post API - technical documentation]] (LUZ, Confluence).
 ## Related
 
 - [[RBAC is coarse-grained by role, ABAC is fine-grained by attribute]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[E-Post API - technical documentation]]
+
+%% ai-graph-end %%

@@ -1,9 +1,13 @@
 ---
-title: "Confluence Wiki"
-type: moc
+ai_hash: 7c209877082803b8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
 tags:
-  - moc
-  - confluence
+- moc
+- confluence
+title: Confluence Wiki
+type: moc
 ---
 
 # Confluence Wiki
@@ -24,3 +28,13 @@ tags:
 | [[Testing]] | 5 |
 | [[Other]] | 1 |
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Other]]
+- [[Testing]]
+- [[Confluence Export — Index]]
+- [[AI-ML]]
+- [[index]]
+
+%% ai-graph-end %%

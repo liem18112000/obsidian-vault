@@ -1,10 +1,20 @@
 ---
-title: "A string index is silently skipped when its collation differs from the query's"
+ai_hash: 562f9970d7af09bb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Facet Count Fan-out Techniques in MongoDB (2026-06-26)'
 status: seedling
-source: "Confluence: Facet Count Fan-out Techniques in MongoDB (2026-06-26)"
-tags: [mongodb, collation, indexing, performance, gotcha, luz-docs]
+tags:
+- mongodb
+- collation
+- indexing
+- performance
+- gotcha
+- luz-docs
+title: A string index is silently skipped when its collation differs from the query's
+type: lesson
 ---
 
 # A string index is silently skipped when its collation differs from the query's
@@ -39,3 +49,14 @@ Related cost on the same path: a non-simple collation also forces an in-memory s
 - [[unwind]]
 - [[or lookup]]
 - [[Non-simple Mongo collation forces in-memory sort that hits the 32MB limit on deep paging]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[An index only helps an aggregation before the first group, unwind, or lookup]]
+- [[Mongo facet $group count index only helps the $match prefix, not the count]]
+- [[Non-simple Mongo collation forces in-memory sort that hits the 32MB limit on deep paging]]
+- [[Index Impact on MongoDB searchByFacets]]
+- [[A MongoDB text index matches stemmed words, not substrings]]
+
+%% ai-graph-end %%

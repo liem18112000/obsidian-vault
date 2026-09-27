@@ -1,7 +1,7 @@
 ---
-ai_hash: bcd59a8bb2df5448
+ai_hash: 7dd17b18101f3eb3
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: leo-cdp-framework ci-cd.yml work 2026-06-06
@@ -41,7 +41,7 @@ Concretely: for an advisory `run-gemini-cli` step that errors on `TerminalQuotaE
 - [[GitHub Copilot code review is a native PR reviewer, not a workflow job]]
 - [[secrets context is not available in GitHub Actions if conditions]]
 - [[CI build Docker image on every run, push only on non-PR]]
-- [[Job-level defaults.run.working-directory breaks Initialize containers (pre-checkout)]]
 - [[gemini-cli-yolo-approval-mode-ci]]
+- [[Publish a GitHub Actions job result to the run Summary with an always() step]]
 
 %% ai-graph-end %%

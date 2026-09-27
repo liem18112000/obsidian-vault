@@ -1,5 +1,5 @@
 ---
-ai_hash: b1081437e4cccb1b
+ai_hash: 2716f0f1115a05e4
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-18
@@ -39,8 +39,8 @@ Rule of thumb: with S3-compatible clouds, bucket/object API calls are data-plane
 **Related notes:**
 - [[vStorage project is a paid prerequisite Terraform cannot create]]
 - [[Deleting a prepaid cloud resource does not auto-refund; failed-provision charges need a manual support refund]]
-- [[vStorage create-project code 114 is account-side, not a payload bug]]
 - [[VNG Cloud vStorage is S3-compatible object storage]]
+- [[vStorage create-project code 114 is account-side, not a payload bug]]
 - [[vStorage API project creation needs a billing order (payment method or POC wallet)]]
 
 %% ai-graph-end %%

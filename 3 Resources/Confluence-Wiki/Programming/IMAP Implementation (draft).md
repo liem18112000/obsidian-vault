@@ -1,18 +1,22 @@
 ---
-title: "IMAP Implementation (draft)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47947350097/IMAP+Implementation+draft
-space: "Helios"
-topic: programming
-relevance: 0.736
-depth: 2.37
-updated: 2024-07-25
+ai_hash: ef9ceae39674dc3f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.37
+entities: []
+relevance: 0.736
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47947350097/IMAP+Implementation+draft
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: IMAP Implementation (draft)
+topic: programming
+type: source
+updated: 2024-07-25
 ---
 
 # IMAP Implementation (draft)
@@ -198,3 +202,12 @@ This structure provides a solid foundation for building an IMAP server. Each com
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Java's libraries comparison]]
+- [[Webmail client architecture]]
+- [[Batching Design]]
+
+%% ai-graph-end %%

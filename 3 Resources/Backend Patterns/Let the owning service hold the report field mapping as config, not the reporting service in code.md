@@ -1,10 +1,21 @@
 ---
-title: "Let the owning service hold the report field mapping as config, not the reporting service in code"
+ai_hash: 147de72e3b359fd1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Handle report configuration for new fields (LUZ)'
 status: seedling
-source: "Confluence: Handle report configuration for new fields (LUZ)"
-tags: [configuration, reporting, coupling, microservices, schema, confluence-distilled]
+tags:
+- configuration
+- reporting
+- coupling
+- microservices
+- schema
+- confluence-distilled
+title: Let the owning service hold the report field mapping as config, not the reporting
+  service in code
+type: lesson
 ---
 
 # Let the owning service hold the report field mapping as config, not the reporting service in code
@@ -51,3 +62,14 @@ Source: [[Handle report configuration for new fields (12.06.2023)]] (LUZ, Conflu
 ## Related
 
 - [[Deleting a shared reference entity prefer the design whose cost stays constant per consumer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Handle report configuration for new fields (12.06.2023)]]
+- [[Reporting - Java class configuration]]
+- [[Deleting a shared reference entity prefer the design whose cost stays constant per consumer]]
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+- [[N+1 hides at the service-call layer too, not just in the ORM]]
+
+%% ai-graph-end %%

@@ -1,32 +1,32 @@
 ---
-ai_hash: 8998da718bf0debe
+ai_hash: a27237a012af24b5
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-08
 entities:
 - LEO CDP
 - SYSTEM_ENV_VARS
-- database-configs.json
 - ArangoDB
 - DatabaseConfigs.loadFromFile()
-- ARANGODB_* env vars
 - IllegalArgumentin('File is not found')
+- ARANGODB_* env vars
 - runtimeEnvironment
 - PRO
 - leocdp-metadata.properties
-- configs/PRO-database-configs.json
 - integration tests
-- live DB
 - ARANGODB_HOST
 - ARANGODB_PORT
 - ARANGODB_USERNAME
 - ARANGODB_PASSWORD
 - ARANGODB_DATABASE
-- configs/database-configs.json = {"configs":{}}
-- gitignored
-- Design smell
-- Wall of NoClassDefFoundError on first test run = static-init IO, split unit from
-  integration
+- Wall of NoClassDefFoundError
+- static-init IO
+- unit tests
+- live DB
+- configs/database-configs.json
+- configs/PRO-database-configs.json
+- mainDatabaseConfig
+- env-var connection
 source: LEO CDP local integration-test wiring, 2026-06-08
 status: seedling
 tags:
@@ -53,35 +53,34 @@ LEO CDP gotcha: even with mainDatabaseConfig=SYSTEM_ENV_VARS (which builds the A
 - [[Running the LEO CDP GHCR image needs mounted configs (image ships JARs only)]]
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
 - [[Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration]]
-- [[JUnit5 @BeforeAll must be static - non-static masks every test in the class]]
-- [[Job-level defaults.run.working-directory breaks Initialize containers (pre-checkout)]]
+- [[CI-driven CD cannot resolve local gitignored Terraform state — needs remote backend or IPs via secrets]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
 
 **Relations:**
 - LEO CDP — *uses* — SYSTEM_ENV_VARS
-- SYSTEM_ENV_VARS — *requires* — database-configs.json
-- SYSTEM_ENV_VARS — *builds connection from* — ARANGODB_* env vars
-- SYSTEM_ENV_VARS — *configures* — ArangoDB
-- DatabaseConfigs.loadFromFile() — *reads* — database-configs.json
+- SYSTEM_ENV_VARS — *is a setting for* — mainDatabaseConfig
+- SYSTEM_ENV_VARS — *requires* — configs/database-configs.json
+- SYSTEM_ENV_VARS — *builds* — env-var connection
+- env-var connection — *for* — ArangoDB
+- env-var connection — *from* — ARANGODB_* env vars
+- DatabaseConfigs.loadFromFile() — *reads* — configs/database-configs.json
 - DatabaseConfigs.loadFromFile() — *throws* — IllegalArgumentin('File is not found')
-- runtimeEnvironment=PRO — *in* — leocdp-metadata.properties
-- runtimeEnvironment=PRO — *rewrites path to* — configs/PRO-database-configs.json
+- runtimeEnvironment — *is set to* — PRO
+- PRO — *in* — leocdp-metadata.properties
+- PRO — *rewrites path to* — configs/PRO-database-configs.json
+- ARANGODB_* env vars — *includes* — ARANGODB_HOST
+- ARANGODB_* env vars — *includes* — ARANGODB_PORT
+- ARANGODB_* env vars — *includes* — ARANGODB_USERNAME
+- ARANGODB_* env vars — *includes* — ARANGODB_PASSWORD
+- ARANGODB_* env vars — *includes* — ARANGODB_DATABASE
 - integration tests — *run against* — live DB
-- To run integration tests — *set* — runtimeEnvironment= empty
-- To run integration tests — *drop* — configs/database-configs.json = {"configs":{}}
-- To run integration tests — *export* — ARANGODB_HOST
-- To run integration tests — *export* — ARANGODB_PORT
-- To run integration tests — *export* — ARANGODB_USERNAME
-- To run integration tests — *export* — ARANGODB_PASSWORD
-- To run integration tests — *export* — ARANGODB_DATABASE
-- ARANGODB_HOST — *is part of* — ARANGODB_* env vars
-- ARANGODB_PORT — *is part of* — ARANGODB_* env vars
-- ARANGODB_USERNAME — *is part of* — ARANGODB_* env vars
-- ARANGODB_PASSWORD — *is part of* — ARANGODB_* env vars
-- ARANGODB_DATABASE — *is part of* — ARANGODB_* env vars
-- database-configs.json — *is* — gitignored
+- live DB — *uses* — env-var connection
+- configs/database-configs.json — *is* — gitignored
 - configs/PRO-database-configs.json — *is* — gitignored
-- LEO CDP — *has* — Design smell
-- Design smell — *is* — config 'use env vars' mode that still hard-requires the file it is meant to replace
-- LEO CDP — *related to* — Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration
+- Wall of NoClassDefFoundError — *is related to* — static-init IO
+- Wall of NoClassDefFoundError — *is related to* — split unit from integration
+- LEO CDP — *has related issue* — Wall of NoClassDefFoundError
+- SYSTEM_ENV_VARS — *overrides content of* — configs/database-configs.json
+- unit tests — *are distinct from* — integration tests
 
 %% ai-graph-end %%

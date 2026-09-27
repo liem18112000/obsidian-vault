@@ -1,18 +1,22 @@
 ---
-title: "Upgrade Ivy - Known issues"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47478866456/Upgrade+Ivy+-+Known+issues
-space: "X4"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2023-11-03
+ai_hash: c996b371b8a669d3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47478866456/Upgrade+Ivy+-+Known+issues
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: Upgrade Ivy - Known issues
+topic: programming
+type: source
+updated: 2023-11-03
 ---
 
 # Upgrade Ivy - Known issues
@@ -565,3 +569,14 @@ if (PrimeFaces.widget.DataTable) {
 |  |  |  |  |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Avoid warning logs related to Java Problem on Ivy Designer]]
+- [[Run Re-Index ivy database]]
+- [[Tag deferred migration sites with a greppable marker unique to that upgrade]]
+- [[Refactor FeatureSwitch.class to store List Feature in IvySessionAttribute and clean it when logout]]
+- [[WIP Recipe How to adapt Unit Test to be able to run with Junit 5]]
+
+%% ai-graph-end %%

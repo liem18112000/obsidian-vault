@@ -1,18 +1,22 @@
 ---
-title: "Luz_google Api Document"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20502837650/Luz_google+Api+Document
-space: "LUZ"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2020-07-22
+ai_hash: a9deb3eba71394cc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20502837650/Luz_google+Api+Document
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Luz_google Api Document
+topic: programming
+type: source
+updated: 2020-07-22
 ---
 
 # Luz_google Api Document
@@ -538,3 +542,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[News, Event and Deal API]]
+- [[Getting tenant list]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[14. Create companies by tenant id]]
+- [[API in Community Feature for Business Tenant]]
+
+%% ai-graph-end %%

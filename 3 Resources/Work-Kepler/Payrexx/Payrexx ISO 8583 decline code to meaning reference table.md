@@ -1,7 +1,7 @@
 ---
-ai_hash: bb82f41758b53bb6
+ai_hash: a9d505265e7fcec0
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-23
 entities: []
 source: Payrexx merchant docs (docs.payrexx.com/merchant/english/payment/payment-status),
@@ -102,6 +102,6 @@ Draft category grouping (feeds LUZ-157809; counts over all 51 codes): **insuffic
 - [[Payrexx publishes no catalog of API wrapper error messages]]
 - [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
 - [[LUZ-157476 proposes seven failure categories with per-channel customer copy]]
-- [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
+- [[Payrexx delivers decline code only via webhook, not sync response]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Script getting latest code, building and deployment."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/30660183662/Script+getting+latest+code+building+and+deployment.
-space: "TK"
-topic: programming
-relevance: 0.81
-depth: 2.76
-updated: 2020-09-17
+ai_hash: 636b3ec5d9a1622d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 2.76
+entities: []
+relevance: 0.81
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/30660183662/Script+getting+latest+code+building+and+deployment.
+space: TK
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tk
+- confluence
+- programming
+- space/tk
+title: Script getting latest code, building and deployment.
+topic: programming
+type: source
+updated: 2020-09-17
 ---
 
 # Script getting latest code, building and deployment.
@@ -55,3 +59,14 @@ tags:
 
 
 - If there are some errors during deployment script, please stop wildfly and start it again. Run this script [[30660183662-service_deployment.sh|service_deployment.sh]] to deploy by running in cmd ./[[30660183662-service_deployment.sh|service_deployment.sh.]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyse your source code (Copy)]]
+- [[Git source code and Jenkins]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[Axonivycloud - Create automation k8s ivy engine]]
+- [[Deployment Process]]
+
+%% ai-graph-end %%

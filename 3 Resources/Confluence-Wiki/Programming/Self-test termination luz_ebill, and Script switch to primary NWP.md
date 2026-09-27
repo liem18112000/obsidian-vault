@@ -1,18 +1,22 @@
 ---
-title: "Self-test termination luz_ebill, and Script switch to primary NWP"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49288937474/Self-test+termination+luz_ebill+and+Script+switch+to+primary+NWP
-space: "TS"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2026-04-03
+ai_hash: 369a19cad675fc0e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 14
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49288937474/Self-test+termination+luz_ebill+and+Script+switch+to+primary+NWP
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Self-test termination luz_ebill, and Script switch to primary NWP
+topic: programming
+type: source
+updated: 2026-04-03
 ---
 
 # Self-test termination luz_ebill, and Script switch to primary NWP
@@ -289,3 +293,14 @@ CH0230790463310299497 CHE-113.746.440 EBILL M10 BIID0000132290 2b1bc3ce-a6dc-483
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Preview Delivery-Prices API - ForcedOnboading]]
+- [[Invoice Run V2UAT - Update latest Stimulsoft template - Execution]]
+- [[Invoice Run V2UAT - Update latest Stimulsoft template]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+- [[CROSS-TEST LUZ-158644 Investigate and remove Print&Send user role (UI, backend, Public API — no]]
+
+%% ai-graph-end %%

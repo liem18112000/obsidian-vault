@@ -1,7 +1,7 @@
 ---
-ai_hash: 65e1c00ec7c092c3
+ai_hash: 1c3d031bc2e85bb6
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-17
 entities: []
 source: luz_docs LUZ-154613 2026-06-17
@@ -38,10 +38,10 @@ Related: [[Count fan-out _shard index must put _shard LAST in the compound key (
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Facet Count Fan-out Techniques in MongoDB]]
 - [[Mongo facet $group count index only helps the $match prefix, not the count]]
+- [[Index Impact on MongoDB searchByFacets]]
 - [[BitmapHLL counts supersede fan-out; they don't combine with it]]
-- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 - [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
-- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
 
 %% ai-graph-end %%

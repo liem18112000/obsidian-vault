@@ -1,18 +1,22 @@
 ---
-title: "List out places calling booking function"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47220687910/List+out+places+calling+booking+function
-space: "LUZ"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2022-12-14
+ai_hash: 06b81ca9f6b57dd7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47220687910/List+out+places+calling+booking+function
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: List out places calling booking function
+topic: programming
+type: source
+updated: 2022-12-14
 ---
 
 # List out places calling booking function
@@ -348,3 +352,14 @@ BusinessYearEndClosingPage.xhtml<br />
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Merging process]]
+- [[Scan to book - booking exception]]
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+
+%% ai-graph-end %%

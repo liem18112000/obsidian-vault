@@ -1,18 +1,23 @@
 ---
-title: "SQL script to update retry tasks and check pending dossiers has an outdated credit card"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48752885807/SQL+script+to+update+retry+tasks+and+check+pending+dossiers+has+an+outdated+credit+card
-space: "GRAVITY"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2025-10-15
+ai_hash: d8c8336f9efa13eb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48752885807/SQL+script+to+update+retry+tasks+and+check+pending+dossiers+has+an+outdated+credit+card
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: SQL script to update retry tasks and check pending dossiers has an outdated
+  credit card
+topic: programming
+type: source
+updated: 2025-10-15
 ---
 
 # SQL script to update retry tasks and check pending dossiers has an outdated credit card
@@ -100,3 +105,14 @@ tags:
 **Please send us the data if there are any records returned.**
 
 Please contact “Gravity” team if you have any concerns.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL script to investigate dossier COB003059 on INT1]]
+- [[Script identify fields which are incorrectly logged in the protocol]]
+- [[SQL script to investigate dossier with orphaned protocol records in PROD]]
+- [[SQL script to get SOB (APP & WEB) dossier progress]]
+- [[SQL script to filter IN_PROGRESS tasks more than 30 days]]
+
+%% ai-graph-end %%

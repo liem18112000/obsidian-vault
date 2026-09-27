@@ -1,18 +1,22 @@
 ---
-title: "Auto login in myLife and ePost private web clients"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/46967194388/Auto+login+in+myLife+and+ePost+private+web+clients
-space: "TP2020"
-topic: programming
-relevance: 0.716
-depth: 2.89
-updated: 2021-10-02
+ai_hash: 89ad47b9ce6dba9d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 2.89
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/46967194388/Auto+login+in+myLife+and+ePost+private+web+clients
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: Auto login in myLife and ePost private web clients
+topic: programming
+type: source
+updated: 2021-10-02
 ---
 
 # Auto login in myLife and ePost private web clients
@@ -165,3 +169,14 @@ This is the **keycloak** Postman collection for trying out:
 ![[46967194388-keycloak.postman_collection.json]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Proof of Concept Auto login with Keycloak]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[KLARA Integration (request access token & call API)]]
+- [[Onboarding API - Investigation Identity Provider SSO]]
+- [[Copy Proof of Concept Passwordless account login with Keycloak]]
+
+%% ai-graph-end %%

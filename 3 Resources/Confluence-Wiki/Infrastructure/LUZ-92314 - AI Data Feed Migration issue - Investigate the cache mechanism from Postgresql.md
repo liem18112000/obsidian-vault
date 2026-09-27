@@ -1,18 +1,23 @@
 ---
-title: "LUZ-92314 - [AI Data Feed] [Migration issue] - Investigate the cache mechanism from Postgresql"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47317287027/LUZ-92314+-+AI+Data+Feed+Migration+issue+-+Investigate+the+cache+mechanism+from+Postgresql
-space: "TS"
-topic: infra
-relevance: 0.874
-depth: 3
-updated: 2023-03-15
+ai_hash: 5afca8bc756d04de
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 3
+entities: []
+relevance: 0.874
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47317287027/LUZ-92314+-+AI+Data+Feed+Migration+issue+-+Investigate+the+cache+mechanism+from+Postgresql
+space: TS
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/ts
+- confluence
+- infra
+- space/ts
+title: LUZ-92314 - [AI Data Feed] [Migration issue] - Investigate the cache mechanism
+  from Postgresql
+topic: infra
+type: source
+updated: 2023-03-15
 ---
 
 # LUZ-92314 - [AI Data Feed] [Migration issue] - Investigate the cache mechanism from Postgresql
@@ -267,3 +272,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ELM4 - Background job - 1st investigation]]
+- [[AI-0000 Low Analyze job throughput]]
+- [[One API end to end testing]]
+- [[EPC API - Load Test]]
+- [[Part A - luz-jsonstore Analysis]]
+
+%% ai-graph-end %%

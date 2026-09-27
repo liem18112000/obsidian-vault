@@ -1,59 +1,35 @@
 ---
-ai_hash: 36095aea6710ed4c
+ai_hash: b93b9b1e57dd9a2c
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-24
 entities:
-- luz-docs-import upload-zip endpoint
-- ingestion saturation point
-- perf load
-- performance env
-- k6 load test
-- 100 VUs
-- 100 RPS
-- 10000 iters
-- commit 6f35eeb
-- '2026-08-24'
-- POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip
 - luz-docs-import
+- upload-zip endpoint
+- POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip
+- k6
+- performance env
 - luz-docs
 - luz-docs-batch
 - luz-docs-view-controller-batch
 - luz-jsonstore
-- HPAs
+- HPA
 - Client timeout
 - HTTP 500
-- 60 s HTTP timeout
-- upload-zip
-- job id
-- ingestion layer
-- bottleneck
-- downstream enrichment
-- Analyze-API 429 backlog
-- luz-docs-import HPA
-- LUZ-158230 docs-import performance
-- 60-min run
 - HTTP 503
+- ingestion layer
+- enrichment / Analyze-API 429 backlog
 - liveness-probe death spiral
-- import pods
-- SIGKILLed
-- exit 137
 - GET /app-health/luz-docs-import/livez
-- worker thread
-- pool
-- blocked uploads
-- CPU
-- 3-core limit
-- I/O
-- 'Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload
-  into a self-perpetuating outage'
-- dedicated health thread
-- relax thresholds
 - luz-vault
-- sealed/unready
 - jsonstore addOne
+- LUZ-158230 docs-import performance
 - 'Perf import failures root-cause: luz-vault sealed/unready cascades jsonstore 503
   to upload-zip 500'
+- dedicated health thread
+- relax thresholds
+- async upload-zip
+- full report
 source: session 2026-08-24
 status: seedling
 tags:
@@ -103,64 +79,46 @@ The fast-500 follow-up (10 VUs) showed the real primary blocker is **luz-vault b
 **Related notes:**
 - [[Perf import failures root-cause luz-vault sealedunready cascades jsonstore 503 to upload-zip 500]]
 - [[Run volume import fixtures last; retry-exhaustion is transient saturation not a defect]]
-- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
 - [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
+- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
 - [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
 
 **Relations:**
-- luz-docs-import upload-zip endpoint — *is* — ingestion saturation point
-- luz-docs-import upload-zip endpoint — *occurs under* — perf load
-- perf load — *tested in* — performance env
-- performance env — *uses* — k6 load test
-- k6 load test — *configured with* — 100 VUs
-- k6 load test — *configured with* — 100 RPS
-- k6 load test — *configured with* — 10000 iters
-- k6 load test — *run on* — 2026-08-24
-- k6 load test — *run with commit* — 6f35eeb
-- POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip — *is* — luz-docs-import upload-zip endpoint
-- luz-docs-import — *hosts* — POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip
-- HPAs — *pinned for* — luz-docs-import
-- HPAs — *pinned for* — luz-docs
-- HPAs — *pinned for* — luz-docs-batch
-- HPAs — *pinned for* — luz-docs-view-controller-batch
-- HPAs — *pinned for* — luz-jsonstore
-- POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip — *shows failure signature* — Client timeout
-- POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip — *shows failure signature* — HTTP 500
-- Client timeout — *is* — 60 s HTTP timeout
-- upload-zip — *is meant to be* — async
-- upload-zip — *is part of* — ingestion layer
-- ingestion layer — *is a* — bottleneck
-- bottleneck — *is distinct from* — downstream enrichment
-- bottleneck — *is distinct from* — Analyze-API 429 backlog
+- luz-docs-import — *hosts* — upload-zip endpoint
+- upload-zip endpoint — *is* — ingestion saturation point
+- upload-zip endpoint — *is* — synchronous
+- POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip — *is* — upload-zip endpoint
+- k6 — *performs load test on* — upload-zip endpoint
+- k6 — *performs load test in* — performance env
+- luz-docs-import — *is scaled by* — HPA
+- luz-docs — *is scaled* — HPA
+- luz-docs-batch — *is scaled* — HPA
+- luz-docs-view-controller-batch — *is scaled* — HPA
+- luz-jsonstore — *is scaled* — HPA
+- Client timeout — *is failure signature for* — upload-zip endpoint
+- HTTP 500 — *is failure signature for* — upload-zip endpoint
+- HTTP 503 — *is failure signature for* — upload-zip endpoint
+- upload-zip endpoint — *is part of* — ingestion layer
+- ingestion layer — *is bottleneck* — upload-zip endpoint
+- ingestion layer — *is distinct from* — enrichment / Analyze-API 429 backlog
 - luz-docs-import HPA — *was pinned at* — max 2
-- luz-docs-import HPA — *cannot absorb* — 100 RPS
-- luz-docs-import HPA — *next step is to raise* — max
-- luz-docs-import upload-zip endpoint — *is related to* — LUZ-158230 docs-import performance
-- 60-min run — *failed* — 100%
-- 60-min run — *resulted in* — 0/8784 upload-zip requests returned 200
-- 60-min run — *failure mix included* — 61% 60s client-timeouts
-- 60-min run — *failure mix included* — 28% HTTP 503
-- 60-min run — *failure mix included* — 11% HTTP 500
-- 60-min run — *had effective throughput* — ~2.4 iters/s
-- 60-min run — *dropped* — 1186 iterations
-- liveness-probe death spiral — *is* — Confirmed root cause
-- liveness-probe death spiral — *caused* — import pods SIGKILLed
-- import pods — *were* — SIGKILLed
-- SIGKILLed — *with* — exit 137
-- liveness-probe death spiral — *occurred because* — GET /app-health/luz-docs-import/livez could not get a worker thread
-- worker thread — *was unavailable because* — pool was full of blocked uploads
-- luz-docs-import — *CPU stayed* — ~55m of a 3-core limit
-- luz-docs-import — *was blocked on* — I/O
-- liveness-probe death spiral — *is a general pattern* — Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage
-- liveness — *repair via* — dedicated health thread
-- liveness — *repair via* — relax thresholds
-- upload-zip — *should be made* — truly async
+- liveness-probe death spiral — *is confirmed root cause for* — upload-zip endpoint
+- luz-docs-import — *pods are SIGKILLed due to* — liveness-probe death spiral
+- GET /app-health/luz-docs-import/livez — *is liveness probe for* — luz-docs-import
+- luz-docs-import — *is blocked on* — I/O
+- liveness-probe death spiral — *is general pattern* — Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage
+- repair liveness — *is fix for* — liveness-probe death spiral
+- raise import HPA max — *is fix for* — luz-docs-import
+- make upload-zip truly async — *is fix for* — upload-zip endpoint
+- luz-vault — *is primary blocker* — Perf import failures root-cause: luz-vault sealed/unready cascades jsonstore 503 to upload-zip 500
 - luz-vault — *is* — sealed/unready
-- luz-vault sealed/unready — *is* — real primary blocker
 - luz-vault sealed/unready — *cascades to* — jsonstore addOne
 - jsonstore addOne — *results in* — HTTP 503
-- HTTP 503 — *cascades to* — HTTP 500
-- liveness-probe death spiral — *is a* — secondary, high-load-only amplifier
-- Perf import failures root-cause: luz-vault sealed/unready cascades jsonstore 503 to upload-zip 500 — *is* — Primary root cause
+- jsonstore addOne — *cascades to* — luz-docs-import
+- luz-docs-import — *results in* — HTTP 500
+- liveness-probe death spiral — *is secondary amplifier* — upload-zip endpoint
+- Perf import failures root-cause: luz-vault sealed/unready cascades jsonstore 503 to upload-zip 500 — *is primary root cause for* — upload-zip endpoint
+- LUZ-158230 docs-import performance — *is related to* — luz-docs-import
+- docs/tests/perf-k6-loadtest-2026-08-24/ — *contains* — full report
 
 %% ai-graph-end %%

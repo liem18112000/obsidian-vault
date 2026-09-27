@@ -1,14 +1,22 @@
 ---
-title: "Sub Agentic Loop 1.2 - GCP Service Exploration"
+ai_hash: 4120624c5a0af1c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49745166427'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 1 - Knowledge Gathering - v2 > Evaluating Knowledge-Gathering
+  Agent - V2'
 created: 2026-09-11
-updated: 2026-09-11
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Sub Agentic Loop 1.2 - GCP Service Exploration
+type: source
+updated: 2026-09-11
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49745166427/Sub+Agentic+Loop+1.2+-+GCP+Service+Exploration
-confluence_id: "49745166427"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 1 - Knowledge Gathering - v2 > Evaluating Knowledge-Gathering Agent - V2"
-tags: [confluence, ai-agents]
 ---
 
 # Sub Agentic Loop 1.2 - GCP Service Exploration
@@ -217,3 +225,14 @@ Because `gcpsvc` edges are `in_scope` and `gcpsvc` is added to `_fetchable`, the
 ### Result
 
 The pack gains a **live service-communication subgraph** rooted at the services that implement the ticket: who they are, per env; what they log; and how they talk to each other — each fact traceable to a GCP resource or log line. That is the operational grounding the document tiers can't provide.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[Knowledge-Gathering loop is a bounded frontier crawl with a verify edge]]
+- [[Agent Loop 2 - Self-learning]]
+- [[Agent self-learning memory]]
+
+%% ai-graph-end %%

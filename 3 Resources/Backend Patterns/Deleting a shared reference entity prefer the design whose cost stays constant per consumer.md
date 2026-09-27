@@ -1,10 +1,21 @@
 ---
-title: "Deleting a shared reference entity: prefer the design whose cost stays constant per consumer"
+ai_hash: 0c9a087a4e4d30ca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Research on Delete Access class (TP2020)'
 status: seedling
-source: "Confluence: Research on Delete Access class (TP2020)"
-tags: [coupling, pubsub, soft-delete, microservices, event-driven, confluence-distilled]
+tags:
+- coupling
+- pubsub
+- soft-delete
+- microservices
+- event-driven
+- confluence-distilled
+title: 'Deleting a shared reference entity: prefer the design whose cost stays constant
+  per consumer'
+type: lesson
 ---
 
 # Deleting a shared reference entity: prefer the design whose cost stays constant per consumer
@@ -42,3 +53,14 @@ Source: [[Research on Delete Access class]] (TP2020, Confluence).
 ## Related
 
 - [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research on Delete Access class]]
+- [[Confluence-Distillation]]
+- [[Let the owning service hold the report field mapping as config, not the reporting service in code]]
+- [[Validate with a count query for violators instead of loading all documents]]
+- [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
+
+%% ai-graph-end %%

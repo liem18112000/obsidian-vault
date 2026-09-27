@@ -1,10 +1,21 @@
 ---
-title: "Playwright for UI E2E, k6 for load: split by specialization not overlap"
+ai_hash: cd3f556b6c19203c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Testing Tool Comparison Playwright vs k6 (LUZ)'
 status: seedling
-source: "Confluence: Testing Tool Comparison Playwright vs k6 (LUZ)"
-tags: [testing, playwright, k6, e2e, load-testing, tooling, confluence-distilled]
+tags:
+- testing
+- playwright
+- k6
+- e2e
+- load-testing
+- tooling
+- confluence-distilled
+title: 'Playwright for UI E2E, k6 for load: split by specialization not overlap'
+type: lesson
 ---
 
 # Playwright for UI E2E, k6 for load: split by specialization not overlap
@@ -28,3 +39,12 @@ Source: [[Testing Tool Comparison Playwright vs. k6]] (LUZ, Confluence).
 ## Related
 
 - [[Testing Tool Comparison Playwright vs. k6]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing Tool Comparison Playwright vs. k6]]
+- [[For authenticated pages pick the perf tool that can log in, not the prettiest report]]
+- [[Testing]]
+
+%% ai-graph-end %%

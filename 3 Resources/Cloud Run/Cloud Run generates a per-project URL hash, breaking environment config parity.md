@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run generates a per-project URL hash, breaking environment config parity"
+ai_hash: efbdcc59ecb40291
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: 'Confluence: Serverless with Google Cloud Run (LUZ)'
 status: seedling
-source: "Confluence: Serverless with Google Cloud Run (LUZ)"
-tags: [gcp, cloud-run, serverless, configuration, deployment, confluence-distilled]
+tags:
+- gcp
+- cloud-run
+- serverless
+- configuration
+- deployment
+- confluence-distilled
+title: Cloud Run generates a per-project URL hash, breaking environment config parity
+type: gotcha
 ---
 
 # Cloud Run generates a per-project URL hash, breaking environment config parity
@@ -37,3 +47,14 @@ Source: [[Serverless with Google Cloud Run]] (LUZ, Confluence).
 ## Related
 
 - [[Serverless with Google Cloud Run]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Serverless with Google Cloud Run]]
+- [[Shift GKE traffic to Cloud Run with Istio weighted routing, not a cutover]]
+- [[Cloud Run service-to-service with an app bearer needs the callee public (Authorization header collision)]]
+- [[Cloud Run v2 service design gotchas]]
+- [[Two IaC surfaces need an explicit naming contract at the seam]]
+
+%% ai-graph-end %%

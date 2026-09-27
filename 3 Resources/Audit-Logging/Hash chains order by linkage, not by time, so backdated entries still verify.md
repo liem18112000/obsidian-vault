@@ -1,10 +1,19 @@
 ---
-title: "Hash chains order by linkage, not by time, so backdated entries still verify"
+ai_hash: 1fb60f8ae8487fea
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: argument
+entities: []
+source: 'Confluence: LUZ Critical Concerns - Brief Summary (2025-11-17)'
 status: seedling
-source: "Confluence: LUZ Critical Concerns - Brief Summary (2025-11-17)"
-tags: [audit-logging, security, cryptography, timestamps, luz-audit]
+tags:
+- audit-logging
+- security
+- cryptography
+- timestamps
+- luz-audit
+title: Hash chains order by linkage, not by time, so backdated entries still verify
+type: argument
 ---
 
 # Hash chains order by linkage, not by time, so backdated entries still verify
@@ -28,3 +37,14 @@ Generalisation: **a chain proves relative order of writes, never absolute time.*
 ## Related
 
 - [[RFC 3161 timestamps outsource the time claim to a party the attacker does not control]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A hash chain proves integrity but not authorship, so a database admin can silently rebuild it]]
+- [[RFC 3161 timestamps outsource the time claim to a party the attacker does not control]]
+- [[Per-record signatures prove authenticity but not completeness, so deletion and reordering go undetected]]
+- [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+- [[A hash-chained audit log cannot be written in parallel]]
+
+%% ai-graph-end %%

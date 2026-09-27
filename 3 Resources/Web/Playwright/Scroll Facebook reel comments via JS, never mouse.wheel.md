@@ -1,7 +1,7 @@
 ---
-ai_hash: a9b8a849f0e2f832
+ai_hash: 61c794c26302d875
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Scrolling a Facebook reel page must target the comment panel, not the video
 created: 2026-06-13
@@ -56,7 +56,7 @@ Implemented in fb-info-project `src/browser.py` as one shared `scroll(page, roun
 - [[Facebook reel comments are hidden behind the comment icon]]
 - [[Facebook sharev links can resolve to reels — classify after the redirect]]
 - [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
-- [[Facebook shows a See more on Facebook login dialog when the session is logged out]]
 - [[Verify Facebook comment sort switch by re-reading the sort button label]]
+- [[Facebook shows a See more on Facebook login dialog when the session is logged out]]
 
 %% ai-graph-end %%

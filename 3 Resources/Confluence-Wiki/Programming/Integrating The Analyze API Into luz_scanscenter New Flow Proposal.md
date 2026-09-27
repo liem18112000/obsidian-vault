@@ -1,18 +1,22 @@
 ---
-title: "Integrating The Analyze API Into luz_scanscenter: New Flow Proposal"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48692756549/Integrating+The+Analyze+API+Into+luz_scanscenter+New+Flow+Proposal
-space: "TS"
-topic: programming
-relevance: 0.846
-depth: 2.98
-updated: 2025-10-09
+ai_hash: 65fc6ec428ebdd62
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.98
+entities: []
+relevance: 0.846
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48692756549/Integrating+The+Analyze+API+Into+luz_scanscenter+New+Flow+Proposal
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: 'Integrating The Analyze API Into luz_scanscenter: New Flow Proposal'
+topic: programming
+type: source
+updated: 2025-10-09
 ---
 
 # Integrating The Analyze API Into luz_scanscenter: New Flow Proposal
@@ -62,3 +66,14 @@ When all jobs finish, update matching results from the Analyze API in the docume
 ## Open questions
 
 If luz_scancenter or the Analyze API crashes <span class="inline-comment-marker" ref="6ff3c456-619f-4378-b7c0-ec2d245f4f15">during</span> processing, should we track processed steps/letters or restart from the beginning after restarting?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CROSS-TEST LUZ-142507 Implement Analyze API Integration (Phase 1) Part 2]]
+- [[Evaluation of final solution including implementation needs]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[LUZ-Enricher POC]]
+- [[Programming]]
+
+%% ai-graph-end %%

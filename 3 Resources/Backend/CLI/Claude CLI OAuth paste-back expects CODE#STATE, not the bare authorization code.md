@@ -1,7 +1,7 @@
 ---
-ai_hash: 611745667cda12f9
+ai_hash: ff7f0080efe5f65a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-06
 entities: []
 source: vinnstack dev relay 2026-07-06, claude setup-token
@@ -36,6 +36,6 @@ When automating this (e.g. a web relay that feeds the paste value to setup-token
 - [[Prefer pasting a token minted once over scraping it from a PTY relay]]
 - [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
 - [[Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit]]
-- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+- [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Invoice API Reference"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488076222/Invoice+API+Reference
-space: "AI"
-topic: programming
-relevance: 0.784
-depth: 2.8
-updated: 2020-12-02
+ai_hash: 582a08b60d8e70bb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.8
+entities: []
+relevance: 0.784
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488076222/Invoice+API+Reference
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Invoice API Reference
+topic: programming
+type: source
+updated: 2020-12-02
 ---
 
 # Invoice API Reference
@@ -308,3 +312,14 @@ Find the XML Schemas in our Bitbucket repository:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze API v2 for Invoice prediction]]
+- [[Invoice API Java Client]]
+- [[Invoice API]]
+- [[Invoice API Explained]]
+- [[OCR API Explained]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "[Proof of Concept] Auto login with Keycloak"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/46958576246/Proof+of+Concept+Auto+login+with+Keycloak
-space: "TP2020"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2021-09-27
+ai_hash: 1f2ee3e85d73b1ac
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 16
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/46958576246/Proof+of+Concept+Auto+login+with+Keycloak
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/tp2020
+- confluence
+- architecture
+- space/tp2020
+title: '[Proof of Concept] Auto login with Keycloak'
+topic: architecture
+type: source
+updated: 2021-09-27
 ---
 
 # [Proof of Concept] Auto login with Keycloak
@@ -612,3 +616,14 @@ Trigger the call, the response will be the full auto login URL, if the is no exc
 
 
 Enter that URL to the browser to process the auto login flow without entering username and password
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keycloak action tokens bridge an app session into a browser login]]
+- [[Auto login in myLife and ePost private web clients]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Copy Proof of Concept Passwordless account login with Keycloak]]
+- [[Proof of Concept Passwordless account login with Keycloak]]
+
+%% ai-graph-end %%

@@ -1,14 +1,21 @@
 ---
-title: "Agent Loop 4: Test-Plan Execution"
+ai_hash: 70cfa239ed4cb128
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49780031515'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-23
-updated: 2026-09-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: 'Agent Loop 4: Test-Plan Execution'
+type: source
+updated: 2026-09-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49780031515/Agent+Loop+4+Test-Plan+Execution
-confluence_id: "49780031515"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents]
 ---
 
 # Agent Loop 4: Test-Plan Execution
@@ -96,3 +103,14 @@ Unlike read-only KGA/TPD/TEV, EXEC **hold test-env creds and drive live systems*
 ### One grunt takeaway
 
 **Leaf finally RUN. 4th robot grab the** `.feature`**, run it in a locked sandbox against a chosen cave, watch with real oracle-eyes, human-approve each heal, sort each fail, write every cave + run to the shared stone (2 new tables), and hand the score-robot REAL numbers so it stop guessing.** Off the hunt-path, resumable, human owns the gate, keys locked away. **But robot only**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test Executor Agent - Closing the Testing Pipeline Gap]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Test-Plan Definition Agent]]
+- [[Flow View - V2]]
+- [[Sub Agentic Loop 1.2 - GCP Service Exploration]]
+
+%% ai-graph-end %%

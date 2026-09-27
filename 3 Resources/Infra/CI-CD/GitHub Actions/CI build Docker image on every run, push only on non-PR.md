@@ -1,7 +1,7 @@
 ---
-ai_hash: bf4bb42c2f88f2a2
+ai_hash: 630f105eecb85f21
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: leo-cdp-framework ci-cd.yml 2026-06-06
@@ -49,9 +49,9 @@ A Docker build step gated `if: github.event_name != pull_request` does NOT run o
 
 **Related notes:**
 - [[Same-repo branch push fires both push and pull_request events (duplicate CI runs)]]
-- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
 - [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
-- [[Trivy scan-before-push needs a single-arch load build first]]
-- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
 
 %% ai-graph-end %%

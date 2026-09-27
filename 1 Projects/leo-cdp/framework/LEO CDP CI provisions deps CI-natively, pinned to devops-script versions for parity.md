@@ -1,40 +1,43 @@
 ---
-ai_hash: 96a4a79ace0fc1a0
+ai_hash: 50a49789e1953c8b
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities:
 - LEO CDP CI
 - dependencies
-- CI-native provisioning
-- devops-script versions
-- parity
-- CI `validate` job
-- .github/workflows/ci-cd.yml
 - JDK
+- CI-native provisioning
+- devops-script
+- '`validate` job'
+- '`.github/workflows/ci-cd.yml`'
 - GitHub `services:` containers
 - '`actions/setup-java` action'
-- VM-oriented `devops-script` provisioning scripts
+- VM-oriented provisioning scripts
 - '`devops-script/docker-arangodb/start.sh`'
 - '`install-java.sh`'
 - ephemeral runner
-- '`docker-compose` v1→v2 shim'
-- manual readiness wait loop
-- '`JAVA_HOME` pin hack'
-- devops scripts
 - long-lived hosts
-- deployment
+- production parity
+- version-pinning
 - '`services:` images'
 - '`devops-script/docker-arangodb` compose'
 - '`arangodb:3.11.14`'
 - '`redis:7.4`'
-- version-pinning
-- single source of truth
-- deployment scripts
+- deployment
 - CI provisioning
+- GitHub Actions runners
+- '`JAVA_HOME`'
+- '`PATH`'
+- '`docker-compose` v1→v2 shim'
+- manual readiness wait loop
+- '`JAVA_HOME` pin hack'
+- single source of truth
+- CI
 - load-bearing facts
-- GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH
-- Shim legacy docker-compose v1 to docker compose v2 on GitHub runners
+- versions
+- ports
+- config
 source: leo-cdp-framework ci-cd.yml work 2026-06-06
 status: seedling
 tags:
@@ -74,40 +77,46 @@ The CI `validate` job in `.github/workflows/ci-cd.yml` provisions its dependenci
 - [[GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH]]
 - [[Shim legacy docker-compose v1 to docker compose v2 on GitHub runners]]
 - [[LEO CDP SYSTEM_ENV_VARS still requires database-configs.json to exist first]]
-- [[Job-level defaults.run.working-directory breaks Initialize containers (pre-checkout)]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)]]
 
 **Relations:**
 - LEO CDP CI — *provisions* — dependencies
+- LEO CDP CI — *provisions* — JDK
 - LEO CDP CI — *uses* — CI-native provisioning
-- dependencies — *pinned to* — devops-script versions
-- devops-script versions — *provides* — parity
-- CI `validate` job — *defined in* — .github/workflows/ci-cd.yml
-- CI `validate` job — *provisions* — dependencies
-- CI `validate` job — *provisions* — JDK
-- CI `validate` job — *uses* — CI-native provisioning
-- CI `validate` job — *avoids* — VM-oriented `devops-script` provisioning scripts
-- CI-native provisioning — *involves* — GitHub `services:` containers
-- CI-native provisioning — *involves* — `actions/setup-java` action
-- VM-oriented `devops-script` provisioning scripts — *includes* — `devops-script/docker-arangodb/start.sh`
-- VM-oriented `devops-script` provisioning scripts — *includes* — `install-java.sh`
-- GitHub `services:` containers — *characteristic* — auto health-gated
-- GitHub `services:` containers — *characteristic* — torn down
-- `actions/setup-java` action — *characteristic* — cached
-- `actions/setup-java` action — *characteristic* — deterministic
-- VM-oriented `devops-script` provisioning scripts — *forced* — `docker-compose` v1→v2 shim
-- VM-oriented `devops-script` provisioning scripts — *forced* — manual readiness wait loop
-- VM-oriented `devops-script` provisioning scripts — *forced* — `JAVA_HOME` pin hack
-- devops scripts — *designed for* — long-lived hosts
-- devops scripts — *not designed for* — ephemeral runner
-- `services:` images — *pinned to* — `devops-script/docker-arangodb` compose
+- `validate` job — *is defined in* — `.github/workflows/ci-cd.yml`
+- `validate` job — *uses* — CI-native provisioning
+- CI-native provisioning — *leverages* — GitHub `services:` containers
+- CI-native provisioning — *leverages* — `actions/setup-java` action
+- CI-native provisioning — *is preferred over* — VM-oriented provisioning scripts
+- VM-oriented provisioning scripts — *include* — `devops-script/docker-arangodb/start.sh`
+- VM-oriented provisioning scripts — *include* — `install-java.sh`
+- VM-oriented provisioning scripts — *are designed for* — long-lived hosts
+- VM-oriented provisioning scripts — *are unsuitable for* — ephemeral runner
+- devops-script — *is* — single source of truth
+- single source of truth — *is for* — deployment
+- devops-script — *declares versions for* — `devops-script/docker-arangodb` compose
 - `devops-script/docker-arangodb` compose — *declares version* — `arangodb:3.11.14`
 - `devops-script/docker-arangodb` compose — *declares version* — `redis:7.4`
-- version-pinning — *achieves* — parity
-- `devops-script` — *is source of truth for* — deployment
-- deployment scripts — *should not be used for* — CI provisioning
-- deployment scripts — *share* — load-bearing facts
-- CI provisioning — *uses* — load-bearing facts
-- LEO CDP CI — *related to* — GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH
-- LEO CDP CI — *related to* — Shim legacy docker-compose v1 to docker compose v2 on GitHub runners
+- version-pinning — *achieves* — production parity
+- `services:` images — *are pinned to versions from* — `devops-script/docker-arangodb` compose
+- production parity — *is goal of* — version-pinning
+- VM-oriented provisioning scripts — *required* — `docker-compose` v1→v2 shim
+- VM-oriented provisioning scripts — *required* — manual readiness wait loop
+- VM-oriented provisioning scripts — *required* — `JAVA_HOME` pin hack
+- single source of truth — *should not be force-fit onto* — CI provisioning
+- CI provisioning — *should share* — load-bearing facts
+- load-bearing facts — *include* — versions
+- load-bearing facts — *include* — ports
+- load-bearing facts — *include* — config
+- GitHub Actions runners — *pick JDK from* — `JAVA_HOME`
+- GitHub Actions runners — *do not pick JDK from* — `PATH`
+- CI — *uses* — ephemeral runner
+- deployment — *uses* — long-lived hosts
+- LEO CDP CI — *aims for* — production parity
+- CI-native provisioning — *is* — cached
+- CI-native provisioning — *is* — deterministic
+- GitHub `services:` containers — *are* — auto health-gated
+- GitHub `services:` containers — *are* — torn down
+- devops-script — *is actual purpose* — deployment
 
 %% ai-graph-end %%

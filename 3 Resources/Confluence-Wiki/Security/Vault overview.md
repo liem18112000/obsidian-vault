@@ -1,18 +1,22 @@
 ---
-title: "Vault overview"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530435704/Vault+overview
-space: "LUZ"
-topic: security
-relevance: 0.777
-depth: 2.5
-updated: 2021-05-17
+ai_hash: dde58ec75912ad7d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.5
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530435704/Vault+overview
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Vault overview
+topic: security
+type: source
+updated: 2021-05-17
 ---
 
 # Vault overview
@@ -149,3 +153,14 @@ As you known, we have 4 main components for Vault, we need to choose and define 
 # Vault Unsealing
 
 [Investigate Vault Unsealing](https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530435296/Investigate+Vault+Unsealing)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Authorization]]
+- [[Luz-vault]]
+- [[Encryption and decryption flows with Vault]]
+- [[Introduction of Hashicorp Vault]]
+- [[Security]]
+
+%% ai-graph-end %%

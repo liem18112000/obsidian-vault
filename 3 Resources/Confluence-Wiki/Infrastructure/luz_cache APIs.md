@@ -1,18 +1,22 @@
 ---
-title: "luz_cache APIs"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47220458629/luz_cache+APIs
-space: "Helios"
-topic: infra
-relevance: 0.75
-depth: 3
-updated: 2022-11-24
+ai_hash: ac767b34f50d6d0e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 3
+entities: []
+relevance: 0.75
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47220458629/luz_cache+APIs
+space: Helios
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/helios
+- confluence
+- infra
+- space/helios
+title: luz_cache APIs
+topic: infra
+type: source
+updated: 2022-11-24
 ---
 
 # luz_cache APIs
@@ -87,3 +91,14 @@ tags:
 
 
 ![[47220458629-image-20221124-050544.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HowToUseNewTokenAPI]]
+- [[How to consume luz api]]
+- [[Authentication and Authorization - PoC document]]
+- [[Introduction of Hashicorp Vault]]
+- [[Load test get document id API]]
+
+%% ai-graph-end %%

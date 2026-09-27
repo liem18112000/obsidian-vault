@@ -1,18 +1,22 @@
 ---
-title: "01_110_Stream the log file and notify to email and slack."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134409125/01_110_Stream+the+log+file+and+notify+to+email+and+slack.
-space: "GRAVITY"
-topic: programming
-relevance: 0.827
-depth: 3
-updated: 2022-06-24
+ai_hash: 6c07516d3d0b7d12
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 3
+entities: []
+relevance: 0.827
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134409125/01_110_Stream+the+log+file+and+notify+to+email+and+slack.
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: 01_110_Stream the log file and notify to email and slack.
+topic: programming
+type: source
+updated: 2022-06-24
 ---
 
 # 01_110_Stream the log file and notify to email and slack.
@@ -67,3 +71,11 @@ For more details, please refer <a href="https://bitbucket.org/axonivy-prod/cob_
 <span class="legacy-color-text-blue3">\<configurated_hostname\>:\<configurated_port\>/tail</span>
 
 <span class="legacy-color-text-blue3">Example: 192.168.1.10:9002/tail</span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[04_50_Setup Swagger UI for Finnova Rest API]]
+- [[One API load test with locust]]
+
+%% ai-graph-end %%

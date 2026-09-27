@@ -1,18 +1,22 @@
 ---
-title: "Setup Redis and DNS on TEST and PROD"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47102132712/Setup+Redis+and+DNS+on+TEST+and+PROD
-space: "LUZ"
-topic: infra
-relevance: 0.827
-depth: 3
-updated: 2022-05-11
+ai_hash: 661c4dccba13cf20
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.827
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47102132712/Setup+Redis+and+DNS+on+TEST+and+PROD
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Setup Redis and DNS on TEST and PROD
+topic: infra
+type: source
+updated: 2022-05-11
 ---
 
 # Setup Redis and DNS on TEST and PROD
@@ -318,3 +322,14 @@ The authentication code for redis server is [authString: 0d375083-2345-4e4b-9788
   
 
 ![[47102132712-image-20220427-094825.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[EPC Notification]]
+- [[Infrastructure]]
+- [[luz-vault - How to run Vault Benchmark]]
+- [[Recipe Deploy with Terraform]]
+
+%% ai-graph-end %%

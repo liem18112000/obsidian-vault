@@ -1,18 +1,22 @@
 ---
-title: "How to resolve hibernate N+1 select's problem"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/31137694409/How+to+resolve+hibernate+N+1+select+s+problem
-space: "TS"
-topic: programming
-relevance: 0.812
-depth: 3
-updated: 2020-01-03
+ai_hash: e970a51307b19a13
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 3
+entities: []
+relevance: 0.812
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/31137694409/How+to+resolve+hibernate+N+1+select+s+problem
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: How to resolve hibernate N+1 select's problem
+topic: programming
+type: source
+updated: 2020-01-03
 ---
 
 # How to resolve hibernate N+1 select's problem
@@ -314,3 +318,14 @@ We have seen that with JPA 2.1 we have two solutions for the N+1 problem: We can
 **<a href="https://thoughts-on-java.org/jpa-21-entity-graph-part-1-named-entity/" class="external-link" rel="nofollow">How to Define and Use a @NamedEntityGraph</a>**
 
 **<a href="https://thoughts-on-java.org/hibernate-tip-entitygraph-multiple-subgraphs/" class="external-link" rel="nofollow">Create an EntityGraph with multiple SubGraphs</a>**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[N+1 hides at the service-call layer too, not just in the ORM]]
+- [[Analyze N+1 queries for REST API calculate payslips for overview salary processing]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[How to implement an audit log using Hibernate Envers]]
+- [[Prompt Performance Code Review]]
+
+%% ai-graph-end %%

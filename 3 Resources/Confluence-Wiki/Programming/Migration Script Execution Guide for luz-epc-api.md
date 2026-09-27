@@ -1,18 +1,22 @@
 ---
-title: "Migration Script Execution Guide for luz-epc-api"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49224679427/Migration+Script+Execution+Guide+for+luz-epc-api
-space: "LUZ"
-topic: programming
-relevance: 0.852
-depth: 3
-updated: 2026-03-12
+ai_hash: a26f16842384634b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.852
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49224679427/Migration+Script+Execution+Guide+for+luz-epc-api
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Migration Script Execution Guide for luz-epc-api
+topic: programming
+type: source
+updated: 2026-03-12
 ---
 
 # Migration Script Execution Guide for luz-epc-api
@@ -143,3 +147,14 @@ If the container filesystem is read-only or logs must persist beyond pod lifecyc
 - <span class="placeholder-inline-tasks">Migration process started and background job ID observed</span>
 - <span class="placeholder-inline-tasks">No errors found in migration-output.log</span>
 - <span class="placeholder-inline-tasks">Final success message present in logs and data validated in v2 schema</span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Post-deployment Batch messageCount backfill (Test & Prod) — LUZ-155431 LUZ-155435]]
+- [[ELM5 PubSub Message Queue]]
+- [[Infrastructure]]
+- [[One API end to end testing]]
+- [[Run Script Resync hidden wiget]]
+
+%% ai-graph-end %%

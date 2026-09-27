@@ -1,18 +1,22 @@
 ---
-title: "Technical design of Klara - Hubspot"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20497190417/Technical+design+of+Klara+-+Hubspot
-space: "LUZ"
-topic: architecture
-relevance: 0.777
-depth: 2.72
-updated: 2021-04-13
+ai_hash: 1718460a47a759f5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 16
+depth: 2.72
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20497190417/Technical+design+of+Klara+-+Hubspot
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Technical design of Klara - Hubspot
+topic: architecture
+type: source
+updated: 2021-04-13
 ---
 
 # Technical design of Klara - Hubspot
@@ -304,3 +308,14 @@ This section list out all concern which belongs to technical and need to thinkin
 Along with Contact and Company, Deal is also a kind of content supported by Hubspot. What is Deal: whenever an action made by a contact that could lead to revenue, it should be a Deal. As mentioned from overview of <a href="https://axonivy.atlassian.net/wiki/display/LUZ/Overview+Interaction+between+KLARA+and+HubSpot" rel="nofollow">interaction between Klara and Hubspot</a>, in the next generation the Deal contents will be synced to Hubspot. Therefore, it should be a point to consider when making the technical design. Here is the link of what is Deals overview in Hubspot: <a href="https://developers.hubspot.com/docs/methods/deals/deals_overview" class="external-link" rel="nofollow">https://developers.hubspot.com/docs/methods/deals/deals_overview</a>
 
 ## 4. Consider to support Deal in the second generation
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Outbound sync needs a durable per-record status table and a retry scan]]
+- [[5. Analyze the current data status of company between Hubspot and Klara]]
+- [[Aggregation Database Table Design]]
+- [[API Document]]
+- [[How to execute API to create sync event for post from tenant schemas to public table]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Static analysis tool for Android"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38139200448/Static+analysis+tool+for+Android
-space: "Helios"
-topic: programming
-relevance: 0.711
-depth: 2.33
-updated: 2016-01-12
+ai_hash: d20f1f1eb32febc7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.33
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38139200448/Static+analysis+tool+for+Android
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Static analysis tool for Android
+topic: programming
+type: source
+updated: 2016-01-12
 ---
 
 # Static analysis tool for Android
@@ -241,3 +245,14 @@ gradlew check
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A linter with ignoreFailures is reporting, not gating; ratchet it instead]]
+- [[Test and code review report template]]
+- [[Source Analysis]]
+- [[00. Test and code review report template]]
+- [[Test and code review report template.2]]
+
+%% ai-graph-end %%

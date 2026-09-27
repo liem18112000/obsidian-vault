@@ -1,18 +1,22 @@
 ---
-title: "Public API - letterbox - API get deleted letters from trash"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47728951400/Public+API+-+letterbox+-+API+get+deleted+letters+from+trash
-space: "TS"
-topic: programming
-relevance: 0.842
-depth: 3
-updated: 2024-03-20
+ai_hash: 23cee743ecec3972
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 18
+depth: 3
+entities: []
+relevance: 0.842
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47728951400/Public+API+-+letterbox+-+API+get+deleted+letters+from+trash
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Public API - letterbox - API get deleted letters from trash
+topic: programming
+type: source
+updated: 2024-03-20
 ---
 
 # Public API - letterbox - API get deleted letters from trash
@@ -133,3 +137,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public API - letterbox - change letter status to read unread]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[Empty Trash APIs]]
+- [[LUZ-146746 Use correct API's for delete, restore and their undo]]
+- [[Error handling for delete and undo]]
+
+%% ai-graph-end %%

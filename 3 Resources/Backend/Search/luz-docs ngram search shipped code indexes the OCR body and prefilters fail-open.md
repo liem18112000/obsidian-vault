@@ -1,7 +1,7 @@
 ---
-ai_hash: e4c9dc324e9fb057
+ai_hash: 5663f27ba00858c4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-28
 entities: []
 source: session 2026-06-28 ngram code review
@@ -37,7 +37,7 @@ Related: [[Trigram index makes substring search indexable filter by 3-grams, the
 - [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
 - [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
 - [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+- [[Trigram Search — Performance-Env Benchmark]]
 - [[OCR body text dominates a full-text trigram index]]
-- [[_searchTrigrams intentionally exposed in luz_docs API responses]]
 
 %% ai-graph-end %%

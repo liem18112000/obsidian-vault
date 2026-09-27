@@ -1,18 +1,22 @@
 ---
-title: "MPI KAFKA Stream Letter"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47923527851/MPI+KAFKA+Stream+Letter
-space: "AI"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2024-10-09
+ai_hash: 8d40035428d9dd60
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47923527851/MPI+KAFKA+Stream+Letter
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: MPI KAFKA Stream Letter
+topic: programming
+type: source
+updated: 2024-10-09
 ---
 
 # MPI KAFKA Stream Letter
@@ -165,3 +169,14 @@ Was ist die maximal tolerierbare Zeit innerhalb derer die Daten wiederhergestell
 | **Klasse A** |          |                                  |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Preview Delivery-Prices API - ForcedOnboading]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[E-Post API - technical documentation]]
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%

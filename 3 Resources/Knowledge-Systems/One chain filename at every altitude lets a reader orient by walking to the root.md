@@ -1,10 +1,21 @@
 ---
-title: "One chain filename at every altitude lets a reader orient by walking to the root"
+ai_hash: f07ec4eb53bffdf3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: model
+entities: []
+source: 'Confluence: OpenRig''s Intent Hierarchy and Refocus (2026-09-27)'
 status: seedling
-source: "Confluence: OpenRig's Intent Hierarchy and Refocus (2026-09-27)"
-tags: [knowledge-management, ai-agents, openrig, convention, architecture, context-engineering]
+tags:
+- knowledge-management
+- ai-agents
+- openrig
+- convention
+- architecture
+- context-engineering
+title: One chain filename at every altitude lets a reader orient by walking to the
+  root
+type: model
 ---
 
 # One chain filename at every altitude lets a reader orient by walking to the root
@@ -32,3 +43,12 @@ The split between those trees is itself the lesson: **topology defaults ship in 
 
 - [[Knowledge loses meaning when copied out of the position where it was learned]]
 - [[Intent composes up the chain, specification stays a leaf property]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Intent composes up the chain, specification stays a leaf property]]
+- [[Knowledge loses meaning when copied out of the position where it was learned]]
+- [[OpenRig's Intent Hierarchy and Refocus - Analysis and Implementation in Test-Agent-V2]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Public API/ eletter token (00.02.08.00)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47003764430/Public+API+eletter+token+00.02.08.00
-space: "LUZ"
-topic: programming
-relevance: 0.882
-depth: 3
-updated: 2021-11-22
+ai_hash: d018b68088ea2cb0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.882
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47003764430/Public+API+eletter+token+00.02.08.00
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Public API/ eletter token (00.02.08.00)
+topic: programming
+type: source
+updated: 2021-11-22
 ---
 
 # Public API/ eletter token (00.02.08.00)
@@ -49,3 +53,14 @@ B. Mention
 
 
 3\. Implement the QR code API for "Pinning of Branded eFolder" (next plan: integrate with Optimus)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public API Eletter (0.02.09.00)]]
+- [[Public API (30 August 2021)]]
+- [[QR code URL implementation flow]]
+- [[API to generate authentication letter for inividual]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+
+%% ai-graph-end %%

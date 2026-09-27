@@ -1,14 +1,21 @@
 ---
-title: "Test-Plan Definition Agent"
+ai_hash: b12a66a370a252ec
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49741398036'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 3 - Test-Plan Definition'
 created: 2026-09-10
-updated: 2026-09-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Test-Plan Definition Agent
+type: source
+updated: 2026-09-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49741398036/Test-Plan+Definition+Agent
-confluence_id: "49741398036"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 3 - Test-Plan Definition"
-tags: [confluence, ai-agents]
 ---
 
 # Test-Plan Definition Agent
@@ -109,3 +116,14 @@ Two session state files (`state.json`, `implement-state.json`, each `{done}`) dr
 - **Off the request path.** Long LLM work via `asyncio.to_thread`; loop state persisted so a kill resumes.
 
 - **Layering.** `common/*` never imports `test_plan_definition`; the two agents never import each other.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Sub Agentic Loop 3.2 - Implement]]
+- [[Sub Agentic Loop 3.1 - Define]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[TPD agentic loop single-pass DEFINE to APPROVE to IMPLEMENT]]
+
+%% ai-graph-end %%

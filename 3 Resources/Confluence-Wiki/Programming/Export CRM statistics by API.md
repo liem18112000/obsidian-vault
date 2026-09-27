@@ -1,18 +1,22 @@
 ---
-title: "Export CRM statistics by API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47374664204/Export+CRM+statistics+by+API
-space: "TS"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2023-05-10
+ai_hash: 27b8e4bcc9c21a94
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47374664204/Export+CRM+statistics+by+API
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Export CRM statistics by API
+topic: programming
+type: source
+updated: 2023-05-10
 ---
 
 # Export CRM statistics by API
@@ -109,3 +113,14 @@ curl "**\<endpoint\>**/luz_reporting/report/stimulsoft" --form "report_template=
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[Employee Report Implementation (10.05.2023)]]
+- [[14. Create companies by tenant id]]
+- [[16. Export unsynchronized companies which missing from last synchronization]]
+- [[15. Update companies by tenant id]]
+
+%% ai-graph-end %%

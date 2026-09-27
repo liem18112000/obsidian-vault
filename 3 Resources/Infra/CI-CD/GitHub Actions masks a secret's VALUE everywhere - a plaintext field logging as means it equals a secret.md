@@ -1,7 +1,7 @@
 ---
-ai_hash: bf53ff2cbff15d91
+ai_hash: a65fa3783a604e6d
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-04
 entities: []
 source: session 2026-07-04 fb-info-project run 28708059025
@@ -32,7 +32,7 @@ Related: [[GitHub Actions 'secret is not set' usually means a name mismatch - ve
 - [[GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]]
 - [[Deliver a CI-minted credential via a masked short-retention artifact, not the run log]]
 - [[secrets context is not available in GitHub Actions if conditions]]
+- [[A wiki export can carry live credentials into git; redact before the first commit]]
 - [[GitHub Actions gives fallback defaults because empty string is falsy in expressions]]
-- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
 
 %% ai-graph-end %%

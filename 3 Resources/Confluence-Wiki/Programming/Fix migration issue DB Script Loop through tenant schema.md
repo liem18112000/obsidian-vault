@@ -1,18 +1,22 @@
 ---
-title: "Fix migration issue: DB Script Loop through tenant schema"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47482700524/Fix+migration+issue+DB+Script+Loop+through+tenant+schema
-space: "HACKA"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2026-03-18
+ai_hash: 13af3a850ab7671a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47482700524/Fix+migration+issue+DB+Script+Loop+through+tenant+schema
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: 'Fix migration issue: DB Script Loop through tenant schema'
+topic: programming
+type: source
+updated: 2026-03-18
 ---
 
 # Fix migration issue: DB Script Loop through tenant schema
@@ -117,3 +121,14 @@ $$
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Script delete accounting configuration]]
+- [[Script to add hibernate_sequence for new Klara customers]]
+- [[SQL Script execution]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
+- [[Deactivate the Valiant Finnova interface]]
+
+%% ai-graph-end %%

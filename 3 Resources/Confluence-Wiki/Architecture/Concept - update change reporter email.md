@@ -1,18 +1,22 @@
 ---
-title: "Concept - update/change reporter email"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47220164020/Concept+-+update+change+reporter+email
-space: "LUZ"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2022-11-28
+ai_hash: c311e68da8606078
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47220164020/Concept+-+update+change+reporter+email
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Concept - update/change reporter email
+topic: architecture
+type: source
+updated: 2022-11-28
 ---
 
 # Concept - update/change reporter email
@@ -61,3 +65,13 @@ In order to update email from <a href="mailto:reporterA@axonivy.io" class="exter
 ### III. Scenario allow update email reporters
 
 .
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accounting Interface(16.01.2024 - 29.01.2024)]]
+- [[Handle report configuration for new fields (12.06.2023)]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[Architecture]]
+
+%% ai-graph-end %%

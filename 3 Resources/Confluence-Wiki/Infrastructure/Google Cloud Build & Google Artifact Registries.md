@@ -1,18 +1,22 @@
 ---
-title: "Google Cloud Build & Google Artifact Registries"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48341811344/Google+Cloud+Build+Google+Artifact+Registries
-space: "LUZ"
-topic: infra
-relevance: 0.819
-depth: 2.9
-updated: 2025-02-20
+ai_hash: df3eff9bce6abc1f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.9
+entities: []
+relevance: 0.819
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48341811344/Google+Cloud+Build+Google+Artifact+Registries
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Google Cloud Build & Google Artifact Registries
+topic: infra
+type: source
+updated: 2025-02-20
 ---
 
 # Google Cloud Build & Google Artifact Registries
@@ -64,3 +68,14 @@ For each project
 3.  Merge the `invisible/devops` branch to `master` or `main`
 
 4.  Ask Team Invisible to activate a Google Cloud Build pipeline for your “master” branch and deactivate the old `invisible/devops` branch pipeline
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Document flow setup build Jenkins job Maven]]
+- [[CI CD (Google Cloud Build & Google Cloud Deploy)]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+- [[Deployment Process]]
+
+%% ai-graph-end %%

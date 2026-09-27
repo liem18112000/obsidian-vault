@@ -1,14 +1,21 @@
 ---
-title: "Agent self-learning memory"
+ai_hash: 2851b056f67ae0e9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49732091905'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 2 - Self-learning'
 created: 2026-09-07
-updated: 2026-09-07
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Agent self-learning memory
+type: source
+updated: 2026-09-07
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49732091905/Agent+self-learning+memory
-confluence_id: "49732091905"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 2 - Self-learning"
-tags: [confluence, ai-agents]
 ---
 
 # Agent self-learning memory
@@ -146,3 +153,14 @@ Self-learning makes the de-bias phases **more** important, not less. Mandatory s
 - LLM cost/latency budget per step (one extra call per stage × pipeline length).
 
 - Do we ever auto-**correct the pack** from a recalled lesson, or only surface it?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Agent Loop 2 - Self-learning]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+- [[Sub Agentic Loop 1.2 - GCP Service Exploration]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 082e1d7ff6d4011d
+ai_hash: 597e5f0138d4d32c
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-14
 entities: []
 source: session 2026-07-14 perf report HTML
@@ -46,6 +46,7 @@ Diagnostic tell: "the page flips but the diagrams / one box stay dark" ⇒ hunt 
 - [[Theme toggle that overrides prefers-color-scheme via data-theme on root]]
 - [[HTML report theme toggle reload gotcha]]
 - [[Theme shared overlays with CSS-variable-backed Tailwind classes, not hardcoded colors]]
-- [[Scope a highlight.js theme override with a wrapper class instead of !important]]
+- [[Embed generated SVG in an artifact via img data-URI to isolate its styles]]
+- [[Naive @import strip regex ate the root block (unstyled artifact)]]
 
 %% ai-graph-end %%

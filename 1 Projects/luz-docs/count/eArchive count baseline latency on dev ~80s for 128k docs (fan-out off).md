@@ -1,7 +1,7 @@
 ---
-ai_hash: 8f23af7c0a8485c8
+ai_hash: c46378386781e34b
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-19
 entities:
 - eArchive
@@ -9,43 +9,41 @@ entities:
 - dev
 - 128k docs
 - fan-out
-- deployed image `cf8687633`
-- branch `42830e38b`
+- Dev tenant d0783310-d67f-4ab7-9aab-dcaef3f17f48
+- 8-12 folders
+- POST /{tenant}/documents/count
+- deployed image cf8687633
+- branch 42830e38b
 - ParallelizeCount
 - K=6
-- ~80s
-- ~18s warm
 - 4s target
-- IT `count_document.feature`
+- count_document.feature
 - scan-bound
-- '`LUZ-154613-f-cache-count`'
+- LUZ-154613-f-cache-count
 - count caching
-- configmap
-- '`luz-docs-env-configmap-dg5bm564h8`'
-- '`LUZ_DOCS_MATERIALIZE_COUNT_FANOUT_PARTITIONS`'
-- '`LUZ_DOCS_TENANTS_USE_MATERIALIZED`'
-- '`5e37c1353`'
-- '`df3cb3bbc`'
-- '`git branch --contains <sha>`'
-- '`git ls-tree -r <sha>`'
+- config provisioned ahead of code
+- configmap luz-docs-env-configmap-dg5bm564h8
+- LUZ_DOCS_MATERIALIZE_COUNT_FANOUT_PARTITIONS
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED
+- fan-out code
+- 5e37c1353
+- df3cb3bbc
+- git branch --contains <sha>
+- git ls-tree -r <sha>
 - IT rest client
-- '`DEFAULT_TIMEOUT`'
-- count latency
-- '`ReadTimeout`'
-- '`kubectl port-forward`'
-- '`api-forwarder`'
+- DEFAULT_TIMEOUT
+- api/client/luz_docs_rest_client.py
+- count_documents
+- ReadTimeout
+- per-request timeout
+- kubectl port-forward service/api-forwarder
 - sustained load
-- '`RemoteDisconnected`'
+- RemoteDisconnected
 - localhost
-- '`0.0.0.0`'
+- 0.0.0.0
 - sandbox
-- '`luz-docs parallelized count`'
-- '`documents missing _shard`'
-- '`luz_docs documentscount`'
-- sub-second
-- '`POST /{tenant}/documents/count`'
-- '`d0783310-d67f-4ab7-9aab-dcaef3f17f48`'
-- '`10 sequential ~80s counts`'
+- luz-docs parallelized count undercounts documents missing _shard
+- luz_docs documentscount is scan-bound and cannot reach sub-second at 128k
 source: session 2026-06-19
 status: seedling
 tags:
@@ -88,45 +86,49 @@ Dev tenant `d0783310-d67f-4ab7-9aab-dcaef3f17f48` (128,000 docs, 8-12 folders), 
 - [[eArchive 800k bottleneck is view-controller not K]]
 - [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
 - [[eArchive request flow and log correlation (perf)]]
-- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
 
 **Relations:**
-- eArchive — *has baseline latency* — ~80s
-- ~80s — *observed on* — dev
-- ~80s — *for* — 128k docs
-- dev — *uses tenant* — `d0783310-d67f-4ab7-9aab-dcaef3f17f48`
-- `d0783310-d67f-4ab7-9aab-dcaef3f17f48` — *has* — 128k docs
-- `POST /{tenant}/documents/count` — *is endpoint for* — count latency
-- deployed image `cf8687633` — *has no* — fan-out
-- deployed image `cf8687633` — *resulted in latency* — ~80s
-- branch `42830e38b` — *implements* — ParallelizeCount
-- ParallelizeCount — *uses* — fan-out
-- fan-out — *configured with partitions* — K=6
-- branch `42830e38b` — *resulted in warm latency* — ~18s warm
-- ~18s warm — *is ~4x faster than* — ~80s
+- eArchive — *has* — baseline latency
+- baseline latency — *on* — dev
+- baseline latency — *for* — 128k docs
+- baseline latency — *is* — ~80s (fan-out off)
+- Dev tenant d0783310-d67f-4ab7-9aab-dcaef3f17f48 — *has* — 128k docs
+- Dev tenant d0783310-d67f-4ab7-9aab-dcaef3f17f48 — *has* — 8-12 folders
+- POST /{tenant}/documents/count — *is* — endpoint
+- deployed image cf8687633 — *has* — no fan-out code
+- deployed image cf8687633 — *measured latency* — ~80s
+- branch 42830e38b — *implements* — ParallelizeCount
+- branch 42830e38b — *uses* — fan-out K=6
+- branch 42830e38b — *measured latency* — ~18s warm
+- ~18s warm — *is* — ~4x faster than ~80s
+- ~80s — *is* — ~20x over the 4s target
+- ~18s warm — *is* — ~20x over the 4s target
+- 4s target — *asserted by* — count_document.feature
 - ~18s warm — *indicates* — scan-bound
-- 4s target — *asserted by* — IT `count_document.feature`
-- ~18s warm — *is ~20x over* — 4s target
-- 4s target — *likely needs* — `LUZ-154613-f-cache-count`
-- `LUZ-154613-f-cache-count` — *is a type of* — count caching
-- configmap — *named* — `luz-docs-env-configmap-dg5bm564h8`
-- `luz-docs-env-configmap-dg5bm564h8` — *carried config* — `LUZ_DOCS_MATERIALIZE_COUNT_FANOUT_PARTITIONS`
-- `luz-docs-env-configmap-dg5bm564h8` — *carried config* — `LUZ_DOCS_TENANTS_USE_MATERIALIZED`
-- fan-out — *landed in commit* — `5e37c1353`
-- fan-out — *landed in commit* — `df3cb3bbc`
-- `git branch --contains <sha>` — *proves ancestry of* — sha
-- `git ls-tree -r <sha>` — *inspects tree at* — sha
-- IT rest client — *has* — `DEFAULT_TIMEOUT`
-- `DEFAULT_TIMEOUT` — *is shorter than* — count latency
-- count latency — *causes* — `ReadTimeout`
-- `kubectl port-forward` — *drops under* — sustained load
-- sustained load — *caused by* — `10 sequential ~80s counts`
-- `kubectl port-forward` — *fails with* — `RemoteDisconnected`
-- `kubectl port-forward` — *binds to* — localhost
-- `0.0.0.0` — *is blocked by* — sandbox
-- `luz-docs parallelized count` — *undercounts* — `documents missing _shard`
-- `luz_docs documentscount` — *is* — scan-bound
-- `luz_docs documentscount` — *cannot reach* — sub-second
-- `luz_docs documentscount` — *for* — 128k docs
+- 4s target — *needs* — LUZ-154613-f-cache-count
+- LUZ-154613-f-cache-count — *is* — count caching
+- baseline — *had* — no fan-out
+- no fan-out — *due to* — config provisioned ahead of code
+- configmap luz-docs-env-configmap-dg5bm564h8 — *carried* — LUZ_DOCS_MATERIALIZE_COUNT_FANOUT_PARTITIONS
+- configmap luz-docs-env-configmap-dg5bm564h8 — *carried* — LUZ_DOCS_TENANTS_USE_MATERIALIZED
+- fan-out code — *landed in* — 5e37c1353
+- fan-out code — *landed in* — df3cb3bbc
+- git branch --contains <sha> — *proves* — sha is an ANCESTOR
+- git ls-tree -r <sha> — *inspects* — tree at that exact sha
+- git ls-tree -r <sha> — *checks deployed image for* — feature
+- IT rest client — *has* — DEFAULT_TIMEOUT
+- DEFAULT_TIMEOUT — *is* — 60
+- DEFAULT_TIMEOUT — *in* — api/client/luz_docs_rest_client.py
+- DEFAULT_TIMEOUT — *is* — shorter than count latency
+- count_documents — *raises* — ReadTimeout
+- per-request timeout — *should be* — raised
+- kubectl port-forward service/api-forwarder — *drops under* — sustained load
+- kubectl port-forward service/api-forwarder — *killed with* — RemoteDisconnected
+- kubectl port-forward service/api-forwarder — *should be* — restarted
+- kubectl port-forward service/api-forwarder — *should bind to* — localhost only
+- 0.0.0.0 — *is* — blocked by sandbox
+- luz-docs parallelized count undercounts documents missing _shard — *is* — related
+- luz_docs documentscount is scan-bound and cannot reach sub-second at 128k — *is* — related
 
 %% ai-graph-end %%

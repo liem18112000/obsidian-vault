@@ -1,5 +1,5 @@
 ---
-ai_hash: 0966cdc1f3b5ff5b
+ai_hash: 6acf0b978a537d22
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-21
@@ -8,37 +8,56 @@ entities:
 - Docker container
 - leo-customer360 monitoring box
 - Netdata
+- image tag format
 - Docker Hub
 - jaegertracing/all-in-one:1.62
-- jaegertracing/all-in-one:1.62.0
-- jaegertracing/all-in-one:1.63.0
+- 1.62.0
+- 1.63.0
+- '1.60'
+- '1.59'
 - Jaeger v1 all-in-one
 - jaegertracing/all-in-one
 - Jaeger v2
 - jaegertracing/jaeger
-- Netdata otel-plugin
-- Host port 4317 (OTLP gRPC)
-- Jaeger gRPC 4317
-- OTLP/HTTP 4318
+- config model
+- Netdata's otel-plugin
+- netdata/netdata:stable
+- 127.0.0.1:4317
+- OTLP gRPC
+- Jaeger's gRPC port 4317
+- host
+- OTLP/HTTP :4318
 - OTel exporters
 - Badger storage
-- Docker named volume
-- Non-root UID (10001)
-- Root user
+- named volume
+- non-root uid 10001
+- root ownership
+- BADGER_DIRECTORY_KEY=/badger/key
+- permission denied error
+- container crash-loop
+- --user root
+- volume
+- internal dev tool
+- Stale image
 - customer360-api
-- OpenTelemetry instrumentation
+- opentelemetry-instrument
 - CI
-- OTel :latest image
-- Locally-built Docker image
-- CD
+- OTel :latest
+- locally-built customer360-api:latest
+- local image build
+- GHCR image
+- CD deploy-uat command
 - GHCR redeploy
-- '`docker inspect` command'
+- ./deploy-api.sh uat
+- docker pull
+- docker inspect command
 - FastAPI
 - OpenTelemetry zero-code instrumentation
 - OTLP
 - leo-customer360 tracing
-- UAT environment
-- PROD environment
+- OTel
+- UAT
+- PROD
 source: session 2026-08-21
 status: seedling
 tags:
@@ -89,33 +108,48 @@ Symptom: deployed `customer360-api` had no `opentelemetry-instrument` even thoug
 - [[Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP]]
 
 **Relations:**
-- Jaeger all-in-one — *deployed_as* — Docker container
-- Docker container — *runs_on* — leo-customer360 monitoring box
-- leo-customer360 monitoring box — *co-located_with* — Netdata
-- jaegertracing/all-in-one:1.62 — *does_not_exist_on* — Docker Hub
-- jaegertracing/all-in-one:1.62.0 — *is_a_published_pin_for* — Jaeger all-in-one
-- jaegertracing/all-in-one:1.63.0 — *is_a_published_pin_for* — Jaeger all-in-one
-- Jaeger v1 all-in-one — *uses_image* — jaegertracing/all-in-one
-- Jaeger v2 — *uses_image* — jaegertracing/jaeger
-- Netdata otel-plugin — *listens_on* — Host port 4317 (OTLP gRPC)
-- Jaeger gRPC 4317 — *conflicts_with* — Netdata otel-plugin
-- OTLP/HTTP 4318 — *used_by* — OTel exporters
-- Jaeger all-in-one — *uses* — Badger storage
+- Jaeger all-in-one — *deployed as* — Docker container
+- Docker container — *runs on* — leo-customer360 monitoring box
+- leo-customer360 monitoring box — *co-located with* — Netdata
+- jaegertracing/all-in-one:1.62 — *not found on* — Docker Hub
+- image tag format — *should be* — 1.x.Y
+- 1.62.0 — *is a* — patch-versioned pin
+- 1.63.0 — *is a* — patch-versioned pin
+- 1.60 — *is a* — minor version pin
+- 1.59 — *is a* — minor version pin
+- Jaeger v1 all-in-one — *is* — jaegertracing/all-in-one
+- Jaeger v2 — *is* — jaegertracing/jaeger
+- Jaeger v2 — *has* — different config model
+- netdata/netdata:stable — *bundles* — Netdata's otel-plugin
+- Netdata's otel-plugin — *listens on* — 127.0.0.1:4317
+- 127.0.0.1:4317 — *is for* — OTLP gRPC
+- Jaeger all-in-one — *publishing Jaeger's gRPC port 4317 causes* — address already in use
+- address already in use — *occurs on* — host
+- Jaeger all-in-one — *should publish* — OTLP/HTTP :4318
+- OTel exporters — *use* — OTLP/HTTP :4318
 - Badger storage — *requires* — writable dir
-- Docker named volume — *is* — root-owned
-- Jaeger all-in-one — *runs_as* — Non-root UID (10001)
-- Non-root UID (10001) — *causes_permission_denied_on* — Docker named volume
-- Root user — *is_a_fix_for* — permission denied
-- customer360-api — *lacked* — OpenTelemetry instrumentation
-- CI — *built_and_pushed* — OTel :latest image
-- Locally-built Docker image — *was_running_for* — customer360-api
-- CD — *failed_to_refresh* — Locally-built Docker image
-- GHCR redeploy — *pulls* — OTel :latest image
-- `docker inspect` command — *identifies* — Locally-built Docker image
-- `docker inspect` command — *identifies* — CI image
-- FastAPI — *can_be_traced_with* — OpenTelemetry zero-code instrumentation
+- Jaeger all-in-one — *runs as* — non-root uid 10001
+- named volume — *has* — root ownership
+- BADGER_DIRECTORY_KEY=/badger/key — *fails with* — permission denied error
+- permission denied error — *causes* — container crash-loop
+- container crash-loop — *fixed by* — --user root
+- container crash-loop — *fixed by* — pre-chown volume to 10001
+- internal dev tool — *uses* — --user root
+- deployed customer360-api — *lacked* — opentelemetry-instrument
+- CI — *built and pushed* — OTel :latest
+- box — *ran* — locally-built customer360-api:latest
+- locally-built customer360-api:latest — *is a* — local image build
+- GHCR image — *was* — stale
+- CD deploy-uat command — *did not refresh* — stale image
+- stale image — *fixed by* — GHCR redeploy
+- GHCR redeploy — *uses* — ./deploy-api.sh uat
+- ./deploy-api.sh uat — *performs* — docker pull
+- docker inspect command — *identifies* — local image build
+- docker inspect command — *identifies* — CI image
+- FastAPI — *uses* — OpenTelemetry zero-code instrumentation
 - OpenTelemetry zero-code instrumentation — *emits* — OTLP
-- leo-customer360 tracing — *is_off_by_default_in* — UAT environment
-- leo-customer360 tracing — *is_on_at_10_percent_in* — PROD environment
+- leo-customer360 tracing — *uses* — OTel
+- OTel — *is off-by-default on* — UAT
+- OTel — *is on at 10% on* — PROD
 
 %% ai-graph-end %%

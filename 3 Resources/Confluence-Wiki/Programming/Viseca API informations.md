@@ -1,18 +1,22 @@
 ---
-title: "Viseca API informations"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47444623443/Viseca+API+informations
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2023-07-26
+ai_hash: f01e7261eeb78f0a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47444623443/Viseca+API+informations
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Viseca API informations
+topic: programming
+type: source
+updated: 2023-07-26
 ---
 
 # Viseca API informations
@@ -54,3 +58,14 @@ tags:
 ![[47444623443-Viseca-open_banking_subscription_management-1.0-resolved.yaml]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Open API related to Finnova microservices - Create dossier]]
+- [[Invoice API]]
+- [[Invoice API Java Client]]
+- [[Rhine API's Open API Documents]]
+- [[Send creditcard notification from luz-public-api-adapter-messaging]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: c66d9bd427bed8aa
+ai_hash: f14ad92109711bd3
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-07
@@ -47,7 +47,7 @@ Related: [[luz_docs_import]], [[Read-side fire-and-forget mutation pass the id a
 - [[luz-jsonstore GET-by-id masks read exceptions as empty-body 400; 10MB max-post-size caps whole-doc $set writes]]
 - [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
 - [[luz-jsonstore intermittently returns 200 with empty body on folder finds]]
-- [[jsonstore projections need quoted JSON keys and Mongo 16MB doc limit caps single-doc snapshots]]
 - [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug]]
 
 %% ai-graph-end %%

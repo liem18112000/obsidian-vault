@@ -1,18 +1,22 @@
 ---
-title: "Global model evaluation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2507907755/Global+model+evaluation
-space: "AI"
-topic: ai_ml
-relevance: 0.701
-depth: 2.29
-updated: 2020-02-12
+ai_hash: ddb7c3756c77fbcb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.29
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2507907755/Global+model+evaluation
+space: AI
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/ai
+- confluence
+- ai-ml
+- space/ai
+title: Global model evaluation
+topic: ai_ml
+type: source
+updated: 2020-02-12
 ---
 
 # Global model evaluation
@@ -80,3 +84,12 @@ vocabulary size = 2000 (all quality base) - epoch optimize
 | **BCTG_60**    | 71%           | 75%        | 0.72    | 2737   | 1102   | 899    |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[RAE Parser Quality Report 2024-05-03]]
+- [[RAE Parser Quality Report 2024-06-06]]
+- [[RAE Parser Quality Report 2024-07-08]]
+
+%% ai-graph-end %%

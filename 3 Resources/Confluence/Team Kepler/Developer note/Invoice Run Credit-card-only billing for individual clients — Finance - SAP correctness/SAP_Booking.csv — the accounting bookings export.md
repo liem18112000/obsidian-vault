@@ -1,14 +1,22 @@
 ---
-title: "SAP_Booking.csv — the accounting bookings export"
+ai_hash: 6ca9c09537666031
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49617567993'
+confluence_path: Team Kepler > Developer note > [Invoice Run] Credit-card-only billing
+  for individual clients — Finance / SAP correctness
 created: 2026-07-27
-updated: 2026-07-27
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+- sap
+title: SAP_Booking.csv — the accounting bookings export
+type: source
+updated: 2026-07-27
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49617567993/SAP_Booking.csv+the+accounting+bookings+export
-confluence_id: "49617567993"
-confluence_path: "Team Kepler > Developer note > [Invoice Run] Credit-card-only billing for individual clients — Finance / SAP correctness"
-tags: [confluence, invoice-run, sap]
 ---
 
 # SAP_Booking.csv — the accounting bookings export
@@ -87,3 +95,14 @@ These live in `SapCSVUtil` and are pinned down by `SapCSVUtilTest`:
 - **Posting key** (`generatePostingKey`): normal booking → default (e.g. `50`); **credit note / negative amount →** `40` and the amount is negated (`LUZ-111391`).
 
 - **Rounding** (`adjustSAPAmountForVATInformation`, see *booking-02*): each detail line is rounded on its own, so `net + raw-VAT` can miss the gross by a cent. The VAT-info amount is nudged so **net + VAT = gross** exactly. Test example: gross `178.85`, net `166.05`, raw VAT `12.75` → adjusted `12.80` (`166.05 + 12.80 = 178.85`).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SAP in `luz_finance` — What, Why, How, When]]
+- [[SAP_Master.csv — the customer master export]]
+- [[Rounding per line makes net plus VAT miss gross, so the VAT line absorbs the difference]]
+- [[SAP in luz_finance is a manual CSV export, not a live integration]]
+- [[SAP export defaults come from the default-sap config service so accounting codes change without a deploy]]
+
+%% ai-graph-end %%

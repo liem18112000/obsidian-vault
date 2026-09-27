@@ -1,14 +1,21 @@
 ---
-title: "[eArchive] – Reproduce performance issue and understand the issue on DEV"
+ai_hash: 537c7af1b9073920
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49383964814'
+confluence_path: Team Kepler > Developer note
 created: 2026-05-04
-updated: 2026-05-08
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- earchive
+- performance
+title: '[eArchive] – Reproduce performance issue and understand the issue on DEV'
+type: source
+updated: 2026-05-08
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49383964814/eArchive+Reproduce+performance+issue+and+understand+the+issue+on+DEV
-confluence_id: "49383964814"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, earchive, performance]
 ---
 
 # [eArchive] – Reproduce performance issue and understand the issue on DEV
@@ -590,3 +597,14 @@ POST /luz_jsonstore/api/mdb/037ef4de-cd23-4ec9-b344-30b5068bc033/documents/aggre
   { "$sort": { "_id": 1 } }
 ]
 ```
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive Performance — Detail Overview]]
+- [[Reproduce performance issue and understand the issue on DEV - A.Vu]]
+- [[Performance Analysis and Proposed Solutions]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[Public API client performance analysis]]
+
+%% ai-graph-end %%

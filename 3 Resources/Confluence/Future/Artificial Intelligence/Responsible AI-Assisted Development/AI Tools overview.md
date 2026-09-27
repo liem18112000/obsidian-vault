@@ -1,14 +1,19 @@
 ---
-title: "AI Tools overview"
+ai_hash: db95fd73e31b97af
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48916201613'
+confluence_path: Future > Artificial Intelligence > Responsible AI-Assisted Development
 created: 2025-11-27
-updated: 2026-03-12
-type: source
+entities: []
+source: Confluence · FUT - Future
 status: reference
-source: "Confluence · FUT - Future"
+tags:
+- confluence
+title: AI Tools overview
+type: source
+updated: 2026-03-12
 url: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48916201613/AI+Tools+overview
-confluence_id: "48916201613"
-confluence_path: "Future > Artificial Intelligence > Responsible AI-Assisted Development"
-tags: [confluence]
 ---
 
 # AI Tools overview
@@ -255,3 +260,14 @@ For every approved tool, the business license is required.
 Use the latest Agent Kernel for optimal usage of approved tools. Enjoy 😄
 
 [https://bitbucket.org/axonivy-prod/agent-kernel/src](https://bitbucket.org/axonivy-prod/agent-kernel/src)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Knowledge Base Solutions Comparison Guide]]
+- [[AI-Powered Development Environment Architecture]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+- [[Confluence Export — Index]]
+- [[Recipe Github copilot]]
+
+%% ai-graph-end %%

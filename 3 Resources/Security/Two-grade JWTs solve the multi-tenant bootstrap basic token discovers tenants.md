@@ -1,10 +1,20 @@
 ---
-title: "Two-grade JWTs solve the multi-tenant bootstrap: basic token discovers tenants"
+ai_hash: 09764490f1495387
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Token JWT Security (LUZ)'
 status: seedling
-source: "Confluence: Token JWT Security (LUZ)"
-tags: [jwt, multi-tenancy, authentication, token-service, jwks, confluence-distilled]
+tags:
+- jwt
+- multi-tenancy
+- authentication
+- token-service
+- jwks
+- confluence-distilled
+title: 'Two-grade JWTs solve the multi-tenant bootstrap: basic token discovers tenants'
+type: concept
 ---
 
 # Two-grade JWTs solve the multi-tenant bootstrap: basic token discovers tenants
@@ -56,3 +66,14 @@ Source: [[Token JWT Security]] (LUZ, Confluence).
 ## Related
 
 - [[Exchange a partner IdP token by introspecting it, never by trusting it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Token JWT Security]]
+- [[Luz 403 Not allowed means the token has no tenant claim, not a missing permission]]
+- [[HowToUseNewTokenAPI]]
+- [[Token concept]]
+- [[Security Risk - Luz-jwt Permission By Pass]]
+
+%% ai-graph-end %%

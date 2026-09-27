@@ -1,18 +1,22 @@
 ---
-title: "Testing Tool Comparison: Playwright vs. k6"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49068277762/Testing+Tool+Comparison+Playwright+vs.+k6
-space: "LUZ"
-topic: testing
-relevance: 0.909
-depth: 3
-updated: 2026-01-21
+ai_hash: c12bfa0e4044ece4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.909
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49068277762/Testing+Tool+Comparison+Playwright+vs.+k6
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - testing
-  - space/luz
+- confluence
+- testing
+- space/luz
+title: 'Testing Tool Comparison: Playwright vs. k6'
+topic: testing
+type: source
+updated: 2026-01-21
 ---
 
 # Testing Tool Comparison: Playwright vs. k6
@@ -48,3 +52,12 @@ The meeting concluded with the decision to **start using Playwright for automate
 - **Immediate Action:** Team Titan will begin exploring Playwright and start writing test cases, leveraging Miracle's existing code in the master branch (such as authentication flows) to save time.
 
 - **Wider Involvement:** The findings will be shared with Michael and the rest of the peers to align on this direction across teams.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Playwright for UI E2E, k6 for load split by specialization not overlap]]
+- [[Testing]]
+- [[For authenticated pages pick the perf tool that can log in, not the prettiest report]]
+
+%% ai-graph-end %%

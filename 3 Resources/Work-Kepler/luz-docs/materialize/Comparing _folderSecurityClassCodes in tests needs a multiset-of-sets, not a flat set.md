@@ -1,7 +1,7 @@
 ---
-ai_hash: ab31b08144d9ec01
+ai_hash: 5206a83334caf3f5
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-08
 entities: []
 source: session 2026-06-08 LUZ-154157
@@ -43,9 +43,9 @@ def _norm_nested(value):
 
 **Related notes:**
 - [[Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]
-- [[Luz delete-folder tests can only delete public folders, not ones carrying a security class]]
-- [[userSecurityClassCodes param must be JSON array text not comma-separated]]
 - [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
-- [[Fail-closed defense over a parallel array distinguish present-but-short from absent]]
+- [[Luz delete-folder tests can only delete public folders, not ones carrying a security class]]
+- [[Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
+- [[Unit-testing FolderService recoverFolder requires per-collection stubs because process objects call back into the real service]]
 
 %% ai-graph-end %%

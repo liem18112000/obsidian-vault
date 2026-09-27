@@ -1,10 +1,21 @@
 ---
-title: "Two IaC surfaces need an explicit naming contract at the seam"
+ai_hash: 6d9e5a58d3859906
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Luz Kubernetes Terraform (LUZ)'
 status: seedling
-source: "Confluence: Luz Kubernetes Terraform (LUZ)"
-tags: [terraform, kustomize, iac, kubernetes, cloud-run, coupling, confluence-distilled]
+tags:
+- terraform
+- kustomize
+- iac
+- kubernetes
+- cloud-run
+- coupling
+- confluence-distilled
+title: Two IaC surfaces need an explicit naming contract at the seam
+type: lesson
 ---
 
 # Two IaC surfaces need an explicit naming contract at the seam
@@ -41,3 +52,14 @@ Source: [[Luz Kubernetes Terraform]] (LUZ, Confluence).
 ## Related
 
 - [[Cloud Run generates a per-project URL hash, breaking environment config parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Route user-edited business rules through git and CI instead of a database]]
+- [[Cloud Run generates a per-project URL hash, breaking environment config parity]]
+- [[Shift GKE traffic to Cloud Run with Istio weighted routing, not a cutover]]
+- [[Luz Kubernetes Terraform]]
+- [[Deployment with terraform]]
+
+%% ai-graph-end %%

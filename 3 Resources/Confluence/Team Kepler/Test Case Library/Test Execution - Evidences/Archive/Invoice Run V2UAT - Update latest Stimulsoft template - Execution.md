@@ -1,14 +1,23 @@
 ---
-title: "[Invoice Run V2][UAT] - Update latest Stimulsoft template - Execution"
+ai_hash: d075430b12393d1e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48988913665'
+confluence_path: Team Kepler > Test Case Library > Test Execution / Evidences > Archive
+  > Sprint 146 - Test Report
 created: 2025-12-18
-updated: 2025-12-19
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+- sprint
+- testing
+title: '[Invoice Run V2][UAT] - Update latest Stimulsoft template - Execution'
+type: source
+updated: 2025-12-19
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48988913665/Invoice+Run+V2+UAT+-+Update+latest+Stimulsoft+template+-+Execution
-confluence_id: "48988913665"
-confluence_path: "Team Kepler > Test Case Library > Test Execution / Evidences > Archive > Sprint 146 - Test Report"
-tags: [confluence, invoice-run, sprint, testing]
 ---
 
 # [Invoice Run V2][UAT] - Update latest Stimulsoft template - Execution
@@ -139,3 +148,14 @@ tags: [confluence, invoice-run, sprint, testing]
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice Run V2UAT - Update latest Stimulsoft template]]
+- [[Invoice Run V2UAT - No error when luz-store is running with multiple pods]]
+- [[Invoice Run V2 - Retry Uploaded customer document step - Should update correct status after retry]]
+- [[Invoice Run V2UAT - Execution - Change filestore cache implement to filestore_utils]]
+- [[Invoice Run V2UATExecute - Prevent error when luz-store is multiple pods]]
+
+%% ai-graph-end %%

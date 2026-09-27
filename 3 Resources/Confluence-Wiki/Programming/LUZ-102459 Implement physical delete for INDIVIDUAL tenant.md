@@ -1,18 +1,22 @@
 ---
-title: "LUZ-102459 Implement physical delete for INDIVIDUAL tenant"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47440068767/LUZ-102459+Implement+physical+delete+for+INDIVIDUAL+tenant
-space: "TS"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2023-08-04
+ai_hash: 1306662ffa1f95da
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47440068767/LUZ-102459+Implement+physical+delete+for+INDIVIDUAL+tenant
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: LUZ-102459 Implement physical delete for INDIVIDUAL tenant
+topic: programming
+type: source
+updated: 2023-08-04
 ---
 
 # LUZ-102459 Implement physical delete for INDIVIDUAL tenant
@@ -1129,3 +1133,14 @@ Logical deletion for BUSINESS COMPANY
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-102045 Implement physical delete for COMPANY tenant Part 2 (Postgres cont)]]
+- [[LUZ-106177 - Delete credit card expiry reminder]]
+- [[How to execute API to create sync event for post from tenant schemas to public table]]
+- [[Delete company - Old way]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+
+%% ai-graph-end %%

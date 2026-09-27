@@ -1,16 +1,18 @@
 ---
-ai_hash: d2fb1fdb5b618d49
+ai_hash: 9a3d445f6e5c8be5
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-20
 entities:
 - _searchTrigrams
-- luz_docs API
+- luz_docs API responses
 - NgramResponseFilter
-- JAX-RS
+- JAX-RS filter
 - API clients
 - LUZ-156314
 - Campaign-gate template cache then campaign status L1 then repository L2
+- int-array field
+- hashed trigram ints
 source: session 2026-07-20 LUZ-156314
 status: seedling
 tags:
@@ -40,18 +42,19 @@ Related: [[Campaign-gate template cache then campaign status L1 then repository 
 - [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
 - [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
 - [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
-- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 - [[Campaign-gate template cache then campaign status L1 then repository L2]]
+- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 
 **Relations:**
-- _searchTrigrams — *exposed in* — luz_docs API
+- _searchTrigrams — *is exposed in* — luz_docs API responses
+- NgramResponseFilter — *is a* — JAX-RS filter
 - NgramResponseFilter — *stripped* — _searchTrigrams
-- NgramResponseFilter — *is a* — JAX-RS
-- NgramResponseFilter — *was deleted* — 
+- _searchTrigrams — *from* — luz_docs API responses
+- NgramResponseFilter — *was deleted* — deliberately
 - _searchTrigrams — *is visible to* — API clients
+- LUZ-156314 — *is related to* — decision
 - _searchTrigrams — *is an* — int-array field
 - _searchTrigrams — *contains* — hashed trigram ints
-- LUZ-156314 — *is related to* — _searchTrigrams
-- _searchTrigrams — *is related to* — Campaign-gate template cache then campaign status L1 then repository L2
+- Campaign-gate template cache then campaign status L1 then repository L2 — *is related to* — topic
 
 %% ai-graph-end %%

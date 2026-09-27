@@ -1,14 +1,20 @@
 ---
-title: "Use Case: Run by Test Set - Complete Process Flow"
+ai_hash: 7aee33eb40cee258
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49229463570'
+confluence_path: Team Kepler > Developer note > Integration Test with Xray and Cucumber
 created: 2026-03-13
-updated: 2026-03-13
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- xray
+title: 'Use Case: Run by Test Set - Complete Process Flow'
+type: source
+updated: 2026-03-13
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49229463570/Use+Case+Run+by+Test+Set+-+Complete+Process+Flow
-confluence_id: "49229463570"
-confluence_path: "Team Kepler > Developer note > Integration Test with Xray and Cucumber"
-tags: [confluence, xray]
 ---
 
 # Use Case: Run by Test Set - Complete Process Flow
@@ -696,3 +702,14 @@ Two actions:
 >
 > ![[image-20260313-013735.png]]
 >
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API end to end testing]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[CICD for Kogito]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[One API load test with locust]]
+
+%% ai-graph-end %%

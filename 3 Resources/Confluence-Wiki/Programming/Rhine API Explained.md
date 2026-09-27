@@ -1,18 +1,22 @@
 ---
-title: "Rhine API Explained"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2479941083/Rhine+API+Explained
-space: "AI"
-topic: programming
-relevance: 0.796
-depth: 2.68
-updated: 2025-09-22
+ai_hash: 1650e518829e62e3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.68
+entities: []
+relevance: 0.796
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2479941083/Rhine+API+Explained
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Rhine API Explained
+topic: programming
+type: source
+updated: 2025-09-22
 ---
 
 # Rhine API Explained
@@ -444,3 +448,13 @@ The Rhine API allows ingesting of data for testing purposes even for PROD enviro
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Event records should carry new state keyed by entity id and stamped with event time]]
+- [[Rhine API's Open API Documents]]
+- [[Rhine API Java Client]]
+- [[Deep Dive EPC Notification - User Connection Registry - Data Model]]
+
+%% ai-graph-end %%

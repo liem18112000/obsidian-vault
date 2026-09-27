@@ -1,18 +1,22 @@
 ---
-title: "One API end to end testing."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47398814200/One+API+end+to+end+testing.
-space: "LUZ"
-topic: testing
-relevance: 0.701
-depth: 2.72
-updated: 2024-03-11
+ai_hash: 3cb9c998284e2720
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.72
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47398814200/One+API+end+to+end+testing.
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - testing
-  - space/luz
+- confluence
+- testing
+- space/luz
+title: One API end to end testing.
+topic: testing
+type: source
+updated: 2024-03-11
 ---
 
 # One API end to end testing.
@@ -429,3 +433,14 @@ curl --location 'http://localhost:8085/load-test/marketing-delivery?costCenter=p
 
 
 ![[47398814200-image-20240311-085557.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Load test]]
+- [[EPC API - Load Test]]
+- [[One API load test with locust]]
+- [[Post-deployment Batch messageCount backfill (Test & Prod) — LUZ-155431 LUZ-155435]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

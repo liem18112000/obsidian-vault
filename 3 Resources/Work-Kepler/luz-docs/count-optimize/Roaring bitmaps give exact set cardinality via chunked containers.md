@@ -1,7 +1,7 @@
 ---
-ai_hash: b0b275b51f378649
+ai_hash: 68f6545cd18557ee
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Roaring bitmap
 created: 2026-06-16
@@ -42,9 +42,9 @@ Use this to back [[Visible-document count as cardinality of a bitmap union]] whe
 
 **Related notes:**
 - [[Visible-document count as cardinality of a bitmap union]]
+- [[BitmapHLL counts supersede fan-out; they don't combine with it]]
 - [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
 - [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
-- [[BitmapHLL counts supersede fan-out; they don't combine with it]]
 - [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
 
 %% ai-graph-end %%

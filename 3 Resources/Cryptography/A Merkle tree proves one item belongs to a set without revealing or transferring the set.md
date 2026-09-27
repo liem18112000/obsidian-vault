@@ -1,10 +1,20 @@
 ---
-title: "A Merkle tree proves one item belongs to a set without revealing or transferring the set"
+ai_hash: 27a4b70eefdea6e0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Merkle Tree - Complete Guide with Mermaid Diagrams (2025-11-18)'
 status: seedling
-source: "Confluence: Merkle Tree - Complete Guide with Mermaid Diagrams (2025-11-18)"
-tags: [cryptography, merkle-tree, data-structures, distributed-systems, blockchain]
+tags:
+- cryptography
+- merkle-tree
+- data-structures
+- distributed-systems
+- blockchain
+title: A Merkle tree proves one item belongs to a set without revealing or transferring
+  the set
+type: concept
 ---
 
 # A Merkle tree proves one item belongs to a set without revealing or transferring the set
@@ -31,3 +41,14 @@ The two properties that make it worth reaching for: any single-bit change propag
 ## Related
 
 - [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Merkle Tree - Complete Guide with Mermaid Diagrams]]
+- [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+- [[Per-record signatures prove authenticity but not completeness, so deletion and reordering go undetected]]
+- [[A hash chain proves integrity but not authorship, so a database admin can silently rebuild it]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+
+%% ai-graph-end %%

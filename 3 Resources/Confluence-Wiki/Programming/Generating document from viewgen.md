@@ -1,18 +1,22 @@
 ---
-title: "Generating document from viewgen"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436759448/Generating+document+from+viewgen
-space: "LUZ"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2017-01-24
+ai_hash: 4645fb5817c60a2b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436759448/Generating+document+from+viewgen
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Generating document from viewgen
+topic: programming
+type: source
+updated: 2017-01-24
 ---
 
 # Generating document from viewgen
@@ -74,3 +78,14 @@ accept: application/pdf
 ![[20436759448-AHV-AVS.pdf]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Document Creator API]]
+- [[Employee Report Implementation (10.05.2023)]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[Programming]]
+- [[Invoice API Java Client]]
+
+%% ai-graph-end %%

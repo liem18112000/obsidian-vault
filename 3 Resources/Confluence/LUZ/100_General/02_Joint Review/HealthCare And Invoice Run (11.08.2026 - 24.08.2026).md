@@ -1,14 +1,21 @@
 ---
-title: "HealthCare And Invoice Run (11.08.2026 - 24.08.2026)"
+ai_hash: 95581126f967d01c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49691787346'
+confluence_path: LUZ Home > 100_General > 02_Joint Review > Joint review 0.03.28.00
+  (11.08.2026 - 24.08.2026)
 created: 2026-08-24
-updated: 2026-08-24
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+- invoice-run
+title: HealthCare And Invoice Run (11.08.2026 - 24.08.2026)
+type: source
+updated: 2026-08-24
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49691787346/HealthCare+And+Invoice+Run+11.08.2026+-+24.08.2026
-confluence_id: "49691787346"
-confluence_path: "LUZ Home > 100_General > 02_Joint Review > Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)"
-tags: [confluence, invoice-run]
 ---
 
 # HealthCare And Invoice Run (11.08.2026 - 24.08.2026)
@@ -72,3 +79,14 @@ One upload → virus-scanned → unpacked & organized → filed into secure stor
 Recorded end-to-end on **dev.klara.tech** (profile *Liem Doan · KLARA myLife*): upload `happy-spec-example.zip` → success screen → open Digital Letterbox → Storage.
 
 [[luz-docs-import-demo.mp4|luz-docs-import-demo.mp4]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice Run & luz-docs Archive Improvements]]
+- [[Invoice Run – Credit Card Payment Only for Individual Runs]]
+- [[Joint review 0.03.30.00 (08.09.2026 - 21.09.2026)]]
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+
+%% ai-graph-end %%

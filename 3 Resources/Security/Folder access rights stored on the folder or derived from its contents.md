@@ -1,10 +1,19 @@
 ---
-title: "Folder access rights: stored on the folder or derived from its contents"
+ai_hash: eeb1496d7eab9bbb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Rethink eArchive access right concept (TP2020)'
 status: seedling
-source: "Confluence: Rethink eArchive access right concept (TP2020)"
-tags: [access-control, data-modelling, inheritance, permissions, confluence-distilled]
+tags:
+- access-control
+- data-modelling
+- inheritance
+- permissions
+- confluence-distilled
+title: 'Folder access rights: stored on the folder or derived from its contents'
+type: concept
 ---
 
 # Folder access rights: stored on the folder or derived from its contents
@@ -44,3 +53,11 @@ Source: [[Rethink eArchive access right concept]] (TP2020, Confluence).
 ## Related
 
 - [[RBAC is coarse-grained by role, ABAC is fine-grained by attribute]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rethink eArchive access right concept]]
+- [[RBAC is coarse-grained by role, ABAC is fine-grained by attribute]]
+
+%% ai-graph-end %%

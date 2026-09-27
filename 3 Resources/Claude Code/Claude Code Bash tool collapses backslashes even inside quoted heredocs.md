@@ -1,5 +1,5 @@
 ---
-ai_hash: f16adecfead0243a
+ai_hash: 3c06a8ebc4749a53
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-27
@@ -60,10 +60,10 @@ Both this and the pandoc `[TABLE]` placeholder bug are silent-corruption failure
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Apostrophe inside bash ${varmessage} breaks the parser]]
+- [[JS regex dot excludes carriage return, so (.)$ silently fails on CRLF lines]]
 - [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[Apostrophe inside bash ${varmessage} breaks the parser]]
 - [[ssh 'bash -s' flattens args, so empty middle args shift positionals]]
 - [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
-- [[Unquoted YAML frontmatter description breaks on colon-space in SKILL.md]]
 
 %% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "SAP in luz_finance is a manual CSV export, not a live integration"
+ai_hash: 602c81ad702dc44d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: observation
+entities: []
+source: 'Confluence: SAP in luz_finance — What, Why, How, When (2026-07-27)'
 status: seedling
-source: "Confluence: SAP in luz_finance — What, Why, How, When (2026-07-27)"
-tags: [sap, luz-finance, invoice-run, accounting, kepler, naming]
+tags:
+- sap
+- luz-finance
+- invoice-run
+- accounting
+- kepler
+- naming
+title: SAP in luz_finance is a manual CSV export, not a live integration
+type: observation
 ---
 
 # SAP in luz_finance is a manual CSV export, not a live integration
@@ -29,3 +39,14 @@ General lesson: **when a component is named after an external system, check whet
 
 - [[SAP export defaults come from the default-sap config service so accounting codes change without a deploy]]
 - [[Rounding per line makes net plus VAT miss gross, so the VAT line absorbs the difference]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SAP export defaults come from the default-sap config service so accounting codes change without a deploy]]
+- [[SAP in `luz_finance` — What, Why, How, When]]
+- [[Rounding per line makes net plus VAT miss gross, so the VAT line absorbs the difference]]
+- [[SAP_Booking.csv — the accounting bookings export]]
+- [[SAP_Master.csv — the customer master export]]
+
+%% ai-graph-end %%

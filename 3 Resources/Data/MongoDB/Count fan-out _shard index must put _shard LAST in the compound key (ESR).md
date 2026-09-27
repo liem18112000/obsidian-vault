@@ -1,7 +1,7 @@
 ---
-ai_hash: dc86786148579a2b
+ai_hash: 118fe5cd334b07f2
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-23
 entities: []
 source: luz-docs LUZ-154613, sessions 2026-06-17 / 06-23 / 06-26
@@ -51,8 +51,8 @@ luz-docs `parallelize` package: `ParallelizePartitioner` / `ParallelizeCount`, S
 **Related notes:**
 - [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
 - [[Divide-and-Conquer Visible-Document Count]]
-- [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
 - [[luz-docs parallelized count undercounts documents missing _shard]]
-- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
+- [[Creating and Verifying _shard Indexes in MongoDB]]
 
 %% ai-graph-end %%

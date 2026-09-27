@@ -1,18 +1,22 @@
 ---
-title: "OCR API Explained"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488075963/OCR+API+Explained
-space: "AI"
-topic: ai_ml
-relevance: 0.782
-depth: 2.72
-updated: 2019-02-11
+ai_hash: ab0ba538ec68b7c9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.72
+entities: []
+relevance: 0.782
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488075963/OCR+API+Explained
+space: AI
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/ai
+- confluence
+- ai-ml
+- space/ai
+title: OCR API Explained
+topic: ai_ml
+type: source
+updated: 2019-02-11
 ---
 
 # OCR API Explained
@@ -114,3 +118,14 @@ An OCR option represents an analysis output.
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice API Reference]]
+- [[OCR API Java Client]]
+- [[Invoice API Explained]]
+- [[Analyze API Explained]]
+- [[OCR Command Line Interface]]
+
+%% ai-graph-end %%

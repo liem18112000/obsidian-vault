@@ -1,18 +1,22 @@
 ---
-title: "API to generate authentication letter for inividual"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49008771150/API+to+generate+authentication+letter+for+inividual
-space: "TS"
-topic: programming
-relevance: 0.762
-depth: 2.73
-updated: 2026-04-13
+ai_hash: 8652407ff379172d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.73
+entities: []
+relevance: 0.762
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49008771150/API+to+generate+authentication+letter+for+inividual
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: API to generate authentication letter for inividual
+topic: programming
+type: source
+updated: 2026-04-13
 ---
 
 # API to generate authentication letter for inividual
@@ -211,3 +215,14 @@ For more details, please check out the existing flow:
 I create new APIs with help from AI, Branch : <a href="https://bitbucket.org/axonivy-prod/luz_compensation/branch/miracle/LUZ-144972/generate-authentication-lette" class="external-link" data-card-appearance="inline" data-local-id="c1ab524cc06f" rel="nofollow">https://bitbucket.org/axonivy-prod/luz_compensation/branch/miracle/LUZ-144972/generate-authentication-lette</a>
 
 Document : <a href="https://bitbucket.org/axonivy-prod/luz_compensation/src/9a4d224c987967a2dbaf47bf18f175101ef055f1/docs/authentication-letter-api.md" class="external-link" data-card-appearance="inline" data-local-id="4b9953b6b8f8" rel="nofollow">https://bitbucket.org/axonivy-prod/luz_compensation/src/9a4d224c987967a2dbaf47bf18f175101ef055f1/docs/authentication-letter-api.md</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Preview Delivery-Prices API - ForcedOnboading]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%

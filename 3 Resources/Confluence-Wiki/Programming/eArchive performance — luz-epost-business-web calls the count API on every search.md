@@ -1,18 +1,23 @@
 ---
-title: "eArchive performance — luz-epost-business-web calls the count API on every search"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49492099078/eArchive+performance+luz-epost-business-web+calls+the+count+API+on+every+search
-space: "TK"
-topic: programming
-relevance: 0.755
-depth: 2.81
-updated: 2026-06-10
+ai_hash: f5cf65ecc56fe28d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49492099078/eArchive+performance+luz-epost-business-web+calls+the+count+API+on+every+search
+space: TK
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tk
+- confluence
+- programming
+- space/tk
+title: eArchive performance — luz-epost-business-web calls the count API on every
+  search
+topic: programming
+type: source
+updated: 2026-06-10
 ---
 
 # eArchive performance — luz-epost-business-web calls the count API on every search
@@ -84,3 +89,14 @@ The point of the split is to **render results from the fast search immediately a
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive Performance — Detail Overview]]
+- [[eArchive request flow and log correlation (perf)]]
+- [[eArchive Performance — Executive Overview]]
+- [[Performance Analysis and Proposed Solutions]]
+- [[eArchive 800k bottleneck is view-controller not K]]
+
+%% ai-graph-end %%

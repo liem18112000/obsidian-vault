@@ -1,18 +1,22 @@
 ---
-title: "Vinnstack — Agentic OS"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49514119198/Vinnstack+Agentic+OS
-space: "TK"
-topic: ai_ml
-relevance: 0.731
-depth: 2.51
-updated: 2026-06-25
+ai_hash: 66a851cb77e59bf8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.51
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49514119198/Vinnstack+Agentic+OS
+space: TK
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/tk
+- confluence
+- ai-ml
+- space/tk
+title: Vinnstack — Agentic OS
+topic: ai_ml
+type: source
+updated: 2026-06-25
 ---
 
 # Vinnstack — Agentic OS
@@ -305,3 +309,14 @@ Vinnstack runs entirely locally; all agent work executes through the operator's 
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack vs. Claude Code (native)]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Wrap the agent CLI rather than reimplementing the agent loop]]
+- [[Vinnstack is local-only by design spawned-CLI login + local FS state + single-tenant]]
+- [[Vinnstack · Prompt Governance &amp; Code Grounding]]
+
+%% ai-graph-end %%

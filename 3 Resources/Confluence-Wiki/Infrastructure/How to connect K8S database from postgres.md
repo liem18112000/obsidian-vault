@@ -1,18 +1,22 @@
 ---
-title: "How to connect K8S database from postgres"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/46985904382/How+to+connect+K8S+database+from+postgres
-space: "GRAVITY"
-topic: infra
-relevance: 0.8
-depth: 2.82
-updated: 2021-10-20
+ai_hash: 39bd105fb9083323
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.82
+entities: []
+relevance: 0.8
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/46985904382/How+to+connect+K8S+database+from+postgres
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/gravity
+- confluence
+- infra
+- space/gravity
+title: How to connect K8S database from postgres
+topic: infra
+type: source
+updated: 2021-10-20
 ---
 
 # How to connect K8S database from postgres
@@ -105,3 +109,14 @@ The information from username and password, you can easily get from lp-app-kuber
 
 
 5\. When connecting successfully, you can get your data in **“appuser“** schema.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy to Kubernetes and get External IP]]
+- [[2.31 Build & deploy agent review service to k8s (POC)]]
+- [[Deploy AFDEMO CPM]]
+- [[GCP - Connect Database]]
+- [[Port forward and Docker compose]]
+
+%% ai-graph-end %%

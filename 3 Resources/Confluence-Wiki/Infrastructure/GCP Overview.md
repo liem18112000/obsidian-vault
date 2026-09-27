@@ -1,18 +1,22 @@
 ---
-title: "GCP Overview"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/30660192330/GCP+Overview
-space: "TK"
-topic: infra
-relevance: 0.731
-depth: 2.62
-updated: 2020-07-22
+ai_hash: a3ea3d6cbbc237e0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.62
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/30660192330/GCP+Overview
+space: TK
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/tk
+- confluence
+- infra
+- space/tk
+title: GCP Overview
+topic: infra
+type: source
+updated: 2020-07-22
 ---
 
 # GCP Overview
@@ -44,3 +48,14 @@ tags:
   - ## Use kubectl check log application
 
 - ## After done the above steps enhance application with database connection (2h)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Quarkus]]
+- [[GCP - Connect Database]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[Infrastructure]]
+- [[Recipe Deploy with Terraform]]
+
+%% ai-graph-end %%

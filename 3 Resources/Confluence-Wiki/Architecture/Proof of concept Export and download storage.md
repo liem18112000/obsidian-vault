@@ -1,18 +1,22 @@
 ---
-title: "[Proof of concept] Export and download storage"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47022477625/Proof+of+concept+Export+and+download+storage
-space: "TP2020"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2021-12-30
+ai_hash: 8b9b27b93147e883
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47022477625/Proof+of+concept+Export+and+download+storage
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/tp2020
+- confluence
+- architecture
+- space/tp2020
+title: '[Proof of concept] Export and download storage'
+topic: architecture
+type: source
+updated: 2021-12-30
 ---
 
 # [Proof of concept] Export and download storage
@@ -244,3 +248,14 @@ a\. Generate a google signed URL to download, but we can set the expiration time
 b\. Download the zip file first then return the file stream to start the download, it means Klara will handle the download.
 
 → Our proposal is the first solution “send the google signed download URL to the user email” since we can save the performance for our system.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Long exports acknowledge immediately, deliver by emailed link to object storage]]
+- [[Download user audit logs export files]]
+- [[CROSS-TEST LUZ-159442 Implement real ZIP download for eArchive folders]]
+- [[KLARA Documents Concept - Solution Design]]
+- [[Architecture]]
+
+%% ai-graph-end %%

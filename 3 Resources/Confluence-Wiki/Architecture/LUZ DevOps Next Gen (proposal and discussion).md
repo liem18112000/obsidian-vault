@@ -1,18 +1,22 @@
 ---
-title: "LUZ DevOps Next Gen (proposal and discussion)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436750268/LUZ+DevOps+Next+Gen+proposal+and+discussion
-space: "LUZ"
-topic: architecture
-relevance: 0.769
-depth: 2.79
-updated: 2016-12-12
+ai_hash: cfca5413f5cdceb0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.79
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436750268/LUZ+DevOps+Next+Gen+proposal+and+discussion
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: LUZ DevOps Next Gen (proposal and discussion)
+topic: architecture
+type: source
+updated: 2016-12-12
 ---
 
 # LUZ DevOps Next Gen (proposal and discussion)
@@ -188,3 +192,14 @@ How can we attack and solve the issues listed in the previous chapter?
 - <u>Container project to track versions:</u> To ease the deployment, we could still have a "container" project which references all the top-level projects to be deployed. That one could be used to trigger a new deployment to TEST and PROD.
 - <u>`luz_ear.ear` is not needed anymore</u>
 - <u>Every build is a release:</u> Every build triggered on the build server results in a released product/module, which is uniquely identifiable (e.g. by a build number included in the version string). That implies, that we never have dependencies to SNAPSHOT versions again (at least not in den committed `pom.xml`), see <a href="https://axelfontaine.com/blog/final-nail.html" class="external-link" rel="nofollow">https://axelfontaine.com/blog/final-nail.html</a> for a discussion about such an approach.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture Overview LUZ]]
+- [[CI CD (Google Cloud Build & Google Cloud Deploy)]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+- [[Deployment Process]]
+
+%% ai-graph-end %%

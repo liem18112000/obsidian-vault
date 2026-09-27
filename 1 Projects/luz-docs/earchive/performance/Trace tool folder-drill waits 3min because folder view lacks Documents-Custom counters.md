@@ -1,30 +1,35 @@
 ---
-ai_hash: 36104c80d7233eac
+ai_hash: d6feee02c540f12f
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-21
 entities:
 - Trace tool
 - folder-drill view
-- Documents-Custom counters
 - eArchive
+- Documents (N) counter
+- Custom (M) counter
 - collectPageEnter
 - Manage access rights
 - scenario 4
 - trace-earchive.js
-- requireCounts parameter
+- requireCounts param
+- folder view header
+- back-arrow
+- folder name
 - K Files
 - URL compare
 - JS-heap marker
 - readRec polling
 - full navigation
+- 3 minutes
+- 90 s poll timeout
 - Dev eArchive baseline items in 6s but count badges take 22-41s
 - Playwright full-nav detection needs a JS-heap marker not URL compare
-- folder click
-- done-check
-- folder view header
+- Trace tool folder-drill scenario
+- Manage access rights wait
 - navigation detection
-- harness
+- clicking a folder
 source: trace run 2026-07-21
 status: seedling
 tags:
@@ -50,35 +55,40 @@ In the eArchive folder-drill view there is no "Documents (N)" / "Custom (M)" cou
 %% ai-graph-start %%
 
 **Related notes:**
-- [[eArchive perf test plan 5 scenarios, all automated by trace tool]]
 - [[eArchive company-root and Trash tiles never render K Files badges]]
 - [[eArchive counter metrics timed from page-load start to skeleton replacement]]
 - [[Playwright full-nav detection needs a JS-heap marker not URL compare]]
 - [[Dev eArchive baseline items in 6s but count badges take 22-41s]]
+- [[eArchive perf test plan 5 scenarios, all automated by trace tool]]
 
 **Relations:**
-- Trace tool — *PERFORMS* — folder-drill view
-- folder-drill view — *LACKS* — Documents-Custom counters
-- folder-drill view — *IS_PART_OF* — eArchive
-- collectPageEnter — *REQUIRED* — Documents-Custom counters
-- folder-drill view — *CAUSES_DELAY_FOR* — Trace tool
-- scenario 4 — *IS_A* — folder-drill view
-- scenario 4 — *EXPERIENCED_TIMEOUT* — 90 s poll timeout
-- scenario 4 — *EXPERIENCED_TIMEOUT* — 90 s waiting for Manage access rights
-- trace-earchive.js — *CONTAINS_FIX_FOR* — Trace tool folder-drill view delay
-- collectPageEnter — *GAINED_PARAMETER* — requireCounts parameter
-- requireCounts parameter — *PASSED_VALUE* — false for folder drills
-- done-check — *DROPS* — Documents-Custom counters
-- Manage access rights wait — *REMOVED_FROM* — folder-drill view logic
-- folder view header — *CONTAINS* — K Files
-- folder view header — *DOES_NOT_RENDER* — Manage access rights
-- navigation detection — *USED_METHOD* — URL compare
-- navigation detection — *USED_METHOD* — JS-heap marker
-- readRec polling — *HANDLES* — readiness
-- Fix — *SAVES_TIME* — ~3 min per run
-- Trace tool folder-drill view delay — *IS_RELATED_TO* — Dev eArchive baseline items in 6s but count badges take 22-41s
-- Trace tool folder-drill view delay — *IS_RELATED_TO* — Playwright full-nav detection needs a JS-heap marker not URL compare
-- folder click — *IS_NOT_A* — full navigation
-- full navigation — *RE_INJECTS* — harness
+- Trace tool folder-drill scenario — *waits* — 3 minutes
+- folder-drill view — *lacks* — Documents (N) counter
+- folder-drill view — *lacks* — Custom (M) counter
+- eArchive — *contains* — folder-drill view
+- collectPageEnter — *is a check for* — Trace tool
+- collectPageEnter — *required* — Documents (N) counter
+- collectPageEnter — *required* — Custom (M) counter
+- scenario 4 — *uses* — collectPageEnter
+- scenario 4 — *burned* — 90 s poll timeout
+- scenario 4 — *included* — Manage access rights wait
+- clicking a folder — *is not* — full navigation
+- full navigation — *renders* — Manage access rights
+- Trace tool folder-drill scenario — *was improved by* — trace-earchive.js
+- collectPageEnter — *gained* — requireCounts param
+- requireCounts param — *set to* — false
+- requireCounts param — *applies to* — folder-drill view
+- Manage access rights wait — *was removed from* — Trace tool folder-drill scenario
+- folder view header — *contains* — back-arrow
+- folder view header — *contains* — folder name
+- folder view header — *contains* — K Files
+- folder view header — *does not render* — Manage access rights
+- navigation detection — *attempted with* — URL compare
+- navigation detection — *attempted with* — JS-heap marker
+- readRec polling — *handles* — readiness
+- readRec polling — *handles* — full navigation
+- trace-earchive.js — *saves* — 3 minutes
+- Trace tool folder-drill scenario — *related to* — Dev eArchive baseline items in 6s but count badges take 22-41s
+- Trace tool folder-drill scenario — *related to* — Playwright full-nav detection needs a JS-heap marker not URL compare
 
 %% ai-graph-end %%

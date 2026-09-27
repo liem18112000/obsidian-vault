@@ -1,5 +1,5 @@
 ---
-ai_hash: 2e4aa1bb926c71e6
+ai_hash: ee13d88c6ba1c02d
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-25
@@ -60,8 +60,8 @@ Related: [[A read filtered on a value no writer produces fails by returning empt
 
 **Related notes:**
 - [[Dead-code refcount scans flag intentional seams as unused; vet before deleting]]
-- [[A read filtered on a value no writer produces fails by returning empty]]
 - [[An uncalled method isn't automatically dead code — check facadeconvention symmetry]]
+- [[A read filtered on a value no writer produces fails by returning empty]]
 - [[Check every stage that writes a field, not just the one that defines it]]
 - [[Idempotency guards keyed on object presence break when hydration materializes the object]]
 

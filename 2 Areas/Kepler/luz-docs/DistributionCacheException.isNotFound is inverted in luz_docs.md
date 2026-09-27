@@ -1,7 +1,7 @@
 ---
-ai_hash: 68c201cf1247a789
+ai_hash: c6cfd28d16ff3fca
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-07
 entities:
 - DistributionCacheException.isNotFound()
@@ -45,18 +45,18 @@ Any consumer writing the natural idiom `if (!e.isNotFound()) throw e; return nul
 - [[CDI self-invocation bypasses interceptor proxy]]
 - [[DualCache L1 write ignores per-call TTL (uses domain default)]]
 - [[A negative cache must be a distinct state from a cache miss, or its TTL is a dead write]]
-- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
 
 **Relations:**
-- DistributionCacheException.isNotFound() — *is in* — luz_docs
-- DistributionCacheException.isNotFound() — *is located at* — src/main/java/ch/klara/luz/docs/cache/distribution/DistributionCacheException.java
-- DistributionCacheException.isNotFound() — *is logically* — inverted
-- DistributionCacheException.isNotFound() — *returns true when cause status is not* — 404
-- DistributionCacheException.isNotFound() — *returns false for* — genuine 404
-- DistributionCacheException.isNotFound() — *uses* — WebApplicationException
-- DistributionCacheException.isNotFound() — *uses* — Response.Status.NOT_FOUND
-- DistributionCacheException.isNotFound() — *found live in* — MaterializeCache.get()
-- MaterializeCache.get() — *found during* — sprint-156 materialize review
-- DistributionCacheException.isNotFound() — *is related to* — CDI self-invocation bypasses interceptor proxy
+- DistributionCacheException.isNotFound() — *is_inverted_in* — luz_docs
+- DistributionCacheException.isNotFound() — *is_located_at* — src/main/java/ch/klara/luz/docs/cache/distribution/DistributionCacheException.java
+- DistributionCacheException.isNotFound() — *returns_true_when_cause_is_not* — 404
+- DistributionCacheException.isNotFound() — *returns_false_when_cause_is* — 404
+- DistributionCacheException.isNotFound() — *checks_instance_of* — WebApplicationException
+- WebApplicationException — *has_status* — Response.Status.NOT_FOUND
+- MaterializeCache.get() — *found_issue_with* — DistributionCacheException.isNotFound()
+- sprint-156 materialize review — *found_issue_with* — DistributionCacheException.isNotFound()
+- sprint-156 materialize review — *found_issue_in* — MaterializeCache.get()
+- CDI self-invocation bypasses interceptor proxy — *is_related_to* — DistributionCacheException.isNotFound()
 
 %% ai-graph-end %%

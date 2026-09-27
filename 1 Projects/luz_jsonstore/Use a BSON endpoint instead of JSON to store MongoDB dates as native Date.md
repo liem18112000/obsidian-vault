@@ -1,28 +1,24 @@
 ---
-ai_hash: aedc46bbfd25f06a
+ai_hash: 6754b47493496b4e
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-24
 entities:
 - BSON endpoint
 - JSON
-- MongoDB dates
+- MongoDB
 - native Date
-- type fidelity
 - luz_jsonstore v1 endpoints
 - org.bson.Document
 - Document.toJson()
 - string
-- MongoDB
 - BSON
-- BSON datetime
+- datetime
 - java.util.Date
-- native Mongo Date
 - _id
-- native ObjectId
-- v1 setDocId()
+- ObjectId
+- setDocId()
 - hex string
-- v2
 - JsonStoreMongoDbResourceV2
 - mdb/v2/{tenant-id}
 - JsonStoreMongoDbService
@@ -30,9 +26,14 @@ entities:
 - JAX-RS
 - MessageBodyReader
 - MessageBodyWriter
+- application/bson media type
 - top-level array
 - document list
 - document
+- date field
+- type fidelity
+- wire format
+- v1
 source: session 2026-08-24
 status: seedling
 tags:
@@ -59,32 +60,38 @@ The same fidelity argument applies to _id: BSON carries a native ObjectId, so th
 
 **Related notes:**
 - [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[JSON has no date type so type information dies at the API boundary]]
 - [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer]]
 - [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
-- [[luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug]]
-- [[End-to-end BSON API testing with the Node bson package]]
+- [[Adapt luz-jsonstore to allow luz-docs to persist data as MongoDB Date via API]]
 
 **Relations:**
-- BSON endpoint — *stores* — MongoDB dates as native Date
+- BSON endpoint — *stores* — MongoDB dates
+- MongoDB dates — *as* — native Date
 - JSON — *loses* — type fidelity
 - luz_jsonstore v1 endpoints — *serialized* — org.bson.Document
 - org.bson.Document — *serialized via* — Document.toJson()
-- Document.toJson() — *resulted in* — string
-- string — *stored in* — MongoDB
-- BSON — *fixes* — type fidelity
+- Document.toJson() — *resulted in* — date field
+- date field — *as* — string
+- date field — *stored in* — MongoDB
+- MongoDB — *as* — string
+- BSON — *fixes* — wire format
 - BSON datetime — *decodes to* — java.util.Date
-- java.util.Date — *stored as* — native Mongo Date
+- java.util.Date — *stored as* — native Date
+- native Date — *in* — MongoDB
 - BSON — *carries* — native ObjectId
 - native ObjectId — *for* — _id
 - v1 setDocId() — *rewrote* — _id
-- _id — *rewritten to* — hex string
-- v2 — *drops* — v1 setDocId()
-- JsonStoreMongoDbResourceV2 — *has path* — mdb/v2/{tenant-id}
+- _id — *into* — hex string
+- JsonStoreMongoDbResourceV2 — *drops* — v1 setDocId()
+- JsonStoreMongoDbResourceV2 — *is located at* — mdb/v2/{tenant-id}
 - JsonStoreMongoDbResourceV2 — *reuses* — JsonStoreMongoDbService
-- Dropping v1 setDocId() — *is rationale for* — "dates as string -> Mongo Date" migration branch
+- BSON — *is rationale for* — "dates as string -> Mongo Date" migration branch
+- JAX-RS — *supports* — application/bson media type
+- application/bson media type — *via* — MessageBodyReader
+- application/bson media type — *via* — MessageBodyWriter
 - BSON — *lacks* — top-level array
 - document list — *must be wrapped in* — document
-- JAX-RS — *serves media type with* — MessageBodyReader
-- JAX-RS — *serves media type with* — MessageBodyWriter
+- document list — *for* — BSON
 
 %% ai-graph-end %%

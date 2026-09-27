@@ -1,7 +1,7 @@
 ---
-ai_hash: 8d9a204e070a2042
+ai_hash: 3bfb87f8b70508bf
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-29
 entities: []
 source: session 2026-07-29 luz_online_payment LUZ-157476
@@ -37,6 +37,6 @@ See [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
 - [[Add response fields tolerant-reader-first when producer and consumer deploy separately]]
 - [[DeclineCodes resolver misses nested metadata.decline_code]]
 - [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
-- [[TransactionStatus.from returns null on unknown Payrexx status causing silent NotNull 400]]
+- [[Gate enriched REST response behind a boolean query param with a legacy-shaped DTO]]
 
 %% ai-graph-end %%

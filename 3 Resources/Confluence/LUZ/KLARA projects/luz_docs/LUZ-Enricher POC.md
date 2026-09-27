@@ -1,14 +1,21 @@
 ---
-title: "LUZ-Enricher POC"
+ai_hash: 7457c6dc668ef602
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '47715024923'
+confluence_path: LUZ Home > KLARA projects > luz_docs
 created: 2024-03-13
-updated: 2025-11-21
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+- luz-docs
+- enricher
+title: LUZ-Enricher POC
+type: source
+updated: 2025-11-21
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47715024923/LUZ-Enricher+POC
-confluence_id: "47715024923"
-confluence_path: "LUZ Home > KLARA projects > luz_docs"
-tags: [confluence, luz-docs, enricher]
 ---
 
 # LUZ-Enricher POC
@@ -108,3 +115,14 @@ Split the enricher flows from luz-docs into a distinct service module, serving t
 ## Idea
 
 ![[image-20240314-095705.png]]![[image-20251121-112445.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-Docs Trigger enricher regarding document type]]
+- [[High-Level Design - ONE API Enricher-First Integration]]
+- [[LUZ-Docs - Execution - Trigger enricher regarding document type]]
+- [[New architecture for documentStatistic]]
+- [[Background Process Optimization for luz-docs API Architecture and Recommendations]]
+
+%% ai-graph-end %%

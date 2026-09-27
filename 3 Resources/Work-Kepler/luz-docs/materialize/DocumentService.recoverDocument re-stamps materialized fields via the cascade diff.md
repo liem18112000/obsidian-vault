@@ -1,7 +1,7 @@
 ---
-ai_hash: 9314f608f86eab8c
+ai_hash: 14d9e82b6836822b
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-15
 entities: []
 source: session 2026-06-15
@@ -44,6 +44,6 @@ Related: [[JSON-driven Scenario Outline pattern for luz_docs materialize integra
 - [[document_service.recover_document drops an empty folderIds list, so it cannot clear folders]]
 - [[Folder recovery reuses the parent-change materialize cascade]]
 - [[luz_docs has two materialize cascade delivery mechanisms]]
-- [[document-put-cascade]]
+- [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "GCP Alert Policy Creation Script - Manual Documentation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48803184687/GCP+Alert+Policy+Creation+Script+-+Manual+Documentation
-space: "LUZ"
-topic: infra
-relevance: 0.757
-depth: 2.84
-updated: 2025-10-29
+ai_hash: d664b3aa742f5e43
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.84
+entities: []
+relevance: 0.757
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48803184687/GCP+Alert+Policy+Creation+Script+-+Manual+Documentation
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: GCP Alert Policy Creation Script - Manual Documentation
+topic: infra
+type: source
+updated: 2025-10-29
 ---
 
 # GCP Alert Policy Creation Script - Manual Documentation
@@ -451,3 +455,14 @@ gcloud alpha monitoring policies delete <POLICY_ID> --project <PROJECT_ID>
 
 This script provides a **fully automated, consistent, and idempotent** setup for all GCP Monitoring alerts across Luz services.  
 It simplifies onboarding of new microservices, ensures consistent thresholds, and reduces human error when creating or maintaining alerts manually.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monitoring with Managed Prometheus]]
+- [[ELM5 PubSub Message Queue]]
+- [[Post-deployment Batch messageCount backfill (Test & Prod) — LUZ-155431 LUZ-155435]]
+- [[Infrastructure]]
+- [[Apply changes on luz_kubernetes]]
+
+%% ai-graph-end %%

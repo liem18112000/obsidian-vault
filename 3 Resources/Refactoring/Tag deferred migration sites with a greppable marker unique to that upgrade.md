@@ -1,10 +1,20 @@
 ---
-title: "Tag deferred migration sites with a greppable marker unique to that upgrade"
+ai_hash: 680db521c7ab67ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Upgrade Ivy Known issues (X4)'
 status: seedling
-source: "Confluence: Upgrade Ivy Known issues (X4)"
-tags: [migration, upgrade, refactoring, technical-debt, deprecation, confluence-distilled]
+tags:
+- migration
+- upgrade
+- refactoring
+- technical-debt
+- deprecation
+- confluence-distilled
+title: Tag deferred migration sites with a greppable marker unique to that upgrade
+type: lesson
 ---
 
 # Tag deferred migration sites with a greppable marker unique to that upgrade
@@ -46,3 +56,10 @@ Make the tag **specific to the migration** — `TODO upgrade ivy`, not a bare `T
 > Markers only work if the upgrade has a point where `grep` must return zero. Without that gate they accumulate across three successive upgrades and become archaeology. Make "no markers remain" part of the upgrade's definition of done.
 
 Source: [[Upgrade Ivy - Known issues]] (X4, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Upgrade Ivy - Known issues]]
+
+%% ai-graph-end %%

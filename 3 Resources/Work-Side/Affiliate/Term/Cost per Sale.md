@@ -1,7 +1,7 @@
 ---
-ai_hash: b0b154097e6184a8
+ai_hash: f6be44221869756a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - CPS
 - Pay per Sale

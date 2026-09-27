@@ -1,18 +1,23 @@
 ---
-title: "How to execute API to create sync event for post from tenant schemas to public table"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47057404155/How+to+execute+API+to+create+sync+event+for+post+from+tenant+schemas+to+public+table
-space: "HACKA"
-topic: programming
-relevance: 0.832
-depth: 3
-updated: 2022-02-17
+ai_hash: 668305fd28ae1d0f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.832
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47057404155/How+to+execute+API+to+create+sync+event+for+post+from+tenant+schemas+to+public+table
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: How to execute API to create sync event for post from tenant schemas to public
+  table
+topic: programming
+type: source
+updated: 2022-02-17
 ---
 
 # How to execute API to create sync event for post from tenant schemas to public table
@@ -194,3 +199,14 @@ If there are any non existed specific tenant
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Call API trigger Vacuum POS schema on PROD]]
+- [[14. Create companies by tenant id]]
+- [[15. Update companies by tenant id]]
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[19. Sync POS indicators]]
+
+%% ai-graph-end %%

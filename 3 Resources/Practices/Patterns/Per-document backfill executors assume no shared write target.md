@@ -1,7 +1,7 @@
 ---
-ai_hash: 519d4f4002972bbc
+ai_hash: f7b6f1e681884497
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-09
 entities: []
 source: luz_docs foldercount HLL badge implementation plan, 2026-07-09
@@ -35,9 +35,9 @@ See [[Shared aggregate write targets need CAS, not plain $set]] for the live-wri
 
 **Related notes:**
 - [[Shared aggregate write targets need CAS, not plain $set]]
-- [[Don't share one predicate between a read-path gate and a backfill selector]]
 - [[luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out]]
-- [[luz_docs stamps _shard on create to keep sharding gate stable]]
 - [[Fan-out gate and backfill filter must cover the same field set]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
 
 %% ai-graph-end %%

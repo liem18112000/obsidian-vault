@@ -1,18 +1,22 @@
 ---
-title: "Bank connection - Script to store all old connected ibans for each tenant"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519726193/Bank+connection+-+Script+to+store+all+old+connected+ibans+for+each+tenant
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2020-12-31
+ai_hash: 5be845f2852dc4be
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519726193/Bank+connection+-+Script+to+store+all+old+connected+ibans+for+each+tenant
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Bank connection - Script to store all old connected ibans for each tenant
+topic: programming
+type: source
+updated: 2020-12-31
 ---
 
 # Bank connection - Script to store all old connected ibans for each tenant
@@ -102,3 +106,14 @@ Here is the result: 
 
 
 ![[20519726193-image2020-12-23_11-48-31.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[15. Update companies by tenant id]]
+- [[Script to create task again for banks using b.Link]]
+- [[14. Create companies by tenant id]]
+- [[Delete company - Old way]]
+- [[Payout Migration script]]
+
+%% ai-graph-end %%

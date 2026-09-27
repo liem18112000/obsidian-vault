@@ -1,18 +1,22 @@
 ---
-title: "Adapt luz-jsonstore to allow luz-docs to persist data as MongoDB Date via API."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48680206364/Adapt+luz-jsonstore+to+allow+luz-docs+to+persist+data+as+MongoDB+Date+via+API.
-space: "LUZ"
-topic: programming
-relevance: 0.798
-depth: 2.92
-updated: 2025-09-29
+ai_hash: 614e4f1a833df6d3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.92
+entities: []
+relevance: 0.798
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48680206364/Adapt+luz-jsonstore+to+allow+luz-docs+to+persist+data+as+MongoDB+Date+via+API.
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Adapt luz-jsonstore to allow luz-docs to persist data as MongoDB Date via API.
+topic: programming
+type: source
+updated: 2025-09-29
 ---
 
 # Adapt luz-jsonstore to allow luz-docs to persist data as MongoDB Date via API.
@@ -132,3 +136,14 @@ Process finished with exit code 0
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[JSON has no date type so type information dies at the API boundary]]
+- [[Use a BSON endpoint instead of JSON to store MongoDB dates as native Date]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug]]
+- [[LUZ Audit Refactor- 2025-2026]]
+
+%% ai-graph-end %%

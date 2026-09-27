@@ -1,18 +1,22 @@
 ---
-title: "API Key and Payload for Xpert.Line."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47180283940/API+Key+and+Payload+for+Xpert.Line.
-space: "TS"
-topic: programming
-relevance: 0.852
-depth: 3
-updated: 2024-05-20
+ai_hash: a3a81657ac1cd60a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.852
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47180283940/API+Key+and+Payload+for+Xpert.Line.
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: API Key and Payload for Xpert.Line.
+topic: programming
+type: source
+updated: 2024-05-20
 ---
 
 # API Key and Payload for Xpert.Line.
@@ -95,3 +99,14 @@ Documentations: <a href="https://api-dev.klara.tech/docs" class="external-link" 
 ![[47180283940-image-20220912-044929.png]]
 
 ![[47180283940-image-20220912-045009.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to use Public API to create update KLARA Business Company]]
+- [[Use KLARA Swagger UI for REST API]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[KLARA Booking - KLARA OBC API]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+
+%% ai-graph-end %%

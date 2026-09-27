@@ -1,5 +1,5 @@
 ---
-ai_hash: eccafac465a5dc13
+ai_hash: 5bd46e38de273977
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 entities: []
@@ -33,6 +33,6 @@ Bash builtins (`cd`, `cat`, `ls`) accept `/c/...` because MSYS translates them, 
 - [[Git Bash mangles gh api leading-slash paths to C... — set MSYS_NO_PATHCONV=1]]
 - [[Node.js process.env is case-insensitive on Windows]]
 - [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
-- [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
+- [[Git Bash mangles absolute POSIX paths meant for a remote kubectl exec target]]
 
 %% ai-graph-end %%

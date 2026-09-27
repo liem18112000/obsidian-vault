@@ -1,10 +1,20 @@
 ---
-title: "Store pod-level facts once, not copied into every user key"
+ai_hash: adf28c0debe2a1ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Deep Dive EPC Notification User Connection Registry (Helios)'
 status: seedling
-source: "Confluence: Deep Dive EPC Notification User Connection Registry (Helios)"
-tags: [redis, data-modelling, denormalisation, websockets, cache-invalidation, confluence-distilled]
+tags:
+- redis
+- data-modelling
+- denormalisation
+- websockets
+- cache-invalidation
+- confluence-distilled
+title: Store pod-level facts once, not copied into every user key
+type: lesson
 ---
 
 # Store pod-level facts once, not copied into every user key
@@ -53,3 +63,14 @@ Source: [[Deep Dive EPC Notification - User Connection Registry - Data Model]] (
 ## Related
 
 - [[Redis TTL should express liveness and be refreshed by a heartbeat]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deep Dive EPC Notification - User Connection Registry - Data Model]]
+- [[Redis TTL should express liveness and be refreshed by a heartbeat]]
+- [[Confluence-Distillation]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+- [[Broker Redis needs opposite config from cache Redis, run it separately]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "EPC Notification"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49104125959/EPC+Notification
-space: "Helios"
-topic: infra
-relevance: 0.708
-depth: 2.86
-updated: 2026-05-27
+ai_hash: 3d8aceca07ad33ff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.86
+entities: []
+relevance: 0.708
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49104125959/EPC+Notification
+space: Helios
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/helios
+- confluence
+- infra
+- space/helios
+title: EPC Notification
+topic: infra
+type: source
+updated: 2026-05-27
 ---
 
 # EPC Notification
@@ -194,3 +198,14 @@ Services/Modules
     </div>
 
     </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[ELM5 PubSub Message Queue]]
+- [[Setup Redis and DNS on TEST and PROD]]
+- [[Luz Kubernetes Terraform]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

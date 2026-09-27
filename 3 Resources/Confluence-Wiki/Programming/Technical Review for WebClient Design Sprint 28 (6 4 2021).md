@@ -1,18 +1,22 @@
 ---
-title: "Technical Review for WebClient Design Sprint 28 (6/4/2021)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/30906866274/Technical+Review+for+WebClient+Design+Sprint+28+6+4+2021
-space: "TP2020"
-topic: programming
-relevance: 0.762
-depth: 2.76
-updated: 2021-04-06
+ai_hash: 87b18509c3a7d088
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.76
+entities: []
+relevance: 0.762
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/30906866274/Technical+Review+for+WebClient+Design+Sprint+28+6+4+2021
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: Technical Review for WebClient Design Sprint 28 (6/4/2021)
+topic: programming
+type: source
+updated: 2021-04-06
 ---
 
 # Technical Review for WebClient Design Sprint 28 (6/4/2021)
@@ -184,3 +188,14 @@ tags:
 - Displaying documents in Letterbox.
 - Displaying document in detail.
 - Handle animation stuff.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test and code review report template]]
+- [[Programming]]
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[How to implement a feature hint for eArchive (reuse new common component )]]
+- [[Hotfix 0.01.69.01]]
+
+%% ai-graph-end %%

@@ -1,90 +1,66 @@
 ---
-ai_hash: 745a75b38e9c3a76
+ai_hash: 4079ce2ad7d19aa4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Parallelize visible-doc count by fan-out over _id ranges (luz-docs)
 created: 2026-06-16
 entities:
-- Divide-and-Conquer Visible-Document Count
-- K concurrent sub-counts
+- Divide-and-Conquer Count
+- Concurrent Sub-Counts
 - _id ranges
-- partials
-- materialised visible-document total
-- count(_isPublic == true OR _effectiveSecurityClassCodes ∩ user.codes)
+- Partial Sums
+- _isPublic
+- _effectiveSecurityClassCodes
+- user.codes
 - multikey index
-- amplification factor
-- record id
 - engine
+- Amplification Factor
+- request
 - thread
 - core
-- p99 tail
 - _id
-- 24-hex ObjectId
-- number in [0, 2^96)
-- K-1 evenly spaced cuts
-- bound_i
-- SPACE
-- BigInteger.ONE.shiftLeft(96)
-- 24-char zero-padded lowercase hex
-- Sub-query i
-- base filter
+- ObjectId
+- SPACE Constant
 - ManagedExecutorService
-- partial sum
-- security-visibility total
-- access-leak-shaped bug
 - skew
+- evenly-spaced cuts
 - quantile boundaries
-- real data
-- LUZ-154613
-- ch.klara.luz.docs.materialize.parallelize
+- Jira Ticket LUZ-154613
+- Parallelization Package
 - Mongo
 - JsonStore gateway
-- fan-out issues
-- ordinary match queries
 - jsonStore.countByFilter
-- Bounds
-- 24-char hex strings
-- $oid
-- extended-JSON wrapper
+- match queries
 - MaterializeRepository.countTotalDocumentByQuery
 - MaterializeCountFanout.count
-- query
-- ToIntFunction<JsonObject>
+- Count Primitive Function
 - MaterializeFacade
-- luz.docs.materialize.count-fanout-partitions
-- '@ConfigProperty(defaultValue="1") int'
+- Count Fanout Partitions Config
 - Index shape
-- '{_effectiveSecurityClassCodes:1, _id:1}'
-- '{_isPublic:1, _id:1}'
-- SECOND key
-- index seek
-- security-matched interval
-- post-filter
-- Load skew
-- ObjectIds
 - creation timestamp
 - uniform cuts
 - uneven buckets
 - CPU-bound
-- spare cores
-- resident index
 - I/O
-- cold index pages
-- contention
-- bitmap union
 - Roaring
 - HyperLogLog
-- read-preference knob
-- count path
+- bitmap union
 - analytics secondary
-- Divide-and-Conquer Count - Technical Points for Beginners
-- Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate
-- Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL
-- Partition the materialized count on a uniform _countShard int, not _id
-- Overall diagram
-- Raw picture diagram
-- step frames s1-problem … s8-skew
+- Technical Points for Beginners Note
+- Count Scaling Path Note
+- Frozen JsonStore Gateway Note
+- _id-range count fan-out
+- bitmapHLL
+- Partitioning Strategy Note
+- _countShard
+- Partitioning
+- Materialized Visible Document Total
+- Visible Document Count Logic
+- work
+- index entry
+- divide-conquer-count.excalidraw
+- divide-conquer-count.png
 source: LUZ-154613 (design + implementation), sessions 2026-05-30 / 2026-06-16
 status: seedling
 tags:
@@ -142,111 +118,66 @@ The materialised visible-document total is `count(_isPublic == true OR _effectiv
 
 **Related notes:**
 - [[Partition the materialized count on a uniform _countShard int, not _id]]
-- [[Levers to optimise the visible-document count beyond _shard fan-out]]
 - [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
 - [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
-- [[Divide-and-Conquer Count - Technical Points for Beginners]]
+- [[Levers to optimise the visible-document count beyond _shard fan-out]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 
 **Relations:**
-- Divide-and-Conquer Visible-Document Count — *splits* — slow count
-- Divide-and-Conquer Visible-Document Count — *uses* — K concurrent sub-counts
-- Divide-and-Conquer Visible-Document Count — *sums* — partials
-- Divide-and-Conquer Visible-Document Count — *operates over* — _id ranges
-- Divide-and-Conquer Visible-Document Count — *is for* — materialised visible-document total
-- Divide-and-Conquer Visible-Document Count — *is implemented in* — LUZ-154613
-- Divide-and-Conquer Visible-Document Count — *is implemented in package* — ch.klara.luz.docs.materialize.parallelize
-- Divide-and-Conquer Visible-Document Count — *has diagram* — Overall diagram
-- Divide-and-Conquer Visible-Document Count — *has diagram* — Raw picture diagram
-- Divide-and-Conquer Visible-Document Count — *has related* — Divide-and-Conquer Count - Technical Points for Beginners
-- Divide-and-Conquer Visible-Document Count — *has related* — Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate
-- Divide-and-Conquer Visible-Document Count — *has related* — Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL
-- Divide-and-Conquer Visible-Document Count — *has related* — Partition the materialized count on a uniform _countShard int, not _id
-- Divide-and-Conquer Visible-Document Count — *is configured by* — luz.docs.materialize.count-fanout-partitions
-- Divide-and-Conquer Visible-Document Count — *requires* — Index shape
-- Divide-and-Conquer Visible-Document Count — *is limited by* — Load skew
-- Divide-and-Conquer Visible-Document Count — *is limited by* — amplification factor
-- Divide-and-Conquer Visible-Document Count — *is limited by* — read-preference knob
-- Divide-and-Conquer Visible-Document Count — *helps when* — CPU-bound
-- Divide-and-Conquer Visible-Document Count — *helps when* — spare cores
-- Divide-and-Conquer Visible-Document Count — *helps when* — resident index
-- Divide-and-Conquer Visible-Document Count — *does not help when* — I/O
-- Divide-and-Conquer Visible-Document Count — *does not help when* — cold index pages
-- K concurrent sub-counts — *are over* — _id ranges
-- K concurrent sub-counts — *are run concurrently on* — ManagedExecutorService
-- K concurrent sub-counts — *produce* — partials
-- _id ranges — *are based on* — _id
-- _id ranges — *are defined by* — K-1 evenly spaced cuts
-- _id ranges — *are defined by* — bound_i
-- _id ranges — *are defined by* — SPACE
-- _id ranges — *are formatted as* — 24-char zero-padded lowercase hex
-- materialised visible-document total — *is* — count(_isPublic == true OR _effectiveSecurityClassCodes ∩ user.codes)
-- count(_isPublic == true OR _effectiveSecurityClassCodes ∩ user.codes) — *uses* — multikey index
-- count(_isPublic == true OR _effectiveSecurityClassCodes ∩ user.codes) — *causes* — amplification factor
-- multikey index — *causes* — amplification factor
-- amplification factor — *is caused by* — multikey index
-- amplification factor — *is related to* — record id
-- amplification factor — *is parallelised by* — Divide-and-Conquer Visible-Document Count
-- amplification factor — *can be removed by* — bitmap union
-- engine — *pays for* — index entry
-- engine — *de-duplicates by* — record id
-- thread — *is associated with* — One request
-- core — *is associated with* — One thread
-- _id — *is a* — 24-hex ObjectId
-- _id — *is a* — number in [0, 2^96)
-- _id — *carries* — creation timestamp
-- ManagedExecutorService — *runs* — K concurrent sub-counts
-- skew — *can be addressed by* — quantile boundaries
-- skew — *is caused by* — ObjectIds
-- skew — *is caused by* — creation timestamp
-- skew — *is caused by* — uniform cuts
-- skew — *results in* — uneven buckets
-- LUZ-154613 — *implements* — Divide-and-Conquer Visible-Document Count
-- ch.klara.luz.docs.materialize.parallelize — *is package for* — LUZ-154613
-- Mongo — *sits behind* — JsonStore gateway
-- Mongo — *does not allow* — Mongo change
-- JsonStore gateway — *is behind* — Mongo
-- JsonStore gateway — *coerces* — _id string
-- JsonStore gateway — *coerces to* — ObjectId
-- JsonStore gateway — *handles* — eq/$in
-- JsonStore gateway — *routes* — ordinary match queries
-- JsonStore gateway — *uses* — jsonStore.countByFilter
-- ordinary match queries — *are routed through* — JsonStore gateway
-- ordinary match queries — *use* — jsonStore.countByFilter
-- jsonStore.countByFilter — *is used by* — ordinary match queries
-- jsonStore.countByFilter — *is a* — single count
-- jsonStore.countByFilter — *is a* — per-range primitive
+- Divide-and-Conquer Count — *splits into* — Concurrent Sub-Counts
+- Concurrent Sub-Counts — *operate over* — _id ranges
+- Divide-and-Conquer Count — *sums* — Partial Sums
+- Materialized Visible Document Total — *is calculated by* — Visible Document Count Logic
+- Visible Document Count Logic — *involves* — _isPublic
+- Visible Document Count Logic — *involves* — _effectiveSecurityClassCodes
+- Visible Document Count Logic — *involves* — user.codes
+- engine — *uses* — multikey index
+- multikey index — *has* — index entry
+- work — *scales with* — Amplification Factor
+- request — *uses* — thread
+- thread — *uses* — core
+- _id — *is a type of* — ObjectId
+- ObjectId — *is* — 24-hex
+- _id ranges — *are calculated using* — SPACE Constant
+- SPACE Constant — *is defined as* — BigInteger.ONE.shiftLeft(96)
+- Concurrent Sub-Counts — *run on* — ManagedExecutorService
+- skew — *is a problem for* — evenly-spaced cuts
+- quantile boundaries — *is an alternative to* — evenly-spaced cuts
+- Divide-and-Conquer Count — *is described by* — Jira Ticket LUZ-154613
+- Divide-and-Conquer Count — *is implemented in* — Parallelization Package
+- Mongo — *is behind* — JsonStore gateway
+- Divide-and-Conquer Count — *uses* — jsonStore.countByFilter
+- jsonStore.countByFilter — *processes* — match queries
+- match queries — *include* — _id
 - MaterializeRepository.countTotalDocumentByQuery — *delegates to* — MaterializeCountFanout.count
-- MaterializeCountFanout.count — *is called by* — MaterializeRepository.countTotalDocumentByQuery
-- MaterializeCountFanout.count — *takes* — query
-- MaterializeCountFanout.count — *takes* — ToIntFunction<JsonObject>
+- MaterializeCountFanout.count — *uses* — Count Primitive Function
+- Count Primitive Function — *is* — jsonStore.countByFilter
 - MaterializeFacade — *is above* — MaterializeRepository.countTotalDocumentByQuery
-- luz.docs.materialize.count-fanout-partitions — *is a* — Config property
-- luz.docs.materialize.count-fanout-partitions — *has default value* — 1
-- luz.docs.materialize.count-fanout-partitions — *controls* — K concurrent sub-counts
-- Index shape — *is mandatory for* — Divide-and-Conquer Visible-Document Count
-- Index shape — *includes* — {_effectiveSecurityClassCodes:1, _id:1}
-- Index shape — *includes* — {_isPublic:1, _id:1}
-- Index shape — *requires* — SECOND key
-- SECOND key — *enables* — index seek
-- index seek — *is inside* — security-matched interval
-- CPU-bound — *is a condition for* — Divide-and-Conquer Visible-Document Count
-- spare cores — *is a condition for* — Divide-and-Conquer Visible-Document Count
-- resident index — *is a condition for* — Divide-and-Conquer Visible-Document Count
-- I/O — *is a bottleneck when* — cold index pages
-- cold index pages — *cause* — I/O bottleneck
-- bitmap union — *removes* — amplification factor
-- bitmap union — *can be* — Roaring
-- bitmap union — *can be* — HyperLogLog
+- Count Fanout Partitions Config — *configures* — Concurrent Sub-Counts
+- Index shape — *requires* — _effectiveSecurityClassCodes
+- Index shape — *requires* — _isPublic
+- Index shape — *requires* — _id
+- _id — *is the second key in* — Index shape
+- ObjectId — *has* — creation timestamp
+- uniform cuts — *cause* — uneven buckets
+- skew — *is caused by* — uniform cuts
+- Divide-and-Conquer Count — *is effective when* — CPU-bound
+- I/O — *is a bottleneck for* — Concurrent Sub-Counts
+- Amplification Factor — *persists with* — Divide-and-Conquer Count
+- bitmap union — *removes* — Amplification Factor
 - Roaring — *is a type of* — bitmap union
-- Roaring — *is* — exact
 - HyperLogLog — *is a type of* — bitmap union
-- HyperLogLog — *is* — approximate
-- read-preference knob — *does not exist on* — count path
-- analytics secondary — *cannot be routed to by* — heavy sub-counts
-- Overall diagram — *is a* — diagram
-- Overall diagram — *illustrates* — Divide-and-Conquer Visible-Document Count
-- Raw picture diagram — *is a* — diagram
-- Raw picture diagram — *illustrates* — Divide-and-Conquer Visible-Document Count
-- Raw picture diagram — *has details* — step frames s1-problem … s8-skew
+- analytics secondary — *cannot be used for* — Concurrent Sub-Counts
+- Divide-and-Conquer Count — *is related to* — Technical Points for Beginners Note
+- Divide-and-Conquer Count — *is related to* — Count Scaling Path Note
+- Frozen JsonStore Gateway — *makes* — _id-range count fan-out
+- _id-range count fan-out — *a* — dead end
+- bitmapHLL — *is a pivot from* — _id-range count fan-out
+- Divide-and-Conquer Count — *is related to* — Frozen JsonStore Gateway Note
+- Partitioning Strategy Note — *proposes* — _countShard
+- _countShard — *as alternative to* — _id
+- _countShard — *for* — Partitioning
+- divide-conquer-count.excalidraw — *illustrates* — Divide-and-Conquer Count
+- divide-conquer-count.png — *illustrates* — Divide-and-Conquer Count
 
 %% ai-graph-end %%

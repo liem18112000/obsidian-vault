@@ -1,14 +1,22 @@
 ---
-title: "EArchive : Search doc process"
+ai_hash: 4376801c32f25346
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49352802305'
+confluence_path: LUZ Home > KLARA projects > luz_docs
 created: 2026-04-22
-updated: 2026-04-24
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+- earchive
+- luz-docs
+- search
+title: 'EArchive : Search doc process'
+type: source
+updated: 2026-04-24
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49352802305/EArchive+Search+doc+process
-confluence_id: "49352802305"
-confluence_path: "LUZ Home > KLARA projects > luz_docs"
-tags: [confluence, earchive, luz-docs, search]
 ---
 
 # EArchive : Search doc process
@@ -1005,3 +1013,14 @@ tags: [confluence, earchive, luz-docs, search]
 > </table>
 >
 >
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[WIP Analyze subfolder search API (542ms)]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[How to run export API for specific tenant and date - Manual export]]
+
+%% ai-graph-end %%

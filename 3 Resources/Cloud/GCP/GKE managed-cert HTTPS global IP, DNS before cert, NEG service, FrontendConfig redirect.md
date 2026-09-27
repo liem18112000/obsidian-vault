@@ -1,7 +1,7 @@
 ---
-ai_hash: 15d0373a767a502f
+ai_hash: cd0afcda28f69400
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-04
 entities: []
 source: session 2026-07-04, vinnstack HTTPS
@@ -38,9 +38,9 @@ Gotcha chain to expect: cert stuck Provisioning = DNS not resolving or resolving
 
 **Related notes:**
 - [[Free built-in GCP domain Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog to an IP]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+- [[Recipe Introduce a Global HTTP(S) Load Balancer on GCP at KLARA]]
+- [[Carve .well-known out of any catch-all proxy or certificate validation fails]]
 - [[GKE LoadBalancer Service External vs Internal and how to tell by IP]]
-- [[Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing]]
-- [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
-- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
 
 %% ai-graph-end %%

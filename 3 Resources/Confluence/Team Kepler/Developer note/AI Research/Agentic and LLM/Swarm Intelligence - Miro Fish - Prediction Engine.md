@@ -1,14 +1,21 @@
 ---
-title: "Swarm Intelligence: Miro Fish - Prediction Engine"
+ai_hash: 07d8578ba375abf9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49259839512'
+confluence_path: Team Kepler > Developer note > AI Research > Agentic and LLM
 created: 2026-03-23
-updated: 2026-03-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- search
+title: 'Swarm Intelligence: Miro Fish - Prediction Engine'
+type: source
+updated: 2026-03-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49259839512/Swarm+Intelligence+Miro+Fish+-+Prediction+Engine
-confluence_id: "49259839512"
-confluence_path: "Team Kepler > Developer note > AI Research > Agentic and LLM"
-tags: [confluence, ai-agents, search]
 ---
 
 # Swarm Intelligence: Miro Fish - Prediction Engine
@@ -60,3 +67,10 @@ The system handles 50-200 agents comfortably. Larger simulations (500+) are poss
 ![[3 Resources/Confluence/Team Kepler/Developer note/AI Research/Agentic and LLM/attachments/swarm-intelligence-miro-fish-prediction-engine/image-20260320-020903.png]]
 
 ![[3 Resources/Confluence/Team Kepler/Developer note/AI Research/Agentic and LLM/attachments/swarm-intelligence-miro-fish-prediction-engine/image-20260320-020934.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Swarm Intelligence - Theories]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Swarm intelligence gets global behaviour from local rules and no central controller"
+ai_hash: bff66ce87bfaed3e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Swarm Intelligence - Theories (2026-03-23)'
 status: seedling
-source: "Confluence: Swarm Intelligence - Theories (2026-03-23)"
-tags: [swarm-intelligence, multi-agent, emergence, ai-agents, optimization]
+tags:
+- swarm-intelligence
+- multi-agent
+- emergence
+- ai-agents
+- optimization
+title: Swarm intelligence gets global behaviour from local rules and no central controller
+type: concept
 ---
 
 # Swarm intelligence gets global behaviour from local rules and no central controller
@@ -31,3 +40,12 @@ The honest limitation: emergence is not steerable. You get global behaviour you 
 ## Related
 
 - [[Stigmergy coordinates through traces left in the environment, not messages between agents]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Swarm Intelligence - Theories]]
+- [[Stigmergy coordinates through traces left in the environment, not messages between agents]]
+- [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+
+%% ai-graph-end %%

@@ -1,14 +1,21 @@
 ---
-title: "Evaluating the Test-Plan-Definition Agent"
+ai_hash: c730d46ba4aca670
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49755127836'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 3 - Test-Plan Definition'
 created: 2026-09-15
-updated: 2026-09-15
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Evaluating the Test-Plan-Definition Agent
+type: source
+updated: 2026-09-15
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49755127836/Evaluating+the+Test-Plan-Definition+Agent
-confluence_id: "49755127836"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 3 - Test-Plan Definition"
-tags: [confluence, ai-agents]
 ---
 
 # Evaluating the Test-Plan-Definition Agent
@@ -317,3 +324,14 @@ Until the execution stage lands, Layer 3 is represented by the **oracle strength
 The judged tier (RAGAS brief Faithfulness / Response Relevancy, `hallucinations_v1`, the LLM oracle-depth classifier) is trustworthy only once the provider-sourced judge is **calibrated against humans**, and the deliberately-bad **canary packs** (`golden_plans/canary/`) are the cheap drift guard between recalibrations. The full protocol — Cohen's kappa, the `judge-human >= human-human - 0.1` gate, and the shipped canary implementation — is its own page: [Judge Calibration and Canary Seeds](https://axonivy.atlassian.net/wiki/spaces/TK/pages/49754406963/Judge+Calibration+and+Canary+Seeds) .
 
 In short: keep a dimension **judged** only if the judge agrees with a human about as well as two humans agree with each other; otherwise keep it **deterministic** (which is why most of the TPS is set-overlap + partition presence). Pin the judge model and re-calibrate on any model/prompt change.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Evaluating Knowledge-Gathering Agent - V2]]
+- [[Test-Plan Definition Agent]]
+- [[Test oracle - what a scenario asserts, and why its strength decides everything]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+
+%% ai-graph-end %%

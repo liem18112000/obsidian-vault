@@ -1,18 +1,22 @@
 ---
-title: "Authentication & Authorization Architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48615161915/Authentication+Authorization+Architecture
-space: "FUT"
-topic: security
-relevance: 0.886
-depth: 3
-updated: 2025-08-18
+ai_hash: 3d064830b5e9769e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.886
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48615161915/Authentication+Authorization+Architecture
+space: FUT
+status: reference
 tags:
-  - confluence
-  - security
-  - space/fut
+- confluence
+- security
+- space/fut
+title: Authentication & Authorization Architecture
+topic: security
+type: source
+updated: 2025-08-18
 ---
 
 # Authentication & Authorization Architecture
@@ -151,3 +155,14 @@ Open Policy Agent (OPA), pronounced "oh-pa," is an open-source, general-purpose 
   - **API Authorization:** Deciding if a user can access a specific endpoint.
 
   - **CI/CD Pipelines:** Gating deployments based on compliance rules.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Authorization has four named parts PAP, PDP, PEP, PIP]]
+- [[RBAC is coarse-grained by role, ABAC is fine-grained by attribute]]
+- [[Resource-level consent grants specific instances, not just scopes]]
+- [[Vault overview]]
+- [[Roles and Permissions check for accessing public API]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "How to deploy in Performance"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/WOW/pages/47148467032/How+to+deploy+in+Performance
-space: "WOW"
-topic: infra
-relevance: 0.716
-depth: 2.67
-updated: 2022-08-09
+ai_hash: a2f570e06daaca35
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.67
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/WOW/pages/47148467032/How+to+deploy+in+Performance
+space: WOW
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/wow
+- confluence
+- infra
+- space/wow
+title: How to deploy in Performance
+topic: infra
+type: source
+updated: 2022-08-09
 ---
 
 # How to deploy in Performance
@@ -69,3 +73,14 @@ kubectl -n performance apply -f performance.yaml
 1.  there is an issue at klara-maintenance-volume
 
 2.  issue with redirectUrl. Next is checking
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+- [[Kubernetes knowledge]]
+- [[Apply changes on luz_kubernetes]]
+- [[Load test]]
+- [[One API end to end testing]]
+
+%% ai-graph-end %%

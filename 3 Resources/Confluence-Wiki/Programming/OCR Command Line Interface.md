@@ -1,18 +1,22 @@
 ---
-title: "OCR Command Line Interface"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2468094476/OCR+Command+Line+Interface
-space: "AI"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2019-02-08
+ai_hash: cba7bfcb0b171758
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2468094476/OCR+Command+Line+Interface
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: OCR Command Line Interface
+topic: programming
+type: source
+updated: 2019-02-08
 ---
 
 # OCR Command Line Interface
@@ -227,3 +231,14 @@ Note that the user 'james' with password 'secretagent' does not exist.
   <a href="https://axonivy.atlassian.net/wiki/spaces/AI/pages/47350808577/SchemaRegistry+API" id="47350808577">SchemaRegistry API</a>
 
   </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OCR API Java Client]]
+- [[Invoice API Java Client]]
+- [[Invoice API Reference]]
+- [[Document Creator API]]
+- [[OCR API Explained]]
+
+%% ai-graph-end %%

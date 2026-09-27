@@ -1,18 +1,22 @@
 ---
-title: "LUZ-81908 - Implement test mode without send to the Rhine server"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47164031007/LUZ-81908+-+Implement+test+mode+without+send+to+the+Rhine+server
-space: "TS"
-topic: programming
-relevance: 0.798
-depth: 2.92
-updated: 2022-08-12
+ai_hash: 5157d3f3659769bc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.92
+entities: []
+relevance: 0.798
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47164031007/LUZ-81908+-+Implement+test+mode+without+send+to+the+Rhine+server
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: LUZ-81908 - Implement test mode without send to the Rhine server
+topic: programming
+type: source
+updated: 2022-08-12
 ---
 
 # LUZ-81908 - Implement test mode without send to the Rhine server
@@ -166,3 +170,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test and code review report template]]
+- [[LUZ-79226 PayPal in Online Shop - Adaption KLARA Pay - Gateway API]]
+- [[LUZ-75886 Part 1 Implement real-time API updates]]
+- [[Test and code review report template.2.93]]
+- [[Test and code review report template.2]]
+
+%% ai-graph-end %%

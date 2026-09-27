@@ -1,5 +1,5 @@
 ---
-ai_hash: bc40163b782b3a73
+ai_hash: 5ac97a934973246d
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-14
@@ -38,9 +38,9 @@ Required sidecar fields include `senderTenantId` (UUID), `senderCompanyId` (int)
 
 **Related notes:**
 - [[LUZ-158230 is the ePost eArchive transfer.zip document-import feature]]
-- [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
 - [[ePost eArchive document write-chain import to view-controller to luz_docs to jsonstore]]
+- [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
 - [[luz_docs_import scope no sender auth, individual tenants, partial-import policy]]
-- [[LUZ-158230 eArchive Health ZIP import - golden test fixture matrix location]]
+- [[ePost ZIP import dedup documents by job-success path, folders via view-controller]]
 
 %% ai-graph-end %%

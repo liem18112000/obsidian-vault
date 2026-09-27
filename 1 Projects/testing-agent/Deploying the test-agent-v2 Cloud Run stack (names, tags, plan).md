@@ -1,52 +1,36 @@
 ---
-ai_hash: 8480a98f14a5e711
+ai_hash: 6d130df4a143f652
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-16
 entities:
-- test-agent-v2 Cloud Run stack
-- deployments/test-agent-v2/deploy.sh
-- klara-nonprod
-- Cloud Run service names
+- test-agent-v2 stack
+- Cloud Run
+- klara-nonprod project
 - TPD service
 - test-plan-definition-agent-v2
-- gcloud run services describe test-plan-definition-agent
+- gcloud run services describe
 - Terraform
-- module.kga|tpd|tev.google_cloud_run_v2_service.this[0]
+- Cloud Run service names
 - Image tag convention
-- europe-west6-docker.pkg.dev/klara-nonprod/kga-v2/test-agent-v2:<shortsha>-<label>
-- a15b62d-chunked-implement
-- 5603766-benchmark-cache
-- klara-nonprod/kga-v2
-- tfvars `image=`
+- image tag format
+- registry klara-nonprod/kga-v2
+- tfvars image
 - build-image.sh
 - klara-repo
-- kga
-- tpd
-- tev
-- gateway
-- ONE image
-- '`PLAN=1 bash deploy.sh`'
-- read-only preview
-- 5603766 "benchmark + pluggable cache (Redis/Memorystore)" commit
+- kga/tpd/tev + gateway services
+- deploy.sh script
+- PLAN=1 bash deploy.sh
+- 5603766 commit
 - cache feature
-- Terraform infra
 - Memorystore
 - Cloud Run image updates
 - Cloud Run revision
 - image STRING
-- same tag
-- fresh tag
-- live tag
-- target tag
-- deploy.sh
 - gcloud builds submit --async
 - builds describe
-- builds
-- full apply
-- Fix TPD scenario generator truncation — raise max_tokens
-- keep one call
-- Redis
+- Fix TPD scenario generator truncation
+- max_tokens
 source: Testing-Agent run-188f96b8 deploy
 status: seedling
 tags:
@@ -83,39 +67,28 @@ Facts for deploying the **test-agent-v2** stack (deployments/test-agent-v2/deplo
 - [[test-agent-v2 cloud resource and credential map (klara-nonprod)]]
 
 **Relations:**
-- test-agent-v2 Cloud Run stack — *is deployed by* — deployments/test-agent-v2/deploy.sh
-- test-agent-v2 Cloud Run stack — *is in project* — klara-nonprod
-- Cloud Run service names — *carry suffix* — `-v2`
-- TPD service — *is named* — test-plan-definition-agent-v2
-- gcloud run services describe test-plan-definition-agent — *describes* — TPD service
-- Terraform — *addresses service as* — module.kga|tpd|tev.google_cloud_run_v2_service.this[0]
-- Image tag convention — *is* — europe-west6-docker.pkg.dev/klara-nonprod/kga-v2/test-agent-v2:<shortsha>-<label>
-- a15b62d-chunked-implement — *is an example of* — Image tag convention
-- 5603766-benchmark-cache — *is an example of* — Image tag convention
-- klara-nonprod/kga-v2 — *is the registry for* — Image tag convention
-- tfvars `image=` — *overrides* — klara-repo
+- test-agent-v2 stack — *is a* — Cloud Run stack
+- test-agent-v2 stack — *deploys to* — klara-nonprod project
+- TPD service — *is part of* — test-agent-v2 stack
+- TPD service — *has Cloud Run service name* — test-plan-definition-agent-v2
+- gcloud run services describe — *describes* — Cloud Run services
+- Terraform — *addresses* — Cloud Run service names
+- Image tag convention — *defines* — image tag format
+- image tag format — *is used by* — test-agent-v2 stack
+- image tag format — *is stored in* — registry klara-nonprod/kga-v2
+- tfvars image — *overrides* — klara-repo
 - klara-repo — *is default in* — build-image.sh
-- kga — *shares* — ONE image
-- tpd — *shares* — ONE image
-- tev — *shares* — ONE image
-- gateway — *shares* — ONE image
-- `PLAN=1 bash deploy.sh` — *is a* — read-only preview
-- 5603766 "benchmark + pluggable cache (Redis/Memorystore)" commit — *implements* — cache feature
-- cache feature — *provisions no new* — Terraform infra
-- Memorystore — *is not created by* — Terraform
-- Cloud Run image updates — *are* — 5 changes
+- kga/tpd/tev + gateway services — *share* — ONE image
+- deploy.sh script — *is used for* — deployment
+- PLAN=1 bash deploy.sh — *is a* — read-only preview
+- 5603766 commit — *introduces* — cache feature
+- cache feature — *does not provision* — Memorystore
+- Cloud Run image updates — *are* — Terraform changes
 - Terraform — *rolls new* — Cloud Run revision
-- Cloud Run revision — *requires change in* — image STRING
-- Deploying the same tag — *is a* — no-op
-- fresh tag — *should be used over* — live tag
-- live tag — *was* — a15b62d-chunked-implement
-- target tag — *was* — 5603766-benchmark-cache
-- deploy.sh — *builds via* — gcloud builds submit --async
-- deploy.sh — *polls* — builds describe
-- builds — *occur before* — full apply
-- test-agent-v2 Cloud Run stack — *is related to* — Fix TPD scenario generator truncation — raise max_tokens
-- test-agent-v2 Cloud Run stack — *is related to* — keep one call
-- cache feature — *can use* — Redis
-- cache feature — *can use* — Memorystore
+- Cloud Run revision — *is triggered by* — image STRING changes
+- deploy.sh script — *uses* — gcloud builds submit --async
+- deploy.sh script — *polls* — builds describe
+- Fix TPD scenario generator truncation — *is related to* — TPD service
+- Fix TPD scenario generator truncation — *involves raising* — max_tokens
 
 %% ai-graph-end %%

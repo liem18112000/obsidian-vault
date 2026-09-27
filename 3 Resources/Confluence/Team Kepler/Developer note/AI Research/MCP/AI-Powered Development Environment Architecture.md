@@ -1,14 +1,21 @@
 ---
-title: "AI-Powered Development Environment Architecture"
+ai_hash: 56ecf7f20b9bacdb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48918528054'
+confluence_path: Team Kepler > Developer note > AI Research > MCP
 created: 2025-11-28
-updated: 2025-11-28
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- mcp
+- search
+title: AI-Powered Development Environment Architecture
+type: source
+updated: 2025-11-28
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48918528054/AI-Powered+Development+Environment+Architecture
-confluence_id: "48918528054"
-confluence_path: "Team Kepler > Developer note > AI Research > MCP"
-tags: [confluence, mcp, search]
 ---
 
 # AI-Powered Development Environment Architecture
@@ -169,3 +176,14 @@ This architecture provides:
 5.  **Scalable Design** - Modular components that can be extended
 
 The system enables AI-assisted development workflows while maintaining enterprise-grade security and integration capabilities.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Setup VS Code - Github Copilot - MCP Server]]
+- [[Knowledge Base Solutions Comparison Guide]]
+- [[MCP Servers — Installation and Configuration Reference]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+- [[Atlassian MCP Server Integration Guide]]
+
+%% ai-graph-end %%

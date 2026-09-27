@@ -1,18 +1,23 @@
 ---
-title: "[CROSS-TEST] [LUZ-158644] Investigate and remove Print&Send user role (UI, backend, Public API — no migration)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49725702215/CROSS-TEST+LUZ-158644+Investigate+and+remove+Print+Send+user+role+UI+backend+Public+API+no+migration
-space: "TS"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2026-09-07
+ai_hash: 6ed5b24e39f9c053
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 24
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49725702215/CROSS-TEST+LUZ-158644+Investigate+and+remove+Print+Send+user+role+UI+backend+Public+API+no+migration
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: '[CROSS-TEST] [LUZ-158644] Investigate and remove Print&Send user role (UI,
+  backend, Public API — no migration)'
+topic: programming
+type: source
+updated: 2026-09-07
 ---
 
 # [CROSS-TEST] [LUZ-158644] Investigate and remove Print&Send user role (UI, backend, Public API — no migration)
@@ -584,3 +589,14 @@ Related US: <span class="confluence-jim-macro jira-issue conf-macro output-block
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research Protect ePost inbox with new Digital_Letterbox permission]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[LUZ-79226 PayPal in Online Shop - Adaption KLARA Pay - Gateway API]]
+- [[Test the decisions that override the story description, not the description]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%

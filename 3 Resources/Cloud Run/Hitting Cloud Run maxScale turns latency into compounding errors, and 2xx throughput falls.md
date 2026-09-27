@@ -1,10 +1,21 @@
 ---
-title: "Hitting Cloud Run maxScale turns latency into compounding errors, and 2xx throughput falls"
+ai_hash: 1e1b841270d75815
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Performance Test - Thumbnail Cloud Run / GKE (2026-04-13)'
 status: seedling
-source: "Confluence: Performance Test - Thumbnail Cloud Run / GKE (2026-04-13)"
-tags: [cloud-run, autoscaling, overload, performance, monitoring, gcp]
+tags:
+- cloud-run
+- autoscaling
+- overload
+- performance
+- monitoring
+- gcp
+title: Hitting Cloud Run maxScale turns latency into compounding errors, and 2xx throughput
+  falls
+type: lesson
 ---
 
 # Hitting Cloud Run maxScale turns latency into compounding errors, and 2xx throughput falls
@@ -31,3 +42,14 @@ A related diagnostic from the same runs: k6 reported **5.17% failures** with no 
 ## Related
 
 - [[Cloud Run concurrency capacity is an upper bound CPU rarely lets you reach]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run concurrency capacity is an upper bound CPU rarely lets you reach]]
+- [[Cold starts appear as a p95 spike during the scale-up ramp, not in steady state]]
+- [[Performance Test - 100% Thumbnail Cloud Run]]
+- [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+- [[Right-sizing k8s resource limits on the Customer360 stack]]
+
+%% ai-graph-end %%

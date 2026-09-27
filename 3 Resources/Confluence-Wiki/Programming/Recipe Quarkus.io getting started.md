@@ -1,18 +1,22 @@
 ---
-title: "Recipe: Quarkus.io getting started"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46941995722/Recipe+Quarkus.io+getting+started
-space: "LUZ"
-topic: programming
-relevance: 0.798
-depth: 2.92
-updated: 2022-02-21
+ai_hash: a3133c1f08977053
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.92
+entities: []
+relevance: 0.798
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46941995722/Recipe+Quarkus.io+getting+started
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: 'Recipe: Quarkus.io getting started'
+topic: programming
+type: source
+updated: 2022-02-21
 ---
 
 # Recipe: Quarkus.io getting started
@@ -1658,3 +1662,14 @@ Call path from entry point to io.quarkus.qute.String_ValueResolver.resolve(EvalC
 - Performance comparision between Quarkus native and jvm: <a href="https://quarkus.io/blog/runtime-performance/" class="external-link" rel="nofollow">https://quarkus.io/blog/runtime-performance/</a>
 - Performacnce messure:<a href="https://quarkus.io/guides/performance-measure" class="external-link" rel="nofollow"> https://quarkus.io/guides/performance-measure</a>
 - Quarkus.io GIT Repo: <a href="https://github.com/quarkusio" class="external-link" rel="nofollow">https://github.com/quarkusio</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Quarkus]]
+- [[Migrate to Quarkus (WIP)]]
+- [[Recipe Deploy with Terraform]]
+- [[2.31 Build & deploy agent review service to k8s (POC)]]
+- [[06 - How to test a Rest API with authorization]]
+
+%% ai-graph-end %%

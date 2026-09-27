@@ -1,18 +1,22 @@
 ---
-title: "EPC Notification architecture flow"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48727457897/EPC+Notification+architecture+flow
-space: "Helios"
-topic: architecture
-relevance: 0.832
-depth: 3
-updated: 2026-05-27
+ai_hash: 48961f465b64af07
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 12
+depth: 3
+entities: []
+relevance: 0.832
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48727457897/EPC+Notification+architecture+flow
+space: Helios
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/helios
+- confluence
+- architecture
+- space/helios
+title: EPC Notification architecture flow
+topic: architecture
+type: source
+updated: 2026-05-27
 ---
 
 # EPC Notification architecture flow
@@ -501,3 +505,14 @@ As AI support: we generate some idea & plan for the implementation:
   - 
 
 -
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Server push choice is decided by proxy idle timeouts and pod affinity, not API elegance]]
+- [[Deep Dive EPC Notification - User Connection Registry - Data Model]]
+- [[Performance pain points]]
+- [[Using Google PubSub for events between Serverless workflow and Data Index]]
+- [[Recipe Best practices implementing scalable distributed applications on cloud]]
+
+%% ai-graph-end %%

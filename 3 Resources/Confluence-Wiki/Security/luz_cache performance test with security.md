@@ -1,18 +1,22 @@
 ---
-title: "luz_cache performance test with security"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47042134101/luz_cache+performance+test+with+security
-space: "LUZ"
-topic: security
-relevance: 0.701
-depth: 2.4
-updated: 2022-01-25
+ai_hash: 0d5da19fc296c66b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 28
+depth: 2.4
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47042134101/luz_cache+performance+test+with+security
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: luz_cache performance test with security
+topic: security
+type: source
+updated: 2022-01-25
 ---
 
 # luz_cache performance test with security
@@ -417,3 +421,14 @@ Percentage of the requests served within a certain time (ms)
 Comparing to GET calls (2 concurrent / 500000 calls) without security the latency time (mean) has been increased a bit (1.647 to 1.846 ms). The CPU (0.2%) load and memory (~117MB) usage remain low. The time per request (mean) is around 1083.53 calls / sec (without sec 1214.28).
 
 The performance of the POST calls (2 concurrent / 500000 calls) looks similar to the GET calls or even a bit better. The number of client connections raises to 10 clients comparing to GET calls with 2 clients. And the CPU load raises to 9% comparing to GET calls with 6.3%.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Redis NoSQL distributed cache - Performance test]]
+- [[Benchmark of luz-database (performance env)]]
+- [[Luz Audit System - Performance Optimization Proposal]]
+- [[Create Document API – Performance Testing Report]]
+- [[luz-vault - How to run Vault Benchmark]]
+
+%% ai-graph-end %%

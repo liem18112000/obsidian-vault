@@ -1,18 +1,22 @@
 ---
-title: "Task"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38142261633/Task
-space: "Helios"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2017-01-31
+ai_hash: 9ea21ece5bf8c3d1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38142261633/Task
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Task
+topic: programming
+type: source
+updated: 2017-01-31
 ---
 
 # Task
@@ -75,3 +79,14 @@ GET \[/ivy/api/{application}/workflow/task/{taskId}\]
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[REST API for deleting EXPENSES documents]]
+- [[Task List Mass Processing technical notes]]
+- [[Load test get document id API]]
+- [[APF swagger for project eapf_web]]
+- [[Git source code and Jenkins]]
+
+%% ai-graph-end %%

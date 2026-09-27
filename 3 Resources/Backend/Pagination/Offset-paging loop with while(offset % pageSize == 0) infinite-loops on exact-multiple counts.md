@@ -1,7 +1,7 @@
 ---
-ai_hash: f1d56aeb2ac16f7a
+ai_hash: f2e81738659b30d7
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-21
 entities: []
 source: session 2026-06-21 luz-docs delete-folder review
@@ -41,6 +41,6 @@ Found in luz_docs `FolderUtil` (`forEachDocumentPage` + `getSubFolders`), folder
 - [[JAX-RS DefaultValue does not apply when a bean param is constructed in code]]
 - [[luz-docs folder delete filter double-fetched every subfolder]]
 - [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
-- [[Minimal meaningful test fixture size is bounded by the real page size]]
+- [[Confluence CQL search paginates by opaque cursor, not start offset]]
 
 %% ai-graph-end %%

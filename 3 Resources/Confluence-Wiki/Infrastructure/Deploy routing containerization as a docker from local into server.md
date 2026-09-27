@@ -1,18 +1,22 @@
 ---
-title: "Deploy routing containerization as a docker from local into server"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48468918404/Deploy+routing+containerization+as+a+docker+from+local+into+server
-space: "Arrow"
-topic: infra
-relevance: 0.794
-depth: 3
-updated: 2025-05-29
+ai_hash: e3d4681623c6eada
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 28
+depth: 3
+entities: []
+relevance: 0.794
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48468918404/Deploy+routing+containerization+as+a+docker+from+local+into+server
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/arrow
+- confluence
+- infra
+- space/arrow
+title: Deploy routing containerization as a docker from local into server
+topic: infra
+type: source
+updated: 2025-05-29
 ---
 
 # Deploy routing containerization as a docker from local into server
@@ -504,3 +508,14 @@ Verify the result in the `routing-frontend-logs.log` file at `/opt/integration_s
 
 
 ![[48468918404-image-20250425-103455.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[2.31 Build & deploy agent review service to k8s (POC)]]
+- [[Deploy AFDEMO CPM]]
+- [[Deploy AFDEMO OM]]
+- [[Port forward and Docker compose]]
+- [[Recipe Deploy with Terraform]]
+
+%% ai-graph-end %%

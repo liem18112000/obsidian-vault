@@ -1,18 +1,22 @@
 ---
-title: "New architecture for documentStatistic"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47242215811/New+architecture+for+documentStatistic
-space: "LUZ"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2023-01-04
+ai_hash: cbe9308782f92a07
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47242215811/New+architecture+for+documentStatistic
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: New architecture for documentStatistic
+topic: architecture
+type: source
+updated: 2023-01-04
 ---
 
 # New architecture for documentStatistic
@@ -131,3 +135,14 @@ ratio: 0.5</p></td>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
+- [[Background Process Optimization for luz-docs API Architecture and Recommendations]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[Measure API luz-docs]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+
+%% ai-graph-end %%

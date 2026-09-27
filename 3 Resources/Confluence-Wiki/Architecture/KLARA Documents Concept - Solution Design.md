@@ -1,18 +1,22 @@
 ---
-title: "KLARA Documents Concept - Solution Design"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525663582/KLARA+Documents+Concept+-+Solution+Design
-space: "LUZ"
-topic: architecture
-relevance: 0.87
-depth: 2.93
-updated: 2021-03-21
+ai_hash: b611e9594c74e689
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 27
+depth: 2.93
+entities: []
+relevance: 0.87
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525663582/KLARA+Documents+Concept+-+Solution+Design
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: KLARA Documents Concept - Solution Design
+topic: architecture
+type: source
+updated: 2021-03-21
 ---
 
 # KLARA Documents Concept - Solution Design
@@ -181,3 +185,14 @@ Each software validation test must be defined in details and must contain the fo
 - Workloads
 - Measures
 - Subsequent validations
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KLARA Documents solution implementation]]
+- [[Architecture]]
+- [[Business concept for frontend]]
+- [[Proof of concept Export and download storage]]
+- [[Postgres Architecture Blueprint V2023]]
+
+%% ai-graph-end %%

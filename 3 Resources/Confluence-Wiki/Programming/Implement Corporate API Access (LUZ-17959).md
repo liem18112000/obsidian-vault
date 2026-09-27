@@ -1,18 +1,22 @@
 ---
-title: "Implement Corporate API Access (LUZ-17959)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20481508537/Implement+Corporate+API+Access+LUZ-17959
-space: "LUZ"
-topic: programming
-relevance: 0.847
-depth: 3
-updated: 2019-11-07
+ai_hash: b3c14c0efebad36c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 28
+depth: 3
+entities: []
+relevance: 0.847
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20481508537/Implement+Corporate+API+Access+LUZ-17959
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Implement Corporate API Access (LUZ-17959)
+topic: programming
+type: source
+updated: 2019-11-07
 ---
 
 # Implement Corporate API Access (LUZ-17959)
@@ -592,3 +596,14 @@ UI + Backend Specification (who does what) :
 
 
 \(c\) by Hau-Tran
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_cor_api]]
+- [[KLARA Integration (request access token & call API)]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[COSSA Token Exchange — Technical Analysis and Implementation]]
+- [[Login]]
+
+%% ai-graph-end %%

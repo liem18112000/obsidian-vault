@@ -1,10 +1,21 @@
 ---
-title: "Repair broken links only when exactly one candidate matches, and iterate to a fixed point"
+ai_hash: 27abd2be58d71a46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: howto
+entities: []
+source: session 2026-09-27 (vault-wide link repair)
 status: seedling
-source: "session 2026-09-27 (vault-wide link repair)"
-tags: [obsidian, wikilinks, automation, vault-maintenance, refactoring, safety]
+tags:
+- obsidian
+- wikilinks
+- automation
+- vault-maintenance
+- refactoring
+- safety
+title: Repair broken links only when exactly one candidate matches, and iterate to
+  a fixed point
+type: howto
 ---
 
 # Repair broken links only when exactly one candidate matches, and iterate to a fixed point
@@ -38,3 +49,14 @@ Exclude `Templates/`, fenced code blocks, and code spans that *discuss* link syn
 
 - [[A note title containing a colon or slash breaks links that use the raw title]]
 - [[Obsidian resolves short wikilinks by basename across the whole vault]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Comma-split wikilinks leave dead fragment links in Related blocks]]
+- [[create_note.py --link comma-splits titles and silently breaks wikilinks]]
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+- [[A note title containing a colon or slash breaks links that use the raw title]]
+- [[Measure a broken-link baseline before a mass vault refactor]]
+
+%% ai-graph-end %%

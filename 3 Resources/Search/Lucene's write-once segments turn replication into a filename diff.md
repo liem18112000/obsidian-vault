@@ -1,10 +1,20 @@
 ---
-title: "Lucene's write-once segments turn replication into a filename diff"
+ai_hash: b82f0671d2dd7fe0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: IR - System Design (AI)'
 status: seedling
-source: "Confluence: IR - System Design (AI)"
-tags: [lucene, search, replication, immutability, segments, confluence-distilled]
+tags:
+- lucene
+- search
+- replication
+- immutability
+- segments
+- confluence-distilled
+title: Lucene's write-once segments turn replication into a filename diff
+type: concept
 ---
 
 # Lucene's write-once segments turn replication into a filename diff
@@ -35,3 +45,12 @@ Source: [[IR - System Design]] (AI, Confluence).
 ## Related
 
 - [[Redis TTL should express liveness and be refreshed by a heartbeat]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[IR - System Design]]
+- [[Changing the embedding model forces a full index rebuild]]
+- [[PATCH removes the read-modify-write round trips that PUT-replace forces]]
+
+%% ai-graph-end %%

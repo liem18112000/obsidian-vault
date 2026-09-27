@@ -1,18 +1,22 @@
 ---
-title: "CI/CD tools comparison"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20496027596/CI+CD+tools+comparison
-space: "LUZ"
-topic: infra
-relevance: 0.703
-depth: 2.17
-updated: 2020-05-28
+ai_hash: 70dc5f5559c9394c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 14
+depth: 2.17
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20496027596/CI+CD+tools+comparison
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: CI/CD tools comparison
+topic: infra
+type: source
+updated: 2020-05-28
 ---
 
 # CI/CD tools comparison
@@ -247,3 +251,14 @@ Flexible Deployment Strategies</p>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CI CD (Google Cloud Build & Google Cloud Deploy)]]
+- [[CICD for Kogito]]
+- [[Jenkins (How to build & deploy)]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[Document flow setup build Jenkins job Maven]]
+
+%% ai-graph-end %%

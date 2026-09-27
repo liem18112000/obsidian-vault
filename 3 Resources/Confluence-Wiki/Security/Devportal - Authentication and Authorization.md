@@ -1,18 +1,22 @@
 ---
-title: "Devportal - Authentication and Authorization"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47152824733/Devportal+-+Authentication+and+Authorization
-space: "LUZ"
-topic: security
-relevance: 0.764
-depth: 2.75
-updated: 2023-04-12
+ai_hash: 70636c4a6b75b95d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.75
+entities: []
+relevance: 0.764
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47152824733/Devportal+-+Authentication+and+Authorization
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Devportal - Authentication and Authorization
+topic: security
+type: source
+updated: 2023-04-12
 ---
 
 # Devportal - Authentication and Authorization
@@ -53,3 +57,11 @@ Backstage already provides a list of provider as built-in providers as below:
 - OneLogin
 
 - OAuth2Proxy
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Security]]
+- [[Authentication and Authorization - PoC document]]
+
+%% ai-graph-end %%

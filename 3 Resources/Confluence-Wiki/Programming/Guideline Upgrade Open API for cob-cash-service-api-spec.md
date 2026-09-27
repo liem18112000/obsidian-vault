@@ -1,18 +1,22 @@
 ---
-title: "Guideline Upgrade Open API for cob-cash-service-api-spec"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/47803367724/Guideline+Upgrade+Open+API+for+cob-cash-service-api-spec
-space: "Arrow"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2024-05-07
+ai_hash: 43d9f7793fb6495d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/47803367724/Guideline+Upgrade+Open+API+for+cob-cash-service-api-spec
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: Guideline Upgrade Open API for cob-cash-service-api-spec
+topic: programming
+type: source
+updated: 2024-05-07
 ---
 
 # Guideline Upgrade Open API for cob-cash-service-api-spec
@@ -79,3 +83,12 @@ Repo struct:
     
 
 ![[47803367724-image-20240507-032447.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy routing containerization as a docker from local into server]]
+- [[OCR API Java Client]]
+- [[Microprofile OpenAPI config]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: d5f9465ecabf1ef9
+ai_hash: a8e56806809e7f38
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-20
@@ -35,6 +35,6 @@ Two related Excalidraw rendering rules (same session):
 - [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
 - [[Editing an Excalidraw .excalidraw JSON programmatically]]
 - [[Excalidraw offline renderer does not auto-wrap bound container text]]
-- [[render_excalidraw.py output path needs -o flag, not positional arg]]
+- [[Excalidraw fontFamily codes + .excalidraw.png can drift out of sync]]
 
 %% ai-graph-end %%

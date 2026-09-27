@@ -1,10 +1,22 @@
 ---
-title: "For authenticated pages pick the perf tool that can log in, not the prettiest report"
+ai_hash: 1e503ff68e18d7e1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: eLetter Performance Investigation Report (Helios)'
 status: seedling
-source: "Confluence: eLetter Performance Investigation Report (Helios)"
-tags: [performance, playwright, lighthouse, cdp, web-vitals, sso, confluence-distilled]
+tags:
+- performance
+- playwright
+- lighthouse
+- cdp
+- web-vitals
+- sso
+- confluence-distilled
+title: For authenticated pages pick the perf tool that can log in, not the prettiest
+  report
+type: lesson
 ---
 
 # For authenticated pages pick the perf tool that can log in, not the prettiest report
@@ -36,3 +48,14 @@ Source: [[eLetter Performance - Investigation Report Load Times and Optimization
 ## Related
 
 - [[Playwright for UI E2E, k6 for load split by specialization not overlap]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eLetter Performance - Investigation Report Load Times and Optimization Recommendations]]
+- [[Playwright for UI E2E, k6 for load split by specialization not overlap]]
+- [[Testing Tool Comparison Playwright vs. k6]]
+- [[Measure component render timing with Playwright addInitScript]]
+- [[Reload not automatically faster than first load]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: 1b7c0123ade49f68
+ai_hash: 9248c20ed5471b0d
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-05
@@ -49,8 +49,8 @@ Related: [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties 
 **Related notes:**
 - [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates luzsecapi)]]
 - [[Local access to GKE-hosted Luz services port-forward api-forwarder + luz-vault (+ mongo pod)]]
+- [[Port forward and Docker compose]]
 - [[Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards]]
-- [[Run luz_docs_statistic locally with docker-compose]]
-- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[Port Forward to call GCP API in localhost]]
 
 %% ai-graph-end %%

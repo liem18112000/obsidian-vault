@@ -1,5 +1,5 @@
 ---
-ai_hash: 9104e36aba1df1df
+ai_hash: 4f3018248ae33688
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-25
@@ -43,6 +43,6 @@ Drive a browser that carries a logged-in claude.ai session:
 - [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
 - [[claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed]]
 - [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
-- [[claude-proxy login expires mid-session - implement silently degrades to heuristic stubs (score 0.00)]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Hexonet API Document"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20508019826/Hexonet+API+Document
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2020-10-22
+ai_hash: 15236662406fc611
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20508019826/Hexonet+API+Document
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Hexonet API Document
+topic: programming
+type: source
+updated: 2020-10-22
 ---
 
 # Hexonet API Document
@@ -322,3 +326,14 @@ EOF
 ![[20508019826-Hexonet Domain Transfer Chart.png]]
 
 </span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSL certificate API]]
+- [[Login]]
+- [[Getting tenant list]]
+- [[KLARA Booking - KLARA OBC API]]
+- [[14. Create companies by tenant id]]
+
+%% ai-graph-end %%

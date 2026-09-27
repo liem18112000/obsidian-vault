@@ -1,12 +1,12 @@
 ---
-ai_hash: 351a2d4a9b9ce805
+ai_hash: 43792a220919f343
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-23
 entities:
-- Vault/OpenBao
+- Vault
+- OpenBao
 - VNG KMS
-- auto-unseal
 - Shamir
 - Transit
 - AliCloud KMS
@@ -21,23 +21,15 @@ entities:
 - AWS-KMS-API
 - awskms seal
 - Integrated Storage (Raft)
-- local disk
-- DR
-- customer360 secret/config flow on VNG
-- GitHub Actions
-- .env
-- tfstate-on-vStorage
+- 'customer360 secret/config flow on VNG: GitHub Actions + .env + tfstate-on-vStorage'
 - deployments/configs/vault-openbao-deep-dive.md
 - HSM
-- storage-backend
-- backend
-- unsupported seal
-- Vault/OpenBao on VNG Cloud
-- native cloud-KMS auto-unseal
+- DR
 - hands-off prod
+- bootstrap vault
+- auto-unseal
+- backend
 - unattended reboots/recovery
-- one bootstrap vault
-- vStorage as storage-backend
 source: web research + deep-dive 2026-09-23
 status: seedling
 tags:
@@ -71,40 +63,40 @@ Also: use **Integrated Storage (Raft)** on local disk as the backend (snapshot t
 - [[customer360 secretconfig flow on VNG GitHub Actions + .env + tfstate-on-vStorage]]
 - [[OpenBao = MPL-2.0 Linux-Foundation fork of Vault 1.14, drop-in compatible; Vault is BUSLIBM]]
 - [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
-- [[Configure vStorage S3 backend creds in each component .env so deploy scripts self-auth]]
+- [[How to unseal Vault Unseal]]
 
 **Relations:**
-- Vault/OpenBao — *cannot auto-unseal with* — VNG KMS
-- Vault/OpenBao — *supports auto-unseal with* — AliCloud KMS
-- Vault/OpenBao — *supports auto-unseal with* — AWS KMS
-- Vault/OpenBao — *supports auto-unseal with* — Azure Key Vault
-- Vault/OpenBao — *supports auto-unseal with* — GCP Cloud KMS
-- Vault/OpenBao — *supports auto-unseal with* — OCI KMS
-- Vault/OpenBao — *supports auto-unseal with* — Transit
-- Vault/OpenBao — *supports auto-unseal with* — PKCS#11 HSM
+- Vault — *cannot auto-unseal with* — VNG KMS
+- OpenBao — *cannot auto-unseal with* — VNG KMS
 - VNG KMS — *is an* — unsupported seal
-- VNG KMS — *is not* — AWS-KMS-API compatible
-- vStorage — *is* — S3-API compatible
+- Vault — *can use for auto-unseal* — Shamir
+- OpenBao — *can use for auto-unseal* — Shamir
+- Vault — *can use for auto-unseal* — Transit
+- OpenBao — *can use for auto-unseal* — Transit
+- auto-unseal — *supports* — AliCloud KMS
+- auto-unseal — *supports* — AWS KMS
+- auto-unseal — *supports* — Azure Key Vault
+- auto-unseal — *supports* — GCP Cloud KMS
+- auto-unseal — *supports* — OCI KMS
+- auto-unseal — *supports* — Transit
+- auto-unseal — *supports* — PKCS#11 HSM
+- VNG KMS — *is not supported by* — auto-unseal
+- VNG KMS — *is not* — AWS-KMS-API-compatible
+- vStorage — *is* — S3-API-compatible
 - awskms seal — *cannot be pointed at* — VNG KMS
-- Vault/OpenBao on VNG Cloud — *lacks* — native cloud-KMS auto-unseal
-- Shamir — *is an unseal method* — Shamir
-- Transit — *is an auto-unseal method* — Transit
+- Vault — *on VNG Cloud lacks native* — auto-unseal
+- Shamir — *is a* — manual unseal method
 - Shamir — *blocks* — unattended reboots/recovery
+- Transit — *is an* — auto-unseal method
+- Transit — *uses* — bootstrap vault
 - Transit — *is recommended for* — hands-off prod
-- Transit — *requires* — one bootstrap vault
-- PKCS#11 HSM — *requires* — HSM
+- PKCS#11 HSM — *needs a* — HSM
 - PKCS#11 HSM — *is not practical on* — VNG Cloud
 - Integrated Storage (Raft) — *is recommended as* — backend
-- Integrated Storage (Raft) — *stores data on* — local disk
 - Integrated Storage (Raft) — *snapshots to* — vStorage
-- vStorage — *is used for* — DR
-- vStorage — *is not recommended as* — storage-backend
-- customer360 secret/config flow on VNG — *provides context for* — vStorage as storage-backend
-- GitHub Actions — *is part of* — customer360 secret/config flow on VNG
-- .env — *is part of* — customer360 secret/config flow on VNG
-- tfstate-on-vStorage — *is part of* — customer360 secret/config flow on VNG
-- deployments/configs/vault-openbao-deep-dive.md — *is a* — full analysis
-- deployments/configs/vault-openbao-deep-dive.md — *related to* — Vault/OpenBao
-- customer360 secret/config flow on VNG — *related to* — Vault/OpenBao
+- vStorage — *is not recommended as* — backend
+- customer360 secret/config flow on VNG: GitHub Actions + .env + tfstate-on-vStorage — *provides context for* — backend
+- deployments/configs/vault-openbao-deep-dive.md — *contains analysis of* — Vault
+- deployments/configs/vault-openbao-deep-dive.md — *contains analysis of* — OpenBao
 
 %% ai-graph-end %%

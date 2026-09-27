@@ -1,18 +1,22 @@
 ---
-title: "Measure the time-consuming of patch update document API in luz_docs"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47363489990/Measure+the+time-consuming+of+patch+update+document+API+in+luz_docs
-space: "TP2020"
-topic: programming
-relevance: 0.706
-depth: 2.5
-updated: 2023-04-27
+ai_hash: 810107b095d87b94
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.5
+entities: []
+relevance: 0.706
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47363489990/Measure+the+time-consuming+of+patch+update+document+API+in+luz_docs
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: Measure the time-consuming of patch update document API in luz_docs
+topic: programming
+type: source
+updated: 2023-04-27
 ---
 
 # Measure the time-consuming of patch update document API in luz_docs
@@ -45,3 +49,14 @@ We need to **update multiple documents at once with different information**.
 Currently, we need to loop to update metadata for each document.
 
 → This is inefficient and time-consuming
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Load test get document id API]]
+- [[Refactor Enricher process - update PATCH]]
+- [[Security Classes updating measurement]]
+- [[Measure API luz-docs]]
+- [[Research on bulk removal of access class]]
+
+%% ai-graph-end %%

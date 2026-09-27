@@ -1,10 +1,78 @@
 ---
-title: "Construct agent permissions per spawn instead of negotiating them per prompt"
+ai_hash: 6bb7fd42cb8b027f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities:
+- Agent Permissions
+- Spawn Time
+- Prompt
+- Interactive Permission Model
+- Agent
+- Human
+- Tool Call
+- Autonomous Work
+- Approval
+- Session
+- Policy
+- Operator
+- Allow/Deny List
+- dontAsk Mode
+- Deny Wins
+- Bitbucket
+- Read-Only
+- MCP Write Verbs
+- Git Push
+- Raw REST Writes
+- Unattended Operation
+- Precedence
+- Allow Rule
+- Deny Rule
+- Permissions
+- Route
+- Capability
+- MCP Tool
+- Shell Command
+- HTTP API
+- Language SDK
+- Source Repository
+- Constructed Policy
+- Policy Review
+- Code
+- Versioning
+- Diff Changes
+- Testing
+- Denied Operation
+- Typo
+- Credential Model
+- CLI OAuth
+- Business Licence
+- API Key
+- Environment
+- Cloud Keys
+- Runtime Environments Rule
+- Platform
+- Env Var
+- Script
+- Wrap the agent CLI rather than reimplementing the agent loop
+- Vinnstack vs. Claude Code (native)
+- Confluence
+- Process
+- Dangerous Operations
+- Babysitting
+- Blanket-Approving
+- Maintained Source
+source: 'Confluence: Vinnstack vs Claude Code native (TK)'
 status: seedling
-source: "Confluence: Vinnstack vs Claude Code native (TK)"
-tags: [agent-safety, permissions, autonomy, security, claude-code, confluence-distilled]
+tags:
+- agent-safety
+- permissions
+- autonomy
+- security
+- claude-code
+- confluence-distilled
+title: Construct agent permissions per spawn instead of negotiating them per prompt
+type: lesson
 ---
 
 # Construct agent permissions per spawn instead of negotiating them per prompt
@@ -39,3 +107,73 @@ Source: [[Vinnstack vs. Claude Code (native)]] (TK, Confluence).
 ## Related
 
 - [[Wrap the agent CLI rather than reimplementing the agent loop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack · Prompt Governance &amp; Code Grounding]]
+- [[Wrap the agent CLI rather than reimplementing the agent loop]]
+- [[Vinnstack vs. Claude Code (native)]]
+- [[Hard-exclude an AI agent from a resource by shrinking its file grant, not by prompting]]
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+
+**Relations:**
+- Constructed Policy — *is alternative to* — Interactive Permission Model
+- Interactive Permission Model — *involves* — Agent asks Human
+- Human — *approves* — Tool Call
+- Interactive Permission Model — *does not survive* — Autonomous Work
+- Approval — *broadened per* — Session
+- Broadened Approval — *leads to* — Effective Policy
+- Effective Policy — *determined by* — Impatient Operator
+- Policy — *constructed at* — Spawn Time
+- Agent — *spawned with* — Allow/Deny List
+- Allow/Deny List — *is* — centrally maintained
+- Allow/Deny List — *is also called* — dontAsk Mode
+- dontAsk Mode — *has property* — Deny Wins
+- Bitbucket — *is* — Read-Only by construction
+- Read-Only Bitbucket — *denies* — MCP Write Verbs
+- Read-Only Bitbucket — *denies* — Git Push
+- Read-Only Bitbucket — *denies* — Raw REST Writes
+- Agent — *can run* — Unattended Operation
+- Policy — *cannot drift per* — Session
+- Deny Wins — *decides* — Precedence
+- Allow Rule — *cannot re-open* — Deny Rule
+- Adding Permissions — *is* — safe
+- Every Route — *to* — Capability is closed
+- Agent — *is* — resourceful
+- Policy — *is* — central
+- Policy — *is* — per-spawn
+- Policy — *applied when* — Process starts
+- Policy — *comes from* — Maintained Source
+- Policy — *is identical for every* — Operator
+- Policy — *cannot be renegotiated* — mid-run
+- Constructed Policy — *makes* — Unattended Operation safe
+- Interactive Permission Model — *requires* — Babysitting
+- Interactive Permission Model — *requires* — Blanket-Approving
+- Constructed Policy — *makes* — Dangerous Operations impossible for Process
+- Policy — *written in terms of* — Capabilities
+- Capabilities — *achieved by* — Routes
+- Routes — *include* — MCP Tool
+- Routes — *include* — Shell Command
+- Routes — *include* — HTTP API
+- Routes — *include* — Language SDK
+- Policy — *prevents* — writes to Source Repository
+- Gap between Capability and Route List — *causes* — Policy leaks
+- Constructed Policy — *needs* — Policy Review
+- Constructed Policy — *is* — invisible at runtime
+- Policy Review — *is like* — Code Review
+- Policy Review — *involves* — Versioning
+- Policy Review — *involves* — Diff Changes
+- Policy Review — *involves* — Testing Denied Operation fails
+- Typo in Allow-List — *causes* — denies nothing
+- Credential Model — *is part of* — Policy
+- CLI OAuth — *under Business Licence means* — no API Key in Environment
+- No API Key in Environment — *enables* — Runtime Environments Rule
+- Runtime Environments Rule — *holds* — Platform-wide
+- API Key in Env Var — *undermines* — Policy that blocks Tool Call
+- Script — *can use* — API Key in Env Var
+- Constructed Policy — *is related to* — Wrap the agent CLI rather than reimplementing the agent loop
+- Vinnstack vs. Claude Code (native) — *is a* — Source
+- Vinnstack vs. Claude Code (native) — *is on* — Confluence
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "GKE Kubernetes Gateway API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48411803705/GKE+Kubernetes+Gateway+API
-space: "IO"
-topic: infra
-relevance: 0.748
-depth: 2.55
-updated: 2025-03-19
+ai_hash: bd51bbe32cb1e3ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 2.55
+entities: []
+relevance: 0.748
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48411803705/GKE+Kubernetes+Gateway+API
+space: IO
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/io
+- confluence
+- infra
+- space/io
+title: GKE Kubernetes Gateway API
+topic: infra
+type: source
+updated: 2025-03-19
 ---
 
 # GKE Kubernetes Gateway API
@@ -255,3 +259,14 @@ spec:
 ## Links
 
 - <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api" class="external-link" data-card-appearance="inline" rel="nofollow">https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Introduce a Global HTTP(S) Load Balancer on GCP at KLARA]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+- [[Apply changes on luz_kubernetes]]
+- [[POS & myKLARA nginx ingress quick notes]]
+- [[Deploy module GKE with a public url]]
+
+%% ai-graph-end %%

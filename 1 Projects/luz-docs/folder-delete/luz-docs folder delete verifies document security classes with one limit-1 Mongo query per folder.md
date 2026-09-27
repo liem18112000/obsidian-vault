@@ -1,7 +1,7 @@
 ---
-ai_hash: c17c77f5eefdbb9e
+ai_hash: 7f00897c7d2916ea
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-10
 entities:
 - luz-docs folder delete
@@ -13,6 +13,7 @@ entities:
 - jsonStoreMongoService.countCollections
 - $match
 - $count
+- filter
 - result.isEmpty()
 - securityClassCodes
 - inheritedSecurityClassCodes
@@ -20,17 +21,12 @@ entities:
 - DocumentMismatchSecurityClassCodeException
 - CollectionUtil.isMatchingSecurityClasses
 - _deletionStatus
-- getAllDocumentsMetadata
 - buildDeletionStatusCondition
+- getAllDocumentsMetadata
 - luz-docs folder delete filter double-fetched every subfolder
 - Split bulk scans on folderIds.1 exists to separate single-array-element fast path
+- folder-delete filter
 - document
-- violating document
-- find filter
-- old Java semantics
-- empty tenant list
-- combined security classes
-- whole delete
 source: session 2026-06-10, FolderUtil.verifyFolderDocumentsSecurityClasses
 status: seedling
 tags:
@@ -69,38 +65,30 @@ Context: [[luz-docs folder delete filter double-fetched every subfolder]], [[Spl
 - [[getCollectionMetadataByTerms silently ignored includeDeletedRecord for non-document collections]]
 - [[Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]
 - [[luz-docs folder delete filter double-fetched every subfolder]]
-- [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
+- [[Luz delete-folder tests can only delete public folders, not ones carrying a security class]]
 
 **Relations:**
 - luz-docs folder delete — *verifies* — document security classes
 - luz-docs folder delete — *uses* — Mongo query
-- Mongo query — *is executed per* — folder
-- Mongo query — *replaces* — old Java semantics
-- old Java semantics — *involved* — fetching every document in a folder
-- old Java semantics — *involved* — calling verifySecurityClasses per document
-- verifySecurityClasses — *is a Java method* — 
-- luz-docs folder delete — *runs* — jsonStoreMongoService.countCollections
-- jsonStoreMongoService.countCollections — *searches for* — violating document
+- Mongo query — *is per* — folder
+- Mongo query — *is* — limit-1
+- folder-delete filter — *runs* — jsonStoreMongoService.countCollections
 - jsonStoreMongoService.countCollections — *uses* — $match
 - jsonStoreMongoService.countCollections — *uses* — $count
-- $count — *emits NO row if* — nothing matches
-- empty result array — *indicates* — no violators
-- any row — *indicates* — at least one violator
-- document — *violates if* — combined security classes is non-empty
-- document — *violates if* — combined security classes shares no element with tenant's classes
-- combined security classes — *is composed of* — securityClassCodes
-- combined security classes — *is composed of* — inheritedSecurityClassCodes
-- find filter — *includes condition for* — securityClassCodes
-- find filter — *includes condition for* — inheritedSecurityClassCodes
-- find filter — *checks for* — combined security classes being non-empty
-- Mongo query — *throws* — DocumentMismatchSecurityClassCodeException if returns anything
-- DocumentMismatchSecurityClassCodeException — *aborts* — whole delete
-- DocumentMismatchSecurityClassCodeException — *mirrors semantics of* — CollectionUtil.isMatchingSecurityClasses
-- empty tenant list — *causes* — any classed doc violates
+- document — *violates if* — combined (securityClassCodes + inheritedSecurityClassCodes) is non-empty AND shares no element with tenant's classes
+- query — *throws* — DocumentMismatchSecurityClassCodeException
+- DocumentMismatchSecurityClassCodeException — *aborts* — delete
+- CollectionUtil.isMatchingSecurityClasses — *has semantics of* — old Java
 - _deletionStatus — *is matched with* — strict equality 'false'
-- _deletionStatus matching — *mirrors* — getAllDocumentsMetadata criteria
-- buildDeletionStatusCondition — *treats* — missing field as non-deleted
+- _deletionStatus — *mirrors criteria of* — getAllDocumentsMetadata
+- buildDeletionStatusCondition — *treats missing field as* — non-deleted
 - luz-docs folder delete — *is related to* — luz-docs folder delete filter double-fetched every subfolder
 - luz-docs folder delete — *is related to* — Split bulk scans on folderIds.1 exists to separate single-array-element fast path
+- folder-delete filter — *is part of* — luz-docs folder delete
+- Java — *calls* — verifySecurityClasses
+- result.isEmpty() — *indicates* — no violators
+- securityClassCodes — *are compared with* — tenant's classes
+- inheritedSecurityClassCodes — *are compared with* — tenant's classes
+- jsonStoreMongoService.countCollections — *takes* — filter
 
 %% ai-graph-end %%

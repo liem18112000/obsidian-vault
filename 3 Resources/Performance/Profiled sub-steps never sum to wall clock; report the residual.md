@@ -1,10 +1,20 @@
 ---
-title: "Profiled sub-steps never sum to wall clock; report the residual"
+ai_hash: 45fe38856534fa57
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: REST API calculate 1 employee pay-slip (LUZ)'
 status: seedling
-source: "Confluence: REST API calculate 1 employee pay-slip (LUZ)"
-tags: [profiling, performance, jvm, hibernate, measurement, confluence-distilled]
+tags:
+- profiling
+- performance
+- jvm
+- hibernate
+- measurement
+- confluence-distilled
+title: Profiled sub-steps never sum to wall clock; report the residual
+type: lesson
 ---
 
 # Profiled sub-steps never sum to wall clock; report the residual
@@ -37,3 +47,14 @@ Source: [[REST API calculate 1 employee's pay-slip]] (LUZ, Confluence).
 ## Related
 
 - [[Split page load into server, render and interaction before optimising]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Split page load into server, render and interaction before optimising]]
+- [[N+1 hides at the service-call layer too, not just in the ORM]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[REST API calculate 1 employee's pay-slip]]
+
+%% ai-graph-end %%

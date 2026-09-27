@@ -1,33 +1,35 @@
 ---
-ai_hash: c16ad97b57f7dbc6
+ai_hash: 5441778b67a5b321
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities:
-- Luz services
+- Luz/KLARA microservices
 - MongoDB
 - luz_jsonstore REST API
-- Luz/KLARA microservices
 - HTTP
 - MicroProfile REST client interface
 - MongoDBClient
 - '@RegisterRestClient'
-- Mongo operators
 - javax.json JsonObjects
+- Mongo driver
 - Tenant isolation
 - Auth
-- bearer token
-- tenant-id path segment
+- Bearer token
+- Tenant-id path segment
 - Resilience
 - '@Retry'
 - ServiceUnavailableException
 - JAX-RS Response
+- 'Connection: close'
+- luz_docs_statistic two-token model service-tenant vs per-tenant cache token
+- Mongo operators
+- Request body
 - Connection leaks
 - Service wrappers
-- luz_docs_statistic two-token model service-tenant vs per-tenant cache token
-- client-side
-- /luz_jsonstore/api/mdb/{tenant-id}/{collection}
-- data
+- MongoDB connection
+- Clients
+- Data access
 source: luz_docs_statistic repo analysis, session 2026-06-11
 status: seedling
 tags:
@@ -58,34 +60,34 @@ Consequences:
 
 **Related notes:**
 - [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
+- [[Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards]]
+- [[Cache one MongoClient per tenant and close it on eviction]]
 - [[Luz performance env cluster topology]]
 - [[01 Overview]]
-- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
-- [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
 
 **Relations:**
-- Luz services — *access* — MongoDB
-- Luz services — *access via* — luz_jsonstore REST API
-- Luz/KLARA microservices — *do not open direct connection to* — MongoDB
-- Luz/KLARA microservices — *communicate with* — luz_jsonstore REST API
-- Luz/KLARA microservices — *communicate using* — HTTP
+- Luz/KLARA microservices — *access* — MongoDB
+- Luz/KLARA microservices — *accesses via* — luz_jsonstore REST API
+- Luz/KLARA microservices — *do not open direct* — MongoDB connection
+- Luz/KLARA microservices — *send operations over* — HTTP
 - Luz/KLARA microservices — *use* — MicroProfile REST client interface
 - MicroProfile REST client interface — *example* — MongoDBClient
-- MongoDBClient — *is annotated with* — @RegisterRestClient
+- MongoDBClient — *uses annotation* — @RegisterRestClient
 - Mongo operators — *are built as* — javax.json JsonObjects
+- Mongo operators — *are shipped as* — Request body
+- Luz/KLARA microservices — *do not contain* — Mongo driver
 - luz_jsonstore REST API — *enforces* — Tenant isolation
 - luz_jsonstore REST API — *enforces* — Auth
-- Tenant isolation — *is enforced via* — bearer token
-- Auth — *is enforced via* — bearer token
-- Tenant isolation — *is enforced via* — tenant-id path segment
-- Auth — *is enforced via* — tenant-id path segment
-- bearer token — *determines access to* — data
-- Resilience — *is handled* — client-side
-- Resilience — *uses* — @Retry
+- Bearer token — *determines* — Data access
+- Tenant-id path segment — *determines* — Data access
+- Resilience — *is handled client-side* — Luz/KLARA microservices
+- @Retry — *is used for* — Resilience
 - @Retry — *handles* — ServiceUnavailableException
 - Service wrappers — *must close* — JAX-RS Response
 - Closing JAX-RS Response — *prevents* — Connection leaks
+- Clients — *send header* — Connection: close
 - luz_jsonstore REST API — *is related to* — luz_docs_statistic two-token model service-tenant vs per-tenant cache token
-- luz_jsonstore REST API — *provides endpoint* — /luz_jsonstore/api/mdb/{tenant-id}/{collection}
+- Bearer token — *is related to* — luz_docs_statistic two-token model service-tenant vs per-tenant cache token
+- Tenant-id path segment — *is related to* — luz_docs_statistic two-token model service-tenant vs per-tenant cache token
 
 %% ai-graph-end %%

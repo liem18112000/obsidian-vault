@@ -1,5 +1,5 @@
 ---
-ai_hash: fda5f38b99185663
+ai_hash: 806b2b80c6603a25
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-03
@@ -36,7 +36,7 @@ Applies to the `test-agent` project too: it calls Vertex/Gemini remotely, so Clo
 - [[ADK deploy targets compute matrix Agent Engine vs Cloud Run vs GKE (CPUGPUTPU)]]
 - [[How ADK agents are deployed adk deploy cloud_run agent_engine gke + get_fast_api_app]]
 - [[Adopt Google ADK only when the LLM drives the tool loop; else stay a2a-sdk-direct]]
-- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
 - [[Vertex AI Agent Engine Memory Bank is per-user chat memory, not a domain knowledge base]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
 
 %% ai-graph-end %%

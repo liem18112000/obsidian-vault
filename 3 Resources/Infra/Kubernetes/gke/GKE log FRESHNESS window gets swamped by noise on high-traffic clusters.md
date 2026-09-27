@@ -1,7 +1,7 @@
 ---
-ai_hash: 03aacea6c76599cd
+ai_hash: 765fd1b3640e69b3
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-22
 entities: []
 source: session 2026-07-22
@@ -32,10 +32,10 @@ See [[Materialize gate cache never latches, hammers campaign service on every co
 %% ai-graph-start %%
 
 **Related notes:**
+- [[gcloud logging read --freshness is unreliable with broad OR filters; use explicit timestamp bound]]
+- [[gcloud logging read --order=asc silently ignores --freshness]]
 - [[gcloud-logging-shard-field-vs-sharding-keyword]]
 - [[Materialize gate cache never latches, hammers campaign service on every count]]
 - [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
-- [[Cloud Logging share link endTime can truncate a job's logs mid-run]]
-- [[dev-staging luz-docs IT failures cluster on the materialize read-path]]
 
 %% ai-graph-end %%

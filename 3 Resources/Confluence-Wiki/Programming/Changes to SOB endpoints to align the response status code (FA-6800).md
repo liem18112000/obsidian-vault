@@ -1,18 +1,22 @@
 ---
-title: "Changes to SOB endpoints to align the response status code (FA-6800)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/49025220678/Changes+to+SOB+endpoints+to+align+the+response+status+code+FA-6800
-space: "Arrow"
-topic: programming
-relevance: 0.806
-depth: 3
-updated: 2026-02-25
+ai_hash: d15b963d981fe8a6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.806
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/49025220678/Changes+to+SOB+endpoints+to+align+the+response+status+code+FA-6800
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: Changes to SOB endpoints to align the response status code (FA-6800)
+topic: programming
+type: source
+updated: 2026-02-25
 ---
 
 # Changes to SOB endpoints to align the response status code (FA-6800)
@@ -286,3 +290,14 @@ In FE, many places need to be handled in the callers of this method
 
 
 ![[49025220678-image-20260109-085034.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[404 addresses a missing resource; an empty filter result is a successful query]]
+- [[Estimate for ivy and cob-unattended-business-dossier-service-api-spec]]
+- [[Error handling for delete and undo]]
+- [[Preview Delivery-Prices API - ForcedOnboading]]
+- [[Public API - letterbox - API get deleted letters from trash]]
+
+%% ai-graph-end %%

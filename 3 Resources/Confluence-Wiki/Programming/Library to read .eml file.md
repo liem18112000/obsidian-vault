@@ -1,18 +1,22 @@
 ---
-title: "Library to read .eml file"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47158362487/Library+to+read+.eml+file
-space: "LUZ"
-topic: programming
-relevance: 0.842
-depth: 3
-updated: 2022-08-05
+ai_hash: a3b6fb2de89ed9e3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.842
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47158362487/Library+to+read+.eml+file
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Library to read .eml file
+topic: programming
+type: source
+updated: 2022-08-05
 ---
 
 # Library to read .eml file
@@ -155,3 +159,10 @@ This is the content when open using outlook that we can compare:
 
 
 ![[47158362487-image-20220805-031135.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[History Message Format Reference eArchive 1.0 vs eArchive 2.0]]
+
+%% ai-graph-end %%

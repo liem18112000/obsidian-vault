@@ -1,10 +1,19 @@
 ---
-title: "GitHub user-to-user repo transfer is a pending invitation, not an immediate move"
+ai_hash: f2875904f2ee805d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: session 2026-09-27
 status: seedling
-source: "session 2026-09-27"
-tags: [github, gh-cli, gotcha, repo-admin]
+tags:
+- github
+- gh-cli
+- gotcha
+- repo-admin
+title: GitHub user-to-user repo transfer is a pending invitation, not an immediate
+  move
+type: gotcha
 ---
 
 # GitHub user-to-user repo transfer is a pending invitation, not an immediate move
@@ -23,3 +32,12 @@ Once accepted, the old `owner/repo` URL redirects to the new one, so existing gi
 
 ## Related
 [[gh CLI]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub personal repo transfer is pending until the recipient accepts]]
+- [[git push --all skips remote-tracking-only branches]]
+- [[gh CLI is GitHub-only, not Bitbucket-aware]]
+
+%% ai-graph-end %%

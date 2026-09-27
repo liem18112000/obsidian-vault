@@ -1,18 +1,22 @@
 ---
-title: "KLARA Documents solution implementation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20448090771/KLARA+Documents+solution+implementation
-space: "LUZ"
-topic: programming
-relevance: 0.703
-depth: 2.38
-updated: 2017-05-30
+ai_hash: 682dbc23e26a45b1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.38
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20448090771/KLARA+Documents+solution+implementation
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: KLARA Documents solution implementation
+topic: programming
+type: source
+updated: 2017-05-30
 ---
 
 # KLARA Documents solution implementation
@@ -199,3 +203,14 @@ Emmanuel:
 - create a DocumentWrapper : DocumentOnServer + fileTags  
 - I help also by the API  
 - I will get some info about the way we can release and have our fork ....
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[KLARA Documents Concept - Solution Design]]
+- [[Uploading documents]]
+- [[Investigate Analyze the API's which call to FileManager]]
+- [[Aggregation Database Table Design]]
+
+%% ai-graph-end %%

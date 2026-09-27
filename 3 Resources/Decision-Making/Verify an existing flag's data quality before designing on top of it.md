@@ -1,10 +1,19 @@
 ---
-title: "Verify an existing flag's data quality before designing on top of it"
+ai_hash: b34ac87d9a201b72
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Evaluation of final solution including implementation needs (AI)'
 status: seedling
-source: "Confluence: Evaluation of final solution including implementation needs (AI)"
-tags: [data-quality, design-review, reuse, access-control, confluence-distilled]
+tags:
+- data-quality
+- design-review
+- reuse
+- access-control
+- confluence-distilled
+title: Verify an existing flag's data quality before designing on top of it
+type: lesson
 ---
 
 # Verify an existing flag's data quality before designing on top of it
@@ -40,3 +49,14 @@ Source: [[Evaluation of final solution including implementation needs]] (AI, Con
 ## Related
 
 - [[A nullable column with no constraint becomes an NPE in a downstream service]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[A read filtered on a value no writer produces fails by returning empty]]
+- [[Test the decisions that override the story description, not the description]]
+- [[Implementation is the best reviewer a design doc gets]]
+- [[A nullable column with no constraint becomes an NPE in a downstream service]]
+
+%% ai-graph-end %%

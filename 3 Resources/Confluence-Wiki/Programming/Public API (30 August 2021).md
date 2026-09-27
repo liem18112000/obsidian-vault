@@ -1,18 +1,22 @@
 ---
-title: "Public API (30 August 2021)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46928857382/Public+API+30+August+2021
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2021-08-30
+ai_hash: 74207189663a8003
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46928857382/Public+API+30+August+2021
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Public API (30 August 2021)
+topic: programming
+type: source
+updated: 2021-08-30
 ---
 
 # Public API (30 August 2021)
@@ -60,3 +64,14 @@ A. MENTION
 6.  Prepare tenant directory to support multi credentials (addresses, emails, mobiles,…)
 
 7.  Add verify score for each credential
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public API Eletter (0.02.09.00)]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+- [[Copy 5. How to extend modify ONE API delivery API Research]]
+- [[5. How to extend modify ONE API delivery API Research]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+
+%% ai-graph-end %%

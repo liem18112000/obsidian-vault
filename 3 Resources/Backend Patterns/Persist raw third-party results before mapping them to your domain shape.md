@@ -1,10 +1,20 @@
 ---
-title: "Persist raw third-party results before mapping them to your domain shape"
+ai_hash: 79caa7fd1e517e1f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Luz Batch TypeScript Sequence Diagram (FUT)'
 status: seedling
-source: "Confluence: Luz Batch TypeScript Sequence Diagram (FUT)"
-tags: [async, batch-processing, integration, retry, resilience, confluence-distilled]
+tags:
+- async
+- batch-processing
+- integration
+- retry
+- resilience
+- confluence-distilled
+title: Persist raw third-party results before mapping them to your domain shape
+type: lesson
 ---
 
 # Persist raw third-party results before mapping them to your domain shape
@@ -42,3 +52,14 @@ Source: [[Luz Batch TypeScript - Sequence Diagram]] (FUT, Confluence).
 ## Related
 
 - [[Score async API designs on crash recovery and multi-instance, not latency]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Batch TypeScript - Sequence Diagram]]
+- [[Score async API designs on crash recovery and multi-instance, not latency]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[Read-side fire-and-forget mutation pass the id and re-read in the async, don't mutate the object being serialized]]
+- [[Batch Processor Library - NodeJS]]
+
+%% ai-graph-end %%

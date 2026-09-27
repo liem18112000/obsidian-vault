@@ -1,10 +1,20 @@
 ---
-title: "Shared and personal accounts make attribution impossible by construction"
+ai_hash: 13b5a7ecba17bd01
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: INC-2026-09-24 Gemini consumption (LUZ)'
 status: seedling
-source: "Confluence: INC-2026-09-24 Gemini consumption (LUZ)"
-tags: [iam, identity, attribution, cloud-governance, service-accounts, confluence-distilled]
+tags:
+- iam
+- identity
+- attribution
+- cloud-governance
+- service-accounts
+- confluence-distilled
+title: Shared and personal accounts make attribution impossible by construction
+type: lesson
 ---
 
 # Shared and personal accounts make attribution impossible by construction
@@ -51,3 +61,14 @@ Source: [[INC-2026-09-24 - posapp-android-ed1bd - Gemini consumption with no att
 ## Related
 
 - [[GCP Data Access logs are off by default, so data-plane calls are unattributable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GCP Data Access logs are off by default, so data-plane calls are unattributable]]
+- [[INC-2026-09-24 - posapp-android-ed1bd - Gemini consumption with no attributable user]]
+- [[Per-account credential store should only hold per-identity secrets]]
+- [[A wiki export can carry live credentials into git; redact before the first commit]]
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+
+%% ai-graph-end %%

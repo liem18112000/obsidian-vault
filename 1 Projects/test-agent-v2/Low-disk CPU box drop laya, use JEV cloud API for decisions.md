@@ -1,5 +1,5 @@
 ---
-ai_hash: d3c81764bbdb7a22
+ai_hash: 771c7f66e4e913e0
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-22
@@ -8,35 +8,34 @@ entities:
 - laya
 - JEV cloud API
 - torch
-- local decision sidecar
-- CPU wheel
-- proxy hash mismatch
 - PyPI
 - CUDA wheels
-- Rancher/WSL Docker
-- disk
-- jev DecisionProvider
-- TPD_DECISION_BACKEND
-- TYPESAFE_API_KEY
-- compose
-- JevProvider.is_configured()
+- Rancher/WSL Docker backend
+- Ollama
+- '`jev` DecisionProvider'
+- '`TPD_DECISION_BACKEND`'
+- '`TYPESAFE_API_KEY`'
 - local LLM
-- remote API
-- model
-- decision engine
-- heavy local ML deps
-- Ollamas 3.5GB CUDA image
-- Rancher/WSL Docker store
-- PyTorch CPU index
-- pip hash mismatch
-- Full local-parity stack
-- test-agent-v2
+- compose
 - MinIO
 - PG
 - Redis
 - PubSub
-- Ollama
-- decisions
+- test-agent-v2
+- CPU wheel
+- proxy hash mismatch
+- Rancher/WSL Docker store
+- '`laya` service'
+- remote API
+- model
+- decision engine
+- workstation
+- local decision sidecar
+- remote call
+- heavy local ML deps
+- low-disk/CPU environment
+- Ollama's 3.5GB CUDA image
+- PyPI torch
 source: session 2026-09-22
 status: seedling
 tags:
@@ -68,36 +67,42 @@ DECISION (2026-09-22): on a disk-constrained CPU-only workstation, the laya loca
 - [[Local LLM choice for the test-agent workload (Ollama)]]
 
 **Relations:**
-- Low-disk CPU box — *drops* — laya
-- Low-disk CPU box — *uses* — JEV cloud API
+- Low-disk CPU box — *is a type of* — workstation
 - laya — *is a* — local decision sidecar
-- laya — *has dependency* — torch
-- torch — *cannot fit on* — Low-disk CPU box
-- torch — *CPU wheel blocked by* — proxy hash mismatch
-- PyPI — *distributes* — torch
-- PyPI torch — *downloads* — CUDA wheels
-- CUDA wheels — *filled* — disk
-- disk — *is part of* — Rancher/WSL Docker
+- laya — *depends on* — torch
+- torch — *incompatible with* — Low-disk CPU box
+- torch — *downloads* — CUDA wheels
+- CUDA wheels — *consumed disk space on* — Rancher/WSL Docker backend
+- Ollama's 3.5GB CUDA image — *can corrupt* — Rancher/WSL Docker store
 - JEV cloud API — *replaces* — laya
-- JEV cloud API — *accessed via* — jev DecisionProvider
-- jev DecisionProvider — *uses config* — TPD_DECISION_BACKEND
-- jev DecisionProvider — *uses config* — TYPESAFE_API_KEY
+- JEV cloud API — *accessed via* — `jev` DecisionProvider
+- `jev` DecisionProvider — *configured by* — `TPD_DECISION_BACKEND`
+- `jev` DecisionProvider — *requires* — `TYPESAFE_API_KEY`
+- JEV cloud API — *is a* — remote call
+- JEV cloud API — *requires* — zero local compute/disk
 - JEV cloud API — *is ideal for* — Low-disk CPU box
-- laya service — *removed from* — compose
-- laya service — *had dependency in* — compose
-- JevProvider.is_configured() — *depends on* — TYPESAFE_API_KEY
-- decisions — *fall back to* — local LLM
+- `laya` service — *removed from* — compose
+- `laya` service — *had dependency in* — compose
+- `TYPESAFE_API_KEY` — *blank leads to fallback to* — local LLM
 - heavy local ML deps — *are problematic on* — Low-disk CPU box
 - remote API — *preferred for* — model
 - remote API — *preferred for* — decision engine
-- Ollamas 3.5GB CUDA image — *can corrupt* — Rancher/WSL Docker store
-- PyTorch CPU index — *causes* — pip hash mismatch
-- Full local-parity stack — *for* — test-agent-v2
-- Full local-parity stack — *includes* — MinIO
-- Full local-parity stack — *includes* — PG
-- Full local-parity stack — *includes* — Redis
-- Full local-parity stack — *includes* — PubSub
-- Full local-parity stack — *includes* — Ollama
-- Full local-parity stack — *includes* — laya
+- torch — *is a type of* — heavy local ML deps
+- laya — *is a type of* — heavy local ML deps
+- test-agent-v2 — *uses* — MinIO
+- test-agent-v2 — *uses* — PG
+- test-agent-v2 — *uses* — Redis
+- test-agent-v2 — *uses* — PubSub
+- test-agent-v2 — *uses* — Ollama
+- test-agent-v2 — *uses* — laya
+- PyPI — *provides* — torch
+- CPU wheel — *blocked by* — proxy hash mismatch
+- Rancher/WSL Docker store — *is part of* — Rancher/WSL Docker backend
+- JEV cloud API — *is a* — decision engine
+- laya — *is a* — decision engine
+- local LLM — *is a* — decision engine
+- Low-disk CPU box — *is a type of* — low-disk/CPU environment
+- PyPI torch — *pulls* — CUDA wheels
+- JEV cloud API — *is a type of* — remote API
 
 %% ai-graph-end %%

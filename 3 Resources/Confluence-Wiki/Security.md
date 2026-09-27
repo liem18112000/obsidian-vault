@@ -1,9 +1,13 @@
 ---
-title: "Security (Confluence)"
-type: moc
+ai_hash: 23609a1b8e87568a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
 tags:
-  - moc
-  - confluence
+- moc
+- confluence
+title: Security (Confluence)
+type: moc
 ---
 
 # Security — Confluence sources
@@ -47,3 +51,14 @@ tags:
 | 0.70 | [[Support OAuth 2 for 3rd party app ADDMIN]] | Arrow | 2025-03-18 |
 | 0.70 | [[Understanding Keycloak Authorization Code flow]] | Helios | 2023-03-27 |
 | 0.70 | [[Research Protect ePost inbox with new Digital_Letterbox permission]] | TP2020 | 2023-06-19 |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture]]
+- [[Vault overview]]
+- [[Luz-vault]]
+- [[MessageV2 Field Encryption Approach]]
+- [[Update Vault Unseal self-signed certificate]]
+
+%% ai-graph-end %%

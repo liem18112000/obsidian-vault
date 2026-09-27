@@ -1,10 +1,20 @@
 ---
-title: "Oracle strength can be graded statically from the expected-result text"
+ai_hash: c2d286d58e01ff87
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: howto
+entities: []
+source: 'Confluence: Test oracle - what a scenario asserts (2026-09-15)'
 status: seedling
-source: "Confluence: Test oracle - what a scenario asserts (2026-09-15)"
-tags: [testing, test-oracle, metrics, ai-agents, test-agent-v2, static-analysis]
+tags:
+- testing
+- test-oracle
+- metrics
+- ai-agents
+- test-agent-v2
+- static-analysis
+title: Oracle strength can be graded statically from the expected-result text
+type: howto
 ---
 
 # Oracle strength can be graded statically from the expected-result text
@@ -32,3 +42,14 @@ Its limits, which matter if you copy it: it rewards enum-shaped tokens, so a pla
 - [[Oracle strength]]
 - [[not coverage]]
 - [[decides whether a suite catches regressions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test oracle - what a scenario asserts, and why its strength decides everything]]
+- [[Oracle strength, not coverage, decides whether a suite catches regressions]]
+- [[A test oracle is what decides pass or fail, and without one a test is just a script]]
+- [[Evaluating the Test-Plan-Definition Agent]]
+- [[Assured test generation keep an LLM test only if it builds, passes, and raises coverage]]
+
+%% ai-graph-end %%

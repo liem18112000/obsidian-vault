@@ -1,18 +1,22 @@
 ---
-title: "Axonivycloud - Monitoring EKS cluster using Prometheus and Grafana"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3557491091/Axonivycloud+-+Monitoring+EKS+cluster+using+Prometheus+and+Grafana
-space: "AII"
-topic: infra
-relevance: 0.866
-depth: 3
-updated: 2019-12-02
+ai_hash: cdd976073cbcdec8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.866
+source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3557491091/Axonivycloud+-+Monitoring+EKS+cluster+using+Prometheus+and+Grafana
+space: AII
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/aii
+- confluence
+- infra
+- space/aii
+title: Axonivycloud - Monitoring EKS cluster using Prometheus and Grafana
+topic: infra
+type: source
+updated: 2019-12-02
 ---
 
 # Axonivycloud - Monitoring EKS cluster using Prometheus and Grafana
@@ -378,3 +382,14 @@ Add some board for monitoring using below id or links:
 - Nginx Ingress monitor: <a href="https://github.com/kubernetes/ingress-nginx/tree/master/deploy/grafana/dashboards" class="external-link" rel="nofollow">https://github.com/kubernetes/ingress-nginx/tree/master/deploy/grafana/dashboards</a>
 
 **Repo**: <a href="https://bitbucket.org/tnhthanh/eks_monitoring.git" class="external-link" rel="nofollow">https://bitbucket.org/tnhthanh/eks_monitoring.git</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[14. Deploy openshift cluster monitoring]]
+- [[Monitoring with Managed Prometheus]]
+- [[Monitoring Openshift with Grafana]]
+- [[AxonivyCloud - Infrastructure Diagram EKS Proposal]]
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+
+%% ai-graph-end %%

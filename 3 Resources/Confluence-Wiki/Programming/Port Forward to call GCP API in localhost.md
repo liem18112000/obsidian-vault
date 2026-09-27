@@ -1,18 +1,22 @@
 ---
-title: "Port Forward to call GCP API in localhost."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38218808673/Port+Forward+to+call+GCP+API+in+localhost.
-space: "Helios"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2026-01-28
+ai_hash: 64639d17571a887d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38218808673/Port+Forward+to+call+GCP+API+in+localhost.
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Port Forward to call GCP API in localhost.
+topic: programming
+type: source
+updated: 2026-01-28
 ---
 
 # Port Forward to call GCP API in localhost.
@@ -97,3 +101,14 @@ kubectl port-forward services/api-forwarder -n dev 8080:8080
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Port forward and Docker compose]]
+- [[Local access to GKE-hosted Luz services port-forward api-forwarder + luz-vault (+ mongo pod)]]
+- [[OpenAPI UI (API on SwaggerUI)]]
+- [[GCP - Connect Database]]
+- [[Load test]]
+
+%% ai-graph-end %%

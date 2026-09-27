@@ -1,18 +1,22 @@
 ---
-title: "Recipe: Introduce a Global HTTP(S) Load Balancer on GCP at KLARA"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47723151789/Recipe+Introduce+a+Global+HTTP+S+Load+Balancer+on+GCP+at+KLARA
-space: "LUZ"
-topic: infra
-relevance: 0.814
-depth: 3
-updated: 2024-06-04
+ai_hash: 301f5690df92c096
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.814
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47723151789/Recipe+Introduce+a+Global+HTTP+S+Load+Balancer+on+GCP+at+KLARA
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: 'Recipe: Introduce a Global HTTP(S) Load Balancer on GCP at KLARA'
+topic: infra
+type: source
+updated: 2024-06-04
 ---
 
 # Recipe: Introduce a Global HTTP(S) Load Balancer on GCP at KLARA
@@ -306,3 +310,14 @@ This page is a step by step guide to introduce a new or update an existing Globa
     \<global_static_ip_address_name\> e.g. test-klara-eh-tech-global  
 
 2.  **Follow the step 3 until the end from “Create a new Global HTTP(S) Load Balancer on GCP“**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+- [[GKE Kubernetes Gateway API]]
+- [[Apply changes on luz_kubernetes]]
+- [[POS & myKLARA nginx ingress quick notes]]
+- [[Deploy module GKE with a public url]]
+
+%% ai-graph-end %%

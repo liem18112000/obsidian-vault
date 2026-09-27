@@ -1,18 +1,22 @@
 ---
-title: "Call Ivy API at local"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/47975891549/Call+Ivy+API+at+local
-space: "TK"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2024-08-12
+ai_hash: 727b6911035fc69b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/47975891549/Call+Ivy+API+at+local
+space: TK
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tk
+- confluence
+- programming
+- space/tk
+title: Call Ivy API at local
+topic: programming
+type: source
+updated: 2024-08-12
 ---
 
 # Call Ivy API at local
@@ -83,3 +87,14 @@ tags:
 
 
 9.  DONE
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Upload Document API]]
+- [[IVY API Calls Overview for luz Modules]]
+- [[REST API for deleting EXPENSES documents]]
+- [[Swagger with api explorer]]
+- [[Temporary Restfull APIs in Ivy]]
+
+%% ai-graph-end %%

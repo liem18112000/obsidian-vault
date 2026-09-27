@@ -1,5 +1,5 @@
 ---
-ai_hash: f90e1360e7e8b696
+ai_hash: a99b1582bda4be49
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-29
@@ -11,22 +11,20 @@ entities:
 - pipeline run
 - CONFIRM=1
 - earchive-data-clean
-- app .env
 - GCS_BUCKET
 - GCP_PROJECT
 - ../.env
-- test-agent/.env
 - knowledge_gathering/config.py
-- FOLDERS
-- refine
-- test-plan
-- gcloud storage ls
-- gcloud storage rm
-- gcloud
-- ADC
 - index
 - notes
+- refine
+- test-plan
 - runs
+- FOLDERS
+- gcloud storage ls
+- gcloud storage rm
+- ADC
+- layout note
 - 'Testing-Agent GCS memory bank: one bucket, memory/ root, five subfolders'
 - 'Testing-Agent GCS memory bank: one bucket'
 - memory/ root
@@ -72,43 +70,40 @@ type: howto
 - [[Wipe test-agent-v2 memory and taskstore via test-agent-v2tools]]
 - [[Pipeline stages sharing a context_id need separate memory-bank path prefixes]]
 - [[Testing-agent admin tools get_run dumps an unbounded 1.4MB payload (MCP-unusable)]]
-- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+- [[test-agent-v2 cloud resource and credential map (klara-nonprod)]]
 
 **Relations:**
 - clear_memory.sh — *wipes* — GCS memory bank
 - clear_memory.sh — *is located at* — test-agent/tools/clear_memory.sh
-- clear_memory.sh — *enables clean start for* — pipeline run
-- clear_memory.sh — *requires* — CONFIRM=1
-- clear_memory.sh — *mirrors convention of* — earchive-data-clean
-- clear_memory.sh — *derives config from* — app .env
-- app .env — *contains* — GCS_BUCKET
-- app .env — *contains* — GCP_PROJECT
-- app .env — *is located at* — ../.env
-- ../.env — *is also known as* — test-agent/.env
-- knowledge_gathering/config.py — *uses* — test-agent/.env
-- clear_memory.sh — *processes folder* — index
-- clear_memory.sh — *processes folder* — notes
-- clear_memory.sh — *processes folder* — refine
-- clear_memory.sh — *processes folder* — test-plan
-- clear_memory.sh — *processes folder* — runs
-- FOLDERS — *limits wipe to* — refine
-- FOLDERS — *limits wipe to* — test-plan
-- clear_memory.sh — *uses command* — gcloud storage ls
-- clear_memory.sh — *uses command* — gcloud storage rm
-- clear_memory.sh — *requires* — gcloud
-- gcloud — *authenticated via* — ADC
-- GCS memory bank — *is for* — Testing-Agent
-- GCS memory bank — *has root* — memory/ root
-- memory/ root — *contains* — five subfolders
-- five subfolders — *include* — index
-- five subfolders — *include* — notes
-- five subfolders — *include* — refine
-- five subfolders — *include* — test-plan
-- five subfolders — *include* — runs
-- GCS memory bank — *is* — one bucket
-- clear_memory.sh — *is related to* — Testing-Agent GCS memory bank: one bucket, memory/ root, five subfolders
-- clear_memory.sh — *is related to* — Testing-Agent GCS memory bank: one bucket
-- clear_memory.sh — *is related to* — memory/ root
-- clear_memory.sh — *is related to* — five subfolders
+- test-agent/tools/clear_memory.sh — *truncates* — GCS memory bank
+- test-agent/tools/clear_memory.sh — *deletes objects in* — GCS memory bank
+- test-agent/tools/clear_memory.sh — *enables clean start for* — pipeline run
+- test-agent/tools/clear_memory.sh — *has design principle* — preview-first
+- test-agent/tools/clear_memory.sh — *has design principle* — dry-run by default
+- test-agent/tools/clear_memory.sh — *requires* — CONFIRM=1
+- test-agent/tools/clear_memory.sh — *mirrors convention of* — earchive-data-clean
+- test-agent/tools/clear_memory.sh — *derives config from* — ../.env
+- test-agent/tools/clear_memory.sh — *reads* — GCS_BUCKET
+- test-agent/tools/clear_memory.sh — *reads* — GCP_PROJECT
+- GCS_BUCKET — *from* — ../.env
+- GCP_PROJECT — *from* — ../.env
+- knowledge_gathering/config.py — *uses* — ../.env
+- test-agent/tools/clear_memory.sh — *loops over* — five prefixes
+- five prefixes — *include* — index
+- five prefixes — *include* — notes
+- five prefixes — *include* — refine
+- five prefixes — *include* — test-plan
+- five prefixes — *include* — runs
+- FOLDERS — *limits wipe to* — subset
+- test-agent/tools/clear_memory.sh — *uses command* — gcloud storage ls
+- test-agent/tools/clear_memory.sh — *uses command* — gcloud storage rm
+- test-agent/tools/clear_memory.sh — *requires authentication via* — ADC
+- GCS memory bank — *has structure described in* — layout note
+- index — *can be* — dangling
+- Testing-Agent — *owns* — GCS memory bank
+- Testing-Agent GCS memory bank: one bucket, memory/ root, five subfolders — *describes* — GCS memory bank
+- Testing-Agent GCS memory bank: one bucket — *describes* — GCS memory bank
+- GCS memory bank — *includes* — memory/ root
+- GCS memory bank — *includes* — five subfolders
 
 %% ai-graph-end %%

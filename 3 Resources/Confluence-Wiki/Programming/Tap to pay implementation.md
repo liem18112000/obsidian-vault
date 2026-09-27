@@ -1,18 +1,22 @@
 ---
-title: "Tap to pay implementation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48361668681/Tap+to+pay+implementation
-space: "Helios"
-topic: programming
-relevance: 0.835
-depth: 3
-updated: 2025-02-28
+ai_hash: fcdb4dc0ea7dfb8c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.835
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48361668681/Tap+to+pay+implementation
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Tap to pay implementation
+topic: programming
+type: source
+updated: 2025-02-28
 ---
 
 # Tap to pay implementation
@@ -58,3 +62,10 @@ tags:
   2.  POS app:
 
       - Change maven repositories to get release SDK (<a href="https://docs.adyen.com/point-of-sale/ipp-mobile/tap-to-pay-android/integration-ttp/#going-live" class="external-link" data-card-appearance="inline" rel="nofollow">https://docs.adyen.com/point-of-sale/ipp-mobile/tap-to-pay-android/integration-ttp/#going-live</a>) → **need a live API credential stored in POS app to authenticate to the repo**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Plan for the implementation]]
+
+%% ai-graph-end %%

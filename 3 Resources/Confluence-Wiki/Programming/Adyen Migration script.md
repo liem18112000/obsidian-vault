@@ -1,18 +1,22 @@
 ---
-title: "Adyen Migration script"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48888119542/Adyen+Migration+script
-space: "Helios"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2025-12-12
+ai_hash: f74ba2d52ba734fa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48888119542/Adyen+Migration+script
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Adyen Migration script
+topic: programming
+type: source
+updated: 2025-12-12
 ---
 
 # Adyen Migration script
@@ -111,3 +115,14 @@ The business process it supports is:
 
 This script currently only triggers the migration signal process on luz-adyen; the migration status will be updated in the luz-adyen logs.  
 **Please inform us after you have executed the script so we can observe and analyze the logs afterward.**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Payout Migration script]]
+- [[Run Script Resync hidden wiget]]
+- [[Bank connection - Script to store all old connected ibans for each tenant]]
+- [[19. Sync POS indicators]]
+- [[18. Migrate indicator online_shop_5]]
+
+%% ai-graph-end %%

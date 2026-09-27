@@ -1,18 +1,22 @@
 ---
-title: "Apply branch code of webclient-nginx-ingress.yaml"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48473309206/Apply+branch+code+of+webclient-nginx-ingress.yaml
-space: "LUZ"
-topic: infra
-relevance: 0.724
-depth: 2.48
-updated: 2025-04-29
+ai_hash: a1d0c8adfbcf35b5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.48
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48473309206/Apply+branch+code+of+webclient-nginx-ingress.yaml
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Apply branch code of webclient-nginx-ingress.yaml
+topic: infra
+type: source
+updated: 2025-04-29
 ---
 
 # Apply branch code of webclient-nginx-ingress.yaml
@@ -100,3 +104,14 @@ kubectl apply -l klara.ch/module=main-ingress -f deployment-dev-performance.yaml
 ![[48473309206-image-20250414-031447.png]]
 
 ![[48473309206-image-20250414-031606.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apply changes on luz_kubernetes]]
+- [[Kubernetes knowledge]]
+- [[How to deploy in Performance]]
+- [[POS & myKLARA nginx ingress quick notes]]
+- [[Recipe Deploy with Terraform]]
+
+%% ai-graph-end %%

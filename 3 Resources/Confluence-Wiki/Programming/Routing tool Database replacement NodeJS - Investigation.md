@@ -1,18 +1,22 @@
 ---
-title: "Routing tool | Database replacement | NodeJS - Investigation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48139206657/Routing+tool+Database+replacement+NodeJS+-+Investigation
-space: "Arrow"
-topic: programming
-relevance: 0.775
-depth: 2.6
-updated: 2024-11-07
+ai_hash: bebe1b93562546f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.6
+entities: []
+relevance: 0.775
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48139206657/Routing+tool+Database+replacement+NodeJS+-+Investigation
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: Routing tool | Database replacement | NodeJS - Investigation
+topic: programming
+type: source
+updated: 2024-11-07
 ---
 
 # Routing tool | Database replacement | NodeJS - Investigation
@@ -682,3 +686,14 @@ user                    3pts => can refactor to seperated tables: priority
 6.  If we continuously go on with the Authentication with Keycloak and AXIN services for NodeJS, is there any document or tutorial to set up and implement it?
 
 7.  If we don't continue with KeyCloak and AXIN services for NodeJS, should we keep the current Session-based authentication or use another solution such as JWT in NodeJS?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Choosing a DB migration library SQL changesets, startup vs command, maintenance]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
+- [[Recipe Typescript batching]]
+- [[Migrate to Quarkus (WIP)]]
+- [[Synapse - ServerlessWorkflow Database analysis]]
+
+%% ai-graph-end %%

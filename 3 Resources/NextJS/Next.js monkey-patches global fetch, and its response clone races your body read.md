@@ -1,10 +1,21 @@
 ---
-title: "Next.js monkey-patches global fetch, and its response clone races your body read"
+ai_hash: f46e4fa63f3e3af1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: 'Confluence: await fetch() vs FetchBuilder (TS)'
 status: seedling
-source: "Confluence: await fetch() vs FetchBuilder (TS)"
-tags: [nextjs, fetch, caching, race-condition, app-router, confluence-distilled]
+tags:
+- nextjs
+- fetch
+- caching
+- race-condition
+- app-router
+- confluence-distilled
+title: Next.js monkey-patches global fetch, and its response clone races your body
+  read
+type: gotcha
 ---
 
 # Next.js monkey-patches global fetch, and its response clone races your body read
@@ -51,3 +62,14 @@ Source: [[await fetch() vs FetchBuilder ()]] (TS, Confluence).
 ## Related
 
 - [[Undrained fetch response bodies leak sockets in Node undici]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[await fetch() vs FetchBuilder ()]]
+- [[Undrained fetch response bodies leak sockets in Node undici]]
+- [[Two next dev instances sharing one .next corrupt the webpack PackFileCache]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+- [[Hydration mismatches only surface as minified errors in production not dev]]
+
+%% ai-graph-end %%

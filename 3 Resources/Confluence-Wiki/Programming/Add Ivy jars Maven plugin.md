@@ -1,18 +1,22 @@
 ---
-title: "Add Ivy jars Maven plugin"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47604531278/Add+Ivy+jars+Maven+plugin
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2024-01-05
+ai_hash: c5b07fe0d5495d5e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47604531278/Add+Ivy+jars+Maven+plugin
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Add Ivy jars Maven plugin
+topic: programming
+type: source
+updated: 2024-01-05
 ---
 
 # Add Ivy jars Maven plugin
@@ -84,3 +88,14 @@ Remember to update `ivyVersion `and `ivy-server-path` in the `.m2/setting` to co
 # Reference
 
 <a href="https://bitbucket.org/axonivy-prod/addivyjars_maven_plugin/src/master/" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/axonivy-prod/addivyjars_maven_plugin/src/master/</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+- [[Architecture Overview LUZ]]
+- [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+- [[APF Patch lombok maven library]]
+- [[WIP Recipe How to adapt Unit Test to be able to run with Junit 5]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "08_[Fintech - Innovation] Coding convention"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134411670/08_+Fintech+-+Innovation+Coding+convention
-space: "GRAVITY"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2022-06-24
+ai_hash: c9f1b5e1ce881b1f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134411670/08_+Fintech+-+Innovation+Coding+convention
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: 08_[Fintech - Innovation] Coding convention
+topic: programming
+type: source
+updated: 2022-06-24
 ---
 
 # 08_[Fintech - Innovation] Coding convention
@@ -212,3 +216,14 @@ E.g. In case a 401 occurs inside our service stack then we will propagate 401 b
 - Return 503 if can not reach remote client:
 
 E.g. About the authentication / access error of a remote resource (post, crif…) we have to return 503. As shared in the document attached API design we have defined the 503. In case we have remote service access we must include it.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Coding convention for Quarkus project]]
+- [[Programming]]
+- [[Ivy conventions]]
+- [[Test and code review report template.2.93]]
+- [[Test and code review report template]]
+
+%% ai-graph-end %%

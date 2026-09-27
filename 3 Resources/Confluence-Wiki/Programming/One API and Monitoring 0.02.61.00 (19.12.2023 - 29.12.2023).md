@@ -1,18 +1,22 @@
 ---
-title: "One API and Monitoring 0.02.61.00 (19.12.2023 - 29.12.2023)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47605481632/One+API+and+Monitoring+0.02.61.00+19.12.2023+-+29.12.2023
-space: "LUZ"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2023-12-29
+ai_hash: 0c7659b8448c5276
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47605481632/One+API+and+Monitoring+0.02.61.00+19.12.2023+-+29.12.2023
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: One API and Monitoring 0.02.61.00 (19.12.2023 - 29.12.2023)
+topic: programming
+type: source
+updated: 2023-12-29
 ---
 
 # One API and Monitoring 0.02.61.00 (19.12.2023 - 29.12.2023)
@@ -62,3 +66,14 @@ B. MENTION
 
 
 5.  \[Performance\] Use a common way to check the subscription in webclient
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API and Monitoring 0.02.42.00 (28.03.2023 - 11.04.2023)]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[Accounting Interface, Epost Forced Onboarding, and ONE api]]
+- [[One API (06.12.2022 - 19.12.2022)]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 33166b879d13f5b4
+ai_hash: a8ca8a916f2b30a4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-26
 entities: []
 source: session 2026-06-26 feat/appsflyer-push-layer; terraform/push
@@ -41,10 +41,10 @@ Context: Leo CDP AppsFlyer push receiver, terraform/push/ on VNGCloud VKS. See [
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Remote Terraform state needs no manual sync — bake creds + init into the deploy orchestrator to guarantee alignment]]
+- [[leo-customer360 CD deploys app containers to vServers only, never the vDBvLBvStorage Terraform]]
 - [[A webhook receiver deploys as an always-on service, not a scheduled job]]
-- [[Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing]]
-- [[Cloud Build GKE deploy get-credentials needs --project for a cross-project cluster]]
-- [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
-- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[Customer360 Kubernetes deployment (local kind + GreenNode VKS)]]
+- [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
 
 %% ai-graph-end %%

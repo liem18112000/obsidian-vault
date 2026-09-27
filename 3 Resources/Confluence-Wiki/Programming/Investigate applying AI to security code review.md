@@ -1,18 +1,22 @@
 ---
-title: "Investigate applying AI to security code review"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49392681040/Investigate+applying+AI+to+security+code+review
-space: "TS"
-topic: programming
-relevance: 0.81
-depth: 2.76
-updated: 2026-05-11
+ai_hash: 43a98789e6653fba
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.76
+entities: []
+relevance: 0.81
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49392681040/Investigate+applying+AI+to+security+code+review
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Investigate applying AI to security code review
+topic: programming
+type: source
+updated: 2026-05-11
 ---
 
 # Investigate applying AI to security code review
@@ -68,3 +72,11 @@ Project-specific security skill:
 - How to integrate the agent into generating secure code during development?
 
 ## Demonstration
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Code Review (AI-First model)]]
+- [[Prompt Security Code Review]]
+
+%% ai-graph-end %%

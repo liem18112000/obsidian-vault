@@ -1,18 +1,22 @@
 ---
-title: "Data Migration Report: Postgres → MongoDB"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48911712278/Data+Migration+Report+Postgres+MongoDB
-space: "HACKA"
-topic: infra
-relevance: 0.757
-depth: 2.84
-updated: 2025-12-02
+ai_hash: 0592754534bbc661
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 18
+depth: 2.84
+entities: []
+relevance: 0.757
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48911712278/Data+Migration+Report+Postgres+MongoDB
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/hacka
+- confluence
+- infra
+- space/hacka
+title: 'Data Migration Report: Postgres → MongoDB'
+topic: infra
+type: source
+updated: 2025-12-02
 ---
 
 # Data Migration Report: Postgres → MongoDB
@@ -116,3 +120,14 @@ Storage size : 255.98 MB (compressed)
 
 
 ![[48911712278-image-20251126-075201.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+- [[Benchmark of luz-database (performance env)]]
+- [[Postgres Architecture Blueprint V2023]]
+- [[Data index performance]]
+- [[luz-docs-import performance-env import benchmark findings]]
+
+%% ai-graph-end %%

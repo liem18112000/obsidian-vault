@@ -1,7 +1,7 @@
 ---
-ai_hash: 4894aed8f52995ba
+ai_hash: cf527d165289661a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-04
 entities: []
 source: session 2026-07-04 fb-info-project license_admin.cmd
@@ -41,5 +41,6 @@ Related: [[CMD set p keeps the existing value on empty Enter - preset the defaul
 
 **Related notes:**
 - [[CMD set p keeps the existing value on empty Enter - preset the default]]
+- [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
 
 %% ai-graph-end %%

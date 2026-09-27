@@ -1,5 +1,5 @@
 ---
-ai_hash: 39be875b593dc234
+ai_hash: 4d2d6d082aab258d
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-09
@@ -37,6 +37,6 @@ See [[UAT vServer Dagster topology split webserver+daemon on one s-general box|U
 - [[VNG vServer OS images are not associated with the s2-general flavor zone (image data-source trap)]]
 - [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs]]
 - [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
-- [[GreenNode vDB package family + IOPS tier are per-zone (HCM03-1A vs 1C)]]
+- [[UAT vServer Dagster topology split webserver+daemon on one s-general box]]
 
 %% ai-graph-end %%

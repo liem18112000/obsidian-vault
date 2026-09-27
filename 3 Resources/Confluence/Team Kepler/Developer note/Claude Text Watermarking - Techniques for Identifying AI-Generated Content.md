@@ -1,14 +1,19 @@
 ---
-title: "Claude Text Watermarking: Techniques for Identifying AI-Generated Content"
+ai_hash: d3b039220cb4aa0f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49670750212'
+confluence_path: Team Kepler > Developer note
 created: 2026-08-17
-updated: 2026-08-17
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: 'Claude Text Watermarking: Techniques for Identifying AI-Generated Content'
+type: source
+updated: 2026-08-17
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49670750212/Claude+Text+Watermarking+Techniques+for+Identifying+AI-Generated+Content
-confluence_id: "49670750212"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence]
 ---
 
 # Claude Text Watermarking: Techniques for Identifying AI-Generated Content
@@ -141,3 +146,14 @@ For non‑text output Claude attaches a **manifest**: signed statements binding 
   - Soft bindings enable **Durable Content Credentials** — the same watermarking idea, applied to files.
 
 ![[image-20260817-062638.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LLM text watermarking biases free token choices with a keyed g-function]]
+- [[Skill-based Compression Techniques - Overview]]
+- [[Skill-based Compression Techniques - Overview]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+- [[Manual Prompt Compression Techniques - Deep Dive]]
+
+%% ai-graph-end %%

@@ -1,14 +1,25 @@
 ---
-title: "[Invoice Run V2][UAT][Execute] - Prevent error when luz-store is multiple pods"
+ai_hash: 8f0e022fb295d620
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48950509569'
+confluence_path: Team Kepler > Test Case Library > Test Execution / Evidences > Archive
+  > Sprint 145 - Test Report
 created: 2025-12-09
-updated: 2025-12-17
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+- luz-store
+- sprint
+- testing
+title: '[Invoice Run V2][UAT][Execute] - Prevent error when luz-store is multiple
+  pods'
+type: source
+updated: 2025-12-17
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48950509569/Invoice+Run+V2+UAT+Execute+-+Prevent+error+when+luz-store+is+multiple+pods
-confluence_id: "48950509569"
-confluence_path: "Team Kepler > Test Case Library > Test Execution / Evidences > Archive > Sprint 145 - Test Report"
-tags: [confluence, invoice-run, luz-store, sprint, testing]
 ---
 
 # [Invoice Run V2][UAT][Execute] - Prevent error when luz-store is multiple pods
@@ -180,3 +191,14 @@ tags: [confluence, invoice-run, luz-store, sprint, testing]
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice Run V2UAT - No error when luz-store is running with multiple pods]]
+- [[Invoice Run V2UAT - Execution - Change filestore cache implement to filestore_utils]]
+- [[Invoice Run V2UAT - Change filestore cache implement to filestore_utils]]
+- [[Invoice Run V2UAT - Execute - Apply Distributed Cache for customer information during the process of Invoice Run V2ecute]]
+- [[Invoice Run V2UAT - Apply Distributed Cache for customer information during the process of Invoice Run V2]]
+
+%% ai-graph-end %%

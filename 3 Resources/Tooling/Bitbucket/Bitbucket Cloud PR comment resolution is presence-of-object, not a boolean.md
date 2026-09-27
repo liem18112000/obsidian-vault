@@ -1,7 +1,7 @@
 ---
-ai_hash: e533471a42833589
+ai_hash: a3653350b476e4f0
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-12
 entities: []
 source: vinnstack BDD Implement PR-comments feature, Bitbucket swagger.json, 2026-07-12
@@ -33,10 +33,10 @@ Verified against `https://api.bitbucket.org/swagger.json` (`definitions.pullrequ
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
 - [[Bitbucket Cloud pull-request REST API shape]]
+- [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
+- [[Bitbucket cached git token 401s on REST API; PR listing needs app password]]
 - [[Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
-- [[Re-triggering GitHub Copilot PR review via API and its quota-limit gotcha]]
 - [[Bitbucket PR merge lags git fetch; don't conclude not-merged from one originmain check]]
 
 %% ai-graph-end %%

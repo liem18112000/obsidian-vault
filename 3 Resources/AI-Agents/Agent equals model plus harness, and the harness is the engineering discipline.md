@@ -1,10 +1,57 @@
 ---
-title: "Agent equals model plus harness, and the harness is the engineering discipline"
+ai_hash: 47b2322a4c81921f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: term
+entities:
+- Agent
+- Model
+- Harness
+- Harness engineering
+- Mitchell Hashimoto
+- HashiCorp
+- Terraform
+- CPU
+- RAM
+- Operating System
+- Application
+- Prompt
+- Context Window
+- Tools
+- Guardrails
+- Feedback Loops
+- Memory
+- State
+- Context Management
+- Security
+- Orchestration
+- Prompt text
+- Validation Layer
+- Linter
+- Structural fix
+- Prompt, context, and harness engineering
+- ReAct
+- Engineering discipline
+- Thinking
+- Model's focus
+- Agent reliability
+- CPU upgrade
+- Smarter Model
+- Agent misbehavior
+- Missing guardrail
+- Absent feedback loop
+- Unparseable tool output
+- Failure
+source: 'Confluence: Harness Engineering - Designing Reliable AI Systems (2026-04-06)'
 status: seedling
-source: "Confluence: Harness Engineering - Designing Reliable AI Systems (2026-04-06)"
-tags: [ai-agents, harness-engineering, architecture, reliability, llm]
+tags:
+- ai-agents
+- harness-engineering
+- architecture
+- reliability
+- llm
+title: Agent equals model plus harness, and the harness is the engineering discipline
+type: term
 ---
 
 # Agent equals model plus harness, and the harness is the engineering discipline
@@ -35,3 +82,49 @@ That is a ratchet. Each failure becomes a permanent structural fix — a validat
 - [[Prompt]]
 - [[context]]
 - [[and harness engineering nest rather than replace each other]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Harness Engineering - Designing Reliable AI Systems]]
+- [[Prompt, context, and harness engineering nest rather than replace each other]]
+- [[A complete skill has five layers - intent, knowledge, execution, verification, evolution]]
+- [[A prompt is a temporary instruction, a skill is an encapsulated capability]]
+- [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+
+**Relations:**
+- Agent — *IS_COMPOSED_OF* — Model
+- Agent — *IS_COMPOSED_OF* — Harness
+- Harness — *IS_A* — Engineering discipline
+- Harness engineering — *DEFINED_AS* — designing everything around the model
+- Harness engineering — *INCLUDES* — Tools
+- Harness engineering — *INCLUDES* — Guardrails
+- Harness engineering — *INCLUDES* — Feedback Loops
+- Harness engineering — *INCLUDES* — Memory
+- Harness engineering — *INCLUDES* — State
+- Harness engineering — *INCLUDES* — Context Management
+- Harness engineering — *INCLUDES* — Security
+- Harness engineering — *INCLUDES* — Orchestration
+- Harness engineering — *ENSURES* — Agent reliability
+- Harness engineering — *COINED_BY* — Mitchell Hashimoto
+- Mitchell Hashimoto — *AFFILIATED_WITH* — HashiCorp
+- Mitchell Hashimoto — *AFFILIATED_WITH* — Terraform
+- Model — *PERFORMS* — Thinking
+- Harness — *CONTROLS* — Model's focus
+- Model — *IS_ANALOGOUS_TO* — CPU
+- Context Window — *IS_ANALOGOUS_TO* — RAM
+- Harness — *IS_ANALOGOUS_TO* — Operating System
+- Agent — *IS_ANALOGOUS_TO* — Application
+- Smarter Model — *IS_ANALOGOUS_TO* — CPU upgrade
+- Prompt text — *IS_COMPONENT_OF* — Harness
+- Missing guardrail — *CAUSES* — Agent misbehavior
+- Absent feedback loop — *CAUSES* — Agent misbehavior
+- Unparseable tool output — *CAUSES* — Agent misbehavior
+- Failure — *LEADS_TO* — Structural fix
+- Structural fix — *INCLUDES* — Validation Layer
+- Structural fix — *INCLUDES* — Linter
+- Structural fix — *INCLUDES* — Tools
+- Harness engineering — *RELATED_TO* — Prompt, context, and harness engineering
+- Agent — *RELATED_TO* — ReAct
+
+%% ai-graph-end %%

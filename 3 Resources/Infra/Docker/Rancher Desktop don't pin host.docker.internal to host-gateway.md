@@ -1,7 +1,7 @@
 ---
-ai_hash: 3acf40229e046d82
+ai_hash: 1009f5d035102662
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-13
 entities: []
 source: session 2026-06-13 accesstrade_integration
@@ -38,8 +38,9 @@ Found while a Dockerized FastAPI app couldn't reach the host's Ollama for an LLM
 
 **Related notes:**
 - [[Docker hostname for reaching a service depends on where the caller runs]]
-- [[Docker Compose path resolution env_file vs build context vs dockerfile]]
-- [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
-- [[Separate docker-compose files are isolated networks; use one file + a profile for optional services]]
+- [[Repeated compose up -d can corrupt the bridge network — down+up to rebuild it]]
+- [[Ollama's 3.5GB CUDA image can corrupt a low-disk RancherWSL Docker store]]
+- [[Loopback-bind a bridge container that must reach a host-network service]]
+- [[Compose command ${VAR} reads .env not env_file — use env_file + $$VAR]]
 
 %% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Redis TTL should express liveness and be refreshed by a heartbeat"
+ai_hash: 585b29524cde3686
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Deep Dive EPC Notification User Connection Registry (Helios)'
 status: seedling
-source: "Confluence: Deep Dive EPC Notification User Connection Registry (Helios)"
-tags: [redis, ttl, heartbeat, liveness, distributed-systems, confluence-distilled]
+tags:
+- redis
+- ttl
+- heartbeat
+- liveness
+- distributed-systems
+- confluence-distilled
+title: Redis TTL should express liveness and be refreshed by a heartbeat
+type: lesson
 ---
 
 # Redis TTL should express liveness and be refreshed by a heartbeat
@@ -44,3 +54,14 @@ Source: [[Deep Dive EPC Notification - User Connection Registry - Data Model]] (
 ## Related
 
 - [[Store pod-level facts once, not copied into every user key]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Store pod-level facts once, not copied into every user key]]
+- [[Deep Dive EPC Notification - User Connection Registry - Data Model]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+- [[A per-checkpoint lastModified timestamp doubles as a liveness heartbeat for timeout detection]]
+- [[Server push choice is decided by proxy idle timeouts and pod affinity, not API elegance]]
+
+%% ai-graph-end %%

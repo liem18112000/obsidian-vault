@@ -1,7 +1,7 @@
 ---
-ai_hash: ffa897b0e799945f
+ai_hash: 978c9de9717c3d81
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-18
 entities: []
 source: luz_docs LUZ-154613 2026-06-18

@@ -1,9 +1,34 @@
 ---
-ai_hash: f2e5e9acc1b323b2
+ai_hash: 783b903fe63a22b5
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-28
-entities: []
+entities:
+- Claude Code
+- Fast mode
+- Opus
+- HEADLESS `claude -p` runs
+- '`--settings` flag'
+- '`--fast` flag'
+- '`CLAUDE_FAST_MODE`'
+- '`ANTHROPIC_FAST_MODE`'
+- '`/fast` command'
+- Claude Code subscription
+- Pro subscription
+- Max subscription
+- Team subscription
+- Enterprise subscription
+- Console API access
+- Usage credits
+- Org level fast mode
+- '`claude -p` command'
+- '`claude-opus-4-8` model'
+- '`@anthropic-ai/claude-code` binary'
+- Vinnstack
+- '`lib/ai/claudeRun.ts`'
+- '`code.claude.com/docs/en/fast-mode.md`'
+- '`headless.md`'
+- Config read into a module-level const applies only on next process launch
 source: claude-code-guide agent, session 2026-07-28
 status: seedling
 tags:
@@ -41,7 +66,33 @@ Related: [[Config read into a module-level const applies only on next process la
 - [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
 - [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
 - [[--bare forces API-key-only auth in Claude Code]]
-- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
 - [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+
+**Relations:**
+- Fast mode — *is_a_feature_of* — Claude Code
+- Fast mode — *uses* — Opus
+- Fast mode — *can_be_enabled_for* — HEADLESS `claude -p` runs
+- Fast mode — *is_enabled_via* — `--settings` flag
+- `--settings` flag — *requires_value* — {"fastMode": true}
+- HEADLESS `claude -p` runs — *do_not_support* — `--fast` flag
+- HEADLESS `claude -p` runs — *do_not_support* — `CLAUDE_FAST_MODE`
+- HEADLESS `claude -p` runs — *do_not_support* — `ANTHROPIC_FAST_MODE`
+- `/fast` command — *works_if_session_launched_with* — `--settings` flag
+- Fast mode — *requires* — Claude Code subscription
+- Claude Code subscription — *includes* — Pro subscription
+- Claude Code subscription — *includes* — Max subscription
+- Claude Code subscription — *includes* — Team subscription
+- Claude Code subscription — *includes* — Enterprise subscription
+- Fast mode — *requires* — Console API access
+- Fast mode — *requires* — Usage credits
+- Fast mode — *requires* — Org level fast mode
+- `claude -p` command — *can_use* — `claude-opus-4-8` model
+- Vinnstack — *spawns* — `@anthropic-ai/claude-code` binary
+- Vinnstack — *uses* — `lib/ai/claudeRun.ts`
+- Fast mode — *has_documentation_at* — `code.claude.com/docs/en/fast-mode.md`
+- HEADLESS `claude -p` runs — *has_documentation_at* — `headless.md`
+- Config read into a module-level const applies only on next process launch — *is_related_to* — Vinnstack
+- Config read into a module-level const applies only on next process launch — *is_related_to* — HEADLESS `claude -p` runs
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Analyze performance for REST API calculate payslips for overview salary processing"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519729852/Analyze+performance+for+REST+API+calculate+payslips+for+overview+salary+processing
-space: "LUZ"
-topic: programming
-relevance: 0.835
-depth: 3
-updated: 2021-03-01
+ai_hash: a2ccdcc68890c47c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.835
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519729852/Analyze+performance+for+REST+API+calculate+payslips+for+overview+salary+processing
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Analyze performance for REST API calculate payslips for overview salary processing
+topic: programming
+type: source
+updated: 2021-03-01
 ---
 
 # Analyze performance for REST API calculate payslips for overview salary processing
@@ -1827,3 +1831,14 @@ Following steps are execute:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[REST API calculate 1 employee's pay-slip]]
+- [[Analyze N+1 queries for REST API calculate payslips for overview salary processing]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[Helios myKLARA app(luz-mobile) - API Response Performance Analysis]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+
+%% ai-graph-end %%

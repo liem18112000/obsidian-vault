@@ -1,18 +1,22 @@
 ---
-title: "API Document"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20508019771/API+Document
-space: "LUZ"
-topic: programming
-relevance: 0.86
-depth: 3
-updated: 2020-05-28
+ai_hash: 4fea96a5d37a5f2e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.86
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20508019771/API+Document
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: API Document
+topic: programming
+type: source
+updated: 2020-05-28
 ---
 
 # API Document
@@ -190,3 +194,14 @@ API in luz_hubspot to sync Subscription information from Klara to Hubspot when 
         </table>
 
         </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HubSpot Document for API create custom behavior event]]
+- [[15. Update companies by tenant id]]
+- [[5. Analyze the current data status of company between Hubspot and Klara]]
+- [[News, Event and Deal API]]
+- [[Places Hubspot features have been applying to]]
+
+%% ai-graph-end %%

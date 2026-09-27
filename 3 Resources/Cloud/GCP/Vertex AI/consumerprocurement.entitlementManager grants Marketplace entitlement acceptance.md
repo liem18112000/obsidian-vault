@@ -1,7 +1,7 @@
 ---
-ai_hash: a888db9f243f2541
+ai_hash: 88eafd8f929befe1
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-11
 entities: []
 source: session 2026-07-11, klara-nonprod Claude on Vertex setup
@@ -30,6 +30,7 @@ Without this role (or an equivalent broader role like Owner), the account can ha
 **Related notes:**
 - [[Vertex AI 404 vs 403 distinguishes Model Garden enablement from IAM permission]]
 - [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+- [[Claude on Vertex AI availability is per-project per-region (klara-nonprod)]]
 - [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
 - [[Claude models are available on GCP Vertex AI Model Garden]]
 

@@ -1,18 +1,22 @@
 ---
-title: "One Api Retry Mechanism"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48527540579/One+Api+Retry+Mechanism
-space: "LUZ"
-topic: programming
-relevance: 0.769
-depth: 2.68
-updated: 2025-06-05
+ai_hash: 5d65915d2b2da029
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.68
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48527540579/One+Api+Retry+Mechanism
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: One Api Retry Mechanism
+topic: programming
+type: source
+updated: 2025-06-05
 ---
 
 # One Api Retry Mechanism
@@ -47,3 +51,14 @@ Retry mechanism that is being used by one api
     1.  retry-failed-to-store cron job
 
     2.  delivery physical document cron job
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Retry for storing documents from One API to luz_docs_view_controller]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[Research The concept to update the status of delivery instantly after all documents are processed]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+
+%% ai-graph-end %%

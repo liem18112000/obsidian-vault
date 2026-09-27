@@ -1,10 +1,21 @@
 ---
-title: "Check who consumes a result before optimising it - eArchive counted 128k docs for a boolean"
+ai_hash: 40bd3456f04f8c23
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: eArchive Performance — Detail Overview (2026-06-15)'
 status: seedling
-source: "Confluence: eArchive Performance — Detail Overview (2026-06-15)"
-tags: [performance, api-design, mongodb, earchive, luz-docs, optimization]
+tags:
+- performance
+- api-design
+- mongodb
+- earchive
+- luz-docs
+- optimization
+title: Check who consumes a result before optimising it - eArchive counted 128k docs
+  for a boolean
+type: lesson
 ---
 
 # Check who consumes a result before optimising it - eArchive counted 128k docs for a boolean
@@ -31,3 +42,14 @@ Tracked as `LUZ-153656`; the related refactor removed `$facet` so search and cou
 - [[An index only helps an aggregation before the first group]]
 - [[unwind]]
 - [[or lookup]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive Performance — Detail Overview]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[An index only helps an aggregation before the first group, unwind, or lookup]]
+
+%% ai-graph-end %%

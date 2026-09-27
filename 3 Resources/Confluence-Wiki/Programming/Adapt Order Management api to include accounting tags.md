@@ -1,18 +1,22 @@
 ---
-title: "Adapt Order Management api to include accounting tags"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47470903877/Adapt+Order+Management+api+to+include+accounting+tags
-space: "LUZ"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2023-08-28
+ai_hash: 81267380b2db8626
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47470903877/Adapt+Order+Management+api+to+include+accounting+tags
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Adapt Order Management api to include accounting tags
+topic: programming
+type: source
+updated: 2023-08-28
 ---
 
 # Adapt Order Management api to include accounting tags
@@ -146,3 +150,14 @@ public static String buildOrderItemTag(SellableArticle sellableArticle) {
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Handle report configuration for new fields (12.06.2023)]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[Merging process]]
+- [[List out places calling booking function]]
+- [[Change get API when paying invoices]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Convert SSL Certificate to various format"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38196094377/Convert+SSL+Certificate+to+various+format
-space: "Helios"
-topic: security
-relevance: 0.794
-depth: 2.9
-updated: 2019-06-28
+ai_hash: fe27beacd1e65a77
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.9
+entities: []
+relevance: 0.794
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38196094377/Convert+SSL+Certificate+to+various+format
+space: Helios
+status: reference
 tags:
-  - confluence
-  - security
-  - space/helios
+- confluence
+- security
+- space/helios
+title: Convert SSL Certificate to various format
+topic: security
+type: source
+updated: 2019-06-28
 ---
 
 # Convert SSL Certificate to various format
@@ -205,3 +209,11 @@ Both of them work really well and can convert most, if not all, the format detai
 That’s it, at least for the time being: we hope that these commands will be helpful to those developers and system administrators who need to convert SSL certificates in the various formats required by their applications.
 
 See you next time!
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator]]
+- [[Update ePost certificate - .epost.ch - in PROD]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "SchemaRegistry API v2.0"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47350808628/SchemaRegistry+API+v2.0
-space: "AI"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2023-06-15
+ai_hash: b8dfd97f2f8adca8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47350808628/SchemaRegistry+API+v2.0
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: SchemaRegistry API v2.0
+topic: programming
+type: source
+updated: 2023-06-15
 ---
 
 # SchemaRegistry API v2.0
@@ -59,3 +63,13 @@ SchemaRegistry API is accessible through <a href="https://cloud.google.com/vpc/d
 
 | Priority | Key | Summary | Status |
 |----------|-----|---------|--------|
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze API v2.0]]
+- [[Analyze API]]
+- [[Query API Reference]]
+- [[Invoice API]]
+
+%% ai-graph-end %%

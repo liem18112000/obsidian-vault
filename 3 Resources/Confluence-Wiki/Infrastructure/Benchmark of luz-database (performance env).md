@@ -1,18 +1,22 @@
 ---
-title: "Benchmark of luz-database (performance env)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47429484783/Benchmark+of+luz-database+performance+env
-space: "FUT"
-topic: infra
-relevance: 0.777
-depth: 2.61
-updated: 2023-07-12
+ai_hash: '6643023321896732'
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.61
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47429484783/Benchmark+of+luz-database+performance+env
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: Benchmark of luz-database (performance env)
+topic: infra
+type: source
+updated: 2023-07-12
 ---
 
 # Benchmark of luz-database (performance env)
@@ -741,3 +745,14 @@ sys     0m44.707s
 
 
 ![[47429484783-image-20230710-070734.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_cache performance test with security]]
+- [[Redis NoSQL distributed cache - Performance test]]
+- [[Test parallelize executor]]
+- [[Postgres Architecture Blueprint V2023]]
+- [[Data Migration Report Postgres → MongoDB]]
+
+%% ai-graph-end %%

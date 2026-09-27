@@ -1,18 +1,22 @@
 ---
-title: "Monitoring Openshift with Grafana"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3541125616/Monitoring+Openshift+with+Grafana
-space: "AII"
-topic: infra
-relevance: 0.779
-depth: 2.83
-updated: 2018-07-12
+ai_hash: 28384688a7075e48
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.83
+entities: []
+relevance: 0.779
+source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3541125616/Monitoring+Openshift+with+Grafana
+space: AII
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/aii
+- confluence
+- infra
+- space/aii
+title: Monitoring Openshift with Grafana
+topic: infra
+type: source
+updated: 2018-07-12
 ---
 
 # Monitoring Openshift with Grafana
@@ -111,3 +115,14 @@ we need to locate the \[\[outputs.influxdb\]\]  section, uncomment the username
  to restart the Telegraf service:
 
 > sudo systemctl restart telegraf
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[14. Deploy openshift cluster monitoring]]
+- [[Axonivycloud - Monitoring EKS cluster using Prometheus and Grafana]]
+- [[Monitoring with Managed Prometheus]]
+- [[Deploy to Kubernetes and get External IP]]
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+
+%% ai-graph-end %%

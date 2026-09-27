@@ -1,18 +1,22 @@
 ---
-title: "AI-0000 Low Analyze job throughput"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/48407216129/AI-0000+Low+Analyze+job+throughput
-space: "AI"
-topic: architecture
-relevance: 0.711
-depth: 2.17
-updated: 2025-03-19
+ai_hash: b06bfc8d069bb960
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.17
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/48407216129/AI-0000+Low+Analyze+job+throughput
+space: AI
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ai
+- confluence
+- architecture
+- space/ai
+title: AI-0000 Low Analyze job throughput
+topic: architecture
+type: source
+updated: 2025-03-19
 ---
 
 # AI-0000 Low Analyze job throughput
@@ -197,3 +201,14 @@ kubectl run analyze-loadrun --namespace analyze --rm=true -i \
 # Conclusion
 
 *What did we learn? Was the issue solved? And if not why did we stop the attempt to solve it?*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Test - 100% Thumbnail Cloud Run]]
+- [[EPC API - Load Test]]
+- [[AI-842 Load test Analyze API]]
+- [[LUZ-92314 - AI Data Feed Migration issue - Investigate the cache mechanism from Postgresql]]
+- [[Performance Test - 100% Thumbnail GKE]]
+
+%% ai-graph-end %%

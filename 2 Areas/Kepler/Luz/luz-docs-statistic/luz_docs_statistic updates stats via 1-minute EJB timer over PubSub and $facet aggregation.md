@@ -1,18 +1,17 @@
 ---
-ai_hash: 111d5ae391b0a283
+ai_hash: 923ec63ff441a8dc
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities:
 - luz_docs_statistic
 - EJB timer
 - Pub/Sub
 - $facet aggregation
-- 1-minute EJB timer
-- '@Schedule timer'
+- document statistics
 - UpdateDocumentStatisticTimer
 - UPDATE_DOCUMENT_STATISTIC_MAX_RECORD
-- Google Pub/Sub
+- Google Pub/Sub messages
 - luz.docs.document.statistic.sub
 - tenantId
 - documents collection
@@ -20,16 +19,11 @@ entities:
 - archived facet
 - deleted facet
 - total facet
-- count
-- summed size
 - isBeingCreated
-- documentstatistics
+- documentstatistics collection
 - service tenant
 - totalDocuments
-- Byte suffix
-- two-token model
-- service-tenant cache token
-- per-tenant cache token
+- Document sizes
 - luz_docs_statistic two-token model service-tenant vs per-tenant cache token
 source: luz_docs_statistic repo analysis, session 2026-06-11
 status: seedling
@@ -67,43 +61,39 @@ See [[luz_docs_statistic two-token model service-tenant vs per-tenant cache toke
 %% ai-graph-start %%
 
 **Related notes:**
-- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
 - [[totalFolders needs a second aggregate because a $facet pipeline is bound to one collection]]
+- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
 - [[luz-docs-statistic-get-latest-endpoint]]
+- [[New architecture for documentStatistic]]
 - [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
-- [[luz_docs_statistic unmaterializedDocuments metric counts docs missing any materialize sentinel field]]
 
 **Relations:**
-- luz_docs_statistic — *updates stats via* — 1-minute EJB timer
-- luz_docs_statistic — *updates stats via* — Pub/Sub
-- luz_docs_statistic — *updates stats via* — $facet aggregation
-- 1-minute EJB timer — *is* — EJB timer
-- EJB timer — *uses* — @Schedule timer
-- @Schedule timer — *is named* — UpdateDocumentStatisticTimer
-- UpdateDocumentStatisticTimer — *pulls messages from* — Google Pub/Sub
-- Google Pub/Sub — *has subscription* — luz.docs.document.statistic.sub
-- luz.docs.document.statistic.sub — *provides* — tenantId
-- UpdateDocumentStatisticTimer — *pulls up to* — UPDATE_DOCUMENT_STATISTIC_MAX_RECORD
-- $facet aggregation — *runs over* — documents collection
-- documents collection — *accessed via* — jsonstore
+- luz_docs_statistic — *updates* — document statistics
+- luz_docs_statistic — *uses* — EJB timer
+- luz_docs_statistic — *uses* — Pub/Sub
+- luz_docs_statistic — *uses* — $facet aggregation
+- EJB timer — *fires every* — minute
+- EJB timer — *is named* — UpdateDocumentStatisticTimer
+- UpdateDocumentStatisticTimer — *pulls and acks* — Google Pub/Sub messages
+- Google Pub/Sub messages — *from* — luz.docs.document.statistic.sub
+- Google Pub/Sub messages — *contain* — tenantId
+- UpdateDocumentStatisticTimer — *pulls max* — UPDATE_DOCUMENT_STATISTIC_MAX_RECORD
+- UPDATE_DOCUMENT_STATISTIC_MAX_RECORD — *has default value* — 100
+- $facet aggregation — *operates on* — documents collection
+- $facet aggregation — *uses* — jsonstore
 - $facet aggregation — *computes* — archived facet
 - $facet aggregation — *computes* — deleted facet
 - $facet aggregation — *computes* — total facet
-- archived facet — *includes* — count
-- archived facet — *includes* — summed size
-- deleted facet — *includes* — count
-- deleted facet — *includes* — summed size
-- total facet — *includes* — count
-- total facet — *includes* — summed size
-- documents collection — *excludes documents with* — isBeingCreated
-- result — *is upserted into* — documentstatistics
-- documentstatistics — *under* — service tenant
-- insert into documentstatistics — *requires* — totalDocuments != 0
-- Document sizes — *stored as* — strings with a Byte suffix
-- Pub/Sub messages — *are* — triggers
-- luz_docs_statistic — *uses* — two-token model
-- two-token model — *involves* — service-tenant cache token
-- two-token model — *involves* — per-tenant cache token
-- luz_docs_statistic — *described in* — luz_docs_statistic two-token model service-tenant vs per-tenant cache token
+- archived facet — *calculates* — count and summed size
+- deleted facet — *calculates* — count and summed size
+- total facet — *calculates* — count and summed size
+- $facet aggregation — *excludes documents with property* — isBeingCreated=true
+- aggregation result — *upserts into* — documentstatistics collection
+- documentstatistics collection — *managed by* — service tenant
+- insert into — *documentstatistics collection requires condition* — totalDocuments != 0
+- Document sizes — *stored as string with suffix* — Byte
+- Pub/Sub messages — *serves as trigger for* — $facet aggregation
+- $facet aggregation — *is* — eventually-consistent
+- luz_docs_statistic — *related to* — luz_docs_statistic two-token model service-tenant vs per-tenant cache token
 
 %% ai-graph-end %%

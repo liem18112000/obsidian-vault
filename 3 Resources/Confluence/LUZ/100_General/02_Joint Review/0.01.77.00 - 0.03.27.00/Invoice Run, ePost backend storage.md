@@ -1,14 +1,22 @@
 ---
-title: "Invoice Run, ePost backend storage"
+ai_hash: 2df8c04139c3bf76
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49032822826'
+confluence_path: LUZ Home > 100_General > 02_Joint Review > 0.01.77.00 - 0.03.27.00
+  > Joint review 0.03.12.00 (30.12.2025 - 12.01.2026 )
 created: 2026-01-12
-updated: 2026-01-12
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+- invoice-run
+- epost
+title: Invoice Run, ePost backend storage
+type: source
+updated: 2026-01-12
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49032822826/Invoice+Run+ePost+backend+storage
-confluence_id: "49032822826"
-confluence_path: "LUZ Home > 100_General > 02_Joint Review > 0.01.77.00 - 0.03.27.00 > Joint review 0.03.12.00 (30.12.2025 - 12.01.2026 )"
-tags: [confluence, invoice-run, epost]
 ---
 
 # Invoice Run, ePost backend storage
@@ -120,3 +128,14 @@ Vault Proxy
 ### The technical points
 
 ![[6-20260112-041000.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[Luz eLetter dispatch and enrichment re-run both funnel through luz-jsonstore into Mongo]]
+- [[High-Level Design - ONE API Enricher-First Integration]]
+- [[Invoice Run & luz-docs Archive Improvements]]
+- [[New architecture for documentStatistic]]
+
+%% ai-graph-end %%

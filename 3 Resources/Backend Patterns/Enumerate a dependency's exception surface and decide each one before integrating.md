@@ -1,10 +1,19 @@
 ---
-title: "Enumerate a dependency's exception surface and decide each one before integrating"
+ai_hash: bcd67004dbe30206
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Scan to book booking exception (Helios)'
 status: seedling
-source: "Confluence: Scan to book booking exception (Helios)"
-tags: [integration, error-handling, exceptions, api-contracts, confluence-distilled]
+tags:
+- integration
+- error-handling
+- exceptions
+- api-contracts
+- confluence-distilled
+title: Enumerate a dependency's exception surface and decide each one before integrating
+type: lesson
 ---
 
 # Enumerate a dependency's exception surface and decide each one before integrating
@@ -46,3 +55,14 @@ Source: [[Scan to book - booking exception]] (Helios, Confluence).
 ## Related
 
 - [[Throw error codes not sentences; localise at the request boundary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Throw error codes not sentences; localise at the request boundary]]
+- [[Handle error exception]]
+- [[Scan to book - booking exception]]
+- [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
+- [[Mutually exclusive API parameters should be rejected, not resolved by precedence]]
+
+%% ai-graph-end %%

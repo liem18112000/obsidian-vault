@@ -1,18 +1,22 @@
 ---
-title: "Java's options for options"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47173010019/Java+s+options+for+options
-space: "TS"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2022-08-28
+ai_hash: ff1a80cdf24226ce
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47173010019/Java+s+options+for+options
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Java's options for options
+topic: programming
+type: source
+updated: 2022-08-28
 ---
 
 # Java's options for options
@@ -1889,3 +1893,10 @@ You've taken the mouse to the movies. People don't need all the configuration op
 Maybe you should have gone with option 1.
 
 References: <a href="https://mccue.dev/pages/2-8-22-options-for-options" class="external-link" data-card-appearance="inline" rel="nofollow">https://mccue.dev/pages/2-8-22-options-for-options</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Optional API config enums for one toggle, a set or config object for more]]
+
+%% ai-graph-end %%

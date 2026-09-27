@@ -1,7 +1,7 @@
 ---
-ai_hash: 64fe4fe336775bb8
+ai_hash: 40cb0879dca23239
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-11
 entities: []
 source: 'vinnstack session 2026-07-11: building implement-bdd-steps skill'
@@ -39,7 +39,7 @@ On dvtliem's machine this resolves to `C:\Users\dvtliem\Kepler\luz_docs_integrat
 - [[luz_docs_integration_test AI pipeline branch and PR mechanics]]
 - [[Luz plugin repos how skills and hooks are packaged for distribution]]
 - [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
-- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
 - [[luz-skills-plugin packages skills by category directory listed in plugin.json]]
+- [[Luz skills read shared env-selector ~.claudeskills_context (not bundled when porting a skill)]]
 
 %% ai-graph-end %%

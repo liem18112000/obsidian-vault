@@ -1,14 +1,21 @@
 ---
-title: "Agent Loop 1 - Knowledge Gathering - v2"
+ai_hash: 8fafe1982737f54b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49730715847'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-07
-updated: 2026-09-11
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Agent Loop 1 - Knowledge Gathering - v2
+type: source
+updated: 2026-09-11
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49730715847/Agent+Loop+1+-+Knowledge+Gathering+-+v2
-confluence_id: "49730715847"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents]
 ---
 
 # Agent Loop 1 - Knowledge Gathering - v2
@@ -117,3 +124,14 @@ The three source tiers above are all **document** sources — they answer *what 
 | **5 · DISCOVER** | Enumerate the *prominent* services across every env (`dev`, `dev-staging`, `performance`, `test`, `prod`) for **GKE**, **Cloud Run**, **managed** (Cloud SQL / Pub/Sub) via Cloud Asset Inventory; rank by term-match ∪ liveness ∪ env → promote top-N. | new **seed producer** in `expansion_round` → `gcpsvc:<env>/<platform>/<name>` ids |
 | **6 · LOGS** | For each service, read Cloud Logging over an **expanding window** 7 → 14 → 21 → 28 d, widening only until *enough* signal (marginal-yield on time); distill purpose · error-sigs · deps; **redact** secrets/PII. | new `NodeFetcher(kind="gcpsvc")` — the "fetch" seam |
 | **7 · RELATE** | Infer service-to-service communication edges from log fields · config · Cloud Trace; emit them as `LinkRecord`s so the crawl **walks the service graph**. | in-scope `LinkRecord` + `gcpsvc` in `_fetchable` — the "follow" seam |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Sub Agentic Loop 1.2 - GCP Service Exploration]]
+- [[Knowledge-Gathering loop is a bounded frontier crawl with a verify edge]]
+- [[Agent self-learning memory]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+
+%% ai-graph-end %%

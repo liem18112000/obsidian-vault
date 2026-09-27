@@ -1,7 +1,7 @@
 ---
-ai_hash: b0bc2aea298d299f
+ai_hash: 2ff6e290ce425c20
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities: []
 source: LUZ-154613 session 2026-06-16
@@ -38,6 +38,6 @@ Adjacent: when a record gains a field that is random/non-deterministic (_shard),
 - [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
 - [[A refactor that removes a method must grep tests for its name before merging]]
 - [[Adding a field to a Java record breaks all factory and constructor calls in tests]]
-- [[Luz gates must inject per-package Allowlist beans not static Campaign isAffectedFor]]
+- [[Offline mvn -o compile shows false Lombok cannot-find-symbol errors]]
 
 %% ai-graph-end %%

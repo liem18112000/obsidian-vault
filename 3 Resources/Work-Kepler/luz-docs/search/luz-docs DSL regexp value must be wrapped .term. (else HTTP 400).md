@@ -1,7 +1,7 @@
 ---
-ai_hash: b8fd8bcb74a7e2c9
+ai_hash: ef15efcddec55cb9
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-27
 entities: []
 source: session 2026-06-27
@@ -38,9 +38,9 @@ Pairs with [[luz-docs search DSL silently drops raw-mongo query keys]] (raw `$re
 
 **Related notes:**
 - [[luz-docs search DSL silently drops raw-mongo query keys]]
-- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 - [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
+- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 - [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
-- [[search-logic]]
+- [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
 
 %% ai-graph-end %%

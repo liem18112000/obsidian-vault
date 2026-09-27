@@ -1,18 +1,18 @@
 ---
-ai_hash: 184db1fc300777a8
+ai_hash: 6ccaa073522a9faa
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-21
 entities:
-- Monitoring-dashboard SSO login
+- Monitoring-dashboard
+- SSO login
 - c360admin
 - Keycloak master admin
-- leo-customer360 dashboards
+- customer360 realm
 - Netdata
 - Jaeger
 - oauth2-proxy
 - Keycloak
-- customer360 realm
 - deployments/sso/bootstrap-realm.py
 - TEST_USER
 - KC_TEST_USER_PASSWORD
@@ -22,8 +22,10 @@ entities:
 - master-realm console admin
 - oauth2 callback
 - beta.leocdp.com
-- HSTS
-- 'Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync'
+- HSTS-preloaded
+- Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync
+- leo-customer360 dashboards
+- SSO
 source: session 2026-08-21
 status: seedling
 tags:
@@ -65,27 +67,27 @@ Separate gotcha to watch AFTER creds: the oauth2 callback is `http://<oauth2_pub
 - [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
 
 **Relations:**
-- Monitoring-dashboard SSO login — *uses user* — c360admin
-- Monitoring-dashboard SSO login — *does not use user* — Keycloak master admin
-- leo-customer360 dashboards — *include* — Netdata
-- leo-customer360 dashboards — *include* — Jaeger
-- leo-customer360 dashboards — *are accessed via* — oauth2-proxy
-- oauth2-proxy — *authenticates with* — Keycloak
-- Monitoring-dashboard SSO login — *uses realm* — customer360 realm
-- c360admin — *is user in* — customer360 realm
-- c360admin — *is created by* — deployments/sso/bootstrap-realm.py
-- TEST_USER — *is alias for* — c360admin
-- c360admin — *password is set by* — KC_TEST_USER_PASSWORD
-- KC_TEST_USER_PASSWORD — *is defined in* — deployments/sso/.env
-- admin account — *is* — master-realm console admin
-- admin account — *uses password* — KEYCLOAK_ADMIN_PASSWORD
-- admin account — *is not in realm* — customer360 realm
-- oauth2-proxy — *rejects* — admin account
-- oauth2 callback — *is on host* — beta.leocdp.com
-- beta.leocdp.com — *is* — HSTS-preloaded
-- oauth2 callback — *can fail due to* — HSTS
-- Netdata — *is affected by* — oauth2 callback failure
-- Jaeger — *is affected by* — oauth2 callback failure
-- Monitoring-dashboard SSO login user is c360admin, not the Keycloak master admin — *is related to* — Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync
+- Monitoring-dashboard — *uses_user_for_SSO* — c360admin
+- Monitoring-dashboard — *does_not_use_user_for_SSO* — Keycloak master admin
+- Netdata — *is_a* — leo-customer360 dashboards
+- Jaeger — *is_a* — leo-customer360 dashboards
+- leo-customer360 dashboards — *are_gated_by* — SSO
+- SSO — *uses_proxy* — oauth2-proxy
+- oauth2-proxy — *authenticates_via* — Keycloak
+- SSO login — *uses_realm* — customer360 realm
+- c360admin — *is_user_in* — customer360 realm
+- c360admin — *created_by* — deployments/sso/bootstrap-realm.py
+- TEST_USER — *is_default_for* — c360admin
+- c360admin — *password_defined_by* — KC_TEST_USER_PASSWORD
+- KC_TEST_USER_PASSWORD — *located_in* — deployments/sso/.env
+- admin account — *is_type_of* — master-realm console admin
+- admin account — *uses_password_variable* — KEYCLOAK_ADMIN_PASSWORD
+- master-realm console admin — *not_user_in* — customer360 realm
+- oauth2-proxy — *rejects_login_for* — master-realm console admin
+- oauth2 callback — *occurs_on_domain* — beta.leocdp.com
+- beta.leocdp.com — *has_property* — HSTS-preloaded
+- HSTS-preloaded — *affects* — Netdata
+- HSTS-preloaded — *affects* — Jaeger
+- Monitoring-dashboard SSO login user is c360admin, not the Keycloak master admin — *related_to* — Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync
 
 %% ai-graph-end %%

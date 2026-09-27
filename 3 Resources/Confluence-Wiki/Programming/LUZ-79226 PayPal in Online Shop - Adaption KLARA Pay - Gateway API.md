@@ -1,18 +1,22 @@
 ---
-title: "LUZ-79226: PayPal in Online Shop - Adaption KLARA Pay - Gateway API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47127396682/LUZ-79226+PayPal+in+Online+Shop+-+Adaption+KLARA+Pay+-+Gateway+API
-space: "TS"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2022-06-23
+ai_hash: c5289c425c64c56b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47127396682/LUZ-79226+PayPal+in+Online+Shop+-+Adaption+KLARA+Pay+-+Gateway+API
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: 'LUZ-79226: PayPal in Online Shop - Adaption KLARA Pay - Gateway API'
+topic: programming
+type: source
+updated: 2022-06-23
 ---
 
 # LUZ-79226: PayPal in Online Shop - Adaption KLARA Pay - Gateway API
@@ -246,3 +250,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-75886 Part 1 Implement real-time API updates]]
+- [[LUZ-106177 - Delete credit card expiry reminder]]
+- [[Test and code review report template]]
+- [[Test and code review report template.2.93]]
+- [[LUZ-81908 - Implement test mode without send to the Rhine server]]
+
+%% ai-graph-end %%

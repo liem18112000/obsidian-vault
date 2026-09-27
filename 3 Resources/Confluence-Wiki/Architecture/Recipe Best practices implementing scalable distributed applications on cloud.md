@@ -1,18 +1,22 @@
 ---
-title: "Recipe: Best practices implementing scalable distributed applications on cloud"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46999536449/Recipe+Best+practices+implementing+scalable+distributed+applications+on+cloud
-space: "LUZ"
-topic: architecture
-relevance: 0.731
-depth: 2.3
-updated: 2025-07-29
+ai_hash: e54729066d06c88a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 51
+depth: 2.3
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46999536449/Recipe+Best+practices+implementing+scalable+distributed+applications+on+cloud
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: 'Recipe: Best practices implementing scalable distributed applications on cloud'
+topic: architecture
+type: source
+updated: 2025-07-29
 ---
 
 # Recipe: Best practices implementing scalable distributed applications on cloud
@@ -954,3 +958,14 @@ Reference: <a href="https://cloud.google.com/blog/products/compute/choosing-the-
 - <a href="https://www.linkedin.com/pulse/cloud-application-architectural-styles-part-3-web-queue-pradnya-patil" class="external-link" data-card-appearance="inline" rel="nofollow">https://www.linkedin.com/pulse/cloud-application-architectural-styles-part-3-web-queue-pradnya-patil</a>
 
 - Microsoft: <a href="https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/" class="external-link" data-card-appearance="inline" rel="nofollow">https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Database scaling case study]]
+- [[Command Query Responsibility Segregation (CQRS)]]
+- [[Performance pain points]]
+- [[How to implement a service]]
+- [[KLARA Documents Concept - Solution Design]]
+
+%% ai-graph-end %%

@@ -1,14 +1,22 @@
 ---
-title: "Sub Agentic Loop 3.3 - Generation"
+ai_hash: a1b14e7b81e9a499
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49741299914'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 3 - Test-Plan Definition > Evaluating the Test-Plan-Definition
+  Agent'
 created: 2026-09-10
-updated: 2026-09-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Sub Agentic Loop 3.3 - Generation
+type: source
+updated: 2026-09-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49741299914/Sub+Agentic+Loop+3.3+-+Generation
-confluence_id: "49741299914"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 3 - Test-Plan Definition > Evaluating the Test-Plan-Definition Agent"
-tags: [confluence, ai-agents]
 ---
 
 # Sub Agentic Loop 3.3 - Generation
@@ -32,3 +40,14 @@ Bounded by `TPD_ASSURED_MAX_ITERS` (default 2):
 Each round checkpoints to `assured.json` so a Cloud-Run kill **resumes, not restarts** (`_resumable`).
 
 ![[image-20260910-064932.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Sub Agentic Loop 3.2 - Implement]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Sub Agentic Loop 3.1 - Define]]
+- [[Test-Plan Definition Agent]]
+- [[Evaluating the Test-Plan-Definition Agent]]
+
+%% ai-graph-end %%

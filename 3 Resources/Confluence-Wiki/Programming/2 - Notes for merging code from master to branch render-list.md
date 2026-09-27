@@ -1,18 +1,22 @@
 ---
-title: "2 - Notes for merging code from master to branch render-list"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GFT/pages/14280394549/2+-+Notes+for+merging+code+from+master+to+branch+render-list
-space: "GFT"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2018-08-31
+ai_hash: e7a9503c988cc15a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/GFT/pages/14280394549/2+-+Notes+for+merging+code+from+master+to+branch+render-list
+space: GFT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gft
+- confluence
+- programming
+- space/gft
+title: 2 - Notes for merging code from master to branch render-list
+topic: programming
+type: source
+updated: 2018-08-31
 ---
 
 # 2 - Notes for merging code from master to branch render-list
@@ -39,3 +43,10 @@ tags:
       
 
 ![[14280394549-build-panel.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

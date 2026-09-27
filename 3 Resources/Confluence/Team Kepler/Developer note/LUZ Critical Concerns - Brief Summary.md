@@ -1,14 +1,20 @@
 ---
-title: "LUZ Critical Concerns: Brief Summary"
+ai_hash: b77c8fce23b7015e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48830709769'
+confluence_path: Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026
 created: 2025-11-04
-updated: 2025-11-17
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-audit
+title: 'LUZ Critical Concerns: Brief Summary'
+type: source
+updated: 2025-11-17
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48830709769/LUZ+Critical+Concerns+Brief+Summary
-confluence_id: "48830709769"
-confluence_path: "Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026"
-tags: [confluence, luz-audit]
 ---
 
 # LUZ Critical Concerns: Brief Summary
@@ -78,3 +84,14 @@ tags: [confluence, luz-audit]
 ![[image-20251104-073248.png]]
 
 **Write Amplification** refers to the performance overhead where a single audit log entry requires multiple database operations instead of just one. In this system, each log requires **5 database operations** (insert log, read fingerprint, calculate hash, update fingerprint, update log), creating a **5x amplification factor**. This means the database performs 5 times more operations than necessary, resulting in ~47ms processing time per log and significantly increased database load and contention.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[LUZ Audit spent 5 database operations per log entry, ~47ms, from chain maintenance]]
+- [[Investigation Stories - Audit Logs Current Implementation]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+- [[Luz Audit System - Performance Optimization Proposal]]
+
+%% ai-graph-end %%

@@ -1,14 +1,14 @@
 ---
-ai_hash: 53e59a5dec0b85e7
+ai_hash: 63ad66000c69cf3c
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-22
 entities:
 - JEV
-- JEV J4 calibration
+- J4 calibration
 - test-agent-v2
 - Vertex LLM judge
-- LLM judge
+- LLM
 - confident-accept cascade
 - accept fast-path
 - reject-side cascade
@@ -16,10 +16,12 @@ entities:
 - pack summary + [kind] title bullets
 - full scenario steps
 - _decision_gate
-- Latency context
+- regeneration
+- Latency
 - Calibrate a cascade threshold against the exact gate condition, not a looser proxy
-- Calibrate a cascade threshold against the exact gate condition
-- not a looser proxy
+- fork 1
+- fork 2
+- Feature
 source: session 2026-09-22 JEV J4
 status: seedling
 tags:
@@ -56,45 +58,44 @@ Related: [[Calibrate a cascade threshold against the exact gate condition, not a
 - [[JEV assured-gate errors are low-confidence false-accepts so the confidence gate is the safety net]]
 - [[Calibrate a cascade threshold against the exact gate condition, not a looser proxy]]
 - [[Calibrate a cheap-model to LLM cascade threshold using the LLM judge as oracle]]
-- [[loads_obj largest-span rule returns the tool-call envelope so JudgeVerdict silently scored 0.0]]
-- [[LLM-as-a-judge biases position, verbosity, self-enhancement]]
+- [[Integrating Jev into Test-Agent-V2 for Enhanced Decision-Making]]
+- [[Understanding JEV - Mechanism, Primitives, and Calibration in Decision Making]]
 
 **Relations:**
-- JEV — *has property* — low accept-side confidence
-- JEV — *has property* — unreliable accept-side confidence
-- cascade win — *is* — reject-side
-- JEV J4 calibration — *found* — confident-accept cascade does not pay off
-- JEV J4 calibration — *used* — test-agent-v2
-- JEV J4 calibration — *used as oracle* — Vertex LLM judge
-- JEV — *accepted suites had* — low confidence
-- JEV — *accepted suites had* — 1 of 3 correct accept
-- LLM judge — *accepted suites mean confidence* — 0.35
-- LLM judge — *accepted suites max confidence* — 0.41
+- J4 calibration — *is for* — JEV
+- J4 calibration — *used* — test-agent-v2
+- J4 calibration — *used as oracle* — Vertex LLM judge
+- confident-accept cascade — *does not pay off for* — JEV
+- JEV — *accepted suites have* — low confidence
+- JEV — *accepted suites have precision* — 0.00
+- LLM-accepted suites — *have confidence mean* — 0.35
+- LLM-accepted suites — *have confidence max* — 0.41
 - accept fast-path — *never fires* — above τ=0.40
 - accept fast-path — *fires only on* — false-accepts below τ=0.40
 - JEV score() — *is fed* — pack summary + [kind] title bullets
-- LLM judge — *reads* — full scenario steps
+- Vertex LLM judge — *reads* — full scenario steps
 - JEV — *is structurally under-informed on* — accept call
 - JEV — *is unsure on* — accept call
 - JEV — *is unreliable on* — accept call
 - JEV — *rejects* — clearly-bad suites
-- clearly-bad suites — *rejected with* — high confidence
-- clearly-bad suites — *rejected are* — all correct
+- clearly-bad suites rejected by JEV — *at* — high confidence
+- clearly-bad suites rejected by JEV — *are all* — correct
 - win — *is on the* — reject side
 - _decision_gate — *only fast-paths* — accepts
-- reject — *always falls to* — LLM judge
+- reject — *falls to* — LLM
 - reject textual issues — *drive* — regeneration
-- JEV — *can pay off by* — feeding judge-equivalent state
-- JEV — *can pay off by* — building a reject-side cascade
-- reject-side cascade — *involves* — confident reject
-- reject-side cascade — *involves* — skip judge
-- reject-side cascade — *involves* — regenerate
+- JEV — *needs two forks to pay off* — fork 1
+- JEV — *needs two forks to pay off* — fork 2
+- fork 1 — *involves* — feeding JEV judge-equivalent state
+- fork 1 — *involves* — re-calibrating JEV
+- fork 2 — *involves* — building a reject-side cascade
+- reject-side cascade — *skips* — LLM
+- reject-side cascade — *triggers* — regeneration
 - Feature — *stays OFF until* — a fork pays off
 - JEV — *has latency* — 0.77s
-- LLM judge — *has latency* — 40s
-- Latency context — *is* — real
-- Latency context — *is* — unreachable on the accept side
-- JEV — *related to* — Calibrate a cascade threshold against the exact gate condition, not a looser proxy
-- Calibrate a cascade threshold against the exact gate condition — *is related to* — not a looser proxy
+- LLM — *has median-of-3 latency* — 40s
+- LLM — *has latency per gate* — ~39s
+- Latency — *is unreachable on the* — accept side
+- JEV — *is related to* — Calibrate a cascade threshold against the exact gate condition, not a looser proxy
 
 %% ai-graph-end %%

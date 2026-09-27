@@ -1,18 +1,22 @@
 ---
-title: "System design"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47159345567/System+design
-space: "HACKA"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2022-10-26
+ai_hash: 48f571c1af0d2224
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47159345567/System+design
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/hacka
+- confluence
+- architecture
+- space/hacka
+title: System design
+topic: architecture
+type: source
+updated: 2022-10-26
 ---
 
 # System design
@@ -45,3 +49,14 @@ There are two main cases that affect to the code flow:
 
 In this special case, luz_store doesn’t store any data about private tenant because all private tenants have digital letter box by default.  
 So the tenant list will be retrieved by this way: **All private tenants - private tenants having scanning subscription.**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Evaluation of final solution including implementation needs]]
+- [[OneAPI Architecture overview]]
+- [[One API Module Responsibilities]]
+- [[Architecture]]
+- [[Public API (30 August 2021)]]
+
+%% ai-graph-end %%

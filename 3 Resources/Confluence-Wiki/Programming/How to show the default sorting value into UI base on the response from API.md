@@ -1,18 +1,22 @@
 ---
-title: "How to show the default sorting value into UI base on the response from API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47337802734/How+to+show+the+default+sorting+value+into+UI+base+on+the+response+from+API
-space: "TP2020"
-topic: programming
-relevance: 0.762
-depth: 2.73
-updated: 2023-03-28
+ai_hash: 7272700bb577022b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.762
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47337802734/How+to+show+the+default+sorting+value+into+UI+base+on+the+response+from+API
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: How to show the default sorting value into UI base on the response from API
+topic: programming
+type: source
+updated: 2023-03-28
 ---
 
 # How to show the default sorting value into UI base on the response from API
@@ -140,3 +144,14 @@ Update value of sorting bean in Java
 2.  only display the filter bar after that =\> done
 
 ### 2.2 Luz_docs_view_controller
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[WIP Analyze subfolder search API (542ms)]]
+- [[EArchive - Search doc process]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[Steps to implement unread letters count]]
+
+%% ai-graph-end %%

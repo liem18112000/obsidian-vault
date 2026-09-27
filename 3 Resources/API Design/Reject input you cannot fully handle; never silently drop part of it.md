@@ -1,10 +1,19 @@
 ---
-title: "Reject input you cannot fully handle; never silently drop part of it"
+ai_hash: 301339aef619e252
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Secure File Upload via Public API to eArchive (TS)'
 status: seedling
-source: "Confluence: Secure File Upload via Public API to eArchive (TS)"
-tags: [api-design, validation, error-handling, data-loss, confluence-distilled]
+tags:
+- api-design
+- validation
+- error-handling
+- data-loss
+- confluence-distilled
+title: Reject input you cannot fully handle; never silently drop part of it
+type: lesson
 ---
 
 # Reject input you cannot fully handle; never silently drop part of it
@@ -34,3 +43,14 @@ Source: [[Secure File Upload via Public API to eArchive]] (TS, Confluence).
 ## Related
 
 - [[Bulk operations need per-item outcomes, not one status code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bulk operations need per-item outcomes, not one status code]]
+- [[RESTEasy multipart repeated field name yields a List, get(0) silently drops extras]]
+- [[Silently-ignored input needs a visible reason field, or it looks like data loss]]
+- [[Encode a benign-error decision in a dedicated exception type, not a swallowed catch on a magic status code]]
+- [[404 addresses a missing resource; an empty filter result is a successful query]]
+
+%% ai-graph-end %%

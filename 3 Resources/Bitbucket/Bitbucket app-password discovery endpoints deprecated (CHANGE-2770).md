@@ -1,5 +1,5 @@
 ---
-ai_hash: 1f6f7c700c614625
+ai_hash: 3d19661ad1d8812f
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-13
@@ -38,8 +38,8 @@ BUT the **direct, fully-qualified** endpoints still work with the same credentia
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Verifying an API credential 401 means invalid, 403 means valid but scope-limited]]
 - [[Bitbucket cached git token 401s on REST API; PR listing needs app password]]
+- [[Verifying an API credential 401 means invalid, 403 means valid but scope-limited]]
 - [[Bitbucket Cloud API differs from JiraConfluence host, auth, raw src]]
 - [[Clone a Bitbucket repo with an app password without leaking it (inline credential helper)]]
 - [[gather_codebase needs axonivy-prodrepo workspace slug]]

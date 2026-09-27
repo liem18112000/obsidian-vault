@@ -1,18 +1,22 @@
 ---
-title: "Open API related to Finnova microservices - Create dossier"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/RT/pages/26446682851/Open+API+related+to+Finnova+microservices+-+Create+dossier
-space: "RT"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2021-06-03
+ai_hash: ceb286112df3d2d5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 41
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/RT/pages/26446682851/Open+API+related+to+Finnova+microservices+-+Create+dossier
+space: RT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/rt
+- confluence
+- programming
+- space/rt
+title: Open API related to Finnova microservices - Create dossier
+topic: programming
+type: source
+updated: 2021-06-03
 ---
 
 # Open API related to Finnova microservices - Create dossier
@@ -142,3 +146,14 @@ If there is an error from our service, we will control and define our code (Foll
 We have an other project to authenticate the communication of internal service (ex: FinancialDataReferenceService and MortgageFinnovaAdapterService)
 
 For the communication to third party, we will use the authenticate of third party. Ex: when MortgageFinnovaAdapterService call to finnova to get Pricing data and receive a response with code 401, MortgageFinnovaAdapterService will send a request to finnova to get the token. After receive the token, MortgageFinnovaAdapterService will be call to finnova to get Pricing data again.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AF-45279 Investigation Analyse calls the system does when opening an existing dossier]]
+- [[Estimate for ivy and cob-unattended-business-dossier-service-api-spec]]
+- [[Cembra API (the real one)]]
+- [[2.9 Concept for interface obtaining account information from banks]]
+- [[Viseca API informations]]
+
+%% ai-graph-end %%

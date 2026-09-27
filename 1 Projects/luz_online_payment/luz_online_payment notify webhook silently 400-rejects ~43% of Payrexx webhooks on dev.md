@@ -1,35 +1,54 @@
 ---
-ai_hash: b1b374874501ebf3
+ai_hash: f23f9d2e00d62202
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-31
 entities:
 - luz_online_payment notify webhook
 - Payrexx webhooks
 - dev environment
-- GKE luz-online-payment
+- GKE
+- luz-online-payment
 - Undertow access logs
 - POST /luz_online_payment/api/transactions/notify
 - HTTP 400
 - HTTP 200
 - HTTP 404
-- JAX-RS bean-validation rejection
+- JAX-RS bean-validation
 - NotifiedTransactionConsumerFactory
+- INFO log
 - '@Valid layer'
+- handle() method
 - Payrexx
+- non-2xx
+- RESTEasy violation JSON
 - Transaction
+- '@NotNull fields'
 - amount
 - status
 - payment
 - invoice
+- Payment
+- Invoice
+- '@Valid cascade'
+- declined/non-card events
 - TransactionStatus.from
+- unknown Payrexx status
 - OrderGateway
 - luz_store
 - LUZ-157476
 - DECLINED webhook
 - metadata.decline_code
+- decline code
+- app logs
+- request body
+- 400 response body
 - PayrexxCommunicatorV2
+- synchronous charge decline
 - online-dev.klara.tech
+- '@PermitAll'
+- signature
+- WordPress-scanner bots
 - Payrexx notify webhook dispatches to two consumers, neither forwards decline code
 - luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES
   off
@@ -81,41 +100,48 @@ Related: [[Payrexx notify webhook dispatches to two consumers, neither forwards 
 - [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
 - [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[TransactionStatus.from returns null on unknown Payrexx status causing silent NotNull 400]]
-- [[luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES off]]
+- [[DeclineCodes resolver misses nested metadata.decline_code]]
 
 **Relations:**
 - luz_online_payment notify webhook — *rejects* — Payrexx webhooks
-- luz_online_payment notify webhook — *operates on* — dev environment
-- GKE luz-online-payment — *hosts* — luz_online_payment notify webhook
-- Undertow access logs — *measure* — POST /luz_online_payment/api/transactions/notify
-- POST /luz_online_payment/api/transactions/notify — *returns* — HTTP 200
-- POST /luz_online_payment/api/transactions/notify — *returns* — HTTP 400
-- POST /luz_online_payment/api/transactions/notify — *returns* — HTTP 404
-- HTTP 400 — *is a type of* — JAX-RS bean-validation rejection
-- JAX-RS bean-validation rejection — *occurs at* — @Valid layer
-- @Valid layer — *prevents dispatch by* — NotifiedTransactionConsumerFactory
-- Payrexx — *sends* — Payrexx webhooks
-- Payrexx webhooks — *are processed by* — luz_online_payment notify webhook
-- Transaction — *has field* — amount
-- Transaction — *has field* — status
-- Transaction — *has field* — payment
-- Transaction — *has field* — invoice
-- amount — *is a @NotNull field on* — Transaction
-- status — *is a @NotNull field on* — Transaction
-- payment — *is a @NotNull field on* — Transaction
-- invoice — *is a @NotNull field on* — Transaction
-- TransactionStatus.from — *can return null for* — status
-- status — *being null causes* — HTTP 400
+- luz_online_payment notify webhook — *rejects with* — HTTP 400
+- luz-online-payment — *runs on* — dev environment
+- dev environment — *uses* — GKE
+- luz-online-payment — *generates* — Undertow access logs
+- POST /luz_online_payment/api/transactions/notify — *is endpoint of* — luz-online-payment
+- Payrexx webhooks — *target* — POST /luz_online_payment/api/transactions/notify
+- HTTP 400 — *is a* — JAX-RS bean-validation
+- JAX-RS bean-validation — *is* — silent
+- NotifiedTransactionConsumerFactory — *has* — INFO log
+- request — *dies at* — @Valid layer
+- @Valid layer — *precedes* — handle() method
+- Payrexx — *retries on* — non-2xx
+- HTTP 400 — *returns* — RESTEasy violation JSON
+- Transaction — *has* — @NotNull fields
+- @NotNull fields — *include* — amount
+- @NotNull fields — *include* — status
+- @NotNull fields — *include* — payment
+- @NotNull fields — *include* — invoice
+- Payment — *has no* — inner constraints
+- Invoice — *has no* — inner constraints
+- declined/non-card events — *may lack* — payment
+- TransactionStatus.from — *returns* — null
+- unknown Payrexx status — *causes* — HTTP 400
 - HTTP 400 — *prevents update of* — OrderGateway
-- HTTP 400 — *prevents update of* — luz_store
-- DECLINED webhook — *is among* — HTTP 400
+- HTTP 400 — *prevents reaching* — luz_store
+- LUZ-157476 — *is impacted by* — HTTP 400
 - DECLINED webhook — *carries* — metadata.decline_code
-- metadata.decline_code — *is lost for* — LUZ-157476
-- PayrexxCommunicatorV2 — *logs* — Payrexx error: An error occurred: Your card has expired.
-- online-dev.klara.tech — *is public endpoint for* — luz_online_payment notify webhook
+- HTTP 400 — *loses* — decline code
+- app logs — *do not contain* — request body
+- app logs — *do not contain* — 400 response body
+- PayrexxCommunicatorV2 — *logs* — synchronous charge decline
+- online-dev.klara.tech — *is a* — public endpoint
+- public endpoint — *has* — @PermitAll
+- public endpoint — *lacks* — signature
+- WordPress-scanner bots — *hit* — public endpoint
 - luz_online_payment notify webhook — *is related to* — Payrexx notify webhook dispatches to two consumers, neither forwards decline code
 - luz_online_payment notify webhook — *is related to* — luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES off
 - luz_online_payment notify webhook — *is related to* — Payrexx delivers decline code only via webhook, not sync response
-- TransactionStatus.from returns null on unknown Payrexx status causing silent NotNull 400 — *is a cause of* — HTTP 400
+- luz_online_payment notify webhook — *is related to* — TransactionStatus.from returns null on unknown Payrexx status causing silent NotNull 400
 
 %% ai-graph-end %%

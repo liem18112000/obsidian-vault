@@ -1,18 +1,22 @@
 ---
-title: "Proposal: An LLM Council for ePost – multi-lens deliberation in Claude Code"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49366532118/Proposal+An+LLM+Council+for+ePost+multi-lens+deliberation+in+Claude+Code
-space: "TK"
-topic: ai_ml
-relevance: 0.921
-depth: 3
-updated: 2026-04-30
+ai_hash: 3d1ace9d36e8f6ac
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.921
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49366532118/Proposal+An+LLM+Council+for+ePost+multi-lens+deliberation+in+Claude+Code
+space: TK
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/tk
+- confluence
+- ai-ml
+- space/tk
+title: 'Proposal: An LLM Council for ePost – multi-lens deliberation in Claude Code'
+topic: ai_ml
+type: source
+updated: 2026-04-30
 ---
 
 # Proposal: An LLM Council for ePost – multi-lens deliberation in Claude Code
@@ -947,3 +951,14 @@ Because everything runs inside Claude Code, **no separate budget, no DPA review,
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Manufacture structured disagreement when real model independence is unavailable]]
+- [[A coding-agent prompt needs codebase anchors and stated house style]]
+- [[Flow View - V2]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+
+%% ai-graph-end %%

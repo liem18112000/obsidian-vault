@@ -1,18 +1,22 @@
 ---
-title: "Test Keycloak - Public API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47603351609/Test+Keycloak+-+Public+API
-space: "TS"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2024-01-03
+ai_hash: 0707fe0498dfbcdf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47603351609/Test+Keycloak+-+Public+API
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Test Keycloak - Public API
+topic: programming
+type: source
+updated: 2024-01-03
 ---
 
 # Test Keycloak - Public API
@@ -348,3 +352,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+- [[Test Keycloak - Company Identity Mapper (script mapper)]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[Getting tenant list]]
+
+%% ai-graph-end %%

@@ -1,14 +1,22 @@
 ---
-title: "Parallel JEV-gated gather fan-out"
+ai_hash: 5e6aeed06ee977d1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49775935509'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > TypeSafe AI''s Jev: A System One Model for Fast, Structured Decisions'
 created: 2026-09-22
-updated: 2026-09-22
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- jev
+title: Parallel JEV-gated gather fan-out
+type: source
+updated: 2026-09-22
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49775935509/Parallel+JEV-gated+gather+fan-out
-confluence_id: "49775935509"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > TypeSafe AI's Jev: A System One Model for Fast, Structured Decisions"
-tags: [confluence, ai-agents, jev]
 ---
 
 # Parallel JEV-gated gather fan-out
@@ -131,3 +139,14 @@ A confident skip on a planner is a dollar saved; a confident skip on a free read
 ### Composition
 
 Gate first, then fan-out. `select_sources(probe) -> fired[]` (one JEV call, all sources) returns the subset; the Part-1 fan-out runs *that subset* in parallel; merge/dedup; hand to the unchanged crawl. The two are orthogonal — the gate shrinks the set, the fan-out flattens its latency.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shared model quota makes LLM fan-out worthless]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+- [[Cap-before-exclude parallelism recall trap]]
+- [[Integrating Jev into Test-Agent-V2 for Enhanced Decision-Making]]
+- [[Agent self-learning memory]]
+
+%% ai-graph-end %%

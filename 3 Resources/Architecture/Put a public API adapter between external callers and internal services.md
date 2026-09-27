@@ -1,10 +1,20 @@
 ---
-title: "Put a public API adapter between external callers and internal services"
+ai_hash: 3de5159072b7e41f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: One API Module Responsibilities (LUZ)'
 status: seedling
-source: "Confluence: One API Module Responsibilities (LUZ)"
-tags: [api-design, adapter, facade, authentication, microservices, confluence-distilled]
+tags:
+- api-design
+- adapter
+- facade
+- authentication
+- microservices
+- confluence-distilled
+title: Put a public API adapter between external callers and internal services
+type: concept
 ---
 
 # Put a public API adapter between external callers and internal services
@@ -34,3 +44,13 @@ Source: [[One API Module Responsibilities]] (LUZ, Confluence).
 ## Related
 
 - [[Exchange a partner IdP token by introspecting it, never by trusting it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API Module Responsibilities]]
+- [[Roles and Permissions check for accessing public API]]
+- [[Share features as vertical slices with app-owned routes and an injected adapter]]
+- [[Catalog for 3rd party system API]]
+
+%% ai-graph-end %%

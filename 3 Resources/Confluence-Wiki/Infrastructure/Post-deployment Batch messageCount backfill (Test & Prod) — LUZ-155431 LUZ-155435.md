@@ -1,18 +1,23 @@
 ---
-title: "Post-deployment: Batch messageCount backfill (Test & Prod) — LUZ-155431 / LUZ-155435"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49574871045/Post-deployment+Batch+messageCount+backfill+Test+Prod+LUZ-155431+LUZ-155435
-space: "LUZ"
-topic: infra
-relevance: 0.734
-depth: 2.85
-updated: 2026-07-09
+ai_hash: 5321dc8fefdcc7f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.85
+entities: []
+relevance: 0.734
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49574871045/Post-deployment+Batch+messageCount+backfill+Test+Prod+LUZ-155431+LUZ-155435
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: 'Post-deployment: Batch messageCount backfill (Test & Prod) — LUZ-155431 /
+  LUZ-155435'
+topic: infra
+type: source
+updated: 2026-07-09
 ---
 
 # Post-deployment: Batch messageCount backfill (Test & Prod) — LUZ-155431 / LUZ-155435
@@ -304,3 +309,14 @@ tail -f backfill-output-prod.log
 - Repo: `luz_epc/scripts/backfill-batch-message-count/`
 
 - Pattern: Message V2 migration `kubectl exec` flow
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Migration Script Execution Guide for luz-epc-api]]
+- [[One API end to end testing]]
+- [[Infrastructure]]
+- [[ELM5 PubSub Message Queue]]
+- [[Deploy luz-epc-redis-service on GCP]]
+
+%% ai-graph-end %%

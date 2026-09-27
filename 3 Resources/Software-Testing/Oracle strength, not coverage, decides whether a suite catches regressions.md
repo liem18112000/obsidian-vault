@@ -1,10 +1,20 @@
 ---
-title: "Oracle strength, not coverage, decides whether a suite catches regressions"
+ai_hash: cf30efd2e16ab09a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: argument
+entities: []
+source: 'Confluence: Test oracle - what a scenario asserts (2026-09-15)'
 status: seedling
-source: "Confluence: Test oracle - what a scenario asserts (2026-09-15)"
-tags: [testing, test-oracle, quality, coverage, bdd, test-design]
+tags:
+- testing
+- test-oracle
+- quality
+- coverage
+- bdd
+- test-design
+title: Oracle strength, not coverage, decides whether a suite catches regressions
+type: argument
 ---
 
 # Oracle strength, not coverage, decides whether a suite catches regressions
@@ -31,3 +41,14 @@ This was the measured gap when an agent-authored test plan was compared against 
 
 - [[A test oracle is what decides pass or fail, and without one a test is just a script]]
 - [[Oracle strength can be graded statically from the expected-result text]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Oracle strength can be graded statically from the expected-result text]]
+- [[A test oracle is what decides pass or fail, and without one a test is just a script]]
+- [[Test oracle - what a scenario asserts, and why its strength decides everything]]
+- [[Metamorphic and differential testing solve the oracle problem]]
+- [[Evaluating the Test-Plan-Definition Agent]]
+
+%% ai-graph-end %%

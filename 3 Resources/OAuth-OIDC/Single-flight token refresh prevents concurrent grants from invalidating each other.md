@@ -1,10 +1,20 @@
 ---
-title: "Single-flight token refresh prevents concurrent grants from invalidating each other"
+ai_hash: f446735659b22991
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: howto
+entities: []
+source: leo-customer360 SSO session fix, 2026-09-27
 status: seedling
-source: "leo-customer360 SSO session fix, 2026-09-27"
-tags: [oauth, oidc, refresh-token, concurrency, technique]
+tags:
+- oauth
+- oidc
+- refresh-token
+- concurrency
+- technique
+title: Single-flight token refresh prevents concurrent grants from invalidating each
+  other
+type: howto
 ---
 
 # Single-flight token refresh prevents concurrent grants from invalidating each other
@@ -35,3 +45,14 @@ Pairs with a retry wrapper that, on 401, refreshes once and replays the original
 ## Related
 
 - [[Discarding the refresh token caps an SPA session at one access-token lifetime]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Discarding the refresh token caps an SPA session at one access-token lifetime]]
+- [[Blanket 401 auto-logout swallows the login endpoint's own error]]
+- [[Token age checks need clock-skew leeway and must match the IdP lifespan]]
+- [[Keycloak ssoSessionMaxLifespan is an absolute session cap, not an idle timer]]
+- [[leo-customer360 SSO session settings live in three places that must agree]]
+
+%% ai-graph-end %%

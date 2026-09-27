@@ -1,10 +1,18 @@
 ---
-title: "Confluence Export — Index"
+ai_hash: 0d3b2a8afa5f4df8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: moc
+entities: []
+source: Confluence export of axonivy.atlassian.net, 2026-09-27
 status: evergreen
-source: "Confluence export of axonivy.atlassian.net, 2026-09-27"
-tags: [confluence, moc, kepler, luz]
+tags:
+- confluence
+- moc
+- kepler
+- luz
+title: Confluence Export — Index
+type: moc
 ---
 
 # Confluence Export — Index
@@ -388,3 +396,14 @@ Mirror of the **167 Confluence pages** I authored or contributed to on [axonivy.
 ## Team Kepler/Training Plan
 
 - [[Liem Doan Plan]] — *2025-10-24* · 6 files
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Programming]]
+- [[Architecture]]
+- [[Infrastructure]]
+- [[index]]
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+
+%% ai-graph-end %%

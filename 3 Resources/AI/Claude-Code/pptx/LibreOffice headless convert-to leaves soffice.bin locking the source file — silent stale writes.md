@@ -1,9 +1,44 @@
 ---
-ai_hash: 802a510b3e5200ff
+ai_hash: 8938baa6adf9e84c
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-18
-entities: []
+entities:
+- LibreOffice
+- soffice.bin
+- soffice (command)
+- source file
+- silent stale writes
+- PDF
+- Windows
+- pptxgenjs
+- writeFile
+- STALE file
+- .pptx
+- python-pptx
+- Presentation
+- PNGs
+- EBUSY
+- PowerPoint
+- Claude Hooks & Skills deck
+- C:\Users\dvtliem\.claude\docs\hook-present
+- QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX
+  fails)
+- PyMuPDF
+- thumbnail.py
+- AF_UNIX
+- warm instance
+- rebuild
+- target
+- '*nix'
+- stale/cached PDF
+- blocked write
+- Get-Process soffice,soffice.bin -EA SilentlyContinue | Stop-Process -Force (PowerShell
+  command)
+- pkill soffice (command)
+- rm target && regenerate (fix strategy)
+- deck structure
+- image hash-matched
 source: session 2026-06-18
 status: seedling
 tags:
@@ -47,5 +82,45 @@ Context: Claude Hooks & Skills deck, `C:\Users\dvtliem\.claude\docs\hook-present
 **Related notes:**
 - [[QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
 - [[pptxgenjs addImage stretches when wh aspect drifts from the real image — read PNG IHDR size]]
+
+**Relations:**
+- soffice (command) — *is part of* — LibreOffice
+- soffice (command) — *performs* — convert-to PDF
+- soffice (command) — *creates* — soffice.bin
+- soffice.bin — *is a* — process
+- soffice.bin — *lingers after* — convert-to PDF
+- soffice.bin — *locks* — source file
+- soffice.bin — *is a* — warm instance
+- source file — *is locked by* — soffice.bin
+- source file — *leads to* — silent stale writes
+- silent stale writes — *results in* — STALE file
+- STALE file — *is a type of* — .pptx
+- silent stale writes — *occurs on* — Windows
+- pptxgenjs — *uses* — writeFile
+- writeFile — *modifies* — source file
+- Fix — *is* — Kill soffice.bin
+- Kill soffice.bin — *before* — rebuild
+- rebuild — *overwrites* — target
+- Kill soffice.bin — *uses* — Get-Process soffice,soffice.bin -EA SilentlyContinue | Stop-Process -Force (PowerShell command)
+- Kill soffice.bin — *uses* — pkill soffice (command)
+- Fix — *is* — Verify deck structure
+- Verify deck structure — *uses* — python-pptx
+- Verify deck structure — *avoids* — LibreOffice
+- python-pptx — *has* — Presentation
+- Presentation — *reads* — real file
+- soffice (command) — *can serve* — stale/cached PDF
+- stale/cached PDF — *causes* — confusion
+- Verify deck structure — *involves* — hashing PNGs
+- Fix — *is* — rm target && regenerate (fix strategy)
+- rm target && regenerate (fix strategy) — *causes* — blocked write
+- blocked write — *fails loudly* — blocked write
+- silent stale writes — *is similar to* — EBUSY
+- EBUSY — *is related to* — PowerPoint
+- Claude Hooks & Skills deck — *has path* — C:\Users\dvtliem\.claude\docs\hook-present
+- Related to — *silent stale writes* — QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)
+- QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails) — *mentions* — PyMuPDF
+- QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails) — *mentions* — thumbnail.py
+- QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails) — *mentions* — AF_UNIX
+- rebuilt deck — *achieved* — image hash-matched
 
 %% ai-graph-end %%

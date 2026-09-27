@@ -1,18 +1,22 @@
 ---
-title: "MCP Servers — Installation and Configuration Reference"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/PIX/pages/49218027578/MCP+Servers+Installation+and+Configuration+Reference
-space: "PIX"
-topic: ai_ml
-relevance: 0.773
-depth: 2.75
-updated: 2026-03-10
+ai_hash: c8af03b566e81b70
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.75
+entities: []
+relevance: 0.773
+source: https://axonivy.atlassian.net/wiki/spaces/PIX/pages/49218027578/MCP+Servers+Installation+and+Configuration+Reference
+space: PIX
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/pix
+- confluence
+- ai-ml
+- space/pix
+title: MCP Servers — Installation and Configuration Reference
+topic: ai_ml
+type: source
+updated: 2026-03-10
 ---
 
 # MCP Servers — Installation and Configuration Reference
@@ -346,3 +350,14 @@ pip install uv
 ### Supported Formats
 
 PDF, DOCX, XLSX, PPTX, HTML, CSV, JSON, XML, images (JPG, PNG), audio (MP3, WAV), ZIP archives
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian MCP Server Integration Guide]]
+- [[Bitbucket MCP Server Integration Guide]]
+- [[Setup VS Code - Github Copilot - MCP Server]]
+- [[AI-Powered Development Environment Architecture]]
+- [[Recipe Github copilot]]
+
+%% ai-graph-end %%

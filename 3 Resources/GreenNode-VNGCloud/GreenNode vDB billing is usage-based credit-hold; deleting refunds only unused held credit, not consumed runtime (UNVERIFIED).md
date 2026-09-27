@@ -1,5 +1,5 @@
 ---
-ai_hash: ef656712633bffb8
+ai_hash: 99d9c402f072d5bb
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-17
@@ -46,6 +46,6 @@ Context: asked while running customer360-pg-uat (8vCPU/16GB, 250GB) in leo-custo
 - [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 - [[VNG Cloud publishes no static price tables — calculator or quote only]]
 - [[GreenNode cloud runs on VNG Cloud infrastructure]]
-- [[GreenNode is VNG Cloud's AI cloud exposing vDB and vStorage managed services]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
 
 %% ai-graph-end %%

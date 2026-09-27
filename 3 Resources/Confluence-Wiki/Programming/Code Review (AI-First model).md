@@ -1,18 +1,22 @@
 ---
-title: "Code Review (AI-First model)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/49441636397/Code+Review+AI-First+model
-space: "HACKA"
-topic: programming
-relevance: 0.871
-depth: 3
-updated: 2026-05-25
+ai_hash: f5aeff09a1070428
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.871
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/49441636397/Code+Review+AI-First+model
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: Code Review (AI-First model)
+topic: programming
+type: source
+updated: 2026-05-25
 ---
 
 # Code Review (AI-First model)
@@ -122,3 +126,14 @@ Agreement
     - **Convention**
 
 - **If PR is for a blocker → Skip unnecessary steps above.**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Code review agreement]]
+- [[02_30 Pull request and review code orally transmitted secrets]]
+- [[Overview]]
+- [[Investigate applying AI to security code review]]
+- [[LLM-implementable plan exports must bundle unresolved review state with precedence rules]]
+
+%% ai-graph-end %%

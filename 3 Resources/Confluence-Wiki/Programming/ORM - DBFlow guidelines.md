@@ -1,18 +1,22 @@
 ---
-title: "ORM - DBFlow guidelines"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38139200781/ORM+-+DBFlow+guidelines
-space: "Helios"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2016-01-08
+ai_hash: bd2b871fcbdc06de
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38139200781/ORM+-+DBFlow+guidelines
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: ORM - DBFlow guidelines
+topic: programming
+type: source
+updated: 2016-01-08
 ---
 
 # ORM - DBFlow guidelines
@@ -819,3 +823,14 @@ There are a few ways to create a specific transaction you wish:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Persistence layer implementation]]
+- [[How to implement an audit log using Hibernate Envers]]
+- [[Kotlin migration plan]]
+- [[08_ Fintech - Innovation Coding convention]]
+- [[Reporting - Java class configuration]]
+
+%% ai-graph-end %%

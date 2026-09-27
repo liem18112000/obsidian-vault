@@ -1,18 +1,22 @@
 ---
-title: "Copy 4. Architecture for delivering eLetter after email verified"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49307550065/Copy+4.+Architecture+for+delivering+eLetter+after+email+verified
-space: "LUZ"
-topic: architecture
-relevance: 0.79
-depth: 2.86
-updated: 2026-04-08
+ai_hash: 171ac0ed411262d1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 24
+depth: 2.86
+entities: []
+relevance: 0.79
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49307550065/Copy+4.+Architecture+for+delivering+eLetter+after+email+verified
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Copy 4. Architecture for delivering eLetter after email verified
+topic: architecture
+type: source
+updated: 2026-04-08
 ---
 
 # Copy 4. Architecture for delivering eLetter after email verified
@@ -133,3 +137,14 @@ If you edit additional emails after ==\> After the user verifies success ==\> We
 
 
 **In case of an error when calling the luz_eletter API (luz_mylife_epost_adapter), if we log any errors, then we can reuse the same API, which will be called after the first login success.**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Architecture]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[OneAPI Architecture overview]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+
+%% ai-graph-end %%

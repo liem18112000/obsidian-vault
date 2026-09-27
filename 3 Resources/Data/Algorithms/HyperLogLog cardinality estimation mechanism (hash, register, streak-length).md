@@ -1,7 +1,7 @@
 ---
-ai_hash: 82c1135d8f39ef91
+ai_hash: 5d747e06decb26ad
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-09
 entities: []
 source: luz_docs docs/count-estimate/HOW-HYPERLOGLOG-WORKS.md, 2026-07-09
@@ -39,6 +39,6 @@ See [[HyperLogLog error in the small-range (linear-counting) regime]] for the er
 - [[HyperLogLog error in the small-range (linear-counting) regime]]
 - [[Sketch merge (register-wise max) only answers union queries, never AND]]
 - [[Visible-document count as cardinality of a bitmap union]]
-- [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
+- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
 
 %% ai-graph-end %%

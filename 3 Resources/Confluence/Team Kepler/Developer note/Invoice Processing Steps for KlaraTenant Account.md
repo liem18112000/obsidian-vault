@@ -1,14 +1,20 @@
 ---
-title: "Invoice Processing Steps for KlaraTenant Account"
+ai_hash: 890c7a9d19060c89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48907583500'
+confluence_path: Team Kepler > Developer note
 created: 2025-11-25
-updated: 2025-11-25
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+title: Invoice Processing Steps for KlaraTenant Account
+type: source
+updated: 2025-11-25
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48907583500/Invoice+Processing+Steps+for+KlaraTenant+Account
-confluence_id: "48907583500"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, invoice-run]
 ---
 
 # Invoice Processing Steps for KlaraTenant Account
@@ -90,3 +96,14 @@ The invoice is under calculated and processing
  
 
 ![[image-20251125-060719.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Creating invoice — GUI flow vs. Public API]]
+- [[Invoice API]]
+- [[API Key and Payload for Xpert.Line]]
+- [[HealthCare And Invoice Run (11.08.2026 - 24.08.2026)]]
+- [[How to use Public API to create update KLARA Business Company]]
+
+%% ai-graph-end %%

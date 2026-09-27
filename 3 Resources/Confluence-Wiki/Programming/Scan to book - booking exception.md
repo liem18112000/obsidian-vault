@@ -1,18 +1,22 @@
 ---
-title: "Scan to book - booking exception"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47811428613/Scan+to+book+-+booking+exception
-space: "Helios"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2024-05-21
+ai_hash: bbc71466cbac887d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47811428613/Scan+to+book+-+booking+exception
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Scan to book - booking exception
+topic: programming
+type: source
+updated: 2024-05-21
 ---
 
 # Scan to book - booking exception
@@ -596,3 +600,14 @@ Sample response from luz-mobile
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[List out places calling booking function]]
+- [[Handle error exception]]
+- [[Enumerate a dependency's exception surface and decide each one before integrating]]
+- [[KLARA Booking - KLARA OBC API]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+
+%% ai-graph-end %%

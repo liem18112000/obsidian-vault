@@ -1,14 +1,21 @@
 ---
-title: "Luz Audit System - Performance Optimization Proposal"
+ai_hash: 7532b5998805e7e4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48830545994'
+confluence_path: Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026
 created: 2025-11-04
-updated: 2025-11-04
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-audit
+- performance
+title: Luz Audit System - Performance Optimization Proposal
+type: source
+updated: 2025-11-04
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48830545994/Luz+Audit+System+-+Performance+Optimization+Proposal
-confluence_id: "48830545994"
-confluence_path: "Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026"
-tags: [confluence, luz-audit, performance]
 ---
 
 # Luz Audit System - Performance Optimization Proposal
@@ -389,3 +396,14 @@ Migrate from **Jakarta EE + WildFly + REST-based MongoDB** architecture to **Qua
 3.  Setup Quarkus project infrastructure (Phase 1)
 
 4.  Begin core service migration (Phase 2)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+- [[LUZ Audit went from 23 to 778 logs per second by dropping the REST hop to MongoDB]]
+- [[Investigation Stories - Audit Logs Current Implementation]]
+- [[LUZ Critical Concerns - Brief Summary]]
+
+%% ai-graph-end %%

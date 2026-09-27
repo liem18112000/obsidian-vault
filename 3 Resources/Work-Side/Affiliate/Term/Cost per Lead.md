@@ -1,7 +1,7 @@
 ---
-ai_hash: 67e43d952b046c8a
+ai_hash: 9242248f629cad90
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - CPL
 - Pay per Lead

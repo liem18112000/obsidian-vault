@@ -1,18 +1,22 @@
 ---
-title: "mcp.klara.ch current evaluation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/49723768860/mcp.klara.ch+current+evaluation
-space: "IO"
-topic: ai_ml
-relevance: 0.76
-depth: 2.64
-updated: 2026-09-03
+ai_hash: 5c96a200002fe449
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.64
+entities: []
+relevance: 0.76
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/49723768860/mcp.klara.ch+current+evaluation
+space: IO
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/io
+- confluence
+- ai-ml
+- space/io
+title: mcp.klara.ch current evaluation
+topic: ai_ml
+type: source
+updated: 2026-09-03
 ---
 
 # mcp.klara.ch current evaluation
@@ -102,3 +106,14 @@ The application carries our domain name, runs on infrastructure we do not contro
 - Which personal data the application receives, and where it is stored and for how long.
 
 - Whether any KLARA or ePost production system is reachable with credentials this application holds.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSL certificate overview]]
+- [[KLARA Documents Concept - Solution Design]]
+- [[Security]]
+- [[KLARA Integration (request access token & call API)]]
+- [[Onboarding API - Investigation Identity Provider SSO]]
+
+%% ai-graph-end %%

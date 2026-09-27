@@ -1,18 +1,22 @@
 ---
-title: "Script to create Redirection Order"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530456200/Script+to+create+Redirection+Order
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2021-07-08
+ai_hash: 69ca4362ca95ea0c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530456200/Script+to+create+Redirection+Order
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Script to create Redirection Order
+topic: programming
+type: source
+updated: 2021-07-08
 ---
 
 # Script to create Redirection Order
@@ -98,3 +102,14 @@ sh cleanup-create-redirection-order.sh
 </div>
 
 Note: We need to set current context for kubectl that is Prod.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rerun Own domain migration api for all tenant]]
+- [[Run Script Resync hidden wiget]]
+- [[14. Create companies by tenant id]]
+- [[15. Update companies by tenant id]]
+- [[How to execute API to create sync event for post from tenant schemas to public table]]
+
+%% ai-graph-end %%

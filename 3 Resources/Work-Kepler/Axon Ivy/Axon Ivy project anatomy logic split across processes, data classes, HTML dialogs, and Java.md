@@ -1,7 +1,7 @@
 ---
-ai_hash: c5855e193c00c099
+ai_hash: 7290b3c171beaa0a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-27
 entities: []
 source: session 2026-07-27 luz_finance setup
@@ -38,9 +38,9 @@ An Axon Ivy project is not just Java — application logic is deliberately split
 
 **Related notes:**
 - [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
-- [[3 Resources]]
-- [[luz_epost_business_web to luz_docs_view_controller integration goes through one REST client package]]
-- [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
-- [[luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable' compile error usually means a skew]]
+- [[Ivy conventions]]
+- [[Are the “technologies” (process files, java code, …) used correctly and efficiently]]
+- [[LUZ DevOps Next Gen (proposal and discussion)]]
+- [[Add Ivy jars Maven plugin]]
 
 %% ai-graph-end %%

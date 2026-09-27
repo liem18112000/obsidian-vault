@@ -1,10 +1,19 @@
 ---
-title: "Token age checks need clock-skew leeway and must match the IdP lifespan"
+ai_hash: 19d236012cda6d5a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: leo-customer360 SSO session fix, 2026-09-27
 status: seedling
-source: "leo-customer360 SSO session fix, 2026-09-27"
-tags: [oidc, jwt, token-validation, clock-skew, gotcha]
+tags:
+- oidc
+- jwt
+- token-validation
+- clock-skew
+- gotcha
+title: Token age checks need clock-skew leeway and must match the IdP lifespan
+type: lesson
 ---
 
 # Token age checks need clock-skew leeway and must match the IdP lifespan
@@ -26,3 +35,14 @@ Worth asking whether the `iat` bound earns its keep at all: `exp` is already aut
 ## Related
 
 - [[Keycloak ssoSessionMaxLifespan is an absolute session cap, not an idle timer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keycloak ssoSessionMaxLifespan is an absolute session cap, not an idle timer]]
+- [[leo-customer360 SSO session settings live in three places that must agree]]
+- [[Discarding the refresh token caps an SPA session at one access-token lifetime]]
+- [[Single-flight token refresh prevents concurrent grants from invalidating each other]]
+- [[Blanket 401 auto-logout swallows the login endpoint's own error]]
+
+%% ai-graph-end %%

@@ -1,14 +1,21 @@
 ---
-title: "Flow View - V2"
+ai_hash: a1eb20193b3578b1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49731141748'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-07
-updated: 2026-09-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Flow View - V2
+type: source
+updated: 2026-09-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49731141748/Flow+View+-+V2
-confluence_id: "49731141748"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents]
 ---
 
 # Flow View - V2
@@ -108,3 +115,14 @@ tags: [confluence, ai-agents]
 ### One grunt takeaway
 
 **Human → BOSS → ONE gateway → robot → cave, and back. Always in order.** Big v2 change: no more per-robot door. Boss knock ONE `mcp-gateway-v2` for every tool; gateway route (A2A + bearer) to the right A2A-only robot. Boss still hold every Yes/No gate ◆ and drive every loop 🔁 with human. Cave smart: truth-book (GCS) + meaning-brain (pgvector) — now **LIVE**, not just built. 🧠👍
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deployment View - V2]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[Agent Loop 2 - Self-learning]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Overview]]
+
+%% ai-graph-end %%

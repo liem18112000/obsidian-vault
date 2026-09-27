@@ -1,18 +1,22 @@
 ---
-title: "Send creditcard notification from luz-public-api-adapter-messaging"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38240846497/Send+creditcard+notification+from+luz-public-api-adapter-messaging
-space: "Helios"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2021-07-29
+ai_hash: 29971ae0cc0d9775
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38240846497/Send+creditcard+notification+from+luz-public-api-adapter-messaging
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Send creditcard notification from luz-public-api-adapter-messaging
+topic: programming
+type: source
+updated: 2021-07-29
 ---
 
 # Send creditcard notification from luz-public-api-adapter-messaging
@@ -153,3 +157,14 @@ http://localhost:8886/messaging/v1/creditcard-notifications
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-106177 - Delete credit card expiry reminder]]
+- [[Port Forward to call GCP API in localhost]]
+- [[Call API trigger Vacuum POS schema on PROD]]
+- [[Apply OpenAPI and try out API on SwaggerUI]]
+- [[API Document]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Login"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38168508503/Login
-space: "Helios"
-topic: programming
-relevance: 0.773
-depth: 3
-updated: 2018-10-01
+ai_hash: 0d7db3adfe8b335c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.773
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38168508503/Login
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Login
+topic: programming
+type: source
+updated: 2018-10-01
 ---
 
 # Login
@@ -125,3 +129,14 @@ Example 
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Getting tenant list]]
+- [[App Validity]]
+- [[Uploading documents]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+
+%% ai-graph-end %%

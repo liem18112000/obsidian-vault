@@ -1,18 +1,22 @@
 ---
-title: "Load Test Physical Order API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/14806965299/Load+Test+Physical+Order+API
-space: "HACKA"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2021-07-20
+ai_hash: 02f3eac3c0d38e0e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 87
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/14806965299/Load+Test+Physical+Order+API
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: Load Test Physical Order API
+topic: programming
+type: source
+updated: 2021-07-20
 ---
 
 # Load Test Physical Order API
@@ -65,3 +69,14 @@ Result:
   
     
 - Noted: Cannot load test with 50 concurrent requests anymore once it ran into the issue.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API end to end testing]]
+- [[Load test]]
+- [[Summarize the load test api]]
+- [[Load test get document id API]]
+- [[Invoice Run V2UATExecute - Prevent error when luz-store is multiple pods]]
+
+%% ai-graph-end %%

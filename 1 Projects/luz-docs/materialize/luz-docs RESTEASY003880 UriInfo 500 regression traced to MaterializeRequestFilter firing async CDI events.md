@@ -1,68 +1,45 @@
 ---
-ai_hash: f5933eece28e279c
+ai_hash: 7a8968c146427596
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-13
 entities:
 - luz-docs
 - RESTEASY003880
 - UriInfo
 - HTTP 500
-- regression
 - MaterializeRequestFilter
 - async CDI events
-- integration-test run
+- regression
+- dev integration-test run
 - POST /documents
 - POST /folders
 - org.jboss.resteasy.spi.LoggableFailure
-- Providers
-- server-side
+- javax.ws.rs.core.UriInfo
+- javax.ws.rs.ext.Providers
 - materialize-pattern merge
-- '@RequestScoped'
-- '@Provider'
 - ContainerRequestFilter
-- request thread
 - resource method
-- materialize-allowlisted tenant
 - MaterializeFolderParentChangeService
 - MaterializeFolderRenameService
-- onRetry()
-- fireAsync()
-- NotificationOptions
-- managedExecutorService
-- context-propagating async CDI event
-- RESTEasy
-- RESTEasy thread-local context
-- uriInfo.getAbsolutePathBuilder()
-- FolderResource.createFolder
-- DocumentResource.createDocument
-- '@Context UriInfo proxy'
+- retryEvent.fireAsync
+- RESTEasy's thread-local context
 - ContextParameterInjector$GenericDelegatingProxy
-- body (de)serialization
+- Providers
 - DocumentUtil.getMetadata
-- server stack trace
+- request thread
 - SynchronousDispatcher
-- async/FaultTolerance thread
-- request-thread context
-- async dispatch
-- fix
-- integration-test repo
-- retry seeding
 - ContainerResponseFilter
+- RESTEasy context
 - MP context propagation
-- user
 - test repo
 - server fix
-- general principle
-- JAX-RS
 - JAX-RS @Context proxies
-- downstream test symptom
-- luz-docs IT create-document step
-- base_metadata AttributeError
 - Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies
   (RESTEASY003880)
 - luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata
   AttributeError
+- base_metadata AttributeError
 source: dev IT run 2026-06-12 + server log analysis
 status: seedling
 tags:
@@ -100,70 +77,52 @@ General principle: [[Context-propagating fireAsync before the resource method wi
 **Related notes:**
 - [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
 - [[luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError]]
+- [[RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread]]
+- [[Read RESTEasy multipart parts eagerly in-request; never pass InputPart around]]
 - [[ManagedExecutorService.execute loses CDI request context]]
-- [[CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
-- [[Snapshot for rollback must live outside retry boundary]]
 
 **Relations:**
-- regression — *affects* — luz-docs
-- regression — *involves* — RESTEASY003880
+- luz-docs — *experiences* — regression
+- regression — *is* — RESTEASY003880
 - regression — *involves* — UriInfo
-- regression — *involves* — HTTP 500
-- regression — *is_traced_to* — MaterializeRequestFilter
+- regression — *results in* — HTTP 500
+- regression — *traced to* — MaterializeRequestFilter
 - MaterializeRequestFilter — *fires* — async CDI events
-- POST /documents — *returns* — HTTP 500
-- POST /folders — *returns* — HTTP 500
-- HTTP 500 — *includes* — org.jboss.resteasy.spi.LoggableFailure
-- org.jboss.resteasy.spi.LoggableFailure — *is_type_of* — RESTEASY003880
-- RESTEASY003880 — *mentions* — UriInfo
-- RESTEASY003880 — *mentions* — Providers
-- integration-test run — *observed* — HTTP 500
-- MaterializeRequestFilter — *is_the_root_cause_of* — regression
-- MaterializeRequestFilter — *is_located_in* — server-side
-- MaterializeRequestFilter — *is_located_in* — luz-docs
-- MaterializeRequestFilter — *is_introduced_by* — materialize-pattern merge
-- MaterializeRequestFilter — *is_a* — ContainerRequestFilter
-- MaterializeRequestFilter — *is_a* — @RequestScoped
-- MaterializeRequestFilter — *is_a* — @Provider
-- MaterializeRequestFilter — *runs_on* — request thread
-- MaterializeRequestFilter — *runs_before* — resource method
-- MaterializeRequestFilter — *calls* — MaterializeFolderParentChangeService.onRetry()
-- MaterializeRequestFilter — *calls* — MaterializeFolderRenameService.onRetry()
-- MaterializeFolderParentChangeService.onRetry() — *calls* — fireAsync()
-- MaterializeFolderRenameService.onRetry() — *calls* — fireAsync()
-- fireAsync() — *uses* — NotificationOptions
-- NotificationOptions — *uses* — managedExecutorService
-- context-propagating async CDI event — *perturbs* — RESTEasy thread-local context
-- resource method — *calls* — uriInfo.getAbsolutePathBuilder()
-- uriInfo.getAbsolutePathBuilder() — *is_located_in* — FolderResource.createFolder
-- uriInfo.getAbsolutePathBuilder() — *is_located_in* — DocumentResource.createDocument
-- @Context UriInfo proxy — *is_a* — ContextParameterInjector$GenericDelegatingProxy
-- @Context UriInfo proxy — *finds_no* — RESTEasy thread-local context
-- @Context UriInfo proxy — *throws* — RESTEASY003880
-- context-propagating async CDI event — *breaks* — Providers
-- context-propagating async CDI event — *affects* — body (de)serialization
-- Providers — *is_used_in* — DocumentUtil.getMetadata
-- server stack trace — *confirms_failure_on* — request thread
-- request thread — *uses* — SynchronousDispatcher
-- request-thread context — *was_wiped* — mid-request
-- MaterializeRequestFilter — *fires_for* — materialize-allowlisted tenant
-- async dispatch — *races* — request thread
-- fix — *is_located_in* — luz-docs
-- fix — *is_not_in* — integration-test repo
-- fix — *involves* — move retry seeding to ContainerResponseFilter
-- fix — *involves* — snapshot/restore RESTEasy context
-- fix — *involves* — decouple retry seeding from MP context propagation
-- ContainerResponseFilter — *runs_after* — resource method
-- resource method — *consumes* — UriInfo
-- user — *chose_to_fix* — test repo
+- dev integration-test run — *observed* — HTTP 500
+- HTTP 500 — *affects* — POST /documents
+- HTTP 500 — *affects* — POST /folders
+- HTTP 500 — *accompanied by* — org.jboss.resteasy.spi.LoggableFailure
+- org.jboss.resteasy.spi.LoggableFailure — *cites* — RESTEASY003880
+- RESTEASY003880 — *mentions* — javax.ws.rs.core.UriInfo
+- RESTEASY003880 — *mentions* — javax.ws.rs.ext.Providers
+- MaterializeRequestFilter — *introduced by* — materialize-pattern merge
+- MaterializeRequestFilter — *is a* — ContainerRequestFilter
+- MaterializeRequestFilter — *runs before* — resource method
+- MaterializeRequestFilter — *calls* — MaterializeFolderParentChangeService
+- MaterializeRequestFilter — *calls* — MaterializeFolderRenameService
+- MaterializeFolderParentChangeService — *performs* — retryEvent.fireAsync
+- MaterializeFolderRenameService — *performs* — retryEvent.fireAsync
+- retryEvent.fireAsync — *perturbs* — RESTEasy's thread-local context
+- resource method — *calls* — UriInfo
+- UriInfo — *is a* — ContextParameterInjector$GenericDelegatingProxy
+- ContextParameterInjector$GenericDelegatingProxy — *throws* — RESTEASY003880
+- async CDI events — *break* — Providers
+- Providers — *used in* — DocumentUtil.getMetadata
+- failure — *occurs on* — request thread
+- request thread — *via* — SynchronousDispatcher
+- request thread — *context wiped by* — async CDI events
+- regression — *is intermittent due to* — async dispatch races request thread
+- luz-docs — *requires* — server fix
+- server fix — *option* — ContainerResponseFilter
+- server fix — *option* — snapshot/restore RESTEasy context
+- server fix — *option* — decouple seeding from MP context propagation
+- user — *fixed* — test repo
 - server fix — *is* — pending
-- general principle — *describes* — Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)
-- Context-propagating fireAsync — *wipes* — JAX-RS @Context proxies
-- wiping JAX-RS @Context proxies — *causes* — RESTEASY003880
-- downstream test symptom — *is* — luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError
-- luz-docs IT create-document step — *has_symptom* — base_metadata AttributeError
-- luz-docs IT create-document step — *swallows* — HTTP 500
-- regression — *is_related_to* — Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)
-- regression — *is_related_to* — luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError
+- Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880) — *is a* — General principle
+- General principle — *explains* — RESTEASY003880
+- luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError — *is a* — Downstream test symptom
+- Downstream test symptom — *results from* — HTTP 500
+- luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError — *surfaces as* — base_metadata AttributeError
+- Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880) — *related to* — luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError
 
 %% ai-graph-end %%

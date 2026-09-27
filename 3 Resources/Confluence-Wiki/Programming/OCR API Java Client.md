@@ -1,18 +1,22 @@
 ---
-title: "OCR API Java Client"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488075820/OCR+API+Java+Client
-space: "AI"
-topic: programming
-relevance: 0.871
-depth: 3
-updated: 2020-11-30
+ai_hash: cc58e72b958cfcd9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.871
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488075820/OCR+API+Java+Client
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: OCR API Java Client
+topic: programming
+type: source
+updated: 2020-11-30
 ---
 
 # OCR API Java Client
@@ -252,3 +256,14 @@ BinaryEntity ocrThumbnail = response.getOutput().find(OcrThumbnailOption.OUTPUT_
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice API Java Client]]
+- [[OCR Command Line Interface]]
+- [[Invoice API Reference]]
+- [[Rhine API Java Client]]
+- [[Invoice API]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Keycloak scalable research"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47143748565/Keycloak+scalable+research
-space: "LUZ"
-topic: architecture
-relevance: 0.777
-depth: 2.72
-updated: 2022-08-06
+ai_hash: c119817211181b96
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 25
+depth: 2.72
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47143748565/Keycloak+scalable+research
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Keycloak scalable research
+topic: architecture
+type: source
+updated: 2022-08-06
 ---
 
 # Keycloak scalable research
@@ -256,3 +260,14 @@ I attach the postman collection for testing this case
 **Tryout solution but not work:**
 
 I also tryout a solution to make keycloak load offline session from db when start an instance according to a comment from related research: <a href="https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47008973317/App+flows+and+offline+sessions?focusedCommentId=47024964713" data-card-appearance="inline" rel="nofollow">https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47008973317/App+flows+and+offline+sessions?focusedCommentId=47024964713</a> but unfortunately also not work.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apply changes on luz_kubernetes]]
+- [[GKE Kubernetes Gateway API]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+- [[Recipe Introduce a Global HTTP(S) Load Balancer on GCP at KLARA]]
+- [[Kubernetes knowledge]]
+
+%% ai-graph-end %%

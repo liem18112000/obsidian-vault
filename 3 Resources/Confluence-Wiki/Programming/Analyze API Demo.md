@@ -1,18 +1,22 @@
 ---
-title: "Analyze API Demo"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/46985019868/Analyze+API+Demo
-space: "AI"
-topic: programming
-relevance: 0.835
-depth: 3
-updated: 2023-12-01
+ai_hash: da2705b2e3eaf854
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 3
+entities: []
+relevance: 0.835
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/46985019868/Analyze+API+Demo
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Analyze API Demo
+topic: programming
+type: source
+updated: 2023-12-01
 ---
 
 # Analyze API Demo
@@ -87,3 +91,14 @@ Feel free to use the following file:
 ![[46985019868-Sample-Invoice.pdf]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze API]]
+- [[Analyze API v2 for Invoice prediction]]
+- [[Invoice API]]
+- [[Analyze API v2.0]]
+- [[Invoice API Reference]]
+
+%% ai-graph-end %%

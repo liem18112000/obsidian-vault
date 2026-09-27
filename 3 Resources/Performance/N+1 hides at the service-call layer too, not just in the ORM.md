@@ -1,10 +1,21 @@
 ---
-title: "N+1 hides at the service-call layer too, not just in the ORM"
+ai_hash: 7afbc4dd1b18d251
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Analyze N+1 queries for REST API calculate payslip (LUZ)'
 status: seedling
-source: "Confluence: Analyze N+1 queries for REST API calculate payslip (LUZ)"
-tags: [performance, n-plus-1, hibernate, rest, batching, profiling, confluence-distilled]
+tags:
+- performance
+- n-plus-1
+- hibernate
+- rest
+- batching
+- profiling
+- confluence-distilled
+title: N+1 hides at the service-call layer too, not just in the ORM
+type: lesson
 ---
 
 # N+1 hides at the service-call layer too, not just in the ORM
@@ -44,3 +55,14 @@ Source: [[Analyze N+1 queries for REST API calculate payslip for 1 employee]] (L
 ## Related
 
 - [[PATCH removes the read-modify-write round trips that PUT-replace forces]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze N+1 queries for REST API calculate payslips for overview salary processing]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[How to resolve hibernate N+1 select's problem]]
+- [[Pass fetched objects down recursion instead of IDs to avoid N+1 re-fetch]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: da9ec6e798ad0b73
+ai_hash: 92acdc1422f4d2e5
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-05-30'
+ai_updated: '2026-09-27'
 created: 2026-05-28 09:17:32+07:00
 entities:
 - Divide-and-Conquer Count
@@ -9,73 +9,66 @@ entities:
 - Database
 - Index
 - Performance Tuning
-- User
 - Document
+- User
 - CPU Core
 - _id space
 - Range
-- Parallel Counting
 - Security Code
 - Collection
 - Field
-- _id (field)
-- MongoDB
+- _id
 - ObjectId
 - Hexadecimal
 - Visibility
-- _isPublic (field)
-- _effectiveSecurityClassCodes (field)
+- _isPublic
+- _effectiveSecurityClassCodes
 - Count Query
 - Index Key
 - Ascending Index
 - Compound Index
 - Multikey Index
-- Array Field
 - Amplification Factor
 - De-duplication
 - Latency
 - Tail Latency
+- p99
 - Thread
 - Concurrency
 - Parallelism
-- Divide and Conquer (pattern)
-- Problem
-- Sub-problem
+- Divide and Conquer
 - Partition
-- K (number of partitions)
+- K
 - Boundary
-- Inclusive Bounds
-- Exclusive Bounds
+- Inclusive Bound
+- Exclusive Bound
 - Exact Count
 - Fan-out
 - Fan-in
-- Wall-clock time
-- CPU-bound
-- I/O-bound
-- Resident in memory
+- Wall-clock Time
+- CPU-bound Task
+- I/O-bound Task
+- Resident in Memory
 - Working Set
 - Cache Hit
 - Cache Miss
 - Query Explain Plan
+- IXSCAN
+- COLLSCAN
 - Seek
 - Scan
 - Post-filter
-- Stored Record
-- Data Structure
-- Processing Unit
-- Path of Execution
-- Duplicates
-- Request time
-- Precise result
-- Multiple sub-requests
-- Results
-- User waiting time
-- Query execution strategy
-- Index Scan (IXSCAN)
-- Collection Scan (COLLSCAN)
-- Specific index part
-- Many index entries
-- Broader result set
+- Relational Database
+- Table
+- Row
+- Column
+- Document Database
+- MongoDB
+- RAM
+- Disk
+- Network
+- Memory Loading
+- CPU Computation
 source_note: '[[Divide-and-Conquer Visible-Document Count]]'
 tags:
 - luz-docs
@@ -1247,84 +1240,114 @@ Uniform ObjectId ranges do not guarantee equal work. Measure per-partition laten
 
 **Related notes:**
 - [[Divide-and-Conquer Visible-Document Count]]
-- [[Glossary]]
-- [[07 Aggregation Pipeline]]
-- [[index]]
-- [[search-logic]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Visible-document count as cardinality of a bitmap union]]
+- [[BitmapHLL counts supersede fan-out; they don't combine with it]]
+- [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
 
 **Relations:**
-- Divide-and-Conquer Count — *explains* — Divide-and-Conquer Visible-Document Count
-- Divide-and-Conquer Count — *explains concepts for* — Database
-- Divide-and-Conquer Count — *explains concepts for* — Index
-- Divide-and-Conquer Count — *explains concepts for* — Performance Tuning
-- User — *can see* — Document
-- Divide-and-Conquer Count — *splits* — _id space
-- _id space — *is split into* — Range
-- Range — *is counted using* — Parallel Counting
-- Parallel Counting — *uses* — CPU Core
-- Document — *is a* — Stored Record
-- Collection — *is a group of* — Document
-- Document — *has* — Field
-- _id (field) — *is a* — Field
-- _id (field) — *is main identifier for* — Document
-- _id (field) — *is often an* — ObjectId
-- MongoDB — *uses* — ObjectId
-- ObjectId — *is displayed as* — Hexadecimal
-- Visibility — *determines if* — User can see Document
-- Document — *has* — _isPublic (field)
-- Document — *has* — _effectiveSecurityClassCodes (field)
-- _isPublic (field) — *influences* — Visibility
-- _effectiveSecurityClassCodes (field) — *influences* — Visibility
-- User — *has* — Security Code
-- Count Query — *determines number of* — Document
-- Index — *is a* — Data Structure
-- Index — *improves performance for* — Database
-- Index — *has* — Index Key
-- Ascending Index — *is a type of* — Index
-- Compound Index — *is a type of* — Index
-- Multikey Index — *is a type of* — Index
-- Multikey Index — *indexes* — Array Field
-- Amplification Factor — *describes* — Database internal work
-- De-duplication — *removes* — Duplicates
-- Multikey Index — *can cause* — Duplicates
-- Latency — *measures* — Request time
-- Tail Latency — *is a type of* — Latency
-- Divide-and-Conquer Count — *targets* — Tail Latency
-- CPU Core — *is a* — Processing Unit
-- Thread — *is a* — Path of Execution
-- Concurrency — *involves* — Multiple tasks in progress
-- Parallelism — *involves* — Multiple tasks running simultaneously
-- Parallelism — *uses* — CPU Core
-- Divide and Conquer (pattern) — *solves* — Problem
-- Problem — *is divided into* — Sub-problem
-- Divide-and-Conquer Count — *applies* — Divide and Conquer (pattern)
-- Partition — *is a* — Range
-- K (number of partitions) — *is the number of* — Partition
-- Boundary — *defines* — Range
-- Inclusive Bounds — *includes* — Boundary
-- Exclusive Bounds — *excludes* — Boundary
-- Exact Count — *is a* — Precise result
-- Divide-and-Conquer Count — *provides* — Exact Count
-- Fan-out — *creates* — Multiple sub-requests
-- Fan-in — *combines* — Results
-- Fan-in — *is also known as* — Converge
-- Wall-clock time — *is* — User waiting time
-- Fan-out — *can reduce* — Wall-clock time
-- CPU-bound — *means* — CPU is bottleneck
-- I/O-bound — *means* — I/O is bottleneck
-- Index — *can be* — Resident in memory
-- Working Set — *contains* — Frequently needed data and indexes
-- Cache Hit — *means* — Data found in memory
-- Cache Miss — *means* — Data fetched from slower storage
-- Query Explain Plan — *shows* — Query execution strategy
-- Query Explain Plan — *can indicate* — Index Scan (IXSCAN)
-- Query Explain Plan — *can indicate* — Collection Scan (COLLSCAN)
-- Seek — *accesses* — Specific index part
-- Scan — *reads* — Many index entries
-- Post-filter — *filters* — Broader result set
-- _id (field) — *should be second in* — Compound Index
-- Compound Index — *can start with* — _effectiveSecurityClassCodes (field)
-- Compound Index — *can start with* — _isPublic (field)
-- Range — *are* — Non-overlapping
+- Divide-and-Conquer Count — *EXPLAINS* — Divide-and-Conquer Visible-Document Count
+- Divide-and-Conquer Count — *TARGETS_BEGINNERS_IN* — Database
+- Divide-and-Conquer Count — *TARGETS_BEGINNERS_IN* — Index
+- Divide-and-Conquer Count — *TARGETS_BEGINNERS_IN* — Performance Tuning
+- Divide-and-Conquer Count — *COUNTS* — Document
+- Divide-and-Conquer Count — *SPLITS* — _id space
+- _id space — *INTO* — Range
+- Divide-and-Conquer Count — *COUNTS_IN_PARALLEL* — Range
+- Divide-and-Conquer Count — *COMBINES* — results
+- App — *STORES* — Document
+- User — *CAN_SEE* — Document
+- Document — *IS_VISIBLE_BASED_ON* — _isPublic
+- Document — *IS_VISIBLE_BASED_ON* — Security Code
+- User — *HAS* — Security Code
+- Document — *IS_A* — Record
+- Document — *ANALOGOUS_TO* — Row
+- Collection — *ANALOGOUS_TO* — Table
+- Field — *ANALOGOUS_TO* — Column
+- Relational Database — *HAS* — Table
+- Relational Database — *HAS* — Row
+- Relational Database — *HAS* — Column
+- Document Database — *HAS* — Collection
+- Document Database — *HAS* — Document
+- Document Database — *HAS* — Field
+- Field — *IS_PART_OF* — Document
+- _id — *IS_IDENTIFIER_FOR* — Document
+- _id — *IS_OFTEN* — ObjectId
+- ObjectId — *IS_A_TYPE_IN* — MongoDB
+- ObjectId — *CONTAINS* — timestamp-related information
+- ObjectId — *IS_WRITTEN_IN* — Hexadecimal
+- Hexadecimal — *IS_BASE* — 16
+- Visibility — *DETERMINES_IF* — User
+- User — *CAN_SEE* — Document
+- _isPublic — *IS_A* — Field
+- _isPublic — *IS_A* — Boolean Field
+- _effectiveSecurityClassCodes — *IS_A* — Field
+- _effectiveSecurityClassCodes — *IS_AN_ARRAY_OF* — Security Code
+- Count Query — *COUNTS* — Document
+- Count Query — *USES* — Condition
+- Index — *IS_A* — Data Structure
+- Index — *HELPS* — Database
+- Index — *IMPROVES* — Reads
+- Index — *INCREASES* — Storage
+- Index — *INCREASES* — Writes
+- Index Key — *DEFINES* — Index
+- Index Key — *IS_A* — Field
+- Ascending Index — *USES_ORDER* — 1
+- Compound Index — *USES_MULTIPLE* — Field
+- Multikey Index — *IS_USED_FOR* — Array Field
+- Multikey Index — *IS_USED_BY* — MongoDB
+- Amplification Factor — *MEASURES* — Amplification
+- Amplification — *INCREASES* — Internal Work
+- De-duplication — *REMOVES* — Duplicates
+- Latency — *MEASURES* — Request
+- Tail Latency — *IS_A_TYPE_OF* — Latency
+- p99 — *IS_A* — Tail Latency
+- CPU Core — *IS_A* — Processing Unit
+- Thread — *IS_A* — Path of Execution
+- Concurrency — *INVOLVES* — Multiple Tasks
+- Parallelism — *INVOLVES* — Multiple Tasks
+- Parallelism — *USES* — CPU Core
+- Divide and Conquer — *IS_A* — Pattern
+- Divide and Conquer — *DIVIDES* — Problem
+- Divide and Conquer — *SOLVES* — Problem
+- Divide and Conquer — *COMBINES* — Answers
+- Partition — *IS_A* — Range
+- K — *IS_NUMBER_OF* — Partition
+- Boundary — *DEFINES* — Range
+- Inclusive Bound — *INCLUDES* — Boundary
+- Exclusive Bound — *EXCLUDES* — Boundary
+- Exact Count — *IS_A* — Real Answer
+- Exact Count — *REQUIRES* — Document
+- Document — *BELONGS_TO_ONE* — Range
+- Exact Count — *REQUIRES* — Range
+- Range — *IS* — Counted
+- Exact Count — *REQUIRES* — Sum
+- Sum — *OF* — Range Counts
+- Fan-out — *TRANSFORMS* — Request
+- Request — *INTO* — Sub-requests
+- Fan-in — *COMBINES* — Partial Counts
+- Wall-clock Time — *IS* — User Wait Time
+- CPU-bound Task — *HAS_BOTTLENECK* — CPU Computation
+- I/O-bound Task — *HAS_BOTTLENECK* — Disk
+- I/O-bound Task — *HAS_BOTTLENECK* — Network
+- I/O-bound Task — *HAS_BOTTLENECK* — Memory Loading
+- Index — *CAN_BE* — Resident in Memory
+- Resident in Memory — *MEANS_READ_FROM* — RAM
+- Working Set — *CONTAINS* — Data
+- Working Set — *CONTAINS* — Index
+- Cache Hit — *MEANS* — Data
+- Data — *IN* — Memory
+- Cache Miss — *MEANS* — Data
+- Data — *FETCHED_FROM* — Slower Storage
+- Query Explain Plan — *SHOWS* — Query
+- Query — *EXECUTION_PLAN* — Database
+- IXSCAN — *INDICATES* — Index Scan
+- COLLSCAN — *INDICATES* — Collection Scan
+- Seek — *JUMPS_TO* — Index Part
+- Scan — *READS* — Entries
+- Post-filter — *APPLIES_AFTER* — Broader Set Read
+- Compound Index — *RECOMMENDS_SECOND_FIELD* — _id
+- Compound Index — *CAN_CONTAIN* — _effectiveSecurityClassCodes
+- Compound Index — *CAN_CONTAIN* — _isPublic
 
 %% ai-graph-end %%

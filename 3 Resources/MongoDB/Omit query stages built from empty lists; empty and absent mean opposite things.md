@@ -1,10 +1,20 @@
 ---
-title: "Omit query stages built from empty lists; empty and absent mean opposite things"
+ai_hash: ab7cedb78e1ba4cd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: 'Confluence: MongoDB Refactoring Query Optimization (TK)'
 status: seedling
-source: "Confluence: MongoDB Refactoring Query Optimization (TK)"
-tags: [mongodb, query-building, security, aggregation, edge-cases, confluence-distilled]
+tags:
+- mongodb
+- query-building
+- security
+- aggregation
+- edge-cases
+- confluence-distilled
+title: Omit query stages built from empty lists; empty and absent mean opposite things
+type: gotcha
 ---
 
 # Omit query stages built from empty lists; empty and absent mean opposite things
@@ -36,3 +46,14 @@ A tenant with **no** security classes yields an empty array. The fix was to stop
 > "Does this behave with an empty list?" is the single highest-yield test for any dynamically-assembled query. Add one fixture with an empty collection for each filter you build from a list.
 
 Source: [[MongoDB Refactoring Query Optimization (securityClassCodes, condition for empty array, Remove]] (TK, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MongoDB Refactoring Query Optimization (securityClassCodes, condition for empty array, Remove]]
+- [[jsonstore $in vs $nin ObjectId conversion gap]]
+- [[A read filtered on a value no writer produces fails by returning empty]]
+- [[Empty array in Postgres WHERE NOT (id = ANY(...)) deletes every row]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+
+%% ai-graph-end %%

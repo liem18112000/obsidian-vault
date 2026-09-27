@@ -1,7 +1,7 @@
 ---
-ai_hash: e3772334f253e702
+ai_hash: 6f0af9b8ff1feec3
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-27
 entities: []
 source: session 2026-06-27
@@ -36,7 +36,7 @@ Part of the S2 trigram work; see [[Full-text search report]] equivalent (`projec
 - [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
 - [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
 - [[luz-docs search DSL silently drops raw-mongo query keys]]
-- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 - [[luz-docs DSL regexp value must be wrapped .term. (else HTTP 400)]]
+- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 
 %% ai-graph-end %%

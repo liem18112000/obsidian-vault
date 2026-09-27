@@ -1,14 +1,22 @@
 ---
-title: "Test oracle - what a scenario asserts, and why its strength decides everything"
+ai_hash: 5ef21a092ec6a329
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49754570848'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 3 - Test-Plan Definition > Evaluating the Test-Plan-Definition
+  Agent'
 created: 2026-09-15
-updated: 2026-09-15
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Test oracle - what a scenario asserts, and why its strength decides everything
+type: source
+updated: 2026-09-15
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49754570848/Test+oracle+-+what+a+scenario+asserts+and+why+its+strength+decides+everything
-confluence_id: "49754570848"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 3 - Test-Plan Definition > Evaluating the Test-Plan-Definition Agent"
-tags: [confluence, ai-agents]
 ---
 
 # Test oracle - what a scenario asserts, and why its strength decides everything
@@ -138,3 +146,14 @@ The classic taxonomy — the TPD's oracles are the **specified / end-state** kin
 - **Human oracle** — a person judges. Expensive; the thing an agentic plan is trying to reduce reliance on.
 
 The TPD deliberately rewards **specified end-state** oracles because they are the ones a downstream automated executor can check and the ones that actually discriminate — which is why `assert 200` scores `0.0` and a named end-state scores `1.0`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Oracle strength can be graded statically from the expected-result text]]
+- [[Oracle strength, not coverage, decides whether a suite catches regressions]]
+- [[A test oracle is what decides pass or fail, and without one a test is just a script]]
+- [[Evaluating the Test-Plan-Definition Agent]]
+- [[Judge Calibration and Canary Seeds]]
+
+%% ai-graph-end %%

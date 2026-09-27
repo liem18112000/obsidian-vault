@@ -1,18 +1,22 @@
 ---
-title: "Fit OneAPI Postgres data model to MongoDB"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48375595082/Fit+OneAPI+Postgres+data+model+to+MongoDB
-space: "LUZ"
-topic: infra
-relevance: 0.806
-depth: 2.8
-updated: 2025-03-25
+ai_hash: d5a073c4d5f7598f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.8
+entities: []
+relevance: 0.806
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48375595082/Fit+OneAPI+Postgres+data+model+to+MongoDB
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Fit OneAPI Postgres data model to MongoDB
+topic: infra
+type: source
+updated: 2025-03-25
 ---
 
 # Fit OneAPI Postgres data model to MongoDB
@@ -97,3 +101,14 @@ Cons
 Refer JSON schema for monitoring documentation: [JSON schema for monitoring](https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48201891847/JSON+schema+for+monitoring)
 
 Refer Epost communication monitoring repository for the final version of the JSON schema: <a href="https://bitbucket.org/axonivy-prod/epost_communication_monitoring/src/master/" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/axonivy-prod/epost_communication_monitoring/src/master/</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unified architecture overview]]
+- [[Efficient way to write data parallelly into both Postgres and MongoDB]]
+- [[OneAPI Architecture overview]]
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+- [[Research The concept to update the status of delivery instantly after all documents are processed]]
+
+%% ai-graph-end %%

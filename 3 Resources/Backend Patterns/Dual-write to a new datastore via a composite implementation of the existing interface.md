@@ -1,10 +1,23 @@
 ---
-title: "Dual-write to a new datastore via a composite implementation of the existing interface"
+ai_hash: d46965152539a33d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Efficient way to write data parallelly into Postgres and MongoDB
+  (HACKA)'
 status: seedling
-source: "Confluence: Efficient way to write data parallelly into Postgres and MongoDB (HACKA)"
-tags: [migration, dual-write, dao, dependency-injection, mongodb, postgres, confluence-distilled]
+tags:
+- migration
+- dual-write
+- dao
+- dependency-injection
+- mongodb
+- postgres
+- confluence-distilled
+title: Dual-write to a new datastore via a composite implementation of the existing
+  interface
+type: lesson
 ---
 
 # Dual-write to a new datastore via a composite implementation of the existing interface
@@ -40,3 +53,14 @@ Source: [[Efficient way to write data parallelly into both Postgres and MongoDB]
 ## Related
 
 - [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Efficient way to write data parallelly into both Postgres and MongoDB]]
+- [[Migration-free idempotent upserts via deterministic uuid5 primary keys]]
+- [[Postgres ON CONFLICT DO UPDATE references the target row by unqualified table name]]
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+
+%% ai-graph-end %%

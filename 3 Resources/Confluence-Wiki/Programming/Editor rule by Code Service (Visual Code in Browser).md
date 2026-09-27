@@ -1,18 +1,22 @@
 ---
-title: "Editor rule by Code Service (Visual Code in Browser)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48127312337/Editor+rule+by+Code+Service+Visual+Code+in+Browser
-space: "LUZ"
-topic: programming
-relevance: 0.721
-depth: 2.53
-updated: 2024-11-12
+ai_hash: 095ec2d23fb78a95
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 16
+depth: 2.53
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48127312337/Editor+rule+by+Code+Service+Visual+Code+in+Browser
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Editor rule by Code Service (Visual Code in Browser)
+topic: programming
+type: source
+updated: 2024-11-12
 ---
 
 # Editor rule by Code Service (Visual Code in Browser)
@@ -86,3 +90,14 @@ Click Sync Change to push
 
 
 ![[48127312337-image-20241101-064747.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KIE Kogito and improve performance concept (19.11.2024 - 02.12.2024)]]
+- [[Create a work space]]
+- [[CICD for Kogito]]
+- [[Route user-edited business rules through git and CI instead of a database]]
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+
+%% ai-graph-end %%

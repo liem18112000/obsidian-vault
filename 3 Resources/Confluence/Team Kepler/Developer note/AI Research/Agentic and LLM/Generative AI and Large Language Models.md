@@ -1,14 +1,21 @@
 ---
-title: "Generative AI and Large Language Models"
+ai_hash: 3680720486bf6567
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48858366032'
+confluence_path: Team Kepler > Developer note > AI Research > Agentic and LLM
 created: 2025-11-10
-updated: 2025-11-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- search
+title: Generative AI and Large Language Models
+type: source
+updated: 2025-11-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48858366032/Generative+AI+and+Large+Language+Models
-confluence_id: "48858366032"
-confluence_path: "Team Kepler > Developer note > AI Research > Agentic and LLM"
-tags: [confluence, ai-agents, search]
 ---
 
 # Generative AI and Large Language Models
@@ -158,3 +165,12 @@ tags: [confluence, ai-agents, search]
 - Maintain realistic expectations
 
 - Prioritize user trust and safety
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LLM Comparison Matrix for Agent Applications]]
+- [[AI-Powered Development Environment Architecture]]
+- [[From Prompt-Based Usage to Skill-Based Execution]]
+
+%% ai-graph-end %%

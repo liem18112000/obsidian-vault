@@ -1,18 +1,22 @@
 ---
-title: "Merging process"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47337640302/Merging+process
-space: "LUZ"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2023-07-03
+ai_hash: a920581aa3e1fa0f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47337640302/Merging+process
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Merging process
+topic: programming
+type: source
+updated: 2023-07-03
 ---
 
 # Merging process
@@ -1132,3 +1136,14 @@ Edit</p></td>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Impact of code changes on common components]]
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[Investigate Analyze the API's which call to FileManager]]
+- [[List out places calling booking function]]
+- [[Programming]]
+
+%% ai-graph-end %%

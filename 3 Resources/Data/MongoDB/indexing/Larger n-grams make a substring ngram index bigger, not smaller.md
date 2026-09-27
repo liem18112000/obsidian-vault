@@ -1,7 +1,7 @@
 ---
-ai_hash: 3d9e3fe29ead2c3e
+ai_hash: e84592c288e98da0
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-30
 entities: []
 source: luz_docs S2-index-size-options.md, 2026-06-30
@@ -37,6 +37,6 @@ From luz_docs S2-index-size-options.md, rejected option (Kepler eArchive).
 - [[Bounded bucketed hashing caps trigram index entries per document]]
 - [[A large secondary index hurts via working-set vs cache, not disk bytes]]
 - [[OCR body text dominates a full-text trigram index]]
-- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+- [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
 
 %% ai-graph-end %%

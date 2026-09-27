@@ -1,18 +1,22 @@
 ---
-title: "Setup Google Cloud managed Apache Kafka for Serverless workflow"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48406003792/Setup+Google+Cloud+managed+Apache+Kafka+for+Serverless+workflow
-space: "FUT"
-topic: infra
-relevance: 0.87
-depth: 3
-updated: 2025-03-17
+ai_hash: fe232af72a366beb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.87
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48406003792/Setup+Google+Cloud+managed+Apache+Kafka+for+Serverless+workflow
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: Setup Google Cloud managed Apache Kafka for Serverless workflow
+topic: infra
+type: source
+updated: 2025-03-17
 ---
 
 # Setup Google Cloud managed Apache Kafka for Serverless workflow
@@ -101,3 +105,14 @@ tags:
     </div>
 
     </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Using Google PubSub for events between Serverless workflow and Data Index]]
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[GCP - Connect Database]]
+- [[Deployment with terraform]]
+- [[EPC Notification]]
+
+%% ai-graph-end %%

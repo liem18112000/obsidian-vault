@@ -1,18 +1,22 @@
 ---
-title: "Port forward and Docker compose"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20502817909/Port+forward+and+Docker+compose
-space: "LUZ"
-topic: infra
-relevance: 0.757
-depth: 2.84
-updated: 2023-07-31
+ai_hash: c18d2d3a48910aa3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.84
+entities: []
+relevance: 0.757
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20502817909/Port+forward+and+Docker+compose
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Port forward and Docker compose
+topic: infra
+type: source
+updated: 2023-07-31
 ---
 
 # Port forward and Docker compose
@@ -160,3 +164,14 @@ If you access to the **Widget Store** and images can not be loaded, you may nee
 </div>
 
 Then try to Ctrl + F5 on the browser then it should work.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Port Forward to call GCP API in localhost]]
+- [[How to Start Invoice Run v2]]
+- [[Local access to GKE-hosted Luz services port-forward api-forwarder + luz-vault (+ mongo pod)]]
+- [[Infrastructure]]
+- [[Run luz_docs_statistic locally with docker-compose]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 6f68c17171563075
+ai_hash: 3088d5723f87be06
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-15
 entities: []
 source: session 2026-07-15 vinnstack startup UX

@@ -1,18 +1,22 @@
 ---
-title: "Aggregation Database Table Design"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20513302619/Aggregation+Database+Table+Design
-space: "LUZ"
-topic: infra
-relevance: 0.755
-depth: 2.7
-updated: 2020-11-06
+ai_hash: 06816215826c5074
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.7
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20513302619/Aggregation+Database+Table+Design
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Aggregation Database Table Design
+topic: infra
+type: source
+updated: 2020-11-06
 ---
 
 # Aggregation Database Table Design
@@ -527,3 +531,14 @@ Company Table:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Technical design of Klara - Hubspot]]
+- [[KLARA Documents solution implementation]]
+- [[News, Event and Deal API]]
+- [[How to execute API to create sync event for post from tenant schemas to public table]]
+- [[Public API client performance analysis]]
+
+%% ai-graph-end %%

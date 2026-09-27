@@ -1,7 +1,7 @@
 ---
-ai_hash: 325273b01d5daa8b
+ai_hash: de9913f77000fb1a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-14
 entities: []
 source: session 2026-07-14
@@ -32,8 +32,8 @@ Why: gives the UI an honest green state and avoids the 'said on, actually off' c
 **Related notes:**
 - [[Wiring an external MCP-serving CLI into a Next.js app status-on-provider, actions-on-dedicated-route]]
 - [[Polaris 3003 MCP server is persistent — TCP probe not equal to polaris tunnel state]]
-- [[polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)]]
 - [[polaris-cli never writes ~.polarisstate.json — no reliable bootstrapped signal]]
 - [[Vinnstack auth providers two patterns and the rule for adding one]]
+- [[Vinnstack Polaris integration is three passive touchpoints]]
 
 %% ai-graph-end %%

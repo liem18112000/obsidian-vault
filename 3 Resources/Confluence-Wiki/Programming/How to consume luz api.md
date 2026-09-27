@@ -1,18 +1,22 @@
 ---
-title: "How to consume luz api"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38184589400/How+to+consume+luz+api
-space: "Helios"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2019-01-09
+ai_hash: e2f824d2dd0ae106
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38184589400/How+to+consume+luz+api
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: How to consume luz api
+topic: programming
+type: source
+updated: 2019-01-09
 ---
 
 # How to consume luz api
@@ -102,3 +106,14 @@ How to explore
 
 
 ![[38184589400-image2019-1-9_9-7-4.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Swagger with api explorer]]
+- [[HowToUseNewTokenAPI]]
+- [[Use KLARA Swagger UI for REST API]]
+- [[OpenAPI UI (API on SwaggerUI)]]
+- [[Token JWT Security]]
+
+%% ai-graph-end %%

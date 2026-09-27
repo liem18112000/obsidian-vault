@@ -1,18 +1,22 @@
 ---
-title: "Recipe: Deploy with Terraform"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48040149081/Recipe+Deploy+with+Terraform
-space: "LUZ"
-topic: infra
-relevance: 0.87
-depth: 3
-updated: 2024-09-20
+ai_hash: 7dce07164cef266d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 3
+entities: []
+relevance: 0.87
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48040149081/Recipe+Deploy+with+Terraform
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: 'Recipe: Deploy with Terraform'
+topic: infra
+type: source
+updated: 2024-09-20
 ---
 
 # Recipe: Deploy with Terraform
@@ -105,3 +109,14 @@ If you encounter an error saying `bash: ./deploy_terraform.sh: /bin/bash^M: bad 
 
 
 ![[48040149081-image-20240917-045921.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Kubernetes knowledge]]
+- [[Deploy Google Cloud Run for new module]]
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Validate your k8s yaml]]
+- [[Deployment with terraform]]
+
+%% ai-graph-end %%

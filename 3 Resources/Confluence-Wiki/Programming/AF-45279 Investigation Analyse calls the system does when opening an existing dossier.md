@@ -1,18 +1,23 @@
 ---
-title: "AF-45279 [Investigation] Analyse calls the system does when opening an existing dossier"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/RT/pages/26423849052/AF-45279+Investigation+Analyse+calls+the+system+does+when+opening+an+existing+dossier
-space: "RT"
-topic: programming
-relevance: 0.736
-depth: 2.44
-updated: 2020-04-10
+ai_hash: 328f5565a790651b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.44
+entities: []
+relevance: 0.736
+source: https://axonivy.atlassian.net/wiki/spaces/RT/pages/26423849052/AF-45279+Investigation+Analyse+calls+the+system+does+when+opening+an+existing+dossier
+space: RT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/rt
+- confluence
+- programming
+- space/rt
+title: AF-45279 [Investigation] Analyse calls the system does when opening an existing
+  dossier
+topic: programming
+type: source
+updated: 2020-04-10
 ---
 
 # AF-45279 [Investigation] Analyse calls the system does when opening an existing dossier
@@ -93,3 +98,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Open API related to Finnova microservices - Create dossier]]
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[Estimate for ivy and cob-unattended-business-dossier-service-api-spec]]
+- [[List out places calling booking function]]
+- [[Changes to SOB endpoints to align the response status code (FA-6800)]]
+
+%% ai-graph-end %%

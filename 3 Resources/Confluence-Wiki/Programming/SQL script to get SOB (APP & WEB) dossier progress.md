@@ -1,18 +1,22 @@
 ---
-title: "SQL script to get SOB (APP & WEB) dossier progress"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48222699826/SQL+script+to+get+SOB+APP+WEB+dossier+progress
-space: "GRAVITY"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2024-12-24
+ai_hash: fc84c8901898a14b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48222699826/SQL+script+to+get+SOB+APP+WEB+dossier+progress
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: SQL script to get SOB (APP & WEB) dossier progress
+topic: programming
+type: source
+updated: 2024-12-24
 ---
 
 # SQL script to get SOB (APP & WEB) dossier progress
@@ -68,3 +72,14 @@ order by
 
 
 ![[48222699826-image-20241223-085902.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL script to investigate dossier with orphaned protocol records in PROD]]
+- [[SQL script to investigate dossier COB003059 on INT1]]
+- [[Script identify fields which are incorrectly logged in the protocol]]
+- [[SQL script to filter IN_PROGRESS tasks more than 30 days]]
+- [[SQL script to update retry tasks and check pending dossiers has an outdated credit card]]
+
+%% ai-graph-end %%

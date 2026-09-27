@@ -1,18 +1,22 @@
 ---
-title: "Analyze API v2.0"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47401730164/Analyze+API+v2.0
-space: "AI"
-topic: programming
-relevance: 0.711
-depth: 2.33
-updated: 2023-11-30
+ai_hash: 91fc19bb4120985d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.33
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47401730164/Analyze+API+v2.0
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Analyze API v2.0
+topic: programming
+type: source
+updated: 2023-11-30
 ---
 
 # Analyze API v2.0
@@ -224,3 +228,14 @@ The `KlaraAccgBct` and `KlaraAccgTag` labels are no longer part of the `Invoice.
 
 | Priority | Issuekey | Summary | Status | Key |
 |----------|----------|---------|--------|-----|
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze API]]
+- [[Analyze API v2 for Invoice prediction]]
+- [[Invoice API]]
+- [[Analyze API Demo]]
+- [[SchemaRegistry API v2.0]]
+
+%% ai-graph-end %%

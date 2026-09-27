@@ -1,18 +1,22 @@
 ---
-title: "Payout Migration script"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49130831873/Payout+Migration+script
-space: "Helios"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2026-02-09
+ai_hash: 681397e3b36bdcb5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49130831873/Payout+Migration+script
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Payout Migration script
+topic: programming
+type: source
+updated: 2026-02-09
 ---
 
 # Payout Migration script
@@ -116,3 +120,14 @@ The business process it supports is:
 ### 4. Output
 
 Please inform us of the result.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Adyen Migration script]]
+- [[Bank connection - Script to store all old connected ibans for each tenant]]
+- [[Run Script Resync hidden wiget]]
+- [[15. Update companies by tenant id]]
+- [[14. Create companies by tenant id]]
+
+%% ai-graph-end %%

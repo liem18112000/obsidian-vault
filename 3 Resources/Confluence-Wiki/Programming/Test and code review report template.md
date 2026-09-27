@@ -1,18 +1,22 @@
 ---
-title: "Test and code review report template"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47212822914/Test+and+code+review+report+template
-space: "TS"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2022-11-14
+ai_hash: 4a78dced1495aed8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47212822914/Test+and+code+review+report+template
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Test and code review report template
+topic: programming
+type: source
+updated: 2022-11-14
 ---
 
 # Test and code review report template
@@ -275,3 +279,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[00. Test and code review report template]]
+- [[Test and code review report template.2.93]]
+- [[Test and code review report template.2]]
+- [[LUZ-81908 - Implement test mode without send to the Rhine server]]
+- [[LUZ-79226 PayPal in Online Shop - Adaption KLARA Pay - Gateway API]]
+
+%% ai-graph-end %%

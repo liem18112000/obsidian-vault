@@ -1,18 +1,22 @@
 ---
-title: "Analyse your source code (Copy)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/30642747633/Analyse+your+source+code+Copy
-space: "TK"
-topic: programming
-relevance: 0.898
-depth: 3
-updated: 2019-07-15
+ai_hash: cfcca3e914f78c7c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.898
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/30642747633/Analyse+your+source+code+Copy
+space: TK
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tk
+- confluence
+- programming
+- space/tk
+title: Analyse your source code (Copy)
+topic: programming
+type: source
+updated: 2019-07-15
 ---
 
 # Analyse your source code (Copy)
@@ -58,3 +62,14 @@ tags:
     
 
 - access localhost:9000/sonar to see the report
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Script getting latest code, building and deployment]]
+- [[OCR Command Line Interface]]
+- [[Git source code and Jenkins]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[Static analysis tool for Android]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 5fb82ebe0a4bbf90
+ai_hash: 8a8b02df1d37f023
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-02
 entities: []
 source: session 2026-07-02 — ran Polaris end-to-end
@@ -44,7 +44,7 @@ To actually USE Polaris: bootstrap + `polaris up`, then reload the editor (Claud
 - [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
 - [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
 - [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+- [[A globally-bootstrapped MCP server loads into every headless claude spawn]]
 - [[Polaris 3003 MCP server is persistent — TCP probe not equal to polaris tunnel state]]
-- [[polaris-cli never writes ~.polarisstate.json — no reliable bootstrapped signal]]
 
 %% ai-graph-end %%

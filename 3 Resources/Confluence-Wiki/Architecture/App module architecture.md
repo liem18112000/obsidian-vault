@@ -1,18 +1,22 @@
 ---
-title: "App module architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519724033/App+module+architecture
-space: "LUZ"
-topic: architecture
-relevance: 0.855
-depth: 3
-updated: 2021-01-22
+ai_hash: d69b82fcaf5c2e25
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 3
+entities: []
+relevance: 0.855
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519724033/App+module+architecture
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: App module architecture
+topic: architecture
+type: source
+updated: 2021-01-22
 ---
 
 # App module architecture
@@ -132,3 +136,14 @@ Source: <a href="https://swift.org/package-manager/" class="external-link" rel=
 - <span class="legacy-color-text-default">CI/CD implementation will be implemented with minor changes.</span>
 
 <span class="legacy-color-text-default">Another approach suggested was <a href="https://stackoverflow.com/a/31366602" class="external-link" rel="nofollow" style="text-decoration: none;text-align: left;">https://stackoverflow.com/a/31366602</a> . We are working for CI/CD integration.</span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Discuss LUZ-154249 Architecture for shared components features between apps]]
+- [[Architecture]]
+- [[Share features as vertical slices with app-owned routes and an injected adapter]]
+- [[Proposal eArchived architecture direction for ePost web 2]]
+- [[Document key concepts and architecture of sealing modules]]
+
+%% ai-graph-end %%

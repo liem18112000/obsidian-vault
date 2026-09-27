@@ -1,10 +1,46 @@
 ---
-title: "Manufacture structured disagreement when real model independence is unavailable"
+ai_hash: cbeff219fa61cb9e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities:
+- LLM
+- Agreeableness
+- Reviewer
+- Andrej Karpathy
+- LLM Council
+- OpenAI
+- Anthropic
+- Google
+- xAI
+- Training data differences
+- Alignment differences
+- Single-vendor adaptation
+- Thinking-lens sub-agents
+- Contrasting prompts
+- Prompt-defined lenses
+- Contrarian (Persona)
+- Lens contrast (Mechanic)
+- Anonymised peer review (Mechanic)
+- Chair empowered to dissent (Mechanic)
+- Prompt-induced diversity
+- Lab diversity
+- Model blind spots
+- Structured disagreement
+- Real model independence
+- Proposal An LLM Council for ePost – multi-lens deliberation in Claude Code
+source: 'Confluence: Proposal An LLM Council for ePost (TK)'
 status: seedling
-source: "Confluence: Proposal An LLM Council for ePost (TK)"
-tags: [llm, multi-agent, llm-council, sycophancy, claude-code, evaluation, confluence-distilled]
+tags:
+- llm
+- multi-agent
+- llm-council
+- sycophancy
+- claude-code
+- evaluation
+- confluence-distilled
+title: Manufacture structured disagreement when real model independence is unavailable
+type: concept
 ---
 
 # Manufacture structured disagreement when real model independence is unavailable
@@ -40,3 +76,48 @@ Source: [[Proposal An LLM Council for ePost – multi-lens deliberation in Claud
 ## Related
 
 - [[Proposal An LLM Council for ePost – multi-lens deliberation in Claude Code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Proposal An LLM Council for ePost – multi-lens deliberation in Claude Code]]
+- [[LLM-as-a-judge biases position, verbosity, self-enhancement]]
+- [[AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[A coding-agent prompt needs codebase anchors and stated house style]]
+
+**Relations:**
+- LLM — *exhibits* — Agreeableness
+- Agreeableness — *renders* — LLM useless as Reviewer
+- Andrej Karpathy — *proposed* — LLM Council
+- LLM Council — *mitigates* — Agreeableness
+- LLM Council — *replaces* — single model with several
+- LLM Council — *uses models from* — OpenAI
+- LLM Council — *uses models from* — Anthropic
+- LLM Council — *uses models from* — Google
+- LLM Council — *uses models from* — xAI
+- LLM Council — *employs* — Anonymised peer review (Mechanic)
+- LLM Council — *includes* — chair model
+- chair model — *synthesizes* — verdict
+- LLM Council — *derives diversity from* — Training data differences
+- LLM Council — *derives diversity from* — Alignment differences
+- Single-vendor adaptation — *is an adaptation of* — LLM Council
+- Single-vendor adaptation — *uses* — one model
+- Single-vendor adaptation — *employs* — Thinking-lens sub-agents
+- Thinking-lens sub-agents — *are driven by* — Contrasting prompts
+- Single-vendor adaptation — *derives diversity from* — Prompt-defined lenses
+- Contrarian (Persona) — *is an example of* — Thinking-lens sub-agents
+- Lens contrast (Mechanic) — *is a core mechanic* — LLM Council
+- Anonymised peer review (Mechanic) — *is a core mechanic* — LLM Council
+- Chair empowered to dissent (Mechanic) — *is a core mechanic* — LLM Council
+- Lens contrast (Mechanic) — *ensures* — voices are constructed to disagree
+- Anonymised peer review (Mechanic) — *suppresses* — deference
+- Chair empowered to dissent (Mechanic) — *prevents* — consensus-by-default
+- Prompt-induced diversity — *is shallower than* — Lab diversity
+- Prompt-induced diversity — *shares* — Model blind spots
+- Structured disagreement — *is manufactured when* — Real model independence is unavailable
+- Single-vendor adaptation — *is a form of* — Structured disagreement
+- Proposal An LLM Council for ePost – multi-lens deliberation in Claude Code — *is a source for* — this note
+- Proposal An LLM Council for ePost – multi-lens deliberation in Claude Code — *is related to* — this note
+
+%% ai-graph-end %%

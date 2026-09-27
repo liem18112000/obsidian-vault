@@ -1,9 +1,32 @@
 ---
-ai_hash: e479e10e0a4acee5
+ai_hash: 5b1b08b7ac029433
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-22
-entities: []
+entities:
+- Feedback loop
+- Write side
+- Broken feature
+- Vinnstack
+- Track-comments bug
+- Inline comments
+- UI panel
+- API
+- Storage
+- Regeneration prompt
+- generateInterrogation
+- listComments
+- Comment feature
+- Read side
+- Consumer
+- buildInlineCommentsBlock
+- comments
+- dir
+- docLabel
+- PRD regens
+- Process-flow regens
+- Tier LLM effort per pipeline stage - pay where quality compounds, cut where the
+  task is bounded
 source: session 2026-07-22
 status: seedling
 tags:
@@ -35,5 +58,35 @@ Fix shape: inject `buildInlineCommentsBlock(comments, dir, docLabel)` into the t
 - [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
 - [[Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
 - [[Async-enriched columns need a lazy backfill for pre-feature rows]]
+
+**Relations:**
+- Feedback loop — *HAS_COMPONENT* — Write side
+- Feedback loop — *HAS_COMPONENT* — Read side
+- Feedback loop — *IS_A* — Broken feature
+- Vinnstack — *HAS* — Track-comments bug
+- Track-comments bug — *INVOLVES* — Inline comments
+- Inline comments — *WIRED_ON* — Write side
+- Write side — *INCLUDES* — UI panel
+- Write side — *INCLUDES* — API
+- Write side — *INCLUDES* — Storage
+- Regeneration prompt — *DID_NOT_READ* — Inline comments
+- generateInterrogation — *BUILDS* — Regeneration prompt
+- generateInterrogation — *EXCLUDES* — listComments
+- Comment feature — *APPEARS_AS* — Broken feature
+- comments — *ARE_IGNORED_BY* — Regeneration prompt
+- comments — *BECOME* — Orphaned
+- Write side — *CAPTURES* — feedback
+- Read side — *ACTS_ON* — feedback
+- Wiring only Write side — *CREATES* — Illusion of working feature
+- Auditing feedback feature — *REQUIRES* — Tracing Consumer
+- Consumer — *USES* — Stored feedback
+- Fix — *INJECTS* — buildInlineCommentsBlock
+- buildInlineCommentsBlock — *INTO* — Regeneration prompt
+- buildInlineCommentsBlock — *USES_PARAMETER* — comments
+- buildInlineCommentsBlock — *USES_PARAMETER* — dir
+- buildInlineCommentsBlock — *USES_PARAMETER* — docLabel
+- buildInlineCommentsBlock — *USED_BY* — PRD regens
+- buildInlineCommentsBlock — *USED_BY* — Process-flow regens
+- Feedback loop — *RELATED_TO* — Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded
 
 %% ai-graph-end %%

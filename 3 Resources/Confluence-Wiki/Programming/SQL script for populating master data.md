@@ -1,18 +1,22 @@
 ---
-title: "SQL script for populating master data"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47489876096/SQL+script+for+populating+master+data
-space: "HACKA"
-topic: programming
-relevance: 0.755
-depth: 2.81
-updated: 2023-12-14
+ai_hash: 82cc7caf5139e10a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47489876096/SQL+script+for+populating+master+data
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: SQL script for populating master data
+topic: programming
+type: source
+updated: 2023-12-14
 ---
 
 # SQL script for populating master data
@@ -102,3 +106,14 @@ INSERT INTO {schema}.accounting_interface_sit_accounting_information (create_by,
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Generic Interface JSON file]]
+- [[LUZ-102459 Implement physical delete for INDIVIDUAL tenant]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[14. Create companies by tenant id]]
+- [[Script to list all the information of the tenants]]
+
+%% ai-graph-end %%

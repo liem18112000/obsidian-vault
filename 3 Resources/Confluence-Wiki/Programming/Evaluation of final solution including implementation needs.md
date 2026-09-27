@@ -1,18 +1,22 @@
 ---
-title: "Evaluation of final solution including implementation needs"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/49144758376/Evaluation+of+final+solution+including+implementation+needs
-space: "AI"
-topic: programming
-relevance: 0.729
-depth: 2.49
-updated: 2026-02-23
+ai_hash: 3eb0e7545d90f721
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.49
+entities: []
+relevance: 0.729
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/49144758376/Evaluation+of+final+solution+including+implementation+needs
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Evaluation of final solution including implementation needs
+topic: programming
+type: source
+updated: 2026-02-23
 ---
 
 # Evaluation of final solution including implementation needs
@@ -178,3 +182,14 @@ Investigation details:[Investigation: Require active scanning subscription for m
 ## Decision
 
 tbd
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Integrating The Analyze API Into luz_scanscenter New Flow Proposal]]
+- [[System design]]
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[Research on Delete Access class]]
+- [[Analytics Analyze API call when accessing eArchive]]
+
+%% ai-graph-end %%

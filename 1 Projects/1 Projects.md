@@ -1,10 +1,20 @@
 ---
-ai_hash: 23292d80a647029b
+ai_hash: 4ac0adf1098e09c8
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 entities:
-- Projects
 - luz-docs
+- Vinnstack
+- luz_store
+- leo-cdp
+- appsflyer-connector
+- Accesstrade Integration
+- luz_online_payment
+- fb-info-project
+- Ivy-setup
+- virtual-avatar
+- Music-Tech AI Tools Site
+- luz-epost-business-web
 - count
 - earchive
 - materialize
@@ -16,24 +26,14 @@ entities:
 - integration-test
 - campaigns
 - sprint-158
-- Vinnstack
-- luz_store
-- leo-cdp
-- appsflyer-connector
-- Accesstrade Integration
-- Smaller efforts
-- luz_online_payment
-- fb-info-project
-- Ivy-setup
-- virtual-avatar
-- Music-Tech AI Tools Site
-- luz-epost-business-web
+- visible-document count scaling
 - estimate
 - optimize
 - Divide-and-Conquer Visible-Document Count
+- eArchive work
 - integration
 - performance
-- materialize sentinels
+- materialize sentinels and cascades
 - cascades
 - Folder Rename Cascade
 - gate
@@ -47,6 +47,7 @@ entities:
 - invoicing
 - LUZ-157476
 - Payrexx decline-code taxonomy
+- LEO CDP integration
 - framework
 - migration
 - personalization-engine
@@ -60,6 +61,13 @@ entities:
 - conversion digest
 - bulk tracking links
 - campaign/datafeed briefs
+- Polaris
+- Postgres
+- Payrexx
+- S3
+- vStorage
+- Accesstrade
+- Desktop/Interrogation-Room app
 title: Projects
 type: moc
 ---
@@ -105,67 +113,65 @@ Building the Accesstrade automation: skill design and the three use cases (conve
 %% ai-graph-start %%
 
 **Related notes:**
-- [[index]]
 - [[2 Areas]]
+- [[Confluence Export — Index]]
+- [[index]]
 - [[3 Resources]]
-- [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
-- [[eArchive request flow and log correlation (perf)]]
+- [[Programming]]
 
 **Relations:**
-- luz-docs — *is a* — Projects
-- Vinnstack — *is a* — Projects
-- luz_store — *is a* — Projects
-- leo-cdp — *is a* — Projects
-- appsflyer-connector — *is a* — Projects
-- Accesstrade Integration — *is a* — Projects
-- count — *is a sub-folder of* — luz-docs
-- earchive — *is a sub-folder of* — luz-docs
-- materialize — *is a sub-folder of* — luz-docs
-- Folder Recovery and Security Cascade — *is a sub-folder of* — luz-docs
-- JsonStore Change Tracking — *is a sub-folder of* — luz-docs
-- parallelize — *is a sub-folder of* — luz-docs
-- search — *is a sub-folder of* — luz-docs
-- folder-delete — *is a sub-folder of* — luz-docs
-- integration-test — *is a sub-folder of* — luz-docs
-- campaigns — *is a sub-folder of* — luz-docs
-- sprint-158 — *is a sub-folder of* — luz-docs
-- count — *involves* — estimate
-- count — *involves* — optimize
+- count — *is_a_workstream_of* — luz-docs
+- earchive — *is_a_workstream_of* — luz-docs
+- materialize — *is_a_workstream_of* — luz-docs
+- Folder Recovery and Security Cascade — *is_a_workstream_of* — luz-docs
+- JsonStore Change Tracking — *is_a_workstream_of* — luz-docs
+- parallelize — *is_a_workstream_of* — luz-docs
+- search — *is_a_workstream_of* — luz-docs
+- folder-delete — *is_a_workstream_of* — luz-docs
+- integration-test — *is_a_workstream_of* — luz-docs
+- campaigns — *is_a_workstream_of* — luz-docs
+- sprint-158 — *is_a_workstream_of* — luz-docs
+- count — *concerns* — visible-document count scaling
+- earchive — *concerns* — eArchive work
+- materialize — *concerns* — materialize sentinels and cascades
+- Folder Recovery and Security Cascade — *concerns* — LUZ-155107
+- Folder Recovery and Security Cascade — *concerns* — folder recovery
+- Folder Recovery and Security Cascade — *concerns* — inherited security
+- Vinnstack — *concerns* — packaging
+- Vinnstack — *concerns* — auth providers
+- Vinnstack — *concerns* — Polaris touchpoints
+- Vinnstack — *concerns* — Postgres migration
+- luz_store — *concerns* — invoicing
+- luz_store — *concerns* — LUZ-157476
+- LUZ-157476 — *concerns* — Payrexx decline-code taxonomy
+- leo-cdp — *concerns* — LEO CDP integration
+- appsflyer-connector — *concerns* — sink reduction
+- appsflyer-connector — *concerns* — S3/vStorage config
+- appsflyer-connector — *concerns* — package layout
+- Accesstrade Integration — *concerns* — Accesstrade automation
+- count — *includes* — estimate
+- count — *includes* — optimize
 - optimize — *includes* — Divide-and-Conquer Visible-Document Count
-- earchive — *involves* — integration
-- earchive — *involves* — performance
-- materialize — *involves* — materialize sentinels
-- materialize — *involves* — cascades
+- earchive — *includes* — integration
+- earchive — *includes* — performance
+- materialize — *includes* — cascades
+- materialize — *includes* — gate
 - cascades — *includes* — Folder Rename Cascade
-- materialize — *involves* — gate
-- Folder Recovery and Security Cascade — *is identified by* — LUZ-155107
-- Folder Recovery and Security Cascade — *involves* — folder recovery
-- Folder Recovery and Security Cascade — *involves* — inherited security
-- Vinnstack — *involves* — packaging
-- Vinnstack — *involves* — auth providers
-- Vinnstack — *involves* — Polaris touchpoints
-- Vinnstack — *involves* — Postgres migration
-- luz_store — *involves* — invoicing
-- luz_store — *involves* — LUZ-157476
-- LUZ-157476 — *is about* — Payrexx decline-code taxonomy
-- leo-cdp — *involves* — framework
-- leo-cdp — *involves* — migration
-- leo-cdp — *involves* — personalization-engine
+- leo-cdp — *includes* — framework
+- leo-cdp — *includes* — migration
+- leo-cdp — *includes* — personalization-engine
+- Accesstrade automation — *includes* — skill design
+- Accesstrade automation — *includes* — conversion digest
+- Accesstrade automation — *includes* — bulk tracking links
+- Accesstrade automation — *includes* — campaign/datafeed briefs
 - appsflyer-connector — *connects* — AppsFlyer
-- appsflyer-connector — *connects to* — CDP
-- appsflyer-connector — *involves* — sink reduction
-- appsflyer-connector — *involves* — S3/vStorage config
-- appsflyer-connector — *involves* — package layout
-- Accesstrade Integration — *builds* — Accesstrade automation
-- Accesstrade automation — *involves* — skill design
-- Accesstrade automation — *involves* — conversion digest
-- Accesstrade automation — *involves* — bulk tracking links
-- Accesstrade automation — *involves* — campaign/datafeed briefs
-- luz_online_payment — *is a* — Smaller effort
-- fb-info-project — *is a* — Smaller effort
-- Ivy-setup — *is a* — Smaller effort
-- virtual-avatar — *is a* — Smaller effort
-- Music-Tech AI Tools Site — *is a* — Smaller effort
-- luz-epost-business-web — *is a* — Smaller effort
+- appsflyer-connector — *connects* — CDP
+- Vinnstack — *uses* — Polaris
+- Vinnstack — *uses* — Postgres
+- LUZ-157476 — *uses* — Payrexx
+- appsflyer-connector — *uses* — S3
+- appsflyer-connector — *uses* — vStorage
+- Accesstrade Integration — *uses* — Accesstrade
+- Vinnstack — *is_a* — Desktop/Interrogation-Room app
 
 %% ai-graph-end %%

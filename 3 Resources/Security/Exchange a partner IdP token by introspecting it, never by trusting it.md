@@ -1,10 +1,21 @@
 ---
-title: "Exchange a partner IdP token by introspecting it, never by trusting it"
+ai_hash: a93a1367c8ecbfef
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: COSSA Token Exchange Technical Analysis (TS)'
 status: seedling
-source: "Confluence: COSSA Token Exchange Technical Analysis (TS)"
-tags: [oauth, oidc, token-exchange, introspection, keycloak, sso, confluence-distilled]
+tags:
+- oauth
+- oidc
+- token-exchange
+- introspection
+- keycloak
+- sso
+- confluence-distilled
+title: Exchange a partner IdP token by introspecting it, never by trusting it
+type: concept
 ---
 
 # Exchange a partner IdP token by introspecting it, never by trusting it
@@ -52,3 +63,14 @@ Source: [[COSSA Token Exchange — Technical Analysis and Implementation]] (TS, 
 ## Related
 
 - [[Authorization has four named parts PAP, PDP, PEP, PIP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[COSSA Token Exchange — Technical Analysis and Implementation]]
+- [[OIDC federation with just-in-time provisioning hinges on the attribute join key]]
+- [[Onboarding API - Investigation Identity Provider SSO]]
+- [[SAML documentation]]
+- [[Understanding Keycloak Authorization Code flow]]
+
+%% ai-graph-end %%

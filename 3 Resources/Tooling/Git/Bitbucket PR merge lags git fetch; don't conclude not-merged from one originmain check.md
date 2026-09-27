@@ -1,7 +1,7 @@
 ---
-ai_hash: 7c0b86fc73ea4647
+ai_hash: 0373de859b94e2ea
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-18
 entities: []
 source: Vinnstack session 2026-07-18
@@ -32,9 +32,10 @@ Related: a background merge-watcher that polls `origin/main` for advancement is 
 %% ai-graph-start %%
 
 **Related notes:**
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
 - [[FETCH_HEAD is volatile when an IDE auto-fetches]]
+- [[A git merge can silently revert a merged PR when two branches edit the same region]]
+- [[git checkout -B branch originmain rehomes upstream to originmain, so a bare push targets main]]
 - [[gh CLI is GitHub-only, not Bitbucket-aware]]
-- [[Bitbucket Cloud pull-request REST API shape]]
-- [[Bitbucket Cloud PR comment resolution is presence-of-object, not a boolean]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Efficient way to write data parallelly into both Postgres and MongoDB"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48430710817/Efficient+way+to+write+data+parallelly+into+both+Postgres+and+MongoDB
-space: "HACKA"
-topic: infra
-relevance: 0.731
-depth: 2.38
-updated: 2025-04-10
+ai_hash: 6c1dada852f3172a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 34
+depth: 2.38
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48430710817/Efficient+way+to+write+data+parallelly+into+both+Postgres+and+MongoDB
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/hacka
+- confluence
+- infra
+- space/hacka
+title: Efficient way to write data parallelly into both Postgres and MongoDB
+topic: infra
+type: source
+updated: 2025-04-10
 ---
 
 # Efficient way to write data parallelly into both Postgres and MongoDB
@@ -170,3 +174,14 @@ Solution: Creating a New MongoDBService to Interact with the Mongo Database
 **Advantages**: The MongoDB implementation is decoupled from the entity Postgres.
 
 **Disadvantages**: Requires changes in multiple places.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dual-write to a new datastore via a composite implementation of the existing interface]]
+- [[Fit OneAPI Postgres data model to MongoDB]]
+- [[Unified architecture overview]]
+- [[Enhance performance - Research on Parallel]]
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+
+%% ai-graph-end %%

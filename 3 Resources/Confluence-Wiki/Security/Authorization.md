@@ -1,18 +1,22 @@
 ---
-title: "Authorization"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530435691/Authorization
-space: "LUZ"
-topic: security
-relevance: 0.75
-depth: 2.7
-updated: 2021-05-18
+ai_hash: 89885bd025532863
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.7
+entities: []
+relevance: 0.75
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530435691/Authorization
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Authorization
+topic: security
+type: source
+updated: 2021-05-18
 ---
 
 # Authorization
@@ -171,3 +175,14 @@ path "transit/decrypt/{{identity.entity.aliases.auth_jwt_bb8d482a.metadata.tenan
 ![[20530435691-image2021-5-17_10-37-45.png]]
 
 ***
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vault overview]]
+- [[Update Vault Role remove claim_mapping]]
+- [[Token JWT Security]]
+- [[HowToUseNewTokenAPI]]
+- [[Introduction of Hashicorp Vault]]
+
+%% ai-graph-end %%

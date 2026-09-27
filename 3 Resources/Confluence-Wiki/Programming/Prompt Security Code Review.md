@@ -1,18 +1,22 @@
 ---
-title: "Prompt: Security Code Review"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48996745285/Prompt+Security+Code+Review
-space: "FUT"
-topic: programming
-relevance: 0.828
-depth: 2.84
-updated: 2025-12-23
+ai_hash: c64944ddbeace32b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.84
+entities: []
+relevance: 0.828
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48996745285/Prompt+Security+Code+Review
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: 'Prompt: Security Code Review'
+topic: programming
+type: source
+updated: 2025-12-23
 ---
 
 # Prompt: Security Code Review
@@ -241,3 +245,14 @@ For each finding:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Prompt Architecture Code Review]]
+- [[Prompt Performance Code Review]]
+- [[Prompt DevOps Code Review]]
+- [[Text Compression Techniques - Examples]]
+- [[Test and code review report template.2.93]]
+
+%% ai-graph-end %%

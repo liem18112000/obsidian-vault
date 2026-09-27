@@ -1,18 +1,22 @@
 ---
-title: "Performance Issue: Slow Document Listing Query in MongoDB - \"eArchive\" page"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48869834837/Performance+Issue+Slow+Document+Listing+Query+in+MongoDB+-+eArchive+page
-space: "LUZ"
-topic: infra
-relevance: 0.714
-depth: 2.53
-updated: 2025-11-14
+ai_hash: 4eedd53a67f2f79f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.53
+entities: []
+relevance: 0.714
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48869834837/Performance+Issue+Slow+Document+Listing+Query+in+MongoDB+-+eArchive+page
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: 'Performance Issue: Slow Document Listing Query in MongoDB - "eArchive" page'
+topic: infra
+type: source
+updated: 2025-11-14
 ---
 
 # Performance Issue: Slow Document Listing Query in MongoDB - "eArchive" page
@@ -353,3 +357,14 @@ Sorting earlier:
 </div>
 
 With these optimizations, the document search operation becomes significantly faster, ensuring the eArchive GUI loads quickly even for tenants with very large document sets.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive Performance — Detail Overview]]
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+- [[Performance Analysis and Proposed Solutions]]
+- [[Full‑Text Document Search — Performance Analysis & Proposals]]
+- [[Reproduce performance issue and understand the issue on DEV - A.Vu]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: a0c5f0920d89bbdd
+ai_hash: d4d09dadf8166746
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-18
 entities: []
 source: sessions 2026-06-18 / 2026-06-19
@@ -44,6 +44,6 @@ Context: Claude Hooks & Skills talk; `voiceover-vi.md` in `C:\Users\dvtliem\.cla
 - [[Humorous Southern-VI voiceover must sound natural, not forced slang]]
 - [[Google Cloud TTS from Windows fetch the token in bash, pass via env to Python]]
 - [[Virtual avatar presenter project design plan]]
-- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+- [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
 
 %% ai-graph-end %%

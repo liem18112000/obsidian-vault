@@ -1,7 +1,7 @@
 ---
-ai_hash: 824df94ec1908f25
+ai_hash: 60524444f3262426
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-16
 entities: []
 tags:
@@ -44,6 +44,5 @@ Any reload-based theme toggle MUST persist to localStorage (or a cookie) or the 
 **Related notes:**
 - [[Theme toggle that overrides prefers-color-scheme via data-theme on root]]
 - [[Inline SVG ignores theme unless shapes use CSS-variable classes, not hardcoded hex]]
-- [[Theme shared overlays with CSS-variable-backed Tailwind classes, not hardcoded colors]]
 
 %% ai-graph-end %%

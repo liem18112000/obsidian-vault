@@ -1,5 +1,5 @@
 ---
-ai_hash: 7d126c1fcb644fbf
+ai_hash: 6b97874d2303fd32
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-13
@@ -39,7 +39,7 @@ Related: [[A latency penalty in the tail not the median points to JITGC warm-up 
 - [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention]]
 - [[Truncating DB collections between benchmark runs resets data but not service warmth]]
 - [[Trust median and p90 over many runs, not the mean of a few, for latency on a noisy shared env]]
+- [[A ten-request JVM benchmark measures warm-up, not throughput]]
 - [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
-- [[Small import batches are overhead-bound so their per-item throughput is lower than large batches]]
 
 %% ai-graph-end %%

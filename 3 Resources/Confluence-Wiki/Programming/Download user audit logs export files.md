@@ -1,18 +1,22 @@
 ---
-title: "Download user audit logs export files"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47122156152/Download+user+audit+logs+export+files
-space: "LUZ"
-topic: programming
-relevance: 0.716
-depth: 2.89
-updated: 2023-07-17
+ai_hash: fc2c13a26deba75f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.89
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47122156152/Download+user+audit+logs+export+files
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Download user audit logs export files
+topic: programming
+type: source
+updated: 2023-07-17
 ---
 
 # Download user audit logs export files
@@ -333,3 +337,14 @@ Context:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[Empty Trash APIs]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[Measure create API - investigate performance]]
+- [[LUZ Audit - Basic Understanding Guide]]
+
+%% ai-graph-end %%

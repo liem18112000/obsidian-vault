@@ -1,18 +1,22 @@
 ---
-title: "[LUZ-115505] Public API - letterbox | Part 3"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47739404382/LUZ-115505+Public+API+-+letterbox+Part+3
-space: "TS"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2024-04-10
+ai_hash: 42d995788bad22e7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 32
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47739404382/LUZ-115505+Public+API+-+letterbox+Part+3
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: '[LUZ-115505] Public API - letterbox | Part 3'
+topic: programming
+type: source
+updated: 2024-04-10
 ---
 
 # [LUZ-115505] Public API - letterbox | Part 3
@@ -3053,3 +3057,14 @@ How to authenticate: [How to integrate with ePost Keycloak](https://axonivy.atla
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public API - letterbox - API get deleted letters from trash]]
+- [[Preview Delivery-Prices API - ForcedOnboading]]
+- [[LUZ-146746 Use correct API's for delete, restore and their undo]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%

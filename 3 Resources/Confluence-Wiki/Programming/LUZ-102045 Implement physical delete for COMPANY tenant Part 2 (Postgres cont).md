@@ -1,18 +1,23 @@
 ---
-title: "LUZ-102045 Implement physical delete for COMPANY tenant | Part 2 (Postgres cont)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47454322785/LUZ-102045+Implement+physical+delete+for+COMPANY+tenant+Part+2+Postgres+cont
-space: "TS"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2023-08-10
+ai_hash: d0b87d2323eec6f5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47454322785/LUZ-102045+Implement+physical+delete+for+COMPANY+tenant+Part+2+Postgres+cont
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: LUZ-102045 Implement physical delete for COMPANY tenant | Part 2 (Postgres
+  cont)
+topic: programming
+type: source
+updated: 2023-08-10
 ---
 
 # LUZ-102045 Implement physical delete for COMPANY tenant | Part 2 (Postgres cont)
@@ -145,3 +150,14 @@ VALUES(&#39;3d47746e-57a5-4700-bb67-1269dfac4a5a&#39;, &#39;2021-08-04 11:22:52.
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-102459 Implement physical delete for INDIVIDUAL tenant]]
+- [[Delete company - Old way]]
+- [[Script to list all the information of the tenants]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[15. Update companies by tenant id]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Call API trigger Vacuum POS schema on PROD"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47241199698/Call+API+trigger+Vacuum+POS+schema+on+PROD
-space: "Helios"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2022-12-20
+ai_hash: ef3f57b2af6025df
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47241199698/Call+API+trigger+Vacuum+POS+schema+on+PROD
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Call API trigger Vacuum POS schema on PROD
+topic: programming
+type: source
+updated: 2022-12-20
 ---
 
 # Call API trigger Vacuum POS schema on PROD
@@ -174,3 +178,14 @@ Example result file in luz_scripting_web:
 
 
 You can use the next offset value in the output file for the next run.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to execute API to create sync event for post from tenant schemas to public table]]
+- [[Run Script Resync hidden wiget]]
+- [[19. Sync POS indicators]]
+- [[11. Collect and write out companies were verified their business to Hubspot]]
+- [[15. Update companies by tenant id]]
+
+%% ai-graph-end %%

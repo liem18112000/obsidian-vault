@@ -1,14 +1,21 @@
 ---
-title: "Knowledge Base Solutions Comparison Guide"
+ai_hash: ee503ef9a4e56da1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48915513456'
+confluence_path: Team Kepler > Developer note > AI Research > MCP
 created: 2025-11-27
-updated: 2025-11-28
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- mcp
+- search
+title: Knowledge Base Solutions Comparison Guide
+type: source
+updated: 2025-11-28
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48915513456/Knowledge+Base+Solutions+Comparison+Guide
-confluence_id: "48915513456"
-confluence_path: "Team Kepler > Developer note > AI Research > MCP"
-tags: [confluence, mcp, search]
 ---
 
 # Knowledge Base Solutions Comparison Guide
@@ -589,3 +596,14 @@ Criteria for adoption:
 *Attached to the Confluence page but not embedded in its body.*
 
 - [[3 Resources/Confluence/Team Kepler/Developer note/AI Research/MCP/attachments/knowledge-base-solutions-comparison-guide/knowledge-base.md|knowledge-base.md]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AI-Powered Development Environment Architecture]]
+- [[Vinnstack vs. Claude Code (native)]]
+- [[Skill-based Compression Techniques - Overview]]
+- [[Skill-based Compression Techniques - Overview]]
+- [[My knowledge ecosystem Claude hooksskills - Obsidian vault - Quartz wiki + vault-graph (Vertex Graph RAG)]]
+
+%% ai-graph-end %%

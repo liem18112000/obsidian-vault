@@ -1,10 +1,21 @@
 ---
-title: "Fallow analyses a JS-TS repo as a graph and exposes it to agents over MCP"
+ai_hash: 82b09b61d6ded843
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: reference
+entities: []
+source: 'Confluence: Fallow Install and Usage Guide (TS)'
 status: seedling
-source: "Confluence: Fallow Install and Usage Guide (TS)"
-tags: [static-analysis, javascript, typescript, mcp, dead-code, tooling, confluence-distilled]
+tags:
+- static-analysis
+- javascript
+- typescript
+- mcp
+- dead-code
+- tooling
+- confluence-distilled
+title: Fallow analyses a JS-TS repo as a graph and exposes it to agents over MCP
+type: reference
 ---
 
 # Fallow analyses a JS-TS repo as a graph and exposes it to agents over MCP
@@ -46,3 +57,11 @@ Source: [[Fallow – Install & Usage Guide (Code Quality for JS TS)]] (TS, Confl
 ## Related
 
 - [[A coding-agent prompt needs codebase anchors and stated house style]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fallow – Install & Usage Guide (Code Quality for JS TS)]]
+- [[A code knowledge graph answers impact questions that embedding search cannot]]
+
+%% ai-graph-end %%

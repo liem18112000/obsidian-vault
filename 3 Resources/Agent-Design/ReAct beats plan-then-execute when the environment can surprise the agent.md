@@ -1,10 +1,20 @@
 ---
-title: "ReAct beats plan-then-execute when the environment can surprise the agent"
+ai_hash: 3fbcc517b8463b9b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: argument
+entities: []
+source: 'Confluence: Multi-Agentic Architecture - Theory (2026-03-23)'
 status: seedling
-source: "Confluence: Multi-Agentic Architecture - Theory (2026-03-23)"
-tags: [ai-agents, react, planning, agent-design, llm, design-tradeoff]
+tags:
+- ai-agents
+- react
+- planning
+- agent-design
+- llm
+- design-tradeoff
+title: ReAct beats plan-then-execute when the environment can surprise the agent
+type: argument
 ---
 
 # ReAct beats plan-then-execute when the environment can surprise the agent
@@ -27,3 +37,14 @@ Practical middle ground used in practice: plan at the coarse level (phases that 
 ## Related
 
 - [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+- [[Multi-Agentic Architecture - Theory]]
+- [[Sub Agentic Loop 3.2 - Implement]]
+- [[Agentic browser testing discover once, compile deterministic, heal only on failure]]
+
+%% ai-graph-end %%

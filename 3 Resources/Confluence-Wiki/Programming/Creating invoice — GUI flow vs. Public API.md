@@ -1,18 +1,22 @@
 ---
-title: "Creating invoice — GUI flow vs. Public API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/49513988106/Creating+invoice+GUI+flow+vs.+Public+API
-space: "NEXT"
-topic: programming
-relevance: 0.79
-depth: 2.76
-updated: 2026-06-17
+ai_hash: 80491887f1d13fb1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.76
+entities: []
+relevance: 0.79
+source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/49513988106/Creating+invoice+GUI+flow+vs.+Public+API
+space: NEXT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/next
+- confluence
+- programming
+- space/next
+title: Creating invoice — GUI flow vs. Public API
+topic: programming
+type: source
+updated: 2026-06-17
 ---
 
 # Creating invoice — GUI flow vs. Public API
@@ -163,3 +167,14 @@ So the capability **exists**, but the booking is created **without** a document 
 ### Bottom line
 
 The public API lets a partner **create, finalize (book), reload, and fetch the PDF of** an invoice — the **data + accounting core** of the GUI flow, in both the direct-INVOICED and DRAFT→INVOICED paths. It does **not** reproduce the GUI's **convenience layer** (auto pricing/VAT/tagging and total calculation), its **delivery** (sending to the customer), its **document rendering/customization**, or its **interactive safeguards**. A partner integration must supply those itself, and "send to customer" in particular would require a **new, separately-scoped API increment**.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Exposing a GUI flow as an API means replacing everything the screen did for the user]]
+- [[Invoice API]]
+- [[SAP in `luz_finance` — What, Why, How, When]]
+- [[Analyze API v2 for Invoice prediction]]
+- [[Invoice Processing Steps for KlaraTenant Account]]
+
+%% ai-graph-end %%

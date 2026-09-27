@@ -1,10 +1,20 @@
 ---
-title: "Claim work across pods with an expiring lease column on the row"
+ai_hash: 538e2607d58fa515
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Batching Design (FUT)'
 status: seedling
-source: "Confluence: Batching Design (FUT)"
-tags: [leases, concurrency, multi-pod, batch-processing, crash-recovery, confluence-distilled]
+tags:
+- leases
+- concurrency
+- multi-pod
+- batch-processing
+- crash-recovery
+- confluence-distilled
+title: Claim work across pods with an expiring lease column on the row
+type: concept
 ---
 
 # Claim work across pods with an expiring lease column on the row
@@ -43,3 +53,14 @@ Source: [[Batching Design]] (FUT, Confluence).
 ## Related
 
 - [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+- [[In-memory job throttles silently break when you scale to multiple replicas]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[Split a batch against a cache and forward only the misses, tracking the residual]]
+- [[Lock-based stampede control losers hit the cache before the winner fills it]]
+
+%% ai-graph-end %%

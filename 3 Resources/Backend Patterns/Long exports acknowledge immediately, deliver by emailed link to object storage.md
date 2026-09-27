@@ -1,10 +1,20 @@
 ---
-title: "Long exports: acknowledge immediately, deliver by emailed link to object storage"
+ai_hash: 28531ef36f863d47
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Proof of concept Export and download storage (TP2020)'
 status: seedling
-source: "Confluence: Proof of concept Export and download storage (TP2020)"
-tags: [async, export, object-storage, signed-url, tree-reconstruction, confluence-distilled]
+tags:
+- async
+- export
+- object-storage
+- signed-url
+- tree-reconstruction
+- confluence-distilled
+title: 'Long exports: acknowledge immediately, deliver by emailed link to object storage'
+type: lesson
 ---
 
 # Long exports: acknowledge immediately, deliver by emailed link to object storage
@@ -42,3 +52,14 @@ Source: [[Proof of concept Export and download storage|Proof of concept  Export 
 ## Related
 
 - [[Score async API designs on crash recovery and multi-instance, not latency]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Proof of concept Export and download storage]]
+- [[Decouple upload API latency from file size with pre-signed direct-to-object-storage uploads]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[Score async API designs on crash recovery and multi-instance, not latency]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+
+%% ai-graph-end %%

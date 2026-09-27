@@ -1,33 +1,33 @@
 ---
-ai_hash: 125689fc047bdcc4
+ai_hash: a3f25973c67a34fb
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-29
 entities:
 - Payrexx v1.0 charge API
 - ISO 8583 code
+- Payrexx
+- api.klarapay.ch/v1.0
 - POST /v1.0/Transaction/{id}
-- status
-- message
-- data
-- code
 - ClientResponseFilter
 - luz-online-payment Payrexx client
 - LUZ-157476
-- Payrexx
 - Transaction.additionalProperties
 - PayrexxResponse.additionalProperties
-- Jackson @JsonAnySetter
+- '@JsonAnySetter'
 - KlaraTransactionRequest.declineCode
 - luz_store
 - FailureCategory
-- expir keyword
-- api.klarapay.ch/v1.0
-- Payrexx BACK-OFFICE transaction detail view
+- message prose
 - CARD_EXPIRED
 - declineCode plumbing
-- decline-code flow
-- Capture an unknown-named JSON field
+- Jackson
+- Payrexx BACK-OFFICE transaction detail view
+- status field
+- message field
+- API response
+- decline code
+- code-based taxonomy
 source: session 2026-07-29; raw response filter on dev
 status: seedling
 tags:
@@ -67,44 +67,37 @@ Related: [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store m
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Enumerate real Payrexx decline codes via chargeTransactionId lookup, not via service responses]]
 - [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
 - [[luz_online_payment silently drops Payrexx decline codes]]
 - [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
 - [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
-- [[Enumerate real Payrexx decline codes via chargeTransactionId lookup, not via service responses]]
 
 **Relations:**
-- Payrexx v1.0 charge API — *returns on failure* — status
-- Payrexx v1.0 charge API — *returns on failure* — message
-- Payrexx v1.0 charge API — *does not return on failure* — ISO 8583 code
-- POST /v1.0/Transaction/{id} — *is part of* — Payrexx v1.0 charge API
-- POST /v1.0/Transaction/{id} — *returns on failure* — status
-- POST /v1.0/Transaction/{id} — *returns on failure* — message
-- POST /v1.0/Transaction/{id} — *does not return on failure* — data
-- POST /v1.0/Transaction/{id} — *does not return on failure* — code
-- ClientResponseFilter — *logs raw body on* — luz-online-payment Payrexx client
+- Payrexx v1.0 charge API — *returns* — status field
+- Payrexx v1.0 charge API — *returns* — message field
+- Payrexx v1.0 charge API — *does not return* — ISO 8583 code
+- Payrexx v1.0 charge API — *accessed via* — POST /v1.0/Transaction/{id}
+- Payrexx v1.0 charge API — *confirmed against* — api.klarapay.ch/v1.0
 - ISO 8583 code — *exists in* — Payrexx BACK-OFFICE transaction detail view
-- ISO 8583 code — *is not in* — Payrexx v1.0 charge API response
-- Transaction.additionalProperties — *are* — empty
-- PayrexxResponse.additionalProperties — *are* — empty
-- Jackson @JsonAnySetter — *captures* — Transaction.additionalProperties
-- Jackson @JsonAnySetter — *captures* — PayrexxResponse.additionalProperties
-- KlaraTransactionRequest.declineCode — *stays* — null
+- ISO 8583 code — *not present in* — API response
+- Transaction.additionalProperties — *is* — empty
+- PayrexxResponse.additionalProperties — *is* — empty
+- @JsonAnySetter — *used for* — capture
+- KlaraTransactionRequest.declineCode — *remains* — null
 - luz_store — *cannot key* — FailureCategory
-- luz_store — *maps from* — message
-- message — *maps to* — FailureCategory
-- message — *mapped to CARD_EXPIRED via* — expir keyword
-- CARD_EXPIRED — *is a* — FailureCategory
-- declineCode plumbing — *is built in* — luz-online-payment
+- FailureCategory — *off* — decline code
+- luz_store — *maps* — message prose
+- message prose — *to* — FailureCategory
+- message prose — *example* — Your card has expired.
+- Your card has expired. — *maps to* — CARD_EXPIRED
 - declineCode plumbing — *is* — correct and future-proof
-- LUZ-157476 — *is related to* — decline-code flow
-- LUZ-157476 — *is related to* — luz-online-payment
-- LUZ-157476 — *is related to* — luz_store
-- Jackson @JsonAnySetter — *is related to* — Capture an unknown-named JSON field
-- Payrexx v1.0 charge API — *accessed via* — api.klarapay.ch/v1.0
-- Payrexx — *provides* — Payrexx v1.0 charge API
-- Payrexx — *provides* — Payrexx BACK-OFFICE transaction detail view
-- luz-online-payment — *forwards* — decline-code flow
-- luz_store — *maps* — decline-code flow
+- declineCode plumbing — *is in* — luz-online-payment Payrexx client
+- Payrexx — *may expose* — decline code
+- code-based taxonomy — *is blocked by* — Payrexx API limitation
+- LUZ-157476 — *related to* — decline-code flow luz-online-payment forwards, luz_store maps
+- LUZ-157476 — *related to* — Capture an unknown-named JSON field with Jackson @JsonAnySetter
+- luz-online-payment Payrexx client — *uses* — ClientResponseFilter
+- Capture an unknown-named JSON field with Jackson @JsonAnySetter — *uses* — Jackson
 
 %% ai-graph-end %%

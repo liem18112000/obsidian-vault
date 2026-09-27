@@ -1,18 +1,22 @@
 ---
-title: "How to implement a service"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47973925191/How+to+implement+a+service
-space: "FUT"
-topic: programming
-relevance: 0.804
-depth: 2.84
-updated: 2024-12-04
+ai_hash: 760ff686486c70f1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 30
+depth: 2.84
+entities: []
+relevance: 0.804
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47973925191/How+to+implement+a+service
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: How to implement a service
+topic: programming
+type: source
+updated: 2024-12-04
 ---
 
 # How to implement a service
@@ -147,3 +151,14 @@ To map error and exception from technical to things that are meaningful the `Err
 ### Tests
 
 Tests including UT and ITs have already implemented for services/resources of the skeleton. Please add more tests as you implement business for the service.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Common service architecture]]
+- [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+- [[Recipe Best practices implementing scalable distributed applications on cloud]]
+- [[Batching Design]]
+- [[Luz Batch TypeScript - Sequence Diagram]]
+
+%% ai-graph-end %%

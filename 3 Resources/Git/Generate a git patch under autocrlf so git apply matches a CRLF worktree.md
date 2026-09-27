@@ -1,5 +1,5 @@
 ---
-ai_hash: 9e04e4bcc6c7760e
+ai_hash: 49650b3bdeb6e3df
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-19
@@ -30,7 +30,7 @@ Related: [[Apostrophe inside bash ${varmessage} breaks the parser|Apostrophe ins
 - [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
 - [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
 - [[Split intermixed single-file changes into two commits via backup and intermediate edit]]
+- [[JS regex dot excludes carriage return, so (.)$ silently fails on CRLF lines]]
 - [[Windows Git Bash mangles non-ASCII to cp1252 breaking UTF-8]]
-- [[CRLF line endings on a shell script shebang cause Docker exit 127 (env bash^M not found)]]
 
 %% ai-graph-end %%

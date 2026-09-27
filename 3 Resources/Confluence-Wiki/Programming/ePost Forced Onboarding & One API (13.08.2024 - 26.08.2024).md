@@ -1,18 +1,22 @@
 ---
-title: "ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47999058768/ePost+Forced+Onboarding+One+API+13.08.2024+-+26.08.2024
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2024-08-26
+ai_hash: 8c85e8d1035f47c5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47999058768/ePost+Forced+Onboarding+One+API+13.08.2024+-+26.08.2024
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)
+topic: programming
+type: source
+updated: 2024-08-26
 ---
 
 # ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)
@@ -68,3 +72,14 @@ tags:
   - Internal Marketing Letter
 
   - One API monitoring GUI
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API & ePost Forced Onboarding 0.02.75.00 (16.07.2024 - 29.07.2024)]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+- [[5. How to extend modify ONE API delivery API Research]]
+- [[Copy 5. How to extend modify ONE API delivery API Research]]
+- [[Accounting Interface, Epost Forced Onboarding, and ONE api]]
+
+%% ai-graph-end %%

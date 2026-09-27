@@ -1,10 +1,19 @@
 ---
-title: "Keyword classifiers assign topics by lexicon size unless you normalize"
+ai_hash: b87ce35720fca2f2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: session 2026-09-27 Confluence export
 status: seedling
-source: "session 2026-09-27 Confluence export"
-tags: [classification, keywords, ranking, gotcha, heuristics]
+tags:
+- classification
+- keywords
+- ranking
+- gotcha
+- heuristics
+title: Keyword classifiers assign topics by lexicon size unless you normalize
+type: gotcha
 ---
 
 # Keyword classifiers assign topics by lexicon size unless you normalize
@@ -38,3 +47,12 @@ perTopic[topic] = rawT / Math.sqrt(termList.length);   // <- normalise, then arg
 ## Related
 
 - [[Confluence CQL search paginates by opaque cursor, not start offset]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LLM query enrichment for a substring-OR matcher must contract, not expand, the token set]]
+- [[OCR body text dominates a full-text trigram index]]
+- [[LLM-as-reranker JSON truncation budget max_tokens for pretty-printed output, not just element count]]
+
+%% ai-graph-end %%

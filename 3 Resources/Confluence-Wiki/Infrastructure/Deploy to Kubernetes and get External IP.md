@@ -1,18 +1,22 @@
 ---
-title: "Deploy to Kubernetes and get External IP"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675014564/Deploy+to+Kubernetes+and+get+External+IP
-space: "LUZCOMP"
-topic: infra
-relevance: 0.741
-depth: 2.66
-updated: 2016-05-18
+ai_hash: 7b6b191864df250f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.66
+entities: []
+relevance: 0.741
+source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675014564/Deploy+to+Kubernetes+and+get+External+IP
+space: LUZCOMP
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luzcomp
+- confluence
+- infra
+- space/luzcomp
+title: Deploy to Kubernetes and get External IP
+topic: infra
+type: source
+updated: 2016-05-18
 ---
 
 # Deploy to Kubernetes and get External IP
@@ -310,3 +314,14 @@ tags:
     </div>
 
     <span class="legacy-color-text-red2">Remember it takes more than 1 minute to get external IP successfully.</span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to connect K8S database from postgres]]
+- [[2.31 Build & deploy agent review service to k8s (POC)]]
+- [[Port forward and Docker compose]]
+- [[GCP - Connect Database]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

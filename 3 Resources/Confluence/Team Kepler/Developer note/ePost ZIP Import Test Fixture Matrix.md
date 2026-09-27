@@ -1,14 +1,20 @@
 ---
-title: "ePost ZIP Import Test Fixture Matrix"
+ai_hash: 834612032e6413c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49665769474'
+confluence_path: Team Kepler > Developer note
 created: 2026-08-14
-updated: 2026-08-14
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- epost
+title: ePost ZIP Import Test Fixture Matrix
+type: source
+updated: 2026-08-14
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49665769474/ePost+ZIP+Import+Test+Fixture+Matrix
-confluence_id: "49665769474"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, epost]
 ---
 
 # ePost ZIP Import Test Fixture Matrix
@@ -208,3 +214,14 @@ Use the 500-doc fixture (08) — with a deliberate mix of success/reject/fail (c
 | 39a | disallowed type **and** \> 200 MiB | `DETAIL_FILE_TYPE_NOT_ALLOWED` (type checked before size) |
 | 39b | allowed type, \> 200 MiB, **and** infected sidecar | `DETAIL_FILE_TOO_LARGE` (size checked before AV) — document rejected before the sidecar is ever scanned |
 | 39c | allowed type, ≤ 200 MiB, infected sidecar | `DETAIL_METADATA_INFECTED` → `rejectedFiles` |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost Zip-Import - dev test-suite results - 18-08-2026]]
+- [[ePost ZIP-import — dev test-suite results - 13-08-2026]]
+- [[ePost Zip-Import - staging test-suite results - 19-08-2026]]
+- [[LUZ-158230 ePost ZIP Import Test Fixture Matrix (Confluence)]]
+- [[Silently-ignored input needs a visible reason field, or it looks like data loss]]
+
+%% ai-graph-end %%

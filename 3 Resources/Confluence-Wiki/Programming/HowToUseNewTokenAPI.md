@@ -1,18 +1,22 @@
 ---
-title: "HowToUseNewTokenAPI"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436034394/HowToUseNewTokenAPI
-space: "LUZ"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2016-10-26
+ai_hash: e2943a1ff547f340
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436034394/HowToUseNewTokenAPI
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: HowToUseNewTokenAPI
+topic: programming
+type: source
+updated: 2016-10-26
 ---
 
 # HowToUseNewTokenAPI
@@ -119,3 +123,14 @@ HTTP 1.1 200 OK
 </div>
 
 ### 4 - Use the new token for accessing other resource.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Token JWT Security]]
+- [[How to consume luz api]]
+- [[Swagger with api explorer]]
+- [[Luz 403 Not allowed means the token has no tenant claim, not a missing permission]]
+- [[Upload Document API]]
+
+%% ai-graph-end %%

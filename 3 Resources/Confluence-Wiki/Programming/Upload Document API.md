@@ -1,18 +1,22 @@
 ---
-title: "Upload Document API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20468874747/Upload+Document+API
-space: "LUZ"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2021-11-26
+ai_hash: 27367fbe1dd3ab91
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20468874747/Upload+Document+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Upload Document API
+topic: programming
+type: source
+updated: 2021-11-26
 ---
 
 # Upload Document API
@@ -174,3 +178,14 @@ In case the given token is incorrect, the request will be rejected with the erro
 
 
 ![[20468874747-error.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Temporary Restfull APIs in Ivy]]
+- [[REST API for deleting EXPENSES documents]]
+- [[Uploading documents]]
+- [[Token JWT Security]]
+- [[HowToUseNewTokenAPI]]
+
+%% ai-graph-end %%

@@ -1,12 +1,12 @@
 ---
-ai_hash: 64eefbc18496d3c8
+ai_hash: 1f0294c350e17793
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-13
 entities:
 - KGA
 - gather_knowledge
-- exclude= parameter
+- exclude=
 - node ids
 - keywords
 - test-agent-v2
@@ -17,9 +17,12 @@ entities:
 - Jira issue keys
 - Confluence numeric page ids
 - URLs
+- LUZ-158230
+- jira:LUZ-158230
+- '49665769474'
+- confluence:49665769474
 - ZIP import
 - memory-bleed
-- prior gather output
 - fresh context
 - new gather
 - Post-hoc exclude
@@ -27,10 +30,14 @@ entities:
 - cached rounds
 - expansion
 - crawl
-- memory/atlassian/lead seeders
+- memory seeder
+- atlassian seeder
+- lead seeder
 - semantic recall
 - gather_codebase
+- axonivy-prodrepo workspace slug
 - axonivy-prod/<repo> workspace slug
+- whitespace/commas
 source: session 2026-09-13 LUZ-156281 demo
 status: seedling
 tags:
@@ -66,35 +73,40 @@ Also: `exclude=` only bites on a **fresh context** (a new gather). Post-hoc excl
 - [[exclude= does not lift PQS precision because cloud-discover re-promotes 8 services]]
 - [[gather_codebase on a mid-refine context routes into the refine loop]]
 - [[gather_codebase needs axonivy-prodrepo workspace slug]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
 - [[A link-following crawl pulls in graph-adjacent but topically-tangential nodes]]
-- [[Drive the KGA A2A agent offline via Starlette TestClient for evaluation]]
 
 **Relations:**
 - KGA — *uses* — gather_knowledge
-- gather_knowledge — *has parameter* — exclude= parameter
-- exclude= parameter — *takes* — node ids
-- exclude= parameter — *does not take* — keywords
+- gather_knowledge — *has parameter* — exclude=
+- exclude= — *takes* — canonical node ids
+- exclude= — *does not take* — keywords
 - gather_knowledge — *is part of* — test-agent-v2
-- node ids — *are also known as* — canonical node ids
 - keywords — *are also known as* — free-text topics
-- exclude_ids() — *uses* — normalize_seed
-- normalize_seed — *converts* — Jira issue keys
-- normalize_seed — *converts* — Confluence numeric page ids
-- normalize_seed — *processes* — URLs
-- ZIP import — *is an example of* — free-text topics
-- ZIP import — *matches no* — node
-- exclude= parameter — *prunes* — memory-bleed
-- exclude= parameter — *requires* — specific bled node ids
-- specific bled node ids — *from* — prior gather output
-- exclude= parameter — *is effective on* — fresh context
+- exclude_ids() — *splits string on* — whitespace/commas
+- exclude_ids() — *processes tokens with* — normalize_seed
+- normalize_seed — *handles* — Jira issue keys
+- normalize_seed — *handles* — Confluence numeric page ids
+- normalize_seed — *handles* — URLs
+- Jira issue keys — *normalize to example* — jira:LUZ-158230
+- LUZ-158230 — *is an example of* — Jira issue keys
+- Confluence numeric page ids — *normalize to example* — confluence:49665769474
+- 49665769474 — *is an example of* — Confluence numeric page ids
+- ZIP import — *normalizes to* — itself
+- ZIP import — *matches no* — canonical node ids
+- exclude= — *prunes* — memory-bleed
+- exclude= — *requires* — canonical node ids
+- exclude= — *applies to* — fresh context
 - fresh context — *is a* — new gather
-- Post-hoc exclude — *on* — already-converged context
+- Post-hoc exclude — *on already-converged context is a* — no-op
 - Post-hoc exclude — *replays* — cached rounds
-- exclude= parameter — *applies to* — expansion
-- exclude= parameter — *applies to* — crawl
-- exclude= parameter — *applies to* — memory/atlassian/lead seeders
-- exclude= parameter — *prevents* — semantic recall
-- gather_knowledge — *is related to* — gather_codebase
-- gather_codebase — *needs* — axonivy-prod/<repo> workspace slug
+- exclude= — *is applied to* — expansion
+- exclude= — *is applied to* — crawl
+- exclude= — *is applied to* — memory seeder
+- exclude= — *is applied to* — atlassian seeder
+- exclude= — *is applied to* — lead seeder
+- canonical node ids — *are kept out of* — semantic recall
+- gather_codebase — *needs* — axonivy-prodrepo workspace slug
+- axonivy-prodrepo workspace slug — *is a type of* — axonivy-prod/<repo> workspace slug
 
 %% ai-graph-end %%

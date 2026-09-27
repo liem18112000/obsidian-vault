@@ -1,40 +1,47 @@
 ---
-ai_hash: 6ce71befbb90f038
+ai_hash: 0adc2107a8351218
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-04
 entities:
-- INDIVIDUAL Invoice Run v2 charge
-- state fields
-- invoice_item.state
-- InvoiceItemState
-- CREDIT_CARD_CHARGED_PENDING
-- CREDIT_CARD_CHARGED_FAILED
-- invoice_charge_tracking.state
-- ChargeTrackingState
-- PENDING (ChargeTrackingState)
-- SUSPENDED (ChargeTrackingState)
-- invoice_credit_card_transaction.transaction_state
-- TransactionState
-- FAILED (TransactionState)
-- transaction_status=ERROR
-- COMPANY charge
+- Failed INDIVIDUAL charge (Invoice Run v2)
+- State fields
+- transaction_state field
+- invoice_item.state field
+- invoice_charge_tracking.state field
+- invoice_item table
+- invoice_charge_tracking table
+- invoice_credit_card_transaction table
+- InvoiceItemState enum
+- ChargeTrackingState enum
+- TransactionState enum
+- CREDIT_CARD_CHARGED_PENDING state
+- CREDIT_CARD_CHARGED_FAILED state
+- PENDING state (ChargeTrackingState)
+- SUSPENDED state (ChargeTrackingState)
+- FAILED state (TransactionState)
+- transaction_status=ERROR condition
 - InvoiceRunServiceController
+- COMPANY item
+- INDIVIDUAL item
 - Payrexx
 - ChargeFailedNotificationTrigger.findFailedItems
 - payment method CREDIT
 - luz-store-seed-failed-charge skill
-- LUZ-157478
-- Payrexx card declines reach luz_store as ERROR with prose (note)
-- not DECLINED (note)
-- DECLINED status falls through invoice charge-failure handling in luz_store (note)
-- Invoice run v2 shows charge failures via verbatim message copy at controller line
-  628 (note)
-- Invoice Run v2
-- credit-card charge
-- notification flow
+- LUZ-157478 ticket
 - InvoiceCreditCardTransactionConverter
-- source of truth
+- SUCCESS state (TransactionState)
+- ROLLBACKED state (TransactionState)
+- REFUND_FAILED state (TransactionState)
+- Notification flow
+- CC transaction
+- Payrexx card declines
+- luz_store
+- DECLINED status
+- invoice charge-failure handling
+- Invoice Run v2
+- timeout/exception
+- individual charge failed and needs retry/notification
 source: session 2026-08-04
 status: seedling
 tags:
@@ -86,39 +93,47 @@ Discovered while correcting the verify step in the `luz-store-seed-failed-charge
 - [[Payrexx declines travel in-band on HTTP 2xx in the luz charge flow]]
 
 **Relations:**
-- INDIVIDUAL Invoice Run v2 charge — *is tracked by* — state fields
-- state fields — *include* — invoice_item.state
-- state fields — *include* — invoice_charge_tracking.state
-- state fields — *include* — invoice_credit_card_transaction.transaction_state
-- invoice_item.state — *uses enum* — InvoiceItemState
-- InvoiceItemState — *represents individual failure as* — CREDIT_CARD_CHARGED_PENDING
-- InvoiceItemState — *represents company failure as* — CREDIT_CARD_CHARGED_FAILED
-- invoice_charge_tracking.state — *uses enum* — ChargeTrackingState
-- ChargeTrackingState — *has value* — PENDING (ChargeTrackingState)
-- ChargeTrackingState — *has value* — SUSPENDED (ChargeTrackingState)
-- invoice_credit_card_transaction.transaction_state — *uses enum* — TransactionState
-- TransactionState — *has failure value* — FAILED (TransactionState)
-- invoice_credit_card_transaction.transaction_state — *is less reliable signal than* — invoice_item.state
-- InvoiceRunServiceController — *distinguishes* — INDIVIDUAL Invoice Run v2 charge
-- InvoiceRunServiceController — *distinguishes* — COMPANY charge
-- InvoiceRunServiceController — *sets invoice_item.state to* — CREDIT_CARD_CHARGED_PENDING
-- InvoiceRunServiceController — *for* — INDIVIDUAL Invoice Run v2 charge
-- InvoiceRunServiceController — *sets invoice_item.state to* — CREDIT_CARD_CHARGED_FAILED
-- InvoiceRunServiceController — *for* — COMPANY charge
-- invoice_credit_card_transaction — *row is written on* — Payrexx
-- notification flow — *is handled by* — ChargeFailedNotificationTrigger.findFailedItems
-- ChargeFailedNotificationTrigger.findFailedItems — *keys off* — invoice_item.state
+- Failed INDIVIDUAL charge (Invoice Run v2) — *is tracked by* — State fields
+- Failed INDIVIDUAL charge (Invoice Run v2) — *is represented across* — State fields
+- transaction_state field — *is* — least reliable signal
+- invoice_item.state field — *is field of* — invoice_item table
+- invoice_item table — *uses enum* — InvoiceItemState enum
+- InvoiceItemState enum — *has failure value for individual* — CREDIT_CARD_CHARGED_PENDING state
+- InvoiceItemState enum — *has failure value for company* — CREDIT_CARD_CHARGED_FAILED state
+- invoice_charge_tracking.state field — *is field of* — invoice_charge_tracking table
+- invoice_charge_tracking table — *uses enum* — ChargeTrackingState enum
+- ChargeTrackingState enum — *has failure value for fresh* — PENDING state (ChargeTrackingState)
+- ChargeTrackingState enum — *has failure value for superseded row* — SUSPENDED state (ChargeTrackingState)
+- transaction_state field — *is field of* — invoice_credit_card_transaction table
+- invoice_credit_card_transaction table — *uses enum* — TransactionState enum
+- TransactionState enum — *has failure value* — FAILED state (TransactionState)
+- invoice_credit_card_transaction table — *code matches on* — transaction_status=ERROR condition
+- InvoiceRunServiceController — *handles split for* — COMPANY item
+- InvoiceRunServiceController — *handles split for* — INDIVIDUAL item
+- INDIVIDUAL item — *transitions to* — CREDIT_CARD_CHARGED_PENDING state
+- COMPANY item — *transitions to* — CREDIT_CARD_CHARGED_FAILED state
+- INDIVIDUAL item — *never shows* — ChargeTrackingState.FAILED state
+- ChargeTrackingState enum — *is different from* — TransactionState enum
+- TransactionState enum — *can be* — SUCCESS state (TransactionState)
+- TransactionState enum — *can be* — FAILED state (TransactionState)
+- TransactionState enum — *can be* — ROLLBACKED state (TransactionState)
+- TransactionState enum — *can be* — REFUND_FAILED state (TransactionState)
+- InvoiceCreditCardTransactionConverter — *defines values for* — TransactionState enum
+- PENDING state (ChargeTrackingState) — *never appears in* — TransactionState enum
+- SUSPENDED state (ChargeTrackingState) — *never appears in* — TransactionState enum
+- invoice_credit_card_transaction table — *row is written if* — Payrexx returned a decline
+- timeout/exception — *leaves item in state* — PENDING state (ChargeTrackingState)
+- PENDING state (ChargeTrackingState) — *has no* — transaction row
+- Notification flow — *is implemented by* — ChargeFailedNotificationTrigger.findFailedItems
+- ChargeFailedNotificationTrigger.findFailedItems — *keys off* — invoice_item.state field = CREDIT_CARD_CHARGED_PENDING state
 - ChargeFailedNotificationTrigger.findFailedItems — *keys off* — payment method CREDIT
-- invoice_item.state = CREDIT_CARD_CHARGED_PENDING — *is* — source of truth
-- source of truth — *for* — notification flow
-- invoice_credit_card_transaction — *matches on* — transaction_status=ERROR
-- luz-store-seed-failed-charge skill — *was corrected in* — LUZ-157478
-- LUZ-157478 — *involved* — verify step
-- INDIVIDUAL Invoice Run v2 charge — *is related to* — Payrexx card declines reach luz_store as ERROR with prose (note)
-- INDIVIDUAL Invoice Run v2 charge — *is related to* — not DECLINED (note)
-- INDIVIDUAL Invoice Run v2 charge — *is related to* — DECLINED status falls through invoice charge-failure handling in luz_store (note)
-- INDIVIDUAL Invoice Run v2 charge — *is related to* — Invoice run v2 shows charge failures via verbatim message copy at controller line 628 (note)
-- Invoice Run v2 — *processes* — credit-card charge
-- InvoiceCreditCardTransactionConverter — *defines enum values for* — TransactionState
+- CREDIT_CARD_CHARGED_PENDING state — *is source of truth for* — individual charge failed and needs retry/notification
+- transaction_state field = FAILED state (TransactionState) — *is not source of truth for* — individual charge failed and needs retry/notification
+- CC transaction — *is matched by* — transaction_status=ERROR condition
+- luz-store-seed-failed-charge skill — *is related to* — LUZ-157478 ticket
+- Payrexx card declines — *reach* — luz_store as ERROR
+- Payrexx card declines — *do not reach* — luz_store as DECLINED status
+- DECLINED status — *falls through* — invoice charge-failure handling
+- Invoice Run v2 — *shows* — charge failures
 
 %% ai-graph-end %%

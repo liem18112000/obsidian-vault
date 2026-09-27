@@ -1,10 +1,20 @@
 ---
-title: "A shared mutable context beats a message bus for sequentially orchestrated agents"
+ai_hash: 1b50754ecb3c68de
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: argument
+entities: []
+source: 'Confluence: Multi-Agentic Architecture - Theory (2026-03-23)'
 status: seedling
-source: "Confluence: Multi-Agentic Architecture - Theory (2026-03-23)"
-tags: [multi-agent, ai-agents, architecture, orchestration, design-tradeoff]
+tags:
+- multi-agent
+- ai-agents
+- architecture
+- orchestration
+- design-tradeoff
+title: A shared mutable context beats a message bus for sequentially orchestrated
+  agents
+type: argument
 ---
 
 # A shared mutable context beats a message bus for sequentially orchestrated agents
@@ -32,3 +42,14 @@ Design rule: **start with the dict, move to a bus when concurrency or a process 
 ## Related
 
 - [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+- [[Stigmergy coordinates through traces left in the environment, not messages between agents]]
+- [[Multi-Agentic Architecture - Theory]]
+- [[ReAct beats plan-then-execute when the environment can surprise the agent]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+
+%% ai-graph-end %%

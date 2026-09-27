@@ -1,7 +1,7 @@
 ---
-ai_hash: ac3b06d472fa7da1
+ai_hash: 3f282c4177d72f52
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-11
 entities: []
 source: 'vinnstack session 2026-07-11: building implement-bdd-steps skill'
@@ -34,8 +34,8 @@ Related: [[luz_docs_integration_test has its own AI-driven BDD pipeline (generat
 %% ai-graph-start %%
 
 **Related notes:**
-- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
 - [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
 - [[Vinnstack ai-framework.html is aspirational, not the real code]]
 - [[Vinnstack vinnstack-data-model.html predates the BDD workspace]]
 - [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]

@@ -1,18 +1,22 @@
 ---
-title: "RAE Parser Quality Report 2024-05-03"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47799566715/RAE+Parser+Quality+Report+2024-05-03
-space: "AI"
-topic: programming
-relevance: 0.762
-depth: 2.73
-updated: 2024-05-03
+ai_hash: e0ebed9e2dcde46e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.762
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47799566715/RAE+Parser+Quality+Report+2024-05-03
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: RAE Parser Quality Report 2024-05-03
+topic: programming
+type: source
+updated: 2024-05-03
 ---
 
 # RAE Parser Quality Report 2024-05-03
@@ -111,3 +115,14 @@ Stats: (12320463/12325336) 0.9996046355247435
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Global model evaluation]]
+- [[RAE Parser Quality Report 2024-06-06]]
+- [[RAE Parser Quality Report 2024-07-08]]
+- [[Trigram Search — Performance-Env Benchmark]]
+- [[Trigram Index — Size-Reduction Options]]
+
+%% ai-graph-end %%

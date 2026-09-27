@@ -1,18 +1,22 @@
 ---
-title: "System architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/6903439129/System+architecture
-space: "Arrow"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2020-05-22
+ai_hash: 6128e2509a15d39d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/6903439129/System+architecture
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/arrow
+- confluence
+- architecture
+- space/arrow
+title: System architecture
+topic: architecture
+type: source
+updated: 2020-05-22
 ---
 
 # System architecture
@@ -42,3 +46,14 @@ After verifying the route and authorizing successfully with Keycloak, Kong ingre
 <span class="legacy-color-text-red2"><span class="legacy-color-text-default">The client adapters will make the neccessary tokens (generic, full token) and call the existing backend modules <span class="legacy-color-text-red2">**(6)**<span class="legacy-color-text-default">.</span></span></span></span>
 
 <span class="legacy-color-text-red2"><span class="legacy-color-text-default"><span class="legacy-color-text-red2"><span class="legacy-color-text-default">To get the statistics about our services that receive the requests through Kong, we need a plugin for Kong to exports metrics in <a href="https://github.com/prometheus/docs/blob/master/content/docs/instrumenting/exposition_formats.md" class="external-link" rel="nofollow" style="text-decoration: underline;">Prometheus Exposition format</a> <span class="legacy-color-text-red2">**(7)**</span>. This metrics can be then scraped and displayed using Grafana dashboard.</span></span></span></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[API Gateway Evaluation Discussion]]
+- [[API Gateway Evaluation]]
+- [[GKE Kubernetes Gateway API]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+- [[Keycloak scalable research]]
+
+%% ai-graph-end %%

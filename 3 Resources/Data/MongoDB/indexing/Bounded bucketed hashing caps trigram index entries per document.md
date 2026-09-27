@@ -1,7 +1,7 @@
 ---
-ai_hash: af938005b0e3c646
+ai_hash: b407e4875e121be6
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-30
 entities: []
 source: luz_docs S2-index-size-options.md, 2026-06-30
@@ -38,9 +38,9 @@ From luz_docs S2-index-size-options.md, Option C (Kepler eArchive).
 
 **Related notes:**
 - [[OCR body text dominates a full-text trigram index]]
-- [[Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
 - [[Larger n-grams make a substring ngram index bigger, not smaller]]
-- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+- [[Trigram Index — Size-Reduction Options]]
+- [[Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
 - [[A large secondary index hurts via working-set vs cache, not disk bytes]]
 
 %% ai-graph-end %%

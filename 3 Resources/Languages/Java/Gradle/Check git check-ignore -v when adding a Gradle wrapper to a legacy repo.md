@@ -1,7 +1,7 @@
 ---
-ai_hash: 5d01925cc4b966c2
+ai_hash: f80cf088ef1d7eaa
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: LEO CDP migration Phase 0c, 2026-06-06
@@ -31,7 +31,7 @@ Follow-up from the same migration: even after un-ignoring `gradlew`, the wrapper
 - [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
 - [[gradlew committed from Windows loses the exec bit - fix with git update-index chmod]]
 - [[Baseline-diff gates must compare post-build to post-build when artifacts are committed]]
+- [[Verify gradle-wrapper.jar integrity before running gradlew]]
 - [[Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration]]
-- [[String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment]]
 
 %% ai-graph-end %%

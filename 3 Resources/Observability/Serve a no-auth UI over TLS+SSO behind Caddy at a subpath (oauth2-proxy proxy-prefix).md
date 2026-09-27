@@ -1,5 +1,5 @@
 ---
-ai_hash: 13365568918e204c
+ai_hash: aa534b5f981a3ce9
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-21
@@ -48,8 +48,8 @@ Then register the https callback on the Keycloak client and drop the dedicated L
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
 - [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[Exposure model for ops dashboards behind an L4 (OIDC-incapable) load balancer]]
 - [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
 - [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
 - [[Serve a SPA under a sub-path via the app base-path option, not proxy strip]]

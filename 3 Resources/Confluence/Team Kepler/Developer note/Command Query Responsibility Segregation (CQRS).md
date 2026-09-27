@@ -1,14 +1,19 @@
 ---
-title: "Command Query Responsibility Segregation (CQRS)"
+ai_hash: c18551dc2458f96a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48938188847'
+confluence_path: Team Kepler > Developer note
 created: 2025-12-05
-updated: 2025-12-05
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: Command Query Responsibility Segregation (CQRS)
+type: source
+updated: 2025-12-05
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48938188847/Command+Query+Responsibility+Segregation+CQRS
-confluence_id: "48938188847"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence]
 ---
 
 # Command Query Responsibility Segregation (CQRS)
@@ -264,3 +269,14 @@ Queries represent **requests for data**. They:
 ------------------------------------------------------------------------
 
 *Generated: December 2024*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CQRS splits read and write models architecturally, CQS only splits methods]]
+- [[Recipe Best practices implementing scalable distributed applications on cloud]]
+- [[Database scaling case study]]
+- [[Prompt Architecture Code Review]]
+- [[Batching Design]]
+
+%% ai-graph-end %%

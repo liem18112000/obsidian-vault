@@ -1,18 +1,23 @@
 ---
-title: "INC-2026-09-24 - posapp-android-ed1bd - Gemini consumption with no attributable user"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49783570438/INC-2026-09-24+-+posapp-android-ed1bd+-+Gemini+consumption+with+no+attributable+user
-space: "LUZ"
-topic: ai_ml
-relevance: 0.726
-depth: 2.6
-updated: 2026-09-25
+ai_hash: 55987336a60fcac1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.6
+entities: []
+relevance: 0.726
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49783570438/INC-2026-09-24+-+posapp-android-ed1bd+-+Gemini+consumption+with+no+attributable+user
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/luz
+- confluence
+- ai-ml
+- space/luz
+title: INC-2026-09-24 - posapp-android-ed1bd - Gemini consumption with no attributable
+  user
+topic: ai_ml
+type: source
+updated: 2026-09-25
 ---
 
 # INC-2026-09-24 - posapp-android-ed1bd - Gemini consumption with no attributable user
@@ -370,3 +375,14 @@ These are suggestions from the investigation, not agreed work. Nothing here shou
 - Cloud Monitoring metrics: `aiplatform.googleapis.com/publisher/online_serving/model_invocation_count`, `aiplatform.googleapis.com/publisher/online_serving/token_count`
 
 Investigation and write-up: Gabe, Team Invisible.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Token input-output ratio fingerprints whether an LLM caller is an agent or a feature]]
+- [[GCP Data Access logs are off by default, so data-plane calls are unattributable]]
+- [[Shared and personal accounts make attribution impossible by construction]]
+- [[Vertex AI Claude usage query - klara-nonprod]]
+- [[LUZ-92314 - AI Data Feed Migration issue - Investigate the cache mechanism from Postgresql]]
+
+%% ai-graph-end %%

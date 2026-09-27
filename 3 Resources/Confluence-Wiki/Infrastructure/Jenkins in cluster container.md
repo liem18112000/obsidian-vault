@@ -1,18 +1,22 @@
 ---
-title: "Jenkins in cluster container"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3517581925/Jenkins+in+cluster+container
-space: "AII"
-topic: infra
-relevance: 0.706
-depth: 2.38
-updated: 2017-03-06
+ai_hash: 14c7098f79703b98
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.38
+entities: []
+relevance: 0.706
+source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3517581925/Jenkins+in+cluster+container
+space: AII
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/aii
+- confluence
+- infra
+- space/aii
+title: Jenkins in cluster container
+topic: infra
+type: source
+updated: 2017-03-06
 ---
 
 # Jenkins in cluster container
@@ -73,3 +77,11 @@ In this concept, the material we need is:
 ![[3517581925-unknown-attachment.png]]
 
 ![[3517581925-unknown-attachment.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Axonivycloud - Volumes architecture for a kubernetes AWS EKS]]
+- [[Docker Cloud Study]]
+
+%% ai-graph-end %%

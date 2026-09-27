@@ -1,18 +1,22 @@
 ---
-title: "02_30 Pull request and review code orally transmitted secrets"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134409478/02_30+Pull+request+and+review+code+orally+transmitted+secrets
-space: "GRAVITY"
-topic: programming
-relevance: 0.703
-depth: 2.38
-updated: 2022-06-24
+ai_hash: 7eb796664bd70a41
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.38
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134409478/02_30+Pull+request+and+review+code+orally+transmitted+secrets
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: 02_30 Pull request and review code orally transmitted secrets
+topic: programming
+type: source
+updated: 2022-06-24
 ---
 
 # 02_30 Pull request and review code orally transmitted secrets
@@ -115,3 +119,14 @@ Create a chat with several fellow developers, explain the task and your idea. Th
 - How can they improve the reliability?
 - How can they improve the maintainability and efficiency?
 - What is my overall assessment of the project?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Code Review (AI-First model)]]
+- [[Code review agreement]]
+- [[Prompt Architecture Code Review]]
+- [[Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
+- [[Text Compression Techniques - Examples]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: bf1a2efe804cff87
+ai_hash: 463826c6f0d1bf90
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-17
 entities: []
 source: luz_docs LUZ-154613 DEV sweep 2026-06-17
@@ -45,9 +45,9 @@ Method gotcha: K is a server config (`LUZ_DOCS_MATERIALIZE_COUNT_FANOUT_PARTITIO
 
 **Related notes:**
 - [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[Count Fan-out (K) Benchmark on Performance Env]]
 - [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
 - [[Levers to optimise the visible-document count beyond _shard fan-out]]
-- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
-- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
 
 %% ai-graph-end %%

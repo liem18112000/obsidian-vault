@@ -1,27 +1,31 @@
 ---
-ai_hash: 9e3b9dcefd10693a
+ai_hash: 1c1367b8656b7db5
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-27
 entities:
 - A2A
+- Task
 - taskId
 - contextId
-- Task
-- multi-turn (human-in-the-loop) exchange
 - agent
+- status.state
 - client
-- status.state == "input-required"
+- conversation
 - bridge/adapter
 - MCP tool
 - mapping `context_id -> task_id`
-- status.state == "completed"
 - A2A message/send returns either a Message or a Task envelope
 - A2A-to-MCP bridge is an MCP stdio server that is also an A2A client
 - Message
 - Task envelope
 - MCP stdio server
 - A2A client
+- new task
+- fresh context
+- new interrogation
+- task never advances
+- lack of persistence
 source: session 2026-08-27
 status: seedling
 tags:
@@ -58,24 +62,26 @@ See [[A2A messagesend returns either a Message or a Task envelope|A2A message/se
 **Relations:**
 - A2A — *requires* — taskId
 - A2A — *requires* — contextId
-- A2A — *models* — multi-turn (human-in-the-loop) exchange
-- multi-turn (human-in-the-loop) exchange — *is a* — Task
+- A2A — *models* — Task
 - Task — *is* — paused
-- agent — *replies with* — status.state == "input-required"
-- agent — *then* — waits
-- client — *must send message to resume* — Task
-- client — *must send message on same* — taskId
-- client — *must send message on same* — contextId
-- new task — *starts* — different conversation
-- fresh context — *starts* — different conversation
+- agent — *replies with* — status.state
+- status.state — *is* — input-required
+- client — *sends message on* — taskId
+- client — *sends message on* — contextId
+- new task — *starts* — conversation
+- fresh context — *starts* — conversation
+- bridge/adapter — *has property* — stateless calls
 - bridge/adapter — *must persist* — mapping `context_id -> task_id`
-- bridge/adapter — *must reuse* — taskId
-- bridge/adapter — *must clear* — mapping `context_id -> task_id`
-- mapping `context_id -> task_id` — *cleared when* — status.state == "completed"
-- A2A message/send returns either a Message or a Task envelope — *is related to* — A2A
-- A2A-to-MCP bridge is an MCP stdio server that is also an A2A client — *is related to* — A2A
+- bridge/adapter — *reuses* — taskId
+- bridge/adapter — *clears* — mapping `context_id -> task_id`
+- mapping `context_id -> task_id` — *cleared when* — status.state is "completed"
+- lack of persistence — *leads to* — new interrogation
+- lack of persistence — *leads to* — task never advances
+- A2A — *references* — A2A message/send returns either a Message or a Task envelope
+- A2A — *references* — A2A-to-MCP bridge is an MCP stdio server that is also an A2A client
 - A2A message/send returns either a Message or a Task envelope — *returns* — Message
 - A2A message/send returns either a Message or a Task envelope — *returns* — Task envelope
+- A2A-to-MCP bridge is an MCP stdio server that is also an A2A client — *is a type of* — bridge/adapter
 - A2A-to-MCP bridge is an MCP stdio server that is also an A2A client — *is a* — MCP stdio server
 - A2A-to-MCP bridge is an MCP stdio server that is also an A2A client — *is an* — A2A client
 

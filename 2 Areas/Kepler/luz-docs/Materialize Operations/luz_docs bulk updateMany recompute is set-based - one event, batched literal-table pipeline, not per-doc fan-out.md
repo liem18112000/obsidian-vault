@@ -1,9 +1,55 @@
 ---
-ai_hash: f703616c6c5ed7e9
+ai_hash: 9cef16b1bf754684
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-05
-entities: []
+entities:
+- luz_docs
+- updateMany
+- recompute
+- BulkDocumentChangeEvent
+- DocBulkMaterializeObserver
+- BULK_RECOMPUTE_BATCH
+- folderIds
+- loadFoldersById
+- _folderNames
+- literal-table pipeline
+- ALL FOUR sentinels
+- id→name table
+- parent-change cascade
+- 16 MB command cap
+- $range
+- $ifNull
+- WriteError
+- updateManyByFilter
+- '207'
+- Mongo
+- '@Retry'
+- luz_docs change tracking covers updateMany-deleteMany via projected before-after
+  snapshots keyed by id
+- luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template
+- MongoDB forbids $lookup inside update pipeline (WriteError 72)
+- $lookup
+- WriteError 72
+- design
+- session handoff report
+- modify-many code
+- set-based
+- per-doc fan-out
+- batched
+- pre-matched ids
+- projected read
+- folder prefetch
+- distinct folderIds
+- docs without folderIds
+- empty arrays
+- identical doc
+- already-correct sentinels
+- find→updateMany window
+- idempotent recompute
+- user decision
+- working tree
+- raw $size
 source: DocBulkMaterializeObserver implementation, session 2026-06-05
 status: budding
 tags:
@@ -46,5 +92,49 @@ Correctness props: `$range` input is `$ifNull`-guarded so docs without `folderId
 - [[Materialize bulk PATCH fans out into N serial per-doc PATCH calls]]
 - [[luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels]]
 - [[MongoDB forbids $lookup inside update pipeline (WriteError 72)]]
+
+**Relations:**
+- luz_docs — *handles* — updateMany
+- updateMany — *triggers* — recompute
+- luz_docs — *uses* — set-based
+- luz_docs — *avoids* — per-doc fan-out
+- luz_docs — *fires* — BulkDocumentChangeEvent
+- BulkDocumentChangeEvent — *carries* — pre-matched ids
+- DocBulkMaterializeObserver — *recomputes* — set-based
+- DocBulkMaterializeObserver — *recomputes per batch of* — BULK_RECOMPUTE_BATCH
+- BULK_RECOMPUTE_BATCH — *is* — 200
+- recompute — *involves* — projected read
+- projected read — *yields* — distinct folderIds
+- recompute — *involves* — folder prefetch
+- folder prefetch — *uses* — loadFoldersById
+- recompute — *involves* — literal-table pipeline
+- literal-table pipeline — *rebuilds* — ALL FOUR sentinels
+- ALL FOUR sentinels — *includes* — _folderNames
+- _folderNames — *rebuilt via* — id→name table
+- parent-change cascade — *skips* — _folderNames
+- bulk folderIds change — *invalidates* — _folderNames
+- batched — *bounds* — 16 MB command cap
+- $range — *is guarded by* — $ifNull
+- $ifNull — *handles* — docs without folderIds
+- docs without folderIds — *degrade to* — empty arrays
+- updateManyByFilter — *returns* — 207
+- 207 — *is swallowed as* — benign
+- Mongo — *does not count* — identical doc
+- identical doc — *as* — modified
+- already-correct sentinels — *are* — expected
+- find→updateMany window — *is* — accepted race
+- idempotent recompute — *converges* — 
+- @Retry — *converges* — 
+- luz_docs — *related to* — luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id
+- luz_docs — *related to* — luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template
+- MongoDB forbids $lookup inside update pipeline (WriteError 72) — *states* — MongoDB forbids $lookup
+- $lookup — *causes* — WriteError 72
+- design — *documented in* — this note
+- design — *documented in* — session handoff report
+- design — *status* — never merged
+- design — *removed from* — working tree
+- user decision — *caused removal of* — modify-many code
+- raw $size — *causes* — WriteError
+- raw $size — *without* — $ifNull
 
 %% ai-graph-end %%

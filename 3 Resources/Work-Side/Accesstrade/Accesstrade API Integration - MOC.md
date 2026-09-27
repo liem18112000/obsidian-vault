@@ -1,7 +1,7 @@
 ---
-ai_hash: 0cd7b3fd85cf14dc
+ai_hash: 3cfc6b6d8bedeef7
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Accesstrade Claude Integration Index
 - Affiliate API Integration MOC
@@ -104,8 +104,8 @@ flowchart TD
 
 **Related notes:**
 - [[Designing an Accesstrade skill for Claude Code]]
-- [[Use case - bulk tracking link generation]]
 - [[Accesstrade Campaigns API]]
+- [[Use case - bulk tracking link generation]]
 - [[Accesstrade affiliate network overview]]
 - [[Claude Code Skill anatomy]]
 

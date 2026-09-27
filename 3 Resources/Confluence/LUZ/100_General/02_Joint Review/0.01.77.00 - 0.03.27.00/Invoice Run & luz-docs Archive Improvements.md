@@ -1,14 +1,22 @@
 ---
-title: "Invoice Run & luz-docs Archive Improvements"
+ai_hash: 6348eefc3cf03dc0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49542430803'
+confluence_path: LUZ Home > 100_General > 02_Joint Review > 0.01.77.00 - 0.03.27.00
+  > Joint review 0.03.24.00 (16.06.2026 - 29.06.2026)
 created: 2026-06-29
-updated: 2026-06-29
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+- invoice-run
+- luz-docs
+title: Invoice Run & luz-docs Archive Improvements
+type: source
+updated: 2026-06-29
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49542430803/Invoice+Run+luz-docs+Archive+Improvements
-confluence_id: "49542430803"
-confluence_path: "LUZ Home > 100_General > 02_Joint Review > 0.01.77.00 - 0.03.27.00 > Joint review 0.03.24.00 (16.06.2026 - 29.06.2026)"
-tags: [confluence, invoice-run, luz-docs]
 ---
 
 # Invoice Run & luz-docs Archive Improvements
@@ -61,3 +69,14 @@ tags: [confluence, invoice-run, luz-docs]
 *Attached to the Confluence page but not embedded in its body.*
 
 - [[3 Resources/Confluence/LUZ/100_General/02_Joint Review/0.01.77.00 - 0.03.27.00/attachments/invoice-run-luz-docs-archive-improvements/Sprint-159-Customer-Experience.pptx|Sprint-159-Customer-Experience.pptx]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Sprint 158 - Invoice Run V2 Executive Overview]]
+- [[Invoice Run, ePost backend storage]]
+- [[HealthCare And Invoice Run (11.08.2026 - 24.08.2026)]]
+- [[Invoice Run – Credit Card Payment Only for Individual Runs]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+
+%% ai-graph-end %%

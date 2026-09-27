@@ -1,14 +1,21 @@
 ---
-title: "OpenRig's Intent Hierarchy and Refocus: Analysis and Implementation in Test-Agent-V2"
+ai_hash: 06ee6dce8a0b3127
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49785077788'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 4: Test-Plan Execution'
 created: 2026-09-25
-updated: 2026-09-27
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: 'OpenRig''s Intent Hierarchy and Refocus: Analysis and Implementation in Test-Agent-V2'
+type: source
+updated: 2026-09-27
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49785077788/OpenRig+s+Intent+Hierarchy+and+Refocus+Analysis+and+Implementation+in+Test-Agent-V2
-confluence_id: "49785077788"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 4: Test-Plan Execution"
-tags: [confluence, ai-agents]
 ---
 
 # OpenRig's Intent Hierarchy and Refocus: Analysis and Implementation in Test-Agent-V2
@@ -294,3 +301,14 @@ One caution from openrig on the multi-tester question specifically — do **not*
 The corollary is their wire protocol, which is free and which our orchestrator violates whenever it over-specifies a worker prompt:
 
 > Empowerment is delivered as **context, never as instructions** — in both directions. An orchestrator that converts context into step-by-step orders bypasses the builder's synthesis.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Intent composes up the chain, specification stays a leaf property]]
+- [[The fidelity law a one-line intent is a 201 lossy compression]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[One chain filename at every altitude lets a reader orient by walking to the root]]
+- [[Test-Plan Definition Agent]]
+
+%% ai-graph-end %%

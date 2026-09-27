@@ -1,18 +1,22 @@
 ---
-title: "ETL testing investigation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47337638444/ETL+testing+investigation
-space: "TS"
-topic: testing
-relevance: 0.746
-depth: 2.31
-updated: 2023-04-20
+ai_hash: 7850da3a82b90fc6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.31
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47337638444/ETL+testing+investigation
+space: TS
+status: reference
 tags:
-  - confluence
-  - testing
-  - space/ts
+- confluence
+- testing
+- space/ts
+title: ETL testing investigation
+topic: testing
+type: source
+updated: 2023-04-20
 ---
 
 # ETL testing investigation
@@ -262,3 +266,14 @@ Some E2E tests are still required to verify the system as a whole when deployed 
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rethink and decide for testing strategy]]
+- [[Testing]]
+- [[Intergration test for MicroProfile OpenAPI]]
+- [[00. Test and code review report template]]
+- [[Test and code review report template.2.93]]
+
+%% ai-graph-end %%

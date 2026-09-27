@@ -1,14 +1,20 @@
 ---
-title: "2026-01-09 Meeting notes"
+ai_hash: 54a1a2f4082b982e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49028202497'
+confluence_path: Team Kepler > Developer note > luz-store transfer
 created: 2026-01-09
-updated: 2026-01-09
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-store
+title: 2026-01-09 Meeting notes
+type: source
+updated: 2026-01-09
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49028202497/2026-01-09+Meeting+notes
-confluence_id: "49028202497"
-confluence_path: "Team Kepler > Developer note > luz-store transfer"
-tags: [confluence, luz-store]
 ---
 
 # 2026-01-09 Meeting notes
@@ -362,3 +368,14 @@ Summarized document:
 ### ⤴ Decisions
 
 ### 🗃️ Related info
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Confluence Export — Index]]
+- [[Document key concepts and architecture of sealing modules]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[Architecture]]
+- [[Business concept for frontend]]
+
+%% ai-graph-end %%

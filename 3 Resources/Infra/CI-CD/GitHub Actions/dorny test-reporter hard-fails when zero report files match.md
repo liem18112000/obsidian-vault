@@ -1,7 +1,7 @@
 ---
-ai_hash: e107c11eb01949b3
+ai_hash: 5e86be6a2efba4d9
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: leo-cdp-framework ci-cd.yml debugging 2026-06-06
@@ -45,9 +45,9 @@ then `if: always() && steps.tests.outputs.found == "true"` on the reporter.
 
 **Related notes:**
 - [[pytest results into a GitHub Actions build via dorny test-reporter]]
-- [[Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output]]
 - [[Verify test files still exist on disk before trusting prior green test runs]]
-- [[CI build Docker image on every run, push only on non-PR]]
+- [[Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output]]
 - [[Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform]]
+- [[CI build Docker image on every run, push only on non-PR]]
 
 %% ai-graph-end %%

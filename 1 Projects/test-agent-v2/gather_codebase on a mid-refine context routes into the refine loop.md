@@ -1,5 +1,5 @@
 ---
-ai_hash: cf44d56cd0f7aac2
+ai_hash: c231589314451098
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-13
@@ -13,16 +13,14 @@ entities:
 - KGA refine loop
 - refine message
 - codegraph build result
-- codegraph attach
+- codegraph
 - gather_knowledge
 - LUZ-156281 dunning demo
+- run-88ec187f
 - axonivy-prod/luz_store
 - luz_store
-- gather_codebase needs axonivy-prod/<repo> workspace slug
-- codegraph
-- repo parameter
+- axonivy-prodrepo workspace slug
 - refine
-- tools
 - codegraph grounding
 source: session 2026-09-13 LUZ-156281 demo
 status: seedling
@@ -61,18 +59,20 @@ Seen 2026-09-13 running the LUZ-156281 dunning demo: after several refine rounds
 **Relations:**
 - gather_codebase — *routes into* — refine loop
 - test-agent-v2 — *uses* — MCP gateway
-- MCP gateway — *routes* — tools
-- MCP gateway — *routes by* — context_id
-- gather_codebase — *is routed to KGA refine loop when* — interactive refine session is active on context_id
-- gather_codebase — *returns* — refine message
-- gather_codebase — *does not return* — codegraph build result
-- codegraph attach — *fails during* — interactive refine session
+- MCP gateway — *routes tools by* — context_id
+- gather_codebase — *takes parameter* — context_id
+- gather_codebase — *takes parameter* — repo
+- gather_codebase — *routes into* — KGA refine loop
+- KGA refine loop — *produces* — refine message
+- gather_codebase — *normally produces* — codegraph build result
+- codegraph attach — *does not happen during* — refine
 - codegraph grounding — *should happen before* — refine
-- gather_knowledge — *can include* — repo parameter
-- gather_codebase — *can be called before* — refine
-- codegraph — *can use* — separate context_id
-- gather_codebase — *returned refine completion text in* — LUZ-156281 dunning demo
-- luz_store — *was not grounded in* — LUZ-156281 dunning demo
-- gather_codebase — *is related to* — gather_codebase needs axonivy-prod/<repo> workspace slug
+- gather_knowledge — *takes parameter* — repo
+- LUZ-156281 dunning demo — *observed issue with* — gather_codebase
+- gather_codebase — *called with* — run-88ec187f
+- gather_codebase — *called with* — axonivy-prod/luz_store
+- gather_codebase — *returned* — refine message
+- luz_store — *was not* — codegraph grounded
+- gather_codebase — *needs* — axonivy-prodrepo workspace slug
 
 %% ai-graph-end %%

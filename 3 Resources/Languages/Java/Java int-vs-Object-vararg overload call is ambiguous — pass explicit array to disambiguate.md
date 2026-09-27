@@ -1,7 +1,7 @@
 ---
-ai_hash: 33d3a4cf66f05c51
+ai_hash: 23f4dc90f2c10b20
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities: []
 source: LUZ-154613 session 2026-06-16
@@ -33,9 +33,9 @@ This forced luz-docs ParallelizeCountException to compile against LocalizedRunti
 
 **Related notes:**
 - [[Lombok one bad symbol cascades into hundreds of phantom missing-method errors]]
-- [[JSON-P createArrayBuilder(Collection) rejects built JsonValues]]
 - [[Java List.of rejects null elements (NPE); use Arrays.asList for null-tolerant varargs]]
+- [[Problem of class cast exception]]
+- [[JSON-P createArrayBuilder(Collection) rejects built JsonValues]]
 - [[A delegating overload changes less code than widening an existing method signature]]
-- [[Scrambled Java source shows as illegal-start-of-type errors mid-class]]
 
 %% ai-graph-end %%

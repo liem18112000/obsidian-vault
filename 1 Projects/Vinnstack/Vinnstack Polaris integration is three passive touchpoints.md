@@ -1,38 +1,40 @@
 ---
-ai_hash: a711ef674123804d
+ai_hash: 8edf5129233bdf15
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-14
 entities:
 - Vinnstack
 - Polaris
-- Vinnstack Polaris integration
 - statusOnly provider card
 - lib/account/authProviders.ts
-- polarisProvider
 - CLI
 - ~/.polaris/state.json
+- tunnel
 - Google ADC
+- login
+- logout
 - mcp__polaris
 - CHAT_ALLOWED_TOOLS
 - lib/ultracode/ultracodeRunner.ts
-- claude
+- Claude
 - Polaris tools
 - AGENTS.md pointer block
-- Vinnstack's Bitbucket Agent Kernel
+- static '@polaris' guidance
+- Agent Kernel
 - lib/ultracode/agentKernel.ts
 - MCP
 - company-wide skills system
 - doc/polaris-mcp-integration-plan.md
+- phased integration plan
+- Phases 0-3
+- Phase 4
 - Polaris orchestration
 - Polaris 0.2.0
-- agentsskillsrules
+- agents
+- skills
+- rules
 - MCP tunnel
-- tunnel
-- login
-- logout
-- route runs
-- static '@polaris' guidance
 source: session 2026-07-14
 status: seedling
 tags:
@@ -69,41 +71,38 @@ Full phased integration plan: `doc/polaris-mcp-integration-plan.md` (Phases 0-3 
 - [[Polaris 3003 MCP server is persistent — TCP probe not equal to polaris tunnel state]]
 
 **Relations:**
-- Vinnstack Polaris integration — *CONSISTS_OF* — statusOnly provider card
-- Vinnstack Polaris integration — *CONSISTS_OF* — mcp__polaris
-- Vinnstack Polaris integration — *CONSISTS_OF* — AGENTS.md pointer block
-- Vinnstack — *WIRES* — Polaris
-- Vinnstack — *DOES_NOT_SURFACE* — Polaris
-- Vinnstack — *DOES_NOT_CONTROL* — Polaris
-- Vinnstack — *DOES_NOT_ROUTE_THROUGH* — Polaris
-- statusOnly provider card — *IS_DEFINED_IN* — lib/account/authProviders.ts
-- statusOnly provider card — *IS_IDENTIFIED_AS* — polarisProvider
-- statusOnly provider card — *DETECTS* — CLI
-- statusOnly provider card — *READS* — ~/.polaris/state.json
-- statusOnly provider card — *TCP_PROBES* — tunnel
-- statusOnly provider card — *CHECKS* — Google ADC
-- login — *IS_NO_OP_FOR* — statusOnly provider card
-- logout — *IS_NO_OP_FOR* — statusOnly provider card
-- login — *POINTS_TO* — CLI
-- logout — *POINTS_TO* — CLI
-- mcp__polaris — *IS_PART_OF* — CHAT_ALLOWED_TOOLS
-- CHAT_ALLOWED_TOOLS — *IS_DEFINED_IN* — lib/ultracode/ultracodeRunner.ts
-- claude — *MAY_CALL* — Polaris tools
-- mcp__polaris — *ENABLES* — Polaris tools
-- AGENTS.md pointer block — *PROVIDES* — static '@polaris' guidance
-- runner — *DOES_NOT_ACT_ON* — AGENTS.md pointer block
-- Vinnstack's Bitbucket Agent Kernel — *IS_DEFINED_IN* — lib/ultracode/agentKernel.ts
-- Vinnstack's Bitbucket Agent Kernel — *IS_PREDECESSOR_OF* — Polaris
-- Polaris — *SERVES* — skills
-- Polaris — *SERVES_OVER* — MCP
-- Vinnstack's Bitbucket Agent Kernel — *IS_A* — company-wide skills system
-- Polaris — *IS_A* — company-wide skills system
-- Vinnstack's Bitbucket Agent Kernel — *IS_PARALLEL_TO* — Polaris
-- doc/polaris-mcp-integration-plan.md — *IS_A* — full phased integration plan
-- doc/polaris-mcp-integration-plan.md — *CONCERNS* — Polaris MCP integration
-- Polaris orchestration — *HANDLES* — route runs
-- Polaris 0.2.0 — *SERVES* — agentsskillsrules
-- Polaris 0.2.0 — *SERVES_OVER* — MCP tunnel
-- Polaris 0.2.0 — *IS_A_VERSION_OF* — Polaris
+- Vinnstack — *has integration with* — Polaris
+- Vinnstack — *wires* — Polaris
+- Polaris — *is wired in* — statusOnly provider card
+- Polaris — *is wired in* — mcp__polaris
+- Polaris — *is wired in* — AGENTS.md pointer block
+- statusOnly provider card — *is defined in* — lib/account/authProviders.ts
+- statusOnly provider card — *detects* — CLI
+- statusOnly provider card — *reads* — ~/.polaris/state.json
+- statusOnly provider card — *TCP-probes* — tunnel
+- statusOnly provider card — *checks* — Google ADC
+- login — *is a* — no-op
+- logout — *is a* — no-op
+- no-op — *points to* — CLI
+- mcp__polaris — *is in* — CHAT_ALLOWED_TOOLS
+- CHAT_ALLOWED_TOOLS — *is defined in* — lib/ultracode/ultracodeRunner.ts
+- Claude — *may call* — Polaris tools
+- AGENTS.md pointer block — *provides* — static '@polaris' guidance
+- Agent Kernel — *is part of* — Vinnstack
+- Agent Kernel — *is a* — read-only mirror
+- Agent Kernel — *is defined in* — lib/ultracode/agentKernel.ts
+- Agent Kernel — *is predecessor of* — Polaris
+- Polaris — *serves live over* — MCP
+- Agent Kernel — *is a* — company-wide skills system
+- Polaris — *is a* — company-wide skills system
+- doc/polaris-mcp-integration-plan.md — *contains* — phased integration plan
+- phased integration plan — *describes* — Phases 0-3
+- phased integration plan — *describes* — Phase 4
+- Phases 0-3 — *achieve* — MVP visibility+control
+- Phase 4 — *involves* — Polaris orchestration
+- Polaris 0.2.0 — *serves* — agents
+- Polaris 0.2.0 — *serves* — skills
+- Polaris 0.2.0 — *serves* — rules
+- Polaris 0.2.0 — *serves over* — MCP tunnel
 
 %% ai-graph-end %%

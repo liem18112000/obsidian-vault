@@ -1,7 +1,7 @@
 ---
-ai_hash: efc9221fb591b406
+ai_hash: fa06824ca4bf2ae1
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-03
 entities: []
 source: session 2026-07-03
@@ -34,9 +34,9 @@ Fix: create the missing Secret (e.g. `kubectl -n <ns> create secret generic Y --
 
 **Related notes:**
 - [[Cloud Build GKE deploy get-credentials needs --project for a cross-project cluster]]
+- [[Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing]]
 - [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
 - [[GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones]]
-- [[Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing]]
 - [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
 
 %% ai-graph-end %%

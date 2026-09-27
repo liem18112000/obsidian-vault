@@ -1,7 +1,7 @@
 ---
-ai_hash: 462d80c2aaf62e06
+ai_hash: 583d366507f09ed6
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-27
 entities: []
 source: session 2026-07-27 luz_finance setup
@@ -37,7 +37,8 @@ The Axon Ivy `com.axonivy.ivy.ci:project-build-plugin` binds an **installEngine*
 **Related notes:**
 - [[Maven user settings.xml overrides global same-id profile properties]]
 - [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
-- [[Building KlaraLuz Ivy projects off-VPN by routing Maven through Google Artifact Registry]]
+- [[Add Ivy jars Maven plugin]]
 - [[Pre-configure an EclipseIvy Designer workspace by seeding .prefs files]]
+- [[Building KlaraLuz Ivy projects off-VPN by routing Maven through Google Artifact Registry]]
 
 %% ai-graph-end %%

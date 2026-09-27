@@ -1,7 +1,7 @@
 ---
-ai_hash: 0d394d5cae687534
+ai_hash: fdb0d7797e432058
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-01
 entities: []
 source: code review 2026-07-01 (vinnstack)
@@ -43,7 +43,7 @@ Related: [[Keep errorfailure text out of LLM-summarized durable memory]].
 - [[Keep errorfailure text out of LLM-summarized durable memory]]
 - [[A silent canned fallback masks real failures — surface the underlying error]]
 - [[Vinnstack skill-usage counter missed reads past a 4MB stdout cap]]
-- [[State machines must catch expected-failure operations or they get stuck forever]]
 - [[Cache only successful results so failures retry on resume]]
+- [[Undrained fetch response bodies leak sockets in Node undici]]
 
 %% ai-graph-end %%

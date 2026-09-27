@@ -1,7 +1,7 @@
 ---
-ai_hash: c1bc926aedc5b64c
+ai_hash: 1a679748ecc5164f
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-04
 entities: []
 source: session 2026-07-04 fb-info-project sign-license.yml
@@ -36,6 +36,6 @@ Related: [[GitHub Actions 'secret is not set' usually means a name mismatch - ve
 - [[GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]]
 - [[GitHub Actions masks a secret's VALUE everywhere - a plaintext field logging as means it equals a secret]]
 - [[Pass a value between GitHub Actions steps via GITHUB_OUTPUT and steps.id.outputs]]
-- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[Colon-space in an unquoted GitHub Actions run value breaks the workflow YAML]]
 
 %% ai-graph-end %%

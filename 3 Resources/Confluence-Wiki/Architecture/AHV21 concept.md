@@ -1,18 +1,22 @@
 ---
-title: "AHV21 concept"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47493939202/AHV21+concept
-space: "LUZ"
-topic: architecture
-relevance: 0.769
-depth: 2.79
-updated: 2023-12-14
+ai_hash: 3c70cd5fd78f4ea7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.79
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47493939202/AHV21+concept
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: AHV21 concept
+topic: architecture
+type: source
+updated: 2023-12-14
 ---
 
 # AHV21 concept
@@ -99,3 +103,10 @@ disableFreeAmount.true ? 0 : 16800
 # Global Variable Definition after implementation of AHV21 stories
 
 <span class="confluence-jim-macro jira-issue conf-macro output-block" client-id="SINGLE_d3f195c5-8684-3b17-b4f6-e9ee3a0b0fe2_47493939202_712020:87b0f7f1-aaab-4406-a25d-fa0fc075c4d4" hasbody="false" jira-key="LUZ-107682" macro-id="488590fa-4d1a-49e9-a228-3804a610a82b" macro-name="jira"> <a href="https://axonivy.atlassian.net/browse/LUZ-107682" class="jira-issue-key"><span class="aui-icon aui-icon-wait issue-placeholder"> </span>LUZ-107682</a> - <span class="summary">Getting issue details...</span> <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-default issue-placeholder">STATUS</span> </span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Insurance concept model]]
+
+%% ai-graph-end %%

@@ -1,14 +1,20 @@
 ---
-title: "ePost Zip-Import - dev test-suite results - 18/08/2026"
+ai_hash: 57e5ffb340a25144
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49674518529'
+confluence_path: Team Kepler > Developer note > ePost ZIP Import Test Fixture Matrix
 created: 2026-08-18
-updated: 2026-08-18
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- epost
+title: ePost Zip-Import - dev test-suite results - 18/08/2026
+type: source
+updated: 2026-08-18
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49674518529/ePost+Zip-Import+-+dev+test-suite+results+-+18+08+2026
-confluence_id: "49674518529"
-confluence_path: "Team Kepler > Developer note > ePost ZIP Import Test Fixture Matrix"
-tags: [confluence, epost]
 ---
 
 # ePost Zip-Import - dev test-suite results - 18/08/2026
@@ -119,3 +125,14 @@ fail  Optional fields/wrong types 006.pdf   [Document Types must be an array.]
 | 41 | 37-concurrency-mixed | DONE | 50 | 0 | 0 | 5 | 200 | 50 imported + 5 rejected under concurrency; buckets consistent | PASS |
 | 42 | 39c-precedence-av-infected | DONE | 0 | 0 | 0 | 1 | 200 | infected sidecar wins -\> doc rejected (METADATA_INFECTED) | PASS |
 | 43 | 40-happy-root-only-file | DONE | 1 | 0 | 0 | 0 | 200 | 1 root doc | PASS |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost ZIP-import — dev test-suite results - 13-08-2026]]
+- [[ePost ZIP Import Test Fixture Matrix]]
+- [[ePost Zip-Import - staging test-suite results - 19-08-2026]]
+- [[LUZ-158230 ePost ZIP Import Test Fixture Matrix (Confluence)]]
+- [[LUZ-158230 eArchive Health ZIP import - golden test fixture matrix location]]
+
+%% ai-graph-end %%

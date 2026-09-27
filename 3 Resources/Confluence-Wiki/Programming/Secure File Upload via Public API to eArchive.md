@@ -1,18 +1,22 @@
 ---
-title: "Secure File Upload via Public API to eArchive"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49392615425/Secure+File+Upload+via+Public+API+to+eArchive
-space: "TS"
-topic: programming
-relevance: 0.777
-depth: 2.88
-updated: 2026-05-07
+ai_hash: ae000af416018f6c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.88
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49392615425/Secure+File+Upload+via+Public+API+to+eArchive
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Secure File Upload via Public API to eArchive
+topic: programming
+type: source
+updated: 2026-05-07
 ---
 
 # Secure File Upload via Public API to eArchive
@@ -424,3 +428,14 @@ Yes. BFF accepts an <code>Idempotency-Key</code> header (UUID); cache the result
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_import ZIP import behavior — limits, allow-list, idempotency, AV scope]]
+- [[EArchive - Search doc process]]
+- [[LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)]]
+- [[LUZ-158230 QA edge-case decisions (ZIP import)]]
+- [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
+
+%% ai-graph-end %%

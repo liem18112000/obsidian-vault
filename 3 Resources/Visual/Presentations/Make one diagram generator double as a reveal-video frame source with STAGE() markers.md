@@ -1,7 +1,7 @@
 ---
-ai_hash: 295ec222ca5b5c7c
+ai_hash: d2e52c024481e121
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-19
 entities: []
 source: session 2026-06-19
@@ -38,9 +38,9 @@ The shared `emit()` writes one `.excalidraw` per stage = `els.slice(0, bounds[k]
 
 **Related notes:**
 - [[Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend + imageio-ffmpeg)]]
+- [[Deck one-pager from an Excalidraw section rebuild as a 2x2 grid, not a crop]]
 - [[Narration-synced highlight region-based dimemphasize excalidraw variants + timed xfade]]
 - [[Export a static .excalidraw from an Excalimate animated scene via get_scene]]
 - [[Full-bleed slide images need ~169 aspect or their text renders too small]]
-- [[HTML-rendered chat demo videos serve over http, cumulative screenshots, pre-pad dark]]
 
 %% ai-graph-end %%

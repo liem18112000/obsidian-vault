@@ -1,10 +1,19 @@
 ---
-title: "create_note.py --link comma-splits titles and silently breaks wikilinks"
+ai_hash: c7f7789a3b1e9c53
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: session 2026-09-27 Confluence distillation
 status: seedling
-source: "session 2026-09-27 Confluence distillation"
-tags: [obsidian, wikilinks, zettelkasten, tooling, gotcha]
+tags:
+- obsidian
+- wikilinks
+- zettelkasten
+- tooling
+- gotcha
+title: create_note.py --link comma-splits titles and silently breaks wikilinks
+type: gotcha
 ---
 
 # create_note.py --link comma-splits titles and silently breaks wikilinks
@@ -44,3 +53,14 @@ instead of one link to the real note. Obsidian renders unresolved wikilinks in a
 **A second, related breakage from the same session:** links written by hand from memory of a *source* document's filename drifted from what the importer actually wrote to disk. The export folder produced `Proposal- eArchived architecture direction…` while the vault importer's sanitiser produced `Proposal eArchived architecture direction…`. Two different sanitisers, two different filenames, silently unresolved links.
 
 **The fix that handles both:** repair by **normalised fuzzy match** — lowercase, collapse every non-alphanumeric run to a single space, and look the target up in an index of real titles. That matches across punctuation differences without needing to know which sanitiser ran. For the comma-split case, try rejoining consecutive `## Related` entries with `", "` and check whether the joined form matches a real title.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[create_note.py splits --link on commas, breaking comma-titled wikilinks]]
+- [[Comma-split wikilinks leave dead fragment links in Related blocks]]
+- [[Repair broken links only when exactly one candidate matches, and iterate to a fixed point]]
+- [[A note title containing a colon or slash breaks links that use the raw title]]
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "In-memory job throttles silently break when you scale to multiple replicas"
+ai_hash: b839216b22d744f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: 'Confluence: Background Process Optimization for luz-docs API (LUZ)'
 status: seedling
-source: "Confluence: Background Process Optimization for luz-docs API (LUZ)"
-tags: [distributed-systems, scaling, kubernetes, throttling, race-condition, confluence-distilled]
+tags:
+- distributed-systems
+- scaling
+- kubernetes
+- throttling
+- race-condition
+- confluence-distilled
+title: In-memory job throttles silently break when you scale to multiple replicas
+type: gotcha
 ---
 
 # In-memory job throttles silently break when you scale to multiple replicas
@@ -39,3 +49,14 @@ Source: [[Background Process Optimization for luz-docs API Architecture and Reco
 ## Related
 
 - [[Piggybacking background jobs on HTTP requests couples job load to traffic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Piggybacking background jobs on HTTP requests couples job load to traffic]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[Two-tier cache must propagate caller TTL to every tier]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: 8689d9b723a4f89b
+ai_hash: 097fc3bb8be83e5f
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-10
@@ -37,8 +37,8 @@ When a worker does remote work (create documents) AND writes a progress/report r
 
 **Related notes:**
 - [[luz-docs-import createDocument is not idempotent — server-generated id, @Retry can duplicate on lost response]]
-- [[Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism]]
 - [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
+- [[Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism]]
 - [[Read-time non-persisted state repair is an anti-pattern; use a scheduled reconciler]]
 - [[Read-side fire-and-forget mutation pass the id and re-read in the async, don't mutate the object being serialized]]
 

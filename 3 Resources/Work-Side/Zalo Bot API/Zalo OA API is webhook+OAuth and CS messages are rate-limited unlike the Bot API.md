@@ -1,7 +1,7 @@
 ---
-ai_hash: 6900c015309d1c8b
+ai_hash: 2ea2dd39a31b688a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-09
 entities: []
 source: session 2026-06-09 adapting zalo skill after bot-creation was blocked
@@ -39,8 +39,8 @@ The Zalo **Official Account (OA) API** (`openapi.zalo.me/v3.0/oa/...`, docs at d
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Zalo Bot API endpoints, token, and message shapes]]
 - [[Zalo dev app and bot creation both require a verified Zalo account]]
+- [[Zalo Bot API endpoints, token, and message shapes]]
 - [[Zalo Bot API has no getUpdates offset and no reply_to_message]]
 
 %% ai-graph-end %%

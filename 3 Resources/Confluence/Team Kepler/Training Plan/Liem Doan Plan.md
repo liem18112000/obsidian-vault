@@ -1,14 +1,19 @@
 ---
-title: "Liem Doan Plan"
+ai_hash: 6fd9f135fd6d314f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48762880010'
+confluence_path: Team Kepler > Training Plan
 created: 2025-10-17
-updated: 2025-10-24
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: Liem Doan Plan
+type: source
+updated: 2025-10-24
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48762880010/Liem+Doan+Plan
-confluence_id: "48762880010"
-confluence_path: "Team Kepler > Training Plan"
-tags: [confluence]
 ---
 
 # Liem Doan Plan
@@ -100,3 +105,14 @@ Read through, if you have any questions, just contact ***@Scrum Master***
 - Architecture of Klara system
 - Have to know key features of your current team and how the team works
 - Can attacks simple tickets in pair or independently
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[Joint review 0.03.24.00 (16.06.2026 - 29.06.2026)]]
+- [[Jenkins (How to build & deploy)]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[Confluence Export — Index]]
+
+%% ai-graph-end %%

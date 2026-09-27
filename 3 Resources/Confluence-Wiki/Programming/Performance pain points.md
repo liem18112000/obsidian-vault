@@ -1,18 +1,22 @@
 ---
-title: "Performance pain points"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47746679688/Performance+pain+points
-space: "FUT"
-topic: programming
-relevance: 0.721
-depth: 2.53
-updated: 2024-04-09
+ai_hash: 1d68494dbc69d880
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.53
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47746679688/Performance+pain+points
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Performance pain points
+topic: programming
+type: source
+updated: 2024-04-09
 ---
 
 # Performance pain points
@@ -338,3 +342,14 @@ tags:
 
 
 - Ask Yan: if some steps have performance pain point?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[Measure API luz-docs]]
+- [[Public API client performance analysis]]
+- [[EPC API - Load Test]]
+- [[New architecture for documentStatistic]]
+
+%% ai-graph-end %%

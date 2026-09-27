@@ -1,18 +1,22 @@
 ---
-title: "Testing statistics and remaining impediment after implementation."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530459109/Testing+statistics+and+remaining+impediment+after+implementation.
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2021-08-04
+ai_hash: 18e81a40a3e5c25e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 13
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530459109/Testing+statistics+and+remaining+impediment+after+implementation.
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Testing statistics and remaining impediment after implementation.
+topic: programming
+type: source
+updated: 2021-08-04
 ---
 
 # Testing statistics and remaining impediment after implementation.
@@ -253,3 +257,14 @@ solution: consider using parallel API from Eirene.
 - **30K**records takes **(Cache ID test: 1004, Batch running ID test: 253, 254, 255)**
   - **14mins  (happy case)**
   - **54mins (worst case) because the cronjob to update data into address cache run every 10mins**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Split a batch against a cache and forward only the misses, tracking the residual]]
+- [[Luz Audit System - Performance Optimization Proposal]]
+- [[New architecture for documentStatistic]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[Invoice Run, ePost backend storage]]
+
+%% ai-graph-end %%

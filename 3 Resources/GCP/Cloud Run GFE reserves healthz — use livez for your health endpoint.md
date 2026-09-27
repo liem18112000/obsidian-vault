@@ -1,5 +1,5 @@
 ---
-ai_hash: c484a9e1cd4a69d4
+ai_hash: 7625a08fd8c7c62f
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-27
@@ -38,7 +38,7 @@ Context: kga Cloud Run service (LUZ-159671 test-agent).
 - [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
 - [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
 - [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+- [[Cloud Run generates a per-project URL hash, breaking environment config parity]]
 - [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
-- [[CoreDNS livenessreadiness 404 means probe path-port mismatch, not a CoreDNS crash]]
 
 %% ai-graph-end %%

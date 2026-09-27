@@ -1,14 +1,21 @@
 ---
-title: "Atlassian MCP Server Integration Guide"
+ai_hash: 50aed7fe3273b0d1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48911777796'
+confluence_path: Team Kepler > Developer note > AI Research > MCP
 created: 2025-11-26
-updated: 2025-11-26
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- mcp
+- search
+title: Atlassian MCP Server Integration Guide
+type: source
+updated: 2025-11-26
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48911777796/Atlassian+MCP+Server+Integration+Guide
-confluence_id: "48911777796"
-confluence_path: "Team Kepler > Developer note > AI Research > MCP"
-tags: [confluence, mcp, search]
 ---
 
 # Atlassian MCP Server Integration Guide
@@ -404,3 +411,14 @@ Remove server from Copilot MCP configuration. Delete `.env` if decommissioning.
 - Enable read-only mode for production safety.
 
 Happy building! Update this guide as your Atlassian usage evolves.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bitbucket MCP Server Integration Guide]]
+- [[MCP Servers — Installation and Configuration Reference]]
+- [[Setup VS Code - Github Copilot - MCP Server]]
+- [[AI-Powered Development Environment Architecture]]
+- [[Expose an app as an MCP server by wrapping the same services container the webCLI use]]
+
+%% ai-graph-end %%

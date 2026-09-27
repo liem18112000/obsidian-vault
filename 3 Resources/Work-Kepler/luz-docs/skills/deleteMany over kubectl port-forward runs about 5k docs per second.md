@@ -1,7 +1,7 @@
 ---
-ai_hash: b459c362bd832a40
+ai_hash: 9f1e7ee5610868c6
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities: []
 source: session 2026-06-11 (first earchive-data-clean run)
@@ -29,10 +29,10 @@ So a full canary-sized wipe is ~25 s end to end; budget minutes only for multi-m
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Performance Mongo is a mongos-routed sharded cluster — truncate via the tenant's shard primary, not mongos]]
 - [[eArchive dev skills are self-contained copies, not shared helpers]]
-- [[Destructive Luz skills use a preview-first CONFIRM gate]]
 - [[eArchive count baseline latency on dev ~80s for 128k docs (fan-out off)]]
 - [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
-- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[Destructive Luz skills use a preview-first CONFIRM gate]]
 
 %% ai-graph-end %%

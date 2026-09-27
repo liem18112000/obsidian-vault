@@ -1,7 +1,7 @@
 ---
-ai_hash: 524f0f22e2ca5049
+ai_hash: 02207c8f61b1861a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-09
 entities: []
 source: session 2026-06-09 building zalo-hook-installation skill

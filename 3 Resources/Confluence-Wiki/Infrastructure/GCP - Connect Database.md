@@ -1,18 +1,22 @@
 ---
-title: "GCP - Connect Database"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38225223414/GCP+-+Connect+Database
-space: "Helios"
-topic: infra
-relevance: 0.734
-depth: 2.53
-updated: 2026-07-22
+ai_hash: 07005575c776a56e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.53
+entities: []
+relevance: 0.734
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38225223414/GCP+-+Connect+Database
+space: Helios
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/helios
+- confluence
+- infra
+- space/helios
+title: GCP - Connect Database
+topic: infra
+type: source
+updated: 2026-07-22
 ---
 
 # GCP - Connect Database
@@ -207,3 +211,14 @@ labels.k8s-pod/app=(&quot;luz-webclient&quot; OR &quot;webclient-nginx-ingress&q
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Port Forward to call GCP API in localhost]]
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Deploy to Kubernetes and get External IP]]
+- [[How to connect K8S database from postgres]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

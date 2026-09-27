@@ -1,18 +1,22 @@
 ---
-title: "SQL Script execution"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AVATAR/pages/6459228727/SQL+Script+execution
-space: "AVATAR"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2021-01-27
+ai_hash: 3263065c8a1ae9c4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/AVATAR/pages/6459228727/SQL+Script+execution
+space: AVATAR
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/avatar
+- confluence
+- programming
+- space/avatar
+title: SQL Script execution
+topic: programming
+type: source
+updated: 2021-01-27
 ---
 
 # SQL Script execution
@@ -117,3 +121,14 @@ on **dev.klara.ch**
 
 
 ![[6459228727-image2021-1-27_15-57-22.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Script to list all the information of the tenants]]
+- [[LUZ-102045 Implement physical delete for COMPANY tenant Part 2 (Postgres cont)]]
+- [[14. Create companies by tenant id]]
+- [[15. Update companies by tenant id]]
+- [[Script to create task again for banks using b.Link]]
+
+%% ai-graph-end %%

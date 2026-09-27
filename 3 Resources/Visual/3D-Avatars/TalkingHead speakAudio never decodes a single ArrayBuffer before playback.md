@@ -1,7 +1,7 @@
 ---
-ai_hash: fca437d31001c1e0
+ai_hash: 51d04ae1f48219c8
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-11
 entities: []
 source: virtual-avatar session 2026-07-11, static/app.js + TalkingHead source read
@@ -43,8 +43,7 @@ General lesson: when a library's documented parameter type is broader than what 
 **Related notes:**
 - [[Poll a library's public boolean state flags with a grace period when there is no completion callback]]
 - [[TalkingHead requires offline Blender conversion for VRM avatars]]
-- [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
 - [[jsdelivr gh CDN can pin to an exact commit SHA, not just tagsbranches]]
-- [[State machines must catch expected-failure operations or they get stuck forever]]
+- [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
 
 %% ai-graph-end %%

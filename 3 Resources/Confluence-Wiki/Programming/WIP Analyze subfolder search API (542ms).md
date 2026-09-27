@@ -1,18 +1,22 @@
 ---
-title: "[WIP] Analyze subfolder search API (542ms)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47150137855/WIP+Analyze+subfolder+search+API+542ms
-space: "TP2020"
-topic: programming
-relevance: 0.863
-depth: 3
-updated: 2022-07-25
+ai_hash: 1eb2d9e9057396ea
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 3
+entities: []
+relevance: 0.863
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47150137855/WIP+Analyze+subfolder+search+API+542ms
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: '[WIP] Analyze subfolder search API (542ms)'
+topic: programming
+type: source
+updated: 2022-07-25
 ---
 
 # [WIP] Analyze subfolder search API (542ms)
@@ -93,3 +97,14 @@ tags:
 
 
 ![[47150137855-image-20220725-013126.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[EArchive - Search doc process]]
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[Enhancements for API Delete and Restore]]
+- [[Add Remove security class for folder]]
+- [[Empty Trash APIs]]
+
+%% ai-graph-end %%

@@ -1,9 +1,35 @@
 ---
-ai_hash: ae468dff8ed734af
+ai_hash: e86ec90cb8359fe9
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-05
-entities: []
+entities:
+- luz_docs tracked-write template
+- TrackingJsonStoreClient
+- gate-preread-write-fire method
+- tracked single-doc writes
+- insert
+- replace
+- update
+- delete
+- template method
+- tracked(String collection, Set<String> touchedFields, Supplier<JsonObject> beforeReader,
+  Supplier<Response> write, BiConsumer<JsonObject, Response> onSuccess)
+- gate
+- optional pre-read
+- write
+- fire-and-forget onSuccess
+- track() wrapper
+- touchedFields
+- beforeReader
+- write Supplier
+- raw client call
+- bug surface
+- JDK Supplier
+- JDK BiConsumer
+- luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template
+- Intercept an MP REST client by implementing its interface - unqualified inject resolves
+  the wrapper, RestClient qualifier is the bypass
 source: TrackingJsonStoreClient template extraction, session 2026-06-05
 status: budding
 tags:
@@ -36,9 +62,38 @@ Flow: gate (untracked collection / suppression / untouched fields) -> optional p
 
 **Related notes:**
 - [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
-- [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
 - [[luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id]]
-- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+- [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
 - [[Diff-based write tracking dies silently if the write runs before the pre-read]]
+- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+
+**Relations:**
+- luz_docs tracked-write template — *folds* — tracked single-doc writes
+- luz_docs tracked-write template — *uses* — gate-preread-write-fire method
+- TrackingJsonStoreClient — *uses* — luz_docs tracked-write template
+- TrackingJsonStoreClient — *folds* — tracked single-doc writes
+- tracked single-doc writes — *include* — insert
+- tracked single-doc writes — *include* — replace
+- tracked single-doc writes — *include* — update
+- tracked single-doc writes — *include* — delete
+- template method — *is defined as* — tracked(String collection, Set<String> touchedFields, Supplier<JsonObject> beforeReader, Supplier<Response> write, BiConsumer<JsonObject, Response> onSuccess)
+- gate-preread-write-fire method — *consists of* — gate
+- gate-preread-write-fire method — *consists of* — optional pre-read
+- gate-preread-write-fire method — *consists of* — write
+- gate-preread-write-fire method — *consists of* — fire-and-forget onSuccess
+- fire-and-forget onSuccess — *is wrapped by* — track() wrapper
+- touchedFields — *signals* — whole document may change
+- whole document may change — *applies to* — replace
+- whole document may change — *applies to* — delete
+- beforeReader — *signals* — no before state
+- no before state — *applies to* — insert
+- write Supplier — *is source for* — bypass
+- write Supplier — *is source for* — tracked branches
+- write Supplier — *removes* — bug surface
+- bug surface — *caused by* — raw client call
+- template method — *uses* — JDK Supplier
+- template method — *uses* — JDK BiConsumer
+- luz_docs tracked-write template — *is related to* — luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template
+- luz_docs tracked-write template — *is related to* — Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass
 
 %% ai-graph-end %%

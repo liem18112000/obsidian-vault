@@ -1,18 +1,22 @@
 ---
-title: "One API - Investigation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47125988369/One+API+-+Investigation
-space: "TS"
-topic: programming
-relevance: 0.769
-depth: 2.68
-updated: 2022-08-02
+ai_hash: b719118fb8731c6c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.68
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47125988369/One+API+-+Investigation
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: One API - Investigation
+topic: programming
+type: source
+updated: 2022-08-02
 ---
 
 # One API - Investigation
@@ -95,3 +99,14 @@ senderEndToEndId: customer id
 senderName: company name
 
 ### Pull request of Avatar team: <a href="https://bitbucket.org/axonivy-prod/%7Bc066bf60-6984-4fa5-8840-b281f4c172d9%7D/pull-requests/1431" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/axonivy-prod/%7Bc066bf60-6984-4fa5-8840-b281f4c172d9%7D/pull-requests/1431</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OneAPI Architecture overview]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+- [[One API & ePost Forced Onboarding 0.02.75.00 (16.07.2024 - 29.07.2024)]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[5. How to extend modify ONE API delivery API Research]]
+
+%% ai-graph-end %%

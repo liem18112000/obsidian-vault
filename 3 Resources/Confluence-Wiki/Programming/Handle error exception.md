@@ -1,18 +1,22 @@
 ---
-title: "Handle error exception"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZFIN/pages/20930966439/Handle+error+exception
-space: "LUZFIN"
-topic: programming
-relevance: 0.837
-depth: 3
-updated: 2016-08-19
+ai_hash: 8d1bc47629a18114
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 3
+entities: []
+relevance: 0.837
+source: https://axonivy.atlassian.net/wiki/spaces/LUZFIN/pages/20930966439/Handle+error+exception
+space: LUZFIN
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luzfin
+- confluence
+- programming
+- space/luzfin
+title: Handle error exception
+topic: programming
+type: source
+updated: 2016-08-19
 ---
 
 # Handle error exception
@@ -354,3 +358,14 @@ offer.accept.invalid = This offer could not accepted. In order to accept an offe
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Throw error codes not sentences; localise at the request boundary]]
+- [[Ivy conventions]]
+- [[Scan to book - booking exception]]
+- [[Enumerate a dependency's exception surface and decide each one before integrating]]
+- [[Error handling for delete and undo]]
+
+%% ai-graph-end %%

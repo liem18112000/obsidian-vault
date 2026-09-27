@@ -1,18 +1,22 @@
 ---
-title: "Unified architecture overview"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47751823411/Unified+architecture+overview
-space: "FUT"
-topic: architecture
-relevance: 0.716
-depth: 2.11
-updated: 2024-12-13
+ai_hash: 05c7e14f011e77e2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.11
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47751823411/Unified+architecture+overview
+space: FUT
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/fut
+- confluence
+- architecture
+- space/fut
+title: Unified architecture overview
+topic: architecture
+type: source
+updated: 2024-12-13
 ---
 
 # Unified architecture overview
@@ -70,3 +74,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture]]
+- [[Fit OneAPI Postgres data model to MongoDB]]
+- [[Proposal eArchived architecture direction for ePost web 2]]
+- [[OneAPI Architecture overview]]
+- [[System Architecture & Overview - Training Guide]]
+
+%% ai-graph-end %%

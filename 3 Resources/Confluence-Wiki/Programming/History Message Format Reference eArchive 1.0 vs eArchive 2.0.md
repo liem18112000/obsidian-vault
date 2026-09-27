@@ -1,18 +1,22 @@
 ---
-title: "History Message Format Reference: eArchive 1.0 vs eArchive 2.0"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49447829524/History+Message+Format+Reference+eArchive+1.0+vs+eArchive+2.0
-space: "Helios"
-topic: programming
-relevance: 0.777
-depth: 2.92
-updated: 2026-06-18
+ai_hash: 81c11ea2db81d006
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.92
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49447829524/History+Message+Format+Reference+eArchive+1.0+vs+eArchive+2.0
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: 'History Message Format Reference: eArchive 1.0 vs eArchive 2.0'
+topic: programming
+type: source
+updated: 2026-06-18
 ---
 
 # History Message Format Reference: eArchive 1.0 vs eArchive 2.0
@@ -557,3 +561,14 @@ Rendered-check: every `AuditActionHistory` has a `rendered` boolean. It is set t
 | 20 | `documentSignature` | `DocumentSignature` | `signatures[0].signingDateTime`, `signatures[0].user.email/firstName/lastName` |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[EArchive - Search doc process]]
+- [[iLetter current backend architecture]]
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[LUZ-146746 Use correct API's for delete, restore and their undo]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+
+%% ai-graph-end %%

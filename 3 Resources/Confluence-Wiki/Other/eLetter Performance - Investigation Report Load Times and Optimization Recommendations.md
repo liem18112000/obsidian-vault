@@ -1,18 +1,22 @@
 ---
-title: "eLetter Performance - Investigation Report: Load Times and Optimization Recommendations"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49274617874/eLetter+Performance+-+Investigation+Report+Load+Times+and+Optimization+Recommendations
-space: "Helios"
-topic: other
-relevance: 0.721
-depth: 2.6
-updated: 2026-03-27
+ai_hash: 5c9a1b0b46eb30ac
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.6
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49274617874/eLetter+Performance+-+Investigation+Report+Load+Times+and+Optimization+Recommendations
+space: Helios
+status: reference
 tags:
-  - confluence
-  - other
-  - space/helios
+- confluence
+- other
+- space/helios
+title: 'eLetter Performance - Investigation Report: Load Times and Optimization Recommendations'
+topic: other
+type: source
+updated: 2026-03-27
 ---
 
 # eLetter Performance - Investigation Report: Load Times and Optimization Recommendations
@@ -536,3 +540,14 @@ export async function someServerAction() {
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[For authenticated pages pick the perf tool that can log in, not the prettiest report]]
+- [[Split page load into server, render and interaction before optimising]]
+- [[Measure component render timing with Playwright addInitScript]]
+- [[Perfomance of ePost Mylife Branded folder API]]
+- [[Perf 800k tenant eArchive reload timing]]
+
+%% ai-graph-end %%

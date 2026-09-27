@@ -1,18 +1,22 @@
 ---
-title: "Batch Processor Library - NodeJS"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48607559753/Batch+Processor+Library+-+NodeJS
-space: "FUT"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2025-09-23
+ai_hash: 622fe3a3b0ac8f30
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48607559753/Batch+Processor+Library+-+NodeJS
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Batch Processor Library - NodeJS
+topic: programming
+type: source
+updated: 2025-09-23
 ---
 
 # Batch Processor Library - NodeJS
@@ -327,3 +331,14 @@ Updated version:
 - Database design
 
 - State machine
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Batch TypeScript - Sequence Diagram]]
+- [[Recipe Luz Batch TypeScript]]
+- [[Batching Design]]
+- [[Recipe Typescript batching]]
+- [[Luz Batch TypeScript - Configuration]]
+
+%% ai-graph-end %%

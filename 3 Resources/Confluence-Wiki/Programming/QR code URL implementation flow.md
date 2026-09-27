@@ -1,18 +1,22 @@
 ---
-title: "QR code/URL implementation flow"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46999142753/QR+code+URL+implementation+flow
-space: "LUZ"
-topic: programming
-relevance: 0.852
-depth: 3
-updated: 2022-03-22
+ai_hash: ef7c58b8bfd9f30e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 3
+entities: []
+relevance: 0.852
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46999142753/QR+code+URL+implementation+flow
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: QR code/URL implementation flow
+topic: programming
+type: source
+updated: 2022-03-22
 ---
 
 # QR code/URL implementation flow
@@ -279,3 +283,14 @@ Then verify the token to see if it is issued by KLARA or not
 High level user flow:
 
 <a href="https://www.figma.com/file/MWqHGxm6skwTbRJ6scZWkY/Pin-Branded-Folder?node-id=0%3A1" class="external-link" data-card-appearance="embed" data-width="100.00" rel="nofollow">https://www.figma.com/file/MWqHGxm6skwTbRJ6scZWkY/Pin-Branded-Folder?node-id=0%3A1</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Copy 2. QR-Code forwarding to correct app store]]
+- [[2. QR-Code forwarding to correct app store]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+- [[KLARA Integration (request access token & call API)]]
+
+%% ai-graph-end %%

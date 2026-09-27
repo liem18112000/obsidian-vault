@@ -1,9 +1,35 @@
 ---
-ai_hash: 4cf83c9b813485aa
+ai_hash: 2a893cf70d7a87f9
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-19
-entities: []
+entities:
+- Per-key write lock
+- Parallel aggregate writes
+- Self-migrating column
+- Idempotent ALTER
+- Vinnstack
+- Process-flow generation
+- '`setStoryFlow`'
+- '`interrogationStore`'
+- '`getInterrogation`'
+- '`saveInterrogation`'
+- Epic aggregate
+- Lost update
+- '`withEpicLock(epic, fn)`'
+- Promise-chain mutex
+- Next server
+- Read-modify-write
+- Aggregate key
+- Targeted column upserts
+- '`db/schema.sql`'
+- Manual migrate scripts
+- Ops step
+- '`ensureSchemaExtensions()`'
+- '`ALTER TABLE ... ADD COLUMN IF NOT EXISTS ...`'
+- Column
+- Cloud Build
+- GCS latest auto-update channel
 source: Vinnstack session 2026-07-19
 status: seedling
 tags:
@@ -35,5 +61,35 @@ Related: [[Vinnstack release push to main triggers Cloud Build which publishes t
 - [[Async-enriched columns need a lazy backfill for pre-feature rows]]
 - [[Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)]]
 - [[Vinnstack story flows keep only the latest version - history lives in md_exports snapshots]]
+
+**Relations:**
+- Vinnstack — *implements* — Per-key write lock
+- Vinnstack — *implements* — Self-migrating column
+- Per-key write lock — *solves problem* — Parallel aggregate writes
+- Self-migrating column — *achieved via* — Idempotent ALTER
+- Vinnstack — *integrates* — Process-flow generation
+- Vinnstack — *introduces* — Column
+- `setStoryFlow` — *is part of* — `interrogationStore`
+- `setStoryFlow` — *calls* — `getInterrogation`
+- `setStoryFlow` — *calls* — `saveInterrogation`
+- `saveInterrogation` — *modifies* — Epic aggregate
+- Parallel aggregate writes — *can lead to* — Lost update
+- `withEpicLock(epic, fn)` — *is a* — Promise-chain mutex
+- `withEpicLock(epic, fn)` — *prevents* — Lost update
+- `withEpicLock(epic, fn)` — *locks by* — Epic aggregate
+- Next server — *acts as* — single writer
+- Read-modify-write — *is vulnerable to* — concurrency
+- Read-modify-write — *can be serialized by* — Aggregate key
+- Targeted column upserts — *is alternative to* — Read-modify-write
+- Vinnstack — *manages schema with* — `db/schema.sql`
+- `db/schema.sql` — *applied by* — Manual migrate scripts
+- Adding a column — *typically requires* — Ops step
+- `ensureSchemaExtensions()` — *executes* — `ALTER TABLE ... ADD COLUMN IF NOT EXISTS ...`
+- `ensureSchemaExtensions()` — *is called by* — `getInterrogation`
+- `ensureSchemaExtensions()` — *is called by* — `saveInterrogation`
+- Column — *is defined in* — `db/schema.sql`
+- Existing DB — *receives* — Column
+- Vinnstack release push to main — *triggers* — Cloud Build
+- Cloud Build — *publishes to* — GCS latest auto-update channel
 
 %% ai-graph-end %%

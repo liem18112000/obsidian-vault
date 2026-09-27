@@ -1,18 +1,22 @@
 ---
-title: "Copy [Proof of Concept] Passwordless account/login with Keycloak"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49307550863/Copy+Proof+of+Concept+Passwordless+account+login+with+Keycloak
-space: "LUZ"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2026-04-08
+ai_hash: 2aa8925e668e79a1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 20
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49307550863/Copy+Proof+of+Concept+Passwordless+account+login+with+Keycloak
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Copy [Proof of Concept] Passwordless account/login with Keycloak
+topic: architecture
+type: source
+updated: 2026-04-08
 ---
 
 # Copy [Proof of Concept] Passwordless account/login with Keycloak
@@ -136,3 +140,14 @@ Note: Use the below file to create: <span class="confluence-embedded-file-wrappe
 1.  What are some potential security issues? (Investigating)
 
 2.  Should this authentication flow be applied for all Keycloak clients or create a specific client to support our uses cases? (Investigating)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Proof of Concept Passwordless account login with Keycloak]]
+- [[Onboarding API - Investigation Identity Provider SSO]]
+- [[Proof of Concept Auto login with Keycloak]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Auto login in myLife and ePost private web clients]]
+
+%% ai-graph-end %%

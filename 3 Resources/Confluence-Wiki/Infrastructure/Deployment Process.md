@@ -1,18 +1,22 @@
 ---
-title: "Deployment Process"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/31160275843/Deployment+Process
-space: "TS"
-topic: infra
-relevance: 0.716
-depth: 2.67
-updated: 2021-02-05
+ai_hash: ce0e25785493e221
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.67
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/31160275843/Deployment+Process
+space: TS
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/ts
+- confluence
+- infra
+- space/ts
+title: Deployment Process
+topic: infra
+type: source
+updated: 2021-02-05
 ---
 
 # Deployment Process
@@ -75,3 +79,14 @@ This job will only deploy a list of modules we list out from the parameters of t
 <a href="https://build.axonivy.io/view/LUZ/job/KLARA/view/luz_booking/job/gcp-dev-deployment/" class="external-link" rel="nofollow">https://build.axonivy.io/view/LUZ/job/KLARA/view/luz_booking/job/gcp-dev-deployment/</a>
 
 This job will redeploy all services and frontend when needed. It means it will check whether the image from repository is different from the latest image. If no it still keep the pod running. But Yes it will terminate the old pod and start the new pod.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Jenkins (How to build & deploy)]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[Kubernetes knowledge]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[Deploy Google Cloud Run for new module]]
+
+%% ai-graph-end %%

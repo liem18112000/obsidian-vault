@@ -1,7 +1,7 @@
 ---
-ai_hash: c9a629ac2ac7cdce
+ai_hash: d0baee70c52610d4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-08
 entities: []
 source: session 2026-06-08 LUZ-154157
@@ -40,10 +40,10 @@ Verified 2026-06-08: case_01/02 (public target) pass; case_03/04 (target carries
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]
-- [[luz_docs FolderDeletingServiceIT coverage gaps]]
 - [[luz_docs deleteFolder isDetailResponse error contract and non-transactionality]]
-- [[luz_docs delete folder API soft vs permanent state machine]]
+- [[Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]
 - [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
+- [[luz_docs FolderDeletingServiceIT coverage gaps]]
+- [[luz_docs delete folder API soft vs permanent state machine]]
 
 %% ai-graph-end %%

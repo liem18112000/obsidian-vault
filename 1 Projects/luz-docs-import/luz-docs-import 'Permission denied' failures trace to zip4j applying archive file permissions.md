@@ -1,5 +1,5 @@
 ---
-ai_hash: da9731043825a1cc
+ai_hash: 1bd173777de0015e
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-14
@@ -8,30 +8,31 @@ entities:
 - Permission denied
 - zip4j
 - archive file permissions
-- stored POSIX mode
 - FileUtil.extractAllZipFile
 - zipFile.extractAll
 - Windows-made zip
-- owner-read permission
+- POSIX mode
+- owner-read
 - jboss WildFly user
 - FileInputStream
 - EACCES
 - processDocumentFile
-- import-test-zips/21-edge-cp437-names.zip
+- data/Lam/import-test-zips/import-test-zips/21-edge-cp437-names.zip
 - file_correct_name/Abschaltung von E-Post Office und.pdf
 - permission normalization
 - Files.walkFileTree
 - SimpleFileVisitor
-- preVisitDirectory
-- visitFile
 - FileUtil.readAllFileInFolder
-- listFiles()
-- NullPointerException (NPE)
+- folder.listFiles()
+- NPE
 - INTERNAL_SERVICE_ERROR
 - 0o000 directory
+- null guard
 - Unix mode
-- zip4j extractAll applies a ZIP entry's stored Unix mode
-- Windows-made zips can extract unreadable files
+- mount
+- filename
+- name encoding
+- high-word mode
 source: session 2026-08-14 case 21 import test
 status: seedling
 tags:
@@ -77,36 +78,37 @@ Set dir perms in `preVisitDirectory` (before descent) so the walk can enter an o
 - [[Fail an import on a corrupt ZIP by translating the extraction exception to a domain FailureCode]]
 
 **Relations:**
-- luz-docs-import — *HAS_FAILURE_TYPE* — Permission denied
-- Permission denied — *TRACES_TO* — zip4j
-- zip4j — *APPLIES* — archive file permissions
-- zip4j — *APPLIES* — stored POSIX mode
-- FileUtil.extractAllZipFile — *IS_FUNCTION_OF* — zip4j
-- zipFile.extractAll — *IS_FUNCTION_OF* — zip4j
-- Windows-made zip — *LACKS* — owner-read permission
-- owner-read permission — *IS_REQUIRED_BY* — jboss WildFly user
-- jboss WildFly user — *CANNOT_READ_FILE_CAUSES* — FileInputStream
-- FileInputStream — *THROWS* — EACCES
-- EACCES — *CAUSES* — processDocumentFile
-- processDocumentFile — *TO_RECORD_FAILURE* — file_correct_name/Abschaltung von E-Post Office und.pdf
-- import-test-zips/21-edge-cp437-names.zip — *IS_REPRO_CASE_FOR* — Permission denied
-- import-test-zips/21-edge-cp437-names.zip — *CONTAINS* — file_correct_name/Abschaltung von E-Post Office und.pdf
-- file_correct_name/Abschaltung von E-Post Office und.pdf — *FAILS_WITH* — Permission denied
-- permission normalization — *IS_FIX_FOR* — Permission denied
-- permission normalization — *OCCURS_AFTER* — zipFile.extractAll
-- permission normalization — *OCCURS_BEFORE* — FileUtil.readAllFileInFolder
-- Files.walkFileTree — *IS_USED_FOR* — permission normalization
-- SimpleFileVisitor — *IS_USED_WITH* — Files.walkFileTree
-- preVisitDirectory — *SETS* — directory permissions
-- visitFile — *SETS* — file permissions
-- FileUtil.readAllFileInFolder — *USES* — listFiles()
-- 0o000 directory — *CAUSES* — listFiles() TO_RETURN null
-- listFiles() TO_RETURN null — *CAUSES* — NullPointerException (NPE)
-- NullPointerException (NPE) — *CAUSES* — INTERNAL_SERVICE_ERROR
-- permission normalization — *PREVENTS* — NullPointerException (NPE)
-- zip4j extractAll applies a ZIP entry's stored Unix mode — *IS_RELATED_TO* — Permission denied
-- Windows-made zips can extract unreadable files — *IS_RELATED_TO* — Permission denied
-- zip4j extractAll applies a ZIP entry's stored Unix mode — *DESCRIBES* — underlying mechanism
-- Windows-made zip — *CAN_EXTRACT* — unreadable files
+- luz-docs-import — *reports failure with* — Permission denied
+- Permission denied — *traced to* — zip4j
+- zip4j — *applies* — archive file permissions
+- archive file permissions — *include* — POSIX mode
+- archive file permissions — *include* — Unix mode
+- zip4j — *uses* — FileUtil.extractAllZipFile
+- zip4j — *uses* — zipFile.extractAll
+- Windows-made zip — *can store* — high-word mode
+- high-word mode — *can lack* — owner-read
+- owner-read — *is lacking for* — jboss WildFly user
+- jboss WildFly user — *cannot read* — file_correct_name/Abschaltung von E-Post Office und.pdf
+- FileInputStream — *throws* — EACCES
+- EACCES — *results in* — processDocumentFile recording failure
+- processDocumentFile — *records failure for* — file_correct_name/Abschaltung von E-Post Office und.pdf
+- data/Lam/import-test-zips/import-test-zips/21-edge-cp437-names.zip — *is a repro case for* — Permission denied
+- data/Lam/import-test-zips/import-test-zips/21-edge-cp437-names.zip — *contains* — file_correct_name/Abschaltung von E-Post Office und.pdf
+- file_correct_name/Abschaltung von E-Post Office und.pdf — *fails with* — Permission denied
+- Fix — *is* — permission normalization
+- permission normalization — *uses* — Files.walkFileTree
+- Files.walkFileTree — *implements* — SimpleFileVisitor
+- permission normalization — *occurs after* — zipFile.extractAll
+- permission normalization — *occurs before* — FileUtil.readAllFileInFolder
+- FileUtil.readAllFileInFolder — *has bug with* — folder.listFiles()
+- 0o000 directory — *causes* — folder.listFiles() to return null
+- folder.listFiles() to return null — *leads to* — NPE
+- NPE — *causes* — INTERNAL_SERVICE_ERROR
+- permission normalization — *prevents* — NPE
+- null guard — *prevents* — NPE
+- zip4j extractAll applies a ZIP entry's stored Unix mode, so Windows-made zips can extract unreadable files — *explains* — underlying mechanism
+- Permission denied — *is not caused by* — mount
+- Permission denied — *is not caused by* — filename
+- Permission denied — *is not caused by* — name encoding
 
 %% ai-graph-end %%

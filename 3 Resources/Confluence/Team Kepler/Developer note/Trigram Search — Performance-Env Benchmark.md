@@ -1,14 +1,23 @@
 ---
-title: "Trigram Search — Performance-Env Benchmark"
+ai_hash: b3310630441a8477
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49545969673'
+confluence_path: Team Kepler > Developer note > Full‑Text Document Search — Performance
+  Analysis & Proposals > S2 — Materialized n‑gram / Trigram Field (native, self‑hosted,
+  keeps substring semantics)
 created: 2026-06-30
-updated: 2026-06-30
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+- search
+title: Trigram Search — Performance-Env Benchmark
+type: source
+updated: 2026-06-30
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49545969673/Trigram+Search+Performance-Env+Benchmark
-confluence_id: "49545969673"
-confluence_path: "Team Kepler > Developer note > Full‑Text Document Search — Performance Analysis & Proposals > S2 — Materialized n‑gram / Trigram Field (native, self‑hosted, keeps substring semantics)"
-tags: [confluence, performance, search]
 ---
 
 # Trigram Search — Performance-Env Benchmark
@@ -209,3 +218,14 @@ db.documents.createIndex({ _searchTrigrams: 1 }, { name: "idx_trigrams" })
 The remaining ~0.95 s (vs the 3 ms DB seek) is the API round-trip: api-forwarder hop, residual regex `$or` + security/sort over the candidate set, folder-name enrichment, and response serialization — not the trigram lookup.
 
 ![[image-20260630-032541.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[S2 — Materialized n‑gram - Trigram Field (native, self‑hosted, keeps substring semantics)]]
+- [[Full‑Text Document Search — Performance Analysis & Proposals]]
+- [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
+- [[S1 — MongoDB $text Index (native, self‑hosted)]]
+- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+
+%% ai-graph-end %%

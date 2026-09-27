@@ -1,18 +1,23 @@
 ---
-title: "[Tool] json-caching-proxy - A middleman who will cache API calls in the local environment"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47290876013/Tool+json-caching-proxy+-+A+middleman+who+will+cache+API+calls+in+the+local+environment
-space: "TP2020"
-topic: infra
-relevance: 0.794
-depth: 2.69
-updated: 2023-02-09
+ai_hash: 9583fb25efd67e94
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.69
+entities: []
+relevance: 0.794
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47290876013/Tool+json-caching-proxy+-+A+middleman+who+will+cache+API+calls+in+the+local+environment
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/tp2020
+- confluence
+- infra
+- space/tp2020
+title: '[Tool] json-caching-proxy - A middleman who will cache API calls in the local
+  environment'
+topic: infra
+type: source
+updated: 2023-02-09
 ---
 
 # [Tool] json-caching-proxy - A middleman who will cache API calls in the local environment
@@ -42,3 +47,10 @@ json-caching-proxy -u http://localhost:13080 -p 12080 -l -a
 - `-l`: print log output to console.
 
 - `-a`: cache everything from the remote server.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

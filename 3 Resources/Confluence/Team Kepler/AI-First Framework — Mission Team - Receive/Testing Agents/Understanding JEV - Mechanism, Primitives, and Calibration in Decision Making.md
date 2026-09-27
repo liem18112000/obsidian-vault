@@ -1,14 +1,22 @@
 ---
-title: "Understanding JEV: Mechanism, Primitives, and Calibration in Decision Making"
+ai_hash: 590aa60246f303cd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49773740037'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > TypeSafe AI''s Jev: A System One Model for Fast, Structured Decisions'
 created: 2026-09-21
-updated: 2026-09-21
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- jev
+title: 'Understanding JEV: Mechanism, Primitives, and Calibration in Decision Making'
+type: source
+updated: 2026-09-21
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49773740037/Understanding+JEV+Mechanism+Primitives+and+Calibration+in+Decision+Making
-confluence_id: "49773740037"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > TypeSafe AI's Jev: A System One Model for Fast, Structured Decisions"
-tags: [confluence, ai-agents, jev]
 ---
 
 # Understanding JEV: Mechanism, Primitives, and Calibration in Decision Making
@@ -150,3 +158,14 @@ The reason to cascade rather than replace is honest about Jev's limits: its **ra
 This is precisely the calibrated-confidence philosophy from section 6 applied operationally, and it is the shape we'd adopt in test-agent-v2: a `DecisionProvider` port beside the existing `ModelProvider`, Jev first, LLM on the tail, flag-gated and default-off. The call sites and rollout are in `RESEARCH-jev-in-test-agent-v2.md`.
 
 ![[image-20260921-101606.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TypeSafe AI's Jev - A System One Model for Fast, Structured Decisions]]
+- [[Integrating Jev into Test-Agent-V2 for Enhanced Decision-Making]]
+- [[System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs]]
+- [[JEV accept-side confidence is low and unreliable; the cascade win is reject-side]]
+- [[JEV assured-gate errors are low-confidence false-accepts so the confidence gate is the safety net]]
+
+%% ai-graph-end %%

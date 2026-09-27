@@ -1,10 +1,21 @@
 ---
-title: "A nullable column with no constraint becomes an NPE in a downstream service"
+ai_hash: 5b4402a06b3e4ecf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Tenant token issue (TS)'
 status: seedling
-source: "Confluence: Tenant token issue (TS)"
-tags: [debugging, null-safety, data-integrity, sql, microservices, jwt, confluence-distilled]
+tags:
+- debugging
+- null-safety
+- data-integrity
+- sql
+- microservices
+- jwt
+- confluence-distilled
+title: A nullable column with no constraint becomes an NPE in a downstream service
+type: lesson
 ---
 
 # A nullable column with no constraint becomes an NPE in a downstream service
@@ -53,3 +64,14 @@ Source: [[Tenant token issue]] (TS, Confluence).
 ## Related
 
 - [[Deleting a shared reference entity prefer the design whose cost stays constant per consumer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A null-guarded tenant check fails open, so a renamed path parameter disables isolation]]
+- [[Tenant token issue]]
+- [[javax.json single-arg getString throws NPE on missing key]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+- [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+
+%% ai-graph-end %%

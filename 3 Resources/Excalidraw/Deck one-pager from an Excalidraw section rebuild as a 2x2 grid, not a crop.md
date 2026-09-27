@@ -1,5 +1,5 @@
 ---
-ai_hash: d9b82926a2d0e1a3
+ai_hash: a54f86771beaa4b2
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-26
@@ -36,7 +36,7 @@ Keep the standalone builder as a small self-contained generator (emit rects+text
 - [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
 - [[Full-bleed slide images need ~169 aspect or their text renders too small]]
 - [[Embed Excalidraw in repo markdown render to SVG; the renderer does not auto-wrap bound text]]
-- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
 - [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
 
 %% ai-graph-end %%

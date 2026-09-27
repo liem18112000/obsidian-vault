@@ -1,35 +1,30 @@
 ---
-ai_hash: 2b3211740ca96461
+ai_hash: 8133bee37eee674e
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-11
 entities:
 - interrogate-qa skill
 - Vinnstack
+- vinnstack-skills/interrogate-qa/SKILL.md
 - Interrogation Room UI
 - business track
 - technical track
 - db/schema.sql
 - questions table
-- CHECK constraint
+- track CHECK constraint
 - schema migration
+- QA track
 - prompt file
 - tooling
 - agents
 - app
 - persistence layer
-- UI/track system
 - standalone tool
 - app wiring
 - Epics
 - Stories
 - Flows
-- vinnstack-skills/interrogate-qa/SKILL.md
-- QA track
-- new enum value
-- UI wiring
-- DB CHECK constraint
-- new kind of interrogation
 source: session 2026-07-11 — creating interrogate-qa skill
 status: seedling
 tags:
@@ -66,31 +61,27 @@ General lesson: when a new "kind" of interrogation/question-set is requested but
 - [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
 
 **Relations:**
-- interrogate-qa skill — *is_part_of* — Vinnstack
-- interrogate-qa skill — *is_defined_in* — vinnstack-skills/interrogate-qa/SKILL.md
-- interrogate-qa skill — *is_built_as* — standalone, manually-invoked skill
-- interrogate-qa skill — *is_not_integrated_into* — Interrogation Room UI
-- Interrogation Room UI — *has_track* — business track
-- Interrogation Room UI — *has_track* — technical track
-- questions table — *is_defined_in* — db/schema.sql
-- questions table — *has_constraint* — CHECK constraint
-- CHECK constraint — *restricts_track_to* — business track
-- CHECK constraint — *restricts_track_to* — technical track
-- QA track — *would_require* — schema migration
+- interrogate-qa skill — *is part of* — Vinnstack
+- interrogate-qa skill — *is located at* — vinnstack-skills/interrogate-qa/SKILL.md
+- interrogate-qa skill — *was built as* — standalone, manually-invoked skill
+- interrogate-qa skill — *was not wired into* — Interrogation Room UI
+- Interrogation Room UI — *includes* — business track
+- Interrogation Room UI — *includes* — technical track
+- db/schema.sql — *defines* — questions table
+- questions table — *has* — track CHECK constraint
+- track CHECK constraint — *allows* — business track
+- track CHECK constraint — *allows* — technical track
+- QA track — *would need* — schema migration
 - schema migration — *involves* — new enum value
 - schema migration — *involves* — UI wiring
-- interrogate-qa skill — *exists_as* — prompt file
-- prompt file — *can_be_invoked_by* — tooling
-- prompt file — *can_be_invoked_by* — agents
-- interrogate-qa skill — *is_not_surfaced_in* — app
-- app — *has_component* — Interrogation Room UI
-- persistence layer — *uses* — DB CHECK constraint
-- DB CHECK constraint — *enumerates* — allowed kinds
-- new kind of interrogation — *may_need_to_be* — standalone tool
-- standalone tool — *requires* — app wiring
-- app wiring — *is_a* — separate, explicitly-scoped follow-up
-- interrogate-qa skill — *is_cross_cutting_across* — Epics
-- interrogate-qa skill — *is_cross_cutting_across* — Stories
-- interrogate-qa skill — *is_cross_cutting_across* — Flows
+- interrogate-qa skill — *exists as* — prompt file
+- prompt file — *can be invoked by* — tooling
+- prompt file — *can be invoked by* — agents
+- interrogate-qa skill — *is not surfaced as tab in* — app's Interrogation Room
+- persistence layer — *enumerates allowed kinds via* — DB CHECK constraint
+- standalone tool — *is a prerequisite for* — app wiring
+- interrogate-qa skill — *is cross-cutting across* — Epics
+- interrogate-qa skill — *is cross-cutting across* — Stories
+- interrogate-qa skill — *is cross-cutting across* — Flows
 
 %% ai-graph-end %%

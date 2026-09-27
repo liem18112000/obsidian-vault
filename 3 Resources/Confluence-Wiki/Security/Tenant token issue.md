@@ -1,18 +1,22 @@
 ---
-title: "Tenant token issue"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47192343098/Tenant+token+issue
-space: "TS"
-topic: security
-relevance: 0.75
-depth: 3
-updated: 2022-10-04
+ai_hash: debb7f1930d32b46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.75
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47192343098/Tenant+token+issue
+space: TS
+status: reference
 tags:
-  - confluence
-  - security
-  - space/ts
+- confluence
+- security
+- space/ts
+title: Tenant token issue
+topic: security
+type: source
+updated: 2022-10-04
 ---
 
 # Tenant token issue
@@ -226,3 +230,14 @@ Caused by: java.lang.NullPointerException
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Token JWT Security]]
+- [[Get tenant token from public api]]
+- [[Update Vault Role remove claim_mapping]]
+- [[Security Risk - Luz-jwt Permission By Pass]]
+- [[HowToUseNewTokenAPI]]
+
+%% ai-graph-end %%

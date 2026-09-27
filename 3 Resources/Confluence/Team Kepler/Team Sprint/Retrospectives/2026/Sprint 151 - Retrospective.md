@@ -1,14 +1,21 @@
 ---
-title: "Sprint 151 - Retrospective"
+ai_hash: ab9e0ffdb8994ad8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49217667073'
+confluence_path: Team Kepler > Team Sprint > Retrospectives > 2026
 created: 2026-03-10
-updated: 2026-03-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- retrospective
+- sprint
+title: Sprint 151 - Retrospective
+type: source
+updated: 2026-03-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49217667073/Sprint+151+-+Retrospective
-confluence_id: "49217667073"
-confluence_path: "Team Kepler > Team Sprint > Retrospectives > 2026"
-tags: [confluence, retrospective, sprint]
 ---
 
 # Sprint 151 - Retrospective
@@ -30,3 +37,14 @@ tags: [confluence, retrospective, sprint]
 - Automation test flow is not yet defined As XRAY Setup Still Ambiguous → Discuss with P.O
 
 - Categorize and prioritize tasks based on topic to avoid context switch
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Sprint 158 - Retrospective]]
+- [[Sprint 147- Retrospective]]
+- [[Sprint 154 - Retrospective]]
+- [[Sprint 155 - Retrospective]]
+- [[Use Case - AI-driven Testing]]
+
+%% ai-graph-end %%

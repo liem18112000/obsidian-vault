@@ -1,7 +1,7 @@
 ---
-ai_hash: 7ea8cabd0ba228c7
+ai_hash: 04850d749ada44b9
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-27
 entities: []
 source: session 2026-06-27
@@ -36,8 +36,8 @@ General principle: any approximate index prefilter paired with an exact residual
 
 **Related notes:**
 - [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
-- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 - [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
+- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 - [[luz-docs search DSL silently drops raw-mongo query keys]]
 - [[luz-docs DSL regexp value must be wrapped .term. (else HTTP 400)]]
 

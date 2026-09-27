@@ -1,18 +1,17 @@
 ---
-ai_hash: 65a79062ea55ac7f
+ai_hash: bedd8397b47412f6
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-07
 entities:
 - luz_docs
-- security-class changes
+- folder security-class changes
 - PUT
 - PATCH
 - updateSecurityClasses endpoint
 - updateFolderMetadata
 - cascadeFolderParentChangeIfNeeded
 - cascadeFolderRenameIfNeeded
-- FolderService
 - updatePatchFolderMetadata
 - _securityClassCode
 - _inheritedSecurityClassCode
@@ -21,20 +20,14 @@ entities:
 - _isPublic
 - _effectiveSecurityClassCodes
 - _folderSecurityClassCodes
-- materialized search
-- count
-- get grants
-- get denies
-- Folder DELETE
+- materialized search/count/get grants or denies
 - FolderDeletingService
-- documents
+- Folder DELETE
 - Folder CREATE
-- MongoDB
+- sprint-156
+- Deterministic Mongo pipeline updates
 - jsonstore SC_MULTI_STATUS
-- old security
-- document cascade
-- parent-change cascade
-- rename cascade
+- FolderService
 source: materialize code review 2026-06-07
 status: seedling
 tags:
@@ -71,37 +64,34 @@ So PATCH-based security changes leave document sentinels (`_isPublic`, `_effecti
 - [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
 
 **Relations:**
-- luz_docs — *HAS_FEATURE* — security-class changes
-- security-class changes — *HAS_ENTRY_POINT* — PUT
-- security-class changes — *HAS_ENTRY_POINT* — PATCH
-- security-class changes — *HAS_ENTRY_POINT* — updateSecurityClasses endpoint
-- PUT — *TRIGGERS* — document cascade
-- PATCH — *DOES_NOT_TRIGGER* — parent-change cascade
-- updateSecurityClasses endpoint — *DOES_NOT_TRIGGER* — document cascade
-- updateFolderMetadata — *IS_PART_OF* — FolderService
-- updateFolderMetadata — *CALLS* — cascadeFolderParentChangeIfNeeded
-- updateFolderMetadata — *CALLS* — cascadeFolderRenameIfNeeded
-- updateFolderMetadata — *TRIGGERS* — document cascade
-- updatePatchFolderMetadata — *HANDLES* — _securityClassCode
-- updatePatchFolderMetadata — *HANDLES* — _inheritedSecurityClassCode
-- updatePatchFolderMetadata — *HANDLES* — _parentFolderIds
-- updatePatchFolderMetadata — *FIRES* — rename cascade
-- updatePatchFolderMetadata — *DOES_NOT_FIRE* — parent-change cascade
-- updateSecurityClasses endpoint — *BUILDS* — _securityClassCode
-- updateSecurityClasses endpoint — *ROUTES_THROUGH* — updatePatchFolderMetadata
-- PATCH — *LEAVES_STALE* — document sentinels
-- document sentinels — *INCLUDE* — _isPublic
-- document sentinels — *INCLUDE* — _effectiveSecurityClassCodes
-- document sentinels — *INCLUDE* — _folderSecurityClassCodes
-- PATCH — *CAUSES* — old security
-- old security — *AFFECTS* — materialized search
-- old security — *AFFECTS* — count
-- old security — *AFFECTS* — get grants
-- old security — *AFFECTS* — get denies
-- Folder DELETE — *IS_SAFE_VIA* — FolderDeletingService
-- FolderDeletingService — *RE_STAMPS* — documents
-- Folder CREATE — *REQUIRES* — nothing
-- luz_docs — *RELATED_TO* — MongoDB
-- luz_docs — *RELATED_TO* — jsonstore SC_MULTI_STATUS
+- folder security-class changes — *has entry point* — PUT
+- folder security-class changes — *has entry point* — PATCH
+- folder security-class changes — *has entry point* — updateSecurityClasses endpoint
+- PUT — *cascades* — true
+- PUT — *calls* — updateFolderMetadata
+- updateFolderMetadata — *calls* — cascadeFolderParentChangeIfNeeded
+- updateFolderMetadata — *calls* — cascadeFolderRenameIfNeeded
+- PATCH — *calls* — updatePatchFolderMetadata
+- updatePatchFolderMetadata — *handles* — _securityClassCode
+- updatePatchFolderMetadata — *handles* — _inheritedSecurityClassCode
+- updatePatchFolderMetadata — *handles* — _parentFolderIds
+- PATCH — *fires* — rename cascade
+- PATCH — *does not fire* — parent-change cascade
+- updateSecurityClasses endpoint — *builds* — _securityClassCode
+- updateSecurityClasses endpoint — *routes through* — PATCH
+- updateSecurityClasses endpoint — *cascades* — false
+- PATCH-based security changes — *leave* — document sentinels stale
+- document sentinels — *include* — _isPublic
+- document sentinels — *include* — _effectiveSecurityClassCodes
+- document sentinels — *include* — _folderSecurityClassCodes
+- document sentinels stale — *results in* — materialized search/count/get grants or denies
+- Folder DELETE — *is handled by* — FolderDeletingService
+- FolderDeletingService — *re-stamps* — docs
+- Folder CREATE — *needs* — nothing
+- folder security-class changes — *context is* — luz_docs
+- PUT — *is part of* — FolderService
+- folder security-class changes — *state as of* — sprint-156
+- Deterministic Mongo pipeline updates — *is related to* — folder security-class changes
+- jsonstore SC_MULTI_STATUS — *is related to* — folder security-class changes
 
 %% ai-graph-end %%

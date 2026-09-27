@@ -1,10 +1,20 @@
 ---
-title: "Score async API designs on crash recovery and multi-instance, not latency"
+ai_hash: 3ba5f2114f50ab3c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Large Payload Cases Research (FUT)'
 status: seedling
-source: "Confluence: Large Payload Cases Research (FUT)"
-tags: [api-design, async, polling, webhooks, resilience, confluence-distilled]
+tags:
+- api-design
+- async
+- polling
+- webhooks
+- resilience
+- confluence-distilled
+title: Score async API designs on crash recovery and multi-instance, not latency
+type: lesson
 ---
 
 # Score async API designs on crash recovery and multi-instance, not latency
@@ -41,3 +51,14 @@ Source: [[Large Payload Cases - Research]] (FUT, Confluence).
 ## Related
 
 - [[In-memory job throttles silently break when you scale to multiple replicas]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Large Payload Cases - Research]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[Expose intermediate results of an async job, not just the final output]]
+- [[Persist raw third-party results before mapping them to your domain shape]]
+- [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+
+%% ai-graph-end %%

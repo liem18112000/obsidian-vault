@@ -1,18 +1,22 @@
 ---
-title: "EPC API - Load Test"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48519381275/EPC+API+-+Load+Test
-space: "FUT"
-topic: programming
-relevance: 0.798
-depth: 2.96
-updated: 2025-06-10
+ai_hash: 3d278cfcb7365e00
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 89
+depth: 2.96
+entities: []
+relevance: 0.798
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48519381275/EPC+API+-+Load+Test
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: EPC API - Load Test
+topic: programming
+type: source
+updated: 2025-06-10
 ---
 
 # EPC API - Load Test
@@ -660,3 +664,14 @@ Scenarios:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API end to end testing]]
+- [[Regular Load Test Performance Test of OneAPI]]
+- [[Public API client performance analysis]]
+- [[AI-0000 Low Analyze job throughput]]
+- [[Optimus ePost myLife app(luz_mylife_epost_adapter) - API Response Performance Analysis]]
+
+%% ai-graph-end %%

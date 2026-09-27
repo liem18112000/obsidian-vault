@@ -1,14 +1,20 @@
 ---
-title: "Integration Test with Xray and Cucumber"
+ai_hash: 87976f5fcd842da8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49204035591'
+confluence_path: Team Kepler > Developer note
 created: 2026-03-05
-updated: 2026-03-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- xray
+title: Integration Test with Xray and Cucumber
+type: source
+updated: 2026-03-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49204035591/Integration+Test+with+Xray+and+Cucumber
-confluence_id: "49204035591"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, xray]
 ---
 
 # Integration Test with Xray and Cucumber
@@ -242,3 +248,14 @@ As we work with Xray, Xray provides two [different types of tests](https://docs.
     - Import the test results (respectively after each feature) to Xray.
 
     - Clean up all downloaded and generated files.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Xray Test Management - Manual Test Guideline]]
+- [[Use Case - Xray Feature Import - Local Tool]]
+- [[luz_docs_integration_test Gherkin and step-definition conventions]]
+- [[Use Case - Run by Test Set - Complete Process Flow]]
+- [[Use Case - AI-driven Testing]]
+
+%% ai-graph-end %%

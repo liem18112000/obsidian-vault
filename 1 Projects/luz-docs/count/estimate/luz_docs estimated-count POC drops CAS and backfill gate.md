@@ -1,7 +1,7 @@
 ---
-ai_hash: 0efde0b6284a47cc
+ai_hash: 880f70e58e75aa03
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-09
 entities:
 - luz_docs
@@ -9,26 +9,34 @@ entities:
 - CAS
 - backfill gate
 - HyperLogLog
-- document count
+- estimated document count
+- safety mechanisms
 - optimistic-concurrency
 - version field
 - sketch write
+- lost-update race
+- two pods writing the same folder's sketch concurrently
+- not-yet-backfilled tenant
 - production-ready estimatemode
 - proveHLLcountsfaster
-- lost-update race
+- HyperLogLog sketch
+- count>N fast
 - EstimatedCountSketchRepository.write
 - findAndModify CAS write
+- plain write
 - isBackfillComplete check
+- missing sketch
 - exact count
 - concurrency-safety
 - rollout-safety
+- production correctness
+- user's stated goal
 - implementation plan doc
 - CAS/gate design
+- stripped mechanisms
 - HyperLogLog error in the small-range (linear-counting) regime
 - 'luz_docs benchmark: full count scan is a dead end for sub-second targets'
 - luz_docs count optimization
-- safety mechanisms
-- HLL
 source: session 2026-07-09
 status: seedling
 tags:
@@ -66,32 +74,35 @@ Related: [[HyperLogLog error in the small-range (linear-counting) regime]], [[lu
 **Relations:**
 - luz_docs — *shipped* — estimated-count POC
 - estimated-count POC — *uses* — HyperLogLog
-- estimated-count POC — *is for* — document count
-- estimated-count POC — *removed* — CAS
-- estimated-count POC — *removed* — backfill gate
-- CAS — *is a type of* — optimistic-concurrency
-- optimistic-concurrency — *involves* — version field
-- optimistic-concurrency — *involves* — sketch write
+- estimated-count POC — *drops* — CAS
+- estimated-count POC — *drops* — backfill gate
 - CAS — *is a* — safety mechanisms
 - backfill gate — *is a* — safety mechanisms
-- user's stated goal — *narrowed to* — proveHLLcountsfaster
-- original goal — *was* — production-ready estimatemode
 - CAS — *protects against* — lost-update race
 - backfill gate — *protects against* — estimating on a not-yet-backfilled tenant
-- lost-update race — *involves* — two pods writing the same folder's sketch concurrently
-- HyperLogLog sketch — *answers* — count>N fast
-- EstimatedCountSketchRepository.write — *is now* — plain
+- user's stated goal — *narrowed to* — proveHLLcountsfaster
+- proveHLLcountsfaster — *is about* — HyperLogLog sketch
+- HyperLogLog sketch — *answering* — count>N fast
 - EstimatedCountSketchRepository.write — *was* — findAndModify CAS write
+- EstimatedCountSketchRepository.write — *is now* — plain write
 - missing sketch — *falls back to* — exact count
-- isBackfillComplete check — *is not* — present
 - concurrency-safety — *is a type of* — layer
 - rollout-safety — *is a type of* — layer
-- stripped mechanisms — *should stay documented in* — implementation plan doc
+- stripped mechanisms — *documented in* — implementation plan doc
 - implementation plan doc — *contains* — CAS/gate design
-- CAS/gate design — *is* — stale against the POC code
 - luz_docs — *related to* — HyperLogLog error in the small-range (linear-counting) regime
 - luz_docs — *related to* — luz_docs benchmark: full count scan is a dead end for sub-second targets
 - luz_docs — *related to* — luz_docs count optimization
-- HyperLogLog — *is also known as* — HLL
+- estimated-count POC — *provides* — estimated document count
+- HyperLogLog — *is a basis for* — estimated document count
+- CAS — *is a type of* — optimistic-concurrency
+- optimistic-concurrency — *involves* — version field
+- optimistic-concurrency — *involves* — sketch write
+- lost-update race — *is caused by* — two pods writing the same folder's sketch concurrently
+- estimated-count POC — *aims to answer* — can a HyperLogLog sketch answer count>N fast
+- CAS — *protects* — production correctness
+- backfill gate — *protects* — production correctness
+- estimated-count POC — *is a* — POC
+- backfill gate — *involves* — isBackfillComplete check
 
 %% ai-graph-end %%

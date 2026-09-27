@@ -1,18 +1,22 @@
 ---
-title: "iOS-RegioApp Code Architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20496026835/iOS-RegioApp+Code+Architecture
-space: "LUZ"
-topic: programming
-relevance: 0.796
-depth: 2.68
-updated: 2019-09-19
+ai_hash: bb900b58c9d93977
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.68
+entities: []
+relevance: 0.796
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20496026835/iOS-RegioApp+Code+Architecture
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: iOS-RegioApp Code Architecture
+topic: programming
+type: source
+updated: 2019-09-19
 ---
 
 # iOS-RegioApp Code Architecture
@@ -57,3 +61,10 @@ Now you have knowledge of project folder structure.  In the next step, we would
 
 
 ![[20496026835-iOS Classes Connection Diagram.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

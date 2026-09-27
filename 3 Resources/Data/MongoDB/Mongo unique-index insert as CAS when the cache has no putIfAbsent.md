@@ -1,7 +1,7 @@
 ---
-ai_hash: c4f71920a091b841
+ai_hash: b543d6a4569f74ae
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-23
 entities: []
 source: session 2026-07-23 gate stampede discussion
@@ -32,9 +32,9 @@ Gotchas:
 
 **Related notes:**
 - [[Lock-based stampede control losers hit the cache before the winner fills it]]
+- [[putIfAbsent(Supplier) runs the loader under a global write lock]]
 - [[Shared aggregate write targets need CAS, not plain $set]]
 - [[Per-pod single-flight kills cache stampede without semantic change]]
-- [[Semaphore acquire before try leaks permits on static semaphores]]
-- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS]]
 
 %% ai-graph-end %%

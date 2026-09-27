@@ -1,14 +1,20 @@
 ---
-title: "Luz-audit"
+ai_hash: 5f72aada77b21490
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49013424356'
+confluence_path: Team Kepler > Team Product Portfolio
 created: 2026-01-05
-updated: 2026-01-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-audit
+title: Luz-audit
+type: source
+updated: 2026-01-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49013424356/Luz-audit
-confluence_id: "49013424356"
-confluence_path: "Team Kepler > Team Product Portfolio"
-tags: [confluence, luz-audit]
 ---
 
 # Luz-audit
@@ -245,3 +251,14 @@ The major disadvantages:
 - **Relation with interactive modules/services**: luz-audit is a backend audit service, primarily driven by **luz-docs** and other modules via Pub/Sub events; it does not expose a direct UI to end users but supports them indirectly through traceability, compliance, and evidence.
 
 - **Architecture**: Event‑driven, Pub/Sub‑based ingestion, blockchain‑style fingerprinting, nightly GCS exports, and controlled operator access.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ Audit - Basic Understanding Guide]]
+- [[Luz-vault]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+- [[One API Module Responsibilities]]
+
+%% ai-graph-end %%

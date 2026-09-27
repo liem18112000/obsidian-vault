@@ -1,18 +1,22 @@
 ---
-title: "SSL Certificate Providers"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519715360/SSL+Certificate+Providers
-space: "LUZ"
-topic: security
-relevance: 0.832
-depth: 3
-updated: 2020-11-23
+ai_hash: 775e0925daf59f2d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.832
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519715360/SSL+Certificate+Providers
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: SSL Certificate Providers
+topic: security
+type: source
+updated: 2020-11-23
 ---
 
 # SSL Certificate Providers
@@ -150,3 +154,12 @@ All of the SSL certificate providers that support the URL validation method(<a h
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSL certificate API]]
+- [[Research - Domain Suggestion API]]
+- [[SSL certificate overview]]
+
+%% ai-graph-end %%

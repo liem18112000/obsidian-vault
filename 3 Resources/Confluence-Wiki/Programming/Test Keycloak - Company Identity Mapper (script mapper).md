@@ -1,18 +1,22 @@
 ---
-title: "Test Keycloak - Company Identity Mapper (script mapper)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47603253249/Test+Keycloak+-+Company+Identity+Mapper+script+mapper
-space: "TS"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2024-01-31
+ai_hash: d096058f85b4e90b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 18
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47603253249/Test+Keycloak+-+Company+Identity+Mapper+script+mapper
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Test Keycloak - Company Identity Mapper (script mapper)
+topic: programming
+type: source
+updated: 2024-01-31
 ---
 
 # Test Keycloak - Company Identity Mapper (script mapper)
@@ -82,3 +86,14 @@ KLARA uses the custom id to identify the company, so we have a script to map tho
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test Keycloak - Public API]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[Get tenant token from public api]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Use KLARA Swagger UI for REST API]]
+
+%% ai-graph-end %%

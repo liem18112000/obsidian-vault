@@ -1,10 +1,21 @@
 ---
-title: "A test oracle is what decides pass or fail, and without one a test is just a script"
+ai_hash: 87d5c3261b1f2e62
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: term
+entities: []
+source: 'Confluence: Test oracle - what a scenario asserts (2026-09-15)'
 status: seedling
-source: "Confluence: Test oracle - what a scenario asserts (2026-09-15)"
-tags: [testing, test-oracle, bdd, gherkin, quality, istqb]
+tags:
+- testing
+- test-oracle
+- bdd
+- gherkin
+- quality
+- istqb
+title: A test oracle is what decides pass or fail, and without one a test is just
+  a script
+type: term
 ---
 
 # A test oracle is what decides pass or fail, and without one a test is just a script
@@ -34,3 +45,14 @@ Standards grounding: ISTQB Foundation and ISO/IEC/IEEE 29119 define the term; Ba
 - [[not coverage]]
 - [[decides whether a suite catches regressions]]
 - [[Metamorphic and differential testing solve the oracle problem]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Oracle strength, not coverage, decides whether a suite catches regressions]]
+- [[Test oracle - what a scenario asserts, and why its strength decides everything]]
+- [[Oracle strength can be graded statically from the expected-result text]]
+- [[Metamorphic and differential testing solve the oracle problem]]
+- [[Evaluating the Test-Plan-Definition Agent]]
+
+%% ai-graph-end %%

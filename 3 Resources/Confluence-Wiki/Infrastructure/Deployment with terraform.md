@@ -1,18 +1,22 @@
 ---
-title: "Deployment with terraform"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47973925376/Deployment+with+terraform
-space: "FUT"
-topic: infra
-relevance: 0.832
-depth: 3
-updated: 2024-09-20
+ai_hash: 933f499268b6e110
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.832
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47973925376/Deployment+with+terraform
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: Deployment with terraform
+topic: infra
+type: source
+updated: 2024-09-20
 ---
 
 # Deployment with terraform
@@ -162,3 +166,14 @@ Refer to session Deployment of `README` in the generated project.
 References
 
 <a href="https://developer.hashicorp.com/terraform?product_intent=terraform" class="external-link" data-card-appearance="inline" rel="nofollow">https://developer.hashicorp.com/terraform?product_intent=terraform</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Kubernetes Terraform]]
+- [[Recipe Deploy with Terraform]]
+- [[Deploy Google Cloud Run for new module]]
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Kubernetes knowledge]]
+
+%% ai-graph-end %%

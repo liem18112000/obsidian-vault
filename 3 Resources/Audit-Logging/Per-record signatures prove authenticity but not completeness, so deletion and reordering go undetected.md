@@ -1,10 +1,20 @@
 ---
-title: "Per-record signatures prove authenticity but not completeness, so deletion and reordering go undetected"
+ai_hash: 83c99d3b926b3762
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: argument
+entities: []
+source: 'Confluence: Solution - Enhanced Chain-Signature Hybrid (2025-11-04)'
 status: seedling
-source: "Confluence: Solution - Enhanced Chain-Signature Hybrid (2025-11-04)"
-tags: [audit-logging, security, cryptography, design-tradeoff, luz-audit]
+tags:
+- audit-logging
+- security
+- cryptography
+- design-tradeoff
+- luz-audit
+title: Per-record signatures prove authenticity but not completeness, so deletion
+  and reordering go undetected
+type: argument
 ---
 
 # Per-record signatures prove authenticity but not completeness, so deletion and reordering go undetected
@@ -30,3 +40,14 @@ Design rule: **when replacing a chain with signatures, ask what the chain was pr
 ## Related
 
 - [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+- [[A hash-chained audit log cannot be written in parallel]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+- [[A hash chain proves integrity but not authorship, so a database admin can silently rebuild it]]
+- [[Hash chains order by linkage, not by time, so backdated entries still verify]]
+
+%% ai-graph-end %%

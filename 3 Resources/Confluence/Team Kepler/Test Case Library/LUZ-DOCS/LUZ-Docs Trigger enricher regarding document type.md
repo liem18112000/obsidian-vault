@@ -1,14 +1,22 @@
 ---
-title: "[LUZ-Docs] Trigger enricher regarding document type"
+ai_hash: b26091ac27749b0c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49118380033'
+confluence_path: Team Kepler > Test Case Library > LUZ-DOCS
 created: 2026-02-05
-updated: 2026-02-05
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-docs
+- testing
+- enricher
+title: '[LUZ-Docs] Trigger enricher regarding document type'
+type: source
+updated: 2026-02-05
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49118380033/LUZ-Docs+Trigger+enricher+regarding+document+type
-confluence_id: "49118380033"
-confluence_path: "Team Kepler > Test Case Library > LUZ-DOCS"
-tags: [confluence, luz-docs, testing, enricher]
 ---
 
 # [LUZ-Docs] Trigger enricher regarding document type
@@ -799,3 +807,14 @@ I want document data to be enriched automatically by the system regardless of th
 </table>
 
 ------------------------------------------------------------------------
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-Docs - Execution - Trigger enricher regarding document type]]
+- [[Duplicate of Adapt to support ONE API - Enricher first delivery]]
+- [[Adapt to support ONE API - Enricher first delivery]]
+- [[Invoice Run V2UAT - No error when luz-store is running with multiple pods]]
+- [[Invoice Run V2UAT - Update latest Stimulsoft template - Execution]]
+
+%% ai-graph-end %%

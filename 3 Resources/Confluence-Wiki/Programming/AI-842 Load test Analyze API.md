@@ -1,18 +1,22 @@
 ---
-title: "AI-842 Load test Analyze API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2530763997/AI-842+Load+test+Analyze+API
-space: "AI"
-topic: programming
-relevance: 0.736
-depth: 2.41
-updated: 2021-04-12
+ai_hash: e0ddabaee1da5926
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.41
+entities: []
+relevance: 0.736
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2530763997/AI-842+Load+test+Analyze+API
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: AI-842 Load test Analyze API
+topic: programming
+type: source
+updated: 2021-04-12
 ---
 
 # AI-842 Load test Analyze API
@@ -103,3 +107,14 @@ This is the time used to submit, to wait for the results and to delete the job.
 The new asynchronous API allows us to process twice as many jobs in the same time.
 
 Scaling out from one to two nodes nearly doubles the throughput again.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AI-0000 Low Analyze job throughput]]
+- [[Regular Load Test Performance Test of OneAPI]]
+- [[Create Document API – Performance Testing Report]]
+- [[Timing Benchmark Results Document ZIP Imports]]
+- [[Measure API luz-docs]]
+
+%% ai-graph-end %%

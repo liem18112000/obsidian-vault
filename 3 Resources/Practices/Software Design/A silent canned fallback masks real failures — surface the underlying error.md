@@ -1,7 +1,7 @@
 ---
-ai_hash: 63396e6ad55d7e85
+ai_hash: 965f333206a2b36b
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-29
 entities: []
 source: Vinnstack debugging session 2026-06-29
@@ -40,6 +40,6 @@ Rule of thumb: a fallback may be graceful, but it must be **honest** — degrade
 - [[Never cache a negative fallback in the same slot as a resolved value]]
 - [[Classify stream failures on the server, not the client]]
 - [[Headless claude exit 0 does not mean the operation succeeded]]
-- [[Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF]]
+- [[Keep errorfailure text out of LLM-summarized durable memory]]
 
 %% ai-graph-end %%

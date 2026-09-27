@@ -1,14 +1,21 @@
 ---
-title: "Part A: luz-jsonstore Analysis"
+ai_hash: e013fd3b2353c2a0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48989044741'
+confluence_path: 'Team Kepler > Developer note > Service Error Analysis Report: FAILED_TO_STORE
+  on Production'
 created: 2025-12-18
-updated: 2025-12-18
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-jsonstore
+title: 'Part A: luz-jsonstore Analysis'
+type: source
+updated: 2025-12-18
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48989044741/Part+A+luz-jsonstore+Analysis
-confluence_id: "48989044741"
-confluence_path: "Team Kepler > Developer note > Service Error Analysis Report: FAILED_TO_STORE on Production"
-tags: [confluence, luz-jsonstore]
 ---
 
 # Part A: luz-jsonstore Analysis
@@ -281,3 +288,14 @@ public static final String MONGODB_CONN_PARAM =
 | 12-17s | 30%   | Slow   |
 
 **Note:** MongoDB discovery adds 10-30s additional time.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Case Report - DocumentId 749107]]
+- [[Case Report - DocumentId 217599]]
+- [[Case Report - DocumentId 588]]
+- [[Case Report - DocumentId 589]]
+- [[Case Report - DocumentId 223412]]
+
+%% ai-graph-end %%

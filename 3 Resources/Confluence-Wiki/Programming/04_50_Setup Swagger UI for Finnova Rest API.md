@@ -1,18 +1,22 @@
 ---
-title: "04_50_Setup Swagger UI for Finnova Rest API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134410557/04_50_Setup+Swagger+UI+for+Finnova+Rest+API
-space: "GRAVITY"
-topic: programming
-relevance: 0.912
-depth: 3
-updated: 2025-12-12
+ai_hash: 07000d3ae94f8975
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.912
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134410557/04_50_Setup+Swagger+UI+for+Finnova+Rest+API
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: 04_50_Setup Swagger UI for Finnova Rest API
+topic: programming
+type: source
+updated: 2025-12-12
 ---
 
 # 04_50_Setup Swagger UI for Finnova Rest API
@@ -108,3 +112,14 @@ I deployed Finnova API to our delopment server (IP address: 192.168.80.27). We c
 | port       | 65000                              |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Swagger UI]]
+- [[Apply OpenAPI and try out API on SwaggerUI]]
+- [[2.31 Build & deploy agent review service to k8s (POC)]]
+- [[Microprofile OpenAPI config]]
+- [[OpenAPI UI (API on SwaggerUI)]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: 33601b0de5af218f
+ai_hash: d137138745a44f34
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-22
@@ -41,10 +41,10 @@ Related: [[leo-customer360 deploy-sso.sh only restarts Keycloak; the realmrole b
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list]]
 - [[leo-customer360 deploy-sso.sh only restarts Keycloak; the realmrole bootstrap is the separate sso-realm step]]
-- [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
+- [[Keep Keycloak realm roles in sync with app authz constants, and ensure the bootstrap step is in the CD services list]]
 - [[Monitoring-dashboard SSO login user is c360admin, not the Keycloak master admin]]
+- [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
 - [[customer360-api has two auth modes dev local-JWT vs Keycloak SSO]]
 
 %% ai-graph-end %%

@@ -1,44 +1,40 @@
 ---
-ai_hash: 063db0f78de1071c
+ai_hash: 0cd64f218b173f46
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-15
 entities:
-- LUZ-158230 Post Health ZIP import v1
+- LUZ-158230
 - Post Health ZIP import
+- v1 scope/behaviour decisions
 - Testing-Agent
 - Malformed items
 - Notification
 - SNOMED healthData
-- Recipient resolution
-- Rollout
-- Architecture
-- luz_docs_import
+- sender-supplied SNOMED codes
+- de/fr/it/en labels
+- server-side validation
 - eArchive document service
 - HEALTH document type
+- luz_docs_import
 - JSON shape
-- axonivy-prod
+- Recipient resolution
+- target recipient/tenant
+- Rollout
+- senders
+- new health-data sender in prod
+- product-owner
+- compliance/legal sign-off
+- Architecture
+- ZIP parsing/validation
+- internal module
+- axonivy-prod/luz_docs_import
 - luz_docs_view_controller
 - luz_jsonstore
 - luz_docs
-- product-owner
-- compliance/legal
-- luz_docs_import dedup
-- folders via view-controller API
-- documents via import job history
-- LUZ-158230 transfer.zip import size limits
-- 2GB zip
-- 200MB file
-- sender-supplied SNOMED codes
-- de/fr/it/en labels
-- resolved target recipient/tenant
-- ZIP parsing/validation
-- health-data sender in prod
-- scope decisions
-- all outcomes
-- partial best-effort import
-- per-item reporting
-- healthData
+- luz_docs_import dedup folders via view-controller API, documents via import job
+  history
+- LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)
 source: Testing-Agent refine session 2026-09-14
 status: seedling
 tags:
@@ -82,44 +78,38 @@ Related: [[luz_docs_import dedup folders via view-controller API, documents via 
 - [[LUZ-158230 QA edge-case decisions (ZIP import)]]
 
 **Relations:**
-- LUZ-158230 Post Health ZIP import v1 — *is a version of* — Post Health ZIP import
-- LUZ-158230 Post Health ZIP import v1 — *has scope decisions* — scope decisions
-- scope decisions — *confirmed during* — Testing-Agent
-- scope decisions — *include* — Malformed items
-- scope decisions — *include* — Notification
-- scope decisions — *include* — SNOMED healthData
-- scope decisions — *include* — Recipient resolution
-- scope decisions — *include* — Rollout
-- scope decisions — *include* — Architecture
-- Malformed items — *result in* — partial best-effort import
-- Malformed items — *are reported* — per-item reporting
-- Notification — *applies to* — all outcomes
+- LUZ-158230 — *identifies* — Post Health ZIP import
+- v1 scope/behaviour decisions — *for* — Post Health ZIP import
+- v1 scope/behaviour decisions — *confirmed by* — Testing-Agent
+- v1 scope/behaviour decisions — *include* — Malformed items
+- v1 scope/behaviour decisions — *include* — Notification
+- v1 scope/behaviour decisions — *include* — SNOMED healthData
+- v1 scope/behaviour decisions — *include* — Recipient resolution
+- v1 scope/behaviour decisions — *include* — Rollout
+- v1 scope/behaviour decisions — *include* — Architecture
+- Malformed items — *are* — skipped and reported
+- Notification — *targets* — sender/recipient
 - SNOMED healthData — *accepts* — sender-supplied SNOMED codes
 - SNOMED healthData — *accepts* — de/fr/it/en labels
-- SNOMED healthData — *has* — no server-side validation
-- SNOMED healthData — *is a type of* — healthData
-- healthData — *owned by* — eArchive document service
-- healthData — *stored by* — eArchive document service
-- healthData — *on* — HEALTH document type
+- SNOMED healthData — *has no* — server-side validation
+- SNOMED healthData — *owned by* — eArchive document service
+- SNOMED healthData — *on* — HEALTH document type
 - luz_docs_import — *validates* — JSON shape
-- luz_docs_import — *forwards* — healthData
-- Recipient resolution — *carries* — resolved target recipient/tenant
-- luz_docs_import — *validates existence of* — resolved target recipient/tenant
-- Rollout — *is open to* — all senders at launch
-- enabling a new health-data sender in prod — *requires sign-off from* — product-owner
-- enabling a new health-data sender in prod — *requires sign-off from* — compliance/legal
+- luz_docs_import — *forwards* — SNOMED healthData
+- Recipient resolution — *uses* — target recipient/tenant
+- luz_docs_import — *validates existence of* — target recipient/tenant
+- Rollout — *is* — open to all senders
+- new health-data sender in prod — *requires* — product-owner
+- new health-data sender in prod — *requires* — compliance/legal sign-off
 - Architecture — *describes* — ZIP parsing/validation
-- ZIP parsing/validation — *is a module inside* — luz_docs_import
-- axonivy-prod — *contains repo* — luz_docs_import
-- axonivy-prod — *contains repo* — luz_docs_view_controller
-- axonivy-prod — *contains repo* — luz_jsonstore
-- axonivy-prod — *contains repo* — luz_docs
-- luz_docs_import — *is primary repo in* — axonivy-prod
-- LUZ-158230 Post Health ZIP import v1 — *related to* — luz_docs_import dedup
-- luz_docs_import dedup — *handles* — folders via view-controller API
-- luz_docs_import dedup — *handles* — documents via import job history
-- LUZ-158230 Post Health ZIP import v1 — *related to* — LUZ-158230 transfer.zip import size limits
-- LUZ-158230 transfer.zip import size limits — *includes* — 2GB zip
-- LUZ-158230 transfer.zip import size limits — *includes* — 200MB file
+- ZIP parsing/validation — *is an* — internal module
+- internal module — *inside* — luz_docs_import
+- axonivy-prod/luz_docs_import — *is a* — Repo
+- axonivy-prod/luz_docs_import — *is primary for* — Post Health ZIP import
+- luz_docs_view_controller — *is a* — Repo
+- luz_jsonstore — *is a* — Repo
+- luz_docs — *is a* — Repo
+- Post Health ZIP import — *related to* — luz_docs_import dedup folders via view-controller API, documents via import job history
+- Post Health ZIP import — *related to* — LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)
 
 %% ai-graph-end %%

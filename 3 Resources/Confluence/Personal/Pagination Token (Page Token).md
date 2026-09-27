@@ -1,14 +1,19 @@
 ---
-title: "Pagination Token (Page Token)"
+ai_hash: bed6e74234fbf18b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49398120454'
+confluence_path: Overview
 created: 2026-05-11
-updated: 2026-05-11
-type: source
+entities: []
+source: Confluence · ~71202087b0f7f1aaab4406a25dfa0fc075c4d4 - liem.doanvanthanh
 status: reference
-source: "Confluence · ~71202087b0f7f1aaab4406a25dfa0fc075c4d4 - liem.doanvanthanh"
+tags:
+- confluence
+title: Pagination Token (Page Token)
+type: source
+updated: 2026-05-11
 url: https://axonivy.atlassian.net/wiki/spaces/~71202087b0f7f1aaab4406a25dfa0fc075c4d4/pages/49398120454/Pagination+Token+Page+Token
-confluence_id: "49398120454"
-confluence_path: "Overview"
-tags: [confluence]
 ---
 
 # Pagination Token (Page Token)
@@ -86,3 +91,11 @@ So clients can't mix tokens with different `updatedSince` values and get inconsi
 7.  **Token lifetime:** for batch sync, tokens can live indefinitely; for paged UI, you may expire them after a few hours.
 
 8.  **Document explicitly** that absence of `nextPageToken` means end-of-stream.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A pagination token is an opaque cursor, and it must carry the filter it was issued under]]
+- [[Confluence CQL search paginates by opaque cursor, not start offset]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Business concept for frontend"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47030141312/Business+concept+for+frontend
-space: "TP2020"
-topic: architecture
-relevance: 0.798
-depth: 2.79
-updated: 2022-12-14
+ai_hash: 2cc7335e6f868e5d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.79
+entities: []
+relevance: 0.798
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47030141312/Business+concept+for+frontend
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/tp2020
+- confluence
+- architecture
+- space/tp2020
+title: Business concept for frontend
+topic: architecture
+type: source
+updated: 2022-12-14
 ---
 
 # Business concept for frontend
@@ -399,3 +403,14 @@ tags:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Question for eArchive (Read business concept)]]
+- [[Architecture]]
+- [[Proposal eArchived architecture direction for ePost web 2]]
+- [[How to implement a feature hint for eArchive (reuse new common component )]]
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+
+%% ai-graph-end %%

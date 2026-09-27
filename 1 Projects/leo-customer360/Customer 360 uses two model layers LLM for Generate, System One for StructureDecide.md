@@ -1,10 +1,10 @@
 ---
-ai_hash: a605e8bbecf7de6d
+ai_hash: 769ef3b92d13ac0c
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-23
 entities:
-- Customer 360 CDP
+- Customer 360
 - LLM
 - System One
 - Generate
@@ -16,27 +16,27 @@ entities:
 - Jev
 - pgvector
 - customer360.cdp_ai_agents
+- structured_decision
+- agent_code
 - thin non-LiteLLM adapter
 - identity gray-zone adjudication
 - real-time next-best-action/personalization
 - event routing
 - PII/data-quality classification
 - cold-start scoring
-- Proof of Concept
+- POC
 - ECE/reliability
 - latency p50/p95
 - cost/1k
-- cdp_profile_merge_history
-- review queue
+- LLM path
 - docs/research-papers/system-one-models-jev-in-customer360.md
 - one-model-across-customer360.md
-- System One Models (Jev)
-- chat LLMs
-- model_type = structured_decision
-- agent_code row
-- System One call
+- System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs
+- decision model
 - typed function call
-- chat-completion
+- Jev job
+- one model, many jobs thesis
+- primitives
 source: docs/research-papers/system-one-models-jev-in-customer360.md
 status: seedling
 tags:
@@ -72,51 +72,49 @@ Report: `docs/research-papers/system-one-models-jev-in-customer360.md` (companio
 %% ai-graph-start %%
 
 **Related notes:**
+- [[TypeSafe AI's Jev - A System One Model for Fast, Structured Decisions]]
 - [[System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs]]
-- [[Reasoning models reject temperature != 1; use litellm.drop_params for multi-model agents]]
+- [[Integrating Jev into Test-Agent-V2 for Enhanced Decision-Making]]
+- [[Understanding JEV - Mechanism, Primitives, and Calibration in Decision Making]]
 - [[customer360 AI campaign lifecycle agent plans, api persists draft, email_engine renders at send]]
-- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
-- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
 
 **Relations:**
-- Customer 360 CDP — *uses* — LLM
-- Customer 360 CDP — *uses* — System One
+- Customer 360 — *uses* — LLM
+- Customer 360 — *uses* — System One
 - LLM — *handles* — Generate
 - System One — *handles* — Structure / Decide
-- Embed & match — *handled by* — pgvector
-- Generate — *implemented by* — gpt-5.6
+- Generate — *uses* — gpt-5.6
 - gpt-5.6 — *accessed via* — LiteLLM
-- LiteLLM — *used in* — customer360-agent
-- Structure / Decide — *implemented by* — Jev
+- LiteLLM — *runs in* — customer360-agent
+- Structure / Decide — *uses* — Jev
 - Jev — *is a type of* — System One
-- System One — *is a type of* — System One Models (Jev)
-- System One Models (Jev) — *is not a* — chat LLMs
-- customer360.cdp_ai_agents — *includes* — model_type = structured_decision
-- Jev — *creates* — agent_code row
-- System One — *requires* — thin non-LiteLLM adapter
-- thin non-LiteLLM adapter — *processes* — System One call
+- System One — *is a type of* — decision model
+- Embed & match — *uses* — pgvector
+- customer360.cdp_ai_agents — *has field* — model_type
+- model_type — *can be* — structured_decision
+- customer360.cdp_ai_agents — *has field* — agent_code
+- Jev job — *is a* — agent_code row
 - System One call — *is a* — typed function call
-- System One call — *is not a* — chat-completion
-- System One — *excels at* — identity gray-zone adjudication
-- System One — *excels at* — real-time next-best-action/personalization
-- System One — *excels at* — event routing
-- System One — *excels at* — PII/data-quality classification
-- System One — *excels at* — cold-start scoring
-- LLM — *struggles with* — identity gray-zone adjudication
-- LLM — *struggles with* — real-time next-best-action/personalization
-- LLM — *struggles with* — event routing
-- LLM — *struggles with* — PII/data-quality classification
-- LLM — *struggles with* — cold-start scoring
-- System One — *adoption gated by* — Proof of Concept
-- Proof of Concept — *focuses on* — identity gray-zone adjudication
-- identity gray-zone adjudication — *gets labels from* — cdp_profile_merge_history
-- identity gray-zone adjudication — *gets labels from* — review queue
-- Proof of Concept — *measures* — ECE/reliability
-- Proof of Concept — *measures* — latency p50/p95
-- Proof of Concept — *measures* — cost/1k
-- Proof of Concept — *compares against* — LLM
-- docs/research-papers/system-one-models-jev-in-customer360.md — *companion to* — one-model-across-customer360.md
-- System One Models (Jev) — *related to* — System One
-- chat LLMs — *related to* — LLM
+- thin non-LiteLLM adapter — *handles* — System One call
+- System One — *best fits* — identity gray-zone adjudication
+- System One — *best fits* — real-time next-best-action/personalization
+- System One — *best fits* — event routing
+- System One — *best fits* — PII/data-quality classification
+- System One — *best fits* — cold-start scoring
+- Adoption — *gated on* — POC
+- POC — *measures* — ECE/reliability
+- POC — *measures* — latency p50/p95
+- POC — *measures* — cost/1k
+- POC — *compares performance to* — LLM path
+- docs/research-papers/system-one-models-jev-in-customer360.md — *is companion to* — one-model-across-customer360.md
+- System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs — *describes* — System One
+- System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs — *describes* — Jev
+- one model, many jobs thesis — *names* — primitives
+- primitives — *consist of* — Generate
+- primitives — *consist of* — Structure / Decide
+- primitives — *consist of* — Embed & match
+- one model, many jobs thesis — *proposes LLM for* — Generate
+- one model, many jobs thesis — *proposes LLM for* — Structure / Decide
+- one model, many jobs thesis — *proposes LLM for* — Embed & match
 
 %% ai-graph-end %%

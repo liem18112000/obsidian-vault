@@ -1,18 +1,22 @@
 ---
-title: "APF ItemLine Import API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34422799702/APF+ItemLine+Import+API
-space: "X4"
-topic: programming
-relevance: 0.703
-depth: 2.38
-updated: 2020-10-01
+ai_hash: 86d649f675d2f956
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 2.38
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34422799702/APF+ItemLine+Import+API
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: APF ItemLine Import API
+topic: programming
+type: source
+updated: 2020-10-01
 ---
 
 # APF ItemLine Import API
@@ -367,3 +371,14 @@ ItemLine table and IndividualFiedData table.
 ## **Technical notes**
 
 ItemLineResource, ItemLineBean, ItemLineImportDTO.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[APF Provided Bookings]]
+- [[Invoice API Reference]]
+- [[Sync Article Mandatory Field]]
+- [[Generic Interface JSON file]]
+- [[Adapt Order Management api to include accounting tags]]
+
+%% ai-graph-end %%

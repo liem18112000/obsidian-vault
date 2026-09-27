@@ -1,10 +1,20 @@
 ---
-title: "Undrained fetch response bodies leak sockets in Node undici"
+ai_hash: 3d9d5be62e6445c9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: 'Confluence: await fetch() vs FetchBuilder (TS)'
 status: seedling
-source: "Confluence: await fetch() vs FetchBuilder (TS)"
-tags: [nodejs, fetch, undici, memory-leak, error-handling, confluence-distilled]
+tags:
+- nodejs
+- fetch
+- undici
+- memory-leak
+- error-handling
+- confluence-distilled
+title: Undrained fetch response bodies leak sockets in Node undici
+type: gotcha
 ---
 
 # Undrained fetch response bodies leak sockets in Node undici
@@ -55,3 +65,14 @@ Source: [[await fetch() vs FetchBuilder ()]] (TS, Confluence).
 ## Related
 
 - [[Next.js monkey-patches global fetch, and its response clone races your body read]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[await fetch() vs FetchBuilder ()]]
+- [[Next.js monkey-patches global fetch, and its response clone races your body read]]
+- [[Classify stream failures on the server, not the client]]
+- [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]]
+- [[State machines must catch expected-failure operations or they get stuck forever]]
+
+%% ai-graph-end %%

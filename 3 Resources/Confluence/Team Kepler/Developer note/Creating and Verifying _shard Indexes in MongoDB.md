@@ -1,14 +1,22 @@
 ---
-title: "Creating and Verifying _shard Indexes in MongoDB"
+ai_hash: a395c622d68d0917
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49526145028'
+confluence_path: Team Kepler > Developer note > Count Fan-out (K) Benchmark on Performance
+  Env
 created: 2026-06-23
-updated: 2026-06-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- mongodb
+- performance
+title: Creating and Verifying _shard Indexes in MongoDB
+type: source
+updated: 2026-06-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49526145028/Creating+and+Verifying+_shard+Indexes+in+MongoDB
-confluence_id: "49526145028"
-confluence_path: "Team Kepler > Developer note > Count Fan-out (K) Benchmark on Performance Env"
-tags: [confluence, mongodb, performance]
 ---
 
 # Creating and Verifying _shard Indexes in MongoDB
@@ -57,3 +65,14 @@ db.documents.createIndex(
 ```
 db.documents.getIndexes();   // expect the 3 names above
 ```
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facet Count Fan-out Techniques in MongoDB]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+- [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Index Impact on MongoDB searchByFacets]]
+
+%% ai-graph-end %%

@@ -1,37 +1,35 @@
 ---
-ai_hash: 6d025d141489111b
+ai_hash: 90e374e535a7fdb8
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities:
 - luz_docs_statistic
 - unmaterializedDocuments
 - metric
-- docs
+- document
 - materialize sentinel field
 - sprint 158
 - LUZ-155460
 - June 2026
-- facet
 - total
 - archived
 - deleted
-- document
 - _isPublic
 - _effectiveSecurityClassCodes
 - _folderNames
 - _folderSecurityClassCodes
-- security codes
-- folder
 - luz_docs
 - materialize pass
 - backfill progress
 - tenant
-- JsonStoreQueryUtil.unmaterializedDocumentConditionsBuilder()
-- DocumentStatisticUtils.buildFacetArrays()
-- 1-minute EJB timer
+- JsonStoreQueryUtil
+- unmaterializedDocumentConditionsBuilder()
+- DocumentStatisticUtils
+- buildFacetArrays()
 - PubSub
 - $facet aggregation
+- 1-minute EJB timer
 source: LUZ-155460 implementation, session 2026-06-11
 status: seedling
 tags:
@@ -65,8 +63,8 @@ Related: [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub a
 %% ai-graph-start %%
 
 **Related notes:**
-- [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
 - [[Stale-materialized detection recomputes MaterializeCompute state via $lookup inside the statistic $facet]]
+- [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
 - [[totalFolders needs a second aggregate because a $facet pipeline is bound to one collection]]
 - [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
 - [[luz-docs parallelized count undercounts documents missing _shard]]
@@ -74,33 +72,29 @@ Related: [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub a
 **Relations:**
 - luz_docs_statistic — *tracks* — unmaterializedDocuments
 - unmaterializedDocuments — *is a* — metric
-- metric — *counts* — docs
-- docs — *missing* — materialize sentinel field
-- unmaterializedDocuments — *introduced in* — sprint 158
-- sprint 158 — *associated with* — LUZ-155460
-- sprint 158 — *occurred in* — June 2026
-- unmaterializedDocuments — *is a* — facet
-- luz_docs_statistic — *tracks* — total
-- luz_docs_statistic — *tracks* — archived
-- luz_docs_statistic — *tracks* — deleted
-- document — *counts as unmaterialized if absent* — _isPublic
-- document — *counts as unmaterialized if absent* — _effectiveSecurityClassCodes
-- document — *counts as unmaterialized if absent* — _folderNames
-- document — *counts as unmaterialized if absent* — _folderSecurityClassCodes
+- metric — *counts* — document
+- document — *is unmaterialized if missing* — _isPublic
+- document — *is unmaterialized if missing* — _effectiveSecurityClassCodes
+- document — *is unmaterialized if missing* — _folderNames
+- document — *is unmaterialized if missing* — _folderSecurityClassCodes
 - _isPublic — *is a* — materialize sentinel field
 - _effectiveSecurityClassCodes — *is a* — materialize sentinel field
 - _folderNames — *is a* — materialize sentinel field
 - _folderSecurityClassCodes — *is a* — materialize sentinel field
-- _isPublic — *indicates no own* — security codes
-- _isPublic — *indicates code-free* — folder
-- _effectiveSecurityClassCodes — *is union of doc's own codes and folder's* — security codes
-- _folderNames — *is parallel to* — folderIds order
-- _folderSecurityClassCodes — *is parallel array to* — folderIds/_folderNames
-- materialize sentinel field — *written by* — luz_docs' materialize pass
+- luz_docs_statistic — *tracks facet* — total
+- luz_docs_statistic — *tracks facet* — archived
+- luz_docs_statistic — *tracks facet* — deleted
+- unmaterializedDocuments — *introduced in* — sprint 158
+- sprint 158 — *is identified by* — LUZ-155460
+- sprint 158 — *occurred in* — June 2026
+- luz_docs — *performs* — materialize pass
+- materialize pass — *writes* — materialize sentinel field
 - metric — *monitors* — backfill progress
 - backfill progress — *completes for* — tenant
-- JsonStoreQueryUtil.unmaterializedDocumentConditionsBuilder() — *contains* — filter
-- DocumentStatisticUtils.buildFacetArrays() — *contains* — facet wiring
+- JsonStoreQueryUtil — *contains method* — unmaterializedDocumentConditionsBuilder()
+- unmaterializedDocumentConditionsBuilder() — *defines* — filter
+- DocumentStatisticUtils — *contains method* — buildFacetArrays()
+- buildFacetArrays() — *handles* — facet wiring
 - luz_docs_statistic — *updates stats via* — 1-minute EJB timer
 - luz_docs_statistic — *updates stats via* — PubSub
 - luz_docs_statistic — *updates stats via* — $facet aggregation

@@ -1,10 +1,21 @@
 ---
-title: "E2EE covers message content only; metadata and server-held keys narrow it further"
+ai_hash: d9594e75fb010219
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Communities Privacy Concept (ISMS)'
 status: seedling
-source: "Confluence: Communities Privacy Concept (ISMS)"
-tags: [e2ee, encryption, privacy, matrix, metadata, dpia, confluence-distilled]
+tags:
+- e2ee
+- encryption
+- privacy
+- matrix
+- metadata
+- dpia
+- confluence-distilled
+title: E2EE covers message content only; metadata and server-held keys narrow it further
+type: concept
 ---
 
 # E2EE covers message content only; metadata and server-held keys narrow it further
@@ -36,3 +47,11 @@ Source: [[Communities Privacy Concept – Working Page for PO and Engineering]] 
 ## Related
 
 - [[Envelope encryption with Vault transit keeps Vault off the data path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Communities Privacy Concept – Working Page for PO and Engineering]]
+- [[Envelope encryption with Vault transit keeps Vault off the data path]]
+
+%% ai-graph-end %%

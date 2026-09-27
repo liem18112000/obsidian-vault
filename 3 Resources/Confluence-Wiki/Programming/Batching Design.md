@@ -1,18 +1,22 @@
 ---
-title: "Batching Design"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/49005101152/Batching+Design
-space: "FUT"
-topic: programming
-relevance: 0.766
-depth: 2.4
-updated: 2025-12-26
+ai_hash: 0bfdf2d6735923f6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.4
+entities: []
+relevance: 0.766
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/49005101152/Batching+Design
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Batching Design
+topic: programming
+type: source
+updated: 2025-12-26
 ---
 
 # Batching Design
@@ -549,3 +553,14 @@ classDiagram
 
 
 ![[49005101152-batching-typescript-class-diagram.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Batch Processor Library - NodeJS]]
+- [[Luz Batch TypeScript - Sequence Diagram]]
+- [[Recipe Typescript batching]]
+- [[Recipe Luz Batch TypeScript]]
+- [[Concurrency Design Patterns]]
+
+%% ai-graph-end %%

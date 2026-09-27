@@ -1,10 +1,20 @@
 ---
-title: "Fix evaluation criteria before looking at candidates, and say which one you weight"
+ai_hash: 49934042c5e7ac00
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: API Gateway Evaluation Discussion (Arrow)'
 status: seedling
-source: "Confluence: API Gateway Evaluation Discussion (Arrow)"
-tags: [evaluation, tool-selection, api-gateway, decision-making, confluence-distilled]
+tags:
+- evaluation
+- tool-selection
+- api-gateway
+- decision-making
+- confluence-distilled
+title: Fix evaluation criteria before looking at candidates, and say which one you
+  weight
+type: lesson
 ---
 
 # Fix evaluation criteria before looking at candidates, and say which one you weight
@@ -42,3 +52,11 @@ A criteria set used for an API-gateway evaluation, worth reusing as a template f
 > Criteria written after you have seen the candidates tend to describe the front-runner. If the list changes mid-evaluation, record why — that is usually the moment a real requirement was discovered, and it is worth more than the eventual score table.
 
 Source: [[API Gateway Evaluation Discussion]] (Arrow, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[API Gateway Evaluation Discussion]]
+- [[API Gateway Evaluation]]
+
+%% ai-graph-end %%

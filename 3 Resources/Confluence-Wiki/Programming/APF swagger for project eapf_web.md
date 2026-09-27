@@ -1,18 +1,22 @@
 ---
-title: "APF swagger for project eapf_web"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34422813508/APF+swagger+for+project+eapf_web
-space: "X4"
-topic: programming
-relevance: 0.823
-depth: 2.92
-updated: 2020-11-18
+ai_hash: 11d40f0f68ec1ee4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 2.92
+entities: []
+relevance: 0.823
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34422813508/APF+swagger+for+project+eapf_web
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: APF swagger for project eapf_web
+topic: programming
+type: source
+updated: 2020-11-18
 ---
 
 # APF swagger for project eapf_web
@@ -686,3 +690,14 @@ definitions:
 
 - <span class="legacy-color-text-red2">Resource URL with AD-2669 included: /xapf_dev/project/metadata: </span>
 - <span class="legacy-color-text-red2">Resource URL without AD-2669 included:  /xapf_dev/project-meta-data:</span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[APF archiving via d3 Rest interface]]
+- [[Microprofile OpenAPI config]]
+- [[APF Provided Bookings]]
+- [[REST API for deleting EXPENSES documents]]
+- [[Swagger UI]]
+
+%% ai-graph-end %%

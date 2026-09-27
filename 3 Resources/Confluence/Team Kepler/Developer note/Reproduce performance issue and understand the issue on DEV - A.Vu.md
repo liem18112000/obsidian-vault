@@ -1,14 +1,20 @@
 ---
-title: "Reproduce performance issue and understand the issue on DEV - A.Vu"
+ai_hash: e896b265dd864db9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49384718375'
+confluence_path: Team Kepler > Developer note
 created: 2026-05-04
-updated: 2026-05-04
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+title: Reproduce performance issue and understand the issue on DEV - A.Vu
+type: source
+updated: 2026-05-04
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49384718375/Reproduce+performance+issue+and+understand+the+issue+on+DEV+-+A.Vu
-confluence_id: "49384718375"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, performance]
 ---
 
 # Reproduce performance issue and understand the issue on DEV - A.Vu
@@ -82,3 +88,14 @@ As a DBA role, I capture database queries and behavior for each page, then analy
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[eArchive Performance — Detail Overview]]
+- [[eArchive Performance — Executive Overview]]
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+
+%% ai-graph-end %%

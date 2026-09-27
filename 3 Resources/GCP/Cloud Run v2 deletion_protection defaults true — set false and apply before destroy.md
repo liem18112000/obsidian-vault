@@ -1,5 +1,5 @@
 ---
-ai_hash: 41cddf390b4b4ce5
+ai_hash: 8ff9da95cd9771c4
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-27
@@ -34,10 +34,10 @@ Same trap exists on other GCP resources with delete protection (e.g. `google_sql
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
 - [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
 - [[Cloud Run v2 service design gotchas]]
-- [[Stale terraform state != live cloud — verify with gcloud before deleting a retired deployment]]
 - [[terraform destroy fails to drop a Cloud SQL Postgres DB with active connections or owned objects]]
+- [[Stale terraform state != live cloud — verify with gcloud before deleting a retired deployment]]
+- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
 
 %% ai-graph-end %%

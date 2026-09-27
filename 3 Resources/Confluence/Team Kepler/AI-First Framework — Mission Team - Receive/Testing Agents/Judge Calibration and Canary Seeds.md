@@ -1,14 +1,22 @@
 ---
-title: "Judge Calibration and Canary Seeds"
+ai_hash: 24f5527857e66af1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49754406963'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 1 - Knowledge Gathering - v2 > Evaluating Knowledge-Gathering
+  Agent - V2'
 created: 2026-09-15
-updated: 2026-09-15
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Judge Calibration and Canary Seeds
+type: source
+updated: 2026-09-15
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49754406963/Judge+Calibration+and+Canary+Seeds
-confluence_id: "49754406963"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 1 - Knowledge Gathering - v2 > Evaluating Knowledge-Gathering Agent - V2"
-tags: [confluence, ai-agents]
 ---
 
 # Judge Calibration and Canary Seeds
@@ -156,3 +164,14 @@ As built:
 - `tests/eval/test_canary.py` runs them through the real engine and asserts `pqs`/`tps ≤ max_score` **and** that `retrieval.leaked` / `scope.leaked` is non-empty. A metric regression that inflates precision or drops the gate turns the canary red.
 
 Canaries validate the *metric*; the calibration protocol validates the *judge*. Together they keep a judged score meaning what it says.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Evaluating Knowledge-Gathering Agent - V2]]
+- [[Evaluating the Test-Plan-Definition Agent]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[Calibrate a cheap-model to LLM cascade threshold using the LLM judge as oracle]]
+- [[Test oracle - what a scenario asserts, and why its strength decides everything]]
+
+%% ai-graph-end %%

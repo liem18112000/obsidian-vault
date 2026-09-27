@@ -1,9 +1,32 @@
 ---
-ai_hash: 22da40ab85649f5f
+ai_hash: 218eab369afa82dd
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-20
-entities: []
+entities:
+- Property damage
+- Person-directed violence taxonomies
+- Violence detector
+- Violence
+- Moderation taxonomies
+- OpenAI violence taxonomy
+- MLCommons S1 taxonomy
+- Person
+- Group
+- Tire-slashing
+- Vandalism
+- Claude-judge test
+- Taxonomy-definition gap
+- Model error
+- Test set
+- Ground truth
+- Prompt
+- Spec
+- Accuracy
+- Taxonomy boundary
+- Label ambiguity
+- Moderation taxonomies split violence into subtypes
+- Violence detection needs a trained classifier, not keyword lists
 source: session 2026-07-20
 status: seedling
 tags:
@@ -34,5 +57,28 @@ Lesson: label ambiguity in a test set is often a taxonomy-definition gap, not a 
 - [[Moderation taxonomies split violence into subtypes]]
 - [[Violence detection needs a trained classifier, not keyword lists]]
 - [[Model options for detecting violent text by weight class]]
+
+**Relations:**
+- Property damage — *falls outside* — Person-directed violence taxonomies
+- Violence detector — *considers* — Property damage
+- Moderation taxonomies — *define* — Violence
+- Violence — *is directed at* — Person
+- Violence — *is directed at* — Group
+- OpenAI violence taxonomy — *is a type of* — Moderation taxonomies
+- MLCommons S1 taxonomy — *is a type of* — Moderation taxonomies
+- Tire-slashing — *is classified as NOT violent by* — Moderation taxonomies
+- Vandalism — *is classified as NOT violent by* — Moderation taxonomies
+- Tire-slashing — *targets* — Property damage
+- Claude-judge test — *revealed disagreement on* — Tire-slashing
+- Taxonomy-definition gap — *causes* — Label ambiguity
+- Label ambiguity — *occurs in* — Test set
+- Taxonomy-definition gap — *is not* — Model error
+- Taxonomy boundary — *should be defined in* — Prompt
+- Taxonomy boundary — *should be defined in* — Spec
+- Defining Taxonomy boundary — *precedes* — Measuring accuracy
+- Moderation taxonomies — *can include* — Property damage
+- Ground truth — *can be relabeled* — null
+- Moderation taxonomies split violence into subtypes — *is related to* — Moderation taxonomies
+- Violence detection needs a trained classifier, not keyword lists — *is related to* — Violence detector
 
 %% ai-graph-end %%

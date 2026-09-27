@@ -1,7 +1,7 @@
 ---
-ai_hash: 6615ab9752bb63a3
+ai_hash: ee3aeef5db52c34e
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-10
 entities: []
 source: fb-info-project build workflow, session 2026-06-10
@@ -42,7 +42,7 @@ Related: [[GitHub Actions push filters - tags-only skips branch pushes, paths ig
 - [[GitHub Actions artifacts need login to download; Release assets do not]]
 - [[GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags]]
 - [[GitHub Actions artifact quota is org-wide; Release assets bypass it]]
-- [[CI build Docker image on every run, push only on non-PR]]
-- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+- [[GitHub Pages build on every branch, deploy only from the default branch]]
 
 %% ai-graph-end %%

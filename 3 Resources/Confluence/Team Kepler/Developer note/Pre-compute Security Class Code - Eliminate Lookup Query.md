@@ -1,14 +1,20 @@
 ---
-title: "Pre-compute Security Class Code - Eliminate Lookup Query"
+ai_hash: 0edf9dd61d08d5c5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49357979662'
+confluence_path: Team Kepler > Developer note
 created: 2026-04-24
-updated: 2026-04-24
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- security
+title: Pre-compute Security Class Code - Eliminate Lookup Query
+type: source
+updated: 2026-04-24
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49357979662/Pre-compute+Security+Class+Code+-+Eliminate+Lookup+Query
-confluence_id: "49357979662"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, security]
 ---
 
 # Pre-compute Security Class Code - Eliminate Lookup Query
@@ -82,3 +88,14 @@ No API changes. No UI changes. No user-visible migration window.
 1.  We delete the slow code path and the old database index it depended on.
 
 2.  The `/documents/search` system becomes smaller, faster, and easier to reason about than it was before the incident.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Technical Details - Pre-compute Security Class Code]]
+- [[eArchive Performance — Executive Overview]]
+- [[Folder recovery with re-parenting leaves inheritedSecurityClassCode stale]]
+- [[eArchive Performance — Detail Overview]]
+- [[Research on Delete Access class]]
+
+%% ai-graph-end %%

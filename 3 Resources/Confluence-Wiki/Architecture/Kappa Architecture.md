@@ -1,18 +1,22 @@
 ---
-title: "Kappa Architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2457109088/Kappa+Architecture
-space: "AI"
-topic: architecture
-relevance: 0.721
-depth: 2.37
-updated: 2017-07-14
+ai_hash: 906231dbc016e864
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.37
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2457109088/Kappa+Architecture
+space: AI
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ai
+- confluence
+- architecture
+- space/ai
+title: Kappa Architecture
+topic: architecture
+type: source
+updated: 2017-07-14
 ---
 
 # Kappa Architecture
@@ -37,3 +41,11 @@ TBD.
 ## See also
 
 <a href="http://kappa-architecture.com" class="external-link" rel="nofollow">http://kappa-architecture.com</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Lamda Architecture]]
+- [[Architecture (2457108704)]]
+
+%% ai-graph-end %%

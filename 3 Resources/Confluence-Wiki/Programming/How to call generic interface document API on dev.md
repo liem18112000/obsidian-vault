@@ -1,18 +1,22 @@
 ---
-title: "How to call generic interface document API on dev"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47470215362/How+to+call+generic+interface+document+API+on+dev
-space: "HACKA"
-topic: programming
-relevance: 0.729
-depth: 2.49
-updated: 2023-08-25
+ai_hash: 0fa14c41577a783e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.49
+entities: []
+relevance: 0.729
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47470215362/How+to+call+generic+interface+document+API+on+dev
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: How to call generic interface document API on dev
+topic: programming
+type: source
+updated: 2023-08-25
 ---
 
 # How to call generic interface document API on dev
@@ -102,3 +106,14 @@ Accounting Interface tables are located in luz_compensation → tenant specific 
 
 
 ![[47470215362-image-20230825-083224.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Use KLARA Swagger UI for REST API]]
+- [[Port Forward to call GCP API in localhost]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[How to Start Invoice Run v2]]
+- [[OpenAPI UI (API on SwaggerUI)]]
+
+%% ai-graph-end %%

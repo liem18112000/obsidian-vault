@@ -1,10 +1,21 @@
 ---
-title: "An exec-cat readiness probe reports Ready before the server can serve"
+ai_hash: 5a8eb1431d92ae24
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Service Error Analysis Report - FAILED_TO_STORE on Production
+  (2025-12-18)'
 status: seedling
-source: "Confluence: Service Error Analysis Report - FAILED_TO_STORE on Production (2025-12-18)"
-tags: [kubernetes, readiness-probe, reliability, deployment, luz-jsonstore, gotcha]
+tags:
+- kubernetes
+- readiness-probe
+- reliability
+- deployment
+- luz-jsonstore
+- gotcha
+title: An exec-cat readiness probe reports Ready before the server can serve
+type: lesson
 ---
 
 # An exec-cat readiness probe reports Ready before the server can serve
@@ -36,3 +47,14 @@ Related failure in the same incident: [[A rolling deploy drops in-flight request
 
 - [[Every production FAILED_TO_STORE traced back to a rolling deploy, not to load]]
 - [[A rolling deploy drops in-flight requests unless preStop outlives endpoint propagation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A rolling deploy drops in-flight requests unless preStop outlives endpoint propagation]]
+- [[Every production FAILED_TO_STORE traced back to a rolling deploy, not to load]]
+- [[Service Reliability Solution]]
+- [[Health checks should probe dependencies and split critical vs fail-open]]
+- [[CoreDNS livenessreadiness 404 means probe path-port mismatch, not a CoreDNS crash]]
+
+%% ai-graph-end %%

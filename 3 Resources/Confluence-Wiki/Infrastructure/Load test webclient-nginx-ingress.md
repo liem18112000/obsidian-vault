@@ -1,18 +1,22 @@
 ---
-title: "Load test webclient-nginx-ingress"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47101706960/Load+test+webclient-nginx-ingress
-space: "HACKA"
-topic: infra
-relevance: 0.741
-depth: 2.65
-updated: 2022-05-20
+ai_hash: 4aa82ea030502c46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 24
+depth: 2.65
+entities: []
+relevance: 0.741
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47101706960/Load+test+webclient-nginx-ingress
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/hacka
+- confluence
+- infra
+- space/hacka
+title: Load test webclient-nginx-ingress
+topic: infra
+type: source
+updated: 2022-05-20
 ---
 
 # Load test webclient-nginx-ingress
@@ -436,3 +440,14 @@ The most percentage error is when the nginx has a limitation of memory (in this 
 2.  <a href="https://loadium.com/load-testing-tools" class="external-link" data-card-appearance="inline" rel="nofollow">https://loadium.com/load-testing-tools</a>
 
 3.  <a href="https://wiki.loadium.com/test-settings/what-is-geolocation" class="external-link" data-card-appearance="inline" rel="nofollow">https://wiki.loadium.com/test-settings/what-is-geolocation</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+- [[One API end to end testing]]
+- [[SSL renewal issue]]
+- [[luz_cache performance test with security]]
+- [[Update Ingress Controller for GKE v1.22]]
+
+%% ai-graph-end %%

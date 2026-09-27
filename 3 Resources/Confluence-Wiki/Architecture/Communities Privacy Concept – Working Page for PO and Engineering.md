@@ -1,18 +1,22 @@
 ---
-title: "Communities Privacy Concept – Working Page for PO and Engineering"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/ISMS/pages/49302831167/Communities+Privacy+Concept+Working+Page+for+PO+and+Engineering
-space: "ISMS"
-topic: architecture
-relevance: 0.755
-depth: 2.38
-updated: 2026-06-04
+ai_hash: 0078621c97242d80
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.38
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/ISMS/pages/49302831167/Communities+Privacy+Concept+Working+Page+for+PO+and+Engineering
+space: ISMS
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/isms
+- confluence
+- architecture
+- space/isms
+title: Communities Privacy Concept – Working Page for PO and Engineering
+topic: architecture
+type: source
+updated: 2026-06-04
 ---
 
 # Communities Privacy Concept – Working Page for PO and Engineering
@@ -1099,3 +1103,14 @@ These topics represent fundamental conflicts between the decentralized, encrypte
 - **Account Deletion:** \* *Architecture Approach:* Purging a user from the local Tuwunel database is straightforward. However, if that user participated in federated rooms with external partners, their messages, cryptographic signatures, and user ID metadata will remain cached on external homeservers. Achieving absolute erasure across a federated graph is a known architectural challenge that requires strict room-level retention policies.
 
 - **Third-Party Systems / Document Repositories:** Integration is natively achieved via the Matrix Widget API (embedding secure frames into clients) or application services/bots acting as middleware between Tuwunel and your internal document management systems.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[E2EE covers message content only; metadata and server-held keys narrow it further]]
+- [[ePost AI Solution Concept]]
+- [[Architecture]]
+- [[iLetter current backend architecture]]
+- [[MessageV2 Field Encryption Approach]]
+
+%% ai-graph-end %%

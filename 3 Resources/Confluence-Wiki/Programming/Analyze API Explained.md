@@ -1,18 +1,22 @@
 ---
-title: "Analyze API Explained"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2530751376/Analyze+API+Explained
-space: "AI"
-topic: programming
-relevance: 0.844
-depth: 2.7
-updated: 2024-07-03
+ai_hash: 7342364ff99d54b7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 12
+depth: 2.7
+entities: []
+relevance: 0.844
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2530751376/Analyze+API+Explained
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Analyze API Explained
+topic: programming
+type: source
+updated: 2024-07-03
 ---
 
 # Analyze API Explained
@@ -280,3 +284,14 @@ Running the managed sequential scenario with a small amount of concurrent client
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze API v2 for Invoice prediction]]
+- [[Invoice API Reference]]
+- [[Analyze API]]
+- [[OCR API Explained]]
+- [[Expose intermediate results of an async job, not just the final output]]
+
+%% ai-graph-end %%

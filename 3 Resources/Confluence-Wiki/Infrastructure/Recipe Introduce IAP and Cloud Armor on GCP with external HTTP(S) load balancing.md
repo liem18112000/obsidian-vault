@@ -1,18 +1,22 @@
 ---
-title: "Recipe: Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47049670792/Recipe+Introduce+IAP+and+Cloud+Armor+on+GCP+with+external+HTTP+S+load+balancing
-space: "LUZ"
-topic: infra
-relevance: 0.706
-depth: 2.38
-updated: 2022-04-07
+ai_hash: 557a94d63af3e34c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 13
+depth: 2.38
+entities: []
+relevance: 0.706
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47049670792/Recipe+Introduce+IAP+and+Cloud+Armor+on+GCP+with+external+HTTP+S+load+balancing
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: 'Recipe: Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing'
+topic: infra
+type: source
+updated: 2022-04-07
 ---
 
 # Recipe: Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing
@@ -346,3 +350,14 @@ Prerequisites
 - GCP Cloud Armor dokument <a href="https://cloud.google.com/armor" class="external-link" data-card-appearance="inline" rel="nofollow">https://cloud.google.com/armor</a>
 
 - IAP Session Management <a href="https://cloud.google.com/iap/docs/sessions-howto" class="external-link" data-card-appearance="inline" rel="nofollow">https://cloud.google.com/iap/docs/sessions-howto</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Introduce a Global HTTP(S) Load Balancer on GCP at KLARA]]
+- [[GKE Kubernetes Gateway API]]
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+- [[Apply changes on luz_kubernetes]]
+- [[POS & myKLARA nginx ingress quick notes]]
+
+%% ai-graph-end %%

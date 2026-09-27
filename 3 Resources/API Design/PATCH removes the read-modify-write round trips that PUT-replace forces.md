@@ -1,10 +1,21 @@
 ---
-title: "PATCH removes the read-modify-write round trips that PUT-replace forces"
+ai_hash: 4d5af5f85a43b943
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Refactor Enricher process update PATCH (LUZ)'
 status: seedling
-source: "Confluence: Refactor Enricher process update PATCH (LUZ)"
-tags: [api-design, rest, patch, put, performance, concurrency, confluence-distilled]
+tags:
+- api-design
+- rest
+- patch
+- put
+- performance
+- concurrency
+- confluence-distilled
+title: PATCH removes the read-modify-write round trips that PUT-replace forces
+type: lesson
 ---
 
 # PATCH removes the read-modify-write round trips that PUT-replace forces
@@ -35,3 +46,14 @@ Source: [[Refactor Enricher process - update PATCH]] (LUZ, Confluence).
 ## Related
 
 - [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Refactor Enricher process - update PATCH]]
+- [[luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS]]
+- [[json-patch-independent-translation-breaks-reset-then-append]]
+- [[Shared aggregate write targets need CAS, not plain $set]]
+- [[Full-object PUT instead of dedicated endpoint is a REST caller anti-pattern]]
+
+%% ai-graph-end %%

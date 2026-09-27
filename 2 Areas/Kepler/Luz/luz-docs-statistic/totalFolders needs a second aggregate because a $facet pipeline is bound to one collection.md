@@ -1,34 +1,30 @@
 ---
-ai_hash: 9a09b75b9542899b
+ai_hash: d7fd725bb52f92e9
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities:
 - totalFolders
-- $facet
+- $facet pipeline
 - luz_docs_statistic
 - documents collection
 - folders collection
 - averageFoldersPerDocument
-- $avg
-- $size
-- $ifNull
-- folderIds
-- $group
-- $sum
-- DocumentStatisticUtils.extractCount
 - MongoDBService.aggregate
+- DocumentStatisticUtils.extractCount
 - EJB timer
 - PubSub
-- Kepler
-- Luz
+- folderIds
+- aggregate call
 - tenant token
+- sub-pipelines
 - collection-parameterized overload
-- 3-arg method
-- per-tenant folder count
-- job
-- counts
+- old 3-arg method
 - non-being-created documents
+- deleted documents
+- luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation
+- documents $facet
+- minimal aggregate pipeline
 source: session 2026-06-11
 status: seedling
 tags:
@@ -62,38 +58,38 @@ Related: [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub a
 - [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
 - [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
 - [[luz_docs_statistic unmaterializedDocuments metric counts docs missing any materialize sentinel field]]
-- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
 - [[Stale-materialized detection recomputes MaterializeCompute state via $lookup inside the statistic $facet]]
+- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
 
 **Relations:**
-- totalFolders — *needs* — second aggregate
-- $facet — *pipeline is bound to* — one collection
-- totalFolders — *added to* — luz_docs_statistic
+- totalFolders — *requires* — second aggregate call
+- second aggregate call — *is needed because* — $facet pipeline
+- $facet pipeline — *is bound to* — one collection
+- totalFolders — *was added to* — luz_docs_statistic
 - totalFolders — *could not join* — documents $facet
-- $facet — *sub-pipelines run over* — same input collection
+- $facet's sub-pipelines — *run over* — same input collection
 - per-tenant folder count — *requires* — separate aggregate call
-- separate aggregate call — *against* — folders collection
+- separate aggregate call — *is against* — folders collection
 - job — *runs* — two aggregates per tenant
 - two aggregates — *use* — same cached tenant token
+- one aggregate — *is* — documents $facet
 - documents $facet — *calculates* — counts
 - documents $facet — *calculates* — averageFoldersPerDocument
-- averageFoldersPerDocument — *calculated via* — $avg
-- $avg — *of* — $size
-- $size — *of* — $ifNull(folderIds,[])
-- second aggregate — *is* — minimal $group on folders
-- minimal $group on folders — *uses* — $group
-- $group — *uses* — $sum
-- second aggregate — *extracted by* — DocumentStatisticUtils.extractCount
-- DocumentStatisticUtils.extractCount — *treats null result as* — 0
+- averageFoldersPerDocument — *is calculated via* — $avg of $size($ifNull(folderIds,[]))
+- second aggregate call — *is* — minimal aggregate pipeline
+- minimal aggregate pipeline — *operates on* — folders
+- minimal aggregate pipeline — *is extracted by* — DocumentStatisticUtils.extractCount
+- DocumentStatisticUtils.extractCount — *handles* — null result
+- null result — *implies* — 0 folders
 - MongoDBService.aggregate — *previously hardcoded* — documents collection
 - MongoDBService.aggregate — *now has* — collection-parameterized overload
-- 3-arg method — *delegates to* — collection-parameterized overload
+- old 3-arg method — *delegates to* — collection-parameterized overload
 - averageFoldersPerDocument — *averages over* — non-being-created documents
-- averageFoldersPerDocument — *counts* — missing folderIds as 0 folders
-- luz_docs_statistic — *updates stats via* — 1-minute EJB timer
+- non-being-created documents — *includes* — deleted documents
+- missing folderIds — *is counted as* — 0 folders
+- luz_docs_statistic — *updates stats via* — EJB timer
 - luz_docs_statistic — *updates stats via* — PubSub
 - luz_docs_statistic — *updates stats via* — $facet aggregation
-- luz_docs_statistic — *is part of* — Kepler
-- luz_docs_statistic — *is part of* — Luz
+- luz_docs_statistic — *is related to* — luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation
 
 %% ai-graph-end %%

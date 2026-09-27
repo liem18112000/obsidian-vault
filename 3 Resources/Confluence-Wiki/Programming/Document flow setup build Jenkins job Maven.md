@@ -1,18 +1,22 @@
 ---
-title: "Document flow setup build Jenkins job Maven"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/30906850008/Document+flow+setup+build+Jenkins+job+Maven
-space: "TP2020"
-topic: programming
-relevance: 0.721
-depth: 2.57
-updated: 2021-03-01
+ai_hash: e50f3db1fd934cf2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 14
+depth: 2.57
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/30906850008/Document+flow+setup+build+Jenkins+job+Maven
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: Document flow setup build Jenkins job Maven
+topic: programming
+type: source
+updated: 2021-03-01
 ---
 
 # Document flow setup build Jenkins job Maven
@@ -135,3 +139,14 @@ tags:
 ![[30906850008-image2021-3-1_11-58-35.png]]
 
 **
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Jenkins (How to build & deploy)]]
+- [[Deployment Process]]
+- [[Kubernetes knowledge]]
+- [[Google Cloud Build & Google Artifact Registries]]
+- [[Recipe Deploy with Terraform]]
+
+%% ai-graph-end %%

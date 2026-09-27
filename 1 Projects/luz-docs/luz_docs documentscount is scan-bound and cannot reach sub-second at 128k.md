@@ -1,43 +1,35 @@
 ---
-ai_hash: 5a5701ea705c370b
+ai_hash: d68d14069ee17247
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - 'luz_docs benchmark: full count scan is a dead end for sub-second targets'
 created: 2026-07-09
 entities:
 - luz_docs
-- POST /documents/count
-- scan-bound
-- sub-second performance
+- documents/count endpoint
 - 128k documents
-- 14.1s median (K=1)
-- _shard-range fan-out
-- 3.15s median (K=6)
+- sub-second performance
+- 14.1s median
+- 3.15s median
 - 500ms target
+- _shard-range fan-out
 - MongoDB primary contention
 - application thread starvation
-- replica-set primary
-- non-sharded cluster
-- executor pool
-- 64 threads
-- K=6 floor
 - scanning
 - epoch-keyed result cache
 - index-covered COUNT_SCAN
-- indexed boolean sentinel
 - maintained cardinality structure
 - exact counter
 - Roaring bitmap
 - HyperLogLog sketch
 - estimated-count feature
 - luz_docs countN badge
-- fuzzy-zone fallback
 - luz_docs estimated-count POC
 - CAS
 - backfill gate
 - HyperLogLog error
-- linear-counting regime
+- small-range (linear-counting) regime
 source: docs/perf-LUZ-154613-count-fanout-EXEC-SUMMARY.md + perf-LUZ-154613-count-scaling-findings-and-solution.md,
   session 2026-07-09
 status: seedling
@@ -69,42 +61,35 @@ The fan-out floor (~3s regardless of K) is **MongoDB primary contention**, not a
 %% ai-graph-start %%
 
 **Related notes:**
-- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
 - [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
 - [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
 - [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
 - [[eArchive count baseline latency on dev ~80s for 128k docs (fan-out off)]]
 
 **Relations:**
-- luz_docs — *has operation* — POST /documents/count
-- POST /documents/count — *is* — scan-bound
-- POST /documents/count — *cannot reach* — sub-second performance
-- POST /documents/count — *tested at* — 128k documents
-- POST /documents/count — *takes* — 14.1s median (K=1)
-- _shard-range fan-out — *applied to* — POST /documents/count
-- _shard-range fan-out — *results in* — 3.15s median (K=6)
-- 14.1s median (K=1) — *exceeds* — 500ms target
-- 3.15s median (K=6) — *exceeds* — 500ms target
-- K=6 floor — *caused by* — MongoDB primary contention
+- luz_docs — *has* — documents/count endpoint
+- documents/count endpoint — *is* — scan-bound
+- documents/count endpoint — *cannot achieve* — sub-second performance
+- documents/count endpoint — *benchmarked with* — 128k documents
+- documents/count endpoint — *takes* — 14.1s median
+- documents/count endpoint — *takes* — 3.15s median
+- 14.1s median — *exceeds* — 500ms target
+- 3.15s median — *exceeds* — 500ms target
+- _shard-range fan-out — *is limited by* — MongoDB primary contention
 - MongoDB primary contention — *is not* — application thread starvation
-- MongoDB primary contention — *occurs on* — replica-set primary
-- replica-set primary — *is part of* — non-sharded cluster
-- executor pool — *widened to* — 64 threads
-- widening executor pool — *did not beat* — K=6 floor
-- scanning — *is a* — dead end
-- dead end — *for* — sub-second performance
+- scanning — *is a dead end for* — sub-second performance
 - epoch-keyed result cache — *is a solution for* — sub-second performance
 - index-covered COUNT_SCAN — *is a solution for* — sub-second performance
-- index-covered COUNT_SCAN — *uses* — indexed boolean sentinel
 - maintained cardinality structure — *is a solution for* — sub-second performance
-- maintained cardinality structure — *includes* — exact counter
-- maintained cardinality structure — *includes* — Roaring bitmap
-- maintained cardinality structure — *includes* — HyperLogLog sketch
+- exact counter — *is a type of* — maintained cardinality structure
+- Roaring bitmap — *is a type of* — maintained cardinality structure
+- HyperLogLog sketch — *is a type of* — maintained cardinality structure
 - HyperLogLog sketch — *justified investigation of* — estimated-count feature
 - luz_docs countN badge — *can use* — HyperLogLog sketch
-- luz_docs countN badge — *can use* — fuzzy-zone fallback
+- luz_docs estimated-count POC — *investigates* — estimated-count feature
 - luz_docs estimated-count POC — *drops* — CAS
 - luz_docs estimated-count POC — *drops* — backfill gate
-- HyperLogLog error — *occurs in* — linear-counting regime
+- HyperLogLog error — *occurs in* — small-range (linear-counting) regime
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Quarkus"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47780167681/Quarkus
-space: "Helios"
-topic: programming
-relevance: 0.804
-depth: 2.84
-updated: 2024-05-24
+ai_hash: 12aa342dc2686e26
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.84
+entities: []
+relevance: 0.804
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47780167681/Quarkus
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Quarkus
+topic: programming
+type: source
+updated: 2024-05-24
 ---
 
 # Quarkus
@@ -204,3 +208,14 @@ Please note that you need to have the Google Cloud SDK and kubectl installed and
 ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Quarkus.io getting started]]
+- [[GCP Overview]]
+- [[Recipe Deploy with Terraform]]
+- [[Deploy Google Cloud Run for new module]]
+- [[Document flow setup build Jenkins job Maven]]
+
+%% ai-graph-end %%

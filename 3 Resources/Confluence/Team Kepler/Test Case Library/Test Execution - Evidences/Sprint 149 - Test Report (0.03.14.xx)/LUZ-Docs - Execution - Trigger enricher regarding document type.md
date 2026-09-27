@@ -1,14 +1,24 @@
 ---
-title: "[LUZ-Docs] - Execution - Trigger enricher regarding document type"
+ai_hash: 16379983778c84b0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49118380054'
+confluence_path: Team Kepler > Test Case Library > Test Execution / Evidences > Sprint
+  149 - Test Report (0.03.14.xx)
 created: 2026-02-05
-updated: 2026-02-06
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-docs
+- sprint
+- testing
+- enricher
+title: '[LUZ-Docs] - Execution - Trigger enricher regarding document type'
+type: source
+updated: 2026-02-06
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49118380054/LUZ-Docs+-+Execution+-+Trigger+enricher+regarding+document+type
-confluence_id: "49118380054"
-confluence_path: "Team Kepler > Test Case Library > Test Execution / Evidences > Sprint 149 - Test Report (0.03.14.xx)"
-tags: [confluence, luz-docs, sprint, testing, enricher]
 ---
 
 # [LUZ-Docs] - Execution - Trigger enricher regarding document type
@@ -1616,3 +1626,14 @@ I want document data to be enriched automatically by the system regardless of th
 </table>
 
 ------------------------------------------------------------------------
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-Docs Trigger enricher regarding document type]]
+- [[Adapt to support ONE API - Enricher first delivery]]
+- [[Duplicate of Adapt to support ONE API - Enricher first delivery]]
+- [[Invoice Run V2UAT - No error when luz-store is running with multiple pods]]
+- [[Invoice Run V2UAT - Update latest Stimulsoft template - Execution]]
+
+%% ai-graph-end %%

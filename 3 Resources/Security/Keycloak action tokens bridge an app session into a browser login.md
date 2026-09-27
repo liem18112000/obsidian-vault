@@ -1,10 +1,20 @@
 ---
-title: "Keycloak action tokens bridge an app session into a browser login"
+ai_hash: ca8f2a5ea6657c0e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: howto
+entities: []
+source: 'Confluence: Proof of Concept Auto login with Keycloak (TP2020)'
 status: seedling
-source: "Confluence: Proof of Concept Auto login with Keycloak (TP2020)"
-tags: [keycloak, sso, action-token, authentication, magic-link, confluence-distilled]
+tags:
+- keycloak
+- sso
+- action-token
+- authentication
+- magic-link
+- confluence-distilled
+title: Keycloak action tokens bridge an app session into a browser login
+type: howto
 ---
 
 # Keycloak action tokens bridge an app session into a browser login
@@ -53,3 +63,14 @@ Source: [[Proof of Concept Auto login with Keycloak]] (TP2020, Confluence).
 ## Related
 
 - [[Exchange a partner IdP token by introspecting it, never by trusting it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Proof of Concept Auto login with Keycloak]]
+- [[Copy Proof of Concept Passwordless account login with Keycloak]]
+- [[Proof of Concept Passwordless account login with Keycloak]]
+- [[Auto login in myLife and ePost private web clients]]
+- [[OIDC federation with just-in-time provisioning hinges on the attribute join key]]
+
+%% ai-graph-end %%

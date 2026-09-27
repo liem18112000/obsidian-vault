@@ -1,18 +1,22 @@
 ---
-title: "Ivy conventions"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20474824144/Ivy+conventions
-space: "LUZ"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2018-11-12
+ai_hash: eb0f27cd6013ccf8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20474824144/Ivy+conventions
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Ivy conventions
+topic: programming
+type: source
+updated: 2018-11-12
 ---
 
 # Ivy conventions
@@ -99,3 +103,14 @@ tags:
   
 **Disadvantage : **<span class="legacy-color-text-default">Every process, page and component have to put(copy) the same catch exception process,we try to find other way to use java class to catch all exception on ivy, but it didn't success.</span>  
 </span></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Handle error exception]]
+- [[Axon Ivy project anatomy logic split across processes, data classes, HTML dialogs, and Java]]
+- [[How to use Bussiness Rules in GUI Framework]]
+- [[Merging process]]
+- [[Are the “technologies” (process files, java code, …) used correctly and efficiently]]
+
+%% ai-graph-end %%

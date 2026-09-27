@@ -1,18 +1,22 @@
 ---
-title: "Accounting Interface(16.01.2024 - 29.01.2024)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47639069897/Accounting+Interface+16.01.2024+-+29.01.2024
-space: "LUZ"
-topic: programming
-relevance: 0.721
-depth: 2.53
-updated: 2024-01-29
+ai_hash: ef24fd5454b85c75
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.53
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47639069897/Accounting+Interface+16.01.2024+-+29.01.2024
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Accounting Interface(16.01.2024 - 29.01.2024)
+topic: programming
+type: source
+updated: 2024-01-29
 ---
 
 # Accounting Interface(16.01.2024 - 29.01.2024)
@@ -38,3 +42,14 @@ tags:
 - Research: Architecture for onboarding request email: <a href="https://axonivy.atlassian.net/wiki/pages/createpage.action?spaceKey=HACKA&amp;title=Architecture%20for%20onboarding%20request%20email" class="createlink">Architecture for onboarding request email</a>
 
 - Research: Architecture for delivering eLetter after email verified: <a href="https://axonivy.atlassian.net/wiki/pages/createpage.action?spaceKey=HACKA&amp;title=Architecture%20for%20delivering%20eLetter%20after%20email%20verified" class="createlink">Architecture for delivering eLetter after email verified</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accounting Interface, Epost Forced Onboarding, and ONE api]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+- [[Architecture]]
+- [[Programming]]
+
+%% ai-graph-end %%

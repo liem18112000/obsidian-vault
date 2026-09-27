@@ -1,18 +1,22 @@
 ---
-title: "Summarize the load test api"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48714743893/Summarize+the+load+test+api
-space: "TS"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2025-10-02
+ai_hash: 264f79157c32148f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48714743893/Summarize+the+load+test+api
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Summarize the load test api
+topic: programming
+type: source
+updated: 2025-10-02
 ---
 
 # Summarize the load test api
@@ -39,3 +43,14 @@ tags:
 | Tuwunel Server | **POST** /\_matrix/client/v3/user/\${encodeURIComponent(matrixId)}/filter |  |  |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Load test get document id API]]
+- [[IVY API Calls Overview for luz Modules]]
+- [[Load Test Physical Order API]]
+- [[Token JWT Security]]
+- [[HowToUseNewTokenAPI]]
+
+%% ai-graph-end %%

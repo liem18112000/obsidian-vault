@@ -1,14 +1,21 @@
 ---
-title: "eArchive Performance — Executive Overview"
+ai_hash: 2fd91af8cb2acb5d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49505108142'
+confluence_path: Team Kepler > Developer note
 created: 2026-06-15
-updated: 2026-06-15
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- earchive
+- performance
+title: eArchive Performance — Executive Overview
+type: source
+updated: 2026-06-15
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49505108142/eArchive+Performance+Executive+Overview
-confluence_id: "49505108142"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, earchive, performance]
 ---
 
 # eArchive Performance — Executive Overview
@@ -46,3 +53,14 @@ For more details progress view, please visit: [https://axonivy.atlassian.net/wik
 *Attached to the Confluence page but not embedded in its body.*
 
 - [[3 Resources/Confluence/Team Kepler/Developer note/attachments/earchive-performance-executive-overview/story.svg|story.svg]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive Performance — Detail Overview]]
+- [[Performance Analysis and Proposed Solutions]]
+- [[eArchive Performance measurement & scalability assessment at 2.2M documents]]
+- [[eArchive 800k bottleneck is view-controller not K]]
+- [[Reproduce performance issue and understand the issue on DEV - A.Vu]]
+
+%% ai-graph-end %%

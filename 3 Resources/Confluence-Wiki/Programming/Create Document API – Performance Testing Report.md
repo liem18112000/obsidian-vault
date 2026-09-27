@@ -1,18 +1,22 @@
 ---
-title: "Create Document API – Performance Testing Report"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48709795997/Create+Document+API+Performance+Testing+Report
-space: "TK"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2025-10-15
+ai_hash: aa2aca429e856801
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 17
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48709795997/Create+Document+API+Performance+Testing+Report
+space: TK
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tk
+- confluence
+- programming
+- space/tk
+title: Create Document API – Performance Testing Report
+topic: programming
+type: source
+updated: 2025-10-15
 ---
 
 # Create Document API – Performance Testing Report
@@ -439,3 +443,14 @@ Mostly failed when start up k6, request is not ready</p></td>
 </div>
 
 **Conclusion:** Skipping antivirus removes a major performance bottleneck, enabling achievement of 250 RPS.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure API luz-docs]]
+- [[Measure create API - investigate performance]]
+- [[Invoice Run V2UATExecute - Prevent error when luz-store is multiple pods]]
+- [[Timing Benchmark Results Document ZIP Imports]]
+- [[Count Fan-out (K) Benchmark on Performance Env]]
+
+%% ai-graph-end %%

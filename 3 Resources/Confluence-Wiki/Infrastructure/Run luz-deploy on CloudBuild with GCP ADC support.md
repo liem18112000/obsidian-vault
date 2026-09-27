@@ -1,18 +1,22 @@
 ---
-title: "Run luz-deploy on CloudBuild with GCP ADC support"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47343501531/Run+luz-deploy+on+CloudBuild+with+GCP+ADC+support
-space: "FUT"
-topic: infra
-relevance: 0.724
-depth: 2.48
-updated: 2023-08-04
+ai_hash: 960ea8c9bbb5bef6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.48
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47343501531/Run+luz-deploy+on+CloudBuild+with+GCP+ADC+support
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: Run luz-deploy on CloudBuild with GCP ADC support
+topic: infra
+type: source
+updated: 2023-08-04
 ---
 
 # Run luz-deploy on CloudBuild with GCP ADC support
@@ -90,3 +94,14 @@ We are running nested Docker container *luz-deploy* and want to expose ADC to *l
   </div>
 
   </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Recipe Deploy with Terraform]]
+- [[Kubernetes knowledge]]
+- [[Klara Cloud Build pushes images to klara-repo Artifact Registry with the SA on the trigger]]
+- [[Apply changes on luz_kubernetes]]
+
+%% ai-graph-end %%

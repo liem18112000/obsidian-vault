@@ -1,44 +1,34 @@
 ---
-ai_hash: 27bf01fa66c7d6e2
+ai_hash: a21ba25c0524dd43
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities:
 - JsonStore gateway
 - _id-range count fan-out
 - bitmap/HLL
-- luz_jsonstore
 - MongoDB
-- _id RANGES
+- _id
 - ObjectId
-- $in
-- equality
-- $gte
-- $lt
-- $expr
-- $toObjectId
-- K sub-counts
-- Quantile boundaries
+- $expr + $toObjectId
+- index
+- luz.docs.materialize.count-fanout-partitions
 - Roaring bitmap
 - HyperLogLog
-- luz.docs.materialize.count-fanout-partitions
-- amplification
-- bitmap-count-investigation.md
-- _id index
+- amplification-removing approach
+- Quantile boundaries
 - Divide-and-Conquer Visible-Document Count
 - performance
+- amplification
 - client
-- index-seeking _id range
-- full-scan
+- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index
+  (full scan)
+- $in
+- $gte
+- $lt
+- _id RANGES
 - scan work
-- gateway change
-- amplified work
-- p99 tail
-- hex _id string
-- union counts
-- MongoDB $expr + $toObjectId
-- amplification-removing approach
-- luz_docs
+- count-side
 source: LUZ-154613 session 2026-06-16
 status: seedling
 tags:
@@ -80,44 +70,48 @@ Decision: keep fan-out OFF (luz.docs.materialize.count-fanout-partitions=1, the 
 - [[Levers to optimise the visible-document count beyond _shard fan-out]]
 
 **Relations:**
-- JsonStore gateway — *causes* — _id-range count fan-out a dead end
-- _id-range count fan-out — *pivot to* — bitmap/HLL
-- luz_jsonstore — *is a gateway for* — MongoDB
-- luz_jsonstore — *has constraint* — cannot be changed
-- Divide-and-Conquer Visible-Document Count — *partitions on* — _id RANGES
-- Divide-and-Conquer Visible-Document Count — *is a dead end for* — performance
-- JsonStore gateway — *coerces* — hex _id string
-- JsonStore gateway — *coerces to* — ObjectId
-- ObjectId — *is used with* — $in
-- ObjectId — *is used with* — equality
-- ObjectId — *is not used with* — $gte
-- ObjectId — *is not used with* — $lt
-- index-seeking _id range — *cannot be expressed from* — client
-- client-side _id range — *uses* — MongoDB $expr + $toObjectId
-- MongoDB $expr + $toObjectId — *causes* — full-scan
-- MongoDB $expr + $toObjectId — *does not use* — _id index
-- K sub-counts — *cannot be* — correct AND fast
+- JsonStore gateway — *is a* — MongoDB gateway
+- JsonStore gateway — *has constraint* — cannot be changed
+- JsonStore gateway — *renders* — _id-range count fan-out
+- _id-range count fan-out — *partitions on* — _id RANGES
+- _id-range count fan-out — *negatively impacts* — performance
+- JsonStore gateway — *coerces* — _id
+- _id — *to* — ObjectId
+- JsonStore gateway — *coerces for operator* — $in
+- JsonStore gateway — *does not coerce* — _id
+- JsonStore gateway — *does not coerce for operator* — $gte
+- JsonStore gateway — *does not coerce for operator* — $lt
+- _id range — *cannot be* — index-seeking
+- _id range — *from* — client
+- $expr + $toObjectId — *enables* — client-side _id range
+- $expr + $toObjectId — *causes* — full-scan
+- $expr + $toObjectId — *does not use* — index
+- $expr + $toObjectId — *is* — correct
+- _id-range count fan-out — *is not* — both correct and fast
+- _id-range count fan-out — *due to* — JsonStore gateway constraint
 - Quantile boundaries — *balances* — scan work
-- Quantile boundaries — *does not make* — indexed
-- fan-out — *status* — OFF
-- luz.docs.materialize.count-fanout-partitions — *set to* — 1
+- Quantile boundaries — *does not enable* — index
+- luz.docs.materialize.count-fanout-partitions — *is set to* — 1
+- 1 — *is the* — safe default
+- Decision — *is to pursue* — amplification-removing approach
 - amplification-removing approach — *includes* — Roaring bitmap
 - amplification-removing approach — *includes* — HyperLogLog
-- amplification-removing approach — *removes* — amplification
-- Roaring bitmap — *is* — exact
-- HyperLogLog — *is* — approximate
-- Roaring bitmap — *provides* — union counts
-- HyperLogLog — *provides* — union counts
-- union counts — *are* — count-side
-- union counts — *requires no* — gateway change
-- Fan-out — *parallelises* — amplified work
-- Fan-out — *never removes* — amplification
-- bitmap-count-investigation.md — *is a document in* — luz_docs
-- MongoDB $expr + $toObjectId — *is for* — _id range
-- MongoDB $expr + $toObjectId — *is* — correct
-- MongoDB $expr + $toObjectId — *does not use* — _id index
-- MongoDB $expr + $toObjectId — *causes* — full-scan
-- Divide-and-Conquer Visible-Document Count — *is a* — project
-- amplification — *affects* — p99 tail
+- Roaring bitmap — *provides* — exact counts
+- HyperLogLog — *provides* — approximate counts
+- Roaring bitmap — *is* — count-side
+- HyperLogLog — *is* — count-side
+- Roaring bitmap — *requires no* — JsonStore gateway change
+- HyperLogLog — *requires no* — JsonStore gateway change
+- _id-range count fan-out — *parallelises* — amplified work
+- _id-range count fan-out — *does not remove* — amplification
+- _id-range count fan-out — *is related to* — Divide-and-Conquer Visible-Document Count
+- bitmap/HLL — *is a* — pivot
+- bitmap/HLL — *is an* — amplification-removing approach
+- MongoDB — *uses* — index
+- MongoDB — *uses* — compound index
+- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan) — *describes* — $expr + $toObjectId
+- MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan) — *is related to* — _id-range count fan-out
+- Divide-and-Conquer Visible-Document Count — *is related to* — _id-range count fan-out
+- bitmap/HLL — *is a solution for* — _id-range count fan-out limitations
 
 %% ai-graph-end %%

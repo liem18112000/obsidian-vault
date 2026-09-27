@@ -1,47 +1,44 @@
 ---
-ai_hash: 2b2a260acfd9127b
+ai_hash: 6009292d42008e46
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-27
 entities:
 - A2A-to-MCP bridge
-- MCP stdio server
+- MCP server
+- stdio
 - A2A client
 - Claude
+- Claude Code
+- Desktop
 - MCP client
 - A2A (Agent2Agent)
 - JSON-RPC
 - SSE
 - Agent Card
 - /.well-known/agent-card.json
-- MCP
-- autonomous agents
-- stdio
 - HTTP
-- MCP tool call
-- message/send
-- client-side
 - agent server
 - MCP tool
 - A2A operation
-- arguments
-- A2A reply
+- Auth
 - bearer token
-- HTTP call
 - knowledge_gathering test-agent
 - knowledge_gathering/bridge/
 - a2a_client.py
 - mcp_server.py
 - MCPServer
-- FastMCP
-- mcp Python SDK 2.x
 - Message
 - Task envelope
-- A2A input-required tasks
+- mcp Python SDK 2.x
+- FastMCP
+- arguments
+- A2A reply
+- input-required tasks
 - taskId
 - contextId
-- Claude Code
-- Desktop
+- autonomous agents
+- message/send
 source: session 2026-08-27
 status: seedling
 tags:
@@ -81,41 +78,44 @@ Implemented in the `knowledge_gathering` test-agent as `knowledge_gathering/brid
 - [[mcp Python SDK 2.x renamed FastMCP to MCPServer]]
 
 **Relations:**
-- A2A-to-MCP bridge — *is_a* — MCP stdio server
+- A2A-to-MCP bridge — *is_a* — MCP server
+- A2A-to-MCP bridge — *operates_on* — stdio
 - A2A-to-MCP bridge — *is_a* — A2A client
 - Claude — *is_a* — MCP client
 - Claude Code — *is_a* — MCP client
 - Desktop — *is_a* — MCP client
 - autonomous agents — *expose_themselves_over* — A2A (Agent2Agent)
-- A2A (Agent2Agent) — *uses_protocol* — JSON-RPC
-- A2A (Agent2Agent) — *uses_protocol* — SSE
-- A2A (Agent2Agent) — *has_component* — Agent Card
-- Agent Card — *has_location* — /.well-known/agent-card.json
-- MCP — *does_not_interoperate_with* — A2A (Agent2Agent)
+- A2A (Agent2Agent) — *is_based_on* — JSON-RPC
+- A2A (Agent2Agent) — *is_based_on* — SSE
+- A2A (Agent2Agent) — *defines* — Agent Card
+- Agent Card — *located_at* — /.well-known/agent-card.json
+- MCP client — *does_not_interoperate_with* — A2A (Agent2Agent)
+- A2A (Agent2Agent) — *does_not_interoperate_with* — MCP client
 - A2A-to-MCP bridge — *enables* — Claude
-- A2A-to-MCP bridge — *functions_as* — MCP stdio server
-- MCP stdio server — *uses* — stdio
-- A2A-to-MCP bridge — *functions_as* — A2A client
-- A2A-to-MCP bridge — *forwards* — MCP tool call
-- MCP tool call — *to* — message/send
-- message/send — *uses_protocol* — HTTP
+- Claude — *to_drive* — A2A (Agent2Agent)
+- A2A client — *forwards_call_to* — message/send
+- A2A client — *uses_protocol* — HTTP
 - A2A-to-MCP bridge — *runs_on* — client-side
-- A2A-to-MCP bridge — *located_next_to* — Claude
-- agent server — *needs_no* — MCP
+- A2A-to-MCP bridge — *runs_next_to* — Claude
+- agent server — *is* — unchanged
+- agent server — *requires_no* — MCP
 - MCP tool — *maps_to* — A2A operation
 - A2A-to-MCP bridge — *translates* — arguments
 - A2A-to-MCP bridge — *translates* — A2A reply
+- Auth — *passes_through* — A2A-to-MCP bridge
 - A2A-to-MCP bridge — *attaches* — bearer token
-- bearer token — *on* — HTTP call
-- A2A-to-MCP bridge — *is_implemented_in* — knowledge_gathering/bridge/
+- bearer token — *on* — HTTP
+- A2A-to-MCP bridge — *implemented_in* — knowledge_gathering test-agent
 - knowledge_gathering/bridge/ — *is_part_of* — knowledge_gathering test-agent
-- a2a_client.py — *implements* — A2A client
-- mcp_server.py — *implements* — MCPServer
-- FastMCP — *was_renamed_to* — MCPServer
-- FastMCP — *renamed_in* — mcp Python SDK 2.x
+- a2a_client.py — *is_a_component_of* — knowledge_gathering/bridge/
+- mcp_server.py — *is_a_component_of* — knowledge_gathering/bridge/
+- a2a_client.py — *implements* — A2A half
+- mcp_server.py — *implements* — MCPServer tools
+- mcp Python SDK 2.x — *renamed* — FastMCP
+- FastMCP — *to* — MCPServer
 - message/send — *returns* — Message
 - message/send — *returns* — Task envelope
-- A2A input-required tasks — *requires* — taskId
-- A2A input-required tasks — *requires* — contextId
+- input-required tasks — *requires_same* — taskId
+- input-required tasks — *requires_same* — contextId
 
 %% ai-graph-end %%

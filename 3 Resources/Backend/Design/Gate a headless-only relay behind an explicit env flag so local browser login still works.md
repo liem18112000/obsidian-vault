@@ -1,7 +1,7 @@
 ---
-ai_hash: d883eb33971e89b7
+ai_hash: cdebf7df10356dc7
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-04
 entities: []
 source: session 2026-07-04, vinnstack relay broke local login
@@ -35,7 +35,7 @@ Symptom that points here: "Sign in shows a spinner then stops, nothing else" in 
 - [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
 - [[Arm a new login gate by env presence so shipping auth cannot lock the operator out]]
 - [[Vinnstack desktop app dropped Google OAuth for a typed-email operator identity]]
-- [[Vinnstack auth providers two patterns and the rule for adding one]]
 - [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+- [[Vinnstack auth providers two patterns and the rule for adding one]]
 
 %% ai-graph-end %%

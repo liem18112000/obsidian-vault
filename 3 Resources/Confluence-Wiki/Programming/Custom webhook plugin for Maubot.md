@@ -1,18 +1,22 @@
 ---
-title: "Custom webhook plugin for Maubot"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48674504768/Custom+webhook+plugin+for+Maubot
-space: "TS"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2025-09-19
+ai_hash: 05d586a78b6f32be
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48674504768/Custom+webhook+plugin+for+Maubot
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Custom webhook plugin for Maubot
+topic: programming
+type: source
+updated: 2025-09-19
 ---
 
 # Custom webhook plugin for Maubot
@@ -231,3 +235,10 @@ include_empty_fields: false
 3.  Currently, only the Maubot admin can configure the message data structure for webhook forwarding, and this structure applies to all webhooks. However, in practice, each webhook might require a different data structure in the request body. Should we allow users to configure the data structure through chat commands dynamically?
 
 4.  The concept of a webhook is one-way data sharing. This means the webhook may or may not have a response. In case the webhook has no response, how should we handle this? Simply does not send any response message or show some notifications?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

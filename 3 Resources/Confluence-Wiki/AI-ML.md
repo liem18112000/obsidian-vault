@@ -1,9 +1,13 @@
 ---
-title: "AI-ML (Confluence)"
-type: moc
+ai_hash: fd7c138a96be9050
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
 tags:
-  - moc
-  - confluence
+- moc
+- confluence
+title: AI-ML (Confluence)
+type: moc
 ---
 
 # AI-ML — Confluence sources
@@ -25,3 +29,14 @@ tags:
 | 0.73 | [[INC-2026-09-24 - posapp-android-ed1bd - Gemini consumption with no attributable user]] | LUZ | 2026-09-25 |
 | 0.72 | [[Recipe Github copilot]] | LUZ | 2024-10-24 |
 | 0.70 | [[Global model evaluation]] | AI | 2020-02-12 |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Setup VS Code - Github Copilot - MCP Server]]
+- [[Vinnstack — Agentic OS]]
+- [[AI-Powered Development Environment Architecture]]
+- [[Vinnstack vs. Claude Code (native)]]
+- [[MCP Servers — Installation and Configuration Reference]]
+
+%% ai-graph-end %%

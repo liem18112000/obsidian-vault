@@ -1,18 +1,22 @@
 ---
-title: "How to unseal Vault Unseal"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47224554424/How+to+unseal+Vault+Unseal
-space: "LUZ"
-topic: security
-relevance: 0.711
-depth: 2.65
-updated: 2023-11-08
+ai_hash: faee61f042e815b4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47224554424/How+to+unseal+Vault+Unseal
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: How to unseal Vault Unseal
+topic: security
+type: source
+updated: 2023-11-08
 ---
 
 # How to unseal Vault Unseal
@@ -51,3 +55,14 @@ vault operator unseal $KEY3
 Vault Key:
 
 <a href="https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46925086807/Recovery+Keys+Secret?search_id=c6858f29-4995-4584-95d2-32890f6f5dd3" data-card-appearance="inline" rel="nofollow">https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/46925086807/Recovery+Keys+Secret?search_id=c6858f29-4995-4584-95d2-32890f6f5dd3</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Update Vault Unseal self-signed certificate]]
+- [[luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator]]
+- [[luz-vault - How to run Vault Benchmark]]
+- [[Introduction of Hashicorp Vault]]
+- [[Security]]
+
+%% ai-graph-end %%

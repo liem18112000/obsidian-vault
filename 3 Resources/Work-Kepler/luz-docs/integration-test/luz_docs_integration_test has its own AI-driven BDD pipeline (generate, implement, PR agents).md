@@ -1,7 +1,7 @@
 ---
-ai_hash: 6a725d2972ac728e
+ai_hash: c0c37de5c6b9b2cb
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-11
 entities: []
 source: 'vinnstack session 2026-07-11: building implement-bdd-steps skill'
@@ -44,7 +44,7 @@ Related: [[luz_docs_integration_test AI pipeline branch and PR mechanics]], [[lu
 - [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
 - [[luz_docs_integration_test AI pipeline branch and PR mechanics]]
 - [[luz_docs_integration_test Gherkin and step-definition conventions]]
-- [[Vinnstack ai-framework.html is aspirational, not the real code]]
+- [[Testing Agent workflow step to AI Skill mapping]]
 - [[Vinnstack withholds gitgh from the model in BDD step implementation]]
 
 %% ai-graph-end %%

@@ -1,10 +1,66 @@
 ---
-title: "Harvest training labels as a side effect of the user's own goal"
+ai_hash: e3484415efaa31bd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities:
+- Harvest training labels as a side effect of the user's own goal
+- Training data
+- product AI
+- labellers
+- customer's private mail
+- documents
+- messages
+- users
+- Implicit annotation
+- Explicit opt-in gamification
+- app
+- title of a document
+- system
+- labelled training example
+- bounding-box-level positional data
+- text label
+- simple questions
+- mail
+- badges
+- levels
+- implicit loop
+- user's incentive
+- label
+- bootstrapping a new skill
+- real data
+- research
+- raw data
+- user feedback
+- problems
+- Raw format
+- Organised into logical collections
+- model training
+- reproducible
+- Event-triggered ETL
+- registered script
+- specific event
+- target system
+- deployable data-extraction script
+- data-exfiltration primitive
+- approval and signing flow
+- attacker
+- careless engineer
+- ePost AI Solution Concept
+- AI
+- Confluence
+- Version the whole retrieval pipeline, not just the model
+source: 'Confluence: ePost AI Solution Concept (AI)'
 status: seedling
-source: "Confluence: ePost AI Solution Concept (AI)"
-tags: [training-data, annotation, privacy, crowdsourcing, product-design, confluence-distilled]
+tags:
+- training-data
+- annotation
+- privacy
+- crowdsourcing
+- product-design
+- confluence-distilled
+title: Harvest training labels as a side effect of the user's own goal
+type: concept
 ---
 
 # Harvest training labels as a side effect of the user's own goal
@@ -38,3 +94,53 @@ Source: [[ePost AI Solution Concept]] (AI, Confluence).
 ## Related
 
 - [[Version the whole retrieval pipeline, not just the model]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost AI Solution Concept]]
+
+**Relations:**
+- Harvest training labels as a side effect of the user's own goal — *is a resolution for* — Training data
+- Training data — *for* — product AI
+- Training data — *cannot be outsourced to* — labellers
+- Training data — *includes* — customer's private mail
+- Training data — *includes* — documents
+- Training data — *includes* — messages
+- Harvest training labels as a side effect of the user's own goal — *involves* — users
+- users — *annotate* — their own data
+- Implicit annotation — *is a contribution mode of* — Harvest training labels as a side effect of the user's own goal
+- Explicit opt-in gamification — *is a contribution mode of* — Harvest training labels as a side effect of the user's own goal
+- Implicit annotation — *is* — annotation as a by-product of the user's own goal
+- app — *guides user to select* — title of a document
+- system — *gets* — labelled training example
+- labelled training example — *includes* — bounding-box-level positional data
+- bounding-box-level positional data — *is richer than* — text label
+- Explicit opt-in gamification — *involves* — simple questions
+- simple questions — *about* — mail
+- Explicit opt-in gamification — *can earn* — badges
+- Explicit opt-in gamification — *can earn* — levels
+- implicit loop — *aligns* — user's incentive
+- implicit loop — *aligns* — label
+- user's incentive — *and label are* — the same artefact
+- bootstrapping a new skill — *needs* — real data
+- real data — *for* — research
+- bootstrapping a new skill — *requires* — Raw format
+- bootstrapping a new skill — *requires* — Organised into logical collections
+- bootstrapping a new skill — *requires* — Event-triggered ETL
+- raw data — *and user feedback diagnose* — problems
+- Organised into logical collections — *enables* — reproducible model training
+- model training — *is reproducible like* — Version the whole retrieval pipeline, not just the model
+- Event-triggered ETL — *uses* — registered script
+- registered script — *fires on* — specific event
+- registered script — *extracts, transforms and loads to* — target system
+- deployable data-extraction script — *is a* — data-exfiltration primitive
+- deployable data-extraction script — *requires* — approval and signing flow
+- approval and signing flow — *prevents misuse by* — attacker
+- approval and signing flow — *prevents misuse by* — careless engineer
+- ePost AI Solution Concept — *is the source for* — Harvest training labels as a side effect of the user's own goal
+- ePost AI Solution Concept — *is about* — AI
+- ePost AI Solution Concept — *is related to* — Confluence
+- Harvest training labels as a side effect of the user's own goal — *is related to* — Version the whole retrieval pipeline, not just the model
+
+%% ai-graph-end %%

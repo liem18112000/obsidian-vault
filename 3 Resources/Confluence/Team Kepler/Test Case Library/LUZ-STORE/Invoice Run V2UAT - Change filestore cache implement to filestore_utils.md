@@ -1,14 +1,22 @@
 ---
-title: "[Invoice Run V2][UAT] - Change filestore cache implement to filestore_utils"
+ai_hash: 9e663bfe81dd7991
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49075453953'
+confluence_path: Team Kepler > Test Case Library > LUZ-STORE
 created: 2026-01-23
-updated: 2026-01-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+- luz-store
+- testing
+title: '[Invoice Run V2][UAT] - Change filestore cache implement to filestore_utils'
+type: source
+updated: 2026-01-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49075453953/Invoice+Run+V2+UAT+-+Change+filestore+cache+implement+to+filestore_utils
-confluence_id: "49075453953"
-confluence_path: "Team Kepler > Test Case Library > LUZ-STORE"
-tags: [confluence, invoice-run, luz-store, testing]
 ---
 
 # [Invoice Run V2][UAT] - Change filestore cache implement to filestore_utils
@@ -196,3 +204,14 @@ labels.k8s-pod/app="luz-store" severity>=DEFAULT
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice Run V2UAT - Execution - Change filestore cache implement to filestore_utils]]
+- [[Invoice Run V2UAT - No error when luz-store is running with multiple pods]]
+- [[Invoice Run V2UATExecute - Prevent error when luz-store is multiple pods]]
+- [[Invoice Run V2UAT - Apply Distributed Cache for customer information during the process of Invoice Run V2]]
+- [[Invoice Run V2UAT - Execute - Apply Distributed Cache for customer information during the process of Invoice Run V2ecute]]
+
+%% ai-graph-end %%

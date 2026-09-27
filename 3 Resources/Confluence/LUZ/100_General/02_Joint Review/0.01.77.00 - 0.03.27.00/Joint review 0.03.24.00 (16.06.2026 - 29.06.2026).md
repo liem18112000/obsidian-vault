@@ -1,14 +1,19 @@
 ---
-title: "Joint review 0.03.24.00 (16.06.2026 - 29.06.2026)"
+ai_hash: 42163dd8c029fca8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49542299649'
+confluence_path: LUZ Home > 100_General > 02_Joint Review > 0.01.77.00 - 0.03.27.00
 created: 2026-06-29
-updated: 2026-06-29
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+title: Joint review 0.03.24.00 (16.06.2026 - 29.06.2026)
+type: source
+updated: 2026-06-29
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49542299649/Joint+review+0.03.24.00+16.06.2026+-+29.06.2026
-confluence_id: "49542299649"
-confluence_path: "LUZ Home > 100_General > 02_Joint Review > 0.01.77.00 - 0.03.27.00"
-tags: [confluence]
 ---
 
 # Joint review 0.03.24.00 (16.06.2026 - 29.06.2026)
@@ -125,3 +130,14 @@ tags: [confluence]
 *Attached to the Confluence page but not embedded in its body.*
 
 - [[3 Resources/Confluence/LUZ/100_General/02_Joint Review/0.01.77.00 - 0.03.27.00/attachments/joint-review-0-03-24-00-16-06-2026-29-06-2026/Sprint-159-Customer-Experience.pptx|Sprint-159-Customer-Experience.pptx]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Joint review 0.03.23.00 (02.06.2026 - 15.06.2026)]]
+- [[Joint review 0.03.30.00 (08.09.2026 - 21.09.2026)]]
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[Programming]]
+- [[Architecture]]
+
+%% ai-graph-end %%

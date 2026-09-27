@@ -1,18 +1,22 @@
 ---
-title: "Microprofile/OpenAPI config"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AVATAR/pages/47039512613/Microprofile+OpenAPI+config
-space: "AVATAR"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2022-02-16
+ai_hash: 389c2b15a79b81b9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/AVATAR/pages/47039512613/Microprofile+OpenAPI+config
+space: AVATAR
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/avatar
+- confluence
+- programming
+- space/avatar
+title: Microprofile/OpenAPI config
+topic: programming
+type: source
+updated: 2022-02-16
 ---
 
 # Microprofile/OpenAPI config
@@ -97,3 +101,14 @@ c\. Pass the uri of project you want to be run open API like the picture
 Here is video to try out
 
 <a href="https://watch.screencastify.com/v/BJ95ZnnB86Iup5QaG80f" class="external-link" rel="nofollow">https://watch.screencastify.com/v/BJ95ZnnB86Iup5QaG80f</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OpenAPI UI (API on SwaggerUI)]]
+- [[Swagger UI]]
+- [[Apply OpenAPI and try out API on SwaggerUI]]
+- [[Swagger with api explorer]]
+- [[Port forward and Docker compose]]
+
+%% ai-graph-end %%

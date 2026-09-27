@@ -1,10 +1,19 @@
 ---
-title: "Keycloak ssoSessionMaxLifespan is an absolute session cap, not an idle timer"
+ai_hash: c2ad604bfeb2c178
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: leo-customer360 SSO session fix, 2026-09-27
 status: seedling
-source: "leo-customer360 SSO session fix, 2026-09-27"
-tags: [keycloak, oidc, sso, session, gotcha]
+tags:
+- keycloak
+- oidc
+- sso
+- session
+- gotcha
+title: Keycloak ssoSessionMaxLifespan is an absolute session cap, not an idle timer
+type: lesson
 ---
 
 # Keycloak ssoSessionMaxLifespan is an absolute session cap, not an idle timer
@@ -29,3 +38,14 @@ A "sensible admin console" shape is something like 60 min token / 8 h idle / 10 
 
 - [[Discarding the refresh token caps an SPA session at one access-token lifetime]]
 - [[LEO CDP tenant isolation fails closed and needs a Keycloak tenant_id claim mapper]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[leo-customer360 SSO session settings live in three places that must agree]]
+- [[Discarding the refresh token caps an SPA session at one access-token lifetime]]
+- [[Token age checks need clock-skew leeway and must match the IdP lifespan]]
+- [[Single-flight token refresh prevents concurrent grants from invalidating each other]]
+- [[LEO CDP tenant isolation fails closed and needs a Keycloak tenant_id claim mapper]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "ePost AI Solution Concept"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47075754264/ePost+AI+Solution+Concept
-space: "AI"
-topic: architecture
-relevance: 0.769
-depth: 2.79
-updated: 2022-03-28
+ai_hash: 8fdd7ba6d9b3a003
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.79
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47075754264/ePost+AI+Solution+Concept
+space: AI
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ai
+- confluence
+- architecture
+- space/ai
+title: ePost AI Solution Concept
+topic: architecture
+type: source
+updated: 2022-03-28
 ---
 
 # ePost AI Solution Concept
@@ -380,3 +384,14 @@ More information can be found on <a href="https://homomorphicencryption.org/" cl
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Harvest training labels as a side effect of the user's own goal]]
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[AI-1538 Prepare for more volume on Analyze API]]
+- [[Architecture]]
+
+%% ai-graph-end %%

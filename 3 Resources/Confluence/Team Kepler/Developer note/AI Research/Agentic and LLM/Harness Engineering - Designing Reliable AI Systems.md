@@ -1,14 +1,21 @@
 ---
-title: "Harness Engineering: Designing Reliable AI Systems"
+ai_hash: 1528fd580aebca78
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49299914833'
+confluence_path: Team Kepler > Developer note > AI Research > Agentic and LLM
 created: 2026-04-06
-updated: 2026-04-06
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- search
+title: 'Harness Engineering: Designing Reliable AI Systems'
+type: source
+updated: 2026-04-06
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49299914833/Harness+Engineering+Designing+Reliable+AI+Systems
-confluence_id: "49299914833"
-confluence_path: "Team Kepler > Developer note > AI Research > Agentic and LLM"
-tags: [confluence, ai-agents, search]
 ---
 
 # Harness Engineering: Designing Reliable AI Systems
@@ -298,3 +305,14 @@ From the Claude Code source leak (March 31, 2026):
 ### Academic
 
 - Stanford Meta-Harness Paper — arXiv:2603.28052, April 2026 (AI self-optimizing harnesses)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Agent equals model plus harness, and the harness is the engineering discipline]]
+- [[Prompt, context, and harness engineering nest rather than replace each other]]
+- [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+- [[A complete skill has five layers - intent, knowledge, execution, verification, evolution]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+
+%% ai-graph-end %%

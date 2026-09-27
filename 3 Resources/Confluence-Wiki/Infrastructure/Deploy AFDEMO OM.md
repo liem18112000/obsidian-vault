@@ -1,18 +1,22 @@
 ---
-title: "Deploy AFDEMO OM"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3597920218/Deploy+AFDEMO+OM
-space: "AII"
-topic: infra
-relevance: 0.779
-depth: 2.83
-updated: 2023-01-11
+ai_hash: abbfec1e90fbe785
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.83
+entities: []
+relevance: 0.779
+source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3597920218/Deploy+AFDEMO+OM
+space: AII
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/aii
+- confluence
+- infra
+- space/aii
+title: Deploy AFDEMO OM
+topic: infra
+type: source
+updated: 2023-01-11
 ---
 
 # Deploy AFDEMO OM
@@ -249,3 +253,14 @@ server {
 ## DNS
 
 Create A record onlinemortgage-af1-demo.axonfintech.io, <a href="http://onlinemortgage-af1-demo.axonfintech.io" class="external-link" rel="nofollow">onlinemortgage-blb-demo.axonfintech.io</a> point to public IP address of afdemo-nat instance
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy AFDEMO CPM]]
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+- [[2.31 Build & deploy agent review service to k8s (POC)]]
+- [[Infrastructure]]
+- [[Update Ingress Controller for GKE v1.22]]
+
+%% ai-graph-end %%

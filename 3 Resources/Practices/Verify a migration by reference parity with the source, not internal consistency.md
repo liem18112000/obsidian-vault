@@ -1,10 +1,19 @@
 ---
-title: "Verify a migration by reference parity with the source, not internal consistency"
+ai_hash: f8a864de6261bedc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: session 2026-09-27 (Confluence -> Obsidian import)
 status: seedling
-source: "session 2026-09-27 (Confluence -> Obsidian import)"
-tags: [migration, verification, data-integrity, testing, practices]
+tags:
+- migration
+- verification
+- data-integrity
+- testing
+- practices
+title: Verify a migration by reference parity with the source, not internal consistency
+type: lesson
 ---
 
 # Verify a migration by reference parity with the source, not internal consistency
@@ -32,3 +41,14 @@ Generalisation: **a migration has two failure modes, and only one is visible fro
 ## Related
 
 - [[Obsidian resolves short wikilinks by basename across the whole vault]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Obsidian resolves short wikilinks by basename across the whole vault]]
+- [[Measure a broken-link baseline before a mass vault refactor]]
+- [[Repair broken links only when exactly one candidate matches, and iterate to a fixed point]]
+- [[A note title containing a colon or slash breaks links that use the raw title]]
+- [[Comma-split wikilinks leave dead fragment links in Related blocks]]
+
+%% ai-graph-end %%

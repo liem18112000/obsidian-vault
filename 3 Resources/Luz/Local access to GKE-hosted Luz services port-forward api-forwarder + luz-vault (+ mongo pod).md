@@ -1,5 +1,5 @@
 ---
-ai_hash: e25875cd24684c2b
+ai_hash: 32e714931b6e71ad
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-10
@@ -41,9 +41,9 @@ Both `-n <ENV>` where ENV is the app namespace (`dev`, `dev-staging`, `performan
 
 **Related notes:**
 - [[Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards]]
+- [[Port Forward to call GCP API in localhost]]
 - [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080]]
+- [[Port forward and Docker compose]]
 - [[Verify kubectl context before GKE rollout - _context file can disagree]]
-- [[Luz performance env cluster topology]]
-- [[Build and roll out luz-jsonstore to dev (Cloud Build trigger + Deployment rollout)]]
 
 %% ai-graph-end %%

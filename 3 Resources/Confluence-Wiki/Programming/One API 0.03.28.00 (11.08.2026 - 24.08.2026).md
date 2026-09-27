@@ -1,18 +1,22 @@
 ---
-title: "One API 0.03.28.00 (11.08.2026 - 24.08.2026)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49691623452/One+API+0.03.28.00+11.08.2026+-+24.08.2026
-space: "LUZ"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2026-08-24
+ai_hash: f8607948850900b1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49691623452/One+API+0.03.28.00+11.08.2026+-+24.08.2026
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: One API 0.03.28.00 (11.08.2026 - 24.08.2026)
+topic: programming
+type: source
+updated: 2026-08-24
 ---
 
 # One API 0.03.28.00 (11.08.2026 - 24.08.2026)
@@ -84,3 +88,14 @@ Once workers thread were saturated, Kubernetes couldn't get a health-check respo
 - <a href="https://axonivy.atlassian.net/browse/LUZ-157767" class="external-link" rel="nofollow">LUZ-157767</a> <span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-success conf-macro output-inline" hasbody="false" macro-id="1531c3f5-ff17-4bf7-9dbc-d285c668932c" macro-name="status">DONE</span> — fixed sync data to public table for when admin resent delivery.
 
 ![[49691623452-KLARA (1) (1).mp4]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Copy 5. How to extend modify ONE API delivery API Research]]
+- [[5. How to extend modify ONE API delivery API Research]]
+- [[OneAPI Architecture overview]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+
+%% ai-graph-end %%

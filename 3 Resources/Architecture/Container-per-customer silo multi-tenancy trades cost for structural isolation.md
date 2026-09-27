@@ -1,10 +1,21 @@
 ---
-title: "Container-per-customer silo multi-tenancy trades cost for structural isolation"
+ai_hash: 61df6cb1c225865f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: AxonivyCloud Infrastructure Diagram EKS Proposal (AII)'
 status: seedling
-source: "Confluence: AxonivyCloud Infrastructure Diagram EKS Proposal (AII)"
-tags: [multi-tenancy, kubernetes, eks, isolation, silo, cost, confluence-distilled]
+tags:
+- multi-tenancy
+- kubernetes
+- eks
+- isolation
+- silo
+- cost
+- confluence-distilled
+title: Container-per-customer silo multi-tenancy trades cost for structural isolation
+type: concept
 ---
 
 # Container-per-customer silo multi-tenancy trades cost for structural isolation
@@ -41,3 +52,14 @@ Source: [[AxonivyCloud - Infrastructure Diagram EKS Proposal]] (AII, Confluence)
 ## Related
 
 - [[Draw the tenant boundary at legal data ownership, and make it reassignable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Connection count, not tenant count, sizes a multi-tenant Postgres cluster]]
+- [[Postgres Architecture Blueprint V2023]]
+- [[AxonivyCloud - Infrastructure Diagram EKS Proposal]]
+- [[Draw the tenant boundary at legal data ownership, and make it reassignable]]
+- [[Embedding a search library means building its control plane yourself]]
+
+%% ai-graph-end %%

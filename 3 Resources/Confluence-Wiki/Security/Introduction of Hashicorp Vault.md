@@ -1,18 +1,22 @@
 ---
-title: "Introduction of Hashicorp Vault"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530431677/Introduction+of+Hashicorp+Vault
-space: "LUZ"
-topic: security
-relevance: 0.802
-depth: 2.95
-updated: 2021-05-10
+ai_hash: a0bda490bb0ec71a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 15
+depth: 2.95
+entities: []
+relevance: 0.802
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530431677/Introduction+of+Hashicorp+Vault
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Introduction of Hashicorp Vault
+topic: security
+type: source
+updated: 2021-05-10
 ---
 
 # Introduction of Hashicorp Vault
@@ -106,3 +110,14 @@ Secure, store and tightly control access to tokens, passwords, certificates, enc
 
 3.  Related Document  
     [Encryption and decryption flows with Vault#Flowtoconfigurekeyandpolicy](https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525655052/Encryption+and+decryption+flows+with+Vault#EncryptionanddecryptionflowswithVault-Flowtoconfigurekeyandpolicy)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vault overview]]
+- [[Luz-vault]]
+- [[luz-vault - How to run Vault Benchmark]]
+- [[luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator]]
+- [[Encryption and decryption flows with Vault]]
+
+%% ai-graph-end %%

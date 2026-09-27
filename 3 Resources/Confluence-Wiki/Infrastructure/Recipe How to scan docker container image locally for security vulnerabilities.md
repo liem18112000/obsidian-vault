@@ -1,18 +1,22 @@
 ---
-title: "Recipe: How to scan docker container image locally for security vulnerabilities"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47097282643/Recipe+How+to+scan+docker+container+image+locally+for+security+vulnerabilities
-space: "LUZ"
-topic: infra
-relevance: 0.773
-depth: 3
-updated: 2022-04-26
+ai_hash: 40ceecdf367fcaab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.773
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47097282643/Recipe+How+to+scan+docker+container+image+locally+for+security+vulnerabilities
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: 'Recipe: How to scan docker container image locally for security vulnerabilities'
+topic: infra
+type: source
+updated: 2022-04-26
 ---
 
 # Recipe: How to scan docker container image locally for security vulnerabilities
@@ -184,3 +188,14 @@ grype <image>:<version> -o <output_format> --scope all-layers --only-fixed
   - table (compact view and less detailed of vulnerabilities)
 
 (Reference: <a href="https://github.com/anchore/grype" class="external-link" data-card-appearance="inline" rel="nofollow">https://github.com/anchore/grype</a> )
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GCP - Connect Database]]
+- [[Recipe Deploy with Terraform]]
+- [[Setup Build Job with Docker in Jenkins]]
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+
+%% ai-graph-end %%

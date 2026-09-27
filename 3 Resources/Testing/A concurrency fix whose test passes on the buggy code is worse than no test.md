@@ -1,10 +1,18 @@
 ---
-title: "A concurrency fix whose test passes on the buggy code is worse than no test"
+ai_hash: 0ead060d512fdb69
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: luz-hooks-plugin simplify-gate PR, 2026-09-27
 status: seedling
-source: "luz-hooks-plugin simplify-gate PR, 2026-09-27"
-tags: [testing, concurrency, mutation-testing, honesty]
+tags:
+- testing
+- concurrency
+- mutation-testing
+- honesty
+title: A concurrency fix whose test passes on the buggy code is worse than no test
+type: lesson
 ---
 
 # A concurrency fix whose test passes on the buggy code is worse than no test
@@ -24,3 +32,14 @@ Related: [[Cooperating Claude Code hooks on one event need a shared claim file]]
 ## Related
 
 - [[Cooperating Claude Code hooks on one event need a shared claim file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cooperating Claude Code hooks on one event need a shared claim file]]
+- [[Prove a new branch is load-bearing by reverting it]]
+- [[When a merge turns CI red decide test-vs-source fix by reading code intent]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
+
+%% ai-graph-end %%

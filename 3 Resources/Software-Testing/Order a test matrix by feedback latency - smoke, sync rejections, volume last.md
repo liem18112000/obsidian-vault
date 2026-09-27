@@ -1,10 +1,20 @@
 ---
-title: "Order a test matrix by feedback latency - smoke, sync rejections, volume last"
+ai_hash: 6254371ede9e5ff9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: ePost ZIP Import Test Fixture Matrix (2026-08-14)'
 status: seedling
-source: "Confluence: ePost ZIP Import Test Fixture Matrix (2026-08-14)"
-tags: [testing, test-design, epost, zip-import, qa, luz-docs-import]
+tags:
+- testing
+- test-design
+- epost
+- zip-import
+- qa
+- luz-docs-import
+title: Order a test matrix by feedback latency - smoke, sync rejections, volume last
+type: lesson
 ---
 
 # Order a test matrix by feedback latency - smoke, sync rejections, volume last
@@ -38,3 +48,14 @@ The matrix also asserts on one stable surface per run — `GET {tenant-id}/impor
 ## Related
 
 - [[Silently-ignored input needs a visible reason field, or it looks like data loss]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Silently-ignored input needs a visible reason field, or it looks like data loss]]
+- [[LUZ-158230 ePost ZIP Import Test Fixture Matrix (Confluence)]]
+- [[ePost Zip-Import - dev test-suite results - 18-08-2026]]
+- [[ePost ZIP Import Test Fixture Matrix]]
+- [[ePost ZIP-import — dev test-suite results - 13-08-2026]]
+
+%% ai-graph-end %%

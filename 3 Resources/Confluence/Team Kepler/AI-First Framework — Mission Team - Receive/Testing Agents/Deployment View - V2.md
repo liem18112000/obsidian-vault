@@ -1,14 +1,21 @@
 ---
-title: "Deployment View - V2"
+ai_hash: 1dfbe1ab6c59b279
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49731239990'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-07
-updated: 2026-09-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Deployment View - V2
+type: source
+updated: 2026-09-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49731239990/Deployment+View+-+V2
-confluence_id: "49731239990"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents]
 ---
 
 # Deployment View - V2
@@ -120,3 +127,14 @@ All robot walk DOWN, share four rock:
 - 🟡 **amber** = secret box
 
 - 🟣 **violet** = Vertex brain-oracle
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Flow View - V2]]
+- [[test-agent-v2 cloud resource and credential map (klara-nonprod)]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[test-agent-v2 hardened deploy.sh flow and the unique image-tag bump that forces a new revision]]
+- [[Test-Plan Definition Agent]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: b7872c3b67798063
+ai_hash: 2948922ac951bb83
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-22
 entities: []
 source: Deep research 2026-07-22 — gorse.io docs vs gorse-io/gorse v0.5.11 code

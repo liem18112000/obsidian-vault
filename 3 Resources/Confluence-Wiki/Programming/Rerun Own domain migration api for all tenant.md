@@ -1,18 +1,22 @@
 ---
-title: "Rerun Own domain migration api for all tenant"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48507093289/Rerun+Own+domain+migration+api+for+all+tenant
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2025-05-21
+ai_hash: 12f08e43dfa32db5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48507093289/Rerun+Own+domain+migration+api+for+all+tenant
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Rerun Own domain migration api for all tenant
+topic: programming
+type: source
+updated: 2025-05-21
 ---
 
 # Rerun Own domain migration api for all tenant
@@ -56,3 +60,14 @@ curl -X PUT -H "Authorization: Bearer eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsI
 ------------------------------------------------------------------------
 
 Source: Copy from [Rerun Own domain migration api for all tenant](https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47484534991/Rerun+Own+domain+migration+api+for+all+tenant)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[How to execute API to create sync event for post from tenant schemas to public table]]
+- [[Empty Trash APIs]]
+- [[15. Update companies by tenant id]]
+- [[Run Script Resync hidden wiget]]
+
+%% ai-graph-end %%

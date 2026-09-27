@@ -1,18 +1,22 @@
 ---
-title: "App Validity"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38174382060/App+Validity
-space: "Helios"
-topic: programming
-relevance: 0.716
-depth: 2.89
-updated: 2018-07-24
+ai_hash: 65a397c3cb90b11b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.89
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38174382060/App+Validity
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: App Validity
+topic: programming
+type: source
+updated: 2018-07-24
 ---
 
 # App Validity
@@ -103,3 +107,14 @@ Example
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Login]]
+- [[Uploading documents]]
+- [[Getting tenant list]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Get tenant token from public api]]
+
+%% ai-graph-end %%

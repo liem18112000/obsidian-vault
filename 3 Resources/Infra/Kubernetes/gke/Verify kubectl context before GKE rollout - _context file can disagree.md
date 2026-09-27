@@ -1,7 +1,7 @@
 ---
-ai_hash: d5d745305087c501
+ai_hash: f50434d9ebcdeafd
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-21
 entities: []
 source: session 2026-07-21 dev ship; session 2026-07-24 port-forward
@@ -41,10 +41,10 @@ Prefer a one-off `--context` flag over `use-context` so you do not clobber the s
 %% ai-graph-start %%
 
 **Related notes:**
+- [[postgres skill dev port-forward needs the klara-nonprod GKE context, not kind-customer360]]
+- [[luz-store on dev is a Deployment, not a StatefulSet — roll out with kubectl set image]]
 - [[klara-prod is a separate GCP project, not a namespace]]
-- [[luz-person is a Deployment not a StatefulSet in klara dev]]
-- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
-- [[Luz performance env cluster topology]]
-- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[A local bring-up script must pin kubectl --context or it deploys to the wrong cluster]]
+- [[Local access to GKE-hosted Luz services port-forward api-forwarder + luz-vault (+ mongo pod)]]
 
 %% ai-graph-end %%

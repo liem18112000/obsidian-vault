@@ -1,18 +1,22 @@
 ---
-title: "Rethink and decide for testing strategy"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38229346753/Rethink+and+decide+for+testing+strategy
-space: "Helios"
-topic: testing
-relevance: 0.721
-depth: 2.38
-updated: 2021-02-02
+ai_hash: fde3f3707774777f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.38
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38229346753/Rethink+and+decide+for+testing+strategy
+space: Helios
+status: reference
 tags:
-  - confluence
-  - testing
-  - space/helios
+- confluence
+- testing
+- space/helios
+title: Rethink and decide for testing strategy
+topic: testing
+type: source
+updated: 2021-02-02
 ---
 
 # Rethink and decide for testing strategy
@@ -77,3 +81,14 @@ NOTE: the setup time will depend greatly on the reusable setup, so as the time 
 - Unit test (<a href="https://www.guru99.com/unit-testing-guide.html" class="external-link" rel="nofollow">https://www.guru99.com/unit-testing-guide.html</a>)
 - Integration-test (<a href="https://www.guru99.com/integration-testing.html" class="external-link" rel="nofollow">https://www.guru99.com/integration-testing.html</a>)
 - End 2 End testing (<a href="https://www.guru99.com/end-to-end-testing.html" class="external-link" rel="nofollow">https://www.guru99.com/end-to-end-testing.html</a>)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ETL testing investigation]]
+- [[Testing]]
+- [[00. Test and code review report template]]
+- [[Intergration test for MicroProfile OpenAPI]]
+- [[Test and code review report template.2.93]]
+
+%% ai-graph-end %%

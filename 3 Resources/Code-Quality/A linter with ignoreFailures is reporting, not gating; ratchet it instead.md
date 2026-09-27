@@ -1,10 +1,20 @@
 ---
-title: "A linter with ignoreFailures is reporting, not gating; ratchet it instead"
+ai_hash: 679827f6e8dfade1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Static analysis tool for Android (Helios)'
 status: seedling
-source: "Confluence: Static analysis tool for Android (Helios)"
-tags: [static-analysis, gradle, checkstyle, ci, technical-debt, confluence-distilled]
+tags:
+- static-analysis
+- gradle
+- checkstyle
+- ci
+- technical-debt
+- confluence-distilled
+title: A linter with ignoreFailures is reporting, not gating; ratchet it instead
+type: lesson
 ---
 
 # A linter with ignoreFailures is reporting, not gating; ratchet it instead
@@ -49,3 +59,12 @@ Source: [[Static analysis tool for Android]] (Helios, Confluence). The ratchet i
 ## Related
 
 - [[Fallow analyses a JS-TS repo as a graph and exposes it to agents over MCP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Static analysis tool for Android]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Baseline-diff gates must compare post-build to post-build when artifacts are committed]]
+
+%% ai-graph-end %%

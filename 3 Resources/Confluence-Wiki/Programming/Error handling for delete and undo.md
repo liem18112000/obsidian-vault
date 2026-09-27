@@ -1,18 +1,22 @@
 ---
-title: "Error handling for delete and undo"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48576168343/Error+handling+for+delete+and+undo
-space: "Helios"
-topic: programming
-relevance: 0.878
-depth: 3
-updated: 2025-07-14
+ai_hash: 56d346581f248bed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.878
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48576168343/Error+handling+for+delete+and+undo
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Error handling for delete and undo
+topic: programming
+type: source
+updated: 2025-07-14
 ---
 
 # Error handling for delete and undo
@@ -370,3 +374,14 @@ tags:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-146746 Use correct API's for delete, restore and their undo]]
+- [[Enhancements for API Delete and Restore]]
+- [[REST API for deleting EXPENSES documents]]
+- [[Public API - letterbox - API get deleted letters from trash]]
+- [[Empty Trash APIs]]
+
+%% ai-graph-end %%

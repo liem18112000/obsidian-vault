@@ -1,5 +1,5 @@
 ---
-ai_hash: cdf4080a61c217cc
+ai_hash: d8590443c1a52fe0
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-18
@@ -31,8 +31,8 @@ On GreenNode/VNG Cloud vServer, the `vngcloud_vserver_server` `user_data` (cloud
 
 **Related notes:**
 - [[VNG Cloud vServer SSH keys must be RSA, not ed25519 (Invalid public key at apply)]]
-- [[GreenNode VNG Ubuntu 24.04 image SSH is broken out-of-the-box; the cloud-init recipe to fix it]]
 - [[VNG vServer apply-time gotchas password policy ( @ !) and AZ-restricted volume types (1C needs NVME)]]
+- [[GreenNode VNG Ubuntu 24.04 image SSH is broken out-of-the-box; the cloud-init recipe to fix it]]
 - [[GreenNode vDB public_access is non-functional here; reach a private DB only via an in-VPC bastion (native login, not user_data)]]
 - [[VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp22 secgrouprule]]
 

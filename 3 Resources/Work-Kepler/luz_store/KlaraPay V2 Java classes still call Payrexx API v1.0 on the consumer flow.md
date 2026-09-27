@@ -1,7 +1,7 @@
 ---
-ai_hash: 4b1aa7c3e01197f5
+ai_hash: 3d01891492cb5b2f
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-24
 entities: []
 source: luz_online_payment re-verification 2026-07-24
@@ -32,8 +32,8 @@ Lesson: never infer API version from class-name suffixes — read the resolved b
 **Related notes:**
 - [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
 - [[KlaraTransactionRequest.message content is Payrexx prose or runtime exception text, never a mapped constant]]
-- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[Enumerate real Payrexx decline codes via chargeTransactionId lookup, not via service responses]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[Payrexx declines travel in-band on HTTP 2xx in the luz charge flow]]
 
 %% ai-graph-end %%

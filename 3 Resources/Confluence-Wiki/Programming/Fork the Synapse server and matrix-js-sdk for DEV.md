@@ -1,18 +1,22 @@
 ---
-title: "Fork the Synapse server and matrix-js-sdk for DEV"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48389456074/Fork+the+Synapse+server+and+matrix-js-sdk+for+DEV
-space: "TS"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2025-03-07
+ai_hash: c4528ce8217eddd3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48389456074/Fork+the+Synapse+server+and+matrix-js-sdk+for+DEV
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Fork the Synapse server and matrix-js-sdk for DEV
+topic: programming
+type: source
+updated: 2025-03-07
 ---
 
 # Fork the Synapse server and matrix-js-sdk for DEV
@@ -36,3 +40,14 @@ tags:
 ### Development process
 
 # Matrix-js-sdk
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fork the synapse server and matrix-js-sdk]]
+- [[Vinnstack Cloud Build trigger lives in klara-infra, not klara-nonprod]]
+- [[Building KlaraLuz Ivy projects off-VPN by routing Maven through Google Artifact Registry]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[Jenkins (How to build & deploy)]]
+
+%% ai-graph-end %%

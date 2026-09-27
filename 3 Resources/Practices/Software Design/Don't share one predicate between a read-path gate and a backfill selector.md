@@ -1,7 +1,7 @@
 ---
-ai_hash: e5e112a0160f670e
+ai_hash: 61fe090955553a91
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-17
 entities: []
 source: luz_docs LUZ-154613 review 2026-06-17
@@ -39,9 +39,9 @@ Related: [[Count fan-out _shard index must put _shard LAST in the compound key (
 
 **Related notes:**
 - [[Fan-out gate and backfill filter must cover the same field set]]
-- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
 - [[luz_docs stamps _shard on create to keep sharding gate stable]]
-- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
 - [[Materialize gate must require _shard or parallelized count undercounts]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 
 %% ai-graph-end %%

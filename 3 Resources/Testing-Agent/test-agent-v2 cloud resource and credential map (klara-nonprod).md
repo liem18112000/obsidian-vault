@@ -1,5 +1,5 @@
 ---
-ai_hash: 890d408f86fc6c91
+ai_hash: 86445739c1becc4b
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-13
@@ -39,8 +39,8 @@ Source of truth for the non-secret config is `deployments/test-agent-v2/terrafor
 **Related notes:**
 - [[Wipe test-agent-v2 memory and taskstore via test-agent-v2tools]]
 - [[Deploying the test-agent-v2 Cloud Run stack (names, tags, plan)]]
-- [[test-agent-v2 Cloud Run services use a -v2 name suffix]]
 - [[Testing-Agent GCS memory bank one bucket, memory root, five subfolders]]
-- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+- [[test-agent-v2 Cloud Run services use a -v2 name suffix]]
+- [[Deployment View - V2]]
 
 %% ai-graph-end %%

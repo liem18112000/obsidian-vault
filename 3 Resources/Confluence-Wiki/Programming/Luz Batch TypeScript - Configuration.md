@@ -1,18 +1,22 @@
 ---
-title: "Luz Batch TypeScript - Configuration"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48743710783/Luz+Batch+TypeScript+-+Configuration
-space: "FUT"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2025-12-01
+ai_hash: e3829cde0d267aa1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48743710783/Luz+Batch+TypeScript+-+Configuration
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Luz Batch TypeScript - Configuration
+topic: programming
+type: source
+updated: 2025-12-01
 ---
 
 # Luz Batch TypeScript - Configuration
@@ -405,3 +409,14 @@ Everything else has sensible defaults and can be omitted:
     **Type:** `number`  
     **Default:** `1000`  
     Number of batch items fetched per database query during pagination.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Luz Batch TypeScript]]
+- [[Recipe Typescript batching]]
+- [[Luz Batch TypeScript - Sequence Diagram]]
+- [[Batch Processor Library - NodeJS]]
+- [[Batching Design]]
+
+%% ai-graph-end %%

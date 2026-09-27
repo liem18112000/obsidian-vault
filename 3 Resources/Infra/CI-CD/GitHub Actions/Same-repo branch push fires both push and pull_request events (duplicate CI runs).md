@@ -1,7 +1,7 @@
 ---
-ai_hash: 98fd30f8b1426751
+ai_hash: 82a242bf52244f05
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: leo-cdp-framework ci-cd.yml 2026-06-06
@@ -44,9 +44,9 @@ When a branch in the SAME repo has an open PR, pushing a commit fires **two** Gi
 
 **Related notes:**
 - [[CI build Docker image on every run, push only on non-PR]]
-- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
-- [[Gate Terraformdeploy CI to push-on-main, not pull_request (secrets fail PRs)]]
-- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
-- [[GitHub Copilot code review is a native PR reviewer, not a workflow job]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
+- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[CD didn't fire on an infra-only merge (CI paths-ignore); re-run a workflow_run deploy via workflow_dispatch, not run rerun]]
+- [[CodeQL PR alert won't clear if the PR base isn't in pull_request.branches]]
 
 %% ai-graph-end %%

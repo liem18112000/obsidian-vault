@@ -1,10 +1,52 @@
 ---
-title: "A complete skill has five layers - intent, knowledge, execution, verification, evolution"
+ai_hash: 6060ccc031a27b27
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: model
+entities:
+- Skill
+- Intent
+- Knowledge
+- Execution
+- Verification
+- Evolution
+- Prompt
+- Instructions
+- Problem
+- Correctness criteria
+- Permitted scope
+- Domain rules
+- API references
+- Style guides
+- Templates
+- Internal conventions
+- Scripts
+- Commands
+- Workflows
+- Sample queries
+- Scaffolds
+- Checklists
+- Output
+- Failures
+- System
+- Documentation
+- Harness engineering
+- Agent
+- Model
+- Harness
+- Engineering discipline
+- Capability
+source: 'Confluence: From Prompt-Based Usage to Skill-Based Execution (2026-03-19)'
 status: seedling
-source: "Confluence: From Prompt-Based Usage to Skill-Based Execution (2026-03-19)"
-tags: [ai-agents, skills, claude-skills, knowledge-management, llm]
+tags:
+- ai-agents
+- skills
+- claude-skills
+- knowledge-management
+- llm
+title: A complete skill has five layers - intent, knowledge, execution, verification,
+  evolution
+type: model
 ---
 
 # A complete skill has five layers - intent, knowledge, execution, verification, evolution
@@ -29,3 +71,47 @@ Reading the layers as a diagnostic is the useful move — when a skill underperf
 ## Related
 
 - [[A prompt is a temporary instruction, a skill is an encapsulated capability]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A prompt is a temporary instruction, a skill is an encapsulated capability]]
+- [[From Prompt-Based Usage to Skill-Based Execution]]
+- [[Prompt, context, and harness engineering nest rather than replace each other]]
+- [[Agent skeleton = Instruction + Skills-Resources + Tools + Context]]
+- [[Extract reusable skills automatically from settled agent exchanges]]
+
+**Relations:**
+- Skill — *HAS_LAYER* — Intent
+- Skill — *HAS_LAYER* — Knowledge
+- Skill — *HAS_LAYER* — Execution
+- Skill — *HAS_LAYER* — Verification
+- Skill — *HAS_LAYER* — Evolution
+- Skill — *IS_A* — Prompt
+- Intent — *DEFINES* — Problem
+- Intent — *DEFINES* — Correctness criteria
+- Intent — *DEFINES* — Permitted scope
+- Knowledge — *INCLUDES* — Domain rules
+- Knowledge — *INCLUDES* — API references
+- Knowledge — *INCLUDES* — Style guides
+- Knowledge — *INCLUDES* — Templates
+- Knowledge — *INCLUDES* — Internal conventions
+- Execution — *INCLUDES* — Scripts
+- Execution — *INCLUDES* — Commands
+- Execution — *INCLUDES* — Workflows
+- Execution — *INCLUDES* — Sample queries
+- Execution — *INCLUDES* — Scaffolds
+- Execution — *INCLUDES* — Checklists
+- Verification — *CHECKS* — Output
+- Evolution — *PROCESSES* — Failures
+- Failures — *FEED_BACK_INTO* — Skill
+- Evolution — *MAKES_SKILL_A* — System
+- Evolution — *DISTINGUISHES_FROM* — Documentation
+- Evolution — *IS_ANALOGOUS_TO* — Harness engineering
+- Agent — *EQUALS* — Model
+- Agent — *EQUALS* — Harness
+- Harness — *IS_A* — Engineering discipline
+- Prompt — *IS_A* — Instruction
+- Skill — *IS_A* — Capability
+
+%% ai-graph-end %%

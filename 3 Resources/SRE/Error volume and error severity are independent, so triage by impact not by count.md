@@ -1,10 +1,21 @@
 ---
-title: "Error volume and error severity are independent, so triage by impact not by count"
+ai_hash: e20cfd6dd91dffa7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Service Error Analysis Report - FAILED_TO_STORE on Production
+  (2025-12-18)'
 status: seedling
-source: "Confluence: Service Error Analysis Report - FAILED_TO_STORE on Production (2025-12-18)"
-tags: [sre, observability, triage, monitoring, reliability]
+tags:
+- sre
+- observability
+- triage
+- monitoring
+- reliability
+title: Error volume and error severity are independent, so triage by impact not by
+  count
+type: lesson
 ---
 
 # Error volume and error severity are independent, so triage by impact not by count
@@ -28,3 +39,14 @@ The trap this guards against: after weeks of ignoring a 1,000-strong error class
 ## Related
 
 - [[ClamAV definition updates restart clamd, so scheduled 503s are expected not broken]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ClamAV definition updates restart clamd, so scheduled 503s are expected not broken]]
+- [[Service Error Analysis Report - FAILED_TO_STORE on Production]]
+- [[Every production FAILED_TO_STORE traced back to a rolling deploy, not to load]]
+- [[Part B - luz-antivirus Analysis]]
+- [[Service Reliability Solution]]
+
+%% ai-graph-end %%

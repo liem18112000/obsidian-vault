@@ -1,18 +1,22 @@
 ---
-title: "How to implement an audit log using Hibernate Envers"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZFIN/pages/20964547120/How+to+implement+an+audit+log+using+Hibernate+Envers
-space: "LUZFIN"
-topic: programming
-relevance: 0.886
-depth: 3
-updated: 2018-09-17
+ai_hash: edfb716f66b36a7f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 3
+entities: []
+relevance: 0.886
+source: https://axonivy.atlassian.net/wiki/spaces/LUZFIN/pages/20964547120/How+to+implement+an+audit+log+using+Hibernate+Envers
+space: LUZFIN
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luzfin
+- confluence
+- programming
+- space/luzfin
+title: How to implement an audit log using Hibernate Envers
+topic: programming
+type: source
+updated: 2018-09-17
 ---
 
 # How to implement an audit log using Hibernate Envers
@@ -193,3 +197,14 @@ tags:
     </div>
 
     **Note**: You can reference the list of configurations in here: **<a href="https://docs.jboss.org/envers/docs/" class="external-link" rel="nofollow">https://docs.jboss.org/envers/docs/</a>**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hibernate Envers generates audit tables from an annotation]]
+- [[Persistence layer implementation]]
+- [[ORM - DBFlow guidelines]]
+- [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+- [[How to resolve hibernate N+1 select's problem]]
+
+%% ai-graph-end %%

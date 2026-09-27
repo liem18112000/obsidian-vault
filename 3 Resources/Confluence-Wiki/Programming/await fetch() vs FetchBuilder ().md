@@ -1,18 +1,22 @@
 ---
-title: "await fetch() vs FetchBuilder<>()"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49393959036/await+fetch+vs+FetchBuilder
-space: "TS"
-topic: programming
-relevance: 0.877
-depth: 3
-updated: 2026-05-11
+ai_hash: 71090908e51dca01
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.877
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49393959036/await+fetch+vs+FetchBuilder
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: await fetch() vs FetchBuilder<>()
+topic: programming
+type: source
+updated: 2026-05-11
 ---
 
 # await fetch() vs FetchBuilder<>()
@@ -345,3 +349,14 @@ These are `'use server'` files exhibiting the **same pattern** as the leaking te
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Next.js monkey-patches global fetch, and its response clone races your body read]]
+- [[Undrained fetch response bodies leak sockets in Node undici]]
+- [[Code review v2.0]]
+- [[Concurrency Design Patterns]]
+- [[Classify stream failures on the server, not the client]]
+
+%% ai-graph-end %%

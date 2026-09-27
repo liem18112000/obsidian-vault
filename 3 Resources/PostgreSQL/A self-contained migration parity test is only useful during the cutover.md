@@ -1,5 +1,5 @@
 ---
-ai_hash: 23461ed6b559253a
+ai_hash: d5c962bed4dfbe30
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-25
@@ -34,6 +34,6 @@ A self-contained migration **parity test** (build the schema the old way + build
 - [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
 - [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
 - [[dbmate treats any line starting with -- migrateupdown as a directive]]
-- [[Postgres docker-entrypoint-initdb.d runs only once on an empty volume]]
+- [[LEO CDP schema changes must go in both database-schema.sql and a migrations file]]
 
 %% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 1d6a669899e8ebb4
+ai_hash: bf1a4afe7ceadc35
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-09
 entities: []
 source: luz_docs docs/count-estimate research, 2026-07-09 — caught a wrong AND example
@@ -34,10 +34,10 @@ Two HLL (or similar cardinality) sketches combine by element-wise `max()` over t
 %% ai-graph-start %%
 
 **Related notes:**
-- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
 - [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
-- [[HyperLogLog error in the small-range (linear-counting) regime]]
 - [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
+- [[HyperLogLog error in the small-range (linear-counting) regime]]
+- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
 - [[Visible-document count as cardinality of a bitmap union]]
 
 %% ai-graph-end %%

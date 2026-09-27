@@ -1,14 +1,21 @@
 ---
-title: "Problem Investigation: [Invoice Run V2] - Customer in AG company has address missing information affected to Invoice Run, generate PDF missing address information"
+ai_hash: 26a7469fc243d569
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48934879242'
+confluence_path: 'Team Kepler > Risk & Issues > Issues > Issues: Invoice Run'
 created: 2025-12-04
-updated: 2025-12-04
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+title: 'Problem Investigation: [Invoice Run V2] - Customer in AG company has address
+  missing information affected to Invoice Run, generate PDF missing address information'
+type: source
+updated: 2025-12-04
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48934879242/Problem+Investigation+Invoice+Run+V2+-+Customer+in+AG+company+has+address+missing+information+affected+to+Invoice+Run+generate+PDF+missing+address+information
-confluence_id: "48934879242"
-confluence_path: "Team Kepler > Risk & Issues > Issues > Issues: Invoice Run"
-tags: [confluence, invoice-run]
 ---
 
 # Problem Investigation: [Invoice Run V2] - Customer in AG company has address missing information affected to Invoice Run, generate PDF missing address information
@@ -425,3 +432,14 @@ See `CustomerBuilderTest.java` for expected address formatting:
 ### Extract info from ticket LUZ-144345
 
 ![[image-20251204-021410.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Troubleshooting articles]]
+- [[Invoice Run v2 silently skips an individual whose store customer has a blank partner_uri]]
+- [[Invoice Run V2UAT - Execute - Apply Distributed Cache for customer information during the process of Invoice Run V2ecute]]
+- [[Sprint 158 - Invoice Run V2 Executive Overview]]
+- [[Invoice Run V2UAT - Apply Distributed Cache for customer information during the process of Invoice Run V2]]
+
+%% ai-graph-end %%

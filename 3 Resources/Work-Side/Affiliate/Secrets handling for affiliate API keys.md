@@ -1,7 +1,7 @@
 ---
-ai_hash: 355d7e448ad9264e
+ai_hash: 5002f27ef45bffb1
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Affiliate API key security
 - Storing Accesstrade token
@@ -55,8 +55,8 @@ This vault runs an **aggressive knowledge-capture directive** and several messag
 **Related notes:**
 - [[Designing an Accesstrade skill for Claude Code]]
 - [[Accesstrade Publisher API authentication]]
-- [[Accesstrade API Integration - MOC]]
 - [[Affiliate API engineering best practices]]
+- [[Accesstrade API Integration - MOC]]
 - [[Claude Code Skill anatomy]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Public API Print Partner"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/KS/pages/47400779777/Public+API+Print+Partner
-space: "KS"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2023-06-16
+ai_hash: 0c2cbb356c5885b8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/KS/pages/47400779777/Public+API+Print+Partner
+space: KS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ks
+- confluence
+- programming
+- space/ks
+title: Public API Print Partner
+topic: programming
+type: source
+updated: 2023-06-16
 ---
 
 # Public API Print Partner
@@ -293,3 +297,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[Test Keycloak - Public API]]
+- [[Invoice API]]
+- [[BlueZone, Public API, AI Data Feeds (07.11.2023 - 20.11.2023)]]
+
+%% ai-graph-end %%

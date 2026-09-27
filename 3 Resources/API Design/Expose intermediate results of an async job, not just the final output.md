@@ -1,10 +1,20 @@
 ---
-title: "Expose intermediate results of an async job, not just the final output"
+ai_hash: ea07d42cfbae4b95
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Analyze API Explained (AI)'
 status: seedling
-source: "Confluence: Analyze API Explained (AI)"
-tags: [async, jobs, api-design, partial-results, document-processing, confluence-distilled]
+tags:
+- async
+- jobs
+- api-design
+- partial-results
+- document-processing
+- confluence-distilled
+title: Expose intermediate results of an async job, not just the final output
+type: lesson
 ---
 
 # Expose intermediate results of an async job, not just the final output
@@ -36,3 +46,14 @@ Source: [[Analyze API Explained]] (AI, Confluence).
 ## Related
 
 - [[Score async API designs on crash recovery and multi-instance, not latency]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Score async API designs on crash recovery and multi-instance, not latency]]
+- [[Persist raw third-party results before mapping them to your domain shape]]
+- [[Analyze API Explained]]
+- [[Read-side fire-and-forget mutation pass the id and re-read in the async, don't mutate the object being serialized]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+
+%% ai-graph-end %%

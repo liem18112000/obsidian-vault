@@ -1,18 +1,22 @@
 ---
-title: "Architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2457108704/Architecture
-space: "AI"
-topic: architecture
-relevance: 0.746
-depth: 2.44
-updated: 2017-07-21
+ai_hash: 471c5c9cd8d9391e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.44
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2457108704/Architecture
+space: AI
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ai
+- confluence
+- architecture
+- space/ai
+title: Architecture
+topic: architecture
+type: source
+updated: 2017-07-21
 ---
 
 # Architecture
@@ -48,3 +52,13 @@ Technologies in these area grow and die fast these days. The second slide exemp
 ![[2457108704-2017-07-05_TeamAI-Roadmap_stream-a.png]]
 
 ![[2457108704-2017-07-05_TeamAI-Roadmap_stream-b.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AI-Powered Development Environment Architecture]]
+- [[Lamda Architecture]]
+- [[Kappa Architecture]]
+- [[IR - System Design]]
+
+%% ai-graph-end %%

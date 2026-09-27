@@ -1,18 +1,22 @@
 ---
-title: "How to debug java code in Ivy Designer"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25287337918/How+to+debug+java+code+in+Ivy+Designer
-space: "PT"
-topic: programming
-relevance: 0.89
-depth: 3
-updated: 2017-04-24
+ai_hash: ea48dd448bc4ce59
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.89
+source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25287337918/How+to+debug+java+code+in+Ivy+Designer
+space: PT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/pt
+- confluence
+- programming
+- space/pt
+title: How to debug java code in Ivy Designer
+topic: programming
+type: source
+updated: 2017-04-24
 ---
 
 # How to debug java code in Ivy Designer
@@ -77,3 +81,12 @@ tags:
         
 
 Enjoy coding <img src="https://jira.axonivy.com/confluence/s/en_GB/7103/9740d52e06037c926d0bef8c46735f0805791491/_/images/icons/emoticons/smile.png" title="(smile)" class="emoticon emoticon-smile" data-border="0" alt="(smile)" />
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Avoid warning logs related to Java Problem on Ivy Designer]]
+- [[Call Ivy API at local]]
+- [[Analyse your source code (Copy)]]
+
+%% ai-graph-end %%

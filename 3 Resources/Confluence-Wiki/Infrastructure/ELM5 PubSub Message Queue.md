@@ -1,18 +1,22 @@
 ---
-title: "ELM5 PubSub Message Queue"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47577465300/ELM5+PubSub+Message+Queue
-space: "LUZ"
-topic: infra
-relevance: 0.716
-depth: 2.67
-updated: 2023-12-04
+ai_hash: 310279daae8397af
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.67
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47577465300/ELM5+PubSub+Message+Queue
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: ELM5 PubSub Message Queue
+topic: infra
+type: source
+updated: 2023-12-04
 ---
 
 # ELM5 PubSub Message Queue
@@ -161,3 +165,14 @@ fi
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[EPC Notification]]
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Luz Kubernetes Terraform]]
+- [[Setup Redis and DNS on TEST and PROD]]
+- [[Post-deployment Batch messageCount backfill (Test & Prod) — LUZ-155431 LUZ-155435]]
+
+%% ai-graph-end %%

@@ -1,14 +1,21 @@
 ---
-title: "LUZ Audit - Basic Understanding Guide"
+ai_hash: a69929ef4cc4c432
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48867967003'
+confluence_path: 'Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026 > LUZ
+  Critical Concerns: Brief Summary'
 created: 2025-11-12
-updated: 2025-11-12
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-audit
+title: LUZ Audit - Basic Understanding Guide
+type: source
+updated: 2025-11-12
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48867967003/LUZ+Audit+-+Basic+Understanding+Guide
-confluence_id: "48867967003"
-confluence_path: "Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026 > LUZ Critical Concerns: Brief Summary"
-tags: [confluence, luz-audit]
 ---
 
 # LUZ Audit - Basic Understanding Guide
@@ -616,3 +623,14 @@ Authorization: Bearer <jwt-token>
 For detailed technical analysis, see the full document: `analysis.md`
 
 For performance concerns and recommendations, see: `luz-audit-concerns.md`
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz-audit]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+- [[Investigation Stories - Audit Logs Current Implementation]]
+- [[Luz Audit System - Performance Optimization Proposal]]
+
+%% ai-graph-end %%

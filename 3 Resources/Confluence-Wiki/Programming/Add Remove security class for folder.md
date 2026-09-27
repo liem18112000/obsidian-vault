@@ -1,18 +1,22 @@
 ---
-title: "Add/Remove security class for folder"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47216854272/Add+Remove+security+class+for+folder
-space: "LUZ"
-topic: programming
-relevance: 0.837
-depth: 3
-updated: 2023-03-22
+ai_hash: 944ddd79402a15dc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 3
+entities: []
+relevance: 0.837
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47216854272/Add+Remove+security+class+for+folder
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Add/Remove security class for folder
+topic: programming
+type: source
+updated: 2023-03-22
 ---
 
 # Add/Remove security class for folder
@@ -100,3 +104,14 @@ tags:
 ![[47216854272-add_request_single.PNG]]
 
 ![[47216854272-remove_request_multi.PNG]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Security Classes updating measurement]]
+- [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
+- [[Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic]]
+- [[Enhancements for API Delete and Restore]]
+- [[WIP Analyze subfolder search API (542ms)]]
+
+%% ai-graph-end %%

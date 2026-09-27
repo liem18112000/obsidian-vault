@@ -1,18 +1,22 @@
 ---
-title: "Collect all calls FileManager APIs by Klara Modules"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47124251845/Collect+all+calls+FileManager+APIs+by+Klara+Modules
-space: "LUZ"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2023-11-15
+ai_hash: 0d5b17141552d576
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47124251845/Collect+all+calls+FileManager+APIs+by+Klara+Modules
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Collect all calls FileManager APIs by Klara Modules
+topic: programming
+type: source
+updated: 2023-11-15
 ---
 
 # Collect all calls FileManager APIs by Klara Modules
@@ -409,3 +413,14 @@ getReferenceNumberByInvoiceDocumentId API</p></td>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Investigate Analyze the API's which call to FileManager]]
+- [[Impact of code changes on common components]]
+- [[Merging process]]
+- [[One API Module Responsibilities]]
+- [[Uploading documents]]
+
+%% ai-graph-end %%

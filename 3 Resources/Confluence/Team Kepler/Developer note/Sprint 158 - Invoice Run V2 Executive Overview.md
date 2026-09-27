@@ -1,14 +1,21 @@
 ---
-title: "Sprint 158 - Invoice Run V2 Executive Overview"
+ai_hash: 8ca66714445b90be
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49504649471'
+confluence_path: Team Kepler > Developer note
 created: 2026-06-15
-updated: 2026-06-15
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+- sprint
+title: Sprint 158 - Invoice Run V2 Executive Overview
+type: source
+updated: 2026-06-15
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49504649471/Sprint+158+-+Invoice+Run+V2+Executive+Overview
-confluence_id: "49504649471"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, invoice-run, sprint]
 ---
 
 # Sprint 158 - Invoice Run V2 Executive Overview
@@ -56,3 +63,14 @@ When a separate billing address is used, the invoice PDF can omit the street lin
 - **Letterbox provisioning fallback** — improve handling for clients who do not yet have a Letterbox.
 
 - **PDF product aggregation** — combine identical product lines into a single summarized line with consumption count.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice Run & luz-docs Archive Improvements]]
+- [[Troubleshooting articles]]
+- [[HealthCare And Invoice Run (11.08.2026 - 24.08.2026)]]
+- [[Invoice Run V2UAT - Execute - Apply Distributed Cache for customer information during the process of Invoice Run V2ecute]]
+- [[Invoice Run V2UAT - Update latest Stimulsoft template - Execution]]
+
+%% ai-graph-end %%

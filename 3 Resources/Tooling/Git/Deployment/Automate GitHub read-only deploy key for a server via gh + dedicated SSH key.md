@@ -1,7 +1,7 @@
 ---
-ai_hash: b55f9b82a54eaec6
+ai_hash: 55d0fc2e63b381db
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-05
 entities: []
 source: session 2026-07-05
@@ -52,10 +52,10 @@ Surfaced deploying the AppsFlyer puller to `leocdp-obs1`: HTTPS clone failed wit
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Local deploy pull from GHCR needs a token with readpackages — gh default token lacks it (403)]]
 - [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
 - [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[GitHub secrets are write-only; run in Actions to use a CD key, push-trigger a feature branch to avoid main]]
 - [[Git Bash etchosts is not the Windows hosts file ssh reads]]
-- [[Clone a Bitbucket repo with an app password without leaking it (inline credential helper)]]
-- [[GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]]
 
 %% ai-graph-end %%

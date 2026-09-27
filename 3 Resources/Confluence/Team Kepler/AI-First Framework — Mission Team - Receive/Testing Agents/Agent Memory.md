@@ -1,14 +1,21 @@
 ---
-title: "Agent Memory"
+ai_hash: 2fc648a62dac1097
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49731338323'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-07
-updated: 2026-09-07
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Agent Memory
+type: source
+updated: 2026-09-07
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49731338323/Agent+Memory
-confluence_id: "49731338323"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents]
 ---
 
 # Agent Memory
@@ -207,3 +214,14 @@ ORDER BY /* RRF or weighted vscore+lscore */ ... LIMIT 10;
 ```
 
 Then apply, in app or SQL, the **B4 hub-penalty** (suppress tokens with `df/N > hub_ratio` once the corpus is saturated) and the **B5 grounding gate** (`memory_edge` join to seed anchors). **The de-bias is not dropped — it is ported.** This is the crux: semantic recall *widens* what can surface, and B4/B5 are exactly what stop that widening from re-poisoning unrelated runs.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[test-agent-v2 Cloud SQL Postgres holds app + ADK-session + A2A-task tables on one engine]]
+- [[Agent Loop 2 - Self-learning]]
+- [[IR - System Design]]
+- [[One Postgres backs tasks, sessions, prompts AND pgvector in test-agent-v2]]
+- [[Cloud SQL plus pgvector beats Vertex AI Vector Search at small RAG scale]]
+
+%% ai-graph-end %%

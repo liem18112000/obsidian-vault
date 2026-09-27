@@ -1,18 +1,22 @@
 ---
-title: "Script to create task again for banks using b.Link"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/23200718451/Script+to+create+task+again+for+banks+using+b.Link
-space: "NEXT"
-topic: programming
-relevance: 0.837
-depth: 3
-updated: 2020-10-29
+ai_hash: de20dbda6c03b277
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 3
+entities: []
+relevance: 0.837
+source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/23200718451/Script+to+create+task+again+for+banks+using+b.Link
+space: NEXT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/next
+- confluence
+- programming
+- space/next
+title: Script to create task again for banks using b.Link
+topic: programming
+type: source
+updated: 2020-10-29
 ---
 
 # Script to create task again for banks using b.Link
@@ -333,3 +337,14 @@ tags:
     
 
 ![[23200718451-image2020-10-21_13-25-49.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bank connection - Script to store all old connected ibans for each tenant]]
+- [[Deactivate the Valiant Finnova interface]]
+- [[Script to list all the information of the tenants]]
+- [[SQL Script execution]]
+- [[14. Create companies by tenant id]]
+
+%% ai-graph-end %%

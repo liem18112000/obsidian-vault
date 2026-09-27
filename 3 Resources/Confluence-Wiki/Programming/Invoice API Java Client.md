@@ -1,18 +1,22 @@
 ---
-title: "Invoice API Java Client"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488076239/Invoice+API+Java+Client
-space: "AI"
-topic: programming
-relevance: 0.871
-depth: 3
-updated: 2020-11-30
+ai_hash: 5b84c11883a91954
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.871
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488076239/Invoice+API+Java+Client
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Invoice API Java Client
+topic: programming
+type: source
+updated: 2020-11-30
 ---
 
 # Invoice API Java Client
@@ -274,3 +278,14 @@ for (Prediction prediction : predictions) {
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OCR API Java Client]]
+- [[Invoice API]]
+- [[Invoice API Reference]]
+- [[OCR Command Line Interface]]
+- [[Document Creator API]]
+
+%% ai-graph-end %%

@@ -1,9 +1,21 @@
 ---
-ai_hash: 73f505d636ed71ca
+ai_hash: 040b987d9b936745
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
-entities: []
+entities:
+- MCP servers
+- Claude Code
+- skills
+- skills folders
+- SKILL.md
+- MCP tools
+- claude mcp add
+- hot-reload
+- startup
+- claude mcp list
+- claude mcp get <name>
+- ~.claude
 source: session 2026-06-16
 status: seedling
 tags:
@@ -30,10 +42,25 @@ Related: [[Claude Code holds an open handle on every skills folder under ~.claud
 %% ai-graph-start %%
 
 **Related notes:**
+- [[MCP tools load at client startup registering mid-session doesn't expose them until restart]]
 - [[Claude Code holds an open handle on every skills folder under ~.claude]]
-- [[Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]
-- [[A globally-bootstrapped MCP server loads into every headless claude spawn]]
-- [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
-- [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+- [[Client-side Claude config doesn't travel over MCP — bake cross-client behavior into the server]]
+- [[A 406 from curl on an MCP mcp endpoint is normal]]
+- [[Claude Code speaks MCP, not A2A — an A2A agent must be bridged to be used]]
+
+**Relations:**
+- MCP servers — *load during* — startup
+- skills — *support* — hot-reload
+- Claude Code — *discovers* — skills
+- Claude Code — *scans* — skills folders
+- SKILL.md — *defines* — skills
+- claude mcp add — *adds* — MCP servers
+- MCP servers — *provide* — MCP tools
+- MCP tools — *require restart of* — Claude Code
+- skills — *become available* — immediately
+- claude mcp list — *reports status of* — MCP servers
+- claude mcp get <name> — *reports status of* — MCP servers
+- Claude Code — *holds open handle on* — skills folders
+- skills folders — *are located under* — ~.claude
 
 %% ai-graph-end %%

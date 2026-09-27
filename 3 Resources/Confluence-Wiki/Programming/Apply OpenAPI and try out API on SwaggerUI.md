@@ -1,18 +1,22 @@
 ---
-title: "Apply OpenAPI and try out API on SwaggerUI"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47057600521/Apply+OpenAPI+and+try+out+API+on+SwaggerUI
-space: "Helios"
-topic: programming
-relevance: 0.804
-depth: 2.84
-updated: 2022-02-15
+ai_hash: b5ffa3ffd1256f1b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.84
+entities: []
+relevance: 0.804
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47057600521/Apply+OpenAPI+and+try+out+API+on+SwaggerUI
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Apply OpenAPI and try out API on SwaggerUI
+topic: programming
+type: source
+updated: 2022-02-15
 ---
 
 # Apply OpenAPI and try out API on SwaggerUI
@@ -73,3 +77,14 @@ Note: if the response throw exception with CORS issue please do the step below
 
 
 3\. Open the browser again and try again.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OpenAPI UI (API on SwaggerUI)]]
+- [[Swagger UI]]
+- [[Microprofile OpenAPI config]]
+- [[Port Forward to call GCP API in localhost]]
+- [[Swagger with api explorer]]
+
+%% ai-graph-end %%

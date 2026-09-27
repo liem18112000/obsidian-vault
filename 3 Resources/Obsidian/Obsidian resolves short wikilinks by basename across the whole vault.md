@@ -1,10 +1,20 @@
 ---
-title: "Obsidian resolves short wikilinks by basename across the whole vault"
+ai_hash: 0f2cdec6a9ff5a0b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: session 2026-09-27 (Confluence -> Obsidian import)
 status: seedling
-source: "session 2026-09-27 (Confluence -> Obsidian import)"
-tags: [obsidian, wikilinks, embeds, migration, gotcha, naming]
+tags:
+- obsidian
+- wikilinks
+- embeds
+- migration
+- gotcha
+- naming
+title: Obsidian resolves short wikilinks by basename across the whole vault
+type: lesson
 ---
 
 # Obsidian resolves short wikilinks by basename across the whole vault
@@ -34,3 +44,14 @@ Timestamped Confluence exports (`image-YYYYMMDD-HHMMSS.png`) happen to be collis
 ## Related
 
 - [[Verify a migration by reference parity with the source, not internal consistency]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify a migration by reference parity with the source, not internal consistency]]
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+- [[A note title containing a colon or slash breaks links that use the raw title]]
+- [[Repair broken links only when exactly one candidate matches, and iterate to a fixed point]]
+- [[Measure a broken-link baseline before a mass vault refactor]]
+
+%% ai-graph-end %%

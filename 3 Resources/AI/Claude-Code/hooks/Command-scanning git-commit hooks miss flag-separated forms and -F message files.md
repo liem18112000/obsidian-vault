@@ -1,9 +1,25 @@
 ---
-ai_hash: 1401442884d4d709
+ai_hash: 303979624cc3932e
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-05
-entities: []
+entities:
+- Command-scanning git-commit hooks
+- flag-separated forms
+- -F message files
+- git commit
+- PreToolUse hook
+- git commit command string
+- git -C <path> commit
+- git -c key=val commit
+- git commit -F file
+- commit-msg hook
+- final message
+- disk
+- ~/.claude/hooks/git/block-coauthor.ps1
+- 7-case harness
+- JSON payloads
+- Block AI commit attribution by anchoring on the email, not the trailer label
 source: session 2026-06-05
 status: seedling
 tags:
@@ -39,7 +55,26 @@ Verified 2026-06-05 against `~/.claude/hooks/git/block-coauthor.ps1` with a 7-ca
 - [[Block AI commit attribution by anchoring on the email, not the trailer label]]
 - [[Regex allowlists of model names go stale when vendors ship new names]]
 - [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
-- [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
 - [[Pre-staged files silently merge selective commit batches - check the index first]]
+- [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
+
+**Relations:**
+- Command-scanning git-commit hooks — *miss* — flag-separated forms
+- Command-scanning git-commit hooks — *miss* — -F message files
+- PreToolUse hook — *is a type of* — Command-scanning git-commit hooks
+- PreToolUse hook — *scans* — git commit command string
+- git commit command string — *includes* — flag-separated forms
+- git commit -F file — *does not put message in* — git commit command string
+- git -C <path> commit — *is an example of* — flag-separated forms
+- git -c key=val commit — *is an example of* — flag-separated forms
+- git commit -F file — *is an example of* — -F message files
+- git commit -F file — *puts message on* — disk
+- commit-msg hook — *inspects* — final message
+- commit-msg hook — *can see messages from* — -F message files
+- ~/.claude/hooks/git/block-coauthor.ps1 — *is a* — git-commit hook
+- ~/.claude/hooks/git/block-coauthor.ps1 — *verified against* — 7-case harness
+- 7-case harness — *pipes* — JSON payloads
+- JSON payloads — *into* — ~/.claude/hooks/git/block-coauthor.ps1
+- Block AI commit attribution by anchoring on the email, not the trailer label — *is related to* — Command-scanning git-commit hooks
 
 %% ai-graph-end %%

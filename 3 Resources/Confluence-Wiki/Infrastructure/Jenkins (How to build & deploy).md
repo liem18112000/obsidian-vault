@@ -1,18 +1,22 @@
 ---
-title: "Jenkins (How to build & deploy)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/46935703602/Jenkins+How+to+build+deploy
-space: "TS"
-topic: infra
-relevance: 0.734
-depth: 2.53
-updated: 2022-04-15
+ai_hash: 287f3e8a3cb4245f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 2.53
+entities: []
+relevance: 0.734
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/46935703602/Jenkins+How+to+build+deploy
+space: TS
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/ts
+- confluence
+- infra
+- space/ts
+title: Jenkins (How to build & deploy)
+topic: infra
+type: source
+updated: 2022-04-15
 ---
 
 # Jenkins (How to build & deploy)
@@ -313,3 +317,14 @@ Location folder: **\ct-fsr\Teams\Miracle\Videos\Jenkins**
 ------------------------------------------------------------------------
 
 # **Definitions:**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deployment Process]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[Kubernetes knowledge]]
+- [[One API end to end testing]]
+- [[Luz Kubernetes Terraform]]
+
+%% ai-graph-end %%

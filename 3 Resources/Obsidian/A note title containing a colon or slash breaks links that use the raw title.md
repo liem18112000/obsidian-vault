@@ -1,10 +1,20 @@
 ---
-title: "A note title containing a colon or slash breaks links that use the raw title"
+ai_hash: bd993dca30c39e26
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: session 2026-09-27 (Confluence-Wiki link repair)
 status: seedling
-source: "session 2026-09-27 (Confluence-Wiki link repair)"
-tags: [obsidian, wikilinks, filenames, sanitization, gotcha, automation]
+tags:
+- obsidian
+- wikilinks
+- filenames
+- sanitization
+- gotcha
+- automation
+title: A note title containing a colon or slash breaks links that use the raw title
+type: lesson
 ---
 
 # A note title containing a colon or slash breaks links that use the raw title
@@ -33,3 +43,14 @@ Detection is cheap and worth automating: normalise both sides aggressively (lowe
 ## Related
 
 - [[Obsidian resolves short wikilinks by basename across the whole vault]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+- [[Comma-split wikilinks leave dead fragment links in Related blocks]]
+- [[Repair broken links only when exactly one candidate matches, and iterate to a fixed point]]
+- [[create_note.py --link comma-splits titles and silently breaks wikilinks]]
+- [[Obsidian resolves short wikilinks by basename across the whole vault]]
+
+%% ai-graph-end %%

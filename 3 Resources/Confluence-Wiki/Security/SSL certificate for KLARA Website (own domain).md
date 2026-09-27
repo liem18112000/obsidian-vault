@@ -1,18 +1,22 @@
 ---
-title: "SSL certificate for KLARA Website (own domain)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48352821258/SSL+certificate+for+KLARA+Website+own+domain
-space: "IO"
-topic: security
-relevance: 0.706
-depth: 2.27
-updated: 2025-02-20
+ai_hash: 18e6593741c7b1a3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.27
+entities: []
+relevance: 0.706
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48352821258/SSL+certificate+for+KLARA+Website+own+domain
+space: IO
+status: reference
 tags:
-  - confluence
-  - security
-  - space/io
+- confluence
+- security
+- space/io
+title: SSL certificate for KLARA Website (own domain)
+topic: security
+type: source
+updated: 2025-02-20
 ---
 
 # SSL certificate for KLARA Website (own domain)
@@ -38,3 +42,12 @@ Sebastian Metzger and his team Hacka is responsible for the technical implementa
 ## Links
 
 - Technical documentations: [Own Domain](https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20490598904/Own+Domain)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSL certificate overview]]
+- [[SSL renewal issue]]
+- [[mcp.klara.ch current evaluation]]
+
+%% ai-graph-end %%

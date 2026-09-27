@@ -1,10 +1,18 @@
 ---
-title: "Confluence Export — What I Learned"
+ai_hash: 6218ac5a655ea8c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: moc
+entities: []
+source: Distilled from the Confluence export, 2026-09-27
 status: evergreen
-source: "Distilled from the Confluence export, 2026-09-27"
-tags: [confluence, moc, distilled, kepler]
+tags:
+- confluence
+- moc
+- distilled
+- kepler
+title: Confluence Export — What I Learned
+type: moc
 ---
 
 # Confluence Export — What I Learned
@@ -137,3 +145,14 @@ Some source pages are records rather than knowledge, and are kept in the mirror 
 - **Sprint retrospectives and joint reviews** — point-in-time team records.
 - **Test-execution evidence pages** — UAT run screenshots tied to specific sprints.
 - **Xray / test-case library templates** — procedural forms, not findings.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Confluence-Distillation]]
+- [[Investigation Stories - Audit Logs Current Implementation]]
+- [[Confluence Export — Index]]
+- [[Luz Audit System - Performance Optimization Proposal]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+
+%% ai-graph-end %%

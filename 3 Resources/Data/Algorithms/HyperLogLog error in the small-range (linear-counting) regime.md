@@ -1,7 +1,7 @@
 ---
-ai_hash: b79d80c74eb5bba5
+ai_hash: c00759ddf3596b9d
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-09
 entities: []
 source: luz_docs count-estimate research, 2026-07-09
@@ -33,9 +33,9 @@ HLL's textbook error bound (relative error ≈ `1.04/√m`) is asymptotic — it
 
 **Related notes:**
 - [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 - [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
 - [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
-- [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 - [[Sketch merge (register-wise max) only answers union queries, never AND]]
 
 %% ai-graph-end %%

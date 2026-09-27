@@ -1,18 +1,22 @@
 ---
-title: "Bixolon Printer SDK"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/46989870505/Bixolon+Printer+SDK
-space: "Helios"
-topic: programming
-relevance: 0.842
-depth: 3
-updated: 2021-10-25
+ai_hash: 7230cd083fb3c6c5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.842
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/46989870505/Bixolon+Printer+SDK
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Bixolon Printer SDK
+topic: programming
+type: source
+updated: 2021-10-25
 ---
 
 # Bixolon Printer SDK
@@ -259,3 +263,12 @@ component layers / printer setting library</p></td>
     </div>
 
     </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public API Print Partner]]
+- [[OCR API Java Client]]
+- [[Invoice API Java Client]]
+
+%% ai-graph-end %%

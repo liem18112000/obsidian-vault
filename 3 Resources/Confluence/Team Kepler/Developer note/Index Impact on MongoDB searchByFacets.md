@@ -1,14 +1,22 @@
 ---
-title: "Index Impact on MongoDB searchByFacets"
+ai_hash: 7b8e60d84e75ca80
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49538695172'
+confluence_path: Team Kepler > Developer note > Facet Count Fan-out Techniques in
+  MongoDB
 created: 2026-06-26
-updated: 2026-06-26
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- mongodb
+- search
+title: Index Impact on MongoDB searchByFacets
+type: source
+updated: 2026-06-26
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49538695172/Index+Impact+on+MongoDB+searchByFacets
-confluence_id: "49538695172"
-confluence_path: "Team Kepler > Developer note > Facet Count Fan-out Techniques in MongoDB"
-tags: [confluence, mongodb, search]
 ---
 
 # Index Impact on MongoDB searchByFacets
@@ -77,3 +85,14 @@ tags: [confluence, mongodb, search]
 | Facet over whole tenant (eArchive: `deletionStatus:false` ≈ all docs) | **Little / none** | `$group` traverses ~every doc; IXSCAN over ~all keys ≈ COLLSCAN cost. Index is the ceiling, not a fix |
 | Non-materialized security path (`$lookup` folders) | **No** | Per-doc join, unprunable on documents side — *why* materialize (`_effectiveSecurityClassCodes`) was built to drop the `$lookup` |
 | Array facet (`$unwind`) | **No downstream** | `$unwind` kills index for everything after it |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facet Count Fan-out Techniques in MongoDB]]
+- [[Mongo facet $group count index only helps the $match prefix, not the count]]
+- [[An index only helps an aggregation before the first group, unwind, or lookup]]
+- [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]
+- [[07 Aggregation Pipeline]]
+
+%% ai-graph-end %%

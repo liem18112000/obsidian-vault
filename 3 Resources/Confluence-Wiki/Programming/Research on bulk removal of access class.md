@@ -1,18 +1,22 @@
 ---
-title: "Research on bulk removal of access class"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47110291757/Research+on+bulk+removal+of+access+class
-space: "TP2020"
-topic: programming
-relevance: 0.711
-depth: 2.33
-updated: 2022-05-13
+ai_hash: 63b41284cfcf5e87
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.33
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47110291757/Research+on+bulk+removal+of+access+class
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: Research on bulk removal of access class
+topic: programming
+type: source
+updated: 2022-05-13
 ---
 
 # Research on bulk removal of access class
@@ -167,3 +171,14 @@ Use Patch Operation API instead of the update letter API: [API "Update Patch met
 </div>
 
 - Example implementation: <a href="https://bitbucket.org/axonivy-prod/luz_docs_view_controller/branch/pioneer/LUZ-78190/research-use-patch-operation-to-unassign-security-class" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/axonivy-prod/luz_docs_view_controller/branch/pioneer/LUZ-78190/research-use-patch-operation-to-unassign-security-class</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research on Delete Access class]]
+- [[Enhancements for API Delete and Restore]]
+- [[Security Classes updating measurement]]
+- [[Measure the time-consuming of patch update document API in luz_docs]]
+- [[Enhance performance - Research on Parallel]]
+
+%% ai-graph-end %%

@@ -1,14 +1,22 @@
 ---
-title: "[eArchive] Performance measurement &amp; scalability assessment at 2.2M documents"
+ai_hash: 3f56c38540c8a0ce
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49613176863'
+confluence_path: Team Kepler > Developer note > [eArchive] Performance measurement
+  & scalability assessment at 800000 documents
 created: 2026-07-24
-updated: 2026-07-24
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- earchive
+- performance
+title: '[eArchive] Performance measurement &amp; scalability assessment at 2.2M documents'
+type: source
+updated: 2026-07-24
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49613176863/eArchive+Performance+measurement+amp+scalability+assessment+at+2.2M+documents
-confluence_id: "49613176863"
-confluence_path: "Team Kepler > Developer note > [eArchive] Performance measurement & scalability assessment at 800000 documents"
-tags: [confluence, earchive, performance]
 ---
 
 # [eArchive] Performance measurement &amp; scalability assessment at 2.2M documents
@@ -341,3 +349,14 @@ The practical outcome is:
 >
 > Open the performance environment, authenticate, select the LiemCompany profile if prompted, and navigate through the left sidebar to eArchive. From there, measure main-page list rendering, folder rendering, document and folder totals, folder badge resolution, infinite scroll, folder navigation, and detail popup loading.
 >
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive Performance measurement & scalability assessment at 800000 documents]]
+- [[eArchive Performance — Executive Overview]]
+- [[eArchive Performance — Detail Overview]]
+- [[eArchive request flow and log correlation (perf)]]
+- [[eArchive 800k bottleneck is view-controller not K]]
+
+%% ai-graph-end %%

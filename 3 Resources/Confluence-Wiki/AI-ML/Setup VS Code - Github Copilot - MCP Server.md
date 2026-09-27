@@ -1,18 +1,22 @@
 ---
-title: "Setup VS Code - Github Copilot - MCP Server"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48837132304/Setup+VS+Code+-+Github+Copilot+-+MCP+Server
-space: "FUT"
-topic: ai_ml
-relevance: 0.861
-depth: 3
-updated: 2025-11-05
+ai_hash: 0d3e276c242de006
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.861
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48837132304/Setup+VS+Code+-+Github+Copilot+-+MCP+Server
+space: FUT
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/fut
+- confluence
+- ai-ml
+- space/fut
+title: Setup VS Code - Github Copilot - MCP Server
+topic: ai_ml
+type: source
+updated: 2025-11-05
 ---
 
 # Setup VS Code - Github Copilot - MCP Server
@@ -59,3 +63,14 @@ Check your installed MCP server as this picture below
 You can see that atlassian-mcp-server has provides many tools to search, get, create, update many things in Jira and confluence. They are the tools that allow LLM can perform actions as we want it to do. Such as search all documentations in confluence regarding the topic “Authorization“, and then make a short summarize so that I can understand from overview to the detail, depends on what I prompt.
 
 Try it out!
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian MCP Server Integration Guide]]
+- [[MCP Servers — Installation and Configuration Reference]]
+- [[AI-Powered Development Environment Architecture]]
+- [[Bitbucket MCP Server Integration Guide]]
+- [[Recipe Github copilot]]
+
+%% ai-graph-end %%

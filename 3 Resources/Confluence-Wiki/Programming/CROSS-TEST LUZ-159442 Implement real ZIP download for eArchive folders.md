@@ -1,18 +1,22 @@
 ---
-title: "[CROSS-TEST] [LUZ-159442] Implement real ZIP download for eArchive folders"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49699291139/CROSS-TEST+LUZ-159442+Implement+real+ZIP+download+for+eArchive+folders
-space: "TS"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2026-08-27
+ai_hash: 640aad24e1cfdfe4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 20
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49699291139/CROSS-TEST+LUZ-159442+Implement+real+ZIP+download+for+eArchive+folders
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: '[CROSS-TEST] [LUZ-159442] Implement real ZIP download for eArchive folders'
+topic: programming
+type: source
+updated: 2026-08-27
 ---
 
 # [CROSS-TEST] [LUZ-159442] Implement real ZIP download for eArchive folders
@@ -577,3 +581,14 @@ Scope: both **business** (LUZ-159559) and **private** (LUZ-159798) tenants are i
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost Zip-Import - staging test-suite results - 19-08-2026]]
+- [[CROSS-TEST LUZ-142507 Implement Analyze API Integration (Phase 1) Part 2]]
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[Proof of concept Export and download storage]]
+- [[eArchive Performance — Detail Overview]]
+
+%% ai-graph-end %%

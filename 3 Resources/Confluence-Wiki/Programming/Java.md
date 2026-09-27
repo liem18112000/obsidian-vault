@@ -1,18 +1,22 @@
 ---
-title: "Java"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47097249927/Java
-space: "TS"
-topic: programming
-relevance: 0.894
-depth: 3
-updated: 2022-04-21
+ai_hash: 82828858bf69c6a5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.894
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47097249927/Java
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Java
+topic: programming
+type: source
+updated: 2022-04-21
 ---
 
 # Java
@@ -86,3 +90,10 @@ References:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

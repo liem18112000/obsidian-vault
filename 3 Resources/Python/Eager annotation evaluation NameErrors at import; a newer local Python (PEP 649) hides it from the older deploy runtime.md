@@ -1,5 +1,5 @@
 ---
-ai_hash: a333572920c71e89
+ai_hash: 642a6413aa717ac5
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-20
@@ -35,6 +35,5 @@ Related: [[A client CORSunreachable-API error can mask a backend 500 — read th
 - [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
 - [[Monkeypatched module attributes are a hidden breakage risk when a module becomes a package]]
 - [[Per-feature migration scripts leave new tables silently missing until run]]
-- [[Guard tests that need an optional dependency with pytest.importorskip]]
 
 %% ai-graph-end %%

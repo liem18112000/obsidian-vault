@@ -1,18 +1,22 @@
 ---
-title: "Problem of class cast exception"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47144928733/Problem+of+class+cast+exception
-space: "LUZ"
-topic: programming
-relevance: 0.746
-depth: 2.57
-updated: 2022-07-14
+ai_hash: 5407329fe5afbdf4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 2.57
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47144928733/Problem+of+class+cast+exception
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Problem of class cast exception
+topic: programming
+type: source
+updated: 2022-07-14
 ---
 
 # Problem of class cast exception
@@ -78,3 +82,14 @@ tags:
 # Solution
 
 Mark the dependencies in pom file as provided. Then, only dependencies in .classpath file loaded
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable' compile error usually means a skew]]
+- [[Maven exclusion cannot fix a transitive javax bytecode dependency]]
+- [[Avoid warning logs related to Java Problem on Ivy Designer]]
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+- [[Verify wildcard-to-explicit import cleanup by compiling]]
+
+%% ai-graph-end %%

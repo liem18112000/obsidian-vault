@@ -1,14 +1,21 @@
 ---
-title: "Swarm Intelligence: Theories"
+ai_hash: f2c9575fb6f8e2ac
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49255219207'
+confluence_path: Team Kepler > Developer note > AI Research > Agentic and LLM
 created: 2026-03-20
-updated: 2026-03-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- search
+title: 'Swarm Intelligence: Theories'
+type: source
+updated: 2026-03-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49255219207/Swarm+Intelligence+Theories
-confluence_id: "49255219207"
-confluence_path: "Team Kepler > Developer note > AI Research > Agentic and LLM"
-tags: [confluence, ai-agents, search]
 ---
 
 # Swarm Intelligence: Theories
@@ -73,3 +80,12 @@ The appeal of swarm intelligence lies in its resilience and flexibility. These s
 
 - [[3 Resources/Confluence/Team Kepler/Developer note/AI Research/Agentic and LLM/attachments/swarm-intelligence-theories/mirofish_five_stage_pipeline.svg|mirofish_five_stage_pipeline.svg]]
 - [[3 Resources/Confluence/Team Kepler/Developer note/AI Research/Agentic and LLM/attachments/swarm-intelligence-theories/swarm_intelligence_emergence_concept.svg|swarm_intelligence_emergence_concept.svg]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Swarm intelligence gets global behaviour from local rules and no central controller]]
+- [[Stigmergy coordinates through traces left in the environment, not messages between agents]]
+- [[Swarm Intelligence - Miro Fish - Prediction Engine]]
+
+%% ai-graph-end %%

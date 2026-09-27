@@ -1,33 +1,9 @@
 ---
-ai_hash: 6a7f1c975f98ec96
+ai_hash: 74feefdeab762d9b
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-08
-entities:
-- RAGAS
-- OpenAI
-- LLM
-- Faithfulness
-- Answer/Response Relevancy
-- Claude-on-Vertex
-- ADK
-- ModelProvider
-- OPENAI_API_KEY
-- LangchainLLMWrapper
-- embeddings equivalent
-- test-agent-v2
-- test_evaluation
-- ragas_judge.judge
-- build_ragas_llm()
-- I8
-- EvalMetric
-- LlmAgent
-- embeddings
-- judge
-- configured provider
-- test harness
-- deterministic scorer
-- ragas.evaluate
+entities: []
 source: session 2026-09-08
 status: seedling
 tags:
@@ -63,38 +39,6 @@ Related: [[A deterministic scorer is a negative case for LLM-agent-ification —
 - [[LLM-as-a-judge biases position, verbosity, self-enhancement]]
 - [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
 - [[Pluggable LLM via the litellm ModelProvider backend]]
-- [[A custom CI secret name must be passed to an SDK explicitly — SDKs only auto-read their fixed env var]]
-
-**Relations:**
-- RAGAS — *defaults to* — OpenAI
-- RAGAS — *defaults to* — embeddings
-- RAGAS — *evaluates* — LLM-judged metrics
-- LLM-judged metrics — *include* — Faithfulness
-- LLM-judged metrics — *include* — Answer/Response Relevancy
-- Claude-on-Vertex — *is a type of* — model
-- ADK — *provides* — ModelProvider
-- ModelProvider — *can source* — Claude-on-Vertex
-- RAGAS — *requires* — OPENAI_API_KEY
-- LangchainLLMWrapper — *wraps* — LLM
-- embeddings equivalent — *wraps* — embeddings
-- RAGAS — *has function* — evaluate
-- evaluate — *accepts argument* — llm
-- evaluate — *accepts argument* — embeddings
-- test-agent-v2 — *contains* — test_evaluation
-- test_evaluation — *uses* — ragas_judge.judge
-- ragas_judge.judge — *accepts argument* — llm
-- ragas_judge.judge — *accepts argument* — embeddings
-- build_ragas_llm() — *is a* — provider-sourced factory
-- build_ragas_llm() — *is related to* — I8
-- ADK — *is reused via* — custom EvalMetric
-- LlmAgent — *is a negative case for* — deterministic scorer
-- judge — *is built from* — configured provider
-- embeddings — *is built from* — configured provider
-- test harness — *injected* — llm
-- test harness — *injected* — embeddings
-- RAGAS — *uses* — judge
-- RAGAS — *uses* — embeddings
-- ragas.evaluate — *is a function of* — RAGAS
-- judge — *is* — provider-sourced
+- [[Judge Calibration and Canary Seeds]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "KLARA Integration (request access token & call API)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20473126686/KLARA+Integration+request+access+token+call+API
-space: "LUZ"
-topic: programming
-relevance: 0.771
-depth: 3
-updated: 2018-09-17
+ai_hash: 314b53d4305fe120
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.771
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20473126686/KLARA+Integration+request+access+token+call+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: KLARA Integration (request access token & call API)
+topic: programming
+type: source
+updated: 2018-09-17
 ---
 
 # KLARA Integration (request access token & call API)
@@ -177,3 +181,14 @@ Below a sample request:</span>
     "availableDocuments": 8
     }
     ]}]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Use KLARA Swagger UI for REST API]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Implement Corporate API Access (LUZ-17959)]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[KLARA Booking - KLARA OBC API]]
+
+%% ai-graph-end %%

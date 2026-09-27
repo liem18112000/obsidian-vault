@@ -1,18 +1,22 @@
 ---
-title: "Empty Trash APIs"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47144894684/Empty+Trash+APIs
-space: "LUZ"
-topic: programming
-relevance: 0.716
-depth: 2.89
-updated: 2022-07-12
+ai_hash: bf3de99fd5abf0eb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.89
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47144894684/Empty+Trash+APIs
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Empty Trash APIs
+topic: programming
+type: source
+updated: 2022-07-12
 ---
 
 # Empty Trash APIs
@@ -55,3 +59,14 @@ Response sample:
 
 
 ![[47144894684-image-20220712-093908.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[Delete company - Old way]]
+- [[Rerun Own domain migration api for all tenant]]
+- [[Download user audit logs export files]]
+- [[Enhancements for API Delete and Restore]]
+
+%% ai-graph-end %%

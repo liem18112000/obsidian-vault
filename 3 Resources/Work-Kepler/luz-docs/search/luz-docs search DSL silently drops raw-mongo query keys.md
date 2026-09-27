@@ -1,7 +1,7 @@
 ---
-ai_hash: a204429095fb633b
+ai_hash: 589f0b4adb339e7c
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-27
 entities: []
 source: session 2026-06-27
@@ -44,6 +44,6 @@ See [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
 - [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
 - [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
 - [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
-- [[search-logic]]
+- [[Full‑Text Document Search — Performance Analysis & Proposals]]
 
 %% ai-graph-end %%

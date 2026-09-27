@@ -1,10 +1,20 @@
 ---
-title: "Route user-edited business rules through git and CI instead of a database"
+ai_hash: ebfc36c8e256c80a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: CICD for Kogito (LUZ)'
 status: seedling
-source: "Confluence: CICD for Kogito (LUZ)"
-tags: [gitops, business-rules, kogito, audit, ci-cd, confluence-distilled]
+tags:
+- gitops
+- business-rules
+- kogito
+- audit
+- ci-cd
+- confluence-distilled
+title: Route user-edited business rules through git and CI instead of a database
+type: lesson
 ---
 
 # Route user-edited business rules through git and CI instead of a database
@@ -43,3 +53,14 @@ Source: [[CICD for Kogito]] (LUZ, Confluence).
 ## Related
 
 - [[Two IaC surfaces need an explicit naming contract at the seam]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CICD for Kogito]]
+- [[Editor rule by Code Service (Visual Code in Browser)]]
+- [[Two IaC surfaces need an explicit naming contract at the seam]]
+- [[KIE Kogito and improve performance concept (19.11.2024 - 02.12.2024)]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+
+%% ai-graph-end %%

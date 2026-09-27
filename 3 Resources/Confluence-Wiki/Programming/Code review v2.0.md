@@ -1,18 +1,22 @@
 ---
-title: "Code review v2.0"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48935010546/Code+review+v2.0
-space: "TS"
-topic: programming
-relevance: 0.852
-depth: 3
-updated: 2026-07-09
+ai_hash: 9489ffa4f0b34766
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.852
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48935010546/Code+review+v2.0
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Code review v2.0
+topic: programming
+type: source
+updated: 2026-07-09
 ---
 
 # Code review v2.0
@@ -84,3 +88,14 @@ tags:
 - Type Safety: No usage of `any` type.
 
 - Check that secrets are not prefixed with `NEXT_PUBLIC_`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Prompt Performance Code Review]]
+- [[Prompt Architecture Code Review]]
+- [[Test and code review report template.2.93]]
+- [[Test and code review report template]]
+- [[00. Test and code review report template]]
+
+%% ai-graph-end %%

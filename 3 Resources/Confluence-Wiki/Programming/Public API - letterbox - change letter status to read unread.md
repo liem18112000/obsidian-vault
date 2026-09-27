@@ -1,18 +1,22 @@
 ---
-title: "Public API - letterbox - change letter status to read/unread"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47730360321/Public+API+-+letterbox+-+change+letter+status+to+read+unread
-space: "TS"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2024-03-21
+ai_hash: 4f37cbf50ed7ee11
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47730360321/Public+API+-+letterbox+-+change+letter+status+to+read+unread
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Public API - letterbox - change letter status to read/unread
+topic: programming
+type: source
+updated: 2024-03-21
 ---
 
 # Public API - letterbox - change letter status to read/unread
@@ -53,3 +57,14 @@ tags:
  |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public API - letterbox - API get deleted letters from trash]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[5. How to extend modify ONE API delivery API Research]]
+- [[Copy 5. How to extend modify ONE API delivery API Research]]
+- [[Public API Eletter (0.02.09.00)]]
+
+%% ai-graph-end %%

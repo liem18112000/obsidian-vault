@@ -1,18 +1,22 @@
 ---
-title: "Non-Java modules work with cgroupv2"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47937716452/Non-Java+modules+work+with+cgroupv2
-space: "LUZ"
-topic: programming
-relevance: 0.746
-depth: 2.57
-updated: 2024-07-26
+ai_hash: 6f2f51f0318ee891
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.57
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47937716452/Non-Java+modules+work+with+cgroupv2
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Non-Java modules work with cgroupv2
+topic: programming
+type: source
+updated: 2024-07-26
 ---
 
 # Non-Java modules work with cgroupv2
@@ -139,3 +143,14 @@ The information of Non-Java modules are following step of [Upgrade to have cgrou
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Kubernetes Terraform]]
+- [[Performance pain points]]
+- [[LUZ DevOps Next Gen (proposal and discussion)]]
+- [[Impact of code changes on common components]]
+- [[Joint review 0.03.23.00 (02.06.2026 - 15.06.2026)]]
+
+%% ai-graph-end %%

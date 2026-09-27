@@ -1,18 +1,23 @@
 ---
-title: "luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator generate-recovery-keys : only avail in Enterprise edition)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48572399662/luz-vault+-+Recovery+key+encryption+with+RSA+Public+Keys+draft+-+vault+operator+generate-recovery-keys+only+avail+in+Enterprise+edition
-space: "IO"
-topic: security
-relevance: 0.802
-depth: 3
-updated: 2025-07-11
+ai_hash: 9b8d9505eb580539
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.802
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48572399662/luz-vault+-+Recovery+key+encryption+with+RSA+Public+Keys+draft+-+vault+operator+generate-recovery-keys+only+avail+in+Enterprise+edition
+space: IO
+status: reference
 tags:
-  - confluence
-  - security
-  - space/io
+- confluence
+- security
+- space/io
+title: 'luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator
+  generate-recovery-keys : only avail in Enterprise edition)'
+topic: security
+type: source
+updated: 2025-07-11
 ---
 
 # luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator generate-recovery-keys : only avail in Enterprise edition)
@@ -172,3 +177,14 @@ openssl rsautl -decrypt -inkey user1_private.pem -in enc_user1_recovery_key.bin
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Update Vault Unseal self-signed certificate]]
+- [[How to unseal Vault Unseal]]
+- [[luz-vault - How to run Vault Benchmark]]
+- [[Introduction of Hashicorp Vault]]
+- [[Encryption and decryption flows with Vault]]
+
+%% ai-graph-end %%

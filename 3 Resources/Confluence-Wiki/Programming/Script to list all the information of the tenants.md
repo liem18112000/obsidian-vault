@@ -1,18 +1,22 @@
 ---
-title: "Script to list all the information of the tenants"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/47441052081/Script+to+list+all+the+information+of+the+tenants
-space: "NEXT"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2023-08-16
+ai_hash: 9708c35b0d15b6db
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/47441052081/Script+to+list+all+the+information+of+the+tenants
+space: NEXT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/next
+- confluence
+- programming
+- space/next
+title: Script to list all the information of the tenants
+topic: programming
+type: source
+updated: 2023-08-16
 ---
 
 # Script to list all the information of the tenants
@@ -210,3 +214,14 @@ LANGUAGE plpgsql;
 ![[47441052081-Step-03_Get_tenant_information.sql]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL Script execution]]
+- [[14. Create companies by tenant id]]
+- [[15. Update companies by tenant id]]
+- [[LUZ-102045 Implement physical delete for COMPANY tenant Part 2 (Postgres cont)]]
+- [[Delete company - Old way]]
+
+%% ai-graph-end %%

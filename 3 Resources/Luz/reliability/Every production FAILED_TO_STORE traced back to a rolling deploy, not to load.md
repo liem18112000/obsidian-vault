@@ -1,10 +1,20 @@
 ---
-title: "Every production FAILED_TO_STORE traced back to a rolling deploy, not to load"
+ai_hash: 3e8493d425ea9e45
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: observation
+entities: []
+source: 'Confluence: Part A - luz-jsonstore Analysis (2025-12-18)'
 status: seedling
-source: "Confluence: Part A - luz-jsonstore Analysis (2025-12-18)"
-tags: [luz-jsonstore, reliability, root-cause-analysis, kubernetes, production, kepler]
+tags:
+- luz-jsonstore
+- reliability
+- root-cause-analysis
+- kubernetes
+- production
+- kepler
+title: Every production FAILED_TO_STORE traced back to a rolling deploy, not to load
+type: observation
 ---
 
 # Every production FAILED_TO_STORE traced back to a rolling deploy, not to load
@@ -36,3 +46,14 @@ Root causes found: [[An exec-cat readiness probe reports Ready before the server
 
 - [[An exec-cat readiness probe reports Ready before the server can serve]]
 - [[A rolling deploy drops in-flight requests unless preStop outlives endpoint propagation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Part A - luz-jsonstore Analysis]]
+- [[An exec-cat readiness probe reports Ready before the server can serve]]
+- [[Case Report - DocumentId 778]]
+- [[Case Report - DocumentId 588]]
+- [[Case Report - DocumentId 21579]]
+
+%% ai-graph-end %%

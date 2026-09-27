@@ -1,18 +1,22 @@
 ---
-title: "Helios: myKLARA app(luz-mobile) - API Response Performance Analysis"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47514419201/Helios+myKLARA+app+luz-mobile+-+API+Response+Performance+Analysis
-space: "FUT"
-topic: programming
-relevance: 0.864
-depth: 3
-updated: 2023-12-04
+ai_hash: 4462aad5551cde56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 12
+depth: 3
+entities: []
+relevance: 0.864
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47514419201/Helios+myKLARA+app+luz-mobile+-+API+Response+Performance+Analysis
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: 'Helios: myKLARA app(luz-mobile) - API Response Performance Analysis'
+topic: programming
+type: source
+updated: 2023-12-04
 ---
 
 # Helios: myKLARA app(luz-mobile) - API Response Performance Analysis
@@ -169,3 +173,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[Analyze N+1 queries for REST API calculate payslips for overview salary processing]]
+- [[Public API client performance analysis]]
+- [[Optimus ePost myLife app(luz_mylife_epost_adapter) - API Response Performance Analysis]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "JSON has no date type so type information dies at the API boundary"
+ai_hash: 835ed2777c6dd298
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Adapt luz-jsonstore to persist MongoDB Date via API (LUZ)'
 status: seedling
-source: "Confluence: Adapt luz-jsonstore to persist MongoDB Date via API (LUZ)"
-tags: [json, mongodb, bson, dates, serialization, migration, confluence-distilled]
+tags:
+- json
+- mongodb
+- bson
+- dates
+- serialization
+- migration
+- confluence-distilled
+title: JSON has no date type so type information dies at the API boundary
+type: lesson
 ---
 
 # JSON has no date type so type information dies at the API boundary
@@ -38,3 +49,14 @@ That is a **dual-write migration**, not a final design: old readers keep using t
 Related: [[Connection count, not tenant count, sizes a multi-tenant Postgres cluster]] — another case where the storage layer's real types drive the design.
 
 Source: [[Adapt luz-jsonstore to allow luz-docs to persist data as MongoDB Date via API]] (LUZ, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Use a BSON endpoint instead of JSON to store MongoDB dates as native Date]]
+- [[Adapt luz-jsonstore to allow luz-docs to persist data as MongoDB Date via API]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[luz_jsonstore committed V2 updateOne count delete have latent BSON serialization bug]]
+- [[End-to-end BSON API testing with the Node bson package]]
+
+%% ai-graph-end %%

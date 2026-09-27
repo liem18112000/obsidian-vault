@@ -1,14 +1,22 @@
 ---
-title: "SAP_Master.csv — the customer master export"
+ai_hash: 882f96509697ef1c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49617568019'
+confluence_path: Team Kepler > Developer note > [Invoice Run] Credit-card-only billing
+  for individual clients — Finance / SAP correctness
 created: 2026-07-27
-updated: 2026-07-27
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+- sap
+title: SAP_Master.csv — the customer master export
+type: source
+updated: 2026-07-27
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49617568019/SAP_Master.csv+the+customer+master+export
-confluence_id: "49617568019"
-confluence_path: "Team Kepler > Developer note > [Invoice Run] Credit-card-only billing for individual clients — Finance / SAP correctness"
-tags: [confluence, invoice-run, sap]
 ---
 
 # SAP_Master.csv — the customer master export
@@ -59,3 +67,13 @@ The method `exportSAPMaster(...)` builds the file:
 2.  For **each invoice**: - clone the **template** `SAPReport.masterContent` (holds the fixed SAP fields that are the same for every customer), - call `buildMasterContent(...)` to **overwrite the dynamic fields** with this customer's data, - turn the object into a `;`-joined line with `convertMasterToString` (25 fields, in order).
 
 So every customer line = *fixed template fields* + *this customer's fields*.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SAP_Booking.csv — the accounting bookings export]]
+- [[SAP in `luz_finance` — What, Why, How, When]]
+- [[SAP in luz_finance is a manual CSV export, not a live integration]]
+- [[SAP export defaults come from the default-sap config service so accounting codes change without a deploy]]
+
+%% ai-graph-end %%

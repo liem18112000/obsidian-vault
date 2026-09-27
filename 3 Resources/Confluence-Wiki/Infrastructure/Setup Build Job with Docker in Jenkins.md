@@ -1,18 +1,22 @@
 ---
-title: "Setup Build Job with Docker in Jenkins"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675002737/Setup+Build+Job+with+Docker+in+Jenkins
-space: "LUZCOMP"
-topic: infra
-relevance: 0.748
-depth: 2.55
-updated: 2016-03-31
+ai_hash: 4f4994f558dffa7c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.55
+entities: []
+relevance: 0.748
+source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675002737/Setup+Build+Job+with+Docker+in+Jenkins
+space: LUZCOMP
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luzcomp
+- confluence
+- infra
+- space/luzcomp
+title: Setup Build Job with Docker in Jenkins
+topic: infra
+type: source
+updated: 2016-03-31
 ---
 
 # Setup Build Job with Docker in Jenkins
@@ -120,3 +124,14 @@ docker -H tcp://192.168.73.128:4444 push gcr.io/luzcomp-integration/luz-person:v
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Document flow setup build Jenkins job Maven]]
+- [[Recipe Deploy with Terraform]]
+- [[Docker Cloud Study]]
+- [[Jenkins (How to build & deploy)]]
+- [[Deploy to Kubernetes and get External IP]]
+
+%% ai-graph-end %%

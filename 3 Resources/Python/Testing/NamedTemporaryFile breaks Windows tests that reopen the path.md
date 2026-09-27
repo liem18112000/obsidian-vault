@@ -1,10 +1,19 @@
 ---
-title: "NamedTemporaryFile breaks Windows tests that reopen the path"
+ai_hash: da671e8ca41a54f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: leo-customer360 SSO session fix, 2026-09-27
 status: seedling
-source: "leo-customer360 SSO session fix, 2026-09-27"
-tags: [python, pytest, windows, tempfile, gotcha]
+tags:
+- python
+- pytest
+- windows
+- tempfile
+- gotcha
+title: NamedTemporaryFile breaks Windows tests that reopen the path
+type: lesson
 ---
 
 # NamedTemporaryFile breaks Windows tests that reopen the path
@@ -24,3 +33,12 @@ with tempfile.TemporaryDirectory() as tmp_dir:
 ```
 
 Rule of thumb: use `NamedTemporaryFile` only when *you* do all the I/O through the returned handle. The moment a path is handed to other code, use `TemporaryDirectory` and build a path inside it.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[Git Bash mktemp paths are unreadable by Windows python; pipe via stdin instead of a temp-file path]]
+- [[Python venv layout Scripts on Windows vs bin on POSIX breaks Linux-authored test runners]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: f896ccf5c0a76c83
+ai_hash: 4219b9859922dfbe
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-17
@@ -40,8 +40,8 @@ See [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform pr
 **Related notes:**
 - [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 - [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
-- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
 - [[vngcloud vDB packagevolume data source returns empty id on no-match (guard with a precondition)]]
+- [[Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary]]
 - [[VNG vServer apply-time gotchas password policy ( @ !) and AZ-restricted volume types (1C needs NVME)]]
 
 %% ai-graph-end %%

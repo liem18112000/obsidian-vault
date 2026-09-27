@@ -1,5 +1,5 @@
 ---
-ai_hash: 1041cd3d58490760
+ai_hash: ddc63bd605b493fe
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-10
@@ -37,8 +37,8 @@ luz-jsonstore ALREADY supports optimistic-concurrency: `PATCH /{collection}/{doc
 **Related notes:**
 - [[Hosting a PubSub consumer in a luz service with luz_message_receiver]]
 - [[luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS]]
-- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
-- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
-- [[Luz performance env cluster topology]]
+- [[GKE - Cloud Run Migration Trackers]]
+- [[ELM5 PubSub Message Queue]]
+- [[Luz Kubernetes Terraform]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "[luz-storage] - DEPRECATED - Encryption & Decryption"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47586476158/luz-storage+-+DEPRECATED+-+Encryption+Decryption
-space: "LUZ"
-topic: security
-relevance: 0.731
-depth: 2.4
-updated: 2024-09-16
+ai_hash: 6f267e4feef33f01
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.4
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47586476158/luz-storage+-+DEPRECATED+-+Encryption+Decryption
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: '[luz-storage] - DEPRECATED - Encryption & Decryption'
+topic: security
+type: source
+updated: 2024-09-16
 ---
 
 # [luz-storage] - DEPRECATED - Encryption & Decryption
@@ -122,3 +126,14 @@ The key will be encrypted and stored in luz-keyvaluestore.
 | 9 | Return the decrypted bytes | luz-storage supports streaming downloading from GCS to END-USER. The bytes will sequencely send to END-USER. |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Encryption and decryption flows with Vault]]
+- [[luz-storage - Design Security (Encryption & Decryption) with Vault]]
+- [[Introduction of Hashicorp Vault]]
+- [[Luz-vault]]
+- [[MessageV2 Field Encryption Approach]]
+
+%% ai-graph-end %%

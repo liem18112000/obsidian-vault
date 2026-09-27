@@ -1,10 +1,66 @@
 ---
-title: "Wrap the agent CLI rather than reimplementing the agent loop"
+ai_hash: 00dba7dd32590dbe
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities:
+- Agent CLI
+- Agent loop
+- Platform
+- CLI
+- Model API
+- Vinnstack
+- Claude Code
+- Engine
+- Wrapper
+- Re-implementation
+- Improvement
+- Maintenance debt
+- Tool protocols
+- Context management
+- Sub-agent orchestration
+- Model defaults
+- Vendor's tool implementations
+- Permission model
+- Streaming format
+- Terminal-first agent
+- Memory
+- Domain context
+- Multi-agent work
+- Structured workflow
+- Human gate
+- State
+- Policy
+- Reasoning
+- Tool execution
+- Streaming
+- Cost accounting
+- Stream-json events
+- Token counts
+- Usage
+- Output format
+- Flags
+- Auth flow
+- Parsing layer
+- Epic
+- Interrogation
+- PRD
+- Story
+- Construct agent permissions per spawn instead of negotiating them per prompt
+- Extract reusable skills automatically from settled agent exchanges
+- Vinnstack — Agentic OS
+- Vinnstack vs. Claude Code (native)
+source: 'Confluence: Vinnstack Agentic OS (TK)'
 status: seedling
-source: "Confluence: Vinnstack Agentic OS (TK)"
-tags: [claude-code, agent-platform, architecture, wrapper, tooling, confluence-distilled]
+tags:
+- claude-code
+- agent-platform
+- architecture
+- wrapper
+- tooling
+- confluence-distilled
+title: Wrap the agent CLI rather than reimplementing the agent loop
+type: lesson
 ---
 
 # Wrap the agent CLI rather than reimplementing the agent loop
@@ -41,3 +97,61 @@ Source: [[Vinnstack — Agentic OS]] and [[Vinnstack vs. Claude Code (native)]] 
 ## Related
 
 - [[Construct agent permissions per spawn instead of negotiating them per prompt]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack — Agentic OS]]
+- [[Vinnstack vs. Claude Code (native)]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Construct agent permissions per spawn instead of negotiating them per prompt]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+
+**Relations:**
+- Wrapper — *wraps* — Agent CLI
+- Wrapper — *avoids* — Re-implementation
+- Platform — *builds around* — CLI
+- Re-implementation — *targets* — Model API
+- Vinnstack — *runs* — Claude Code
+- Claude Code — *is a type of* — Engine
+- Vinnstack — *is* — Cockpit
+- Vinnstack — *is* — Memory
+- Vinnstack — *is* — Flight plan
+- Wrapper — *inherits* — Improvement
+- Re-implementation — *incurs* — Maintenance debt
+- Wrapper — *inherits* — Vendor's tool implementations
+- Wrapper — *inherits* — Permission model
+- Wrapper — *inherits* — Streaming format
+- Terminal-first agent — *lacks* — Memory
+- Terminal-first agent — *lacks* — Domain context
+- Terminal-first agent — *lacks* — Multi-agent work
+- Terminal-first agent — *lacks* — Structured workflow
+- Wrapper — *provides* — Memory
+- Wrapper — *provides* — Domain context
+- Wrapper — *provides* — Multi-agent work
+- Wrapper — *provides* — Structured workflow
+- Wrapper — *owns* — State
+- Wrapper — *owns* — Policy
+- CLI — *owns* — Reasoning
+- CLI — *owns* — Tool execution
+- Engine — *provides* — Streaming
+- Engine — *provides* — Cost accounting
+- CLI — *provides* — Stream-json events
+- Stream-json events — *yields* — Token counts
+- Stream-json events — *yields* — Usage
+- Wrapper — *inherits* — Failure modes
+- CLI — *changes* — Output format
+- CLI — *changes* — Flags
+- CLI — *changes* — Auth flow
+- CLI changes — *can break* — Wrapper
+- Structured workflow — *includes* — Epic
+- Structured workflow — *includes* — Interrogation
+- Structured workflow — *includes* — PRD
+- Structured workflow — *includes* — Story
+- Structured workflow — *requires* — Human gate
+- Wrap the agent CLI rather than reimplementing the agent loop — *is related to* — Construct agent permissions per spawn instead of negotiating them per prompt
+- Wrap the agent CLI rather than reimplementing the agent loop — *is related to* — Extract reusable skills automatically from settled agent exchanges
+- Wrap the agent CLI rather than reimplementing the agent loop — *has source* — Vinnstack — Agentic OS
+- Wrap the agent CLI rather than reimplementing the agent loop — *has source* — Vinnstack vs. Claude Code (native)
+
+%% ai-graph-end %%

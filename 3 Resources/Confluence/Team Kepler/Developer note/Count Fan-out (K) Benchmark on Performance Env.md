@@ -1,14 +1,20 @@
 ---
-title: "Count Fan-out (K) Benchmark on Performance Env"
+ai_hash: fe56724a1d2c29d4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49520541698'
+confluence_path: Team Kepler > Developer note
 created: 2026-06-20
-updated: 2026-06-22
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+title: Count Fan-out (K) Benchmark on Performance Env
+type: source
+updated: 2026-06-22
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49520541698/Count+Fan-out+K+Benchmark+on+Performance+Env
-confluence_id: "49520541698"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, performance]
 ---
 
 # Count Fan-out (K) Benchmark on Performance Env
@@ -231,3 +237,14 @@ The CPU collapse (4 400 m → \<250 m) is the signature: cache-resident = cores 
 - **Keep K = 8**
 
 - **K is a cold-path-only lever and only helps while the scanned set fits MongoDB's cache**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
+- [[Test parallelize executor]]
+- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[eArchive Performance measurement & scalability assessment at 800000 documents]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+
+%% ai-graph-end %%

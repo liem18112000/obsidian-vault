@@ -1,10 +1,20 @@
 ---
-title: "Pandoc HTML-escapes link targets, breaking wikilinks to files containing &"
+ai_hash: de729e28af7dd345
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: session 2026-09-27 Confluence vault import
 status: seedling
-source: "session 2026-09-27 Confluence vault import"
-tags: [pandoc, obsidian, markdown, html-entities, import, gotcha]
+tags:
+- pandoc
+- obsidian
+- markdown
+- html-entities
+- import
+- gotcha
+title: Pandoc HTML-escapes link targets, breaking wikilinks to files containing &
+type: gotcha
 ---
 
 # Pandoc HTML-escapes link targets, breaking wikilinks to files containing &
@@ -46,3 +56,14 @@ Related: [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]|Pan
 ## Related
 
 - [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]|Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A note title containing a colon or slash breaks links that use the raw title]]
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+- [[Obsidian resolves short wikilinks by basename across the whole vault]]
+- [[Repair broken links only when exactly one candidate matches, and iterate to a fixed point]]
+- [[Comma-split wikilinks leave dead fragment links in Related blocks]]
+
+%% ai-graph-end %%

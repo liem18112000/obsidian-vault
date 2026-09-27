@@ -1,18 +1,22 @@
 ---
-title: "Accounting Interface, Epost Forced Onboarding, and ONE api"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47753429687/Accounting+Interface+Epost+Forced+Onboarding+and+ONE+api
-space: "LUZ"
-topic: programming
-relevance: 0.852
-depth: 3
-updated: 2024-04-08
+ai_hash: 028f46174c9c4c86
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.852
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47753429687/Accounting+Interface+Epost+Forced+Onboarding+and+ONE+api
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Accounting Interface, Epost Forced Onboarding, and ONE api
+topic: programming
+type: source
+updated: 2024-04-08
 ---
 
 # Accounting Interface, Epost Forced Onboarding, and ONE api
@@ -43,3 +47,14 @@ Continue fixing UTs
 ### 5. Epost Forced Onboarding:
 
 Retry and alerting
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accounting Interface(16.01.2024 - 29.01.2024)]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[One API and Monitoring 0.02.61.00 (19.12.2023 - 29.12.2023)]]
+- [[Programming]]
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+
+%% ai-graph-end %%

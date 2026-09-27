@@ -1,41 +1,35 @@
 ---
-ai_hash: 42d39245a908d048
+ai_hash: e4b9ff6fe404a0ca
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-15
 entities:
-- LUZ-158230 QA edge-case decisions (ZIP import)
 - LUZ-158230
+- QA edge-case decisions
 - ZIP import
+- confirmed spec
+- earlier version of this note
 - QA-interrogation guesses
-- confirmed v1.0 spec
+- v1.0 spec
 - SPEC TRUTH
 - LUZ-158230 ePost ZIP import spec v1.0 (authoritative)
 - Post Health ZIP import
 - LUZ-158230 Post Health ZIP import v1 scope decisions
-- Size limits
 - ZIP file
-- 2 GB
 - metadata file
-- 100 KB
 - Password-protected/encrypted ZIP
-- per-binary 200MB limit (spec)
-- uncompressed measurement (spec)
+- per-binary 200MB limit
+- uncompressed measurement
 - Document dedup
 - document
 - target folder
-- SAME NAME AND SAME SIZE
-- job-history
-- filename
+- Idempotent skip
+- job-history/filename
 - concurrent-duplicate risk
 - Folder dedup
-- folders
-- existing folders
 - ePost
 - luz_docs_view_controller API
 - Pairing
-- doc
-- metadata
 - naming convention `<file incl. ext>.metadata.json`
 - orphan metadata.json
 - document with no metadata
@@ -46,17 +40,19 @@ entities:
 - disallowed top-level element
 - unparseable metadata
 - Language labels
-- '`en` language label'
-- missing `en` language label
+- '`en`'
 - Empty zip
+- dot-prefixed+OS artefacts
 - dot-prefixed entry
 - Beyond-spec hardening
+- robustness/security test scenarios
 - Zip-bomb / decompression-ratio guard
+- total-uncompressed cap
 - Path-traversal / absolute-path / symlink sanitisation
-- Per-binary-file 200 MB size limit (Beyond-spec hardening)
+- Per-binary-file 200 MB size limit
 - Sender/recipient notification
-- 'luz_docs_import dedup: folders via view-controller API, documents via import job
-  history'
+- luz_docs_import dedup
+- import job history
 - LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)
 source: Testing-Agent QA interrogation 2026-09-15
 status: seedling
@@ -112,56 +108,58 @@ These were kept as robustness/security test scenarios even though the confirmed 
 - [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
 
 **Relations:**
-- LUZ-158230 QA edge-case decisions (ZIP import) — *is about* — LUZ-158230
-- LUZ-158230 QA edge-case decisions (ZIP import) — *is about* — ZIP import
-- LUZ-158230 QA edge-case decisions (ZIP import) — *corrected against* — confirmed v1.0 spec
-- LUZ-158230 QA edge-case decisions (ZIP import) — *overrode* — QA-interrogation guesses
-- confirmed v1.0 spec — *overrode* — QA-interrogation guesses
-- SPEC TRUTH — *is* — confirmed v1.0 spec
-- LUZ-158230 QA edge-case decisions (ZIP import) — *references* — LUZ-158230 ePost ZIP import spec v1.0 (authoritative)
-- LUZ-158230 QA edge-case decisions (ZIP import) — *defines behaviour for* — Post Health ZIP import
-- LUZ-158230 QA edge-case decisions (ZIP import) — *builds upon* — LUZ-158230 Post Health ZIP import v1 scope decisions
-- Size limits — *applies to* — ZIP file
-- ZIP file — *has size limit* — 2 GB
-- Size limits — *applies to* — metadata file
-- metadata file — *has size limit* — 100 KB
+- LUZ-158230 — *concerns* — QA edge-case decisions
+- QA edge-case decisions — *for* — ZIP import
+- QA edge-case decisions — *corrected_against* — confirmed spec
+- earlier version of this note — *recorded* — QA-interrogation guesses
+- v1.0 spec — *overrode* — QA-interrogation guesses
+- v1.0 spec — *is* — SPEC TRUTH
+- SPEC TRUTH — *is_detailed_in* — LUZ-158230 ePost ZIP import spec v1.0 (authoritative)
+- v1.0 spec — *is* — LUZ-158230 ePost ZIP import spec v1.0 (authoritative)
+- LUZ-158230 — *defines_edge_case_behaviour_for* — Post Health ZIP import
+- Post Health ZIP import — *builds_on* — LUZ-158230 Post Health ZIP import v1 scope decisions
+- ZIP file — *must_be_less_than* — 2 GB
+- metadata file — *must_be_less_than_or_equal_to* — 100 KB
 - Password-protected/encrypted ZIP — *is* — rejected
-- per-binary 200MB limit (spec) — *is not part of* — confirmed v1.0 spec
-- uncompressed measurement (spec) — *is not part of* — confirmed v1.0 spec
-- Document dedup — *skips* — document
-- document — *has property* — SAME NAME AND SAME SIZE
-- document — *located in* — target folder
-- Document dedup — *is not based on* — job-history
-- Document dedup — *is not based on* — filename
-- Document dedup — *is not* — concurrent-duplicate risk
-- Folder dedup — *recreates* — folders
-- folders — *recreated in* — ePost
-- existing folders — *are* — matched not duplicated
-- Folder dedup — *resolves via* — luz_docs_view_controller API
-- Pairing — *links* — doc
-- Pairing — *links* — metadata
-- Pairing — *uses* — naming convention `<file incl. ext>.metadata.json`
-- orphan metadata.json — *is* — REJECTED / reported as failed
-- document with no metadata — *is* — IMPORTED without health metadata
-- Metadata validation — *is* — NONE
-- Metadata validation — *does not include* — schema validation
-- Metadata validation — *does not include* — required fields
+- confirmed spec — *does_not_include* — per-binary 200MB limit
+- confirmed spec — *does_not_include* — uncompressed measurement
+- document — *is_skipped_if_matches_existing_in* — target folder by name and size
+- existing document — *remains* — unchanged
+- Document dedup — *is_an* — Idempotent skip
+- Idempotent skip — *does_not_rely_on* — job-history/filename
+- Idempotent skip — *prevents* — concurrent-duplicate risk
+- folders — *are_recreated_1:1_in* — ePost
+- existing folders — *are* — matched
+- existing folders — *are_not* — duplicated
+- folder resolution — *uses* — luz_docs_view_controller API
+- document — *is_paired_with_metadata_via* — naming convention `<file incl. ext>.metadata.json`
+- orphan metadata.json — *is* — rejected
+- orphan metadata.json — *is* — reported as failed
+- document with no metadata — *is* — imported without health metadata
+- Metadata validation — *is* — none
+- Metadata validation — *excludes* — schema validation
+- Metadata validation — *excludes* — required fields
 - disallowed top-level element — *is* — silently ignored
-- unparseable metadata — *results in* — document still imported
-- unparseable metadata — *results in* — metadata ignored
-- Language labels — *recommends* — `en` language label
-- `en` language label — *is not* — mandatory
-- missing `en` language label — *is not* — a failure
-- Empty zip — *results in* — nothing imported
+- unparseable metadata — *results_in* — metadata ignored
+- unparseable metadata — *allows* — document import
+- `en` — *is_recommended_for* — Language labels
+- `en` — *is_not_mandatory_for* — Language labels
+- missing `en` — *is_not* — a failure
+- Empty zip — *results_in* — nothing imported
+- dot-prefixed+OS artefacts — *results_in* — nothing imported
 - dot-prefixed entry — *is* — ignored
+- Beyond-spec hardening — *are* — robustness/security test scenarios
+- confirmed spec — *does_not_require* — Beyond-spec hardening
 - Beyond-spec hardening — *includes* — Zip-bomb / decompression-ratio guard
+- Zip-bomb / decompression-ratio guard — *has* — total-uncompressed cap
 - Beyond-spec hardening — *includes* — Path-traversal / absolute-path / symlink sanitisation
-- Beyond-spec hardening — *includes* — Per-binary-file 200 MB size limit (Beyond-spec hardening)
+- Beyond-spec hardening — *includes* — Per-binary-file 200 MB size limit
 - Beyond-spec hardening — *includes* — Sender/recipient notification
-- Beyond-spec hardening — *is not* — spec-required
-- LUZ-158230 — *related to* — LUZ-158230 ePost ZIP import spec v1.0 (authoritative)
-- LUZ-158230 — *related to* — LUZ-158230 Post Health ZIP import v1 scope decisions
-- LUZ-158230 — *related to* — luz_docs_import dedup: folders via view-controller API, documents via import job history
-- LUZ-158230 — *related to* — LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)
+- LUZ-158230 QA edge-case decisions — *references* — LUZ-158230 ePost ZIP import spec v1.0 (authoritative)
+- LUZ-158230 QA edge-case decisions — *references* — LUZ-158230 Post Health ZIP import v1 scope decisions
+- LUZ-158230 QA edge-case decisions — *references* — luz_docs_import dedup
+- luz_docs_import dedup — *handles_folders_via* — luz_docs_view_controller API
+- luz_docs_import dedup — *handles_documents_via* — import job history
+- LUZ-158230 QA edge-case decisions — *references* — LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)
 
 %% ai-graph-end %%

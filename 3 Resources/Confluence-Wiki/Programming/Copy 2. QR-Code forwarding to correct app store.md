@@ -1,18 +1,22 @@
 ---
-title: "Copy 2. QR-Code forwarding to correct app store"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49307549932/Copy+2.+QR-Code+forwarding+to+correct+app+store
-space: "LUZ"
-topic: programming
-relevance: 0.812
-depth: 3
-updated: 2026-04-08
+ai_hash: aecb7dfd42bbc78a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 3
+entities: []
+relevance: 0.812
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49307549932/Copy+2.+QR-Code+forwarding+to+correct+app+store
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Copy 2. QR-Code forwarding to correct app store
+topic: programming
+type: source
+updated: 2026-04-08
 ---
 
 # Copy 2. QR-Code forwarding to correct app store
@@ -156,3 +160,14 @@ Answer: ***luz-public-api-adapter***
 - The QR-Code generator created in the Hackathon seems to have different “levels”. The lowest level would only be the forwarding to the correct app store (without any verification) → can we reuse it for our case?
 
 Answer: We will use the existing endpoint and modify it to add one more option to redirect to custom landing page((in the <a href="http://epost.ch/" class="external-link" rel="nofollow">http://epost.ch</a> domain)) if it’s not a mobile device.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[2. QR-Code forwarding to correct app store]]
+- [[QR code URL implementation flow]]
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[Understanding Keycloak Authorization Code flow]]
+
+%% ai-graph-end %%

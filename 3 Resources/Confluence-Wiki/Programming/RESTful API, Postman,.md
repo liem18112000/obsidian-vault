@@ -1,18 +1,22 @@
 ---
-title: "RESTful API, Postman, ..."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47079916390/RESTful+API+Postman+...
-space: "TS"
-topic: programming
-relevance: 0.854
-depth: 3
-updated: 2022-03-30
+ai_hash: 3e958da32f97bce2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.854
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47079916390/RESTful+API+Postman+...
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: RESTful API, Postman, ...
+topic: programming
+type: source
+updated: 2022-03-30
 ---
 
 # RESTful API, Postman, ...
@@ -60,3 +64,14 @@ public class CustomerResource {
 http://localhost:8080/luzfin_finance/api/**00a04daf-f2b3-41d5-8c12-2d1b4c48a36a**/companies/1/customers/**getUseCreditCard/luzfin_finance/api/00a04daf-f2b3-41d5-8c12-2d1b4c48a36a/companies/1/customers/712**
 
 http://localhost:8082/luzfin_finance/api/642247b0-7e78-4a92-9f2a-74b727684732/companies/1/customers/customer-uri?company-uri=642247b0-7e78-4a92-9f2a-74b727684732/companies/2
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Swagger with api explorer]]
+- [[luz_cor_api]]
+- [[Document Creator API]]
+- [[06 - How to test a Rest API with authorization]]
+- [[Update and retrieve company API]]
+
+%% ai-graph-end %%

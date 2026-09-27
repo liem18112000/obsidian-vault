@@ -1,18 +1,22 @@
 ---
-title: "Architecture Design"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48917053458/Architecture+Design
-space: "FUT"
-topic: architecture
-relevance: 0.828
-depth: 2.74
-updated: 2026-07-29
+ai_hash: 93efe7afa2f7eea6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 53
+depth: 2.74
+entities: []
+relevance: 0.828
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48917053458/Architecture+Design
+space: FUT
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/fut
+- confluence
+- architecture
+- space/fut
+title: Architecture Design
+topic: architecture
+type: source
+updated: 2026-07-29
 ---
 
 # Architecture Design
@@ -390,3 +394,14 @@ Here, the workflow engine continues at the waiting task and starts the workflow 
 
 
 ![[48917053458-resume-workflow.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Synapse - ServerlessWorkflow Database analysis]]
+- [[OneAPI Architecture overview]]
+- [[Batching Design]]
+- [[Performance pain points]]
+- [[Luz Batch TypeScript - Sequence Diagram]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Compare AI models gpt-5.4(medium) vs opus4.6(high)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49269506075/Compare+AI+models+gpt-5.4+medium+vs+opus4.6+high
-space: "Helios"
-topic: ai_ml
-relevance: 0.839
-depth: 2.94
-updated: 2026-03-25
+ai_hash: 0889fa2ecf07e0b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.94
+entities: []
+relevance: 0.839
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49269506075/Compare+AI+models+gpt-5.4+medium+vs+opus4.6+high
+space: Helios
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/helios
+- confluence
+- ai-ml
+- space/helios
+title: Compare AI models gpt-5.4(medium) vs opus4.6(high)
+topic: ai_ml
+type: source
+updated: 2026-03-25
 ---
 
 # Compare AI models gpt-5.4(medium) vs opus4.6(high)
@@ -521,3 +525,14 @@ This is the most **debatable** design decision:
        <a href="#" rel="nofollow">File: src/main/java/ch/klara/luz/adyen/resource/StoreManagementResource.java:130-13</a>6
 
 ## **FINAL DECISION:** Choosed gpt-5.4 due to better model detachment from adyen sdk and also better API resources path.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A coding-agent prompt needs codebase anchors and stated house style]]
+- [[Programming]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[Confluence Export — Index]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+
+%% ai-graph-end %%

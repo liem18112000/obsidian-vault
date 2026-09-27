@@ -1,18 +1,22 @@
 ---
-title: "SQL script to search error comments of task or transaction"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47378366477/SQL+script+to+search+error+comments+of+task+or+transaction
-space: "GRAVITY"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2023-05-15
+ai_hash: b5cbd92c01b996b4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47378366477/SQL+script+to+search+error+comments+of+task+or+transaction
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: SQL script to search error comments of task or transaction
+topic: programming
+type: source
+updated: 2023-05-15
 ---
 
 # SQL script to search error comments of task or transaction
@@ -51,3 +55,14 @@ WHERE identifier IN (
 ![[47378366477-cob-cash-service.log]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL script to filter IN_PROGRESS tasks more than 30 days]]
+- [[SQL script to investigate dossier COB003059 on INT1]]
+- [[SQL script to investigate dossier with orphaned protocol records in PROD]]
+- [[SQL script to find all documents from Fidentity]]
+- [[SQL script to update retry tasks and check pending dossiers has an outdated credit card]]
+
+%% ai-graph-end %%

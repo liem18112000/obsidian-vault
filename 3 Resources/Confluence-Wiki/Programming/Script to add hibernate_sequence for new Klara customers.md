@@ -1,18 +1,22 @@
 ---
-title: "Script to add \"hibernate_sequence\" for new Klara customers."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/23195435760/Script+to+add+hibernate_sequence+for+new+Klara+customers.
-space: "NEXT"
-topic: programming
-relevance: 0.886
-depth: 3
-updated: 2020-06-24
+ai_hash: 48da17eefaba7b0f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.886
+source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/23195435760/Script+to+add+hibernate_sequence+for+new+Klara+customers.
+space: NEXT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/next
+- confluence
+- programming
+- space/next
+title: Script to add "hibernate_sequence" for new Klara customers.
+topic: programming
+type: source
+updated: 2020-06-24
 ---
 
 # Script to add "hibernate_sequence" for new Klara customers.
@@ -58,3 +62,14 @@ END$$;
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL Script execution]]
+- [[Fix migration issue DB Script Loop through tenant schema]]
+- [[Call API trigger Vacuum POS schema on PROD]]
+- [[Script to list all the information of the tenants]]
+- [[Script to create task again for banks using b.Link]]
+
+%% ai-graph-end %%

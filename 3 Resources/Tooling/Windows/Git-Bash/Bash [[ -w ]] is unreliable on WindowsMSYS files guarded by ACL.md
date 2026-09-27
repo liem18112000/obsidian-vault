@@ -1,7 +1,7 @@
 ---
-ai_hash: fea4d5c6011ccb4f
+ai_hash: 509b53d6728d5e6c
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-05
 entities: []
 source: session 2026-07-05
@@ -47,5 +47,7 @@ Related: there is no `sudo` on Windows, so the usual `[[ -w f ]] || sudo cmd` fa
 **Related notes:**
 - [[Git Bash etchosts is not the Windows hosts file ssh reads]]
 - [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
+- [[In CI invoke repo shell scripts via bash script.sh, not .script.sh (Windows drops the +x bit)]]
 
 %% ai-graph-end %%

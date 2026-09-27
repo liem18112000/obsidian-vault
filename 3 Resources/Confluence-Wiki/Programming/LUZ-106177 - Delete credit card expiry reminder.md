@@ -1,18 +1,22 @@
 ---
-title: "LUZ-106177 - Delete credit card expiry reminder"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47482765795/LUZ-106177+-+Delete+credit+card+expiry+reminder
-space: "TS"
-topic: programming
-relevance: 0.716
-depth: 2.89
-updated: 2023-09-13
+ai_hash: d80d8f1551849a6f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 48
+depth: 2.89
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47482765795/LUZ-106177+-+Delete+credit+card+expiry+reminder
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: LUZ-106177 - Delete credit card expiry reminder
+topic: programming
+type: source
+updated: 2023-09-13
 ---
 
 # LUZ-106177 - Delete credit card expiry reminder
@@ -456,3 +460,14 @@ luz_store:miracle/LUZ-98265/precondition-company-deletion
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-102459 Implement physical delete for INDIVIDUAL tenant]]
+- [[Send creditcard notification from luz-public-api-adapter-messaging]]
+- [[LUZ-79226 PayPal in Online Shop - Adaption KLARA Pay - Gateway API]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[Call API trigger Vacuum POS schema on PROD]]
+
+%% ai-graph-end %%

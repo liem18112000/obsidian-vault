@@ -1,10 +1,20 @@
 ---
-title: "Forecast launch load per user journey, and rate each for sheddability"
+ai_hash: f5fc8f41720504a5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: AI-1538 Prepare for more volume on Analyze API (AI)'
 status: seedling
-source: "Confluence: AI-1538 Prepare for more volume on Analyze API (AI)"
-tags: [capacity-planning, load, user-journeys, launch, load-shedding, confluence-distilled]
+tags:
+- capacity-planning
+- load
+- user-journeys
+- launch
+- load-shedding
+- confluence-distilled
+title: Forecast launch load per user journey, and rate each for sheddability
+type: lesson
 ---
 
 # Forecast launch load per user journey, and rate each for sheddability
@@ -41,3 +51,10 @@ Source: [[AI-1538 Prepare for more volume on Analyze API]] (AI, Confluence).
 ## Related
 
 - [[Split page load into server, render and interaction before optimising]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AI-1538 Prepare for more volume on Analyze API]]
+
+%% ai-graph-end %%

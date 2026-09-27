@@ -1,18 +1,22 @@
 ---
-title: "Swagger with api explorer"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/6898253602/Swagger+with+api+explorer
-space: "Arrow"
-topic: programming
-relevance: 0.891
-depth: 3
-updated: 2020-04-27
+ai_hash: fb79d1cfc958e248
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.891
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/6898253602/Swagger+with+api+explorer
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: Swagger with api explorer
+topic: programming
+type: source
+updated: 2020-04-27
 ---
 
 # Swagger with api explorer
@@ -50,3 +54,14 @@ tags:
 3.2.1. Get generic token (Basic Auth)
 
 3.2.2. Get full token (Basic Auth)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to consume luz api]]
+- [[HowToUseNewTokenAPI]]
+- [[OpenAPI UI (API on SwaggerUI)]]
+- [[Swagger UI]]
+- [[Token JWT Security]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: a8873e500ec0c68d
+ai_hash: 12bc8b9e301d22c1
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-10
@@ -33,10 +33,10 @@ In luz-docs-import, `ImportJob.unprocessedFiles` must contain only files that re
 %% ai-graph-start %%
 
 **Related notes:**
+- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
 - [[luz_docs_import ZIP uploads are not virus-scanned (AntiviusScanningService is never wired in)]]
 - [[Run volume import fixtures last; retry-exhaustion is transient saturation not a defect]]
-- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
 - [[luz-docs-import AV scan covers only the metadata sidecar, never the document binary]]
-- [[DELETE import-jobs id has no live consumer]]
+- [[Per-file AV scan rejects one file; whole-job scan fails the whole import]]
 
 %% ai-graph-end %%

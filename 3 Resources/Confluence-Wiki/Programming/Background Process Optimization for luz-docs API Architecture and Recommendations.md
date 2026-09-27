@@ -1,18 +1,22 @@
 ---
-title: "Background Process Optimization for luz-docs API: Architecture and Recommendations"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49306796036/Background+Process+Optimization+for+luz-docs+API+Architecture+and+Recommendations
-space: "LUZ"
-topic: programming
-relevance: 0.921
-depth: 3
-updated: 2026-04-08
+ai_hash: 430e9c6e74050ea0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.921
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49306796036/Background+Process+Optimization+for+luz-docs+API+Architecture+and+Recommendations
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: 'Background Process Optimization for luz-docs API: Architecture and Recommendations'
+topic: programming
+type: source
+updated: 2026-04-08
 ---
 
 # Background Process Optimization for luz-docs API: Architecture and Recommendations
@@ -177,3 +181,14 @@ If the AI Analysis service has strict rate limits, **Google Cloud Tasks** is hig
 ## Conclusion
 
 The current architecture conflates serving user API requests with heavy background data management. By migrating to **K8s CronJobs** for maintenance and **GCP Pub/Sub Worker Pods** for event-driven logic, the `luz-docs` API will achieve higher throughput, lower latency, and better resilience against memory and thread pool exhaustion.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Piggybacking background jobs on HTTP requests couples job load to traffic]]
+- [[New architecture for documentStatistic]]
+- [[Performance pain points]]
+- [[Performance Analysis and Proposed Solutions]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+
+%% ai-graph-end %%

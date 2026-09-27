@@ -1,7 +1,7 @@
 ---
-ai_hash: 4bcce53006bd13dd
+ai_hash: 703b78950e707842
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Affiliate disclosure
 - Link hygiene

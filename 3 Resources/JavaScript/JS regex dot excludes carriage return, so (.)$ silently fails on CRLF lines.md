@@ -1,10 +1,19 @@
 ---
-title: "JS regex dot excludes carriage return, so (.*)$ silently fails on CRLF lines"
+ai_hash: 3e660afdc2dcf3bf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: session 2026-09-27 (Confluence -> Obsidian import)
 status: seedling
-source: "session 2026-09-27 (Confluence -> Obsidian import)"
-tags: [javascript, regex, gotcha, encoding, line-endings]
+tags:
+- javascript
+- regex
+- gotcha
+- encoding
+- line-endings
+title: JS regex dot excludes carriage return, so (.*)$ silently fails on CRLF lines
+type: lesson
 ---
 
 # JS regex dot excludes carriage return, so (.*)$ silently fails on CRLF lines
@@ -35,3 +44,14 @@ const body = raw.replace(/\r\n?/g, '\n');   // first thing, before any parsing
 ## Related
 
 - [[Windows Git Bash mangles non-ASCII to cp1252 breaking UTF-8]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Line-removal regex must use rn when reading files with newline='']]
+- [[Claude Code Bash tool collapses backslashes even inside quoted heredocs]]
+- [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes]]
+- [[Windows Git Bash mangles non-ASCII to cp1252 breaking UTF-8]]
+- [[Generate a git patch under autocrlf so git apply matches a CRLF worktree]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Deploy luz-epc-redis-service on GCP"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48950706199/Deploy+luz-epc-redis-service+on+GCP
-space: "Helios"
-topic: infra
-relevance: 0.879
-depth: 3
-updated: 2025-12-09
+ai_hash: 0303b39efc1f54ba
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.879
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48950706199/Deploy+luz-epc-redis-service+on+GCP
+space: Helios
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/helios
+- confluence
+- infra
+- space/helios
+title: Deploy luz-epc-redis-service on GCP
+topic: infra
+type: source
+updated: 2025-12-09
 ---
 
 # Deploy luz-epc-redis-service on GCP
@@ -141,3 +145,14 @@ kubectl apply -l klara.ch/module=luz-epc-redis-service -f deployment.yaml -n dev
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[EPC Notification]]
+- [[Setup Redis and DNS on TEST and PROD]]
+- [[Kubernetes knowledge]]
+- [[Recipe Deploy with Terraform]]
+- [[luz-vault - How to run Vault Benchmark]]
+
+%% ai-graph-end %%

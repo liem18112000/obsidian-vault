@@ -1,18 +1,22 @@
 ---
-title: "Activation-code"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZPOS/pages/21072653714/Activation-code
-space: "LUZPOS"
-topic: programming
-relevance: 0.812
-depth: 3
-updated: 2018-03-16
+ai_hash: 37443f58f7f991f6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.812
+source: https://axonivy.atlassian.net/wiki/spaces/LUZPOS/pages/21072653714/Activation-code
+space: LUZPOS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luzpos
+- confluence
+- programming
+- space/luzpos
+title: Activation-code
+topic: programming
+type: source
+updated: 2018-03-16
 ---
 
 # Activation-code
@@ -39,3 +43,10 @@ Table pos_activation:
 | 3 | 375849405967 | s_216b2470_8d4a_4459_bdc3_feaede5be454 | 2018-01-04 16:08:21.773129 |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+
+%% ai-graph-end %%

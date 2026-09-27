@@ -1,18 +1,22 @@
 ---
-title: "Encryption and decryption flows with Vault"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525655052/Encryption+and+decryption+flows+with+Vault
-space: "LUZ"
-topic: security
-relevance: 0.921
-depth: 3
-updated: 2021-03-12
+ai_hash: 588d83a97dc53e98
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 48
+depth: 3
+entities: []
+relevance: 0.921
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525655052/Encryption+and+decryption+flows+with+Vault
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Encryption and decryption flows with Vault
+topic: security
+type: source
+updated: 2021-03-12
 ---
 
 # Encryption and decryption flows with Vault
@@ -332,3 +336,14 @@ plaintext=\$(base64 \<\<\< "4111 1111 1111 1111")
 
 
 ![[20525655052-revoke.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Envelope encryption with Vault transit keeps Vault off the data path]]
+- [[luz-storage - DEPRECATED - Encryption & Decryption]]
+- [[Vault overview]]
+- [[MessageV2 Field Encryption Approach]]
+- [[Introduction of Hashicorp Vault]]
+
+%% ai-graph-end %%

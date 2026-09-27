@@ -1,18 +1,22 @@
 ---
-title: "Analyze API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2530751362/Analyze+API
-space: "AI"
-topic: programming
-relevance: 0.775
-depth: 2.6
-updated: 2025-04-16
+ai_hash: 8826aa6dd558e2dd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.6
+entities: []
+relevance: 0.775
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2530751362/Analyze+API
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Analyze API
+topic: programming
+type: source
+updated: 2025-04-16
 ---
 
 # Analyze API
@@ -125,3 +129,14 @@ The Analyze API is a REST endpoint to extract information from documents.
 ## Releases
 
 <a href="https://axonivy.atlassian.net/projects/AI?contains=analyze&amp;selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&amp;status=released-unreleased" class="external-link" rel="nofollow">https://axonivy.atlassian.net/projects/AI?contains=analyze&amp;selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&amp;status=released-unreleased</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze API Demo]]
+- [[Analyze API v2 for Invoice prediction]]
+- [[Invoice API]]
+- [[Analyze API v2.0]]
+- [[Analyze API Explained]]
+
+%% ai-graph-end %%

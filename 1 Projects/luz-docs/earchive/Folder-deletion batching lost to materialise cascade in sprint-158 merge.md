@@ -1,25 +1,23 @@
 ---
-ai_hash: 7a0a64beb978bfab
+ai_hash: 5cf12dcfe6d9ed62
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-12
 entities:
 - Folder-deletion batching
-- Materialise cascade
-- Sprint-158 merge
+- materialise cascade
+- sprint-158 merge
 - origin/master
 - kepler/sprint-158/enhance-delete-folder-api
 - FolderDeletingService.updateDocumentInRemoveFolder
 - updateManyRemoveArrayValues
 - materializeFacade.shouldCascadeDocument
 - onDocumentChange
-- Technical fields
+- technical fields
 - e3ce6663b
-- Projects/luz-docs/earchive/luz_docs parent-change cascade
-- Snapshot rollback
-- Per-document writes
-- Semantic conflict
-- Resolution
+- master per-doc flow
+- branch batching
+- luz_docs parent-change cascade recovers forward, not via snapshot rollback
 source: merge e3ce6663b, session 2026-06-12
 status: seedling
 tags:
@@ -47,32 +45,27 @@ Resolution chosen (2026-06-12, merge e3ce6663b): **master per-doc flow wins; bra
 **Related notes:**
 - [[luz_docs parent-change cascade recovers forward, not via snapshot rollback]]
 - [[luz-docs delete-folder batching roadmap - remaining per-item paths]]
-- [[luz_docs FolderDeletingServiceIT coverage gaps]]
 - [[LUZ-155107 shipped as two commits so the inheritedSecurityClassCode fix can cherry-pick to earchive-master]]
+- [[luz_docs FolderDeletingServiceIT coverage gaps]]
 - [[luz_docs folder delete shared document handling]]
 
 **Relations:**
-- Folder-deletion batching — *lost to* — Materialise cascade
-- Folder-deletion batching — *lost in* — Sprint-158 merge
-- Sprint-158 merge — *merges* — origin/master
-- Sprint-158 merge — *merges into* — kepler/sprint-158/enhance-delete-folder-api
-- origin/master — *implemented* — Materialise cascade
-- kepler/sprint-158/enhance-delete-folder-api — *implemented* — Folder-deletion batching
-- Folder-deletion batching — *uses* — updateManyRemoveArrayValues
-- Materialise cascade — *uses* — Per-document writes
-- Per-document writes — *involves* — materializeFacade.shouldCascadeDocument
+- Folder-deletion batching — *lost to* — materialise cascade
+- Folder-deletion batching — *lost to* — sprint-158 merge
+- sprint-158 merge — *merged* — origin/master
+- sprint-158 merge — *merged* — kepler/sprint-158/enhance-delete-folder-api
+- origin/master — *implemented* — materialise cascade
+- kepler/sprint-158/enhance-delete-folder-api — *implemented* — branch batching
+- FolderDeletingService.updateDocumentInRemoveFolder — *had semantic conflict in* — sprint-158 merge
+- branch batching — *used* — updateManyRemoveArrayValues
+- master per-doc flow — *used* — materializeFacade.shouldCascadeDocument
 - materializeFacade.shouldCascadeDocument — *triggers* — onDocumentChange
-- onDocumentChange — *merges* — Technical fields
-- FolderDeletingService.updateDocumentInRemoveFolder — *experienced* — Semantic conflict
-- Semantic conflict — *involved* — Folder-deletion batching
-- Semantic conflict — *involved* — Per-document writes
-- Resolution — *favored* — Per-document writes
-- Resolution — *discarded* — Folder-deletion batching
-- Resolution — *recorded as commit* — e3ce6663b
-- Technical fields — *are* — per-document values
-- Per-document values — *incompatible with* — updateManyRemoveArrayValues
-- Projects/luz-docs/earchive/luz_docs parent-change cascade — *recovers* — forward
-- Projects/luz-docs/earchive/luz_docs parent-change cascade — *does not use* — Snapshot rollback
-- Sprint-158 merge — *related to* — Projects/luz-docs/earchive/luz_docs parent-change cascade
+- onDocumentChange — *merges* — technical fields
+- e3ce6663b — *is resolution for* — sprint-158 merge
+- e3ce6663b — *favored* — master per-doc flow
+- e3ce6663b — *dropped* — branch batching
+- technical fields — *are* — per-document values
+- updateManyRemoveArrayValues — *cannot express* — per-document values
+- sprint-158 merge — *related to* — luz_docs parent-change cascade recovers forward, not via snapshot rollback
 
 %% ai-graph-end %%

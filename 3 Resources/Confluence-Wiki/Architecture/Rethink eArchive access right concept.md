@@ -1,18 +1,22 @@
 ---
-title: "Rethink: eArchive access right concept"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47167176920/Rethink+eArchive+access+right+concept
-space: "TP2020"
-topic: architecture
-relevance: 0.76
-depth: 2.59
-updated: 2022-08-19
+ai_hash: 393af59b328acc6c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.59
+entities: []
+relevance: 0.76
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47167176920/Rethink+eArchive+access+right+concept
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/tp2020
+- confluence
+- architecture
+- space/tp2020
+title: 'Rethink: eArchive access right concept'
+topic: architecture
+type: source
+updated: 2022-08-19
 ---
 
 # Rethink: eArchive access right concept
@@ -237,3 +241,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Folder access rights stored on the folder or derived from its contents]]
+- [[Question for eArchive (Read business concept)]]
+- [[Technical Details - Pre-compute Security Class Code]]
+- [[Folder recovery with re-parenting leaves inheritedSecurityClassCode stale]]
+- [[Analytics Analyze API call when accessing eArchive]]
+
+%% ai-graph-end %%

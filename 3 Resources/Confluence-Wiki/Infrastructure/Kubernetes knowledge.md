@@ -1,18 +1,22 @@
 ---
-title: "Kubernetes knowledge"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/47095054407/Kubernetes+knowledge
-space: "TK"
-topic: infra
-relevance: 0.716
-depth: 2.67
-updated: 2022-04-19
+ai_hash: 7282f959a41f96ae
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.67
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/47095054407/Kubernetes+knowledge
+space: TK
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/tk
+- confluence
+- infra
+- space/tk
+title: Kubernetes knowledge
+topic: infra
+type: source
+updated: 2022-04-19
 ---
 
 # Kubernetes knowledge
@@ -166,3 +170,14 @@ you can follow this link for more details
 ## Config new module
 
 [Configurations New Modules To GCP](https://axonivy.atlassian.net/wiki/spaces/TK/pages/30671884780/Configurations+New+Modules+To+GCP)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Recipe Deploy with Terraform]]
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+- [[Apply changes on luz_kubernetes]]
+- [[Document flow setup build Jenkins job Maven]]
+
+%% ai-graph-end %%

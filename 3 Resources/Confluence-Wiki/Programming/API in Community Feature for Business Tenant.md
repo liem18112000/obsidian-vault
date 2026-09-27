@@ -1,18 +1,22 @@
 ---
-title: "API in Community Feature for Business Tenant"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48621715651/API+in+Community+Feature+for+Business+Tenant
-space: "Helios"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2025-08-20
+ai_hash: dc052ac2cc1fd8cd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48621715651/API+in+Community+Feature+for+Business+Tenant
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: API in Community Feature for Business Tenant
+topic: programming
+type: source
+updated: 2025-08-20
 ---
 
 # API in Community Feature for Business Tenant
@@ -115,3 +119,14 @@ tags:
 luz_communities contact: src/main/java/ch/klara/luz/communities/resource/CommunityContactResource.java
 
 `Ex: http://luz-communities:8080/luz_communities/api/8815e317-f12f-4d5b-93e1-e0bc27f233ab/address-book/cities?maxResult=50&zipCode=22*&cityName=*]`
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz_google Api Document]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[Getting tenant list]]
+- [[LUZ-146746 Use correct API's for delete, restore and their undo]]
+- [[15. Update companies by tenant id]]
+
+%% ai-graph-end %%

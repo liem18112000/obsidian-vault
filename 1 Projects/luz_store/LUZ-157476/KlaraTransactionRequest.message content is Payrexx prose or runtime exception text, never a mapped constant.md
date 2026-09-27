@@ -1,44 +1,51 @@
 ---
-ai_hash: bb9087f50c7ce65d
+ai_hash: 3a8473a794645615
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-24
 entities:
 - KlaraTransactionRequest
-- message
-- Payrexx prose
-- runtime exception text
-- mapped constant
+- message field
+- Payrexx
 - luz_online_payment
-- PayrexxResponse.message
 - ConsumerServiceClientErrorException
 - TransactionTask
-- e.getMessage()
-- Payrexx
-- ERROR
-- JVM/framework exception text
-- TECHNICAL_ERROR
+- PayrexxResponse
 - WebApplicationException
 - ProcessingException
-- timeout
 - NPE
-- ChargeTransactionService.exceptionally
-- repo-defined literal
+- ChargeTransactionService
 - IllegalStateException
-- Transaction Id
-- request.getId()
 - TransactionRestCallerV2
-- '@ConsumerApiErrorHandled'
+- ConsumerApiErrorHandled
 - ConsumerApiErrorHandledInterceptor
-- getTransactionsWithinTimeRange
-- decline reason
-- structured failureCategory
 - LUZ-157476
+- PayrexxCommunicatorTest
+- PayrexxResponse.java
+- TransactionTask.java
+- getTransactionsWithinTimeRange
+- charge operation
+- refund operation
+- status
+- ERROR status
+- TECHNICAL_ERROR status
+- decline reason
+- failureCategory
 - luz_store
-- Payrexx card declines
 - Payrexx decline codes
-- setMessage(...)
-- charge/refund methods
+- Payrexx-authored prose
+- JVM/framework exception text
+- repo-defined literal
+- dynamic exception text
+- 'An error occurred: '
+- request.getId()
+- e.getMessage()
+- response.getMessage()
+- getCause()
+- normal charge/refund result path
+- success
+- enumerable set of code-keyed constants
+- structured failureCategory
 source: session 2026-07-24, code investigation
 status: seedling
 tags:
@@ -82,52 +89,57 @@ Repo: luz_online_payment. Ticket: LUZ-157476.
 - [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
 
 **Relations:**
-- KlaraTransactionRequest — *HAS_FIELD* — message
-- message — *CONTAINS* — Payrexx prose
-- message — *CONTAINS* — runtime exception text
-- message — *IS_NEVER* — mapped constant
-- message — *IS_ASSIGNED_BY* — setMessage(...)
-- setMessage(...) — *PASSES* — dynamic exception text
-- Payrexx prose — *ORIGINATES_FROM* — PayrexxResponse.message
-- ConsumerServiceClientErrorException — *USES* — response.getMessage()
-- TransactionTask — *CATCHES* — e.getMessage()
+- KlaraTransactionRequest — *HAS_FIELD* — message field
+- message field — *CONTAINS* — Payrexx-authored prose
+- message field — *CONTAINS* — JVM/framework exception text
+- message field — *CONTAINS* — repo-defined literal
+- message field — *IS_NEVER* — mapped constant
+- message field — *IS_NEVER_ASSIGNED_STRING_LITERAL_ON* — normal charge/refund result path
+- message field — *RECEIVES* — dynamic exception text
+- Payrexx-authored prose — *ORIGINATES_FROM* — PayrexxResponse.message
+- Payrexx-authored prose — *IS_HANDLED_BY* — ConsumerServiceClientErrorException
+- ConsumerServiceClientErrorException — *IS_CAUGHT_BY* — TransactionTask
+- TransactionTask — *EXTRACTS_MESSAGE_VIA* — e.getMessage()
+- Payrexx-authored prose — *HAS_PREFIX* — An error occurred: 
 - Payrexx — *ADDS_PREFIX* — An error occurred: 
-- Payrexx prose — *HAS_STATUS* — ERROR
-- JVM/framework exception text — *HAS_STATUS* — TECHNICAL_ERROR
+- luz_online_payment — *DOES_NOT_EMIT_PREFIX* — An error occurred: 
+- Payrexx-authored prose — *ASSOCIATED_WITH* — ERROR status
+- JVM/framework exception text — *IS_RUNTIME_GENERATED* — true
 - JVM/framework exception text — *INCLUDES* — WebApplicationException
 - JVM/framework exception text — *INCLUDES* — ProcessingException
-- JVM/framework exception text — *INCLUDES* — timeout
 - JVM/framework exception text — *INCLUDES* — NPE
-- JVM/framework exception text — *INCLUDES* — ChargeTransactionService.exceptionally
-- repo-defined literal — *HAS_STATUS* — TECHNICAL_ERROR
+- JVM/framework exception text — *ORIGINATES_FROM* — ChargeTransactionService
+- JVM/framework exception text — *ASSOCIATED_WITH* — TECHNICAL_ERROR status
 - repo-defined literal — *IS_AN* — IllegalStateException
-- IllegalStateException — *IS_THROWN_IN* — TransactionTask
-- IllegalStateException — *REQUIRES* — Transaction Id
-- IllegalStateException — *IS_THROWN_WHEN* — request.getId() IS_NULL
-- message — *IS_NULL_ON* — success
-- charge/refund methods — *ARE_NOT_ANNOTATED_WITH* — @ConsumerApiErrorHandled
-- charge/refund methods — *ARE_IN* — TransactionRestCallerV2
-- ConsumerApiErrorHandledInterceptor — *DOES_NOT_WRAP* — charge/refund methods
-- Payrexx prose — *REACHES* — TransactionTask
-- Payrexx prose — *REACHES_VIA* — e.getMessage()
+- repo-defined literal — *IS_DEFINED_IN* — TransactionTask.java
+- repo-defined literal — *TRIGGERED_BY* — request.getId() IS_NULL
+- repo-defined literal — *ASSOCIATED_WITH* — TECHNICAL_ERROR status
+- message field — *BECOMES_NULL_ON* — success
+- TransactionRestCallerV2 — *PERFORMS* — charge operation
+- TransactionRestCallerV2 — *PERFORMS* — refund operation
+- charge operation — *LACKS_ANNOTATION* — ConsumerApiErrorHandled
+- refund operation — *LACKS_ANNOTATION* — ConsumerApiErrorHandled
+- getTransactionsWithinTimeRange — *HAS_ANNOTATION* — ConsumerApiErrorHandled
+- ConsumerApiErrorHandledInterceptor — *DOES_NOT_INTERCEPT* — charge operation
+- ConsumerApiErrorHandledInterceptor — *DOES_NOT_INTERCEPT* — refund operation
+- Payrexx prose — *REACHES* — TransactionTask VIA e.getMessage()
+- Payrexx prose — *DOES_NOT_USE* — getCause()
 - decline reason — *IS_A* — free-form English
-- decline reason — *IS_AUTHORED_BY* — Payrexx
+- decline reason — *AUTHORED_BY* — Payrexx
+- decline reason — *IS_NOT_A* — enumerable set of code-keyed constants
 - decline reason — *CANNOT_BE* — reliably switched on
-- structured failureCategory — *IS_RECOMMENDED_FOR* — decline reason
-- luz_online_payment — *IS_REPOSITORY_FOR* — KlaraTransactionRequest
-- LUZ-157476 — *IS_TICKET_FOR* — luz_online_payment
-- LUZ-157476 — *IS_RELATED_TO* — Payrexx card declines reach luz_store as ERROR with prose, not DECLINED
+- structured failureCategory — *IS_RECOMMENDED* — true
+- luz_online_payment — *IS_A* — Repo
+- LUZ-157476 — *IS_A* — Ticket
+- Payrexx card declines — *REACH* — luz_store
+- Payrexx card declines — *HAS* — ERROR status
+- Payrexx card declines — *CONTAINS* — prose
 - luz_online_payment — *DROPS* — Payrexx decline codes
-- PayrexxResponse.message — *IS_REFERENCED_IN* — luz_online_payment (doc comment)
-- PayrexxCommunicatorTest.java:30 — *IS_REFERENCED_IN* — luz_online_payment (test mock)
-- TransactionTask — *IS_IN* — luz_online_payment
-- ChargeTransactionService — *IS_IN* — luz_online_payment
-- TransactionRestCallerV2 — *IS_IN* — luz_online_payment
-- ConsumerApiErrorHandledInterceptor — *IS_IN* — luz_online_payment
-- getTransactionsWithinTimeRange — *IS_METHOD_OF* — TransactionRestCallerV2
-- luz_store — *RECEIVES* — Payrexx card declines
-- Payrexx card declines — *ARE_REPORTED_AS* — ERROR
-- Payrexx card declines — *INCLUDE* — prose
-- Payrexx card declines — *ARE_NOT* — DECLINED (status)
+- KlaraTransactionRequest — *BELONGS_TO* — luz_online_payment
+- TransactionTask — *BELONGS_TO* — luz_online_payment
+- ChargeTransactionService — *BELONGS_TO* — luz_online_payment
+- TransactionRestCallerV2 — *BELONGS_TO* — luz_online_payment
+- PayrexxResponse.java — *BELONGS_TO* — luz_online_payment
+- PayrexxCommunicatorTest — *BELONGS_TO* — luz_online_payment
 
 %% ai-graph-end %%

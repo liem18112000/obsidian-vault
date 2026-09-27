@@ -1,18 +1,22 @@
 ---
-title: "mTLS (mutual TLS, 2 way TLS)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20496026069/mTLS+mutual+TLS+2+way+TLS
-space: "LUZ"
-topic: security
-relevance: 0.716
-depth: 2.42
-updated: 2019-09-18
+ai_hash: 26aa56b586d6a5b5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 2.42
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20496026069/mTLS+mutual+TLS+2+way+TLS
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: mTLS (mutual TLS, 2 way TLS)
+topic: security
+type: source
+updated: 2019-09-18
 ---
 
 # mTLS (mutual TLS, 2 way TLS)
@@ -101,3 +105,10 @@ How to debug
   
 
 Important : <a href="https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/ReadDebug.html" class="external-link" rel="nofollow">https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/ReadDebug.html</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Security]]
+
+%% ai-graph-end %%

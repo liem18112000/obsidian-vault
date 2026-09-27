@@ -1,18 +1,22 @@
 ---
-title: "Script to collect tenants with missing AscertainedTaxableEarning tags"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49005232276/Script+to+collect+tenants+with+missing+AscertainedTaxableEarning+tags
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2025-12-26
+ai_hash: ff4fdf5032a76ff5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49005232276/Script+to+collect+tenants+with+missing+AscertainedTaxableEarning+tags
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Script to collect tenants with missing AscertainedTaxableEarning tags
+topic: programming
+type: source
+updated: 2025-12-26
 ---
 
 # Script to collect tenants with missing AscertainedTaxableEarning tags
@@ -49,3 +53,14 @@ please select all the script (Ctrl + A) and the click the run icon
 
 
 Step 3: After the script finishes, the result would be available in the “result tab“, please export the result by clicking the “export data“ button and give it back to us as a csv file.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Script to list all the information of the tenants]]
+- [[16. Export unsynchronized companies which missing from last synchronization]]
+- [[LUZ-102045 Implement physical delete for COMPANY tenant Part 2 (Postgres cont)]]
+- [[SQL Script execution]]
+- [[15. Update companies by tenant id]]
+
+%% ai-graph-end %%

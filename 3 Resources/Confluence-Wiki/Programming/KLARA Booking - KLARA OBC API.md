@@ -1,18 +1,22 @@
 ---
-title: "KLARA Booking - KLARA OBC API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20490592551/KLARA+Booking+-+KLARA+OBC+API
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2019-06-25
+ai_hash: 6d8343b40512a5e9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20490592551/KLARA+Booking+-+KLARA+OBC+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: KLARA Booking - KLARA OBC API
+topic: programming
+type: source
+updated: 2019-06-25
 ---
 
 # KLARA Booking - KLARA OBC API
@@ -142,3 +146,14 @@ tags:
 `        ``"OBC generated successfully."`  
 `    ``]`  
 `}`
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to use Public API to create update KLARA Business Company]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[KLARA Integration (request access token & call API)]]
+- [[Login]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 1ffbe1e9265f2480
+ai_hash: 53595a5853d9dbdd
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - ELECTRON_RUN_AS_NODE=1 in the env makes an Electron exe run as Node and 'look broken'
   — check/clear it before testing

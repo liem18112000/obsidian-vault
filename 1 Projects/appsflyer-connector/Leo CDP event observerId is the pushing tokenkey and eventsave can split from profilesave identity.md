@@ -1,38 +1,35 @@
 ---
-ai_hash: 1dfd36aac0a5a8e5
+ai_hash: 1f2eafc09caaa531
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-30
 entities:
 - Leo CDP
 - observerId
 - tokenkey
-- event/save API
-- profile/save API
 - tracking event
 - mobile_install event
+- 30snDokTeHwFK4p6oBnMBB
 - write token
 - read token
 - default_access_key
 - workspace
+- event/save
 - targetUpdateEmail
+- profile/save
 - primaryEmail
+- profile id 1sM9LB0RC8UXRvD0lA5UNm
+- visitor profile 3DmymIkokb6VcEB9irMdbO
 - CdpHttpSink
-- visitor profile
-- event profile
+- Identity resolution
 - eventStatistics
+- repeated pushes
+- aggregation
+- counter increments
+- duplication
+- Leo CDP Data Observer API
 - Identity-keyed CDP API breaks content-hash idempotency
 - Leo CDP profilelist ignores start and limit and embeds event data
-- Leo CDP Data Observer API
-- profile ID 1sM9LB0RC8UXRvD0lA5UNm
-- profile ID 3DmymIkokb6VcEB9irMdbO
-- identity resolution
-- repeated pushes
-- counter increments
-- duplicate events
-- events
-- ingesting token/observer
-- identity facts
 source: session 2026-06-30; live dump
 status: seedling
 tags:
@@ -63,50 +60,50 @@ Positive signal: that event profile's `eventStatistics` showed `mobile_install: 
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Identity-keyed CDP API breaks content-hash idempotency]]
 - [[Leo CDP save returns 200 but eventlist cannot read it back]]
 - [[Leo CDP public REST API contract]]
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
 - [[Leo CDP profilelist ignores start and limit and embeds event data]]
 - [[Leo CDP admin dashboard is a hash-routed SPA on a separate host from the API]]
 
 **Relations:**
-- observerId — *is* — tokenkey
-- event/save API — *can_split_from* — profile/save API
-- observerId — *is_on* — tracking event
-- tokenkey — *pushed* — tracking event
-- mobile_install event — *has_observerId* — tokenkey
-- tokenkey — *belongs_to* — write token
-- events — *attributed_to* — ingesting token/observer
-- write token — *is_a_type_of* — ingesting token/observer
-- read token — *is_a_different_key_from* — write token
-- default_access_key — *is_an_example_of* — read token
-- read token — *can_see* — events
-- events — *written_by* — write token
-- read token — *operates_in* — workspace
-- write token — *operates_in* — workspace
-- event/save API — *did_not_merge_into* — profile/save API
-- event/save API — *uses_identity_field* — targetUpdateEmail
-- profile/save API — *uses_identity_field* — primaryEmail
-- profile/save API — *returned* — profile ID 1sM9LB0RC8UXRvD0lA5UNm
-- profile ID 1sM9LB0RC8UXRvD0lA5UNm — *has_status* — email set
-- profile ID 1sM9LB0RC8UXRvD0lA5UNm — *has_status* — no events
-- CdpHttpSink — *pushed* — events
-- events — *landed_on* — profile ID 3DmymIkokb6VcEB9irMdbO
-- profile ID 3DmymIkokb6VcEB9irMdbO — *is_a_type_of* — visitor profile
-- profile ID 3DmymIkokb6VcEB9irMdbO — *is* — email-less
-- identity resolution — *is_not_guaranteed_between* — event/save API
-- identity resolution — *is_not_guaranteed_between* — profile/save API
-- event profile — *has* — eventStatistics
-- eventStatistics — *shows_count_for* — mobile_install event
-- eventStatistics — *shows_value* — 4
-- repeated pushes — *result_in* — counter increments
-- repeated pushes — *do_not_result_in* — duplicate events
-- Leo CDP — *is_related_to* — Identity-keyed CDP API breaks content-hash idempotency
-- Leo CDP — *is_related_to* — Leo CDP profilelist ignores start and limit and embeds event data
-- Leo CDP Data Observer API — *provides* — identity facts
-- Leo CDP Data Observer API — *is_part_of* — Leo CDP
-- Leo CDP — *has_API* — event/save API
-- Leo CDP — *has_API* — profile/save API
+- observerId — *is_equivalent_to* — tokenkey
+- tracking event — *has_attribute* — observerId
+- tokenkey — *pushes* — tracking event
+- mobile_install event — *has_observerId* — 30snDokTeHwFK4p6oBnMBB
+- 30snDokTeHwFK4p6oBnMBB — *is_a* — tokenkey
+- 30snDokTeHwFK4p6oBnMBB — *belongs_to* — write token
+- tracking event — *attributed_to* — ingesting token
+- read token — *is_a_type_of* — key
+- read token — *example* — default_access_key
+- read token — *can_see_events_in* — workspace
+- event/save — *uses_identity_field* — targetUpdateEmail
+- profile/save — *uses_identity_field* — primaryEmail
+- event/save — *did_not_merge_into* — profile/save
+- profile/save — *returned_profile_id* — profile id 1sM9LB0RC8UXRvD0lA5UNm
+- profile id 1sM9LB0RC8UXRvD0lA5UNm — *has_email_set* — true
+- profile id 1sM9LB0RC8UXRvD0lA5UNm — *has_events* — false
+- mobile_install event — *pushed_via* — CdpHttpSink
+- CdpHttpSink — *uses_identity_field* — targetUpdateEmail
+- mobile_install event — *landed_on* — visitor profile 3DmymIkokb6VcEB9irMdbO
+- visitor profile 3DmymIkokb6VcEB9irMdbO — *is_email_less* — true
+- visitor profile 3DmymIkokb6VcEB9irMdbO — *is_separate_from* — profile id 1sM9LB0RC8UXRvD0lA5UNm
+- Identity resolution — *between* — event/save
+- Identity resolution — *between* — profile/save
+- Identity resolution — *not_guaranteed_to_converge_on_one_profile_by_email* — true
+- visitor profile 3DmymIkokb6VcEB9irMdbO — *has_attribute* — eventStatistics
+- eventStatistics — *shows* — mobile_install: 4
+- mobile_install: 4 — *matches* — 4 times demo push was run
+- repeated pushes — *result_in* — aggregation
+- aggregation — *is_a_form_of* — counter increments
+- aggregation — *is_not* — duplication
 - Leo CDP — *has_API* — Leo CDP Data Observer API
+- Leo CDP Data Observer API — *observes* — identity facts
+- Leo CDP — *related_to* — Identity-keyed CDP API breaks content-hash idempotency
+- Leo CDP — *related_to* — Leo CDP profilelist ignores start and limit and embeds event data
+- Leo CDP — *has_concept* — observerId
+- Leo CDP — *has_concept* — tokenkey
+- Leo CDP — *has_endpoint* — event/save
+- Leo CDP — *has_endpoint* — profile/save
 
 %% ai-graph-end %%

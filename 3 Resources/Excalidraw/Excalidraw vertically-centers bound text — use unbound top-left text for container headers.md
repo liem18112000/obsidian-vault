@@ -1,5 +1,5 @@
 ---
-ai_hash: c43f2eacce10b4f0
+ai_hash: 38a25161143f204c
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-26
@@ -35,8 +35,8 @@ Related: [[Generate Excalidraw triplet from one layout model, rasterize with @re
 **Related notes:**
 - [[Excalidraw render script does not auto-position containerId-bound text — set explicit x,y]]
 - [[Editing an Excalidraw .excalidraw JSON programmatically]]
-- [[Generate Excalidraw triplet from one layout model, rasterize with @resvgresvg-js]]
 - [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Generate Excalidraw triplet from one layout model, rasterize with @resvgresvg-js]]
 - [[Excalidraw container-bound text does not auto-wrap in the render script]]
 
 %% ai-graph-end %%

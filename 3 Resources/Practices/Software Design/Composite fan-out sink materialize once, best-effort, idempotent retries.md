@@ -1,7 +1,7 @@
 ---
-ai_hash: 95937b5b468b4c05
+ai_hash: a7dcb621d0f76d69
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-27
 entities: []
 source: session 2026-06-27 feat/appsflyer-pull-kafka-sink; MultiSink
@@ -41,7 +41,7 @@ Used in the Leo CDP AppsFlyer connector (MultiSink) so both the push receiver an
 - [[Kafka sink append-only log, idempotency via dedupe_key message key]]
 - [[Identity-keyed CDP API breaks content-hash idempotency]]
 - [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+- [[Redis Streams consumer-group at-least-once Loader pattern]]
 - [[AppsFlyer connector dropped Kafka sink and S3 raw landing]]
-- [[AppsFlyer connector reduced to a single JSONL file-S3 sink]]
 
 %% ai-graph-end %%

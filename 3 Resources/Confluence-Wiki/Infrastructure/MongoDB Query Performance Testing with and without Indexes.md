@@ -1,18 +1,22 @@
 ---
-title: "MongoDB Query Performance Testing with and without Indexes"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48582066261/MongoDB+Query+Performance+Testing+with+and+without+Indexes
-space: "LUZ"
-topic: infra
-relevance: 0.706
-depth: 2.38
-updated: 2025-07-18
+ai_hash: 810bc4a8d5847168
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.38
+entities: []
+relevance: 0.706
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48582066261/MongoDB+Query+Performance+Testing+with+and+without+Indexes
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: MongoDB Query Performance Testing with and without Indexes
+topic: infra
+type: source
+updated: 2025-07-18
 ---
 
 # MongoDB Query Performance Testing with and without Indexes
@@ -321,3 +325,14 @@ In our tests, adding indexes resulted in:
 - **Efficient resource usage**
 
 - **Elimination of memory-related query failures**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[Index Impact on MongoDB searchByFacets]]
+- [[An index only helps an aggregation before the first group, unwind, or lookup]]
+- [[Reproduce performance issue and understand the issue on DEV - A.Vu]]
+
+%% ai-graph-end %%

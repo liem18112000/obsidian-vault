@@ -1,18 +1,22 @@
 ---
-title: "Deploy AFDEMO CPM"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3597925187/Deploy+AFDEMO+CPM
-space: "AII"
-topic: infra
-relevance: 0.866
-depth: 3
-updated: 2021-10-26
+ai_hash: b61374ed675d3829
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.866
+source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3597925187/Deploy+AFDEMO+CPM
+space: AII
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/aii
+- confluence
+- infra
+- space/aii
+title: Deploy AFDEMO CPM
+topic: infra
+type: source
+updated: 2021-10-26
 ---
 
 # Deploy AFDEMO CPM
@@ -226,3 +230,14 @@ server {
 ## DNS
 
 Create A record <a href="https://conditionpricemanager-af1-demo.axonfintech.io/" class="external-link" rel="nofollow">conditionpricemanager-af1-demo.axonfintech.io</a> point to public IP address of Nginx load balancer which created in step 1
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy AFDEMO OM]]
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+- [[2.31 Build & deploy agent review service to k8s (POC)]]
+- [[Infrastructure]]
+- [[How to connect K8S database from postgres]]
+
+%% ai-graph-end %%

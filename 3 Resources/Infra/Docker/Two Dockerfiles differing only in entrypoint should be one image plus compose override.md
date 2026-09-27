@@ -1,7 +1,7 @@
 ---
-ai_hash: fa863b7b6bf06eb7
+ai_hash: fd5efa42bd928a0a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-03
 entities: []
 source: session 2026-07-03
@@ -30,8 +30,8 @@ Related: [[AppsFlyer package layout package-per-concern with no loose modules]]
 
 **Related notes:**
 - [[AppsFlyer package layout package-per-concern with no loose modules]]
-- [[Separate docker-compose files are isolated networks; use one file + a profile for optional services]]
 - [[BuildKit honors a per-Dockerfile .dockerignore]]
+- [[Separate docker-compose files are isolated networks; use one file + a profile for optional services]]
 - [[AppsFlyer connector dropped Kafka sink and S3 raw landing]]
 - [[AppsFlyer connector reduced to a single JSONL file-S3 sink]]
 

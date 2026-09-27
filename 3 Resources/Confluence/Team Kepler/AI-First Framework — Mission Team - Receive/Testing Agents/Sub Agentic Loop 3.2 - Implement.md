@@ -1,14 +1,22 @@
 ---
-title: "Sub Agentic Loop 3.2 - Implement"
+ai_hash: a7f528fd2846f9d4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49741299899'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 3 - Test-Plan Definition > Evaluating the Test-Plan-Definition
+  Agent'
 created: 2026-09-10
-updated: 2026-09-18
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Sub Agentic Loop 3.2 - Implement
+type: source
+updated: 2026-09-18
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49741299899/Sub+Agentic+Loop+3.2+-+Implement
-confluence_id: "49741299899"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 3 - Test-Plan Definition > Evaluating the Test-Plan-Definition Agent"
-tags: [confluence, ai-agents]
 ---
 
 # Sub Agentic Loop 3.2 - Implement
@@ -36,3 +44,14 @@ State + decisions persist to `implement-decisions.json` / `implement-brief.md` /
 Interrogation is heuristic (no model); `detail` / `assured` opt into more.
 
 ![[3 Resources/Confluence/Team Kepler/AI-First Framework — Mission Team - Receive/Testing Agents/attachments/sub-agentic-loop-3-2-implement/image-20260910-064800.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Sub Agentic Loop 3.1 - Define]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Sub Agentic Loop 3.3 - Generation]]
+- [[Test-Plan Definition Agent]]
+- [[TPD agentic loop single-pass DEFINE to APPROVE to IMPLEMENT]]
+
+%% ai-graph-end %%

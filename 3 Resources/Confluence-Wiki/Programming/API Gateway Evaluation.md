@@ -1,18 +1,22 @@
 ---
-title: "API Gateway Evaluation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20502829443/API+Gateway+Evaluation
-space: "LUZ"
-topic: programming
-relevance: 0.736
-depth: 2.41
-updated: 2020-04-20
+ai_hash: c73a9901f4990354
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.41
+entities: []
+relevance: 0.736
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20502829443/API+Gateway+Evaluation
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: API Gateway Evaluation
+topic: programming
+type: source
+updated: 2020-04-20
 ---
 
 # API Gateway Evaluation
@@ -592,3 +596,14 @@ Access controls, Multidomain authentication, JWT validation</p></li>
 
 References:  
 <a href="https://medium.com/@mahesh.mahadevan/my-experiences-with-api-gateways-8a93ad17c4c4" class="external-link" rel="nofollow">https://medium.com/@mahesh.mahadevan/my-experiences-with-api-gateways-8a93ad17c4c4</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[API Gateway Evaluation Discussion]]
+- [[System architecture]]
+- [[Fix evaluation criteria before looking at candidates, and say which one you weight]]
+- [[GKE Kubernetes Gateway API]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Places Hubspot features have been applying to"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20513313973/Places+Hubspot+features+have+been+applying+to
-space: "LUZ"
-topic: programming
-relevance: 0.779
-depth: 3
-updated: 2025-07-02
+ai_hash: 5ea098f13edd3519
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 3
+entities: []
+relevance: 0.779
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20513313973/Places+Hubspot+features+have+been+applying+to
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Places Hubspot features have been applying to
+topic: programming
+type: source
+updated: 2025-07-02
 ---
 
 # Places Hubspot features have been applying to
@@ -1614,3 +1618,14 @@ hol_pos_5
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[API Document]]
+- [[15. Update companies by tenant id]]
+- [[18. Migrate indicator online_shop_5]]
+- [[11. Collect and write out companies were verified their business to Hubspot]]
+- [[17. Migrate indicator online_booking_4]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Pre-Estimation Klara Public API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47006221360/Pre-Estimation+Klara+Public+API
-space: "TS"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2021-11-29
+ai_hash: 556d59b2e828f256
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47006221360/Pre-Estimation+Klara+Public+API
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Pre-Estimation Klara Public API
+topic: programming
+type: source
+updated: 2021-11-29
 ---
 
 # Pre-Estimation Klara Public API
@@ -73,3 +77,14 @@ Scenario for the integration:
     - Allow end user to <u>choose resource</u> for a service when they create appointment
 
       - depending of the KLARA user setup, if the resource group can be chosen or not
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KLARA Booking - KLARA OBC API]]
+- [[LUZ-75886 Part 1 Implement real-time API updates]]
+- [[Public api - print partner status feedback]]
+- [[Creating invoice — GUI flow vs. Public API]]
+- [[Technical design of Klara - Hubspot]]
+
+%% ai-graph-end %%

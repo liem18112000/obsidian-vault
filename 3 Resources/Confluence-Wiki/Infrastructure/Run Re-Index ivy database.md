@@ -1,18 +1,22 @@
 ---
-title: "Run Re-Index ivy database"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47416345154/Run+Re-Index+ivy+database
-space: "LUZ"
-topic: infra
-relevance: 0.724
-depth: 2.48
-updated: 2023-06-27
+ai_hash: 1169f09cdb41b1d7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.48
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47416345154/Run+Re-Index+ivy+database
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Run Re-Index ivy database
+topic: infra
+type: source
+updated: 2023-06-27
 ---
 
 # Run Re-Index ivy database
@@ -91,3 +95,14 @@ CREATE INDEX IF NOT EXISTS IWA_BusinessCaseData_BusinessCaseId ON IWA_BusinessCa
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[DestroyRunningCases]]
+- [[Research on bulk removal of access class]]
+- [[Reproduce performance issue and understand the issue on DEV - A.Vu]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[Task List Mass Processing technical notes]]
+
+%% ai-graph-end %%

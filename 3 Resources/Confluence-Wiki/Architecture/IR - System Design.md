@@ -1,18 +1,22 @@
 ---
-title: "IR - System Design"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/49696374801/IR+-+System+Design
-space: "AI"
-topic: architecture
-relevance: 0.721
-depth: 2.37
-updated: 2026-09-15
+ai_hash: e0a34518e54716b3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.37
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/49696374801/IR+-+System+Design
+space: AI
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ai
+- confluence
+- architecture
+- space/ai
+title: IR - System Design
+topic: architecture
+type: source
+updated: 2026-09-15
 ---
 
 # IR - System Design
@@ -197,3 +201,14 @@ It's suited when per-tenant subsets are small relative to the corpus, and large 
 Vespa also has the strongest answer to the reindexing-strategy problem: embedders run inside the engine (feed-time and query-time), documents are stored as source, and Vespa can reprocess the stored corpus through the indexing pipeline when the schema changes — so an embedding-model upgrade is a schema change plus a triggered reindex from data Vespa already holds, rather than an external orchestration project. Multi-phase ranking (cheap first phase, cross-encoder-style second phase) is native. Note that streaming mode has trade-offs: no stemming, and no corpus term statistics, so BM25-family features need an externally supplied significance model.
 
 No per-tenant encryption keys. Encryption at rest is node/volume-level with one key domain. Tenant isolation is logical (document-id grouping), and crypto-shredding per tenant isn't available — deletion is delete-by-group, which must also propagate through backups. If per-tenant keys are a contractual requirement, Vespa fails it today. It's also the steepest learning curve of the three, with the smallest community.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Lucene's write-once segments turn replication into a filename diff]]
+- [[Changing the embedding model forces a full index rebuild]]
+- [[Agent Memory]]
+- [[Embedding a search library means building its control plane yourself]]
+- [[Full‑Text Document Search — Performance Analysis & Proposals]]
+
+%% ai-graph-end %%

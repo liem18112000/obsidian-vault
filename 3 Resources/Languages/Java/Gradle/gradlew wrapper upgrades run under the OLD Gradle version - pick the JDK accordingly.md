@@ -1,7 +1,7 @@
 ---
-ai_hash: 2494d058627bf561
+ai_hash: d9d9f3c29b22c6be
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: LEO CDP migration Phase 1c, 2026-06-06
@@ -27,9 +27,9 @@ type: lesson
 
 **Related notes:**
 - [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+- [[Gradle toolchain languageVersion requires an exact JDK major version]]
 - [[Decouple runtime JDK from bytecode target when migrating Java versions]]
 - [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
 - [[String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment]]
-- [[GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH]]
 
 %% ai-graph-end %%

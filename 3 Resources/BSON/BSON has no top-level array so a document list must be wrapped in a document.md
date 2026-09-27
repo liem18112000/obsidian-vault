@@ -1,5 +1,5 @@
 ---
-ai_hash: d37e1558af81b404
+ai_hash: bb4fefa8333ac6eb
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-24
@@ -27,8 +27,8 @@ A mongo-java-driver DocumentCodec round-trips this cleanly: nested BSON arrays d
 %% ai-graph-start %%
 
 **Related notes:**
-- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
 - [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
 - [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
 - [[End-to-end BSON API testing with the Node bson package]]
 - [[OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation]]

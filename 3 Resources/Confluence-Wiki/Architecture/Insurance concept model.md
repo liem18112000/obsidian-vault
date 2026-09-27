@@ -1,18 +1,22 @@
 ---
-title: "Insurance concept model"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675759310/Insurance+concept+model
-space: "LUZCOMP"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2016-07-08
+ai_hash: 1087bcc81c3c46b0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675759310/Insurance+concept+model
+space: LUZCOMP
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luzcomp
+- confluence
+- architecture
+- space/luzcomp
+title: Insurance concept model
+topic: architecture
+type: source
+updated: 2016-07-08
 ---
 
 # Insurance concept model
@@ -77,3 +81,11 @@ tags:
 <span style="line-height: 1.42857;">11 = Insured till 120'000.00 with a deduction on the payslip SIT = 5045</span>
 
 12 = Insured over 120'000.00 with a deduction on the payslip SIT = 5046 (not supported yet)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Documentation Implementation of Swissdec ELM 5.5 TariTemp (Single-Branch)]]
+- [[AHV21 concept]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 9883e4aa16c52735
+ai_hash: 9eaa980c014d2d54
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-04
 entities: []
 source: session 2026-07-04, vinnstack CLI login relay
@@ -42,6 +42,6 @@ Requirements/gotchas:
 - [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
 - [[Per-account CLI sessions inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at the spawn-env chokepoint]]
 - [[Prefer pasting a token minted once over scraping it from a PTY relay]]
-- [[Gate a headless-only relay behind an explicit env flag so local browser login still works]]
+- [[Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code]]
 
 %% ai-graph-end %%

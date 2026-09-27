@@ -1,10 +1,21 @@
 ---
-title: "If upstream holds memory until you ack, your write latency is their OOM risk"
+ai_hash: 8425e7966c29c5de
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: luz_docs Document Reliable Delivery POC (LUZ)'
 status: seedling
-source: "Confluence: luz_docs Document Reliable Delivery POC (LUZ)"
-tags: [backpressure, async, retry, pubsub, distributed-systems, reliability, confluence-distilled]
+tags:
+- backpressure
+- async
+- retry
+- pubsub
+- distributed-systems
+- reliability
+- confluence-distilled
+title: If upstream holds memory until you ack, your write latency is their OOM risk
+type: lesson
 ---
 
 # If upstream holds memory until you ack, your write latency is their OOM risk
@@ -37,3 +48,14 @@ Source: [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]] (
 ## Related
 
 - [[Piggybacking background jobs on HTTP requests couples job load to traffic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[Bottleneck analysis large-recipient deliveries & cross-sender impact]]
+- [[Timeouts stack in series and the shortest wins; audit the whole chain]]
+- [[Score async API designs on crash recovery and multi-instance, not latency]]
+- [[Invoice Run, ePost backend storage]]
+
+%% ai-graph-end %%

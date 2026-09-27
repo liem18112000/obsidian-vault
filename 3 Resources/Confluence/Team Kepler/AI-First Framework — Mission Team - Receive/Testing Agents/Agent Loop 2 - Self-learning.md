@@ -1,14 +1,21 @@
 ---
-title: "Agent Loop 2 - Self-learning"
+ai_hash: 26ad60fa1f9afca3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49731174502'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-07
-updated: 2026-09-07
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Agent Loop 2 - Self-learning
+type: source
+updated: 2026-09-07
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49731174502/Agent+Loop+2+-+Self-learning
-confluence_id: "49731174502"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents]
 ---
 
 # Agent Loop 2 - Self-learning
@@ -112,3 +119,14 @@ Auto-write to shared cave IS the exact failure the B0–B6 de-bias just fixed �
 - All on the SIDE (never slow the hunt), all GATED (bad lesson can't poison future hunt)**.**
 
 - Robot stop re-learning the same lesson. 🧠👍
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Agent self-learning memory]]
+- [[Flow View - V2]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[Sub Agentic Loop 1.2 - GCP Service Exploration]]
+
+%% ai-graph-end %%

@@ -1,14 +1,22 @@
 ---
-title: "SAP in `luz_finance` — What, Why, How, When"
+ai_hash: ca06962b47a041c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49618092035'
+confluence_path: Team Kepler > Developer note > [Invoice Run] Credit-card-only billing
+  for individual clients — Finance / SAP correctness
 created: 2026-07-27
-updated: 2026-07-27
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- invoice-run
+- sap
+title: SAP in `luz_finance` — What, Why, How, When
+type: source
+updated: 2026-07-27
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49618092035/SAP+in+luz_finance+What+Why+How+When
-confluence_id: "49618092035"
-confluence_path: "Team Kepler > Developer note > [Invoice Run] Credit-card-only billing for individual clients — Finance / SAP correctness"
-tags: [confluence, invoice-run, sap]
 ---
 
 # SAP in `luz_finance` — What, Why, How, When
@@ -111,3 +119,14 @@ These are the "logic" a structural code map can't see — they live in `SapCSVUt
 **Rounding** (`adjustSAPAmountForVATInformation`): the VAT-info line's amount is nudged up or down so `included = excluded + vat-exclusive` stays exact after per-line rounding.
 
 > The concrete codes above are what the tests assert. The *live* values (which codes for which tenant) come from the `/default-sap` endpoint at runtime — so treat `A1/C1/AL/40/50` as examples, not constants.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SAP_Booking.csv — the accounting bookings export]]
+- [[SAP in luz_finance is a manual CSV export, not a live integration]]
+- [[SAP_Master.csv — the customer master export]]
+- [[SAP export defaults come from the default-sap config service so accounting codes change without a deploy]]
+- [[Rounding per line makes net plus VAT miss gross, so the VAT line absorbs the difference]]
+
+%% ai-graph-end %%

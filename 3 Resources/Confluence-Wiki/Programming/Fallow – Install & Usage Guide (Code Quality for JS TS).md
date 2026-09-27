@@ -1,18 +1,22 @@
 ---
-title: "Fallow – Install & Usage Guide (Code Quality for JS/TS)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49471750190/Fallow+Install+Usage+Guide+Code+Quality+for+JS+TS
-space: "TS"
-topic: programming
-relevance: 0.823
-depth: 2.92
-updated: 2026-06-03
+ai_hash: 41942ecc040eeb66
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.92
+entities: []
+relevance: 0.823
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49471750190/Fallow+Install+Usage+Guide+Code+Quality+for+JS+TS
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Fallow – Install & Usage Guide (Code Quality for JS/TS)
+topic: programming
+type: source
+updated: 2026-06-03
 ---
 
 # Fallow – Install & Usage Guide (Code Quality for JS/TS)
@@ -317,3 +321,12 @@ For Cursor/Copilot there's no hook — add this to your agent instructions: "Bef
 - Source (MIT): <a href="https://github.com/fallow-rs/fallow" class="external-link" rel="nofollow">github.com/fallow-rs/fallow</a>
 
 - Agent skills (MIT): <a href="https://github.com/fallow-rs/fallow-skills" class="external-link" rel="nofollow">github.com/fallow-rs/fallow-skills</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fallow analyses a JS-TS repo as a graph and exposes it to agents over MCP]]
+- [[Source Analysis]]
+- [[Prompt Architecture Code Review]]
+
+%% ai-graph-end %%

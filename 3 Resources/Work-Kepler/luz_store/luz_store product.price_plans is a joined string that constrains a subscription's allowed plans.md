@@ -1,7 +1,7 @@
 ---
-ai_hash: 121a789a86037a5b
+ai_hash: 6be3ee1bf74752d4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-22
 entities: []
 source: session 2026-06-22 monthly->yearly PROD triage
@@ -29,8 +29,8 @@ Implication for "wrong plan" incidents: a self-service subscribe can only carry 
 %% ai-graph-start %%
 
 **Related notes:**
-- [[A luz_store subscription changes billing period only by new-row or direct DB write]]
 - [[Attributing a luz_store subscription's origin from created_by, method and updated_by]]
+- [[A luz_store subscription changes billing period only by new-row or direct DB write]]
 - [[luz_store company_uri format and marketing-code price-plan suffixes]]
 - [[luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable]]
 - [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]

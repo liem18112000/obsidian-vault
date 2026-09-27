@@ -1,7 +1,7 @@
 ---
-ai_hash: f9a113d81960592e
+ai_hash: af3a3cee3e5eb6a1
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Accesstrade postback URL
 - Server-to-server tracking
@@ -69,7 +69,7 @@ The postback URL is configured in the Accesstrade dashboard with placeholders (o
 - [[Claude Code hooks event model]]
 - [[Use case - automated daily conversion digest]]
 - [[Accesstrade API Integration - MOC]]
-- [[Accesstrade SubID attribution]]
 - [[Accesstrade conversion and transaction reporting]]
+- [[Accesstrade SubID attribution]]
 
 %% ai-graph-end %%

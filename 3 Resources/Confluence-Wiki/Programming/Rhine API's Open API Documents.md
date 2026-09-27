@@ -1,18 +1,22 @@
 ---
-title: "Rhine API's Open API Documents"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47438889033/Rhine+API+s+Open+API+Documents
-space: "TS"
-topic: programming
-relevance: 0.762
-depth: 2.73
-updated: 2024-04-04
+ai_hash: 31b4cd2720103fe8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.762
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47438889033/Rhine+API+s+Open+API+Documents
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Rhine API's Open API Documents
+topic: programming
+type: source
+updated: 2024-04-04
 ---
 
 # Rhine API's Open API Documents
@@ -355,3 +359,14 @@ This page archived the Open API document from <a href="https://axonivy.atlassian
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rhine API Java Client]]
+- [[Rhine API Explained]]
+- [[Invoice API]]
+- [[Analyze API]]
+- [[Analyze API v2 for Invoice prediction]]
+
+%% ai-graph-end %%

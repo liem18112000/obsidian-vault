@@ -1,5 +1,5 @@
 ---
-ai_hash: e77b5a9ee4d8981c
+ai_hash: b2d2e423931377bf
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-16
@@ -42,6 +42,6 @@ Fixes: add the base branch to `on.pull_request.branches` (also closes a real gap
 - [[Same-repo branch push fires both push and pull_request events (duplicate CI runs)]]
 - [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
 - [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
-- [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
+- [[git push sends current branch to its upstream not same-name branch]]
 
 %% ai-graph-end %%

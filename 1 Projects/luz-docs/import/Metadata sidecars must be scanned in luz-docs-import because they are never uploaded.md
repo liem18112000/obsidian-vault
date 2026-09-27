@@ -1,28 +1,24 @@
 ---
-ai_hash: 8847651f9cea0fe7
+ai_hash: 60063c18b5a853c6
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-10
 entities:
 - Metadata sidecars
 - luz-docs-import
-- eArchive ZIP import
-- LUZ-158230
-- antivirus responsibility
 - Document payloads
+- eArchive ZIP import
+- antivirus responsibility
 - luz-docs view-controller
 - LuzDocsViewControllerService.createDocument
 - HealthDocImporter.applyMetadata
 - DocsImportAsyncService.importZipAndCleanFile
+- LUZ-158230
 - document metadata JSON
 - old upfront whole-zip scan
 - dedicated per-sidecar scan
-- downstream view-controller
-- who uploads the bytes
 - luz-docs-import scans metadata sidecars per-file, not the whole ZIP
 - Per-file AV scan rejects one file; whole-job scan fails the whole import
-- luz-docs-import scans metadata sidecars per-file
-- not the whole ZIP
 source: session 2026-08-10, LUZ-158230
 status: seedling
 tags:
@@ -59,32 +55,23 @@ See [[luz-docs-import scans metadata sidecars per-file, not the whole ZIP]] and 
 - [[luz-docs-import AV scan covers only the metadata sidecar, never the document binary]]
 - [[Per-file AV scan rejects one file; whole-job scan fails the whole import]]
 - [[luz_docs_import adds document metadata only in DocsImportAsyncService.createDocument()]]
-- [[luz_docs_import ZIP import behavior — limits, allow-list, idempotency, AV scope]]
+- [[luz-docs-import antivirus whole-zip scan dominates first-import latency and scales with zip size]]
 
 **Relations:**
 - Metadata sidecars — *must be scanned in* — luz-docs-import
 - Metadata sidecars — *are never uploaded* — 
-- eArchive ZIP import — *is identified by* — LUZ-158230
+- eArchive ZIP import — *has ID* — LUZ-158230
 - antivirus responsibility — *is split by* — who uploads the bytes
-- Document payloads — *are scanned* — downstream
-- Document payloads — *are scanned by* — luz-docs view-controller
+- Document payloads — *are scanned downstream by* — luz-docs view-controller
 - LuzDocsViewControllerService.createDocument — *uploads* — Document payloads
 - luz-docs-import — *does not scan* — Document payloads
 - Metadata sidecars — *are never uploaded to* — luz-docs view-controller
 - Metadata sidecars — *fields are folded into* — document metadata JSON
-- HealthDocImporter.applyMetadata — *folds* — Metadata sidecars
-- HealthDocImporter.applyMetadata — *folds into* — document metadata JSON
+- HealthDocImporter.applyMetadata — *folds fields of* — Metadata sidecars
 - luz-docs-import — *is the only place to scan* — Metadata sidecars
-- old upfront whole-zip scan — *was removed from* — DocsImportAsyncService.importZipAndCleanFile
-- old upfront whole-zip scan — *was redundant for* — Document payloads
-- dedicated per-sidecar scan — *was added to* — luz-docs-import
-- downstream view-controller — *scans* — Document payloads
-- downstream view-controller — *scans on* — upload
-- Document payloads — *would go unscanned if* — downstream view-controller stops scanning
-- luz-docs-import — *refers to* — luz-docs-import scans metadata sidecars per-file, not the whole ZIP
-- luz-docs-import — *refers to* — Per-file AV scan rejects one file; whole-job scan fails the whole import
-- luz-docs-import — *is related to* — luz-docs-import scans metadata sidecars per-file
-- luz-docs-import scans metadata sidecars per-file — *is related to* — not the whole ZIP
-- luz-docs-import scans metadata sidecars per-file — *is related to* — Per-file AV scan rejects one file; whole-job scan fails the whole import
+- DocsImportAsyncService.importZipAndCleanFile — *removed* — old upfront whole-zip scan
+- luz-docs-import — *added* — dedicated per-sidecar scan
+- luz-docs-import — *references* — luz-docs-import scans metadata sidecars per-file, not the whole ZIP
+- luz-docs-import — *references* — Per-file AV scan rejects one file; whole-job scan fails the whole import
 
 %% ai-graph-end %%

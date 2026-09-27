@@ -1,10 +1,20 @@
 ---
-title: "Released artifact versions are immutable, so hotfixes iterate as snapshots"
+ai_hash: 8bde7ad917a9dbfa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: GCP Release Process with Google Cloud Build (LUZ)'
 status: seedling
-source: "Confluence: GCP Release Process with Google Cloud Build (LUZ)"
-tags: [maven, artifactory, versioning, hotfix, release-process, confluence-distilled]
+tags:
+- maven
+- artifactory
+- versioning
+- hotfix
+- release-process
+- confluence-distilled
+title: Released artifact versions are immutable, so hotfixes iterate as snapshots
+type: lesson
 ---
 
 # Released artifact versions are immutable, so hotfixes iterate as snapshots
@@ -30,3 +40,14 @@ So the fix iterates as a snapshot — which *can* be republished repeatedly — 
 > The temptation during a hotfix is to ship the `-SNAPSHOT` straight to prod "just to check". Then production is running an artifact that can be silently replaced, and you have lost the very property the repository was protecting. Promote first, deploy second.
 
 Source: [[Discussion GCP Release Process with Google Cloud Build|Discussion  GCP Release Process with Google Cloud Build]] (LUZ, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Confirm the deployed artifact contains the fix before judging an env test]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+- [[Cloud Run latest does not roll a new revision on terraform apply — deploy by digest]]
+- [[Cloud Build $COMMIT_SHA is the full 40-char git SHA, not the short one]]
+
+%% ai-graph-end %%

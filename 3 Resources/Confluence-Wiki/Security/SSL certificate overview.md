@@ -1,18 +1,22 @@
 ---
-title: "SSL certificate overview"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48352919566/SSL+certificate+overview
-space: "IO"
-topic: security
-relevance: 0.786
-depth: 2.65
-updated: 2025-07-16
+ai_hash: efd10578ca3c34d6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48352919566/SSL+certificate+overview
+space: IO
+status: reference
 tags:
-  - confluence
-  - security
-  - space/io
+- confluence
+- security
+- space/io
+title: SSL certificate overview
+topic: security
+type: source
+updated: 2025-07-16
 ---
 
 # SSL certificate overview
@@ -118,3 +122,14 @@ Axon ICT will inform us 1 month in advance prior certificate expirations.
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSL certificate for KLARA Website (own domain)]]
+- [[mcp.klara.ch current evaluation]]
+- [[Update ePost certificate - .epost.ch - in PROD]]
+- [[Security]]
+- [[Get tenant token from public api]]
+
+%% ai-graph-end %%

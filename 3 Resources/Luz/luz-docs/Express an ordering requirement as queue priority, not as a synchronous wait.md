@@ -1,10 +1,21 @@
 ---
-title: "Express an ordering requirement as queue priority, not as a synchronous wait"
+ai_hash: 306cf38d2fb324b7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: High-Level Design - ONE API Enricher-First Integration (2025-12-29)'
 status: seedling
-source: "Confluence: High-Level Design - ONE API Enricher-First Integration (2025-12-29)"
-tags: [luz-docs, enricher, one-api, async, api-design, architecture, kepler]
+tags:
+- luz-docs
+- enricher
+- one-api
+- async
+- api-design
+- architecture
+- kepler
+title: Express an ordering requirement as queue priority, not as a synchronous wait
+type: lesson
 ---
 
 # Express an ordering requirement as queue priority, not as a synchronous wait
@@ -30,3 +41,14 @@ The trade being accepted: priority is not a barrier. `URGENT` makes enrichment-b
 ## Related
 
 - [[Silently-ignored input needs a visible reason field, or it looks like data loss]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[High-Level Design - ONE API Enricher-First Integration]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[Invoice Run, ePost backend storage]]
+- [[Adapt to support ONE API - Enricher first delivery]]
+
+%% ai-graph-end %%

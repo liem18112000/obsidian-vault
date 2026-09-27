@@ -1,14 +1,23 @@
 ---
-title: "Trigram Index — Size-Reduction Options"
+ai_hash: 19641f98e685ab7c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49550557203'
+confluence_path: Team Kepler > Developer note > Full‑Text Document Search — Performance
+  Analysis & Proposals > S2 — Materialized n‑gram / Trigram Field (native, self‑hosted,
+  keeps substring semantics)
 created: 2026-07-01
-updated: 2026-07-01
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+- search
+title: Trigram Index — Size-Reduction Options
+type: source
+updated: 2026-07-01
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49550557203/Trigram+Index+Size-Reduction+Options
-confluence_id: "49550557203"
-confluence_path: "Team Kepler > Developer note > Full‑Text Document Search — Performance Analysis & Proposals > S2 — Materialized n‑gram / Trigram Field (native, self‑hosted, keeps substring semantics)"
-tags: [confluence, performance, search]
 ---
 
 # Trigram Index — Size-Reduction Options
@@ -84,3 +93,14 @@ That is the fundamental tension: bucketing shrinks the index precisely *because*
 Both only enlarge the **candidate set**; neither drops a real hit. Cost is paid entirely at query time in the residual regex over a bigger candidate set — never in recall.
 
 ![[image-20260701-054044.png]]![[image-20260701-054103.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[S2 — Materialized n‑gram - Trigram Field (native, self‑hosted, keeps substring semantics)]]
+- [[Bounded bucketed hashing caps trigram index entries per document]]
+- [[Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
+- [[OCR body text dominates a full-text trigram index]]
+- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+
+%% ai-graph-end %%

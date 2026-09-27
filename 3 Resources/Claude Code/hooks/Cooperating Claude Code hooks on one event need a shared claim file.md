@@ -1,5 +1,5 @@
 ---
-ai_hash: 9c070fd2d6df3c78
+ai_hash: 104df9287ef72c1d
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-27
@@ -59,8 +59,8 @@ Related: [[Installer skill templates drift from the live scripts they install]]
 **Related notes:**
 - [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
 - [[PSScriptRoot-relative state breaks when a hook moves to a subfolder]]
+- [[A concurrency fix whose test passes on the buggy code is worse than no test]]
 - [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
 - [[Installer skill templates drift from the live scripts they install]]
-- [[PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
 
 %% ai-graph-end %%

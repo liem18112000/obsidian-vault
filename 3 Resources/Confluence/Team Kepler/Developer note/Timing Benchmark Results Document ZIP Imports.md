@@ -1,14 +1,19 @@
 ---
-title: "Timing Benchmark Results Document ZIP Imports"
+ai_hash: 2ee476be4b461849
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49662787598'
+confluence_path: Team Kepler > Developer note
 created: 2026-08-13
-updated: 2026-08-13
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: Timing Benchmark Results Document ZIP Imports
+type: source
+updated: 2026-08-13
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49662787598/Timing+Benchmark+Results+Document+ZIP+Imports
-confluence_id: "49662787598"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence]
 ---
 
 # Timing Benchmark Results Document ZIP Imports
@@ -148,3 +153,14 @@ JVM JIT compilation — **CONFIRMED** (primary for the discriminator)
 *Nuance:* by the time the **large** cases ran (2–2.3 h after 1k, same never-restarted JVM), `luz-docs-import`'s own app code was already C2-compiled from tens of thousands of prior invocations. So the within-5k-run1 decline is **downstream** JIT/warm-up (next hypothesis), not app-JVM JIT. JIT is confirmed as the mechanism that explains the *discriminator* (warm-up invocations reached faster by bigger batches, at whichever layer is cold); app-JVM JIT specifically owns the 1k-first-case progressive curve.
 
 ![[image-20260813-020202.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost Zip-Import - dev test-suite results - 18-08-2026]]
+- [[Create Document API – Performance Testing Report]]
+- [[Measure create API - investigate performance]]
+- [[ePost ZIP-import — dev test-suite results - 13-08-2026]]
+- [[luz-docs-import performance-env import benchmark findings]]
+
+%% ai-graph-end %%

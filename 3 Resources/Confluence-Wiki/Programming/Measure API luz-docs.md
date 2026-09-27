@@ -1,18 +1,22 @@
 ---
-title: "Measure API luz-docs"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47390916697/Measure+API+luz-docs
-space: "LUZ"
-topic: programming
-relevance: 0.87
-depth: 3
-updated: 2023-06-07
+ai_hash: efe64a2d1a9a517d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 36
+depth: 3
+entities: []
+relevance: 0.87
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47390916697/Measure+API+luz-docs
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Measure API luz-docs
+topic: programming
+type: source
+updated: 2023-06-07
 ---
 
 # Measure API luz-docs
@@ -399,3 +403,14 @@ It takes 0.265s
 
 
 ![[47390916697-image-20230607-044657.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Create Document API – Performance Testing Report]]
+- [[Measure create API - investigate performance]]
+- [[Public API client performance analysis]]
+- [[eArchive Performance measurement & scalability assessment at 800000 documents]]
+- [[eArchive Performance measurement & scalability assessment at 2.2M documents]]
+
+%% ai-graph-end %%

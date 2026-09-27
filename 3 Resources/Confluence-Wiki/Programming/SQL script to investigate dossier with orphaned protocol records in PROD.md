@@ -1,18 +1,22 @@
 ---
-title: "SQL script to investigate dossier with orphaned protocol records in PROD"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48622764072/SQL+script+to+investigate+dossier+with+orphaned+protocol+records+in+PROD
-space: "GRAVITY"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2025-08-18
+ai_hash: 9d32ca15542c1219
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48622764072/SQL+script+to+investigate+dossier+with+orphaned+protocol+records+in+PROD
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: SQL script to investigate dossier with orphaned protocol records in PROD
+topic: programming
+type: source
+updated: 2025-08-18
 ---
 
 # SQL script to investigate dossier with orphaned protocol records in PROD
@@ -195,3 +199,14 @@ FROM orphaned_protocol
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL script to get SOB (APP & WEB) dossier progress]]
+- [[Script identify fields which are incorrectly logged in the protocol]]
+- [[SQL script to investigate dossier COB003059 on INT1]]
+- [[SQL script to update retry tasks and check pending dossiers has an outdated credit card]]
+- [[SQL script to find all documents from Fidentity]]
+
+%% ai-graph-end %%

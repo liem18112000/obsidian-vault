@@ -1,5 +1,5 @@
 ---
-ai_hash: f8b43dee2429f6b0
+ai_hash: a6db1a5558b0c299
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-25
@@ -40,7 +40,7 @@ Runs cleanly as a frequently-scheduled Dagster op/sensor tick rather than a bare
 - [[Broker Redis needs opposite config from cache Redis, run it separately]]
 - [[Run an event-broker Redis as a dedicated co-located instance, not the cache Redis]]
 - [[Redis Streams (not pubsub) as the local PubSub alternative]]
-- [[A dedupidempotency cache belongs co-located with the worker, not in a shared cross-service cache]]
 - [[Kafka sink append-only log, idempotency via dedupe_key message key]]
+- [[A dedupidempotency cache belongs co-located with the worker, not in a shared cross-service cache]]
 
 %% ai-graph-end %%

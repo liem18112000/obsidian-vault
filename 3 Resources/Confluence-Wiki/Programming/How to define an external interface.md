@@ -1,18 +1,22 @@
 ---
-title: "How to define an external interface"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25328820262/How+to+define+an+external+interface
-space: "PT"
-topic: programming
-relevance: 0.832
-depth: 3
-updated: 2019-04-29
+ai_hash: 7bb61770ac80f497
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 3
+entities: []
+relevance: 0.832
+source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25328820262/How+to+define+an+external+interface
+space: PT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/pt
+- confluence
+- programming
+- space/pt
+title: How to define an external interface
+topic: programming
+type: source
+updated: 2019-04-29
 ---
 
 # How to define an external interface
@@ -149,3 +153,14 @@ AddressCheckerService service = AddressCheckerService.getInstance();//The return
   
 
 After extract the current implementation for AddressCheck into abstract. we spot an issue that the abstract still depend on 2 dependencies which is specific for one implementation. We still need to refactor it, make the abstract interface as much as generic and doesn't depend on any specific implementation.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[06 - How to test a Rest API with authorization]]
+- [[08_ Fintech - Innovation Coding convention]]
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+- [[Architecture Overview LUZ]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "APF Provided Bookings"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47101706774/APF+Provided+Bookings
-space: "X4"
-topic: programming
-relevance: 0.708
-depth: 2.97
-updated: 2022-08-31
+ai_hash: ed47d6ab811324c2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 16
+depth: 2.97
+entities: []
+relevance: 0.708
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47101706774/APF+Provided+Bookings
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: APF Provided Bookings
+topic: programming
+type: source
+updated: 2022-08-31
 ---
 
 # APF Provided Bookings
@@ -477,3 +481,14 @@ Net Amount = 265.75 - 18.75 = 247.00.
 <a href="https://bitbucket.org/soreco_prod/admetos/pull-requests/925" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/soreco_prod/admetos/pull-requests/925</a>
 
 <a href="https://bitbucket.org/soreco_prod/admetos/pull-requests/944" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/soreco_prod/admetos/pull-requests/944</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[APF ItemLine Import API]]
+- [[Generic Interface JSON file]]
+- [[APF swagger for project eapf_web]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[Preview Delivery-Prices API - ForcedOnboading]]
+
+%% ai-graph-end %%

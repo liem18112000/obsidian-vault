@@ -1,7 +1,7 @@
 ---
-ai_hash: 2d64bca7a6f80a05
+ai_hash: c3c16443ba8ef919
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-24
 entities: []
 source: appsflyer-data-connector docs, 2026-06-24
@@ -39,8 +39,10 @@ See [[Windows 'convert' is NTFS convert.exe, not ImageMagick]].
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Generate Excalidraw triplet from one layout model, rasterize with @resvgresvg-js]]
 - [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
 - [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+- [[Render .excalidraw to PNGSVG offline with render_excalidraw.py]]
 - [[Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization]]
 
 %% ai-graph-end %%

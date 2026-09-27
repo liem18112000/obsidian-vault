@@ -1,18 +1,22 @@
 ---
-title: "View PDF in side the app on Android"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134180714/View+PDF+in+side+the+app+on+Android
-space: "GRAVITY"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2022-06-24
+ai_hash: 255fc6198e0bf270
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134180714/View+PDF+in+side+the+app+on+Android
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: View PDF in side the app on Android
+topic: programming
+type: source
+updated: 2022-06-24
 ---
 
 # View PDF in side the app on Android
@@ -284,3 +288,10 @@ Layout of view_pdf_dialog 
 
 
 ![[47134180714-Screenshot_20190128-1024232222.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

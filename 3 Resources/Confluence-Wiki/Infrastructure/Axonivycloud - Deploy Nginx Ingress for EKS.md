@@ -1,18 +1,22 @@
 ---
-title: "Axonivycloud - Deploy Nginx Ingress for EKS"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3557491085/Axonivycloud+-+Deploy+Nginx+Ingress+for+EKS
-space: "AII"
-topic: infra
-relevance: 0.87
-depth: 3
-updated: 2019-11-11
+ai_hash: a6d28ac8cab2cd1a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.87
+source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3557491085/Axonivycloud+-+Deploy+Nginx+Ingress+for+EKS
+space: AII
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/aii
+- confluence
+- infra
+- space/aii
+title: Axonivycloud - Deploy Nginx Ingress for EKS
+topic: infra
+type: source
+updated: 2019-11-11
 ---
 
 # Axonivycloud - Deploy Nginx Ingress for EKS
@@ -266,3 +270,14 @@ This occurs when the pod runs on the same node with the nginx pod. To fix this, 
 >     ...
 
 Delete old nginx pod and wait for new pod for change to effect
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Update Ingress Controller for GKE v1.22]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+- [[AxonivyCloud - Infrastructure Diagram EKS Proposal]]
+- [[Deploy AFDEMO OM]]
+- [[Deploy AFDEMO CPM]]
+
+%% ai-graph-end %%

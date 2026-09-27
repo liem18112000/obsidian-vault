@@ -1,18 +1,22 @@
 ---
-title: "Authentication and Authorization - PoC document"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525664929/Authentication+and+Authorization+-+PoC+document
-space: "LUZ"
-topic: security
-relevance: 0.731
-depth: 2.4
-updated: 2021-04-02
+ai_hash: 43a704880acc2e42
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 20
+depth: 2.4
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525664929/Authentication+and+Authorization+-+PoC+document
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Authentication and Authorization - PoC document
+topic: security
+type: source
+updated: 2021-04-02
 ---
 
 # Authentication and Authorization - PoC document
@@ -110,3 +114,14 @@ After we create minio client, we will use it for some action (upload/download) o
 **Authorization**
 
 We check the tenant id in access token that match Path param of request API
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HowToUseNewTokenAPI]]
+- [[Vault overview]]
+- [[Luz 403 Not allowed means the token has no tenant claim, not a missing permission]]
+- [[Authorization]]
+- [[Token JWT Security]]
+
+%% ai-graph-end %%

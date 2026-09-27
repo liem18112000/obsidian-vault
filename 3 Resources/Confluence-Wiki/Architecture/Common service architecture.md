@@ -1,18 +1,22 @@
 ---
-title: "Common service architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47841017916/Common+service+architecture
-space: "FUT"
-topic: architecture
-relevance: 0.806
-depth: 2.73
-updated: 2024-07-02
+ai_hash: 98203b32b34de057
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 16
+depth: 2.73
+entities: []
+relevance: 0.806
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47841017916/Common+service+architecture
+space: FUT
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/fut
+- confluence
+- architecture
+- space/fut
+title: Common service architecture
+topic: architecture
+type: source
+updated: 2024-07-02
 ---
 
 # Common service architecture
@@ -275,3 +279,14 @@ Sensitive information→ encrypt sensitive info using SOPS and keys in Cloud KMS
 Use secret in Cloud Run Service
 
 - Environment variable refer to secret
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+- [[How to implement a service]]
+- [[Aggregation Database Table Design]]
+- [[Recipe Best practices implementing scalable distributed applications on cloud]]
+- [[Confluence-Distillation]]
+
+%% ai-graph-end %%

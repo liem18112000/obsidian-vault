@@ -1,14 +1,21 @@
 ---
-title: "Manual Prompt Compression Techniques: Deep Dive"
+ai_hash: 21a51a7d35fd9d01
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49318100993'
+confluence_path: Team Kepler > Developer note > AI Research > Prompt Engineer
 created: 2026-04-11
-updated: 2026-04-12
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- prompt-engineering
+- search
+title: 'Manual Prompt Compression Techniques: Deep Dive'
+type: source
+updated: 2026-04-12
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49318100993/Manual+Prompt+Compression+Techniques+Deep+Dive
-confluence_id: "49318100993"
-confluence_path: "Team Kepler > Developer note > AI Research > Prompt Engineer"
-tags: [confluence, prompt-engineering, search]
 ---
 
 # Manual Prompt Compression Techniques: Deep Dive
@@ -605,3 +612,14 @@ count = client.messages.count_tokens(
 )
 print(f"Exact tokens: {count.input_tokens}")
 ```
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Manual Prompt Compression Techniques - Deep Dive]]
+- [[Text Compression Techniques - Examples]]
+- [[Text Compression Techniques - Examples]]
+- [[Skill-based Compression Techniques - Overview]]
+- [[Skill-based Compression Techniques - Overview]]
+
+%% ai-graph-end %%

@@ -1,43 +1,63 @@
 ---
-ai_hash: 2cbf70db156d6666
+ai_hash: e35ac2b476aba8de
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-17
 entities:
-- visible-document count
-- _shard fan-out
-- CACHE
+- Visible Document Count
+- Shard Fan-out
+- Optimization Levers
+- Caching
+- Total Count
+- Tenant
+- Code Set
 - luz_cache
-- tenant
-- code-set
-- cascade hooks
-- BITMAP UNION
-- Roaring exact
-- HLL approx
-- per-code bitmaps
-- doc-id↔int map
-- COUNT_SCAN
-- FETCH
-- explain
-- gateway query
-- folderIds
-- mediaType
-- index
-- CONNECTION POOL
-- K concurrent sub-counts
+- Cache Key (sorted code-set+tenant)
+- Cascade Hooks
+- Cache Miss
+- Bitmap Union
+- Roaring Exact Bitmap
+- HLL Approximate Bitmap
+- O(doc×code) Amplification
+- Popcount
+- Per-Code Bitmaps
+- Doc-ID to Int Map
+- Covered COUNT_SCAN
+- FETCH Operation
+- Explain Plan
+- Gateway Query
+- Extra Predicates
+- folderIds exists Predicate
+- mediaType not-in Predicate
+- Database Index
+- Keys-Only Count
+- Connection Pool
+- K Concurrent Sub-Counts
 - jsonstore
-- Mongo
-- READ-REPLICA routing
-- read-preference knob
-- frozen gateway
-- Bigger pod
-- more cores
-- exact totals
-- UI
-- approximate totals
-- Dev benchmark _shard count fan-out project
-- Visible-document count as cardinality of a bitmap union resource
-- Act order
+- Mongo Connections
+- Connection Pool Size
+- Read-Replica Routing
+- Heavy Sub-Counts
+- Read-Preference Knob
+- Frozen Gateway
+- Bigger Pod
+- More Cores
+- Fan-out Ceiling
+- Approximate Totals
+- Product Lever
+- User Interface
+- '''Has More'' Indicator'
+- '''999+'' Cap'
+- Requirement
+- Action Order
+- 'Step 3: Explain Plan'
+- 'Step 1: Caching'
+- 'Step 4: Connection Pool'
+- 'Step 2: Bitmap Union'
+- 'Step 7: Approximate Totals'
+- Tail Optimization
+- 'Related Note: Shard Count Fan-out Benchmark'
+- 'Related Note: Bitmap Union for Visible Document Count'
 source: LUZ-154613 session 2026-06-17
 status: seedling
 tags:
@@ -73,50 +93,74 @@ Act order: (3) explain → (1) cache → (4) pool → then (2) bitmap vs (7) app
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
-- [[Divide-and-Conquer Visible-Document Count]]
 - [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
 - [[Visible-document count as cardinality of a bitmap union]]
 - [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 **Relations:**
-- visible-document count — *optimized beyond* — _shard fan-out
-- _shard fan-out — *capped at* — ~1.8x
-- CACHE — *optimizes* — visible-document count
-- CACHE — *uses* — luz_cache
-- luz_cache — *keyed by* — tenant
-- luz_cache — *keyed by* — code-set
-- CACHE — *invalidated by* — cascade hooks
-- BITMAP UNION — *optimizes* — visible-document count
-- BITMAP UNION — *is a type of* — Roaring exact
-- BITMAP UNION — *is a type of* — HLL approx
-- BITMAP UNION — *requires* — per-code bitmaps
-- BITMAP UNION — *requires* — doc-id↔int map
-- COUNT_SCAN — *preferred over* — FETCH
-- explain — *analyzes* — gateway query
-- folderIds — *can force* — FETCH
-- mediaType — *can force* — FETCH
-- index — *enables* — COUNT_SCAN
-- CONNECTION POOL — *optimizes* — visible-document count
-- CONNECTION POOL — *supports* — K concurrent sub-counts
-- K concurrent sub-counts — *needs* — jsonstore
-- K concurrent sub-counts — *needs* — Mongo
-- READ-REPLICA routing — *optimizes* — visible-document count
-- READ-REPLICA routing — *needs* — read-preference knob
-- READ-REPLICA routing — *on* — frozen gateway
-- Bigger pod — *optimizes* — visible-document count
-- more cores — *optimizes* — visible-document count
-- Bigger pod — *raises* — _shard fan-out
-- more cores — *raises* — _shard fan-out
-- approximate totals — *optimizes* — visible-document count
-- UI — *uses* — approximate totals
-- UI — *caps at* — '999+'
-- Dev benchmark _shard count fan-out project — *related to* — _shard fan-out
-- Visible-document count as cardinality of a bitmap union resource — *related to* — BITMAP UNION
-- explain — *is first step in* — Act order
-- CACHE — *is second step in* — Act order
-- CONNECTION POOL — *is third step in* — Act order
-- BITMAP UNION — *is fourth step in* — Act order
-- approximate totals — *is fourth step in* — Act order
+- Optimization Levers — *optimises* — Visible Document Count
+- Optimization Levers — *beyond* — Shard Fan-out
+- Caching — *is a type of* — Optimization Levers
+- Caching — *optimises* — Visible Document Count
+- Caching — *uses* — luz_cache
+- luz_cache — *keyed by* — Cache Key (sorted code-set+tenant)
+- Caching — *invalidates via* — Cascade Hooks
+- Shard Fan-out — *helps with* — Cache Miss
+- Total Count — *is for* — Tenant
+- Total Count — *is for* — Code Set
+- Bitmap Union — *is a type of* — Optimization Levers
+- Bitmap Union — *optimises* — Visible Document Count
+- Bitmap Union — *removes* — O(doc×code) Amplification
+- Bitmap Union — *includes* — Roaring Exact Bitmap
+- Bitmap Union — *includes* — HLL Approximate Bitmap
+- Visible Document Count — *calculated by* — Popcount
+- Popcount — *operates on* — Per-Code Bitmaps
+- Per-Code Bitmaps — *requires* — Doc-ID to Int Map
+- Covered COUNT_SCAN — *is a type of* — Optimization Levers
+- Covered COUNT_SCAN — *is preferred over* — FETCH Operation
+- Explain Plan — *applies to* — Gateway Query
+- Extra Predicates — *can force* — FETCH Operation
+- Extra Predicates — *includes* — folderIds exists Predicate
+- Extra Predicates — *includes* — mediaType not-in Predicate
+- Database Index — *covers* — Extra Predicates
+- Database Index — *enables* — Keys-Only Count
+- Connection Pool — *is a type of* — Optimization Levers
+- Connection Pool — *optimises* — Visible Document Count
+- Connection Pool — *supports* — K Concurrent Sub-Counts
+- K Concurrent Sub-Counts — *needs* — jsonstore
+- K Concurrent Sub-Counts — *needs* — Mongo Connections
+- Connection Pool Size — *less than* — K Concurrent Sub-Counts
+- Connection Pool Size — *causes* — Shard Fan-out
+- Connection Pool Size — *should scale with* — K Concurrent Sub-Counts
+- Read-Replica Routing — *is a type of* — Optimization Levers
+- Read-Replica Routing — *optimises* — Visible Document Count
+- Read-Replica Routing — *optimises* — Heavy Sub-Counts
+- Read-Replica Routing — *requires* — Read-Preference Knob
+- Read-Preference Knob — *on* — Frozen Gateway
+- Bigger Pod — *is a type of* — Optimization Levers
+- Bigger Pod — *optimises* — Visible Document Count
+- Bigger Pod — *raises* — Fan-out Ceiling
+- More Cores — *is a type of* — Optimization Levers
+- More Cores — *optimises* — Visible Document Count
+- More Cores — *raises* — Fan-out Ceiling
+- Approximate Totals — *is a type of* — Optimization Levers
+- Approximate Totals — *optimises* — Visible Document Count
+- Approximate Totals — *is a* — Product Lever
+- Approximate Totals — *used by* — User Interface
+- User Interface — *needs* — 'Has More' Indicator
+- Approximate Totals — *involves* — '999+' Cap
+- Approximate Totals — *is instant if* — Requirement
+- Action Order — *starts with* — Step 3: Explain Plan
+- Action Order — *then* — Step 1: Caching
+- Action Order — *then* — Step 4: Connection Pool
+- Action Order — *then considers* — Step 2: Bitmap Union
+- Action Order — *then considers* — Step 7: Approximate Totals
+- Step 2: Bitmap Union — *is for* — Tail Optimization
+- Step 7: Approximate Totals — *is for* — Tail Optimization
+- Optimization Levers — *related to* — Related Note: Shard Count Fan-out Benchmark
+- Optimization Levers — *related to* — Related Note: Bitmap Union for Visible Document Count
+- Visible Document Count — *is* — Cardinality of a Bitmap Union
 
 %% ai-graph-end %%

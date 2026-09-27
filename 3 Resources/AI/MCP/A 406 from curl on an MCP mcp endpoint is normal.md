@@ -1,9 +1,27 @@
 ---
-ai_hash: 7b61e8ec8859615b
+ai_hash: cf99dc3186bc0cdd
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
-entities: []
+entities:
+- 406 Not Acceptable
+- curl
+- MCP endpoint
+- streamable-HTTP MCP endpoint
+- Accept headers
+- JSON
+- SSE
+- server
+- claude mcp get
+- Excalimate
+- .claudeskills
+- MCP server
+- port 3001
+- health-check
+- handshake
+- broken endpoint
+- MCP
+- status code
 source: session 2026-06-16
 status: seedling
 tags:
@@ -28,8 +46,31 @@ Hitting a streamable-HTTP MCP endpoint (e.g. `http://localhost:3001/mcp`) with a
 **Related notes:**
 - [[Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]
 - [[claude mcp list health status can be stale; verify MCP reachability with curl]]
-- [[Excalimate is AI skills plus an optional MCP server, not one app]]
 - [[MCP servers load only at Claude Code startup; skills hot-reload]]
+- [[Registering a bearer-gated HTTP MCP server needs claude mcp add --header]]
 - [[A globally-bootstrapped MCP server loads into every headless claude spawn]]
+
+**Relations:**
+- curl — *receives* — 406 Not Acceptable
+- 406 Not Acceptable — *occurs_on* — MCP endpoint
+- 406 Not Acceptable — *is* — normal
+- curl — *hits* — streamable-HTTP MCP endpoint
+- streamable-HTTP MCP endpoint — *returns* — 406 Not Acceptable
+- 406 Not Acceptable — *is* — expected
+- 406 Not Acceptable — *is_not* — error
+- streamable-HTTP MCP endpoint — *requires* — Accept headers
+- streamable-HTTP MCP endpoint — *negotiates* — JSON
+- streamable-HTTP MCP endpoint — *negotiates* — SSE
+- curl — *does_not_send* — Accept headers
+- 406 Not Acceptable — *confirms* — server
+- server — *is* — up
+- server — *speaks* — MCP
+- 406 Not Acceptable — *is_not_sign_of* — broken endpoint
+- claude mcp get — *is_used_for* — health-check
+- claude mcp get — *performs* — handshake
+- health-check — *should_not_rely_on* — status code
+- Excalimate — *runs_in* — .claudeskills
+- MCP server — *runs_on* — port 3001
+- Excalimate — *uses* — MCP server
 
 %% ai-graph-end %%

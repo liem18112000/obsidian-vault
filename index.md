@@ -1,7 +1,7 @@
 ---
-ai_hash: c11486de7ea09e72
+ai_hash: 91ba6fe6a730363a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 entities: []
 title: Home
 type: moc
@@ -44,10 +44,10 @@ Welcome to my digital garden. Everything lives in one of the four PARA buckets.
 %% ai-graph-start %%
 
 **Related notes:**
-- [[1 Projects]]
+- [[Confluence Export — Index]]
 - [[3 Resources]]
-- [[2 Areas]]
+- [[1 Projects]]
 - [[Stage 5 — Workflows & Methodology]]
-- [[search-logic]]
+- [[2 Areas]]
 
 %% ai-graph-end %%

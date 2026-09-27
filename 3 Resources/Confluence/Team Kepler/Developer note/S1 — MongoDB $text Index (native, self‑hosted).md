@@ -1,14 +1,23 @@
 ---
-title: "S1 — MongoDB $text Index (native, self‑hosted)"
+ai_hash: 32571ddf318db21b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49533583375'
+confluence_path: Team Kepler > Developer note > Full‑Text Document Search — Performance
+  Analysis & Proposals
 created: 2026-06-25
-updated: 2026-06-25
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- mongodb
+- performance
+- search
+title: S1 — MongoDB $text Index (native, self‑hosted)
+type: source
+updated: 2026-06-25
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49533583375/S1+MongoDB+text+Index+native+self+hosted
-confluence_id: "49533583375"
-confluence_path: "Team Kepler > Developer note > Full‑Text Document Search — Performance Analysis & Proposals"
-tags: [confluence, mongodb, performance, search]
 ---
 
 # S1 — MongoDB $text Index (native, self‑hosted)
@@ -124,3 +133,14 @@ Notes:
 What `explain("executionStats")` should now show for stage 1: a `TEXT` / `IXSCAN` node over `idx_fulltext` with `keysExamined` ≈ number of docs containing the token (small), **not** a `COLLSCAN` with `docsExamined` = 128 000.
 
 ![[image-20260625-012100.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Full‑Text Document Search — Performance Analysis & Proposals]]
+- [[A MongoDB text index matches stemmed words, not substrings]]
+- [[S2 — Materialized n‑gram - Trigram Field (native, self‑hosted, keeps substring semantics)]]
+- [[Trigram Search — Performance-Env Benchmark]]
+- [[Index Impact on MongoDB searchByFacets]]
+
+%% ai-graph-end %%

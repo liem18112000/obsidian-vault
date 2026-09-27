@@ -1,7 +1,7 @@
 ---
-ai_hash: 4920b1c9e32ef87a
+ai_hash: 8034b52189a12384
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-29
 entities: []
 source: luz_jsonstore session 2026-07-29
@@ -38,9 +38,9 @@ Related: [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not
 
 **Related notes:**
 - [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
-- [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
-- [[CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
-- [[luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES off]]
-- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+- [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[luz_jsonstore V2 BSON endpoints must be Document-in Document-out]]
+- [[BSON has no top-level array so a document list must be wrapped in a document]]
+- [[JAX-RS inherits routing annotations from interfaces but not custom security annotations]]
 
 %% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 2452dbcaebc55a80
+ai_hash: e0d12fd71126a2b6
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-13
 entities: []
 source: session 2026-06-13 fb-info-project share/v misclassification
@@ -36,7 +36,7 @@ Related: [[Scroll Facebook reel comments via JS, never mouse.wheel]] — both ar
 - [[Facebook reel comments are hidden behind the comment icon]]
 - [[Scroll Facebook reel comments via JS, never mouse.wheel]]
 - [[Facebook post permalinks render the post twice — dialog plus a hidden page copy]]
-- [[Resolving a wikilink by basename truncates titles containing a slash]]
 - [[FB photofbid= links scrape as post mode; filename id falls back to na]]
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
 
 %% ai-graph-end %%

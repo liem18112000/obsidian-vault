@@ -1,18 +1,22 @@
 ---
-title: "LUZ-110826 Public API - Widget subscription by activation code"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47567929416/LUZ-110826+Public+API+-+Widget+subscription+by+activation+code
-space: "TS"
-topic: programming
-relevance: 0.886
-depth: 3
-updated: 2023-12-06
+ai_hash: 38acebee94342db5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 43
+depth: 3
+entities: []
+relevance: 0.886
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47567929416/LUZ-110826+Public+API+-+Widget+subscription+by+activation+code
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: LUZ-110826 Public API - Widget subscription by activation code
+topic: programming
+type: source
+updated: 2023-12-06
 ---
 
 # LUZ-110826 Public API - Widget subscription by activation code
@@ -844,3 +848,14 @@ Partner name : Fairgate customer 500</p></li>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[Test Keycloak - Public API]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[Public API Print Partner]]
+
+%% ai-graph-end %%

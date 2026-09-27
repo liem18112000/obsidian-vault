@@ -1,18 +1,22 @@
 ---
-title: "How to use Bussiness Rules in GUI Framework"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25287335453/How+to+use+Bussiness+Rules+in+GUI+Framework
-space: "PT"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2017-03-27
+ai_hash: 52a4759b3a7ab565
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25287335453/How+to+use+Bussiness+Rules+in+GUI+Framework
+space: PT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/pt
+- confluence
+- programming
+- space/pt
+title: How to use Bussiness Rules in GUI Framework
+topic: programming
+type: source
+updated: 2017-03-27
 ---
 
 # How to use Bussiness Rules in GUI Framework
@@ -189,3 +193,14 @@ Note :
   
   
 Thanks for any comment!
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Ivy conventions]]
+- [[How to use tooltip in primefaces without modifying code in component]]
+- [[Impact of code changes on common components]]
+- [[Merging process]]
+- [[Handle error exception]]
+
+%% ai-graph-end %%

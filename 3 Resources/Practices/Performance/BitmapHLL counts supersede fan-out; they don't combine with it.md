@@ -1,7 +1,7 @@
 ---
-ai_hash: 57122e40170dd21d
+ai_hash: 9e85b1b6def6d258
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-17
 entities: []
 source: luz_docs LUZ-154613 2026-06-17
@@ -44,8 +44,8 @@ Gotchas:
 **Related notes:**
 - [[Visible-document count as cardinality of a bitmap union]]
 - [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
-- [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
 - [[Levers to optimise the visible-document count beyond _shard fan-out]]
+- [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
 - [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
 
 %% ai-graph-end %%

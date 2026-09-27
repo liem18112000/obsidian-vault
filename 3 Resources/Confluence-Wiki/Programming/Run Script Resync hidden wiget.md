@@ -1,18 +1,22 @@
 ---
-title: "Run Script Resync hidden wiget"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47145617313/Run+Script+Resync+hidden+wiget
-space: "Helios"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2022-08-10
+ai_hash: 981f4cf656052959
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47145617313/Run+Script+Resync+hidden+wiget
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Run Script Resync hidden wiget
+topic: programming
+type: source
+updated: 2022-08-10
 ---
 
 # Run Script Resync hidden wiget
@@ -129,3 +133,14 @@ If this is the first run, to check that all thing work as expected we suggest r
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Call API trigger Vacuum POS schema on PROD]]
+- [[19. Sync POS indicators]]
+- [[15. Update companies by tenant id]]
+- [[18. Migrate indicator online_shop_5]]
+- [[16. Export unsynchronized companies which missing from last synchronization]]
+
+%% ai-graph-end %%

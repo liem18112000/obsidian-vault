@@ -1,40 +1,33 @@
 ---
-ai_hash: 595558dfe0a0fad8
+ai_hash: 073eb027d680ab26
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-17
 entities:
-- 10000-IOPS standalone vDB PostgreSQL
+- 10000-IOPS standalone PostgreSQL
 - vServer-enabled zone
 - Gen2-NVMe2-IOPS10000
 - HCM03-1A
-- PostgreSQL
 - GreenNode/VNG Cloud vDB
+- instance's subnet
 - vServer subnets
 - HCM03-1C
+- standalone volumes
 - 3200 IOPS
 - ssd-iops{200..3200}-HCM03-1C
 - cluster topology
-- SSD-IOPS10000
+- SSD-IOPS10000 (cluster)
 - db.s2-general-8x16
 - vServer
-- pro-8986f5c6
+- single-node 10000 IOPS
 - GreenNode support ticket
-- vDB cluster
-- Backup-Center
+- pro-8986f5c6
+- vDB cluster in 1C
+- Backup-Center backups
+- standalone@3200 in 1C
 - Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary
 - 'GreenNode vDB create constraints: instance name 6-20 chars, password start-with-letter,
   package family s2-general'
-- standalone config
-- single-node 10000 IOPS
-- instance's subnet
-- deployment apply
-- support
-- AZ
-- HA
-- higher cost
-- Backup-Center backups
-- standalone@3200 in 1C
 source: session 2026-08-17
 status: seedling
 tags:
@@ -74,37 +67,28 @@ So single-node 10000 IOPS is impossible until **HCM03-1A is enabled for vServer*
 - [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
 
 **Relations:**
-- 10000-IOPS standalone vDB PostgreSQL — *requires* — vServer-enabled zone
+- 10000-IOPS standalone PostgreSQL — *needs* — vServer-enabled zone
 - vServer-enabled zone — *offers* — Gen2-NVMe2-IOPS10000
-- Gen2-NVMe2-IOPS10000 — *is available in* — HCM03-1A
-- 10000-IOPS single-node PostgreSQL — *deploys on* — GreenNode/VNG Cloud vDB
-- instance's subnet — *must reside in* — vServer-ENABLED zone
-- vServer-ENABLED zone — *must offer* — Gen2-NVMe2-IOPS10000 standalone volume
-- vServer subnets — *can be created in* — HCM03-1C
-- HCM03-1A — *has vServer* — disabled
-- HCM03-1C standalone volumes — *caps at* — 3200 IOPS
-- 3200 IOPS — *is specified by* — ssd-iops{200..3200}-HCM03-1C
-- 10000 IOPS — *in HCM03-1C is for* — cluster topology
-- cluster topology — *uses* — SSD-IOPS10000
-- HCM03-1A standalone — *offers* — Gen2-NVMe2-IOPS10000
-- Gen2-NVMe2-IOPS10000 — *includes package* — db.s2-general-8x16
-- single-node 10000 IOPS — *is impossible until* — HCM03-1A is enabled for vServer
+- 10000-IOPS standalone PostgreSQL — *runs on* — GreenNode/VNG Cloud vDB
+- instance's subnet — *must live in* — vServer-enabled zone
+- vServer subnets — *can only be created in* — HCM03-1C
+- HCM03-1C — *standalone volumes cap at* — 3200 IOPS
+- HCM03-1C — *offers* — ssd-iops{200..3200}-HCM03-1C
+- SSD-IOPS10000 (cluster) — *exists for* — cluster topology
+- HCM03-1A — *does offer* — Gen2-NVMe2-IOPS10000
+- HCM03-1A — *offers package* — db.s2-general-8x16
+- vServer — *is disabled in* — HCM03-1A
+- single-node 10000 IOPS — *is impossible until* — HCM03-1A
+- HCM03-1A — *is enabled for* — vServer
 - GreenNode support ticket — *for project* — pro-8986f5c6
-- standalone config — *is pinned to* — HCM03-1A
-- standalone config — *uses* — db.s2-general-8x16
-- standalone config — *uses* — Gen2-NVMe2-IOPS10000
-- deployment apply — *is BLOCKED until* — support enables the AZ
-- vDB cluster in 1C — *is an alternative* — considered & rejected
-- vDB cluster in 1C — *provides* — HA
-- vDB cluster in 1C — *has* — higher cost
+- standalone config — *pinned to* — HCM03-1A
+- apply — *treated as* — BLOCKED
+- vDB cluster in 1C — *considered & rejected as alternative* — 10000-IOPS standalone PostgreSQL
+- vDB cluster in 1C — *has characteristic* — HA
+- vDB cluster in 1C — *has characteristic* — higher cost
 - vDB cluster in 1C — *uses* — Backup-Center backups
-- standalone@3200 in 1C — *is an alternative* — considered & rejected
-- 10000-IOPS standalone vDB PostgreSQL — *is related to* — Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary
-- 10000-IOPS standalone vDB PostgreSQL — *is related to* — GreenNode vDB create constraints: instance name 6-20 chars, password start-with-letter, package family s2-general
-- HCM03-1A — *is a type of* — AZ
-- HCM03-1C — *is a type of* — AZ
-- support — *enables* — AZ
-- PostgreSQL — *is a type of* — vDB
-- GreenNode/VNG Cloud vDB — *supports* — PostgreSQL
+- standalone@3200 in 1C — *considered & rejected as alternative* — 10000-IOPS standalone PostgreSQL
+- Recover undocumented vDB API endpoints by grep-ing the vngcloud provider binary — *related to* — GreenNode/VNG Cloud vDB
+- GreenNode vDB create constraints: instance name 6-20 chars, password start-with-letter, package family s2-general — *related to* — GreenNode/VNG Cloud vDB
 
 %% ai-graph-end %%

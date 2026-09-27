@@ -1,18 +1,22 @@
 ---
-title: "Get tenant token from public api"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47494365263/Get+tenant+token+from+public+api
-space: "FUT"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2023-09-25
+ai_hash: 7a734bab63475424
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 20
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47494365263/Get+tenant+token+from+public+api
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Get tenant token from public api
+topic: programming
+type: source
+updated: 2023-09-25
 ---
 
 # Get tenant token from public api
@@ -280,3 +284,14 @@ Number of entries within the range 10001-20000: 1
 Number of entries within the range 50001-100000: 1  
 Number of entries within the range 100001-200000: 1  
 dvdat@AAVN-LAPTOP107:~/workspace/analyze_log\$
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Tenant token issue]]
+- [[Test Keycloak - Company Identity Mapper (script mapper)]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Optimus ePost myLife app(luz_mylife_epost_adapter) - API Response Performance Analysis]]
+- [[EPC API - Load Test]]
+
+%% ai-graph-end %%

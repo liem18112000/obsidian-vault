@@ -1,7 +1,7 @@
 ---
-ai_hash: fe0494646675d595
+ai_hash: cbd7048ca2e8b14c
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-12
 entities: []
 source: vinnstack BDD Run Tests scenario-timeout bugfix, 2026-07-12
@@ -37,8 +37,8 @@ Found while debugging vinnstack's BDD "Run Tests" feature (lib/bdd/verifyRunner.
 **Related notes:**
 - [[A stalled-looking test step may just be a long silent poll, not a hang]]
 - [[Windows child processes survive when only the parent is killed]]
+- [[Git Bash on Windows has no setsid; detach with nohup and disown]]
 - [[Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF]]
 - [[Windows claude subprocess is a process tree — taskkill T to reap it]]
-- [[An Electron GUI app can't be smoke-tested from a non-interactive automation session]]
 
 %% ai-graph-end %%

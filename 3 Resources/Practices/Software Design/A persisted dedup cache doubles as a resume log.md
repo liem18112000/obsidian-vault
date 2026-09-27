@@ -1,7 +1,7 @@
 ---
-ai_hash: df2dbe59106caef6
+ai_hash: bacb9c5af54769b9
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-15
 entities: []
 source: fb-info-project pause/resume, 2026-06-15
@@ -41,8 +41,8 @@ Related: [[A resume must not re-charge one-time accounting]], [[Checkpoint files
 **Related notes:**
 - [[Test resume by pre-seeding a checkpoint, not by simulating an interrupt]]
 - [[Cache only successful results so failures retry on resume]]
+- [[Reconstitute done items from the run cache when rewriting an aggregated output file on resume]]
 - [[Checkpoint files atomic tmp+rename write plus an input fingerprint]]
 - [[A resume must not re-charge one-time accounting]]
-- [[Reconstitute done items from the run cache when rewriting an aggregated output file on resume]]
 
 %% ai-graph-end %%

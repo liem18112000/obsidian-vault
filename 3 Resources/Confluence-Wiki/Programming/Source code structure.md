@@ -1,18 +1,22 @@
 ---
-title: "Source code structure"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47130218714/Source+code+structure
-space: "GRAVITY"
-topic: programming
-relevance: 0.714
-depth: 2.54
-updated: 2022-06-17
+ai_hash: 77199b00e8c96086
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 2.54
+entities: []
+relevance: 0.714
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47130218714/Source+code+structure
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: Source code structure
+topic: programming
+type: source
+updated: 2022-06-17
 ---
 
 # Source code structure
@@ -142,3 +146,12 @@ Includes 4 sub-packages:
   
 
  - **pages** stores all the locators, page and functions of web element
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Coding convention for Quarkus project]]
+- [[Architecture Overview LUZ]]
+- [[Kotlin migration plan]]
+
+%% ai-graph-end %%

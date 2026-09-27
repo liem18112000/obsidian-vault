@@ -1,18 +1,22 @@
 ---
-title: "SSL renewal issue"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48507322370/SSL+renewal+issue
-space: "LUZ"
-topic: security
-relevance: 0.777
-depth: 3
-updated: 2025-05-21
+ai_hash: 2bb23e373e2e353b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48507322370/SSL+renewal+issue
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: SSL renewal issue
+topic: security
+type: source
+updated: 2025-05-21
 ---
 
 # SSL renewal issue
@@ -245,3 +249,14 @@ However, it still take time for some reasons:
 ------------------------------------------------------------------------
 
 Source: Copy from [SSL renewal issue](https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47378203323/SSL+renewal+issue)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Carve .well-known out of any catch-all proxy or certificate validation fails]]
+- [[Script to create Redirection Order]]
+- [[Load test webclient-nginx-ingress]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+- [[Recipe Introduce a Global HTTP(S) Load Balancer on GCP at KLARA]]
+
+%% ai-graph-end %%

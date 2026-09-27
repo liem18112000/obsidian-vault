@@ -1,14 +1,21 @@
 ---
-title: "Sprint 154 - Retrospective"
+ai_hash: ff83aa66e27c4152
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49349001217'
+confluence_path: Team Kepler > Team Sprint > Retrospectives > 2026
 created: 2026-04-21
-updated: 2026-04-21
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- retrospective
+- sprint
+title: Sprint 154 - Retrospective
+type: source
+updated: 2026-04-21
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49349001217/Sprint+154+-+Retrospective
-confluence_id: "49349001217"
-confluence_path: "Team Kepler > Team Sprint > Retrospectives > 2026"
-tags: [confluence, retrospective, sprint]
 ---
 
 # Sprint 154 - Retrospective
@@ -32,3 +39,14 @@ tags: [confluence, retrospective, sprint]
 | Issues | Actions |
 | luz_enrichment Task separate not good | Separate each enricher and review, adapt |
 | Separate each enricher and review adapt | Discuss in In Planning 2 |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Sprint 155 - Retrospective]]
+- [[Sprint 147- Retrospective]]
+- [[Sprint 158 - Retrospective]]
+- [[Sprint 151 - Retrospective]]
+- [[eArchive PRs in luz_docs target earchive-master integration branch, not master]]
+
+%% ai-graph-end %%

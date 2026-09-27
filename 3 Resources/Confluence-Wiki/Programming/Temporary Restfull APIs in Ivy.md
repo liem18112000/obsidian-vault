@@ -1,18 +1,22 @@
 ---
-title: "Temporary Restfull APIs in Ivy"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20463002420/Temporary+Restfull+APIs+in+Ivy
-space: "LUZ"
-topic: programming
-relevance: 0.716
-depth: 2.89
-updated: 2018-03-13
+ai_hash: 226cd112fc58dbe7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.89
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20463002420/Temporary+Restfull+APIs+in+Ivy
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Temporary Restfull APIs in Ivy
+topic: programming
+type: source
+updated: 2018-03-13
 ---
 
 # Temporary Restfull APIs in Ivy
@@ -124,3 +128,14 @@ Update later!
 **
 
 **  **
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Upload Document API]]
+- [[Uploading documents]]
+- [[Document Creator API]]
+- [[REST API for deleting EXPENSES documents]]
+- [[Collect all calls FileManager APIs by Klara Modules]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Java's libraries comparison"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47947350225/Java+s+libraries+comparison
-space: "Helios"
-topic: programming
-relevance: 0.711
-depth: 2.33
-updated: 2024-07-26
+ai_hash: 51a1bae10b9e1d99
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.33
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47947350225/Java+s+libraries+comparison
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Java's libraries comparison
+topic: programming
+type: source
+updated: 2024-07-26
 ---
 
 # Java's libraries comparison
@@ -1086,3 +1090,10 @@ Netty server vs Apache James
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[IMAP Implementation (draft)]]
+
+%% ai-graph-end %%

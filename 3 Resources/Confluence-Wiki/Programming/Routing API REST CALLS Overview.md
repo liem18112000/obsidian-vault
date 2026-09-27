@@ -1,18 +1,22 @@
 ---
-title: "Routing | API REST CALLS | Overview"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48611459314/Routing+API+REST+CALLS+Overview
-space: "Arrow"
-topic: programming
-relevance: 0.769
-depth: 2.68
-updated: 2025-08-18
+ai_hash: 36007c0f8e4cceb3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.68
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48611459314/Routing+API+REST+CALLS+Overview
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: Routing | API REST CALLS | Overview
+topic: programming
+type: source
+updated: 2025-08-18
 ---
 
 # Routing | API REST CALLS | Overview
@@ -467,3 +471,14 @@ This collection includes:
 ![[48611459314-Routing All Rest APIs.postman_collection.json]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Login]]
+- [[luz_cor_api]]
+- [[Getting tenant list]]
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[IVY API Calls Overview for luz Modules]]
+
+%% ai-graph-end %%

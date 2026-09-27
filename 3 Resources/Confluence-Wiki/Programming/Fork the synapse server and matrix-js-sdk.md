@@ -1,18 +1,22 @@
 ---
-title: "Fork the synapse server and matrix-js-sdk"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48386277435/Fork+the+synapse+server+and+matrix-js-sdk
-space: "TS"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2025-03-13
+ai_hash: d99ebda7e7eef49e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48386277435/Fork+the+synapse+server+and+matrix-js-sdk
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Fork the synapse server and matrix-js-sdk
+topic: programming
+type: source
+updated: 2025-03-13
 ---
 
 # Fork the synapse server and matrix-js-sdk
@@ -102,3 +106,11 @@ We’re trying out an approach that modifies the Synapse code at the endpoint <a
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fork the Synapse server and matrix-js-sdk for DEV]]
+- [[Communities Privacy Concept – Working Page for PO and Engineering]]
+
+%% ai-graph-end %%

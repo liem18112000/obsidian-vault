@@ -1,18 +1,22 @@
 ---
-title: "URL concept"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2457115956/URL+concept
-space: "AI"
-topic: architecture
-relevance: 0.721
-depth: 2.37
-updated: 2018-05-16
+ai_hash: 742b992119d977dd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.37
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2457115956/URL+concept
+space: AI
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ai
+- confluence
+- architecture
+- space/ai
+title: URL concept
+topic: architecture
+type: source
+updated: 2018-05-16
 ---
 
 # URL concept
@@ -125,3 +129,11 @@ The version specifier could therefore include the minor version.
 - `v1`
 - `v1.1`
 - `v1.2`
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice API Java Client]]
+- [[OCR API Java Client]]
+
+%% ai-graph-end %%

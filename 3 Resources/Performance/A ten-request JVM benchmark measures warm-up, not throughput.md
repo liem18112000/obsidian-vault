@@ -1,10 +1,21 @@
 ---
-title: "A ten-request JVM benchmark measures warm-up, not throughput"
+ai_hash: 9f47ab261883ea0a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Performance Wildfly vs Quarkus'
 status: seedling
-source: "Confluence: Performance Wildfly vs Quarkus"
-tags: [benchmarking, jvm, quarkus, wildfly, methodology, apache-bench, confluence-distilled]
+tags:
+- benchmarking
+- jvm
+- quarkus
+- wildfly
+- methodology
+- apache-bench
+- confluence-distilled
+title: A ten-request JVM benchmark measures warm-up, not throughput
+type: lesson
 ---
 
 # A ten-request JVM benchmark measures warm-up, not throughput
@@ -37,3 +48,14 @@ Source: [[Performance Wildfly vs Quarkus]] (Confluence). The critique here is my
 ## Related
 
 - [[N+1 hides at the service-call layer too, not just in the ORM]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Wildfly vs Quarkus]]
+- [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention]]
+- [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]]
+- [[Trust median and p90 over many runs, not the mean of a few, for latency on a noisy shared env]]
+- [[Truncating DB collections between benchmark runs resets data but not service warmth]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: db1269cdf3260d07
+ai_hash: c7ed8063c1bd68a2
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-27
 entities: []
 source: session 2026-07-27 luz_finance setup
@@ -36,10 +36,10 @@ type: lesson
 %% ai-graph-start %%
 
 **Related notes:**
-- [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+- [[Problem of class cast exception]]
+- [[Offline mvn -o compile shows false Lombok cannot-find-symbol errors]]
 - [[A refactor that removes a method must grep tests for its name before merging]]
+- [[Impact of code changes on common components]]
 - [[Axon Ivy project anatomy logic split across processes, data classes, HTML dialogs, and Java]]
-- [[Run mvn test-compile after changing a recordctor signature — Cloud Build compiles tests, local mvn compile does not]]
-- [[luz_epost_business_web to luz_docs_view_controller integration goes through one REST client package]]
 
 %% ai-graph-end %%

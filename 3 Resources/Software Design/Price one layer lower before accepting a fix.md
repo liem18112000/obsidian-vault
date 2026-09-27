@@ -1,5 +1,5 @@
 ---
-ai_hash: e3f7bf21d6380633
+ai_hash: 9906a2dac84def0b
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-25
@@ -42,7 +42,9 @@ Related: [[Implementation is the best reviewer a design doc gets]] · [[The fide
 
 **Related notes:**
 - [[The fidelity law a one-line intent is a 201 lossy compression]]
-- [[Implementation is the best reviewer a design doc gets]]
+- [[Intent composes up the chain, specification stays a leaf property]]
+- [[OpenRig's Intent Hierarchy and Refocus - Analysis and Implementation in Test-Agent-V2]]
 - [[CONTEXT-GAP vs JUDGMENT-GAP dispose every miss by cause]]
+- [[Implementation is the best reviewer a design doc gets]]
 
 %% ai-graph-end %%

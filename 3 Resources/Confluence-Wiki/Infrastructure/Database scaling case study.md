@@ -1,18 +1,22 @@
 ---
-title: "Database scaling case study"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47183790501/Database+scaling+case+study
-space: "FUT"
-topic: infra
-relevance: 0.703
-depth: 2.25
-updated: 2022-09-16
+ai_hash: 549e30e5c75e6164
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.25
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47183790501/Database+scaling+case+study
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: Database scaling case study
+topic: infra
+type: source
+updated: 2022-09-16
 ---
 
 # Database scaling case study
@@ -85,3 +89,14 @@ This is a cool article that explains the real cases: <a href="https://www.freeco
 ## Conclusions
 
 Go on with Database Replication
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Best practices implementing scalable distributed applications on cloud]]
+- [[Command Query Responsibility Segregation (CQRS)]]
+- [[Prompt Performance Code Review]]
+- [[Benchmark of luz-database (performance env)]]
+- [[Redis Standard replicas are failover only; read scaling needs Cluster]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Invoice API Explained"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488076258/Invoice+API+Explained
-space: "AI"
-topic: programming
-relevance: 0.816
-depth: 2.75
-updated: 2019-02-11
+ai_hash: f6e5031e9dd57fb1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.75
+entities: []
+relevance: 0.816
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488076258/Invoice+API+Explained
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Invoice API Explained
+topic: programming
+type: source
+updated: 2019-02-11
 ---
 
 # Invoice API Explained
@@ -106,3 +110,14 @@ A LUZ option represents an analysis output.
 | Predict  | luz-predictions |       true        | ocr.xml                       |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice API Reference]]
+- [[OCR API Explained]]
+- [[Invoice API]]
+- [[Analyze API v2 for Invoice prediction]]
+- [[Invoice API Java Client]]
+
+%% ai-graph-end %%

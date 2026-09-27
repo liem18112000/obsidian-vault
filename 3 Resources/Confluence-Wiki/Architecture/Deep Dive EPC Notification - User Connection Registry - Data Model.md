@@ -1,18 +1,22 @@
 ---
-title: "Deep Dive: EPC Notification - User Connection Registry - Data Model"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49450877019/Deep+Dive+EPC+Notification+-+User+Connection+Registry+-+Data+Model
-space: "Helios"
-topic: architecture
-relevance: 0.798
-depth: 2.79
-updated: 2026-05-27
+ai_hash: f849031f55fb7415
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.79
+entities: []
+relevance: 0.798
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49450877019/Deep+Dive+EPC+Notification+-+User+Connection+Registry+-+Data+Model
+space: Helios
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/helios
+- confluence
+- architecture
+- space/helios
+title: 'Deep Dive: EPC Notification - User Connection Registry - Data Model'
+topic: architecture
+type: source
+updated: 2026-05-27
 ---
 
 # Deep Dive: EPC Notification - User Connection Registry - Data Model
@@ -1142,3 +1146,14 @@ Next notification for t1:u1:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Store pod-level facts once, not copied into every user key]]
+- [[Redis TTL should express liveness and be refreshed by a heartbeat]]
+- [[EPC Notification]]
+- [[EPC Notification architecture flow]]
+- [[EPC API - Load Test]]
+
+%% ai-graph-end %%

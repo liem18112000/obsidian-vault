@@ -1,10 +1,20 @@
 ---
-title: "Cold starts appear as a p95 spike during the scale-up ramp, not in steady state"
+ai_hash: 3778fb7ef5cb43ec
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Performance Test - 100% Thumbnail Cloud Run (2026-04-13)'
 status: seedling
-source: "Confluence: Performance Test - 100% Thumbnail Cloud Run (2026-04-13)"
-tags: [cloud-run, cold-start, latency, performance, load-testing, gcp]
+tags:
+- cloud-run
+- cold-start
+- latency
+- performance
+- load-testing
+- gcp
+title: Cold starts appear as a p95 spike during the scale-up ramp, not in steady state
+type: lesson
 ---
 
 # Cold starts appear as a p95 spike during the scale-up ramp, not in steady state
@@ -28,3 +38,14 @@ This is also why a load test should report the steady-state window separately fr
 ## Related
 
 - [[Cloud Run concurrency capacity is an upper bound CPU rarely lets you reach]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run concurrency capacity is an upper bound CPU rarely lets you reach]]
+- [[Hitting Cloud Run maxScale turns latency into compounding errors, and 2xx throughput falls]]
+- [[Performance Test - 100% Thumbnail Cloud Run]]
+- [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention]]
+- [[Trust median and p90 over many runs, not the mean of a few, for latency on a noisy shared env]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "KIE Kogito and improve performance concept (19.11.2024 - 02.12.2024)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48187015672/KIE+Kogito+and+improve+performance+concept+19.11.2024+-+02.12.2024
-space: "LUZ"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2024-12-02
+ai_hash: 5b43f87dd2a86fc2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48187015672/KIE+Kogito+and+improve+performance+concept+19.11.2024+-+02.12.2024
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: KIE Kogito and improve performance concept (19.11.2024 - 02.12.2024)
+topic: architecture
+type: source
+updated: 2024-12-02
 ---
 
 # KIE Kogito and improve performance concept (19.11.2024 - 02.12.2024)
@@ -87,3 +91,14 @@ We are researching the concept of distributed transactions and developing a POC 
 The POC covers several points, including updates to the **Enrichment workflow** and using **Redis cache** to reduce the load on **luz-jsonstore**.
 
 Detail: <a href="https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48171712551/Apply+Redis+for+caching+and+Create+API+V2" data-card-appearance="inline" rel="nofollow">https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48171712551/Apply+Redis+for+caching+and+Create+API+V2</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Editor rule by Code Service (Visual Code in Browser)]]
+- [[Confluence Export — Index]]
+- [[CICD for Kogito]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[Programming]]
+
+%% ai-graph-end %%

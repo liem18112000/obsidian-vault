@@ -1,14 +1,20 @@
 ---
-title: "Xray Test Management - Manual Test Guideline"
+ai_hash: df28297f2ef0bcdc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49284284418'
+confluence_path: Team Kepler > Developer note > Xray Test Management > Manual Tests
 created: 2026-03-30
-updated: 2026-04-01
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- xray
+title: Xray Test Management - Manual Test Guideline
+type: source
+updated: 2026-04-01
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49284284418/Xray+Test+Management+-+Manual+Test+Guideline
-confluence_id: "49284284418"
-confluence_path: "Team Kepler > Developer note > Xray Test Management > Manual Tests"
-tags: [confluence, xray]
 ---
 
 # Xray Test Management - Manual Test Guideline
@@ -809,3 +815,14 @@ You can create new executions of a specific version from the Test Runs web panel
 4.  Once you're finished, click *Create*
 
 ![[image-20260330-102536.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Integration Test with Xray and Cucumber]]
+- [[Use Case - Xray Feature Import - Local Tool]]
+- [[Invoice Run V2 - Retry Uploaded customer document step - Should update correct status after retry]]
+- [[Test and code review report template.2]]
+- [[CROSS-TEST LUZ-142507 Implement Analyze API Integration (Phase 1) Part 2]]
+
+%% ai-graph-end %%

@@ -1,14 +1,20 @@
 ---
-title: "[GKE - Cloud Run] Migration Trackers"
+ai_hash: 33441d251c144336
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49300078635'
+confluence_path: LUZ Home > GKE to Cloud Run
 created: 2026-04-06
-updated: 2026-05-19
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+- cloud-run
+title: '[GKE - Cloud Run] Migration Trackers'
+type: source
+updated: 2026-05-19
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49300078635/GKE+-+Cloud+Run+Migration+Trackers
-confluence_id: "49300078635"
-confluence_path: "LUZ Home > GKE to Cloud Run"
-tags: [confluence, cloud-run]
 ---
 
 # [GKE - Cloud Run] Migration Trackers
@@ -162,3 +168,14 @@ tags: [confluence, cloud-run]
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Migrate GKE to CloudRun - Gradually migrate the luz-antivirus to Cloud Run (49224646657)]]
+- [[Migrate GKE to CloudRun - Gradually migrate the luz-antivirus to Cloud Run]]
+- [[Luz Kubernetes Terraform]]
+- [[Infrastructure]]
+- [[Deploy luz-epc-redis-service on GCP]]
+
+%% ai-graph-end %%

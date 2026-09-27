@@ -1,18 +1,22 @@
 ---
-title: "Task List Mass Processing technical notes"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47312601311/Task+List+Mass+Processing+technical+notes
-space: "X4"
-topic: architecture
-relevance: 0.701
-depth: 2.51
-updated: 2023-03-21
+ai_hash: 9762983c448c89f1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.51
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47312601311/Task+List+Mass+Processing+technical+notes
+space: X4
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/x4
+- confluence
+- architecture
+- space/x4
+title: Task List Mass Processing technical notes
+topic: architecture
+type: source
+updated: 2023-03-21
 ---
 
 # Task List Mass Processing technical notes
@@ -108,3 +112,14 @@ private CommandExecutor buildSingleTaskCommandExecutor(TaskItemModel taskItemMod
 </div>
 
 After commandExecutor has been executed, if status of executor is FAILED then put mass execution error to ItemHead entity and sync task to Elasticsearch. This flag will be using for displayed failed tasks on Task List.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research on bulk removal of access class]]
+- [[Task]]
+- [[Run Re-Index ivy database]]
+- [[Enhancements for API Delete and Restore]]
+- [[Batching Design]]
+
+%% ai-graph-end %%

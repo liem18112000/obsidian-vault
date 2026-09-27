@@ -1,18 +1,22 @@
 ---
-title: "Large Payload Cases - Research"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48728768517/Large+Payload+Cases+-+Research
-space: "FUT"
-topic: programming
-relevance: 0.841
-depth: 3
-updated: 2025-10-10
+ai_hash: 9a1e30f7b97587db
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 23
+depth: 3
+entities: []
+relevance: 0.841
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48728768517/Large+Payload+Cases+-+Research
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Large Payload Cases - Research
+topic: programming
+type: source
+updated: 2025-10-10
 ---
 
 # Large Payload Cases - Research
@@ -291,3 +295,14 @@ tags:
 | 3️⃣ Service Storage | DB or FileStore/GCS | requestId (fast) | Works | Works | **YES** | not make sense |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Batch Processor Library - NodeJS]]
+- [[Score async API designs on crash recovery and multi-instance, not latency]]
+- [[Batching Design]]
+- [[Luz Batch TypeScript - Sequence Diagram]]
+- [[Performance pain points]]
+
+%% ai-graph-end %%

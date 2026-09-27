@@ -1,18 +1,22 @@
 ---
-title: "How to run export API for specific tenant and date - Manual export"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47081652666/How+to+run+export+API+for+specific+tenant+and+date+-+Manual+export
-space: "LUZ"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2022-03-25
+ai_hash: 4e3e99571b01e18b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47081652666/How+to+run+export+API+for+specific+tenant+and+date+-+Manual+export
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: How to run export API for specific tenant and date - Manual export
+topic: programming
+type: source
+updated: 2022-03-25
 ---
 
 # How to run export API for specific tenant and date - Manual export
@@ -100,3 +104,14 @@ curl --location --request POST 'http://localhost:8088/luz_audit/api/23bc4385-8eb
 
 
 ![[47081652666-image-20220325-040150.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Download user audit logs export files]]
+- [[Export CRM statistics by API]]
+- [[Rerun Own domain migration api for all tenant]]
+- [[How to execute API to create sync event for post from tenant schemas to public table]]
+- [[Empty Trash APIs]]
+
+%% ai-graph-end %%

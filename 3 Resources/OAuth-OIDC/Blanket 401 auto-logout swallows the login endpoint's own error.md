@@ -1,10 +1,18 @@
 ---
-title: "Blanket 401 auto-logout swallows the login endpoint's own error"
+ai_hash: 3783a5667d89985e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: leo-customer360 SSO session fix, 2026-09-27
 status: seedling
-source: "leo-customer360 SSO session fix, 2026-09-27"
-tags: [auth, api-client, ux, gotcha]
+tags:
+- auth
+- api-client
+- ux
+- gotcha
+title: Blanket 401 auto-logout swallows the login endpoint's own error
+type: lesson
 ---
 
 # Blanket 401 auto-logout swallows the login endpoint's own error
@@ -26,3 +34,14 @@ General principle: "401 means my session died" is only true for *resource* endpo
 ## Related
 
 - [[Single-flight token refresh prevents concurrent grants from invalidating each other]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Single-flight token refresh prevents concurrent grants from invalidating each other]]
+- [[Returning 401 for a permission failure causes infinite login loops]]
+- [[Discarding the refresh token caps an SPA session at one access-token lifetime]]
+- [[Fail-open bearer auth middleware antipattern]]
+- [[A null-guarded tenant check fails open, so a renamed path parameter disables isolation]]
+
+%% ai-graph-end %%

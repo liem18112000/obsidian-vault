@@ -1,18 +1,22 @@
 ---
-title: "Coding convention for Quarkus project"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48197271777/Coding+convention+for+Quarkus+project
-space: "GRAVITY"
-topic: programming
-relevance: 0.753
-depth: 2.49
-updated: 2025-06-06
+ai_hash: 7f75554d817cb67f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 18
+depth: 2.49
+entities: []
+relevance: 0.753
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48197271777/Coding+convention+for+Quarkus+project
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: Coding convention for Quarkus project
+topic: programming
+type: source
+updated: 2025-06-06
 ---
 
 # Coding convention for Quarkus project
@@ -464,3 +468,14 @@ To install the JavaDoc plugin by Sergey in IntelliJ, follow these steps:
     
 
 ![[48197271777-image-20250106-041148.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[08_ Fintech - Innovation Coding convention]]
+- [[Prompt Architecture Code Review]]
+- [[Migrate to Quarkus (WIP)]]
+- [[Source code structure]]
+- [[00. Test and code review report template]]
+
+%% ai-graph-end %%

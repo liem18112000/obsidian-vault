@@ -1,18 +1,22 @@
 ---
-title: "Using Google PubSub for events between Serverless workflow and Data Index"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48423174389/Using+Google+PubSub+for+events+between+Serverless+workflow+and+Data+Index
-space: "FUT"
-topic: infra
-relevance: 0.8
-depth: 2.9
-updated: 2025-04-01
+ai_hash: a5e887032aba065d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.9
+entities: []
+relevance: 0.8
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48423174389/Using+Google+PubSub+for+events+between+Serverless+workflow+and+Data+Index
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: Using Google PubSub for events between Serverless workflow and Data Index
+topic: infra
+type: source
+updated: 2025-04-01
 ---
 
 # Using Google PubSub for events between Serverless workflow and Data Index
@@ -142,3 +146,14 @@ In order to support send and receive a new event type.
     </div>
 
     </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Setup Google Cloud managed Apache Kafka for Serverless workflow]]
+- [[Data index performance]]
+- [[ELM5 PubSub Message Queue]]
+- [[EPC Notification]]
+- [[Hosting a PubSub consumer in a luz service with luz_message_receiver]]
+
+%% ai-graph-end %%

@@ -1,14 +1,15 @@
 ---
-ai_hash: 5961b5b8ee2bab0e
+ai_hash: 58c95bec10c341be
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-26
 entities:
 - google-skill-grant-cloudsql-access
 - Cloud SQL
-- Claude Code skill
 - IAM role
+- email
 - GCP project
+- Claude Code skill
 - bash script
 - SKILL.md
 - ensure-bash.ps1
@@ -23,7 +24,7 @@ entities:
 - add-iam-policy-binding
 - grant_cloudsql_access.sh
 - role cheat-sheet
-- 3 Resources/Cloud/GCP/GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get
+- GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get
 source: session 2026-07-26
 status: seedling
 tags:
@@ -61,26 +62,26 @@ See the role cheat-sheet for which `ROLE` to pass for a given intent.
 
 **Relations:**
 - google-skill-grant-cloudsql-access — *is a* — Claude Code skill
-- google-skill-grant-cloudsql-access — *grants* — Cloud SQL IAM role
+- google-skill-grant-cloudsql-access — *grants* — Cloud SQL
+- google-skill-grant-cloudsql-access — *grants* — IAM role
+- google-skill-grant-cloudsql-access — *grants by* — email
 - google-skill-grant-cloudsql-access — *operates on* — GCP project
-- google-skill-grant-cloudsql-access — *is located at* — ~/.claude/skills/google-skill-grant-cloudsql-access/
-- google-skill-grant-cloudsql-access — *is built with* — bash script
-- google-skill-grant-cloudsql-access — *is built with* — SKILL.md
+- google-skill-grant-cloudsql-access — *uses* — bash script
+- google-skill-grant-cloudsql-access — *uses* — SKILL.md
 - google-skill-grant-cloudsql-access — *uses* — ensure-bash.ps1
-- EMAIL — *is an input for* — google-skill-grant-cloudsql-access
-- PROJECT — *is a default for* — google-skill-grant-cloudsql-access
-- klara-nonprod — *is default value for* — PROJECT
-- ROLE — *is a default for* — google-skill-grant-cloudsql-access
-- roles/cloudsql.client — *is default value for* — ROLE
-- MEMBER_TYPE — *is a default for* — google-skill-grant-cloudsql-access
-- user — *is default value for* — MEMBER_TYPE
-- google-skill-grant-cloudsql-access — *is triggered by* — APPLY=1
+- google-skill-grant-cloudsql-access — *has input* — EMAIL
+- google-skill-grant-cloudsql-access — *has parameter* — PROJECT
+- PROJECT — *defaults to* — klara-nonprod
+- google-skill-grant-cloudsql-access — *has parameter* — ROLE
+- ROLE — *defaults to* — roles/cloudsql.client
+- google-skill-grant-cloudsql-access — *has parameter* — MEMBER_TYPE
+- MEMBER_TYPE — *defaults to* — user
 - google-skill-grant-cloudsql-access — *uses command* — add-iam-policy-binding
 - google-skill-grant-cloudsql-access — *is run via* — grant_cloudsql_access.sh
-- role cheat-sheet — *provides information for* — ROLE
-- 3 Resources/Cloud/GCP/GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get — *is a related resource to* — google-skill-grant-cloudsql-access
-- 3 Resources/Cloud/GCP/GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get — *is a* — role cheat-sheet
-- google-skill-grant-cloudsql-access — *has property* — Preview-first
-- google-skill-grant-cloudsql-access — *has property* — Idempotent
+- google-skill-grant-cloudsql-access — *is* — preview-first
+- google-skill-grant-cloudsql-access — *is* — idempotent
+- role cheat-sheet — *provides info for* — ROLE
+- GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get — *is a* — role cheat-sheet
+- google-skill-grant-cloudsql-access — *related to* — GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get
 
 %% ai-graph-end %%

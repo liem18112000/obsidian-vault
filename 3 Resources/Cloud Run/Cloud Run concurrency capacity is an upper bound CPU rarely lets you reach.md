@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run concurrency capacity is an upper bound CPU rarely lets you reach"
+ai_hash: 4d58fdd341a08690
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Performance Test - 100% Thumbnail Cloud Run (2026-04-13)'
 status: seedling
-source: "Confluence: Performance Test - 100% Thumbnail Cloud Run (2026-04-13)"
-tags: [cloud-run, capacity-planning, performance, autoscaling, gcp, load-testing]
+tags:
+- cloud-run
+- capacity-planning
+- performance
+- autoscaling
+- gcp
+- load-testing
+title: Cloud Run concurrency capacity is an upper bound CPU rarely lets you reach
+type: lesson
 ---
 
 # Cloud Run concurrency capacity is an upper bound CPU rarely lets you reach
@@ -36,3 +46,14 @@ Rule: **compute the theoretical ceiling to know what to test, then measure to fi
 ## Related
 
 - [[Hitting Cloud Run maxScale turns latency into compounding errors, and 2xx throughput falls]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hitting Cloud Run maxScale turns latency into compounding errors, and 2xx throughput falls]]
+- [[Cold starts appear as a p95 spike during the scale-up ramp, not in steady state]]
+- [[Performance Test - 100% Thumbnail Cloud Run]]
+- [[Serverless with Google Cloud Run]]
+- [[Multi-turn agent sessions need min-instances=1 and session affinity on Cloud Run]]
+
+%% ai-graph-end %%

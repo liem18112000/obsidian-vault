@@ -1,5 +1,5 @@
 ---
-ai_hash: bff209a7e76281a0
+ai_hash: 266403e769131412
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-21
@@ -40,9 +40,9 @@ Discovered writing `customer360-agent/tests/test_e2e.py` for the customer360 AI 
 
 **Related notes:**
 - [[Test an ADK LlmAgent(output_schema=) offline with a BaseLlm fake yielding canned JSON]]
-- [[Reasoning models reject temperature != 1; use litellm.drop_params for multi-model agents]]
 - [[Test an LLM-vs-heuristic seam offline by monkeypatching complete() per module]]
+- [[Reasoning models reject temperature != 1; use litellm.drop_params for multi-model agents]]
 - [[Pluggable LLM via the litellm ModelProvider backend]]
-- [[Monkeypatching a function that calls itself recurses — capture the original first]]
+- [[pydantic-settings JSON-parses complex fields at the source, before validators]]
 
 %% ai-graph-end %%

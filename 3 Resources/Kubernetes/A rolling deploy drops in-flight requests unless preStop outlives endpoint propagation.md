@@ -1,10 +1,21 @@
 ---
-title: "A rolling deploy drops in-flight requests unless preStop outlives endpoint propagation"
+ai_hash: 82546219df2e2f09
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Service Reliability Solution (2025-12-10)'
 status: seedling
-source: "Confluence: Service Reliability Solution (2025-12-10)"
-tags: [kubernetes, graceful-shutdown, rolling-deployment, reliability, prestop, gotcha]
+tags:
+- kubernetes
+- graceful-shutdown
+- rolling-deployment
+- reliability
+- prestop
+- gotcha
+title: A rolling deploy drops in-flight requests unless preStop outlives endpoint
+  propagation
+type: lesson
 ---
 
 # A rolling deploy drops in-flight requests unless preStop outlives endpoint propagation
@@ -35,3 +46,14 @@ Counter-intuitive part worth remembering: **the sleep is not a workaround for a 
 ## Related
 
 - [[An exec-cat readiness probe reports Ready before the server can serve]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[An exec-cat readiness probe reports Ready before the server can serve]]
+- [[Every production FAILED_TO_STORE traced back to a rolling deploy, not to load]]
+- [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
+- [[Self-restarting kubectl port-forward keeps long-running scripts alive through drops]]
+- [[kubectl rollout status timeout must cover cold image pull time]]
+
+%% ai-graph-end %%

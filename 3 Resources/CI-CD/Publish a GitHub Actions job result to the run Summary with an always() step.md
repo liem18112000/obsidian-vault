@@ -1,5 +1,5 @@
 ---
-ai_hash: 8dd9a4fbc77cd83a
+ai_hash: b6394d387dd52ba9
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-24
@@ -48,8 +48,8 @@ Related: [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]].
 **Related notes:**
 - [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
 - [[CI build Docker image on every run, push only on non-PR]]
-- [[Track releases + roll back via GitHub Deployments API and workflow_dispatch (not Postgres — private DB)]]
 - [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[Track releases + roll back via GitHub Deployments API and workflow_dispatch (not Postgres — private DB)]]
 - [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
 
 %% ai-graph-end %%

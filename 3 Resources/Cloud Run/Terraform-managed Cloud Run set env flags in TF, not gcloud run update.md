@@ -1,5 +1,5 @@
 ---
-ai_hash: 77b68c5bc349abd9
+ai_hash: 7db539e49fe0ab5f
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-03
@@ -39,9 +39,9 @@ then set the bool in `terraform.tfvars`. `terraform plan` should show `1 to chan
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Adding a Cloud Run service that shares one image var build first, targeted apply]]
 - [[KGA self-exploration G2-G5 map to four KGA_ env flags]]
 - [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+- [[Adding a Cloud Run service that shares one image var build first, targeted apply]]
 - [[Cloud Run v2 service design gotchas]]
 - [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
 

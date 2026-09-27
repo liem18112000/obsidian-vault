@@ -1,10 +1,20 @@
 ---
-title: "Draw the tenant boundary at legal data ownership, and make it reassignable"
+ai_hash: 54ae153d1dde3c46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: KLARA Documents Concept Solution Design (LUZ)'
 status: seedling
-source: "Confluence: KLARA Documents Concept Solution Design (LUZ)"
-tags: [multi-tenancy, domain-modelling, privacy-by-design, gdpr, architecture, confluence-distilled]
+tags:
+- multi-tenancy
+- domain-modelling
+- privacy-by-design
+- gdpr
+- architecture
+- confluence-distilled
+title: Draw the tenant boundary at legal data ownership, and make it reassignable
+type: lesson
 ---
 
 # Draw the tenant boundary at legal data ownership, and make it reassignable
@@ -38,3 +48,14 @@ Source: [[KLARA Documents Concept - Solution Design]] (LUZ, Confluence).
 ## Related
 
 - [[Connection count, not tenant count, sizes a multi-tenant Postgres cluster]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KLARA Documents Concept - Solution Design]]
+- [[Container-per-customer silo multi-tenancy trades cost for structural isolation]]
+- [[Connection count, not tenant count, sizes a multi-tenant Postgres cluster]]
+- [[Postgres Architecture Blueprint V2023]]
+- [[Per-tenant encryption keys make GDPR deletion a key destruction]]
+
+%% ai-graph-end %%

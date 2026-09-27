@@ -1,18 +1,22 @@
 ---
-title: "Concurrency Design Patterns"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47091122608/Concurrency+Design+Patterns
-space: "LUZ"
-topic: programming
-relevance: 0.906
-depth: 3
-updated: 2022-09-30
+ai_hash: 4494b7a2ed322bd2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 13
+depth: 3
+entities: []
+relevance: 0.906
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47091122608/Concurrency+Design+Patterns
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Concurrency Design Patterns
+topic: programming
+type: source
+updated: 2022-09-30
 ---
 
 # Concurrency Design Patterns
@@ -802,3 +806,14 @@ Yellow = CronJob running on three pods concurrently with 4 threads in parallel o
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Blocking on CompletableFuture.get in a custom pool recreates the bottleneck]]
+- [[Batching Design]]
+- [[Enhance performance - Research on Parallel]]
+- [[Performance pain points]]
+- [[Luz Batch TypeScript - Sequence Diagram]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: 28a1e38f571fa335
+ai_hash: 97a03115707322ed
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-23
@@ -29,10 +29,10 @@ ROOT CAUSE (measured) — why the local test-agent pipeline is slow, esp. implem
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY]]
 - [[implement_plan on claude-proxy exceeds the 300s MCP idle timeout — raise per-server timeout]]
-- [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
+- [[Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY]]
 - [[Slow local implement_plan needs TWO timeouts raised client MCP idle + gateway A2A_CLIENT_TIMEOUT]]
+- [[Use a local Claude subscription from Docker via a claude-CLI OpenAI proxy]]
 - [[claude-proxy login expires mid-session - implement silently degrades to heuristic stubs (score 0.00)]]
 
 %% ai-graph-end %%

@@ -1,14 +1,22 @@
 ---
-title: "From Prompt-Based Usage to Skill-Based Execution"
+ai_hash: a207be373a08c65b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49250435164'
+confluence_path: Team Kepler > Developer note > AI Research > Agentic and LLM
 created: 2026-03-19
-updated: 2026-03-19
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- prompt-engineering
+- search
+title: From Prompt-Based Usage to Skill-Based Execution
+type: source
+updated: 2026-03-19
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49250435164/From+Prompt-Based+Usage+to+Skill-Based+Execution
-confluence_id: "49250435164"
-confluence_path: "Team Kepler > Developer note > AI Research > Agentic and LLM"
-tags: [confluence, ai-agents, prompt-engineering, search]
 ---
 
 # From Prompt-Based Usage to Skill-Based Execution
@@ -487,3 +495,14 @@ SCOPE → SKILL → EXECUTE → VERIFY → EVOLVE
 - **EVOLVE** — Update the skill based on failures and edge cases
 
 This loop is what generates compounding capability over time. A well-built skill system expands what you — and your organization — can reliably accomplish.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A complete skill has five layers - intent, knowledge, execution, verification, evolution]]
+- [[A prompt is a temporary instruction, a skill is an encapsulated capability]]
+- [[Agent skeleton = Instruction + Skills-Resources + Tools + Context]]
+- [[Testing Agent workflow step to AI Skill mapping]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+
+%% ai-graph-end %%

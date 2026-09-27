@@ -1,14 +1,21 @@
 ---
-title: "Bitbucket MCP Server Integration Guide"
+ai_hash: 16ce2f27b4063f3b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48914104341'
+confluence_path: Team Kepler > Developer note > AI Research > MCP
 created: 2025-11-27
-updated: 2025-11-27
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- mcp
+- search
+title: Bitbucket MCP Server Integration Guide
+type: source
+updated: 2025-11-27
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48914104341/Bitbucket+MCP+Server+Integration+Guide
-confluence_id: "48914104341"
-confluence_path: "Team Kepler > Developer note > AI Research > MCP"
-tags: [confluence, mcp, search]
 ---
 
 # Bitbucket MCP Server Integration Guide
@@ -517,3 +524,14 @@ Remove server from Copilot MCP configuration. Delete `.env` if decommissioning.
 - Set up multiple workspace configurations if needed.
 
 Happy building! Update this guide as your Bitbucket usage evolves.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian MCP Server Integration Guide]]
+- [[MCP Servers — Installation and Configuration Reference]]
+- [[Setup VS Code - Github Copilot - MCP Server]]
+- [[AI-Powered Development Environment Architecture]]
+- [[Run test-agent-v2 locally with docker-compose (no GCP)]]
+
+%% ai-graph-end %%

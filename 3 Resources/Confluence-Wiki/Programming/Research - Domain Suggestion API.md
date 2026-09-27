@@ -1,18 +1,22 @@
 ---
-title: "Research - Domain Suggestion API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20513320730/Research+-+Domain+Suggestion+API
-space: "LUZ"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2020-11-05
+ai_hash: b885520cccd438a2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 21
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20513320730/Research+-+Domain+Suggestion+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Research - Domain Suggestion API
+topic: programming
+type: source
+updated: 2020-11-05
 ---
 
 # Research - Domain Suggestion API
@@ -171,3 +175,12 @@ Reference: 
 <a href="https://websitesetup.org/choose-domain-name/" class="external-link" rel="nofollow">https://websitesetup.org/choose-domain-name/</a>
 
 <a href="https://themeisle.com/blog/how-to-choose-a-domain-name/" class="external-link" rel="nofollow">https://themeisle.com/blog/how-to-choose-a-domain-name/</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSL Certificate Providers]]
+- [[Hexonet API Document]]
+- [[SSL certificate API]]
+
+%% ai-graph-end %%

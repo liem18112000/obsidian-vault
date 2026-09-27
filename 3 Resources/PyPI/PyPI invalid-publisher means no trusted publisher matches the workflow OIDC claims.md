@@ -1,5 +1,5 @@
 ---
-ai_hash: c19aeaabb38ab0e1
+ai_hash: 7a2263e9cd583a1b
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-19
@@ -47,6 +47,6 @@ The error is often buried below a red herring — see [[Unable to find image loc
 - [[GitHub Packages does not support Pythonpip packages]]
 - [[CI build Docker image on every run, push only on non-PR]]
 - [[Feature-branch images are never pushed to GHCR in leo-customer360 CI]]
-- [[Local deploy pull from GHCR needs a token with readpackages — gh default token lacks it (403)]]
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
 
 %% ai-graph-end %%

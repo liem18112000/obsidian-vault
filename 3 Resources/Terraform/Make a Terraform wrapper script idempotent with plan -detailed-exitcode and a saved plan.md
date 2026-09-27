@@ -1,5 +1,5 @@
 ---
-ai_hash: 9d7736bf377590ff
+ai_hash: 8ac88ce2fbbbb19a
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-17
@@ -41,7 +41,7 @@ See [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform pr
 - [[Running post-deploy SQL against a managed vDB (psql gexec, dockerized client, private-IP caveat)]]
 - [[Idempotent CREATE DATABASE needs psql gexec since it cannot run in a transaction]]
 - [[Refactor Terraform resources into a module as a no-op via terraform state mv]]
+- [[Terraform optional-resource toggle create-or-reuse via count + a local that picks the id]]
 - [[Gate Terraform apply to create-if-absent except on the release branch]]
-- [[Concurrent test-agent-v2 deploys collide on terraform local-state lock (fails safe)]]
 
 %% ai-graph-end %%

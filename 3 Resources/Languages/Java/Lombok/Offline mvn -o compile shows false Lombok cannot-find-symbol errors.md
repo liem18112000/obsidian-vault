@@ -1,5 +1,5 @@
 ---
-ai_hash: 6ce3a9d64fa5a565
+ai_hash: 42502ff53183e652
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-20
@@ -40,8 +40,8 @@ Related: the phantom errors also cascade the way a single bad symbol does — se
 **Related notes:**
 - [[Lombok one bad symbol cascades into hundreds of phantom missing-method errors]]
 - [[Verify wildcard-to-explicit import cleanup by compiling]]
+- [[APF Patch lombok maven library]]
 - [[Run mvn test-compile after changing a recordctor signature — Cloud Build compiles tests, local mvn compile does not]]
 - [[A refactor that removes a method must grep tests for its name before merging]]
-- [[luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable' compile error usually means a skew]]
 
 %% ai-graph-end %%

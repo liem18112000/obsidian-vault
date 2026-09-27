@@ -1,18 +1,22 @@
 ---
-title: "LUZ-75886 [Part 1] Implement real-time API updates"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47201222918/LUZ-75886+Part+1+Implement+real-time+API+updates
-space: "TS"
-topic: programming
-relevance: 0.746
-depth: 2.57
-updated: 2022-10-26
+ai_hash: aef01164e3e97f4e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.57
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47201222918/LUZ-75886+Part+1+Implement+real-time+API+updates
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: LUZ-75886 [Part 1] Implement real-time API updates
+topic: programming
+type: source
+updated: 2022-10-26
 ---
 
 # LUZ-75886 [Part 1] Implement real-time API updates
@@ -570,3 +574,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[LUZ-79226 PayPal in Online Shop - Adaption KLARA Pay - Gateway API]]
+- [[Test Keycloak - Public API]]
+- [[LUZ-59727 - CTI Interface implementation]]
+- [[LUZ-81908 - Implement test mode without send to the Rhine server]]
+
+%% ai-graph-end %%

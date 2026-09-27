@@ -1,10 +1,20 @@
 ---
-title: "Serve a URL and its QR code as two representations of one endpoint"
+ai_hash: 3b7c762292e98ab5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: QR code URL implementation flow (LUZ)'
 status: seedling
-source: "Confluence: QR code URL implementation flow (LUZ)"
-tags: [rest, content-negotiation, http-accept, qr-code, tokens, confluence-distilled]
+tags:
+- rest
+- content-negotiation
+- http-accept
+- qr-code
+- tokens
+- confluence-distilled
+title: Serve a URL and its QR code as two representations of one endpoint
+type: lesson
 ---
 
 # Serve a URL and its QR code as two representations of one endpoint
@@ -38,3 +48,13 @@ Source: [[QR code URL implementation flow]] (LUZ, Confluence).
 ## Related
 
 - [[Keycloak action tokens bridge an app session into a browser login]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[QR code URL implementation flow]]
+- [[Copy 2. QR-Code forwarding to correct app store]]
+- [[2. QR-Code forwarding to correct app store]]
+- [[Understanding Keycloak Authorization Code flow]]
+
+%% ai-graph-end %%

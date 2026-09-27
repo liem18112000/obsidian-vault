@@ -1,7 +1,7 @@
 ---
-ai_hash: dc1b1b8ba181d1b1
+ai_hash: b8eacfb31323f0db
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-23
 entities: []
 source: session 2026-07-23, luz-docs resource-specs investigation
@@ -29,7 +29,10 @@ Where this bit specifically: `kubectl exec pod -c container -- /opt/java/openjdk
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Git Bash mangles Unix path args to kubectl exec — disable with MSYS_NO_PATHCONV]]
+- [[Git Bash mangles gh api leading-slash paths to C... — set MSYS_NO_PATHCONV=1]]
 - [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
-- [[Read JVMprocess thread count via procpidstatus, no app auth needed]]
+- [[Git Bash mktemp paths are unreadable by Windows python; pipe via stdin instead of a temp-file path]]
+- [[Git Bash tmp maps to C-tmp for Node fs on Windows]]
 
 %% ai-graph-end %%

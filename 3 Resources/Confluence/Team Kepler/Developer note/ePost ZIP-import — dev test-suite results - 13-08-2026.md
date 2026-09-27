@@ -1,14 +1,20 @@
 ---
-title: "ePost ZIP-import — dev test-suite results - 13/08/2026"
+ai_hash: eb1fccd77baee46e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49665966082'
+confluence_path: Team Kepler > Developer note > ePost ZIP Import Test Fixture Matrix
 created: 2026-08-14
-updated: 2026-08-14
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- epost
+title: ePost ZIP-import — dev test-suite results - 13/08/2026
+type: source
+updated: 2026-08-14
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49665966082/ePost+ZIP-import+dev+test-suite+results+-+13+08+2026
-confluence_id: "49665966082"
-confluence_path: "Team Kepler > Developer note > ePost ZIP Import Test Fixture Matrix"
-tags: [confluence, epost]
 ---
 
 # ePost ZIP-import — dev test-suite results - 13/08/2026
@@ -278,3 +284,14 @@ upload **HTTP 200** — expected **HTTP 400**, no job
 - **Severity: Medium.**
 
   - A malformed/duplicate-part request is accepted instead of rejected, and the second zip is silently dropped with no error to the caller.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost Zip-Import - dev test-suite results - 18-08-2026]]
+- [[ePost ZIP Import Test Fixture Matrix]]
+- [[ePost Zip-Import - staging test-suite results - 19-08-2026]]
+- [[LUZ-158230 ePost ZIP Import Test Fixture Matrix (Confluence)]]
+- [[Timing Benchmark Results Document ZIP Imports]]
+
+%% ai-graph-end %%

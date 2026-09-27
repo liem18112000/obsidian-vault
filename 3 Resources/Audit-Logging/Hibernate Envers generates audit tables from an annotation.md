@@ -1,10 +1,20 @@
 ---
-title: "Hibernate Envers generates audit tables from an annotation"
+ai_hash: d5c2c8dea941a2f6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: howto
+entities: []
+source: 'Confluence: How to implement an audit log using Hibernate Envers (LUZFIN)'
 status: seedling
-source: "Confluence: How to implement an audit log using Hibernate Envers (LUZFIN)"
-tags: [hibernate, envers, audit-logging, jpa, java, confluence-distilled]
+tags:
+- hibernate
+- envers
+- audit-logging
+- jpa
+- java
+- confluence-distilled
+title: Hibernate Envers generates audit tables from an annotation
+type: howto
 ---
 
 # Hibernate Envers generates audit tables from an annotation
@@ -58,3 +68,13 @@ Three annotations worth knowing individually:
 The transferable point: audit trails built by hand drift out of sync with the schema the moment someone adds a column. Generating them from the mapping means the trail cannot silently miss a field — the cost is storage, which is the cheaper problem.
 
 Source: [[How to implement an audit log using Hibernate Envers]] (LUZFIN, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to implement an audit log using Hibernate Envers]]
+- [[Persistence layer implementation]]
+- [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+- [[How to resolve hibernate N+1 select's problem]]
+
+%% ai-graph-end %%

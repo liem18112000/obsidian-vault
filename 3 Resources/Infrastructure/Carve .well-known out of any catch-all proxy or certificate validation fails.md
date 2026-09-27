@@ -1,10 +1,21 @@
 ---
-title: "Carve /.well-known out of any catch-all proxy or certificate validation fails"
+ai_hash: 9a79c34dd3063d54
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: 'Confluence: SSL renewal issue (LUZ)'
 status: seedling
-source: "Confluence: SSL renewal issue (LUZ)"
-tags: [tls, ssl, nginx, ingress, acme, cert-manager, confluence-distilled]
+tags:
+- tls
+- ssl
+- nginx
+- ingress
+- acme
+- cert-manager
+- confluence-distilled
+title: Carve /.well-known out of any catch-all proxy or certificate validation fails
+type: gotcha
 ---
 
 # Carve /.well-known out of any catch-all proxy or certificate validation fails
@@ -40,3 +51,14 @@ annotations:
 > A hardcoded token is a one-shot manual step that expires silently. `cert-manager` with an ACME solver handles the challenge path and the renewal together, so there is no annotation to go stale. If you must do it manually, put a calendar reminder on the certificate's expiry — the config gives you no warning.
 
 Source: [[SSL renewal issue]] (LUZ, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SSL renewal issue]]
+- [[GKE managed-cert HTTPS global IP, DNS before cert, NEG service, FrontendConfig redirect]]
+- [[Keycloak behind a TLS-terminating proxy needs proxy headers and hostname-strict off]]
+- [[Redeploy OIDC consumers only after the issuer URL is reachable]]
+- [[Keycloak 26 OIDC issuer path comes from KC_HOSTNAME, not KC_HTTP_RELATIVE_PATH]]
+
+%% ai-graph-end %%

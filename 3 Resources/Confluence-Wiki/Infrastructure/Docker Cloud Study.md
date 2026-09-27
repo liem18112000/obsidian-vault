@@ -1,18 +1,22 @@
 ---
-title: "Docker Cloud Study"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20435291959/Docker+Cloud+Study
-space: "LUZ"
-topic: infra
-relevance: 0.714
-depth: 2.45
-updated: 2016-09-07
+ai_hash: 553ef7bffecc2f61
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.45
+entities: []
+relevance: 0.714
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20435291959/Docker+Cloud+Study
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Docker Cloud Study
+topic: infra
+type: source
+updated: 2016-09-07
 ---
 
 # Docker Cloud Study
@@ -85,3 +89,14 @@ If I understand it right, it costs \$15 / month for one node (e.g. a node would 
 
 
 ![[20435291959-image2016-9-7 11-55-6.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Setup Build Job with Docker in Jenkins]]
+- [[Deploy to Kubernetes and get External IP]]
+- [[Port forward and Docker compose]]
+- [[GCP Overview]]
+- [[One Portainer manages many Docker hosts via portaineragent, not a second Portainer]]
+
+%% ai-graph-end %%

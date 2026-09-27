@@ -1,9 +1,33 @@
 ---
-ai_hash: a9c5622d845252f0
+ai_hash: 99610a82bdd31dd7
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-12
-entities: []
+entities:
+- Regenerate-from-review-feedback pattern
+- AI-driven code-authoring pipeline
+- Agent
+- Human reviewer
+- Pull Request (PR)
+- Branch
+- Worktree
+- Review tools
+- Retry mechanism
+- vinnstack
+- BDD "Test implementation" stage
+- '`lib/bdd/implementRunner.ts`'
+- '`regenerateImplementation` function'
+- '`implementBddScenario` function'
+- '`commitPushAndFinish` function'
+- '`openOrGetPr` logic'
+- Bitbucket Cloud API pagination
+- '`next` field'
+- Full URLs
+- Relative paths
+- Code
+- Comments
+- Files
+- Commits
 source: vinnstack BDD Implement regenerate-from-PR-comments feature, 2026-07-12
 status: seedling
 tags:
@@ -43,5 +67,44 @@ Related: [[Bitbucket Cloud API pagination returns full URLs in 'next', not relat
 - [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
 - [[A refine regenerate can close open items from evidence the first pass left unexploited]]
 - [[A feedback loop with only its write side wired looks like a broken feature]]
+
+**Relations:**
+- Regenerate-from-review-feedback pattern — *is a capability of* — AI-driven code-authoring pipeline
+- AI-driven code-authoring pipeline — *involves* — Agent
+- AI-driven code-authoring pipeline — *involves* — Human reviewer
+- Agent — *writes* — Code
+- Agent — *opens* — Pull Request (PR)
+- Human reviewer — *reviews* — Code
+- Human reviewer — *leaves* — Comments
+- Regenerate-from-review-feedback pattern — *reuses* — Branch
+- Regenerate-from-review-feedback pattern — *reuses* — Pull Request (PR)
+- Regenerate-from-review-feedback pattern — *avoids creating* — new Pull Request (PR)
+- Regenerate-from-review-feedback pattern — *feeds comments to* — Agent
+- Agent — *addresses* — Comments
+- Agent — *edits* — Files
+- Agent — *commits* — Commits
+- Agent — *pushes to* — Branch
+- Pull Request (PR) — *tracks* — Branch
+- Pushing new commits — *updates* — Pull Request (PR)
+- Review tools — *support* — feedback loop
+- Regenerate-from-review-feedback pattern — *requires implementation status* — done
+- Regenerate-from-review-feedback pattern — *requires existing* — Pull Request (PR)
+- Pull Request (PR) — *is for pulling* — Comments
+- Retry mechanism — *is for implementation status* — failed
+- Regenerate-from-review-feedback pattern — *is applied in* — vinnstack
+- Regenerate-from-review-feedback pattern — *is applied in* — BDD "Test implementation" stage
+- BDD "Test implementation" stage — *is located at* — `lib/bdd/implementRunner.ts`
+- `lib/bdd/implementRunner.ts` — *contains* — `regenerateImplementation` function
+- `lib/bdd/implementRunner.ts` — *contains* — `implementBddScenario` function
+- `regenerateImplementation` function — *shares tail with* — `commitPushAndFinish` function
+- `implementBddScenario` function — *shares tail with* — `commitPushAndFinish` function
+- `commitPushAndFinish` function — *includes* — `openOrGetPr` logic
+- `openOrGetPr` logic — *adapts to* — reuse existing Pull Request (PR)
+- Regenerate-from-review-feedback pattern — *depends on* — mechanics of fetching comments
+- mechanics of fetching comments — *is related to* — Bitbucket Cloud API pagination
+- Bitbucket Cloud API pagination — *returns* — Full URLs
+- Full URLs — *are in* — `next` field
+- Bitbucket Cloud API pagination — *does not return* — Relative paths
+- Relative paths — *are in* — `next` field
 
 %% ai-graph-end %%

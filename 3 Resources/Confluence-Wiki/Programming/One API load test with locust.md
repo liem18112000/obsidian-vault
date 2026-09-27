@@ -1,18 +1,22 @@
 ---
-title: "One API load test with locust"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48491233533/One+API+load+test+with+locust
-space: "HACKA"
-topic: programming
-relevance: 0.926
-depth: 3
-updated: 2025-05-13
+ai_hash: e3001d47b0ae1327
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.926
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48491233533/One+API+load+test+with+locust
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: One API load test with locust
+topic: programming
+type: source
+updated: 2025-05-13
 ---
 
 # One API load test with locust
@@ -50,3 +54,14 @@ tags:
 ![[48491233533-image-20250513-040100.png]]
 
 ![[48491233533-image-20250513-040117.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Load test]]
+- [[One API end to end testing]]
+- [[Port Forward to call GCP API in localhost]]
+- [[Recipe Deploy with Terraform]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

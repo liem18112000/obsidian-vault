@@ -1,14 +1,22 @@
 ---
-title: "Integrating Jev into Test-Agent-V2 for Enhanced Decision-Making"
+ai_hash: 55a0c057d30d645a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49772036189'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > TypeSafe AI''s Jev: A System One Model for Fast, Structured Decisions'
 created: 2026-09-21
-updated: 2026-09-21
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- jev
+title: Integrating Jev into Test-Agent-V2 for Enhanced Decision-Making
+type: source
+updated: 2026-09-21
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49772036189/Integrating+Jev+into+Test-Agent-V2+for+Enhanced+Decision-Making
-confluence_id: "49772036189"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > TypeSafe AI's Jev: A System One Model for Fast, Structured Decisions"
-tags: [confluence, ai-agents, jev]
 ---
 
 # Integrating Jev into Test-Agent-V2 for Enhanced Decision-Making
@@ -109,3 +117,14 @@ This is exactly Jev's own calibrated‑confidence philosophy, and it means the c
 - Data residency: Jev endpoint region vs our `europe-west6` Vertex — check before sending customer state.
 
 - Calibration drift: re‑check the threshold whenever Jev ships a model update (calibration is per‑model).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TypeSafe AI's Jev - A System One Model for Fast, Structured Decisions]]
+- [[Understanding JEV - Mechanism, Primitives, and Calibration in Decision Making]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[Test Executor Agent - Closing the Testing Pipeline Gap]]
+- [[JEV accept-side confidence is low and unreliable; the cascade win is reject-side]]
+
+%% ai-graph-end %%

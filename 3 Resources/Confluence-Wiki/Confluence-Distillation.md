@@ -1,10 +1,14 @@
 ---
-title: "Confluence Distillation"
-type: moc
+ai_hash: 2c79c48a398cd18c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
 tags:
-  - moc
-  - confluence
-  - distillation
+- moc
+- confluence
+- distillation
+title: Confluence Distillation
+type: moc
 ---
 
 # Confluence Distillation
@@ -235,3 +239,14 @@ tags:
 | 0.87 | [[Code Review (AI-First model)]] | Programming | HACKA |
 | 0.87 | [[Invoice API Java Client]] | Programming | AI |
 | 0.87 | [[OCR API Java Client]] | Programming | AI |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Confluence Export — What I Learned]]
+- [[3 Resources]]
+- [[Prompt Architecture Code Review]]
+- [[Prompt Performance Code Review]]
+- [[Programming]]
+
+%% ai-graph-end %%

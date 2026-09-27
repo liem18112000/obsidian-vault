@@ -1,7 +1,7 @@
 ---
-ai_hash: 5e7331f75aaf6954
+ai_hash: c90a48e2da46b3ef
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-24
 entities:
 - luz_online_payment
@@ -9,19 +9,17 @@ entities:
 - Transaction.java
 - ObjectMapperFactory
 - ObjectMapper
-- Payrexx decline codes
 - ISO 8583 decline code
-- structured decline code
-- decline code field
-- message (prose)
-- LUZ-157476 (taxonomy work)
+- LUZ-157476
 - luz_store
-- ERROR (status)
-- DECLINED (status)
-- FAIL_ON_UNKNOWN_PROPERTIES = false (setting)
+- decline taxonomy
+- structured decline code
+- free-text message prose
+- decline code fields
+- FAIL_ON_UNKNOWN_PROPERTIES = false
 - deserialization
-- decline (event)
-- luz_online_payment boundary
+- decline codes
+- Payrexx card declines
 source: session 2026-07-24, code investigation
 status: seedling
 tags:
@@ -54,27 +52,26 @@ Repo: luz_online_payment.
 **Related notes:**
 - [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
 - [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
-- [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
 - [[Payrexx v1.0 charge API returns only status+message on failure — no ISO 8583 code]]
 - [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
+- [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
 
 **Relations:**
 - luz_online_payment — *silently drops* — Payrexx decline codes
 - luz_online_payment — *captures no* — structured decline code
-- structured decline code — *originates from* — Payrexx
-- Transaction.java — *declares no* — decline code field
-- ObjectMapperFactory — *configures* — ObjectMapper
-- ObjectMapper — *is configured with* — FAIL_ON_UNKNOWN_PROPERTIES = false (setting)
-- ISO 8583 decline code — *is silently dropped during* — deserialization
-- deserialization — *is affected by* — FAIL_ON_UNKNOWN_PROPERTIES = false (setting)
-- message (prose) — *is only surviving detail of* — decline (event)
-- LUZ-157476 (taxonomy work) — *requires confirmation if* — Payrexx
-- Payrexx — *sends* — decline code field
-- Transaction.java — *is place to prove* — Payrexx
-- Payrexx — *sends* — decline code field
+- structured decline code — *from* — Payrexx
+- Transaction.java — *declares no* — decline code fields
+- ObjectMapper — *is configured in* — ObjectMapperFactory
+- ObjectMapper — *has setting* — FAIL_ON_UNKNOWN_PROPERTIES = false
+- ISO 8583 decline code — *is dropped during* — deserialization
+- deserialization — *is affected by* — FAIL_ON_UNKNOWN_PROPERTIES = false
+- free-text message prose — *is the only surviving detail for* — decline
+- LUZ-157476 — *is related to* — decline taxonomy
+- Payrexx — *sends* — ISO 8583 decline code
+- Transaction.java — *is the place to confirm* — Payrexx sends a code
+- luz_online_payment — *is the repository* — luz_online_payment
 - Payrexx card declines — *reach* — luz_store
-- Payrexx card declines — *reach as* — ERROR (status)
-- Payrexx card declines — *do not reach as* — DECLINED (status)
-- LUZ-157476 (taxonomy work) — *maps codes at* — luz_online_payment boundary
+- LUZ-157476 — *maps* — decline codes
+- decline codes — *are mapped at* — luz_online_payment boundary
 
 %% ai-graph-end %%

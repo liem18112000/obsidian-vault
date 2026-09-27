@@ -1,10 +1,20 @@
 ---
-title: "Knowledge loses meaning when copied out of the position where it was learned"
+ai_hash: 91454a5c191ca413
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: argument
+entities: []
+source: 'Confluence: OpenRig''s Intent Hierarchy and Refocus (2026-09-27)'
 status: seedling
-source: "Confluence: OpenRig's Intent Hierarchy and Refocus (2026-09-27)"
-tags: [knowledge-management, ai-agents, openrig, test-agent-v2, architecture, zettelkasten]
+tags:
+- knowledge-management
+- ai-agents
+- openrig
+- test-agent-v2
+- architecture
+- zettelkasten
+title: Knowledge loses meaning when copied out of the position where it was learned
+type: argument
 ---
 
 # Knowledge loses meaning when copied out of the position where it was learned
@@ -31,3 +41,14 @@ Applies directly to a PARA/Zettelkasten vault: a note's folder *is* part of its 
 ## Related
 
 - [[One chain filename at every altitude lets a reader orient by walking to the root]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One chain filename at every altitude lets a reader orient by walking to the root]]
+- [[Intent composes up the chain, specification stays a leaf property]]
+- [[OpenRig's Intent Hierarchy and Refocus - Analysis and Implementation in Test-Agent-V2]]
+- [[Agent self-learning memory]]
+- [[Pipeline stages sharing a context_id need separate memory-bank path prefixes]]
+
+%% ai-graph-end %%

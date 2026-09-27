@@ -1,7 +1,7 @@
 ---
-ai_hash: cb3a40078285240c
+ai_hash: 0dc32fc846abc87c
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities: []
 source: session 2026-06-16
@@ -39,7 +39,7 @@ Gotchas: [[MCP servers load only at Claude Code startup; skills hot-reload]] and
 - [[Excalimate is AI skills plus an optional MCP server, not one app]]
 - [[A 406 from curl on an MCP mcp endpoint is normal]]
 - [[Excalimate export is browser-only; headless export needs Playwright + share URL]]
-- [[MCP servers load only at Claude Code startup; skills hot-reload]]
 - [[Excalimate cloud share links are CORS-broken — use Connect to MCP server instead]]
+- [[MCP servers load only at Claude Code startup; skills hot-reload]]
 
 %% ai-graph-end %%

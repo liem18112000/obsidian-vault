@@ -1,9 +1,26 @@
 ---
-ai_hash: 20b8e9c5f8367106
+ai_hash: 582408afff549ec7
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-18
-entities: []
+entities:
+- pptxgenjs
+- addImage
+- w
+- h
+- Image Stretching
+- Aspect Ratio
+- PNG IHDR
+- width
+- height
+- pngSize
+- fs.readFileSync
+- sizing
+- Claude Hooks & Skills deck
+- LibreOffice
+- PyMuPDF
+- thumbnail.py
+- AF_UNIX
 source: session 2026-06-18
 status: seedling
 tags:
@@ -49,9 +66,28 @@ Found while building the Claude Hooks & Skills deck (`C:\Users\dvtliem\.claude\d
 
 **Related notes:**
 - [[Full-bleed slide images need ~169 aspect or their text renders too small]]
-- [[Excalidraw text does not auto-wrap or auto-center]]
 - [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
 - [[QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
 - [[LibreOffice headless convert-to leaves soffice.bin locking the source file — silent stale writes]]
+
+**Relations:**
+- pptxgenjs — *HAS_METHOD* — addImage
+- addImage — *ACCEPTS_PARAMETER* — w
+- addImage — *ACCEPTS_PARAMETER* — h
+- addImage — *CAUSES* — Image Stretching
+- Image Stretching — *IS_CAUSED_BY* — Aspect Ratio
+- PNG IHDR — *CONTAINS* — width
+- PNG IHDR — *CONTAINS* — height
+- pngSize — *READS* — PNG IHDR
+- pngSize — *USES* — fs.readFileSync
+- addImage — *ACCEPTS_PARAMETER* — sizing
+- Claude Hooks & Skills deck — *USES* — pptxgenjs
+- Claude Hooks & Skills deck — *EXPERIENCED* — Image Stretching
+- Image Stretching — *WAS_FIXED_BY* — pngSize
+- QA a pptx — *INVOLVES* — LibreOffice
+- QA a pptx — *INVOLVES* — PyMuPDF
+- PyMuPDF — *IS_USED_BY* — thumbnail.py
+- thumbnail.py — *HAS_ISSUE* — AF_UNIX
 
 %% ai-graph-end %%

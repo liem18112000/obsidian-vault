@@ -1,5 +1,5 @@
 ---
-ai_hash: f873ca31765815ff
+ai_hash: 9405359b511d41eb
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-09
@@ -50,8 +50,8 @@ Seen in Luz PROD: a self-managed `coredns-custom` (CoreDNS 1.12.4) crash-looped 
 **Related notes:**
 - [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
 - [[Luz DNS storm gate is both CoreDNS replicas down together plus morning load, not enrichment volume]]
+- [[An exec-cat readiness probe reports Ready before the server can serve]]
 - [[luz-docs enrichment re-run campaign saturates PROD MongoDBs each morning]]
 - [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
-- [[KC_HTTP_RELATIVE_PATH moves Keycloak health endpoints under the prefix too]]
 
 %% ai-graph-end %%

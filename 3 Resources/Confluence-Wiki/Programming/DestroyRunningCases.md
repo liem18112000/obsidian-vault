@@ -1,18 +1,22 @@
 ---
-title: "DestroyRunningCases"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436032657/DestroyRunningCases
-space: "LUZ"
-topic: programming
-relevance: 0.755
-depth: 2.81
-updated: 2016-10-17
+ai_hash: 54042b6b5f1497e1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436032657/DestroyRunningCases
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: DestroyRunningCases
+topic: programming
+type: source
+updated: 2016-10-17
 ---
 
 # DestroyRunningCases
@@ -92,3 +96,14 @@ curl -i -X POST -u Developer:Developer http://localhost:8081/ivy/api/{applicatio
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Empty Trash APIs]]
+- [[Delete company - Old way]]
+- [[Run Re-Index ivy database]]
+- [[REST API for deleting EXPENSES documents]]
+- [[Research on bulk removal of access class]]
+
+%% ai-graph-end %%

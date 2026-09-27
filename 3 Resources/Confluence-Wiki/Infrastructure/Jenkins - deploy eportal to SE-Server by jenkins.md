@@ -1,18 +1,22 @@
 ---
-title: "Jenkins - deploy eportal to SE-Server by jenkins"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47119204477/Jenkins+-+deploy+eportal+to+SE-Server+by+jenkins
-space: "X4"
-topic: infra
-relevance: 0.741
-depth: 2.66
-updated: 2022-05-31
+ai_hash: 1a74315629fa15cc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 2.66
+entities: []
+relevance: 0.741
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47119204477/Jenkins+-+deploy+eportal+to+SE-Server+by+jenkins
+space: X4
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/x4
+- confluence
+- infra
+- space/x4
+title: Jenkins - deploy eportal to SE-Server by jenkins
+topic: infra
+type: source
+updated: 2022-05-31
 ---
 
 # Jenkins - deploy eportal to SE-Server by jenkins
@@ -70,3 +74,13 @@ You can find the Branch in our Nexus repository at <a href="http://3.71.136.55/n
 - if version has a snapshot postfix you find it under snapshots repository
 
 - if version has no snapshot postfix you will find artifacts on the continuous repository
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Guide for deploying artifacts on SOAD Nexus Repository 2 via Maven]]
+- [[Jenkins (How to build & deploy)]]
+- [[Deploy new Jenkins Slave local developer machine]]
+- [[APF swagger for project eapf_web]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 120b4665f82e1f5e
+ai_hash: 1d42c92d9a27d294
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-21
 entities: []
 source: 'luz-docs commits 3a83b5e82 / e2819386f (2026-07-22); luz_docs PR #1363 LUZ-156856
@@ -44,6 +44,6 @@ Any change that invalidates an existing test — a reshaped/renamed/deleted meth
 - [[MaterializeGate migration check falls through to repo on missing campaign]]
 - [[Luz gates must inject per-package Allowlist beans not static Campaign isAffectedFor]]
 - [[Run the full affected test package locally, not a hand-picked subset]]
-- [[Migration campaign status can silently drift from real document state]]
+- [[Run mvn test-compile after changing a recordctor signature — Cloud Build compiles tests, local mvn compile does not]]
 
 %% ai-graph-end %%

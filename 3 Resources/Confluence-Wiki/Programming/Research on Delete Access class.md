@@ -1,18 +1,22 @@
 ---
-title: "Research on Delete Access class"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47108654097/Research+on+Delete+Access+class
-space: "TP2020"
-topic: programming
-relevance: 0.863
-depth: 3
-updated: 2022-05-12
+ai_hash: 778a204e9d6d6653
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.863
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47108654097/Research+on+Delete+Access+class
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: Research on Delete Access class
+topic: programming
+type: source
+updated: 2022-05-12
 ---
 
 # Research on Delete Access class
@@ -158,3 +162,14 @@ Folder class: <a href="https://www.figma.com/file/kMudzCqJjtw5gRsgpmRtxB/eArchiv
 
 
 ## II. Solution
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research on bulk removal of access class]]
+- [[Security Classes updating measurement]]
+- [[Deleting a shared reference entity prefer the design whose cost stays constant per consumer]]
+- [[Enhancements for API Delete and Restore]]
+- [[Background Process Optimization for luz-docs API Architecture and Recommendations]]
+
+%% ai-graph-end %%

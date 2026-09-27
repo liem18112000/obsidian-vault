@@ -1,14 +1,20 @@
 ---
-title: "Security Risk: Luz-jwt Permission By Pass"
+ai_hash: 2f53bbd00149fecf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49140039714'
+confluence_path: LUZ Home > KLARA projects
 created: 2026-02-11
-updated: 2026-02-11
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+- security
+title: 'Security Risk: Luz-jwt Permission By Pass'
+type: source
+updated: 2026-02-11
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49140039714/Security+Risk+Luz-jwt+Permission+By+Pass
-confluence_id: "49140039714"
-confluence_path: "LUZ Home > KLARA projects"
-tags: [confluence, security]
 ---
 
 # Security Risk: Luz-jwt Permission By Pass
@@ -57,3 +63,14 @@ private void checkPemissionIn(JsonWebToken token, ContainerRequestContext reques
 - Token refresh storms — If you have an interceptor that auto-refreshes on 401, it will retry repeatedly, hammering your auth server.
 
 - Confusing UX — User thinks their session expired when actually they just don't have access.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Security Risk - Luz-jwt Permission By Pass]]
+- [[A null-guarded tenant check fails open, so a renamed path parameter disables isolation]]
+- [[Returning 401 for a permission failure causes infinite login loops]]
+- [[Luz 403 Not allowed means the token has no tenant claim, not a missing permission]]
+- [[Tenant token issue]]
+
+%% ai-graph-end %%

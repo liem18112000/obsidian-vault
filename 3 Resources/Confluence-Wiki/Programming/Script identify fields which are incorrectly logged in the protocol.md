@@ -1,18 +1,22 @@
 ---
-title: "Script | identify fields which are incorrectly logged in the protocol"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134182477/Script+identify+fields+which+are+incorrectly+logged+in+the+protocol
-space: "GRAVITY"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2022-06-24
+ai_hash: e888266443e248e7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134182477/Script+identify+fields+which+are+incorrectly+logged+in+the+protocol
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: Script | identify fields which are incorrectly logged in the protocol
+topic: programming
+type: source
+updated: 2022-06-24
 ---
 
 # Script | identify fields which are incorrectly logged in the protocol
@@ -353,3 +357,14 @@ SELECT distinct substring(pro.dossierid,0,10) dossier_id
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL script to investigate dossier with orphaned protocol records in PROD]]
+- [[SQL script to get SOB (APP & WEB) dossier progress]]
+- [[SQL script to update retry tasks and check pending dossiers has an outdated credit card]]
+- [[SQL script to investigate dossier COB003059 on INT1]]
+- [[Estimate for ivy and cob-unattended-business-dossier-service-api-spec]]
+
+%% ai-graph-end %%

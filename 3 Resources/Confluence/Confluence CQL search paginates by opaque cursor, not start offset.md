@@ -1,5 +1,5 @@
 ---
-ai_hash: 70bcde143210545f
+ai_hash: 44e0024ba0619c4b
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-27
@@ -59,10 +59,10 @@ Also note the response has no `totalSize`; you cannot know the result count up f
 %% ai-graph-start %%
 
 **Related notes:**
+- [[A pagination token is an opaque cursor, and it must carry the filter it was issued under]]
 - [[Export Confluence to markdown via body.view HTML, not body.storage]]
 - [[Offset-paging loop with while(offset % pageSize == 0) infinite-loops on exact-multiple counts]]
+- [[Pagination Token (Page Token)]]
 - [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
-- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
-- [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
 
 %% ai-graph-end %%

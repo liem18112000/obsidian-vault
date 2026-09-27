@@ -1,10 +1,18 @@
 ---
-title: "git push --all skips remote-tracking-only branches"
+ai_hash: 59e8f9a841da2392
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: session 2026-09-27
 status: seedling
-source: "session 2026-09-27"
-tags: [git, github, gotcha, mirror]
+tags:
+- git
+- github
+- gotcha
+- mirror
+title: git push --all skips remote-tracking-only branches
+type: lesson
 ---
 
 # git push --all skips remote-tracking-only branches
@@ -30,3 +38,14 @@ Also: `--all` never pushes tags. Add `--tags` (or `--follow-tags`).
 
 ## Related
 [[GitHub personal repo transfer is pending until the recipient accepts]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub personal repo transfer is pending until the recipient accepts]]
+- [[git push sends current branch to its upstream not same-name branch]]
+- [[git checkout -B branch originmain rehomes upstream to originmain, so a bare push targets main]]
+- [[GitHub user-to-user repo transfer is a pending invitation, not an immediate move]]
+- [[A PR off a stale local main shows a huge misleading diff and CONFLICTING; use two-dot diff vs origin-main to find the real delta]]
+
+%% ai-graph-end %%

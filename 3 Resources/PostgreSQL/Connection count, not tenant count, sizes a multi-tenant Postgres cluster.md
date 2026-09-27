@@ -1,10 +1,20 @@
 ---
-title: "Connection count, not tenant count, sizes a multi-tenant Postgres cluster"
+ai_hash: 2bc4ed65092d8579
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Postgres Architecture Blueprint V2023 (LUZ)'
 status: seedling
-source: "Confluence: Postgres Architecture Blueprint V2023 (LUZ)"
-tags: [postgres, multi-tenancy, pgbouncer, connection-pooling, capacity-planning, confluence-distilled]
+tags:
+- postgres
+- multi-tenancy
+- pgbouncer
+- connection-pooling
+- capacity-planning
+- confluence-distilled
+title: Connection count, not tenant count, sizes a multi-tenant Postgres cluster
+type: lesson
 ---
 
 # Connection count, not tenant count, sizes a multi-tenant Postgres cluster
@@ -37,3 +47,14 @@ That is the floor, before any query does work, and it scales with **pods × pool
 > The blueprint explicitly plans for partial migration: one module fully moved, another with `public` data and *some* tenants moved while others stay on the old layout, a third untouched. Any routing layer therefore has to answer "where does tenant X's module Y live?" per tenant, not per module — build that lookup before the first migration, not after.
 
 Source: [[Postgres Architecture Blueprint V2023]] (LUZ, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Postgres Architecture Blueprint V2023]]
+- [[Container-per-customer silo multi-tenancy trades cost for structural isolation]]
+- [[Draw the tenant boundary at legal data ownership, and make it reassignable]]
+- [[Data Migration Report Postgres → MongoDB]]
+- [[Redis Standard replicas are failover only; read scaling needs Cluster]]
+
+%% ai-graph-end %%

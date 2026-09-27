@@ -1,18 +1,22 @@
 ---
-title: "Update Vault Unseal self-signed certificate."
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47771255541/Update+Vault+Unseal+self-signed+certificate.
-space: "LUZ"
-topic: security
-relevance: 0.849
-depth: 3
-updated: 2024-04-17
+ai_hash: 8f568ddf336185b7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.849
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47771255541/Update+Vault+Unseal+self-signed+certificate.
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: Update Vault Unseal self-signed certificate.
+topic: security
+type: source
+updated: 2024-04-17
 ---
 
 # Update Vault Unseal self-signed certificate.
@@ -108,3 +112,14 @@ exit</code></pre>
 </div>
 
 5.  **Restart Vault**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to unseal Vault Unseal]]
+- [[luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator]]
+- [[Security]]
+- [[luz-vault - How to run Vault Benchmark]]
+- [[Update ePost certificate - .epost.ch - in PROD]]
+
+%% ai-graph-end %%

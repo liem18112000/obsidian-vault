@@ -1,5 +1,5 @@
 ---
-ai_hash: 9443c4293ef5d55b
+ai_hash: c1cb90c94969b065
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-25
@@ -44,6 +44,8 @@ Related: [[The fidelity law a one-line intent is a 201 lossy compression|The fid
 **Related notes:**
 - [[The fidelity law a one-line intent is a 201 lossy compression]]
 - [[Price one layer lower before accepting a fix]]
+- [[OpenRig's Intent Hierarchy and Refocus - Analysis and Implementation in Test-Agent-V2]]
+- [[Intent composes up the chain, specification stays a leaf property]]
 - [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
 
 %% ai-graph-end %%

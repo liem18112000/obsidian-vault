@@ -1,14 +1,19 @@
 ---
-title: "Skill-based Compression Techniques: Overview"
+ai_hash: 339a261e0c6b61e1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49318461499'
+confluence_path: Overview
 created: 2026-04-13
-updated: 2026-04-13
-type: source
+entities: []
+source: Confluence · ~71202087b0f7f1aaab4406a25dfa0fc075c4d4 - liem.doanvanthanh
 status: reference
-source: "Confluence · ~71202087b0f7f1aaab4406a25dfa0fc075c4d4 - liem.doanvanthanh"
+tags:
+- confluence
+title: 'Skill-based Compression Techniques: Overview'
+type: source
+updated: 2026-04-13
 url: https://axonivy.atlassian.net/wiki/spaces/~71202087b0f7f1aaab4406a25dfa0fc075c4d4/pages/49318461499/Skill-based+Compression+Techniques+Overview
-confluence_id: "49318461499"
-confluence_path: "Overview"
-tags: [confluence]
 ---
 
 # Skill-based Compression Techniques: Overview
@@ -790,3 +795,14 @@ Execute this compression pipeline:
    c. Remove the temporary CLAUDE.md section
 3. Report: before tokens, after tokens, savings %
 ```
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Skill-based Compression Techniques - Overview]]
+- [[Claude Code Skill anatomy]]
+- [[Manual Prompt Compression Techniques - Deep Dive]]
+- [[Manual Prompt Compression Techniques - Deep Dive]]
+- [[Knowledge Base Solutions Comparison Guide]]
+
+%% ai-graph-end %%

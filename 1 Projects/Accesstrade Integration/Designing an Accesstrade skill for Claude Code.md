@@ -1,59 +1,44 @@
 ---
-ai_hash: f6bf7dd180e22cd7
+ai_hash: 6d50cd38baa31948
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Accesstrade skill
 - Build Accesstrade Claude skill
 created: 2026-06-11
 entities:
-- Accesstrade skill
-- Claude Code
 - Accesstrade API
+- Claude Code
+- Accesstrade skill
 - SKILL.md
-- playbook
-- bundled script
-- HTTP/auth plumbing
-- affiliate task
-- natural-language request
-- credential
-- request logic
-- token
-- prompt context
-- deterministic calls
-- skill layout
-- accesstrade skill directory
-- reference.md
-- scripts directory
 - at.py
+- Bash
+- python3
 - $ACCESSTRADE_KEY
-- Bash(python3 *)
-- Accesstrade platform
-- affiliate links
-- commissions
-- campaigns
-- bundled client
-- 'Authorization: Token header'
-- pagination loops
-- windowing for reports
-- JSON output
+- reference.md
 - Claude
-- User
-- design choices
-- read vs write split
+- 'Authorization: Token'
 - 'disable-model-invocation: true'
-- write skill
-- money-moving actions
-- read/report skill
 - 'context: fork'
-- heavy report pulls
-- main conversation
-- endpoint table
 - Claude Code Skill anatomy
 - Secrets handling for affiliate API keys
 - Claude Code hooks event model
 - Skills vs Hooks vs MCP vs subagents
 - Accesstrade API Integration - MOC
+- playbook
+- HTTP/auth plumbing
+- JSON output
+- write skill
+- endpoint table
+- affiliate task
+- credential
+- request logic
+- token
+- reports
+- campaigns
+- tracking links
+- datafeeds
+- coupons
 source: research session 2026-06-11
 status: seedling
 tags:
@@ -140,55 +125,40 @@ flowchart TD
 - [[Skills vs Hooks vs MCP vs subagents]]
 
 **Relations:**
-- Accesstrade skill — *designed for* — Claude Code
+- Accesstrade skill — *is designed for* — Claude Code
 - Accesstrade skill — *wraps* — Accesstrade API
 - SKILL.md — *carries* — playbook
-- bundled script — *carries* — HTTP/auth plumbing
-- affiliate task — *becomes* — natural-language request
-- bundled script — *keeps* — token
-- token — *out of* — prompt context
-- bundled script — *makes* — deterministic calls
-- credential — *in* — bundled script
-- request logic — *in* — bundled script
-- accesstrade skill directory — *contains file* — SKILL.md
-- accesstrade skill directory — *contains file* — reference.md
-- accesstrade skill directory — *contains directory* — scripts directory
-- scripts directory — *contains file* — at.py
+- at.py — *carries* — HTTP/auth plumbing
 - at.py — *reads* — $ACCESSTRADE_KEY
 - at.py — *calls* — Accesstrade API
 - at.py — *prints* — JSON output
-- SKILL.md — *describes* — Accesstrade skill
-- Accesstrade skill — *operates* — Accesstrade API
-- Accesstrade skill — *manages* — affiliate links
-- Accesstrade skill — *manages* — commissions
-- Accesstrade skill — *manages* — campaigns
-- Accesstrade skill — *uses tool* — Bash(python3 *)
-- bundled client — *injects* — auth
-- auth — *from* — $ACCESSTRADE_KEY
-- at.py — *handles* — Authorization: Token header
-- at.py — *handles* — pagination loops
-- at.py — *handles* — windowing for reports
+- Accesstrade skill — *includes file* — SKILL.md
+- Accesstrade skill — *includes file* — reference.md
+- Accesstrade skill — *includes script* — at.py
+- SKILL.md — *specifies allowed tool* — Bash
+- SKILL.md — *specifies allowed tool* — python3
+- SKILL.md — *refers to* — reference.md
+- at.py — *handles* — Authorization: Token
 - Claude — *orchestrates* — at.py
-- at.py — *executes* — API calls
-- User — *requests* — affiliate links
-- Accesstrade skill — *loads* — skill layout
-- Claude — *invokes* — at.py
-- at.py — *uses* — $ACCESSTRADE_KEY
+- at.py — *executes* — commands
+- Claude — *calls* — at.py
 - at.py — *interacts with* — Accesstrade API
-- Claude — *formats* — JSON output
-- read vs write split — *is a* — design choices
-- disable-model-invocation: true — *applied to* — write skill
-- write skill — *prevents* — Claude
-- Claude — *from* — money-moving actions
-- read/report skill — *is* — auto-invocable
-- context: fork — *used for* — heavy report pulls
-- heavy report pulls — *avoids bloating* — main conversation
-- endpoint table — *located in* — reference.md
-- endpoint table — *loaded on demand by* — Claude
-- Claude Code Skill anatomy — *related to* — Accesstrade skill
-- Secrets handling for affiliate API keys — *related to* — Accesstrade skill
-- Claude Code hooks event model — *related to* — Accesstrade skill
-- Skills vs Hooks vs MCP vs subagents — *related to* — Accesstrade skill
-- Accesstrade API Integration - MOC — *related to* — Accesstrade skill
+- Claude — *formats* — reports
+- Claude Code Skill anatomy — *describes pattern* — script does the work, Claude orchestrates
+- disable-model-invocation: true — *is a design choice for* — write skill
+- context: fork — *is a design choice for* — reports
+- reference.md — *contains* — endpoint table
+- Accesstrade skill — *is related to* — Claude Code Skill anatomy
+- Accesstrade skill — *is related to* — Secrets handling for affiliate API keys
+- Accesstrade skill — *is related to* — Claude Code hooks event model
+- Accesstrade skill — *is related to* — Skills vs Hooks vs MCP vs subagents
+- Accesstrade skill — *is related to* — Accesstrade API Integration - MOC
+- credential — *is kept out of* — token
+- request logic — *is kept out of* — token
+- Accesstrade skill — *operates on* — campaigns
+- Accesstrade skill — *operates on* — tracking links
+- Accesstrade skill — *operates on* — reports
+- Accesstrade skill — *operates on* — datafeeds
+- Accesstrade skill — *operates on* — coupons
 
 %% ai-graph-end %%

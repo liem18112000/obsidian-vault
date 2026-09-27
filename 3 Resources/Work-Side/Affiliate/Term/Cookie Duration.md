@@ -1,7 +1,7 @@
 ---
-ai_hash: d51514444cacfcf1
+ai_hash: 0e6a71eb2fe2bf59
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Cookie Duration
 - Cookie Window

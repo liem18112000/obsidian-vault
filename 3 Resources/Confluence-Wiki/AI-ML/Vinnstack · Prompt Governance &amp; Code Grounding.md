@@ -1,18 +1,22 @@
 ---
-title: "Vinnstack · Prompt Governance &amp; Code Grounding"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49515102402/Vinnstack+Prompt+Governance+amp+Code+Grounding
-space: "TK"
-topic: ai_ml
-relevance: 0.731
-depth: 2.51
-updated: 2026-06-18
+ai_hash: 3ef6c516523c3df0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.51
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49515102402/Vinnstack+Prompt+Governance+amp+Code+Grounding
+space: TK
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/tk
+- confluence
+- ai-ml
+- space/tk
+title: Vinnstack · Prompt Governance &amp; Code Grounding
+topic: ai_ml
+type: source
+updated: 2026-06-18
 ---
 
 # Vinnstack · Prompt Governance &amp; Code Grounding
@@ -112,3 +116,14 @@ This is reinforced by the `query-code-graph` Vinnstack skill, which restates the
 - `lib/ultracodeRunner.ts` — `CHAT_SYSTEM_RULE`, `permissionArgs()` (allow/deny lists, `--add-dir`, `--append-system-prompt`), `readMemory()`.
 
 - `vinnstack-skills/query-code-graph/SKILL.md` — the graph-first / source-fallback procedure.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack — Agentic OS]]
+- [[Vinnstack vs. Claude Code (native)]]
+- [[Construct agent permissions per spawn instead of negotiating them per prompt]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Hard-exclude an AI agent from a resource by shrinking its file grant, not by prompting]]
+
+%% ai-graph-end %%

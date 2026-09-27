@@ -1,18 +1,22 @@
 ---
-title: "LUZ-146746 Use correct API's for delete, restore and their undo"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49083154497/LUZ-146746+Use+correct+API+s+for+delete+restore+and+their+undo
-space: "Helios"
-topic: programming
-relevance: 0.802
-depth: 3
-updated: 2026-01-28
+ai_hash: 78b1ff71d68ee359
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 25
+depth: 3
+entities: []
+relevance: 0.802
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49083154497/LUZ-146746+Use+correct+API+s+for+delete+restore+and+their+undo
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: LUZ-146746 Use correct API's for delete, restore and their undo
+topic: programming
+type: source
+updated: 2026-01-28
 ---
 
 # LUZ-146746 Use correct API's for delete, restore and their undo
@@ -447,3 +451,14 @@ payload: [&quot;letterId1&quot;, &quot;letterId2&quot;, &quot;letterId3&quot;]</
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Enhancements for API Delete and Restore]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[Empty Trash APIs]]
+- [[UIB LUZ-146496 - eLetter inline edit]]
+- [[Public API - letterbox - API get deleted letters from trash]]
+
+%% ai-graph-end %%

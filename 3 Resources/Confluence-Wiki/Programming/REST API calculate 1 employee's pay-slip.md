@@ -1,18 +1,22 @@
 ---
-title: "REST API calculate 1 employee's pay-slip"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519730192/REST+API+calculate+1+employee+s+pay-slip
-space: "LUZ"
-topic: programming
-relevance: 0.775
-depth: 2.56
-updated: 2021-01-29
+ai_hash: 03662f8fa345e135
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.56
+entities: []
+relevance: 0.775
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519730192/REST+API+calculate+1+employee+s+pay-slip
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: REST API calculate 1 employee's pay-slip
+topic: programming
+type: source
+updated: 2021-01-29
 ---
 
 # REST API calculate 1 employee's pay-slip
@@ -1518,3 +1522,14 @@ We can follow the proposals below (**highest priority is at the top**)
 **Updated 29.01.2021**
 
 After finishing 4 points (1,2,3,4), the API response time is currently 650ms (with same test environment above)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[Analyze N+1 queries for REST API calculate payslips for overview salary processing]]
+- [[Helios myKLARA app(luz-mobile) - API Response Performance Analysis]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+
+%% ai-graph-end %%

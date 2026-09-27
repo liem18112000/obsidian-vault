@@ -1,18 +1,22 @@
 ---
-title: "Swiss Post Letter Redirect Stream"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/48302227474/Swiss+Post+Letter+Redirect+Stream
-space: "AI"
-topic: programming
-relevance: 0.711
-depth: 2.3
-updated: 2025-01-30
+ai_hash: 29504e8ed4ef89fd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.3
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/48302227474/Swiss+Post+Letter+Redirect+Stream
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Swiss Post Letter Redirect Stream
+topic: programming
+type: source
+updated: 2025-01-30
 ---
 
 # Swiss Post Letter Redirect Stream
@@ -54,3 +58,10 @@ If committing is enabled and the Analyze Cluster gets started from scratch we ne
 5.  Write offsets - Set offset to 0 for each partition
 
 6.  Delete consumer instance
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MPI KAFKA Stream Letter]]
+
+%% ai-graph-end %%

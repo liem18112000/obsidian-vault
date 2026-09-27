@@ -1,10 +1,21 @@
 ---
-title: "Authorization has four named parts: PAP, PDP, PEP, PIP"
+ai_hash: 060e75abf3065679
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Authentication & Authorization Architecture (FUT)'
 status: seedling
-source: "Confluence: Authentication & Authorization Architecture (FUT)"
-tags: [authorization, xacml, opa, rbac, abac, architecture, confluence-distilled]
+tags:
+- authorization
+- xacml
+- opa
+- rbac
+- abac
+- architecture
+- confluence-distilled
+title: 'Authorization has four named parts: PAP, PDP, PEP, PIP'
+type: concept
 ---
 
 # Authorization has four named parts: PAP, PDP, PEP, PIP
@@ -39,3 +50,12 @@ Source: [[Authentication & Authorization Architecture]] (FUT, Confluence).
 ## Related
 
 - [[RBAC is coarse-grained by role, ABAC is fine-grained by attribute]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Authentication & Authorization Architecture]]
+- [[RBAC is coarse-grained by role, ABAC is fine-grained by attribute]]
+- [[Resource-level consent grants specific instances, not just scopes]]
+
+%% ai-graph-end %%

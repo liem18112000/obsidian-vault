@@ -1,10 +1,21 @@
 ---
-title: "Timeouts stack in series and the shortest wins; audit the whole chain"
+ai_hash: 2076d16b1c4957b7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Bottleneck analysis large-recipient deliveries (HACKA)'
 status: seedling
-source: "Confluence: Bottleneck analysis large-recipient deliveries (HACKA)"
-tags: [timeouts, kubernetes, gateway, kong, debugging, load-testing, confluence-distilled]
+tags:
+- timeouts
+- kubernetes
+- gateway
+- kong
+- debugging
+- load-testing
+- confluence-distilled
+title: Timeouts stack in series and the shortest wins; audit the whole chain
+type: lesson
 ---
 
 # Timeouts stack in series and the shortest wins; audit the whole chain
@@ -42,3 +53,14 @@ Source: [[Bottleneck analysis large-recipient deliveries & cross-sender impact]]
 ## Related
 
 - [[Long exports acknowledge immediately, deliver by emailed link to object storage]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bottleneck analysis large-recipient deliveries & cross-sender impact]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
+- [[Luz caller read-timeout settings to jwt-service]]
+- [[luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load]]
+
+%% ai-graph-end %%

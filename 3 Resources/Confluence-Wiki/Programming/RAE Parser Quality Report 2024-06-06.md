@@ -1,18 +1,22 @@
 ---
-title: "RAE Parser Quality Report 2024-06-06"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47866839041/RAE+Parser+Quality+Report+2024-06-06
-space: "AI"
-topic: programming
-relevance: 0.721
-depth: 2.53
-updated: 2024-06-10
+ai_hash: 0ef19a5be1a7f203
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 49
+depth: 2.53
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/47866839041/RAE+Parser+Quality+Report+2024-06-06
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: RAE Parser Quality Report 2024-06-06
+topic: programming
+type: source
+updated: 2024-06-10
 ---
 
 # RAE Parser Quality Report 2024-06-06
@@ -214,3 +218,14 @@ Evaluation of blockTokens (new annoatedBlockTokensRemaingExpected)
 | Detailed Report |  |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[RAE Parser Quality Report 2024-07-08]]
+- [[RAE Parser Quality Report 2024-05-03]]
+- [[Global model evaluation]]
+- [[Test and code review report template.2.93]]
+- [[Script 2022-03]]
+
+%% ai-graph-end %%

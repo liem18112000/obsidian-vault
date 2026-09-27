@@ -1,7 +1,7 @@
 ---
-ai_hash: 88d3ade02227271e
+ai_hash: a88c54604998c4db
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-13
 entities: []
 source: session 2026-06-13 accesstrade_integration
@@ -38,8 +38,8 @@ Discovered while splitting one Dockerfile into purpose-built web/mcp/cli images 
 **Related notes:**
 - [[Docker Compose path resolution env_file vs build context vs dockerfile]]
 - [[Docker hostname for reaching a service depends on where the caller runs]]
+- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)]]
 - [[Separate docker-compose files are isolated networks; use one file + a profile for optional services]]
-- [[Two Dockerfiles differing only in entrypoint should be one image plus compose override]]
-- [[Shim legacy docker-compose v1 to docker compose v2 on GitHub runners]]
+- [[CI path-filter must mirror the Docker build context, not the service folder]]
 
 %% ai-graph-end %%

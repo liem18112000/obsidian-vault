@@ -1,7 +1,7 @@
 ---
-ai_hash: 8d94734e854e729b
+ai_hash: 53d83c356e2f0ea6
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - CPA
 - Cost per Acquisition

@@ -1,10 +1,20 @@
 ---
-title: "Merkle checkpoints restore parallel writes to a hash-chained audit log"
+ai_hash: 0295c9f474793f49
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: model
+entities: []
+source: 'Confluence: Solution - Enhanced Chain-Signature Hybrid (2025-11-04)'
 status: seedling
-source: "Confluence: Solution - Enhanced Chain-Signature Hybrid (2025-11-04)"
-tags: [audit-logging, merkle-tree, cryptography, concurrency, architecture, luz-audit]
+tags:
+- audit-logging
+- merkle-tree
+- cryptography
+- concurrency
+- architecture
+- luz-audit
+title: Merkle checkpoints restore parallel writes to a hash-chained audit log
+type: model
 ---
 
 # Merkle checkpoints restore parallel writes to a hash-chained audit log
@@ -34,3 +44,14 @@ The cost is **checkpoint latency** — a record is only fully protected once its
 
 - [[A hash-chained audit log cannot be written in parallel]]
 - [[A Merkle tree proves one item belongs to a set without revealing or transferring the set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A hash-chained audit log cannot be written in parallel]]
+- [[Per-record signatures prove authenticity but not completeness, so deletion and reordering go undetected]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+- [[RFC 3161 timestamps outsource the time claim to a party the attacker does not control]]
+- [[A Merkle tree proves one item belongs to a set without revealing or transferring the set]]
+
+%% ai-graph-end %%

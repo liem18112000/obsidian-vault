@@ -1,18 +1,22 @@
 ---
-title: "[Discuss] LUZ-154249 Architecture for shared components/features between apps"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49434361890/Discuss+LUZ-154249+Architecture+for+shared+components+features+between+apps
-space: "Helios"
-topic: architecture
-relevance: 0.806
-depth: 2.73
-updated: 2026-06-15
+ai_hash: a0a6d576b3f0bcd5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.73
+entities: []
+relevance: 0.806
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49434361890/Discuss+LUZ-154249+Architecture+for+shared+components+features+between+apps
+space: Helios
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/helios
+- confluence
+- architecture
+- space/helios
+title: '[Discuss] LUZ-154249 Architecture for shared components/features between apps'
+topic: architecture
+type: source
+updated: 2026-06-15
 ---
 
 # [Discuss] LUZ-154249 Architecture for shared components/features between apps
@@ -510,3 +514,14 @@ import { getTenantAuth } from &#39;@luz-next/luz-services/server&#39;;</code></p
 </div>
 
 ------------------------------------------------------------------------
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Share features as vertical slices with app-owned routes and an injected adapter]]
+- [[Proposal eArchived architecture direction for ePost web 2]]
+- [[Architecture]]
+- [[Luz Kubernetes Terraform]]
+- [[Document key concepts and architecture of sealing modules]]
+
+%% ai-graph-end %%

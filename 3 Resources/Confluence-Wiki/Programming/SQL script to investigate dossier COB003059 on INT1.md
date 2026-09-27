@@ -1,18 +1,22 @@
 ---
-title: "SQL script to investigate dossier COB003059 on INT1"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48571645980/SQL+script+to+investigate+dossier+COB003059+on+INT1
-space: "GRAVITY"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2025-07-08
+ai_hash: 8c7aa38a40d06943
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/48571645980/SQL+script+to+investigate+dossier+COB003059+on+INT1
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: SQL script to investigate dossier COB003059 on INT1
+topic: programming
+type: source
+updated: 2025-07-08
 ---
 
 # SQL script to investigate dossier COB003059 on INT1
@@ -94,3 +98,14 @@ and customvarcharfield2  = 'COB003059';
 
 
 Please contact “Gravity” team if you have any concerns.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL script to update retry tasks and check pending dossiers has an outdated credit card]]
+- [[SQL script to investigate dossier with orphaned protocol records in PROD]]
+- [[SQL script to get SOB (APP & WEB) dossier progress]]
+- [[Script identify fields which are incorrectly logged in the protocol]]
+- [[SQL script to filter IN_PROGRESS tasks more than 30 days]]
+
+%% ai-graph-end %%

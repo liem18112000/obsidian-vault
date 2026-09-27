@@ -1,18 +1,22 @@
 ---
-title: "How to use tooltip in primefaces without modifying code in component"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25287339612/How+to+use+tooltip+in+primefaces+without+modifying+code+in+component
-space: "PT"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2017-04-19
+ai_hash: ef310d10f8b1a05f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25287339612/How+to+use+tooltip+in+primefaces+without+modifying+code+in+component
+space: PT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/pt
+- confluence
+- programming
+- space/pt
+title: How to use tooltip in primefaces without modifying code in component
+topic: programming
+type: source
+updated: 2017-04-19
 ---
 
 # How to use tooltip in primefaces without modifying code in component
@@ -176,3 +180,11 @@ $.fn.customTooltip = function(options) {
       </div>
 
       </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to use Bussiness Rules in GUI Framework]]
+- [[How to implement a feature hint for eArchive (reuse new common component )]]
+
+%% ai-graph-end %%

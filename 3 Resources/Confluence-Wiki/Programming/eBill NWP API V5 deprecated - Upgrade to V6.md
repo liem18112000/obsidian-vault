@@ -1,18 +1,22 @@
 ---
-title: "eBill NWP API V5 deprecated -> Upgrade to V6"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/49011982458/eBill+NWP+API+V5+deprecated+-+Upgrade+to+V6
-space: "HACKA"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2026-01-12
+ai_hash: 504347b913eaee9c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/49011982458/eBill+NWP+API+V5+deprecated+-+Upgrade+to+V6
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: eBill NWP API V5 deprecated -> Upgrade to V6
+topic: programming
+type: source
+updated: 2026-01-12
 ---
 
 # eBill NWP API V5 deprecated -> Upgrade to V6
@@ -950,3 +954,14 @@ With new types:
   - \[ \] Test subscription flows
 
   - \[ \] Test business case submissions
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Self-test termination luz_ebill, and Script switch to primary NWP]]
+- [[One API and Monitoring 0.02.61.00 (19.12.2023 - 29.12.2023)]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+- [[Preview Delivery-Prices API - ForcedOnboading]]
+- [[API Document]]
+
+%% ai-graph-end %%

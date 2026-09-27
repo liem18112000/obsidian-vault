@@ -1,5 +1,5 @@
 ---
-ai_hash: c5188e0abeb81a38
+ai_hash: 123c7c1293301aec
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-09
@@ -35,8 +35,8 @@ Surfaced building the SCRUM-92 sprint-dashboard artifact (2026-09-09), embedding
 **Related notes:**
 - [[Animate fireworks SVGs via injected CSS keyframes; Style-12 Ops Pulse constraints]]
 - [[Embed a fireworks-tech-graph SVG in an HTML artifact and animate it with CSS via its data-flowid hooks]]
+- [[fireworks-tech-graph skill JSON-IR render pipeline and quality_profile gotcha]]
 - [[Artifacts render mermaid natively — never add a mermaid CDN script (CSP blocks it)]]
 - [[Embed brand SVG icons in an Excalidraw diagram (image element + files dataURL; Simple Icons CDN)]]
-- [[fireworks-tech-graph skill JSON-IR render pipeline and quality_profile gotcha]]
 
 %% ai-graph-end %%

@@ -1,14 +1,20 @@
 ---
-title: "System Architecture & Overview - Training Guide"
+ai_hash: a3d4761833789a54
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48732667920'
+confluence_path: LUZ Home > Product Documentation > LUZ Developer Guide > Cookbook
+  > Training hub > New Developer Training Program - Landing Page
 created: 2025-10-08
-updated: 2025-10-22
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+title: System Architecture & Overview - Training Guide
+type: source
+updated: 2025-10-22
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48732667920/System+Architecture+Overview+-+Training+Guide
-confluence_id: "48732667920"
-confluence_path: "LUZ Home > Product Documentation > LUZ Developer Guide > Cookbook > Training hub > New Developer Training Program - Landing Page"
-tags: [confluence]
 ---
 
 # System Architecture & Overview - Training Guide
@@ -134,3 +140,14 @@ Based on our Technology Radar and current implementations:
 *Attached to the Confluence page but not embedded in its body.*
 
 - [[3 Resources/Confluence/LUZ/Product Documentation/LUZ Developer Guide/Cookbook/attachments/system-architecture-overview-training-guide/high_level_architecture_overview|high_level_architecture_overview]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz-vault]]
+- [[Architecture]]
+- [[Postgres Architecture Blueprint V2023]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[Document key concepts and architecture of sealing modules]]
+
+%% ai-graph-end %%

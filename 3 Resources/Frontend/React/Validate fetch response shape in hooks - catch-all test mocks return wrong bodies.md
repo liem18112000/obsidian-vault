@@ -1,7 +1,7 @@
 ---
-ai_hash: 7c23b1d955fe6a86
+ai_hash: 7f86c319f43d6673
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Guard array-typed React state seeded from a fetch with ?? []
 created: 2026-07-03
@@ -46,7 +46,7 @@ Real cases (vinnstack, 2026-07): `usePrdComments`; and `MdExportControl` + `Vers
 - [[A render crash masks latent crashes elsewhere in the same React subtree]]
 - [[When a merge turns CI red decide test-vs-source fix by reading code intent]]
 - [[Order-independent prefills fold precedence into the functional updater, not effect order]]
-- [[Shape-keyed test mocks break when production query shapes change]]
+- [[Undrained fetch response bodies leak sockets in Node undici]]
 - [[Inferred union returns grow optional-undefined members - annotate to keep in-narrowing]]
 
 %% ai-graph-end %%

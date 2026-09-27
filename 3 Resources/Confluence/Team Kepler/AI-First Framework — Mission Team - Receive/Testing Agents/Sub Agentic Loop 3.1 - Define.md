@@ -1,14 +1,22 @@
 ---
-title: "Sub Agentic Loop 3.1 - Define"
+ai_hash: 36a62989da8e6dcf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49741692945'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 3 - Test-Plan Definition > Evaluating the Test-Plan-Definition
+  Agent'
 created: 2026-09-10
-updated: 2026-09-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Sub Agentic Loop 3.1 - Define
+type: source
+updated: 2026-09-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49741692945/Sub+Agentic+Loop+3.1+-+Define
-confluence_id: "49741692945"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 3 - Test-Plan Definition > Evaluating the Test-Plan-Definition Agent"
-tags: [confluence, ai-agents]
 ---
 
 # Sub Agentic Loop 3.1 - Define
@@ -38,3 +46,14 @@ The 4th, `test-design`, is agent-**suggested**:
 It surfaces one open question with the recommendation pre-filled; the human accepts / changes / **adds**. The choice lands on `TestPlan.test_design`.
 
 ![[3 Resources/Confluence/Team Kepler/AI-First Framework — Mission Team - Receive/Testing Agents/attachments/sub-agentic-loop-3-1-define/image-20260910-064629.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Sub Agentic Loop 3.2 - Implement]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Test-Plan Definition Agent]]
+- [[TPD agentic loop single-pass DEFINE to APPROVE to IMPLEMENT]]
+- [[Sub Agentic Loop 3.3 - Generation]]
+
+%% ai-graph-end %%

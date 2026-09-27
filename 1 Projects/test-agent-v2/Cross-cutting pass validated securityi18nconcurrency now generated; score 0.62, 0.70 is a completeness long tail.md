@@ -1,63 +1,48 @@
 ---
-ai_hash: cc3445b8cfb2496c
+ai_hash: c001072c0afb6ffd
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-23
 entities:
-- Cross-cutting pass
-- Security scenarios
-- I18n scenarios
-- Concurrency scenarios
-- LUZ-158390
 - Cross-cutting generation pass
-- Zip-slip
-- Zip-bomb/high-compression
-- Deeply-nested folders
-- Symlink entries
-- Duplicate entry names
-- JSON-bomb
-- CP437/UTF-8 decode
-- NFC-vs-NFD
-- Pool-size-identical
-- Concurrent-same-folder
-- No-lost-counters
-- Guidance
+- Security scenarios
+- i18n scenarios
+- Concurrency scenarios
 - Score 0.62
 - Score 0.70
 - Completeness long tail
-- 57 clean scenarios
+- LUZ-158390
+- Live subscription
+- Guidance
+- Scenario suite
 - Triplication
 - Coverage gain
 - Judges critique
-- Within-cell completeness
+- WITHIN-CELL completeness
 - Residual issues
-- 2x2 valid/invalid x healthData matrix
-- Size boundary
-- 102,399
-- 102,400
-- 102,401
-- Negative EP set
+- HealthData matrix
+- Size boundary issues
 - companyId-wrong-type
 - empty-title
 - documentTypes-as-string
+- Negative EP set
 - Gap-1 token-mismatch outcome
 - BLOCKED status
 - Groundedness hit
-- Residual NFC/NFD near-dups
+- NFC/NFD near-dups
 - 0.86 cosine dedup
-- Dedup
+- Dedup process
 - Generation-completeness
 - Boundary point enumeration
 - Matrix cell filling
 - Gap-1 cases blocking
 - Tighter dedup
 - Aggregate score
-- Dup/groundedness penalties
+- Dup penalties
+- Groundedness penalties
 - Judge
-- 'Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union
-  citations'
-- '0.70 is an architecture ceiling not a tuning miss: guidance cannot inject cross-cutting
-  kinds'
+- Cross-source semantic scenario dedup
+- 0.70 architecture ceiling note
 source: session 2026-09-23
 status: seedling
 tags:
@@ -90,61 +75,52 @@ VALIDATED (LUZ-158390, live subscription): the cross-cutting generation pass WOR
 - [[Parallel TPD generation sped up but amplified duplication — dedup is a code fix, not guidance]]
 
 **Relations:**
-- Cross-cutting pass — *validated* — Security scenarios
-- Cross-cutting pass — *validated* — I18n scenarios
-- Cross-cutting pass — *validated* — Concurrency scenarios
-- Cross-cutting generation pass — *is* — VALIDATED
-- Cross-cutting generation pass — *is associated with* — LUZ-158390
-- Cross-cutting generation pass — *generates* — Security scenarios
-- Cross-cutting generation pass — *generates* — I18n scenarios
-- Cross-cutting generation pass — *generates* — Concurrency scenarios
-- Security scenarios — *include* — Zip-slip
-- Security scenarios — *include* — Zip-bomb/high-compression
-- Security scenarios — *include* — Deeply-nested folders
-- Security scenarios — *include* — Symlink entries
-- Security scenarios — *include* — Duplicate entry names
-- Security scenarios — *include* — JSON-bomb
-- I18n scenarios — *include* — CP437/UTF-8 decode
-- I18n scenarios — *include* — NFC-vs-NFD
-- Concurrency scenarios — *include* — Pool-size-identical
-- Concurrency scenarios — *include* — Concurrent-same-folder
-- Concurrency scenarios — *include* — No-lost-counters
-- Guidance — *could not inject* — cross-cutting kinds
-- suite — *contains* — 57 clean scenarios
-- Score 0.62 — *is current* — score
-- Score 0.70 — *is a target for* — Completeness long tail
-- Coverage gain — *was offset by* — Judges critique
-- Judges critique — *shifted to* — Within-cell completeness
+- Cross-cutting generation pass — *validated* — Security scenarios
+- Cross-cutting generation pass — *validated* — i18n scenarios
+- Cross-cutting generation pass — *validated* — Concurrency scenarios
+- Cross-cutting generation pass — *generated* — Security scenarios
+- Cross-cutting generation pass — *generated* — i18n scenarios
+- Cross-cutting generation pass — *generated* — Concurrency scenarios
+- Score 0.62 — *is current score* — Cross-cutting generation pass
+- Score 0.70 — *is target score* — Cross-cutting generation pass
+- Score 0.70 — *is a* — Completeness long tail
+- LUZ-158390 — *is a* — Live subscription
+- Cross-cutting generation pass — *WORKS* — 
+- Cross-cutting generation pass — *injects* — Security scenarios
+- Cross-cutting generation pass — *injects* — i18n scenarios
+- Cross-cutting generation pass — *injects* — Concurrency scenarios
+- Guidance — *could not inject* — Cross-cutting generation pass
+- Scenario suite — *contains* — 57 clean scenarios
+- Triplication — *is* — gone
+- Score 0.62 — *did not cross* — Score 0.70
+- Coverage gain — *offset by* — Judges critique
+- Judges critique — *shifted to* — WITHIN-CELL completeness
 - Judges critique — *shifted to* — Residual issues
-- Residual issues — *include* — 2x2 valid/invalid x healthData matrix
-- 2x2 valid/invalid x healthData matrix — *has* — 2/4 cells covered
-- Residual issues — *include* — Size boundary
-- Size boundary — *is at* — 102,399
-- Size boundary — *missing* — 102,400
-- Size boundary — *missing* — 102,401
+- Residual issues — *include* — HealthData matrix
+- Residual issues — *include* — Size boundary issues
+- Size boundary issues — *missing values* — 102,400/102,401
 - Residual issues — *include* — Negative EP set
-- Negative EP set — *is* — half-covered
 - Negative EP set — *missing* — companyId-wrong-type
 - Negative EP set — *missing* — empty-title
 - Negative EP set — *missing* — documentTypes-as-string
-- Residual issues — *include* — Gap-1 token-mismatch outcome
-- Gap-1 token-mismatch outcome — *asserted instead of marked as* — BLOCKED status
-- Groundedness hit — *is caused by* — Gap-1 token-mismatch outcome
-- Residual issues — *include* — Residual NFC/NFD near-dups
-- Residual NFC/NFD near-dups — *not merged by* — 0.86 cosine dedup
-- Dedup — *is an* — improvement
-- Cross-cutting pass — *is an* — improvement
-- Triplication — *is eliminated by* — Dedup
-- Cross-cutting kinds — *are present due to* — Cross-cutting pass
-- Score 0.70 — *is a* — LONG TAIL of Generation-completeness
-- Generation-completeness — *requires* — Boundary point enumeration
-- Generation-completeness — *requires* — Matrix cell filling
-- Generation-completeness — *requires* — Gap-1 cases blocking
-- Generation-completeness — *requires* — Tighter dedup
+- One scenario — *asserts* — Gap-1 token-mismatch outcome
+- Gap-1 token-mismatch outcome — *should be* — BLOCKED status
+- Asserting Gap-1 token-mismatch outcome — *causes* — Groundedness hit
+- 0.86 cosine dedup — *did not merge* — NFC/NFD near-dups
+- Dedup process — *is a* — real improvement
+- Cross-cutting generation pass — *is a* — real improvement
+- Score 0.70 — *is a* — Generation-completeness long tail
+- Generation-completeness long tail — *requires* — Boundary point enumeration
+- Generation-completeness long tail — *requires* — Matrix cell filling
+- Generation-completeness long tail — *requires* — Gap-1 cases blocking
+- Generation-completeness long tail — *requires* — Tighter dedup
 - Adding coverage — *can leave* — Aggregate score flat
-- Additions — *introduce* — Dup/groundedness penalties
+- Adding coverage — *introduces* — Dup penalties
+- Adding coverage — *introduces* — Groundedness penalties
 - Judge — *rebalances to* — next weakest dimension
-- Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations — *is related to* — Dedup
-- 0.70 is an architecture ceiling not a tuning miss: guidance cannot inject cross-cutting kinds — *is related to* — Score 0.70
+- Cross-source semantic scenario dedup — *is related to* — Dedup process
+- 0.70 architecture ceiling note — *is related to* — Score 0.70
+- 0.70 architecture ceiling note — *is related to* — Guidance
+- 0.70 architecture ceiling note — *is related to* — Cross-cutting generation pass
 
 %% ai-graph-end %%

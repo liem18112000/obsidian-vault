@@ -1,10 +1,20 @@
 ---
-title: "Mutually exclusive API parameters should be rejected, not resolved by precedence"
+ai_hash: 22e90055fb9aacc6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Research Design architecture concept for Generic Interface File
+  (HACKA)'
 status: seedling
-source: "Confluence: Research Design architecture concept for Generic Interface File (HACKA)"
-tags: [api-design, rest, validation, jax-rs, confluence-distilled]
+tags:
+- api-design
+- rest
+- validation
+- jax-rs
+- confluence-distilled
+title: Mutually exclusive API parameters should be rejected, not resolved by precedence
+type: lesson
 ---
 
 # Mutually exclusive API parameters should be rejected, not resolved by precedence
@@ -42,3 +52,14 @@ public class GenericInterfaceFileRequest {
 > Any time a request object has two optional fields where exactly one must be present, that is a sum type being smuggled through a product type. The language may not let you express it directly, but validation at the boundary restores the guarantee — and it belongs at the boundary, because everything downstream then gets to assume it.
 
 Source: [[Research Design architecture concept for the service to generate the Generic Interface File]] (HACKA, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Throw error codes not sentences; localise at the request boundary]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[Enumerate a dependency's exception surface and decide each one before integrating]]
+- [[Prefer an explicit caller-supplied param over inferring intent from request-body shape]]
+- [[Gate enriched REST response behind a boolean query param with a legacy-shaped DTO]]
+
+%% ai-graph-end %%

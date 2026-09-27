@@ -1,10 +1,21 @@
 ---
-title: "SAP export defaults come from the /default-sap config service so accounting codes change without a deploy"
+ai_hash: 81705a9bb395a12f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: SAP in luz_finance — What, Why, How, When (2026-07-27)'
 status: seedling
-source: "Confluence: SAP in luz_finance — What, Why, How, When (2026-07-27)"
-tags: [sap, luz-finance, configuration, accounting, fail-closed, kepler]
+tags:
+- sap
+- luz-finance
+- configuration
+- accounting
+- fail-closed
+- kepler
+title: SAP export defaults come from the /default-sap config service so accounting
+  codes change without a deploy
+type: lesson
 ---
 
 # SAP export defaults come from the /default-sap config service so accounting codes change without a deploy
@@ -24,3 +35,14 @@ Generalisable: **configuration that belongs to a downstream system should be rea
 ## Related
 
 - [[SAP in luz_finance is a manual CSV export, not a live integration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SAP in luz_finance is a manual CSV export, not a live integration]]
+- [[SAP in `luz_finance` — What, Why, How, When]]
+- [[Rounding per line makes net plus VAT miss gross, so the VAT line absorbs the difference]]
+- [[SAP_Booking.csv — the accounting bookings export]]
+- [[SAP_Master.csv — the customer master export]]
+
+%% ai-graph-end %%

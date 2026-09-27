@@ -1,10 +1,20 @@
 ---
-title: "Test the decisions that override the story description, not the description"
+ai_hash: 24b94ba46ee5874e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: LUZ-158644 remove Print and Send user role (TS)'
 status: seedling
-source: "Confluence: LUZ-158644 remove Print and Send user role (TS)"
-tags: [qa, requirements, test-planning, scope, product-owner, confluence-distilled]
+tags:
+- qa
+- requirements
+- test-planning
+- scope
+- product-owner
+- confluence-distilled
+title: Test the decisions that override the story description, not the description
+type: lesson
 ---
 
 # Test the decisions that override the story description, not the description
@@ -36,3 +46,14 @@ Source: [[CROSS-TEST LUZ-158644 Investigate and remove Print&Send user role (UI,
 ## Related
 
 - [[Strike what every option shares to find the real architecture decision]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CROSS-TEST LUZ-158644 Investigate and remove Print&Send user role (UI, backend, Public API — no]]
+- [[testing-agent implement_plan generates scenarios per pack-node x 4 kinds, amplifying pack noise and ignoring non-functional-kind guidance]]
+- [[TPD test_kinds must be additive over the base four, not replace them]]
+- [[Xray Test Management - Manual Test Guideline]]
+- [[Verify an existing flag's data quality before designing on top of it]]
+
+%% ai-graph-end %%

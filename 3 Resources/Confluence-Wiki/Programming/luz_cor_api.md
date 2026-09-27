@@ -1,18 +1,22 @@
 ---
-title: "luz_cor_api"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20482985244/luz_cor_api
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2019-06-07
+ai_hash: faf0f05047e604df
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20482985244/luz_cor_api
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: luz_cor_api
+topic: programming
+type: source
+updated: 2019-06-07
 ---
 
 # luz_cor_api
@@ -457,3 +461,14 @@ Truststore : We can use Java Truststore
 Ok:
 
 curl -v -H "X-CorAPI-Target-ID:IIDX99999" -H "X-Correlation-ID: 123" -H "X-PSU-User-Agent: 123" -H "X-PSU-IP-Address: 127.0.0.1" -X POST --key <a href="http://api.dev.klara.ch" class="external-link" rel="nofollow">api.dev.klara.ch</a>.key --cert linux_cert+ca.pem -d 'client_id=CIDX0000000002&grant_type=authorization_code&code=otwcNj&redirect_uri=<a href="http://localhost:8080/CorAPI/CorAPITestServlet" class="external-link" rel="nofollow">http://localhost:8080/CorAPI/CorAPITestServlet</a>' <a href="https://api-cert-etu.six-group.com/api/bankingservices/corporate/v1/oauth/token" class="external-link" rel="nofollow">https://api-cert-etu.six-group.com/api/bankingservices/corporate/v1/oauth/token</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Implement Corporate API Access (LUZ-17959)]]
+- [[Token JWT Security]]
+- [[Getting tenant list]]
+- [[How to run export API for specific tenant and date - Manual export]]
+- [[Swagger with api explorer]]
+
+%% ai-graph-end %%

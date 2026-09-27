@@ -1,11 +1,11 @@
 ---
-ai_hash: 905db0b157ff00e8
+ai_hash: 3277439f92829e70
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 entities:
 - Areas
 - Kepler
-- Klara platform
+- Klara
 - luz-docs
 - Build and Deployment
 - folders
@@ -13,7 +13,6 @@ entities:
 - Document PUT Cascade
 - migration
 - Luz
-- Luz platform
 - luz-docs-statistic
 - luz-online-payment
 - local run pattern
@@ -37,6 +36,7 @@ entities:
 - Polaris
 - Polaris MCP platform
 - Action Points
+- log
 - Affiliate
 - affiliate strategy
 title: Areas
@@ -79,48 +79,51 @@ Standing affiliate strategy.
 %% ai-graph-start %%
 
 **Related notes:**
-- [[index]]
 - [[1 Projects]]
+- [[Confluence Export — Index]]
+- [[index]]
 - [[Luz plugin repos how skills and hooks are packaged for distribution]]
 - [[3 Resources]]
-- [[luz-kubernetes-add-env skill propagates env properties across overlay environments]]
 
 **Relations:**
-- Areas — *defined as* — Ongoing responsibilities to maintain over time (no end date)
-- Kepler — *is an* — Areas
-- Kepler — *has operational knowledge for* — Klara platform
-- Kepler — *includes* — luz-docs
-- luz-docs — *covers* — Build and Deployment
-- luz-docs — *covers* — folders
-- luz-docs — *covers* — Materialize Operations
+- Areas — *are* — Ongoing responsibilities
+- Kepler — *is a type of* — Areas
+- Klara — *is a* — platform
+- Kepler — *is associated with* — Klara
+- luz-docs — *provides operational knowledge for* — Kepler
+- luz-docs — *includes* — Build and Deployment
+- luz-docs — *includes* — folders
+- luz-docs — *includes* — Materialize Operations
 - Materialize Operations — *includes* — Document PUT Cascade
-- luz-docs — *covers* — migration
-- Kepler — *includes* — Luz
-- Luz — *is a* — Luz platform
+- luz-docs — *includes* — migration
+- Luz — *provides operational knowledge for* — Kepler
 - Luz — *includes* — luz-docs-statistic
-- Kepler — *includes* — luz-online-payment
-- luz-online-payment — *covers* — local run pattern
-- luz-online-payment — *covers* — payment ops
-- Kepler — *includes* — luz-kubernetes
-- luz-kubernetes — *covers* — overlay layout
-- luz-kubernetes — *covers* — system.properties
-- Vinnstack — *is an* — Areas
-- Vinnstack — *has ownership of* — headless Claude bridge
-- Vinnstack — *has ownership of* — BDD workspace
-- Vinnstack — *has ownership of* — release channel
-- Claude-Code — *is an* — Areas
-- Claude-Code — *maintains* — Hooks
-- Claude-Code — *maintains* — Skills
-- Knowledge-System — *is an* — Areas
-- Knowledge-System — *refers to* — vault
-- Knowledge-System — *refers to* — publishing pipeline
+- luz-online-payment — *provides operational knowledge for* — Kepler
+- luz-online-payment — *includes* — local run pattern
+- luz-online-payment — *includes* — payment ops
+- luz-kubernetes — *provides operational knowledge for* — Kepler
+- luz-kubernetes — *includes* — overlay layout
+- luz-kubernetes — *includes* — system.properties
+- Vinnstack — *is a type of* — Areas
+- Vinnstack — *has* — ownership
+- Vinnstack — *includes* — headless Claude bridge
+- Vinnstack — *includes* — BDD workspace
+- Vinnstack — *includes* — release channel
+- Claude-Code — *is a type of* — Areas
+- Claude-Code — *is* — Maintained personal tooling
+- Claude-Code — *includes* — Hooks
+- Claude-Code — *includes* — Skills
+- Knowledge-System — *is a type of* — Areas
+- Knowledge-System — *includes* — vault
+- Knowledge-System — *includes* — publishing pipeline
 - publishing pipeline — *includes* — Publish
-- publishing pipeline — *includes* — knowledge-ecosystem map
-- publishing pipeline — *includes* — knowledge-base plan
-- Polaris — *is an* — Areas
-- Polaris — *refers to* — Polaris MCP platform
-- Polaris — *refers to* — Action Points
-- Affiliate — *is an* — Areas
-- Affiliate — *refers to* — affiliate strategy
+- Knowledge-System — *includes* — knowledge-ecosystem map
+- Knowledge-System — *includes* — knowledge-base plan
+- Polaris — *is a type of* — Areas
+- Polaris — *is a* — Polaris MCP platform
+- Polaris — *includes* — Action Points
+- Action Points — *is a* — log
+- Affiliate — *is a type of* — Areas
+- Affiliate — *has* — affiliate strategy
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "BlueZone, Public API, AI Data Feeds (07.11.2023 - 20.11.2023)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47561704526/BlueZone+Public+API+AI+Data+Feeds+07.11.2023+-+20.11.2023
-space: "LUZ"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2023-11-20
+ai_hash: 6db723e42c6fc707
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47561704526/BlueZone+Public+API+AI+Data+Feeds+07.11.2023+-+20.11.2023
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: BlueZone, Public API, AI Data Feeds (07.11.2023 - 20.11.2023)
+topic: programming
+type: source
+updated: 2023-11-20
 ---
 
 # BlueZone, Public API, AI Data Feeds (07.11.2023 - 20.11.2023)
@@ -101,3 +105,14 @@ tags:
 <span class="inline-comment-marker" ref="34995eb6-8890-4f3b-8269-eaa98ad852f5">Find/Create/Update KLARA Business Company</span>
 
 More detail: [How to use Public API to create/update KLARA Business Company](https://axonivy.atlassian.net/wiki/spaces/TS/pages/47553806568/How+to+use+Public+API+to+create+update+KLARA+Business+Company)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[Catalog for 3rd party system API]]
+- [[Invoice API]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Copy 5. How to extend/modify ONE API delivery API Research"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49307550227/Copy+5.+How+to+extend+modify+ONE+API+delivery+API+Research
-space: "LUZ"
-topic: programming
-relevance: 0.775
-depth: 2.6
-updated: 2026-04-08
+ai_hash: 713fc871c5877d52
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 27
+depth: 2.6
+entities: []
+relevance: 0.775
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49307550227/Copy+5.+How+to+extend+modify+ONE+API+delivery+API+Research
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Copy 5. How to extend/modify ONE API delivery API Research
+topic: programming
+type: source
+updated: 2026-04-08
 ---
 
 # Copy 5. How to extend/modify ONE API delivery API Research
@@ -177,3 +181,14 @@ V. Continue research: How luz-eletter update status of recipients, documents & d
   1\. Digital channel  
   2. Ebill Channel  
   3. allRecipientsRequired flag(SPECIAL_CASE)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[5. How to extend modify ONE API delivery API Research]]
+- [[One API 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[Research The concept to update the status of delivery instantly after all documents are processed]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+
+%% ai-graph-end %%

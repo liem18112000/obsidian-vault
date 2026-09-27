@@ -1,10 +1,22 @@
 ---
-title: "Server push choice is decided by proxy idle timeouts and pod affinity, not API elegance"
+ai_hash: 3b73abb8559b3868
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: EPC Notification architecture flow (Helios)'
 status: seedling
-source: "Confluence: EPC Notification architecture flow (Helios)"
-tags: [websockets, sse, polling, kubernetes, nextjs, real-time, confluence-distilled]
+tags:
+- websockets
+- sse
+- polling
+- kubernetes
+- nextjs
+- real-time
+- confluence-distilled
+title: Server push choice is decided by proxy idle timeouts and pod affinity, not
+  API elegance
+type: lesson
 ---
 
 # Server push choice is decided by proxy idle timeouts and pod affinity, not API elegance
@@ -41,3 +53,14 @@ Source: [[EPC Notification architecture flow]] (Helios, Confluence).
 ## Related
 
 - [[Store pod-level facts once, not copied into every user key]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[EPC Notification architecture flow]]
+- [[Deep Dive EPC Notification - User Connection Registry - Data Model]]
+- [[Score async API designs on crash recovery and multi-instance, not latency]]
+- [[Redis TTL should express liveness and be refreshed by a heartbeat]]
+- [[A webhook receiver deploys as an always-on service, not a scheduled job]]
+
+%% ai-graph-end %%

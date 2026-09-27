@@ -1,47 +1,26 @@
 ---
-ai_hash: 7fb749868eef1f2b
+ai_hash: e6ef8ca73b9f108d
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-13
 entities:
 - luz-docs-import
-- prod scratch volume
-- 1GB
-- 100Gi tmp-scratch
+- prod scratch
+- tmp-scratch
 - LUZ-158230
 - Cloud Monitoring
 - klara-prod
-- 0.78 GiB
-- 800 MB
-- pod-0
-- pod-1
-- 294 GiB
-- 0.27% utilisation
-- Sub-gigabyte scratch
-- apply-file-store branch
+- apply-file-store
 - PVC
-- /tmp
-- 125x observed prod peak
-- 10-20Gi
 - pd-standard
-- IOPS
-- disk size
-- bulk imports
-- temp I/O
-- file-store rollout
-- '2026-08-13'
-- 16Gi
 - kubernetes/luz-docs-import/k8s.yaml
-- inline comment
+- temp-storage
+- prod
 - repo
 - live prod
-- 'replicas: 1'
-- 2 replicas
-- namespace prod
-- temp-storage
-- tmp-scratch/100Gi block
 - performance cluster
-- Read GKE PVC/volume peak usage from Cloud Monitoring when pod RBAC is denied
+- GKE
+- pod RBAC
 source: session 2026-08-13
 status: seedling
 tags:
@@ -82,43 +61,36 @@ Cloud Monitoring telemetry over 42 days shows the `luz-docs-import` scratch volu
 - [[Luz performance env cluster topology]]
 
 **Relations:**
-- luz-docs-import — *has_component* — prod scratch volume
-- prod scratch volume — *peaks_under* — 1GB
-- 100Gi tmp-scratch — *is_associated_with* — LUZ-158230
-- 100Gi tmp-scratch — *is* — over-provisioned
-- Cloud Monitoring — *provides_telemetry_for* — prod scratch volume
-- prod scratch volume — *located_on* — klara-prod
-- prod scratch volume — *peaks_at* — 0.78 GiB
-- 0.78 GiB — *is_approximately* — 800 MB
-- 0.78 GiB — *used_by* — pod-0
-- prod scratch volume — *has_live_capacity* — 294 GiB
-- prod scratch volume — *has_utilisation* — 0.27% utilisation
-- Sub-gigabyte scratch — *is* — steady-state
-- LUZ-158230 — *involves* — apply-file-store branch
-- apply-file-store branch — *introduces* — tmp-scratch PVC
-- tmp-scratch PVC — *has_storage* — 100Gi
-- tmp-scratch PVC — *mounted_at* — /tmp
-- 100Gi — *is* — 125x observed prod peak
-- 100Gi — *is* — unjustified by usage
-- Right-sized target — *is* — 10-20Gi
-- IOPS — *scales_with* — disk size
-- disk size — *is_relevant_for* — pd-standard
-- bulk imports — *rely_on* — temp I/O
-- Decision applied — *on* — 2026-08-13
-- Decision — *sets_storage_to* — 16Gi
-- 16Gi — *specified_in* — kubernetes/luz-docs-import/k8s.yaml
-- 16Gi — *is* — >20x the ~0.8Gi peak
-- kubernetes/luz-docs-import/k8s.yaml — *declares* — replicas: 1
-- kubernetes/luz-docs-import/k8s.yaml — *declares* — tmp-scratch 100Gi PVC
-- live prod — *runs* — 2 replicas
-- live prod — *is_in* — namespace prod
-- scratch volume — *named* — temp-storage
-- tmp-scratch/100Gi block — *is_not_deployed_to* — prod
-- tmp-scratch/100Gi block — *is* — pending on this branch
-- Live capacity — *is* — 294 GiB on prod
-- Live capacity — *is* — 294 GiB on performance cluster
-- manifest — *specifies* — 100Gi
-- deployed volumes — *exceed* — repo value
-- this note — *is_related_to* — Read GKE PVC/volume peak usage from Cloud Monitoring when pod RBAC is denied
+- luz-docs-import — *HAS_SCRATCH_VOLUME* — prod scratch
+- prod scratch — *LOCATED_ON* — klara-prod
+- prod scratch — *PEAKS_AT* — ~0.78 GiB
+- prod scratch — *HAS_LIVE_CAPACITY* — ~294 GiB
+- prod scratch — *HAS_UTILISATION* — 0.27%
+- Cloud Monitoring — *PROVIDES_TELEMETRY_FOR* — prod scratch
+- LUZ-158230 — *IS_ASSOCIATED_WITH* — apply-file-store
+- apply-file-store — *INTRODUCES* — tmp-scratch
+- tmp-scratch — *IS_A* — PVC
+- tmp-scratch — *HAS_DECLARED_STORAGE* — 100Gi
+- tmp-scratch — *MOUNTED_AT* — /tmp
+- tmp-scratch — *IS_OVER_PROVISIONED* — true
+- pd-standard — *HAS_PROPERTY* — IOPS scale with disk size
+- kubernetes/luz-docs-import/k8s.yaml — *DECLARES_REPLICAS* — 1
+- kubernetes/luz-docs-import/k8s.yaml — *DECLARES* — tmp-scratch
+- live prod — *RUNS_REPLICAS* — 2
+- live prod — *USES_SCRATCH_VOLUME* — temp-storage
+- temp-storage — *HAS_LIVE_CAPACITY* — ~294 GiB
+- tmp-scratch — *IS_PENDING_DEPLOYMENT_TO* — prod
+- kubernetes/luz-docs-import/k8s.yaml — *SETS_STORAGE_TO* — 16Gi
+- kubernetes/luz-docs-import/k8s.yaml — *INCLUDES_COMMENT_CITING* — Cloud Monitoring peak
+- GKE — *RELATED_TO* — PVC/volume peak usage
+- pod RBAC — *CAN_BE* — denied
+- repo — *CONTAINS* — kubernetes/luz-docs-import/k8s.yaml
+- live prod — *HAS* — deployed volumes
+- deployed volumes — *HAVE_CAPACITY* — ~294 GiB
+- deployed volumes — *WERE_PROVISIONED_BEYOND* — repo
+- live prod — *HAS_SCRATCH_VOLUME* — temp-storage
+- tmp-scratch — *HAS_RIGHT_SIZED_TARGET* — 10-20Gi
+- deployed volumes — *LOCATED_ON* — prod
+- deployed volumes — *LOCATED_ON* — performance cluster
 
 %% ai-graph-end %%

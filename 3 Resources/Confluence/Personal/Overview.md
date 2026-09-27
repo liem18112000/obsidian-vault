@@ -1,13 +1,18 @@
 ---
-title: "Overview"
+ai_hash: 5e835c9ddd05bed4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48769435291'
 created: 2025-10-20
-updated: 2025-10-20
-type: source
+entities: []
+source: Confluence · ~71202087b0f7f1aaab4406a25dfa0fc075c4d4 - liem.doanvanthanh
 status: reference
-source: "Confluence · ~71202087b0f7f1aaab4406a25dfa0fc075c4d4 - liem.doanvanthanh"
+tags:
+- confluence
+title: Overview
+type: source
+updated: 2025-10-20
 url: https://axonivy.atlassian.net/wiki/spaces/~71202087b0f7f1aaab4406a25dfa0fc075c4d4/overview
-confluence_id: "48769435291"
-tags: [confluence]
 ---
 
 # Overview
@@ -64,3 +69,14 @@ Create blog post
 👤
 
 End with a bang! Some options are: "I am so grateful to be here at \<Insert company name\> and very excited to get started!" or "Looking forward to meeting all of you!" or "Can't wait to get to know all of you!"
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Meeting notes in space]]
+- [[Liem Doan Plan]]
+- [[Confluence Export — Index]]
+- [[Page 2026-04-16 09 -00]]
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+
+%% ai-graph-end %%

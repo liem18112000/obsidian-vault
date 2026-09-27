@@ -1,14 +1,21 @@
 ---
-title: "Code Knowledge Graph: Apply in AI Test Driven"
+ai_hash: 991ebd19a24d7ed2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49269506102'
+confluence_path: Team Kepler > Developer note > AI Research > Agentic and LLM
 created: 2026-03-25
-updated: 2026-03-25
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- search
+title: 'Code Knowledge Graph: Apply in AI Test Driven'
+type: source
+updated: 2026-03-25
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49269506102/Code+Knowledge+Graph+Apply+in+AI+Test+Driven
-confluence_id: "49269506102"
-confluence_path: "Team Kepler > Developer note > AI Research > Agentic and LLM"
-tags: [confluence, ai-agents, search]
 ---
 
 # Code Knowledge Graph: Apply in AI Test Driven
@@ -279,3 +286,14 @@ The graph has first-class support for Behaviour-Driven Development artifacts.
 | **Full** (`build()`) | First run or periodic refresh | Medium | All (skips unchanged via hash) |
 | **Incremental** (`update()`) | After each commit | Fast | Changed + their dependents |
 | **Force** (`build(force=True)`) | Parser upgrade or corruption | Slow | All (no skipping) |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A code knowledge graph answers impact questions that embedding search cannot]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+- [[Test-Plan Definition Agent]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Axonivycloud - Volumes architecture for a kubernetes AWS EKS"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3555243283/Axonivycloud+-+Volumes+architecture+for+a+kubernetes+AWS+EKS
-space: "AII"
-topic: infra
-relevance: 0.762
-depth: 2.43
-updated: 2019-10-02
+ai_hash: 198bc30ac1e6c433
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 2.43
+entities: []
+relevance: 0.762
+source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3555243283/Axonivycloud+-+Volumes+architecture+for+a+kubernetes+AWS+EKS
+space: AII
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/aii
+- confluence
+- infra
+- space/aii
+title: Axonivycloud - Volumes architecture for a kubernetes AWS EKS
+topic: infra
+type: source
+updated: 2019-10-02
 ---
 
 # Axonivycloud - Volumes architecture for a kubernetes AWS EKS
@@ -113,3 +117,14 @@ If not, you may got this error when create the pod which requited persistent sto
 <a href="https://github.com/kubernetes-incubator/external-storage/tree/master/aws/efs" class="external-link" rel="nofollow">https://github.com/kubernetes-incubator/external-storage/tree/master/aws/efs</a>
 
 <a href="https://medium.com/devopslinks/aws-eks-volumes-architecture-in-a-statefull-app-in-multiple-azs-6ca1b05f80eb" class="external-link" rel="nofollow">https://medium.com/devopslinks/aws-eks-volumes-architecture-in-a-statefull-app-in-multiple-azs-6ca1b05f80eb</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AxonivyCloud - Infrastructure Diagram EKS Proposal]]
+- [[Axonivycloud - Monitoring EKS cluster using Prometheus and Grafana]]
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+- [[Jenkins in cluster container]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

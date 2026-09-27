@@ -1,14 +1,20 @@
 ---
-title: "LLM Comparison Matrix for Agent Applications"
+ai_hash: b1a4516759ac7123
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48857448548'
+confluence_path: Team Kepler > Developer note
 created: 2025-11-10
-updated: 2025-11-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: LLM Comparison Matrix for Agent Applications
+type: source
+updated: 2025-11-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48857448548/LLM+Comparison+Matrix+for+Agent+Applications
-confluence_id: "48857448548"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, ai-agents]
 ---
 
 # LLM Comparison Matrix for Agent Applications
@@ -50,3 +56,14 @@ I'll create a comprehensive comparison matrix for leading LLMs optimized for age
 - **Cost Format**: Input/Output pricing
 
 This matrix reflects current market positioning as of early 2025, with emphasis on capabilities most critical for autonomous agent deployment.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Local LLM choice for the test-agent workload (Ollama)]]
+- [[A 2-4GB local model cannot match Sonnet 5 — plug the real API instead]]
+- [[Best fully-offline CPU config for test-agent-v2 (qwen2.53b + Turbo)]]
+- [[Knowledge Base Solutions Comparison Guide]]
+- [[Skill-based Compression Techniques - Overview]]
+
+%% ai-graph-end %%

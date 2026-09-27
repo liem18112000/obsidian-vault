@@ -1,18 +1,22 @@
 ---
-title: "Rhine API Java Client"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2479942222/Rhine+API+Java+Client
-space: "AI"
-topic: programming
-relevance: 0.871
-depth: 3
-updated: 2021-12-06
+ai_hash: 82ff8c6640747b37
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.871
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2479942222/Rhine+API+Java+Client
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Rhine API Java Client
+topic: programming
+type: source
+updated: 2021-12-06
 ---
 
 # Rhine API Java Client
@@ -174,3 +178,14 @@ try (Consumer consumer = consumerFactory.getConsumer()) {
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rhine API's Open API Documents]]
+- [[Invoice API Java Client]]
+- [[OCR API Java Client]]
+- [[Rhine API Explained]]
+- [[Invoice API]]
+
+%% ai-graph-end %%

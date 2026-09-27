@@ -1,25 +1,24 @@
 ---
-ai_hash: b6e8a493175fc0f9
+ai_hash: 029300cafe7c743d
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-26
 entities:
 - LEO CDP
 - Keycloak
-- tenant_id claim mapper
-- LEO Customer 360 API
-- auth middleware
-- Postgres
-- app.tenant_id (session var)
-- app.user_id (session var)
+- LEO Customer 360's API
+- Multi-tenant isolation
+- Bearer token
+- Postgres session vars
+- app.tenant_id
+- app.user_id
 - Row-Level Security (RLS)
 - tenant_policy
 - customer360 schema
 - migrations/001_harden_tenant_rls_policies.sql
 - SSO_LOGIN
-- Keycloak access token
 - tenant_id custom claim
-- protocol mapper
+- Protocol mapper
 - leocdp client
 - sys_user
 - sys_userinfo
@@ -27,14 +26,13 @@ entities:
 - DEV_JWT_SECRET
 - OIDC token introspection
 - Redis
-- /health route
-- /api/v1/metadata route
-- /api/v1/auth/* routes
-- schema migrations
+- /health endpoint
+- /api/v1/metadata endpoint
+- /api/v1/auth/* endpoints
+- LEO CDP schema migrations
 - dbmate
 - alembic
-- bearer token
-- 401 'Tenant context could not be resolved'
+- Keycloak tenant_id claim mapper
 source: leo-customer360 release-doc work, session 2026-08-26
 status: seedling
 tags:
@@ -71,36 +69,53 @@ Auth has two modes via `SSO_LOGIN`: false = local HS256 dev JWT (`DEV_JWT_SECRET
 - [[Monitoring-dashboard SSO login user is c360admin, not the Keycloak master admin]]
 
 **Relations:**
-- LEO CDP — *has property* — tenant isolation fails closed
-- LEO CDP — *needs* — Keycloak tenant_id claim mapper
-- LEO Customer 360 API — *enforces* — fail-closed multi-tenant isolation
-- auth middleware — *resolves* — app.tenant_id (session var)
-- auth middleware — *resolves* — app.user_id (session var)
-- auth middleware — *pushes to* — Postgres
-- app.tenant_id (session var) — *drives* — Row-Level Security (RLS)
-- app.user_id (session var) — *drives* — Row-Level Security (RLS)
-- Row-Level Security (RLS) — *applies to* — customer360 schema
-- tenant_policy — *hardened by* — migrations/001_harden_tenant_rls_policies.sql
-- app.tenant_id (session var) — *failure to resolve leads to* — 401 'Tenant context could not be resolved'
+- LEO CDP tenant isolation — *fails closed* — 
+- LEO CDP tenant isolation — *needs* — Keycloak tenant_id claim mapper
+- LEO Customer 360's API — *enforces* — Multi-tenant isolation
+- Multi-tenant isolation — *is* — fail-closed
+- LEO Customer 360's API — *resolves* — app.tenant_id
+- LEO Customer 360's API — *resolves* — app.user_id
+- LEO Customer 360's API — *pushes* — app.tenant_id
+- LEO Customer 360's API — *pushes* — app.user_id
+- app.tenant_id — *from* — Bearer token
+- app.user_id — *from* — Bearer token
+- app.tenant_id — *into* — Postgres session vars
+- app.user_id — *into* — Postgres session vars
+- Postgres session vars — *drive* — Row-Level Security (RLS)
+- Row-Level Security (RLS) — *uses* — tenant_policy
+- tenant_policy — *on* — customer360 schema
+- customer360 schema — *hardened by* — migrations/001_harden_tenant_rls_policies.sql
+- migrations/001_harden_tenant_rls_policies.sql — *prevents* — blank app.tenant_id matching everything
 - Keycloak access token — *must carry* — tenant_id custom claim
-- tenant_id custom claim — *configured via* — protocol mapper
-- protocol mapper — *on* — leocdp client
-- tenant_id claim mapper — *absence leads to* — empty data
-- tenant_id claim mapper — *absence leads to* — provisioning refusal
-- provisioning refusal — *affects* — sys_user
-- provisioning refusal — *affects* — sys_userinfo
-- SSO_LOGIN — *determines* — Auth modes
-- SSO_LOGIN — *false uses* — HS256 dev JWT
+- tenant_id custom claim — *provided via* — Protocol mapper
+- Protocol mapper — *on* — leocdp client
+- SSO_LOGIN=true — *requires* — Keycloak access token
+- SSO_LOGIN=false — *uses* — HS256 dev JWT
 - HS256 dev JWT — *uses* — DEV_JWT_SECRET
-- SSO_LOGIN — *true uses* — Keycloak OIDC token introspection
+- SSO_LOGIN=true — *uses* — OIDC token introspection
 - OIDC token introspection — *cached in* — Redis
-- bearer token — *required for* — most routes
-- bearer token — *not required for* — /health route
-- bearer token — *not required for* — /api/v1/metadata route
-- bearer token — *not required for* — /api/v1/auth/* routes
-- LEO CDP — *uses* — schema migrations
-- schema migrations — *are* — ordered plain SQL
-- schema migrations — *are not* — dbmate
-- schema migrations — *are not* — alembic
+- Bearer token — *required on* — all routes
+- Bearer token — *not required on* — /health endpoint
+- Bearer token — *not required on* — /api/v1/metadata endpoint
+- Bearer token — *not required on* — /api/v1/auth/* endpoints
+- LEO CDP — *related to* — LEO CDP schema migrations
+- LEO CDP schema migrations — *are* — ordered plain SQL
+- LEO CDP schema migrations — *not* — dbmate
+- LEO CDP schema migrations — *not* — alembic
+- Keycloak — *provides* — Keycloak access token
+- Keycloak — *provides* — OIDC token introspection
+- Keycloak — *has* — leocdp client
+- Keycloak tenant_id claim mapper — *is a type of* — Protocol mapper
+- Keycloak tenant_id claim mapper — *provides* — tenant_id custom claim
+- Keycloak — *is a* — SSO
+- LEO CDP — *uses* — Keycloak
+- LEO CDP — *uses* — Postgres
+- LEO CDP — *uses* — Redis
+- LEO CDP — *uses* — Row-Level Security (RLS)
+- LEO CDP — *uses* — LEO Customer 360's API
+- LEO CDP — *has* — tenant isolation
+- LEO CDP — *has* — schema migrations
+- LEO Customer 360's API — *is part of* — LEO CDP
+- Keycloak tenant_id claim mapper — *is a* — claim mapper
 
 %% ai-graph-end %%

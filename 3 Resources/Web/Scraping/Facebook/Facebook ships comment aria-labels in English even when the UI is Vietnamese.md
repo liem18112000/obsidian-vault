@@ -1,7 +1,7 @@
 ---
-ai_hash: 72cc5e0c8e7ea03d
+ai_hash: df93c70d8f0ca3c4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-22
 entities: []
 source: fb-info-project session 2026-06-22
@@ -34,6 +34,6 @@ Surfaced while fixing the reply-to column in fb-info-project. Parent idea: [[Fac
 - [[Unanchored 'From' regex captures the profile name from Facebook's 'See more from' buttons]]
 - [[Facebook reply-expander button label variants]]
 - [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
-- [[Facebook reel comments are hidden behind the comment icon]]
+- [[Verify Facebook comment sort switch by re-reading the sort button label]]
 
 %% ai-graph-end %%

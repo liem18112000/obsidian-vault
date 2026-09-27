@@ -1,5 +1,5 @@
 ---
-ai_hash: 52ad415a9dd5a6e4
+ai_hash: f659441faf27c5a1
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-13
@@ -9,38 +9,69 @@ entities:
 - dev env
 - c6b1e23
 - 45b05710…
-- ZIP import
+- '2026-08-13'
+- docs/tests/import-benchmark-2026-08-13_env_performance*
 - 1k warm import
+- 46 s
+- 100 s
 - 2.5k warm import
-- 250-doc × 100 runs
-- 5k import
+- 89 s
+- 170 s
+- 22 docs/s
+- 28 docs/s
+- 10 docs/s
+- 15 docs/s
+- cold-start
+- 1.25×
+- 2.4×
 - antivirus-metadata timeouts
-- Mongo shard
+- '0'
+- '3'
+- downstream/AV headroom
+- dedicated per-tenant Mongo shard
 - 2 replicas
+- 250-doc × 100 runs
+- 100/100 DONE
+- 250 imported
+- 0 failures
+- 33.6 s
+- 50 s
+- 935 s
+- N=100
+- 5k import
+- high-variance
+- shared env
+- 196 s
+- 1077 s
+- other workloads
+- uploads
+- 5 s
+- 26 s
 - cluster load
-- code performance
+- code
 - reliability
-- soak testing
+- soak
+- many small samples
+- spikes
 - Performance Mongo
 - mongos-routed sharded cluster
 - tenant's shard primary
 - mongos
 - median
 - p90
-- mean
+- many runs
 - latency
 - noisy shared env
+- mean
+- few runs
 - Small import batches
 - overhead-bound
 - per-item throughput
 - large batches
-- cold first-import slowness
+- luz-docs-import cold first-import slowness
 - JIT
 - downstream re-warm
 - CPU-limited pod
-- warm throughput
-- cold-start
-- load-spike outlier
 source: docs/tests/import-benchmark-2026-08-13_env_performance* 2026-08-13
 status: seedling
 tags:
@@ -82,47 +113,67 @@ Related: [[Performance Mongo is a mongos-routed sharded cluster — truncate via
 - [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
 
 **Relations:**
-- luz-docs-import — *benchmarked_on* — performance env
-- performance env — *uses_code_image* — c6b1e23
-- dev env — *uses_code_image* — c6b1e23
-- performance env — *has_tenant* — 45b05710…
-- performance env — *is_faster_than* — dev env
+- luz-docs-import — *benchmarked on* — performance env
+- luz-docs-import — *benchmarked on* — dev env
+- performance env — *uses code/image* — c6b1e23
+- dev env — *uses code/image* — c6b1e23
+- performance env — *has tenant* — 45b05710…
+- benchmark — *conducted on* — 2026-08-13
+- import benchmark reports — *located at* — docs/tests/import-benchmark-2026-08-13_env_performance*
+- performance env — *is* — 2× faster than dev env
+- performance env — *handles* — 1k warm import
+- 1k warm import — *in* — 46 s
+- dev env — *handles* — 1k warm import
+- 1k warm import — *in* — 100 s
+- performance env — *handles* — 2.5k warm import
+- 2.5k warm import — *in* — 89 s
+- dev env — *handles* — 2.5k warm import
+- 2.5k warm import — *in* — 170 s
+- performance env — *has warm throughput* — 22 docs/s
+- performance env — *has warm throughput* — 28 docs/s
+- dev env — *has warm throughput* — 10 docs/s
+- dev env — *has warm throughput* — 15 docs/s
+- performance env — *has milder* — cold-start
+- performance env — *has cold/warm ratio* — 1.25×
+- dev env — *has cold/warm ratio* — 2.4×
 - performance env — *has* — 0 antivirus-metadata timeouts
-- dev env — *experienced* — antivirus-metadata timeouts
+- dev env — *hit* — 3 antivirus-metadata timeouts
+- performance env — *has* — downstream/AV headroom
 - performance env — *has* — dedicated per-tenant Mongo shard
 - performance env — *has* — 2 replicas
-- 1k warm import — *takes_on* — ~46 s
-- 1k warm import — *takes_on_dev_env* — ~100 s
-- 2.5k warm import — *takes_on* — ~89 s
-- 2.5k warm import — *takes_on_dev_env* — ~170 s
-- warm throughput — *is_on* — performance env
-- warm throughput — *is_on* — dev env
-- cold-start — *is_on* — performance env
-- cold-start — *is_on* — dev env
-- 250-doc × 100 runs — *resulted_in* — 100/100 DONE
-- 250-doc × 100 runs — *had_median* — 33.6 s
-- 250-doc × 100 runs — *had_p90* — 50 s
-- 250-doc × 100 runs — *had* — one 935 s load-spike outlier
-- 5k import — *is_on* — high-variance
-- 5k import — *ranged_on* — shared env
+- 250-doc × 100 runs — *resulted in* — 100/100 DONE
+- 250-doc × 100 runs — *resulted in* — 250 imported
+- 250-doc × 100 runs — *resulted in* — 0 failures
+- 250-doc × 100 runs — *has median time* — 33.6 s
+- 250-doc × 100 runs — *has p90 time* — 50 s
+- 250-doc × 100 runs — *has outlier* — 935 s
+- N=100 — *implies* — Reliable
+- 5k import — *is* — high-variance
+- 5k import — *on* — shared env
+- 5k import — *ranged* — 196 s
+- 5k import — *ranged* — 1077 s
+- 5k import — *affected by* — other workloads
+- other workloads — *include* — uploads
+- uploads — *ranged* — 5 s
+- uploads — *ranged* — 26 s
 - Large-batch timings — *measure* — cluster load
-- Large-batch timings — *do_not_measure* — code performance
-- performance env — *used_for* — reliability
-- performance env — *used_for* — soak testing
-- Performance Mongo — *is_a* — mongos-routed sharded cluster
+- Large-batch timings — *do not measure* — code
+- performance env — *used for* — reliability
+- performance env — *used for* — soak
+- Performance Mongo — *is a* — mongos-routed sharded cluster
 - truncate — *via* — tenant's shard primary
-- truncate — *not_via* — mongos
-- Trust — *median* — true
-- Trust — *p90* — true
-- median — *preferred_over* — mean
-- p90 — *preferred_over* — mean
-- median — *is_for* — latency
-- p90 — *is_for* — latency
-- latency — *occurs_on* — noisy shared env
+- truncate — *not via* — mongos
+- Trust — *median* — for latency
+- Trust — *p90* — for latency
+- Trust — *many runs* — for latency
+- Do not trust — *mean* — for latency
+- Do not trust — *few runs* — for latency
+- latency — *on* — noisy shared env
 - Small import batches — *are* — overhead-bound
-- Small import batches — *has_lower_throughput_than* — large batches
-- luz-docs-import cold first-import slowness — *is_due_to* — JIT
-- luz-docs-import cold first-import slowness — *is_due_to* — downstream re-warm
-- cold first-import slowness — *occurs_on* — CPU-limited pod
+- Small import batches — *have lower* — per-item throughput
+- per-item throughput — *is lower than* — large batches
+- luz-docs-import cold first-import slowness — *caused by* — JIT
+- luz-docs-import cold first-import slowness — *caused by* — downstream re-warm
+- luz-docs-import cold first-import slowness — *occurs on* — CPU-limited pod
 
 %% ai-graph-end %%

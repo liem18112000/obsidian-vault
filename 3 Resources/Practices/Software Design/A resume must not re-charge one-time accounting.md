@@ -1,7 +1,7 @@
 ---
-ai_hash: d7d3d76424fecaab
+ai_hash: e7f692c312e5b519
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-15
 entities: []
 source: fb-info-project pause/resume, 2026-06-15
@@ -38,9 +38,9 @@ Related: [[A persisted dedup cache doubles as a resume log]], [[Checkpoint files
 %% ai-graph-start %%
 
 **Related notes:**
-- [[A persisted dedup cache doubles as a resume log]]
 - [[Persist the guard before the side effect for at-most-once]]
 - [[Test resume by pre-seeding a checkpoint, not by simulating an interrupt]]
+- [[A persisted dedup cache doubles as a resume log]]
 - [[Reconstitute done items from the run cache when rewriting an aggregated output file on resume]]
 - [[Checkpoint files atomic tmp+rename write plus an input fingerprint]]
 

@@ -1,10 +1,20 @@
 ---
-title: "Per-tenant encryption keys make GDPR deletion a key destruction"
+ai_hash: 250379e22b61113e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: IR - System Design (AI)'
 status: seedling
-source: "Confluence: IR - System Design (AI)"
-tags: [gdpr, crypto-shredding, multi-tenancy, search, opensearch, confluence-distilled]
+tags:
+- gdpr
+- crypto-shredding
+- multi-tenancy
+- search
+- opensearch
+- confluence-distilled
+title: Per-tenant encryption keys make GDPR deletion a key destruction
+type: concept
 ---
 
 # Per-tenant encryption keys make GDPR deletion a key destruction
@@ -34,3 +44,13 @@ Source: [[IR - System Design]] (AI, Confluence).
 ## Related
 
 - [[Envelope encryption with Vault transit keeps Vault off the data path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Embedding a search library means building its control plane yourself]]
+- [[IR - System Design]]
+- [[Envelope encryption with Vault transit keeps Vault off the data path]]
+- [[Draw the tenant boundary at legal data ownership, and make it reassignable]]
+
+%% ai-graph-end %%

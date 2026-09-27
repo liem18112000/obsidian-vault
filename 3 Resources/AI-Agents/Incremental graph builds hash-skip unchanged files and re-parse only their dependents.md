@@ -1,10 +1,36 @@
 ---
-title: "Incremental graph builds hash-skip unchanged files and re-parse only their dependents"
+ai_hash: b4c9512811733cea
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities:
+- Incremental graph builds
+- Code graph
+- Hash-based skip
+- SHA-256
+- Dependent tracing
+- git diff
+- import edges
+- stale edges
+- embeddings
+- Vertex AI
+- adjacency lists
+- BFS
+- incremental pipeline
+- invalidation set
+- changed inputs
+- A code knowledge graph
+source: 'Confluence: Code Knowledge Graph - Apply in AI Test Driven (2026-03-25)'
 status: seedling
-source: "Confluence: Code Knowledge Graph - Apply in AI Test Driven (2026-03-25)"
-tags: [code-knowledge-graph, incremental-build, caching, static-analysis, gotcha]
+tags:
+- code-knowledge-graph
+- incremental-build
+- caching
+- static-analysis
+- gotcha
+title: Incremental graph builds hash-skip unchanged files and re-parse only their
+  dependents
+type: lesson
 ---
 
 # Incremental graph builds hash-skip unchanged files and re-parse only their dependents
@@ -27,3 +53,29 @@ General principle worth lifting out: **in any incremental pipeline, the invalida
 ## Related
 
 - [[A code knowledge graph answers impact questions that embedding search cannot]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A code knowledge graph answers impact questions that embedding search cannot]]
+- [[Code Knowledge Graph - Apply in AI Test Driven]]
+
+**Relations:**
+- Incremental graph builds — *improves* — Code graph
+- Incremental graph builds — *employs* — Hash-based skip
+- Incremental graph builds — *employs* — Dependent tracing
+- Hash-based skip — *utilizes* — SHA-256
+- Dependent tracing — *uses* — git diff
+- Dependent tracing — *processes* — import edges
+- naive incremental builds — *can lead to* — stale edges
+- embeddings — *regenerated with* — Hash-based skip
+- embeddings — *batched into* — Vertex AI
+- adjacency lists — *support* — BFS
+- adjacency lists — *are* — cached
+- adjacency lists — *invalidated by* — write
+- incremental pipeline — *defines* — invalidation set
+- invalidation set — *comprises* — changed inputs
+- invalidation set — *comprises* — everything that referenced them
+- Incremental graph builds — *is related to* — A code knowledge graph
+
+%% ai-graph-end %%

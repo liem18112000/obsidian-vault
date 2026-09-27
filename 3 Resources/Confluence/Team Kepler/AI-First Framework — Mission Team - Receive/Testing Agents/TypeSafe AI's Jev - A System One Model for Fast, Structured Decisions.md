@@ -1,14 +1,22 @@
 ---
-title: "TypeSafe AI's Jev: A System One Model for Fast, Structured Decisions"
+ai_hash: a782813976b888e0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49771675870'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-21
-updated: 2026-09-21
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- jev
+title: 'TypeSafe AI''s Jev: A System One Model for Fast, Structured Decisions'
+type: source
+updated: 2026-09-21
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49771675870/TypeSafe+AI+s+Jev+A+System+One+Model+for+Fast+Structured+Decisions
-confluence_id: "49771675870"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents, jev]
 ---
 
 # TypeSafe AI's Jev: A System One Model for Fast, Structured Decisions
@@ -102,3 +110,14 @@ The developer sets a **confidence threshold**: high → act autonomously; mid �
 | Maturity | early‑access, 32K ctx, text/JSON only | mature, broad ecosystem |
 
 **How to read this:** Jev is not "a better LLM" — it's a *different tool*. It wins decisively on the **narrow, repeated, schema‑known decision** where an LLM is overkill (latency, cost, and the parse/validate tax). The LLM still owns generation, explanation, and the ambiguous cases. The practical pattern is a **cascade**: Jev first, LLM only on the low‑confidence tail — see the companion note.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Understanding JEV - Mechanism, Primitives, and Calibration in Decision Making]]
+- [[System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs]]
+- [[Integrating Jev into Test-Agent-V2 for Enhanced Decision-Making]]
+- [[Customer 360 uses two model layers LLM for Generate, System One for StructureDecide]]
+- [[TypeSafe SDK Python system_one usage (v0.7.1)]]
+
+%% ai-graph-end %%

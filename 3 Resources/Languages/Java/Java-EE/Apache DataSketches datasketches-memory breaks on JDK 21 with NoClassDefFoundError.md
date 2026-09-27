@@ -1,7 +1,7 @@
 ---
-ai_hash: 644f7634da2be2a9
+ai_hash: fca5999bd8cc1bab
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-09
 entities: []
 source: luz_docs foldercount HLL implementation, 2026-07-09 — hit at runtime on JDK

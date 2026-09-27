@@ -1,10 +1,20 @@
 ---
-title: "GCP Data Access logs are off by default, so data-plane calls are unattributable"
+ai_hash: 7167d0c123d1af8d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: gotcha
+entities: []
+source: 'Confluence: INC-2026-09-24 Gemini consumption (LUZ)'
 status: seedling
-source: "Confluence: INC-2026-09-24 Gemini consumption (LUZ)"
-tags: [gcp, audit-logs, observability, security, incident-response, confluence-distilled]
+tags:
+- gcp
+- audit-logs
+- observability
+- security
+- incident-response
+- confluence-distilled
+title: GCP Data Access logs are off by default, so data-plane calls are unattributable
+type: gotcha
 ---
 
 # GCP Data Access logs are off by default, so data-plane calls are unattributable
@@ -41,3 +51,12 @@ Source: [[INC-2026-09-24 - posapp-android-ed1bd - Gemini consumption with no att
 ## Related
 
 - [[Shared and personal accounts make attribution impossible by construction]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shared and personal accounts make attribution impossible by construction]]
+- [[INC-2026-09-24 - posapp-android-ed1bd - Gemini consumption with no attributable user]]
+- [[Token input-output ratio fingerprints whether an LLM caller is an agent or a feature]]
+
+%% ai-graph-end %%

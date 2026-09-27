@@ -1,5 +1,5 @@
 ---
-ai_hash: b1cc7ed3793be7b4
+ai_hash: f941a4e1b8e739a6
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-03
@@ -43,9 +43,9 @@ Consequences to call out:
 
 **Related notes:**
 - [[Split Dagster webserver and daemon must share fail-closed Postgres storage]]
-- [[Dagster auto-creates its tables but not the database]]
 - [[Dagster { env VAR } config is resolved in the run-worker subprocess, so the var must be in the container env]]
-- [[Health checks should probe dependencies and split critical vs fail-open]]
+- [[Dagster auto-creates its tables but not the database]]
 - [[Dagster S3ComputeLogManager credentials via boto3 env, path-style via AWS config file]]
+- [[Health checks should probe dependencies and split critical vs fail-open]]
 
 %% ai-graph-end %%

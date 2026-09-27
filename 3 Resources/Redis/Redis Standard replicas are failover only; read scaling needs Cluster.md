@@ -1,10 +1,20 @@
 ---
-title: "Redis Standard replicas are failover only; read scaling needs Cluster"
+ai_hash: 7b4cade8b1e8ed26
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Memorystore for Redis vs Redis Cluster (LUZ)'
 status: seedling
-source: "Confluence: Memorystore for Redis vs Redis Cluster (LUZ)"
-tags: [redis, memorystore, gcp, scaling, sharding, confluence-distilled]
+tags:
+- redis
+- memorystore
+- gcp
+- scaling
+- sharding
+- confluence-distilled
+title: Redis Standard replicas are failover only; read scaling needs Cluster
+type: lesson
 ---
 
 # Redis Standard replicas are failover only; read scaling needs Cluster
@@ -41,3 +51,14 @@ Source: [[Memorystore for Redis Vs Memorystore for Redis Cluster]] (LUZ, Conflue
 ## Related
 
 - [[Store pod-level facts once, not copied into every user key]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Memorystore for Redis Vs Memorystore for Redis Cluster]]
+- [[Run an event-broker Redis as a dedicated co-located instance, not the cache Redis]]
+- [[Broker Redis needs opposite config from cache Redis, run it separately]]
+- [[Memorystore Redis is always VPC-internal — no public endpoint]]
+- [[Connection count, not tenant count, sizes a multi-tenant Postgres cluster]]
+
+%% ai-graph-end %%

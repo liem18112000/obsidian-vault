@@ -1,18 +1,22 @@
 ---
-title: "Luz-vault"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49065361421/Luz-vault
-space: "TK"
-topic: security
-relevance: 0.701
-depth: 2.5
-updated: 2026-01-21
+ai_hash: 9c07912869531a64
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.5
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49065361421/Luz-vault
+space: TK
+status: reference
 tags:
-  - confluence
-  - security
-  - space/tk
+- confluence
+- security
+- space/tk
+title: Luz-vault
+topic: security
+type: source
+updated: 2026-01-21
 ---
 
 # Luz-vault
@@ -263,3 +267,14 @@ For a new tenant or document:
     - Client sends **eDEK** to Vault: `POST /v1/logical/transit/decrypt/<tenant_id>`
 
     - Vault returns the plaintext **DEK**, which client uses to decrypt the document/file.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vault overview]]
+- [[Introduction of Hashicorp Vault]]
+- [[MessageV2 Field Encryption Approach]]
+- [[Luz-audit]]
+- [[Security]]
+
+%% ai-graph-end %%

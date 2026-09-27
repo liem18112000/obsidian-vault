@@ -1,14 +1,21 @@
 ---
-title: "Evaluating Knowledge-Gathering Agent - V2"
+ai_hash: 061d8b28e4b52a93
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49730683068'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 1 - Knowledge Gathering - v2'
 created: 2026-09-07
-updated: 2026-09-15
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Evaluating Knowledge-Gathering Agent - V2
+type: source
+updated: 2026-09-15
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49730683068/Evaluating+Knowledge-Gathering+Agent+-+V2
-confluence_id: "49730683068"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 1 - Knowledge Gathering - v2"
-tags: [confluence, ai-agents]
 ---
 
 # Evaluating Knowledge-Gathering Agent - V2
@@ -352,3 +359,14 @@ Each past KGA incident maps to a metric that would have flagged it **before** a 
 | **interrogation asks nothing** ("high confidence") | 2 | Agent Goal Accuracy = 0, Response Relevancy ↓ | an empty interrogation on a rich seed = goal not achieved; the "understanding" is generic. |
 | **ungrounded lead promoted** | 1 | Faithfulness ↓, `cites_only_real_ids` fail | an ungrounded lead introduces unsupported claims / invented ids in the understanding. |
 | **explore-loop drift** | 3 | Topic Adherence ↓ | round-over-round focus compared to the seed topic reference. |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Evaluating the Test-Plan-Definition Agent]]
+- [[Judge Calibration and Canary Seeds]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+- [[A deterministic scorer is a negative case for LLM-agent-ification — reuse ADK via custom EvalMetric, not LlmAgent]]
+- [[test-agent-v2 test_evaluation restructure engine + config packages + merged golden set]]
+
+%% ai-graph-end %%

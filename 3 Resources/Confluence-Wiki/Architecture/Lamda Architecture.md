@@ -1,18 +1,22 @@
 ---
-title: "Lamda Architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2457109074/Lamda+Architecture
-space: "AI"
-topic: architecture
-relevance: 0.755
-depth: 2.38
-updated: 2017-07-14
+ai_hash: bdefefc496d7e28b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.38
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2457109074/Lamda+Architecture
+space: AI
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ai
+- confluence
+- architecture
+- space/ai
+title: Lamda Architecture
+topic: architecture
+type: source
+updated: 2017-07-14
 ---
 
 # Lamda Architecture
@@ -37,3 +41,13 @@ In a technical discussion over the merits of employing a pure streaming approach
 ## See also
 
 <a href="http://lambda-architecture.net" class="external-link" rel="nofollow">http://lambda-architecture.net</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Kappa Architecture]]
+- [[Recipe Best practices implementing scalable distributed applications on cloud]]
+- [[Architecture (2457108704)]]
+- [[Synapse - ServerlessWorkflow Architecture overview]]
+
+%% ai-graph-end %%

@@ -1,9 +1,13 @@
 ---
-title: "Programming (Confluence)"
-type: moc
+ai_hash: 1c527d7e46754f6b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
 tags:
-  - moc
-  - confluence
+- moc
+- confluence
+title: Programming (Confluence)
+type: moc
 ---
 
 # Programming — Confluence sources
@@ -349,3 +353,14 @@ tags:
 | 0.70 | [[KLARA Documents solution implementation]] | LUZ | 2017-05-30 |
 | 0.70 | [[Notes for Analyze API metrics]] | AI | 2022-06-02 |
 | 0.70 | [[SOB WEB & APP Fraud Detection Investigation BE-1868]] | Arrow | 2025-01-20 |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture]]
+- [[Confluence Export — Index]]
+- [[One API end to end testing]]
+- [[Joint review 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[3 Resources]]
+
+%% ai-graph-end %%

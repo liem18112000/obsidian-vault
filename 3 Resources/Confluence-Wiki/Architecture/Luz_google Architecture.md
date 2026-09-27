@@ -1,18 +1,22 @@
 ---
-title: "Luz_google Architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20508042970/Luz_google+Architecture
-space: "LUZ"
-topic: architecture
-relevance: 0.777
-depth: 2.72
-updated: 2020-07-30
+ai_hash: 82e0e98a8da818e5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.72
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20508042970/Luz_google+Architecture
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Luz_google Architecture
+topic: architecture
+type: source
+updated: 2020-07-30
 ---
 
 # Luz_google Architecture
@@ -95,3 +99,14 @@ note: create new local post is only allowed once a location is verified.
 
 
 ![[20508042970-activity_diagram_luz_google.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz_google Api Document]]
+- [[Luz-audit]]
+- [[Investigate Analyze the API's which call to FileManager]]
+- [[Implement Corporate API Access (LUZ-17959)]]
+- [[Architecture]]
+
+%% ai-graph-end %%

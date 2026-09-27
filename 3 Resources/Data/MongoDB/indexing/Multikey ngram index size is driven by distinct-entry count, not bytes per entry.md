@@ -1,7 +1,7 @@
 ---
-ai_hash: c2836b326ba7a3d4
+ai_hash: ff6775d7f42571db
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-30
 entities: []
 source: luz_docs S2-index-size-options.md, 2026-06-30
@@ -40,6 +40,6 @@ Seen in docs/fulltext-search/S2-index-size-options.md (Kepler eArchive full-text
 - [[Larger n-grams make a substring ngram index bigger, not smaller]]
 - [[OCR body text dominates a full-text trigram index]]
 - [[Bounded bucketed hashing caps trigram index entries per document]]
-- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+- [[Trigram Index — Size-Reduction Options]]
 
 %% ai-graph-end %%

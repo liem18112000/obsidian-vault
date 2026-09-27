@@ -1,14 +1,21 @@
 ---
-title: "Test parallelize executor"
+ai_hash: afa8e127207e1902
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49594335233'
+confluence_path: Team Kepler > Developer note > Count Fan-out (K) Benchmark on Performance
+  Env
 created: 2026-07-17
-updated: 2026-07-17
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+title: Test parallelize executor
+type: source
+updated: 2026-07-17
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49594335233/Test+parallelize+executor
-confluence_id: "49594335233"
-confluence_path: "Team Kepler > Developer note > Count Fan-out (K) Benchmark on Performance Env"
-tags: [confluence, performance]
 ---
 
 # Test parallelize executor
@@ -116,3 +123,14 @@ Case K=6
 Case K=12
 
 ![[image-20260717-065747.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Count Fan-out (K) Benchmark on Performance Env]]
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[eArchive Performance measurement & scalability assessment at 800000 documents]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Handle report configuration for new fields (12.06.2023)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47401730049/Handle+report+configuration+for+new+fields+12.06.2023
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2023-06-15
+ai_hash: cea3b95d045bd426
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 30
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47401730049/Handle+report+configuration+for+new+fields+12.06.2023
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Handle report configuration for new fields (12.06.2023)
+topic: programming
+type: source
+updated: 2023-06-15
 ---
 
 # Handle report configuration for new fields (12.06.2023)
@@ -601,3 +605,14 @@ So incase add 1 new field then
 1.  luz_service add annotation for entity / attribute that you want to display it in luz_report_service
 
 2.  luz_report_service add new relationship configurtations.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Let the owning service hold the report field mapping as config, not the reporting service in code]]
+- [[Employee Report Implementation (10.05.2023)]]
+- [[Reporting - Java class configuration]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Exposing a GUI flow as an API means replacing everything the screen did for the user"
+ai_hash: 11d5a0b46ae8d5f5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Creating invoice GUI flow vs Public API (NEXT)'
 status: seedling
-source: "Confluence: Creating invoice GUI flow vs Public API (NEXT)"
-tags: [api-design, public-api, ux, product, scoping, confluence-distilled]
+tags:
+- api-design
+- public-api
+- ux
+- product
+- scoping
+- confluence-distilled
+title: Exposing a GUI flow as an API means replacing everything the screen did for
+  the user
+type: lesson
 ---
 
 # Exposing a GUI flow as an API means replacing everything the screen did for the user
@@ -43,3 +54,10 @@ Source: [[Creating invoice — GUI flow vs. Public API]] (NEXT, Confluence).
 ## Related
 
 - [[Put a public API adapter between external callers and internal services]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Creating invoice — GUI flow vs. Public API]]
+
+%% ai-graph-end %%

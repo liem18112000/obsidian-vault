@@ -1,18 +1,22 @@
 ---
-title: "Document Creator API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/WOW/pages/47097154141/Document+Creator+API
-space: "WOW"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2022-04-25
+ai_hash: c02f6717f5779fa5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/WOW/pages/47097154141/Document+Creator+API
+space: WOW
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/wow
+- confluence
+- programming
+- space/wow
+title: Document Creator API
+topic: programming
+type: source
+updated: 2022-04-25
 ---
 
 # Document Creator API
@@ -128,3 +132,14 @@ Postman api sample:
 | Test coverage report | org.jacoco.jacoco-maven-plugin |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Temporary Restfull APIs in Ivy]]
+- [[Upload Document API]]
+- [[Invoice API Java Client]]
+- [[Generating document from viewgen]]
+- [[Invoice API Reference]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Recipe: Github copilot"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47627468825/Recipe+Github+copilot
-space: "LUZ"
-topic: ai_ml
-relevance: 0.721
-depth: 2.69
-updated: 2024-10-24
+ai_hash: 70345f7878bafad8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 23
+depth: 2.69
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47627468825/Recipe+Github+copilot
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - ai-ml
-  - space/luz
+- confluence
+- ai-ml
+- space/luz
+title: 'Recipe: Github copilot'
+topic: ai_ml
+type: source
+updated: 2024-10-24
 ---
 
 # Recipe: Github copilot
@@ -237,3 +241,14 @@ The scenario is writing tests for a method before implementing the production co
 
 **Q: How can I switch to another code suggestion?**  
 **A:** `Alt + [` **or** `Alt + ]`
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Setup VS Code - Github Copilot - MCP Server]]
+- [[MCP Servers — Installation and Configuration Reference]]
+- [[Create a work space]]
+- [[AI Tools overview]]
+- [[Run GitHub Copilot CLI in a GitHub Actions workflow]]
+
+%% ai-graph-end %%

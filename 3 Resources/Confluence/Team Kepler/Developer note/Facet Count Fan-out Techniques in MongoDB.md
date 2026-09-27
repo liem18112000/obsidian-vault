@@ -1,14 +1,20 @@
 ---
-title: "Facet Count Fan-out Techniques in MongoDB"
+ai_hash: 486fa35b1db27eec
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49537843344'
+confluence_path: Team Kepler > Developer note
 created: 2026-06-26
-updated: 2026-06-26
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- mongodb
+title: Facet Count Fan-out Techniques in MongoDB
+type: source
+updated: 2026-06-26
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49537843344/Facet+Count+Fan-out+Techniques+in+MongoDB
-confluence_id: "49537843344"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, mongodb]
 ---
 
 # Facet Count Fan-out Techniques in MongoDB
@@ -76,3 +82,14 @@ tags: [confluence, mongodb]
 - 🟠 **Gate probe** `{_shard:{$exists:false}}` **is non-indexable**
 
 ![[image-20260626-073533.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Index Impact on MongoDB searchByFacets]]
+- [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]
+- [[Mongo facet $group count index only helps the $match prefix, not the count]]
+- [[Creating and Verifying _shard Indexes in MongoDB]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+
+%% ai-graph-end %%

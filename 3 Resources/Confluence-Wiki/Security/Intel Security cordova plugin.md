@@ -1,18 +1,22 @@
 ---
-title: "Intel Security cordova plugin"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38180333816/Intel+Security+cordova+plugin
-space: "Helios"
-topic: security
-relevance: 0.721
-depth: 2.8
-updated: 2018-11-02
+ai_hash: 5d9e32939cc8f33c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.8
+entities: []
+relevance: 0.721
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38180333816/Intel+Security+cordova+plugin
+space: Helios
+status: reference
 tags:
-  - confluence
-  - security
-  - space/helios
+- confluence
+- security
+- space/helios
+title: Intel Security cordova plugin
+topic: security
+type: source
+updated: 2018-11-02
 ---
 
 # Intel Security cordova plugin
@@ -91,3 +95,10 @@ this.intelSecurity.storage.delete({ id: key })
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

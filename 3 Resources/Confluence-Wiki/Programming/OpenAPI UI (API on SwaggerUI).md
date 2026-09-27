@@ -1,18 +1,22 @@
 ---
-title: "OpenAPI UI (API on SwaggerUI)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47137653591/OpenAPI+UI+API+on+SwaggerUI
-space: "LUZ"
-topic: programming
-relevance: 0.886
-depth: 3
-updated: 2022-06-29
+ai_hash: f63b587aefad3867
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 3
+entities: []
+relevance: 0.886
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47137653591/OpenAPI+UI+API+on+SwaggerUI
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: OpenAPI UI (API on SwaggerUI)
+topic: programming
+type: source
+updated: 2022-06-29
 ---
 
 # OpenAPI UI (API on SwaggerUI)
@@ -108,3 +112,14 @@ This section describes how to use the Swagger UI on DEV with a VPN connection.
 
 
 5.  Now you’re ready to go and test the APIs.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apply OpenAPI and try out API on SwaggerUI]]
+- [[Swagger UI]]
+- [[Port Forward to call GCP API in localhost]]
+- [[Microprofile OpenAPI config]]
+- [[Swagger with api explorer]]
+
+%% ai-graph-end %%

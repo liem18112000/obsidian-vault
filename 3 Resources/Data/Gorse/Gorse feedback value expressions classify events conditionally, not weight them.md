@@ -1,7 +1,7 @@
 ---
-ai_hash: dccff9b15960e50b
+ai_hash: 39c4c7b3de6960a6
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-22
 entities: []
 source: Deep research 2026-07-22 — gorse.io v0.5 release post + common/expression/expression.go
@@ -29,8 +29,8 @@ This is **conditional classification** — deciding whether an event is positive
 
 **Related notes:**
 - [[Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions]]
-- [[Gorse precomputes recommendations offline — per-request scoring is impossible inside it]]
 - [[Gorse config exposes model family and cadence, never hyperparameters]]
+- [[Gorse precomputes recommendations offline — per-request scoring is impossible inside it]]
 - [[LEO Personalization Engine uses config-first Gorse plus a Python re-rank layer]]
 - [[Gorse gotcha - CF and hyperparameter search are disabled by code defaults]]
 

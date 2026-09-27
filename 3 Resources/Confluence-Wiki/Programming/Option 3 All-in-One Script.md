@@ -1,18 +1,22 @@
 ---
-title: "Option 3: All-in-One Script"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/49092722690/Option+3+All-in-One+Script
-space: "IO"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2026-01-28
+ai_hash: 89c887a9a788af89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/49092722690/Option+3+All-in-One+Script
+space: IO
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/io
+- confluence
+- programming
+- space/io
+title: 'Option 3: All-in-One Script'
+topic: programming
+type: source
+updated: 2026-01-28
 ---
 
 # Option 3: All-in-One Script
@@ -97,3 +101,14 @@ User muss Tools selbst installieren (Vault, SSH, GPG)
 | **Mit VPN**                                    | **4,1** |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Introduction of Hashicorp Vault]]
+- [[luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator]]
+- [[luz-vault - How to run Vault Benchmark]]
+- [[How to unseal Vault Unseal]]
+- [[Vault overview]]
+
+%% ai-graph-end %%

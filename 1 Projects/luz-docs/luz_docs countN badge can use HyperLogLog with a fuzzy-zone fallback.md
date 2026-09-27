@@ -1,7 +1,7 @@
 ---
-ai_hash: 387e3a96fbe6fe40
+ai_hash: 6ef327fc1833112a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-09
 entities:
 - luz_docs
@@ -12,22 +12,36 @@ entities:
 - 500ms target
 - 128k+ docs
 - cosmetic threshold badge
+- predicate
 - precomputed dimensions
 - folder id
 - tag
 - security-class code
 - _isPublic
+- HLL sketch
+- write-path pattern
+- _effectiveSecurityClassCodes
+- _shard
 - materialize pipeline
 - arbitrary/ad hoc/free-text filter
 - index
+- $text
+- trigram field
+- estimate-vs-N comparison
 - fuzzy zone
+- raw point comparison
 - exact capped count
-- security-facing visible-document count
-- HyperLogLog error
+- 'limit: N+1'
+- luz_docs codebase
 - docs/bitmap-count-investigation.md
 - docs/perf-LUZ-154613-count-scaling-findings-and-solution.md
+- security-facing visible-document count
+- ~1-2% error
+- access-leak-shaped
+- cosmetic ">999" display badge
+- security count
 - HyperLogLog error in the small-range (linear-counting) regime
-- luz_docs documentscount
+- luz_docs documentscount is scan-bound and cannot reach sub-second at 128k
 source: luz_docs count-estimate research, 2026-07-09, branch kepler/sprint-159/LUZ-154613-shard-adapt-migraiton
 status: seedling
 tags:
@@ -63,8 +77,8 @@ This is a narrowing of an existing, already-decided rule in the luz_docs codebas
 - [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
 - [[HyperLogLog error in the small-range (linear-counting) regime]]
 - [[Visible-document count as cardinality of a bitmap union]]
-- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
-- [[luz_docs estimated-count POC drops CAS and backfill gate]]
+- [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
 
 **Relations:**
 - luz_docs — *is also known as* — Kepler
@@ -72,27 +86,39 @@ This is a narrowing of an existing, already-decided rule in the luz_docs codebas
 - count>N UI badge — *can use* — HyperLogLog
 - count>N UI badge — *can use* — fuzzy-zone fallback
 - HyperLogLog — *aims for* — 500ms target
-- HyperLogLog — *scales to* — 128k+ docs
+- HyperLogLog — *operates at* — 128k+ docs
 - count>N UI badge — *is a type of* — cosmetic threshold badge
-- HyperLogLog — *requires* — precomputed dimensions
-- precomputed dimensions — *include* — folder id
-- precomputed dimensions — *include* — tag
-- precomputed dimensions — *include* — security-class code
-- precomputed dimensions — *include* — _isPublic
-- _isPublic — *is updated in* — materialize pipeline
+- HyperLogLog — *is a fit for* — cosmetic threshold badge
+- predicate — *decomposes into* — precomputed dimensions
+- precomputed dimensions — *includes* — folder id
+- precomputed dimensions — *includes* — tag
+- precomputed dimensions — *includes* — security-class code
+- precomputed dimensions — *includes* — _isPublic
+- precomputed dimensions — *maintained as* — HLL sketch
+- HLL sketch — *updated by* — write-path pattern
+- write-path pattern — *used for* — _isPublic
+- write-path pattern — *used for* — _effectiveSecurityClassCodes
+- write-path pattern — *used for* — _shard
+- _isPublic — *is part of* — materialize pipeline
+- _effectiveSecurityClassCodes — *is part of* — materialize pipeline
+- _shard — *is part of* — materialize pipeline
 - HyperLogLog — *cannot handle* — arbitrary/ad hoc/free-text filter
-- arbitrary/ad hoc/free-text filter — *requires* — index
-- fuzzy zone — *is used for* — estimate-vs-N comparison
+- arbitrary/ad hoc/free-text filter — *needs* — index
+- index — *can be* — $text
+- index — *can be* — trigram field
+- estimate-vs-N comparison — *uses* — fuzzy zone
+- fuzzy zone — *is preferred over* — raw point comparison
+- fuzzy zone — *is explained by* — HyperLogLog error in the small-range (linear-counting) regime
 - fuzzy zone — *can trigger* — exact capped count
-- HyperLogLog — *has* — HyperLogLog error
-- HyperLogLog error — *is* — ~1-2% error
+- exact capped count — *uses* — limit: N+1
+- luz_docs codebase — *contains document* — docs/bitmap-count-investigation.md
+- luz_docs codebase — *contains document* — docs/perf-LUZ-154613-count-scaling-findings-and-solution.md
+- HyperLogLog — *rejected for* — security-facing visible-document count
+- HyperLogLog — *has* — ~1-2% error
 - ~1-2% error — *is* — access-leak-shaped
-- HyperLogLog — *is rejected for* — security-facing visible-document count
-- HyperLogLog — *is acceptable for* — cosmetic threshold badge
-- HyperLogLog error — *is detailed in* — HyperLogLog error in the small-range (linear-counting) regime
-- luz_docs — *has related document* — docs/bitmap-count-investigation.md
-- luz_docs — *has related document* — docs/perf-LUZ-154613-count-scaling-findings-and-solution.md
-- luz_docs documentscount — *is related to* — luz_docs
-- luz_docs documentscount — *is* — scan-bound
+- count>N UI badge — *is different from* — security-facing visible-document count
+- HyperLogLog — *acceptable for* — count>N UI badge
+- security-facing visible-document count — *is also known as* — security count
+- count>N UI badge — *is a type of* — cosmetic ">999" display badge
 
 %% ai-graph-end %%

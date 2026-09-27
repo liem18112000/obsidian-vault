@@ -1,40 +1,36 @@
 ---
-ai_hash: 9c65a23cb8ef1089
+ai_hash: 86344a16f2dd8836
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-27
 entities:
-- A2A multi-turn human-in-the-loop
-- Agent2Agent (A2A) protocol
-- Task
-- '`input-required` state'
+- A2A
+- Human-in-the-loop
+- Task state
+- input-required
 - Agent
-- questions
-- message/artifact
+- Human
 - Client
-- human
-- '`message/send`'
-- '`taskId`'
-- '`working` state'
-- '`contextId`'
-- dialogue
-- session state
-- long-term memory
+- message/artifact
+- message/send
+- taskId
+- working
+- contextId
+- Session state
+- Long-term memory
 - GCS folder
-- '`tasks/get`'
-- '`tasks/resubscribe`'
-- server restart
+- tasks/get
+- tasks/resubscribe
+- Server restart
+- SSE reconnect
 - A2A short-term memory
-- task history
-- one-shot A2A skill
-- human judgement call
-- Step 2 (Knowledge Refinement)
-- test-agent Testing Agent
+- Task history
+- One-shot A2A skill
+- Human judgement call
+- Knowledge Refinement
+- Testing Agent
 - LUZ-159671
-- 'Ground-then-refine: gathering grounds'
-- refinement interprets and confirms
-- answers
-- running understanding
+- Ground-then-refine gathering grounds, refinement interprets and confirms
 source: session 2026-08-27 test-agent
 status: seedling
 tags:
@@ -71,38 +67,30 @@ Source: designing Step 2 (Knowledge Refinement) of the test-agent Testing Agent 
 - [[Testing Agent builds each pipeline stage as a package mirroring the knowledge_gathering skeleton]]
 
 **Relations:**
-- A2A multi-turn human-in-the-loop — *uses* — Agent2Agent (A2A) protocol
-- A2A multi-turn human-in-the-loop — *involves* — Agent
-- A2A multi-turn human-in-the-loop — *involves* — human
-- Agent — *transitions* — Task
-- Task — *transitions to* — `input-required` state
-- Agent — *emits* — questions
-- questions — *are* — message/artifact
-- Client — *replies with* — `message/send`
-- `message/send` — *carries* — `taskId`
-- Client — *relays to* — human
-- human — *provides* — answers
-- Task — *moves to* — `working` state
-- dialogue — *grouped by* — `contextId`
-- session state — *persisted to* — long-term memory
-- session state — *includes* — questions
-- session state — *includes* — answers
-- session state — *includes* — running understanding
-- long-term memory — *example* — GCS folder
-- long-term memory — *keyed by* — `contextId`
-- `tasks/get` — *resumes* — dialogue
-- `tasks/resubscribe` — *resumes* — dialogue
-- dialogue — *resumes after* — server restart
+- A2A — *supports* — Human-in-the-loop
+- Agent — *transitions* — Task state
+- Task state — *becomes* — input-required
+- Agent — *emits* — message/artifact
+- Client — *relays to* — Human
+- Client — *replies with* — message/send
+- message/send — *carries* — taskId
+- message/send — *moves Task to* — working
+- Dialogue — *grouped under* — contextId
+- contextId — *shares conversation with* — input
+- Session state — *persists to* — Long-term memory
+- Long-term memory — *is* — GCS folder
+- Long-term memory — *keyed by* — contextId
+- tasks/get — *resumes* — Dialogue
+- tasks/resubscribe — *resumes* — Dialogue
+- Server restart — *requires* — tasks/get
+- Server restart — *requires* — tasks/resubscribe
 - A2A short-term memory — *covers* — live turn
-- A2A short-term memory — *includes* — task history
-- A2A short-term memory — *includes* — `contextId`
-- long-term memory — *covers* — durability
-- A2A multi-turn human-in-the-loop — *is fit for* — human judgement call
-- A2A multi-turn human-in-the-loop — *contrasts with* — one-shot A2A skill
-- A2A multi-turn human-in-the-loop — *designed for* — Step 2 (Knowledge Refinement)
-- Step 2 (Knowledge Refinement) — *is part of* — test-agent Testing Agent
-- test-agent Testing Agent — *has ID* — LUZ-159671
-- A2A multi-turn human-in-the-loop — *related to* — Ground-then-refine: gathering grounds
-- A2A multi-turn human-in-the-loop — *related to* — refinement interprets and confirms
+- A2A short-term memory — *includes* — Task history
+- A2A short-term memory — *includes* — contextId
+- Multi-turn shape — *fits* — Human judgement call
+- Knowledge Refinement — *is* — Step 2
+- Step 2 — *of* — Testing Agent
+- Testing Agent — *is* — LUZ-159671
+- Ground-then-refine gathering grounds, refinement interprets and confirms — *related to* — Knowledge Refinement
 
 %% ai-graph-end %%

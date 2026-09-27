@@ -1,18 +1,22 @@
 ---
-title: "[UIB] LUZ-146496 - eLetter inline edit"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49122770989/UIB+LUZ-146496+-+eLetter+inline+edit
-space: "Helios"
-topic: programming
-relevance: 0.779
-depth: 3
-updated: 2026-02-06
+ai_hash: 607585d324214f23
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 3
+entities: []
+relevance: 0.779
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49122770989/UIB+LUZ-146496+-+eLetter+inline+edit
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: '[UIB] LUZ-146496 - eLetter inline edit'
+topic: programming
+type: source
+updated: 2026-02-06
 ---
 
 # [UIB] LUZ-146496 - eLetter inline edit
@@ -237,3 +241,14 @@ Two options:
     - same implementation with 2 but we could avoid to see and side affect because of the limit we add to 2
 
 We’re continue to check with option 2
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-146746 Use correct API's for delete, restore and their undo]]
+- [[Full-object PUT instead of dedicated endpoint is a REST caller anti-pattern]]
+- [[Public API client performance analysis]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[iLetter current backend architecture]]
+
+%% ai-graph-end %%

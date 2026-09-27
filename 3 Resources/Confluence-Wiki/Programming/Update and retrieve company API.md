@@ -1,18 +1,22 @@
 ---
-title: "Update and retrieve company API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48569811582/Update+and+retrieve+company+API
-space: "TS"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2025-08-04
+ai_hash: 7304aef3072a5107
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48569811582/Update+and+retrieve+company+API
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Update and retrieve company API
+topic: programming
+type: source
+updated: 2025-08-04
 ---
 
 # Update and retrieve company API
@@ -68,3 +72,14 @@ The API for updating company information can also update location information. H
 So, we decided to create a new API for updating location information.
 
 (Will be updated when new API done)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz_google Api Document]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[Places Hubspot features have been applying to]]
+- [[15. Update companies by tenant id]]
+- [[RESTful API, Postman,]]
+
+%% ai-graph-end %%

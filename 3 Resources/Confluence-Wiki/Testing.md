@@ -1,9 +1,13 @@
 ---
-title: "Testing (Confluence)"
-type: moc
+ai_hash: dfa70ba44a75cf9f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
 tags:
-  - moc
-  - confluence
+- moc
+- confluence
+title: Testing (Confluence)
+type: moc
 ---
 
 # Testing — Confluence sources
@@ -18,3 +22,14 @@ tags:
 | 0.75 | [[ETL testing investigation]] | TS | 2023-04-20 |
 | 0.72 | [[Rethink and decide for testing strategy]] | Helios | 2021-02-02 |
 | 0.70 | [[One API end to end testing]] | LUZ | 2024-03-11 |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing Tool Comparison Playwright vs. k6]]
+- [[Rethink and decide for testing strategy]]
+- [[Confluence-Wiki]]
+- [[Playwright for UI E2E, k6 for load split by specialization not overlap]]
+- [[Use Case - AI-driven Testing]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "POS & myKLARA nginx ingress quick notes"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47573663885/POS+myKLARA+nginx+ingress+quick+notes
-space: "Helios"
-topic: infra
-relevance: 0.741
-depth: 2.66
-updated: 2023-12-14
+ai_hash: a7ccc388782e6ab6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.66
+entities: []
+relevance: 0.741
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47573663885/POS+myKLARA+nginx+ingress+quick+notes
+space: Helios
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/helios
+- confluence
+- infra
+- space/helios
+title: POS & myKLARA nginx ingress quick notes
+topic: infra
+type: source
+updated: 2023-12-14
 ---
 
 # POS & myKLARA nginx ingress quick notes
@@ -50,3 +54,14 @@ References:
 - <a href="https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47120516477/Apply+changes+on+luz+kubernetes" data-card-appearance="inline" rel="nofollow">https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47120516477/Apply+changes+on+luz+kubernetes</a>
 
 - [Recipe: GCP Cloud Armor (WAF) step by step guide](https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47063531691/Recipe+GCP+Cloud+Armor+WAF+step+by+step+guide)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apply changes on luz_kubernetes]]
+- [[Recipe Introduce a Global HTTP(S) Load Balancer on GCP at KLARA]]
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+- [[Update Ingress Controller for GKE v1.22]]
+
+%% ai-graph-end %%

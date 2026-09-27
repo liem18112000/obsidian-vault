@@ -1,7 +1,7 @@
 ---
-ai_hash: 3b60130d0cb539ea
+ai_hash: 046ae7aeadfcf928
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-08
 domain: affiliate-marketing
 entities:
@@ -9,94 +9,91 @@ entities:
 - Software Engineer
 - Musician
 - Content Production
-- Weekend-heavy Schedule
-- Software Engineering
-- Playing a Musical Instrument
-- Authority Site
-- Dev/SaaS Tools
-- Music-Tech
+- Weekend-heavy schedule
+- Credibility
+- Authority site
+- Dev/SaaS tools
+- Music-tech
 - Monetisation
 - Revenue Share
 - Cost per Sale
-- SE×musician Overlap
-- Affiliate Income
-- Production Time
-- Earning
-- SEO/Content Income
-- Evergreen, Batch-produced, Search-driven Content
-- Weeknight Slot
-- Weekend Block
-- Keyword Research
+- SE×musician overlap
+- Time budget
+- Affiliate income
+- Asynchronous earning
+- Synchronous activities
+- Evergreen, batch-produced, search-driven content
+- Schedule-to-task mapping
+- Weeknight slots
+- Weekend blocks
+- Keyword research
 - Outlining
-- Replying to Comments
-- Link/Analytics Checks
-- Small Edits
+- Replying to comments
+- Link/analytics checks
+- Small edits
 - Scheduling
 - Admin
 - Learning
-- Long-form Reviews/Comparisons
-- Instrument Demos & Video Recording
-- Building Tools/Micro-sites
-- Free Micro-tools
-- Affiliate Offers
-- Pillar A
-- Cloud Hosting & Infra
+- Writing long-form reviews/comparisons
+- Recording instrument demos & video
+- Building tools/micro-sites
+- Batch-producing
+- Drip on weeknights
+- Product categories
+- Expertise
+- Trust
+- Conversion
+- Affiliate economics
+- Pillar A (Software/SaaS/Dev tools)
+- Cloud hosting & infra
 - Developer SaaS
-- No-code / Automation
-- Programming Courses & Learning Platforms
-- Dev-adjacent Hardware
-- Pillar B
-- Music Software
-- Online Music Courses / Lesson Subscriptions
-- Instruments & Studio Gear
-- The Wedge
-- Audio Programming / DSP
-- MIDI Tooling
-- Building Music Apps
-- DAW Automation & Scripting
-- Home-studio Setups for Developers
-- Music Tech for People Who Code
-- Tools for Musician-developers
-- Payout Model
+- No-code/automation tools
+- Programming courses & learning platforms
+- Dev-adjacent hardware
+- Micro-tools
+- Pillar B (Music tech for musicians)
+- Music software
+- Online music courses/lesson subscriptions
+- Instruments & studio gear
+- The wedge niche
+- Audio programming/DSP
+- MIDI tooling
+- Building music apps
+- DAW automation & scripting
+- Home-studio setups for developers
+- Payout model
 - Earnings per Click (EPC)
 - Lifetime Value (LTV)
-- Cost per Action (CPA)
 - Cost per Registration (CPR)
+- Cost per Action
 - Cost per Lead (CPL)
 - Cost per Quality Lead (CPQL)
+- Affiliate program shortlist
 - Systeme.io
 - HubSpot
 - Zapier
 - Cloudways
-- Kajabi
-- Webflow
-- Framer
+- Kajabi/Webflow/Framer
 - Plugin Boutique
 - Sweetwater
 - Sam Ash
 - Thomann
 - Musora
-- Pianote
-- Drumeo
-- Guitareo
 - Amazon Associates
-- SEO Content
+- Risks & caveats
 - Time-to-traffic
-- Short Cookies
-- Gear Income
-- Returns
-- Reversals
-- Churn
-- FTC/Disclosure
-- 90-day Action Plan
-- Foundation Phase
-- Production Rhythm Phase
-- Compound & Measure Phase
-- Niche Selection
-- Site Setup
-- Cornerstone Reviews/Comparisons
-- Email List
-- Source
+- SEO content
+- Short cookies
+- Cookie Duration
+- Returns & churn
+- Reversal
+- FTC/disclosure
+- 90-day action plan
+- Foundation phase
+- Production rhythm phase
+- Compound & measure phase
+- Supademo
+- LiveChat Partners
 status: draft
 tags:
 - affiliate
@@ -292,102 +289,129 @@ Researched June 2026 (secondary roundups — verify on official program pages):
 - [[Revenue Share]]
 
 **Relations:**
-- Affiliate Strategy — *for* — Software Engineer
-- Affiliate Strategy — *for* — Musician
-- Software Engineer — *has credibility in* — Software Engineering
-- Musician — *has credibility in* — Playing a Musical Instrument
-- Software Engineer — *can produce* — Content Production
-- Musician — *can produce* — Content Production
-- Content Production — *has schedule* — Weekend-heavy Schedule
-- Affiliate Strategy — *recommends building* — Authority Site
-- Authority Site — *focuses on* — Dev/SaaS Tools
-- Authority Site — *focuses on* — Music-Tech
-- Authority Site — *monetises with* — Revenue Share
-- Authority Site — *monetises with* — Cost per Sale
-- Revenue Share — *is type* — Recurring
-- Cost per Sale — *applies to* — Music Software
-- Cost per Sale — *applies to* — Instruments & Studio Gear
-- SE×musician Overlap — *is a* — The Wedge
-- Affiliate Income — *is* — Asynchronous
-- Weekend-heavy Schedule — *limits* — Production Time
-- Weekend-heavy Schedule — *does not limit* — Earning
-- SEO/Content Income — *is not affected by* — Time Zone
-- SEO/Content Income — *is not affected by* — Audience
-- Evergreen, Batch-produced, Search-driven Content — *is suitable for* — Affiliate Income
-- Weeknight Slot — *best for* — Keyword Research
-- Weeknight Slot — *best for* — Outlining
-- Weeknight Slot — *best for* — Replying to Comments
-- Weeknight Slot — *best for* — Link/Analytics Checks
-- Weeknight Slot — *best for* — Small Edits
-- Weeknight Slot — *best for* — Scheduling
-- Weeknight Slot — *best for* — Admin
-- Weeknight Slot — *best for* — Learning
-- Weekend Block — *best for* — Long-form Reviews/Comparisons
-- Weekend Block — *best for* — Instrument Demos & Video Recording
-- Weekend Block — *best for* — Building Tools/Micro-sites
-- Building Tools/Micro-sites — *can create* — Free Micro-tools
-- Free Micro-tools — *funnel to* — Affiliate Offers
-- Pillar A — *focuses on* — Dev/SaaS Tools
-- Pillar A — *includes* — Cloud Hosting & Infra
-- Pillar A — *includes* — Developer SaaS
-- Pillar A — *includes* — No-code / Automation
-- Pillar A — *includes* — Programming Courses & Learning Platforms
-- Pillar A — *includes* — Dev-adjacent Hardware
-- Pillar B — *focuses on* — Music-Tech
-- Pillar B — *includes* — Music Software
-- Pillar B — *includes* — Online Music Courses / Lesson Subscriptions
-- Pillar B — *includes* — Instruments & Studio Gear
-- The Wedge — *includes* — Audio Programming / DSP
-- The Wedge — *includes* — MIDI Tooling
-- The Wedge — *includes* — Building Music Apps
-- The Wedge — *includes* — DAW Automation & Scripting
-- The Wedge — *includes* — Home-studio Setups for Developers
-- The Wedge — *includes* — Music Tech for People Who Code
-- The Wedge — *includes* — Tools for Musician-developers
-- Revenue Share — *is a type of* — Payout Model
-- Cost per Sale — *is a type of* — Payout Model
-- Cost per Action (CPA) — *is a type of* — Payout Model
-- Cost per Registration (CPR) — *is a type of* — Payout Model
-- Cost per Lead (CPL) — *is a type of* — Payout Model
-- Cost per Quality Lead (CPQL) — *is a type of* — Payout Model
-- Revenue Share — *used for* — Dev/SaaS Tools
-- Revenue Share — *used for* — Programming Courses & Learning Platforms
-- Cost per Sale — *used for* — Music Software
-- Cost per Sale — *used for* — Instruments & Studio Gear
-- Cost per Action (CPA) — *used for* — Dev/SaaS Tools
-- Cost per Registration (CPR) — *used for* — Dev/SaaS Tools
-- Earnings per Click (EPC) — *compares* — Affiliate Offers
-- Lifetime Value (LTV) — *is related to* — Revenue Share
-- Systeme.io — *is a* — Dev/SaaS Tools
-- HubSpot — *is a* — Dev/SaaS Tools
-- Zapier — *is a* — Dev/SaaS Tools
-- Cloudways — *is a* — Dev/SaaS Tools
-- Kajabi — *is a* — Dev/SaaS Tools
-- Webflow — *is a* — Dev/SaaS Tools
-- Framer — *is a* — Dev/SaaS Tools
-- Plugin Boutique — *sells* — Music Software
-- Sweetwater — *sells* — Instruments & Studio Gear
-- Sam Ash — *sells* — Instruments & Studio Gear
-- Thomann — *sells* — Instruments & Studio Gear
-- Musora — *offers* — Online Music Courses / Lesson Subscriptions
-- Pianote — *is part of* — Musora
-- Drumeo — *is part of* — Musora
-- Guitareo — *is part of* — Musora
-- Amazon Associates — *sells* — Instruments & Studio Gear
-- SEO Content — *has* — Time-to-traffic
-- Short Cookies — *undercut* — Gear Income
-- Returns — *trigger* — Reversals
-- Churn — *erodes* — Revenue Share
-- FTC/Disclosure — *is* — Mandatory
-- 90-day Action Plan — *includes* — Foundation Phase
-- 90-day Action Plan — *includes* — Production Rhythm Phase
-- 90-day Action Plan — *includes* — Compound & Measure Phase
-- Foundation Phase — *involves* — Niche Selection
-- Foundation Phase — *involves* — Site Setup
-- Foundation Phase — *involves* — Cornerstone Reviews/Comparisons
-- Foundation Phase — *involves* — Building Tools/Micro-sites
-- Compound & Measure Phase — *involves* — Email List
+- Affiliate Strategy — *is for* — Software Engineer
+- Affiliate Strategy — *is for* — Musician
+- Software Engineer — *can only produce content in* — Weekend-heavy schedule
+- Software Engineer — *has deep credibility in* — software engineering
+- Musician — *has deep credibility in* — playing a musical instrument
+- Affiliate Strategy — *builds* — Authority site
+- Authority site — *built around* — Dev/SaaS tools
+- Authority site — *built around* — Music-tech
+- Affiliate Strategy — *monetizes with* — Revenue Share
+- Affiliate Strategy — *monetizes with* — Cost per Sale
+- Revenue Share — *applies to* — SaaS
+- Cost per Sale — *applies to* — music software
+- Cost per Sale — *applies to* — gear
+- Affiliate Strategy — *exploits* — SE×musician overlap
+- SE×musician overlap — *is a* — The wedge niche
+- Weekend-heavy schedule — *is a type of* — Time budget
+- Affiliate income — *is* — Asynchronous earning
+- Asynchronous earning — *means schedule limits* — Content Production
+- Asynchronous earning — *does not limit* — Earning
+- Weekend-heavy schedule — *rules out* — Synchronous activities
+- Affiliate income — *is generated by* — Evergreen, batch-produced, search-driven content
+- Evergreen, batch-produced, search-driven content — *fits* — Weekend-heavy schedule
+- Schedule-to-task mapping — *matches tasks to* — Weeknight slots
+- Schedule-to-task mapping — *matches tasks to* — Weekend blocks
+- Weeknight slots — *best for* — Keyword research
+- Weeknight slots — *best for* — Outlining
+- Weeknight slots — *best for* — Replying to comments
+- Weeknight slots — *best for* — Link/analytics checks
+- Weeknight slots — *best for* — Small edits
+- Weeknight slots — *best for* — Scheduling
+- Weeknight slots — *best for* — Admin
+- Weeknight slots — *best for* — Learning
+- Weekend blocks — *best for* — Writing long-form reviews/comparisons
+- Weekend blocks — *best for* — Recording instrument demos & video
+- Weekend blocks — *best for* — Building tools/micro-sites
+- Weekend blocks — *best for* — Batch-producing
+- Batch-producing — *on* — Weekend blocks
+- Drip on weeknights — *is for* — Content Production
+- Product categories — *should align with* — Expertise
+- Product categories — *should align with* — Trust
+- Product categories — *should align with* — Conversion
+- Product categories — *should align with* — Affiliate economics
+- Pillar A (Software/SaaS/Dev tools) — *is a primary* — Product categories
+- Pillar A (Software/SaaS/Dev tools) — *includes* — Cloud hosting & infra
+- Pillar A (Software/SaaS/Dev tools) — *includes* — Developer SaaS
+- Pillar A (Software/SaaS/Dev tools) — *includes* — No-code/automation tools
+- Pillar A (Software/SaaS/Dev tools) — *includes* — Programming courses & learning platforms
+- Pillar A (Software/SaaS/Dev tools) — *includes* — Dev-adjacent hardware
+- Software Engineer — *can build* — Micro-tools
+- Micro-tools — *are a moat for* — Software Engineer
+- Pillar B (Music tech for musicians) — *is a secondary* — Product categories
+- Pillar B (Music tech for musicians) — *includes* — Music software
+- Pillar B (Music tech for musicians) — *includes* — Online music courses/lesson subscriptions
+- Pillar B (Music tech for musicians) — *includes* — Instruments & studio gear
+- The wedge niche — *is the* — SE×musician overlap
+- The wedge niche — *includes* — Audio programming/DSP
+- The wedge niche — *includes* — MIDI tooling
+- The wedge niche — *includes* — Building music apps
+- The wedge niche — *includes* — DAW automation & scripting
+- The wedge niche — *includes* — Home-studio setups for developers
+- Payout model — *ranked for* — Software Engineer
+- Payout model — *ranked for* — Musician
+- Revenue Share — *is rank 1 for* — Payout model
+- Revenue Share — *is suitable for* — SaaS
+- Revenue Share — *is suitable for* — dev tools
+- Revenue Share — *is suitable for* — hosting
+- Revenue Share — *is suitable for* — lesson subscriptions
+- Cost per Sale — *is rank 2 for* — Payout model
+- Cost per Sale — *is suitable for* — Music software
+- Cost per Sale — *is suitable for* — plugins
+- Cost per Sale — *is suitable for* — courses
+- Cost per Sale — *is suitable for* — instruments
+- Cost per Sale — *is suitable for* — dev hardware
+- Cost per Action — *is rank 3 for* — Payout model
+- Cost per Registration (CPR) — *is a type of* — Cost per Action
+- Cost per Action — *is suitable for* — Freemium SaaS
+- Cost per Action — *is suitable for* — dev tools with free tiers
+- Cost per Lead (CPL) — *is not recommended for* — Affiliate Strategy
+- Cost per Quality Lead (CPQL) — *is not recommended for* — Affiliate Strategy
+- Earnings per Click (EPC) — *compares* — affiliate offers
+- Lifetime Value (LTV) — *is a factor in* — Earnings per Click (EPC)
+- Cookie Duration — *is a factor in* — Earnings per Click (EPC)
+- Affiliate program shortlist — *includes* — Systeme.io
+- Affiliate program shortlist — *includes* — HubSpot
+- Affiliate program shortlist — *includes* — Zapier
+- Affiliate program shortlist — *includes* — Cloudways
+- Affiliate program shortlist — *includes* — Kajabi/Webflow/Framer
+- Affiliate program shortlist — *includes* — Plugin Boutique
+- Affiliate program shortlist — *includes* — Sweetwater
+- Affiliate program shortlist — *includes* — Sam Ash
+- Affiliate program shortlist — *includes* — Thomann
+- Affiliate program shortlist — *includes* — Musora
+- Affiliate program shortlist — *includes* — Amazon Associates
+- Systeme.io — *offers* — ~60% recurring commission
+- HubSpot — *offers* — ~30% recurring commission
+- Zapier — *offers* — ~25% recurring commission
+- Cloudways — *offers* — ~30% recurring commission
+- Kajabi/Webflow/Framer — *offers* — ~30–50% recurring commission
+- Plugin Boutique — *sells* — VSTs
+- Plugin Boutique — *sells* — DAWs
+- Plugin Boutique — *sells* — sample libs
+- Plugin Boutique — *sells* — music courses
+- Sweetwater — *offers* — ~4–8% commission
+- Sam Ash — *offers* — ~3–10% sliding commission
+- Thomann — *offers* — ~3.5–4.5% commission
+- Thomann — *has* — 14-day cookie
+- Musora — *offers* — Online music courses/lesson subscriptions
+- Amazon Associates — *has* — ~24 h cookie
+- Risks & caveats — *include* — Time-to-traffic
+- Risks & caveats — *include* — Short cookies
+- Risks & caveats — *include* — Returns & churn
+- Risks & caveats — *include* — FTC/disclosure
+- SEO content — *has* — long time-to-traffic
+- Short cookies — *undercut* — gear income
+- Returns & churn — *cause* — Reversal
+- FTC/disclosure — *is* — mandatory
+- 90-day action plan — *includes* — Foundation phase
+- 90-day action plan — *includes* — Production rhythm phase
+- 90-day action plan — *includes* — Compound & measure phase
+- Foundation phase — *is* — Weeks 1–4
+- Production rhythm phase — *is* — Weeks 5–8
+- Compound & measure phase — *is* — Weeks 9–12
 - Supademo — *is a* — Source
-- Program-roundup Blogs — *are a* — Source
+- LiveChat Partners — *is a* — Source
 
 %% ai-graph-end %%

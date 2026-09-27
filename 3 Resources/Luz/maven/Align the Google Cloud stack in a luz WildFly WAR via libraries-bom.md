@@ -1,5 +1,5 @@
 ---
-ai_hash: b90c378315e8bd51
+ai_hash: dec3ded7addd0568
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-10
@@ -35,10 +35,10 @@ Surfaced on LUZ-158230 (import-job Tier 4) in `luz_docs_import`.
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Hosting a PubSub consumer in a luz service with luz_message_receiver]]
 - [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff]]
+- [[Hosting a PubSub consumer in a luz service with luz_message_receiver]]
 - [[luz_docs_import targets Java 17 (javax stack, modern idioms allowed)]]
 - [[Kepler PubSub topology HTTP-to-luz_message_broker publisher, luz_message_receiver pull-consumers, jsonstore version-number CAS]]
-- [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+- [[MicroProfile @Retry can't do exponential backoff or HTTP-status-aware retry — use a manual loop]]
 
 %% ai-graph-end %%

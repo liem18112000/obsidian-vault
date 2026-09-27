@@ -1,10 +1,20 @@
 ---
-title: "Borrow the Kubernetes resource shape for objects in a schemaless store"
+ai_hash: 068075e91362157a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Synapse ServerlessWorkflow Database analysis (FUT)'
 status: seedling
-source: "Confluence: Synapse ServerlessWorkflow Database analysis (FUT)"
-tags: [kubernetes, data-modelling, redis, schema-evolution, conventions, confluence-distilled]
+tags:
+- kubernetes
+- data-modelling
+- redis
+- schema-evolution
+- conventions
+- confluence-distilled
+title: Borrow the Kubernetes resource shape for objects in a schemaless store
+type: concept
 ---
 
 # Borrow the Kubernetes resource shape for objects in a schemaless store
@@ -42,3 +52,12 @@ You can borrow Kubernetes' **resource-oriented** object model without running on
 > `spec` as *desired* state is only meaningful if something converges actual state toward it. Copy the manifest shape onto a plain CRUD store and you get K8s-looking documents with none of the semantics — worse than a plain model, because readers will assume declarative behaviour that is not there. Adopt the vocabulary only if you are also adopting the control loop.
 
 Source: [[Synapse - ServerlessWorkflow Database analysis|Synapse - ServerlessWorkflow  Database analysis]] (FUT, Confluence).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Synapse - ServerlessWorkflow Database analysis]]
+- [[Synapse - ServerlessWorkflow Architecture overview]]
+- [[Confluence-Distillation]]
+
+%% ai-graph-end %%

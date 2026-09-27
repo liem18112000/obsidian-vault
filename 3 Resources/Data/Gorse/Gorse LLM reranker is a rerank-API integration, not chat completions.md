@@ -1,7 +1,7 @@
 ---
-ai_hash: d1b25c5210c81958
+ai_hash: 6560ca7486107f57
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-22
 entities: []
 source: Deep research 2026-07-22 — gorse.io/posts/llm-ranker + config.go RerankerAPIConfig

@@ -1,7 +1,7 @@
 ---
-ai_hash: 5a3404b096e74786
+ai_hash: 396d460dfedfd116
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities: []
 source: LUZ-154613 session 2026-06-16
@@ -47,10 +47,10 @@ Fail-loud is preserved without an explicit `CompletableFuture.allOf(...).join()`
 %% ai-graph-start %%
 
 **Related notes:**
-- [[ManagedExecutorService.execute loses CDI request context]]
-- [[Semaphore permit leak when risky code sits between acquire and try]]
+- [[Blocking on CompletableFuture.get in a custom pool recreates the bottleneck]]
+- [[Concurrency Design Patterns]]
+- [[luz-docs parallelized count undercounts documents missing _shard]]
 - [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
-- [[Per-pod single-flight kills cache stampede without semantic change]]
-- [[Semaphore acquire before try leaks permits on static semaphores]]
+- [[ManagedExecutorService.execute loses CDI request context]]
 
 %% ai-graph-end %%

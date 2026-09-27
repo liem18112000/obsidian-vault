@@ -1,10 +1,58 @@
 ---
-title: "Extract reusable skills automatically from settled agent exchanges"
+ai_hash: 6b61a6c4661a420a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities:
+- Skills
+- Commands
+- Playbooks
+- Agent exchanges
+- Automatic extraction
+- Skill library
+- Server-driven extraction pass
+- SKILL.md
+- Agent
+- Classifier problem
+- Model (cheap fast)
+- Settled exchanges
+- Knowledge
+- Surrounding system
+- Session insights
+- Daily transcripts
+- Synthesised notes
+- Backlinks
+- Existing vault
+- Stub notes
+- New topics
+- Knowledge base
+- Versioning
+- Human review
+- Automation
+- Judgement of quality
+- Agent CLI
+- Engine
+- Surface (software component)
+- Vinnstack vs. Claude Code (native)
+- Wrap the agent CLI
+- Reusable procedure
+- Procedure
+- Artefacts (auto-generated)
+- Provenance
+- System
+- Judging step
+- Capture
+source: 'Confluence: Vinnstack vs Claude Code native (TK)'
 status: seedling
-source: "Confluence: Vinnstack vs Claude Code native (TK)"
-tags: [agents, skills, knowledge-capture, self-improvement, claude-code, confluence-distilled]
+tags:
+- agents
+- skills
+- knowledge-capture
+- self-improvement
+- claude-code
+- confluence-distilled
+title: Extract reusable skills automatically from settled agent exchanges
+type: lesson
 ---
 
 # Extract reusable skills automatically from settled agent exchanges
@@ -36,3 +84,44 @@ Source: [[Vinnstack vs. Claude Code (native)]] (TK, Confluence).
 ## Related
 
 - [[Wrap the agent CLI rather than reimplementing the agent loop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Wrap the agent CLI rather than reimplementing the agent loop]]
+- [[A prompt is a temporary instruction, a skill is an encapsulated capability]]
+- [[Vinnstack vs. Claude Code (native)]]
+- [[A complete skill has five layers - intent, knowledge, execution, verification, evolution]]
+- [[From Prompt-Based Usage to Skill-Based Execution]]
+
+**Relations:**
+- Automatic extraction — *grows* — Skill library
+- Server-driven extraction pass — *judges* — Settled exchanges
+- Server-driven extraction pass — *creates* — SKILL.md
+- SKILL.md — *is* — versioned
+- Agent — *consults* — Skill library
+- Consulting skill library — *improves* — System
+- Judging step — *is a* — Classifier problem
+- Classifier problem — *uses* — Model (cheap fast)
+- Settled exchanges — *capture* — Procedure
+- Automatic extraction — *applies to* — Knowledge
+- Surrounding system — *captures* — Session insights
+- Synthesised notes — *include* — Backlinks
+- Backlinks — *link to* — Existing vault
+- Working session — *generates* — Knowledge base
+- Versioning — *enables* — superseding skills
+- Artefacts (auto-generated) — *require* — Provenance
+- Auto-extracted skills — *encode* — Procedure
+- Skill library — *requires* — Human review
+- Automation — *is for* — Capture
+- Automation — *is not for* — Judgement of quality
+- Extraction — *is a function of* — Surface (software component)
+- Surface (software component) — *wraps* — Engine
+- Vinnstack vs. Claude Code (native) — *is source for* — Automatic extraction
+- Wrap the agent CLI — *is related to* — Automatic extraction
+- Skills — *are a type of* — Reusable procedure
+- Commands — *are a type of* — Reusable procedure
+- Playbooks — *are a type of* — Reusable procedure
+- Surface (software component) — *adds* — Extraction
+
+%% ai-graph-end %%

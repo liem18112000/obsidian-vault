@@ -1,10 +1,20 @@
 ---
-title: "Record origin and origin_href so a downstream row traces back to its cause"
+ai_hash: e482288c7535e96c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: OneAPI Architecture overview (LUZ)'
 status: seedling
-source: "Confluence: OneAPI Architecture overview (LUZ)"
-tags: [traceability, billing, debugging, microservices, data-modelling, confluence-distilled]
+tags:
+- traceability
+- billing
+- debugging
+- microservices
+- data-modelling
+- confluence-distilled
+title: Record origin and origin_href so a downstream row traces back to its cause
+type: lesson
 ---
 
 # Record origin and origin_href so a downstream row traces back to its cause
@@ -42,3 +52,11 @@ Source: [[OneAPI Architecture overview]] (LUZ, Confluence).
 ## Related
 
 - [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OneAPI Architecture overview]]
+- [[Attributing a luz_store subscription's origin from created_by, method and updated_by]]
+
+%% ai-graph-end %%

@@ -1,44 +1,66 @@
 ---
-ai_hash: 2da20d71d2062ba2
+ai_hash: ac47f9c571ac8dc1
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities:
 - Partitioning
-- materialized count
+- Materialized count
 - _countShard
 - _id
+- MongoDB gateway
 - luz_jsonstore
-- range operators
 - PLAIN types
 - ObjectId
-- indexes
-- gateway
-- divide-and-conquer count
-- uniform integer shard field
-- SHARD_SPACE
+- Indexes
+- Gateway
+- Divide-and-conquer count
+- Stored uniform integer shard field
+- Design
+- luz-docs
+- LUZ-154613
 - _isPublic
 - _effectiveSecurityClassCodes
-- sub-count clause
+- SHARD_SPACE
+- Materialize compute
+- Migration executor
+- Index {_effectiveSecurityClassCodes:1,_countShard:1}
+- Index {_isPublic:1,_countShard:1}
+- Sub-count clause
+- $gte
+- $lt
+- $oid
 - $expr
 - $toObjectId
-- hash field
+- Date coercion
+- Hash field
 - _idStr
-- load-skew problem
-- quantile boundary sampling
-- backfill
-- Mongo schema
-- LUZ-154613
-- materialize compute
-- migration executor
-- MongoDB
+- Plain int
+- ObjectId range-coercion wall
+- Uniform hash
+- Buckets
+- Load-skew problem
+- Quantile boundary sampling
+- Deterministic-from-_id
+- Backfill
+- Idempotent
 - JsonStore
-- bitmapHLL
-- _id index
-- full scan
+- Mongo schema
+- Team
+- Frozen JsonStore gateway
 - _id-range count fan-out
-- int
-- string
+- BitmapHLL
+- MongoDB $expr + $toObjectId
+- Int
+- String
+- Existing docs
+- Index-seek goal
+- Simple equal int cuts
+- Permission to add field
+- Permission to add indexes
+- This solution
+- _id index
+- Full scan
 source: LUZ-154613 session 2026-06-16
 status: seedling
 tags:
@@ -74,73 +96,74 @@ This is correct + fast + balanced with no JsonStore change — the only constrai
 
 **Related notes:**
 - [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
-- [[No existing luz-docs field works as a fan-out count partition key — survey]]
 - [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
-- [[Divide-and-Conquer Visible-Document Count]]
+- [[No existing luz-docs field works as a fan-out count partition key — survey]]
 - [[Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 **Relations:**
-- materialized count — *uses* — Partitioning
-- Partitioning — *on* — _countShard
-- Partitioning — *not on* — _id
-- luz_jsonstore — *forwards* — range operators
-- range operators — *for* — PLAIN types
-- luz_jsonstore — *does not forward* — range operators
-- range operators — *does not forward for* — ObjectId
-- PLAIN types — *includes* — int
-- PLAIN types — *includes* — string
-- _countShard — *is a* — uniform integer shard field
-- _countShard — *is an* — int
-- _countShard — *is a* — deterministic uniform hash of _id
-- _countShard — *mapped into* — [0, SHARD_SPACE)
-- LUZ-154613 — *is a* — Design
-- Design — *adds* — _countShard
-- _countShard — *stamped in* — materialize compute
-- _isPublic — *stamped in* — materialize compute
-- _effectiveSecurityClassCodes — *stamped in* — materialize compute
-- _countShard — *backfilled in* — migration executor
-- indexes — *include* — {_effectiveSecurityClassCodes:1,_countShard:1}
-- indexes — *include* — {_isPublic:1,_countShard:1}
-- sub-count clause — *is* — {_countShard:{$gte:lo,$lt:hi}}
-- gateway — *forwards* — sub-count clause
-- sub-count clause — *forwarded* — natively
-- hash field — *beats* — _id
-- hash field — *beats* — _idStr
-- uniform hash — *spreads* — evenly
-- uniform hash — *solves* — load-skew problem
-- uniform hash — *makes unnecessary* — quantile boundary sampling
-- backfill — *is* — idempotent
-- Mongo schema — *allows adding* — field
-- Mongo schema — *allows adding* — indexes
-- MongoDB $expr + $toObjectId — *does not use* — _id index
-- MongoDB $expr + $toObjectId — *causes* — full scan
+- Materialized count — *is partitioned by* — _countShard
+- Materialized count — *is not partitioned by* — _id
+- MongoDB gateway — *is also known as* — luz_jsonstore
+- MongoDB gateway — *forwards range operators for* — PLAIN types
+- MongoDB gateway — *does not forward range operators for* — ObjectId
+- PLAIN types — *include* — Int
+- PLAIN types — *include* — String
+- _countShard — *is a type of* — Stored uniform integer shard field
+- _countShard — *is an* — Int
+- Design — *is documented in* — luz-docs
+- Design — *is associated with* — LUZ-154613
+- _countShard — *is a deterministic uniform hash of* — _id
+- _countShard — *is mapped into* — [0, SHARD_SPACE)
+- _countShard — *is stamped in* — Materialize compute
+- _isPublic — *is stamped in* — Materialize compute
+- _effectiveSecurityClassCodes — *is stamped in* — Materialize compute
+- Migration executor — *backfills* — Existing docs
+- Index {_effectiveSecurityClassCodes:1,_countShard:1} — *is an* — Indexes
+- Index {_isPublic:1,_countShard:1} — *is an* — Indexes
+- Index {_effectiveSecurityClassCodes:1,_countShard:1} — *supports* — Sub-count clause
+- Index {_isPublic:1,_countShard:1} — *supports* — Sub-count clause
+- Sub-count clause — *uses* — _countShard
+- Sub-count clause — *uses* — $gte
+- Sub-count clause — *uses* — $lt
+- Gateway — *forwards natively* — Sub-count clause
+- _countShard — *avoids* — $oid
+- _countShard — *avoids* — $expr+$toObjectId
+- _countShard — *avoids* — Date coercion
+- Hash field — *is preferred over* — _id
+- Hash field — *is preferred over* — _idStr
+- Plain int — *dodges* — ObjectId range-coercion wall
+- Uniform hash — *spreads* — evenly
+- Uniform hash — *solves* — Load-skew problem
+- Uniform hash — *makes unnecessary* — Quantile boundary sampling
+- Deterministic-from-_id — *makes* — Backfill
+- Backfill — *is* — Idempotent
+- This solution — *does not require* — JsonStore change
+- This solution — *requires* — Permission to add field
+- This solution — *requires* — Permission to add indexes
+- Permission to add field — *is part of* — Mongo schema
+- Permission to add indexes — *is part of* — Mongo schema
+- Team — *granted* — Permission to add field
+- Team — *granted* — Permission to add indexes
 - Frozen JsonStore gateway — *makes* — _id-range count fan-out
 - _id-range count fan-out — *is a* — dead end
-- _id-range count fan-out — *pivots to* — bitmapHLL
+- _id-range count fan-out — *is related to* — BitmapHLL
+- MongoDB $expr + $toObjectId — *is correct for* — _id range
+- MongoDB $expr + $toObjectId — *does not use* — _id index
+- MongoDB $expr + $toObjectId — *causes* — Full scan
+- _countShard — *is a* — Hash field
 - _id — *is a* — ObjectId
-- luz_jsonstore — *is a* — MongoDB gateway
-- JsonStore — *is a* — gateway
-- _id-range count fan-out — *requires* — pivot to bitmapHLL
+- Sub-count clause — *is* — plain
+- Sub-count clause — *uses* — Indexes
+- Index-seek goal — *is achieved by* — Indexes
+- Buckets — *balance with* — Simple equal int cuts
+- Load-skew problem — *disappears* — true
+- This solution — *is* — correct
+- This solution — *is* — fast
+- This solution — *is* — balanced
+- Divide-and-conquer count — *uses* — Partitioning
 - _countShard — *is a* — partition key
-- materialized count — *uses* — _countShard as partition key
-- _id — *is not a* — suitable partition key
-- _countShard — *dodges* — ObjectId range-coercion wall
-- _id — *causes* — ObjectId range-coercion wall
-- _idStr — *causes* — ObjectId range-coercion wall
-- luz_jsonstore — *is a* — JsonStore
-- MongoDB — *uses* — gateway
-- MongoDB — *uses* — indexes
-- MongoDB — *uses* — _id
-- MongoDB — *uses* — _countShard
-- MongoDB — *uses* — _isPublic
-- MongoDB — *uses* — _effectiveSecurityClassCodes
-- MongoDB — *uses* — ObjectId
-- MongoDB — *uses* — int
-- MongoDB — *uses* — string
-- MongoDB — *uses* — $expr
-- MongoDB — *uses* — $toObjectId
-- MongoDB — *uses* — _id index
-- MongoDB — *uses* — full scan
-- MongoDB — *uses* — bitmapHLL
+- _id — *is not a good* — partition key
+- _countShard — *is a* — uniform int
 
 %% ai-graph-end %%

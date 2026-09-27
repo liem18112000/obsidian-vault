@@ -1,18 +1,22 @@
 ---
-title: "import invoices via python script"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34384316650/import+invoices+via+python+script
-space: "X4"
-topic: programming
-relevance: 0.91
-depth: 3
-updated: 2025-01-15
+ai_hash: e376248e75ab61c3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 3
+entities: []
+relevance: 0.91
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34384316650/import+invoices+via+python+script
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: import invoices via python script
+topic: programming
+type: source
+updated: 2025-01-15
 ---
 
 # import invoices via python script
@@ -119,3 +123,14 @@ On SE Host it is located here: C:\XAPF_Pgm_T\invoiceImporterTool\\
 ![[34384316650-MassenTest.bat]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice API Java Client]]
+- [[APF ItemLine Import API]]
+- [[APF Provided Bookings]]
+- [[OCR Command Line Interface]]
+- [[Generic Interface JSON file]]
+
+%% ai-graph-end %%

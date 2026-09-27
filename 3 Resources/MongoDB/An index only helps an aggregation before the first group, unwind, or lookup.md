@@ -1,10 +1,20 @@
 ---
-title: "An index only helps an aggregation before the first group, unwind, or lookup"
+ai_hash: 83caaaef37360544
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Facet Count Fan-out Techniques in MongoDB (2026-06-26)'
 status: seedling
-source: "Confluence: Facet Count Fan-out Techniques in MongoDB (2026-06-26)"
-tags: [mongodb, aggregation, indexing, performance, query-planning, luz-docs]
+tags:
+- mongodb
+- aggregation
+- indexing
+- performance
+- query-planning
+- luz-docs
+title: An index only helps an aggregation before the first group, unwind, or lookup
+type: concept
 ---
 
 # An index only helps an aggregation before the first group, unwind, or lookup
@@ -31,3 +41,14 @@ When the scan itself is unavoidable, the remaining lever is parallelism — spli
 ## Related
 
 - [[A string index is silently skipped when its collation differs from the query's]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mongo facet $group count index only helps the $match prefix, not the count]]
+- [[A string index is silently skipped when its collation differs from the query's]]
+- [[Index Impact on MongoDB searchByFacets]]
+- [[Facet Count Fan-out Techniques in MongoDB]]
+- [[A MongoDB text index matches stemmed words, not substrings]]
+
+%% ai-graph-end %%

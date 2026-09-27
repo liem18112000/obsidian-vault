@@ -1,18 +1,22 @@
 ---
-title: "APF archiving via d3 Rest interface"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47045346268/APF+archiving+via+d3+Rest+interface
-space: "X4"
-topic: programming
-relevance: 0.804
-depth: 2.84
-updated: 2022-07-27
+ai_hash: 35206a54a29bca7b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 2.84
+entities: []
+relevance: 0.804
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47045346268/APF+archiving+via+d3+Rest+interface
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: APF archiving via d3 Rest interface
+topic: programming
+type: source
+updated: 2022-07-27
 ---
 
 # APF archiving via d3 Rest interface
@@ -507,3 +511,14 @@ Here we can not garatuee the clean archive procedure espessally after restarting
 **APF_ARCHIVE_D3_REST_DEFAULT_FILE_PATH_TO_SOURCES**
 
 path to sources settings.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[APF swagger for project eapf_web]]
+- [[APF Provided Bookings]]
+- [[APF ItemLine Import API]]
+- [[Upload Document API]]
+- [[Deploy AFDEMO CPM]]
+
+%% ai-graph-end %%

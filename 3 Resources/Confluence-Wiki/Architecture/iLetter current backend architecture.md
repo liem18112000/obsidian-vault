@@ -1,18 +1,22 @@
 ---
-title: "iLetter current backend architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49391239187/iLetter+current+backend+architecture
-space: "TS"
-topic: architecture
-relevance: 0.769
-depth: 2.79
-updated: 2026-05-12
+ai_hash: b0ae694da464514f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.79
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49391239187/iLetter+current+backend+architecture
+space: TS
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/ts
+- confluence
+- architecture
+- space/ts
+title: iLetter current backend architecture
+topic: architecture
+type: source
+updated: 2026-05-12
 ---
 
 # iLetter current backend architecture
@@ -189,3 +193,14 @@ The current iLetter is stored as a big JSON string in the `metadata` of the docu
 ### 2. The media is stored as an inline base64 string directly inside the letter
 
 → Need to find a better approach
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OneAPI Architecture overview]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Architecture]]
+- [[History Message Format Reference eArchive 1.0 vs eArchive 2.0]]
+
+%% ai-graph-end %%

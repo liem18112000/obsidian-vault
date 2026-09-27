@@ -1,7 +1,7 @@
 ---
-ai_hash: e0ff08038df9a890
+ai_hash: dc2fb60af8708144
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - cache-miss cliff
 - working set exceeds cache
@@ -42,7 +42,7 @@ Observed concretely in LUZ-154613 count benchmark: 720k docs = 11.5 s (~16 µs/d
 - [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
 - [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
 - [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
-- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
-- [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]
+- [[Concurrency-bound single-primary Mongo reads indexes stop helping; recognize by bimodal latency]]
+- [[Non-interleaved cross-case benchmarks on shared cluster confound index effect with cache+load]]
 
 %% ai-graph-end %%

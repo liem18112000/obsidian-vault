@@ -1,18 +1,22 @@
 ---
-title: "Architecture design for micro moments"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47212695342/Architecture+design+for+micro+moments
-space: "HACKA"
-topic: architecture
-relevance: 0.76
-depth: 2.32
-updated: 2022-11-14
+ai_hash: 563d41c497e316ca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.32
+entities: []
+relevance: 0.76
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47212695342/Architecture+design+for+micro+moments
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/hacka
+- confluence
+- architecture
+- space/hacka
+title: Architecture design for micro moments
+topic: architecture
+type: source
+updated: 2022-11-14
 ---
 
 # Architecture design for micro moments
@@ -194,3 +198,14 @@ References: [Message queue with Google Pub/Sub](https://axonivy.atlassian.net/wi
 <a href="https://cloud.google.com/pubsub/docs/overview" class="external-link" data-card-appearance="inline" rel="nofollow">https://cloud.google.com/pubsub/docs/overview</a>
 
 - For scheduler, our current architecture is Kubernetes cron job, It is suggested in the meeting that we will also apply this architect for micro moments.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture Design]]
+- [[Architecture]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[LUZ-75886 Part 1 Implement real-time API updates]]
+- [[Business concept for frontend]]
+
+%% ai-graph-end %%

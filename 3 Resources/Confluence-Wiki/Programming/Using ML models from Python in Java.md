@@ -1,18 +1,22 @@
 ---
-title: "Using ML models from Python in Java"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488082633/Using+ML+models+from+Python+in+Java
-space: "AI"
-topic: programming
-relevance: 0.886
-depth: 3
-updated: 2019-02-28
+ai_hash: 55418ff24392db4b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.886
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2488082633/Using+ML+models+from+Python+in+Java
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Using ML models from Python in Java
+topic: programming
+type: source
+updated: 2019-02-28
 ---
 
 # Using ML models from Python in Java
@@ -75,3 +79,10 @@ How can we develop models in Scikit-learn (Python) and use them in Java?
 </div>
 
 Alternative option is to re-train / build the model using one of the Java ML libraries (best case the models should be very similar).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

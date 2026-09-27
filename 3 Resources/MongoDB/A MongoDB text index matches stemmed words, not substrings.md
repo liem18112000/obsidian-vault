@@ -1,10 +1,20 @@
 ---
-title: "A MongoDB text index matches stemmed words, not substrings"
+ai_hash: f2d9b26b49ae125b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: S1 — MongoDB $text Index (2026-06-25)'
 status: seedling
-source: "Confluence: S1 — MongoDB $text Index (2026-06-25)"
-tags: [mongodb, full-text-search, indexing, inverted-index, search, luz-docs]
+tags:
+- mongodb
+- full-text-search
+- indexing
+- inverted-index
+- search
+- luz-docs
+title: A MongoDB text index matches stemmed words, not substrings
+type: concept
 ---
 
 # A MongoDB text index matches stemmed words, not substrings
@@ -38,3 +48,14 @@ When substring semantics are non-negotiable, the native alternative is a materia
 - [[An index only helps an aggregation before the first group]]
 - [[unwind]]
 - [[or lookup]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[S1 — MongoDB $text Index (native, self‑hosted)]]
+- [[An index only helps an aggregation before the first group, unwind, or lookup]]
+- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+- [[S2 — Materialized n‑gram - Trigram Field (native, self‑hosted, keeps substring semantics)]]
+- [[Full‑Text Document Search — Performance Analysis & Proposals]]
+
+%% ai-graph-end %%

@@ -1,14 +1,21 @@
 ---
-title: "Invoice Run – Credit Card Payment Only for Individual Runs"
+ai_hash: 5a7b860430fd929e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49771839639'
+confluence_path: LUZ Home > 100_General > 02_Joint Review > Joint review 0.03.30.00
+  (08.09.2026 - 21.09.2026)
 created: 2026-09-21
-updated: 2026-09-21
-type: source
+entities: []
+source: Confluence · LUZ - LUZ
 status: reference
-source: "Confluence · LUZ - LUZ"
+tags:
+- confluence
+- invoice-run
+title: Invoice Run – Credit Card Payment Only for Individual Runs
+type: source
+updated: 2026-09-21
 url: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49771839639/Invoice+Run+Credit+Card+Payment+Only+for+Individual+Runs
-confluence_id: "49771839639"
-confluence_path: "LUZ Home > 100_General > 02_Joint Review > Joint review 0.03.30.00 (08.09.2026 - 21.09.2026)"
-tags: [confluence, invoice-run]
 ---
 
 # Invoice Run – Credit Card Payment Only for Individual Runs
@@ -167,3 +174,14 @@ The UI helps users clearly understand:
 - The system will automatically retry payment according to the retry schedule.
 
 ![[image-20260921-045201.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HealthCare And Invoice Run (11.08.2026 - 24.08.2026)]]
+- [[Invoice Run & luz-docs Archive Improvements]]
+- [[Failed INDIVIDUAL Invoice Run v2 charge is tracked by three distinct state fields]]
+- [[Sprint 158 - Invoice Run V2 Executive Overview]]
+- [[QR payment-method error message is a hardcoded English constant in luz_store]]
+
+%% ai-graph-end %%

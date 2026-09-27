@@ -1,7 +1,7 @@
 ---
-ai_hash: 073c198e39a1c1f2
+ai_hash: 587f0c0aa65c8433
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-14
 entities: []
 source: session 2026-07-14 folderIds-facet investigation
@@ -38,6 +38,6 @@ Top fix: set `allowDiskUse(true)` (ideally behind an explicit flag). Companion f
 - [[luz-docs facet $unwind branch keys off client-supplied typearray, not schema]]
 - [[Canary tenant eArchive folder list trips Mongo code 292 sort-memory-limit]]
 - [[Real luz_docsluz_jsonstore source lives under Kepler, not epost_knowledge_base]]
-- [[Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
 
 %% ai-graph-end %%

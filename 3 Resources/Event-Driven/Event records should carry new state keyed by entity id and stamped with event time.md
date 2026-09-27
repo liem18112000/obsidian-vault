@@ -1,10 +1,22 @@
 ---
-title: "Event records should carry new state keyed by entity id and stamped with event time"
+ai_hash: a57dc477188943a3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Rhine API Explained (AI)'
 status: seedling
-source: "Confluence: Rhine API Explained (AI)"
-tags: [event-driven, streaming, avro, kafka, data-lake, event-time, confluence-distilled]
+tags:
+- event-driven
+- streaming
+- avro
+- kafka
+- data-lake
+- event-time
+- confluence-distilled
+title: Event records should carry new state keyed by entity id and stamped with event
+  time
+type: concept
 ---
 
 # Event records should carry new state keyed by entity id and stamped with event time
@@ -41,3 +53,14 @@ Source: [[Rhine API Explained]] (AI, Confluence).
 ## Related
 
 - [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rhine API Explained]]
+- [[Lightweight-but-scalable web event collector pattern]]
+- [[Store pod-level facts once, not copied into every user key]]
+- [[Client-assigned idempotency keys with a unique constraint beat distributed locks]]
+- [[Deep Dive EPC Notification - User Connection Registry - Data Model]]
+
+%% ai-graph-end %%

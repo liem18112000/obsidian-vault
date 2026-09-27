@@ -1,18 +1,22 @@
 ---
-title: "Migrate to Quarkus (WIP)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47603745266/Migrate+to+Quarkus+WIP
-space: "TS"
-topic: programming
-relevance: 0.837
-depth: 3
-updated: 2024-01-02
+ai_hash: e6a5368d1d6577eb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.837
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47603745266/Migrate+to+Quarkus+WIP
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: Migrate to Quarkus (WIP)
+topic: programming
+type: source
+updated: 2024-01-02
 ---
 
 # Migrate to Quarkus (WIP)
@@ -244,3 +248,14 @@ This recipe is a compound recipe which do these following things
 </div>
 
 **Testcontainers**: <a href="https://java.testcontainers.org/" class="external-link" data-card-appearance="inline" rel="nofollow">https://java.testcontainers.org/</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[WIP Recipe How to adapt Unit Test to be able to run with Junit 5]]
+- [[Recipe Quarkus.io getting started]]
+- [[Architecture Overview LUZ]]
+- [[Groovy scripts refactor]]
+- [[Adapt luz-jsonstore to allow luz-docs to persist data as MongoDB Date via API]]
+
+%% ai-graph-end %%

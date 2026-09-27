@@ -1,18 +1,22 @@
 ---
-title: "POC SecuredMail Serverless Workflow"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48220536889/POC+SecuredMail+Serverless+Workflow
-space: "FUT"
-topic: infra
-relevance: 0.706
-depth: 2.38
-updated: 2025-03-19
+ai_hash: ac26af04d2a5676f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 17
+depth: 2.38
+entities: []
+relevance: 0.706
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48220536889/POC+SecuredMail+Serverless+Workflow
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: POC SecuredMail Serverless Workflow
+topic: infra
+type: source
+updated: 2025-03-19
 ---
 
 # POC SecuredMail Serverless Workflow
@@ -97,3 +101,14 @@ We decided to use the status of the workflow because it’s consistent and manag
   - ~~Statistics.~~
 
   - ~~The path of the flow, to know which steps are executed, and the status of each step.~~
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture Design]]
+- [[Synapse - ServerlessWorkflow Architecture overview]]
+- [[Synapse - ServerlessWorkflow Database analysis]]
+- [[Architecture]]
+- [[Unified architecture overview]]
+
+%% ai-graph-end %%

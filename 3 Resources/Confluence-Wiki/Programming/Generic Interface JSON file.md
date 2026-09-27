@@ -1,18 +1,22 @@
 ---
-title: "Generic Interface JSON file"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47453143184/Generic+Interface+JSON+file
-space: "HACKA"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2024-02-20
+ai_hash: f0fcaa51acbd8087
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47453143184/Generic+Interface+JSON+file
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: Generic Interface JSON file
+topic: programming
+type: source
+updated: 2024-02-20
 ---
 
 # Generic Interface JSON file
@@ -238,3 +242,14 @@ Date example:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[SQL script for populating master data]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[How to call generic interface document API on dev]]
+- [[APF Provided Bookings]]
+
+%% ai-graph-end %%

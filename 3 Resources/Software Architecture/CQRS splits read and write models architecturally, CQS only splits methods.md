@@ -1,10 +1,19 @@
 ---
-title: "CQRS splits read and write models architecturally, CQS only splits methods"
+ai_hash: e8c66099e3fa7b50
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Command Query Responsibility Segregation (CQRS) (2025-12-05)'
 status: seedling
-source: "Confluence: Command Query Responsibility Segregation (CQRS) (2025-12-05)"
-tags: [cqrs, architecture, design-patterns, eventual-consistency, backend]
+tags:
+- cqrs
+- architecture
+- design-patterns
+- eventual-consistency
+- backend
+title: CQRS splits read and write models architecturally, CQS only splits methods
+type: concept
 ---
 
 # CQRS splits read and write models architecturally, CQS only splits methods
@@ -25,3 +34,11 @@ Worth noting the LUZ read path applies the same instinct without the full patter
 ## Related
 
 - [[A pagination token is an opaque cursor, and it must carry the filter it was issued under]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Command Query Responsibility Segregation (CQRS)]]
+- [[A pagination token is an opaque cursor, and it must carry the filter it was issued under]]
+
+%% ai-graph-end %%

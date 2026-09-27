@@ -1,18 +1,22 @@
 ---
-title: "MessageV2 Field Encryption Approach"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49671405621/MessageV2+Field+Encryption+Approach
-space: "LUZ"
-topic: security
-relevance: 0.75
-depth: 2.6
-updated: 2026-08-20
+ai_hash: 77a6874921404de5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.6
+entities: []
+relevance: 0.75
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49671405621/MessageV2+Field+Encryption+Approach
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - security
-  - space/luz
+- confluence
+- security
+- space/luz
+title: MessageV2 Field Encryption Approach
+topic: security
+type: source
+updated: 2026-08-20
 ---
 
 # MessageV2 Field Encryption Approach
@@ -212,3 +216,14 @@ Also configure `FIELD_ENCRYPTION_ENABLED=true`, `FIELD_ENCRYPTION_PROVIDER=vault
 - K8s: `luz_kubernetes` + overlay `encrypted-fields.map.json`
 
 - FigJam: <a href="https://www.figma.com/board/Zis5FIIS3GgkSqe17Nyy82" class="external-link" rel="nofollow">workflows</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Encryption and decryption flows with Vault]]
+- [[Luz-vault]]
+- [[Security]]
+- [[Vault overview]]
+- [[Introduction of Hashicorp Vault]]
+
+%% ai-graph-end %%

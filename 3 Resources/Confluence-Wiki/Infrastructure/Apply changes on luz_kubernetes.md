@@ -1,18 +1,22 @@
 ---
-title: "Apply changes on luz_kubernetes"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47120516477/Apply+changes+on+luz_kubernetes
-space: "LUZ"
-topic: infra
-relevance: 0.716
-depth: 2.67
-updated: 2023-01-31
+ai_hash: 4a678af059ae7bd7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.67
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47120516477/Apply+changes+on+luz_kubernetes
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Apply changes on luz_kubernetes
+topic: infra
+type: source
+updated: 2023-01-31
 ---
 
 # Apply changes on luz_kubernetes
@@ -111,3 +115,14 @@ patch-luz-public-api-kong-k8s.yaml (service): <a href="https://bitbucket.org/axo
 public-api-kong-proxy-service-backend-config.yaml (service backend config) <a href="https://bitbucket.org/axonivy-prod/luz_kubernetes/src/c5934cc88c3c/kubernetes-overlays/env-dev/luz-public-api-kong/public-api-kong-proxy-service-backend-config.yaml?at=master" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/axonivy-prod/luz_kubernetes/src/c5934cc88c3c/kubernetes-overlays/env-dev/luz-public-api-kong/public-api-kong-proxy-service-backend-config.yaml?at=master</a>
 
 → moved to /kubernetes/ingress
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[POS & myKLARA nginx ingress quick notes]]
+- [[Recipe Introduce a Global HTTP(S) Load Balancer on GCP at KLARA]]
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+- [[Kubernetes knowledge]]
+- [[Deploy luz-epc-redis-service on GCP]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Performance Wildfly vs Quarkus"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20535351017/Performance+Wildfly+vs+Quarkus
-space: "LUZ"
-topic: programming
-relevance: 0.775
-depth: 2.6
-updated: 2021-08-11
+ai_hash: ea278d974bce02d4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.6
+entities: []
+relevance: 0.775
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20535351017/Performance+Wildfly+vs+Quarkus
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Performance Wildfly vs Quarkus
+topic: programming
+type: source
+updated: 2021-08-11
 ---
 
 # Performance Wildfly vs Quarkus
@@ -520,3 +524,14 @@ Total: 906 14875 2838.1 15507 16520</p>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A ten-request JVM benchmark measures warm-up, not throughput]]
+- [[Redis NoSQL distributed cache - Performance test]]
+- [[Create Document API – Performance Testing Report]]
+- [[luz_cache performance test with security]]
+- [[Timing Benchmark Results Document ZIP Imports]]
+
+%% ai-graph-end %%

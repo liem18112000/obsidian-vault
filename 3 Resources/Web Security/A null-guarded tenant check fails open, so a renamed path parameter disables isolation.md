@@ -1,10 +1,22 @@
 ---
-title: "A null-guarded tenant check fails open, so a renamed path parameter disables isolation"
+ai_hash: 990d74b14bf1e4ab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Security Risk - Luz-jwt Permission By Pass (2026-02-11)'
 status: seedling
-source: "Confluence: Security Risk - Luz-jwt Permission By Pass (2026-02-11)"
-tags: [security, multi-tenancy, authorization, jwt, fail-open, luz-jwt, gotcha]
+tags:
+- security
+- multi-tenancy
+- authorization
+- jwt
+- fail-open
+- luz-jwt
+- gotcha
+title: A null-guarded tenant check fails open, so a renamed path parameter disables
+  isolation
+type: lesson
 ---
 
 # A null-guarded tenant check fails open, so a renamed path parameter disables isolation
@@ -46,3 +58,14 @@ Same filter, second defect: [[Returning 401 for a permission failure causes infi
 ## Related
 
 - [[Returning 401 for a permission failure causes infinite login loops]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Returning 401 for a permission failure causes infinite login loops]]
+- [[Security Risk - Luz-jwt Permission By Pass]]
+- [[Security Risk - Luz-jwt Permission By Pass]]
+- [[Tenant token issue]]
+- [[Luz 403 Not allowed means the token has no tenant claim, not a missing permission]]
+
+%% ai-graph-end %%

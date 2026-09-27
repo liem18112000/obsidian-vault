@@ -1,7 +1,7 @@
 ---
-ai_hash: ecf497bab813a242
+ai_hash: e76ab028636d09d4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: leo-cdp-framework build.gradle fix 2026-06-06
@@ -53,7 +53,7 @@ Lesson learned the hard way: verify build-script edits in the real toolchain (he
 - [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
 - [[String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment]]
 - [[Gradle 9 forbids attributes() on declarable configurations in configurations.all]]
+- [[Gradle toolchain languageVersion requires an exact JDK major version]]
 - [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
-- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
 
 %% ai-graph-end %%

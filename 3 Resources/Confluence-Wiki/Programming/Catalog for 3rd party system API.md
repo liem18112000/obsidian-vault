@@ -1,18 +1,22 @@
 ---
-title: "Catalog for 3rd party system API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47456322163/Catalog+for+3rd+party+system+API
-space: "LUZ"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2023-08-21
+ai_hash: 57f20b45bf25354d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47456322163/Catalog+for+3rd+party+system+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Catalog for 3rd party system API
+topic: programming
+type: source
+updated: 2023-08-21
 ---
 
 # Catalog for 3rd party system API
@@ -149,3 +153,14 @@ spec:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[BlueZone, Public API, AI Data Feeds (07.11.2023 - 20.11.2023)]]
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[One API Module Responsibilities]]
+- [[Add new database module to deletion list]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Invoice API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2461992408/Invoice+API
-space: "AI"
-topic: programming
-relevance: 0.703
-depth: 2.38
-updated: 2020-11-30
+ai_hash: c417074103511775
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 2.38
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2461992408/Invoice+API
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Invoice API
+topic: programming
+type: source
+updated: 2020-11-30
 ---
 
 # Invoice API
@@ -170,3 +174,14 @@ Create decision
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze API v2 for Invoice prediction]]
+- [[Invoice API Java Client]]
+- [[Analyze API]]
+- [[Invoice API Reference]]
+- [[Creating invoice — GUI flow vs. Public API]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "[Proof of Concept] Passwordless account/login with Keycloak"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48039723268/Proof+of+Concept+Passwordless+account+login+with+Keycloak
-space: "HACKA"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2024-09-17
+ai_hash: 74f4baa2a0a45405
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 20
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48039723268/Proof+of+Concept+Passwordless+account+login+with+Keycloak
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/hacka
+- confluence
+- architecture
+- space/hacka
+title: '[Proof of Concept] Passwordless account/login with Keycloak'
+topic: architecture
+type: source
+updated: 2024-09-17
 ---
 
 # [Proof of Concept] Passwordless account/login with Keycloak
@@ -136,3 +140,14 @@ Note: Use the below file to create: <span class="confluence-embedded-file-wrappe
 1.  What are some potential security issues? (Investigating)
 
 2.  Should this authentication flow be applied for all Keycloak clients or create a specific client to support our uses cases? (Investigating)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Copy Proof of Concept Passwordless account login with Keycloak]]
+- [[Onboarding API - Investigation Identity Provider SSO]]
+- [[Proof of Concept Auto login with Keycloak]]
+- [[Understanding Keycloak Authorization Code flow]]
+- [[Keycloak action tokens bridge an app session into a browser login]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: 8cdd27b2c2ad1e9d
+ai_hash: c12e09f3932be510
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-27
@@ -38,7 +38,7 @@ Context: kga `atlassian.py` (LUZ-159671 test-agent), read-only client.
 - [[Acquire a client-side rate limiter once per call, outside the retry loop]]
 - [[run_json_agent needed a per-call timeout or a slow Vertex call hangs implement past the server ceiling]]
 - [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
-- [[MicroProfile @Retry can't do exponential backoff or HTTP-status-aware retry — use a manual loop]]
 - [[test-agent-v2 suite is slow from per-test ADK cold-start and serial execution, not hangs]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
 
 %% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "God class in luz_components"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47106262118/God+class+in+luz_components
-space: "LUZ"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2022-05-10
+ai_hash: cfaeba6dbb73a178
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47106262118/God+class+in+luz_components
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: God class in luz_components
+topic: programming
+type: source
+updated: 2022-05-10
 ---
 
 # God class in luz_components
@@ -229,3 +233,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Are the “technologies” (process files, java code, …) used correctly and efficiently]]
+- [[Merging process]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[Impact of code changes on common components]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+
+%% ai-graph-end %%

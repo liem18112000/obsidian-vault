@@ -1,7 +1,7 @@
 ---
-ai_hash: b0920555f1abc1b5
+ai_hash: f4a6709f6e50d368
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities: []
 source: LUZ-154613 session 2026-06-16
@@ -39,7 +39,7 @@ Companion builders in the same util family: `singletonJsonObject(key,value)`, `b
 - [[04 Query Operators]]
 - [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
 - [[luz-docs getDocumentById returns empty object not null for missing docs]]
+- [[luz-docs search DSL silently drops raw-mongo query keys]]
 - [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
-- [[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
 
 %% ai-graph-end %%

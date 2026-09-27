@@ -1,18 +1,22 @@
 ---
-title: "Estimate for ivy and cob-unattended-business-dossier-service-api-spec"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48431300739/Estimate+for+ivy+and+cob-unattended-business-dossier-service-api-spec
-space: "Arrow"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2025-04-01
+ai_hash: 167d16214ac55eb0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48431300739/Estimate+for+ivy+and+cob-unattended-business-dossier-service-api-spec
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: Estimate for ivy and cob-unattended-business-dossier-service-api-spec
+topic: programming
+type: source
+updated: 2025-04-01
 ---
 
 # Estimate for ivy and cob-unattended-business-dossier-service-api-spec
@@ -403,3 +407,14 @@ Register new callbacks, redirect links
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Changes to SOB endpoints to align the response status code (FA-6800)]]
+- [[SQL script to get SOB (APP & WEB) dossier progress]]
+- [[SQL script to investigate dossier with orphaned protocol records in PROD]]
+- [[Open API related to Finnova microservices - Create dossier]]
+- [[Programming]]
+
+%% ai-graph-end %%

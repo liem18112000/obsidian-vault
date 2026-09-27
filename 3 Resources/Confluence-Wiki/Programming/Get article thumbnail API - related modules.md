@@ -1,18 +1,22 @@
 ---
-title: "Get article thumbnail API - related modules"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47842656696/Get+article+thumbnail+API+-+related+modules
-space: "FUT"
-topic: programming
-relevance: 0.755
-depth: 2.81
-updated: 2024-06-28
+ai_hash: 0f46c405b7d1c266
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47842656696/Get+article+thumbnail+API+-+related+modules
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Get article thumbnail API - related modules
+topic: programming
+type: source
+updated: 2024-06-28
 ---
 
 # Get article thumbnail API - related modules
@@ -70,3 +74,14 @@ PR in luz_article: <a href="https://bitbucket.org/axonivy-prod/%7Bf822ba34-92a7-
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Investigate Analyze the API's which call to FileManager]]
+- [[Impact of code changes on common components]]
+- [[Change get API when paying invoices]]
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[Public API client performance analysis]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 9c2006554c10a770
+ai_hash: f0bb353babcfe6ff
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-16
 entities: []
 source: Vinnstack session 2026-07-15 (research)

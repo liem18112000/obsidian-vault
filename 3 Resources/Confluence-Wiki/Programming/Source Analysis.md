@@ -1,18 +1,22 @@
 ---
-title: "Source Analysis"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38165531818/Source+Analysis
-space: "Helios"
-topic: programming
-relevance: 0.812
-depth: 3
-updated: 2018-02-06
+ai_hash: de300e734a3b06c7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.812
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38165531818/Source+Analysis
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Source Analysis
+topic: programming
+type: source
+updated: 2018-02-06
 ---
 
 # Source Analysis
@@ -75,3 +79,12 @@ Install Codelyzer into Visual Studio Code:
     </div>
 
 The problems will be shown in PROBLEM tab
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Static analysis tool for Android]]
+- [[Fallow – Install & Usage Guide (Code Quality for JS TS)]]
+- [[Analyse your source code (Copy)]]
+
+%% ai-graph-end %%

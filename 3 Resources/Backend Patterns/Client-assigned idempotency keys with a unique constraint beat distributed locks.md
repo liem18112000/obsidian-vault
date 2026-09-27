@@ -1,10 +1,22 @@
 ---
-title: "Client-assigned idempotency keys with a unique constraint beat distributed locks"
+ai_hash: 0f1e815b9c02eaaf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Common service architecture'
 status: seedling
-source: "Confluence: Common service architecture"
-tags: [idempotency, event-driven, pubsub, cloud-run, distributed-systems, acid, confluence-distilled]
+tags:
+- idempotency
+- event-driven
+- pubsub
+- cloud-run
+- distributed-systems
+- acid
+- confluence-distilled
+title: Client-assigned idempotency keys with a unique constraint beat distributed
+  locks
+type: concept
 ---
 
 # Client-assigned idempotency keys with a unique constraint beat distributed locks
@@ -35,3 +47,14 @@ Source: [[Common service architecture]] (Confluence).
 ## Related
 
 - [[In-memory job throttles silently break when you scale to multiple replicas]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Common service architecture]]
+- [[Claim work across pods with an expiring lease column on the row]]
+- [[Score async API designs on crash recovery and multi-instance, not latency]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[In-memory job throttles silently break when you scale to multiple replicas]]
+
+%% ai-graph-end %%

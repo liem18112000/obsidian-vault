@@ -1,10 +1,20 @@
 ---
-title: "Embedding a search library means building its control plane yourself"
+ai_hash: d41e10b40925a9b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: IR - System Design (AI)'
 status: seedling
-source: "Confluence: IR - System Design (AI)"
-tags: [build-vs-buy, lucene, search, multi-tenancy, scaling, confluence-distilled]
+tags:
+- build-vs-buy
+- lucene
+- search
+- multi-tenancy
+- scaling
+- confluence-distilled
+title: Embedding a search library means building its control plane yourself
+type: lesson
 ---
 
 # Embedding a search library means building its control plane yourself
@@ -45,3 +55,13 @@ Source: [[IR - System Design]] (AI, Confluence).
 ## Related
 
 - [[Per-tenant encryption keys make GDPR deletion a key destruction]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-tenant encryption keys make GDPR deletion a key destruction]]
+- [[IR - System Design]]
+- [[Changing the embedding model forces a full index rebuild]]
+- [[Container-per-customer silo multi-tenancy trades cost for structural isolation]]
+
+%% ai-graph-end %%

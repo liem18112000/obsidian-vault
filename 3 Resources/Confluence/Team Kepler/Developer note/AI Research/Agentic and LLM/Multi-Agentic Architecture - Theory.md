@@ -1,14 +1,21 @@
 ---
-title: "Multi-Agentic Architecture: Theory"
+ai_hash: 3c59fc5e578e9b3b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49259216966'
+confluence_path: Team Kepler > Developer note > AI Research > Agentic and LLM
 created: 2026-03-23
-updated: 2026-03-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+- search
+title: 'Multi-Agentic Architecture: Theory'
+type: source
+updated: 2026-03-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49259216966/Multi-Agentic+Architecture+Theory
-confluence_id: "49259216966"
-confluence_path: "Team Kepler > Developer note > AI Research > Agentic and LLM"
-tags: [confluence, ai-agents, search]
 ---
 
 # Multi-Agentic Architecture: Theory
@@ -103,3 +110,14 @@ Memory operations:
 ## 7. Complete Architecture Overview
 
 ![[image-20260323-020406.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+- [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+- [[A shared mutable context beats a message bus for sequentially orchestrated agents]]
+- [[AI-Powered Development Environment Architecture]]
+- [[ReAct beats plan-then-execute when the environment can surprise the agent]]
+
+%% ai-graph-end %%

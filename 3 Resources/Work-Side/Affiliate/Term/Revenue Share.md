@@ -1,7 +1,7 @@
 ---
-ai_hash: 6271c7a482dc5f2a
+ai_hash: 3265409dc4f9e01d
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - RevShare
 - Revenue Share

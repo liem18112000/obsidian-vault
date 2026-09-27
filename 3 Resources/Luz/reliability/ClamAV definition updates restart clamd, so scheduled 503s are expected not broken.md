@@ -1,10 +1,21 @@
 ---
-title: "ClamAV definition updates restart clamd, so scheduled 503s are expected not broken"
+ai_hash: feb7747c76b28c2e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: observation
+entities: []
+source: 'Confluence: Part B - luz-antivirus Analysis (2025-12-18)'
 status: seedling
-source: "Confluence: Part B - luz-antivirus Analysis (2025-12-18)"
-tags: [clamav, luz-antivirus, kubernetes, readiness-probe, monitoring, kepler]
+tags:
+- clamav
+- luz-antivirus
+- kubernetes
+- readiness-probe
+- monitoring
+- kepler
+title: ClamAV definition updates restart clamd, so scheduled 503s are expected not
+  broken
+type: observation
 ---
 
 # ClamAV definition updates restart clamd, so scheduled 503s are expected not broken
@@ -29,3 +40,14 @@ Separate, genuinely-bad finding in the same service: 6 × HTTP 504 `SocketTimeou
 ## Related
 
 - [[Error volume and error severity are independent, so triage by impact not by count]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Part B - luz-antivirus Analysis]]
+- [[Error volume and error severity are independent, so triage by impact not by count]]
+- [[Service Error Analysis Report - FAILED_TO_STORE on Production]]
+- [[dev-luz-antivirus Cloud Run 504 scan timeouts from a recurring ~102MB payload]]
+- [[Service Reliability Solution]]
+
+%% ai-graph-end %%

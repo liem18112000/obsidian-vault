@@ -1,18 +1,22 @@
 ---
-title: "Persistence layer implementation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675756658/Persistence+layer+implementation
-space: "LUZCOMP"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2016-06-06
+ai_hash: 841d5f5a7c71c1f3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/LUZCOMP/pages/20675756658/Persistence+layer+implementation
+space: LUZCOMP
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luzcomp
+- confluence
+- programming
+- space/luzcomp
+title: Persistence layer implementation
+topic: programming
+type: source
+updated: 2016-06-06
 ---
 
 # Persistence layer implementation
@@ -444,3 +448,14 @@ tags:
     </div>
 
     </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to implement an audit log using Hibernate Envers]]
+- [[ORM - DBFlow guidelines]]
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+- [[Hibernate Envers generates audit tables from an annotation]]
+- [[Reporting - Java class configuration]]
+
+%% ai-graph-end %%

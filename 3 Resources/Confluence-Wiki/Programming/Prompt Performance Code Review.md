@@ -1,18 +1,22 @@
 ---
-title: "Prompt: Performance Code Review"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48997761047/Prompt+Performance+Code+Review
-space: "FUT"
-topic: programming
-relevance: 0.841
-depth: 2.99
-updated: 2025-12-22
+ai_hash: 8553b19fb70c10c2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.99
+entities: []
+relevance: 0.841
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48997761047/Prompt+Performance+Code+Review
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: 'Prompt: Performance Code Review'
+topic: programming
+type: source
+updated: 2025-12-22
 ---
 
 # Prompt: Performance Code Review
@@ -212,3 +216,14 @@ For each issue:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Prompt Architecture Code Review]]
+- [[Prompt Security Code Review]]
+- [[Code review v2.0]]
+- [[Text Compression Techniques - Examples]]
+- [[Text Compression Techniques - Examples]]
+
+%% ai-graph-end %%

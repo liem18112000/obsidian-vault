@@ -1,7 +1,7 @@
 ---
-ai_hash: 9a439061058554ee
+ai_hash: 388223ce97410e2a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities:
 - luz_docs_statistic
@@ -9,18 +9,20 @@ entities:
 - Deployment
 - StatefulSet
 - Cloud Build
+- luz-skill-ship
 - gcloud builds triggers run
 - google-skill-rollout-latest
-- kubectl set image
-- kubectl rollout status
-- dev cluster
-- luz-skill-ship
+- kubectl
 - ship.sh
+- dev cluster
 - PubSub
-- $facet aggregation
 - EJB timer
-- europe-west6-docker.pkg.dev/klara-repo/artifact-registry-container-images/luz-docs-statistic:<commit-sha>
-- luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation
+- $facet aggregation
+- luz-docs-statistic
+- europe-west6-docker.pkg.dev/klara-repo/artifact-registry-container-images
+- commit-sha
+- image tags
+- TRIGGER_NAME
 source: ship of LUZ-155460, session 2026-06-11
 status: seedling
 tags:
@@ -53,30 +55,33 @@ Related: [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub a
 %% ai-graph-start %%
 
 **Related notes:**
+- [[luz-store on dev is a Deployment, not a StatefulSet — roll out with kubectl set image]]
+- [[Build and roll out luz-jsonstore to dev (Cloud Build trigger + Deployment rollout)]]
+- [[luz-docs Cloud Build deploys only on master; feature-branch builds just build+push]]
 - [[luz-docs Cloud Build pushes an image for every branch but only master updates luz_kubernetes]]
 - [[luz-docs-it-staging-trigger-poller-mismatch]]
-- [[luz-person is a Deployment not a StatefulSet in klara dev]]
-- [[rollout-latest skill auto-detects StatefulSet vs Deployment]]
-- [[luz-docs-integration-test dev poller derives the GKE job name from the wrong id]]
 
 **Relations:**
-- luz_docs_statistic — *has trigger* — docs-statistic-service
+- luz_docs_statistic — *is a* — repo
+- luz_docs_statistic — *has Cloud Build trigger* — docs-statistic-service
 - docs-statistic-service — *is a* — Cloud Build trigger
-- luz_docs_statistic — *runs as* — Deployment
-- Deployment — *is in* — dev cluster
-- luz_docs_statistic — *is not a* — StatefulSet
-- StatefulSet — *is in* — dev cluster
-- google-skill-rollout-latest — *fails on* — Deployment
-- google-skill-rollout-latest — *requires* — StatefulSet
-- kubectl set image — *updates* — Deployment
+- luz-docs-statistic — *is a* — workload name
+- luz-docs-statistic — *is an* — image name
+- luz-docs-statistic — *runs as* — Deployment
+- luz-docs-statistic — *runs in* — dev cluster
+- luz-docs-statistic — *does not run as* — StatefulSet
 - luz_docs_statistic — *broke* — luz-skill-ship
-- ship.sh — *is part of* — luz-skill-ship
+- gcloud builds triggers run — *expects image name* — luz-docs-statistic
+- gcloud builds triggers run — *yields NOT_FOUND for* — luz-docs-statistic
+- google-skill-rollout-latest — *requires* — StatefulSet
+- google-skill-rollout-latest — *fails for* — Deployment
+- kubectl — *performs* — set image
+- kubectl — *performs* — rollout status
 - ship.sh — *uses variable* — TRIGGER_NAME
 - luz_docs_statistic — *updates stats via* — EJB timer
 - luz_docs_statistic — *updates stats via* — PubSub
 - luz_docs_statistic — *updates stats via* — $facet aggregation
-- luz_docs_statistic — *uses image* — europe-west6-docker.pkg.dev/klara-repo/artifact-registry-container-images/luz-docs-statistic:<commit-sha>
-- luz_docs_statistic — *is related to* — luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation
-- gcloud builds triggers run — *yields* — NOT_FOUND
+- luz-docs-statistic — *image is located at* — europe-west6-docker.pkg.dev/klara-repo/artifact-registry-container-images
+- image tags — *are* — commit-sha
 
 %% ai-graph-end %%

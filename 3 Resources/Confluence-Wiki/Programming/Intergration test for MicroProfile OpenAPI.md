@@ -1,18 +1,22 @@
 ---
-title: "Intergration test for MicroProfile OpenAPI"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/30671885750/Intergration+test+for+MicroProfile+OpenAPI
-space: "TK"
-topic: programming
-relevance: 0.775
-depth: 2.56
-updated: 2021-01-25
+ai_hash: 8ca5646f3c4e4a0a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.56
+entities: []
+relevance: 0.775
+source: https://axonivy.atlassian.net/wiki/spaces/TK/pages/30671885750/Intergration+test+for+MicroProfile+OpenAPI
+space: TK
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tk
+- confluence
+- programming
+- space/tk
+title: Intergration test for MicroProfile OpenAPI
+topic: programming
+type: source
+updated: 2021-01-25
 ---
 
 # Intergration test for MicroProfile OpenAPI
@@ -207,3 +211,14 @@ API testing requires an application to interact with API. To test an API, you re
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API end to end testing]]
+- [[Load test]]
+- [[Test and code review report template.2.93]]
+- [[06 - How to test a Rest API with authorization]]
+- [[Test and code review report template.2]]
+
+%% ai-graph-end %%

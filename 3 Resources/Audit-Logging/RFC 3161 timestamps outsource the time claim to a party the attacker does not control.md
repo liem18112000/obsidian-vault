@@ -1,10 +1,21 @@
 ---
-title: "RFC 3161 timestamps outsource the time claim to a party the attacker does not control"
+ai_hash: dd2b1e24da691fb7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: term
+entities: []
+source: 'Confluence: LUZ Audit - Basic Understanding Guide + Enhanced Chain-Signature
+  Hybrid (2025-11)'
 status: seedling
-source: "Confluence: LUZ Audit - Basic Understanding Guide + Enhanced Chain-Signature Hybrid (2025-11)"
-tags: [audit-logging, cryptography, compliance, rfc3161, non-repudiation]
+tags:
+- audit-logging
+- cryptography
+- compliance
+- rfc3161
+- non-repudiation
+title: RFC 3161 timestamps outsource the time claim to a party the attacker does not
+  control
+type: term
 ---
 
 # RFC 3161 timestamps outsource the time claim to a party the attacker does not control
@@ -23,3 +34,14 @@ Practical shape, from the LUZ Audit design: do **not** stamp every record. TSA c
 ## Related
 
 - [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hash chains order by linkage, not by time, so backdated entries still verify]]
+- [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+- [[LUZ Audit - Basic Understanding Guide]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+- [[Per-record signatures prove authenticity but not completeness, so deletion and reordering go undetected]]
+
+%% ai-graph-end %%

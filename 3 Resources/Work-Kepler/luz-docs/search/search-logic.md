@@ -1,7 +1,7 @@
 ---
-ai_hash: 3801ed0549cfb29f
+ai_hash: 2f9f04350fadf258
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 entities: []
 ---
 
@@ -59,6 +59,6 @@ Reference: [KLARA Documents Search (Confluence)](https://axonivy.atlassian.net/w
 - [[Glossary]]
 - [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
 - [[08 Facets]]
-- [[luz-docs search DSL silently drops raw-mongo query keys]]
+- [[04 Query Operators]]
 
 %% ai-graph-end %%

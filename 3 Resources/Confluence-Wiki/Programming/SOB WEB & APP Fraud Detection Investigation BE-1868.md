@@ -1,18 +1,22 @@
 ---
-title: "SOB | WEB & APP | Fraud Detection | Investigation | BE-1868"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48270442747/SOB+WEB+APP+Fraud+Detection+Investigation+BE-1868
-space: "Arrow"
-topic: programming
-relevance: 0.703
-depth: 2.41
-updated: 2025-01-20
+ai_hash: 2e75dbabedd334d3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 18
+depth: 2.41
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48270442747/SOB+WEB+APP+Fraud+Detection+Investigation+BE-1868
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/arrow
+- confluence
+- programming
+- space/arrow
+title: SOB | WEB & APP | Fraud Detection | Investigation | BE-1868
+topic: programming
+type: source
+updated: 2025-01-20
 ---
 
 # SOB | WEB & APP | Fraud Detection | Investigation | BE-1868
@@ -173,3 +177,12 @@ Conclusion:
 - No need to modify Agent Review application only need to implement in Ivy.
 
 - Hard to test.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Estimate for ivy and cob-unattended-business-dossier-service-api-spec]]
+- [[SQL script to get SOB (APP & WEB) dossier progress]]
+- [[Changes to SOB endpoints to align the response status code (FA-6800)]]
+
+%% ai-graph-end %%

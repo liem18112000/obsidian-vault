@@ -1,14 +1,21 @@
 ---
-title: "Overview"
+ai_hash: d50457ab01352fc0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49730682947'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-07
-updated: 2026-09-07
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Overview
+type: source
+updated: 2026-09-07
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49730682947/Overview
-confluence_id: "49730682947"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents]
 ---
 
 # Overview
@@ -200,3 +207,14 @@ tags: [confluence, ai-agents]
 - Smarter brain (pgvector) still just plan 📐.
 
 - Human carry LESS rock now. 🪨👍
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Flow View - V2]]
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+- [[Test Executor Agent - Closing the Testing Pipeline Gap]]
+
+%% ai-graph-end %%

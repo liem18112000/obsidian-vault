@@ -1,7 +1,7 @@
 ---
-ai_hash: 782fecb9bbaf2849
+ai_hash: 10a55476d85b5717
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Daily earnings digest
 - Accesstrade daily report
@@ -12,48 +12,50 @@ entities:
 - conversions
 - approved revenue
 - pending revenue
-- top-earning content by sub1
+- top-earning content
+- sub1
 - phone
-- reporting API
+- Accesstrade conversion and transaction reporting API
 - passive dashboard
 - OS scheduler
 - schedule skill
 - Claude session
 - accesstrade skill
 - Accesstrade report API
-- Accesstrade
+- aggregation
 - digest
 - Notification hook
 - Telegram
 - Slack
-- Zalo
-- cron
+- daily Claude run
 - loop skill
 - trailing-24h window
 - 7d window
-- Accesstrade API
-- rate limits
-- pagination
+- Accesstrade API rate limits and pagination
+- total approved
+- total pending
+- top 5 sub1 by reward
 - biggest single sale
 - newly-rejected conversions
 - Stop hook
+- Zalo
 - periodBase = UPDATED_DATE
-- pending sales
 - 'context: fork'
 - subagent
 - main thread
+- merchant
 - Weekly EPC-by-content report
+- revenue
+- clicks
 - Alert-only mode
 - threshold
 - 1M VND/day
 - rejection spike
-- Accesstrade conversion and transaction reporting
-- Accesstrade API rate limits and pagination
 - Claude Code hooks event model
 - Accesstrade SubID attribution
 - Accesstrade API Integration - MOC
-- Designing an Accesstrade skill for Claude Code
-- 1-req/5-min, 7-day limit
+- pending sales
+- pull
 source: research session 2026-06-11
 status: seedling
 tags:
@@ -113,70 +115,67 @@ flowchart TD
 **Related notes:**
 - [[Designing an Accesstrade skill for Claude Code]]
 - [[Accesstrade API Integration - MOC]]
-- [[Accesstrade postback and S2S conversion tracking]]
 - [[Use case - campaign discovery and datafeed content briefs]]
+- [[Accesstrade postback and S2S conversion tracking]]
 - [[Use case - bulk tracking link generation]]
 
 **Relations:**
-- automated daily conversion digest — *is a* — Use case
+- automated daily conversion digest — *has goal* — Claude
 - Claude — *pulls* — conversions
 - Claude — *separates* — approved revenue
 - Claude — *separates* — pending revenue
-- Claude — *ranks* — top-earning content by sub1
+- Claude — *ranks* — top-earning content
+- top-earning content — *ranked by* — sub1
 - Claude — *sends* — digest
-- digest — *to* — phone
-- reporting API — *becomes* — passive dashboard
-- OS scheduler — *initiates* — Claude session
-- schedule skill — *initiates* — Claude session
-- Claude session — *launches* — accesstrade skill
-- accesstrade skill — *uses* — Accesstrade report API
-- Accesstrade report API — *provides* — conversions
-- conversions — *grouped by* — sub1
-- conversions — *summed for* — approved revenue
-- conversions — *summed for* — pending revenue
+- digest — *sent to* — phone
+- Accesstrade conversion and transaction reporting API — *becomes* — passive dashboard
+- OS scheduler — *launches* — Claude session
+- schedule skill — *launches* — Claude session
+- Claude session — *uses* — accesstrade skill
+- accesstrade skill — *queries* — Accesstrade report API
+- Accesstrade report API — *provides data for* — aggregation
+- aggregation — *groups by* — sub1
+- aggregation — *sums* — approved revenue
+- aggregation — *sums* — pending revenue
 - Claude — *writes* — digest
-- digest — *sent via* — Notification hook
+- digest — *triggers* — Notification hook
 - Notification hook — *sends to* — Telegram
 - Notification hook — *sends to* — Slack
 - Notification hook — *sends to* — Zalo
-- cron — *schedules* — Claude run
-- schedule skill — *schedules* — Claude run
-- loop skill — *schedules* — Claude run
+- daily Claude run — *is scheduled by* — OS scheduler
+- daily Claude run — *is scheduled by* — schedule skill
+- daily Claude run — *is scheduled by* — loop skill
 - accesstrade skill — *fetches* — trailing-24h window
 - accesstrade skill — *fetches* — 7d window
-- Accesstrade API — *has* — rate limits
-- Accesstrade API — *has* — pagination
-- Accesstrade API — *has limit* — 1-req/5-min, 7-day limit
-- Claude — *aggregates* — approved revenue
-- Claude — *aggregates* — pending revenue
-- Claude — *aggregates* — top-earning content by sub1
+- accesstrade skill — *operates within* — Accesstrade API rate limits and pagination
+- Claude — *aggregates* — total approved
+- Claude — *aggregates* — total pending
+- Claude — *aggregates* — top 5 sub1 by reward
 - Claude — *aggregates* — biggest single sale
 - Claude — *aggregates* — newly-rejected conversions
 - Notification hook — *forwards* — digest
 - Stop hook — *forwards* — digest
-- digest — *forwarded to* — Telegram
-- digest — *forwarded to* — Slack
-- digest — *forwarded to* — Zalo
+- digest — *is forwarded to* — Telegram
+- digest — *is forwarded to* — Slack
+- digest — *is forwarded to* — Zalo
+- automated daily conversion digest — *uses* — periodBase = UPDATED_DATE
 - periodBase = UPDATED_DATE — *catches* — pending sales
-- context: fork — *runs* — pull
-- subagent — *runs* — pull
-- finished digest — *returns to* — main thread
-- approved revenue — *reported separately from* — pending revenue
-- Weekly EPC-by-content report — *is a* — Variation
-- Alert-only mode — *is a* — Variation
-- Alert-only mode — *triggers on* — threshold
-- threshold — *is* — 1M VND/day
-- threshold — *is* — rejection spike
-- automated daily conversion digest — *related to* — Accesstrade conversion and transaction reporting
-- automated daily conversion digest — *related to* — Accesstrade API rate limits and pagination
-- automated daily conversion digest — *related to* — Claude Code hooks event model
-- automated daily conversion digest — *related to* — Accesstrade SubID attribution
-- automated daily conversion digest — *related to* — Accesstrade API Integration - MOC
-- accesstrade skill — *described in* — Designing an Accesstrade skill for Claude Code
-- Accesstrade — *has* — reporting API
-- Accesstrade — *has* — Accesstrade report API
-- Accesstrade — *has* — Accesstrade API
-- Accesstrade report API — *is a type of* — Accesstrade API
-- reporting API — *is a type of* — Accesstrade API
+- pull — *runs in* — context: fork
+- context: fork — *creates* — subagent
+- subagent — *returns* — digest
+- digest — *returned to* — main thread
+- approved revenue — *is reported separately from* — pending revenue
+- merchant — *can cancel* — revenue
+- Weekly EPC-by-content report — *calculates* — revenue
+- revenue — *divided by* — clicks
+- clicks — *per* — sub1
+- Alert-only mode — *activates on* — threshold
+- Alert-only mode — *activates on* — 1M VND/day
+- Alert-only mode — *activates on* — rejection spike
+- automated daily conversion digest — *is related to* — Accesstrade conversion and transaction reporting API
+- automated daily conversion digest — *is related to* — Accesstrade API rate limits and pagination
+- automated daily conversion digest — *is related to* — Claude Code hooks event model
+- automated daily conversion digest — *is related to* — Accesstrade SubID attribution
+- automated daily conversion digest — *is related to* — Accesstrade API Integration - MOC
 
 %% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: bb09608d317b9baa
+ai_hash: 32ee7187a1d9aa90
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-20
 entities: []
 source: session 2026-07-20 LUZ-156314
@@ -38,6 +38,6 @@ Related: [[Campaign-gate template cache then campaign status L1 then repository 
 - [[Extract shared root of near-identical CDI beans into a static common helper + Spec + supplier]]
 - [[DualCache L1 write ignores per-call TTL (uses domain default)]]
 - [[luz_docs stamps _shard on create to keep sharding gate stable]]
-- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[DualCache namespace only selects the L1 bucket]]
 
 %% ai-graph-end %%

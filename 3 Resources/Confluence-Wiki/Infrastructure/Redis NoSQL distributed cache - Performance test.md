@@ -1,18 +1,22 @@
 ---
-title: "Redis NoSQL distributed cache -  Performance test"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47007137884/Redis+NoSQL+distributed+cache+-+Performance+test
-space: "LUZ"
-topic: infra
-relevance: 0.842
-depth: 3
-updated: 2021-12-10
+ai_hash: 0da5609a303fe02a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.842
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47007137884/Redis+NoSQL+distributed+cache+-+Performance+test
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Redis NoSQL distributed cache -  Performance test
+topic: infra
+type: source
+updated: 2021-12-10
 ---
 
 # Redis NoSQL distributed cache -  Performance test
@@ -456,3 +460,14 @@ Keyword: Reactive
 
 
 ![[47007137884-image-20211210-161940.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_cache performance test with security]]
+- [[Performance Wildfly vs Quarkus]]
+- [[Benchmark of luz-database (performance env)]]
+- [[Create Document API – Performance Testing Report]]
+- [[Test parallelize executor]]
+
+%% ai-graph-end %%

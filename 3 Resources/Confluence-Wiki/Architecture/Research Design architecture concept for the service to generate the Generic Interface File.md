@@ -1,18 +1,23 @@
 ---
-title: "Research: Design architecture concept for the service to generate the Generic Interface File"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47453503617/Research+Design+architecture+concept+for+the+service+to+generate+the+Generic+Interface+File
-space: "HACKA"
-topic: architecture
-relevance: 0.984
-depth: 3
-updated: 2023-08-11
+ai_hash: 763cfd2763137451
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.984
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47453503617/Research+Design+architecture+concept+for+the+service+to+generate+the+Generic+Interface+File
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/hacka
+- confluence
+- architecture
+- space/hacka
+title: 'Research: Design architecture concept for the service to generate the Generic
+  Interface File'
+topic: architecture
+type: source
+updated: 2023-08-11
 ---
 
 # Research: Design architecture concept for the service to generate the Generic Interface File
@@ -159,3 +164,14 @@ The time to finish this process must be less than <span class="inline-comment-ma
 <span class="inline-comment-marker" ref="a453f124-9ba6-4f15-85be-33193e1d2ee3">The output of the service is a JSON document</span>
 
 To be more specific, we can reference [Generic Interface JSON file](https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/47453143184/Generic+Interface+JSON+file)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Generic Interface JSON file]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[Analyze N+1 queries for REST API calculate payslips for overview salary processing]]
+- [[How to call generic interface document API on dev]]
+
+%% ai-graph-end %%

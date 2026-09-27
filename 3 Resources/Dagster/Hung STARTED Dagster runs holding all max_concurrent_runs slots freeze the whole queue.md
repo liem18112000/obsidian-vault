@@ -1,5 +1,5 @@
 ---
-ai_hash: 6a6cf79b0966c53d
+ai_hash: fe3a2501b32b4018
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-10
@@ -42,8 +42,8 @@ Seen on customer360 UAT (2026-09): 2 `segmentation_job` runs hung ~19h/25h at `r
 
 **Related notes:**
 - [[Dagster runs stuck in QUEUED forever = orphaned runs leak all concurrency slots]]
-- [[Dagster run_monitoring start_timeout does not reap already-STARTED hung runs]]
 - [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate]]
+- [[Dagster run_monitoring start_timeout does not reap already-STARTED hung runs]]
 - [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
 - [[Dagster run_monitoring + DefaultRunLauncher does not reap STARTED zombies that predate a daemon restart]]
 

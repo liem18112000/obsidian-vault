@@ -1,14 +1,21 @@
 ---
-title: "[eArchive] Performance measurement & scalability assessment at 800000 documents"
+ai_hash: e155cd3de9c70848
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49608786001'
+confluence_path: Team Kepler > Developer note
 created: 2026-07-23
-updated: 2026-07-23
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- earchive
+- performance
+title: '[eArchive] Performance measurement & scalability assessment at 800000 documents'
+type: source
+updated: 2026-07-23
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49608786001/eArchive+Performance+measurement+scalability+assessment+at+800000+documents
-confluence_id: "49608786001"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, earchive, performance]
 ---
 
 # [eArchive] Performance measurement & scalability assessment at 800000 documents
@@ -363,3 +370,14 @@ However, there are two point need to notices:
 > | `luz-jsonstore` `PATCH folders/{id}` | 155/155 ms (1) | — | — | — | — | **155 ms** | **155 ms** | **155 ms** |
 >
 >
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive Performance measurement & scalability assessment at 2.2M documents]]
+- [[eArchive request flow and log correlation (perf)]]
+- [[Count Fan-out (K) Benchmark on Performance Env]]
+- [[eArchive 800k bottleneck is view-controller not K]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+
+%% ai-graph-end %%

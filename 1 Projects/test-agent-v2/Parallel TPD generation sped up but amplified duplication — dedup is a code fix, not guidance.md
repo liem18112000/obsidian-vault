@@ -1,55 +1,46 @@
 ---
-ai_hash: 99df177d87338451
+ai_hash: 5019e1eab166de0c
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-23
 entities:
-- Parallel TPD generation
-- TPD generator
+- TPD generation
+- Parallelization
 - Duplication
 - Dedup
 - Code fix
 - Guidance
 - Speed
 - Quality
-- Score
+- Luz-158390
 - SYSTEMIC TRIPLICATION
-- Behaviour
-- Scenario
-- Naming scheme
+- Scenarios
+- Naming schemes
 - Ticket-scoped naming scheme
-- Confluence-cited naming scheme
-- Luzimport naming scheme
-- golden-e2e
-- zip-slip
-- zip-bomb
-- symlink
-- Contradiction
+- Confluence-cited set
+- Luzimport-01..47 set
+- Direct contradiction
 - 158446-06
-- luzimport-36
-- job-counter assertion
-- Root cause
+- Luzimport-36
+- Job-counter assertion
 - Generator
-- Source node
 - Merge/dedup process
-- '`refine_scenarios` function'
-- '`implement/generate/llm.py`'
-- Parallel worker
-- Semantic dedup
-- FIX
-- CODE
-- Semantic key
+- refine_scenarios(merged, valid_ids)
+- implement/generate/llm.py
+- Near-duplicate scenarios
+- Cross-source semantic dedup
+- Parallel workers
+- Behaviour
 - Canonical scenario
-- Citation
+- Citations
+- Parallelism
 - Throughput lever
 - Quality lever
-- Parallelism
-- Producer
-- LUZ-158390
-- Finding
-- Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY
-- Parallelize TPD generation via 3 Redis-worker replicas
+- Parallel producers
+- sonnet+3-worker parallelization
+- Redis-worker replicas
 - _BATCH_CONCURRENCY
+- Independent batch
 source: session 2026-09-23
 status: seedling
 tags:
@@ -82,47 +73,44 @@ FINDING (LUZ-158390, round 2 after sonnet+3-worker parallelization): parallelizi
 - [[TPD test_kinds must be additive over the base four, not replace them]]
 
 **Relations:**
-- Parallel TPD generation — *sped up* — TPD generator
-- Parallel TPD generation — *amplified* — Duplication
+- TPD generation — *sped up by* — Parallelization
+- Parallelization — *amplified* — Duplication
 - Dedup — *is a* — Code fix
 - Dedup — *is not* — Guidance
-- TPD generator — *parallelization improved* — Speed
-- TPD generator — *parallelization did not improve* — Quality
-- Speed — *enabled* — 2 assured rounds completed
-- Quality — *score stayed at* — 0.58
-- Round 2 — *scored* — 0.45
-- Judge — *diagnosed* — SYSTEMIC TRIPLICATION
-- SYSTEMIC TRIPLICATION — *describes* — Behaviour covered by multiple near-identical Scenario
-- Scenario — *uses* — Naming scheme
-- Naming scheme — *includes* — Ticket-scoped naming scheme
-- Naming scheme — *includes* — Confluence-cited naming scheme
-- Naming scheme — *includes* — Luzimport naming scheme
-- golden-e2e — *is an example of* — Behaviour
-- zip-slip — *is an example of* — Behaviour
-- zip-bomb — *is an example of* — Behaviour
-- symlink — *is an example of* — Behaviour
-- Text — *mentions* — Contradiction
+- Parallelization — *improved* — Speed
+- Parallelization — *did not improve* — Quality
+- Luz-158390 — *is a* — FINDING
+- Luz-158390 — *diagnosed* — SYSTEMIC TRIPLICATION
+- SYSTEMIC TRIPLICATION — *is a form of* — Duplication
+- SYSTEMIC TRIPLICATION — *affects* — Scenarios
+- Scenarios — *are covered by* — Naming schemes
+- Naming schemes — *include* — Ticket-scoped naming scheme
+- Naming schemes — *include* — Confluence-cited set
+- Naming schemes — *include* — Luzimport-01..47 set
+- Scenarios — *contain* — Direct contradiction
 - 158446-06 — *asserts* — outcome
-- luzimport-36 — *marks* — Behaviour BLOCKED
-- Scenario — *missing* — job-counter assertion
-- Root cause — *is* — Generator emits Scenario per Source node
-- Root cause — *is* — Merge/dedup process only removes same-id/near-dup
-- Merge/dedup process — *is implemented by* — `refine_scenarios` function
-- `refine_scenarios` function — *located in* — `implement/generate/llm.py`
-- Parallel worker — *amplifies* — Duplication
-- FIX — *is* — CODE
-- FIX — *is not* — Guidance
-- FIX — *involves* — Semantic dedup by Behaviour
-- Semantic dedup by Behaviour — *keeps* — Canonical scenario
-- Canonical scenario — *includes* — Citation
-- FIX — *involves* — Cross-source semantic dedup pass at merge
-- FIX — *involves* — Generate one canonical set and attach Citation
+- Luzimport-36 — *marks* — behaviour BLOCKED
+- Scenarios — *missing* — Job-counter assertion
+- Generator — *emits* — Scenarios
+- Scenarios — *are generated* — PER-SOURCE-NODE
+- Merge/dedup process — *is* — refine_scenarios(merged, valid_ids)
+- refine_scenarios(merged, valid_ids) — *is in* — implement/generate/llm.py
+- Merge/dedup process — *removes* — Near-duplicate scenarios
+- Merge/dedup process — *does not remove* — Cross-source semantic dedup
+- Parallel workers — *generate* — Independent batch
+- Independent batch — *merged without* — Cross-source semantic dedup
+- Parallel workers — *amplify* — Duplication
+- Code fix — *is* — Dedup by Behaviour
+- Dedup by Behaviour — *keeps* — Canonical scenario
+- Canonical scenario — *includes* — Citations
+- Dedup by Behaviour — *is a type of* — Cross-source semantic dedup
+- Cross-source semantic dedup — *occurs at* — merge
 - Parallelism — *is a* — Throughput lever
 - Parallelism — *is not a* — Quality lever
-- More Parallel producers — *leads to* — More Duplication
-- LUZ-158390 — *is a* — Finding
-- Parallel TPD generation — *is related to* — Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY
-- Parallel TPD generation — *is related to* — Parallelize TPD generation via 3 Redis-worker replicas
-- Parallel TPD generation — *is related to* — _BATCH_CONCURRENCY
+- Parallel producers — *increase* — Duplication
+- sonnet+3-worker parallelization — *is a type of* — Parallelization
+- Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY — *is related to* — TPD generation
+- Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY — *uses* — Redis-worker replicas
+- Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY — *avoids* — _BATCH_CONCURRENCY
 
 %% ai-graph-end %%

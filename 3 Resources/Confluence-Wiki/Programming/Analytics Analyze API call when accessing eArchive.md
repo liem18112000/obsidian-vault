@@ -1,18 +1,22 @@
 ---
-title: "[Analytics] Analyze API call when accessing eArchive"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47150006413/Analytics+Analyze+API+call+when+accessing+eArchive
-space: "TP2020"
-topic: programming
-relevance: 0.877
-depth: 3
-updated: 2022-08-04
+ai_hash: 9c5c1fa0eb5e2a4c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.877
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47150006413/Analytics+Analyze+API+call+when+accessing+eArchive
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: '[Analytics] Analyze API call when accessing eArchive'
+topic: programming
+type: source
+updated: 2022-08-04
 ---
 
 # [Analytics] Analyze API call when accessing eArchive
@@ -366,3 +370,14 @@ LOG:
 ![[47150006413-performance_log_prod_21_07_2022.csv]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[EArchive - Search doc process]]
+- [[WIP Analyze subfolder search API (542ms)]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[Public API client performance analysis]]
+
+%% ai-graph-end %%

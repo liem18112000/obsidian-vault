@@ -1,10 +1,41 @@
 ---
-title: "Version the whole retrieval pipeline, not just the model"
+ai_hash: 42d28d561075a0b6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities:
+- Retrieval pipeline
+- Model
+- Retrieval index
+- Pipeline
+- Chunking strategy
+- Metadata-extraction prompts
+- Enrichment steps
+- Embedding model
+- Vectors
+- Pipeline definition
+- Identifier
+- Reproducibility
+- Offline A/B evaluation
+- Strategies
+- Offline evaluation
+- Prompt
+- LLM
+- Index
+- IR - System Design
+- Changing the embedding model forces a full index rebuild
+- Metadata fields
+source: 'Confluence: IR - System Design (AI)'
 status: seedling
-source: "Confluence: IR - System Design (AI)"
-tags: [rag, embeddings, reproducibility, evaluation, prompting, confluence-distilled]
+tags:
+- rag
+- embeddings
+- reproducibility
+- evaluation
+- prompting
+- confluence-distilled
+title: Version the whole retrieval pipeline, not just the model
+type: lesson
 ---
 
 # Version the whole retrieval pipeline, not just the model
@@ -32,3 +63,45 @@ Source: [[IR - System Design]] (AI, Confluence).
 ## Related
 
 - [[Changing the embedding model forces a full index rebuild]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Changing the embedding model forces a full index rebuild]]
+- [[IR - System Design]]
+- [[Version-stamp quality ratings so stale feedback stops driving regeneration]]
+- [[Version changelogs - generate the explanation at snapshot time, compute the diff on demand]]
+
+**Relations:**
+- Retrieval pipeline — *includes* — Model
+- Retrieval index — *is output of* — Pipeline
+- Pipeline — *shapes* — Vectors
+- Chunking strategy — *shapes* — Vectors
+- Metadata-extraction prompts — *shapes* — Vectors
+- Enrichment steps — *shapes* — Vectors
+- Embedding model — *shapes* — Vectors
+- Versioning only the Model — *leaves unable to answer* — what produced this vector?
+- Practice — *is to version* — Pipeline definition
+- Pipeline definition — *includes* — Chunking strategy
+- Pipeline definition — *includes* — Metadata-extraction prompts
+- Pipeline definition — *includes* — Embedding model
+- Identifier — *buys* — Reproducibility
+- Identifier — *buys* — "What produced this?" becomes answerable
+- Identifier — *buys* — Offline A/B evaluation of Strategies
+- Reproducibility — *allows* — regenerate vector exactly
+- Pipeline version — *localises change when* — retrieval quality drops
+- Prompt — *is part of* — Pipeline
+- Prompt — *is input to* — Index
+- LLM — *writes* — indexed text
+- Prompt — *deserves same treatment as* — Model
+- Offline A/B evaluation — *compares* — two indices under two pipeline versions
+- Offline evaluation — *uses* — static, pre-collected dataset
+- Pipeline versioning — *provides* — Repeatability
+- Embedding model — *forces* — full rebuild
+- Chunking strategy — *forces* — full rebuild
+- Metadata fields — *may need nothing for* — display changes
+- Not every pipeline change costs the same — *refers to* — Changing the embedding model forces a full index rebuild
+- IR - System Design — *is source of* — Retrieval pipeline
+- Retrieval pipeline — *is related to* — Changing the embedding model forces a full index rebuild
+
+%% ai-graph-end %%

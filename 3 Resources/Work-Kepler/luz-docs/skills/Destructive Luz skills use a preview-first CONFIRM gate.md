@@ -1,7 +1,7 @@
 ---
-ai_hash: 261ccab5d294091f
+ai_hash: 960d3d2bad8e4d9c
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities: []
 source: session 2026-06-11 (creating earchive-data-clean)
@@ -37,6 +37,6 @@ Two supporting choices: deletion is `deleteMany({})` rather than `drop()`, so in
 - [[deleteMany over kubectl port-forward runs about 5k docs per second]]
 - [[luz-kubernetes-add-env skill propagates env properties across overlay environments]]
 - [[luz-env-config-reminder hook nudges overlay propagation for new env reads in luz repos]]
-- [[Evicting gate campaign-check keys from luz-cache clears L2 only]]
+- [[Performance Mongo is a mongos-routed sharded cluster — truncate via the tenant's shard primary, not mongos]]
 
 %% ai-graph-end %%

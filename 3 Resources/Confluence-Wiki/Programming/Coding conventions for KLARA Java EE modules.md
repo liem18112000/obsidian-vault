@@ -1,18 +1,22 @@
 ---
-title: "Coding conventions for KLARA Java EE modules"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436752441/Coding+conventions+for+KLARA+Java+EE+modules
-space: "LUZ"
-topic: programming
-relevance: 0.804
-depth: 2.84
-updated: 2016-12-19
+ai_hash: 678aea049158d9a6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.84
+entities: []
+relevance: 0.804
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20436752441/Coding+conventions+for+KLARA+Java+EE+modules
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Coding conventions for KLARA Java EE modules
+topic: programming
+type: source
+updated: 2016-12-19
 ---
 
 # Coding conventions for KLARA Java EE modules
@@ -120,3 +124,14 @@ In this example, if the companyService fails, we need to be `@Transactional` if
 It's a good practice to annotate all our Rest Resource Classes with `@Transactional`*.*
 
 # EJB Session Beans
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
+- [[RESTful API, Postman,]]
+- [[JAX-RS inherits routing annotations from interfaces but not custom security annotations]]
+- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+- [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
+
+%% ai-graph-end %%

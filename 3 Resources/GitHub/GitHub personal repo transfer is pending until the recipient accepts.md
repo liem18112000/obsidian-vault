@@ -1,10 +1,18 @@
 ---
-title: "GitHub personal repo transfer is pending until the recipient accepts"
+ai_hash: 0546d59ed6cd4b0d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: session 2026-09-27
 status: seedling
-source: "session 2026-09-27"
-tags: [github, gh-cli, gotcha, api]
+tags:
+- github
+- gh-cli
+- gotcha
+- api
+title: GitHub personal repo transfer is pending until the recipient accepts
+type: lesson
 ---
 
 # GitHub personal repo transfer is pending until the recipient accepts
@@ -23,3 +31,13 @@ Do NOT retry the POST when the body shows the old owner — the invitation alrea
 
 ## Related
 [[git push --all skips remote-tracking-only branches]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub user-to-user repo transfer is a pending invitation, not an immediate move]]
+- [[git push --all skips remote-tracking-only branches]]
+- [[git push sends current branch to its upstream not same-name branch]]
+- [[git checkout -B branch originmain rehomes upstream to originmain, so a bare push targets main]]
+
+%% ai-graph-end %%

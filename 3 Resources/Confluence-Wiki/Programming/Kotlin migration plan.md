@@ -1,18 +1,22 @@
 ---
-title: "Kotlin migration plan"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48553623640/Kotlin+migration+plan
-space: "Helios"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2026-01-27
+ai_hash: 1f94dacfd6943c57
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48553623640/Kotlin+migration+plan
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Kotlin migration plan
+topic: programming
+type: source
+updated: 2026-01-27
 ---
 
 # Kotlin migration plan
@@ -119,3 +123,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[List selection Error handling on multi-selection actions]]
+- [[Test and code review report template.2.93]]
+- [[Merging process]]
+- [[00. Test and code review report template]]
+- [[Test and code review report template]]
+
+%% ai-graph-end %%

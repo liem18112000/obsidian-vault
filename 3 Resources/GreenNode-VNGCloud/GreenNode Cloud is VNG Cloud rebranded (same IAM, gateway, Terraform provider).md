@@ -1,5 +1,5 @@
 ---
-ai_hash: fc5c491012aac567
+ai_hash: 2f9c80f627478b39
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-17
@@ -36,6 +36,6 @@ See [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform pr
 - [[GreenNode cloud runs on VNG Cloud infrastructure]]
 - [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 - [[VNG Cloud Terraform provider vDB service-to-resource mapping]]
-- [[VNG Cloud docs rebranded to GreenNode (docs.vngcloud.vn redirects to docs.greennode.ai)]]
+- [[Get GreenNode API credentials by creating an IAM Service Account (Client ID + Secret Key)]]
 
 %% ai-graph-end %%

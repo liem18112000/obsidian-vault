@@ -1,18 +1,22 @@
 ---
-title: "IVY API Calls Overview for luz Modules"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48714416131/IVY+API+Calls+Overview+for+luz+Modules
-space: "TS"
-topic: programming
-relevance: 0.769
-depth: 2.68
-updated: 2025-10-02
+ai_hash: 2b83569fee2b7121
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.68
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48714416131/IVY+API+Calls+Overview+for+luz+Modules
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: IVY API Calls Overview for luz Modules
+topic: programming
+type: source
+updated: 2025-10-02
 ---
 
 # IVY API Calls Overview for luz Modules
@@ -120,3 +124,14 @@ tags:
   - `/feature-switch/roles?tenant=:tenantId&username=:us&feature=:featureSwitch`✅
 
 ✅Means safe, it does not call luz_webclient (IVY)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Upload Document API]]
+- [[Temporary Restfull APIs in Ivy]]
+- [[Token JWT Security]]
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[Document Creator API]]
+
+%% ai-graph-end %%

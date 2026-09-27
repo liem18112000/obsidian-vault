@@ -1,7 +1,7 @@
 ---
-ai_hash: 4b2e18d439a55029
+ai_hash: dd50b4e2bd869266
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: leo-cdp-framework ci-cd.yml debugging 2026-06-06
@@ -40,9 +40,9 @@ One or more containers failed to start.
 
 **Related notes:**
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
-- [[Running the LEO CDP GHCR image needs mounted configs (image ships JARs only)]]
-- [[CI build Docker image on every run, push only on non-PR]]
-- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
-- [[Same-repo branch push fires both push and pull_request events (duplicate CI runs)]]
+- [[CD didn't fire on an infra-only merge (CI paths-ignore); re-run a workflow_run deploy via workflow_dispatch, not run rerun]]
+- [[leo-customer360 CD runs after CI via workflow_run and resumable deploy-all.sh]]
+- [[A workflow_run-triggered GitHub workflow always runs the version on the DEFAULT branch]]
+- [[CI-driven CD cannot resolve local gitignored Terraform state — needs remote backend or IPs via secrets]]
 
 %% ai-graph-end %%

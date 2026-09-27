@@ -1,18 +1,22 @@
 ---
-title: "CI/CD (Google Cloud Build & Google Cloud Deploy)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48296099906/CI+CD+Google+Cloud+Build+Google+Cloud+Deploy
-space: "IO"
-topic: infra
-relevance: 0.904
-depth: 3
-updated: 2025-01-29
+ai_hash: 6ac6c23ad4701636
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.904
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48296099906/CI+CD+Google+Cloud+Build+Google+Cloud+Deploy
+space: IO
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/io
+- confluence
+- infra
+- space/io
+title: CI/CD (Google Cloud Build & Google Cloud Deploy)
+topic: infra
+type: source
+updated: 2025-01-29
 ---
 
 # CI/CD (Google Cloud Build & Google Cloud Deploy)
@@ -246,3 +250,14 @@ Es ist den kleinsten Anfang, um den Reifengrad der Entwicklung weiter zu bringen
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Google Cloud Build & Google Artifact Registries]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[GKE - Cloud Run Migration Trackers]]
+- [[CICD for Kogito]]
+- [[Infrastructure]]
+
+%% ai-graph-end %%

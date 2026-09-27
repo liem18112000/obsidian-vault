@@ -1,14 +1,19 @@
 ---
-title: "Customer Questions (Quickschild GmbH) — Detailed Breakdown"
+ai_hash: 8043fb2c432b9dd0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49313021961'
+confluence_path: Team Kepler > Risk & Issues > Issues > Kunde Quickschild GmbH_eArchiv
 created: 2026-04-10
-updated: 2026-04-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: Customer Questions (Quickschild GmbH) — Detailed Breakdown
+type: source
+updated: 2026-04-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49313021961/Customer+Questions+Quickschild+GmbH+Detailed+Breakdown
-confluence_id: "49313021961"
-confluence_path: "Team Kepler > Risk & Issues > Issues > Kunde Quickschild GmbH_eArchiv"
-tags: [confluence]
 ---
 
 # Customer Questions (Quickschild GmbH) — Detailed Breakdown
@@ -61,3 +66,14 @@ tags: [confluence]
 - Are there alternative pricing structures for larger archives?
 
 - What models exist specifically for long-term customers with growing volume?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Analysis and Proposed Solutions]]
+- [[eArchive Performance — Executive Overview]]
+- [[Follow Up Points After Client Meeting]]
+- [[eArchive Performance — Detail Overview]]
+- [[eArchive Performance measurement & scalability assessment at 2.2M documents]]
+
+%% ai-graph-end %%

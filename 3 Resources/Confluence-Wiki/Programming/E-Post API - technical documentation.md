@@ -1,18 +1,22 @@
 ---
-title: "E-Post API - technical documentation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525652813/E-Post+API+-+technical+documentation
-space: "LUZ"
-topic: programming
-relevance: 0.755
-depth: 2.81
-updated: 2026-01-20
+ai_hash: ed52e7af106f1bf5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 22
+depth: 2.81
+entities: []
+relevance: 0.755
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525652813/E-Post+API+-+technical+documentation
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: E-Post API - technical documentation
+topic: programming
+type: source
+updated: 2026-01-20
 ---
 
 # E-Post API - technical documentation
@@ -2161,3 +2165,14 @@ Möglicher Algorithmus (nicht vollständig):
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[Onboarding API - Investigation Identity Provider SSO]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[Grade identity assurance by what was proven, not a verified boolean]]
+
+%% ai-graph-end %%

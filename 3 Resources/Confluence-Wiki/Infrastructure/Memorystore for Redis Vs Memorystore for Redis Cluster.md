@@ -1,18 +1,22 @@
 ---
-title: "Memorystore for Redis Vs Memorystore for Redis Cluster"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48326967433/Memorystore+for+Redis+Vs+Memorystore+for+Redis+Cluster
-space: "LUZ"
-topic: infra
-relevance: 0.714
-depth: 2.45
-updated: 2025-02-11
+ai_hash: 289f458b30558f5e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.45
+entities: []
+relevance: 0.714
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48326967433/Memorystore+for+Redis+Vs+Memorystore+for+Redis+Cluster
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Memorystore for Redis Vs Memorystore for Redis Cluster
+topic: infra
+type: source
+updated: 2025-02-11
 ---
 
 # Memorystore for Redis Vs Memorystore for Redis Cluster
@@ -119,3 +123,14 @@ tags:
 ## Final decision:
 
 Redis cluster for Prod and the others use Redis standard. And for Performance, we should test with standard.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Redis Standard replicas are failover only; read scaling needs Cluster]]
+- [[Redis NoSQL distributed cache - Performance test]]
+- [[Run an event-broker Redis as a dedicated co-located instance, not the cache Redis]]
+- [[Data index performance]]
+- [[Postgres Architecture Blueprint V2023]]
+
+%% ai-graph-end %%

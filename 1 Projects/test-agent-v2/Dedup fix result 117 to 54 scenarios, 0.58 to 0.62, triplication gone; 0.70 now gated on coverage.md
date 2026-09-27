@@ -1,33 +1,29 @@
 ---
-ai_hash: 07713538c49921dd
+ai_hash: 9037ff835560a5ce
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-23
 entities:
-- Dedup fix
-- 117 scenarios
-- 54 scenarios
-- 435 steps
-- 81 steps
-- 0.58 assured score
-- 0.62 assured score
-- triplication
-- dedup
+- cross-source semantic dedup fix
+- scenarios
+- steps
+- assured score
+- systemic triplication across 3 naming schemes
+- LUZ-158390
+- run-3be0f1e0
+- semantic dedup
 - code lever
-- 0.70 score
 - coverage
-- 24% coverage
-- 18% coverage
-- AC×kind
 - 0.86 cosine threshold
-- distinct security scenarios
+- security scenarios
 - zip-bomb
 - symlink
 - zip-slip
 - TPD_DEDUP_THRESHOLD
 - 0.90 threshold
 - PLAIN re-run
-- security/i18n scenarios
+- i18n scenarios
+- 0.70 target score
 - duplication
 - COVERAGE COMPLETENESS
 - judge
@@ -37,22 +33,18 @@ entities:
 - NFC/NFD encoding
 - pool-size-N concurrency comparison
 - repeated runs
-- size-boundary points
-- non-atomic 5-in-1 field-failure scenario
-- PATH TO 0.70
+- 102,399/102,401 size-boundary points
+- field-failure scenario
 - judge coverage guidance
-- semantic dedup
+- re-triplication
 - recall
 - precision
-- threshold
 - distinct-but-similar cases
 - 'Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union
   citations'
 - 'Cross-source semantic scenario dedup: embed+cosine-cluster'
 - keep canonical
 - union citations
-- LUZ-158390
-- run-3be0f1e0
 source: session 2026-09-23
 status: seedling
 tags:
@@ -87,31 +79,27 @@ RESULT of the cross-source semantic dedup fix (LUZ-158390, run-3be0f1e0): WORKED
 - [[Cross-source semantic scenario dedup embed+cosine-cluster, keep canonical, union citations]]
 
 **Relations:**
-- Dedup fix — *reduced_scenarios_from* — 117 scenarios
-- Dedup fix — *reduced_scenarios_to* — 54 scenarios
-- Dedup fix — *reduced_steps_from* — 435 steps
-- Dedup fix — *reduced_steps_to* — 81 steps
-- Dedup fix — *increased_assured_score_from* — 0.58 assured score
-- Dedup fix — *increased_assured_score_to* — 0.62 assured score
-- Dedup fix — *eliminated* — triplication
-- Dedup fix — *is_a* — net win
-- Dedup fix — *is_a* — correct code lever
-- 0.70 score — *was_gated_on* — coverage
-- 0.70 score — *is_now_gated_on* — COVERAGE COMPLETENESS
-- coverage — *dipped_from* — 24% coverage
-- coverage — *dipped_to* — 18% coverage
-- 18% coverage — *measured_by* — AC×kind
-- 0.86 cosine threshold — *is* — slightly aggressive
-- 0.86 cosine threshold — *over_merged* — distinct security scenarios
-- distinct security scenarios — *include* — zip-bomb
-- distinct security scenarios — *include* — symlink
-- zip-slip — *is_similar_to* — zip-bomb
-- zip-slip — *is_similar_to* — symlink
-- TPD_DEDUP_THRESHOLD — *should_be_bumped_toward* — 0.90 threshold
-- 0.90 threshold — *preserves* — distinct security scenarios
-- PLAIN re-run — *did_not_re_request* — security/i18n scenarios
-- 0.70 score — *was_blocked_by* — duplication
-- 0.70 score — *is_blocked_by* — COVERAGE COMPLETENESS
+- cross-source semantic dedup fix — *reduced scenarios from 117 to 54* — scenarios
+- cross-source semantic dedup fix — *reduced steps from 435 to 81* — steps
+- cross-source semantic dedup fix — *improved assured score from 0.58 to 0.62* — assured score
+- cross-source semantic dedup fix — *resolved* — systemic triplication across 3 naming schemes
+- cross-source semantic dedup fix — *is identified by* — LUZ-158390
+- cross-source semantic dedup fix — *is identified by* — run-3be0f1e0
+- semantic dedup — *is a* — net win
+- semantic dedup — *is the* — correct code lever
+- coverage — *dipped from 24% to 18%* — coverage
+- 0.86 cosine threshold — *is* — aggressive
+- 0.86 cosine threshold — *over-merged* — security scenarios
+- security scenarios — *include* — zip-bomb
+- security scenarios — *include* — symlink
+- zip-bomb — *was read as* — near-zip-slip
+- symlink — *was read as* — near-zip-slip
+- TPD_DEDUP_THRESHOLD — *should be bumped toward* — 0.90 threshold
+- 0.90 threshold — *would preserve* — security scenarios
+- PLAIN re-run — *did not re-request* — security scenarios
+- PLAIN re-run — *did not re-request* — i18n scenarios
+- duplication — *previously blocked* — 0.70 target score
+- COVERAGE COMPLETENESS — *now blocks* — 0.70 target score
 - judge — *wants* — zip bomb
 - judge — *wants* — deep-nesting
 - judge — *wants* — symlink
@@ -120,20 +108,19 @@ RESULT of the cross-source semantic dedup fix (LUZ-158390, run-3be0f1e0): WORKED
 - judge — *wants* — NFC/NFD encoding
 - judge — *wants* — pool-size-N concurrency comparison
 - judge — *wants* — repeated runs
-- judge — *wants* — size-boundary points
-- judge — *wants* — non-atomic 5-in-1 field-failure scenario
-- PATH TO 0.70 — *requires* — raise threshold to ~0.90 threshold
-- PATH TO 0.70 — *requires* — re-run WITH judge coverage guidance
-- dedup — *prevents* — re-triplication
-- semantic dedup — *trades* — recall
-- semantic dedup — *trades_for* — precision
-- threshold — *should_be_tuned* — threshold
-- too low threshold — *over_merges* — distinct-but-similar cases
-- Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations — *is_related_to* — Cross-source semantic scenario dedup: embed+cosine-cluster
-- Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations — *is_related_to* — keep canonical
-- Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations — *is_related_to* — union citations
-- Dedup fix — *identified_by_ticket* — LUZ-158390
-- Dedup fix — *identified_by_run_id* — run-3be0f1e0
-- semantic dedup — *is_a_type_of* — dedup
+- judge — *wants* — 102,399/102,401 size-boundary points
+- judge — *wants* — splitting field-failure scenario
+- field-failure scenario — *is* — non-atomic
+- field-failure scenario — *is* — 5-in-1
+- TPD_DEDUP_THRESHOLD — *raised to 0.90 is a path to* — 0.70 target score
+- judge coverage guidance — *used in re-run is a path to* — 0.70 target score
+- semantic dedup — *prevents* — re-triplication
+- semantic dedup — *trades* — recall for precision
+- TPD_DEDUP_THRESHOLD — *should be* — tuned
+- too low TPD_DEDUP_THRESHOLD — *over-merges* — distinct-but-similar cases
+- Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations — *describes* — semantic dedup
+- Cross-source semantic scenario dedup: embed+cosine-cluster — *is related to* — Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations
+- keep canonical — *is related to* — Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations
+- union citations — *is related to* — Cross-source semantic scenario dedup: embed+cosine-cluster, keep canonical, union citations
 
 %% ai-graph-end %%

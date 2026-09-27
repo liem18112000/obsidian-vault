@@ -1,18 +1,22 @@
 ---
-title: "Prompt: DevOps Code Review"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48997007422/Prompt+DevOps+Code+Review
-space: "FUT"
-topic: programming
-relevance: 0.753
-depth: 2.49
-updated: 2025-12-22
+ai_hash: 95b5b382206f620b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.49
+entities: []
+relevance: 0.753
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48997007422/Prompt+DevOps+Code+Review
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: 'Prompt: DevOps Code Review'
+topic: programming
+type: source
+updated: 2025-12-22
 ---
 
 # Prompt: DevOps Code Review
@@ -328,3 +332,14 @@ For each issue:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Prompt Architecture Code Review]]
+- [[Kubernetes knowledge]]
+- [[Infrastructure]]
+- [[Prompt Security Code Review]]
+- [[Use Case - Run by Test Set - Complete Process Flow]]
+
+%% ai-graph-end %%

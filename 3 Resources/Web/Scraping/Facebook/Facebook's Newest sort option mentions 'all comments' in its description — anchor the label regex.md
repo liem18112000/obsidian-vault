@@ -1,7 +1,7 @@
 ---
-ai_hash: 30b9c37b2bd1f713
+ai_hash: d510bdd22327bbd2
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-11
 entities: []
 source: fb-info-project live debug 2026-06-11
@@ -34,6 +34,6 @@ Fix: anchor the pattern to the start of the element text — `/^\s*(All comments
 - [[Build test fakes from verbatim production data, decoys included]]
 - [[Facebook post permalinks render the post twice — dialog plus a hidden page copy]]
 - [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
-- [[LLM-picked UI actions can be verified mechanically but not semantically]]
+- [[Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
 
 %% ai-graph-end %%

@@ -1,14 +1,21 @@
 ---
-title: "Part B: luz-antivirus Analysis"
+ai_hash: 1a19d952a7ef2233
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48989208583'
+confluence_path: 'Team Kepler > Developer note > Service Error Analysis Report: FAILED_TO_STORE
+  on Production'
 created: 2025-12-18
-updated: 2025-12-18
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-antivirus
+title: 'Part B: luz-antivirus Analysis'
+type: source
+updated: 2025-12-18
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48989208583/Part+B+luz-antivirus+Analysis
-confluence_id: "48989208583"
-confluence_path: "Team Kepler > Developer note > Service Error Analysis Report: FAILED_TO_STORE on Production"
-tags: [confluence, luz-antivirus]
 ---
 
 # Part B: luz-antivirus Analysis
@@ -139,3 +146,14 @@ tags: [confluence, luz-antivirus]
 | Virus DB         | 27845            | Signature database |
 | Quarkus          | Native (GraalVM) | REST API framework |
 | luz-clamav image | 1.4.101          | ClamAV container   |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Service Error Analysis Report - FAILED_TO_STORE on Production]]
+- [[ClamAV definition updates restart clamd, so scheduled 503s are expected not broken]]
+- [[dev-luz-antivirus Cloud Run 504 scan timeouts from a recurring ~102MB payload]]
+- [[Service Reliability Solution]]
+- [[Part A - luz-jsonstore Analysis]]
+
+%% ai-graph-end %%

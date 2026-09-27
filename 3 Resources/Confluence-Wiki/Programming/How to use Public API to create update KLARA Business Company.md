@@ -1,18 +1,22 @@
 ---
-title: "How to use Public API to create/update KLARA Business Company"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47553806568/How+to+use+Public+API+to+create+update+KLARA+Business+Company
-space: "TS"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2023-12-04
+ai_hash: 337be7cd4fcd7a23
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 12
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47553806568/How+to+use+Public+API+to+create+update+KLARA+Business+Company
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: How to use Public API to create/update KLARA Business Company
+topic: programming
+type: source
+updated: 2023-12-04
 ---
 
 # How to use Public API to create/update KLARA Business Company
@@ -1126,3 +1130,14 @@ Try out in DEV environment: <a href="https://api-dev.klara.tech/docs#/Company/po
 
 
 ![[47553806568-image-20231117-011650.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[Use KLARA Swagger UI for REST API]]
+- [[Getting tenant list]]
+- [[Login]]
+- [[KLARA Integration (request access token & call API)]]
+
+%% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: 34511598d479f243
+ai_hash: 822baf5aac9aa14e
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-03
@@ -31,9 +31,9 @@ Line/branch **coverage measures what a test *executes*, not what it *checks*** â
 
 **Related notes:**
 - [[Assured test generation keep an LLM test only if it builds, passes, and raises coverage]]
+- [[Oracle strength, not coverage, decides whether a suite catches regressions]]
 - [[Prove a new branch is load-bearing by reverting it]]
-- [[Metamorphic and differential testing solve the oracle problem]]
-- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
-- [[AI as an accelerator with a human review gate]]
+- [[Oracle strength can be graded statically from the expected-result text]]
+- [[Evaluating the Test-Plan-Definition Agent]]
 
 %% ai-graph-end %%

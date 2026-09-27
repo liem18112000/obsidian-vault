@@ -1,18 +1,22 @@
 ---
-title: "Release note for deploy CloudArmor"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49437605898/Release+note+for+deploy+CloudArmor
-space: "TS"
-topic: infra
-relevance: 0.734
-depth: 2.85
-updated: 2026-08-12
+ai_hash: 080ad9c7e64da388
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.85
+entities: []
+relevance: 0.734
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/49437605898/Release+note+for+deploy+CloudArmor
+space: TS
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/ts
+- confluence
+- infra
+- space/ts
+title: Release note for deploy CloudArmor
+topic: infra
+type: source
+updated: 2026-08-12
 ---
 
 # Release note for deploy CloudArmor
@@ -354,3 +358,14 @@ After import, update the YAML ruleset config files with the new rules. Replace t
 - **Testing:** After deploying to dev/dev-vn, run tests (e.g., Grafana k6) to verify the rules behave as expected before promoting to higher environments.
 
 ------------------------------------------------------------------------
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apply changes on luz_kubernetes]]
+- [[Discussion GCP Release Process with Google Cloud Build]]
+- [[Recipe Deploy with Terraform]]
+- [[Validate your k8s yaml]]
+- [[Kubernetes knowledge]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Returning 401 for a permission failure causes infinite login loops"
+ai_hash: 95f444c6149db278
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Security Risk - Luz-jwt Permission By Pass (2026-02-11)'
 status: seedling
-source: "Confluence: Security Risk - Luz-jwt Permission By Pass (2026-02-11)"
-tags: [security, http, status-codes, authorization, api-design, gotcha]
+tags:
+- security
+- http
+- status-codes
+- authorization
+- api-design
+- gotcha
+title: Returning 401 for a permission failure causes infinite login loops
+type: lesson
 ---
 
 # Returning 401 for a permission failure causes infinite login loops
@@ -31,3 +41,14 @@ Worth stating because the mistake is so common it reads as idiomatic — many co
 ## Related
 
 - [[A null-guarded tenant check fails open, so a renamed path parameter disables isolation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A null-guarded tenant check fails open, so a renamed path parameter disables isolation]]
+- [[Security Risk - Luz-jwt Permission By Pass]]
+- [[Security Risk - Luz-jwt Permission By Pass]]
+- [[Blanket 401 auto-logout swallows the login endpoint's own error]]
+- [[Luz 403 Not allowed means the token has no tenant claim, not a missing permission]]
+
+%% ai-graph-end %%

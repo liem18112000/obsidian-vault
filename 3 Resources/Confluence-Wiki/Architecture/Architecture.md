@@ -1,18 +1,22 @@
 ---
-title: "Architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/49471946952/Architecture
-space: "FUT"
-topic: architecture
-relevance: 0.769
-depth: 2.52
-updated: 2026-06-25
+ai_hash: 1dd7d2b66f46d815
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.52
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/49471946952/Architecture
+space: FUT
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/fut
+- confluence
+- architecture
+- space/fut
+title: Architecture
+topic: architecture
+type: source
+updated: 2026-06-25
 ---
 
 # Architecture
@@ -199,3 +203,14 @@ Following the arrows top to bottom:
 - **Models behind its own container.** Lets you swap GCP for self-hosted vLLM later without touching Runtime — clean hexagonal boundary.
 
 - **Observability is downstream of everything.** Make sure **Security** also emits to it (the diagram doesn't show that arrow explicitly), otherwise you can't audit policy decisions.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Polaris MCP tool catalog and usage pattern]]
+- [[AI-Powered Development Environment Architecture]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+- [[Vinnstack Polaris integration is three passive touchpoints]]
+- [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
+
+%% ai-graph-end %%

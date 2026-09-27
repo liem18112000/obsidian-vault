@@ -1,9 +1,34 @@
 ---
-ai_hash: 23c8ee7f8eb7a824
+ai_hash: 856b28768230d28e
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-29
-entities: []
+entities:
+- luz_online_payment
+- Docker
+- WildFly
+- WAR
+- GAR
+- Postgres
+- docker-compose
+- Dockerfile
+- luz-wildfly26-all
+- gcloud auth configure-docker
+- mvn clean install -Dmaven.test.skip=true
+- Flyway
+- src/main/resources/db/public
+- db/migration
+- V<version>__desc.sql
+- WildFly datasource
+- JWT/luzsec
+- luz_compensation
+- luz_online
+- luz_eletter
+- host.docker.internal:8080
+- kubectl port-forward
+- api-forwarder
+- LUZ-157476
+- luz_store
 source: session 2026-07-29; docs/LOCAL-RUN.md
 status: seedling
 tags:
@@ -38,9 +63,40 @@ See [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
 
 **Related notes:**
 - [[Run luz_docs_statistic locally with docker-compose]]
-- [[Local luz-docs and luz_docs_statistic both bind host ports 8787 and 9990]]
-- [[Luz performance env cluster topology]]
-- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
-- [[Running the LEO CDP GHCR image needs mounted configs (image ships JARs only)]]
+- [[Port forward and Docker compose]]
+- [[How to Start Invoice Run v2]]
+- [[Run local luz-jsonstore against a real tenant GKE Mongo via port-forwards]]
+- [[Build and roll out luz-jsonstore to dev (Cloud Build trigger + Deployment rollout)]]
+
+**Relations:**
+- luz_online_payment — *runs_via* — docker-compose
+- luz_online_payment — *is_a_service_type* — WildFly
+- Dockerfile — *copies* — WAR
+- Dockerfile — *uses_base_image* — luz-wildfly26-all
+- luz-wildfly26-all — *is_a* — GAR base
+- gcloud auth configure-docker — *authenticates_for_pulling* — luz-wildfly26-all
+- mvn clean install -Dmaven.test.skip=true — *builds* — WAR
+- luz_online_payment — *uses* — Flyway
+- Flyway — *migrates_from_path* — src/main/resources/db/public
+- Flyway — *migrates_from_path* — db/migration
+- Flyway — *uses_file_pattern* — V<version>__desc.sql
+- Flyway — *targets_database* — Postgres
+- WildFly datasource — *uses_setting* — prefill=true
+- WildFly datasource — *connects_to* — Postgres
+- docker-compose — *gates_app_on* — Postgres
+- Postgres — *has_condition* — service_healthy
+- luz_online_payment — *integrates_with* — JWT/luzsec
+- luz_online_payment — *integrates_with* — luz_compensation
+- luz_online_payment — *integrates_with* — luz_online
+- luz_online_payment — *integrates_with* — luz_eletter
+- integrations — *point_at* — host.docker.internal:8080
+- kubectl port-forward — *forwards_to* — api-forwarder
+- luz_online_payment — *app_port_mapping* — 8128->8080
+- luz_online_payment — *debug_port* — 8788
+- luz_online_payment — *bundled_Postgres_port_mapping* — 6666->5432
+- luz_online_payment — *base_path* — /luz_online_payment/api
+- LUZ-157476 — *provides_feature_context_for* — luz_online_payment
+- LUZ-157476 — *involves* — luz_online_payment
+- LUZ-157476 — *involves* — luz_store
 
 %% ai-graph-end %%

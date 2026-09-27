@@ -1,10 +1,21 @@
 ---
-title: "LUZ Audit went from 23 to 778 logs per second by dropping the REST hop to MongoDB"
+ai_hash: 66c67fbd7f9e1f03
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: observation
+entities: []
+source: 'Confluence: Luz Audit System - Performance Optimization Proposal (2025-11-04)'
 status: seedling
-source: "Confluence: Luz Audit System - Performance Optimization Proposal (2025-11-04)"
-tags: [luz-audit, performance, quarkus, virtual-threads, mongodb, architecture, kepler]
+tags:
+- luz-audit
+- performance
+- quarkus
+- virtual-threads
+- mongodb
+- architecture
+- kepler
+title: LUZ Audit went from 23 to 778 logs per second by dropping the REST hop to MongoDB
+type: observation
 ---
 
 # LUZ Audit went from 23 to 778 logs per second by dropping the REST hop to MongoDB
@@ -32,3 +43,14 @@ Note the numbers are prototype-vs-production, so the 34x is an upper bound; it c
 - [[LUZ Audit spent 5 database operations per log entry]]
 - [[~47ms]]
 - [[from chain maintenance]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ Audit spent 5 database operations per log entry, ~47ms, from chain maintenance]]
+- [[Luz Audit System - Performance Optimization Proposal]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[A hash-chained audit log cannot be written in parallel]]
+- [[LUZ Critical Concerns - Brief Summary]]
+
+%% ai-graph-end %%

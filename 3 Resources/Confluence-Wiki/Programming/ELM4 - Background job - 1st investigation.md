@@ -1,18 +1,22 @@
 ---
-title: "ELM4 - Background job - 1st investigation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519732885/ELM4+-+Background+job+-+1st+investigation
-space: "LUZ"
-topic: programming
-relevance: 0.703
-depth: 2.41
-updated: 2025-03-20
+ai_hash: bf0c486b3755f04f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.41
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519732885/ELM4+-+Background+job+-+1st+investigation
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: ELM4 - Background job - 1st investigation
+topic: programming
+type: source
+updated: 2025-03-20
 ---
 
 # ELM4 - Background job - 1st investigation
@@ -218,3 +222,14 @@ Durring investigating, We find out some problems in ELM background function.
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-92314 - AI Data Feed Migration issue - Investigate the cache mechanism from Postgresql]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[Helios myKLARA app(luz-mobile) - API Response Performance Analysis]]
+- [[Error Log - Failed to store]]
+
+%% ai-graph-end %%

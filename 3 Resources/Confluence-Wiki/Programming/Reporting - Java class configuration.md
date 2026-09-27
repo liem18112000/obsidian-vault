@@ -1,18 +1,22 @@
 ---
-title: "Reporting - Java class configuration"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47317321514/Reporting+-+Java+class+configuration
-space: "LUZ"
-topic: programming
-relevance: 0.887
-depth: 3
-updated: 2023-03-16
+ai_hash: a3b4388d6c81b845
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 15
+depth: 3
+entities: []
+relevance: 0.887
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47317321514/Reporting+-+Java+class+configuration
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Reporting - Java class configuration
+topic: programming
+type: source
+updated: 2023-03-16
 ---
 
 # Reporting - Java class configuration
@@ -158,3 +162,14 @@ List<ReportColumn> reportColumns;
 Note:
 
 **183** and **192** is salary item id in table **public.salary_item_type**.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Handle report configuration for new fields (12.06.2023)]]
+- [[Employee Report Implementation (10.05.2023)]]
+- [[Generic Interface JSON file]]
+- [[Let the owning service hold the report field mapping as config, not the reporting service in code]]
+- [[Persistence layer implementation]]
+
+%% ai-graph-end %%

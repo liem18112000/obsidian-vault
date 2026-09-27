@@ -1,18 +1,22 @@
 ---
-title: "[Synapse - ServerlessWorkflow] Database analysis"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48908501028/Synapse+-+ServerlessWorkflow+Database+analysis
-space: "FUT"
-topic: infra
-relevance: 0.762
-depth: 2.6
-updated: 2025-11-27
+ai_hash: 8ec110c9a7ba1e0b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.6
+entities: []
+relevance: 0.762
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48908501028/Synapse+-+ServerlessWorkflow+Database+analysis
+space: FUT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/fut
+- confluence
+- infra
+- space/fut
+title: '[Synapse - ServerlessWorkflow] Database analysis'
+topic: infra
+type: source
+updated: 2025-11-27
 ---
 
 # [Synapse - ServerlessWorkflow] Database analysis
@@ -425,3 +429,14 @@ db.workflowInstances.createIndex({
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Synapse - ServerlessWorkflow Architecture overview]]
+- [[Borrow the Kubernetes resource shape for objects in a schemaless store]]
+- [[Architecture Design]]
+- [[Batching Design]]
+- [[POC SecuredMail Serverless Workflow]]
+
+%% ai-graph-end %%

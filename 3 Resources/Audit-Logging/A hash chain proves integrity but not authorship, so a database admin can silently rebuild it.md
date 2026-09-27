@@ -1,10 +1,20 @@
 ---
-title: "A hash chain proves integrity but not authorship, so a database admin can silently rebuild it"
+ai_hash: d64262cb6fda2410
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: argument
+entities: []
+source: 'Confluence: LUZ Critical Concerns - Brief Summary (2025-11-17)'
 status: seedling
-source: "Confluence: LUZ Critical Concerns - Brief Summary (2025-11-17)"
-tags: [audit-logging, security, cryptography, threat-model, luz-audit]
+tags:
+- audit-logging
+- security
+- cryptography
+- threat-model
+- luz-audit
+title: A hash chain proves integrity but not authorship, so a database admin can silently
+  rebuild it
+type: argument
 ---
 
 # A hash chain proves integrity but not authorship, so a database admin can silently rebuild it
@@ -28,3 +38,14 @@ Rule of thumb: **if the verifier's secret is reachable from the attacker's posit
 - [[Hash chains order by linkage]]
 - [[not by time]]
 - [[so backdated entries still verify]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hash chains order by linkage, not by time, so backdated entries still verify]]
+- [[A hash-chained audit log cannot be written in parallel]]
+- [[Per-record signatures prove authenticity but not completeness, so deletion and reordering go undetected]]
+- [[Merkle checkpoints restore parallel writes to a hash-chained audit log]]
+- [[Solution - Enhanced Chain-Signature Hybrid]]
+
+%% ai-graph-end %%

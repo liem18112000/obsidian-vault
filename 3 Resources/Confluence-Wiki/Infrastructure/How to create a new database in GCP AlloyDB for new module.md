@@ -1,18 +1,22 @@
 ---
-title: "How to create a new database in GCP AlloyDB for new module"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48871178255/How+to+create+a+new+database+in+GCP+AlloyDB+for+new+module
-space: "TS"
-topic: infra
-relevance: 0.701
-depth: 3
-updated: 2026-03-19
+ai_hash: edc8844e75dcbcda
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/48871178255/How+to+create+a+new+database+in+GCP+AlloyDB+for+new+module
+space: TS
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/ts
+- confluence
+- infra
+- space/ts
+title: How to create a new database in GCP AlloyDB for new module
+topic: infra
+type: source
+updated: 2026-03-19
 ---
 
 # How to create a new database in GCP AlloyDB for new module
@@ -223,3 +227,14 @@ ENV LUZ_WEBPUSHNOTIFICATION_JDBC jdbc:postgresql://luz-alloydb-main:5432/luzwebp
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Setup Redis and DNS on TEST and PROD]]
+- [[luz-vault - How to run Vault Benchmark]]
+- [[EPC Notification]]
+- [[ELM5 PubSub Message Queue]]
+
+%% ai-graph-end %%

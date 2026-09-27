@@ -1,18 +1,22 @@
 ---
-title: "Deploy Google Cloud Run for new module"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48903651398/Deploy+Google+Cloud+Run+for+new+module
-space: "Helios"
-topic: infra
-relevance: 0.844
-depth: 3
-updated: 2025-11-25
+ai_hash: ca82c2216ecba788
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 3
+entities: []
+relevance: 0.844
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48903651398/Deploy+Google+Cloud+Run+for+new+module
+space: Helios
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/helios
+- confluence
+- infra
+- space/helios
+title: Deploy Google Cloud Run for new module
+topic: infra
+type: source
+updated: 2025-11-25
 ---
 
 # Deploy Google Cloud Run for new module
@@ -104,3 +108,14 @@ Now, you can see your module deployed on GCR as below
 
 
 ![[48903651398-image-20251124-070049.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Deploy with Terraform]]
+- [[Deployment with terraform]]
+- [[Kubernetes knowledge]]
+- [[Deploy module GKE with a public url]]
+- [[Deploy luz-epc-redis-service on GCP]]
+
+%% ai-graph-end %%

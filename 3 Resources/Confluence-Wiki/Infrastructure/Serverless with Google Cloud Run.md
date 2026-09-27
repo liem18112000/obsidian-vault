@@ -1,18 +1,22 @@
 ---
-title: "Serverless with Google Cloud Run"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530459723/Serverless+with+Google+Cloud+Run
-space: "LUZ"
-topic: infra
-relevance: 0.927
-depth: 3
-updated: 2021-07-21
+ai_hash: 5243657bb8ca1e03
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.927
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530459723/Serverless+with+Google+Cloud+Run
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Serverless with Google Cloud Run
+topic: infra
+type: source
+updated: 2021-07-21
 ---
 
 # Serverless with Google Cloud Run
@@ -133,3 +137,14 @@ spec:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run generates a per-project URL hash, breaking environment config parity]]
+- [[Kubernetes knowledge]]
+- [[One API end to end testing]]
+- [[Infrastructure]]
+- [[Recipe Deploy with Terraform]]
+
+%% ai-graph-end %%

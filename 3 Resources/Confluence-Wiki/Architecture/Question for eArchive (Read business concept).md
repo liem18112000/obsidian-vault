@@ -1,18 +1,22 @@
 ---
-title: "Question for eArchive (Read business concept)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47087422576/Question+for+eArchive+Read+business+concept
-space: "TP2020"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2022-04-14
+ai_hash: 6188b2a57e67cb8a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 31
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47087422576/Question+for+eArchive+Read+business+concept
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/tp2020
+- confluence
+- architecture
+- space/tp2020
+title: Question for eArchive (Read business concept)
+topic: architecture
+type: source
+updated: 2022-04-14
 ---
 
 # Question for eArchive (Read business concept)
@@ -289,3 +293,14 @@ After team Pioneer read the summary for eArchive( <span class="confluence-jim-ma
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Business concept for frontend]]
+- [[Analytics Analyze API call when accessing eArchive]]
+- [[Proposal eArchived architecture direction for ePost web 2]]
+- [[CROSS-TEST LUZ-159442 Implement real ZIP download for eArchive folders]]
+- [[Research Protect ePost inbox with new Digital_Letterbox permission]]
+
+%% ai-graph-end %%

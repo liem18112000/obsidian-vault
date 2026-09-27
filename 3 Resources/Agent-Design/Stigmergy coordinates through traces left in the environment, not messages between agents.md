@@ -1,10 +1,20 @@
 ---
-title: "Stigmergy coordinates through traces left in the environment, not messages between agents"
+ai_hash: 57f3a4a4ce9b29b4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: term
+entities: []
+source: 'Confluence: Swarm Intelligence - Theories (2026-03-23)'
 status: seedling
-source: "Confluence: Swarm Intelligence - Theories (2026-03-23)"
-tags: [swarm-intelligence, multi-agent, coordination, ai-agents, distributed-systems]
+tags:
+- swarm-intelligence
+- multi-agent
+- coordination
+- ai-agents
+- distributed-systems
+title: Stigmergy coordinates through traces left in the environment, not messages
+  between agents
+type: term
 ---
 
 # Stigmergy coordinates through traces left in the environment, not messages between agents
@@ -29,3 +39,13 @@ The design question to carry over: **what is my pheromone, and what makes it eva
 ## Related
 
 - [[Swarm intelligence gets global behaviour from local rules and no central controller]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Swarm intelligence gets global behaviour from local rules and no central controller]]
+- [[A shared mutable context beats a message bus for sequentially orchestrated agents]]
+- [[Swarm Intelligence - Theories]]
+- [[Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Reverse GeoCode API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38162415316/Reverse+GeoCode+API
-space: "Helios"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2017-10-26
+ai_hash: dc89d43edde1f7b0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38162415316/Reverse+GeoCode+API
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Reverse GeoCode API
+topic: programming
+type: source
+updated: 2017-10-26
 ---
 
 # Reverse GeoCode API
@@ -99,3 +103,14 @@ tags:
 | 400 Bad request |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Login]]
+- [[Getting tenant list]]
+- [[API to generate authentication letter for inividual]]
+- [[Luz_google Api Document]]
+- [[Hexonet API Document]]
+
+%% ai-graph-end %%

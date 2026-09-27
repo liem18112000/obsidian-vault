@@ -1,14 +1,22 @@
 ---
-title: "Text Compression Techniques: Examples"
+ai_hash: 1eecf1cd24769d1b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49318854657'
+confluence_path: 'Team Kepler > Developer note > AI Research > Prompt Engineer > Manual
+  Prompt Compression Techniques: Deep Dive'
 created: 2026-04-12
-updated: 2026-04-13
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- prompt-engineering
+- search
+title: 'Text Compression Techniques: Examples'
+type: source
+updated: 2026-04-13
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49318854657/Text+Compression+Techniques+Examples
-confluence_id: "49318854657"
-confluence_path: "Team Kepler > Developer note > AI Research > Prompt Engineer > Manual Prompt Compression Techniques: Deep Dive"
-tags: [confluence, prompt-engineering, search]
 ---
 
 # Text Compression Techniques: Examples
@@ -364,3 +372,14 @@ At **10,000 requests/day**, this saves **3.40/���=102/month** on just this
 - [IBM: Token Optimization](https://developer.ibm.com/articles/awb-token-optimization-backbone-of-effective-prompt-engineering/)
 
 - [Redis: LLM Token Optimization](https://redis.io/blog/llm-token-optimization-speed-up-apps/)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Text Compression Techniques - Examples]]
+- [[Manual Prompt Compression Techniques - Deep Dive]]
+- [[Manual Prompt Compression Techniques - Deep Dive]]
+- [[Prompt Performance Code Review]]
+- [[Prompt Security Code Review]]
+
+%% ai-graph-end %%

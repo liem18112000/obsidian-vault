@@ -1,18 +1,22 @@
 ---
-title: "Cembra API (the real one)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20496030223/Cembra+API+the+real+one
-space: "LUZ"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2019-11-15
+ai_hash: a77c3b2d13ad0cb1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20496030223/Cembra+API+the+real+one
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Cembra API (the real one)
+topic: programming
+type: source
+updated: 2019-11-15
 ---
 
 # Cembra API (the real one)
@@ -372,3 +376,14 @@ UI
 ![[20496030223-KLARA_text_reviewed_v2.docx]]
 
 </a></span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Open API related to Finnova microservices - Create dossier]]
+- [[Invoice API]]
+- [[KLARA Booking - KLARA OBC API]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[5. Analyze the current data status of company between Hubspot and Klara]]
+
+%% ai-graph-end %%

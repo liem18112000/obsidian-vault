@@ -1,7 +1,7 @@
 ---
-ai_hash: f3fe438a959a3f11
+ai_hash: 0b7d029609c96737
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-30
 entities: []
 source: luz_docs S2-index-size-options.md, 2026-06-30
@@ -36,6 +36,6 @@ From luz_docs S2-index-size-options.md, Option A risk analysis (Kepler eArchive)
 - [[Larger n-grams make a substring ngram index bigger, not smaller]]
 - [[OCR body text dominates a full-text trigram index]]
 - [[Bounded bucketed hashing caps trigram index entries per document]]
-- [[MongoDB partial index shrinks with a completing backfill]]
+- [[Trigram Index — Size-Reduction Options]]
 
 %% ai-graph-end %%

@@ -1,5 +1,5 @@
 ---
-ai_hash: 507b076e7b5c131f
+ai_hash: a797af5277673626
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-10
@@ -39,8 +39,8 @@ Every Luz JVM service logs `<METHOD> Rest client response uri: <uri> time-consum
 **Related notes:**
 - [[luz-docs-import antivirus whole-zip scan dominates first-import latency and scales with zip size]]
 - [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
+- [[Measure API luz-docs]]
 - [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second]]
 - [[luz-docs-import performance-env import benchmark findings]]
-- [[luz-docs-import ZIP import call chain]]
 
 %% ai-graph-end %%

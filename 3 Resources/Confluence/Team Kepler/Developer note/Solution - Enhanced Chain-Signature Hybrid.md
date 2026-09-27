@@ -1,14 +1,22 @@
 ---
-title: "Solution: Enhanced Chain-Signature Hybrid"
+ai_hash: 7352ee06d776907b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48830677023'
+confluence_path: Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026 > Luz
+  Audit System - Performance Optimization Proposal
 created: 2025-11-04
-updated: 2025-11-04
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-audit
+- performance
+title: 'Solution: Enhanced Chain-Signature Hybrid'
+type: source
+updated: 2025-11-04
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48830677023/Solution+Enhanced+Chain-Signature+Hybrid
-confluence_id: "48830677023"
-confluence_path: "Team Kepler > Developer note > LUZ Audit Refactor- 2025-2026 > Luz Audit System - Performance Optimization Proposal"
-tags: [confluence, luz-audit, performance]
 ---
 
 # Solution: Enhanced Chain-Signature Hybrid
@@ -4086,3 +4094,14 @@ The **Enhanced Chain-Signature Hybrid** solution provides the best of all worlds
 3.  Compliance review with legal team
 
 4.  Begin Phase 1 implementation
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Audit System - Performance Optimization Proposal]]
+- [[Investigation Stories - Audit Logs Current Implementation]]
+- [[LUZ Audit - Basic Understanding Guide]]
+- [[LUZ Audit Refactor- 2025-2026]]
+- [[LUZ Critical Concerns - Brief Summary]]
+
+%% ai-graph-end %%

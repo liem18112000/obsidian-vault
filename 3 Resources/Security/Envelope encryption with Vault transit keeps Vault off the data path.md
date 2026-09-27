@@ -1,10 +1,21 @@
 ---
-title: "Envelope encryption with Vault transit keeps Vault off the data path"
+ai_hash: 35a0e3fb9de67b2e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Encryption and decryption flows with Vault (LUZ)'
 status: seedling
-source: "Confluence: Encryption and decryption flows with Vault (LUZ)"
-tags: [security, encryption, vault, envelope-encryption, minio, s3, confluence-distilled]
+tags:
+- security
+- encryption
+- vault
+- envelope-encryption
+- minio
+- s3
+- confluence-distilled
+title: Envelope encryption with Vault transit keeps Vault off the data path
+type: concept
 ---
 
 # Envelope encryption with Vault transit keeps Vault off the data path
@@ -48,3 +59,14 @@ Source: [[Encryption and decryption flows with Vault]] and [[luz-storage - Desig
 ## Related
 
 - [[Encryption and decryption flows with Vault]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Encryption and decryption flows with Vault]]
+- [[luz-storage - Design Security (Encryption & Decryption) with Vault]]
+- [[MessageV2 Field Encryption Approach]]
+- [[luz-storage - DEPRECATED - Encryption & Decryption]]
+- [[Luz-vault]]
+
+%% ai-graph-end %%

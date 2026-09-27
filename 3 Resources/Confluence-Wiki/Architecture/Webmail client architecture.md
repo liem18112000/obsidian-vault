@@ -1,18 +1,22 @@
 ---
-title: "Webmail client architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48001417704/Webmail+client+architecture
-space: "Helios"
-topic: architecture
-relevance: 0.769
-depth: 2.79
-updated: 2024-08-28
+ai_hash: d51b6f057095965b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.79
+entities: []
+relevance: 0.769
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48001417704/Webmail+client+architecture
+space: Helios
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/helios
+- confluence
+- architecture
+- space/helios
+title: Webmail client architecture
+topic: architecture
+type: source
+updated: 2024-08-28
 ---
 
 # Webmail client architecture
@@ -84,3 +88,14 @@ Ex: sm-mailbox.model.tsx
 
 
 ![[48001417704-SM Multi User Flow.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[IMAP Implementation (draft)]]
+- [[Architecture]]
+- [[iLetter current backend architecture]]
+- [[POC SecuredMail Serverless Workflow]]
+- [[Architecture Design]]
+
+%% ai-graph-end %%

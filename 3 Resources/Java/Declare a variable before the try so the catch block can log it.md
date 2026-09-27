@@ -1,5 +1,5 @@
 ---
-ai_hash: 84d7df10875f9141
+ai_hash: a884da80d7312927
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-13
@@ -47,7 +47,7 @@ Trade-off: hoisting the header-parse out of the guarded region means an exceptio
 - [[RESTEasy multipart repeated field name yields a List, get(0) silently drops extras]]
 - [[Read RESTEasy multipart parts eagerly in-request; never pass InputPart around]]
 - [[RESTEasy MultipartFormDataInput buffers the whole upload to tmp before the app reads it]]
-- [[RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread]]
 - [[luz-docs-import importZipName comes from the uploaded multipart filename, not the on-disk zip]]
+- [[RESTEASY003880 means the JAX-RS Providers thread-local is missing off-request-thread]]
 
 %% ai-graph-end %%

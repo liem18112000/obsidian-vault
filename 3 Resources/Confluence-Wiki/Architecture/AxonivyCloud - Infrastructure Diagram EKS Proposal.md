@@ -1,18 +1,22 @@
 ---
-title: "AxonivyCloud - Infrastructure Diagram EKS Proposal"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3555237110/AxonivyCloud+-+Infrastructure+Diagram+EKS+Proposal
-space: "AII"
-topic: architecture
-relevance: 0.711
-depth: 2.44
-updated: 2020-07-31
+ai_hash: 83e7f8520180719d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.44
+entities: []
+relevance: 0.711
+source: https://axonivy.atlassian.net/wiki/spaces/AII/pages/3555237110/AxonivyCloud+-+Infrastructure+Diagram+EKS+Proposal
+space: AII
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/aii
+- confluence
+- architecture
+- space/aii
+title: AxonivyCloud - Infrastructure Diagram EKS Proposal
+topic: architecture
+type: source
+updated: 2020-07-31
 ---
 
 # AxonivyCloud - Infrastructure Diagram EKS Proposal
@@ -122,3 +126,14 @@ Attach the IAM policy to the EKS_Node IAM
 </span></span></span></span></span></span>
 
 **  **
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Axonivycloud - Volumes architecture for a kubernetes AWS EKS]]
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+- [[Axonivycloud - Monitoring EKS cluster using Prometheus and Grafana]]
+- [[Axonivycloud - Create automation k8s ivy engine]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+
+%% ai-graph-end %%

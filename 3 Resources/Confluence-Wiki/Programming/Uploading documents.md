@@ -1,18 +1,22 @@
 ---
-title: "Uploading documents"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38168505596/Uploading+documents
-space: "Helios"
-topic: programming
-relevance: 0.773
-depth: 3
-updated: 2018-07-24
+ai_hash: d00701aab5d54bda
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.773
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38168505596/Uploading+documents
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Uploading documents
+topic: programming
+type: source
+updated: 2018-07-24
 ---
 
 # Uploading documents
@@ -186,3 +190,14 @@ Example
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Temporary Restfull APIs in Ivy]]
+- [[Login]]
+- [[Upload Document API]]
+- [[Getting tenant list]]
+- [[App Validity]]
+
+%% ai-graph-end %%

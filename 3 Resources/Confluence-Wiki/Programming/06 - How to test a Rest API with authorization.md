@@ -1,18 +1,22 @@
 ---
-title: "06 - How to test a Rest API with authorization"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134411647/06+-+How+to+test+a+Rest+API+with+authorization
-space: "GRAVITY"
-topic: programming
-relevance: 0.886
-depth: 3
-updated: 2022-06-24
+ai_hash: f7e554bbc2dfc000
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.886
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47134411647/06+-+How+to+test+a+Rest+API+with+authorization
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: 06 - How to test a Rest API with authorization
+topic: programming
+type: source
+updated: 2022-06-24
 ---
 
 # 06 - How to test a Rest API with authorization
@@ -302,3 +306,14 @@ public class CreditRatingRestApiTest {
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to authenticate with Keycloak (SSO authentication) in adapter]]
+- [[RESTful API, Postman,]]
+- [[Tenant token issue]]
+- [[Microprofile OpenAPI config]]
+- [[Test Keycloak - Public API]]
+
+%% ai-graph-end %%

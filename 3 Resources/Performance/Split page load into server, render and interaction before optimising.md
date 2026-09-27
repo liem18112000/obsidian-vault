@@ -1,10 +1,21 @@
 ---
-title: "Split page load into server, render and interaction before optimising"
+ai_hash: ac65f824c81541de
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: eLetter Performance Investigation Report (Helios)'
 status: seedling
-source: "Confluence: eLetter Performance Investigation Report (Helios)"
-tags: [performance, frontend, react, ttfb, profiling, server-timing, confluence-distilled]
+tags:
+- performance
+- frontend
+- react
+- ttfb
+- profiling
+- server-timing
+- confluence-distilled
+title: Split page load into server, render and interaction before optimising
+type: lesson
 ---
 
 # Split page load into server, render and interaction before optimising
@@ -43,3 +54,14 @@ Source: [[eLetter Performance - Investigation Report Load Times and Optimization
 ## Related
 
 - [[N+1 hides at the service-call layer too, not just in the ORM]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eLetter Performance - Investigation Report Load Times and Optimization Recommendations]]
+- [[Profiled sub-steps never sum to wall clock; report the residual]]
+- [[N+1 hides at the service-call layer too, not just in the ORM]]
+- [[For authenticated pages pick the perf tool that can log in, not the prettiest report]]
+- [[Measure component render timing with Playwright addInitScript]]
+
+%% ai-graph-end %%

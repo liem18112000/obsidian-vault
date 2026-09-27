@@ -1,5 +1,5 @@
 ---
-ai_hash: 438a4e4ee926b15f
+ai_hash: e312f4e4031dee1f
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 aliases:
@@ -43,8 +43,8 @@ Surfaced on LUZ-158230 (import-job Tier 4 durable status queue) in `luz_docs_imp
 **Related notes:**
 - [[Kepler PubSub topology HTTP-to-luz_message_broker publisher, luz_message_receiver pull-consumers, jsonstore version-number CAS]]
 - [[Align the Google Cloud stack in a luz WildFly WAR via libraries-bom]]
-- [[Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism]]
 - [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff]]
-- [[luz_online_payment local Docker run pattern (WildFly WAR + GAR base + local Postgres)]]
+- [[ELM5 PubSub Message Queue]]
+- [[Durable-queue visibility timeout folds task-timeout and crash-resume into one mechanism]]
 
 %% ai-graph-end %%

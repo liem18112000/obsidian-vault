@@ -1,46 +1,54 @@
 ---
-ai_hash: e7ee6809b0619548
+ai_hash: f9209808fc52019a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-24
 entities:
 - Invoice run v2
-- charge failures
-- verbatim message copy
-- line 628
+- Charge failures
+- Message copying
+- InvoiceRunServiceController
 - luz_store
 - UI Message column
-- invoiceItem
-- klaraTransactionRequestAfterCharge
-- InvoiceRunServiceController.java
-- handleChargeCredit
+- Invoice item message
+- Klara transaction request message
+- handleChargeCredit method
+- In-flight charge-response message
+- Localization
+- Mapping
 - InvoiceCreditCardTransaction.errorMessage
+- Audit copy
 - TransactionState.FAILED
-- isWarningState
-- line 782
+- Message survival
+- isWarningState method
 - NOT_FINISHED transactions
-- FAILED
-- REFUND_FAILED
-- ROLLBACKED
-- PDF_CREATED_WARNING
-- line 674
-- CREDIT_CARD_CHARGED
-- line 638
-- DECLINED
+- FAILED state
+- REFUND_FAILED state
+- ROLLBACKED state
+- PDF_CREATED_WARNING state
+- Message wiping
+- Charging state
+- CREDIT_CARD_CHARGED state
+- DECLINED message
+- Warning state
+- Empty message
+- UI
+- Line 628
+- Injection point
+- Category-to-localized-string display
 - LUZ-157476 Phase 4
 - NPE risk
-- handleChargeByCreditCard
-- lines 853-856
-- line 627
+- handleChargeByCreditCard method
+- Null check
 - Payrexx card declines
-- ERROR
-- prose
-- invoice charge-failure handling
-- warning state
-- message survival
-- category→localized-string display
-- null check
-- invoiceItem.setMessage(klaraTransactionRequestAfterCharge.getMessage())
+- ERROR status
+- DECLINED status
+- Invoice charge-failure handling
+- controller:627
+- controller:638
+- controller:674
+- controller:782
+- controller:853-856
 source: LUZ-157476 session 2026-07-24
 status: budding
 tags:
@@ -75,42 +83,41 @@ Consequences: DECLINED (message=null) → warning state with EMPTY message in UI
 - [[TECHNICAL_ERROR is not retried in-flight but is retry-eligible on invoice-item rerun]]
 
 **Relations:**
-- Invoice run v2 — *shows* — charge failures
-- charge failures — *are via* — verbatim message copy
-- verbatim message copy — *occurs at* — line 628
-- luz_store — *uses* — Invoice run v2
-- UI Message column — *for* — failed charges
-- UI Message column — *is populated by* — invoiceItem.setMessage(klaraTransactionRequestAfterCharge.getMessage())
-- invoiceItem.setMessage(klaraTransactionRequestAfterCharge.getMessage()) — *is located at* — InvoiceRunServiceController.java:628
-- InvoiceRunServiceController.java:628 — *is within* — handleChargeCredit
-- InvoiceCreditCardTransaction.errorMessage — *is an* — audit copy
-- InvoiceCreditCardTransaction.errorMessage — *is not read for* — display
-- TransactionState.FAILED — *controls* — message survival
-- isWarningState — *is at* — line 782
-- isWarningState — *checks* — NOT_FINISHED transactions
-- NOT_FINISHED transactions — *can be* — FAILED
-- NOT_FINISHED transactions — *can be* — REFUND_FAILED
-- NOT_FINISHED transactions — *can be* — ROLLBACKED
-- item — *ends as* — PDF_CREATED_WARNING
-- PDF_CREATED_WARNING — *keeps* — message
-- message — *is wiped by* — line 674
-- charging state — *goes* — CREDIT_CARD_CHARGED
-- CREDIT_CARD_CHARGED — *occurs at* — line 638
-- CREDIT_CARD_CHARGED — *occurs even on* — failure
-- DECLINED — *leads to* — warning state
-- warning state — *has* — EMPTY message
-- line 628 — *is a* — single injection point
-- single injection point — *for* — category→localized-string display
-- line 628 — *is relevant for* — LUZ-157476 Phase 4
-- NPE risk — *caused by* — handleChargeByCreditCard
-- handleChargeByCreditCard — *can return* — null
-- null — *at* — lines 853-856
-- line 627 — *performs* — dereference without null check
+- Invoice run v2 — *shows* — Charge failures
+- Charge failures — *via* — Message copying
+- Message copying — *at* — Line 628
+- luz_store — *has* — Invoice run v2
+- UI Message column — *populated by* — Invoice item message
+- Invoice item message — *set from* — Klara transaction request message
+- Klara transaction request message — *is* — In-flight charge-response message
+- Line 628 — *is in* — InvoiceRunServiceController
+- Line 628 — *is inside* — handleChargeCredit method
+- In-flight charge-response message — *lacks* — Localization
+- In-flight charge-response message — *lacks* — Mapping
+- InvoiceCreditCardTransaction.errorMessage — *is an* — Audit copy
+- Audit copy — *not read for* — UI
+- TransactionState.FAILED — *controls* — Message survival
+- isWarningState method — *checks* — NOT_FINISHED transactions
+- NOT_FINISHED transactions — *for* — FAILED state
+- NOT_FINISHED transactions — *for* — REFUND_FAILED state
+- NOT_FINISHED transactions — *for* — ROLLBACKED state
+- Invoice item — *ends as* — PDF_CREATED_WARNING state
+- PDF_CREATED_WARNING state — *keeps* — Invoice item message
+- Invoice item message — *wiped at* — controller:674
+- Charging state — *becomes* — CREDIT_CARD_CHARGED state
+- CREDIT_CARD_CHARGED state — *set at* — controller:638
+- DECLINED message — *leads to* — Warning state
+- Warning state — *shows* — Empty message
+- Empty message — *in* — UI
+- Line 628 — *is the* — Injection point
+- Injection point — *for* — Category-to-localized-string display
+- Category-to-localized-string display — *is part of* — LUZ-157476 Phase 4
+- NPE risk — *due to* — handleChargeByCreditCard method
+- handleChargeByCreditCard method — *can return* — null
+- controller:627 — *dereferences without* — Null check
 - Payrexx card declines — *reach* — luz_store
-- Payrexx card declines — *as* — ERROR
-- Payrexx card declines — *contain* — prose
-- Payrexx card declines — *are not* — DECLINED
-- DECLINED — *falls through* — invoice charge-failure handling
-- invoice charge-failure handling — *is in* — luz_store
+- Payrexx card declines — *as* — ERROR status
+- DECLINED status — *falls through* — Invoice charge-failure handling
+- Invoice charge-failure handling — *is in* — luz_store
 
 %% ai-graph-end %%

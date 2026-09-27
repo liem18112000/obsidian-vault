@@ -1,14 +1,21 @@
 ---
-title: "Technical Details - Pre-compute Security Class Code"
+ai_hash: c678821df3a82332
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49387733004'
+confluence_path: Team Kepler > Developer note > Pre-compute Security Class Code -
+  Eliminate Lookup Query
 created: 2026-05-04
-updated: 2026-05-19
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- security
+title: Technical Details - Pre-compute Security Class Code
+type: source
+updated: 2026-05-19
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49387733004/Technical+Details+-+Pre-compute+Security+Class+Code
-confluence_id: "49387733004"
-confluence_path: "Team Kepler > Developer note > Pre-compute Security Class Code - Eliminate Lookup Query"
-tags: [confluence, security]
 ---
 
 # Technical Details - Pre-compute Security Class Code
@@ -466,3 +473,14 @@ Point to reconsider:
 - We change the metadata of document so the integrity is lost.
 
 - Scan to identify the truly unused data.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pre-compute Security Class Code - Eliminate Lookup Query]]
+- [[Materialize folder parentFolderIds change cascade (LUZ-154159)]]
+- [[04 Materialized Fields Computation]]
+- [[Folder recovery with re-parenting leaves inheritedSecurityClassCode stale]]
+- [[luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels]]
+
+%% ai-graph-end %%

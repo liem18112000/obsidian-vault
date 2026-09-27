@@ -1,14 +1,13 @@
 ---
-ai_hash: 5cd254d9be6f60cb
+ai_hash: bb62a04d7223bc37
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-21
 entities:
-- SSO-gate
+- Monitoring SSO-gate
 - dashboard
 - Keycloak
-- redirect_uri
-- re-sync
+- redirect_uri re-sync
 - leo-customer360
 - no-auth web UI
 - Netdata
@@ -16,54 +15,35 @@ entities:
 - SSO
 - L4 NLB
 - OIDC
-- oauth2-proxy
+- oauth2-proxy container
 - c360-oauth2-proxy
 - customer360 realm
 - UI
 - loopback
-- backend port
 - Portainer
-- login
-- reverse-proxy CSRF check
 - LB backend
 - public port
-- box:proxy_port
-- health `/ping`
-- '`_sso=true`'
-- '`oauth2_enabled=true`'
-- '`_GATED`'
+- proxy_port
+- gated dashboard
 - callback URL
-- redirect URIs
-- gated UI
-- Netdata vars
-- J_SSO
-- J_GATED
-- J_PROXY
-- J_REDIRECT
-- '`run_proxy` helper'
-- '`jaeger` LB backend'
-- proxy port 4686
-- Jaeger's 16686 UI
-- '`deploy-monitoring.sh`'
+- client's redirect URIs
+- run_proxy helper
+- jaeger LB backend
+- deploy-monitoring.sh
 - Keycloak client bootstrap
-- '`OAUTH2_PROXY_CLIENT_SECRET`'
-- '`.env`'
-- KC admin password
+- OAUTH2_PROXY_CLIENT_SECRET
+- .env
 - oauth2 login
-- '"Invalid redirect_uri" error'
-- '`bootstrap-oauth2-client.py`'
-- PUT (HTTP method)
-- '`redirectUris` (Keycloak field)'
-- deploy wrapper
-- skip (process)
-- '*Valid redirect URIs* (Keycloak UI field)'
+- Invalid redirect_uri
+- bootstrap-oauth2-client.py
+- Valid redirect URIs
 - Docker containers
 - VNG vServer VMs
 - SSH
-- tracing
 - OTel
 - UAT
 - PROD
+- leo-customer360 tracing
 source: session 2026-08-21
 status: seedling
 tags:
@@ -112,57 +92,40 @@ Fix: add the URI under the client's *Valid redirect URIs* in Keycloak, OR commen
 - [[Gating a dashboard behind Keycloak when the LB is L4 - use oauth2-proxy]]
 
 **Relations:**
-- SSO-gate — *needs* — redirect_uri re-sync
-- redirect_uri re-sync — *involves* — Keycloak
-- adding a dashboard — *triggers need for* — redirect_uri re-sync
-- leo-customer360 — *is a pattern for* — exposing no-auth web UI
-- no-auth web UI — *is behind* — SSO
-- Netdata — *is an example of* — no-auth web UI
-- Jaeger — *is an example of* — no-auth web UI
+- Monitoring SSO-gate — *adding a dashboard needs* — Keycloak redirect_uri re-sync
+- leo-customer360 — *exposes* — no-auth web UI
+- no-auth web UI — *is* — Netdata
+- no-auth web UI — *is* — Jaeger
+- no-auth web UI — *behind* — SSO
 - L4 NLB — *cannot do* — OIDC
-- no-native-auth dashboard — *is fronted by* — oauth2-proxy
-- oauth2-proxy — *is a* — Keycloak confidential client
-- c360-oauth2-proxy — *is an instance of* — oauth2-proxy
-- c360-oauth2-proxy — *is in* — customer360 realm
-- UI — *binds to* — loopback
-- oauth2-proxy — *reaches* — UI
-- oauth2-proxy — *listens on* — backend port
-- Portainer — *skips* — oauth2-proxy
-- Portainer — *has* — login
+- no-auth web UI — *fronted by* — oauth2-proxy container
+- oauth2-proxy container — *is a* — c360-oauth2-proxy
+- c360-oauth2-proxy — *in* — customer360 realm
+- UI — *binds* — loopback
+- oauth2-proxy container — *reaches* — UI
+- oauth2-proxy container — *listens on* — dedicated backend port
+- Portainer — *has* — own login
 - Portainer — *has* — reverse-proxy CSRF check
+- Portainer — *exposed* — DIRECT
 - LB backend — *maps* — public port
-- public port — *to* — box:proxy_port
-- box:proxy_port — *provides* — health `/ping`
-- `_sso=true` — *enables* — `_GATED`
-- `oauth2_enabled=true` — *enables* — `_GATED`
+- public port — *to* — proxy_port
 - gated dashboard — *adds* — callback URL
-- callback URL — *to* — redirect URIs
-- Jaeger — *is an example of* — gated UI
-- gated UI — *mirrors* — Netdata vars
-- gated UI — *calls* — `run_proxy` helper
-- gated UI — *adds* — `jaeger` LB backend
-- proxy port 4686 — *is for* — Jaeger's 16686 UI
-- `deploy-monitoring.sh` — *skips* — Keycloak client bootstrap
-- Keycloak client bootstrap — *is skipped when* — `OAUTH2_PROXY_CLIENT_SECRET`
-- `OAUTH2_PROXY_CLIENT_SECRET` — *is in* — `.env`
-- Keycloak client bootstrap — *requires* — KC admin password
-- adding a gated dashboard — *without registering callback URL causes* — oauth2 login
-- oauth2 login — *fails with* — "Invalid redirect_uri" error
-- `bootstrap-oauth2-client.py` — *upserts* — `redirectUris` (Keycloak field)
-- `redirectUris` (Keycloak field) — *via* — PUT (HTTP method)
-- deploy wrapper — *causes* — skip (process)
-- adding URI to *Valid redirect URIs* in Keycloak — *fixes* — "Invalid redirect_uri" error
-- commenting out `OAUTH2_PROXY_CLIENT_SECRET` in `.env` — *and re-running* — `deploy-monitoring.sh`
-- `deploy-monitoring.sh` — *fixes* — "Invalid redirect_uri" error
-- `deploy-monitoring.sh` — *re-bootstraps* — Keycloak client bootstrap
-- `deploy-monitoring.sh` — *upserts* — redirect URIs
-- `deploy-monitoring.sh` — *rewrites* — `OAUTH2_PROXY_CLIENT_SECRET`
+- callback URL — *to* — client's redirect URIs
+- Jaeger — *uses* — proxy port 4686
+- Jaeger — *has* — UI port 16686
+- deploy-monitoring.sh — *skips* — Keycloak client bootstrap
+- Keycloak client bootstrap — *skipped when* — OAUTH2_PROXY_CLIENT_SECRET in .env
+- adding a NEW gated dashboard — *does not register* — callback URL
+- oauth2 login — *fails with* — Invalid redirect_uri
+- bootstrap-oauth2-client.py — *upserts* — redirect_uri
+- Keycloak — *has* — Valid redirect URIs
+- deploy-monitoring.sh — *re-bootstraps* — redirects
+- deploy-monitoring.sh — *rewrites* — secret
 - leo-customer360 — *deploys as* — Docker containers
-- Docker containers — *run on* — VNG vServer VMs
-- VNG vServer VMs — *accessed via* — SSH
-- leo-customer360 — *uses* — tracing
-- tracing — *uses* — OTel
-- OTel — *is off on* — UAT
+- Docker containers — *on* — VNG vServer VMs
+- VNG vServer VMs — *over* — SSH
+- leo-customer360 tracing — *uses* — OTel
+- OTel — *is off-by-default on* — UAT
 - OTel — *is on at 10% on* — PROD
 
 %% ai-graph-end %%

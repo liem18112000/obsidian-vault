@@ -1,10 +1,20 @@
 ---
-title: "Thinking tokens are billed as output, so effort level is a cost lever"
+ai_hash: fc42c84e2fa05c9c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Manual Prompt Compression Techniques - Deep Dive (2026-04-13)'
 status: seedling
-source: "Confluence: Manual Prompt Compression Techniques - Deep Dive (2026-04-13)"
-tags: [prompt-engineering, chain-of-thought, llm, cost-optimization, claude, reasoning]
+tags:
+- prompt-engineering
+- chain-of-thought
+- llm
+- cost-optimization
+- claude
+- reasoning
+title: Thinking tokens are billed as output, so effort level is a cost lever
+type: lesson
 ---
 
 # Thinking tokens are billed as output, so effort level is a cost lever
@@ -38,3 +48,14 @@ Two cheap companions on the same lever: **`max_tokens`** caps the worst case, an
 ## Related
 
 - [[Few-shot cost grows linearly while accuracy flattens, so escalate examples in steps]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Few-shot cost grows linearly while accuracy flattens, so escalate examples in steps]]
+- [[Enabled thinking shares the max_tokens budget and can truncate output]]
+- [[Route tool-less LLM passes to a cheaper model tier]]
+- [[Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded]]
+- [[Why local test-agent is slow claude -p ships a 17.5K agent prompt on Opus, x many serial calls]]
+
+%% ai-graph-end %%

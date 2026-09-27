@@ -1,18 +1,22 @@
 ---
-title: "Update ePost certificate - *.epost.ch - in PROD"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48526819332/Update+ePost+certificate+-+.epost.ch+-+in+PROD
-space: "IO"
-topic: security
-relevance: 0.852
-depth: 3
-updated: 2026-06-04
+ai_hash: bf6acd5826d3463d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 8
+depth: 3
+entities: []
+relevance: 0.852
+source: https://axonivy.atlassian.net/wiki/spaces/IO/pages/48526819332/Update+ePost+certificate+-+.epost.ch+-+in+PROD
+space: IO
+status: reference
 tags:
-  - confluence
-  - security
-  - space/io
+- confluence
+- security
+- space/io
+title: Update ePost certificate - *.epost.ch - in PROD
+topic: security
+type: source
+updated: 2026-06-04
 ---
 
 # Update ePost certificate - *.epost.ch - in PROD
@@ -112,3 +116,14 @@ XfNSzCiqnJG+9oHHPik49K77tWosbIj+ICCUHihDFuCBB3uW1hlZnxrdeq1YMex6
 SjoBEOGPbdYbvSAj+xVcfkM7HGFB7OibFJyAoM5Nj+5nza94jQHXFpv2qxKFMKP+  
 BwIDAQAB  
 -----END PUBLIC KEY-----
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Security]]
+- [[Update Vault Unseal self-signed certificate]]
+- [[SSL certificate overview]]
+- [[luz-vault - Recovery key encryption with RSA Public Keys (draft - vault operator]]
+- [[Deploy AFDEMO OM]]
+
+%% ai-graph-end %%

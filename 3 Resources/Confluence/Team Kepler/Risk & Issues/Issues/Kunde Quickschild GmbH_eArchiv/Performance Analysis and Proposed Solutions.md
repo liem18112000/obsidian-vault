@@ -1,14 +1,20 @@
 ---
-title: "Performance Analysis and Proposed Solutions"
+ai_hash: 82d140c4e45cdb06
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49317347331'
+confluence_path: Team Kepler > Risk & Issues > Issues > Kunde Quickschild GmbH_eArchiv
 created: 2026-04-11
-updated: 2026-05-04
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+title: Performance Analysis and Proposed Solutions
+type: source
+updated: 2026-05-04
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49317347331/Performance+Analysis+and+Proposed+Solutions
-confluence_id: "49317347331"
-confluence_path: "Team Kepler > Risk & Issues > Issues > Kunde Quickschild GmbH_eArchiv"
-tags: [confluence, performance]
 ---
 
 # Performance Analysis and Proposed Solutions
@@ -264,3 +270,14 @@ tags: [confluence, performance]
 </tr>
 </tbody>
 </table>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Follow Up Points After Client Meeting]]
+- [[eArchive Performance — Detail Overview]]
+- [[eArchive Performance — Executive Overview]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[eArchive request flow and log correlation (perf)]]
+
+%% ai-graph-end %%

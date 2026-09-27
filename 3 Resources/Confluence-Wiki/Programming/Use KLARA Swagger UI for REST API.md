@@ -1,18 +1,22 @@
 ---
-title: "Use KLARA Swagger UI for REST API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20448093654/Use+KLARA+Swagger+UI+for+REST+API
-space: "LUZ"
-topic: programming
-relevance: 0.938
-depth: 3
-updated: 2017-06-08
+ai_hash: fc497a65ce74bca0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.938
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20448093654/Use+KLARA+Swagger+UI+for+REST+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Use KLARA Swagger UI for REST API
+topic: programming
+type: source
+updated: 2017-06-08
 ---
 
 # Use KLARA Swagger UI for REST API
@@ -113,3 +117,14 @@ After examine the correct company tenant id, eventually the tenant-specific toke
 2.  Copy the returned token (just the value for the key "token" without `"`) and use it for the swagger-ui in the field token. See the swagger-ui links above.
 
 Enjoy REST resources through swagger-ui.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to use Public API to create update KLARA Business Company]]
+- [[KLARA Integration (request access token & call API)]]
+- [[OpenAPI UI (API on SwaggerUI)]]
+- [[How to consume luz api]]
+- [[How to call generic interface document API on dev]]
+
+%% ai-graph-end %%

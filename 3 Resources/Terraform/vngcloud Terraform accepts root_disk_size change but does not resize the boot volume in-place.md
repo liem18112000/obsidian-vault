@@ -1,5 +1,5 @@
 ---
-ai_hash: f0325f3ffe098245
+ai_hash: 47d4044aa422e989
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-10
@@ -42,8 +42,8 @@ Seen on customer360 UAT 2026-09-10 resizing the backend/Dagster box s-general-2x
 **Related notes:**
 - [[VNG vServer flavor resize (s-general-1x2 - 2x4) is an in-place terraform change (0 destroy) but reboots the box]]
 - [[Renaming a Terraform for_eachmap key needs terraform state mv or it destroys+recreates]]
-- [[VNG vServer name is in-place updatable; decouple server name from the for_each map key to rename without recreate]]
 - [[vDB volume_type cannot be changed on a live instance (no change-type API; not ForceNew so TF won't recreate)]]
-- [[CRLF in a tfvars user_data heredoc makes Terraform force-replace VNG vServers]]
+- [[VNG vServer name is in-place updatable; decouple server name from the for_each map key to rename without recreate]]
+- [[VNG Cloud vServer Terraform catalog ids resolve via a zone-UUID lookup chain]]
 
 %% ai-graph-end %%

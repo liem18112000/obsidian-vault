@@ -1,18 +1,22 @@
 ---
-title: "Enhancements for API Delete and Restore"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47169732666/Enhancements+for+API+Delete+and+Restore
-space: "TP2020"
-topic: programming
-relevance: 0.85
-depth: 3
-updated: 2022-11-01
+ai_hash: 804f4718de576d1d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.85
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47169732666/Enhancements+for+API+Delete+and+Restore
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/tp2020
+- confluence
+- programming
+- space/tp2020
+title: Enhancements for API Delete and Restore
+topic: programming
+type: source
+updated: 2022-11-01
 ---
 
 # Enhancements for API Delete and Restore
@@ -359,3 +363,14 @@ else -&gt; re-try</code></pre>
 ## 4. Re-try solution
 
 Branch: <a href="https://bitbucket.org/axonivy-prod/luz_docs_view_controller/branch/pioneer/LUZ-84004/research-retry-solution" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/axonivy-prod/luz_docs_view_controller/branch/pioneer/LUZ-84004/research-retry-solution</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-146746 Use correct API's for delete, restore and their undo]]
+- [[Research on bulk removal of access class]]
+- [[Empty Trash APIs]]
+- [[WIP Analyze subfolder search API (542ms)]]
+- [[Add Remove security class for folder]]
+
+%% ai-graph-end %%

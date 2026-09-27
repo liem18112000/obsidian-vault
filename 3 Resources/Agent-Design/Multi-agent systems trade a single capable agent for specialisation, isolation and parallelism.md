@@ -1,10 +1,20 @@
 ---
-title: "Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism"
+ai_hash: 9a123137f45d7d00
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Multi-Agentic Architecture - Theory (2026-03-23)'
 status: seedling
-source: "Confluence: Multi-Agentic Architecture - Theory (2026-03-23)"
-tags: [multi-agent, ai-agents, architecture, orchestration, llm]
+tags:
+- multi-agent
+- ai-agents
+- architecture
+- orchestration
+- llm
+title: Multi-agent systems trade a single capable agent for specialisation, isolation
+  and parallelism
+type: concept
 ---
 
 # Multi-agent systems trade a single capable agent for specialisation, isolation and parallelism
@@ -32,3 +42,14 @@ Note it is not the same discipline as [[Agent equals model plus harness, and the
 
 - [[ReAct beats plan-then-execute when the environment can surprise the agent]]
 - [[A shared mutable context beats a message bus for sequentially orchestrated agents]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Multi-Agentic Architecture - Theory]]
+- [[A shared mutable context beats a message bus for sequentially orchestrated agents]]
+- [[ReAct beats plan-then-execute when the environment can surprise the agent]]
+- [[Prompt, context, and harness engineering nest rather than replace each other]]
+- [[Harness Engineering - Designing Reliable AI Systems]]
+
+%% ai-graph-end %%

@@ -1,14 +1,20 @@
 ---
-title: "High-Level Design: ONE API Enricher-First Integration"
+ai_hash: 48c39dd9537e105c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48999890945'
+confluence_path: Team Kepler > Developer note > Enrichment Enhancement
 created: 2025-12-23
-updated: 2025-12-29
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- enricher
+title: 'High-Level Design: ONE API Enricher-First Integration'
+type: source
+updated: 2025-12-29
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48999890945/High-Level+Design+ONE+API+Enricher-First+Integration
-confluence_id: "48999890945"
-confluence_path: "Team Kepler > Developer note > Enrichment Enhancement"
-tags: [confluence, enricher]
 ---
 
 # High-Level Design: ONE API Enricher-First Integration
@@ -298,3 +304,14 @@ ONE API              luz-docs              Pub/Sub            ONE API
 | Document creation fails | Return HTTP 4xx/5xx | Retry or report error |
 | Pub/Sub publish fails | Log error, no event | Use timeout + fallback |
 | No event received | N/A | Query API after timeout |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Express an ordering requirement as queue priority, not as a synchronous wait]]
+- [[Adapt to support ONE API - Enricher first delivery]]
+- [[Duplicate of Adapt to support ONE API - Enricher first delivery]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[Invoice Run, ePost backend storage]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Throw error codes not sentences; localise at the request boundary"
+ai_hash: b280a18959b692cc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Handle error exception (LUZFIN)'
 status: seedling
-source: "Confluence: Handle error exception (LUZFIN)"
-tags: [error-handling, i18n, jax-rs, exception-mapper, java, confluence-distilled]
+tags:
+- error-handling
+- i18n
+- jax-rs
+- exception-mapper
+- java
+- confluence-distilled
+title: Throw error codes not sentences; localise at the request boundary
+type: lesson
 ---
 
 # Throw error codes not sentences; localise at the request boundary
@@ -61,3 +71,13 @@ Source: [[Handle error exception]] (LUZFIN, Confluence).
 ## Related
 
 - [[Bulk operations need per-item outcomes, not one status code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Handle error exception]]
+- [[Enumerate a dependency's exception surface and decide each one before integrating]]
+- [[Mutually exclusive API parameters should be rejected, not resolved by precedence]]
+- [[Bulk operations need per-item outcomes, not one status code]]
+
+%% ai-graph-end %%

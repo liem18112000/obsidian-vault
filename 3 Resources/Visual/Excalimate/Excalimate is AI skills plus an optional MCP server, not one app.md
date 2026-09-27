@@ -1,7 +1,7 @@
 ---
-ai_hash: 4d867f69f62d132c
+ai_hash: 787dc73a0c6704eb
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities: []
 source: session 2026-06-16
@@ -32,8 +32,8 @@ See [[Running Excalimate locally skills in ~.claudeskills plus MCP server on por
 **Related notes:**
 - [[Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]
 - [[Excalimate export is browser-only; headless export needs Playwright + share URL]]
-- [[A 406 from curl on an MCP mcp endpoint is normal]]
 - [[Excalimate cloud share links are CORS-broken — use Connect to MCP server instead]]
-- [[MCP servers load only at Claude Code startup; skills hot-reload]]
+- [[A 406 from curl on an MCP mcp endpoint is normal]]
+- [[Render .excalidraw to PNGSVG offline with render_excalidraw.py]]
 
 %% ai-graph-end %%

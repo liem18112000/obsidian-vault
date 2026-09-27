@@ -1,67 +1,228 @@
 ---
-ai_hash: 4e6340b83196de68
+ai_hash: 4ef25e731a346f98
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-08
 domain: affiliate-marketing
 entities:
-- Free Music × Tech (AI) Tools Site
-- AI-powered tools for musicians
-- SE
-- Musician who codes
-- Affiliate offers
-- Monetisation layer
+- Project Plan
+- Free Music Tech AI Tools Site
+- AI-powered Music Tools
+- Software Engineer
+- Affiliate Offers
+- Monetisation Layer
+- Wedge idea
+- Build tools as moat idea
+- Strategy note
+- Free Tool
+- Problem Instantly
 - Trust
-- Traffic
-- Free tool
-- Paid tool
-- Recurring income
-- CPS affiliate income
-- AI angle
-- AI music SaaS
-- Flywheel
-- Linkable assets
-- Domain authority
-- Money pages
-- Tool portfolio
-- AI music tool directory
-- Vocal remover / stem splitter
+- Backlinks
+- Paid Tool
+- Recurring Income
+- Cost Per Sale (CPS) Affiliate Income
+- Musician-Coder
+- AI Angle
+- AI Music SaaS
+- Affiliate Programs
+- Website Traffic
+- Tool-Led Site
+- Blog Site
+- Flywheel concept
+- Linkable Assets
+- Domain Authority
+- Money Pages
+- Tool Portfolio
+- Search Demand
+- Buildable on Weekends
+- Clean Funnel to Paid Offer
+- Client-Side Development
+- Web Audio API
+- WebAssembly
+- AI Music Tool Directory
 - Lalal.ai
-- Moises
 - LANDR
+- Moises
 - Suno
-- Plugin Boutique
-- Sweetwater
-- Musora
+- Vocal Remover / Stem Splitter
 - Demucs
+- iZotope RX
+- Chord Progression Generator
+- DAWs
+- Plugin Boutique
+- Songwriting Courses
+- Key & BPM Detector
 - Essentia
+- DJ Software
+- Sample Libraries
+- Scale/Fretboard/Keyboard Explorer
+- Lesson Subscriptions
+- Musora
+- Loudness/LUFS Meter
+- AI Mastering
+- eMastered
+- AI Lyric/Songwriting Assistant
 - LLM API
-- Client-side tool
-- Flagship AI tool
-- Heavy AI compute
-- Site architecture
-- Monetisation map
+- Songwriting Tools
+- Metronome/Tuner/Tap-BPM
+- Apps
+- Instruments
+- Gear Comparison Engine
+- Sweetwater
+- Sam Ash
+- Thomann
+- Average Order Value (AOV)
+- AI-Powered Tools
+- Open-Source Models
+- Compute Cost
+- GPU
+- Site Architecture
+- Tools Section
+- AI-Tools Section
+- Reviews Section
+- VS Section
+- Guides Section
+- How-I-Built-This Section
+- Newsletter
+- Monetisation Map
+- 30% Commission
+- 180-Day Cookie
+- Cost Per Sale (CPS)
+- Subscription Model
+- Revenue Share (RevShare)
 - Cookie Duration
-- Revenue Share
-- Earnings per Click
-- Dogfood cross-sell
-- Pillar A income
-- Dev-SaaS affiliates
+- Earnings Per Click (EPC)
+- Pillar A Income
+- Dev-SaaS Affiliates
 - Vercel
 - Cloudflare
 - Netlify
+- Managed DB
+- Auth
+- Monitoring SaaS
+- Tech Stack
+- Framework
 - Astro
 - Next.js
-- Web Audio API
-- WASM
-- Markdown / MDX
-- Affiliate links
-- Traffic & SEO strategy
-- Tool keywords
-- Editorial backlinks
-- Comparison content
+- Tools Runtime
+- Tone.js
+- ONNX
+- Heavy AI
+- Serverless Function
+- Content Tech
+- Markdown
+- MDX
+- Obsidian
+- Affiliate Links Tech
+- Cloaking
+- Click Tracking
+- Analytics
+- Plausible
+- GA4
+- Email Tech
+- ConvertKit
+- Buttondown
+- Host
+- Vercel Pages
+- Cloudflare Pages
+- Traffic & SEO Strategy
+- Tool Keywords
+- Comparison Content
+- Decision-Stage Buyers
+- Suno vs Udio
+- Lalal.ai vs Moises
+- Demo Videos
+- YouTube
 - Roadmap
-- Metrics to watch
+- Month 1
+- Month 2
+- Month 3
+- Months 4-6
+- Metrics to Watch
+- Conversion
+- Confirmed vs Pending Earnings
+- Reversal
+- Gear Returns
+- SaaS Churn
+- Backlinks Per Tool
+- Email List Growth
+- Risks
+- AI Music Tools Failure Modes
+- Compute Cost Creep
+- Maintenance Burden
+- Flagship Tool
+- Primary Funnel
+- Client-Side Tool
+- AI Tool
+- Day One Monetization
+- Pure Data Work
+- Zero-Cost Tool
+- Linkable Centrepiece
+- AI Products
+- Strong Affiliate Programs
+- AI Affiliate
+- AI Builder
+- Own Servers
+- Free
+- Strict Free-Tier Caps
+- Queue
+- Affiliate Tool
+- Heavy Job
+- Commission
+- Compute Bill
+- Live Tool
+- Landing Page
+- Filterable Directory
+- Affiliate Per Listing
+- Comparisons
+- Tools
+- Offers
+- Email Capture
+- Return Audience
+- Tool to Offer to Model
+- Paid Offer
+- Build Process
+- Redirect
+- Dogfood Content
+- Entry Points
+- What to Build Next
+- Buy Domain
+- Scaffold Site
+- Build AI Tool Directory Data
+- Apply to Lalal.ai
+- Apply to Plugin Boutique
+- Apply to Dev-Host Program
+- Ship Site Live
+- Ship Directory Live
+- Build One Client-Side Tool
+- Set Up Redirects
+- Set Up Analytics
+- Keyword Research
+- Outline Money Pages
+- Build Vocal Remover
+- Write Lalal.ai Review
+- Write Lalal.ai vs Moises Comparison
+- Record Demo Video
+- Publish Reviews
+- Maintain Reviews
+- Reply to Comments
+- Track Offers
+- 'Build Tool #3'
+- Write How I Built This
+- Launch Newsletter
+- Expand Directory
+- Refresh Reviews
+- Prune Losers by EPC
+- Add Gear Comparison Engine
+- Add 4th Tool
+- Double Down on High-EPC Funnel
+- Consider Second Demo-Video Series
+- Per-Tool to Per-Offer Conversion
+- Per Offer
+- Owned Audience
+- Recurring Audience
+- Viral Free AI Tool
+- Code
 status: draft
 tags:
 - affiliate
@@ -298,72 +459,281 @@ Researched June 2026 (verify on official affiliate pages — terms change):
 - [[Strategy]]
 
 **Relations:**
-- Free Music × Tech (AI) Tools Site — *provides* — AI-powered tools for musicians
-- Free Music × Tech (AI) Tools Site — *built by* — SE
-- SE — *is a* — Musician who codes
-- Affiliate offers — *are the* — Monetisation layer
-- AI-powered tools for musicians — *generate* — Traffic
-- AI-powered tools for musicians — *build* — Trust
-- Free tool — *solves a problem* — instantly
-- Free tool — *earns* — Trust
-- Free tool — *earns* — Editorial backlinks
-- Free tool — *funnels user to* — Paid tool
-- Paid tool — *generates* — Recurring income
-- Paid tool — *generates* — CPS affiliate income
-- AI angle — *rides* — highest-search-growth topic in music
-- AI music SaaS — *have* — generous affiliate programs
-- Tools — *are* — Linkable assets
-- Linkable assets — *attract* — Editorial backlinks
-- Editorial backlinks — *increase* — Domain authority
-- Domain authority — *helps rank* — Money pages
-- Tool portfolio — *includes* — AI music tool directory
-- Tool portfolio — *includes* — Vocal remover / stem splitter
-- AI music tool directory — *funnels to* — Lalal.ai
-- AI music tool directory — *funnels to* — Moises
-- AI music tool directory — *funnels to* — LANDR
-- AI music tool directory — *funnels to* — Suno
-- AI music tool directory — *funnels to* — Plugin Boutique
-- AI music tool directory — *funnels to* — Sweetwater
-- AI music tool directory — *funnels to* — Musora
-- Vocal remover / stem splitter — *uses* — Demucs
-- Vocal remover / stem splitter — *funnels to* — Lalal.ai
-- Vocal remover / stem splitter — *funnels to* — Moises
-- Lalal.ai — *offers* — 30% commission
-- Lalal.ai — *offers* — 180-day cookie
-- Lalal.ai — *is a type of* — CPS affiliate income
-- Vocal remover / stem splitter — *is the* — Flagship AI tool
-- Flagship AI tool — *funnels to* — Lalal.ai
-- AI-powered tools — *use* — LLM API
-- AI-powered tools — *use* — open-source models
-- Client-side tool — *avoids* — Heavy AI compute
-- Site architecture — *includes path* — /tools/
-- Site architecture — *includes path* — /ai-tools/
-- Site architecture — *includes path* — /reviews/
-- Site architecture — *includes path* — /vs/
-- Site architecture — *includes path* — /how-i-built-this/
-- Monetisation map — *details* — Paid offer
-- Monetisation map — *details* — affiliate model
-- Revenue Share — *is a type of* — affiliate model
-- CPS affiliate income — *is a type of* — affiliate model
-- Dogfood cross-sell — *generates* — Pillar A income
-- Dogfood cross-sell — *targets* — Dev-SaaS affiliates
+- Free Music Tech AI Tools Site — *is a* — Project Plan
+- Free Music Tech AI Tools Site — *features* — AI-powered Music Tools
+- Free Music Tech AI Tools Site — *built by* — Software Engineer
+- Affiliate Offers — *are the* — Monetisation Layer
+- Monetisation Layer — *for* — Free Music Tech AI Tools Site
+- Wedge idea — *from* — Strategy note
+- Build tools as moat idea — *from* — Strategy note
+- Free Tool — *solves* — Problem Instantly
+- Free Tool — *earns* — Trust
+- Free Tool — *earns* — Backlinks
+- Free Tool — *funnels user to* — Paid Tool
+- Paid Tool — *generates* — Recurring Income
+- Paid Tool — *generates* — Cost Per Sale (CPS) Affiliate Income
+- Musician-Coder — *provides* — Trust
+- Musician-Coder — *provides* — authority
+- AI Angle — *is a positioning win for* — Free Music Tech AI Tools Site
+- AI Music SaaS — *have* — Affiliate Programs
+- Tools — *generate* — Website Traffic
+- Tools — *build* — Trust
+- Tool-Led Site — *beats* — Blog Site
+- Tool-Led Site — *uses* — Flywheel concept
+- Tools — *are* — Linkable Assets
+- Linkable Assets — *attract* — Backlinks
+- Backlinks — *lift* — Domain Authority
+- Domain Authority — *helps rank* — Money Pages
+- Tool Portfolio — *consists of* — Traffic magnets
+- Traffic magnets — *chosen by* — Search Demand
+- Traffic magnets — *chosen by* — Buildable on Weekends
+- Traffic magnets — *chosen by* — Clean Funnel to Paid Offer
+- Client-Side Development — *uses* — Web Audio API
+- Client-Side Development — *uses* — WebAssembly
+- AI Music Tool Directory — *curates* — AI
+- AI Music Tool Directory — *funnels to* — Lalal.ai
+- AI Music Tool Directory — *funnels to* — LANDR
+- AI Music Tool Directory — *funnels to* — Moises
+- AI Music Tool Directory — *funnels to* — Suno
+- Vocal Remover / Stem Splitter — *uses* — Demucs
+- Vocal Remover / Stem Splitter — *funnels to* — Lalal.ai
+- Vocal Remover / Stem Splitter — *funnels to* — Moises
+- Vocal Remover / Stem Splitter — *funnels to* — iZotope RX
+- Chord Progression Generator — *funnels to* — DAWs
+- Chord Progression Generator — *funnels to* — Plugin Boutique
+- Chord Progression Generator — *funnels to* — Songwriting Courses
+- Key & BPM Detector — *uses* — WebAssembly
+- Key & BPM Detector — *uses* — Essentia
+- Key & BPM Detector — *funnels to* — DJ Software
+- Key & BPM Detector — *funnels to* — DAWs
+- Key & BPM Detector — *funnels to* — Sample Libraries
+- Scale/Fretboard/Keyboard Explorer — *funnels to* — Lesson Subscriptions
+- Scale/Fretboard/Keyboard Explorer — *funnels to* — Musora
+- Scale/Fretboard/Keyboard Explorer — *funnels to* — Instruments
+- Loudness/LUFS Meter — *uses* — Web Audio API
+- Loudness/LUFS Meter — *funnels to* — AI Mastering
+- Loudness/LUFS Meter — *funnels to* — LANDR
+- Loudness/LUFS Meter — *funnels to* — eMastered
+- AI Lyric/Songwriting Assistant — *uses* — LLM API
+- AI Lyric/Songwriting Assistant — *funnels to* — Songwriting Tools
+- AI Lyric/Songwriting Assistant — *funnels to* — Songwriting Courses
+- Metronome/Tuner/Tap-BPM — *funnels to* — Apps
+- Metronome/Tuner/Tap-BPM — *funnels to* — Instruments
+- Gear Comparison Engine — *funnels to* — Sweetwater
+- Gear Comparison Engine — *funnels to* — Sam Ash
+- Gear Comparison Engine — *funnels to* — Thomann
+- AI Angle — *means* — AI-Powered Tools
+- AI Angle — *means* — Monetise AI Music SaaS
+- AI-Powered Tools — *use* — Open-Source Models
+- AI-Powered Tools — *use* — LLM API
+- Heavy AI — *can incur* — Compute Cost
+- Compute Cost — *is related to* — GPU
+- Site Architecture — *includes* — Tools Section
+- Site Architecture — *includes* — AI-Tools Section
+- Site Architecture — *includes* — Reviews Section
+- Site Architecture — *includes* — VS Section
+- Site Architecture — *includes* — Guides Section
+- Site Architecture — *includes* — How-I-Built-This Section
+- Site Architecture — *includes* — Newsletter
+- Lalal.ai — *offers* — 30% Commission
+- Lalal.ai — *offers* — 180-Day Cookie
+- Lalal.ai — *uses model* — Cost Per Sale (CPS)
+- Moises — *uses model* — Cost Per Sale (CPS)
+- Moises — *uses model* — Subscription Model
+- LANDR — *uses model* — Revenue Share (RevShare)
+- LANDR — *uses model* — Subscription Model
+- Sweetwater — *uses model* — Cost Per Sale (CPS)
+- Sam Ash — *uses model* — Cost Per Sale (CPS)
+- Thomann — *uses model* — Cost Per Sale (CPS)
+- Musora — *uses model* — Subscription Model
+- Musora — *uses model* — Revenue Share (RevShare)
+- 180-Day Cookie — *is a type of* — Cookie Duration
+- Revenue Share (RevShare) — *is* — Recurring Income
+- Cost Per Sale (CPS) — *is for* — Digital + High-AOV Gear
+- Pillar A Income — *is from* — Dev-SaaS Affiliates
+- How-I-Built-This Section — *affiliates* — Dev-SaaS Affiliates
 - Vercel — *is a* — Host
-- Vercel — *is a* — Dev-SaaS affiliates
 - Cloudflare — *is a* — Host
-- Cloudflare — *is a* — Dev-SaaS affiliates
 - Netlify — *is a* — Host
-- Netlify — *is a* — Dev-SaaS affiliates
+- Vercel — *offers* — Referral/Affiliate Program
+- Cloudflare — *offers* — Referral/Affiliate Program
+- Netlify — *offers* — Referral/Affiliate Program
+- Tech Stack — *includes* — Framework
+- Tech Stack — *includes* — Tools Runtime
+- Tech Stack — *includes* — Heavy AI
+- Tech Stack — *includes* — Content Tech
+- Tech Stack — *includes* — Affiliate Links Tech
+- Tech Stack — *includes* — Analytics
+- Tech Stack — *includes* — Email Tech
+- Tech Stack — *includes* — Host
 - Astro — *is a* — Framework
 - Next.js — *is a* — Framework
-- Web Audio API — *is a* — Tools runtime
-- WASM — *is a* — Tools runtime
-- Markdown / MDX — *is for* — Content
-- Affiliate links — *use* — /go/{slug} redirect
-- Traffic & SEO strategy — *uses* — Tool keywords
-- Traffic & SEO strategy — *uses* — Linkable assets
-- Traffic & SEO strategy — *uses* — Comparison content
-- Roadmap — *outlines* — project plan
-- Metrics to watch — *include* — Earnings per Click
-- Metrics to watch — *include* — conversion
+- Web Audio API — *is a* — Tools Runtime
+- Tone.js — *is a* — Tools Runtime
+- WebAssembly — *is a* — Tools Runtime
+- Essentia — *is a* — Tools Runtime
+- ONNX — *is a* — Tools Runtime
+- Serverless Function — *handles* — Heavy AI
+- Markdown — *is for* — Content Tech
+- MDX — *is for* — Content Tech
+- Markdown — *fits* — Obsidian
+- MDX — *fits* — Obsidian
+- Affiliate Links Tech — *uses* — Cloaking
+- Affiliate Links Tech — *uses* — Click Tracking
+- Plausible — *is for* — Analytics
+- GA4 — *is for* — Analytics
+- ConvertKit — *is for* — Email Tech
+- Buttondown — *is for* — Email Tech
+- Vercel Pages — *is a* — Host
+- Cloudflare Pages — *is a* — Host
+- Traffic & SEO Strategy — *uses* — Tool Keywords
+- Traffic & SEO Strategy — *uses* — Linkable Assets
+- Traffic & SEO Strategy — *uses* — Comparison Content
+- Traffic & SEO Strategy — *uses* — AI Music Tool Directory
+- Traffic & SEO Strategy — *uses* — Demo Videos
+- Tool Keywords — *are* — Entry Points
+- Comparison Content — *catches* — Decision-Stage Buyers
+- Suno vs Udio — *is an example of* — Comparison Content
+- Lalal.ai vs Moises — *is an example of* — Comparison Content
+- Demo Videos — *are for* — YouTube
+- Roadmap — *includes* — Month 1
+- Roadmap — *includes* — Month 2
+- Roadmap — *includes* — Month 3
+- Roadmap — *includes* — Months 4-6
+- Metrics to Watch — *include* — Conversion
+- Metrics to Watch — *include* — Earnings Per Click (EPC)
+- Metrics to Watch — *include* — Confirmed vs Pending Earnings
+- Metrics to Watch — *include* — Backlinks Per Tool
+- Metrics to Watch — *include* — Email List Growth
+- Confirmed vs Pending Earnings — *affected by* — Reversal
+- Reversal — *caused by* — Gear Returns
+- Reversal — *caused by* — SaaS Churn
+- Risks — *include* — AI Music Tools Failure Modes
+- AI Music Tools Failure Modes — *include* — Compute Cost Creep
+- AI Music Tools Failure Modes — *include* — Maintenance Burden
+- Lalal.ai — *has* — 180-Day Cookie
+- Vocal Remover / Stem Splitter — *is a* — Flagship Tool
+- Lalal.ai — *is a* — Primary Funnel
+- Vocal Remover / Stem Splitter — *for* — Lalal.ai
+- AI Music Tool Directory — *is a* — Client-Side Tool
+- Chord Progression Generator — *is a* — Client-Side Tool
+- Vocal Remover / Stem Splitter — *is an* — AI Tool
+- AI Music Tool Directory — *monetises from* — Day One Monetization
+- AI Music Tool Directory — *is* — Pure Data Work
+- Chord Progression Generator — *is a* — Zero-Cost Tool
+- Vocal Remover / Stem Splitter — *is a* — Linkable Centrepiece
+- AI Music SaaS — *are* — AI Products
+- AI Music SaaS — *have* — Strong Affiliate Programs
+- Software Engineer — *is an* — AI Affiliate
+- Software Engineer — *is an* — AI Builder
+- Heavy AI — *should be kept off* — Own Servers
+- Client-Side Development — *is* — Free
+- Serverless Function — *has* — Strict Free-Tier Caps
+- Serverless Function — *has* — Queue
+- Affiliate Tool — *handles* — Heavy Job
+- Affiliate Tool — *earns* — Commission
+- Affiliate Tool — *helps dodge* — Compute Bill
+- Tools Section — *contains* — Live Tool
+- Tools Section — *contains* — Landing Page
+- Tools Section — *links to* — Reviews Section
+- Tools Section — *links to* — VS Section
+- AI-Tools Section — *is a* — Filterable Directory
+- AI-Tools Section — *has* — Affiliate Per Listing
+- Reviews Section — *are* — Money Pages
+- VS Section — *are* — Comparisons
+- Guides Section — *link to* — Tools
+- Guides Section — *link to* — Offers
+- Newsletter — *is for* — Email Capture
+- Newsletter — *creates* — Return Audience
+- Monetisation Map — *shows* — Tool to Offer to Model
+- Lalal.ai — *is a* — Paid Offer
+- Moises — *is a* — Paid Offer
+- LANDR — *is a* — Paid Offer
+- Suno — *is a* — Paid Offer
+- Udio — *is a* — Paid Offer
+- Plugin Boutique — *is a* — Paid Offer
+- Sweetwater — *is a* — Paid Offer
+- Sam Ash — *is a* — Paid Offer
+- Thomann — *is a* — Paid Offer
+- Musora — *is a* — Paid Offer
+- Pillar A Income — *is* — Free
+- Pillar A Income — *is* — Recurring Income
+- Software Engineer — *documents* — Build Process
+- Build Process — *is documented in* — How-I-Built-This Section
+- How-I-Built-This Section — *affiliates* — Vercel
+- How-I-Built-This Section — *affiliates* — Cloudflare
+- How-I-Built-This Section — *affiliates* — Netlify
+- How-I-Built-This Section — *affiliates* — Managed DB
+- How-I-Built-This Section — *affiliates* — Auth
+- How-I-Built-This Section — *affiliates* — Monitoring SaaS
+- Managed DB — *is a* — Dev-SaaS Affiliates
+- Auth — *is a* — Dev-SaaS Affiliates
+- Monitoring SaaS — *is a* — Dev-SaaS Affiliates
+- Framework — *is* — Static-First
+- Static-First — *means* — Fast Performance
+- Static-First — *means* — Low Cost
+- Static-First — *means* — SEO-Friendly
+- Tools Runtime — *is* — Client-Side Development
+- Client-Side Development — *means* — Zero Compute Cost
+- Client-Side Development — *means* — Infinite Scale
+- Heavy AI — *uses* — Serverless Function
+- Content Tech — *uses* — Markdown
+- Content Tech — *uses* — MDX
+- Affiliate Links Tech — *uses* — Redirect
+- Redirect — *enables* — Cloaking
+- Redirect — *enables* — Click Tracking
+- Click Tracking — *provides* — Earnings Per Click (EPC)
+- Host — *offers* — Free Tier
+- Host — *is part of* — Dogfood Content
+- Tool Keywords — *are* — High Intent
+- Live Tool — *is the best result for* — Tool Keywords
+- Free Tools — *attract* — Editorial Backlinks
+- Editorial Backlinks — *lead to* — Domain Authority
+- Domain Authority — *helps rank* — Money Pages
+- AI Music Tool Directory — *ranks for* — best AI music tools
+- AI Music Tool Directory — *is* — endlessly updatable
+- Demo Videos — *are for* — YouTube
+- Demo Videos — *build* — Trust
+- Month 1 — *includes* — Buy Domain
+- Month 1 — *includes* — Scaffold Site
+- Month 1 — *includes* — Build AI Tool Directory Data
+- Month 1 — *includes* — Apply to Lalal.ai
+- Month 1 — *includes* — Apply to Plugin Boutique
+- Month 1 — *includes* — Apply to Dev-Host Program
+- Month 1 — *includes* — Ship Site Live
+- Month 1 — *includes* — Ship Directory Live
+- Month 1 — *includes* — Build One Client-Side Tool
+- Month 1 — *includes* — Set Up Redirects
+- Month 1 — *includes* — Set Up Analytics
+- Month 2 — *includes* — Keyword Research
+- Month 2 — *includes* — Outline Money Pages
+- Month 2 — *includes* — Build Vocal Remover
+- Month 2 — *includes* — Write Lalal.ai Review
+- Month 2 — *includes* — Write Lalal.ai vs Moises Comparison
+- Month 2 — *includes* — Record Demo Video
+- Month 3 — *includes* — Publish Reviews
+- Month 3 — *includes* — Maintain Reviews
+- Month 3 — *includes* — Reply to Comments
+- Month 3 — *includes* — Track Offers
+- Month 3 — *includes* — Build Tool #3
+- Month 3 — *includes* — Write How I Built This
+- Month 3 — *includes* — Launch Newsletter
+- Months 4-6 — *includes* — Expand Directory
+- Months 4-6 — *includes* — Refresh Reviews
+- Months 4-6 — *includes* — Prune Losers by EPC
+- Months 4-6 — *includes* — Add Gear Comparison Engine
+- Months 4-6 — *includes* — Add 4th Tool
+- Months 4-6 — *includes* — Double Down on High-EPC Funnel
+- Months 4-6 — *includes* — Consider Second Demo-Video Series
+- Conversion — *is measured by* — Per-Tool to Per-Offer Conversion
+- Conversion — *is instrumented via* — Redirect
+- Earnings Per Click (EPC) — *is for* — Per Offer
+- Confirmed vs Pending Earnings — *accounts for* — Reversal
+- Backlinks Per Tool — *proves* — Linkable Assets
+- Backlinks Per Tool — *guides* — What to Build Next
+- Email List Growth — *is* — Owned Audience
+- Email List Growth — *is* — Recurring Audience
+- Compute Cost Creep — *is a risk for* — Viral Free AI Tool
+- Maintenance Burden — *is a risk for* — Code
 
 %% ai-graph-end %%

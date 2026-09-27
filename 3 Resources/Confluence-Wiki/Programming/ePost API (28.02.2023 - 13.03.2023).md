@@ -1,18 +1,22 @@
 ---
-title: "ePost API (28.02.2023 - 13.03.2023)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47326069439/ePost+API+28.02.2023+-+13.03.2023
-space: "LUZ"
-topic: programming
-relevance: 0.806
-depth: 3
-updated: 2023-03-13
+ai_hash: b21e5e60c9111987
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 11
+depth: 3
+entities: []
+relevance: 0.806
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47326069439/ePost+API+28.02.2023+-+13.03.2023
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: ePost API (28.02.2023 - 13.03.2023)
+topic: programming
+type: source
+updated: 2023-03-13
 ---
 
 # ePost API (28.02.2023 - 13.03.2023)
@@ -137,3 +141,14 @@ Testcase 2
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[One API and Monitoring 0.02.61.00 (19.12.2023 - 29.12.2023)]]
+- [[Copy 5. How to extend modify ONE API delivery API Research]]
+- [[Public API (30 August 2021)]]
+- [[5. How to extend modify ONE API delivery API Research]]
+
+%% ai-graph-end %%

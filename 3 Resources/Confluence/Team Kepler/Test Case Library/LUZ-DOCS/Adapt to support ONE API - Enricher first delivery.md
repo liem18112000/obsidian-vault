@@ -1,14 +1,22 @@
 ---
-title: "Adapt to support ONE API - Enricher first delivery"
+ai_hash: 76108150e9579980
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49010606081'
+confluence_path: Team Kepler > Test Case Library > LUZ-DOCS
 created: 2025-12-31
-updated: 2026-01-07
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- luz-docs
+- testing
+- enricher
+title: Adapt to support ONE API - Enricher first delivery
+type: source
+updated: 2026-01-07
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49010606081/Adapt+to+support+ONE+API+-+Enricher+first+delivery
-confluence_id: "49010606081"
-confluence_path: "Team Kepler > Test Case Library > LUZ-DOCS"
-tags: [confluence, luz-docs, testing, enricher]
 ---
 
 # Adapt to support ONE API - Enricher first delivery
@@ -1025,3 +1033,14 @@ tags: [confluence, luz-docs, testing, enricher]
 </table>
 
 ------------------------------------------------------------------------
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Duplicate of Adapt to support ONE API - Enricher first delivery]]
+- [[LUZ-Docs - Execution - Trigger enricher regarding document type]]
+- [[LUZ-Docs Trigger enricher regarding document type]]
+- [[High-Level Design - ONE API Enricher-First Integration]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+
+%% ai-graph-end %%

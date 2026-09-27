@@ -1,18 +1,22 @@
 ---
-title: "Luz Batch TypeScript - Sequence Diagram"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48719528005/Luz+Batch+TypeScript+-+Sequence+Diagram
-space: "FUT"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2025-10-08
+ai_hash: 0b36b37f9f7458df
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 14
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48719528005/Luz+Batch+TypeScript+-+Sequence+Diagram
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: Luz Batch TypeScript - Sequence Diagram
+topic: programming
+type: source
+updated: 2025-10-08
 ---
 
 # Luz Batch TypeScript - Sequence Diagram
@@ -2884,3 +2888,14 @@ export class DocumentProcessingService extends AsyncHttpProcessor<DocumentReques
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Luz Batch TypeScript]]
+- [[Recipe Typescript batching]]
+- [[Batch Processor Library - NodeJS]]
+- [[Batching Design]]
+- [[Luz Batch TypeScript - Configuration]]
+
+%% ai-graph-end %%

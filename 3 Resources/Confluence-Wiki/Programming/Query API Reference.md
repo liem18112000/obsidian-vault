@@ -1,18 +1,22 @@
 ---
-title: "Query API Reference"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2524828596/Query+API+Reference
-space: "AI"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2021-01-21
+ai_hash: fcb49a0bc8c5206b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/AI/pages/2524828596/Query+API+Reference
+space: AI
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ai
+- confluence
+- programming
+- space/ai
+title: Query API Reference
+topic: programming
+type: source
+updated: 2021-01-21
 ---
 
 # Query API Reference
@@ -345,3 +349,14 @@ The syntax of the filter expression looks as follows (BNF)
 | `((AND)((GE)(eventdate)('2019-01-20'))((LE)(eventdate)('2019-01-31')))` | The value of field 'eventDate' must be between '2019-01-20' (inclusive) and '2019-01-31' (inclusive). |
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Invoice API Reference]]
+- [[APF ItemLine Import API]]
+- [[Invoice API]]
+- [[Analyze API]]
+- [[SchemaRegistry API v2.0]]
+
+%% ai-graph-end %%

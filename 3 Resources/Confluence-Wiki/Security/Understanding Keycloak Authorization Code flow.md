@@ -1,18 +1,22 @@
 ---
-title: "Understanding Keycloak Authorization Code flow"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47337506247/Understanding+Keycloak+Authorization+Code+flow
-space: "Helios"
-topic: security
-relevance: 0.701
-depth: 2.4
-updated: 2023-03-27
+ai_hash: a74c9ca8a1e33c09
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.4
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47337506247/Understanding+Keycloak+Authorization+Code+flow
+space: Helios
+status: reference
 tags:
-  - confluence
-  - security
-  - space/helios
+- confluence
+- security
+- space/helios
+title: Understanding Keycloak Authorization Code flow
+topic: security
+type: source
+updated: 2023-03-27
 ---
 
 # Understanding Keycloak Authorization Code flow
@@ -116,3 +120,14 @@ Sample response:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KLARA Integration (request access token & call API)]]
+- [[Auto login in myLife and ePost private web clients]]
+- [[Proof of Concept Auto login with Keycloak]]
+- [[Implement Corporate API Access (LUZ-17959)]]
+- [[Get tenant token from public api]]
+
+%% ai-graph-end %%

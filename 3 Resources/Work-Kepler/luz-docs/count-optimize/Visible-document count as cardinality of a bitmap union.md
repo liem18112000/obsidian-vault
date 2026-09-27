@@ -1,7 +1,7 @@
 ---
-ai_hash: c29ef904d61265c6
+ai_hash: 9406d2e466ec8314
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities: []
 source: sessions 2026-06-16 (LUZ-154613)
@@ -50,7 +50,7 @@ Union = bitwise **OR**; count = **popcount**.
 - [[BitmapHLL counts supersede fan-out; they don't combine with it]]
 - [[Levers to optimise the visible-document count beyond _shard fan-out]]
 - [[Roaring bitmaps give exact set cardinality via chunked containers]]
-- [[Divide-and-Conquer Visible-Document Count]]
 - [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 %% ai-graph-end %%

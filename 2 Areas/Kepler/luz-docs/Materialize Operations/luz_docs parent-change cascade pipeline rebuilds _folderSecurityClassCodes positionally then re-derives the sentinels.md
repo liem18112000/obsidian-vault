@@ -1,9 +1,38 @@
 ---
-ai_hash: 47f0826a0bff89ad
+ai_hash: d3192c3f9c573eb2
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-05
-entities: []
+entities:
+- luz_docs
+- parent-change cascade pipeline
+- _folderSecurityClassCodes
+- sentinels
+- MaterializeComputeBuilder
+- buildFolderParentChangePipeline
+- $addFields pipeline
+- updateMany
+- folderIds
+- Stage 1
+- $map
+- $range
+- $size
+- $indexOfArray
+- literal id table
+- Java-prefetched code unions
+- $arrayElemAt
+- $ifNull
+- _folderNames
+- Stage 2
+- _effectiveSecurityClassCodes
+- securityClassCodes
+- $setUnion
+- $reduce
+- _isPublic
+- $anyElementTrue
+- MongoDB forbids $lookup inside update pipeline (WriteError 72)
+- luz_docs onFolderParentsChange risk profile
+- luz_docs materialize cascade delivery mechanisms
 source: MaterializeComputeBuilder.java, session 2026-06-05
 status: budding
 tags:
@@ -42,5 +71,40 @@ Every array access is `$ifNull`-guarded to `[]`, so short/missing parallel array
 - [[luz_docs bulk folder PATCH runs the materialize cascade once per entry]]
 - [[luz_docs has two materialize cascade delivery mechanisms]]
 - [[_folderNames is parent-chain-independent — depends only on each folder's own name]]
+
+**Relations:**
+- luz_docs — *uses* — parent-change cascade pipeline
+- parent-change cascade pipeline — *rebuilds* — _folderSecurityClassCodes
+- parent-change cascade pipeline — *re-derives* — sentinels
+- parent-change cascade pipeline — *is built by* — buildFolderParentChangePipeline
+- buildFolderParentChangePipeline — *is a method of* — MaterializeComputeBuilder
+- parent-change cascade pipeline — *is a type of* — $addFields pipeline
+- parent-change cascade pipeline — *executes via* — updateMany
+- updateMany — *targets documents with* — folderIds
+- parent-change cascade pipeline — *includes* — Stage 1
+- parent-change cascade pipeline — *includes* — Stage 2
+- Stage 1 — *rebuilds* — _folderSecurityClassCodes
+- Stage 1 — *uses* — $map
+- $map — *iterates over* — $range
+- $range — *uses* — $size
+- Stage 1 — *uses* — $indexOfArray
+- $indexOfArray — *queries* — literal id table
+- literal id table — *contains* — Java-prefetched code unions
+- Stage 1 — *uses* — $arrayElemAt
+- Stage 1 — *uses* — $ifNull
+- _folderNames — *is untouched by* — parent-change cascade pipeline
+- Stage 2 — *re-derives* — sentinels
+- Stage 2 — *processes output from* — Stage 1
+- sentinels — *comprise* — _effectiveSecurityClassCodes
+- sentinels — *comprise* — _isPublic
+- _effectiveSecurityClassCodes — *is derived using* — $setUnion
+- _effectiveSecurityClassCodes — *combines* — securityClassCodes
+- _effectiveSecurityClassCodes — *combines* — _folderSecurityClassCodes
+- _effectiveSecurityClassCodes — *combines via* — $reduce
+- _isPublic — *is derived using* — $anyElementTrue
+- _isPublic — *is derived using* — $map
+- parent-change cascade pipeline — *is related to* — MongoDB forbids $lookup inside update pipeline (WriteError 72)
+- parent-change cascade pipeline — *is related to* — luz_docs onFolderParentsChange risk profile
+- luz_docs — *has* — luz_docs materialize cascade delivery mechanisms
 
 %% ai-graph-end %%

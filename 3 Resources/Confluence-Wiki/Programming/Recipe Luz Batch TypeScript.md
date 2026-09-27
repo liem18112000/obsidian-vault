@@ -1,18 +1,22 @@
 ---
-title: "Recipe: Luz Batch TypeScript"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48752394379/Recipe+Luz+Batch+TypeScript
-space: "FUT"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2026-01-30
+ai_hash: 8505b999f1850e6c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48752394379/Recipe+Luz+Batch+TypeScript
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: 'Recipe: Luz Batch TypeScript'
+topic: programming
+type: source
+updated: 2026-01-30
 ---
 
 # Recipe: Luz Batch TypeScript
@@ -563,3 +567,14 @@ The direct flows should be used for cases where request already has large number
 If your service/module is the first service/module to use this library. Then, it’s required to create required tables and their indexes. This can be done using luzfin_script. Then, please merge the branch below into master
 
 <a href="https://bitbucket.org/axonivy-prod/luzfin_scripts/branch/future/LUZ-135270/add-script-to-create-database-of-batching" class="external-link" data-card-appearance="inline" data-local-id="82d7755ddd8d" rel="nofollow">https://bitbucket.org/axonivy-prod/luzfin_scripts/branch/future/LUZ-135270/add-script-to-create-database-of-batching</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recipe Typescript batching]]
+- [[Luz Batch TypeScript - Sequence Diagram]]
+- [[Batch Processor Library - NodeJS]]
+- [[Luz Batch TypeScript - Configuration]]
+- [[Batching Design]]
+
+%% ai-graph-end %%

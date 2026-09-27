@@ -1,18 +1,22 @@
 ---
-title: "Delete company - Old way"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20490587885/Delete+company+-+Old+way
-space: "LUZ"
-topic: programming
-relevance: 0.757
-depth: 3
-updated: 2021-11-16
+ai_hash: 59fcb7c4188afe57
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.757
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20490587885/Delete+company+-+Old+way
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Delete company - Old way
+topic: programming
+type: source
+updated: 2021-11-16
 ---
 
 # Delete company - Old way
@@ -157,3 +161,14 @@ Json file: [[20490587885-delete_company_postman.json|delete_company_postman.jso
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[15. Update companies by tenant id]]
+- [[14. Create companies by tenant id]]
+- [[LUZ-102045 Implement physical delete for COMPANY tenant Part 2 (Postgres cont)]]
+- [[16. Export unsynchronized companies which missing from last synchronization]]
+- [[Bank connection - Script to store all old connected ibans for each tenant]]
+
+%% ai-graph-end %%

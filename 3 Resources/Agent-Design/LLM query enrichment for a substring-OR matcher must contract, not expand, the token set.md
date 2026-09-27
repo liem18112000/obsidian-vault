@@ -1,54 +1,9 @@
 ---
-ai_hash: b28413b3d9cd48db
+ai_hash: b32e442cf4682228
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-03
-entities:
-- LLM query enrichment
-- substring-OR matcher
-- token set
-- LLM
-- query
-- retriever
-- whitespace tokens
-- OR-clauses
-- matches
-- recall
-- precision
-- Fix pattern
-- specific terms
-- proper nouns
-- code identifiers
-- unique feature names
-- broad generic words
-- structural cap
-- precision terms
-- corpus
-- class name
-- code-graph nodes
-- Jira titles
-- selectivity
-- index's domain distribution
-- domain-saturated index
-- eArchive-import content
-- import token
-- earchive token
-- actual corpus
-- phrase/AND/rarity-weighted matching
-- test-agent KGA self-exploration
-- G2 hypothesize step
-- G0/G1
-- 'Retrieval tiering: query knowledge sources cheapest and most-trusted first'
-- External LLM output is a lead generator
-- External LLM output is not a source of truth
-- document
-- system
-- data
-- service
-- UI
-- component
-- validation
-- structure
+entities: []
 source: session 2026-09-03 — test-agent KGA G2
 status: seedling
 tags:
@@ -85,52 +40,6 @@ Surfaced building the test-agent KGA self-exploration (G2 hypothesize step feedi
 - [[Converge an exploration loop on marginal yield (zero new items), not a fixed iteration count]]
 - [[External LLM output is a lead generator, not a source of truth]]
 - [[Cap-before-exclude parallelism recall trap]]
-- [[LLM-as-reranker JSON truncation budget max_tokens for pretty-printed output, not just element count]]
-
-**Relations:**
-- LLM query enrichment — *targets* — substring-OR matcher
-- LLM query enrichment — *must contract* — token set
-- retriever — *matches* — query
-- retriever — *uses* — whitespace tokens
-- retriever — *uses* — OR-ing per-token substring hits
-- tokens — *add* — OR-clauses
-- OR-clauses — *increase* — matches
-- LLM — *emitting exhaustive concept lists broadens* — recall
-- LLM — *emitting exhaustive concept lists hurts* — precision
-- Fix pattern — *constrains* — LLM
-- Fix pattern — *recommends* — specific terms
-- specific terms — *include* — proper nouns
-- specific terms — *include* — code identifiers
-- specific terms — *include* — unique feature names
-- Fix pattern — *bans* — broad generic words
-- broad generic words — *example* — document
-- broad generic words — *example* — system
-- broad generic words — *example* — data
-- broad generic words — *example* — service
-- broad generic words — *example* — UI
-- broad generic words — *example* — component
-- broad generic words — *example* — validation
-- broad generic words — *example* — structure
-- Fix pattern — *adds* — structural cap
-- structural cap — *bounds* — token set
-- Fix pattern — *prefers* — precision terms
-- precision terms — *are rare in* — corpus
-- class name — *matches* — code-graph nodes
-- class name — *does not match* — Jira titles
-- selectivity — *is relative to* — index's domain distribution
-- term — *can be broad in* — domain-saturated index
-- import token — *matches* — eArchive-import content
-- earchive token — *matches* — eArchive-import content
-- selectivity — *judged against* — actual corpus
-- tokens — *influence* — selectivity
-- matcher type — *influence* — selectivity
-- matcher type — *includes* — substring-OR matcher
-- matcher type — *includes* — phrase/AND/rarity-weighted matching
-- LLM query enrichment — *surfaced during* — test-agent KGA self-exploration
-- test-agent KGA self-exploration — *involves* — G2 hypothesize step
-- G2 hypothesize step — *feeds* — G0/G1
-- LLM query enrichment — *related to* — Retrieval tiering: query knowledge sources cheapest and most-trusted first
-- LLM query enrichment — *related to* — External LLM output is a lead generator
-- LLM query enrichment — *related to* — External LLM output is not a source of truth
+- [[Keyword classifiers assign topics by lexicon size unless you normalize]]
 
 %% ai-graph-end %%

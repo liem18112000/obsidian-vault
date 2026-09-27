@@ -1,14 +1,21 @@
 ---
-title: "Full‑Text Document Search — Performance Analysis & Proposals"
+ai_hash: 89c396d10ef4c1bb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49533517825'
+confluence_path: Team Kepler > Developer note
 created: 2026-06-25
-updated: 2026-06-25
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+- search
+title: Full‑Text Document Search — Performance Analysis & Proposals
+type: source
+updated: 2026-06-25
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49533517825/Full+Text+Document+Search+Performance+Analysis+Proposals
-confluence_id: "49533517825"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, performance, search]
 ---
 
 # Full‑Text Document Search — Performance Analysis & Proposals
@@ -195,3 +202,14 @@ The single most important property: **every full‑text clause is a case‑insen
   - Security‑model duplication is the main correctness risk.
 
 ![[image-20260625-010348.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[S1 — MongoDB $text Index (native, self‑hosted)]]
+- [[Trigram Search — Performance-Env Benchmark]]
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[eArchive Performance — Detail Overview]]
+- [[luz-docs - MongoDB aggregate slow query analyze]]
+
+%% ai-graph-end %%

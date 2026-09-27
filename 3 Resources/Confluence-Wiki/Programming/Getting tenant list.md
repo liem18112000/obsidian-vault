@@ -1,18 +1,22 @@
 ---
-title: "Getting tenant list"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38174377560/Getting+tenant+list
-space: "Helios"
-topic: programming
-relevance: 0.716
-depth: 2.89
-updated: 2018-07-24
+ai_hash: ce8360dcbd1a59ee
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.89
+entities: []
+relevance: 0.716
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38174377560/Getting+tenant+list
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Getting tenant list
+topic: programming
+type: source
+updated: 2018-07-24
 ---
 
 # Getting tenant list
@@ -126,3 +130,14 @@ Example
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Login]]
+- [[LUZ-109076 Public API - Create update new tenant (implementation)]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[Uploading documents]]
+- [[Token JWT Security]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Swagger UI"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20474827711/Swagger+UI
-space: "LUZ"
-topic: programming
-relevance: 0.753
-depth: 2.49
-updated: 2021-09-06
+ai_hash: be837f21012e0bb6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 7
+depth: 2.49
+entities: []
+relevance: 0.753
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20474827711/Swagger+UI
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Swagger UI
+topic: programming
+type: source
+updated: 2021-09-06
 ---
 
 # Swagger UI
@@ -102,3 +106,14 @@ kubectl port-forward services/api-forwarder 8080:8080 -n dev-vn
 
 
 ![[20474827711-image2021-9-6_20-16-10.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OpenAPI UI (API on SwaggerUI)]]
+- [[Apply OpenAPI and try out API on SwaggerUI]]
+- [[Swagger with api explorer]]
+- [[Microprofile OpenAPI config]]
+- [[Port forward and Docker compose]]
+
+%% ai-graph-end %%

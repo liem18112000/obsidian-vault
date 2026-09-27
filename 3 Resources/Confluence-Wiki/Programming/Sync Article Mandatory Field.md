@@ -1,18 +1,22 @@
 ---
-title: "Sync Article Mandatory Field"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38218817905/Sync+Article+Mandatory+Field
-space: "Helios"
-topic: programming
-relevance: 0.773
-depth: 3
-updated: 2021-03-26
+ai_hash: 97bd68ad7033b31b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.773
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/38218817905/Sync+Article+Mandatory+Field
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Sync Article Mandatory Field
+topic: programming
+type: source
+updated: 2021-03-26
 ---
 
 # Sync Article Mandatory Field
@@ -126,3 +130,14 @@ public static boolean isInvalid(VariantPOS variant) {
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[APF ItemLine Import API]]
+- [[List selection Error handling on multi-selection actions]]
+- [[Get article thumbnail API - related modules]]
+- [[Preview Delivery-Prices API - ForcedOnboading]]
+- [[Adapt Order Management api to include accounting tags]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Update Ingress Controller for GKE v1.22"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47380824122/Update+Ingress+Controller+for+GKE+v1.22
-space: "TS"
-topic: infra
-relevance: 0.779
-depth: 2.83
-updated: 2023-05-17
+ai_hash: f5df1e6b97d31658
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.83
+entities: []
+relevance: 0.779
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47380824122/Update+Ingress+Controller+for+GKE+v1.22
+space: TS
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/ts
+- confluence
+- infra
+- space/ts
+title: Update Ingress Controller for GKE v1.22
+topic: infra
+type: source
+updated: 2023-05-17
 ---
 
 # Update Ingress Controller for GKE v1.22
@@ -88,3 +92,14 @@ Nginx Ingress ( <a href="https://docs.nginx.com/nginx-ingress-controller/release
 [Kinds of Nginx Ingress Controller and what is being used in Klara](https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47120519124/Kinds+of+Nginx+Ingress+Controller+and+what+is+being+used+in+Klara)
 
 [Deployment View](https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20481507904/Deployment+View)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Axonivycloud - Deploy Nginx Ingress for EKS]]
+- [[Apply changes on luz_kubernetes]]
+- [[POS & myKLARA nginx ingress quick notes]]
+- [[Apply branch code of webclient-nginx-ingress.yaml]]
+- [[Recipe Introduce IAP and Cloud Armor on GCP with external HTTP(S) load balancing]]
+
+%% ai-graph-end %%

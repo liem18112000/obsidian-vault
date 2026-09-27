@@ -1,14 +1,21 @@
 ---
-title: "Agent Loop 3 - Test-Plan Definition"
+ai_hash: 46037e8e4ffb462a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49741234222'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents'
 created: 2026-09-10
-updated: 2026-09-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: Agent Loop 3 - Test-Plan Definition
+type: source
+updated: 2026-09-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49741234222/Agent+Loop+3+-+Test-Plan+Definition
-confluence_id: "49741234222"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents"
-tags: [confluence, ai-agents]
 ---
 
 # Agent Loop 3 - Test-Plan Definition
@@ -126,3 +133,14 @@ memory/graphify/<repo>/latest/…                         # codegraph the matrix
 ```
 
 The shared knowledge graph also gains `TEST_PLAN` + `TEST_SCENARIO` nodes with provenance edges back to the source notes/insights. Read-back always goes through the **JSON sidecars** (schema-drift tolerant); the `.md` files are presentational / write-only.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test-Plan Definition Agent]]
+- [[Sub Agentic Loop 3.2 - Implement]]
+- [[Sub Agentic Loop 3.1 - Define]]
+- [[TPD agentic loop single-pass DEFINE to APPROVE to IMPLEMENT]]
+- [[Sub Agentic Loop 3.3 - Generation]]
+
+%% ai-graph-end %%

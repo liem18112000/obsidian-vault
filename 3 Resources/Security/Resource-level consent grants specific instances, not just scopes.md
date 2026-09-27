@@ -1,10 +1,20 @@
 ---
-title: "Resource-level consent grants specific instances, not just scopes"
+ai_hash: bffba4f39cef1b5c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: concept
+entities: []
+source: 'Confluence: Implement Corporate API Access LUZ-17959 (LUZ)'
 status: seedling
-source: "Confluence: Implement Corporate API Access LUZ-17959 (LUZ)"
-tags: [oauth, consent, open-banking, psd2, authorization, confluence-distilled]
+tags:
+- oauth
+- consent
+- open-banking
+- psd2
+- authorization
+- confluence-distilled
+title: Resource-level consent grants specific instances, not just scopes
+type: concept
 ---
 
 # Resource-level consent grants specific instances, not just scopes
@@ -35,3 +45,14 @@ Source: [[Implement Corporate API Access (LUZ-17959)]] (LUZ, Confluence).
 ## Related
 
 - [[Authorization has four named parts PAP, PDP, PEP, PIP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Authorization has four named parts PAP, PDP, PEP, PIP]]
+- [[Authentication & Authorization Architecture]]
+- [[Implement Corporate API Access (LUZ-17959)]]
+- [[Exchange a partner IdP token by introspecting it, never by trusting it]]
+- [[RBAC is coarse-grained by role, ABAC is fine-grained by attribute]]
+
+%% ai-graph-end %%

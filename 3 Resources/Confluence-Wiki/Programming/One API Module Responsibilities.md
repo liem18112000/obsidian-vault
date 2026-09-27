@@ -1,18 +1,22 @@
 ---
-title: "One API Module Responsibilities"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47739797726/One+API+Module+Responsibilities
-space: "LUZ"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2026-01-15
+ai_hash: 1eae35c830e5be63
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47739797726/One+API+Module+Responsibilities
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: One API Module Responsibilities
+topic: programming
+type: source
+updated: 2026-01-15
 ---
 
 # One API Module Responsibilities
@@ -320,3 +324,14 @@ tags:
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[Investigate Analyze the API's which call to FileManager]]
+- [[OneAPI Architecture overview]]
+- [[Architecture]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%

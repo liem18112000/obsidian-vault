@@ -1,18 +1,22 @@
 ---
-title: "iLetter Inbox Status Chips — Web Implementation Spec"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49755357221/iLetter+Inbox+Status+Chips+Web+Implementation+Spec
-space: "LUZ"
-topic: programming
-relevance: 0.818
-depth: 3
-updated: 2026-09-15
+ai_hash: 926dbe6c4c304a37
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.818
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49755357221/iLetter+Inbox+Status+Chips+Web+Implementation+Spec
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: iLetter Inbox Status Chips — Web Implementation Spec
+topic: programming
+type: source
+updated: 2026-09-15
 ---
 
 # iLetter Inbox Status Chips — Web Implementation Spec
@@ -165,3 +169,14 @@ The complete resolution logic lives in:
 2.  Web may use klara-theme Badge or Tag components — check existing signing badge implementation for reference.
 
 3.  Branded card tone adjustment: verify the same WCAG contrast logic applies on web (or use klara-theme built-in contrast utilities).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[iLetter current backend architecture]]
+- [[Steps to implement unread letters count]]
+- [[One API 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[Public API - letterbox - API get deleted letters from trash]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+
+%% ai-graph-end %%

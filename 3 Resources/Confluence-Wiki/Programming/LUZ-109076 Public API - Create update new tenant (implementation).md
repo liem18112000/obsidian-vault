@@ -1,18 +1,22 @@
 ---
-title: "LUZ-109076 Public API - Create/update new tenant (implementation)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47552659507/LUZ-109076+Public+API+-+Create+update+new+tenant+implementation
-space: "TS"
-topic: programming
-relevance: 0.847
-depth: 3
-updated: 2023-11-22
+ai_hash: f5aec6bbc9b0f2d9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 3
+entities: []
+relevance: 0.847
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47552659507/LUZ-109076+Public+API+-+Create+update+new+tenant+implementation
+space: TS
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/ts
+- confluence
+- programming
+- space/ts
+title: LUZ-109076 Public API - Create/update new tenant (implementation)
+topic: programming
+type: source
+updated: 2023-11-22
 ---
 
 # LUZ-109076 Public API - Create/update new tenant (implementation)
@@ -1410,3 +1414,14 @@ Hubspot data
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+- [[Test Keycloak - Public API]]
+- [[How to use Public API to create update KLARA Business Company]]
+- [[Getting tenant list]]
+- [[14. Create companies by tenant id]]
+
+%% ai-graph-end %%

@@ -1,7 +1,7 @@
 ---
-ai_hash: 532b1a3d691552c5
+ai_hash: 59e6714030050e8a
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-08
 entities: []
 source: LEO CDP integration-test fix, 2026-06-08
@@ -29,8 +29,8 @@ JUnit 5: @BeforeAll/@AfterAll methods MUST be static (unless the class is @TestI
 **Related notes:**
 - [[Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration]]
 - [[Measure non-idempotent integration tests on clean state - 409 on re-run is an isolation defect]]
-- [[Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform]]
 - [[mockStatic ConfigProvider without getConfig stub latches null into static Config fields]]
+- [[Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform]]
 - [[Verify test files still exist on disk before trusting prior green test runs]]
 
 %% ai-graph-end %%

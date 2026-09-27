@@ -1,18 +1,22 @@
 ---
-title: "Preview Delivery-Prices API - ForcedOnboading"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48773038081/Preview+Delivery-Prices+API+-+ForcedOnboading
-space: "HACKA"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2025-10-21
+ai_hash: d88cb7575bc07f42
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/48773038081/Preview+Delivery-Prices+API+-+ForcedOnboading
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/hacka
+- confluence
+- programming
+- space/hacka
+title: Preview Delivery-Prices API - ForcedOnboading
+topic: programming
+type: source
+updated: 2025-10-21
 ---
 
 # Preview Delivery-Prices API - ForcedOnboading
@@ -159,3 +163,14 @@ Preview delivery-prices API
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-115505 Public API - letterbox Part 3]]
+- [[ONE API - Delivery V2 - Error code checklist]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+- [[Self-test termination luz_ebill, and Script switch to primary NWP]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%

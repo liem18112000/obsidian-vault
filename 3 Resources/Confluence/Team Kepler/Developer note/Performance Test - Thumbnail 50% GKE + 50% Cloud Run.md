@@ -1,14 +1,22 @@
 ---
-title: "Performance Test: Thumbnail 50% GKE + 50% Cloud Run"
+ai_hash: 23f5b0bab3712696
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49318461566'
+confluence_path: Team Kepler > Developer note
 created: 2026-04-13
-updated: 2026-04-13
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+- cloud-run
+- thumbnail
+title: 'Performance Test: Thumbnail 50% GKE + 50% Cloud Run'
+type: source
+updated: 2026-04-13
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49318461566/Performance+Test+Thumbnail+50+GKE+50+Cloud+Run
-confluence_id: "49318461566"
-confluence_path: "Team Kepler > Developer note"
-tags: [confluence, performance, cloud-run, thumbnail]
 ---
 
 # Performance Test: Thumbnail 50% GKE + 50% Cloud Run
@@ -42,3 +50,14 @@ Log Link: [https://cloudlogging.app.goo.gl/MMfWNuCcn3yAaAbP9](https://cloudloggi
 Log Link: [https://cloudlogging.app.goo.gl/m18rEqLRgqwVLL2C8](https://cloudlogging.app.goo.gl/m18rEqLRgqwVLL2C8)
 
 ![[image-20260413-065408.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Test - 100% Thumbnail GKE]]
+- [[Performance Test - 100% Thumbnail Cloud Run]]
+- [[Extend case - 250 Max Instances]]
+- [[EPC API - Load Test]]
+- [[AI-0000 Low Analyze job throughput]]
+
+%% ai-graph-end %%

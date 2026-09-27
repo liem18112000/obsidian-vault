@@ -1,18 +1,22 @@
 ---
-title: "APF Patch lombok maven library"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/48763305988/APF+Patch+lombok+maven+library
-space: "X4"
-topic: programming
-relevance: 0.852
-depth: 3
-updated: 2025-10-24
+ai_hash: 69b7150473a89112
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.852
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/48763305988/APF+Patch+lombok+maven+library
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: APF Patch lombok maven library
+topic: programming
+type: source
+updated: 2025-10-24
 ---
 
 # APF Patch lombok maven library
@@ -57,3 +61,14 @@ mvn install:install-file -DgroupId=org.projectlombok -DartifactId=lombok-maven-p
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline mvn -o compile shows false Lombok cannot-find-symbol errors]]
+- [[Add Ivy jars Maven plugin]]
+- [[Guide for deploying artifacts on SOAD Nexus Repository 2 via Maven]]
+- [[Problem of class cast exception]]
+- [[Migrate to Quarkus (WIP)]]
+
+%% ai-graph-end %%

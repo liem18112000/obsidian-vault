@@ -1,14 +1,20 @@
 ---
-title: "Case Report: DocumentId 458224"
+ai_hash: 5b9ac3870784498c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '48955785247'
+confluence_path: 'Team Kepler > Developer note > Service Error Analysis Report: FAILED_TO_STORE
+  on Production > Failed to store cases'
 created: 2025-12-10
-updated: 2025-12-10
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+title: 'Case Report: DocumentId 458224'
+type: source
+updated: 2025-12-10
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/48955785247/Case+Report+DocumentId+458224
-confluence_id: "48955785247"
-confluence_path: "Team Kepler > Developer note > Service Error Analysis Report: FAILED_TO_STORE on Production > Failed to store cases"
-tags: [confluence]
 ---
 
 # Case Report: DocumentId 458224
@@ -199,3 +205,14 @@ luz-eletter:       InternalServerError → FAILED_TO_STORE
 4.  **Add retry logic** in luz-docs-batch for transient failures
 
 See main report for detailed fix implementation.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Case Report - DocumentId 458627]]
+- [[Case Report - DocumentId 588]]
+- [[Case Report - DocumentId 222042]]
+- [[Case Report - DocumentId 18219]]
+- [[Case Report - DocumentId 589]]
+
+%% ai-graph-end %%

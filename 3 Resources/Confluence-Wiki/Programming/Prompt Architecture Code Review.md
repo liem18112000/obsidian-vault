@@ -1,18 +1,22 @@
 ---
-title: "Prompt: Architecture Code Review"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48995860611/Prompt+Architecture+Code+Review
-space: "FUT"
-topic: programming
-relevance: 0.885
-depth: 3
-updated: 2025-12-22
+ai_hash: f5e71bdcef087a9c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.885
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/48995860611/Prompt+Architecture+Code+Review
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: 'Prompt: Architecture Code Review'
+topic: programming
+type: source
+updated: 2025-12-22
 ---
 
 # Prompt: Architecture Code Review
@@ -221,3 +225,14 @@ For each issue:
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Prompt Performance Code Review]]
+- [[Prompt Security Code Review]]
+- [[Prompt DevOps Code Review]]
+- [[Code review v2.0]]
+- [[Document key concepts and architecture of sealing modules]]
+
+%% ai-graph-end %%

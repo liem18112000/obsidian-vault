@@ -1,10 +1,19 @@
 ---
-title: "Discarding the refresh token caps an SPA session at one access-token lifetime"
+ai_hash: 9b5deb95400cd756
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: leo-customer360 SSO session fix, 2026-09-27
 status: seedling
-source: "leo-customer360 SSO session fix, 2026-09-27"
-tags: [oauth, oidc, spa, session, gotcha]
+tags:
+- oauth
+- oidc
+- spa
+- session
+- gotcha
+title: Discarding the refresh token caps an SPA session at one access-token lifetime
+type: lesson
 ---
 
 # Discarding the refresh token caps an SPA session at one access-token lifetime
@@ -31,3 +40,14 @@ Two related details once you do store it:
 
 - [[Keycloak ssoSessionMaxLifespan is an absolute session cap, not an idle timer]]
 - [[Single-flight token refresh prevents concurrent grants from invalidating each other]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keycloak ssoSessionMaxLifespan is an absolute session cap, not an idle timer]]
+- [[Single-flight token refresh prevents concurrent grants from invalidating each other]]
+- [[Token age checks need clock-skew leeway and must match the IdP lifespan]]
+- [[leo-customer360 SSO session settings live in three places that must agree]]
+- [[Blanket 401 auto-logout swallows the login endpoint's own error]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "SQL script to filter IN_PROGRESS tasks more than 30 days"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47919595521/SQL+script+to+filter+IN_PROGRESS+tasks+more+than+30+days
-space: "GRAVITY"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2024-07-08
+ai_hash: bce7ab59f184c5f0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/GRAVITY/pages/47919595521/SQL+script+to+filter+IN_PROGRESS+tasks+more+than+30+days
+space: GRAVITY
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/gravity
+- confluence
+- programming
+- space/gravity
+title: SQL script to filter IN_PROGRESS tasks more than 30 days
+topic: programming
+type: source
+updated: 2024-07-08
 ---
 
 # SQL script to filter IN_PROGRESS tasks more than 30 days
@@ -52,3 +56,14 @@ AND
   
 
 ![[47919595521-image-20240708-034127.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SQL script to search error comments of task or transaction]]
+- [[SQL script to get SOB (APP & WEB) dossier progress]]
+- [[SQL script to investigate dossier COB003059 on INT1]]
+- [[SQL script to update retry tasks and check pending dossiers has an outdated credit card]]
+- [[SQL script to investigate dossier with orphaned protocol records in PROD]]
+
+%% ai-graph-end %%

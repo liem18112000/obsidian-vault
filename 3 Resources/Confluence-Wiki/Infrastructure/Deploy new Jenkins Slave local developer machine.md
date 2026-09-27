@@ -1,18 +1,22 @@
 ---
-title: "Deploy new Jenkins Slave local/developer machine"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25332608648/Deploy+new+Jenkins+Slave+local+developer+machine
-space: "PT"
-topic: infra
-relevance: 0.724
-depth: 2.56
-updated: 2019-08-27
+ai_hash: ee38141a805a0ce3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 13
+depth: 2.56
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/PT/pages/25332608648/Deploy+new+Jenkins+Slave+local+developer+machine
+space: PT
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/pt
+- confluence
+- infra
+- space/pt
+title: Deploy new Jenkins Slave local/developer machine
+topic: infra
+type: source
+updated: 2019-08-27
 ---
 
 # Deploy new Jenkins Slave local/developer machine
@@ -27,3 +31,13 @@ tags:
 
 
 ![[25332608648-unknown-macro.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Jenkins (How to build & deploy)]]
+- [[Git source code and Jenkins]]
+- [[Setup Build Job with Docker in Jenkins]]
+- [[Jenkins - deploy eportal to SE-Server by jenkins]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Rest API Vat Clearing"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20463007053/Rest+API+Vat+Clearing
-space: "LUZ"
-topic: programming
-relevance: 0.934
-depth: 3
-updated: 2018-04-23
+ai_hash: 6e60232de488cde1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.934
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20463007053/Rest+API+Vat+Clearing
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Rest API Vat Clearing
+topic: programming
+type: source
+updated: 2018-04-23
 ---
 
 # Rest API Vat Clearing
@@ -49,3 +53,14 @@ tags:
 - Get by Id  
   Methods: **GET** <span class="legacy-color-text-blue1">/luz_accounting/{tenant}/companies/{companyId}/vat-clearing-reports/{vatClearingReportId}</span>  
   This API get existed one in Database to show in GUI
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[List out places calling booking function]]
+- [[Employee Report Implementation (10.05.2023)]]
+- [[Export CRM statistics by API]]
+- [[Luz_google Api Document]]
+- [[Generating document from viewgen]]
+
+%% ai-graph-end %%

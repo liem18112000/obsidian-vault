@@ -1,18 +1,22 @@
 ---
-title: "[luz-docs] - MongoDB aggregate slow query analyze"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48197271878/luz-docs+-+MongoDB+aggregate+slow+query+analyze
-space: "LUZ"
-topic: infra
-relevance: 0.714
-depth: 2.45
-updated: 2025-07-11
+ai_hash: 5365c68e9839dd7c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 14
+depth: 2.45
+entities: []
+relevance: 0.714
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48197271878/luz-docs+-+MongoDB+aggregate+slow+query+analyze
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: '[luz-docs] - MongoDB aggregate slow query analyze'
+topic: infra
+type: source
+updated: 2025-07-11
 ---
 
 # [luz-docs] - MongoDB aggregate slow query analyze
@@ -3234,3 +3238,14 @@ Preferences page:
 # Related user story:
 
 <span class="confluence-jim-macro jira-issue conf-macro output-block" client-id="SINGLE_d3f195c5-8684-3b17-b4f6-e9ee3a0b0fe2_48197271878_712020:87b0f7f1-aaab-4406-a25d-fa0fc075c4d4" hasbody="false" jira-key="LUZ-136313" macro-id="04cda0fd-f54e-4c3b-83cd-1c848c1bd658" macro-name="jira"> <a href="https://axonivy.atlassian.net/browse/LUZ-136313" class="jira-issue-key"><span class="aui-icon aui-icon-wait issue-placeholder"> </span>LUZ-136313</a> - <span class="summary">Getting issue details...</span> <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-default issue-placeholder">STATUS</span> </span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Performance Issue Slow Document Listing Query in MongoDB - eArchive page]]
+- [[Count Fan-out (K) Benchmark on Performance Env]]
+- [[eArchive Performance — Detail Overview]]
+- [[Reproduce performance issue and understand the issue on DEV - A.Vu]]
+- [[MongoDB Query Performance Testing with and without Indexes]]
+
+%% ai-graph-end %%

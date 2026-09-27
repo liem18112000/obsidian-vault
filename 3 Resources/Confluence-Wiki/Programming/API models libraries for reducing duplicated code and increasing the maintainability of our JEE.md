@@ -1,18 +1,23 @@
 ---
-title: "API models libraries for reducing duplicated code and increasing the maintainability of our JEE modules"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20456915762/API+models+libraries+for+reducing+duplicated+code+and+increasing+the+maintainability+of+our+JEE+modules
-space: "LUZ"
-topic: programming
-relevance: 0.798
-depth: 2.92
-updated: 2017-11-29
+ai_hash: b80f10a68004d16c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 2.92
+entities: []
+relevance: 0.798
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20456915762/API+models+libraries+for+reducing+duplicated+code+and+increasing+the+maintainability+of+our+JEE+modules
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: API models libraries for reducing duplicated code and increasing the maintainability
+  of our JEE modules
+topic: programming
+type: source
+updated: 2017-11-29
 ---
 
 # API models libraries for reducing duplicated code and increasing the maintainability of our JEE modules
@@ -108,3 +113,14 @@ This had also several other consequences which were driven by some ITs failures 
   
 
 ![[20456915762-image2017-11-10_15-21-55.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Handle report configuration for new fields (12.06.2023)]]
+- [[Architecture Overview LUZ]]
+- [[Programming]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[LUZ DevOps Next Gen (proposal and discussion)]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "[List selection] Error handling on multi-selection actions"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48718774383/List+selection+Error+handling+on+multi-selection+actions
-space: "Helios"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2026-01-30
+ai_hash: 964284e56691ea27
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 69
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48718774383/List+selection+Error+handling+on+multi-selection+actions
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: '[List selection] Error handling on multi-selection actions'
+topic: programming
+type: source
+updated: 2026-01-30
 ---
 
 # [List selection] Error handling on multi-selection actions
@@ -1161,3 +1165,14 @@ HTTP Code: 207
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Kotlin migration plan]]
+- [[Error Log - Failed to store]]
+- [[LUZ-146746 Use correct API's for delete, restore and their undo]]
+- [[Error handling for delete and undo]]
+- [[LUZ-102459 Implement physical delete for INDIVIDUAL tenant]]
+
+%% ai-graph-end %%

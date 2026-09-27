@@ -1,18 +1,22 @@
 ---
-title: "CICD for Kogito"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48127672366/CICD+for+Kogito
-space: "LUZ"
-topic: infra
-relevance: 0.794
-depth: 3
-updated: 2024-11-12
+ai_hash: 593c65b2107b88a5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 18
+depth: 3
+entities: []
+relevance: 0.794
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48127672366/CICD+for+Kogito
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: CICD for Kogito
+topic: infra
+type: source
+updated: 2024-11-12
 ---
 
 # CICD for Kogito
@@ -290,3 +294,14 @@ Due to this error, which originates from a library within the module and cannot 
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Route user-edited business rules through git and CI instead of a database]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[Kubernetes knowledge]]
+- [[Use Case - Run by Test Set - Complete Process Flow]]
+- [[Deployment Process]]
+
+%% ai-graph-end %%

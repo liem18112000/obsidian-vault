@@ -1,18 +1,22 @@
 ---
-title: "[Discussion] GCP Release Process with Google Cloud Build"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48390045721/Discussion+GCP+Release+Process+with+Google+Cloud+Build
-space: "LUZ"
-topic: infra
-relevance: 0.724
-depth: 2.48
-updated: 2025-06-06
+ai_hash: a1dae1529a4fad94
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.48
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/48390045721/Discussion+GCP+Release+Process+with+Google+Cloud+Build
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: '[Discussion] GCP Release Process with Google Cloud Build'
+topic: infra
+type: source
+updated: 2025-06-06
 ---
 
 # [Discussion] GCP Release Process with Google Cloud Build
@@ -246,3 +250,14 @@ The building steps on Google Cloud Build can only connect to local servers when 
     Do we want the same as Jenkins in cloudbuild?
 
 2.  Announce to team (or member) via any channel each time of test failed.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CI CD (Google Cloud Build & Google Cloud Deploy)]]
+- [[Document flow setup build Jenkins job Maven]]
+- [[Kubernetes knowledge]]
+- [[Recipe Deploy with Terraform]]
+- [[Deployment Process]]
+
+%% ai-graph-end %%

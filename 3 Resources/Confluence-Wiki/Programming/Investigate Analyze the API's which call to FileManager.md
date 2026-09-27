@@ -1,18 +1,22 @@
 ---
-title: "Investigate: Analyze the API's which call to FileManager"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47127134261/Investigate+Analyze+the+API+s+which+call+to+FileManager
-space: "LUZ"
-topic: programming
-relevance: 0.703
-depth: 2.41
-updated: 2022-12-14
+ai_hash: e5f4075c90a03eb7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.41
+entities: []
+relevance: 0.703
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47127134261/Investigate+Analyze+the+API+s+which+call+to+FileManager
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: 'Investigate: Analyze the API''s which call to FileManager'
+topic: programming
+type: source
+updated: 2022-12-14
 ---
 
 # Investigate: Analyze the API's which call to FileManager
@@ -872,3 +876,14 @@ DocumentOnServer</p></td>
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Collect all calls FileManager APIs by Klara Modules]]
+- [[Impact of code changes on common components]]
+- [[Get article thumbnail API - related modules]]
+- [[One API Module Responsibilities]]
+- [[Merging process]]
+
+%% ai-graph-end %%

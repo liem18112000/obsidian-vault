@@ -1,5 +1,5 @@
 ---
-ai_hash: 687cf3eb90d59d2a
+ai_hash: 015d5586ac8d845f
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-10
@@ -36,9 +36,9 @@ The checkpoints actually serve two server-side purposes:
 
 **Related notes:**
 - [[luz-docs-import createDocument is not idempotent — server-generated id, @Retry can duplicate on lost response]]
-- [[A per-checkpoint lastModified timestamp doubles as a liveness heartbeat for timeout detection]]
 - [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
+- [[A per-checkpoint lastModified timestamp doubles as a liveness heartbeat for timeout detection]]
 - [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
-- [[luz_docs_import detects dead async-worker pods via kubectl during status polling]]
+- [[luz_docs_import idempotent re-import replaces view-controller search-based file dedup]]
 
 %% ai-graph-end %%

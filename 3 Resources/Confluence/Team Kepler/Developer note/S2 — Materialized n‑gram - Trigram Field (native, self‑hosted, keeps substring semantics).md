@@ -1,14 +1,23 @@
 ---
-title: "S2 — Materialized n‑gram / Trigram Field (native, self‑hosted, keeps substring semantics)"
+ai_hash: a824365995752031
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49533485089'
+confluence_path: Team Kepler > Developer note > Full‑Text Document Search — Performance
+  Analysis & Proposals
 created: 2026-06-25
-updated: 2026-07-01
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- performance
+- search
+title: S2 — Materialized n‑gram / Trigram Field (native, self‑hosted, keeps substring
+  semantics)
+type: source
+updated: 2026-07-01
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49533485089/S2+Materialized+n+gram+Trigram+Field+native+self+hosted+keeps+substring+semantics
-confluence_id: "49533485089"
-confluence_path: "Team Kepler > Developer note > Full‑Text Document Search — Performance Analysis & Proposals"
-tags: [confluence, performance, search]
 ---
 
 # S2 — Materialized n‑gram / Trigram Field (native, self‑hosted, keeps substring semantics)
@@ -262,3 +271,14 @@ A 1‑ or 2‑char query has no trigram → can't use the index. Handle explicit
 Index size:
 
 ![[image-20260630-075234.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+- [[Trigram Search — Performance-Env Benchmark]]
+- [[Trigram Index — Size-Reduction Options]]
+- [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
+- [[S1 — MongoDB $text Index (native, self‑hosted)]]
+
+%% ai-graph-end %%

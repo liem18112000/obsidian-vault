@@ -1,7 +1,7 @@
 ---
-ai_hash: fd542c29138bd780
+ai_hash: 2e1562fae2ddbdc9
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-06
 entities: []
 source: leo-cdp-framework ci-cd.yml 2026-06-06
@@ -33,6 +33,7 @@ Same trap bites unquoted values: a country code `NO`, a port `ON`, or `version: 
 %% ai-graph-start %%
 
 **Related notes:**
-- _(none above threshold)_
+- [[GitHub Actions on key parses as YAML boolean True; a workflow_dispatch appears in the UI only once on the default branch]]
+- [[Colon-space in an unquoted GitHub Actions run value breaks the workflow YAML]]
 
 %% ai-graph-end %%

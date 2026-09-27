@@ -1,18 +1,22 @@
 ---
-title: "Check subscription on Public API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47219245151/Check+subscription+on+Public+API
-space: "Helios"
-topic: programming
-relevance: 0.746
-depth: 2.57
-updated: 2022-11-22
+ai_hash: 513cc87a7fc29842
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.57
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47219245151/Check+subscription+on+Public+API
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Check subscription on Public API
+topic: programming
+type: source
+updated: 2022-11-22
 ---
 
 # Check subscription on Public API
@@ -43,3 +47,14 @@ For every request on luz_eletter, they checking the required widget code by usin
 
 
 For every request on luz_public_api_adapter, they checking the required widget code need to be pass by check request path, then forward request to other modules
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Apply OpenAPI and try out API on SwaggerUI]]
+- [[Roles and Permissions check for accessing public API]]
+- [[Adding filter - public api adapter]]
+- [[Public API Eletter (0.02.09.00)]]
+- [[One API (06.12.2022 - 19.12.2022)]]
+
+%% ai-graph-end %%

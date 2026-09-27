@@ -1,5 +1,5 @@
 ---
-ai_hash: 217cb22bf14b5635
+ai_hash: e169e2bb36a690e5
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-09-08
@@ -39,6 +39,6 @@ AgentLoader(agents_dir='src').load_agent('knowledge_gathering')  # -> the root_a
 - [[How ADK agents are deployed adk deploy cloud_run agent_engine gke + get_fast_api_app]]
 - [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
 - [[ADK to_a2a auto-card is generic; pass agent_card= to keep a rich AgentCard]]
-- [[ADK agent name must be a valid Python identifier]]
+- [[ADK canonical orchestration SequentialAgent, LlmAgent+AgentTool, or callbacks — not custom BaseAgent]]
 
 %% ai-graph-end %%

@@ -1,18 +1,23 @@
 ---
-title: "Optimus: ePost/myLife app(luz_mylife_epost_adapter) - API Response Performance Analysis"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47491350668/Optimus+ePost+myLife+app+luz_mylife_epost_adapter+-+API+Response+Performance+Analysis
-space: "FUT"
-topic: programming
-relevance: 0.891
-depth: 3
-updated: 2023-10-10
+ai_hash: eec4a55af9566209
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 10
+depth: 3
+entities: []
+relevance: 0.891
+source: https://axonivy.atlassian.net/wiki/spaces/FUT/pages/47491350668/Optimus+ePost+myLife+app+luz_mylife_epost_adapter+-+API+Response+Performance+Analysis
+space: FUT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/fut
+- confluence
+- programming
+- space/fut
+title: 'Optimus: ePost/myLife app(luz_mylife_epost_adapter) - API Response Performance
+  Analysis'
+topic: programming
+type: source
+updated: 2023-10-10
 ---
 
 # Optimus: ePost/myLife app(luz_mylife_epost_adapter) - API Response Performance Analysis
@@ -188,3 +193,14 @@ it needs a bit of time to warm up, so it took some time for the resource and inj
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Helios myKLARA app(luz-mobile) - API Response Performance Analysis]]
+- [[Public API client performance analysis]]
+- [[eArchive – Reproduce performance issue and understand the issue on DEV]]
+- [[Perfomance of ePost Mylife Branded folder API]]
+- [[EPC API - Load Test]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "[HubSpot] Document for API create custom behavior event"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47134507982/HubSpot+Document+for+API+create+custom+behavior+event
-space: "Helios"
-topic: programming
-relevance: 0.837
-depth: 3
-updated: 2022-07-04
+ai_hash: 89159ba77f1c2b89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 1
+depth: 3
+entities: []
+relevance: 0.837
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/47134507982/HubSpot+Document+for+API+create+custom+behavior+event
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: '[HubSpot] Document for API create custom behavior event'
+topic: programming
+type: source
+updated: 2022-07-04
 ---
 
 # [HubSpot] Document for API create custom behavior event
@@ -205,3 +209,14 @@ curl --location --request POST 'http://localhost:8080/luz_hubspot/api/custom
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[API Document]]
+- [[5. Analyze the current data status of company between Hubspot and Klara]]
+- [[Technical design of Klara - Hubspot]]
+- [[KLARA Booking - KLARA OBC API]]
+- [[LUZ-110826 Public API - Widget subscription by activation code]]
+
+%% ai-graph-end %%

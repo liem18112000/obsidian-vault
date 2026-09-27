@@ -1,10 +1,20 @@
 ---
-title: "Optional API config: enums for one toggle, a set or config object for more"
+ai_hash: 4a6dfbbf2be07316
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Java''s options for options (TS, reposting Ethan McCue)'
 status: seedling
-source: "Confluence: Java's options for options (TS, reposting Ethan McCue)"
-tags: [api-design, java, method-signatures, builder-pattern, enumset, confluence-distilled]
+tags:
+- api-design
+- java
+- method-signatures
+- builder-pattern
+- enumset
+- confluence-distilled
+title: 'Optional API config: enums for one toggle, a set or config object for more'
+type: lesson
 ---
 
 # Optional API config: enums for one toggle, a set or config object for more
@@ -39,3 +49,10 @@ Source: [[Java's options for options]] (TS, Confluence — reposting Ethan McCue
 ## Related
 
 - [[Mutually exclusive API parameters should be rejected, not resolved by precedence]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Java's options for options]]
+
+%% ai-graph-end %%

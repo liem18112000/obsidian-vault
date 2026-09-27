@@ -1,18 +1,22 @@
 ---
-title: "Plan for the implementation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48124559379/Plan+for+the+implementation
-space: "Helios"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2024-10-30
+ai_hash: 8887841aa9a7d125
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/48124559379/Plan+for+the+implementation
+space: Helios
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/helios
+- confluence
+- programming
+- space/helios
+title: Plan for the implementation
+topic: programming
+type: source
+updated: 2024-10-30
 ---
 
 # Plan for the implementation
@@ -50,3 +54,13 @@ tags:
 5.  Handle logging payment process
 
 6.  Adapt merchant receipt (if necessary)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Tap to pay implementation]]
+- [[Send creditcard notification from luz-public-api-adapter-messaging]]
+- [[Adyen Migration script]]
+- [[Compare AI models gpt-5.4(medium) vs opus4.6(high)]]
+
+%% ai-graph-end %%

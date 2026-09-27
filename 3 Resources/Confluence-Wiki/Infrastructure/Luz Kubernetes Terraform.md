@@ -1,18 +1,22 @@
 ---
-title: "Luz Kubernetes Terraform"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49366466601/Luz+Kubernetes+Terraform
-space: "LUZ"
-topic: infra
-relevance: 0.844
-depth: 3
-updated: 2026-05-07
+ai_hash: 43cceea5e7e7620b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.844
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/49366466601/Luz+Kubernetes+Terraform
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/luz
+- confluence
+- infra
+- space/luz
+title: Luz Kubernetes Terraform
+topic: infra
+type: source
+updated: 2026-05-07
 ---
 
 # Luz Kubernetes Terraform
@@ -297,3 +301,14 @@ Only 'yes' will be accepted to approve.
 </div>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deployment with terraform]]
+- [[GKE - Cloud Run Migration Trackers]]
+- [[Recipe Deploy with Terraform]]
+- [[ELM5 PubSub Message Queue]]
+- [[Deploy luz-epc-redis-service on GCP]]
+
+%% ai-graph-end %%

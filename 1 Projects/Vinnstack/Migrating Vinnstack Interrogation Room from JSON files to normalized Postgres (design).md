@@ -1,13 +1,12 @@
 ---
-ai_hash: b3d6371dfeda3c7e
+ai_hash: 9a48432541909c37
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-07-02
 entities:
 - Vinnstack Interrogation Room
 - JSON files
-- PostgreSQL
-- Interrogation
+- Interrogation (data structure)
 - lib/interrogationStore.ts
 - epic
 - questions
@@ -18,24 +17,23 @@ entities:
 - revisions
 - stories
 - flows
-- Markdown mirror
-- chat agent
-- git auto-commit
-- DB-only
-- Sync
-- async
-- tsc
+- PostgreSQL
+- DB-only (persistence strategy)
+- Sync (programming paradigm)
+- Async (programming paradigm)
+- tsc (TypeScript compiler)
 - app/api/interrogation/route.ts
 - lib/interrogationRunner.ts
-- transaction
+- chat agent
 - ultracodeRunner
 - VAULT_DIR
 - DATABASE_URL
-- Docker postgres:16
+- Docker
+- postgres:16 (Docker image)
 - db/schema.sql
 - doc/interrogation-persistence-plan.md
-- 3 Resources/Work-Side/Vinnstack/Vinnstack auth providers two patterns and the rule
-  for adding one
+- Vinnstack auth providers
+- Vinnstack
 source: session 2026-07-02
 status: seedling
 tags:
@@ -77,44 +75,39 @@ Schema + full plan live in the repo: db/schema.sql and doc/interrogation-persist
 - [[Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
 
 **Relations:**
-- Vinnstack Interrogation Room — *currently uses* — JSON files
+- Vinnstack Interrogation Room — *persists with* — JSON files
+- Vinnstack Interrogation Room — *is* — aggregate-oriented
+- lib/interrogationStore.ts — *manages data for* — Vinnstack Interrogation Room
+- Interrogation (data structure) — *comprises* — epic
+- Interrogation (data structure) — *comprises* — questions
+- Interrogation (data structure) — *comprises* — options
+- Interrogation (data structure) — *comprises* — answers
+- Interrogation (data structure) — *comprises* — visuals
+- Interrogation (data structure) — *comprises* — prd
+- Interrogation (data structure) — *comprises* — revisions
+- Interrogation (data structure) — *comprises* — stories
+- Interrogation (data structure) — *comprises* — flows
 - Vinnstack Interrogation Room — *will migrate to* — PostgreSQL
-- lib/interrogationStore.ts — *manages* — Interrogation
-- Interrogation — *comprises* — epic
-- Interrogation — *comprises* — questions
-- Interrogation — *comprises* — options
-- Interrogation — *comprises* — answers
-- Interrogation — *comprises* — visuals
-- Interrogation — *comprises* — prd
-- Interrogation — *comprises* — revisions
-- Interrogation — *comprises* — stories
-- Interrogation — *comprises* — flows
-- JSON files — *are stored per* — epic
-- Current persistence — *includes* — Markdown mirror
-- Markdown mirror — *is read by* — chat agent
-- Current persistence — *includes* — git auto-commit
 - PostgreSQL — *will be* — fully normalized
-- PostgreSQL — *will be* — DB-only
-- lib/interrogationStore.ts functions — *are currently* — Sync
-- PostgreSQL migration — *makes functions* — async
-- async change — *is a* — type-level breaking change
-- tsc — *identifies* — callers
-- app/api/interrogation/route.ts — *calls* — lib/interrogationStore.ts functions
-- lib/interrogationRunner.ts — *calls* — lib/interrogationStore.ts functions
-- Normalized + aggregate access — *requires* — delete-and-reinsert children
-- delete-and-reinsert children — *occurs in* — one transaction
-- DB-only — *conflicts with* — chat agent's file context
+- PostgreSQL — *will be* — DB-only (persistence strategy)
+- lib/interrogationStore.ts — *will change from* — Sync (programming paradigm)
+- lib/interrogationStore.ts — *will change to* — Async (programming paradigm)
+- tsc (TypeScript compiler) — *identifies breaking changes in* — lib/interrogationStore.ts
+- app/api/interrogation/route.ts — *calls functions in* — lib/interrogationStore.ts
+- lib/interrogationRunner.ts — *calls functions in* — lib/interrogationStore.ts
+- DB-only (persistence strategy) — *conflicts with* — chat agent's file context
 - chat agent — *reads* — <epic>.md
-- chat agent — *uses* — ultracodeRunner
-- ultracodeRunner — *uses* — VAULT_DIR
-- Solution for chat agent — *is to regenerate* — <epic>.md
-- <epic>.md — *is a* — READ-ONLY projection
-- DB — *is the* — source of truth
-- DB-only — *requires* — reachable Postgres
-- DB-only — *requires* — DATABASE_URL
-- Prerequisite — *is to provision* — Docker postgres:16
-- Schema — *is defined in* — db/schema.sql
-- Full plan — *is documented in* — doc/interrogation-persistence-plan.md
-- Current note — *is related to* — 3 Resources/Work-Side/Vinnstack/Vinnstack auth providers two patterns and the rule for adding one
+- ultracodeRunner — *uses directory* — VAULT_DIR
+- <epic>.md — *will be a projection from* — PostgreSQL
+- PostgreSQL — *is* — source of truth
+- DB-only (persistence strategy) — *requires* — PostgreSQL
+- PostgreSQL — *can be provisioned with* — Docker
+- Docker — *provides image* — postgres:16 (Docker image)
+- DATABASE_URL — *is a prerequisite for* — DB-only (persistence strategy)
+- db/schema.sql — *defines schema for* — PostgreSQL
+- doc/interrogation-persistence-plan.md — *details plan for* — migration
+- Vinnstack auth providers — *is related to* — Vinnstack
+- Vinnstack Interrogation Room — *migrates from* — JSON files
+- Vinnstack Interrogation Room — *migrates to* — PostgreSQL
 
 %% ai-graph-end %%

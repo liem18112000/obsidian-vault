@@ -1,9 +1,13 @@
 ---
-title: "Infrastructure (Confluence)"
-type: moc
+ai_hash: 8f21c0c93df2e98b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+entities: []
 tags:
-  - moc
-  - confluence
+- moc
+- confluence
+title: Infrastructure (Confluence)
+type: moc
 ---
 
 # Infrastructure — Confluence sources
@@ -99,3 +103,14 @@ tags:
 | 0.70 | [[CI CD tools comparison]] | LUZ | 2020-05-28 |
 | 0.70 | [[Database scaling case study]] | FUT | 2022-09-16 |
 | 0.70 | [[How to create a new database in GCP AlloyDB for new module]] | TS | 2026-03-19 |
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploy luz-epc-redis-service on GCP]]
+- [[Architecture]]
+- [[One API end to end testing]]
+- [[Kubernetes knowledge]]
+- [[Port forward and Docker compose]]
+
+%% ai-graph-end %%

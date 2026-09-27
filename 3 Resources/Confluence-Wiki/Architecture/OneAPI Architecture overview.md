@@ -1,18 +1,22 @@
 ---
-title: "[OneAPI] Architecture overview"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47144370973/OneAPI+Architecture+overview
-space: "LUZ"
-topic: architecture
-relevance: 0.81
-depth: 2.67
-updated: 2025-03-04
+ai_hash: 1e50b3fb452a44e0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 34
+depth: 2.67
+entities: []
+relevance: 0.81
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47144370973/OneAPI+Architecture+overview
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: '[OneAPI] Architecture overview'
+topic: architecture
+type: source
+updated: 2025-03-04
 ---
 
 # [OneAPI] Architecture overview
@@ -323,3 +327,14 @@ For horizontally scaling, number of requests should be considered instead of cpu
 18. Prioritize lanes for small/large deliveries: DONE
 
 19. jsonstore only allows 10MB request so we cannot store document with metadata larger than that, then we should not store
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[One API - Investigation]]
+- [[One API 0.03.28.00 (11.08.2026 - 24.08.2026)]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Architecture]]
+
+%% ai-graph-end %%

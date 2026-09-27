@@ -1,18 +1,22 @@
 ---
-title: "Example: X.Golden - Test & Code review checklist"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34388581217/Example+X.Golden+-+Test+Code+review+checklist
-space: "X4"
-topic: programming
-relevance: 0.731
-depth: 2.81
-updated: 2019-01-10
+ai_hash: 178559327c1fe0ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.81
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/34388581217/Example+X.Golden+-+Test+Code+review+checklist
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: 'Example: X.Golden - Test & Code review checklist'
+topic: programming
+type: source
+updated: 2019-01-10
 ---
 
 # Example: X.Golden - Test & Code review checklist
@@ -68,3 +72,14 @@ Describe a steps to complete your test & code review
     - Cover side effect cases
 
     - Create a bug task if any
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[00. Test and code review report template]]
+- [[Test and code review report template]]
+- [[Test and code review report template.2]]
+- [[Test and code review report template.2.93]]
+- [[Code review agreement]]
+
+%% ai-graph-end %%

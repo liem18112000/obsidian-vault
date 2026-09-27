@@ -1,18 +1,22 @@
 ---
-title: "Avoid warning logs related to \"Java Problem\" on Ivy Designer"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47530443805/Avoid+warning+logs+related+to+Java+Problem+on+Ivy+Designer
-space: "X4"
-topic: programming
-relevance: 0.731
-depth: 2.73
-updated: 2023-10-25
+ai_hash: ae51d739118d36b8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 2.73
+entities: []
+relevance: 0.731
+source: https://axonivy.atlassian.net/wiki/spaces/X4/pages/47530443805/Avoid+warning+logs+related+to+Java+Problem+on+Ivy+Designer
+space: X4
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/x4
+- confluence
+- programming
+- space/x4
+title: Avoid warning logs related to "Java Problem" on Ivy Designer
+topic: programming
+type: source
+updated: 2023-10-25
 ---
 
 # Avoid warning logs related to "Java Problem" on Ivy Designer
@@ -102,3 +106,14 @@ US: <span class="confluence-jim-macro jira-issue conf-macro output-block" client
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Upgrade Ivy - Known issues]]
+- [[WIP Recipe How to adapt Unit Test to be able to run with Junit 5]]
+- [[Problem of class cast exception]]
+- [[How to debug java code in Ivy Designer]]
+- [[Test and code review report template]]
+
+%% ai-graph-end %%

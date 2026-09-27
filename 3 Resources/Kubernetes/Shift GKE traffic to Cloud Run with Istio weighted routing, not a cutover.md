@@ -1,10 +1,21 @@
 ---
-title: "Shift GKE traffic to Cloud Run with Istio weighted routing, not a cutover"
+ai_hash: d3f7ecd14d106202
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: howto
+entities: []
+source: 'Confluence: Migrate GKE to CloudRun luz-antivirus (TK/LUZ)'
 status: seedling
-source: "Confluence: Migrate GKE to CloudRun luz-antivirus (TK/LUZ)"
-tags: [istio, service-mesh, cloud-run, gke, migration, canary, confluence-distilled]
+tags:
+- istio
+- service-mesh
+- cloud-run
+- gke
+- migration
+- canary
+- confluence-distilled
+title: Shift GKE traffic to Cloud Run with Istio weighted routing, not a cutover
+type: howto
 ---
 
 # Shift GKE traffic to Cloud Run with Istio weighted routing, not a cutover
@@ -43,3 +54,14 @@ Source: [[ Migrate GKE to CloudRun - Gradually migrate the luz-antivirus to Clou
 ## Related
 
 - [[Cloud Run generates a per-project URL hash, breaking environment config parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Migrate GKE to CloudRun - Gradually migrate the luz-antivirus to Cloud Run]]
+- [[Migrate GKE to CloudRun - Gradually migrate the luz-antivirus to Cloud Run (49224646657)]]
+- [[Cloud Run generates a per-project URL hash, breaking environment config parity]]
+- [[Two IaC surfaces need an explicit naming contract at the seam]]
+- [[Serverless with Google Cloud Run]]
+
+%% ai-graph-end %%

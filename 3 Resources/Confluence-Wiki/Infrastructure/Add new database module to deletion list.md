@@ -1,18 +1,22 @@
 ---
-title: "Add new database/module to deletion list"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47455142031/Add+new+database+module+to+deletion+list
-space: "TS"
-topic: infra
-relevance: 0.734
-depth: 2.85
-updated: 2023-08-10
+ai_hash: b8cf13f47dcd74d5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 2.85
+entities: []
+relevance: 0.734
+source: https://axonivy.atlassian.net/wiki/spaces/TS/pages/47455142031/Add+new+database+module+to+deletion+list
+space: TS
+status: reference
 tags:
-  - confluence
-  - infra
-  - space/ts
+- confluence
+- infra
+- space/ts
+title: Add new database/module to deletion list
+topic: infra
+type: source
+updated: 2023-08-10
 ---
 
 # Add new database/module to deletion list
@@ -48,3 +52,14 @@ tags:
   - Add new enum for deletion step: <a href="https://bitbucket.org/axonivy-prod/luz_tenant_deletion/src/master/src/main/java/ch/klara/luz/tenantdeletion/entity/step/DeletionStep.java" class="external-link" data-card-appearance="inline" rel="nofollow">https://bitbucket.org/axonivy-prod/luz_tenant_deletion/src/master/src/main/java/ch/klara/luz/tenantdeletion/entity/step/DeletionStep.java</a>
 
     - Format: `enumName`("`databaseName`"). Eg: `DELETE_TENANT_SCHEMA_LUZ_BOOKING("luzbooking")`
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Delete company - Old way]]
+- [[LUZ-102459 Implement physical delete for INDIVIDUAL tenant]]
+- [[LUZ-102045 Implement physical delete for COMPANY tenant Part 2 (Postgres cont)]]
+- [[Empty Trash APIs]]
+- [[Enhancements for API Delete and Restore]]
+
+%% ai-graph-end %%

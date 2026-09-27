@@ -1,18 +1,22 @@
 ---
-title: "Are the “technologies” (process files, java code, …) used correctly and efficiently?"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47098168564/Are+the+technologies+process+files+java+code+used+correctly+and+efficiently
-space: "LUZ"
-topic: programming
-relevance: 0.746
-depth: 2.57
-updated: 2022-05-10
+ai_hash: aeb08ceec6a470d2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.57
+entities: []
+relevance: 0.746
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47098168564/Are+the+technologies+process+files+java+code+used+correctly+and+efficiently
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Are the “technologies” (process files, java code, …) used correctly and efficiently?
+topic: programming
+type: source
+updated: 2022-05-10
 ---
 
 # Are the “technologies” (process files, java code, …) used correctly and efficiently?
@@ -83,3 +87,14 @@ The big disadvantage of this approach is we need a lot of memory.
 ### Solution/Suggestion
 
 We should consider the alternative approach, that we stream the file from backend to end user directly.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[God class in luz_components]]
+- [[Impact of code changes on common components]]
+- [[API models libraries for reducing duplicated code and increasing the maintainability of our JEE]]
+- [[Axon Ivy project anatomy logic split across processes, data classes, HTML dialogs, and Java]]
+- [[Ivy conventions]]
+
+%% ai-graph-end %%

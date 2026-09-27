@@ -1,18 +1,22 @@
 ---
-title: "SmartSend Architecture"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47524675593/SmartSend+Architecture
-space: "LUZ"
-topic: architecture
-relevance: 0.806
-depth: 2.73
-updated: 2023-10-18
+ai_hash: 2f20e7ade6fefa94
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 2.73
+entities: []
+relevance: 0.806
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47524675593/SmartSend+Architecture
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: SmartSend Architecture
+topic: architecture
+type: source
+updated: 2023-10-18
 ---
 
 # SmartSend Architecture
@@ -38,3 +42,11 @@ Alternative approach not using Firestore and keeping event driven architecture
 
 
 ![[47524675593-SmartSend Components2.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture]]
+- [[Unified architecture overview]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Script delete accounting configuration"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZFIN/pages/20952598771/Script+delete+accounting+configuration
-space: "LUZFIN"
-topic: programming
-relevance: 0.724
-depth: 2.81
-updated: 2017-11-03
+ai_hash: 9f4a5a66d911c119
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 2.81
+entities: []
+relevance: 0.724
+source: https://axonivy.atlassian.net/wiki/spaces/LUZFIN/pages/20952598771/Script+delete+accounting+configuration
+space: LUZFIN
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luzfin
+- confluence
+- programming
+- space/luzfin
+title: Script delete accounting configuration
+topic: programming
+type: source
+updated: 2017-11-03
 ---
 
 # Script delete accounting configuration
@@ -49,3 +53,14 @@ DO $$
        RETURN; 
     END;
     $$ LANGUAGE plpgsql;
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fix migration issue DB Script Loop through tenant schema]]
+- [[Delete company - Old way]]
+- [[SQL script for populating master data]]
+- [[Deactivate the Valiant Finnova interface]]
+- [[Call API trigger Vacuum POS schema on PROD]]
+
+%% ai-graph-end %%

@@ -1,54 +1,48 @@
 ---
-ai_hash: e6cc5a1b43cc437e
+ai_hash: 1bbbaa96da0d5c4b
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-11
 entities:
 - dev-luz-antivirus
 - Cloud Run service
+- Cloud Run
 - 504 scan timeouts
-- Recurring 102 MB payload
-- dev environment
-- klara-nonprod project
-- europe-west6 region
+- 102MB payload
+- dev
+- klara-nonprod
+- europe-west6
 - GKE workload
-- luz-antivirus:8080 Service
-- in-cluster callers
+- luz-antivirus:8080 Service/forwarder
 - Cloud Run URL
 - HTTP 504
 - POST /luz_antivirus/api/scanner
+- 300 s
+- requestSize=102473382
 - ClamAV
-- containerConcurrency=10
 - retry loop
-- Saturation burst
-- Small payloads (2 KB-167 KB)
-- HTTP 503
-- Cloud Run timeout 3600s
-- Real scan deadline
-- Upstream of Cloud Run
-- In-cluster forwarder
+- containerConcurrency=10
+- 503s
+- Cloud Run timeoutSeconds=3600
+- upstream of Cloud Run
+- in-cluster forwarder
 - GFE
 - H2C path
+- container
 - minScale=1
 - maxScale=58
 - startup-cpu-boost
 - luz-docs-import
-- '*.metadata.json sidecars'
 - scancenter
 - luz-docs
 - document binary
-- Caller read-timeout
-- Proxy timeout
+- caller read-timeout
+- proxy timeout
 - ClamAV StreamMaxLength
-- Max scan size
-- 30s AV client timeout
-- 06:11-06:24 Gap-3 import test
-- luz-docs-import ZIP import timing
-- Recommendation 1
-- Recommendation 2
-- Recommendation 3
-- Oversized files
-- fail-fast pattern
+- max-scan-size
+- 30 s AV client timeout
+- 06:11–06:24 Gap-3 import test
+- 'luz-docs-import ZIP import timing: fresh 100-doc ~40s vs deduped sub-second'
 source: session 2026-08-11 AV scan-timeout check
 status: seedling
 tags:
@@ -85,63 +79,58 @@ Cross-check: no AV errors during the 06:11–06:24 Gap-3 import test — those s
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Part B - luz-antivirus Analysis]]
+- [[Service Error Analysis Report - FAILED_TO_STORE on Production]]
 - [[luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load]]
+- [[ClamAV definition updates restart clamd, so scheduled 503s are expected not broken]]
 - [[luz-docs-import antivirus whole-zip scan dominates first-import latency and scales with zip size]]
-- [[luz_docs_import upload-zip is slow for large files due to a synchronous double-write]]
-- [[Run volume import fixtures last; retry-exhaustion is transient saturation not a defect]]
-- [[Perf import failures root-cause luz-vault sealedunready cascades jsonstore 503 to upload-zip 500]]
 
 **Relations:**
-- dev-luz-antivirus — *IS A* — Cloud Run service
+- dev-luz-antivirus — *IS_A* — Cloud Run service
 - dev-luz-antivirus — *EXPERIENCES* — 504 scan timeouts
-- 504 scan timeouts — *CAUSED BY* — Recurring 102 MB payload
-- dev-luz-antivirus — *DEPLOYED IN* — dev environment
-- dev environment — *IS PART OF* — klara-nonprod project
-- klara-nonprod project — *IS IN* — europe-west6 region
-- dev-luz-antivirus — *IS NOT A* — GKE workload
-- in-cluster callers — *REACH* — dev-luz-antivirus
-- in-cluster callers — *REACH VIA* — luz-antivirus:8080 Service
-- luz-antivirus:8080 Service — *FRONTS* — Cloud Run URL
+- dev-luz-antivirus — *PROCESSES* — 102MB payload
+- dev-luz-antivirus — *RUNS_ON* — dev
+- dev-luz-antivirus — *RUNS_IN_PROJECT* — klara-nonprod
+- dev-luz-antivirus — *RUNS_IN_REGION* — europe-west6
+- dev-luz-antivirus — *ACCESSED_VIA* — luz-antivirus:8080 Service/forwarder
+- dev-luz-antivirus — *HANDLES_ENDPOINT* — POST /luz_antivirus/api/scanner
+- dev-luz-antivirus — *USES* — ClamAV
+- dev-luz-antivirus — *HAS_CONFIG* — containerConcurrency=10
+- dev-luz-antivirus — *HAS_CONFIG* — minScale=1
+- dev-luz-antivirus — *HAS_CONFIG* — maxScale=58
+- dev-luz-antivirus — *HAS_CONFIG* — startup-cpu-boost
+- dev-luz-antivirus — *HAS_CONFIG* — Cloud Run timeoutSeconds=3600
+- Cloud Run service — *IS_A* — Cloud Run
 - 504 scan timeouts — *ARE* — HTTP 504
-- HTTP 504 — *OCCUR ON* — POST /luz_antivirus/api/scanner
-- HTTP 504 — *CAPPED AT* — 300 seconds
-- Recurring 102 MB payload — *HAS* — requestSize=102473382
-- Recurring 102 MB payload — *FAILS* — every 33 minutes
-- Recurring 102 MB payload — *CAUSES* — 301s timeout
-- Recurring 102 MB payload — *IS A* — retry loop
-- ClamAV — *CANNOT PROCESS* — Recurring 102 MB payload
-- ClamAV — *HAS* — deadline
-- Saturation burst — *OCCURRED* — 02:59-04:24 UTC
-- Saturation burst — *CAUSED* — Small payloads (2 KB-167 KB)
-- Small payloads (2 KB-167 KB) — *TIMED OUT AT* — 300 seconds
-- Recurring 102 MB payload — *MONOPOLISES* — containerConcurrency=10
-- Saturation burst — *INCLUDED* — HTTP 503
-- HTTP 503 — *INDICATES* — overload
-- Cloud Run service — *HAS* — Cloud Run timeout 3600s
-- Real scan deadline — *IS* — 300 seconds
-- Real scan deadline — *IMPOSED BY* — Upstream of Cloud Run
-- Upstream of Cloud Run — *INCLUDES* — In-cluster forwarder
-- Upstream of Cloud Run — *INCLUDES* — GFE
-- GFE — *HANDLES* — H2C path
-- Cloud Run service — *HAS* — containerConcurrency=10
-- Cloud Run service — *HAS* — minScale=1
-- Cloud Run service — *HAS* — maxScale=58
-- Cloud Run service — *HAS* — startup-cpu-boost
-- Recommendation 1 — *IS* — find & stop 102 MB retry source
-- 102 MB retry source — *IS NOT* — luz-docs-import
-- luz-docs-import — *SCANS* — *.metadata.json sidecars
-- 102 MB retry source — *LIKELY* — scancenter
-- 102 MB retry source — *LIKELY* — luz-docs
-- scancenter — *SCANS* — document binary
-- luz-docs — *SCANS* — document binary
-- Recommendation 2 — *IS* — Align Caller read-timeout
-- Recommendation 2 — *IS* — Align Proxy timeout
-- Recommendation 2 — *IS* — Align ClamAV StreamMaxLength
-- Recommendation 2 — *IS* — Align Max scan size
-- Oversized files — *SHOULD BE* — rejected fast
-- Recommendation 3 — *IS* — luz-docs-import's new 30s AV client timeout
-- 30s AV client timeout — *IS A* — fail-fast pattern
-- 06:11-06:24 Gap-3 import test — *HAD* — no AV errors
-- luz-docs-import ZIP import timing — *IS* — Related
+- 504 scan timeouts — *CAPPED_AT* — 300 s
+- 504 scan timeouts — *CAUSED_BY* — 102MB payload
+- 102MB payload — *HAS_SIZE* — requestSize=102473382
+- 102MB payload — *CAUSES* — retry loop
+- ClamAV — *CANNOT_FINISH* — 102MB payload
+- luz-antivirus:8080 Service/forwarder — *FRONTS* — Cloud Run URL
+- luz-antivirus:8080 Service/forwarder — *IMPOSES_DEADLINE* — 300 s
+- luz-antivirus:8080 Service/forwarder — *IS_A* — in-cluster forwarder
+- 300 s — *IMPOSED_BY* — upstream of Cloud Run
+- 300 s — *IMPOSED_BY* — in-cluster forwarder
+- 300 s — *IMPOSED_BY* — GFE
+- retry loop — *RE_SUBMITS* — 102MB payload
+- containerConcurrency=10 — *SLOTS_MONOPOLISED_BY* — 102MB payload
+- 503s — *INDICATE* — overload
+- GFE — *USES* — H2C path
+- luz-docs-import — *SCANS* — small *.metadata.json sidecars
+- luz-docs-import — *HAS* — 30 s AV client timeout
+- scancenter — *LIKELY_SCANS* — document binary
+- luz-docs — *LIKELY_SCANS* — document binary
+- caller read-timeout — *SHOULD_ALIGN_WITH* — proxy timeout
+- caller read-timeout — *SHOULD_ALIGN_WITH* — ClamAV StreamMaxLength
+- proxy timeout — *SHOULD_ALIGN_WITH* — caller read-timeout
+- proxy timeout — *SHOULD_ALIGN_WITH* — ClamAV StreamMaxLength
+- ClamAV StreamMaxLength — *IS_A* — max-scan-size
+- ClamAV StreamMaxLength — *SHOULD_ALIGN_WITH* — caller read-timeout
+- ClamAV StreamMaxLength — *SHOULD_ALIGN_WITH* — proxy timeout
+- 30 s AV client timeout — *IS_A* — correct pattern
+- 30 s AV client timeout — *IS_FOR* — luz-docs-import
+- 06:11–06:24 Gap-3 import test — *HAD* — fast 200s
+- luz-docs-import — *RELATED_TO* — luz-docs-import ZIP import timing: fresh 100-doc ~40s vs deduped sub-second
 
 %% ai-graph-end %%

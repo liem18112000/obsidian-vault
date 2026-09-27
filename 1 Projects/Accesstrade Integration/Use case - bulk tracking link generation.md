@@ -1,51 +1,40 @@
 ---
-ai_hash: ee052a59c59f1481
+ai_hash: f3d68dedfead9d72
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 aliases:
 - Bulk affiliate links
 - Mass link generation
 created: 2026-06-11
 entities:
-- bulk tracking link generation
+- Bulk tracking link generation
 - Claude
-- product URL
-- draft article
-- attributed affiliate link
-- campaign
+- Product URLs
+- Draft article
+- Affiliate links
+- Campaigns
 - SubID
-- affiliate chore
-- merchant
 - Accesstrade Campaigns API
-- unapproved campaign
-- product_link/create
-- sub1
-- content slug
+- '`product_link/create`'
+- Content slug
 - Accesstrade SubID attribution
-- link table
-- origin
-- aff_link
-- short_link
-- rewritten article
-- PreToolUse hook
-- paused campaign
-- dead link
+- Link table
+- Rewritten article
+- '`PreToolUse` hook'
+- '`PostToolUse` hook'
+- Dead link
+- Ledger CSV
 - Claude Code hooks event model
-- PostToolUse hook
-- minted link
-- ledger CSV
-- reconciliation against conversions
 - Idempotency
-- campaign_id
-- API
+- Cache
 - Affiliate API engineering best practices
-- output template
-- affiliate relationship
+- Affiliate relationships
 - Affiliate compliance and link hygiene
-- Accesstrade tracking link creation
 - Accesstrade API Integration - MOC
-- raw URL
-- post slug
+- Merchant
+- URL
+- sub1
+- API spam
 source: research session 2026-06-11
 status: seedling
 tags:
@@ -101,61 +90,47 @@ flowchart TD
 %% ai-graph-start %%
 
 **Related notes:**
+- [[Use case - campaign discovery and datafeed content briefs]]
 - [[Accesstrade API Integration - MOC]]
 - [[Affiliate compliance and link hygiene]]
-- [[Use case - campaign discovery and datafeed content briefs]]
 - [[Designing an Accesstrade skill for Claude Code]]
 - [[Claude Code hooks event model]]
 
 **Relations:**
-- Claude — *generates* — attributed affiliate link
-- Claude — *receives* — product URL
-- Claude — *receives* — draft article
-- attributed affiliate link — *is* — campaign-matched
-- attributed affiliate link — *is* — SubID-tagged
-- bulk tracking link generation — *removes* — affiliate chore
-- affiliate chore — *is* — tedious
-- affiliate chore — *is* — error-prone
-- Claude — *resolves* — merchant
-- merchant — *maps to* — campaign
-- campaign — *managed by* — Accesstrade Campaigns API
-- Claude — *flags* — unapproved campaign
-- unapproved campaign — *requires* — application
-- Claude — *calls* — product_link/create
-- product_link/create — *is* — batched
-- product_link/create — *handles* — multiple product URL
-- product_link/create — *stamps* — sub1
-- sub1 — *is* — content slug
-- sub1 — *relates to* — Accesstrade SubID attribution
-- Claude — *returns* — link table
-- link table — *contains* — origin
-- link table — *contains* — aff_link
-- link table — *contains* — short_link
-- Claude — *returns* — rewritten article
-- rewritten article — *contains* — swapped links
-- PreToolUse hook — *denies* — minting
-- minting — *is against* — paused campaign
-- minting — *is against* — unapproved campaign
-- PreToolUse hook — *prevents* — dead link
-- PreToolUse hook — *is a type of* — Claude Code hooks event model
-- PostToolUse hook — *appends* — minted link
-- PostToolUse hook — *appends to* — ledger CSV
-- ledger CSV — *is for* — reconciliation against conversions
-- Idempotency — *caches by* — campaign_id
-- Idempotency — *caches by* — product URL
-- Idempotency — *caches by* — SubID
-- Idempotency — *prevents* — API spamming
-- Idempotency — *is a part of* — Affiliate API engineering best practices
-- output template — *discloses* — affiliate relationship
-- affiliate relationship — *relates to* — Affiliate compliance and link hygiene
-- bulk tracking link generation — *related to* — Accesstrade tracking link creation
-- bulk tracking link generation — *related to* — Accesstrade Campaigns API
-- bulk tracking link generation — *related to* — Claude Code hooks event model
-- bulk tracking link generation — *related to* — Affiliate compliance and link hygiene
-- bulk tracking link generation — *related to* — Accesstrade API Integration - MOC
-- raw URL — *swapped to* — aff_link
-- product URL — *matched to* — campaign
-- sub1 — *is* — post slug
-- product_link/create — *uses* — post slug
+- Bulk tracking link generation — *HAS_GOAL* — Affiliate links
+- Claude — *PERFORMS* — Bulk tracking link generation
+- Claude — *ACCEPTS_INPUT* — Product URLs
+- Claude — *ACCEPTS_INPUT* — Draft article
+- Claude — *GENERATES* — Affiliate links
+- Affiliate links — *ARE* — campaign-matched
+- Affiliate links — *ARE* — SubID-tagged
+- Claude — *USES* — Accesstrade Campaigns API
+- Claude — *CALLS* — `product_link/create`
+- URL — *IS_MATCHED_TO* — Campaigns
+- URL — *IS_RESOLVED_TO* — Merchant
+- Merchant — *IS_RESOLVED_TO* — Campaigns
+- `product_link/create` — *USES_PARAMETER* — sub1
+- sub1 — *IS* — Content slug
+- Accesstrade SubID attribution — *EXPLAINS* — SubID
+- Claude — *RETURNS* — Link table
+- Claude — *RETURNS* — Rewritten article
+- `PreToolUse` hook — *DENIES* — minting against a paused/unapproved campaign
+- `PreToolUse` hook — *PREVENTS* — Dead link
+- `PreToolUse` hook — *IS_DEFINED_IN* — Claude Code hooks event model
+- `PostToolUse` hook — *APPENDS* — Affiliate links
+- `PostToolUse` hook — *TO* — Ledger CSV
+- `PostToolUse` hook — *IS_DEFINED_IN* — Claude Code hooks event model
+- Idempotency — *USES* — Cache
+- Idempotency — *PREVENTS* — API spam
+- Affiliate API engineering best practices — *EXPLAINS* — Idempotency
+- Affiliate compliance and link hygiene — *COVERS* — Affiliate relationships
+- Bulk tracking link generation — *RELATED_TO* — Accesstrade tracking link creation
+- Bulk tracking link generation — *RELATED_TO* — Accesstrade Campaigns API
+- Bulk tracking link generation — *RELATED_TO* — Claude Code hooks event model
+- Bulk tracking link generation — *RELATED_TO* — Affiliate compliance and link hygiene
+- Bulk tracking link generation — *RELATED_TO* — Accesstrade API Integration - MOC
+- Campaigns — *HAVE_STATUS* — Approved & Running
+- Draft article — *IS_REWRITTEN_WITH* — Affiliate links
+- `product_link/create` — *IS* — batched
 
 %% ai-graph-end %%

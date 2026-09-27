@@ -1,18 +1,22 @@
 ---
-title: "Concept Intermediate data storage"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47518548246/Concept+Intermediate+data+storage
-space: "LUZ"
-topic: architecture
-relevance: 0.9
-depth: 3
-updated: 2023-10-12
+ai_hash: df9be01759718c4a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 3
+entities: []
+relevance: 0.9
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47518548246/Concept+Intermediate+data+storage
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/luz
+- confluence
+- architecture
+- space/luz
+title: Concept Intermediate data storage
+topic: architecture
+type: source
+updated: 2023-10-12
 ---
 
 # Concept Intermediate data storage
@@ -178,3 +182,14 @@ Next steps:
     2.  Json and XML relation
 
     3.  Archiving
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture]]
+- [[Generic Interface JSON file]]
+- [[Documentation Implementation of Swissdec ELM 5.5 TariTemp (Single-Branch)]]
+- [[Research Design architecture concept for the service to generate the Generic Interface File]]
+- [[Are the “technologies” (process files, java code, …) used correctly and efficiently]]
+
+%% ai-graph-end %%

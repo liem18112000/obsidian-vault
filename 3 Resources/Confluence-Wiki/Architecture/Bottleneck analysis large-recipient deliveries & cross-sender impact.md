@@ -1,18 +1,22 @@
 ---
-title: "Bottleneck analysis: large-recipient deliveries & cross-sender impact"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/49648402464/Bottleneck+analysis+large-recipient+deliveries+cross-sender+impact
-space: "HACKA"
-topic: architecture
-relevance: 0.777
-depth: 2.72
-updated: 2026-08-07
+ai_hash: 9058d72f95146d4e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 0
+depth: 2.72
+entities: []
+relevance: 0.777
+source: https://axonivy.atlassian.net/wiki/spaces/HACKA/pages/49648402464/Bottleneck+analysis+large-recipient+deliveries+cross-sender+impact
+space: HACKA
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/hacka
+- confluence
+- architecture
+- space/hacka
+title: 'Bottleneck analysis: large-recipient deliveries & cross-sender impact'
+topic: architecture
+type: source
+updated: 2026-08-07
 ---
 
 # Bottleneck analysis: large-recipient deliveries & cross-sender impact
@@ -137,3 +141,14 @@ Doing all four gets the system to scale to whatever volume any real customer pla
 </div>
 
 Full per-delivery timing and status data available in the automation repo (`big-deliveries/run_3k_2h_test.py`, `check_ack_rate.py`, `compare_queues_history.py`) for reproduction.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Timeouts stack in series and the shortest wins; audit the whole chain]]
+- [[luz_docs Improvement - Document Reliable Delivery Proof Of Concept]]
+- [[If upstream holds memory until you ack, your write latency is their OOM risk]]
+- [[Invoice Run, ePost backend storage]]
+- [[Performance Analysis and Proposed Solutions]]
+
+%% ai-graph-end %%

@@ -1,10 +1,22 @@
 ---
-title: "Rounding per line makes net plus VAT miss gross, so the VAT line absorbs the difference"
+ai_hash: c782cc4c5a16afbf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: SAP_Booking.csv — the accounting bookings export (2026-07-27)'
 status: seedling
-source: "Confluence: SAP_Booking.csv — the accounting bookings export (2026-07-27)"
-tags: [sap, luz-finance, rounding, accounting, vat, money, gotcha]
+tags:
+- sap
+- luz-finance
+- rounding
+- accounting
+- vat
+- money
+- gotcha
+title: Rounding per line makes net plus VAT miss gross, so the VAT line absorbs the
+  difference
+type: lesson
 ---
 
 # Rounding per line makes net plus VAT miss gross, so the VAT line absorbs the difference
@@ -34,3 +46,14 @@ Two adjacent rules in the same generator, same spirit of "the code map cannot sh
 ## Related
 
 - [[SAP in luz_finance is a manual CSV export, not a live integration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SAP_Booking.csv — the accounting bookings export]]
+- [[SAP in `luz_finance` — What, Why, How, When]]
+- [[SAP in luz_finance is a manual CSV export, not a live integration]]
+- [[SAP export defaults come from the default-sap config service so accounting codes change without a deploy]]
+- [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
+
+%% ai-graph-end %%

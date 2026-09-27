@@ -1,18 +1,22 @@
 ---
-title: "Perfomance of ePost/Mylife Branded folder API"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530450210/Perfomance+of+ePost+Mylife+Branded+folder+API
-space: "LUZ"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2021-06-24
+ai_hash: 75f9983087870d29
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 2
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20530450210/Perfomance+of+ePost+Mylife+Branded+folder+API
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Perfomance of ePost/Mylife Branded folder API
+topic: programming
+type: source
+updated: 2021-06-24
 ---
 
 # Perfomance of ePost/Mylife Branded folder API
@@ -137,3 +141,14 @@ Questions;
 </div>
 
 - Where are the bottlenecks?
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Public API client performance analysis]]
+- [[Optimus ePost myLife app(luz_mylife_epost_adapter) - API Response Performance Analysis]]
+- [[eArchive request flow and log correlation (perf)]]
+- [[eArchive performance — luz-epost-business-web calls the count API on every search]]
+- [[Measure API luz-docs]]
+
+%% ai-graph-end %%

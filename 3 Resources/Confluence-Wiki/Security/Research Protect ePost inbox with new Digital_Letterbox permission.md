@@ -1,18 +1,22 @@
 ---
-title: "[Research] Protect ePost inbox with new Digital_Letterbox permission"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47393046550/Research+Protect+ePost+inbox+with+new+Digital_Letterbox+permission
-space: "TP2020"
-topic: security
-relevance: 0.701
-depth: 2.4
-updated: 2023-06-19
+ai_hash: 1d88a2da6410bb08
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 2.4
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/TP2020/pages/47393046550/Research+Protect+ePost+inbox+with+new+Digital_Letterbox+permission
+space: TP2020
+status: reference
 tags:
-  - confluence
-  - security
-  - space/tp2020
+- confluence
+- security
+- space/tp2020
+title: '[Research] Protect ePost inbox with new Digital_Letterbox permission'
+topic: security
+type: source
+updated: 2023-06-19
 ---
 
 # [Research] Protect ePost inbox with new Digital_Letterbox permission
@@ -149,3 +153,14 @@ luz_docs_view_controller
 </table>
 
 </div>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CROSS-TEST LUZ-158644 Investigate and remove Print&Send user role (UI, backend, Public API — no]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+- [[4. Architecture for delivering eLetter after email verified]]
+- [[Role concept for ePost]]
+- [[LUZ-115505 Public API - letterbox Part 3]]
+
+%% ai-graph-end %%

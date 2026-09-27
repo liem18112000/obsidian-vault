@@ -1,64 +1,56 @@
 ---
-ai_hash: 554cecffd1ec90e4
+ai_hash: a2d0abe04a7dfc61
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-24
 entities:
-- Performance import failures
+- Perf import failures
 - luz-vault
-- luz-jsonstore
+- jsonstore
 - upload-zip
-- k6 load test
+- k6 import load test
 - luz-docs-import
-- luz-vault containers
-- Vault health endpoint
-- luz-vault-unseal-0
 - HTTP 503
-- document-import-jobs/add
-- Vault transit crypto
-- VaultException
 - HTTP 400
-- import service
+- HTTP 500
+- VaultException
 - DocsResponseExceptionMapper
 - DocsException
 - UnexpectedExceptionMapper
-- HTTP 500
+- transit crypto
+- document-import-jobs/add
+- addOne
 - 10 VUs
 - 100 VUs
 - import worker pool
-- k6 timeout
 - Vault call
 - saturation
 - liveness death-spiral
 - Vault outage
-- LOW concurrency
-- underlying correctness error
-- request thread tracing
+- Diagnostic technique
+- low concurrency
+- request thread trace
 - import access log
 - import REST-client filters
-- jsonstore SEVERE logs
+- jsonstore SEVERE
 - vault /sys/health
+- luz-vault-unseal-0
 - infra/Vault-owner
 - app-team kubectl scope
-- root-cause-CORRECTION-vault.md
+- performance environment
+- Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into
+  a self-perpetuating outage
 - luz-docs-import upload-zip endpoint is the ingestion saturation point under perf
   load
-- 'Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload
-  into a self-perpetuating outage'
-- 10-VU re-run
-- luz-vault-0/1
-- build fcdea5a3
-- pod -b6628
-- k6 checks
-- upload-zip status 200
-- http_req_failed metric
-- import_e2e_duration_ms metric
-- import_upload_duration_ms metric
-- 10 RPS
-- 1000-request case
+- Vault recovery
+- import path
 - capacity ceiling
 - AV limits
-- Vault healthy
+- ready=false
+- ready=true
+- /v1/sys/health?standbyok=true
+- docs/tests/perf-k6-loadtest-2026-08-24/root-cause-CORRECTION-vault.md
+- 60s k6 timeout
 source: session 2026-08-24
 status: seedling
 tags:
@@ -106,67 +98,63 @@ This closes the loop: the 100% failure in both prior runs was **entirely** the V
 
 **Related notes:**
 - [[luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load]]
+- [[Service Error Analysis Report - FAILED_TO_STORE on Production]]
+- [[Part A - luz-jsonstore Analysis]]
 - [[Run volume import fixtures last; retry-exhaustion is transient saturation not a defect]]
-- [[luz-docs 2026-06-11 dev integration run failure clusters]]
-- [[luz-docs-import cold first-import slowness is JIT plus downstream re-warm on a CPU-limited pod]]
-- [[luz-docs-import performance-env import benchmark findings]]
+- [[Case Report - DocumentId 386]]
 
 **Relations:**
-- Performance import failures — *root-cause* — luz-vault
-- luz-vault — *state* — sealed / not-ready
-- luz-vault — *cascades* — luz-jsonstore
-- luz-jsonstore — *cascades* — upload-zip
-- k6 load test — *failed* — 100%
-- k6 load test — *targets* — luz-docs-import
-- luz-vault containers — *report* — ready=false
-- Vault health endpoint — *returns* — HTTP 503
-- luz-vault-unseal-0 — *restarted* — 7x
-- luz-jsonstore — *needs* — Vault transit crypto
-- document-import-jobs/add — *throws* — VaultException
+- k6 import load test — *failed 100% on* — performance environment
+- k6 import load test — *failed due to* — luz-vault
+- luz-vault — *is* — sealed / not-ready
+- luz-vault — *reports* — ready=false
+- /v1/sys/health?standbyok=true — *returns* — HTTP 503
+- luz-vault-unseal-0 — *has restarted* — 7x
+- HTTP 503 — *from* — luz-vault
+- HTTP 503 — *cascades to* — jsonstore
+- jsonstore — *needs* — transit crypto
+- jsonstore — *calls* — document-import-jobs/add
+- document-import-jobs/add — *calls* — addOne
+- jsonstore — *throws* — VaultException
 - VaultException — *has status code* — HTTP 503
-- luz-jsonstore — *returns* — HTTP 400
-- HTTP 400 — *to* — import service
-- import service — *uses* — DocsResponseExceptionMapper
+- jsonstore — *returns* — HTTP 400
+- jsonstore — *returns HTTP 400 to* — luz-docs-import
+- luz-docs-import — *uses* — DocsResponseExceptionMapper
 - DocsResponseExceptionMapper — *maps* — HTTP 400
-- DocsResponseExceptionMapper — *maps to* — DocsException
+- DocsResponseExceptionMapper — *maps HTTP 400 to* — DocsException
 - DocsException — *handled by* — UnexpectedExceptionMapper
 - UnexpectedExceptionMapper — *results in* — HTTP 500
-- HTTP 500 — *on* — upload-zip
-- 10 VUs — *reveals failure* — fast
+- UnexpectedExceptionMapper — *results in HTTP 500 on* — upload-zip
+- 10 VUs — *shows failure as* — HTTP 500
 - 100 VUs — *saturates* — import worker pool
 - import worker pool — *causes* — requests queue
-- requests queue — *exceeds* — k6 timeout
+- requests queue — *reaches* — 60s k6 timeout
 - Vault outage — *is* — PRIMARY blocker
 - saturation — *is* — high-load amplifier
-- LOW concurrency — *exposes* — underlying correctness error
-- request thread tracing — *diagnoses* — underlying correctness error
-- request thread tracing — *involves* — import access log
-- request thread tracing — *involves* — import REST-client filters
-- request thread tracing — *involves* — jsonstore SEVERE logs
-- request thread tracing — *involves* — vault /sys/health
+- saturation — *can lead to* — liveness death-spiral
+- Diagnostic technique — *is* — re-run at low concurrency
+- Diagnostic technique — *is* — request thread trace
+- request thread trace — *involves* — import access log
+- request thread trace — *involves* — import REST-client filters
+- request thread trace — *involves* — jsonstore SEVERE
+- request thread trace — *involves* — vault /sys/health
 - Fix — *is* — unseal/repair luz-vault
-- unseal/repair luz-vault — *is* — infra/Vault-owner action
-- infra/Vault-owner — *is outside* — app-team kubectl scope
-- Full report — *located at* — root-cause-CORRECTION-vault.md
-- luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load — *related to* — upload-zip
-- Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage — *related to* — liveness death-spiral
-- 10-VU re-run — *passed* — 100%
-- 10-VU re-run — *occurred after* — Vault healthy
-- luz-vault-0/1 — *state* — 2/2 Ready
-- 10-VU re-run — *used build* — build fcdea5a3
-- 10-VU re-run — *used pod* — pod -b6628
-- 10-VU re-run — *resulted in* — k6 checks: 100.00%
-- k6 checks — *includes* — upload-zip status 200
-- 10-VU re-run — *resulted in* — http_req_failed metric: 0.00%
-- 10-VU re-run — *measured* — import_e2e_duration_ms metric
-- 10-VU re-run — *measured* — import_upload_duration_ms metric
-- 10-VU re-run — *used* — 10 VUs
-- 10-VU re-run — *used* — 10 RPS
-- 10-VU re-run — *is* — 1000-request case
+- Fix — *involves* — investigate crash-looping luz-vault-unseal-0
+- Fix — *is* — infra/Vault-owner action
+- Fix — *is outside* — app-team kubectl scope
+- luz-vault — *must be* — ready=true
+- luz-vault — *must be ready=true for* — re-run
+- /v1/sys/health?standbyok=true — *must return* — 200
+- /v1/sys/health?standbyok=true — *must return 200 for* — re-run
+- Full report — *is at* — docs/tests/perf-k6-loadtest-2026-08-24/root-cause-CORRECTION-vault.md
+- Perf import failures — *related to* — luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load
+- Perf import failures — *related to* — Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage
+- Vault recovery — *enabled* — 10-VU re-run
+- 10-VU re-run — *passed 100%* — 
 - Vault outage — *caused* — 100% failure
-- Vault healthy — *enables* — import service functional
+- import path — *is functional at* — 10 VUs
 - Next step — *is* — ramp toward 100 VUs
-- ramp toward 100 VUs — *to find* — capacity ceiling
+- Next step — *is* — find capacity ceiling
 - capacity ceiling — *may surface* — saturation
 - capacity ceiling — *may surface* — AV limits
 

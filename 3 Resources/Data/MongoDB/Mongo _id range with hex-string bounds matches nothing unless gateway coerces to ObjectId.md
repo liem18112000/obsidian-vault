@@ -1,7 +1,7 @@
 ---
-ai_hash: 24dfbff6a3a26ffe
+ai_hash: 5f794cbff7e210a4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-16
 entities: []
 source: LUZ-154613 session 2026-06-16, empirically confirmed on dev tenant d0783310
@@ -41,7 +41,7 @@ It only works if something coerces the bounds to real ObjectId. The luz_jsonstor
 - [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
 - [[Partition the materialized count on a uniform _countShard int, not _id]]
 - [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
-- [[Divide-and-Conquer Visible-Document Count]]
 - [[jsonstore $in vs $nin ObjectId conversion gap]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 %% ai-graph-end %%

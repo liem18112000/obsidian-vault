@@ -1,5 +1,5 @@
 ---
-ai_hash: d7f367c8fd020aa2
+ai_hash: 51b0414d7349ced0
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-09-27'
 created: 2026-08-24
@@ -8,40 +8,36 @@ entities:
 - psql
 - leo-customer360 repo
 - schema-apply mechanisms
-- docker-compose
-- migrate service
-- database-init/db/migrations/*.sql
+- docker-compose migrate service
+- dbmate migration files
 - schema_migrations
 - -- migrate:up
 - -- migrate:down
 - DROP SCHEMA IF EXISTS customer360 CASCADE;
-- deployments/postgres/run-sql.sh
+- run-sql.sh
 - Terraform
 - bastion
 - UAT
 - prod
 - blind replay
-- '*.sql files'
+- SQL files
 - postgres/init
 - database-init/*.sql
 - database-init/migrations/*
-- psql -f -
-- SSH
 - version tracking
 - IF NOT EXISTS
 - ON CONFLICT
 - SQL comment
-- customer360 schema
-- APP_SQL_DIR
-- MIGRATIONS_DIR
-- dbmate binary
+- database wipe
+- markers
+- dbmate binary/container
 - psql-client
-- database-init/migrations/001_*.sql
+- old hand-rolled migrations
 - RLS hardening
 - Alembic
-- database
-- markers
 - Postgres migrations
+- APP_SQL_DIR
+- MIGRATIONS_DIR
 source: session 2026-08-24 dbmate implementation
 status: seedling
 tags:
@@ -87,56 +83,50 @@ Related: [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]], [
 
 **Relations:**
 - leo-customer360 repo — *has* — schema-apply mechanisms
-- schema-apply mechanisms — *are* — mutually incompatible
-- dbmate — *is a* — schema-apply mechanisms
-- dbmate — *used in* — leo-customer360 repo
-- dbmate — *associated with* — docker-compose
-- docker-compose — *uses* — migrate service
-- migrate service — *applies* — database-init/db/migrations/*.sql
+- schema-apply mechanisms — *include* — dbmate
+- schema-apply mechanisms — *include* — run-sql.sh
+- dbmate — *is a* — schema-apply mechanism
+- run-sql.sh — *is a* — schema-apply mechanism
+- dbmate — *used by* — docker-compose migrate service
+- dbmate — *applies* — dbmate migration files
 - dbmate — *tracks versions in* — schema_migrations
-- database-init/db/migrations/*.sql — *contains* — -- migrate:up
-- database-init/db/migrations/*.sql — *contains* — -- migrate:down
+- dbmate migration files — *contain* — -- migrate:up
+- dbmate migration files — *contain* — -- migrate:down
 - -- migrate:down — *is* — DROP SCHEMA IF EXISTS customer360 CASCADE;
-- deployments/postgres/run-sql.sh — *is a* — schema-apply mechanisms
-- deployments/postgres/run-sql.sh — *used in* — UAT
-- deployments/postgres/run-sql.sh — *used in* — prod
-- deployments/postgres/run-sql.sh — *uses* — Terraform
-- deployments/postgres/run-sql.sh — *uses* — bastion
-- deployments/postgres/run-sql.sh — *is a* — blind replay
-- blind replay — *pipes* — *.sql files
-- blind replay — *pipes* — postgres/init
-- blind replay — *pipes* — database-init/*.sql
-- blind replay — *pipes* — database-init/migrations/*
-- blind replay — *pipes to* — psql -f -
-- psql -f - — *operates over* — SSH
-- deployments/postgres/run-sql.sh — *lacks* — version tracking
-- deployments/postgres/run-sql.sh — *relies on* — IF NOT EXISTS
-- deployments/postgres/run-sql.sh — *relies on* — ON CONFLICT
-- deployments/postgres/run-sql.sh — *can collect* — database-init/db/migrations/*.sql
-- deployments/postgres/run-sql.sh — *pipes* — database-init/db/migrations/*.sql
-- database-init/db/migrations/*.sql — *pipes to* — psql
-- psql — *runs* — WHOLE file
-- -- migrate:down — *is interpreted as* — SQL comment
-- SQL comment — *by* — psql
-- DROP SCHEMA IF EXISTS customer360 CASCADE; — *executes* — database
-- DROP SCHEMA IF EXISTS customer360 CASCADE; — *wipes* — database
+- run-sql.sh — *used in* — Terraform
+- run-sql.sh — *used with* — bastion
+- run-sql.sh — *used in* — UAT
+- run-sql.sh — *used in* — prod
+- run-sql.sh — *performs* — blind replay
+- run-sql.sh — *pipes* — SQL files
+- SQL files — *include* — postgres/init
+- SQL files — *include* — database-init/*.sql
+- SQL files — *include* — database-init/migrations/*
+- run-sql.sh — *lacks* — version tracking
+- run-sql.sh — *relies on* — IF NOT EXISTS
+- run-sql.sh — *relies on* — ON CONFLICT
+- dbmate — *is incompatible with* — run-sql.sh
+- dbmate migration files — *processed by* — psql
+- -- migrate:down — *is a* — SQL comment
+- psql — *executes* — DROP SCHEMA IF EXISTS customer360 CASCADE;
+- DROP SCHEMA IF EXISTS customer360 CASCADE; — *causes* — database wipe
 - dbmate — *parses* — markers
 - psql — *does not parse* — markers
-- APP_SQL_DIR — *should not point at* — database-init/db/migrations
-- MIGRATIONS_DIR — *should not point at* — database-init/db/migrations
-- Migrating prod/bastion path — *to* — dbmate
-- Migrating prod/bastion path — *involves* — dbmate binary
-- dbmate binary — *is a* — single static binary
-- dbmate binary — *installable like* — psql-client
-- database-init/migrations/001_*.sql — *is* — old hand-rolled
-- database-init/migrations/001_*.sql — *is* — safe to replay
-- deployments/postgres/run-sql.sh — *applies* — RLS hardening
-- RLS hardening — *is in* — prod
+- run-sql.sh — *should not point at* — dbmate migration files
+- prod/bastion path — *migration means* — running dbmate binary/container
+- dbmate binary/container — *is* — single static binary
+- dbmate binary/container — *installable like* — psql-client
+- run-sql.sh — *uses* — APP_SQL_DIR
+- run-sql.sh — *uses* — MIGRATIONS_DIR
+- old hand-rolled migrations — *are* — safe to replay
+- run-sql.sh — *applies* — RLS hardening
+- RLS hardening — *in* — prod
+- RLS hardening — *using* — old hand-rolled migrations
 - leo-customer360 — *uses* — dbmate
 - dbmate — *for* — Postgres migrations
 - leo-customer360 — *does not use* — Alembic
 - Alembic — *for* — Postgres migrations
-- dbmate — *treats* — -- migrate:up/down
-- -- migrate:up/down — *as a* — directive
+- dbmate — *treats* — any line starting with -- migrate:up/down
+- any line starting with -- migrate:up/down — *as a* — directive
 
 %% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Blocking on CompletableFuture.get in a custom pool recreates the bottleneck"
+ai_hash: acee85a893afa533
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Concurrency Design Patterns (LUZ)'
 status: seedling
-source: "Confluence: Concurrency Design Patterns (LUZ)"
-tags: [java, concurrency, completablefuture, threadpool, async, confluence-distilled]
+tags:
+- java
+- concurrency
+- completablefuture
+- threadpool
+- async
+- confluence-distilled
+title: Blocking on CompletableFuture.get in a custom pool recreates the bottleneck
+type: lesson
 ---
 
 # Blocking on CompletableFuture.get in a custom pool recreates the bottleneck
@@ -47,3 +57,14 @@ Source: [[Concurrency Design Patterns]] (LUZ, Confluence).
 ## Related
 
 - [[Concurrency Design Patterns]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Concurrency Design Patterns]]
+- [[Virtual-thread conversion triage - per-run fanout yes, single-thread and shared pools no]]
+- [[CompletableFuture parallel fan-out needs .toList() barrier before joining]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[Score async API designs on crash recovery and multi-instance, not latency]]
+
+%% ai-graph-end %%

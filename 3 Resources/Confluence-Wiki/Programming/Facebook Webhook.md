@@ -1,18 +1,22 @@
 ---
-title: "Facebook Webhook"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20502828293/Facebook+Webhook
-space: "LUZ"
-topic: programming
-relevance: 0.792
-depth: 3
-updated: 2020-03-19
+ai_hash: 777ef6588f402cc2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 3
+depth: 3
+entities: []
+relevance: 0.792
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20502828293/Facebook+Webhook
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Facebook Webhook
+topic: programming
+type: source
+updated: 2020-03-19
 ---
 
 # Facebook Webhook
@@ -59,3 +63,10 @@ If your subscription is on page then the  subscribe the filed from page. Descri
   
 
 **note : **Applications will only be able to receive test webhooks sent from the app dashboard while they are in development. No production data, including that of app admins, developers, and testers, will be delivered unless the app is live.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Outbound sync needs a durable per-record status table and a retry scan"
+ai_hash: b4dfd696c6d9ec32
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Technical design of Klara Hubspot (LUZ)'
 status: seedling
-source: "Confluence: Technical design of Klara Hubspot (LUZ)"
-tags: [etl, integration, retry, sync, hubspot, reliability, confluence-distilled]
+tags:
+- etl
+- integration
+- retry
+- sync
+- hubspot
+- reliability
+- confluence-distilled
+title: Outbound sync needs a durable per-record status table and a retry scan
+type: lesson
 ---
 
 # Outbound sync needs a durable per-record status table and a retry scan
@@ -41,3 +52,14 @@ Source: [[Technical design of Klara - Hubspot]] (LUZ, Confluence).
 ## Related
 
 - [[Claim work across pods with an expiring lease column on the row]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Technical design of Klara - Hubspot]]
+- [[Read-time non-persisted state repair is an anti-pattern; use a scheduled reconciler]]
+- [[Aggregation Database Table Design]]
+- [[Migration campaign status can silently drift from real document state]]
+- [[Persist raw third-party results before mapping them to your domain shape]]
+
+%% ai-graph-end %%

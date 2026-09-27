@@ -1,18 +1,22 @@
 ---
-title: "Analyze N+1 queries for REST API calculate payslips for overview salary processing"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519728473/Analyze+N+1+queries+for+REST+API+calculate+payslips+for+overview+salary+processing
-space: "LUZ"
-topic: programming
-relevance: 0.736
-depth: 2.82
-updated: 2021-01-07
+ai_hash: 68a4571e5df4db71
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 6
+depth: 2.82
+entities: []
+relevance: 0.736
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20519728473/Analyze+N+1+queries+for+REST+API+calculate+payslips+for+overview+salary+processing
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: Analyze N+1 queries for REST API calculate payslips for overview salary processing
+topic: programming
+type: source
+updated: 2021-01-07
 ---
 
 # Analyze N+1 queries for REST API calculate payslips for overview salary processing
@@ -147,3 +151,14 @@ Detail logs: <a href="https://jira.axonivy.com/confluence/download/attachments/
 <span class="legacy-color-text-red2">=\>   - Load contract temporal with with necessary data.</span>
 
 <span class="legacy-color-text-red2">- Convert enough data for using.</span>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Analyze N+1 queries for REST API calculate payslip for 1 employee]]
+- [[Analyze performance for REST API calculate payslips for overview salary processing]]
+- [[REST API calculate 1 employee's pay-slip]]
+- [[Helios myKLARA app(luz-mobile) - API Response Performance Analysis]]
+- [[N+1 hides at the service-call layer too, not just in the ORM]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: "Proposal: eArchived architecture direction for ePost web 2"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49390485550/Proposal+eArchived+architecture+direction+for+ePost+web+2
-space: "Helios"
-topic: architecture
-relevance: 0.969
-depth: 3
-updated: 2026-05-07
+ai_hash: add66a767f9716d7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 4
+depth: 3
+entities: []
+relevance: 0.969
+source: https://axonivy.atlassian.net/wiki/spaces/Helios/pages/49390485550/Proposal+eArchived+architecture+direction+for+ePost+web+2
+space: Helios
+status: reference
 tags:
-  - confluence
-  - architecture
-  - space/helios
+- confluence
+- architecture
+- space/helios
+title: 'Proposal: eArchived architecture direction for ePost web 2'
+topic: architecture
+type: source
+updated: 2026-05-07
 ---
 
 # Proposal: eArchived architecture direction for ePost web 2
@@ -300,3 +304,14 @@ Please confirm one of the following:
     Reuse `luz-unified-inbox` for both Unified Inbox and eArchive
 
 If no objection exists, the recommended direction should be used as the target architecture for eArchive in epost web 2.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Architecture]]
+- [[Discuss LUZ-154249 Architecture for shared components features between apps]]
+- [[Strike what every option shares to find the real architecture decision]]
+- [[Business concept for frontend]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%

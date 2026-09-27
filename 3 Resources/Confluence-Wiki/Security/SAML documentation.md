@@ -1,18 +1,22 @@
 ---
-title: "SAML documentation"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48186654802/SAML+documentation
-space: "Arrow"
-topic: security
-relevance: 0.701
-depth: 2.5
-updated: 2024-12-05
+ai_hash: e9c7b67a21e324ec
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 9
+depth: 2.5
+entities: []
+relevance: 0.701
+source: https://axonivy.atlassian.net/wiki/spaces/Arrow/pages/48186654802/SAML+documentation
+space: Arrow
+status: reference
 tags:
-  - confluence
-  - security
-  - space/arrow
+- confluence
+- security
+- space/arrow
+title: SAML documentation
+topic: security
+type: source
+updated: 2024-12-05
 ---
 
 # SAML documentation
@@ -164,3 +168,14 @@ Their system should already have ability to add a new IdP because when we ready,
 # Tryout
 
 cob-routing: <a href="https://scm.axonfintech.io/cob/cob-routing/compare/master...ARROW/FA-1608_tryout_integrate" class="external-link" rel="nofollow">https://scm.axonfintech.io/cob/cob-routing/compare/master...ARROW/FA-1608_tryout_integrate</a>
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Onboarding API - Investigation Identity Provider SSO]]
+- [[Exchange a partner IdP token by introspecting it, never by trusting it]]
+- [[COSSA Token Exchange — Technical Analysis and Implementation]]
+- [[Copy Proof of Concept Passwordless account login with Keycloak]]
+- [[OIDC federation with just-in-time provisioning hinges on the attribute join key]]
+
+%% ai-graph-end %%

@@ -1,14 +1,21 @@
 ---
-title: "Test Executor Agent: Closing the Testing Pipeline Gap"
+ai_hash: 5742c010445cf84b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
+confluence_id: '49782063122'
+confluence_path: 'Team Kepler > AI-First Framework — Mission Team: Receive > Testing
+  Agents > Agent Loop 4: Test-Plan Execution'
 created: 2026-09-24
-updated: 2026-09-24
-type: source
+entities: []
+source: Confluence · TK - Team Kepler
 status: reference
-source: "Confluence · TK - Team Kepler"
+tags:
+- confluence
+- ai-agents
+title: 'Test Executor Agent: Closing the Testing Pipeline Gap'
+type: source
+updated: 2026-09-24
 url: https://axonivy.atlassian.net/wiki/spaces/TK/pages/49782063122/Test+Executor+Agent+Closing+the+Testing+Pipeline+Gap
-confluence_id: "49782063122"
-confluence_path: "Team Kepler > AI-First Framework — Mission Team: Receive > Testing Agents > Agent Loop 4: Test-Plan Execution"
-tags: [confluence, ai-agents]
 ---
 
 # Test Executor Agent: Closing the Testing Pipeline Gap
@@ -313,3 +320,14 @@ TEV today scores the pipeline output **without ever running it**, so several of 
 - Star counts / versions are point-in-time (≈ Sept 2026).
 
 ### 9.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Agent Loop 4 - Test-Plan Execution]]
+- [[Agent Loop 3 - Test-Plan Definition]]
+- [[Test-Plan Definition Agent]]
+- [[Agent Loop 1 - Knowledge Gathering - v2]]
+- [[Multi-Agentic Architecture - Apply in AI Driven Testing]]
+
+%% ai-graph-end %%

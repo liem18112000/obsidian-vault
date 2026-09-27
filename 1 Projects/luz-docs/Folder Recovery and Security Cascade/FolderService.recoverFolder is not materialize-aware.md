@@ -1,17 +1,14 @@
 ---
-ai_hash: 1e562c0255112724
+ai_hash: b2103ef098f8eba4
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-07-31'
+ai_updated: '2026-09-27'
 created: 2026-06-04
 entities:
 - FolderService.recoverFolder
-- materialize-aware
-- POST /{tenantId}/folders/{folder-id}/recovery
-- JSON store
 - MaterializeFacade
+- JSON store
+- POST /{tenantId}/folders/{folder-id}/recovery
 - FolderService
-- rename path
-- parent-change path
 - restoreToNewParentFolderIds
 - updateFolderMetadata
 - inherited security
@@ -20,34 +17,22 @@ entities:
 - deletionStatus
 - deletionTimestamp
 - executeRecovery
-- subtree documents
 - documentService.recoverDocument
-- materialize stamping
-- allowlisted tenants
-- materialization-complete tenants
+- allowlisted/materialization-complete tenants
+- recovered subtree
 - _folderNames
 - _effectiveSecurityClassCodes
 - security-classification correctness risk
-- docs
-- security filter
-- recovery-with-re-parenting
 - Non-materialized tenants
-- LUZ-155107
-- sprint 158
 - MaterializeFolderRecoveryService
-- rename-style event
-- marker
-- PARTIAL retry
-- marker collection
 - materializeCascade
-- parent-change full-recompute pipeline
-- root
-- descendants
 - shouldUseMaterialized(tenantId)
+- LUZ-155107
 - luz_docs has two materialize cascade delivery mechanisms
 - Folder recovery re-parenting must recompute inheritedSecurityClassCode like the
   PUT path
-- PUT path
+- Materialization
+- parent-change full-recompute pipeline
 source: LUZ-155107 investigation, session 2026-06-04
 status: budding
 tags:
@@ -87,53 +72,33 @@ Related: [[luz_docs has two materialize cascade delivery mechanisms]], [[Folder 
 - [[Folder recovery reuses the parent-change materialize cascade]]
 - [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
 - [[luz_docs has two materialize cascade delivery mechanisms]]
-- [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]]
+- [[Folder recovery with re-parenting leaves inheritedSecurityClassCode stale]]
 
 **Relations:**
-- FolderService.recoverFolder — *is not* — materialize-aware
-- POST /{tenantId}/folders/{folder-id}/recovery — *is* — FolderService.recoverFolder
-- FolderService.recoverFolder — *writes to* — JSON store
+- FolderService.recoverFolder — *lacks awareness of* — Materialization
+- POST /{tenantId}/folders/{folder-id}/recovery — *invokes* — FolderService.recoverFolder
+- FolderService.recoverFolder — *writes state to* — JSON store
 - FolderService.recoverFolder — *does not touch* — MaterializeFacade
 - FolderService — *injects* — MaterializeFacade
-- MaterializeFacade — *is used for* — rename path
-- MaterializeFacade — *is used for* — parent-change path
-- restoreToNewParentFolderIds — *is a write site for* — FolderService.recoverFolder
-- restoreToNewParentFolderIds — *re-parents via* — updateFolderMetadata
+- MaterializeFacade — *supports* — rename/parent-change paths
+- FolderService.recoverFolder — *implements via* — restoreToNewParentFolderIds
+- FolderService.recoverFolder — *implements via* — recoverSingleFolder
+- FolderService.recoverFolder — *implements via* — executeRecovery
+- restoreToNewParentFolderIds — *uses* — updateFolderMetadata
 - updateFolderMetadata — *changes* — inherited security
 - updateFolderMetadata — *changes* — path
-- recoverSingleFolder — *is a write site for* — FolderService.recoverFolder
 - recoverSingleFolder — *flips* — deletionStatus
 - recoverSingleFolder — *clears* — deletionTimestamp
-- executeRecovery — *is a write site for* — FolderService.recoverFolder
-- executeRecovery — *recovers* — subtree documents
 - executeRecovery — *uses* — documentService.recoverDocument
-- documentService.recoverDocument — *lacks* — materialize stamping
-- allowlisted tenants — *are affected by* — security-classification correctness risk
-- materialization-complete tenants — *are affected by* — security-classification correctness risk
-- recovered subtree — *keeps stale* — _folderNames
-- recovered subtree — *keeps stale* — _effectiveSecurityClassCodes
-- _effectiveSecurityClassCodes — *causes* — security-classification correctness risk
-- security-classification correctness risk — *can lead to* — docs surfaced under wrong security filter
-- security-classification correctness risk — *can lead to* — docs wrongly hidden
-- recovery-with-re-parenting — *is the* — Worst case
-- Non-materialized tenants — *are unaffected by* — security-classification correctness risk
-- LUZ-155107 — *is a* — Fix
-- Fix — *is planned for* — sprint 158
-- Fix — *introduces* — MaterializeFolderRecoveryService
-- MaterializeFolderRecoveryService — *is a* — new async service
-- MaterializeFolderRecoveryService — *uses* — rename-style event
-- MaterializeFolderRecoveryService — *uses* — marker
-- MaterializeFolderRecoveryService — *uses* — PARTIAL retry
-- MaterializeFolderRecoveryService — *uses* — marker collection
-- marker collection — *is isolated from* — materializeCascade
-- materializeCascade — *is for* — rename
-- MaterializeFolderRecoveryService — *executes* — parent-change full-recompute pipeline
-- parent-change full-recompute pipeline — *operates over* — root
-- parent-change full-recompute pipeline — *operates over* — descendants
-- MaterializeFolderRecoveryService — *fires* — in finally
+- recovered subtree — *retains stale* — _folderNames
+- recovered subtree — *retains stale* — _effectiveSecurityClassCodes
+- stale _effectiveSecurityClassCodes — *leads to* — security-classification correctness risk
+- Non-materialized tenants — *are unaffected by* — FolderService.recoverFolder
+- MaterializeFolderRecoveryService — *fixes* — LUZ-155107
+- MaterializeFolderRecoveryService — *is isolated from* — materializeCascade
+- MaterializeFolderRecoveryService — *performs* — parent-change full-recompute pipeline
 - MaterializeFolderRecoveryService — *is gated by* — shouldUseMaterialized(tenantId)
-- luz_docs has two materialize cascade delivery mechanisms — *is related to* — FolderService.recoverFolder is not materialize-aware
-- Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path — *is related to* — FolderService.recoverFolder is not materialize-aware
-- Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path — *mentions* — PUT path
+- FolderService.recoverFolder — *is related to* — luz_docs has two materialize cascade delivery mechanisms
+- FolderService.recoverFolder — *is related to* — Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path
 
 %% ai-graph-end %%

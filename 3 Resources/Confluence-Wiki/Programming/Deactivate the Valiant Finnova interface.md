@@ -1,18 +1,22 @@
 ---
-title: "Deactivate the Valiant/Finnova interface"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/47466315972/Deactivate+the+Valiant+Finnova+interface
-space: "NEXT"
-topic: programming
-relevance: 0.786
-depth: 3
-updated: 2023-08-22
+ai_hash: 547f256993e3ed08
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 5
+depth: 3
+entities: []
+relevance: 0.786
+source: https://axonivy.atlassian.net/wiki/spaces/NEXT/pages/47466315972/Deactivate+the+Valiant+Finnova+interface
+space: NEXT
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/next
+- confluence
+- programming
+- space/next
+title: Deactivate the Valiant/Finnova interface
+topic: programming
+type: source
+updated: 2023-08-22
 ---
 
 # Deactivate the Valiant/Finnova interface
@@ -258,3 +262,14 @@ Example result:
 
 
 ![[47466315972-ceb6bbf8-f72d-4e53-b154-b3b1175c48f8.png]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Script to create task again for banks using b.Link]]
+- [[Bank connection - Script to store all old connected ibans for each tenant]]
+- [[Call API trigger Vacuum POS schema on PROD]]
+- [[Delete company - Old way]]
+- [[LUZ-102459 Implement physical delete for INDIVIDUAL tenant]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Split a batch against a cache and forward only the misses, tracking the residual"
+ai_hash: 369054dbb1ecc200
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 created: 2026-09-27
-type: lesson
+entities: []
+source: 'Confluence: Testing statistics and remaining impediment after implementation
+  (LUZ)'
 status: seedling
-source: "Confluence: Testing statistics and remaining impediment after implementation (LUZ)"
-tags: [caching, batch-processing, external-api, data-modelling, confluence-distilled]
+tags:
+- caching
+- batch-processing
+- external-api
+- data-modelling
+- confluence-distilled
+title: Split a batch against a cache and forward only the misses, tracking the residual
+type: lesson
 ---
 
 # Split a batch against a cache and forward only the misses, tracking the residual
@@ -43,3 +53,14 @@ Source: [[Testing statistics and remaining impediment after implementation]] (LU
 ## Related
 
 - [[Claim work across pods with an expiring lease column on the row]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Testing statistics and remaining impediment after implementation]]
+- [[Claim work across pods with an expiring lease column on the row]]
+- [[Persist raw third-party results before mapping them to your domain shape]]
+- [[N+1 hides at the service-call layer too, not just in the ORM]]
+- [[Batch Processor Library - NodeJS]]
+
+%% ai-graph-end %%

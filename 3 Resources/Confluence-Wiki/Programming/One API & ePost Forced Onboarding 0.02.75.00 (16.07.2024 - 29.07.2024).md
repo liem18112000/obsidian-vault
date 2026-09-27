@@ -1,18 +1,22 @@
 ---
-title: "One API & ePost Forced Onboarding 0.02.75.00 (16.07.2024 - 29.07.2024)"
-type: source
-status: reference
-source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47950660315/One+API+ePost+Forced+Onboarding+0.02.75.00+16.07.2024+-+29.07.2024
-space: "LUZ"
-topic: programming
-relevance: 0.738
-depth: 2.65
-updated: 2024-07-29
+ai_hash: d58c20ac558d3039
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-27'
 attachments: 16
+depth: 2.65
+entities: []
+relevance: 0.738
+source: https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/47950660315/One+API+ePost+Forced+Onboarding+0.02.75.00+16.07.2024+-+29.07.2024
+space: LUZ
+status: reference
 tags:
-  - confluence
-  - programming
-  - space/luz
+- confluence
+- programming
+- space/luz
+title: One API & ePost Forced Onboarding 0.02.75.00 (16.07.2024 - 29.07.2024)
+topic: programming
+type: source
+updated: 2024-07-29
 ---
 
 # One API & ePost Forced Onboarding 0.02.75.00 (16.07.2024 - 29.07.2024)
@@ -97,3 +101,14 @@ Removal Klara Regional: No longer synchronise News Posts to Klara regio
 
 
 4.  Remove Klara Regional: No longer synchronise with Klara regio when the tenant create or update an online profile (in progress)
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ePost Forced Onboarding & One API (13.08.2024 - 26.08.2024)]]
+- [[ePost API (28.02.2023 - 13.03.2023)]]
+- [[Copy 5. How to extend modify ONE API delivery API Research]]
+- [[5. How to extend modify ONE API delivery API Research]]
+- [[Copy 4. Architecture for delivering eLetter after email verified]]
+
+%% ai-graph-end %%
