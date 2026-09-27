@@ -39,12 +39,12 @@ configurations.all {
 }
 ```
 
-**Caveat that bit me next:** an `import` only works if the class actually exists in *that* Gradle version. Importing `org.gradle.api.attributes.java.TargetJvmEnvironment` failed with `unable to resolve class` because that type **does not exist in Gradle 6.9.4** (only `TargetJvmVersion` does). The string-name attribute form above sidesteps the class entirely. See [[3 Resources/Languages/Java/Gradle/Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]].
+**Caveat that bit me next:** an `import` only works if the class actually exists in *that* Gradle version. Importing `org.gradle.api.attributes.java.TargetJvmEnvironment` failed with `unable to resolve class` because that type **does not exist in Gradle 6.9.4** (only `TargetJvmVersion` does). The string-name attribute form above sidesteps the class entirely. See [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]].
 
 Lesson learned the hard way: verify build-script edits in the real toolchain (here, the Docker `build` stage) before pushing — three "looks-fine" attempts each broke build-script evaluation in a different way.
 
 ## Related
-- [[3 Resources/Languages/Java/Gradle/Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
+- [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
 
 %% ai-graph-start %%

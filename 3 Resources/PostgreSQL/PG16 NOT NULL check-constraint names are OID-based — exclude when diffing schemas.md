@@ -25,8 +25,7 @@ Hit while building the leo-customer360 migration parity test (dbmate build vs le
 
 ## Related
 
-- [[leo-customer360 uses dbmate for Postgres migrations]]
-- [[not Alembic]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
 
 %% ai-graph-start %%
 

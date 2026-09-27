@@ -37,12 +37,11 @@ REMOTE
 ```
 `printf '%s\n'` emits one line per field (empty field = empty line); base64 survives ssh as a single space-free token; `mapfile -t` splits back, keeping empty elements and exact order. Values must not contain literal newlines (base64 any that might; `tr -d '\r\n'` so Windows Git Bash CRLF does not corrupt the blob). Add a REMOTE-side re-check of critical fields after decode, since a LOCAL guard runs before transport.
 
-Related: [[Validate S3_REGION at the deploy boundary, not after boto3 fails]] [[customer360-api events reader: per-source vs single-bucket mode]]
+Related: [[Validate S3_REGION at the deploy boundary, not after boto3 fails]] [[customer360-api events reader per-source vs single-bucket mode|customer360-api events reader: per-source vs single-bucket mode]]
 
 ## Related
 
-- [[Validate S3_REGION at the deploy boundary]]
-- [[not after boto3 fails]]
+- [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
 
 %% ai-graph-start %%
 

@@ -31,7 +31,7 @@ Context: Vinnstack, electron-builder NSIS oneClick (perMachine:false), Electron 
 
 ## Related
 
-- [[3 Resources/Frontend/Electron/Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
 
 %% ai-graph-start %%
 

@@ -23,7 +23,7 @@ This is **conditional classification** — deciding whether an event is positive
 
 ## Related
 
-- [[3 Resources/Data/Gorse/Gorse config exposes model family and cadence, never hyperparameters]]
+- [[Gorse config exposes model family and cadence, never hyperparameters]]
 
 %% ai-graph-start %%
 

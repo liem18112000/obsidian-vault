@@ -33,12 +33,11 @@ Because it concatenates `${JWT_SERVICE_HOST_PORT}` directly with `/luzsec/api/`,
 ## Contrast with luz_docs
 The sibling **luz_docs** does NOT concatenate onto `JWT_SERVICE_HOST_PORT`; it uses dedicated full-path config keys — `JWT_SERVICE_KEY/mp-rest/url=.../luzsec/api/` (with a `JwtServiceClient` `@Path("/public-keys/active")`) and `MP_JWT_VERIFY_PUBLIC_KEY_LOCATION=.../luzsec/api/public-keys/key`. So luz_docs keeping a trailing slash on `JWT_SERVICE_HOST_PORT` is harmless there — the two services build the same URL by different means.
 
-Related: [[Luz local run: host.docker.internal:8080 must be the dev api-forwarder, not another cluster on 8080]]
+Related: [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080|Luz local run: host.docker.internal:8080 must be the dev api-forwarder, not another cluster on 8080]]
 
 ## Related
 
-- [[Luz local run: host.docker.internal:8080 must be the dev api-forwarder]]
-- [[not another cluster on 8080]]
+- [[Luz local run host.docker.internal8080 must be the dev api-forwarder, not another cluster on 8080]]
 
 %% ai-graph-start %%
 

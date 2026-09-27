@@ -33,11 +33,11 @@ Implication for 'do I get credit back if I delete the database?':
 - **Committed/reserved prepaid terms** (if any) have separate early-deletion refund rules — unknown, ask support.
 - Gotchas: auto-backups are deleted with the instance; **manual snapshots persist and keep costing** storage; a stopped/shutdown instance usually still bills for storage.
 
-Context: asked while running customer360-pg-uat (8vCPU/16GB, 250GB) in leo-customer360. To stop spend via repo: `./deploy.sh uat destroy`. See [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
+Context: asked while running customer360-pg-uat (8vCPU/16GB, 250GB) in leo-customer360. To stop spend via repo: `./deploy.sh uat destroy`. See [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
 
 ## Related
 
-- [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 
 %% ai-graph-start %%
 

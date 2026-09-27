@@ -38,12 +38,12 @@ Then register the https callback on the Keycloak client and drop the dedicated L
 - /ping stays at the proxy root (health check unaffected by proxy-prefix).
 
 ## Related
-[[Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
+[[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync|Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
 [[Monitoring-dashboard SSO login user is c360admin, not the Keycloak master admin]]
 
 ## Related
 
-- [[Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync|Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
 
 %% ai-graph-start %%
 

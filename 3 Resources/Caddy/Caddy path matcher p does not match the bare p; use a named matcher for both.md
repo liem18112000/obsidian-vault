@@ -29,8 +29,7 @@ Related: [[Caddy handle_path strips the path prefix, handle keeps it]]
 
 ## Related
 
-- [[Caddy handle_path strips the path prefix]]
-- [[handle keeps it]]
+- [[Caddy handle_path strips the path prefix, handle keeps it]]
 
 %% ai-graph-start %%
 

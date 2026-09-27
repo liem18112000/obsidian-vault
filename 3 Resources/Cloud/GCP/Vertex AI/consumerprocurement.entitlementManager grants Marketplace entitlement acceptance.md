@@ -23,7 +23,7 @@ Without this role (or an equivalent broader role like Owner), the account can ha
 
 ## Related
 
-- [[3 Resources/Cloud/GCP/Vertex AI/Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+- [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
 
 %% ai-graph-start %%
 

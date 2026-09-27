@@ -27,8 +27,8 @@ Re-importing the same ZIP is idempotent via **two different dedup mechanisms**:
 So a repeat delivery lands documents/folders idempotently, but through two distinct code paths — worth separate test cases. Established for LUZ-158230.
 
 ## Related
-[[ePost eArchive document write-chain: import to view-controller to luz_docs to jsonstore]]
-[[ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
+[[ePost eArchive document write-chain import to view-controller to luz_docs to jsonstore|ePost eArchive document write-chain: import to view-controller to luz_docs to jsonstore]]
+[[ePost eArchive ZIP import transfer.zip shape and luz_docs_import|ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
 
 %% ai-graph-start %%
 

@@ -40,7 +40,7 @@ Context: Claude Hooks & Skills deck, `C:\Users\dvtliem\.claude\docs\hook-present
 
 ## Related
 
-- [[3 Resources/AI/Claude-Code/pptx/QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
+- [[QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
 
 %% ai-graph-start %%
 

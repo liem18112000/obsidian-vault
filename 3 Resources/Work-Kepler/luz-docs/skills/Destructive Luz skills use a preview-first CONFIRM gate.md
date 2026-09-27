@@ -28,7 +28,7 @@ Two supporting choices: deletion is `deleteMany({})` rather than `drop()`, so in
 
 ## Related
 
-- [[3 Resources/Work-Kepler/luz-docs/skills/eArchive dev skills are self-contained copies, not shared helpers]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
 
 %% ai-graph-start %%
 

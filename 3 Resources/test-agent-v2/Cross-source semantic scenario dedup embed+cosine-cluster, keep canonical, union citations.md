@@ -24,8 +24,7 @@ FIX (cross-source scenario dedup, test-agent-v2): added `dedup_by_behaviour()` t
 
 ## Related
 
-- [[Parallel TPD generation sped up but amplified duplication — dedup is a code fix]]
-- [[not guidance]]
+- [[Parallel TPD generation sped up but amplified duplication — dedup is a code fix, not guidance]]
 
 %% ai-graph-start %%
 

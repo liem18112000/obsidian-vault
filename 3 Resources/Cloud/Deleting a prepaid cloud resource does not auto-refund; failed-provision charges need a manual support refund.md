@@ -32,8 +32,7 @@ Context: leo-customer360 vStorage — 6 failed creates charged ~3,162,000 VND wi
 
 ## Related
 
-- [[vStorage create-project code 114 is account-side]]
-- [[not a payload bug]]
+- [[vStorage create-project code 114 is account-side, not a payload bug]]
 
 %% ai-graph-start %%
 

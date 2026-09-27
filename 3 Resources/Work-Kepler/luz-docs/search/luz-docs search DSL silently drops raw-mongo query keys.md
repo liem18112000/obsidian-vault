@@ -35,7 +35,7 @@ See [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
 
 ## Related
 
-- [[3 Resources/Work-Kepler/luz-docs/search/ngram trigram prefilter reads the built mongo query, not the raw payload]]
+- [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
 
 %% ai-graph-start %%
 

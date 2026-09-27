@@ -32,8 +32,8 @@ Creating a folder/document from a ZIP import fans out through a chain of service
 All backend repos live in the **axonivy-prod** Bitbucket workspace: `luz_docs_import`, `luz_docs_view_controller`, `luz_docs`, `luz_jsonstore`. This makes the import an inherently **multi-service integration** path for testing.
 
 ## Related
-[[ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
-[[ePost ZIP import dedup: documents by job-success path, folders via view-controller]]
+[[ePost eArchive ZIP import transfer.zip shape and luz_docs_import|ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
+[[ePost ZIP import dedup documents by job-success path, folders via view-controller|ePost ZIP import dedup: documents by job-success path, folders via view-controller]]
 
 %% ai-graph-start %%
 

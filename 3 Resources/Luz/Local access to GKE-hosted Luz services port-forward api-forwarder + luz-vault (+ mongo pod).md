@@ -30,13 +30,12 @@ Both `-n <ENV>` where ENV is the app namespace (`dev`, `dev-staging`, `performan
 
 **Cluster vs env:** the app namespace picks the ENV; the *cluster* is chosen by the current `kubectl` context. All non-prod envs live in **`klara-nonprod`**, so switching between dev/performance/test is just a namespace change, same context. These skills do **not** switch contexts — they print `kubectl config current-context` so you can sanity-check before anything talks to the cluster.
 
-**MongoDB is different:** you forward a replica **pod** (`luz-mongodbXX-cluster-rs-{0,1,2}`, `27017`:27017) in the **`dev-mongodb-clusters`** namespace — NOT a service, NOT the app namespace — then probe each replica for the primary (a throwaway insert+drop). Cluster index XX is derived from the tenant id (`first hex char % 4`). Pattern from earchive-data-clean / luz-skill-materialize-stats. Related: [[Trace Luz per-service latency via the time-consuming= log marker]], [[Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE]].
+**MongoDB is different:** you forward a replica **pod** (`luz-mongodbXX-cluster-rs-{0,1,2}`, `27017`:27017) in the **`dev-mongodb-clusters`** namespace — NOT a service, NOT the app namespace — then probe each replica for the primary (a throwaway insert+drop). Cluster index XX is derived from the tenant id (`first hex char % 4`). Pattern from earchive-data-clean / luz-skill-materialize-stats. Related: [[Trace Luz per-service latency via the time-consuming= log marker]], [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE|Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE]].
 
 ## Related
 
 - [[Trace Luz per-service latency via the time-consuming= log marker]]
-- [[Luz docs-import zip flow: upload-zip returns job-id]]
-- [[poll GET until DONE]]
+- [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
 
 %% ai-graph-start %%
 

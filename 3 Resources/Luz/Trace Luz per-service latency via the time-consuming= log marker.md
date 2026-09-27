@@ -32,8 +32,7 @@ Every Luz JVM service logs `<METHOD> Rest client response uri: <uri> time-consum
 
 ## Related
 
-- [[Luz docs-import zip flow: upload-zip returns job-id]]
-- [[poll GET until DONE]]
+- [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
 
 %% ai-graph-start %%
 

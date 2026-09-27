@@ -63,12 +63,12 @@ Key consequences:
 - Each MCP tool maps to one A2A operation; the bridge translates arguments in and the A2A reply out.
 - Auth passes through: the bridge attaches the agent's bearer token on each HTTP call.
 
-Implemented in the `knowledge_gathering` test-agent as `knowledge_gathering/bridge/` (a2a_client.py = A2A half, no mcp import; mcp_server.py = MCPServer tools). See [[mcp Python SDK 2.x renamed FastMCP to MCPServer]], [[A2A message/send returns either a Message or a Task envelope]], [[A2A input-required tasks must be answered on the same taskId and contextId]].
+Implemented in the `knowledge_gathering` test-agent as `knowledge_gathering/bridge/` (a2a_client.py = A2A half, no mcp import; mcp_server.py = MCPServer tools). See [[mcp Python SDK 2.x renamed FastMCP to MCPServer]], [[A2A messagesend returns either a Message or a Task envelope|A2A message/send returns either a Message or a Task envelope]], [[A2A input-required tasks must be answered on the same taskId and contextId]].
 
 ## Related
 
 - [[mcp Python SDK 2.x renamed FastMCP to MCPServer]]
-- [[A2A message/send returns either a Message or a Task envelope]]
+- [[A2A messagesend returns either a Message or a Task envelope|A2A message/send returns either a Message or a Task envelope]]
 - [[A2A input-required tasks must be answered on the same taskId and contextId]]
 
 %% ai-graph-start %%

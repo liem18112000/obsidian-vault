@@ -87,7 +87,7 @@ If a rival offer in the same niche shows your EPC of $0.70, switch the links —
 - [[Attribution Model]] — affects which conversions count toward your EPC.
 
 ---
-*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+*See also: [[Term|all affiliate terms]]*
 
 %% ai-graph-start %%
 

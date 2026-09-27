@@ -30,11 +30,11 @@ var.kga_self_explore ? [
 then set the bool in `terraform.tfvars`. `terraform plan` should show `1 to change, 0 to destroy` touching only that service, with the env names added in-place — a clean signal that nothing else (image, IAM) moved.
 
 ## Related
-[[Cloud Run 401 response body distinguishes GFE/IAM rejection from app-level auth]]
+[[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth|Cloud Run 401 response body distinguishes GFE/IAM rejection from app-level auth]]
 
 ## Related
 
-- [[Cloud Run 401 response body distinguishes GFE/IAM rejection from app-level auth]]
+- [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth|Cloud Run 401 response body distinguishes GFE/IAM rejection from app-level auth]]
 
 %% ai-graph-start %%
 

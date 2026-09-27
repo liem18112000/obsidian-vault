@@ -36,7 +36,7 @@ Source: netty.io wiki 'Java 24 and sun.misc.Unsafe' (verified 2026-06).
 ## Related
 
 - [[Vert.x 3.9 breaks with hand-pinned Netty 4.1.60+]]
-- [[3 Resources/Languages/Java/Gradle/Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+- [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
 
 %% ai-graph-start %%
 

@@ -24,7 +24,7 @@ So cache one client per tenant/key. **Gotcha:** when that cache evicts an entry 
 
 ## Related
 [[LRU cache in Java via LinkedHashMap accessOrder + removeEldestEntry]]
-[[Dont liveness-ping a cached DB client on every call]]
+[[Don't liveness-ping a cached DB client on every call|Dont liveness-ping a cached DB client on every call]]
 
 ## Related
 

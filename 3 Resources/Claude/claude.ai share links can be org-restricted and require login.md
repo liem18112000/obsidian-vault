@@ -34,7 +34,7 @@ Drive a browser that carries a logged-in claude.ai session:
 
 ## Related
 
-- [[Excalidraw JSON generator ghost-text: filtering a node's rectangle by id leaves its text elements behind]]
+- [[Excalidraw JSON generator ghost-text filtering a node's rectangle by id leaves its text elements behind|Excalidraw JSON generator ghost-text: filtering a node's rectangle by id leaves its text elements behind]]
 
 %% ai-graph-start %%
 

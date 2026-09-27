@@ -70,8 +70,7 @@ FINDING (LUZ-158390, round 2 after sonnet+3-worker parallelization): parallelizi
 
 ## Related
 
-- [[Parallelize TPD generation via 3 Redis-worker replicas]]
-- [[not _BATCH_CONCURRENCY]]
+- [[Parallelize TPD generation via 3 Redis-worker replicas, not _BATCH_CONCURRENCY]]
 
 %% ai-graph-start %%
 

@@ -32,11 +32,11 @@ When you use an LLM as a reranker (or any "return a JSON array of N numbers" cal
 - Never let a ranker fallback be invisible — surface "fallback active" in health/metrics, else it silently regresses relevance.
 
 ## Related
-[[docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
+[[docs-search UAT latency root cause unapplied 8001 secgroup ingress (api to docs box)|docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
 
 ## Related
 
-- [[docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
+- [[docs-search UAT latency root cause unapplied 8001 secgroup ingress (api to docs box)|docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
 
 %% ai-graph-start %%
 

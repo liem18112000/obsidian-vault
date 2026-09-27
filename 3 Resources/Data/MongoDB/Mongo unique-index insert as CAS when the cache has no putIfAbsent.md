@@ -26,7 +26,7 @@ Gotchas:
 
 ## Related
 
-- [[3 Resources/Backend/Concurrency/Lock-based stampede control losers hit the cache before the winner fills it]]
+- [[Lock-based stampede control losers hit the cache before the winner fills it]]
 
 %% ai-graph-start %%
 

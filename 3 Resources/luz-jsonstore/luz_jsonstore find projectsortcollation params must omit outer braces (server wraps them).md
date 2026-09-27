@@ -35,7 +35,7 @@ How it bit us (luz_docs_import IdempotentImportService): PROJECTION was `{"succe
 
 General lesson: a **best-effort catch that returns a neutral/empty value** turns a hard failure (500) into a silent feature regression — log loudly (we did: 'could not load prior imported paths') and check that log when a feature 'does nothing'. The empty 500 body came from json-store's getMany catch-all, which also hides the real cause — see the luz_jsonstore missing-ExceptionMapper issue.
 
-Related: [[luz_docs_import]], [[Read-side fire-and-forget mutation: pass the id and re-read in the async, don't mutate the object being serialized]].
+Related: [[luz_docs_import]], [[Read-side fire-and-forget mutation pass the id and re-read in the async, don't mutate the object being serialized|Read-side fire-and-forget mutation: pass the id and re-read in the async, don't mutate the object being serialized]].
 
 ## Related
 

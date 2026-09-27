@@ -63,8 +63,7 @@ A push/merge to `main` in leo-customer360 auto-deploys UAT with only `DEFAULT_SV
 
 ## Related
 
-- [[CD secrets must be wired into cd.yml deploy step env]]
-- [[not just added to GitHub]]
+- [[CD secrets must be wired into cd.yml deploy step env, not just added to GitHub]]
 
 %% ai-graph-start %%
 

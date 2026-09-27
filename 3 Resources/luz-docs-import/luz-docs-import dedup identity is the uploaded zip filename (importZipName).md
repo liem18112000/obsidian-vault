@@ -29,7 +29,7 @@ On `POST /luz_docs_import/api/{tenant}/import-jobs/upload-zip`, the server sets 
 ## Related
 
 - [[luz-docs-import ingest ZIP format (folders + per-file .metadata.json sidecar)]]
-- [[Building a ZIP fixture to test NFC/NFD + UTF-8-flag entry-name handling]]
+- [[Building a ZIP fixture to test NFCNFD + UTF-8-flag entry-name handling|Building a ZIP fixture to test NFC/NFD + UTF-8-flag entry-name handling]]
 
 %% ai-graph-start %%
 

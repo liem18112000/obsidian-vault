@@ -28,8 +28,7 @@ Keep the standalone builder as a small self-contained generator (emit rects+text
 
 ## Related
 
-- [[render_excalidraw.py output path needs -o flag]]
-- [[not positional arg]]
+- [[render_excalidraw.py output path needs -o flag, not positional arg]]
 
 %% ai-graph-start %%
 

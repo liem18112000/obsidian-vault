@@ -24,7 +24,7 @@ Safe pattern: keep the extracted interface signatures-only and leave every annot
 
 ## Related
 
-- [[Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer|Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer]]
 
 %% ai-graph-start %%
 

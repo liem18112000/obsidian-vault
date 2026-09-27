@@ -35,7 +35,7 @@ Verified 2026-06-08: case_01/02 (public target) pass; case_03/04 (target carries
 
 ## Related
 
-- [[3 Resources/Work-Kepler/luz-docs/materialize/Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]
+- [[Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]
 
 %% ai-graph-start %%
 

@@ -36,8 +36,7 @@ Surfaced on LUZ-158230 (import-job Tier 4 durable status queue) in `luz_docs_imp
 ## Related
 
 - [[luz-jsonstore optimistic-concurrency PATCH version-number is an equality CAS]]
-- [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec]]
-- [[not SmallRye @ExponentialBackoff]]
+- [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff]]
 
 %% ai-graph-start %%
 

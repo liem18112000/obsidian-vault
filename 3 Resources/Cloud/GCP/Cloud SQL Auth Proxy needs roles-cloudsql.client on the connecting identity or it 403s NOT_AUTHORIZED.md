@@ -39,7 +39,7 @@ Gotchas: the check itself needs `resourcemanager.projects.getIamPolicy`, so a fa
 
 ## Related
 
-- [[3 Resources/Cloud/GCP/GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]
+- [[GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]
 - [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
 
 %% ai-graph-start %%

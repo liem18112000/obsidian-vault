@@ -28,11 +28,11 @@ The test-agent-v2 (ADK) stack runs on GCP project **klara-nonprod**, region **eu
 Source of truth for the non-secret config is `deployments/test-agent-v2/terraform.tfvars` + `cloudsql.tf`; the app also reads `test-agent-v2/.env` (GCS_BUCKET/GCP_PROJECT). Secret values are never recorded here.
 
 ## Related
-[[Wipe test-agent-v2 memory and taskstore via test-agent-v2/tools]]
+[[Wipe test-agent-v2 memory and taskstore via test-agent-v2tools|Wipe test-agent-v2 memory and taskstore via test-agent-v2/tools]]
 
 ## Related
 
-- [[Wipe test-agent-v2 memory and taskstore via test-agent-v2/tools]]
+- [[Wipe test-agent-v2 memory and taskstore via test-agent-v2tools|Wipe test-agent-v2 memory and taskstore via test-agent-v2/tools]]
 
 %% ai-graph-start %%
 

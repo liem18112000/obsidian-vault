@@ -42,13 +42,12 @@ Trade-off to accept knowingly: `body.view` is a rendering, so it loses macro *id
 
 ## Related
 
-- [[Confluence CQL search paginates by opaque cursor]]
-- [[not start offset]]
+- [[Confluence CQL search paginates by opaque cursor, not start offset]]
 
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
+- [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]|Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
 - [[Rewrite Confluence page prose by element local-id to keep diagrams and structure intact]]
 - [[Confluence CQL search paginates by opaque cursor, not start offset]]
 - [[Extracting every link from Jira ADF and Confluence storage]]

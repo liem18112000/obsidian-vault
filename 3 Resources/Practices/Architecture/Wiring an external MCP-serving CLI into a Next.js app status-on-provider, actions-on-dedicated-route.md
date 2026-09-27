@@ -33,7 +33,7 @@ Why: keeps the integration additive and reversible, avoids a second parallel sta
 ## Related
 
 - [[Vinnstack Polaris integration is three passive touchpoints]]
-- [[3 Resources/Work-Side/Polaris/Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
 
 %% ai-graph-start %%
 

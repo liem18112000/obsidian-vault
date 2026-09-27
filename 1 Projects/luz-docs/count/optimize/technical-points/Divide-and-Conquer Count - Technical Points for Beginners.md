@@ -76,8 +76,7 @@ entities:
 - Specific index part
 - Many index entries
 - Broader result set
-source_note: '[[Kepler/Feature Notes/luz-docs/materialize/count-optimize/Divide-and-Conquer
-  Visible-Document Count.md]]'
+source_note: '[[Divide-and-Conquer Visible-Document Count]]'
 tags:
 - luz-docs
 - materialize
@@ -89,7 +88,7 @@ type: technical-explainer
 
 # Divide-and-Conquer Count — Technical Points for Beginners
 
-This note explains the technical terms behind [[Kepler/Feature Notes/luz-docs/materialize/count-optimize/Divide-and-Conquer Visible-Document Count.md]] for someone who is new to databases, indexes, and performance tuning.
+This note explains the technical terms behind [[Divide-and-Conquer Visible-Document Count]] for someone who is new to databases, indexes, and performance tuning.
 
 Short version:
 

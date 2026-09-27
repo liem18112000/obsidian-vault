@@ -29,11 +29,11 @@ Fix (same shape as the flavor/volume/image bypasses):
 So for this account, the per-AZ catalog rule is universal across vServer (flavor/image/volume) AND vLB (package): the name/default lookups resolve the disabled/default AZ; always discover the HCM03-1C uuid via `?zoneId=` and pin it directly.
 
 ## Related
-[[VNG vServer default catalog endpoints return the DISABLED default AZ; use ?zoneId=<AZ> and pin UUIDs]]
+[[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs|VNG vServer default catalog endpoints return the DISABLED default AZ; use ?zoneId=<AZ> and pin UUIDs]]
 
 ## Related
 
-- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use ?zoneId=<AZ> and pin UUIDs]]
+- [[VNG vServer default catalog endpoints return the DISABLED default AZ; use zoneId=AZ and pin UUIDs|VNG vServer default catalog endpoints return the DISABLED default AZ; use ?zoneId=<AZ> and pin UUIDs]]
 
 %% ai-graph-start %%
 

@@ -26,11 +26,11 @@ HotSpot compiles a method to optimized native code only after it has been invoke
 
 **Rule of thumb:** if "the small case decreases monotonically over N runs while the large case is run-1-outlier-then-flat", the cause is **JIT warm-up**. A fixed-cost connection/pool warmup would instead make even the small case flat after run 1, so that pattern rules pooling out.
 
-Related: [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]], [[Truncating DB collections between benchmark runs resets data but not service warmth]].
+Related: [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention|A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]], [[Truncating DB collections between benchmark runs resets data but not service warmth]].
 
 ## Related
 
-- [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
+- [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention|A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
 - [[Truncating DB collections between benchmark runs resets data but not service warmth]]
 
 %% ai-graph-start %%

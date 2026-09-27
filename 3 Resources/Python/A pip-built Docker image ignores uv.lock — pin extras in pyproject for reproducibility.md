@@ -29,8 +29,7 @@ Related: [[Calibrate a cascade threshold against the exact gate condition, not a
 
 ## Related
 
-- [[Piping a Python CLI through tail block-buffers stdout]]
-- [[looking like a hang]]
+- [[Piping a Python CLI through tail block-buffers stdout, looking like a hang]]
 
 %% ai-graph-start %%
 

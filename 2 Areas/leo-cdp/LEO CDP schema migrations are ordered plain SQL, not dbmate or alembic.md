@@ -55,7 +55,7 @@ Locally the `postgres` image bakes schema into `/docker-entrypoint-initdb.d/`, w
 
 ## Related
 
-- [[LEO CDP environment version drift: local PG16/Redis8 vs managed PG15/Redis7]]
+- [[LEO CDP environment version drift local PG16Redis8 vs managed PG15Redis7|LEO CDP environment version drift: local PG16/Redis8 vs managed PG15/Redis7]]
 
 %% ai-graph-start %%
 

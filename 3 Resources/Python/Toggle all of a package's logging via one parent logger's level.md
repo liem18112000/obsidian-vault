@@ -32,8 +32,7 @@ Context: kga `monitoring.py` (LUZ-159671 test-agent).
 
 ## Related
 
-- [[Retry only transient HTTP failures]]
-- [[and test backoff by mocking asyncio.sleep]]
+- [[Retry only transient HTTP failures, and test backoff by mocking asyncio.sleep]]
 
 %% ai-graph-start %%
 

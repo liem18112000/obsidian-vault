@@ -58,7 +58,7 @@ Also: `exclude=` only bites on a **fresh context** (a new gather). Post-hoc excl
 
 ## Related
 
-- [[gather_codebase needs axonivy-prod/<repo> workspace slug]]
+- [[gather_codebase needs axonivy-prodrepo workspace slug|gather_codebase needs axonivy-prod/<repo> workspace slug]]
 
 %% ai-graph-start %%
 

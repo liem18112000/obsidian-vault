@@ -88,11 +88,11 @@ Intermittent because the filter only fires for allowlisted tenants and the async
 
 Fix lives in luz_docs (server), not the integration-test repo — e.g. move the retry seeding to a ContainerResponseFilter (after the resource method consumed UriInfo), snapshot/restore the RESTEasy context around the fireAsync, or decouple the seeding from MP context propagation. As of this session the user chose to fix the test repo only, so the server fix is pending.
 
-General principle: [[3 Resources/Languages/Java/JAX-RS/Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]. Downstream test symptom: [[luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError]].
+General principle: [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]. Downstream test symptom: [[luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError]].
 
 ## Related
 
-- [[3 Resources/Languages/Java/JAX-RS/Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
+- [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
 - [[luz-docs IT create-document step swallows server 500 and surfaces as cryptic base_metadata AttributeError]]
 
 %% ai-graph-start %%

@@ -44,8 +44,7 @@ Used across KGA/TPD LlmAgent conversions (test-agent-v2). See [[ADK to_a2a auto-
 
 ## Related
 
-- [[ADK to_a2a builds A2A routes on ASGI lifespan startup]]
-- [[not at construction]]
+- [[ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction]]
 
 %% ai-graph-start %%
 

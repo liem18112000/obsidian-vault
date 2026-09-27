@@ -49,8 +49,7 @@ See [[luz-docs-import scans metadata sidecars per-file, not the whole ZIP]] and 
 
 ## Related
 
-- [[luz-docs-import scans metadata sidecars per-file]]
-- [[not the whole ZIP]]
+- [[luz-docs-import scans metadata sidecars per-file, not the whole ZIP]]
 - [[Per-file AV scan rejects one file; whole-job scan fails the whole import]]
 
 %% ai-graph-start %%

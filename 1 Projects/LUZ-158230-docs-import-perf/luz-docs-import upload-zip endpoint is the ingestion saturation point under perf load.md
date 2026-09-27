@@ -90,13 +90,13 @@ Related: [[LUZ-158230 docs-import performance]]
 
 The full 60-min run **failed 100%**: 0/8784 upload-zip requests returned 200. Failure mix: **61% 60s client-timeouts (status 0), 28% HTTP 503 (bulkhead), 11% HTTP 500**. Effective throughput ~2.4 iters/s vs a 100-RPS target; 1186 iterations dropped.
 
-**Confirmed root cause (not just "max 2"):** a **liveness-probe death spiral** — both import pods were SIGKILLed 5x each (exit 137) because `GET /app-health/luz-docs-import/livez` could not get a worker thread while the pool was full of blocked uploads. CPU stayed ~55m of a 3-core limit (blocked on I/O, not compute), so scaling luz-docs/-batch/jsonstore/vc-batch did nothing. See the general pattern: [[Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]].
+**Confirmed root cause (not just "max 2"):** a **liveness-probe death spiral** — both import pods were SIGKILLed 5x each (exit 137) because `GET /app-health/luz-docs-import/livez` could not get a worker thread while the pool was full of blocked uploads. CPU stayed ~55m of a 3-core limit (blocked on I/O, not compute), so scaling luz-docs/-batch/jsonstore/vc-batch did nothing. See the general pattern: [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage|Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]].
 
 **Fix order:** repair liveness first (dedicated health thread / relax thresholds), then raise import HPA max to 5-8, then make upload-zip truly async. Full report: `docs/tests/perf-k6-loadtest-2026-08-24/`.
 
 ## SUPERSEDED as *primary* cause (2026-08-24, same day)
 
-The fast-500 follow-up (10 VUs) showed the real primary blocker is **luz-vault being sealed/unready on performance**, cascading jsonstore `addOne` 503 → 400 → import 500. The saturation/liveness death-spiral in this note is a *secondary*, high-load-only amplifier. Primary root cause: [[Perf import failures root-cause: luz-vault sealed/unready cascades jsonstore 503 to upload-zip 500]].
+The fast-500 follow-up (10 VUs) showed the real primary blocker is **luz-vault being sealed/unready on performance**, cascading jsonstore `addOne` 503 → 400 → import 500. The saturation/liveness death-spiral in this note is a *secondary*, high-load-only amplifier. Primary root cause: [[Perf import failures root-cause luz-vault sealedunready cascades jsonstore 503 to upload-zip 500|Perf import failures root-cause: luz-vault sealed/unready cascades jsonstore 503 to upload-zip 500]].
 
 %% ai-graph-start %%
 

@@ -31,11 +31,11 @@ even though the line IS present. The real cause: `package_name` (or engine_versi
 1. Copy the EXACT `package_name` + `engine_version` from the console create-form dropdowns (they're account/region-specific and NOT in public docs). Name format seen: `db.s-general-<vCPU>x<GB>` (e.g. db.s-general-2x8) — but only the console lists which sizes actually exist.
 2. Guard with a resource `lifecycle { precondition { condition = try(data...id, "") != "", error_message = "..." } }` so a bad name fails early with an actionable message instead of the cryptic 'Missing required argument'.
 
-See [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
+See [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
 
 ## Related
 
-- [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 
 %% ai-graph-start %%
 

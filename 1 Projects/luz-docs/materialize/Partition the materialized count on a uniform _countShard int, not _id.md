@@ -67,7 +67,7 @@ This is correct + fast + balanced with no JsonStore change — the only constrai
 
 ## Related
 
-- [[1 Projects/luz-docs/materialize/Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
 - [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
 
 %% ai-graph-start %%

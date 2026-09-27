@@ -29,7 +29,7 @@ Fixes: add the base branch to `on.pull_request.branches` (also closes a real gap
 
 ## Related
 [[LEO CI pushes images only on main/tags; feature branches build-only]]
-[[Review/PR scope: diff the branch's real base, not main, when base is ahead of main]]
+[[ReviewPR scope diff the branch's real base, not main, when base is ahead of main|Review/PR scope: diff the branch's real base, not main, when base is ahead of main]]
 
 ## Related
 

@@ -34,7 +34,7 @@ Observed concretely in LUZ-154613 count benchmark: 720k docs = 11.5 s (~16 µs/d
 
 ## Related
 
-- [[3 Resources/Visual/Excalidraw/Excalidraw data line charts need roundness null, not spline]]
+- [[Excalidraw data line charts need roundness null, not spline]]
 
 %% ai-graph-start %%
 

@@ -65,8 +65,7 @@ Set dir perms in `preVisitDirectory` (before descent) so the walk can enter an o
 
 ## Related
 
-- [[zip4j extractAll applies a ZIP entry's stored Unix mode]]
-- [[so Windows-made zips can extract unreadable files]]
+- [[zip4j extractAll applies a ZIP entry's stored Unix mode, so Windows-made zips can extract unreadable files]]
 
 %% ai-graph-start %%
 

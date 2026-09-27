@@ -65,13 +65,13 @@ A **grounding gate** then admits a candidate fact only if it **resolves to a ver
 **Practical corollaries**
 - Use a **different model family** for the lead generator than for the downstream generator, so you do not compound one model's blind spots (same reasoning as the LLM-as-judge self-enhancement-bias caution).
 - Prefer **triangulation**: a claim backed by >=2 independent sources is high-confidence; a single-source (especially LLM-only) claim is a lead, not a fact.
-- The gate is the enforcement point of the tiering discipline in [[Retrieval tiering: query knowledge sources cheapest and most-trusted first]] — the external LLM is the **last, least-trusted tier**.
+- The gate is the enforcement point of the tiering discipline in [[Retrieval tiering query knowledge sources cheapest and most-trusted first|Retrieval tiering: query knowledge sources cheapest and most-trusted first]] — the external LLM is the **last, least-trusted tier**.
 
 Surfaced designing the self-exploring Knowledge Gathering Agent (test-agent/docs/RESEARCH-self-exploring-knowledge-gather.md).
 
 ## Related
 
-- [[Retrieval tiering: query knowledge sources cheapest and most-trusted first]]
+- [[Retrieval tiering query knowledge sources cheapest and most-trusted first|Retrieval tiering: query knowledge sources cheapest and most-trusted first]]
 
 %% ai-graph-start %%
 

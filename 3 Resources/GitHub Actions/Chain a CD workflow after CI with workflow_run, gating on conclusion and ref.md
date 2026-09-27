@@ -35,11 +35,11 @@ if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
 Pick the target env from `github.event.workflow_run.head_branch` (this holds the branch name for branch pushes and the **tag name** for tag pushes): `main` → uat, `^v[0-9]+\.` → prod. Deploy the exact validated commit with `actions/checkout` `ref: ${{ github.event.workflow_run.head_sha }}` (a bare checkout would grab the default branch tip, not what CI tested). Bind the job to a GitHub **Environment** (`environment: prod`) so required-reviewer protection gates the release.
 
-Gotchas: (1) a `workflow_run`-triggered workflow only runs when its file is on the **default branch** — CD won't trigger from a feature branch until merged. (2) `head_branch` for tags is generally the tag name, but verify; if unreliable, resolve tags at `head_sha` via `gh api`. Companion pattern for the CI side: build ALL services on a release tag but only changed services on a branch (switch the matrix source on `startsWith(github.ref, 'refs/tags/v')`). Context: [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]].
+Gotchas: (1) a `workflow_run`-triggered workflow only runs when its file is on the **default branch** — CD won't trigger from a feature branch until merged. (2) `head_branch` for tags is generally the tag name, but verify; if unreliable, resolve tags at `head_sha` via `gh api`. Companion pattern for the CI side: build ALL services on a release tag but only changed services on a branch (switch the matrix source on `startsWith(github.ref, 'refs/tags/v')`). Context: [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)|leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]].
 
 ## Related
 
-- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)|leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]]
 
 ## Opt-in per-commit deploy marker
 

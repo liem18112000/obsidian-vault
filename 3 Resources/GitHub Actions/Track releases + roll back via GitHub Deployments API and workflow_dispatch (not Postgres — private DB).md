@@ -32,8 +32,7 @@ Gotchas: `POST /deployments` needs `required_contexts: []` + `auto_merge:false` 
 
 ## Related
 
-- [[Chain a CD workflow after CI with workflow_run]]
-- [[gating on conclusion and ref]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
 
 %% ai-graph-start %%
 

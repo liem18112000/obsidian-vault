@@ -13,7 +13,7 @@ type: moc
 
 ## Affiliate
 
-- [[4 Archives/Affiliate/Campaigns/Highland Coffee/Coffee House|Highland Coffee — Coffee House campaign]]
+- [[Coffee House|Highland Coffee — Coffee House campaign]]
 
 %% ai-graph-start %%
 

@@ -58,7 +58,7 @@ Excalidraw, Excalimate, Mermaid, drawio, Diagrams, Data Visualization, Blender, 
 
 ## Obsidian
 
-Vault mechanics, plus the [[3 Resources/Obsidian/Introduction to Obsidian/Roadmap|Introduction to Obsidian]] course.
+Vault mechanics, plus the [[Roadmap|Introduction to Obsidian]] course.
 
 ## Work-Kepler
 

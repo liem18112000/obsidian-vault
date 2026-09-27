@@ -34,8 +34,7 @@ See also [[Natural-language triggers in Claude Code are CLAUDE.md rules, not hoo
 
 ## Related
 
-- [[Natural-language triggers in Claude Code are CLAUDE.md rules]]
-- [[not hooks]]
+- [[Natural-language triggers in Claude Code are CLAUDE.md rules, not hooks]]
 
 %% ai-graph-start %%
 

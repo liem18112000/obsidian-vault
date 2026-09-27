@@ -43,8 +43,7 @@ Seen in Luz PROD: a self-managed `coredns-custom` (CoreDNS 1.12.4) crash-looped 
 
 ## Related
 
-- [[MongoTimeoutException from UnknownHostException is a DNS fault]]
-- [[not DB overload]]
+- [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
 
 %% ai-graph-start %%
 

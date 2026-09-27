@@ -28,7 +28,7 @@ GreenNode/VNG Cloud vDB standalone (`vngcloud_vdb_relational_database`): the **v
 
 **To change volume type:** recreate the instance (destroy+create) or restore a backup into a new instance with the desired type. `volume_size` (grow-only) and the flavor/package CAN be changed in place.
 
-Zone reality: HCM03-1C standalone volume types are `ssd-iops200..3200` (max 3200 IOPS); higher IOPS is cluster-only. See [[GreenNode vDB create constraints: instance name 6-20 chars, password start-with-letter, package family s2-general]].
+Zone reality: HCM03-1C standalone volume types are `ssd-iops200..3200` (max 3200 IOPS); higher IOPS is cluster-only. See [[GreenNode vDB create constraints instance name 6-20 chars, password start-with-letter, package family s2-general|GreenNode vDB create constraints: instance name 6-20 chars, password start-with-letter, package family s2-general]].
 
 ## Related
 

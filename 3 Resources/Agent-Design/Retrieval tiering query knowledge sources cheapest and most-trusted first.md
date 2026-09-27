@@ -59,8 +59,7 @@ Surfaced designing the self-exploring Knowledge Gathering Agent (test-agent/docs
 
 ## Related
 
-- [[External LLM output is a lead generator]]
-- [[not a source of truth]]
+- [[External LLM output is a lead generator, not a source of truth]]
 
 %% ai-graph-start %%
 

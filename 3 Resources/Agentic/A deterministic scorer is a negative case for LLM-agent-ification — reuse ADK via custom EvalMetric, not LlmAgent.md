@@ -81,8 +81,7 @@ Related: [[When agent-ifying LLM calls, preserve the per-call latency budget by 
 
 ## Related
 
-- [[When agent-ifying LLM calls]]
-- [[preserve the per-call latency budget by gating non-essential generators behind a flag]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
 - [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
 
 %% ai-graph-start %%

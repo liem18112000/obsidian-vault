@@ -33,8 +33,7 @@ Also observed (same run): the reasoning model cost ~4x and ran ~2x slower than g
 
 ## Related
 
-- [[Hermetic E2E test of an LLM agent: mock only the SDK boundary]]
-- [[inject the prompt snapshot]]
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
 
 %% ai-graph-start %%
 

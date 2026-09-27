@@ -29,12 +29,12 @@ This validates the exact code path (connect + STARTTLS + login) with the contain
 Trade-off: this bypasses the HTTP/auth layer, so it does not prove the route is reachable+authorized -- only that the underlying logic passes. Acceptable for a post-deploy dependency check; add a token-based curl only if you must prove the HTTP surface too.
 
 ## Related
-[[SMTP health check stays out of auth-exempt GET /metadata login-path]]
+[[SMTP health check stays out of auth-exempt GET metadata login-path|SMTP health check stays out of auth-exempt GET /metadata login-path]]
 [[LEO CI pushes images only on main/tags; feature branches build-only]]
 
 ## Related
 
-- [[SMTP health check stays out of auth-exempt GET /metadata login-path]]
+- [[SMTP health check stays out of auth-exempt GET metadata login-path|SMTP health check stays out of auth-exempt GET /metadata login-path]]
 
 %% ai-graph-start %%
 

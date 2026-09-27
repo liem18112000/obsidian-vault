@@ -29,11 +29,11 @@ Setting `public_access=true` on `vngcloud_vdb_relational_database` applies clean
 Booting the bastion with a `user_data` `#cloud-config` (to create the login user + install psql) resulted in a box where **sshd never listens** — after opening tcp/22, SSH to the floating IP returns **Connection REFUSED** (fast RST, NOT timeout), which proves the floating IP DOES route to the box; the box just has nothing on 22. VNG`s DEFAULT cloud-init (used when you set the native `ssh_key`/`user_name`/`user_password` and NO user_data) is what brings sshd up and injects the key. So: prefer native login; do package installs (e.g. postgresql-client) AFTER first SSH (or have your runner apt-install on the bastion). refused-vs-timeout is the key diagnostic: refused = routes+no-listener (fixable on the box); timeout = no route (network/secgroup).
 
 ## Related
-[[VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp/22 secgrouprule]]
+[[VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp22 secgrouprule|VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp/22 secgrouprule]]
 
 ## Related
 
-- [[VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp/22 secgrouprule]]
+- [[VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp22 secgrouprule|VNG Default secgroup opens nothing inbound; SSH times out until you add a tcp/22 secgrouprule]]
 
 %% ai-graph-start %%
 

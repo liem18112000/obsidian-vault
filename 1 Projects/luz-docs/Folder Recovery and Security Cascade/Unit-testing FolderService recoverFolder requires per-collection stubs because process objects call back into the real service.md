@@ -26,7 +26,7 @@ entities:
 - buildPatchQuery
 - paging loops
 - subList.clear()
-- '[[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the
+- '[[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path|Folder recovery re-parenting must recompute inheritedSecurityClassCode like the
   PUT path]]'
 - inheritedSecurityClassCode
 - PUT path

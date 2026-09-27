@@ -28,7 +28,7 @@ Symptom that fingerprints this: the automated flow reaches the prompt fine (e.g.
 
 ## Related
 
-- [[3 Resources/Backend/CLI/Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing]]
+- [[Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing]]
 
 %% ai-graph-start %%
 

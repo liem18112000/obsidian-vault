@@ -26,7 +26,7 @@ Two related Excalidraw rendering rules (same session):
 
 ## Related
 
-- [[block/buzz architecture: a Nostr-relay hive mind for humans and AI agents]]
+- [[blockbuzz architecture a Nostr-relay hive mind for humans and AI agents|block/buzz architecture: a Nostr-relay hive mind for humans and AI agents]]
 
 %% ai-graph-start %%
 

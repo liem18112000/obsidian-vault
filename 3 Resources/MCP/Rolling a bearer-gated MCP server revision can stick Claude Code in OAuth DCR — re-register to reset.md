@@ -28,7 +28,7 @@ claude mcp add --transport http <name> <url> --header "Authorization: Bearer $TO
 ```
 Diagnosis tip: prove the SERVER is fine independently with an authenticated `initialize` POST before touching the client — if that returns capabilities, the problem is purely Claude Codes client state, not the server.
 
-See [[MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set TransportSecuritySettings]], [[Bridge-gateway use separate secrets for the inbound caller token and the outbound backend token]].
+See [[MCP Streamable-HTTP 421 Invalid Host header behind a proxy — set TransportSecuritySettings]], [[Bridgegateway use separate secrets for the inbound caller token and the outbound backend token|Bridge-gateway use separate secrets for the inbound caller token and the outbound backend token]].
 
 ## Related
 

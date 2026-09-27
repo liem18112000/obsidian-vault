@@ -80,7 +80,7 @@ type: howto
 ## Related
 - [[Kustomize component makes a service tier optional per environment]]
 - [[LEO Customer360 GreenNode Terraform infrastructure]]
-- [[Customer360 GreenNode region split: compute HCM03, vStorage HCM04]]
+- [[Customer360 GreenNode region split compute HCM03, vStorage HCM04|Customer360 GreenNode region split: compute HCM03, vStorage HCM04]]
 
 %% ai-graph-start %%
 

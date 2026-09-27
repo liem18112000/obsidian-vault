@@ -25,13 +25,12 @@ The checkpoints actually serve two server-side purposes:
 1. **Idempotency durability** — `IdempotentImportService.getImportedFilePaths` reads prior jobs` persisted `successfulFiles` + `skippedFiles` (filtered by `importZipName`) to skip already-imported files on re-import. If the pod crashes mid-import with no checkpoint, the dead job persisted nothing → a re-import dedups nothing → DUPLICATE documents.
 2. **Liveness heartbeat** — `JsonStoreService.updateJob` sets `lastModifield = Instant.now()`; `failJobIfStale` marks a non-terminal job FAILED(TIMEOUT) once `lastModifield` > 3600s old. Periodic writes stop a healthy long import from being wrongly timed out.
 
-**Decision (2026-08-10):** collapsing to a single final write was considered (since no consumer reads progress) but rejected — it would break crash-safe dedup and risk false timeouts. Instead the cadence was COARSENED: `FLUSH_EVERY_N` 100→1000, `FLUSH_EVERY_MS` 1000→10000 — keeps durability + heartbeat, ~10x fewer Mongo writes on large imports. Related: [[Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE]], [[luz-docs-import bug: rejected files not removed from unprocessedFiles]].
+**Decision (2026-08-10):** collapsing to a single final write was considered (since no consumer reads progress) but rejected — it would break crash-safe dedup and risk false timeouts. Instead the cadence was COARSENED: `FLUSH_EVERY_N` 100→1000, `FLUSH_EVERY_MS` 1000→10000 — keeps durability + heartbeat, ~10x fewer Mongo writes on large imports. Related: [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE|Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE]], [[luz-docs-import bug rejected files not removed from unprocessedFiles|luz-docs-import bug: rejected files not removed from unprocessedFiles]].
 
 ## Related
 
-- [[Luz docs-import zip flow: upload-zip returns job-id]]
-- [[poll GET until DONE]]
-- [[luz-docs-import bug: rejected files not removed from unprocessedFiles]]
+- [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
+- [[luz-docs-import bug rejected files not removed from unprocessedFiles|luz-docs-import bug: rejected files not removed from unprocessedFiles]]
 
 %% ai-graph-start %%
 

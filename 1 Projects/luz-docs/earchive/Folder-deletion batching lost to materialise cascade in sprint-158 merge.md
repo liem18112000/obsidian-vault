@@ -40,7 +40,7 @@ Resolution chosen (2026-06-12, merge e3ce6663b): **master per-doc flow wins; bra
 
 ## Related
 
-- [[1 Projects/luz-docs/earchive/luz_docs parent-change cascade recovers forward, not via snapshot rollback]]
+- [[luz_docs parent-change cascade recovers forward, not via snapshot rollback]]
 
 %% ai-graph-start %%
 

@@ -32,8 +32,7 @@ Runs cleanly as a frequently-scheduled Dagster op/sensor tick rather than a bare
 
 ## Related
 
-- [[Broker Redis needs opposite config from cache Redis]]
-- [[run it separately]]
+- [[Broker Redis needs opposite config from cache Redis, run it separately]]
 
 %% ai-graph-start %%
 

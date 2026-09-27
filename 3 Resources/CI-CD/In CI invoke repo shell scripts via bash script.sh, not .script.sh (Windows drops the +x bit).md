@@ -30,8 +30,7 @@ Real case: `cd.yml` ran `./deploy-all.sh …` and hit exit 126 on the GitHub run
 
 ## Related
 
-- [[Chain a CD workflow after CI with workflow_run]]
-- [[gating on conclusion and ref]]
+- [[Chain a CD workflow after CI with workflow_run, gating on conclusion and ref]]
 
 %% ai-graph-start %%
 

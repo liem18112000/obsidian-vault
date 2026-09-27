@@ -66,7 +66,7 @@ flowchart TD
 - [[Claude Code Skill anatomy]] — how a SKILL.md works
 - [[Designing an Accesstrade skill for Claude Code]] — wrap the API as a reusable skill
 - [[Claude Code hooks event model]] — the trigger system
-- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]] — concrete hooks for affiliate work
+- [[Claude Code hooks event model]] — concrete hooks for affiliate work
 - [[Secrets handling for affiliate API keys]] — never leak the token
 - [[Skills vs Hooks vs MCP vs subagents]] — pick the right primitive
 

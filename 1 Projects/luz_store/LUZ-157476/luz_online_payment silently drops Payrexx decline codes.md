@@ -47,7 +47,7 @@ Repo: luz_online_payment.
 ## Related
 
 - [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
-- [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+- [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
 
 %% ai-graph-start %%
 

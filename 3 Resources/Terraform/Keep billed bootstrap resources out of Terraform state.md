@@ -24,12 +24,12 @@ Why: `terraform destroy` (or a botched `apply`/state drift) must never be able t
 
 The Terraform module then references the bootstrapped resource by a stable id/name it does not own. Example: `deployments/storage/scripts/create-project.sh` creates the vStorage project; the Terraform (via an S3 key scoped to that project) only manages buckets inside it.
 
-Related: [[vStorage project is a paid prerequisite Terraform cannot create]], [[vStorage REST control-plane API: endpoints and vIAM bearer auth]].
+Related: [[vStorage project is a paid prerequisite Terraform cannot create]], [[vStorage REST control-plane API endpoints and vIAM bearer auth|vStorage REST control-plane API: endpoints and vIAM bearer auth]].
 
 ## Related
 
 - [[vStorage project is a paid prerequisite Terraform cannot create]]
-- [[vStorage REST control-plane API: endpoints and vIAM bearer auth]]
+- [[vStorage REST control-plane API endpoints and vIAM bearer auth|vStorage REST control-plane API: endpoints and vIAM bearer auth]]
 
 %% ai-graph-start %%
 

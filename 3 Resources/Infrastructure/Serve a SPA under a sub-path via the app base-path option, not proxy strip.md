@@ -29,8 +29,7 @@ A SPA'\''s HTML references assets by relative or root-absolute paths and its JS 
 
 ## Related
 
-- [[L4 LB: expose own-login UIs directly]]
-- [[gate no-auth UIs behind oauth2-proxy]]
+- [[L4 LB expose own-login UIs directly, gate no-auth UIs behind oauth2-proxy]]
 
 %% ai-graph-start %%
 

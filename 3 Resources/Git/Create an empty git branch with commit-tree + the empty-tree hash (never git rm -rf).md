@@ -32,7 +32,7 @@ git rebase --onto "$E" --root feature/test-agent   # feature = E -> code
 ```
 Then `git push --force-with-lease origin main feature/test-agent`. `commit-tree` writes a commit object directly from a tree + parents without touching HEAD, index, or the working copy — the safe primitive for history surgery.
 
-See [[Bridge-gateway use separate secrets for the inbound caller token and the outbound backend token]].
+See [[Bridgegateway use separate secrets for the inbound caller token and the outbound backend token|Bridge-gateway use separate secrets for the inbound caller token and the outbound backend token]].
 
 %% ai-graph-start %%
 

@@ -25,7 +25,7 @@ Fix shape: inject `buildInlineCommentsBlock(comments, dir, docLabel)` into the t
 
 ## Related
 
-- [[3 Resources/AI/Engineering/Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded]]
+- [[Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded]]
 
 %% ai-graph-start %%
 

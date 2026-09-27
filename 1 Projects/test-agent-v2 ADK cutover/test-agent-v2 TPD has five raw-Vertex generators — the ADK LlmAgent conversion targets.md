@@ -81,8 +81,7 @@ Related: [[test-agent-v2 KGA has no live LlmAgent — explore steps are the firs
 ## Related
 
 - [[test-agent-v2 KGA has no live LlmAgent — explore steps are the first ADK LlmAgent target]]
-- [[When agent-ifying LLM calls]]
-- [[preserve the per-call latency budget by gating non-essential generators behind a flag]]
+- [[When agent-ifying LLM calls, preserve the per-call latency budget by gating non-essential generators behind a flag]]
 - [[ADK LlmAgent with output_schema cannot use tools or transfer to other agents]]
 
 %% ai-graph-start %%

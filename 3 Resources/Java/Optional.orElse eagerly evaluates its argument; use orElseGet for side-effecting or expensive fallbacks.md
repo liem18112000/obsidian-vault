@@ -30,7 +30,7 @@ Because orElse's argument is always evaluated, `createFolder` was invoked for ev
 
 Rule of thumb: if the fallback is a method call that does I/O, mutates state, or is costly, use `orElseGet`; reserve `orElse` for already-computed constants/values. The same eager-vs-lazy trap applies to `Objects.requireNonNullElse` vs `requireNonNullElseGet`, and Map `getOrDefault` vs `computeIfAbsent`.
 
-Related: [[luz_docs_import]], [[luz_jsonstore find: project/sort/collation params must omit outer braces (server wraps them)]].
+Related: [[luz_docs_import]], [[luz_jsonstore find projectsortcollation params must omit outer braces (server wraps them)|luz_jsonstore find: project/sort/collation params must omit outer braces (server wraps them)]].
 
 ## Related
 

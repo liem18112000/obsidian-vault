@@ -103,7 +103,7 @@ If your traffic is top-of-funnel and curiosity-driven, CPC or display (CPM) may 
 - [[Revenue Share]] — the recurring alternative to one-off CPA.
 
 ---
-*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+*See also: [[Term|all affiliate terms]]*
 
 %% ai-graph-start %%
 

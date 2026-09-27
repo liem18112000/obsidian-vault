@@ -29,11 +29,11 @@ type: howto
 
 **The real idempotency source is Terraform STATE, not the script.** With only local state, a second run from another machine/CI has no record of the resource and will CREATE A DUPLICATE. For cross-machine idempotency use a shared remote backend with locking (or `terraform import` a pre-existing resource into state first).
 
-See [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
+See [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
 
 ## Related
 
-- [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 
 %% ai-graph-start %%
 

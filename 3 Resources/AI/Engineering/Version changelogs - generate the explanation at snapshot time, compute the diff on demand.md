@@ -31,7 +31,7 @@ Related: [[Version artifacts by lifecycle event with content-dedupe, store in DB
 
 ## Related
 
-- [[3 Resources/Practices/Architecture/Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
+- [[Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
 
 %% ai-graph-start %%
 

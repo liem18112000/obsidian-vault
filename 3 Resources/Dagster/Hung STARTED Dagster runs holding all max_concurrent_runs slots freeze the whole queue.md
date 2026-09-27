@@ -29,13 +29,13 @@ Seen on customer360 UAT (2026-09): 2 `segmentation_job` runs hung ~19h/25h at `r
 
 ## Related
 [[Dagster run_monitoring start_timeout does not reap already-STARTED hung runs]]
-[[Diagnose a stalled Dagster queue: daemon heartbeat vs STARTED-run age vs success rate]]
+[[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate|Diagnose a stalled Dagster queue: daemon heartbeat vs STARTED-run age vs success rate]]
 [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
 
 ## Related
 
 - [[Dagster run_monitoring start_timeout does not reap already-STARTED hung runs]]
-- [[Diagnose a stalled Dagster queue: daemon heartbeat vs STARTED-run age vs success rate]]
+- [[Diagnose a stalled Dagster queue daemon heartbeat vs STARTED-run age vs success rate|Diagnose a stalled Dagster queue: daemon heartbeat vs STARTED-run age vs success rate]]
 - [[Dagster QueuedRunCoordinator needs a running daemon to drain the run queue]]
 
 %% ai-graph-start %%

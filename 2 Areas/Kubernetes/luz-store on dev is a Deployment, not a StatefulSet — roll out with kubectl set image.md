@@ -62,8 +62,7 @@ kubectl rollout status deployment/luz-store -n dev --timeout=180s
 
 ## Related
 
-- [[postgres skill dev port-forward needs the klara-nonprod GKE context]]
-- [[not kind-customer360]]
+- [[postgres skill dev port-forward needs the klara-nonprod GKE context, not kind-customer360]]
 
 %% ai-graph-start %%
 

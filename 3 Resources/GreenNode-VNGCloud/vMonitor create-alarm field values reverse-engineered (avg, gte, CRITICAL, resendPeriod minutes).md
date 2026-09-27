@@ -28,11 +28,11 @@ vMonitor `POST /vmonitor-api/api/v1/alarms/metrics` validates one field at a tim
 - **resendPeriod**: integer **minutes**, range **10-1440**.
 - Required fields seen: name, description, metricProduct, metricName, metricStatistic, metricPeriod, metricFilter, condition, thresholdMethod, thresholdValue, severity, interval, checkTime, resendEnabled/Period/Times.
 
-**Still unknown → cause an opaque HTTP 500** (not a 400): the exact vDB **metricName** strings, the **metricProduct** code, and the **metricFilter** shape. A 500 (vs 400) means those passed field-presence validation but the backend couldn't resolve the metric. Get them in one shot via a browser **DevTools -> Network 'Copy as cURL'** of a manually-created console alarm. Implemented in leo-customer360 deployments/postgres/vmonitor/setup_alarms.py. See [[vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-api/api/v1/alarms/metrics]].
+**Still unknown → cause an opaque HTTP 500** (not a 400): the exact vDB **metricName** strings, the **metricProduct** code, and the **metricFilter** shape. A 500 (vs 400) means those passed field-presence validation but the backend couldn't resolve the metric. Get them in one shot via a browser **DevTools -> Network 'Copy as cURL'** of a manually-created console alarm. Implemented in leo-customer360 deployments/postgres/vmonitor/setup_alarms.py. See [[vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-apiapiv1alarmsmetrics|vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-api/api/v1/alarms/metrics]].
 
 ## Related
 
-- [[vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-api/api/v1/alarms/metrics]]
+- [[vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-apiapiv1alarmsmetrics|vMonitor is not in the vngcloud Terraform provider; alarms go via POST vmonitor-api/api/v1/alarms/metrics]]
 
 %% ai-graph-start %%
 

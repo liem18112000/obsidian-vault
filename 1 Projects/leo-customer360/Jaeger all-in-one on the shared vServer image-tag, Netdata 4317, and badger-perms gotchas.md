@@ -72,13 +72,12 @@ Symptom: deployed `customer360-api` had no `opentelemetry-instrument` even thoug
 
 ## Related
 [[Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP]]
-[[leo-customer360 tracing: OTel off-by-default on UAT, on at 10% on PROD]]
+[[leo-customer360 tracing OTel off-by-default on UAT, on at 10% on PROD|leo-customer360 tracing: OTel off-by-default on UAT, on at 10% on PROD]]
 
 ## Related
 
 - [[Trace FastAPI with OpenTelemetry zero-code instrumentation emitting OTLP]]
-- [[leo-customer360 tracing: OTel off-by-default on UAT]]
-- [[on at 10% on PROD]]
+- [[leo-customer360 tracing OTel off-by-default on UAT, on at 10% on PROD]]
 
 %% ai-graph-start %%
 

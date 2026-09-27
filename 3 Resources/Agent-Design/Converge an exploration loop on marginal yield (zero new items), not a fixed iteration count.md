@@ -73,11 +73,11 @@ Concretely, per round: derive the next query/focus from what the *previous* roun
 
 **Make the loop RESUMABLE**: persist `{round, visited, focus, reflections}` keyed by a stable id (context/session id) to durable storage at each round boundary; on start, load and resume from the stored round rather than restarting. This is what lets a loop survive a redeploy / request-timeout / crash mid-exploration instead of re-doing all the expensive work. Keep the core loop cheap (no LLM per round if the focus can be derived mechanically); gate any per-round model calls behind flags and offload them so they never block the event loop.
 
-Surfaced building the test-agent KGA self-exploration controller (G5): fan-out → crawl → reflect → derive-focus → converge, bounded + resumable, default-off. Related: [[Retrieval tiering: query knowledge sources cheapest and most-trusted first]].
+Surfaced building the test-agent KGA self-exploration controller (G5): fan-out → crawl → reflect → derive-focus → converge, bounded + resumable, default-off. Related: [[Retrieval tiering query knowledge sources cheapest and most-trusted first|Retrieval tiering: query knowledge sources cheapest and most-trusted first]].
 
 ## Related
 
-- [[Retrieval tiering: query knowledge sources cheapest and most-trusted first]]
+- [[Retrieval tiering query knowledge sources cheapest and most-trusted first|Retrieval tiering: query knowledge sources cheapest and most-trusted first]]
 - [[LLM query enrichment for a substring-OR matcher must contract]]
 - [[not expand]]
 - [[the token set]]

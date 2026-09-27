@@ -54,8 +54,7 @@ Why it matters: something that works on PG 16 locally can fail on PG 15 in prod;
 
 ## Related
 
-- [[LEO CDP schema migrations are ordered plain SQL]]
-- [[not dbmate or alembic]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
 
 %% ai-graph-start %%
 

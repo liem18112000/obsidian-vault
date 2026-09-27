@@ -86,7 +86,7 @@ Same sale, completely different payout depending on the model. This is why coupo
 - [[Reversal]] — even a correctly-attributed sale can be reversed later.
 
 ---
-*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+*See also: [[Term|all affiliate terms]]*
 
 %% ai-graph-start %%
 

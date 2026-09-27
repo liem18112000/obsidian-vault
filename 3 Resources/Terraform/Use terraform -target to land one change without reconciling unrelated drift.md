@@ -27,12 +27,11 @@ terraform apply -target='aws_security_group_rule.extra["8000-10.0.0.5/32"]'
 
 Quote the whole address in single quotes — resource addresses with map keys contain `["..."]` (brackets + double-quotes) the shell would otherwise mangle. Terraform still applies the target's dependencies, so it stays consistent. This is the safe way to add one firewall rule / one resource to a drifted module without a big reconciliation you didn't sign up for. Re-run a `-target` plan afterwards; "No changes" proves the resource is now in state.
 
-Caveat: -target is meant for surgical fixes, not routine workflow — the drift you skipped is still there and someone must reconcile it later (or a future untargeted apply will). In LEO Customer360 the deploy wrapper exposes this as `TARGET=... ./deploy.sh <env> apply`. Relates to [[LEO Customer360 VNG topology: co-located services use localhost, cross-box hops need explicit extra_ingress]].
+Caveat: -target is meant for surgical fixes, not routine workflow — the drift you skipped is still there and someone must reconcile it later (or a future untargeted apply will). In LEO Customer360 the deploy wrapper exposes this as `TARGET=... ./deploy.sh <env> apply`. Relates to [[LEO Customer360 VNG topology co-located services use localhost, cross-box hops need explicit extra_ingress|LEO Customer360 VNG topology: co-located services use localhost, cross-box hops need explicit extra_ingress]].
 
 ## Related
 
-- [[LEO Customer360 VNG topology: co-located services use localhost]]
-- [[cross-box hops need explicit extra_ingress]]
+- [[LEO Customer360 VNG topology co-located services use localhost, cross-box hops need explicit extra_ingress]]
 
 %% ai-graph-start %%
 

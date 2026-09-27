@@ -31,11 +31,11 @@ Robust fixes:
 Also: positional params past 9 in bash need braces — `${10}`, not `$10` (`$10` is `$1` + literal `0`).
 
 ## Related
-[[Fail-open service config: render the instance config at container start from backend probes]]
+[[Fail-open service config render the instance config at container start from backend probes|Fail-open service config: render the instance config at container start from backend probes]]
 
 ## Related
 
-- [[Fail-open service config: render the instance config at container start from backend probes]]
+- [[Fail-open service config render the instance config at container start from backend probes|Fail-open service config: render the instance config at container start from backend probes]]
 
 %% ai-graph-start %%
 

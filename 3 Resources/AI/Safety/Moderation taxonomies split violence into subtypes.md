@@ -22,7 +22,7 @@ When building a detector, mirror this: report per-subtype scores (e.g. general v
 
 ## Related
 
-- [[3 Resources/AI/Safety/Violence detection needs a trained classifier, not keyword lists]]
+- [[Violence detection needs a trained classifier, not keyword lists]]
 
 %% ai-graph-start %%
 

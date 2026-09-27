@@ -52,7 +52,7 @@ Then capture through `gc`, never bare `gcloud`. With `set -o pipefail` on, the w
 
 ## Related
 
-- [[Secret Manager versions accumulate silently — one per deploy, all left enabled]]
+- [[Secret Manager versions accumulate silently - one per deploy, all left enabled|Secret Manager versions accumulate silently — one per deploy, all left enabled]]
 - [[Cloud Run resolves a latest secret reference at instance start, not per request]]
 
 %% ai-graph-start %%

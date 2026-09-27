@@ -27,8 +27,7 @@ So the split is: **archive-push = in the DB container**; **backup/expire = sidec
 
 ## Related
 
-- [[pgBackRest runs on the DB host]]
-- [[so it cannot back up a managed DB like VNG vDB]]
+- [[pgBackRest runs on the DB host, so it cannot back up a managed DB like VNG vDB]]
 
 %% ai-graph-start %%
 

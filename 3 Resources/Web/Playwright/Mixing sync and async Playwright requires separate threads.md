@@ -30,7 +30,7 @@ Each launches its own browser process, so two Chromes are alive at once (more RA
 
 ## Related
 
-- [[3 Resources/Practices/Software Design/Producerconsumer overlap only saves min(producer, consumer) time]]
+- [[Producerconsumer overlap only saves min(producer, consumer) time]]
 - [[Use Playwright evaluate_all to batch-read element properties in one round-trip]]
 
 %% ai-graph-start %%

@@ -38,12 +38,12 @@ A Docker build step gated `if: github.event_name != pull_request` does NOT run o
 
 ## Related
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
-- [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
 
 ## Related
 
-- [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
-- [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
 
 %% ai-graph-start %%
 

@@ -23,8 +23,7 @@ Always derive the security principal (tenant_id, user_id, roles) from the verifi
 
 ## Related
 
-- [[Postgres RLS should be defense-in-depth]]
-- [[not the sole tenant boundary]]
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
 
 %% ai-graph-start %%
 

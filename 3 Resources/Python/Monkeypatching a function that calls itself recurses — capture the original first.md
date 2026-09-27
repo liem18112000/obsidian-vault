@@ -28,8 +28,7 @@ General rule: wrapper holds its own handle to the real callable, grabbed at cons
 
 ## Related
 
-- [[Hermetic E2E test of an LLM agent: mock only the SDK boundary]]
-- [[inject the prompt snapshot]]
+- [[Hermetic E2E test of an LLM agent mock only the SDK boundary, inject the prompt snapshot]]
 
 %% ai-graph-start %%
 

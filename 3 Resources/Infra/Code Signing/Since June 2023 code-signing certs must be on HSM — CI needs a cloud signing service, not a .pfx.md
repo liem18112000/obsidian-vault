@@ -32,7 +32,7 @@ As of **June 2023** (CA/Browser Forum baseline requirements), every newly issued
 
 ## Related
 
-- [[3 Resources/Frontend/Electron/Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
+- [[Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
 
 %% ai-graph-start %%
 

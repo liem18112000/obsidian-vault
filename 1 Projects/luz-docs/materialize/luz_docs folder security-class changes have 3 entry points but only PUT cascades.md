@@ -59,7 +59,7 @@ So PATCH-based security changes leave document sentinels (`_isPublic`, `_effecti
 
 ## Related
 
-- [[3 Resources/Data/MongoDB/Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
+- [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
 
 %% ai-graph-start %%
 

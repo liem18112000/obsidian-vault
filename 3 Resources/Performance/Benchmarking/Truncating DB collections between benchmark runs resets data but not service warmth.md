@@ -23,11 +23,11 @@ Cleaning/truncating the database (e.g. `deleteMany({})` on the tenant collection
 
 So a cold first run stays slow no matter how thoroughly you truncate — the differentiator is **service warmth, not data**. When you see "run 1 much slower than runs 2+ despite cleaning between runs", suspect warm-up: either **discard run 1** or add an explicit **warm-up pass** before timing. Truncation only guarantees a comparable *data* starting point across runs; it says nothing about the process/JVM/downstream being equally warm.
 
-Related: [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]], [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]].
+Related: [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention|A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]], [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]].
 
 ## Related
 
-- [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
+- [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention|A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
 - [[Small per-run batches warm the JIT gradually across runs; large batches warm within one run]]
 
 %% ai-graph-start %%

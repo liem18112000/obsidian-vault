@@ -13,3 +13,14 @@
 # google-github-actions/auth writes the GCP SA key into the workspace (push protection
 # rejects it, and it must never be committed):
 gha-creds-*.json
+
+# Confluence mirrors: binary attachments only.
+# ~1.5 GB of PNG/PDF/MP4 that git would keep forever, every version. The .md pages ARE
+# committed; images are restorable from the source export (~/.claude/docs/atlassian) or
+# the live wiki via each page's `url:` front-matter field.
+# Scoped to the two mirrors on purpose — a future vault-native attachments/ stays tracked.
+3 Resources/Confluence/**/attachments/
+3 Resources/Confluence-Wiki/_attachments/
+
+# JetBrains IDE settings, not vault content
+.idea/

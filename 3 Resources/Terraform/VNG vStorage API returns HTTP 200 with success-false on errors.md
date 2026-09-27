@@ -28,11 +28,11 @@ The VNG Cloud vStorage control-plane REST API (and other VNG APIs of the same fa
 
 Discovered while writing deployments/storage/scripts/create-project.sh for leo-customer360: the create returned 200 with success:false because the body used the wrong field names.
 
-Related: [[vStorage REST control-plane API: endpoints and vIAM bearer auth]].
+Related: [[vStorage REST control-plane API endpoints and vIAM bearer auth|vStorage REST control-plane API: endpoints and vIAM bearer auth]].
 
 ## Related
 
-- [[vStorage REST control-plane API: endpoints and vIAM bearer auth]]
+- [[vStorage REST control-plane API endpoints and vIAM bearer auth|vStorage REST control-plane API: endpoints and vIAM bearer auth]]
 
 %% ai-graph-start %%
 

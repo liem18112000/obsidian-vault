@@ -31,8 +31,7 @@ Root cause was found via `git log`/blame on the SQL sequence: the assertions had
 
 ## Related
 
-- [[Set Postgres RLS session GUC via the raw DBAPI connection]]
-- [[not Session.execute]]
+- [[Set Postgres RLS session GUC via the raw DBAPI connection, not Session.execute]]
 
 %% ai-graph-start %%
 

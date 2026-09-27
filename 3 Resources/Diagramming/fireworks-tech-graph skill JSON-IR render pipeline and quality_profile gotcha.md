@@ -28,7 +28,7 @@ PNG/GIF export needs CairoSVG/rsvg-convert (+ Node for GIF); SVG render needs on
 
 ## Related
 
-- [[Embed generated SVG in an artifact via <img> data-URI to isolate its styles]]
+- [[Embed generated SVG in an artifact via img data-URI to isolate its styles|Embed generated SVG in an artifact via <img> data-URI to isolate its styles]]
 
 %% ai-graph-start %%
 

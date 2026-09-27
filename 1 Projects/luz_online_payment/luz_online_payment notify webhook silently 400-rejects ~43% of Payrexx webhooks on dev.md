@@ -71,7 +71,7 @@ Related: [[Payrexx notify webhook dispatches to two consumers, neither forwards 
 
 ## Related
 
-- [[1 Projects/luz_online_payment/Payrexx notify webhook dispatches to two consumers, neither forwards decline code]]
+- [[Payrexx notify webhook dispatches to two consumers, neither forwards decline code]]
 - [[TransactionStatus.from returns null on unknown Payrexx status causing silent NotNull 400]]
 
 %% ai-graph-start %%

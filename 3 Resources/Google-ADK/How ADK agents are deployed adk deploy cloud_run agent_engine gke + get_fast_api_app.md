@@ -29,12 +29,12 @@ app = get_fast_api_app(agents_dir='src', a2a=True, web=False, session_service_ur
 ```
 It auto-discovers every agent package under agents_dir (each needs `agent.py:root_agent`), and with **`a2a=True`** ALSO exposes A2A per agent alongside the REST API. Deploy manually with `gcloud run deploy <svc> --source .`.
 
-Gotcha / choice: `get_fast_api_app`/`adk deploy cloud_run` serve ADK's OWN REST API — this is NOT the same as `to_a2a(agent)` which serves ONLY the A2A JSON-RPC protocol at `/`. If a client speaks A2A (e.g. an MCP↔A2A bridge), use `to_a2a` (or `get_fast_api_app(a2a=True)`), not the vanilla `/run` server. Related: [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]], [[adk web/run discovers agents by importing package.agent.root_agent via AgentLoader]].
+Gotcha / choice: `get_fast_api_app`/`adk deploy cloud_run` serve ADK's OWN REST API — this is NOT the same as `to_a2a(agent)` which serves ONLY the A2A JSON-RPC protocol at `/`. If a client speaks A2A (e.g. an MCP↔A2A bridge), use `to_a2a` (or `get_fast_api_app(a2a=True)`), not the vanilla `/run` server. Related: [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]], [[adk webrun discovers agents by importing package.agent.root_agent via AgentLoader|adk web/run discovers agents by importing package.agent.root_agent via AgentLoader]].
 
 ## Related
 
 - [[ADK to_a2a returns a Starlette app and accepts a custom Runner and AgentCard]]
-- [[adk web/run discovers agents by importing package.agent.root_agent via AgentLoader]]
+- [[adk webrun discovers agents by importing package.agent.root_agent via AgentLoader|adk web/run discovers agents by importing package.agent.root_agent via AgentLoader]]
 
 %% ai-graph-start %%
 

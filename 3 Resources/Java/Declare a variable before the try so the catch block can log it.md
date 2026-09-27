@@ -39,8 +39,7 @@ Trade-off: hoisting the header-parse out of the guarded region means an exceptio
 
 ## Related
 
-- [[RESTEasy multipart repeated field name yields a List]]
-- [[get(0) silently drops extras]]
+- [[RESTEasy multipart repeated field name yields a List, get(0) silently drops extras]]
 
 %% ai-graph-start %%
 

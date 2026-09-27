@@ -45,8 +45,7 @@ Related: [[Check every stage that writes a field, not just the one that defines 
 
 ## Related
 
-- [[Check every stage that writes a field]]
-- [[not just the one that defines it]]
+- [[Check every stage that writes a field, not just the one that defines it]]
 
 %% ai-graph-start %%
 

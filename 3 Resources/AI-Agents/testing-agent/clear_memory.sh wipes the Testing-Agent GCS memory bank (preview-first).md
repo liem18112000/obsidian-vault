@@ -57,7 +57,7 @@ type: howto
 **Gotcha:** to fully reset you want all five folders — see the linked layout note for why clearing only per-context folders leaves a dangling `index/`.
 
 ## Related
-[[Testing-Agent GCS memory bank: one bucket, memory/ root, five subfolders]]
+[[Testing-Agent GCS memory bank one bucket, memory root, five subfolders|Testing-Agent GCS memory bank: one bucket, memory/ root, five subfolders]]
 
 ## Related
 

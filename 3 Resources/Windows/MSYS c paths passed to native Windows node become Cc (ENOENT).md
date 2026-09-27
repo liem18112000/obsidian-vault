@@ -24,7 +24,7 @@ Bash builtins (`cd`, `cat`, `ls`) accept `/c/...` because MSYS translates them, 
 
 ## Related
 
-- [[Excalidraw JSON generator ghost-text: filtering a node's rectangle by id leaves its text elements behind]]
+- [[Excalidraw JSON generator ghost-text filtering a node's rectangle by id leaves its text elements behind|Excalidraw JSON generator ghost-text: filtering a node's rectangle by id leaves its text elements behind]]
 
 %% ai-graph-start %%
 

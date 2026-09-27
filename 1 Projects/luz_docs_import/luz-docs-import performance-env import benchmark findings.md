@@ -65,8 +65,7 @@ Related: [[Performance Mongo is a mongos-routed sharded cluster — truncate via
 
 ## Related
 
-- [[Performance Mongo is a mongos-routed sharded cluster — truncate via the tenant's shard primary]]
-- [[not mongos]]
+- [[Performance Mongo is a mongos-routed sharded cluster — truncate via the tenant's shard primary, not mongos]]
 - [[Trust median and p90 over many runs]]
 - [[not the mean of a few]]
 - [[for latency on a noisy shared env]]

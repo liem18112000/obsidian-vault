@@ -31,12 +31,12 @@ It settled a real decision for me. The fix I reached for was "add an intent hier
 
 This is the vertical twin of "context, not instructions": that protects synthesis ACROSS seats, this protects it ACROSS layers.
 
-Related: [[Implementation is the best reviewer a design doc gets]] · [[The fidelity law: a one-line intent is a 20:1 lossy compression]]
+Related: [[Implementation is the best reviewer a design doc gets]] · [[The fidelity law a one-line intent is a 201 lossy compression|The fidelity law: a one-line intent is a 20:1 lossy compression]]
 
 ## Related
 
 - [[Implementation is the best reviewer a design doc gets]]
-- [[The fidelity law: a one-line intent is a 20:1 lossy compression]]
+- [[The fidelity law a one-line intent is a 201 lossy compression|The fidelity law: a one-line intent is a 20:1 lossy compression]]
 
 %% ai-graph-start %%
 

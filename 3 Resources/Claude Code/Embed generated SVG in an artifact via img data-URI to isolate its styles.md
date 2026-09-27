@@ -28,8 +28,7 @@ Surfaced building the SCRUM-92 sprint-dashboard artifact (2026-09-09), embedding
 
 ## Related
 
-- [[Live artifacts need a republish loop]]
-- [[not client-side fetch]]
+- [[Live artifacts need a republish loop, not client-side fetch]]
 
 %% ai-graph-start %%
 

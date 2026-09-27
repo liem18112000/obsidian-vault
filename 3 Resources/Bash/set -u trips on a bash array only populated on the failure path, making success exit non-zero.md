@@ -24,11 +24,11 @@ A bash array that is only ever appended-to on a conditional branch (classic: `FA
 
 **Fix:** initialize the array empty at the top, next to the other vars: `OK_STEPS=(); FAIL_STEPS=()`. (Or guard each use: `${arr[@]:-}` / `${#arr[@]:-0}`, but eager init is cleaner and covers every reference.) Same trap applies to any var conditionally set then unconditionally read under `set -u`.
 
-Related: [[Apostrophe inside bash ${var:?message} breaks the parser]]
+Related: [[Apostrophe inside bash ${varmessage} breaks the parser|Apostrophe inside bash ${var:?message} breaks the parser]]
 
 ## Related
 
-- [[Apostrophe inside bash ${var:?message} breaks the parser]]
+- [[Apostrophe inside bash ${varmessage} breaks the parser|Apostrophe inside bash ${var:?message} breaks the parser]]
 
 %% ai-graph-start %%
 

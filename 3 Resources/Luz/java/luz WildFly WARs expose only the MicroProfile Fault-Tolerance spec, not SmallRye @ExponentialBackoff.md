@@ -32,7 +32,7 @@ Surfaced on LUZ-158230 (import-job Tier 1 terminal-write hardening) in `luz_docs
 
 ## Related
 
-- [[Hosting a Pub/Sub consumer in a luz service with luz_message_receiver]]
+- [[Hosting a PubSub consumer in a luz service with luz_message_receiver|Hosting a Pub/Sub consumer in a luz service with luz_message_receiver]]
 - [[Align the Google Cloud stack in a luz WildFly WAR via libraries-bom]]
 
 %% ai-graph-start %%

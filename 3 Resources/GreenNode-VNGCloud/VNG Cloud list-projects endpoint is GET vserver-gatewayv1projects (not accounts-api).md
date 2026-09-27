@@ -26,11 +26,11 @@ returns the account's projects; walk the JSON for values matching `^pro-`.
 
 **Endpoints that do NOT work (tested):** `accounts-api/v2/projects` -> 403; `vstorage-gateway/v1/projects` -> 404; `vserver-gateway/**v2**/projects` -> 404. The IAM Accounts API has NO project-list endpoint (only `/v1/auth/userinfo` = userId/accountId, no project). So the **v1 vserver-gateway** path is the one that works.
 
-Why it matters: `vngcloud_vserver_network`/`_subnet` Terraform resources REQUIRE `project_id`, but the console/docs bury it. See [[Terraform optional-resource toggle: create-or-reuse via count + a local that picks the id]] and [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]].
+Why it matters: `vngcloud_vserver_network`/`_subnet` Terraform resources REQUIRE `project_id`, but the console/docs bury it. See [[Terraform optional-resource toggle create-or-reuse via count + a local that picks the id|Terraform optional-resource toggle: create-or-reuse via count + a local that picks the id]] and [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]].
 
 ## Related
 
-- [[Terraform optional-resource toggle: create-or-reuse via count + a local that picks the id]]
+- [[Terraform optional-resource toggle create-or-reuse via count + a local that picks the id|Terraform optional-resource toggle: create-or-reuse via count + a local that picks the id]]
 
 %% ai-graph-start %%
 

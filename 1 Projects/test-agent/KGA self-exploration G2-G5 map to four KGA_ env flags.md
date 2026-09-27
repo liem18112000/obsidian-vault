@@ -59,12 +59,11 @@ The KGA (knowledge-gathering-agent) "self-exploration" stack is four independent
 Key design point: the **G5 core loop needs NO LLM** — round-N focus is heuristic salient tokens over round N-1 node titles; G2/G4 are optional LLM add-ons layered on top and run round-0 only, thread-offloaded. G5 bounds (env-tunable): `KGA_EXPLORE_MAX_ROUNDS`=3, `KGA_EXPLORE_TIME_BUDGET`=300s total, `KGA_EXPLORE_ROUND_NODES`=20, `KGA_EXPLORE_ROUND_SECONDS`=120s — all kept under Cloud Runs 600s timeout, and loop state is persisted to GCS by `context_id` so a redeploy resumes mid-loop.
 
 ## Related
-[[Terraform-managed Cloud Run: set env flags in TF, not gcloud run update]]
+[[Terraform-managed Cloud Run set env flags in TF, not gcloud run update|Terraform-managed Cloud Run: set env flags in TF, not gcloud run update]]
 
 ## Related
 
-- [[Terraform-managed Cloud Run: set env flags in TF]]
-- [[not gcloud run update]]
+- [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
 
 %% ai-graph-start %%
 

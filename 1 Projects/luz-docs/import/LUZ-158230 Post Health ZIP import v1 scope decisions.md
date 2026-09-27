@@ -65,14 +65,12 @@ v1 scope/behaviour decisions for the Post Health ZIP import (LUZ-158230), confir
 
 Repos: axonivy-prod/luz_docs_import (primary), luz_docs_view_controller, luz_jsonstore, luz_docs.
 
-Related: [[luz_docs_import dedup: folders via view-controller API, documents via import job history]], [[LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)]]
+Related: [[luz_docs_import dedup folders via view-controller API, documents via import job history|luz_docs_import dedup: folders via view-controller API, documents via import job history]], [[LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)]]
 
 ## Related
 
-- [[luz_docs_import dedup: folders via view-controller API]]
-- [[documents via import job history]]
-- [[LUZ-158230 transfer.zip import size limits (2GB zip]]
-- [[200MB file)]]
+- [[luz_docs_import dedup folders via view-controller API, documents via import job history]]
+- [[LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)]]
 
 %% ai-graph-start %%
 

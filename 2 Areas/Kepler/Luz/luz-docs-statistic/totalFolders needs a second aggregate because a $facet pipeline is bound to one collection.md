@@ -50,11 +50,11 @@ Enabler: `MongoDBService.aggregate` previously hardcoded the `documents` collect
 
 Semantics note: `averageFoldersPerDocument` averages over all non-being-created documents (deleted included), counting a missing `folderIds` as 0 folders.
 
-Related: [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
+Related: [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
 
 ## Related
 
-- [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
+- [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
 
 %% ai-graph-start %%
 

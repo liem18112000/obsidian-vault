@@ -49,11 +49,11 @@ Realm login settings: loginWithEmailAllowed=true, registrationAllowed=false, res
 Separate gotcha to watch AFTER creds: the oauth2 callback is `http://<oauth2_public_host>:<port>/oauth2/callback` on `beta.leocdp.com`, which is HSTS-preloaded -> browser upgrades to https on a plain-HTTP port and the callback can fail. Affects Netdata and Jaeger identically.
 
 ## Related
-[[Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
+[[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync|Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
 
 ## Related
 
-- [[Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
+- [[Monitoring SSO-gate adding a dashboard needs a Keycloak redirect_uri re-sync|Monitoring SSO-gate: adding a dashboard needs a Keycloak redirect_uri re-sync]]
 
 %% ai-graph-start %%
 

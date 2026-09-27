@@ -36,7 +36,7 @@ Context: Leo CDP AppsFlyer push receiver, terraform/push/ on VNGCloud VKS. See [
 
 ## Related
 
-- [[3 Resources/Infra/Deployment/A webhook receiver deploys as an always-on service, not a scheduled job]]
+- [[A webhook receiver deploys as an always-on service, not a scheduled job]]
 
 %% ai-graph-start %%
 

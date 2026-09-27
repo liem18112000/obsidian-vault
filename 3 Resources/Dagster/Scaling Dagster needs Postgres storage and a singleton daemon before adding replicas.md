@@ -33,8 +33,7 @@ Only the webserver is stateless and horizontally scalable. Run `dagster instance
 
 ## Related
 
-- [[Dagster worker pools are executor queues]]
-- [[not a pod kind]]
+- [[Dagster worker pools are executor queues, not a pod kind]]
 
 %% ai-graph-start %%
 

@@ -26,11 +26,11 @@ Match on the **specific, structured** form, not the bare number:
 - always eyeball a few full payloads before trusting a count, and re-count with the tightened filter.
 
 ## Related
-[[gcloud logging read: --order=asc silently ignores --freshness]] [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
+[[gcloud logging read --order=asc silently ignores --freshness|gcloud logging read: --order=asc silently ignores --freshness]] [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
 
 ## Related
 
-- [[gcloud logging read: --order=asc silently ignores --freshness]]
+- [[gcloud logging read --order=asc silently ignores --freshness|gcloud logging read: --order=asc silently ignores --freshness]]
 - [[Re-wrapping a 5xx as 4xx defeats status-based retry]]
 
 %% ai-graph-start %%

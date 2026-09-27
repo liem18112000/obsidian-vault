@@ -24,8 +24,7 @@ Rule: fold the auth context (tenant id, and user id where results are user-scope
 
 ## Related
 
-- [[Postgres RLS should be defense-in-depth]]
-- [[not the sole tenant boundary]]
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
 
 %% ai-graph-start %%
 

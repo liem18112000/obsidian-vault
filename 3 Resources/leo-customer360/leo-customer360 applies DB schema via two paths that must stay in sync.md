@@ -35,8 +35,7 @@ Both paths can re-apply the same SQL, so the schema files are written **idempote
 
 ## Related
 
-- [[CI path-filter must mirror the Docker build context]]
-- [[not the service folder]]
+- [[CI path-filter must mirror the Docker build context, not the service folder]]
 
 %% ai-graph-start %%
 

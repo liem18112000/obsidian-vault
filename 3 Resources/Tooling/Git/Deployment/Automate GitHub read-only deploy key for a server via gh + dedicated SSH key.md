@@ -47,7 +47,7 @@ gh repo deploy-key list -R OWNER/REPO                                          #
 
 **Then clone with the SSH URL** (`git@github.com:OWNER/REPO.git`) — the HTTPS URL would still prompt for a username. Verify with `git ls-remote git@github.com:OWNER/REPO.git HEAD`.
 
-Surfaced deploying the AppsFlyer puller to `leocdp-obs1`: HTTPS clone failed with `could not read Username for https://github.com`; a deploy key + SSH URL fixed it. See also [[3 Resources/Tooling/Windows/Git-Bash/Git Bash etchosts is not the Windows hosts file ssh reads]].
+Surfaced deploying the AppsFlyer puller to `leocdp-obs1`: HTTPS clone failed with `could not read Username for https://github.com`; a deploy key + SSH URL fixed it. See also [[Git Bash etchosts is not the Windows hosts file ssh reads]].
 
 %% ai-graph-start %%
 

@@ -52,7 +52,7 @@ The same fidelity argument applies to _id: BSON carries a native ObjectId, so th
 
 ## Related
 
-- [[Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer|Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer]]
 - [[BSON has no top-level array so a document list must be wrapped in a document]]
 
 %% ai-graph-start %%

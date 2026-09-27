@@ -30,7 +30,7 @@ IMPORTANT: the proxy is OPTIONAL debugging — the benchmark cache is EMPTY unti
 
 ## Related
 
-- [[test-agent-v2 Redis VPC connector stuck in ERROR (CIDR/network misconfig)]]
+- [[test-agent-v2 Redis VPC connector stuck in ERROR (CIDRnetwork misconfig)|test-agent-v2 Redis VPC connector stuck in ERROR (CIDR/network misconfig)]]
 
 %% ai-graph-start %%
 

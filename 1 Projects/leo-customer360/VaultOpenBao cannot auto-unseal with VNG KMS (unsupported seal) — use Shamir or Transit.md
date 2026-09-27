@@ -58,11 +58,11 @@ Vault/OpenBao **auto-unseal** supports only these seals: AliCloud KMS, AWS KMS, 
 
 Implication for running a self-hosted vault on VNG Cloud: no native cloud-KMS auto-unseal. Choose either **Shamir** (manual N-of-M unseal on every restart — simple, but blocks unattended reboots/recovery) or **Transit auto-unseal** (a small second OpenBao holds the transit key; the main cluster auto-unseals against it — recommended for hands-off prod, at the cost of one bootstrap vault). PKCS#11 needs a real HSM (not practical on VNG).
 
-Also: use **Integrated Storage (Raft)** on local disk as the backend (snapshot to vStorage for DR), NOT vStorage-as-storage-backend. Context: [[customer360 secret/config flow on VNG: GitHub Actions + .env + tfstate-on-vStorage]]. Full analysis: deployments/configs/vault-openbao-deep-dive.md.
+Also: use **Integrated Storage (Raft)** on local disk as the backend (snapshot to vStorage for DR), NOT vStorage-as-storage-backend. Context: [[customer360 secretconfig flow on VNG GitHub Actions + .env + tfstate-on-vStorage|customer360 secret/config flow on VNG: GitHub Actions + .env + tfstate-on-vStorage]]. Full analysis: deployments/configs/vault-openbao-deep-dive.md.
 
 ## Related
 
-- [[customer360 secret/config flow on VNG: GitHub Actions + .env + tfstate-on-vStorage]]
+- [[customer360 secretconfig flow on VNG GitHub Actions + .env + tfstate-on-vStorage|customer360 secret/config flow on VNG: GitHub Actions + .env + tfstate-on-vStorage]]
 
 %% ai-graph-start %%
 

@@ -70,7 +70,7 @@ Cloud Monitoring telemetry over 42 days shows the `luz-docs-import` scratch volu
 
 ## Related
 
-- [[Read GKE PVC/volume peak usage from Cloud Monitoring when pod RBAC is denied]]
+- [[Read GKE PVCvolume peak usage from Cloud Monitoring when pod RBAC is denied|Read GKE PVC/volume peak usage from Cloud Monitoring when pod RBAC is denied]]
 
 %% ai-graph-start %%
 

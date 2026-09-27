@@ -66,11 +66,11 @@ Maintained personal tooling: `Hooks` and `Skills`.
 
 ## Knowledge-System
 
-This vault and its publishing pipeline — [[2 Areas/Knowledge-System/Publish|Publish]], the knowledge-ecosystem map, and the knowledge-base plan.
+This vault and its publishing pipeline — [[Publish|Publish]], the knowledge-ecosystem map, and the knowledge-base plan.
 
 ## Polaris
 
-Polaris MCP platform and the running [[2 Areas/Polaris/Action Points|Action Points]] log.
+Polaris MCP platform and the running [[Action Points|Action Points]] log.
 
 ## Affiliate
 

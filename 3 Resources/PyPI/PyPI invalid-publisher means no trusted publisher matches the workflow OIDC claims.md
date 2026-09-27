@@ -34,12 +34,11 @@ For a **first release** (project not yet on PyPI) use *Account → Publishing �
 
 Fallback if you can't administer the PyPI project: drop OIDC and pass `password: ${{ secrets.PYPI_API_TOKEN }}` (and remove `id-token: write`).
 
-The error is often buried below a red herring — see [["Unable to find image locally" is normal Docker pre-pull output, not the failure]].
+The error is often buried below a red herring — see [[Unable to find image locally is normal Docker pre-pull output, not the failure|"Unable to find image locally" is normal Docker pre-pull output, not the failure]].
 
 ## Related
 
-- [["Unable to find image locally" is normal Docker pre-pull output]]
-- [[not the failure]]
+- [[Unable to find image locally is normal Docker pre-pull output, not the failure]]
 
 %% ai-graph-start %%
 

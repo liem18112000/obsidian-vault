@@ -24,11 +24,11 @@ The claude.ai Atlassian MCP exposes **no delete-comment tool**. Comments can onl
 - **Cloud ID:** pass the site hostname (e.g. `leocdp.atlassian.net`) or the UUID from `getAccessibleAtlassianResources`. The hostname works directly.
 - Practical consequence: to "remove" a now-redundant comment, overwrite it into a short changelog note via its `commentId`.
 
-Related: [[Jira MCP markdown-to-ADF: bold immediately before inline code renders off]]
+Related: [[Jira MCP markdown-to-ADF bold immediately before inline code renders off|Jira MCP markdown-to-ADF: bold immediately before inline code renders off]]
 
 ## Related
 
-- [[Jira MCP markdown-to-ADF: bold immediately before inline code renders off]]
+- [[Jira MCP markdown-to-ADF bold immediately before inline code renders off|Jira MCP markdown-to-ADF: bold immediately before inline code renders off]]
 
 %% ai-graph-start %%
 

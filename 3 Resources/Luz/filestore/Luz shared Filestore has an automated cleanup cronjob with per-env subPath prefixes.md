@@ -27,11 +27,11 @@ The shared Luz Filestore (`luz-filestore-share-pvc`) is garbage-collected by cro
 
 **Gotcha — the subPath prefix is per-env and inconsistent.** The base 15-min sweeper mounts `prod` but is JSON-patched per env: dev uses `dev` (`env-dev/cronjob/luz-filestore/patch-volume-mount-sub-path.json`), the weekly one uses `production`. Meanwhile `luz-store` writes to a FIXED `prod/luzstore` in every env. So a service`s temp files are only swept if they live under whatever prefix that env`s sweeper actually cleans — do not assume the sweeper covers your subPath. The reliable design is for the app to delete its own working dir per operation (self-cleanup), treating the cronjob as a best-effort backstop for orphans left by crashes/OOM.
 
-Discovered planning the luz_docs_import zip-temp migration. Related: [[luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]].
+Discovered planning the luz_docs_import zip-temp migration. Related: [[luz-store Filestore mount pattern shared RWX PVC + fsGroup 2000 runAsUser 1000|luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]].
 
 ## Related
 
-- [[luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]]
+- [[luz-store Filestore mount pattern shared RWX PVC + fsGroup 2000 runAsUser 1000|luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]]
 
 %% ai-graph-start %%
 

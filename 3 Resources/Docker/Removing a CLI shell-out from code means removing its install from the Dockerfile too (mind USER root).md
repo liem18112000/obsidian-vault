@@ -28,11 +28,11 @@ Concrete case (luz_docs_import): removing `PodUtil.isPodRunning` (which ran `kub
 
 Also check docker-compose for the same tool/env (here docker-compose.yml had no kube reference — nothing to change).
 
-Related: [[luz_docs_import: idempotent re-import replaces view-controller search-based file dedup]]
+Related: [[luz_docs_import idempotent re-import replaces view-controller search-based file dedup|luz_docs_import: idempotent re-import replaces view-controller search-based file dedup]]
 
 ## Related
 
-- [[luz_docs_import: idempotent re-import replaces view-controller search-based file dedup]]
+- [[luz_docs_import idempotent re-import replaces view-controller search-based file dedup|luz_docs_import: idempotent re-import replaces view-controller search-based file dedup]]
 
 %% ai-graph-start %%
 

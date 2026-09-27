@@ -46,8 +46,7 @@ The lesson generalises past tables: choosing a *lossy subtractive* format string
 
 ## Related
 
-- [[Export Confluence to markdown via body.view HTML]]
-- [[not body.storage]]
+- [[Export Confluence to markdown via body.view HTML, not body.storage]]
 
 %% ai-graph-start %%
 

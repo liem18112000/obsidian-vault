@@ -45,7 +45,7 @@ Using a strong LLM to score another model`s output (LLM-as-a-judge) is powerful 
 - **Verbosity bias** — longer answers are scored higher regardless of quality. Mitigate: cap/normalize length; score against explicit rubric criteria.
 - **Self-enhancement bias** — the judge prefers outputs from its own model family. Mitigate: use a **different model family** as judge than as generator.
 
-**Why it matters:** these biases silently inflate scores and make an eval look trustworthy when it is not. Prefer **rubric grading** (named criteria, each scored, with chain-of-thought justification — e.g. G-Eval / DeepEval / promptfoo `llm-rubric`) over a single blob judgment, and treat the judge as a [[Assured test generation: keep an LLM test only if it builds, passes, and raises coverage|verifier]] whose own reliability must be validated.
+**Why it matters:** these biases silently inflate scores and make an eval look trustworthy when it is not. Prefer **rubric grading** (named criteria, each scored, with chain-of-thought justification — e.g. G-Eval / DeepEval / promptfoo `llm-rubric`) over a single blob judgment, and treat the judge as a [[Assured test generation keep an LLM test only if it builds, passes, and raises coverage|verifier]] whose own reliability must be validated.
 
 ## Related
 

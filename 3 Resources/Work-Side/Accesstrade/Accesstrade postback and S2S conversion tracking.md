@@ -60,7 +60,7 @@ The postback URL is configured in the Accesstrade dashboard with placeholders (o
 
 - [[Accesstrade conversion and transaction reporting]]
 - [[Accesstrade SubID attribution]]
-- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]]
+- [[Claude Code hooks event model]]
 - [[Accesstrade API Integration - MOC]]
 
 %% ai-graph-start %%

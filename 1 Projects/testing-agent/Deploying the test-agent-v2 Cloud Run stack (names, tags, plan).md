@@ -71,8 +71,7 @@ Facts for deploying the **test-agent-v2** stack (deployments/test-agent-v2/deplo
 
 ## Related
 
-- [[Fix TPD scenario generator truncation — raise max_tokens]]
-- [[keep one call]]
+- [[Fix TPD scenario generator truncation — raise max_tokens, keep one call]]
 
 %% ai-graph-start %%
 

@@ -31,7 +31,7 @@ Related: [[luz_docs_integration_test has its own AI-driven BDD pipeline (generat
 
 ## Related
 
-- [[3 Resources/Work-Kepler/luz-docs/integration-test/luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
 
 %% ai-graph-start %%
 

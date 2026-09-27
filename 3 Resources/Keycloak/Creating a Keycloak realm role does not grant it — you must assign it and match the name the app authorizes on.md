@@ -31,11 +31,11 @@ Provisioning a realm role in Keycloak (`POST /admin/realms/{realm}/roles`) only 
 ## Fix pattern
 To make an SSO user an admin: create the role the app checks (`admin`), then POST a role-mapping to the user: `POST /admin/realms/{realm}/users/{uid}/role-mappings/realm` with the role representation `[{id,name}]` (idempotent: skip if already mapped).
 
-Related: [[leo-customer360: deploy-sso.sh only restarts Keycloak; the realm/role bootstrap is the separate sso-realm step]], [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]].
+Related: [[leo-customer360 deploy-sso.sh only restarts Keycloak; the realmrole bootstrap is the separate sso-realm step|leo-customer360: deploy-sso.sh only restarts Keycloak; the realm/role bootstrap is the separate sso-realm step]], [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]].
 
 ## Related
 
-- [[leo-customer360: deploy-sso.sh only restarts Keycloak; the realm/role bootstrap is the separate sso-realm step]]
+- [[leo-customer360 deploy-sso.sh only restarts Keycloak; the realmrole bootstrap is the separate sso-realm step|leo-customer360: deploy-sso.sh only restarts Keycloak; the realm/role bootstrap is the separate sso-realm step]]
 - [[leo-customer360 frontend SSO=false because CD deploys the API with SSO_LOGIN=false]]
 
 %% ai-graph-start %%

@@ -29,7 +29,7 @@ Adjacent: when a record gains a field that is random/non-deterministic (_shard),
 
 ## Related
 
-- [[1 Projects/luz-docs/materialize/Partition the materialized count on a uniform _countShard int, not _id]]
+- [[Partition the materialized count on a uniform _countShard int, not _id]]
 
 %% ai-graph-start %%
 

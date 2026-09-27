@@ -28,7 +28,7 @@ Same trap bites unquoted values: a country code `NO`, a port `ON`, or `version: 
 
 ## Related
 
-- [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Copilot code review is a native PR reviewer, not a workflow job]]
+- [[GitHub Copilot code review is a native PR reviewer, not a workflow job]]
 
 %% ai-graph-start %%
 

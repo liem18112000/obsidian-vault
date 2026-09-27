@@ -24,11 +24,11 @@ The VNG Cloud availability zone **HCM03-1C** exposes only the `s-general-*` VM f
 
 **Implication for capacity planning:** any Dagster / vServer sizing for this account must use `s-general` flavors (strict 1:2 vCPU:RAM) — there is **no memory-optimized 1:4 flavor**, so a `4 vCPU / 16 GB` (1:4) workload provisions 8 vCPU to get 16 GB and bills as 8 blocks, not 4 (a "memory tax"). Do not quote the `s2-general` rate card as if it were available here.
 
-See [[UAT vServer Dagster topology: split webserver+daemon on one s-general box]].
+See [[UAT vServer Dagster topology split webserver+daemon on one s-general box|UAT vServer Dagster topology: split webserver+daemon on one s-general box]].
 
 ## Related
 
-- [[UAT vServer Dagster topology: split webserver+daemon on one s-general box]]
+- [[UAT vServer Dagster topology split webserver+daemon on one s-general box|UAT vServer Dagster topology: split webserver+daemon on one s-general box]]
 
 %% ai-graph-start %%
 

@@ -27,7 +27,7 @@ From luz_docs S2-index-size-options.md, Option A risk analysis (Kepler eArchive)
 
 ## Related
 
-- [[3 Resources/Data/MongoDB/indexing/Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
+- [[Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
 
 %% ai-graph-start %%
 

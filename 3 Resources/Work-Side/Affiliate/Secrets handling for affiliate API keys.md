@@ -47,7 +47,7 @@ This vault runs an **aggressive knowledge-capture directive** and several messag
 
 - [[Accesstrade Publisher API authentication]]
 - [[Designing an Accesstrade skill for Claude Code]]
-- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]]
+- [[Claude Code hooks event model]]
 - [[Accesstrade API Integration - MOC]]
 
 %% ai-graph-start %%

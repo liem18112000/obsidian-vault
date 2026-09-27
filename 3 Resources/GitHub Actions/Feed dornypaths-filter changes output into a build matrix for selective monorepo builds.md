@@ -42,11 +42,11 @@ build:
 
 Guard the build job with `if: != '[]'` so it is skipped cleanly when nothing relevant changed. Adding a service is then a one-line filter change. Established while wiring GHCR builds for leo-customer360.
 
-Related: [[GHCR image names must be lowercase; docker-metadata-action lowercases automatically]], [[Workflow-level paths-ignore can stop a workflow triggering on the dir you want to build]].
+Related: [[GHCR image names must be lowercase; dockermetadata-action lowercases automatically|GHCR image names must be lowercase; docker-metadata-action lowercases automatically]], [[Workflow-level paths-ignore can stop a workflow triggering on the dir you want to build]].
 
 ## Related
 
-- [[GHCR image names must be lowercase; docker/metadata-action lowercases automatically]]
+- [[GHCR image names must be lowercase; dockermetadata-action lowercases automatically|GHCR image names must be lowercase; docker/metadata-action lowercases automatically]]
 - [[Workflow-level paths-ignore can stop a workflow triggering on the dir you want to build]]
 
 %% ai-graph-start %%

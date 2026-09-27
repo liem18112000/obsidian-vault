@@ -29,7 +29,7 @@ Real fixes: grant the identity a role that can read build logs (Cloud Build View
 
 ## Related
 
-- [[Cloud Run's managed /cloudsql socket does not reach sidecar containers]]
+- [[Cloud Run's managed cloudsql socket does not reach sidecar containers|Cloud Run's managed /cloudsql socket does not reach sidecar containers]]
 
 %% ai-graph-start %%
 

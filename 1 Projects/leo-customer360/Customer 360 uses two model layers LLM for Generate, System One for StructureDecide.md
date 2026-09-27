@@ -67,8 +67,7 @@ Report: `docs/research-papers/system-one-models-jev-in-customer360.md` (companio
 
 ## Related
 
-- [[System One Models (Jev) fast type-safe calibrated decision models]]
-- [[not chat LLMs]]
+- [[System One Models (Jev) fast type-safe calibrated decision models, not chat LLMs]]
 
 %% ai-graph-start %%
 

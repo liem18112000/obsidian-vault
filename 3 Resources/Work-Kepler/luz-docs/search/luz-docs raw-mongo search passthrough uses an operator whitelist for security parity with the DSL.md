@@ -31,8 +31,8 @@ Keep the whitelist in sync if the DSL handlers gain new operators.
 
 ## Related
 
-- [[3 Resources/Work-Kepler/luz-docs/search/luz-docs search DSL silently drops raw-mongo query keys]]
-- [[3 Resources/Work-Kepler/luz-docs/search/ngram trigram prefilter reads the built mongo query, not the raw payload]]
+- [[luz-docs search DSL silently drops raw-mongo query keys]]
+- [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
 
 %% ai-graph-start %%
 

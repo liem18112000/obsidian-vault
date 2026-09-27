@@ -45,7 +45,7 @@ LEO CDP gotcha: even with mainDatabaseConfig=SYSTEM_ENV_VARS (which builds the A
 
 ## Related
 
-- [[3 Resources/Languages/Java/Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration]]
+- [[Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration]]
 
 %% ai-graph-start %%
 

@@ -54,7 +54,7 @@ Related: [[Payrexx decline code lives at transaction.metadata.decline_code]], [[
 ## Related
 
 - [[Payrexx decline code lives at transaction.metadata.decline_code]]
-- [[1 Projects/luz_online_payment/Payrexx notify webhook dispatches to two consumers, neither forwards decline code]]
+- [[Payrexx notify webhook dispatches to two consumers, neither forwards decline code]]
 
 %% ai-graph-start %%
 

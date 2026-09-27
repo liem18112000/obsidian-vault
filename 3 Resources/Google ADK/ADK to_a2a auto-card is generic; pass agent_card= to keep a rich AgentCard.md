@@ -25,8 +25,7 @@ Applies when the A2A card is a real surface (e.g. an MCP gateway that fetches `/
 
 ## Related
 
-- [[ADK to_a2a builds A2A routes on ASGI lifespan startup]]
-- [[not at construction]]
+- [[ADK to_a2a builds A2A routes on ASGI lifespan startup, not at construction]]
 
 %% ai-graph-start %%
 

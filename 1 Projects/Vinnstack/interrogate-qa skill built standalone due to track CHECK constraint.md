@@ -54,7 +54,7 @@ General lesson: when a new "kind" of interrogation/question-set is requested but
 
 ## Related
 
-- [[1 Projects/Vinnstack/interrogate-qa is cross-cutting across all Epics, Stories, and Flows]]
+- [[interrogate-qa is cross-cutting across all Epics, Stories, and Flows]]
 
 %% ai-graph-start %%
 

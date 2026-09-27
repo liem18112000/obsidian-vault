@@ -30,10 +30,8 @@ luz-docs-import `LuzDocsViewControllerService.createDocument` sends `POST /docum
 
 ## Related
 
-- [[A durable queue fixes report-write durability]]
-- [[not data-duplication — make the side effect idempotent]]
-- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat]]
-- [[not UI progress]]
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
+- [[luz-docs-import JobProgressWriter checkpoints are for crash-durability + heartbeat, not UI progress]]
 
 %% ai-graph-start %%
 

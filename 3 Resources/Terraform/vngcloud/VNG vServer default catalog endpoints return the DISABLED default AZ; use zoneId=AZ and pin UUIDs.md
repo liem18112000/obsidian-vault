@@ -29,12 +29,12 @@ Key facts:
 General rule for this provider: ALL the name→id data sources (flavor zone, volume type zone, image) silently resolve against the DEFAULT (possibly disabled) AZ and cant target your AZ; on a single-AZ-enabled account, reference everything by UUID via override variables discovered from the API with the AZ-aware query/fields.
 
 ## Related
-[[VNG vServer apply-time gotchas: password policy (* @ !) and AZ-restricted volume types (1C needs NVME)]]
-[[VNG vServer flavor zones are per-AZ under one shared name; the flavor s flavorZoneId field IS the AZ]]
+[[VNG vServer apply-time gotchas password policy ( @ !) and AZ-restricted volume types (1C needs NVME)|VNG vServer apply-time gotchas: password policy (* @ !) and AZ-restricted volume types (1C needs NVME)]]
+[[VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ|VNG vServer flavor zones are per-AZ under one shared name; the flavor s flavorZoneId field IS the AZ]]
 
 ## Related
 
-- [[VNG vServer flavor zones are per-AZ under one shared name; the flavor s flavorZoneId field IS the AZ]]
+- [[VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ|VNG vServer flavor zones are per-AZ under one shared name; the flavor s flavorZoneId field IS the AZ]]
 
 %% ai-graph-start %%
 

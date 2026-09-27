@@ -28,8 +28,7 @@ Related: [[Generate Excalidraw triplet from one layout model, rasterize with @re
 
 ## Related
 
-- [[Generate Excalidraw triplet from one layout model]]
-- [[rasterize with @resvgresvg-js]]
+- [[Generate Excalidraw triplet from one layout model, rasterize with @resvgresvg-js]]
 
 %% ai-graph-start %%
 

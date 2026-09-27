@@ -67,8 +67,8 @@ Act order: (3) explain → (1) cache → (4) pool → then (2) bitmap vs (7) app
 
 ## Related
 
-- [[1 Projects/luz-docs/materialize/Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
-- [[3 Resources/Work-Kepler/luz-docs/count-optimize/Visible-document count as cardinality of a bitmap union]]
+- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[Visible-document count as cardinality of a bitmap union]]
 
 %% ai-graph-start %%
 

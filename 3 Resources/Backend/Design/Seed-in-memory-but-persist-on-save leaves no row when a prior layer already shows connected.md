@@ -26,7 +26,7 @@ Fix: on first read with no row, if the fallback layer has real data, PERSIST the
 
 ## Related
 
-- [[3 Resources/Backend/Design/Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
+- [[Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
 
 %% ai-graph-start %%
 

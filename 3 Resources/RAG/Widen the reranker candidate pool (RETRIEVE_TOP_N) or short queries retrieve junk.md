@@ -31,8 +31,7 @@ Related: [[Over-refusal in a small RAG generator usually means bad retrieval, no
 
 ## Related
 
-- [[Over-refusal in a small RAG generator usually means bad retrieval]]
-- [[not a bad prompt]]
+- [[Over-refusal in a small RAG generator usually means bad retrieval, not a bad prompt]]
 
 %% ai-graph-start %%
 

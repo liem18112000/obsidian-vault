@@ -38,7 +38,7 @@ Before deleting, check the deserializer tolerates the leftover key in already-pe
 
 ## The counter-check before deleting
 
-[[An uncalled method isn't automatically dead code — check facade/convention symmetry]] is the
+[[An uncalled method isn't automatically dead code — check facadeconvention symmetry|An uncalled method isn't automatically dead code — check facade/convention symmetry]] is the
 opposing heuristic, and both are right about different things:
 
 - That one guards **methods in a symmetric family** — an uncalled sibling may be a deliberate API
@@ -54,7 +54,7 @@ Related: [[A read filtered on a value no writer produces fails by returning empt
 ## Related
 
 - [[A read filtered on a value no writer produces fails by returning empty]]
-- [[An uncalled method isn't automatically dead code — check facade/convention symmetry]]
+- [[An uncalled method isn't automatically dead code — check facadeconvention symmetry|An uncalled method isn't automatically dead code — check facade/convention symmetry]]
 
 %% ai-graph-start %%
 

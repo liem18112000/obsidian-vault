@@ -42,7 +42,7 @@ Fail-loud is preserved without an explicit `CompletableFuture.allOf(...).join()`
 
 ## Related
 
-- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 %% ai-graph-start %%
 

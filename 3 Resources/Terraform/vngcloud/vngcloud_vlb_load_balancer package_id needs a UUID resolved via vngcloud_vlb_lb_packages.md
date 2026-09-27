@@ -31,12 +31,11 @@ locals {
 
 **Gotcha:** a typo in `package_name` yields no match and an **empty** `package_id`, which surfaces later as a confusing provider-side error rather than a clear "not found". Guard it with a `lifecycle { precondition { condition = local.lb_package_id != "" ... } }` so it fails early with an actionable message. (Same shape as the vDB deploy, where the package/volume data sources return an empty id on no-match.)
 
-Exported LB attributes worth wiring to outputs: `id`, `status`, `address` (its IP), `private_subnet_cidr`. See [[VNG Cloud vLB: Layer 4 = NLB, Layer 7 = ALB]].
+Exported LB attributes worth wiring to outputs: `id`, `status`, `address` (its IP), `private_subnet_cidr`. See [[VNG Cloud vLB Layer 4 = NLB, Layer 7 = ALB|VNG Cloud vLB: Layer 4 = NLB, Layer 7 = ALB]].
 
 ## Related
 
-- [[VNG Cloud vLB: Layer 4 = NLB]]
-- [[Layer 7 = ALB]]
+- [[VNG Cloud vLB Layer 4 = NLB, Layer 7 = ALB]]
 
 %% ai-graph-start %%
 

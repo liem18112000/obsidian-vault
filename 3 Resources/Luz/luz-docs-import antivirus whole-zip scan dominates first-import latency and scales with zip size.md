@@ -26,13 +26,12 @@ In luz-docs-import, the FIRST step of the import flow is a whole-zip antivirus s
 
 Measured as luz-docs-import`s outbound `time-consuming=` on `…/luz_antivirus/api/scanner` (see [[Trace Luz per-service latency via the time-consuming= log marker]]).
 
-**Observation (unconfirmed):** re-uploading the byte-identical zip (dedup run) showed NO comparable ~40 s scanner cost — luz-docs-import made only ~24 short calls. Antivirus may short-circuit/cache identical content. The dedup skip itself happens AFTER the scan (idempotency is checked per-file post-unzip), so a re-import is not free of scan cost in general. Related: [[Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE]].
+**Observation (unconfirmed):** re-uploading the byte-identical zip (dedup run) showed NO comparable ~40 s scanner cost — luz-docs-import made only ~24 short calls. Antivirus may short-circuit/cache identical content. The dedup skip itself happens AFTER the scan (idempotency is checked per-file post-unzip), so a re-import is not free of scan cost in general. Related: [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE|Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE]].
 
 ## Related
 
 - [[Trace Luz per-service latency via the time-consuming= log marker]]
-- [[Luz docs-import zip flow: upload-zip returns job-id]]
-- [[poll GET until DONE]]
+- [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
 
 %% ai-graph-start %%
 

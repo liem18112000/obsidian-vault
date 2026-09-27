@@ -33,7 +33,7 @@ Consequences to call out:
 
 ## Related
 [[Dagster auto-creates its tables but not the database]]
-[[Dagster S3ComputeLogManager: credentials via boto3 env, path-style via AWS config file]]
+[[Dagster S3ComputeLogManager credentials via boto3 env, path-style via AWS config file|Dagster S3ComputeLogManager: credentials via boto3 env, path-style via AWS config file]]
 
 ## Related
 

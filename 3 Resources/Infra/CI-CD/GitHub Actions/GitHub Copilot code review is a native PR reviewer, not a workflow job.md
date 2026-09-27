@@ -28,13 +28,13 @@ GitHub Copilot code review is a **native GitHub feature**, not something you wir
 Decision context: in leo-cdp-framework we removed the Gemini review/assistant jobs (and their `pull_request_target`/`issue_comment`/... triggers and `pull-requests`/`issues` permissions) and rely on Copilot for AI review — simpler workflow, one less secret, no quota failures.
 
 ## Related
-- [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
 
 ## Related
 
-- [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions continue-on-error step-level goes green, job-level stays red]]
-- [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
 
 %% ai-graph-start %%
 

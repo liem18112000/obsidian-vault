@@ -22,8 +22,7 @@ When registering a Portainer **Agent** environment via the API (`POST /api/endpo
 
 ## Related
 
-- [[One Portainer manages many Docker hosts via portainer/agent]]
-- [[not a second Portainer]]
+- [[One Portainer manages many Docker hosts via portaineragent, not a second Portainer]]
 
 %% ai-graph-start %%
 

@@ -23,8 +23,7 @@ Use transaction-local scope instead: `SET LOCAL app.tenant_id = x` or `select se
 
 ## Related
 
-- [[Postgres RLS should be defense-in-depth]]
-- [[not the sole tenant boundary]]
+- [[Postgres RLS should be defense-in-depth, not the sole tenant boundary]]
 
 %% ai-graph-start %%
 

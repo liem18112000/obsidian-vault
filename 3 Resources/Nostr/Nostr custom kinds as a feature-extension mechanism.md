@@ -23,11 +23,11 @@ Buzz (block/buzz) leans on this directly — its ARCHITECTURE.md states adding a
 
 Why it matters: it is a **forward-compatible extension mechanism** — the schema is open by construction, so independent clients and servers evolve without lockstep upgrades. The trade-off is there is no central registry enforcing kind meanings, so kind-number collisions/semantics are a social/spec convention, not a guarantee.
 
-See [[Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents are peers]].
+See [[Buzz (blockbuzz) is a Nostr-based workspace where humans and AI agents are peers|Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents are peers]].
 
 ## Related
 
-- [[Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents are peers]]
+- [[Buzz (blockbuzz) is a Nostr-based workspace where humans and AI agents are peers|Buzz (block/buzz) is a Nostr-based workspace where humans and AI agents are peers]]
 
 %% ai-graph-start %%
 

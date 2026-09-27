@@ -56,8 +56,7 @@ Related: [[luz-docs-import scans metadata sidecars per-file, not the whole ZIP]]
 
 ## Related
 
-- [[luz-docs-import scans metadata sidecars per-file]]
-- [[not the whole ZIP]]
+- [[luz-docs-import scans metadata sidecars per-file, not the whole ZIP]]
 - [[Metadata sidecars must be scanned in luz-docs-import because they are never uploaded]]
 
 %% ai-graph-start %%

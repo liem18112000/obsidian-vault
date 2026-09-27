@@ -32,11 +32,11 @@ That is the whole point. A run dominated by CONTEXT-GAP says stop tuning the pro
 
 **Put it where the cause is knowable.** I nearly bolted it onto a runtime failure-triage type, then realised triage answers "why did this fail when it ran" and cannot see the inputs at all. The disposition asks "why was this authored badly" — a different question needing different data. Wrong home = a field nobody can populate honestly.
 
-Related: [[The fidelity law: a one-line intent is a 20:1 lossy compression]] · [[Price one layer lower before accepting a fix]]
+Related: [[The fidelity law a one-line intent is a 201 lossy compression|The fidelity law: a one-line intent is a 20:1 lossy compression]] · [[Price one layer lower before accepting a fix]]
 
 ## Related
 
-- [[The fidelity law: a one-line intent is a 20:1 lossy compression]]
+- [[The fidelity law a one-line intent is a 201 lossy compression|The fidelity law: a one-line intent is a 20:1 lossy compression]]
 - [[Price one layer lower before accepting a fix]]
 
 %% ai-graph-start %%

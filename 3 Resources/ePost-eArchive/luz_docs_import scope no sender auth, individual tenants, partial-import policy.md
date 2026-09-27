@@ -30,7 +30,7 @@ Scope/behaviour facts about the luz_docs_import ZIP import that shape testing:
 Established for LUZ-158230.
 
 ## Related
-[[ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
+[[ePost eArchive ZIP import transfer.zip shape and luz_docs_import|ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
 [[HEALTH document type carries verbatim SNOMED healthData]]
 
 %% ai-graph-start %%

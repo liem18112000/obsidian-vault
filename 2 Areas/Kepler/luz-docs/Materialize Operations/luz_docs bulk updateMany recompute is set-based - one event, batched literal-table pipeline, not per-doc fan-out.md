@@ -34,7 +34,7 @@ Correctness props: `$range` input is `$ifNull`-guarded so docs without `folderId
 
 - [[luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id]]
 - [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
-- [[3 Resources/Data/MongoDB/MongoDB forbids $lookup inside update pipeline (WriteError 72)]]
+- [[MongoDB forbids $lookup inside update pipeline (WriteError 72)]]
 
 > [!warning] Status 2026-06-05: never merged — removed from the working tree the same day (user decision, "remove modify-many code for now"). The design lives in this note + the session handoff report only.
 

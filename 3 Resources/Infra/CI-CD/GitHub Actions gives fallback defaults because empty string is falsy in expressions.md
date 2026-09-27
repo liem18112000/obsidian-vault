@@ -27,7 +27,7 @@ timeout:         ${{ inputs.timeout || 300 }}
 
 Referencing a secret/input that does not exist is NOT an error - it silently becomes "" - which is exactly why `||` works for it. Practical use: tolerate a legacy/mis-named secret while keeping the correct primary name first in the chain, or supply an input default without a separate `default:` block. Falsy values in GA expressions: `false`, `0`, `""`, `null` - so `inputs.count || 5` also replaces a literal 0, watch for that.
 
-Related: [[3 Resources/Infra/CI-CD/GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]], [[Pass a value between GitHub Actions steps via GITHUB_OUTPUT and steps.id.outputs]]
+Related: [[GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]], [[Pass a value between GitHub Actions steps via GITHUB_OUTPUT and steps.id.outputs]]
 
 %% ai-graph-start %%
 

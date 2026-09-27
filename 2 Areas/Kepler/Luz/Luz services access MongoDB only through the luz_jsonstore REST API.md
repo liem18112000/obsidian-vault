@@ -46,13 +46,13 @@ Luz/KLARA microservices never open a direct MongoDB connection. Every read/write
 
 Consequences:
 - Mongo operators ($set, $facet, $match…) are built as `javax.json` JsonObjects and shipped as the request body — there is no Mongo driver in the service.
-- Tenant isolation and auth are enforced by jsonstore via the bearer token + tenant-id path segment, so the *token you use determines whose data you touch* (see [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]).
+- Tenant isolation and auth are enforced by jsonstore via the bearer token + tenant-id path segment, so the *token you use determines whose data you touch* (see [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]).
 - Resilience is done client-side, e.g. `@Retry(retryOn = ServiceUnavailableException.class)` around each call.
 - Service wrappers must close the JAX-RS `Response` (try-with-resources) to avoid connection leaks; clients send `Connection: close`.
 
 ## Related
 
-- [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
+- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
 
 %% ai-graph-start %%
 

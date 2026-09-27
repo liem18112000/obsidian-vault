@@ -76,12 +76,11 @@ Mitigations (cheap -> robust):
 3. Resize the box to 2 vCPU / 4 GB (terraform flavor change + reboot + cost) — the real fix.
 Also bump the consumer's proxy timeout: a browser chatbot proxy at 60s is too short even for a healthy generation on this box.
 
-Applies to [[Two-phase RAG chatbot UX: fast retrieval first, slow generation second]] (why /search-first still delivers value when /ask is degraded) and [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]. Also [[LEO Customer360 VNG topology: co-located services use localhost, cross-box hops need explicit extra_ingress]] for the box layout.
+Applies to [[Two-phase RAG chatbot UX fast retrieval first, slow generation second|Two-phase RAG chatbot UX: fast retrieval first, slow generation second]] (why /search-first still delivers value when /ask is degraded) and [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]. Also [[LEO Customer360 VNG topology co-located services use localhost, cross-box hops need explicit extra_ingress|LEO Customer360 VNG topology: co-located services use localhost, cross-box hops need explicit extra_ingress]] for the box layout.
 
 ## Related
 
-- [[Two-phase RAG chatbot UX: fast retrieval first]]
-- [[slow generation second]]
+- [[Two-phase RAG chatbot UX fast retrieval first, slow generation second]]
 - [[Public unauthenticated CPU-bound LLM endpoint is a DoS foot-gun]]
 
 ---

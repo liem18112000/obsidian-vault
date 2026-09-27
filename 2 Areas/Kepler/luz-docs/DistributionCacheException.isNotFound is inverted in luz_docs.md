@@ -36,7 +36,7 @@ Any consumer writing the natural idiom `if (!e.isNotFound()) throw e; return nul
 
 ## Related
 
-- [[3 Resources/Languages/Java/CDI and MicroProfile/CDI self-invocation bypasses interceptor proxy]]
+- [[CDI self-invocation bypasses interceptor proxy]]
 
 %% ai-graph-start %%
 

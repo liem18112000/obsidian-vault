@@ -126,7 +126,7 @@ flowchart TD
 
 - [[Claude Code Skill anatomy]]
 - [[Secrets handling for affiliate API keys]]
-- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]]
+- [[Claude Code hooks event model]]
 - [[Skills vs Hooks vs MCP vs subagents]]
 - [[Accesstrade API Integration - MOC]]
 

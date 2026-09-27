@@ -99,7 +99,7 @@ These were kept as robustness/security test scenarios even though the confirmed 
 
 - [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
 - [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
-- [[luz_docs_import dedup: folders via view-controller API, documents via import job history]]
+- [[luz_docs_import dedup folders via view-controller API, documents via import job history|luz_docs_import dedup: folders via view-controller API, documents via import job history]]
 - [[LUZ-158230 transfer.zip import size limits (2GB zip, 200MB file)]]
 
 %% ai-graph-start %%

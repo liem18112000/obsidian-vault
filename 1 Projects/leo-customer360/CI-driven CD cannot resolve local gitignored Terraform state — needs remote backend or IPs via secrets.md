@@ -73,12 +73,11 @@ Fix options (architectural, pick one):
 1. **Remote Terraform backend** (proper) — move `server`/`postgres`/`cache` state to a shared backend (vStorage/S3 or Terraform Cloud) so CI can read it.
 2. **Bypass TF in CI** — pass VM IPs + DB host + redis host as GitHub secrets/vars and add env overrides to the app scripts so they skip `terraform output` when provided. `deploy-backend.sh` already honors a `BASTION` override; `deploy-api.sh`/`deploy-ads.sh`/`deploy-frontend.sh` would need the same for their host + DB host.
 3. **Self-hosted runner** on the operator network that already holds the local state (least clean).
-Do NOT commit tfstate (contains secrets; deliberately gitignored). Context: [[leo-customer360 CD deploys app containers to vServers only, never the vDB/vLB/vStorage Terraform]].
+Do NOT commit tfstate (contains secrets; deliberately gitignored). Context: [[leo-customer360 CD deploys app containers to vServers only, never the vDBvLBvStorage Terraform|leo-customer360 CD deploys app containers to vServers only, never the vDB/vLB/vStorage Terraform]].
 
 ## Related
 
-- [[leo-customer360 CD deploys app containers to vServers only]]
-- [[never the vDB/vLB/vStorage Terraform]]
+- [[leo-customer360 CD deploys app containers to vServers only, never the vDBvLBvStorage Terraform]]
 
 %% ai-graph-start %%
 

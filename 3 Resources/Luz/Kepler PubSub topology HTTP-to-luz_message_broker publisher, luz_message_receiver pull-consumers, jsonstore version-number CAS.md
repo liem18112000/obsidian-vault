@@ -30,8 +30,7 @@ luz-jsonstore ALREADY supports optimistic-concurrency: `PATCH /{collection}/{doc
 
 ## Related
 
-- [[A durable queue fixes report-write durability]]
-- [[not data-duplication — make the side effect idempotent]]
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
 
 %% ai-graph-start %%
 

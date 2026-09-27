@@ -33,7 +33,7 @@ Per-deck flow: run `setup.sh` once; create `docs/<topic>-present/` with `build,d
 ## Related
 
 - [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
-- [[3 Resources/Cloud/GCP/Google Cloud TTS from Windows fetch the token in bash, pass via env to Python]]
+- [[Google Cloud TTS from Windows fetch the token in bash, pass via env to Python]]
 - [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
 
 %% ai-graph-start %%

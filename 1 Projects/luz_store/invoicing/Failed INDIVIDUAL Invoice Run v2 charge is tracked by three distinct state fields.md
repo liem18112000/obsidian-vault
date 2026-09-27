@@ -72,8 +72,7 @@ Discovered while correcting the verify step in the `luz-store-seed-failed-charge
 
 ## Related
 
-- [[Payrexx card declines reach luz_store as ERROR with prose]]
-- [[not DECLINED]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[DECLINED status falls through invoice charge-failure handling in luz_store]]
 - [[Invoice run v2 shows charge failures via verbatim message copy at controller line 628]]
 

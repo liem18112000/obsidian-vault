@@ -30,7 +30,7 @@ See [[HyperLogLog error in the small-range (linear-counting) regime]] for the er
 ## Related
 
 - [[HyperLogLog error in the small-range (linear-counting) regime]]
-- [[3 Resources/Data/Algorithms/Sketch merge (register-wise max) only answers union queries, never AND]]
+- [[Sketch merge (register-wise max) only answers union queries, never AND]]
 
 %% ai-graph-start %%
 

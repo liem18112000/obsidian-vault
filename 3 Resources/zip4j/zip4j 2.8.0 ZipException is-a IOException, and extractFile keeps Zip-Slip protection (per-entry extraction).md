@@ -29,7 +29,7 @@ zip4j 2.8.0 facts that shaped the luz-docs-import per-entry extraction (PR-B, F2
 
 ## Related
 
-- [[luz-docs-import Gap-3: always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort]]
+- [[luz-docs-import Gap-3 always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort|luz-docs-import Gap-3: always-UTF-8 ZIP decode is deliberate; CP437 non-flagged zips are accepted best-effort]]
 
 %% ai-graph-start %%
 

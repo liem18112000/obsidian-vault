@@ -29,11 +29,11 @@ oauth2-proxy requires `--cookie-secret` (env `OAUTH2_PROXY_COOKIE_SECRET`) to de
 **Fix:** generate a valid-length secret, e.g. `openssl rand -hex 16` (32 hex chars = 32 bytes) or `openssl rand -base64 24 | tr -dc A-Za-z0-9 | head -c 32`; delete the bad value so the deploy regenerates it. Root cause here was `deploy-monitoring.sh` line 190 hardcoding `openssl rand -base64 32`.
 
 ## Related
-[[docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
+[[docs-search UAT latency root cause unapplied 8001 secgroup ingress (api to docs box)|docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
 
 ## Related
 
-- [[docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
+- [[docs-search UAT latency root cause unapplied 8001 secgroup ingress (api to docs box)|docs-search UAT latency root cause: unapplied 8001 secgroup ingress (api to docs box)]]
 
 %% ai-graph-start %%
 

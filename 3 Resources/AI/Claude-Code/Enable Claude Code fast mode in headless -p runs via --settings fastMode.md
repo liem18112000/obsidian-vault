@@ -29,11 +29,11 @@ Example: `claude -p --model claude-opus-4-8 --settings {"fastMode": true} --perm
 
 For an app that spawns the bundled @anthropic-ai/claude-code binary headlessly (e.g. Vinnstack, in lib/ai/claudeRun.ts), add `--settings {"fastMode": true}` to the spawn args — ideally gated behind a config toggle. Docs: code.claude.com/docs/en/fast-mode.md and headless.md.
 
-Related: [[3 Resources/Languages/Node.js/Config read into a module-level const applies only on next process launch]] (same project, Vinnstack, drives Claude via headless `claude -p`).
+Related: [[Config read into a module-level const applies only on next process launch]] (same project, Vinnstack, drives Claude via headless `claude -p`).
 
 ## Related
 
-- [[3 Resources/Languages/Node.js/Config read into a module-level const applies only on next process launch]]
+- [[Config read into a module-level const applies only on next process launch]]
 
 %% ai-graph-start %%
 

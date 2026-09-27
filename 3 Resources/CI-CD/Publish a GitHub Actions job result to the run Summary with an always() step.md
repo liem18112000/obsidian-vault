@@ -41,8 +41,7 @@ Related: [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]].
 
 ## Related
 
-- [[leo-customer360 uses dbmate for Postgres migrations]]
-- [[not Alembic]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
 
 %% ai-graph-start %%
 

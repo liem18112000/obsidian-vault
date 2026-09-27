@@ -63,12 +63,12 @@ This matters for any design that wants to keep mutable aggregate state (a counte
 
 The fix this codebase already uses for equivalent problems (_isPublic, _effectiveSecurityClassCodes, _shard) is to materialize the derived state into the document store (MongoDB, via the existing write-path/materialize pattern) instead of JVM memory, so every pod reads the same centrally-persisted value regardless of which pod produced it. Any new per-tenant/per-dimension aggregate (counter, HLL sketch, cache) on this app should follow the same rule: never trust pod-local memory to represent tenant-wide state when the app can scale beyond 1 replica.
 
-See [[MicroProfile and WildFly have no HyperLogLog or cardinality-sketch utility]] and [[1 Projects/luz-docs/luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]].
+See [[MicroProfile and WildFly have no HyperLogLog or cardinality-sketch utility]] and [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]].
 
 ## Related
 
 - [[MicroProfile and WildFly have no HyperLogLog or cardinality-sketch utility]]
-- [[1 Projects/luz-docs/luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
 
 %% ai-graph-start %%
 

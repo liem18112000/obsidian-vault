@@ -35,7 +35,7 @@ This is safer than blindly overwriting the whole file (which would wipe other re
 
 ## Related
 
-- [[3 Resources/Languages/Python/Dataclass field defaults reading env vars are evaluated at import time, not instantiation]]
+- [[Dataclass field defaults reading env vars are evaluated at import time, not instantiation]]
 
 %% ai-graph-start %%
 

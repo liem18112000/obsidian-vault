@@ -80,7 +80,7 @@ Cross-check: no AV errors during the 06:11–06:24 Gap-3 import test — those s
 
 ## Related
 
-- [[luz-docs-import ZIP import timing: fresh 100-doc ~40s vs deduped sub-second]]
+- [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second|luz-docs-import ZIP import timing: fresh 100-doc ~40s vs deduped sub-second]]
 
 %% ai-graph-start %%
 

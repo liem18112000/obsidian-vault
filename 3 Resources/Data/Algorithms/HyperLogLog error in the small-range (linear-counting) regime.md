@@ -26,7 +26,7 @@ HLL's textbook error bound (relative error ≈ `1.04/√m`) is asymptotic — it
 ## Related
 
 - [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
-- [[1 Projects/luz-docs/luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
 - [[luz_docs estimated-count POC drops CAS and backfill gate]]
 
 %% ai-graph-start %%

@@ -29,7 +29,7 @@ Symptom cluster that means the saved Facebook session in `session/fb_session.jso
 
 ## Related
 
-- [[3 Resources/Work-Side/fb-info-project/FB photofbid= links scrape as post mode; filename id falls back to na]]
+- [[FB photofbid= links scrape as post mode; filename id falls back to na]]
 
 %% ai-graph-start %%
 

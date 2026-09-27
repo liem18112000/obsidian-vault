@@ -29,7 +29,7 @@ See [[Shared aggregate write targets need CAS, not plain $set]] for the live-wri
 
 ## Related
 
-- [[3 Resources/Practices/Patterns/Shared aggregate write targets need CAS, not plain $set]]
+- [[Shared aggregate write targets need CAS, not plain $set]]
 
 %% ai-graph-start %%
 

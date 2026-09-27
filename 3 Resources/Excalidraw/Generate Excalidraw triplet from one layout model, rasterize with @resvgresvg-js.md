@@ -25,11 +25,11 @@ Why: keeping one layout model as the source of truth means the editable `.excali
 
 Used to regenerate the leo-customer360 `deployments/deployment-view-uat.{excalidraw,svg,png}` triplet (the repo keeps several such triplets referenced from README).
 
-Related: [[Git Bash /tmp maps to C-tmp for Node fs on Windows]] · [[Excalidraw vertically-centers bound text — use unbound top-left text for container headers]]
+Related: [[Git Bash tmp maps to C-tmp for Node fs on Windows|Git Bash /tmp maps to C-tmp for Node fs on Windows]] · [[Excalidraw vertically-centers bound text — use unbound top-left text for container headers]]
 
 ## Related
 
-- [[Git Bash /tmp maps to C-tmp for Node fs on Windows]]
+- [[Git Bash tmp maps to C-tmp for Node fs on Windows|Git Bash /tmp maps to C-tmp for Node fs on Windows]]
 - [[Excalidraw vertically-centers bound text — use unbound top-left text for container headers]]
 
 %% ai-graph-start %%

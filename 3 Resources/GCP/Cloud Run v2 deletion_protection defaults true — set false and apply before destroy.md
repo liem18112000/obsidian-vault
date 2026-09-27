@@ -29,8 +29,7 @@ Same trap exists on other GCP resources with delete protection (e.g. `google_sql
 
 ## Related
 
-- [[Cloud Run v2 has startup_probe + liveness_probe]]
-- [[no readiness probe]]
+- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
 
 %% ai-graph-start %%
 

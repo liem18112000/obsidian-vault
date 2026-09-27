@@ -73,12 +73,12 @@ Consequence for allowlisted/materialization-complete tenants: the recovered subt
 
 Fix (LUZ-155107, sprint 158): new async `MaterializeFolderRecoveryService` — rename-style event + marker + PARTIAL retry, but in its OWN marker collection (isolated from rename's `materializeCascade`), executing the parent-change full-recompute pipeline over root + ALL descendants; fires in finally even on partial recovery; gated by `shouldUseMaterialized(tenantId)`.
 
-Related: [[luz_docs has two materialize cascade delivery mechanisms]], [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
+Related: [[luz_docs has two materialize cascade delivery mechanisms]], [[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
 
 ## Related
 
 - [[luz_docs has two materialize cascade delivery mechanisms]]
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
+- [[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
 
 %% ai-graph-start %%
 

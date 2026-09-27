@@ -30,7 +30,7 @@ sudo dmesg -T | grep -iE "oom|kill"
 
 **Tell-tale pattern:** a container with an enormous `RestartCount`, exit code 0, restarting on a fixed ~30s cadence — that regular beat is the process booting, hitting the mem cap, and being reaped over and over. `docker stats` sitting pinned near the `--memory` cap corroborates it.
 
-Root fix is always: lower the memory footprint or raise the cap — see [[Jaeger on a small box: use in-memory bounded storage, not badger, to avoid OOM 502]] for a concrete case.
+Root fix is always: lower the memory footprint or raise the cap — see [[Jaeger on a small box use in-memory bounded storage, not badger, to avoid OOM 502|Jaeger on a small box: use in-memory bounded storage, not badger, to avoid OOM 502]] for a concrete case.
 
 ## Related
 

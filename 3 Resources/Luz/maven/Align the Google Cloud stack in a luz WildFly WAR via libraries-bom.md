@@ -29,9 +29,8 @@ Surfaced on LUZ-158230 (import-job Tier 4) in `luz_docs_import`.
 
 ## Related
 
-- [[Hosting a Pub/Sub consumer in a luz service with luz_message_receiver]]
-- [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec]]
-- [[not SmallRye @ExponentialBackoff]]
+- [[Hosting a PubSub consumer in a luz service with luz_message_receiver|Hosting a Pub/Sub consumer in a luz service with luz_message_receiver]]
+- [[luz WildFly WARs expose only the MicroProfile Fault-Tolerance spec, not SmallRye @ExponentialBackoff]]
 
 %% ai-graph-start %%
 

@@ -28,11 +28,11 @@ Offset-based pagination loops that use the running offset in the continue-condit
 Found in luz_docs `FolderUtil` (`forEachDocumentPage` + `getSubFolders`), folder-delete discovery phase — ironic because the feature exists to stop large-folder deletes from hanging.
 
 ## Related
-[[3 Resources/Languages/Java/JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+[[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
 
 ## Related
 
-- [[3 Resources/Languages/Java/JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+- [[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
 
 %% ai-graph-start %%
 

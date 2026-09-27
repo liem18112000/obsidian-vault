@@ -26,7 +26,7 @@ Python evaluates function annotations EAGERLY at def-time (module import) unless
 
 Lessons: (1) when a merge removes an import, grep the file for every use of the removed name — including inside annotations and dead/orphaned functions. (2) Validate imports on the TARGET Python version, not just locally. (3) Dead code with a bad annotation is still fatal at import.
 
-Related: [[A client CORS/unreachable-API error can mask a backend 500 — read the server log]]
+Related: [[A client CORSunreachable-API error can mask a backend 500 — read the server log|A client CORS/unreachable-API error can mask a backend 500 — read the server log]]
 
 %% ai-graph-start %%
 

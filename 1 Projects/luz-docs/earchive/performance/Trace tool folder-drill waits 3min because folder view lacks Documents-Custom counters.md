@@ -44,7 +44,7 @@ In the eArchive folder-drill view there is no "Documents (N)" / "Custom (M)" cou
 
 ## Related
 
-- [[1 Projects/luz-docs/earchive/performance/Dev eArchive baseline items in 6s but count badges take 22-41s]]
+- [[Dev eArchive baseline items in 6s but count badges take 22-41s]]
 - [[Playwright full-nav detection needs a JS-heap marker not URL compare]]
 
 %% ai-graph-start %%

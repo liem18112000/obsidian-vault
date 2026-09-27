@@ -54,8 +54,7 @@ Related: [[A deterministic scorer is a negative case for LLM-agent-ification —
 
 ## Related
 
-- [[A deterministic scorer is a negative case for LLM-agent-ification — reuse ADK via custom EvalMetric]]
-- [[not LlmAgent]]
+- [[A deterministic scorer is a negative case for LLM-agent-ification — reuse ADK via custom EvalMetric, not LlmAgent]]
 
 %% ai-graph-start %%
 

@@ -59,8 +59,7 @@ Source: designing Step 2 (Knowledge Refinement) of the test-agent Testing Agent 
 
 ## Related
 
-- [[Ground-then-refine: gathering grounds]]
-- [[refinement interprets and confirms]]
+- [[Ground-then-refine gathering grounds, refinement interprets and confirms]]
 
 %% ai-graph-start %%
 

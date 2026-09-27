@@ -22,7 +22,7 @@ A mongo-java-driver DocumentCodec round-trips this cleanly: nested BSON arrays d
 
 ## Related
 
-- [[Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer]]
+- [[Serving a custom applicationbson media type in JAX-RS via MessageBodyReader and Writer|Serving a custom application/bson media type in JAX-RS via MessageBodyReader and Writer]]
 
 %% ai-graph-start %%
 

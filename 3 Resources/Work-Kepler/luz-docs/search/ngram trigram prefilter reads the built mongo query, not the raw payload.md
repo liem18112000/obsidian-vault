@@ -28,7 +28,7 @@ Part of the S2 trigram work; see [[Full-text search report]] equivalent (`projec
 
 ## Related
 
-- [[3 Resources/Work-Kepler/luz-docs/search/luz-docs search DSL silently drops raw-mongo query keys]]
+- [[luz-docs search DSL silently drops raw-mongo query keys]]
 
 %% ai-graph-start %%
 

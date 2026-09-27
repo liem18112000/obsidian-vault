@@ -91,7 +91,7 @@ If the product churns fast, or it's a one-time purchase, a flat [[Cost per Sale]
 - [[Attribution Model]] — determines whether you keep earning on the customer long-term.
 
 ---
-*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+*See also: [[Term|all affiliate terms]]*
 
 %% ai-graph-start %%
 

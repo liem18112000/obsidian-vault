@@ -36,7 +36,7 @@ Use this to back [[Visible-document count as cardinality of a bitmap union]] whe
 ## Related
 
 - [[Visible-document count as cardinality of a bitmap union]]
-- [[1 Projects/luz-docs/count/optimize/Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+- [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
 
 %% ai-graph-start %%
 

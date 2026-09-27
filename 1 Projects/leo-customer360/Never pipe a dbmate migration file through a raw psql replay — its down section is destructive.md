@@ -69,13 +69,12 @@ In the leo-customer360 repo, two schema-apply mechanisms coexist and are **mutua
 - Migrating the prod/bastion path to dbmate means running the dbmate binary/container there (single static binary, installable like they install psql-client), NOT feeding migration files to psql.
 - Until that follow-up lands, keep `database-init/migrations/001_*.sql` (old hand-rolled, safe to replay) so run-sql.sh still applies RLS hardening in prod.
 
-Related: [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]], [[dbmate treats any line starting with -- migrate:up/down as a directive]].
+Related: [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]], [[dbmate treats any line starting with -- migrateupdown as a directive|dbmate treats any line starting with -- migrate:up/down as a directive]].
 
 ## Related
 
-- [[leo-customer360 uses dbmate for Postgres migrations]]
-- [[not Alembic]]
-- [[dbmate treats any line starting with -- migrate:up/down as a directive]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
+- [[dbmate treats any line starting with -- migrateupdown as a directive|dbmate treats any line starting with -- migrate:up/down as a directive]]
 
 %% ai-graph-start %%
 

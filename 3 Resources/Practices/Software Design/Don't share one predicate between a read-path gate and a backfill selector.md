@@ -29,11 +29,11 @@ Adding `missing _shard` to that one filter looked like a clean one-liner, but it
 
 **General rule:** if one predicate answers both *"is the feature ready? (read path)"* and *"what still needs migrating? (backfill)"*, treat that as a smell. A field that only the migration cares about belongs only in the migration selector — split the two definitions rather than overloading the shared one.
 
-Related: [[3 Resources/Data/MongoDB/Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+Related: [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 
 ## Related
 
-- [[3 Resources/Data/MongoDB/Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 
 %% ai-graph-start %%
 

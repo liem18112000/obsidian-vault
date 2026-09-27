@@ -24,11 +24,11 @@ Listing **OPEN or DECLINED** pull requests via the REST API requires a Bitbucket
 
 **Consequence:** from git alone you can only recover **merged** PRs, by grepping commit subjects for `Merged in <branch> (pull request #N)`. Open/declined PRs need the Bitbucket web UI or an app-password-authed API call. Verify the credential type before assuming the API will work: `git credential fill` gives a token that clones fine yet 401s on REST.
 
-See [[Finding intentional k8s config PRs in luz_kubernetes: filter out image-hash + merge drift]] for the merged-PR recovery technique.
+See [[Finding intentional k8s config PRs in luz_kubernetes filter out image-hash + merge drift|Finding intentional k8s config PRs in luz_kubernetes: filter out image-hash + merge drift]] for the merged-PR recovery technique.
 
 ## Related
 
-- [[Finding intentional k8s config PRs in luz_kubernetes: filter out image-hash + merge drift]]
+- [[Finding intentional k8s config PRs in luz_kubernetes filter out image-hash + merge drift|Finding intentional k8s config PRs in luz_kubernetes: filter out image-hash + merge drift]]
 
 %% ai-graph-start %%
 

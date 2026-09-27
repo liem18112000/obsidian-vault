@@ -23,7 +23,7 @@ A GitHub Actions deprecation warning (e.g. "Node.js 20 is deprecated … forced 
 
 **Consequence / gotcha:** you can miss a deprecated action when auditing CI from run annotations alone. In `leo-customer360` CI, `docker/login-action@v3` (which runs on node20) was NOT in the run-#5 deprecation annotations because it is guarded by `if: ${{ github.ref == refs/heads/main }}` and that run was on a feature branch, so the login step never ran. It would warn (and eventually break) only on a `main` run.
 
-**Takeaway:** when bumping actions off a deprecated runtime, grep every `uses:` in the workflow and check each action manifest directly (see [[Verify a GitHub Actions Node runtime and inputs via gh api on action.yml at a tag]]) rather than trusting the annotation list from one run — conditional/rarely-taken branches hide deprecated actions.
+**Takeaway:** when bumping actions off a deprecated runtime, grep every `uses:` in the workflow and check each action manifest directly (see [[Verify a GitHub Action's Node runtime and inputs via gh api on action.yml at a tag|Verify a GitHub Actions Node runtime and inputs via gh api on action.yml at a tag]]) rather than trusting the annotation list from one run — conditional/rarely-taken branches hide deprecated actions.
 
 ## Related
 

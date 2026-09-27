@@ -72,7 +72,7 @@ type: moc
 
 The largest active workstream. Sub-folders:
 
-- **count** — visible-document count scaling (`estimate`, `optimize` incl. [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count|Divide-and-Conquer Visible-Document Count]])
+- **count** — visible-document count scaling (`estimate`, `optimize` incl. [[Divide-and-Conquer Visible-Document Count|Divide-and-Conquer Visible-Document Count]])
 - **earchive** — eArchive work (`integration`, `performance`)
 - **materialize** — materialize sentinels and cascades (`cascades` incl. Folder Rename Cascade, `gate`)
 - **Folder Recovery and Security Cascade** — LUZ-155107 folder recovery + inherited security

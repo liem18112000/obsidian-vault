@@ -30,11 +30,11 @@ The `client_id`/`client_secret` used to authenticate to GreenNode/VNG Cloud APIs
 
 **Gotcha:** the Secret Key is displayed **only once** at creation — copy it immediately. If lost, regenerate from the account's **Security credentials** tab (this invalidates the old secret). Manage attached policies later via the account's **Permission** tab -> **Attach Policies**.
 
-Maps to `TF_VAR_client_id`/`TF_VAR_client_secret` (or the provider's native `CLIENT_ID`/`CLIENT_SECRET`). See [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]] and [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]].
+Maps to `TF_VAR_client_id`/`TF_VAR_client_secret` (or the provider's native `CLIENT_ID`/`CLIENT_SECRET`). See [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]] and [[GreenNode Cloud is VNG Cloud rebranded (same IAM, gateway, Terraform provider)]].
 
 ## Related
 
-- [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 - [[GreenNode Cloud is VNG Cloud rebranded (same IAM]]
 - [[gateway]]
 - [[Terraform provider)]]

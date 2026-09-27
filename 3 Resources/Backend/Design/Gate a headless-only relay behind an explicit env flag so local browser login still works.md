@@ -27,7 +27,7 @@ Symptom that points here: "Sign in shows a spinner then stops, nothing else" in 
 
 ## Related
 
-- [[3 Resources/Backend/Node/Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
+- [[Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
 
 %% ai-graph-start %%
 

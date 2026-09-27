@@ -72,12 +72,12 @@ Grouping key = AggregatedBilling fields (productId, pricePlan, featurePricePlan,
 **How to apply:** when a per-record report explodes for high-volume tenants, check whether a sibling flow (invoice/booking) already aggregates and reuse its exact key.
 
 ## Related
-[[3 Resources/Visual/Stimulsoft/Stimulsoft billingDetail mrt already had the MengeQuantity column and Calc columns]]
+[[Stimulsoft billingDetail mrt already had the MengeQuantity column and Calc columns]]
 [[Copy shared model objects before aggregating them for a view]]
 
 ## Related
 
-- [[3 Resources/Visual/Stimulsoft/Stimulsoft billingDetail mrt already had the MengeQuantity column and Calc columns]]
+- [[Stimulsoft billingDetail mrt already had the MengeQuantity column and Calc columns]]
 - [[Copy shared model objects before aggregating them for a view]]
 
 %% ai-graph-start %%

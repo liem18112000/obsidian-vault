@@ -31,7 +31,7 @@ Companion builders in the same util family: `singletonJsonObject(key,value)`, `b
 
 ## Related
 
-- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 %% ai-graph-start %%
 

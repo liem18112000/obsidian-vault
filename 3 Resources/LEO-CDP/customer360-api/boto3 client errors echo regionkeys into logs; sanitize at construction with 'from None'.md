@@ -42,8 +42,7 @@ Related: [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
 
 ## Related
 
-- [[Validate S3_REGION at the deploy boundary]]
-- [[not after boto3 fails]]
+- [[Validate S3_REGION at the deploy boundary, not after boto3 fails]]
 
 %% ai-graph-start %%
 

@@ -29,8 +29,8 @@ Key decisions:
 Established for LUZ-158230.
 
 ## Related
-[[ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
-[[luz_docs_import scope: no sender auth, individual tenants, partial-import policy]]
+[[ePost eArchive ZIP import transfer.zip shape and luz_docs_import|ePost eArchive ZIP import: transfer.zip shape and luz_docs_import]]
+[[luz_docs_import scope no sender auth, individual tenants, partial-import policy|luz_docs_import scope: no sender auth, individual tenants, partial-import policy]]
 
 %% ai-graph-start %%
 

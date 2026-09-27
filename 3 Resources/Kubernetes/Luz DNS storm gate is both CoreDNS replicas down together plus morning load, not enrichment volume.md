@@ -41,10 +41,8 @@ Lesson: a clean-looking dose-response from 3-4 cherry-picked days can be a coinc
 
 ## Related
 
-- [[CoreDNS livenessreadiness 404 means probe path-port mismatch]]
-- [[not a CoreDNS crash]]
-- [[MongoTimeoutException from UnknownHostException is a DNS fault]]
-- [[not DB overload]]
+- [[CoreDNS livenessreadiness 404 means probe path-port mismatch, not a CoreDNS crash]]
+- [[MongoTimeoutException from UnknownHostException is a DNS fault, not DB overload]]
 
 %% ai-graph-start %%
 

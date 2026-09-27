@@ -23,11 +23,11 @@ Concretely, GreenNode's own vStorage API docs authenticate at `https://iamapis.v
 
 **Why it matters:** tooling and docs written for VNG Cloud (the Terraform provider, API endpoints, IAM concepts) apply to GreenNode accounts. When automating GreenNode, point at the VNG Cloud endpoints unless the tenant was explicitly issued different gateway hostnames (confirm via browser DevTools on the console). Regions seen: HCM03-1A/1B/1C.
 
-See [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
+See [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
 
 ## Related
 
-- [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 
 %% ai-graph-start %%
 

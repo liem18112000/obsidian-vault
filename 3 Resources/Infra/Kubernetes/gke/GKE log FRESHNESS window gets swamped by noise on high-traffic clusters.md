@@ -27,7 +27,7 @@ See [[Materialize gate cache never latches, hammers campaign service on every co
 
 ## Related
 
-- [[1 Projects/luz-docs/materialize/Materialize gate cache never latches, hammers campaign service on every count]]
+- [[Materialize gate cache never latches, hammers campaign service on every count]]
 
 %% ai-graph-start %%
 

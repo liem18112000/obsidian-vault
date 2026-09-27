@@ -27,7 +27,7 @@ Found while debugging why [[Mermaid defaults to foreignObject HTML labels, break
 
 ## Related
 
-- [[3 Resources/Visual/Mermaid/Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+- [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
 
 %% ai-graph-start %%
 

@@ -35,7 +35,7 @@ Any change that invalidates an existing test — a reshaped/renamed/deleted meth
 - [[MaterializeGate migration check falls through to repo on missing campaign]]
 - [[Run the full affected test package locally, not a hand-picked subset]]
 - [[Hand-rolled Optional.or fallback chain replaces CDI @Fallback]]
-- [[3 Resources/Languages/Java/CDI and MicroProfile/CDI self-invocation bypasses interceptor proxy]]
+- [[CDI self-invocation bypasses interceptor proxy]]
 
 %% ai-graph-start %%
 

@@ -94,7 +94,7 @@ If the product is a simple one-click purchase, [[Cost per Sale]] usually pays yo
 - [[Reversal]] — clawback of leads that fail validation.
 
 ---
-*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+*See also: [[Term|all affiliate terms]]*
 
 %% ai-graph-start %%
 

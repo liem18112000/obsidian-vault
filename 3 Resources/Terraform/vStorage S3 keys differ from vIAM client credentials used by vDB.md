@@ -29,8 +29,7 @@ Related: [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, no
 
 ## Related
 
-- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider]]
-- [[not vngcloud]]
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
 
 %% ai-graph-start %%
 

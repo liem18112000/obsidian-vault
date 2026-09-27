@@ -32,8 +32,7 @@ Context: kga `memory.py` index writer (LUZ-159671 test-agent). Note pattern near
 
 ## Related
 
-- [[Cloud Run v2 has startup_probe + liveness_probe]]
-- [[no readiness probe]]
+- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
 
 %% ai-graph-start %%
 

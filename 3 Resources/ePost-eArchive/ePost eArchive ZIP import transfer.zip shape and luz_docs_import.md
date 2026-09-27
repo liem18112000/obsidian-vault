@@ -31,8 +31,8 @@ Required sidecar fields include `senderTenantId` (UUID), `senderCompanyId` (int)
 
 ## Related
 [[HEALTH document type carries verbatim SNOMED healthData]]
-[[ePost eArchive document write-chain: import to view-controller to luz_docs to jsonstore]]
-[[luz_docs_import scope: no sender auth, individual tenants, partial-import policy]]
+[[ePost eArchive document write-chain import to view-controller to luz_docs to jsonstore|ePost eArchive document write-chain: import to view-controller to luz_docs to jsonstore]]
+[[luz_docs_import scope no sender auth, individual tenants, partial-import policy|luz_docs_import scope: no sender auth, individual tenants, partial-import policy]]
 
 %% ai-graph-start %%
 

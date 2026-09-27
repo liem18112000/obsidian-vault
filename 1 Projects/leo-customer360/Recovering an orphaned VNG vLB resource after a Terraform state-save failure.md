@@ -81,11 +81,11 @@ A transient DNS blip on the vStorage endpoint (`lookup hcm04.vstorage.vngcloud.v
 The VNG token endpoint (`iamapis.vngcloud.vn/accounts-api/v2/auth/token`) wants `grant_type=client_credentials` with the client id/secret as **HTTP Basic auth** (not in the body). But even with a valid token, this service account's IAM policy blocks vLB reads — so API enumeration is a dead end; use the console for ids.
 
 ## Related
-[[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoring/LB]]
+[[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB|Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoring/LB]]
 
 ## Related
 
-- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoring/LB]]
+- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB|Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoring/LB]]
 
 %% ai-graph-start %%
 

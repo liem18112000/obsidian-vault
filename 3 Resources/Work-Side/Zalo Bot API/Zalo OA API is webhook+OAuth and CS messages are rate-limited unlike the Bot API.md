@@ -33,7 +33,7 @@ The Zalo **Official Account (OA) API** (`openapi.zalo.me/v3.0/oa/...`, docs at d
 
 ## Related
 
-- [[3 Resources/Work-Side/Zalo Bot API/Zalo Bot API endpoints, token, and message shapes]]
+- [[Zalo Bot API endpoints, token, and message shapes]]
 - [[Zalo Bot API has no getUpdates offset and no reply_to_message]]
 
 %% ai-graph-start %%

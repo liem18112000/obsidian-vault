@@ -75,8 +75,7 @@ On UAT, the docs-vector-search chatbot hung ~120s per request even though the se
 ## Related
 
 - [[leo-customer360 push to main skips the monitoring step; deploy Portainer agents manually]]
-- [[CD secrets must be wired into cd.yml deploy step env]]
-- [[not just added to GitHub]]
+- [[CD secrets must be wired into cd.yml deploy step env, not just added to GitHub]]
 
 %% ai-graph-start %%
 

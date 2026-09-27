@@ -89,14 +89,14 @@ let terraform's S3 backend authenticate.
 `deploy-all.sh` sources `deployments/lib/tfstate.sh` and calls `ensure_vstorage_creds` — which, if `AWS_*` is unset, exports them by parsing `access_key`/`secret_key` from `storage/terraform.tfvars` (or `TF_VAR_access_key`/`TF_VAR_secret_key` from `storage/.env`), then `ensure_remote_init` `terraform init`s the remote-backend modules. So **`deploy-all.sh` was ALWAYS creds-self-sufficient** (that's why full-stack deploys worked). The per-component `.env` AWS_* only matters when you run an INDIVIDUAL module script directly (e.g. `server/deploy-api.sh uat`), which does NOT source tfstate.sh — it only sources its own `.env`. Verified via `./deploy-all.sh uat --dry-run` (EXIT=0, 14/14 steps printed, nothing executed).
 
 ## Related
-[[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoring/LB]]
+[[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB|Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoring/LB]]
 
 ## The orchestrator has its OWN creds path (don't confuse the two)
 `deploy-all.sh` sources `deployments/lib/tfstate.sh` and calls `ensure_vstorage_creds` — which, if `AWS_*` is unset, exports them by parsing `access_key`/`secret_key` from `storage/terraform.tfvars` (or `TF_VAR_access_key`/`TF_VAR_secret_key` from `storage/.env`), then `ensure_remote_init` `terraform init`s the remote-backend modules. So **`deploy-all.sh` was ALWAYS creds-self-sufficient** (that's why full-stack deploys worked). The per-component `.env` AWS_* only matters when you run an INDIVIDUAL module script directly (e.g. `server/deploy-api.sh uat`), which does NOT source tfstate.sh — it only sources its own `.env`. Verified via `./deploy-all.sh uat --dry-run` (EXIT=0, 14/14 steps printed, nothing executed).
 
 ## Related
 
-- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoring/LB]]
+- [[Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoringLB|Running leo-customer360 deploys locally needs vStorage backend creds; CI can't do monitoring/LB]]
 
 %% ai-graph-start %%
 

@@ -96,7 +96,7 @@ If the merchant only profits on payment (and tracks it well), [[Cost per Sale]] 
 - [[Reversal]] — invalid registrations are scrubbed and clawed back.
 
 ---
-*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+*See also: [[Term|all affiliate terms]]*
 
 %% ai-graph-start %%
 

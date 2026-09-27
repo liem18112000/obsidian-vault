@@ -51,7 +51,7 @@ See the role cheat-sheet for which `ROLE` to pass for a given intent.
 
 ## Related
 
-- [[3 Resources/Cloud/GCP/GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]
+- [[GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]
 
 %% ai-graph-start %%
 

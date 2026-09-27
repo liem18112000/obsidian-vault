@@ -68,7 +68,7 @@ Decision: keep fan-out OFF (luz.docs.materialize.count-fanout-partitions=1, the 
 ## Related
 
 - [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
-- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 %% ai-graph-start %%
 

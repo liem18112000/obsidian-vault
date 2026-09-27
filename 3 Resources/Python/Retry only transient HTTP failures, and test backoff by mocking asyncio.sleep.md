@@ -30,8 +30,7 @@ Context: kga `atlassian.py` (LUZ-159671 test-agent), read-only client.
 
 ## Related
 
-- [[Claude on Vertex AI uses anthropic[vertex]]]
-- [[not google-genai]]
+- [[Claude on Vertex AI uses anthropic[vertex], not google-genai]]
 
 %% ai-graph-start %%
 

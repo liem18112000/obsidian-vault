@@ -32,7 +32,7 @@ Workspace/repo for the codegraph: `axonivy-prod/luz_docs_import`.
 
 ## Related
 
-- [[LUZ-158230 eArchive Health ZIP import — golden test fixture matrix location]]
+- [[LUZ-158230 eArchive Health ZIP import - golden test fixture matrix location|LUZ-158230 eArchive Health ZIP import — golden test fixture matrix location]]
 
 %% ai-graph-start %%
 

@@ -31,8 +31,7 @@ Lesson: treat RLS as defense-in-depth. Also enforce tenant scoping explicitly at
 
 - [[Postgres session SET vs transaction-local set_config for RLS context]]
 - [[Response caches must include the authenticated tenant in the key]]
-- [[Derive tenant identity from the verified token]]
-- [[never from request input]]
+- [[Derive tenant identity from the verified token, never from request input]]
 
 %% ai-graph-start %%
 

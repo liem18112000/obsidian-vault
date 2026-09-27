@@ -33,7 +33,7 @@ BUT the **direct, fully-qualified** endpoints still work with the same credentia
 
 ## Related
 
-- [[gather_codebase needs axonivy-prod/<repo> workspace slug]]
+- [[gather_codebase needs axonivy-prodrepo workspace slug|gather_codebase needs axonivy-prod/<repo> workspace slug]]
 
 %% ai-graph-start %%
 

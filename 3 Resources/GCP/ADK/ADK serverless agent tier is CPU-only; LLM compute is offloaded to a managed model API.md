@@ -28,7 +28,7 @@ Applies to the `test-agent` project too: it calls Vertex/Gemini remotely, so Clo
 
 ## Related
 
-- [[ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)]]
+- [[ADK deploy targets compute matrix Agent Engine vs Cloud Run vs GKE (CPUGPUTPU)|ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)]]
 
 %% ai-graph-start %%
 

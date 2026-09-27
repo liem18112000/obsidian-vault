@@ -57,7 +57,7 @@ Full phased integration plan: `doc/polaris-mcp-integration-plan.md` (Phases 0-3 
 
 ## Related
 
-- [[3 Resources/Work-Side/Polaris/Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
 
 %% ai-graph-start %%
 

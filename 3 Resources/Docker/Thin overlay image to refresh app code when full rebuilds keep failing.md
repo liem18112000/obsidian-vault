@@ -28,11 +28,11 @@ Dockerfile.patch:
   COPY pyproject.toml ./ ; COPY src ./src ; COPY main.py worker.py redis_worker.py ./
   RUN pip install <only-the-new-dep> && pip install --no-deps --force-reinstall .   # reinstall MY package from current src, no dep re-download
   USER appuser
-Then `docker build -f Dockerfile.patch -t <project>-kga:latest .` and `docker tag` it to every other service image; `docker compose up -d` (no --build) recreates containers on it. Here it added boto3 + refreshed code in ~13s vs a full rebuild that repeatedly died. CAVEAT: it is a stopgap layered on a stale base — do a clean `docker compose build` once the environment can sustain it. Depends on the stale image already having every other dependency (only boto3 was new). See [[A failed docker compose --build leaves :latest on the OLD image (silent stale run)]].
+Then `docker build -f Dockerfile.patch -t <project>-kga:latest .` and `docker tag` it to every other service image; `docker compose up -d` (no --build) recreates containers on it. Here it added boto3 + refreshed code in ~13s vs a full rebuild that repeatedly died. CAVEAT: it is a stopgap layered on a stale base — do a clean `docker compose build` once the environment can sustain it. Depends on the stale image already having every other dependency (only boto3 was new). See [[A failed docker compose --build leaves latest on the OLD image (silent stale run)|A failed docker compose --build leaves :latest on the OLD image (silent stale run)]].
 
 ## Related
 
-- [[A failed docker compose --build leaves :latest on the OLD image (silent stale run)]]
+- [[A failed docker compose --build leaves latest on the OLD image (silent stale run)|A failed docker compose --build leaves :latest on the OLD image (silent stale run)]]
 
 %% ai-graph-start %%
 

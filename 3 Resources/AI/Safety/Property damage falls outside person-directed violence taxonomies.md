@@ -26,7 +26,7 @@ Lesson: label ambiguity in a test set is often a taxonomy-definition gap, not a 
 ## Related
 
 - [[Moderation taxonomies split violence into subtypes]]
-- [[3 Resources/AI/Safety/Violence detection needs a trained classifier, not keyword lists]]
+- [[Violence detection needs a trained classifier, not keyword lists]]
 
 %% ai-graph-start %%
 

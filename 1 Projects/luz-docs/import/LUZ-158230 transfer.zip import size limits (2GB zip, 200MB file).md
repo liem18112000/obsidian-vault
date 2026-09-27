@@ -51,7 +51,7 @@ There is **no spec limit of 200 MB per binary document** and **no cap on file co
 ## Related
 
 - [[LUZ-158230 ePost ZIP import spec v1.0 (authoritative)]]
-- [[luz_docs_import dedup: folders via view-controller API, documents via import job history]]
+- [[luz_docs_import dedup folders via view-controller API, documents via import job history|luz_docs_import dedup: folders via view-controller API, documents via import job history]]
 - [[LUZ-158230 Post Health ZIP import v1 scope decisions]]
 - [[LUZ-158230 QA edge-case decisions (ZIP import)]]
 

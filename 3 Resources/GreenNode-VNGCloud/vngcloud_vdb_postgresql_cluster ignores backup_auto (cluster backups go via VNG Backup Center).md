@@ -29,11 +29,11 @@ For a cluster, backups are configured through **VNG Backup Center** and wired vi
 
 **Why it matters:** prod often uses the cluster topology for HA, so a module that just sets `backup_auto=true` leaves prod with NO automatic backups. Mitigate: set the Backup Center policy/location IDs AND add a logical `pg_dump` CronJob to vStorage as a second track. Also: restore = create a NEW instance/cluster from a restore point; auto backups are deleted with the instance, manual snapshots survive; no physical restore INTO vDB (logical dump/restore only) so migrations rebuild pgvector indexes.
 
-Relates to [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
+Relates to [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]].
 
 ## Related
 
-- [[Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
+- [[Provision GreenNodeVNG Cloud vDB PostgreSQL with the vngcloud Terraform provider|Provision GreenNode/VNG Cloud vDB PostgreSQL with the vngcloud Terraform provider]]
 
 %% ai-graph-start %%
 

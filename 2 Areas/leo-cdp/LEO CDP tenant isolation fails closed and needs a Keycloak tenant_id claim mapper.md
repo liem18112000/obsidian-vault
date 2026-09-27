@@ -59,8 +59,7 @@ Auth has two modes via `SSO_LOGIN`: false = local HS256 dev JWT (`DEV_JWT_SECRET
 
 ## Related
 
-- [[LEO CDP schema migrations are ordered plain SQL]]
-- [[not dbmate or alembic]]
+- [[LEO CDP schema migrations are ordered plain SQL, not dbmate or alembic]]
 
 %% ai-graph-start %%
 

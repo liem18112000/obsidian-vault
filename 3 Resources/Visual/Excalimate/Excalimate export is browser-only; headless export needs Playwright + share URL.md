@@ -32,11 +32,11 @@ Verified export-dialog selectors on app.excalimate.com (no data-testid/aria-labe
 
 Implemented as the `export-optimization` skill: `references/export-to-file.mjs` + `references/programmatic-export.md`.
 
-See [[3 Resources/Visual/Excalimate/Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]].
+See [[Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]].
 
 ## Related
 
-- [[3 Resources/Visual/Excalimate/Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]
+- [[Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]
 
 %% ai-graph-start %%
 

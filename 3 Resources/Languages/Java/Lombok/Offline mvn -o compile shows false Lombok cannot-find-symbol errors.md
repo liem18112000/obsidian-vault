@@ -33,8 +33,7 @@ Related: the phantom errors also cascade the way a single bad symbol does — se
 ## Related
 
 - [[Lombok one bad symbol cascades into hundreds of phantom missing-method errors]]
-- [[luz_docs_import targets Java 17 (javax stack]]
-- [[modern idioms allowed)]]
+- [[luz_docs_import targets Java 17 (javax stack, modern idioms allowed)]]
 
 %% ai-graph-start %%
 

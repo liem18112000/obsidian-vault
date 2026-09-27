@@ -32,7 +32,7 @@ Concretely: for an advisory `run-gemini-cli` step that errors on `TerminalQuotaE
 
 ## Related
 
-- [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+- [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
 - [[secrets context is not available in GitHub Actions if conditions]]
 
 %% ai-graph-start %%

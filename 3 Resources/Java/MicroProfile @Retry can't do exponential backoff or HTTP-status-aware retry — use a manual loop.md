@@ -32,8 +32,7 @@ MP `@Retry` self-invocation caveat: interceptors fire only through the CDI/EJB p
 
 ## Related
 
-- [[A durable queue fixes report-write durability]]
-- [[not data-duplication — make the side effect idempotent]]
+- [[A durable queue fixes report-write durability, not data-duplication — make the side effect idempotent]]
 
 ## Correction (Klara platform)
 

@@ -50,7 +50,7 @@ Caveat: the name hash suffix means the ConfigMap is kustomize-generated; an in-p
 
 ## Related
 
-- [[1 Projects/luz-docs/earchive/luz_docs parent-change cascade recovers forward, not via snapshot rollback]]
+- [[luz_docs parent-change cascade recovers forward, not via snapshot rollback]]
 
 %% ai-graph-start %%
 

@@ -32,12 +32,12 @@ Error: `{"message":"This volume type dont support zone with ID :HCM03-1C"}`. The
 VNG forbids user_data together with user_name/user_password/ssh_key. To get BOTH an SSH login and a bootstrap script, put everything in user_data (a cloud-config `users:` block with the RSA key + `packages:`/`runcmd:`) and leave the native args empty.
 
 ## Related
-[[VNG vServer user_data is mutually exclusive with username/password/ssh_key]]
-[[VNG vServer flavor zones are per-AZ under one shared name; the flavor s flavorZoneId field IS the AZ]]
+[[VNG vServer user_data is mutually exclusive with usernamepasswordssh_key|VNG vServer user_data is mutually exclusive with username/password/ssh_key]]
+[[VNG vServer flavor zones are per-AZ under one shared name; the flavor's flavorZoneId field IS the AZ|VNG vServer flavor zones are per-AZ under one shared name; the flavor s flavorZoneId field IS the AZ]]
 
 ## Related
 
-- [[VNG vServer user_data is mutually exclusive with username/password/ssh_key]]
+- [[VNG vServer user_data is mutually exclusive with usernamepasswordssh_key|VNG vServer user_data is mutually exclusive with username/password/ssh_key]]
 
 %% ai-graph-start %%
 

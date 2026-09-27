@@ -55,7 +55,7 @@ Both this and the pandoc `[TABLE]` placeholder bug are silent-corruption failure
 
 ## Related
 
-- [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
+- [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]|Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
 
 %% ai-graph-start %%
 

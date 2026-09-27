@@ -26,7 +26,7 @@ Zalo ZNS send-time rendering (`backend-system/notification_engine/notification_e
 
 No HTML escaping, no link rewriting, no open pixel — those are email-only concerns. Eligibility gate at send: skip recipients with no phone or `zalo_opt_in=false` (`send_zalo_campaign`). The dispatch ledger reuses the email columns — `recipient_email` actually holds the PHONE for Zalo.
 
-Contrast with the email path: email authors full subject/html/text and renders via `email_engine.rendering` (see [[email_engine renders with plain regex substitution, not Jinja, so AI-authored templates cant execute code]]); ZNS only fills a fixed template's slots. Both feed off the same crm_campaign draft the agent produced ([[customer360 AI campaign lifecycle: agent plans, api persists draft, email_engine renders at send]]).
+Contrast with the email path: email authors full subject/html/text and renders via `email_engine.rendering` (see [[email_engine renders with plain regex substitution, not Jinja, so AI-authored templates can't execute code|email_engine renders with plain regex substitution, not Jinja, so AI-authored templates cant execute code]]); ZNS only fills a fixed template's slots. Both feed off the same crm_campaign draft the agent produced ([[customer360 AI campaign lifecycle agent plans, api persists draft, email_engine renders at send|customer360 AI campaign lifecycle: agent plans, api persists draft, email_engine renders at send]]).
 
 ## Related
 

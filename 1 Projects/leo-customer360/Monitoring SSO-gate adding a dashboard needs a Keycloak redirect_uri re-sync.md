@@ -95,13 +95,12 @@ Fix: add the URI under the client's *Valid redirect URIs* in Keycloak, OR commen
 
 ## Related
 [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
-[[leo-customer360 tracing: OTel off-by-default on UAT, on at 10% on PROD]]
+[[leo-customer360 tracing OTel off-by-default on UAT, on at 10% on PROD|leo-customer360 tracing: OTel off-by-default on UAT, on at 10% on PROD]]
 
 ## Related
 
 - [[leo-customer360 deploys as Docker containers on VNG vServer VMs over SSH]]
-- [[leo-customer360 tracing: OTel off-by-default on UAT]]
-- [[on at 10% on PROD]]
+- [[leo-customer360 tracing OTel off-by-default on UAT, on at 10% on PROD]]
 
 %% ai-graph-start %%
 

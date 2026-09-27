@@ -30,7 +30,7 @@ API surface details in [[Zalo Bot API endpoints, token, and message shapes]].
 
 ## Related
 
-- [[3 Resources/Work-Side/Zalo Bot API/Zalo Bot API endpoints, token, and message shapes]]
+- [[Zalo Bot API endpoints, token, and message shapes]]
 
 %% ai-graph-start %%
 

@@ -25,12 +25,12 @@ Concrete example (250-doc import ×100 on a shared perf cluster): min 23.1 s, **
 
 **Rule of thumb:** on shared infra, sample size buys you robustness. Report percentiles; call out the max as an outlier; don't quote the mean as "the" number.
 
-Related: [[Small import batches are overhead-bound so their per-item throughput is lower than large batches]], [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]].
+Related: [[Small import batches are overhead-bound so their per-item throughput is lower than large batches]], [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention|A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]].
 
 ## Related
 
 - [[Small import batches are overhead-bound so their per-item throughput is lower than large batches]]
-- [[A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
+- [[A latency penalty in the tail not the median points to JITGC warm-up under CPU contention|A latency penalty in the tail not the median points to JIT/GC warm-up under CPU contention]]
 
 %% ai-graph-start %%
 

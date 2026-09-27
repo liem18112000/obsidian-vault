@@ -25,7 +25,7 @@ Fix: anchor the pattern to the start of the element text — `/^\s*(All comments
 ## Related
 
 - [[Verify Facebook comment sort switch by re-reading the sort button label]]
-- [[3 Resources/Practices/Testing/Build test fakes from verbatim production data, decoys included]]
+- [[Build test fakes from verbatim production data, decoys included]]
 
 %% ai-graph-start %%
 

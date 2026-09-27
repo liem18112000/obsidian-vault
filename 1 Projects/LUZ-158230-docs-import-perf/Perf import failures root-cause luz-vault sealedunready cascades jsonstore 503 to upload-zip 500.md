@@ -80,7 +80,7 @@ On performance (2026-08-24), the k6 import load test failed 100% because **`luz-
 
 **Cascade:** Vault 503 → `luz-jsonstore` `document-import-jobs/add` (addOne) needs Vault transit crypto → throws `VaultException: ... status code 503` → jsonstore returns **HTTP 400** to import → import `DocsResponseExceptionMapper` maps 400 → `DocsException` → `UnexpectedExceptionMapper` → **HTTP 500** on `upload-zip`.
 
-**Load-dependent disguise:** at **10 VUs** the failure shows through *fast* (~100ms, HTTP 500). At **100 VUs** the import worker pool saturates and requests queue to the 60s k6 timeout *before* reaching the Vault call, so it looked like a saturation/liveness death-spiral instead. Both are real, but Vault-down is the PRIMARY blocker; saturation is a high-load amplifier. See [[Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]].
+**Load-dependent disguise:** at **10 VUs** the failure shows through *fast* (~100ms, HTTP 500). At **100 VUs** the import worker pool saturates and requests queue to the 60s k6 timeout *before* reaching the Vault call, so it looked like a saturation/liveness death-spiral instead. Both are real, but Vault-down is the PRIMARY blocker; saturation is a high-load amplifier. See [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage|Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]].
 
 **Diagnostic technique that worked:** re-run at LOW concurrency to strip away saturation and expose the underlying correctness error; then trace one request thread top-to-bottom across services (import access log -> import REST-client filters -> jsonstore SEVERE -> vault /sys/health) to reach the bottom of the stack.
 
@@ -89,7 +89,7 @@ On performance (2026-08-24), the k6 import load test failed 100% because **`luz-
 ## Related
 
 - [[luz-docs-import upload-zip endpoint is the ingestion saturation point under perf load]]
-- [[Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
+- [[Liveness-probe death spiral killing a thread-pool-saturated pod turns overload into a self-perpetuating outage|Liveness-probe death spiral: killing a thread-pool-saturated pod turns overload into a self-perpetuating outage]]
 ## ✅ CONFIRMED — 10-VU re-run after Vault recovered = 100% pass
 
 After `luz-vault-0/1` came back to **2/2 Ready** (`ready=true`), the identical 10-VU / 10-RPS / 1000-request case was re-run (build `fcdea5a3…`, pod `…-b6628`) and **passed completely**:

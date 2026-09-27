@@ -40,8 +40,7 @@ Applies to any migration tool that runs the down in a transaction (dbmate, and b
 
 ## Related
 
-- [[leo-customer360 uses dbmate for Postgres migrations]]
-- [[not Alembic]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
 - [[Never pipe a dbmate migration file through a raw psql replay — its down section is destructive]]
 
 %% ai-graph-start %%

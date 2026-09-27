@@ -30,8 +30,7 @@ Context: kga Cloud Run service (LUZ-159671 test-agent).
 
 ## Related
 
-- [[Cloud Run v2 has startup_probe + liveness_probe]]
-- [[no readiness probe]]
+- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
 
 %% ai-graph-start %%
 

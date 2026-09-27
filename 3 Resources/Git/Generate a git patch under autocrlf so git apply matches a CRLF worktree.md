@@ -22,7 +22,7 @@ On Windows with `core.autocrlf=true` (worktree = CRLF, index/blobs = LF), a patc
 
 **How to apply:** generate `git diff -- <files> > x.patch`, revert the worktree, then verify with the exact command the consumer will run — `git apply --check x.patch`. If it still balks, `git apply --ignore-whitespace` (treats the trailing `\r` as whitespace) and `git apply --3way` are the fallbacks.
 
-Related: [[Apostrophe inside bash ${var:?message} breaks the parser]]
+Related: [[Apostrophe inside bash ${varmessage} breaks the parser|Apostrophe inside bash ${var:?message} breaks the parser]]
 
 %% ai-graph-start %%
 

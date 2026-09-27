@@ -34,8 +34,7 @@ Discovered writing `customer360-agent/tests/test_e2e.py` for the customer360 AI 
 
 ## Related
 
-- [[pydantic-settings JSON-parses complex fields at the source]]
-- [[before validators]]
+- [[pydantic-settings JSON-parses complex fields at the source, before validators]]
 
 %% ai-graph-start %%
 

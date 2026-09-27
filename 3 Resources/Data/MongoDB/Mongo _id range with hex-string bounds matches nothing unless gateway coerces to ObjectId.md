@@ -33,7 +33,7 @@ It only works if something coerces the bounds to real ObjectId. The luz_jsonstor
 
 - [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
 - [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
-- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 %% ai-graph-start %%
 

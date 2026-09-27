@@ -31,11 +31,11 @@ By contrast, the FLAVOR change (vCPU/RAM) on the same resource DOES apply in-pla
 Seen on customer360 UAT 2026-09-10 resizing the backend/Dagster box s-general-2x4 -> s-general-4x8 (CPU/RAM took; disk stayed 20G).
 
 ## Related
-[[Renaming a Terraform for_each/map key needs terraform state mv or it destroys+recreates]]
+[[Renaming a Terraform for_eachmap key needs terraform state mv or it destroys+recreates|Renaming a Terraform for_each/map key needs terraform state mv or it destroys+recreates]]
 
 ## Related
 
-- [[Renaming a Terraform for_each/map key needs terraform state mv or it destroys+recreates]]
+- [[Renaming a Terraform for_eachmap key needs terraform state mv or it destroys+recreates|Renaming a Terraform for_each/map key needs terraform state mv or it destroys+recreates]]
 
 %% ai-graph-start %%
 

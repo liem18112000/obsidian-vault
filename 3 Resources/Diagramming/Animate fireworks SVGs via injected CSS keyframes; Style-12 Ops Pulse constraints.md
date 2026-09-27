@@ -25,8 +25,8 @@ Style 12 (Ops Pulse) authoring constraints learned the hard way (semantic_profil
 
 ## Related
 
-- [[fireworks-tech-graph skill: JSON-IR render pipeline and quality_profile gotcha]]
-- [[Embed generated SVG in an artifact via <img> data-URI to isolate its styles]]
+- [[fireworks-tech-graph skill JSON-IR render pipeline and quality_profile gotcha|fireworks-tech-graph skill: JSON-IR render pipeline and quality_profile gotcha]]
+- [[Embed generated SVG in an artifact via img data-URI to isolate its styles|Embed generated SVG in an artifact via <img> data-URI to isolate its styles]]
 
 %% ai-graph-start %%
 

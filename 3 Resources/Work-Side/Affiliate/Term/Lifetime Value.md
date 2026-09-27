@@ -97,7 +97,7 @@ As an affiliate you don't control these — but you benefit from choosing **merc
 - [[Reversal]] — early churn can reverse recent cycles, lowering realised LTV earnings.
 
 ---
-*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+*See also: [[Term|all affiliate terms]]*
 
 %% ai-graph-start %%
 

@@ -32,13 +32,13 @@ type: howto
 - *Private egress:* **PSC interface (PSC-I)** creates a **network attachment in your VPC**; agent↔VPC traffic uses **RFC1918** addressing and stays on Google's backbone (never public internet). DNS peering supported.
 - *Under a VPC-SC perimeter:* default internet egress is **blocked** (anti-exfiltration); you must build an explicit path — typically a **proxy VM (RFC1918) + Cloud NAT** inside the perimeter. Also caps max_instances at ≤100.
 
-Relevant to `test-agent` on Cloud Run: if Atlassian/Bitbucket ever require IP allowlisting, this VPC-egress + Cloud NAT static-IP pattern is the fix. See [[ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)]].
+Relevant to `test-agent` on Cloud Run: if Atlassian/Bitbucket ever require IP allowlisting, this VPC-egress + Cloud NAT static-IP pattern is the fix. See [[ADK deploy targets compute matrix Agent Engine vs Cloud Run vs GKE (CPUGPUTPU)|ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)]].
 
 *Unverified:* exact PSC-I subnet CIDR sizing not confirmed from primary Google docs — check the setup guide before building.
 
 ## Related
 
-- [[ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)]]
+- [[ADK deploy targets compute matrix Agent Engine vs Cloud Run vs GKE (CPUGPUTPU)|ADK deploy targets compute matrix: Agent Engine vs Cloud Run vs GKE (CPU/GPU/TPU)]]
 
 %% ai-graph-start %%
 

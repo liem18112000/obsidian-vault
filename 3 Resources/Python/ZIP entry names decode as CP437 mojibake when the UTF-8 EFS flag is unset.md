@@ -35,7 +35,7 @@ Found while writing `verify_gap3.py` for the luz-docs-import Gap-3 test — the 
 ## Related
 
 - [[Windows Python stdout is cp1252 and crashes on emoji; reconfigure to UTF-8]]
-- [[luz-docs-import ZIP import timing: fresh 100-doc ~40s vs deduped sub-second]]
+- [[luz-docs-import ZIP import timing fresh 100-doc ~40s vs deduped sub-second|luz-docs-import ZIP import timing: fresh 100-doc ~40s vs deduped sub-second]]
 
 %% ai-graph-start %%
 

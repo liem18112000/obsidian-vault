@@ -25,8 +25,7 @@ On GreenNode/VNG Cloud vServer, the `vngcloud_vserver_server` `user_data` (cloud
 
 ## Related
 
-- [[VNG Cloud vServer SSH keys must be RSA]]
-- [[not ed25519 (Invalid public key at apply)]]
+- [[VNG Cloud vServer SSH keys must be RSA, not ed25519 (Invalid public key at apply)]]
 
 %% ai-graph-start %%
 

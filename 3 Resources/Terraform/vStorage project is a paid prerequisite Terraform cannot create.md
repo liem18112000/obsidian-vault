@@ -38,8 +38,7 @@ Related: [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, no
 
 ## Related
 
-- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider]]
-- [[not vngcloud]]
+- [[Manage VNG Cloud vStorage buckets with the AWS Terraform provider, not vngcloud]]
 - [[vStorage S3 keys differ from vIAM client credentials used by vDB]]
 
 %% ai-graph-start %%

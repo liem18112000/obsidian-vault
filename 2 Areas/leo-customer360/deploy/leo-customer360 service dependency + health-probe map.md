@@ -54,7 +54,7 @@ Dependency map + `/health` semantics for the leo-customer360 services (uat behin
 
 Cheap probes used: DB `SELECT 1`; S3 `client.list_buckets()` (also validates creds); Redis `client.ping()`. The tracking probes were added as `S3ObjectStorage.check_connection()` and `TrackingRequestProtection.ping()`; the FastAPI `/health` injects the storage/protection singletons via `Depends(get_storage/get_protection)`.
 
-Landed on branch `feat/health-dependency-checks` (2026-09-05). Concept: [[Health checks should probe dependencies and split critical vs fail-open]]. Verify uat: [[Verify uat customer360-api health publicly at beta.leocdp.com/c360api/health]].
+Landed on branch `feat/health-dependency-checks` (2026-09-05). Concept: [[Health checks should probe dependencies and split critical vs fail-open]]. Verify uat: [[Verify uat customer360-api health publicly at beta.leocdp.comc360apihealth|Verify uat customer360-api health publicly at beta.leocdp.com/c360api/health]].
 
 ## Related
 

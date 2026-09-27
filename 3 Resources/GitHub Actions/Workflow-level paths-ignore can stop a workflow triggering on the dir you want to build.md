@@ -23,11 +23,11 @@ Example: `ci.yml` had `paths-ignore: [frontend-admin/**]` (added when frontend h
 
 Rule of thumb: `paths-ignore` is about *whether the workflow starts*, not per-job filtering. Use per-job path filters (e.g. dorny/paths-filter) for "run this job only when X changed"; reserve `paths-ignore` for dirs that should never start CI (docs, wireframes).
 
-Related: [[Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]].
+Related: [[Feed dornypaths-filter changes output into a build matrix for selective monorepo builds|Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]].
 
 ## Related
 
-- [[Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]]
+- [[Feed dornypaths-filter changes output into a build matrix for selective monorepo builds|Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]]
 
 %% ai-graph-start %%
 

@@ -27,7 +27,7 @@ This forced luz-docs ParallelizeCountException to compile against LocalizedRunti
 
 ## Related
 
-- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 %% ai-graph-start %%
 

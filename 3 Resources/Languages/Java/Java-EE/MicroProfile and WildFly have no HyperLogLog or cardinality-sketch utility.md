@@ -26,7 +26,7 @@ Practical implication: if a WildFly/MicroProfile app needs cardinality estimatio
 
 ## Related
 
-- [[3 Resources/Data/Algorithms/HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
+- [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 
 %% ai-graph-start %%
 

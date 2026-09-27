@@ -27,8 +27,7 @@ Before concluding that a fix "passes" or "fails" in a deployed environment, firs
 
 ## Related
 
-- [[Verify invariants at the source of truth]]
-- [[not the operation's success report]]
+- [[Verify invariants at the source of truth, not the operation's success report]]
 
 %% ai-graph-start %%
 

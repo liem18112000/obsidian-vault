@@ -31,12 +31,12 @@ So the fix is not a better summary, it is depositing the full design contract IN
 
 Practical use: it is an argument AGAINST adding a thin one-line `intent` field to a data model. Downstream code will read the cheap field instead of the rich one, and the compression loss becomes structural.
 
-Related: [[Price one layer lower before accepting a fix]] · [[CONTEXT-GAP vs JUDGMENT-GAP: dispose every miss by cause]]
+Related: [[Price one layer lower before accepting a fix]] · [[CONTEXT-GAP vs JUDGMENT-GAP dispose every miss by cause|CONTEXT-GAP vs JUDGMENT-GAP: dispose every miss by cause]]
 
 ## Related
 
 - [[Price one layer lower before accepting a fix]]
-- [[CONTEXT-GAP vs JUDGMENT-GAP: dispose every miss by cause]]
+- [[CONTEXT-GAP vs JUDGMENT-GAP dispose every miss by cause|CONTEXT-GAP vs JUDGMENT-GAP: dispose every miss by cause]]
 
 %% ai-graph-start %%
 

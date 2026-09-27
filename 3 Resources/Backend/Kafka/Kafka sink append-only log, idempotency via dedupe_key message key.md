@@ -33,7 +33,7 @@ For the Leo CDP AppsFlyer connector this let BOTH the push receiver and the pull
 
 ## Related
 
-- [[3 Resources/Infra/Deployment/A webhook receiver deploys as an always-on service, not a scheduled job]]
+- [[A webhook receiver deploys as an always-on service, not a scheduled job]]
 - [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
 
 %% ai-graph-start %%

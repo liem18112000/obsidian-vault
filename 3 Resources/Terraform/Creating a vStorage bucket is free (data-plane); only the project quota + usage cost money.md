@@ -32,8 +32,7 @@ Rule of thumb: with S3-compatible clouds, bucket/object API calls are data-plane
 
 ## Related
 
-- [[vStorage create-project code 114 is account-side]]
-- [[not a payload bug]]
+- [[vStorage create-project code 114 is account-side, not a payload bug]]
 
 %% ai-graph-start %%
 

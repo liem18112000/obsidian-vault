@@ -24,7 +24,7 @@ So a full canary-sized wipe is ~25 s end to end; budget minutes only for multi-m
 ## Related
 
 - [[Destructive Luz skills use a preview-first CONFIRM gate]]
-- [[3 Resources/Work-Kepler/luz-docs/skills/eArchive dev skills are self-contained copies, not shared helpers]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
 
 %% ai-graph-start %%
 

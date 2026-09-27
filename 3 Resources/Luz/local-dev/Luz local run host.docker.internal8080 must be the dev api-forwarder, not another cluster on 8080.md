@@ -38,11 +38,11 @@ kubectl port-forward --address 0.0.0.0 services/api-forwarder 8080:8080 -n dev
 ```
 Use `--address 0.0.0.0` so the container reaching via `host.docker.internal` can connect (a 127.0.0.1-only bind is not reachable from the container). The `luz-docs-local-run` skill sets up exactly this forward.
 
-Related: [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates /luzsec/api/)]]
+Related: [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates luzsecapi)|JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates /luzsec/api/)]]
 
 ## Related
 
-- [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates /luzsec/api/)]]
+- [[JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates luzsecapi)|JWT_SERVICE_HOST_PORT must have no trailing slash (system-properties concatenates /luzsec/api/)]]
 
 %% ai-graph-start %%
 

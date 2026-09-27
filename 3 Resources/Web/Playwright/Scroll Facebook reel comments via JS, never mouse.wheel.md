@@ -48,7 +48,7 @@ Implemented in fb-info-project `src/browser.py` as one shared `scroll(page, roun
 ## Related
 
 - [[Facebook reel comments are hidden behind the comment icon]]
-- [[3 Resources/Web/Scraping/Facebook/Facebook sharev links can resolve to reels — classify after the redirect]]
+- [[Facebook sharev links can resolve to reels — classify after the redirect]]
 
 %% ai-graph-start %%
 

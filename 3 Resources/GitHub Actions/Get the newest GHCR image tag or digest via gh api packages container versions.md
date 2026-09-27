@@ -30,11 +30,11 @@ gh api -H "Accept: application/vnd.github+json" \
 - `.[0].name` is the immutable **digest** (`sha256:…`) → pull `ghcr.io/…/<svc>@sha256:…` for a fully pinned, reproducible deploy.
 - `.[0].metadata.container.tags` lists the human tags on that push (e.g. `sha-<git-sha>`, `latest`, `v1.2.3`).
 
-Use `/orgs/<ORG>/packages/...` for org-owned packages, `/users/<USER>/packages/...` for user-owned. Private packages need a token with `read:packages`. Alternatives: `crane ls`/`crane digest`, `skopeo inspect`, or `docker buildx imagetools inspect` — but the Registry v2 `/tags/list` does **not** guarantee chronological order, which is why the Packages API is preferred for "get the latest". Pin prod to an immutable tag/digest; let dev/uat float on `latest` or the newest `sha-*`. Context: [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]].
+Use `/orgs/<ORG>/packages/...` for org-owned packages, `/users/<USER>/packages/...` for user-owned. Private packages need a token with `read:packages`. Alternatives: `crane ls`/`crane digest`, `skopeo inspect`, or `docker buildx imagetools inspect` — but the Registry v2 `/tags/list` does **not** guarantee chronological order, which is why the Packages API is preferred for "get the latest". Pin prod to an immutable tag/digest; let dev/uat float on `latest` or the newest `sha-*`. Context: [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)|leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]].
 
 ## Related
 
-- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]]
+- [[leo-customer360 CD builds images on the VM instead of pulling from GHCR (CICD gap)|leo-customer360 CD builds images on the VM instead of pulling from GHCR (CI/CD gap)]]
 
 %% ai-graph-start %%
 

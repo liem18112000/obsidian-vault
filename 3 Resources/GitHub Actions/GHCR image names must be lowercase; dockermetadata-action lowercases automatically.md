@@ -29,11 +29,11 @@ GHCR (`ghcr.io`) rejects image paths containing uppercase letters. The `${{ gith
 
 But if you construct the tag by hand (plain `docker build -t`, or string-building the ref), you must lowercase it yourself (e.g. `${OWNER,,}` in bash, or `tr A-Z a-z`). The gotcha only bites when the org/user name has capitals. Learned wiring GHCR pushes for the LEO-CDP org.
 
-Related: [[Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]].
+Related: [[Feed dornypaths-filter changes output into a build matrix for selective monorepo builds|Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]].
 
 ## Related
 
-- [[Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]]
+- [[Feed dornypaths-filter changes output into a build matrix for selective monorepo builds|Feed dorny/paths-filter changes output into a build matrix for selective monorepo builds]]
 
 %% ai-graph-start %%
 

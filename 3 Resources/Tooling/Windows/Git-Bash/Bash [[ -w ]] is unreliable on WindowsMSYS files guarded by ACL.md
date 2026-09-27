@@ -36,11 +36,11 @@ fi
 
 When a redirection (`>>`) cannot open the file, Bash returns non-zero **without running the command**, so the `if` reliably detects it. This is portable (works on Linux/macOS too) and needs no `-w` probe.
 
-Related: there is no `sudo` on Windows, so the usual `[[ -w f ]] || sudo cmd` fallback is doubly broken there. Surfaced in the LEO CDP @ VNG ssh helper scripts (`appsflyer-data-connector/scripts`). See also [[3 Resources/Tooling/Windows/Git-Bash/Git Bash etchosts is not the Windows hosts file ssh reads]].
+Related: there is no `sudo` on Windows, so the usual `[[ -w f ]] || sudo cmd` fallback is doubly broken there. Surfaced in the LEO CDP @ VNG ssh helper scripts (`appsflyer-data-connector/scripts`). See also [[Git Bash etchosts is not the Windows hosts file ssh reads]].
 
 ## Related
 
-- [[3 Resources/Tooling/Windows/Git-Bash/Git Bash etchosts is not the Windows hosts file ssh reads]]
+- [[Git Bash etchosts is not the Windows hosts file ssh reads]]
 
 %% ai-graph-start %%
 

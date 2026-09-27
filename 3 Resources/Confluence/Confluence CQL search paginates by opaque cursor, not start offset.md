@@ -54,8 +54,7 @@ Also note the response has no `totalSize`; you cannot know the result count up f
 
 ## Related
 
-- [[Export Confluence to markdown via body.view HTML]]
-- [[not body.storage]]
+- [[Export Confluence to markdown via body.view HTML, not body.storage]]
 
 %% ai-graph-start %%
 

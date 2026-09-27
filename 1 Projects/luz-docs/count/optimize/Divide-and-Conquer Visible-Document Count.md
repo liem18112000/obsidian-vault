@@ -134,8 +134,8 @@ The materialised visible-document total is `count(_isPublic == true OR _effectiv
 ## Related
 
 - [[Divide-and-Conquer Count - Technical Points for Beginners]]
-- [[1 Projects/luz-docs/count/optimize/Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
-- [[1 Projects/luz-docs/materialize/Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+- [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
 - [[Partition the materialized count on a uniform _countShard int, not _id]]
 
 %% ai-graph-start %%

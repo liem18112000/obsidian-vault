@@ -48,8 +48,7 @@ Related: [[Calibrate a cascade threshold against the exact gate condition, not a
 
 ## Related
 
-- [[Calibrate a cascade threshold against the exact gate condition]]
-- [[not a looser proxy]]
+- [[Calibrate a cascade threshold against the exact gate condition, not a looser proxy]]
 
 %% ai-graph-start %%
 

@@ -47,7 +47,7 @@ Seen 2026-09-13 running the LUZ-156281 dunning demo: after several refine rounds
 
 ## Related
 
-- [[gather_codebase needs axonivy-prod/<repo> workspace slug]]
+- [[gather_codebase needs axonivy-prodrepo workspace slug|gather_codebase needs axonivy-prod/<repo> workspace slug]]
 
 %% ai-graph-start %%
 

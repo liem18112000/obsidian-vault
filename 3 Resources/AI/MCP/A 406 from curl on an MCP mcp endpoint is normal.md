@@ -21,7 +21,7 @@ Hitting a streamable-HTTP MCP endpoint (e.g. `http://localhost:3001/mcp`) with a
 
 ## Related
 
-- [[3 Resources/Visual/Excalimate/Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]
+- [[Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]
 
 %% ai-graph-start %%
 

@@ -86,7 +86,7 @@ If you'd budgeted ad spend against the $500 pending, you'd have over-spent.
 - [[Attribution Model]] — even a correctly-attributed conversion is subject to reversal.
 
 ---
-*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+*See also: [[Term|all affiliate terms]]*
 
 %% ai-graph-start %%
 

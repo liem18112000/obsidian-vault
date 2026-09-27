@@ -30,7 +30,7 @@ Consequence for the divide-and-conquer count: through the gateway you can have c
 ## Related
 
 - [[Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId]]
-- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+- [[Divide-and-Conquer Visible-Document Count]]
 
 %% ai-graph-start %%
 

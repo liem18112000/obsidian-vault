@@ -39,7 +39,7 @@ Source: leo-customer360 deployments/lib/ghcr.sh — enabling RESOLVE_DIGEST, 202
 
 ## Related
 
-- [[Verify a deployed service isn't stale: match box RepoDigest to GHCR :latest and read its sha-<commit> tag]]
+- [[Verify a deployed service isn't stale match box RepoDigest to GHCR latest and read its sha-commit tag|Verify a deployed service isn't stale: match box RepoDigest to GHCR :latest and read its sha-<commit> tag]]
 
 %% ai-graph-start %%
 

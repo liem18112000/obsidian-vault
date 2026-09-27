@@ -33,8 +33,7 @@ Ref: https://atlasgo.io/blog-v038#change-in-v038-atlas-migrate-lint . Related: [
 
 ## Related
 
-- [[leo-customer360 uses dbmate for Postgres migrations]]
-- [[not Alembic]]
+- [[leo-customer360 uses dbmate for Postgres migrations, not Alembic]]
 
 
 ## Outcome (leo-customer360)

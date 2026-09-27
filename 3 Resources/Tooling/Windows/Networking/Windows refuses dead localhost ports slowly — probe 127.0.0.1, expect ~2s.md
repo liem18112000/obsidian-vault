@@ -26,7 +26,7 @@ Practical rules for probing local services (Ollama, dev servers, sidecars):
 
 ## Related
 
-- [[3 Resources/Web/Scraping/Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
+- [[Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
 
 %% ai-graph-start %%
 

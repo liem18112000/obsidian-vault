@@ -26,11 +26,11 @@ In `luz_kubernetes`, `luz-docs-import` is a **StatefulSet** (`kubernetes/luz-doc
 - Deployed in **6 envs** (dev, dev-vn, dev-staging, test, performance, swissdec) — **NOT env-prod** (no overlay dir, not in `env-prod/kustomization.yaml`).
 - No `securityContext` today → container runs as **root** (Dockerfile does `USER root` and never switches back).
 
-The base manifest is included via `kubernetes/kustomization.yaml`; overlays only JSON-patch mesh/resources/HPA. Related: [[luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]].
+The base manifest is included via `kubernetes/kustomization.yaml`; overlays only JSON-patch mesh/resources/HPA. Related: [[luz-store Filestore mount pattern shared RWX PVC + fsGroup 2000 runAsUser 1000|luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]].
 
 ## Related
 
-- [[luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]]
+- [[luz-store Filestore mount pattern shared RWX PVC + fsGroup 2000 runAsUser 1000|luz-store Filestore mount pattern: shared RWX PVC + fsGroup 2000 / runAsUser 1000]]
 
 %% ai-graph-start %%
 

@@ -24,12 +24,11 @@ In luz-docs-import, `ImportJob.unprocessedFiles` must contain only files that re
 
 **Tell:** if `rejected=N` but `unprocessedFiles` has fewer than N entries, the difference is orphan JSON-metadata rejects — metadata files are excluded from `unprocessedFiles` at seed time (`!JsonUtils.isJsonMetadataFile`), so only the non-metadata file-type rejects leak.
 
-**Fix:** add `job.getUnprocessedFiles().remove(filePath)` in the file-type-reject branch (line ~173), same as the other terminal paths. Found via the luz-docs-import-api-test skill run on transfer.zip. Related: [[Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE]].
+**Fix:** add `job.getUnprocessedFiles().remove(filePath)` in the file-type-reject branch (line ~173), same as the other terminal paths. Found via the luz-docs-import-api-test skill run on transfer.zip. Related: [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE|Luz docs-import zip flow: upload-zip returns job-id, poll GET until DONE]].
 
 ## Related
 
-- [[Luz docs-import zip flow: upload-zip returns job-id]]
-- [[poll GET until DONE]]
+- [[Luz docs-import zip flow upload-zip returns job-id, poll GET until DONE]]
 
 %% ai-graph-start %%
 

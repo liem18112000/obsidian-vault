@@ -29,11 +29,11 @@ Info-ZIP/Unix zips avoid this (they store `0o100644`, owner-read set); zips with
 
 Diagnosis signature: `File.listFiles()` sees the file (parent dir stayed readable), but opening it throws `Permission denied`.
 
-Related: [[luz-docs-import Permission denied failures trace to zip4j applying archive file permissions]]
+Related: [[luz-docs-import 'Permission denied' failures trace to zip4j applying archive file permissions|luz-docs-import Permission denied failures trace to zip4j applying archive file permissions]]
 
 ## Related
 
-- [[luz-docs-import Permission denied failures trace to zip4j applying archive file permissions]]
+- [[luz-docs-import 'Permission denied' failures trace to zip4j applying archive file permissions|luz-docs-import Permission denied failures trace to zip4j applying archive file permissions]]
 
 %% ai-graph-start %%
 

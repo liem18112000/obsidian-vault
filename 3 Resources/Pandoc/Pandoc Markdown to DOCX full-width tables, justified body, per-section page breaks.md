@@ -42,6 +42,6 @@ end
 %% ai-graph-start %%
 
 **Related notes:**
-- [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
+- [[Pandoc gfm-raw_html silently replaces complex tables with [TABLE]|Pandoc gfm-raw_html silently replaces complex tables with [TABLE]]]
 
 %% ai-graph-end %%

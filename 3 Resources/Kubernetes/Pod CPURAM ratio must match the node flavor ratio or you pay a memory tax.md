@@ -36,8 +36,7 @@ Corollary: bin-packing only lowers cost by reducing **total provisioned** vCPU+R
 
 ## Related
 
-- [[Dagster worker pools are executor queues]]
-- [[not a pod kind]]
+- [[Dagster worker pools are executor queues, not a pod kind]]
 
 %% ai-graph-start %%
 

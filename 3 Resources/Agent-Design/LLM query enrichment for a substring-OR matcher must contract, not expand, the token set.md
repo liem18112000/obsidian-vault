@@ -71,13 +71,12 @@ If a retriever matches a query by splitting it into whitespace tokens and OR-ing
 
 **Corollary — selectivity is relative to the indexs domain distribution.** A term that *looks* specific can be broad in a domain-saturated index: in a 71-node index that is almost entirely eArchive-import content, the tokens `import` (21 hits) and `earchive` (26) each match ~a third of the index. Judge a terms selectivity against the actual corpus, not against how specific it reads in isolation. The real lever is which tokens you emit, and whether the matcher does substring-OR vs phrase/AND/rarity-weighted matching.
 
-Surfaced building the test-agent KGA self-exploration (G2 hypothesize step feeding G0/G1). Related: [[Retrieval tiering: query knowledge sources cheapest and most-trusted first]], [[External LLM output is a lead generator, not a source of truth]].
+Surfaced building the test-agent KGA self-exploration (G2 hypothesize step feeding G0/G1). Related: [[Retrieval tiering query knowledge sources cheapest and most-trusted first|Retrieval tiering: query knowledge sources cheapest and most-trusted first]], [[External LLM output is a lead generator, not a source of truth]].
 
 ## Related
 
-- [[Retrieval tiering: query knowledge sources cheapest and most-trusted first]]
-- [[External LLM output is a lead generator]]
-- [[not a source of truth]]
+- [[Retrieval tiering query knowledge sources cheapest and most-trusted first|Retrieval tiering: query knowledge sources cheapest and most-trusted first]]
+- [[External LLM output is a lead generator, not a source of truth]]
 
 %% ai-graph-start %%
 
