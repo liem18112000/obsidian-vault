@@ -1,0 +1,25 @@
+---
+title: "Thin overlay image to refresh app code when full rebuilds keep failing"
+created: 2026-09-22
+type: howto
+status: seedling
+source: "session 2026-09-22"
+tags: [docker, build, overlay, pip, technique, low-disk]
+---
+
+# Thin overlay image to refresh app code when full rebuilds keep failing
+
+TECHNIQUE that unstuck a stack whose full `docker compose build` kept getting killed (slow ~1.2MB/s network re-downloading the whole dep tree, low disk): build a THIN OVERLAY on the existing (stale) image instead of rebuilding from base. Only NEW deps + current source are added, so it finishes in seconds with a tiny download.
+
+Dockerfile.patch:
+  FROM <project>-<service>:latest   # stale image already has all heavy deps
+  USER root
+  WORKDIR /app
+  COPY pyproject.toml ./ ; COPY src ./src ; COPY main.py worker.py redis_worker.py ./
+  RUN pip install <only-the-new-dep> && pip install --no-deps --force-reinstall .   # reinstall MY package from current src, no dep re-download
+  USER appuser
+Then `docker build -f Dockerfile.patch -t <project>-kga:latest .` and `docker tag` it to every other service image; `docker compose up -d` (no --build) recreates containers on it. Here it added boto3 + refreshed code in ~13s vs a full rebuild that repeatedly died. CAVEAT: it is a stopgap layered on a stale base — do a clean `docker compose build` once the environment can sustain it. Depends on the stale image already having every other dependency (only boto3 was new). See [[A failed docker compose --build leaves :latest on the OLD image (silent stale run)]].
+
+## Related
+
+- [[A failed docker compose --build leaves :latest on the OLD image (silent stale run)]]
