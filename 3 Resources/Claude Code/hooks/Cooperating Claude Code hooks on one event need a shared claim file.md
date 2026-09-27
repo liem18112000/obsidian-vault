@@ -17,7 +17,19 @@ type: lesson
 
 # Cooperating Claude Code hooks on one event need a shared claim file
 
-Two Claude Code hooks registered on the same event (e.g. `simplify-gate` and `reusable-gate`, both `PostToolUse` on `Edit|Write|MultiEdit`) each receive **the same stdin payload** for one tool call, so both fire and the user gets two prompts for a single edit. Neither hook can see the other, so they need an out-of-band handshake: hash the raw stdin payload into an `eventHash`, and have whichever hook runs first write `{eventHash, gate}` to a per-session claim file. The loser reads the claim, sees the same hash owned by a different `gate`, persists its accumulated counters **without spending a pass**, and exits silently — so it fires on the next edit instead of being dropped.
+Two Claude Code hooks registered on the same event (e.g. `simplify-gate` and `reusable-gate`, both `PostToolUse` on `Edit|Write|MultiEdit`) each receive **the same stdin payload** for one tool call, so both fire and the user gets two prompts for a single edit. Neither hook can see the other, so they need an out-of-band handshake: hash the raw stdin payload into an `eventHash` — both derive the same value, with no IPC and no ordering assumption — and let exactly one hook claim that event. The loser persists its accumulated counters **without spending a pass** and exits silently, so it fires on the next edit instead of being dropped.
+
+> [!warning] The obvious implementation is wrong
+> Hooks on the same matcher run **concurrently**. "Read the claim file, and if nobody owns this event, write my claim" is two operations: both hooks pass the check before either writes, both claim, both fire. This *looks* correct in every sequential test and fails in production. I shipped exactly this and then watched both gates fire repeatedly in the same session.
+
+**Put the hash in the claim FILENAME, not its contents**, and take the claim with a single exclusive create:
+
+- Node — `fs.writeFileSync(claimPath, body, { flag: 'wx' })`; catch `e.code === 'EEXIST'` to mean "the other hook owns this event".
+- PowerShell — `[System.IO.File]::Open($p, [System.IO.FileMode]::CreateNew, …)`; it throws when the file exists.
+
+The create *is* the lock, so there is no window. Per-event filenames buy a second thing for free: a leftover claim from a previous edit can never be mistaken for a claim on the current one, so there is no stale-claim arbitration and no hash comparison left to get wrong. The cost is accumulating tiny files in the state dir — bounded by the gates' own per-session pass cap.
+
+Any other IO error on the create should **fire**, not defer — a full disk shouldn't silently disable the gate. Only a genuine "file already exists" means stand down.
 
 The payload hash is what makes this work: it is derived from data both processes already have, identically, with no IPC and no ordering assumption.
 
