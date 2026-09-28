@@ -1,10 +1,46 @@
 ---
-title: "Cloud Run names who changed a service in lastModifier and the UpdateService audit log"
+ai_hash: 1e056b798588bb88
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-09-28'
 created: 2026-09-28
-type: howto
+entities:
+- Cloud Run
+- service
+- serving.knative.dev/lastModifier
+- gcloud run services describe
+- serving.knative.dev/creator
+- admin-activity audit log
+- gcloud logging read
+- protoPayload.serviceName="run.googleapis.com"
+- protoPayload.methodName:"Services.UpdateService"
+- protoPayload.resourceName:"<svc>"
+- principalEmail
+- Terraform
+- gcloud run services update
+- A disabled Cloud Run service 503s at the edge and never reaches your app
+- A scaled-to-zero service in a shared cloud project is a decision, not a fault
+- '503'
+- cost decision
+- control-plane mutation
+- identity
+- person
+- configuration
+- timestamp
+- repo
+- infrastructure
+- manual change
+- UpdateService (method)
+source: session 2026-09-28 — testing-agent MCP 503
 status: seedling
-source: "session 2026-09-28 — testing-agent MCP 503"
-tags: [gcp, cloud-run, audit-logging, debugging, gcloud]
+tags:
+- gcp
+- cloud-run
+- audit-logging
+- debugging
+- gcloud
+title: Cloud Run names who changed a service in lastModifier and the UpdateService
+  audit log
+type: howto
 ---
 
 # Cloud Run names who changed a service in lastModifier and the UpdateService audit log
@@ -39,3 +75,47 @@ Concrete use: diagnosing a service that had been [[A disabled Cloud Run service 
 - [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
 - [[A scaled-to-zero service in a shared cloud project is a decision]]
 - [[not a fault]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A scaled-to-zero service in a shared cloud project is a decision, not a fault]]
+- [[A disabled Cloud Run service 503s at the edge and never reaches your app]]
+- [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
+- [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+- [[Cloud Run won't redeploy on a latest digest change — apply by immutable digest]]
+
+**Relations:**
+- Cloud Run — *manages* — service
+- service — *carries annotation* — serving.knative.dev/lastModifier
+- serving.knative.dev/lastModifier — *identifies* — identity
+- identity — *is a* — person
+- gcloud run services describe — *retrieves* — serving.knative.dev/lastModifier
+- service — *carries annotation* — serving.knative.dev/creator
+- serving.knative.dev/creator — *is complementary to* — serving.knative.dev/lastModifier
+- admin-activity audit log — *records* — control-plane mutation
+- gcloud logging read — *queries* — admin-activity audit log
+- gcloud logging read — *filters by* — protoPayload.serviceName="run.googleapis.com"
+- gcloud logging read — *filters by* — protoPayload.methodName:"Services.UpdateService"
+- gcloud logging read — *filters by* — protoPayload.resourceName:"<svc>"
+- admin-activity audit log — *contains field* — principalEmail
+- principalEmail — *provides* — identity
+- admin-activity audit log — *contains field* — timestamp
+- timestamp — *provides* — when
+- admin-activity audit log — *provides* — what
+- gcloud run services update — *leaves trace in* — admin-activity audit log
+- Terraform — *manages* — infrastructure
+- gcloud run services update — *is a type of* — manual change
+- manual change — *does not leave trace in* — repo
+- A disabled Cloud Run service 503s at the edge and never reaches your app — *is related to* — A scaled-to-zero service in a shared cloud project is a decision, not a fault
+- A disabled Cloud Run service 503s at the edge and never reaches your app — *describes* — 503
+- A scaled-to-zero service in a shared cloud project is a decision, not a fault — *explains* — cost decision
+- service — *has* — configuration
+- UpdateService (method) — *is recorded in* — admin-activity audit log
+- service — *can be* — disabled
+- disabled service — *causes* — 503
+- scaled-to-zero service — *is a* — cost decision
+- scaled-to-zero service — *causes* — 503
+- UpdateService (method) — *is a type of* — control-plane mutation
+
+%% ai-graph-end %%

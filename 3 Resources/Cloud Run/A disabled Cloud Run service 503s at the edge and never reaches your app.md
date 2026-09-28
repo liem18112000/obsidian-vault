@@ -1,9 +1,47 @@
 ---
-ai_hash: 2a390f70046df61b
+ai_hash: 957d8b4cafad84eb
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-09-27'
+ai_updated: '2026-09-28'
 created: 2026-09-25
-entities: []
+entities:
+- Cloud Run
+- Cloud Run service
+- Disabled Cloud Run service
+- 503 Service Unavailable
+- Google Frontend HTML page
+- run.googleapis.com/scalingMode
+- run.googleapis.com/manualInstanceCount
+- Revision logs
+- gcloud run services describe
+- 'Ready: True'
+- 'ConfigurationsReady: True'
+- 'RoutesReady: True'
+- Annotations
+- gcloud run services update
+- Autoscaling
+- MCP server
+- claude mcp get <name>
+- 'HTTP 503: Streamable HTTP error'
+- HTTP status
+- 5xx
+- curl's 000
+- Instance
+- Startup probes
+- Liveness probes
+- Edge
+- Application
+- Testing consequence
+- Probe
+- Cloud Run names who changed a service in lastModifier and the UpdateService audit
+  log
+- A scaled-to-zero service in a shared cloud project is a decision, not a fault
+- Cloud Run resolves a latest secret reference at instance start, not per request
+- test-agent-v2 Cloud Run services use a -v2 name suffix
+- Service-level setting
+- Bearer token
+- ingress=all
+- allUsers
+- roles/run.invoker
 source: session 2026-09-25 — test-agent-v2 bearer rotation
 status: seedling
 tags:
@@ -59,10 +97,54 @@ To attribute the shutdown to a person and a date, see [[Cloud Run names who chan
 %% ai-graph-start %%
 
 **Related notes:**
+- [[A scaled-to-zero service in a shared cloud project is a decision, not a fault]]
+- [[Rotating a service bearer silently invalidates every client config holding the old one]]
 - [[Cloud Run 401 response body distinguishes GFEIAM rejection from app-level auth]]
+- [[Cloud Run names who changed a service in lastModifier and the UpdateService audit log]]
 - [[Cloud Run GFE reserves healthz — use livez for your health endpoint]]
-- [[Cloud Run v2 has startup_probe + liveness_probe, no readiness probe]]
-- [[Terraform-managed Cloud Run set env flags in TF, not gcloud run update]]
-- [[Cloud Run resolves a latest secret reference at instance start, not per request]]
+
+**Relations:**
+- Cloud Run — *allows disabling* — Cloud Run service
+- Disabled Cloud Run service — *returns* — 503 Service Unavailable
+- 503 Service Unavailable — *is* — Google Frontend HTML page
+- Google Frontend HTML page — *is generated at* — Edge
+- Disabled Cloud Run service — *does not reach* — Application
+- Disabled Cloud Run service — *has annotation* — run.googleapis.com/scalingMode
+- run.googleapis.com/scalingMode — *value is* — manual
+- Disabled Cloud Run service — *has annotation* — run.googleapis.com/manualInstanceCount
+- run.googleapis.com/manualInstanceCount — *value is* — 0
+- Revision logs — *show* — Shutting down user disabled instance
+- Instance — *is killed by* — Disabled Cloud Run service
+- Startup probes — *log success for* — Instance
+- Liveness probes — *log success for* — Instance
+- gcloud run services describe — *reports* — Ready: True
+- gcloud run services describe — *reports* — ConfigurationsReady: True
+- gcloud run services describe — *reports* — RoutesReady: True
+- Disabled Cloud Run service — *retains* — ingress=all
+- Disabled Cloud Run service — *retains* — allUsers
+- allUsers — *with* — roles/run.invoker
+- Annotations — *are* — honest signal
+- gcloud run services describe — *can display* — Annotations
+- gcloud run services update — *enables* — Autoscaling
+- gcloud run services update — *clears* — run.googleapis.com/scalingMode
+- gcloud run services update — *clears* — run.googleapis.com/manualInstanceCount
+- gcloud run services update — *is used to turn on* — Cloud Run service
+- MCP server — *pointed at* — Disabled Cloud Run service
+- MCP server — *shows* — claude mcp get <name>
+- claude mcp get <name> — *reports* — HTTP 503: Streamable HTTP error
+- Bearer token — *is not read by* — Disabled Cloud Run service
+- Testing consequence — *relates to* — HTTP status
+- HTTP status — *should exclude* — 5xx
+- Probe — *can misclassify* — 503 Service Unavailable
+- 503 Service Unavailable — *as* — success
+- 5xx — *is* — inconclusive
+- 5xx — *for* — Testing consequence
+- curl's 000 — *is* — inconclusive
+- curl's 000 — *for* — Testing consequence
+- Cloud Run service — *is a* — Service-level setting
+- Cloud Run service — *related to* — Cloud Run names who changed a service in lastModifier and the UpdateService audit log
+- Cloud Run service — *related to* — A scaled-to-zero service in a shared cloud project is a decision, not a fault
+- Cloud Run service — *related to* — Cloud Run resolves a latest secret reference at instance start, not per request
+- Cloud Run service — *related to* — test-agent-v2 Cloud Run services use a -v2 name suffix
 
 %% ai-graph-end %%
