@@ -45,6 +45,12 @@ An autoscaling (live) service returns empty for both; a disabled one returns `ma
 
 **Testing consequence:** never score an HTTP status as a pass/fail verdict without excluding 5xx first. A probe that classifies "not 401 ⇒ authenticated" will read a 503 as success and hand you a green tick on a service that is switched off. Treat `5xx` and curl's `000` as *inconclusive* — they never reached the application, so they carry no information about whatever you were testing.
 
+**Turning it back on:** `gcloud run services update "$svc" --region "$r" --scaling=auto` clears both annotations and restores autoscaling. It is a service-level setting, so each disabled service needs its own call.
+
+**How it reaches you through a client:** an MCP server pointed at a disabled Cloud Run URL surfaces as `claude mcp get <name>` reporting *Failed to connect / HTTP 503: Streamable HTTP error*, with the GFE HTML page quoted inline. The bearer token in the config is a red herring — nothing ever read it.
+
+To attribute the shutdown to a person and a date, see [[Cloud Run names who changed a service in lastModifier and the UpdateService audit log]]; for why you should ask before reversing it, [[A scaled-to-zero service in a shared cloud project is a decision, not a fault]].
+
 ## Related
 
 - [[Cloud Run resolves a latest secret reference at instance start, not per request]]
